@@ -58,6 +58,14 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 idx:get-genre($header),
                 $root/dbk:info/dbk:keywordset[@vocab="#genre"]/dbk:keyword
             )
+            case "correspondent-id" return (
+                for $key in $header//tei:correspDesc//tei:persName/@key 
+                    return
+                        translate($key, "()", "")
+            )
+            case "correspondent-name" return (
+                $header//tei:correspDesc//tei:persName/text()
+            )
             default return
                 ()
 };
