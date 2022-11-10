@@ -24,6 +24,13 @@
             <text match="//tei:titleStmt/tei:title"/>
             <text match="//tei:msDesc/tei:head"/>
             <text match="//tei:listPlace/tei:place/tei:placeName"/>
+            
+            <text match="//tei:listPerson/tei:person" index="no">
+                <field name="name" expression="tei:persName[@type='full']" />
+                <field name="person-note" expression="tei:note"/>
+                <field name="type" expression="'Person'"/>
+                <facet dimension="type" expression="'Person'"/>
+            </text>                        
         </lucene>
         
         <range>
