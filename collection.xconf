@@ -12,10 +12,14 @@
                 <field name="file" expression="util:document-name(.)"/>
                 <field name="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <field name="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
+                <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
+                <field name="date-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <facet dimension="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
+                <facet dimension="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
+                <facet dimension="date-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')" hierarchical="yes"/>
             </text>
             <text qname="tei:div">
                 <ignore qname="tei:div"/>

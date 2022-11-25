@@ -54,6 +54,10 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:fileDesc/tei:editionStmt/tei:edition/tei:date,
                 $header//tei:publicationStmt/tei:date
             ))
+            case "date-sent" return 
+                tokenize($header//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@when, '-')
+            case "place-sent" return
+                $header//tei:correspAction[@type='sent']/tei:placeName
             case "genre" return (
                 idx:get-genre($header),
                 $root/dbk:info/dbk:keywordset[@vocab="#genre"]/dbk:keyword
