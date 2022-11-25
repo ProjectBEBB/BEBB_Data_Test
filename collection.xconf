@@ -30,6 +30,10 @@
                 <field name="person-note" expression="tei:note"/>
                 <field name="type" expression="'Person'"/>
                 <facet dimension="type" expression="'Person'"/>
+            </text>
+            <text match="tei:place" index="no">
+                <field name="name" expression="tei:placeName" />
+                <field name="country" expression="tei:note"/>
             </text>                        
         </lucene>
         
