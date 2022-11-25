@@ -61,7 +61,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "correspondent-id" return (
                 for $key in $header//tei:correspDesc//tei:persName/@key 
                     return
-                        translate($key, "()", "")
+                        translate($key, ")(", "-")
             )
             case "correspondent-name" return (
                 $header//tei:correspDesc//tei:persName/text()
