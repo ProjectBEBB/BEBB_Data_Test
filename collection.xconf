@@ -19,7 +19,7 @@
                 <facet dimension="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <facet dimension="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <facet dimension="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
-                <facet dimension="date-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')" hierarchical="yes"/>
+                <facet dimension="date-sent" expression="tokenize(nav:get-metadata(ancestor::tei:TEI, 'date-sent'), '-')" hierarchical="yes"/>
             </text>
             <text qname="tei:div">
                 <ignore qname="tei:div"/>
