@@ -20,6 +20,7 @@
                 <facet dimension="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <facet dimension="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
                 <facet dimension="date-sent" expression="tokenize(nav:get-metadata(ancestor::tei:TEI, 'date-sent'), '-')" hierarchical="yes"/>
+                <facet dimension="briefwechsel" expression="nav:get-metadata(ancestor::tei:TEI, 'briefwechsel')" hierarchical="yes"/>
             </text>
             <text qname="tei:div">
                 <ignore qname="tei:div"/>
@@ -32,13 +33,13 @@
             <text match="//tei:listPlace/tei:place/tei:placeName"/>
             
             <text match="tei:person" index="no">
-                <field name="name" expression="tei:persName" />
+                <field name="name" expression="tei:persName"/>
                 <field name="person-note" expression="tei:note"/>
                 <field name="type" expression="'Person'"/>
                 <facet dimension="type" expression="'Person'"/>
             </text>
             <text match="tei:place" index="no">
-                <field name="name" expression="tei:placeName" />
+                <field name="name" expression="tei:placeName"/>
                 <field name="country" expression="tei:note"/>
             </text>                        
         </lucene>
