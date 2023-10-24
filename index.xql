@@ -67,6 +67,8 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "correspondent-name" return (
                 $header//tei:correspDesc//tei:persName/text()
             )
+            case "briefwechsel" return
+                ($header//tei:ptr[@type eq 'Briefwechsel']/@target, $header//tei:ptr[@type eq 'Korrespondenz']/@target)
             default return
                 ()
 };
