@@ -14,6 +14,7 @@
                 <field name="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
                 <field name="date-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
+                <field name="correspondent-main" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-main')"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
@@ -26,6 +27,11 @@
                 <ignore qname="tei:div"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
+            </text>
+            <text qname="tei:TEI">
+                <field name="briefwechsel-key" if="@type eq 'Korrespondenz'" expression="nav:get-metadata(., 'briefwechsel-key')"/>
+                <field name="correspondent-key" if="@type eq 'Korrespondenz'" expression="nav:get-metadata(., 'correspondent-key')"/>
+                <field name="title" expression="nav:get-metadata(., 'title')"/>
             </text>
             <text qname="tei:head"/>
             <text match="//tei:titleStmt/tei:title"/>
@@ -41,7 +47,7 @@
             <text match="tei:place" index="no">
                 <field name="name" expression="tei:placeName"/>
                 <field name="country" expression="tei:note"/>
-            </text>                        
+            </text> 
         </lucene>
         
         <range>
