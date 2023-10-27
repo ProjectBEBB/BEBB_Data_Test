@@ -15,6 +15,8 @@
                 <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
                 <field name="date-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
                 <field name="correspondent-main" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-main')"/>
+                <field name="person-mentioned" expression="./descendant::tei:rs[@type eq 'person']/@key"/>
+                <field name="place-mentioned" expression="./descendant::tei:rs[@type eq 'place']/@key"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
