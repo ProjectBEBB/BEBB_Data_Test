@@ -5,12 +5,15 @@
             <module uri="http://teipublisher.com/index" prefix="nav" at="index.xql"/>
             <text match="/tei:TEI/tei:text">
                 <ignore qname="tei:div"/>
+                <ignore qname="tei:note"/>
                 <field name="title" expression="nav:get-metadata(ancestor::tei:TEI, 'title')"/>
                 <field name="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="file" expression="util:document-name(.)"/>
                 <field name="text" expression="."/>
+                <field name="letterContent" expression="string-join(descendant::tei:div[@type = ('letter', 'attachment')]//text()[not(ancestor::tei:note[@type = ('comment', 'editorial')])], ' ')"/>
+                <field name="annotationContent" expression="string-join(descendant::tei:note[@type = ('editorial', 'comment')], ' ')"/>
                 <field name="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <field name="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
