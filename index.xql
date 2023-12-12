@@ -83,6 +83,17 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 ()
 };
 
+declare function idx:get-person-mentions($text as element()) { 
+    let $collection := collection($idx:app-root || '/data/Persons')
+    let $keys := $text/descendant::tei:rs[@type eq 'person']/@key
+    for $key in $keys
+    let $persName := $collection/id($key)//tei:persName[@type eq 'reg']
+    let $surname := $persName/tei:surname
+    return if ($surname/node()) then $surname || ', ' || string-join($surname/following-sibling::*[node()], ' ')
+            else string-join($persName/*[node()], ' ')
+    };
+
+
 declare function idx:get-genre($header as element()?) {
     for $target in $header//tei:textClass/tei:catRef[@scheme="#genre"]/@target
     let $category := id(substring($target, 2), doc($idx:app-root || "/data/taxonomy.xml"))

@@ -30,6 +30,7 @@
                 <facet dimension="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
                 <facet dimension="date-sent" expression="tokenize(nav:get-metadata(ancestor::tei:TEI, 'date-sent'), '-')" hierarchical="yes"/>
                 <facet dimension="briefwechsel" expression="nav:get-metadata(ancestor::tei:TEI, 'briefwechsel')" hierarchical="yes"/>
+                <facet dimension="person-mentioned" expression="nav:get-person-mentions(.)"/>
             </text>
             <text qname="tei:div">
                 <ignore qname="tei:div"/>
