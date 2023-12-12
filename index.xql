@@ -75,6 +75,10 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:correspContext/tei:ref/@target
             case "correspondent-key" return
                 $header//tei:correspAction//tei:persName[not(@role eq 'main')]/@key
+            case "sender" return
+                $header//tei:correspAction[@type eq 'sent']/tei:persName/@key
+            case "addressee" return
+                $header//tei:correspAction[@type eq 'received']/tei:persName/@key
             default return
                 ()
 };
