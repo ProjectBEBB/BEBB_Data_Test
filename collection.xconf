@@ -13,7 +13,7 @@
                 <field name="file" expression="util:document-name(.)"/>
                 <field name="text" expression="."/>
                 <field name="letterContent" expression="string-join(descendant::tei:div[@type = ('letter', 'attachment')]//text()[not(ancestor::tei:note[@type = ('comment', 'editorial')])], ' ')"/>
-                <field name="annotationContent" expression="string-join(descendant::tei:note[@type = ('editorial', 'comment')], ' ')"/>
+                <field name="annotationContent" expression="string-join((descendant::tei:note[@type = ('editorial', 'comment')], descendant::div[@type eq 'editorialNote']), '&#xA;')"/>
                 <field name="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <field name="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
@@ -31,6 +31,12 @@
                 <facet dimension="date-sent" expression="tokenize(nav:get-metadata(ancestor::tei:TEI, 'date-sent'), '-')" hierarchical="yes"/>
                 <facet dimension="briefwechsel" expression="nav:get-metadata(ancestor::tei:TEI, 'briefwechsel')" hierarchical="yes"/>
                 <facet dimension="person-mentioned" expression="nav:get-person-mentions(.)"/>
+                <facet dimension="place-mentioned" expression="nav:get-place-mentions(.)"/>
+                <facet dimension="letter-mentioned" expression="nav:get-letter-mentions(.)"/>
+                <facet dimension="work-mentioned" expression="nav:get-work-mentions(.)"/>
+                <facet dimension="shelfmark" expression="nav:get-metadata(ancestor::tei:TEI, 'shelfmark')"/>
+                <facet dimension="status" expression="nav:get-metadata(ancestor::tei:TEI, 'status')"/>
+                <facet dimension="systemNr" expression="nav:get-metadata(ancestor::tei:TEI, 'ID')"/>
             </text>
             <text qname="tei:div">
                 <ignore qname="tei:div"/>
