@@ -29,11 +29,12 @@
                 <facet dimension="addressee" expression="nav:get-metadata(ancestor::tei:TEI, 'addressee')"/>
                 <facet dimension="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
                 <facet dimension="date-sent" expression="tokenize(nav:get-metadata(ancestor::tei:TEI, 'date-sent'), '-')" hierarchical="yes"/>
+                <facet dimension="date-when" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
                 <facet dimension="briefwechsel" expression="nav:get-metadata(ancestor::tei:TEI, 'briefwechsel')" hierarchical="yes"/>
-                <facet dimension="person-mentioned" expression="nav:get-person-mentions(.)"/>
-                <facet dimension="place-mentioned" expression="nav:get-place-mentions(.)"/>
-                <facet dimension="letter-mentioned" expression="nav:get-letter-mentions(.)"/>
-                <facet dimension="work-mentioned" expression="nav:get-work-mentions(.)"/>
+                <facet dimension="person-mentioned" expression="tokenize(./descendant::tei:rs[@type = ('person', 'persons')]/@key, '\s+')"/>
+                <facet dimension="place-mentioned" expression="./descendant::tei:rs[@type eq 'place']/@key"/>
+                <facet dimension="letter-mentioned" expression="./descendant::tei:rs[@type eq 'letter']/@key"/>
+                <facet dimension="work-mentioned" expression="./descendant::tei:rs[@type eq 'biblio']/@key"/>
                 <facet dimension="shelfmark" expression="nav:get-metadata(ancestor::tei:TEI, 'shelfmark')"/>
                 <facet dimension="status" expression="nav:get-metadata(ancestor::tei:TEI, 'status')"/>
                 <facet dimension="systemNr" expression="nav:get-metadata(ancestor::tei:TEI, 'ID')"/>
