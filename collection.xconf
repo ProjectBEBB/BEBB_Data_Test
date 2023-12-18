@@ -66,7 +66,7 @@
                 <field name="country" expression="tei:note"/>
             </text> 
              <text match="tei:biblStruct" index="no">
-                <field name="name" expression="string-join((//tei:author/*, //tei:title[1], //tei:date[1]), ' '"/>
+                <field name="name" expression="string-join((.//tei:author/*, .//tei:title[1], .//tei:date[1]), ' ')"/>
             </text> 
         </lucene>
         
