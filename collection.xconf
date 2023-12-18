@@ -21,6 +21,7 @@
                 <field name="correspondent-main" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-main')"/>
                 <field name="person-mentioned" expression="./descendant::tei:rs[@type eq 'person']/@key"/>
                 <field name="place-mentioned" expression="./descendant::tei:rs[@type eq 'place']/@key"/>
+                <field name="work-mentioned" expression="./descendant::tei:rs[@type eq 'biblio']/@key"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
@@ -63,6 +64,9 @@
             <text match="tei:place" index="no">
                 <field name="name" expression="tei:placeName"/>
                 <field name="country" expression="tei:note"/>
+            </text> 
+             <text match="tei:biblStruct" index="no">
+                <field name="name" expression="string-join((//tei:author/*, //tei:title[1], //tei:date[1]), ' '"/>
             </text> 
         </lucene>
         
