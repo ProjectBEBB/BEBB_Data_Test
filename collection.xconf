@@ -11,6 +11,7 @@
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="date-when" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
+                <field name="document" expression="ancestor::tei:TEI"/>
                 <field name="file" expression="util:document-name(.)"/>
                 <field name="text" expression="."/>
                 <field name="letterContent" expression="string-join(descendant::tei:div[@type = ('letter', 'attachment')]//text()[not(ancestor::tei:note[@type = ('comment', 'editorial')])], ' ')"/>
