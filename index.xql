@@ -55,7 +55,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:publicationStmt/tei:date
             ))
             case "date-sent" return 
-                $header//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@when
+                ($header//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@when, $header//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@notBefore)
             case "place-sent" return
                 $header//tei:correspAction[@type='sent']/tei:placeName/@key
             case "genre" return (
