@@ -13,7 +13,7 @@
                 <field name="file" expression="util:document-name(.)"/>
                 <field name="text" expression="."/>
                 <field name="letterContent" expression="string-join(descendant::tei:div[@type = ('letter', 'attachment')]//text()[not(ancestor::tei:note[@type = ('comment', 'editorial')])], ' ')"/>
-                <field name="annotationContent" expression="string-join((descendant::tei:note[@type = ('editorial', 'comment')], descendant::div[@type eq 'editorialNote']), '&#xA;')"/>
+                <field name="annotationContent" expression="string-join((descendant::tei:note[@type = ('editorial', 'comment')], descendant::div[@type eq 'editorialNote'], ancestor::tei:TEI/tei:teiHeader/descendant::tei:abstract/tei:p), '&#xA;')"/>
                 <field name="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <field name="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
