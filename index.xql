@@ -85,9 +85,45 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:revisionDesc/@status
             case "ID" return
                 $header//tei:idno[@type eq 'ALMA_NZ']
+             case "korrespondenz" return
+                $header//tei:ptr[@type eq 'Korrespondenz']/@target
             default return
                 ()
 };
+
+
+
+declare function idx:get-correspondent($header as element()) {
+    let $collection := collection($idx:app-root || '/data/Briefwechsel')
+    let $bernoullis := $collection//tei:persName/@key
+    return
+    $header//tei:correspDesc//tei:persName[not(@key = $bernoullis)]/@key 
+    };
+    
+declare function idx:get-normalizedText($text as element()) {
+    let $contents := $text/descendant::tei:div[@type = ('letter', 'attachment')]
+    let $textNodes := $contents//text()[not(ancestor::tei:orig)][not(ancestor::tei:pc[@type eq 'hyphenization'])][not(ancestor::tei:abbr)][not(ancestor::tei:note[@type = ('comment', 'editorial')])]
+    return
+        string-join($textNodes, '')
+    };
+    
+declare function idx:get-diplomaticText($text as element()) {
+    let $contents := $text/descendant::tei:div[@type = ('letter', 'attachment')]
+    let $textNodes := $contents//text()[not(ancestor::tei:reg)][not(ancestor::tei:expan)][not(ancestor::tei:note[@type = ('comment', 'editorial')])]
+    return
+        string-join($textNodes, '')
+    };
+    
+declare function idx:get-commentary($text as element(), $context as xs:string) {
+    let $comments := ($text/descendant::tei:note[@type = ('editorial', 'comment')], $text/descendant::div[@type eq 'editorialNote'])
+    return 
+        switch ($context)
+            case 'document' return string-join($comments, '&#xA;')
+            default return string-join(($comments, $text/ancestor::tei:TEI/tei:teiHeader/descendant::tei:abstract/tei:p), '&#xA;')
+        
+    };
+
+
 
 
 declare function idx:get-genre($header as element()?) {
