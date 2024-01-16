@@ -94,8 +94,10 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
 
 
 declare function idx:get-correspondent($header as element()) {
-    let $collection := collection($idx:app-root || '/data/Briefwechsel')
-    let $bernoullis := $collection//tei:persName/@key
+    (:  :let $collection := collection($idx:app-root || '/data/Briefwechsel')
+    let $bernoullis := $collection//tei:persName/@key:)
+    let $bernoullis := ('pers_DE-588-117589144', 'pers_DE-588-119166895', 'pers_DE-588-117589136', 'pers_DE-588-118509969', 
+    'pers_DE-588-120475030', 'pers_DE-588-118509950', 'pers_DE-588-119112450', 'pers_DE-588-135542146', 'pers_DE-588-118656503')
     return
     $header//tei:correspDesc//tei:persName[not(@key = $bernoullis)]/@key 
     };
