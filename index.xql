@@ -20,7 +20,7 @@ declare variable $idx:app-root :=
 (:  :declare variable $idx:bernoullis := ('pers_DE-588-117589144', 'pers_DE-588-119166895', 'pers_DE-588-117589136', 'pers_DE-588-118509969', 
     'pers_DE-588-120475030', 'pers_DE-588-118509950', 'pers_DE-588-119112450', 'pers_DE-588-135542146', 'pers_DE-588-118656503');:)
     
-    declare variable $idx:bernoullis := collection('/data/Briefwechsel');
+    declare variable $idx:bernoullis := collection('/db/apps/bebb-data/data/Briefwechsel');
 
 (:~
  : Helper function called from collection.xconf to create index fields and facets.
