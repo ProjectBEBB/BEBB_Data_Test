@@ -17,8 +17,8 @@ declare variable $idx:app-root :=
         else
             $rawPath
     ;
-(:  :declare variable $idx:bernoullis := ('pers_DE-588-117589144', 'pers_DE-588-119166895', 'pers_DE-588-117589136', 'pers_DE-588-118509969', 
-    'pers_DE-588-120475030', 'pers_DE-588-118509950', 'pers_DE-588-119112450', 'pers_DE-588-135542146', 'pers_DE-588-118656503');:)
+    declare variable $idx:bernoullis-ids := ('pers_DE-588-117589144', 'pers_DE-588-119166895', 'pers_DE-588-117589136', 'pers_DE-588-118509969', 
+    'pers_DE-588-120475030', 'pers_DE-588-118509950', 'pers_DE-588-119112450', 'pers_DE-588-135542146', 'pers_DE-588-118656503');
     
     declare variable $idx:bernoullis := collection('/db/apps/bebb-data/data/Briefwechsel');
 
@@ -98,15 +98,14 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
 
 
 declare function idx:get-correspondent($header as element()) {
-    let $ids:= $idx:bernoullis//tei:persName/@key
-    return
-        $header//tei:correspDesc//tei:persName[not(@key = $ids)]/@key 
+       $header//tei:correspDesc//tei:persName[not(@key = $idx:bernoullis-ids)]/@key 
     };
     
 declare function idx:get-name-main($header as element()) {
-    let $id := $header//tei:ptr[@type eq 'Briefwechsel']/@target
+   (:  : let $id := $header//tei:ptr[@type eq 'Briefwechsel']/@target
     let $main := $idx:bernoullis/id($id)//tei:persName
-    return $main/text()
+    return $main/text():)
+    $header//tei:correspDesc//tei:persName[@key = $idx:bernoullis-ids]/text()
     };
     
 declare function idx:get-normalizedText($text as element()) {
