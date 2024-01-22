@@ -103,7 +103,7 @@ declare function idx:get-idnos($header as element()) {
 
 declare function idx:has-facsimile($root as element()) {
     let $facsimile := $root//tei:facsimile/tei:graphic
-    return if ($facsimile and not($facsimile/@url = 'http://fakeURL.com')) then 'yes' else 'no'
+    return if ($facsimile and not(matches($facsimile/@url, '[Ff]ake'))) then 'yes' else 'no'
     };
 
 declare function idx:get-correspondent($header as element()) {
