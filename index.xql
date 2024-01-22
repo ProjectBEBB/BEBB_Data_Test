@@ -87,15 +87,24 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                 $header//tei:idno[@type eq 'callNumber']
             case "status" return
                 $header//tei:revisionDesc/@status
-            case "ID" return
-                $header//tei:idno[@type eq 'ALMA_NZ']
-             case "korrespondenz" return
+            case "korrespondenz" return
                 $header//tei:ptr[@type eq 'Korrespondenz']/@target
             default return
                 ()
 };
 
+declare function idx:get-idnos($header as element()) {
+    let $idnos := $header//tei:altIdentifier/tei:idno
+    let $formatted := for $idno in $idnos return replace($idno/@type, '_', ' ') || ' ' || $idno/string()
+    return 
+        $formatted
+    };
 
+
+declare function idx:has-facsimile($root as element()) {
+    let $facsimile := $root//tei:facsimile/tei:graphic
+    return if ($facsimile and not($facsimile/@url = 'http://fakeURL.com')) then 'yes' else 'no'
+    };
 
 declare function idx:get-correspondent($header as element()) {
        $header//tei:correspDesc//tei:persName[not(@key = $idx:bernoullis-ids)]/@key 
