@@ -119,7 +119,7 @@ declare function idx:get-name-main($header as element()) {
     
 declare function idx:get-normalizedText($text as element()) {
     let $contents := $text/descendant::tei:div[@type = ('letter', 'attachment')]
-    let $textNodes := $contents//text()[not(ancestor::tei:orig)][not(ancestor::tei:pc[@type eq 'hyphenization'])][not(ancestor::tei:abbr)][not(ancestor::tei:note[@type = ('comment', 'editorial')])]
+    let $textNodes := $contents//text()[not(ancestor::tei:orig)][not(ancestor::tei:pc[@type eq 'hyphenation'])][not(ancestor::tei:abbr)][not(ancestor::tei:note[@type = ('comment', 'editorial')])]
     return
         string-join($textNodes, '')
     };
