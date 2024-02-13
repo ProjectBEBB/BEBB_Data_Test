@@ -1,0 +1,2534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../../entities.txt"> %entities; ]>
+<TEI xml:id="BEBB_Richtlinien_Dokumentation_2023" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Richtlinien der BEBB und deren Dokumentation</title>
+                <author>Sulamith Gehr, Fritz Nagel, David Mache, Margareth Warburton, Matthias
+                    Stettler, Simon Waldner, Martin Kurz</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Editorische Praktiken zu Transkription, Textkonstitution und Kommentierung der
+                    Bernoulli-Briefwechsel in TEI XML</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Die folgende Dokumentation basiert auf den Richtlinien der BEBB, die im Hinblick
+                    auf den Umstieg auf TEI XML 2020 überarbeitet wurden. Sie zeigt die Verwendung
+                    von Markup an konkreten Beispielen auf.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+        <front/>
+        <body>
+            <div1>
+                <head>Einführung</head>
+                <p>Disclaimer: In den Beispielen ist die Kodierung zugzunsten der Übersichtlichkeit
+                    teilweise vereinfacht, d.h. nicht alle Textphänomene sind ausgezeichnet. Es kann
+                    auch vorkommen, dass in den Beispielen veraltete Kodierung stehen geblieben
+                    ist.</p>
+
+            </div1>
+
+            <div1>
+                <head><![CDATA[<TEI>]]></head>
+                <p>Das Rootelement <![CDATA[<TEI>]]> umfasst das Dokument als Ganzes, es ist obligatorisch, da es den TEI namespace (<![CDATA[xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"]]>) enthält.</p>
+                <p>Das Attribut @xml:id enthält zudem die Projektinterne ID des Briefes, bestehend aus dem Präfix "B", Datum und Systemnummer des Briefes im Katalog der UB Basel, Beispiel: B_1714-05-15_991170515020505501).</p>
+            </div1>
+            <div1>
+                <head>Text</head>
+                <div2>
+                    <head>Allgemeine XML-Codes</head>
+                    <!--  <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1038292/manifest"/></facsimile><text><body><div type="letter"> -->
+                    <!-- <change when="2021-12-01" who="SG" who="EK">Kollationiert</change>-->
+                    <div3>
+                        <head>Verlinkungen</head>
+                        <p>Verweise auf die Index-Dateien erfolgen mittels <![CDATA[<rs>]]> und @key (Wert=xml:id).</p>
+                        <p><![CDATA[<ptr>]]></p>
+                        
+                    </div3>
+                </div2>
+                
+                <div2>
+                    <head>Textstrukturen</head>
+
+                    <div3>
+                        <head>Zeilenumbruch</head>
+
+
+                        <!-- SG: Wie ist bei einem Zeilenumbruch mit Worttrennung in einem vom Autor gelöschten Wort vorzugehen?
+                        1. <subst><del>dila<pc type="hyphenation">-</pc>
+            <lb break="no"/>tio</del><add><lb/></add></subst> (aktuell)
+            
+            2. <del>dila-</del><lb/><del>tio </del>   -->
+
+                        <p>Kodierung: <![CDATA[<lb/>]]>.</p>
+
+                        <p>
+                            <list>
+                            <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <![CDATA[<lb/>]]>.</item>
+                            
+                            
+                        <item>Zeilenumbruch mit Worttrennung (egal ob mit oder ohne Trennstrich am Zeilenende und unabhängig von der Form des Trennstrichs - einfach oder doppelt): Die Zeile endet mit <![CDATA[<pc type="hyphenation">-</pc>]]> und die neue Zeile beginnt mit <![CDATA[<lb break="no"/>]]></item>
+                            <item>Zeilenumbruch bei Seitenwechsel: Die Zeile endet mit <![CDATA[<pc type="hyphenation">-</pc>]]> gefolgt vom Seitenumbruch, die neue Zeile auf der neuen Seite beginnt  mit <![CDATA[<lb break="no"/>]]>.</item>
+                            <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem Bindestrich, die neue Zeile beginnt mit <![CDATA[<lb break="no"/>]]>.</item>
+                            <item>
+                                Zeilenumbruch und Worttrennung in einer Adresse (AddrLine usw.): Verweis auf Adresse (toDo)
+                            </item>
+                            <item>
+                                Zu Gedichtzeilen siehe Gedicht... (ToDo)
+                            </item>
+                        </list>
+                        </p>
+                        <p>Beispiel eines normalen Zeilenumbruchs und Zeilenumbruch mit
+                            Worttrennung: Brief <ref
+                                target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000059183"
+                                >000059183</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
+                                >e-manuscripta</ref>, Bild: <ref
+                                target="https://www.e-manuscripta.ch/bau/content/pageview/1063824"
+                                >Nr. 1063824</ref>
+                            <figure>
+                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
+                        <graphic width="50em" url="images_jpg/1063824_section_03.jpg"/>
+                     </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>
+                                <lb/>Huius autem rei demonstrationem apud nullum Hydrostaticae
+                                <lb/>Scriptorem ad invenire potui.</p>
+                            <p>
+                                <lb/>Gratum etiam mihi facies si mihi quae sequuntur pro<pc
+                                    type="hyphenation">-</pc>
+                                <lb break="no"/>blemata solveris, quorum usus maximi esse poterit
+                                momenti <lb/>in doctrina de sanguinis missione, quam Deo dante,
+                                teque hu<pc type="hyphenation">-</pc>
+                                <lb break="no"/>maniter favente augere conabor.</p>
+                        </egXML>
+
+                        <p>Beispiel eines Zeilenumbruchs am Seitenende: Brief <ref
+                                target="https://swisscollections.ch/Record/991170517039305501"
+                                >000059215</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
+                                >e-manuscripta</ref>, Bild: <ref
+                                target="https://www.e-manuscripta.ch/bau/content/pageview/1038363"
+                                >Nr. 1038363</ref>
+                            <figure>
+                        <figDesc>Ausschnitt Bild Nr. 1038363</figDesc>
+                        <graphic width="50em" url="images_jpg/1038363_section_01.jpg"/>
+                            <graphic width="50em" url="images_jpg/1038363_section_02.jpg"/>
+                     </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <lb/>cum vix ante festum Divi Antonii hinc profe<pc type="hyphenation"
+                                >-</pc>
+                            <pb facs="1038364"/>
+                            <lb break="no"/>cturus sim, poteris interim, si Tibi lubeat, quae veles
+                            a me exequenda, </egXML>
+
+
+
+
+
+
+
+                        <p>Beispiel eines Zeilenumbruchs mit Bindestrich am Zeilenende<!-- ToDo: Ein besseres Beispiel suchen -->: Brief <ref
+                                target="https://swisscollections.ch/Record/991170430085505501"
+                                >000054816</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
+                                >e-manuscripta</ref>, Bild: <ref
+                                target="https://www.e-manuscripta.ch/bau/content/pageview/1063824"
+                                >Nr. 07</ref>
+                            <figure>
+                        <figDesc>Ausschnitt Bild Nr. 07</figDesc>
+                        <graphic width="50em" url="images_jpg/07_section_01.jpg"/>
+                     </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <lb/>Fahrenheyd. Si la hauteur moyenne du barometre à Neuf-
+                            <lb break="no"/>Chatel est supposée de 26 pouces; les
+                                <formula>\frac{153}{10000}</formula> de 26 pouces font </egXML>
+
+                    </div3>
+                    <div3>
+                        <head>Absatz</head>
+                        <p> Kodierung: <![CDATA[<p>]]> (paragraph). ToDo: Auszeichnung eines
+                            Paragraphen, der im Original nur durch Leerschlag/Lücke angezeigt wird:
+                            Reicht dafür <![CDATA[<p>]]> ohne die Angabe von <![CDATA[<lb/>]]> oder
+                            soll die grössere Lücke speziell als <![CDATA[<space>]]> (steht für
+                            semantisch bedeutsamer Leerraum) ausgezeichnet werden? </p><!-- Lösungsvorschlag: <p type="space"></p> -->
+                    </div3>
+                    <div3>
+                        <head>Textumstellung</head>
+
+                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung wird nicht speziell ausgezeichnet. Der Text wird stillschweigend in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben.</p>
+                    </div3>
+                    <div3>
+                        <head>Seitenbeginn</head>
+
+                        <p>Der Seitenbeginn wird mit <ref
+                                target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html"
+                                ><![CDATA[<pb facs="Bildnummer"/>]]></ref> ausgezeichnet. Bei der Bildnummer in <ref
+                                target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.facs.html"
+                                    ><hi rend="italic">facs</hi></ref> handelt es sich um den Identifier der einzelnen
+                            Faksimile-Bilder auf <ref target="https://www.e-manuscripta.ch"
+                                >e-manuscripta</ref>.</p>
+                        <p>
+                            Bei Bildern, die nicht auf e-manuscripta verfügbar sind, wird die interne, auf dem BEBB-iiif-Server vergebene Bildnummer verwendet. <!-- (ToDo: hier ist noch zu klären, wie sich diese Nummer von der e-manuscripta-Nummer bzw. von allfälligen weiteren Bildnummern von externen Anbietern unterscheidet, sobald die ersten iiif-Manifeste generiert wurden.) -->
+                        </p>
+                        <p>
+                            Die Erfassung  der Foliierung / Paginierung erfolgt im Attribut
+                                <![CDATA[n=""]]>. Hier steht die Seitenzahl gemäss Paginierung bzw. Foliierung auf dem Manuskript. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ... 
+                        </p>
+                        <p>
+                            Leere Seiten werden <![CDATA[<pb>]]> im Brieftext erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
+                        </p>
+                        <p>Beispiel: 
+                            <figure>
+                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
+                        <graphic width="50em" url="images_jpg/1063823_section_02.jpg"/>
+                     </figure>
+                        </p>
+                        <p>
+                            <figure facs="1063824">
+                        <figDesc>Ausschnitt Bild Nr. 1063824</figDesc>
+                        <graphic width="50em" url="images_jpg/1063824_section_01.jpg"/>
+                     </figure>
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <lb/>manuscriptam transmittes, eam nomine tuo typis illico committam<pb
+                                facs="1063824" n="2"/>
+                            <lb/>Nobiliss.rum Moderatorum nominibus inscribam, iisdemque reddam
+                            <lb/>publici iuris factam. </egXML>
+                    </div3>
+
+                    <div3>
+                        <head>Gedicht</head>
+
+                        <p> Kodierung: <![CDATA[
+                        <lg>
+                        <l>[Vers 1]</l>
+                        <l>[Vers 2]</l>
+                        <l>[Vers 3]</l>
+                        </lg>
+                        ]]>
+                            <!-- https://www.deutschestextarchiv.de/doku/basisformat/geProsa.html -->
+                        </p>
+
+                        <p>Ein Gedicht, dessen Zeilen im Briefmanuskript visuell durch grössere
+                            Seitenränder (Margin) abgesetzt sind, wird als line group <ref
+                                target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html"
+                                ><![CDATA[<lg/>]]></ref>, die sich aus einzelnen lines <ref
+                                target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html"
+                                ><![CDATA[<l/>]]></ref> zusammensetzt, ausgezeichnet.</p>
+                        <p>Bsp.: Brief Nr. <ref
+                                target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056976"
+                                >000056976</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/999897"
+                            />e-manuscripta, Bild: <ref
+                                target="https://www.e-manuscripta.ch/download/webcache/2000/999898"
+                                >Nr. 999898</ref>
+                            <figure facs="999898">
+                            <figDesc>Ausschnitt Bild Nr. 999898</figDesc>
+                            <graphic width="50em" url="images_jpg/999898_section_01.jpg"/>
+                        </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>
+                                <lb/>Occasione auspicati ante tres dies Anni <lb/>novi ad Nestoreos
+                                usque Annos fausta tibi <lb/>grataque opto ac foveo animitus omnia
+                                imo </p>
+                            <lg>
+                                <l>Θεὸς εὔφρων εἴη</l>
+                                <l>λοιπαῖς εὐχαῖς</l>
+                            </lg>
+                            <lg>
+                                <l>propitius sit Deus</l>
+                                <l>reliquis votis</l>
+                            </lg>
+                            <p><lb/>quae vel alij fundunt, vel ipse tibi, vel quae no<pc
+                                    type="hyphenation">-</pc>
+                                <lb break="no"/>tissima Tua per orbem postulant merita.</p>
+                        </egXML>
+
+                    </div3>
+
+                    <div3>
+                        <head>Anmerkung im Manuskript</head>
+                        
+                        <p> Kodierung: <![CDATA[<note></note>]]>. Zur besseren Unterscheidung von
+                            anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird
+                            das Attribut @hand verwendet mit
+                            Angabe der xml:id aus dem Personenregister, beispielsweise
+                            <![CDATA[<note hand="pers_DE-588-118509969"></note>]]>.</p>
+                        <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem
+                            einheitlichen Tag <![CDATA[<metamark/>]]> wiedergegeben.</p>
+                        <p>Beispiel:</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <note hand="pers_DE-588-117589136">à M. le C.te de Tressan</note>
+                        </egXML>
+                        
+                        <p>Bsp.: Brief Nr. <ref
+                            target="https://swisscollections.ch/Record/9972433539305504"
+                            >000056976</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/zoom/2443194"
+                            />e-manuscripta, Bild: <ref
+                                target="https://www.e-manuscripta.ch/download/webcache/2000/2443194"
+                                >Nr. 2443194</ref>
+                            <figure facs="2443194">
+                            <figDesc>Ausschnitt Bild Nr. 2443194</figDesc>
+                            <graphic width="50em" url="images_jpg/2443194_section_01.jpg"/>
+                        </figure></p>
+                    </div3>
+                    <div3>
+                        <head>Figuren und Abbildungen</head>
+                        <p>Figuren im Manuskript werden mit dem Element <![CDATA[<figure>]]> ausgezeichnet. Über das Attribut facs, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat verwiesen. Das Attribut hand enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figut im <![CDATA[<note>]]>-Kindelement festgehalten werden.</p>
+                        <p>Das Element <![CDATA[<figure>]]> kann optional die folgenden Unterelemente enthalten:
+                            <list>
+                                <item><![CDATA[<p>]]> für eine Bildüberschrift im Original</item> 
+                                <item><![CDATA[<figDesc>]]> für eine allfällige editorische Bildbeschreibung.</item>
+                                <item><![CDATA[<note type="editorial">]]> für eine editorische Fussnote</item> 
+                            </list>
+                            </p>
+                        <p>Das Element <![CDATA[<figure>]]> wird im Text nach der Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p><!-- ToDo: Margareth und Martin fragen, ob diese Vorgehensweise korrekt ist. For allem wenn die Figuren nicht auf der selben Seite abgebildet sind, wie die Textstelle mit der Erwähnung der Figur (Beispiel Brief 1714-04-14 von Michelotti, https://www.e-manuscripta.ch/bau/content/zoom/1063869 -->
+                        <p>
+                            Das Bild wird zu diesem Zweck mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png in einem speziellen Ordner abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer Tiefstrich und Nummer (wobei die Nummerierung pro Seite stattfindet, z.B. 02, falls es sich auf der Seite um die zweite Figur handelt).
+                        </p>
+                        <p>Kodierung:
+                            
+    <![CDATA[<figure facs="abbildung" hand="xml:id">
+   <p>[Bildunterschrift im Manuskript]</p>
+   <figDesc>[Bildbeschreibung BearbeiterIn]</figDesc>
+   <note type="editorial">[Kommentar BearbeiterIn]</note>
+</figure>]]>
+                        </p>
+                        <p>
+                            Beispiel:
+                            
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                               <figure facs="1063867_01.png" hand="xml:id">
+                                   <p>Fig. IX</p>
+                                   <figDesc>Darstellung eines verzweigten Röhrensystems</figDesc>
+                                   <note type="editorial">Die Figur stammt vermutlich aus der erwähnten <hi rend="i">Exercitatio de Liquidorum Sanguinis</hi></note>
+                               </figure>
+                            </egXML>
+                        </p>
+                        
+                    </div3>
+                    <div3>
+                        <head>Listen</head>
+                        <p> Kodierung: Eine Liste wird mit <![CDATA[<list></list>]]> ausgezeichnet.
+                            Die einzelnen Listeneinträge werden mit <![CDATA[<item></item>]]>
+                            ausgezeichnet. </p>
+                        <p>Bsp.: Brief Nr. <ref>
+                                target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433096405504"<!-- SG sollten die Links nicht auf Swisscolletions leiten? -->
+                                >000056434</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/999897"
+                            />e-manuscripta, Bild: <ref
+                                target="https://www.e-manuscripta.ch/1045234">Nr. 1045234</ref>
+                            <figure facs="999898">
+                            <figDesc>Ausschnitt Bild Nr. 1045234</figDesc>
+                            <graphic width="50em" url="images_jpg/1045234_section_01.jpg"/>
+                        </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <list><item>A la Bibliotheque de l'Academie, selon la coutume 2 exemplaires.</item>
+                            <item>A <abbr>M.</abbr> l'abbé <rs type="person" key="pers_DE-588_120052539">Bignon</rs> 1</item>
+                            <item>A <abbr>M.</abbr> de <rs type="person" key="pers_DE-588_118749420">Reaumur</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_117619515">Saurin</rs> 1</item>
+                            <item>A <abbr>M.</abbr> de <rs type="person" key="pers_DE-588_100175473">Lagny</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_117541613">Maraldi</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_117648388">Cassini</rs> 1</item>
+                            <item>A <abbr>M.</abbr> le <abbr>Chev.</abbr> de <rs type="person" key="pers_DE-588_117683280">Louville</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_117584401">Nicole</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_1219917168">Chevalier</rs> 1</item>
+                            <item>A <abbr>M.</abbr> de <rs type="person" key="pers_DE-588_118639056">Fontenelle</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_1191843173">Couplet</rs> 1 </item>
+                            <item>Au <abbr>P.</abbr> <rs type="person" key="pers_DE-588_117526789">Reyneau</rs> 1</item>
+                            <item>A <abbr>M.</abbr> L'<abbr>ab.</abbr> <rs type="person" key="pers_DE-588_100625517">Terrasson</rs> 1</item>
+                            <item>A <abbr>M.</abbr> de <rs type="person" key="pers_DE-588_1089647484">Beaufort</rs> 1 </item>
+                            <item>A <abbr>M.</abbr> de <rs type="person" key="pers_DE-588_118731998">Maupertuis</rs> 1</item>
+                            <item>A <abbr>M.</abbr> l'<abbr>ab.</abbr> de <rs type="person" key="pers_DE-588_117697524">Moliere</rs> 1</item>
+                            <item>A <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588_11768967X">Pitot</rs> 1</item>
+                            <item>A <abbr>M.</abbr> le <rs type="person" key="pers_DE-588_138995125">Monnier</rs> 1</item>
+                            <item>A <abbr>M.</abbr> de <rs type="person" key="pers_DE-588_119059665">Valincourt</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_116340118">d'Argenson</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_117547786">Godin</rs> 1</item>
+                            <item>Au <abbr>P.</abbr> <rs type="person" key="pers_DE-588_1089421028">Maziere</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_128756438">Falconet</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_118703056">Freret</rs> 1</item>
+                            <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_102465738">Desplaces</rs> <abbr>Astron.</abbr> 1</item></list>
+                        </egXML>
+
+                    </div3>
+                    <div3>
+                        <head>Tabellen</head>
+                        <p>Tabellen werden mit dem Element <![CDATA[<table></table>]]> kodiert. Die
+                            erste Zeile <![CDATA[<row>]]> wird mit dem Attribut @role="label"
+                            versehen. Zellen werden mit dem Element <![CDATA[<cell></cell>]]>
+                            ausgezeichnet.</p>
+                        <p>Tabellen werden mit <ref
+                                target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-table.html"
+                                ><![CDATA[<table>]]></ref>erfasst.</p>
+                        
+                        <p>
+                            <table>                         
+    <row>
+        <cell>Header 1</cell>
+        <cell>Header 2</cell>
+        <cell>Header 3</cell>
+    </row>
+    <row>
+        <cell>Data 1</cell>
+        <cell>Data 2</cell>
+        <cell>Data 3</cell>
+    </row>
+</table>
+                        </p>
+                        <p>Beispiel: <figure facs="999898">
+                     <figDesc>Ausschnitt Bild Nr. 1005234</figDesc>
+                     <graphic width="50em" url="images_jpg/1000026_section_01.jpg"/>
+                  </figure>
+                            
+                        </p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <table>
+    <head>Tabula altitudinum Mercurij in Barometro.</head>
+    <row role="label">
+        <cell role="label"/>
+        <cell role="label"/>
+        <cell role="label"/>
+        <!-- Weitere Zellen in der ersten Zeile -->
+    </row>
+    <row role="data">
+        <cell role="data">die</cell>
+        <cell role="data">12</cell>
+        <cell role="data">Jan.</cell>
+        <!-- Weitere Zellen in der zweiten Zeile -->
+    </row>
+</table>
+                            
+                        </egXML>
+                    </div3>
+                    <div3>
+                        <head>ToDo: Klammerungen</head>
+                        <p>Klammerungen werden gemäss den Richtlinien des DTA umgesetzt:
+                            https://www.deutschestextarchiv.de/doku/basisformat/klammerung.html
+                            (noch zu besprechen)</p>
+                    </div3>
+                    <div3>
+                        <head>ToDo sobald es technisch möglich ist, LateX im Html darzustellen: Mathematische Formeln</head>
+                        <p>Mathematische Formeln werden mit LaTeX kodiert. Die Formel selbst wird
+                            mit dem XML-Element <![CDATA[<formula></formula>]]> ausgezeichnet.</p>
+                        <p>Erscheinen die mathematischen Formeln im Brieftext nicht im Fliesstext
+                            sondern vom restlichen Text abgesetzt, wird das Element
+                            <![CDATA[<formula></formula>]]> durch das Attribut
+                            <![CDATA[rend="display"]]> ergänzt.</p>
+                        <p>Korrekturen durch den Editor werden mittels dem Element
+                            <![CDATA[<choice/>]]> umgesetzt. Dabei wird jeweils die Formel als
+                            Ganzes in die Elemente <![CDATA[<sic/>]]> und <![CDATA[<corr/>]]>
+                            gesetzt.</p>
+                        <p>Innerhalb von mathematischen Formeln ist es wegen der LaTeX-Notation
+                            nicht möglich, weitere TEI XML Elemente zu verwenden. Deshalb ist es
+                            beispielsweise nicht möglich, Korrekturen durch den Autor in Formeln mit
+                            <![CDATA[<del/>]]>, <![CDATA[<add/>]]> und <![CDATA[<subst/>]]>
+                            auszuzeichnen. Solche Korretkuren müssen deshalb in einer editorischen
+                            Note kommentiert werden.</p>
+                        <p>Dasselbe gilt für den Zeilenumbruch in einer Formel. In diesem Fall wird
+                            die Formel in mehrere Bestandteile aufgeteilt, zwischen denen das
+                            Element <![CDATA[<lb/>]]> mit dem Attribut break="no" verwendet werden
+                            soll. Das Attribut verhindert, dass innerhalb der Formel ein Leerschlag
+                            erzeugt wird.</p>
+                        <p><list rend="bulleted">
+                        <item>Die Gestaltung von mathematischen Formeln folgt möglichst getreu der Vorlage, d.h. Formeln werden unter Beachtung der historischen Symbole und Formelschreibweise transkribiert. (Beispiele: <formula>aa</formula> statt <formula>a^2</formula>, Vinculum statt Klammern, verschiedene Multiplikationszeichen, Symbole zur Bezeichnung geometrischer Figuren, von Verhältnissen, Proportionen etc.).</item>
+                        <item><p>Buchstaben, die mathematische Grössen (Variablen oder Punkte) bezeichnen, werden als Formeltext markiert. Bezeichnungen für Operatoren (wie «q» für «quadratum», «L» für «logarithmus» oder «n» für «numerus» - die Umkehrfunktion des Logarithmus) werden innerhalb von Formeln in gerader Schrift wiedergegeben, um sie von Variablen oder Punkten zu unterscheiden. Wo der Logarithmus mit einer Minuskel bezeichnet ist, wird diese als rundes «<formula>\ell</formula>» wiedergegeben.</p></item>
+                        <item><p>Bei Brüchen stehen in der Vorlage die Zeichen + und - öfters nicht vor dem Bruchstrich, sondern auf der Höhe des Zählers. In diesem Fall werden sie nach heutigem Gebrauch vor den Bruchstrich gesetzt.</p></item>
+                        <item><p>Das Vinculum, ein über einem Term angebrachter Querstrich mit der Funktion einer Klammer, wird beibehalten; doch wird die Länge der Überstreichung, die in den handschriftlichen wie den gedruckten Quellen oft ungenau oder falsch gesetzt ist, stillschweigend präzisiert.</p></item>
+                        <item><p>Das Wurzelzeichen ohne Balken <formula>\sqrt{}</formula> wird bei Radikanden, die nur aus einer einzigen Zahl oder einer Variablen bestehen, beibehalten. Ein Vinculum über den Radikanden wird dem modernen Gebrauch entsprechend mit dem Wurzelzeichen verbunden (Beispiel <formula>\overline{x+y}~\sqrt{}~\overline{a+b}</formula> wird als <formula>\overline{x~+~y}\:\sqrt{a+b}</formula> wiedergegeben).</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <formula>\sqrt{}</formula> (Wurzelzeichen)
+                                <formula>\overline{x+y}~\sqrt{}\overline{a+b}</formula> (ursprüngliche Notation)
+                                <formula>\overline{x+y}\:\sqrt{a+b}</formula> (moderne Notation)
+                            </egXML>
+                        </item>
+                        <item><p>Bei Polynomen sind gelegentlich die Koeffizienten derselben Potenz einer Variablen in einer Spalte untereinander angeordnet. Fehlt dabei eine Potenz, so wird an deren Stelle das Zeichen * gesetzt.</p></item>
+                        <item><p>Die alte Schreibweise <formula>a~.~b~::~x~.~y</formula> für die Proportionen <formula>a~:~b~=~x~:~y</formula> wird beibehalten.</p>
+                            <p>Oft bezeichnen dabei Klammern die Gleichheit von Termen, und die vierte Proportionale wird direkt ausgerechnet. Zum Beispiel fasst die Formel <formula> a~(AB)~.~b~(BC)~::~x~(PQ)~.~y~(PR)~=~bx/a</formula> die Proportion <formula>~:~b~=~x~:~y</formula> mit den Voraussetzungen <formula>a~=~AB, b~=~BC, x~=~PQ, y~=~PR</formula> und der Folgerung <formula>y~=~bx/a</formula> zusammen.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                Alte Schreibweise <formula>a~.~b~::~x~.~y</formula> statt moderner Schreibweise <formula>a~:~b~=~x~:~y</formula>
+                            </egXML>
+                        </item>
+                        <item><p>Die Zeichen <formula>\square</formula> (Quadrat), <formula>\bigcirc</formula> (Kreis), <formula>\bigtriangleup</formula> (Dreieck), <formula>\angle</formula> (Winkel), die sowohl für geometrische Objekte wie für deren Masszahlen stehen, werden beibehalten.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                Quadrat: <formula>\square</formula>
+                                Kreis: <formula>\bigcirc</formula>
+                                Dreieck: <formula>\bigtriangleup</formula>
+                                Winkel: <formula>\angle</formula>
+                            </egXML>
+                        </item>
+                    </list>
+                        </p>
+                    </div3>
+                    <div3>
+                        <head>Zitate</head>
+                        <p> Zitate werden kodiert, wenn sie als solche erkennbar sind, sei es aufgrund einer Hervorhebung des Textes in der Handschrift sei es 
+                            aus dem Kontext. Die Kennzeichnung im Manuskript (Unterstreichung, Anführungszeichen) wird gemäss den in den Abschnitten "Hervorhebungen durch den Autor" und "Anführungszeichen" festgehaltenen Richtlinien ausgezeichnet.</p> 
+                        
+                        <p>Kodierung: Das Zitat als Ganzes (Zitierter Text als auch bibliographische Referenzen, Kommentare, Einschübe) wird mit dem Element <![CDATA[<cit>]]> umschlossen. Der zitierte Text wird innerhalb von cit mit dem Element ausgezeichnet <![CDATA[<quote>]]>. Allfällige Angaben zur zitierten Textquelle werden mit dem Element <![CDATA[<bibl></bibl>]]> ausgezeichnet, darin werden Personen, Werke, Briefe mit den Registereinträgen verlinkt. Zwischen folgenden Zitat-Typen wird unterschieden:</p>
+                        
+                        <p>Indirekte Zitate und Paraphrasen werden mittels Attribut @type=indirect und
+                            @type=paraphrase von direkten Zitaten unterschieden.</p>
+                        
+                        <p>Lange Zitate, die als solche speziell gekennzeichnet sind, werden durch das Attribut <![CDATA[<cit type="long">]]> gekennzeichnet. Die Anführungszeichen am Zeilenbeginn werden dabei mit der Entity &quote; wiedergegeben.</p>
+                        
+                        <p>Zusammenfassend kann man folgende Fälle (die auch kombinierbar sind) unterscheiden:</p>
+
+                        <list>
+                <item>Direktes Zitat: <![CDATA[<cit><quote></quote></cit>]]></item>
+                <item>Indirektes Zitat: <![CDATA[<cit><quote type="indirect"></quote></cit>]]></item>
+                <item>Zitat mit erklärender Fussnote <![CDATA[<cit><quote></quote></cit><note type="editorial"></note>]]></item>
+                <item>Zitat mit Angabe des Urhebers und/oder der Quelle (mittels dem bibl-Element, darin die bibliographischen Informationen im jeweiligen rs-Element): <![CDATA[<cit><quote></quote><bibl><rs type="person" key="gnd">[Personenname]</rs> <rs>type="biblio" key="label"></rs><rs type="letter"/></bibl></cit>]]></item>
+                <item>Zitat mit Einschüben: <![CDATA[<cit><quote></quote>[Texteinschub, z.B. "il a dit"]<quote></quote></cit>]]></item>
+                <item>Langes Zitat: <![CDATA[<cit type="long">]]></item>
+            </list>
+                       
+
+                        
+
+                        <p>Beispiel eines direkten Zitats mit Angabe der zitierten Quelle: Brief Nr. <ref
+                                target="https://swisscovery.slsp.ch/permalink/41SLSP_UBS/11jfr6m/alma9972433546105504"
+                                >000059201</ref>, <ref
+                                target="https://doi.org/10.7891/e-manuscripta-24371"/>e-manuscripta,
+                            Bild: <ref
+                                target="https://www.e-manuscripta.ch/download/webcache/2000/1063927"
+                                >Nr. 1063927</ref>
+                            <figure facs="999898">
+                            <figDesc>Ausschnitt Bild Nr. 1063927</figDesc>
+                            <graphic width="50em" url="images_jpg/1063927_section_01.jpg"/>
+                        </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <lb/>haec verba,
+                                    <cit><quote><hi rend="u">ubi notandum potentiam sustinentem in <formula>B</formula>
+                            <lb/>seu quod tantundem est vim firmitatis quae requiritur ne filum
+                            <lb/>rumpatur per <choice><abbr>propos.</abbr><expan>propositionem</expan></choice> <abbr>D.</abbr> <rs type="person" key="pers_DE-588_1089913486">Varignonii</rs> supradictam reperiri ubique
+                            <lb/>aequalem potentiae sustinenti in <formula>A</formula></hi>.</quote><note type="editorial">Dieses Zitat weicht leicht von der Originalquelle ab.</note><bibl><rs type="person" key="pers_DE-588_118509969">Joh. I B.</rs>, <rs type="biblio" key="JohIB_1694">Dissertatio de motu musculorum</rs></bibl></cit>
+                        </egXML>
+
+                        <p>
+                            <lb/>haec verba,
+                                    <cit><quote><hi rend="u">ubi notandum potentiam sustinentem in <formula>B</formula>
+         <lb/>seu quod tantundem est vim firmitatis quae requiritur ne filum
+         <lb/>rumpatur per <choice><abbr>propos.</abbr><expan>propositionem</expan></choice> <abbr>D.</abbr> <rs type="person" key="pers_DE-588_1089913486">Varignonii</rs> supradictam reperiri ubique
+         <lb/>aequalem potentiae sustinenti in <formula>A</formula></hi>.</quote><bibl><rs type="biblio" key="biblio_I2Z37CBH">Joh. I B., 1694</rs></bibl></cit>
+                        </p>
+
+                        <div4>
+                            <head>Beispiel eines langen Zitats mit Anführungszeichen am Zeilenbeginn</head>
+
+                            
+                            <p>Link zur Briefseite auf e-manuscripta: https://www.e-manuscripta.ch/zuz/content/zoom/949843. 
+                                
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples"><!-- Frage: wie geht man in diesem Fall mit Einschüben um? -->
+                                    nuperrime acceptam <cit type="long"><quote>&quote;J'attens</quote>, inquit, <quote>incessament
+                                        <lb/>&quote;le Helveticus οὐρεσιφοίτη que Vous m'annoncés: mais
+                                        <lb/>&quote;il m'est déja venu un exemplaire de Londres, et nous
+                                        <lb/>&quote;en ferons incessament mention dans nôtre journal.
+                                        <lb/>&quote;Je ne suis point surpris qu'on trouve dans cet ouvra
+                                        <lb/>&quote;ge un grand nombre d'observations tres-curieuses.
+                                        <lb/>&quote;Mr. Scheuchzer est sçavant et laborieux, et a
+                                        <lb/>&quote;toutes les qualités necessaires pour traiter solide
+                                        <lb/>&quote;ment un sujet. Mr. son Frere ne travaille pas
+                                        <lb/>&quote;moins efficacement à soutenir la gloire de leur
+                                        <lb/>&quote;nom commun. Je voudrois de tout mon coeur pouvoir
+                                        <lb/>&quote;leur rendre quelque bon office au sujet des deux chaires
+                                        <lb/>&quote;Botaniques qui sont vacantes l'une à Leyde, et
+                                        <lb/>&quote;l'autre à Padoue. Dans ce dessein j'ay fortement
+                                        <lb/>&quote;ecrit en Hollande: mais je ne connois personne à
+                                        <lb/>&quote;Venise qui puisse nous étre de quelque secours
+                                        <lb/>&quote;en cela; et n'ay icy aucune Relation avec l'Ambas
+                                        <lb/>&quote;sadeur de cette Republique. Si je puis decouvrir
+                                        <lb/>&quote;quelque voye, Mr. Scheuchzer le cadet peut conter
+                                        <lb/>&quote;sur tout ce qui dependra de moy etc.</quote></cit> Nesciebat haud
+                                        <lb/>dubie Stationem Lugdunensem jam esse datam Bourha
+                                </egXML>
+                                
+                                Kurze Zitate werden im Original meistens durch Unterstreichung (auch doppelte Unterstreichung) hervorgehoben. Beispiel eines kurzen Zitats: https://www.e-manuscripta.ch/zuz/content/zoom/949819) 
+                            </p>
+                            <p>ToDo: Anhand von Textbeispielen sollen weitere Formen von Anführungs- und Schlusszeichen dokumentiert werden</p>
+                            <p>Eine Kodierungsliste der im deutschen Raum gebräuchlichen Anführungszeichen findet sich bei DTA (https://www.deutschestextarchiv.de/doku/basisformat/trAnfZeichen.html)</p>
+                        </div4>
+                    </div3>
+                </div2>
+                <div2>
+
+                    <div3>
+                        <head>Ergänzungen durch den Autor</head>
+                        <p>Die Ergänzungen, die der Autor selbst im Manuskript vorgenommen hat,
+                            werden mit dem Element <![CDATA[<add>]]> ausgezeichnet.</p>
+                    </div3>
+                    <div3>
+                        <head>Streichungen durch den Autor</head>
+                        <p>Streichungen durch den Autor werden mit dem Element
+                            <![CDATA[<del></del>]]> ausgezeichnet. Zu beachten ist dabei die
+                            Streichung des Leerschlags (damit in der Lesefassung kein doppelter
+                            Leerschlag stehen bleibt).</p>
+                        <p>Falls der gestrichene Text unleserlich ist, wird er durch das Element
+                            <![CDATA[<gap/>]]> ersetzt.</p>
+
+                    </div3>
+                    <div3>
+                        <head>Korrekturen durch den Autor</head>
+                        <p>Kodierung: <![CDATA[<subst><del></del><add></add></subst>]]>
+                        </p>
+                        <p> Korrekturen sind Streichungen mit gleichzeitigen Hinzufügungen, wobei
+                            der gestrichene Text durch einen neuen Text ersetzt wird. Diese
+                            Ersetzung wird mit dem Element <![CDATA[<subst>]]> ausgezeichnet, das
+                            die Elemente <![CDATA[<del>]]> und <![CDATA[<add>]]> umschliesst.</p>
+
+                        <p>Beispiel einer Korrektur mit unleserlichem gestrichenem Text: Brief Nr.
+                                <ref
+                                target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433549305504"
+                                >000059191</ref>, <ref
+                                target="https://doi.org/10.7891/e-manuscripta-23386"/>e-manuscripta,
+                            Bild: <ref
+                                target="https://www.e-manuscripta.ch/bau/content/pageview/1038294"
+                                >Nr. 1038294</ref>
+                            <figure facs="1038294">
+                            <figDesc>Ausschnitt Bild Nr. 1038294</figDesc>
+                            <graphic width="50em" url="images_jpg/1038294_section_01.jpg"/>
+                        </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <lb/>cum diserte scripserit se nisi cum insolita fortunae suae
+                            m<subst><del><gap/></del><add>eliora</add></subst>tione quam </egXML>
+
+                        <list><head>Einige weitere Beispiele zum Umgang mit Spatien (aus demselben Brief)</head>
+                        <item>Streichung nach <![CDATA[<lb/>]]>:                
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <lb/><del>ad I </del>modeste
+                            </egXML>
+                        </item>
+                        
+                        <item> 
+                            Streichung nach einem Satzzeichen: 
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                cessat<supplied>.</supplied><subst><del>, q</del><add> Q</add></subst>u&ae;
+                            </egXML>
+                        </item>
+                        
+                        <item>
+                            Korrektur bei einer Worttrennung am Zeilenende:
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <lb/>docendam &agrav; <abbr>Ser.</abbr> et <abbr>Potent.</abbr> <rs type="place" key="3164603"><abbr>Republ.</abbr></rs> evocaretur, eamque rem <subst><del>dila<pc type="hyphenation">-</pc>
+                                    <lb break="no"/>tio </del><add><lb/></add></subst>causam esse cur mei promotio ad Cathedram istam Mathe<pc type="hyphenation">-</pc>
+                            </egXML>
+                        </item>
+                    </list>
+                    </div3>
+                    <div3>
+                        <head>
+                        Satzumstellungen
+                    </head>
+                        <p> Satzumstellungen (angezeigt im Original z.B. durch kleine Nummern über
+                            den Wörtern oder durch Linien) werden nicht mittels Kodierung
+                            ausgezeichnet. Der Text wird in der vom Schreiber intendierten
+                            Reihenfolge wiedergegeben. </p>
+                    </div3>
+                    <div3>
+                        <head>Hervorhebungen durch den Autor</head>
+                        <p>Die vom Autor stammenden Hervorhebungen werden mit dem Element
+                            <![CDATA[<hi></hi>]]> ausgezeichnet. Ein entsprechendes Attribut
+                            <![CDATA[@rend]]> gibt die Art der Hervorhebung an: Mögliche Werte
+                            sind dabei: </p>
+                       
+                        <list>
+                        
+                        <item>Hochstellung: <![CDATA[<hi rend="sup"></hi>]]></item>
+                        <item>Unterstreichung: <![CDATA[<hi rend="u"></hi>]]></item>
+                        <item>Doppelte Unterstreichung: <![CDATA[<hi rend="uu"></hi>]]></item>
+                        <item>Anstreichung am Rand <![CDATA[<hi rend="mMM"></hi>]]></item>                       
+                        <item>Zentrierter Text: <![CDATA[<hi rend="c"></hi>]]></item>
+                        <item>Eingerückter Text: <![CDATA[<hi rend="et"></hi>]]></item>
+                        <item>Kapitälchen: <![CDATA[<hi rend="k"></hi>]]></item>
+                        <item>Rechtsbündigkeit: <![CDATA[<hi rend="right"></hi>]]></item>
+                    </list>
+                        <p>Weitere Kodierungsanleitungen zu <![CDATA[<hi>]]> im DTA:
+                            https://www.deutschestextarchiv.de/doku/basisformat/typogrAllg.html?hl=unterstreichung</p>
+
+
+                        <p>Mit <![CDATA[<hi rend="sup"></hi>]]> auszuzeichnen ist auch die
+                            Hochstellung im Text</p>
+                        
+                        <p> Nachträgliche Anstreichungen, z.B. durch den Empfänger, werden nicht
+                            ausgezeichnet sd. kommentierend in den redaktionellen Bemerkungen zur
+                            Briefhandschrift dokumentiert. </p>
+
+                    </div3>
+                    
+
+                </div2>
+                <div2>
+                    <head>Textauszeichnung durch den Herausgeber</head>
+                    <div3>
+                        <head>Textkritische Auszeichnung</head>
+
+                        <div4>
+                            <head>Textkritische Anmerkung</head>
+                            <p>Textkritische Eingriffe werden in der Regel mittels Textauszeichnung
+                                mit XML-Code durchgeführt. Wo die unten stehenden Regeln für die
+                                Textauszeichnung nicht ausreichen, werden die Eingriffe
+                                kommentierend in der Form einer textkritischen Anmerkung
+                                (<![CDATA[<note type="editorial"></note]]>) erläutert.</p>
+
+                            <p> ToDo: besser ausformulieren: Der für die textkritische Anmerkung
+                                verantwortlichen Herausgeber könnte man evtl. so auszeichnen:
+                                <![CDATA[<desc resp="[GND des verantwortlichen Herausgebers]">Fritz Nagel</desc>]]>
+                                Der Bearbeitungszustand (vorläufige interne Notiz, ausgeführte
+                                Anmerkung, redaktionell bearbeitete Anmerkung bereit zur
+                                Publikation) wird mit dem Attribut
+                                <![CDATA[cert="low", cert="middle", cert="high"]]> angegeben. </p>
+                        </div4>
+
+                        <div4>
+                            <head>Korrekturen durch den Herausgeber</head>
+                            <p> Korrekturen werden durchgeführt, wenn im Text offensichtliche
+                                Schreibfehler, Rechenfehler vorliegen oder etwas ergänzt oder
+                                getilgt werden muss. Veraltete Schreibweisen werden nicht
+                                korrigiert. Manchmal ist es schwierig festzustellen, ob es sich um
+                                einen Schreibfehler oder um eine veraltete Schreibweise handelt,
+                                Recherchen in historischen Wörterbüchern oder mit Google-Books in
+                                zeitgenössischen Büchern geben hier meistens Aufschluss. Im
+                                Folgenden werden verschiedene Arten von Korrekturen erläutert.</p>
+                            <div5>
+                                <head>Korrekturen von Schreibfehlern</head>
+                                <p>Die Kodierung erfolgt mit den Elementen <![CDATA[<sic></sic>]]>
+                                    (das den ursprünglichen Text enthält) und
+                                    <![CDATA[<corr></corr>]]> (das den korrigierten Text enthält).
+                                    Beide Elemente sind mit dem Element <ref
+                                        target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"
+                                        ><![CDATA[<choice></choice>]]></ref> umschlossen. </p>
+                                <p> Die Korrektur fehlerhafter Satzzeichen erfolgt ebenfalls nach
+                                    diesem Schema. Überflüssige Zahlpunkte bei Kardinalzahlen und
+                                    fehlende Abkürzungspunkte werden als Normalisierung behandelt. </p>
+                                <p> Eigennamen von Personen, Institutionen, Orten oder Titeln, die
+                                    aus heutiger Sicht falsch geschrieben sind, werden nicht
+                                    korrigiert sondern durch Verlinkung (<![CDATA[<rs>]]>) dem
+                                    entsprechenden Registereintrag, in dem die heutige/korrekte
+                                    Schreibweise angegeben ist, zugeordnet. </p>
+                                <p> Beispiel (ToDo: Beispiel kontrollieren) <egXML
+                                        xmlns="http://www.tei-c.org/ns/Examples">
+                                        <ref
+                                            target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=Systemnummer"
+                                            >Systemnummer</ref>, <ref target="e-manuscripta-Link"
+                                            >e-manuscripta</ref>, Bild: <ref
+                                            target="https://www.e-manuscripta.ch/download/webcache/2000/Bildnummer"
+                                            >Nr. Bildnummer</ref>
+                                        <figure>
+                                        <figDesc>Ausschnitt Bild Nr. Bildnummer</figDesc>
+                                        <graphic width="50em" url="images_jpg/Bildnummer_section_01.jpg"/>
+                                    </figure>
+                                    </egXML>
+                                </p>
+                            </div5>
+                            <div5>
+                                <head>Korrekturen in Formeln</head>
+                                <p> Korrekturen von Fehlern in Formeln werden analog zu denen im
+                                    normalen Text durchgeführt. Dabei wird die ursprüngliche Fassung
+                                    der Formel mit <![CDATA[<sic>]]> und die korrgierte mit
+                                    <![CDATA[<corr>]]> ausgezeichnet. Die Korrektur einer Formel
+                                    wird zusätzlich in einer editorischen Anmerkung kommentiert. </p>
+                                <p>Kodierung: <![CDATA[ 
+                                <choice>
+                                <sic>Fehlerhafte Formel</sic>
+                                <corr>Korrigierte Formel</corr>
+                                </choice>]]>
+                                </p>
+
+                                <p>ToDo: Bsp. noch zu ergänzen und einzufügen.</p>
+                                <!--  <p>Bsp.: Brief <ref
+                                target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=Systemnummer"
+                                >Systemnummer</ref>, <ref target="e-manuscripta-Link">e-manuscripta</ref>,
+                                Bild: <ref target="https://www.e-manuscripta.ch/download/webcache/2000/Bildnummer"
+                                >Nr. Bildnummer</ref>
+                                <figure>
+                                <figDesc>Ausschnitt Bild Nr. Bildnummer</figDesc>
+                                <graphic width="50em" url="images_jpg/Bildnummer_section_01.jpg"/>
+                                </figure></p> -->
+                            </div5>
+                            <div5>
+                                <head>Streichung durch den Herausgeber</head>
+                                <p>Eine Korrektur durch Tilgung eines ganzen Wortes oder eines
+                                    Satzzeichens wird speziell durch das Attribut @type="deleted"
+                                    gekennzeichnet
+                                    (<![CDATA[<choice><sic></sic><corr type="deleted"/></choice>]]>).
+                                    Diese Form von Korrektur betrifft meistens
+                                    Wortverdoppelungen.</p>
+                            </div5>
+                            <div5>
+                                <head>Ergänzung eines Wortes oder Satzzeichens</head>
+                                <p> Wenn korrigierend ein ganzes Wort oder ein Satzzeichen ergänzt
+                                    wird, benutzt man das Element <![CDATA[<supplied></supplied>]]>.
+                                    <!-- Wie soll beim Supplied-Tag mit Leerschlägen umgegangen werden, das hängt von der Visualisierung im TEI Publsiher ab. Benötigt wird eine technische Lösung, bei der in der textnahen Fassung nur ein Leerschlag steht während in der Lesefassung kein Leerschlag in die Eckigen kommt. ToDo mit Margareth und Jelena besprechen. -->
+                                </p>
+                                <p> ToDo: Beispiel </p>
+                            </div5>
+
+
+                        </div4>
+                        <div4>
+                            <head>Normalisierung</head>
+                            <p> Normalisierungen unterscheiden sich von Korrekturen dadurch, dass
+                                keine Fehler behoben werden, sondern nur die Schreibweise zugunsten
+                                der Leserlichkeit heutigen Lesegewohnheiten angepasst wird.
+                                Betroffen davon sind meistens die Gross- und Kleinschreibung und die
+                                Setzung diakrtitischer Zeichen. Sobald ganze Buchstaben betroffen
+                                sind, gilt der Eingriff als Korrektur. Die Auszeichnung von
+                                Korrekturen und Normalisierungen wird unterschiedlich dargestellt,
+                                Normalisierungen sind im Lesetext weniger sichtbar. Im Regelfall
+                                wird die historische Schreibweise beibehalten, Normalisierungen
+                                werden in einigen Fällen, wo dies die Leserlichkeit verbessert, ohne
+                                dass dadurch die Eigenheiten des Textes nicht wesentlich verändert
+                                werden, durchgeführt. Im Folgenden sind die Normalisierungsregeln
+                                aufgelistet. Dabei wird zwischen Normalisierungsregeln, die
+                                allgemein gelten und solchen, die nur für bestimmte Sprachen gelten,
+                                unterschieden. </p>
+
+
+                            <p> Normalisierungen werden in der Regel mit den Elementen <ref
+                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html"
+                                    ><![CDATA[<orig></orig>]]></ref> (in dem der ursprüngliche Text
+                                steht), <ref
+                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html"
+                                    ><![CDATA[<reg></reg>]]></ref> (in dem der normalisierte Text
+                                steht), ausgezeichnet. Diese Elemente sind mit dem Element <ref
+                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"
+                                    ><![CDATA[<choice></choice>]]></ref> umschlossen. Eine
+                                Besonderheit bilden Abbreviaturzeichen und Diakritische Zeichen, die
+                                mit dem Element <![CDATA[<g></g>]]> ausgezeichnet werden (siehe dazu
+                                den entsprechenden Abschnitt weiter unten). </p>
+                            <div5>
+                                <head>Sprachunabhängige Normalisierungen</head>
+                                <div6>
+                                    <head>Gross- und Kleinschreibung</head>
+                                    <list>
+                                    <item>Bei intermediären Buchstabenformen wird die Gross- und Kleinschreibung den Schreibgewohnheiten des Verfassers oder dem modernen Gebrauch angepasst. Dies erfolgt ohne spezifische Auszeichnung.</item>
+                                    <item><p>
+                                   Eine Minuskel nach einem mit Punkt abgeschlossenen Satz wird stets zu einer Majuskel normalisiert.
+                                </p></item>
+                                    <item><p>Nach Semikolon, Doppelpunkt, Ausrufe- und Fragezeichen wird die ursprüngliche Schreibweise belassen.</p></item>
+                                    <item><p>Klein geschriebene Werktitel werden normalisiert (z. B.  ars conjectandi  wird zu
+                                     <![CDATA[<choice><orig>ars</orig><reg>Ars></reg></choice>]]> conjectandi  oder  journal des sçavants  wird zu  <![CDATA[<choice><orig>journal</orig><reg>Journal></reg></choice>]]> des sçavants). Dies gilt auch für abgekürzte Titel identifizierbarer Werke und Zeitschriften (aus "actes" für "Acta eruditorum" wird <![CDATA[<choice><orig>actes</orig><reg>Actes></reg></choice>]]>).</p></item>
+                                    <item><p>
+                                       Klein geschriebene Eigennamen (z.B. von Personen oder Orten) werden normaliserend gross geschrieben. Der Umgang mit Grossschreibung von Personennamen (z.B. bei Adelsprädikaten wie "de") wird in einer separaten Richtlinie zur biographischen Erfassung von Personen beschrieben.
+                                    </p></item>
+                                    <item><p>
+                                        Versalien und Kapitälchen werden zu Kleinbuchstaben normalisiert. Z.B. BERNOULLI wird zu <![CDATA[<choice><orig>BERNOULLI</orig><reg>Bernoulli></reg></choice>]]>. ToDo: Klären, ob es reicht, Kapitälchen so <hi rend="k">Bernoulli</hi> auszuzeichnen, oder ob zusätzlich eine Normalisierung nötig ist.
+                                    </p></item>
+                                    <item>
+                                        Binnenmajuskeln werden von Fall zu Fall behandelt. In der Regel werden sie bei Eigennamen beibehalten. Z.B. NeufChâtel oder ArchiLyceum Patavinum.
+                                    </item>
+                                    <item>
+                                        Überflüssige Zahlpunkte bei Kardinalzahlen und Formelpunkte werden normalisierend entfernt.
+                                    </item>
+                                </list>
+                                </div6>
+                                <div6>
+                                    <head>Normalisierung von Abbreviaturzeichen und Diakritische Zeichen in der lateinischen Sprache</head>
+                                    <list>                                <item>Handschriftenspezifische Sonderzeichen, die im Druck oder in der heutigen Praxis nicht mehr wiedergegeben werden, werden mit dem Element <![CDATA[<g></g>]]> umschlossen. ToDo: Die Handhabung von <![CDATA[<g>]]> wird im Folgenden erläutert:</item>
+                                <item>Fehlende i-Punkte oder j-Punkte werden stillschweigend ergänzt.</item>
+                                <item>Fehlende Apostrophe werden normalisierend ergänzt.</item></list>
+                                </div6>
+                            </div5>
+
+
+                            <div5>
+                                <head>Sprachabhängige Normalisierungen</head>
+                                <div6>
+                                    <head>Lateinische Texte</head>
+                                    <p>
+                                        <list>
+                                <item>Diakritische Zeichen werden in lateinischen Texten in der Regel mit dem Element <![CDATA[<g>]]> normalisierend entfernt.</item> 
+                                <item>Das Trema wird beibehalten, bzw. normalisierend ergänzt, falls ein Bedeutungsunterschied anzuzeigen ist. Z.B. <![CDATA[<choice><orig>aer</orig><reg>aër</reg></choice>]]>.</item>
+                            </list>
+                                    </p>
+                                </div6>
+
+                                <div6>
+                                    <head>
+                            Französische Texte
+                        </head>
+                                    <list>
+                            <item>
+                            In französischen Wörtern werden die Akzente vorlagengetreu transkribiert. Nicht eindeutig zu identifizierende Akzente werden nach heutigen Regeln gesetzt. Fehlende Akzente werden nicht ergänzt. Ausnahme: Akzente mit Unterscheidungsfunktion (auf à, là, où etc.) werden, wo nötig, normalisierend ergänzt.
+                        </item>
+                            <item>
+                                Die in der französischen Sprache übliche oe-Ligatur wird mit dem Sonderzeichen œ wiedergegeben.
+                            </item>
+                            <item>
+                                ToDo: wie mit der Cédille umgehen? Bis jetzt wurde die Schreibweise im Orginal beibehalten, auch wenn sie falsch war.
+                            </item>
+                        </list>
+                                </div6>
+                                <div6>
+                                    <head>Deutsche Texte</head>
+                                    <p>
+                                        <list>
+                                <item>In deutschen Wörtern werden diakritische Zeichen weitgehend beibehalten. Das
+Distinktionszeichen über dem u (ú) wird weggelassen.</item>
+                                <item>Ein y mit zwei Punkten wird mit dem Element <![CDATA[<g>]]> ausgezeichnet</item>
+                                <item>i/j und I/J werden in deutschen Wörtern entsprechend ihrem Lautwert normalisiert
+wiedergegeben (z.B. aus  dieienige  wird <![CDATA[<choice><orig>dieienige</orig><reg>diejenige</reg></choice>]]>).</item>
+                                <item>v/V und u/U werden entsprechend ihrem Lautwert normalisiert wiedergegeben (z.B.
+aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universität</reg></choice>]]>).</item>
+                            </list>
+                                    </p>
+                                </div6>
+                            </div5>
+                        </div4>
+
+                        <div4>
+                            <head>Nicht lesbare Zeichen</head><!-- ToDo: Frage: sollen Stellen, bei denen der Textverlust komplett ist (also nicht bloss unleserliche Stellen) speziell kodiert werden, Humboldt benutzt hier das attribut reason="lost" Siehe dazu: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/nicht_lesbar.html#topic_gfh_yfv_ty-->
+                            <p> Nicht lesbare Zeichen, deren Bedeutung nicht erschlossen werden
+                                kann, werden mit dem Element <![CDATA[<gap/>]]> ausgezeichnet.
+                                Umfang und Ursachen des Textverlusts werden nicht ausgezeichnet
+                                sondern (wo sinnvoll) kommentierend in einer Fussnote erläutert. Das
+                                Element <![CDATA[<gap/>]]> wird auch für die Auszeichnung von Text,
+                                der aus editorischen Überlegungen nicht transkribiert wird (siehe weiter unten den Abschnitt
+                                "Auslassungen" verwendet.</p>
+                        </div4>
+                        <div4>
+                            <head>Unsichere Lesarten (Konjekturen)</head>
+                            <p> Die Auszeichnug von beschädigtem, schlecht geschriebenem oder
+                                überstrichenem Text erfolgt mit dem Element <ref
+                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unclear.html"
+                                    ><![CDATA[<unclear>[Zeichen oder Zeichenkette]</unclear>]]></ref>.
+                                Mit <![CDATA[<unclear>]]> werden auch Zeichen oder Wörter
+                                ausgezeichnet, die zwar nicht mehr vorhanden sind, aber aus dem
+                                Kontext rekonstruiert werden können. Beispiel:
+                                <!-- Brief von Michelotti an Nic. I B. von 1716.06.19 (000059206): Zeile 66-67 (Ve[ne]-tiis -->
+                            </p>
+                            <p> Die Ursache für die Ursache für die Unleserlichkeit wird nicht
+                                mittels Markup angegeben sondern (wo sinnvoll) kommentierend in
+                                einer Fussnote erläutert. </p>
+                        </div4>
+                        <div4>
+                            <head>Auslassungen</head>
+
+                            <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert
+                                werden, muss dies mittels Markup kenntlich gemacht werden. Dazu wird
+                                das leere Element <![CDATA[<gap/>]]> mit dem Attribut
+                                <![CDATA[reason="editorial"]]> verwendet. Dieses Attribut dient zur
+                                Unterscheidung zwischen Auslassungen und Textverlust, die beide mit
+                                dem Element <![CDATA[<gap/>]]> ausgezeichnet werden. Zum Textverlust
+                                siehe oben den Abschnitt "Nicht lesbare Zeichen".
+                                <!--  gap Könnte zum Beispiel dafür genutzt werden, um gedruckte Beilagen, die nicht transkribiert werden sollen, zu kennzeichnen (siehe den Abschnitt "Beilagen") oder auch, um die Umschlagseiten, in die die Briefseiten teilweise eingebunden waren und die mit-digitalisiert wurden, sowie die leeren Manuskriptseiten auzszuzeichnen. --></p>
+
+                        </div4>
+
+                        <div4>
+                            <head>Abkürzungen <![CDATA[<abbr>]]></head>
+                            <p>Abkürzungen werden mit dem Element <![CDATA[<abbr>]]> ausgezeichnet.
+                                Abgekürzte Wörter, die nicht allgemein verständlich sind, werden
+                                zusätzlich mit <![CDATA[<expan></expan>]]> aufgelöst:
+                                <![CDATA[<choice><abbr></abbr><expan></expan></choice>]]>. </p>
+                            <p> Fehlende Abkürzungspunkte werden normalisierend ergänzt. <!-- Das wurde oft mittels Supplied-Tag gemacht, mit Martin besprechen, was besser ist --></p>
+                            <p> Falls anstelle des Abkürzungspunktes ein anderes Zeichen verwendet wurde
+                                (meistens ein Doppelpunkt oder ein waagrechter Strich) wird dieses
+                                Zeichen stillschweigend als einfacher Punkt wiedergegeben.</p>
+
+                            <p>Falls der Abkürzungspunkt gleichzeitig die Funktion eines Satzpunktes erfüllt, wird die Abkürzung ohne Abkürzungspunkt getaggt, z.B. <abbr>etc</abbr>. oder <choice><abbr>Vars</abbr><expan>Varsovie</expan></choice>.</p>
+                                <p>Zu beachten gibt es folgende Sonderfälle: <list>
+                            <item><!-- ToDo: Das Beispiel soll aufgrund der Besprechung im Team zur Normalisierung des Abkürzugnspunktes noch angepasst werden. -->
+                                Eine Normalisierung (bzw. Korrektur) in einer Abkürzung:
+                                <![CDATA[<choice>
+<orig><choice><abbr>ursprünglicher Text der Abkürzung</abbr><expan>aufgelöster Text</expan></choice></orig>
+<reg><choice><abbr>normalisierter Text der Akürzung</abbr><expan>aufgelöster Text</expan></choice></reg>
+</choice>
+]]>
+                          <p>Beispiel: 
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <choice>
+                            <orig>
+                            <choice>
+                                <abbr>Sig:<hi rend="sup">ri</hi></abbr>
+                                <expan>Signori</expan>
+                            </choice>
+                        </orig>
+                        <reg>
+                            <choice>
+                                <abbr>Sig.<hi rend="sup">ri</hi></abbr>
+                                <expan>Signori</expan>
+                            </choice>
+                        </reg>
+                        </choice> 
+                    </egXML></p>
+                                
+                        
+                        
+                        
+                            </item>
+                            <item>
+
+                                
+                                Abgekürzte Eigennamen werden mit dem Element <![CDATA[<abbr>]]> ausgezeichnet aber nicht aufgelöst, da die Verlinkung mit dem jeweiligen Register über den rs-Tag eine Identifikation (und damit verbunden die Auflösung des Namens) impliziert.
+                            </item>
+                            <item>
+                                Abkürzungen in Formeln werden nicht ausgezeichnet. <!-- ToDo: zu besprechen -->
+                            </item>
+                             
+                            
+                        </list>
+                            </p>
+
+
+                        </div4>
+
+                        <div4>
+                            <head>Sprachwechsel</head>
+                            <p> Die Sprache des Dokumentes wird allemein im Header festgehalten,
+                                Sprachwechsel im Brieftext wird mit dem Element
+                                <![CDATA[<foreign>]]> und dem Attribut <![CDATA[xml:lang]]>
+                                ausgezeichnet. </p>
+                            <p>Das Attribut gibt die jeweilige Sprache  an
+                                (<![CDATA[<foreign xml:lang="lat"></foreign>]]>). Die im Projekt vorkommenden Werte
+                                sind: </p>
+                            <list>
+                        
+                           <item>Griechisch: grc</item>
+                        <item>Latein: lat</item>
+                        <item>Hebräisch: heb</item>
+                        <item>Deutsch: 	deu</item>
+                        <item>Französisch: fra</item>
+                        <item>Englisch: 	eng</item>
+                        <item>Russisch: 	rus</item>
+                        <item>Italienisch: ita</item>
+                        <item>Niederländisch: nld</item>
+                        <item>NIcht zu entscheiden: und</item>
+                    </list>
+
+                            <p>Der dreibuchstabige Code entspricht der ISO 639-2 Norm (Library of Congress Standards).</p>
+
+                            <p> Zu beachten ist Folgendes:
+                                <list>
+    <item>Nicht ausgezeichnet werden Eigennamen, Fachbegriffe, Währungsbezeichnungen und Fremdwörter.</item>
+    <item> Ausgezeichnet werden hingegen Werktitel, die länger als ein Wort sind.</item> 
+    <item> Adressen werden nur ausgezeichnet, wenn sie nicht in französischer Sprache verfasst sind.</item>
+</list>
+                            </p>
+                            <p> In deutschen Texten finden sich häufig Ausdrücke aus anderen
+                                Sprachen. Hier ist es Ermessenssache, ob man einen Satzteil
+                                <![CDATA[<foreign>]]> auszeichnet oder nicht. </p>
+
+
+                            <p>Beispiel: Bild: 1063075_section_01</p>
+
+                            <p>Bsp.: Brief Nr. <ref
+                                    target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056976"
+                                    >000055564</ref>, <ref
+                                    target="https://doi.org/10.7891/e-manuscripta-24264"
+                                />e-manuscripta, Bild: <ref
+                                    target="https://www.e-manuscripta.ch/bau/content/pageview/1063075"
+                                    >Nr. 1063075</ref>
+                                <figure facs="1063075">
+                            <figDesc>Ausschnitt Bild Nr. 1063075</figDesc>
+                            <graphic width="50em" url="images_jpg/1063075_section_01.jpg"/>
+                        </figure></p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <lb/>finde, wan namlich das <formula>p</formula> nicht nur <foreign
+                                    xml:lang="lat">ex <formula>x</formula>, parametro et
+                                    constantibus</foreign>
+                                <lb/>sondern auch <foreign xml:lang="lat">ex
+                                    <formula>y</formula></foreign> componiert ist: <foreign
+                                    xml:lang="lat">Vocetur enim <formula>BD</formula>,
+                                        <formula>dY</formula>, et quod ex</foreign>
+                            </egXML>
+                            <p><lb/>finde, wan namlich das <formula>p</formula> nicht nur <foreign
+                                    xml:lang="lat">ex <formula>x</formula>, parametro et
+                                    constantibus</foreign>
+                                <lb/>sondern auch <foreign xml:lang="lat">ex
+                                    <formula>y</formula></foreign> componiert ist: <foreign
+                                    xml:lang="lat">Vocetur enim <formula>BD</formula>,
+                                        <formula>dY</formula>, et quod ex</foreign></p>
+                            <p> Anhand dieses Beispiels sieht man, dass auch ein einzelnes Wort wie
+                                "ex" ausgezeichnet werden kann, wenn es Teil eines umfassenderen
+                                Textteils ist. </p>
+                            <p>ToDo: Sprachangaben in den Metadaten behandeln.</p>
+                        </div4>
+                        <div4>
+                            <head>Transkription von Sonderzeichen</head>
+                            <p> Für Abbreviaturzeichen siehe den Abschnitt "Normalisierung von
+                                Abbreviaturzeichen und diakritischen Zeichen". </p>
+                            
+                            <div5>
+                                <head>Symbole</head>
+                                <p> Symbole für Planeten, chemische Elemente, Masseinheiten oder
+                                    Währungen werden analog zu Abkürzungen behandelt. In
+                                    <![CDATA[<abbr></abbr>]]> steht das mit dem entsprechenden
+                                    Unicode-Zeichen erfasste Sonderzeichen, in
+                                    <![CDATA[<expan></expan>]]> die Auflösung. Falls das benötigte
+                                    Sonderzeichen bei Unicode nicht verfügbar ist, kann auf MUFI
+                                    ausgewichen werden.
+                                    <!-- Problem, wenn kein entpsrechendes Unicode-Symbol existiert. Nachzeichnen und im Text einbetten? Margareth fragen, ob das technisch möglich ist.-->
+                                    Beispiel: &#x0364; Das Unicode-Zeichen soll nach dem
+                                    hexadezimalen System kodiert werden. </p>
+                            </div5>
+                            <div5>
+                                <head>Zahlen</head>
+                                <p> Arabische und römische Zahlen werden vorlagengetreu
+                                    transkribiert, d.h. römische Zahlen werden nicht in arabische
+                                    umgewandelt und der Wert wird nicht spezifisch
+                                    ausgezeichnet.<!-- ToDo: mit Martin besprechen: Bisher wurde das Zeichen ↀ (Tausend) mit M wiedergegeben. Bei MUFI gibt es dazu ein Sonderzeichen: &romnumCDlig; 2180 NumbFo ROMAN NUMERAL ONE THOUSAND C D -->
+                                </p>
+                                <p> Überflüssige Zahlpunkte werden bei Kardinalzahlen normalisierend
+                                    entfernt. Punkte bei Ordinalzahlen werden vorlagengetreu
+                                    transkribiert. </p>
+                            </div5>
+                        </div4>
+                    </div3>
+                    <div3>
+                        <head>Sachauszeichnung</head>
+                        <div4>
+                            <head>Front-Bereich <![CDATA[<front></front>]]>, <![CDATA[<div type="editorialNote"></div>]]></head>
+                            <p>Der Front-Bereich <![CDATA[<front></front>]]> kann eine Editorische Notiz <![CDATA[<div type="editorialNote"></div>]]> mit allgemeinen Vorbemerkungen zur Quelle, Provenienz oder zur editorischen Behandlung des Briefes. </p>
+                            <p>
+                                Besipiel: 
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <text>
+                                        <front>
+                                            <div type="editorialNote">
+                                                <head>Bemerkungen zur Transkription</head>
+                                                <p>
+                                                    Der folgende Text wurde nach der Fotografie von fo. 1r der Handschrift in Aristophil, Vente inaugurale, Lot 122, transkribiert.
+                                                </p>
+                                            </div>
+                                        </front>
+                                    </text>
+                                </egXML>
+                            </p>
+                        </div4>
+                        <div4>
+                            <head>Sachkommentar</head>
+                            <p>Der Sachkommentar ist eine erläuternde Fussnote, die der inhaltlichen
+                                Erschliessung dient. Sie wird folgendermassen kodiert:
+                                <![CDATA[<note type="comment">Kommentartext</note>]]>. Der
+                                Bearbeitungszustand (vorläufige interne Notiz, ausgeführte
+                                Anmerkung, redaktionell bearbeitete Anmerkung bereit zur
+                                Publikation) wird mit dem Attribut
+                                <![CDATA[cert="low", cert="middle", cert="high"]]> angegeben. Die
+                                für die Verfassung des Kommentars verantwortliche Person wird mittels Attribut @resp="Personen-Kürzel" erfasst. Die Personenkürzel sind im Personenindex aufgelöst.</p>
+
+                            <p> Sachkommentare können Folgendes umfassen:
+                                <list>
+                            <item>Kommentare zum Kontext der im Brief besprochen Inhalte.</item>
+                            <item>Nachweis von Briefen, die nicht zu den Bernoulli-Briefwechseln gehören.</item>
+                            <item>Stellenverweise von Bibelzitaten und Zitaten der antiken römischen und griechischen Literatur, die nicht eine konkrete Textausgabe referenzieren und somit nicht über die Bibliographie erschlossen werden können.</item>
+                            <item>Erläuterungen zu wenig bekannten Eigennamen (Orte, Berge, Flüsse etc.) und zu historischen Ereignissen.</item>
+                            <item>Worterklärungen (z. B. veralteter oder untergegangener Wörter), falls deren Bedeutung nicht aus dem Kontext ersichtlich ist. </item>
+                            <item/>
+                        </list>
+                            </p>
+                            <p> ToDo: Beispiel </p>
+                        </div4>
+                        <div4>
+                            <head>Personen, Briefe, Orte, Institutionen und Publikationen</head>
+                            
+
+                            <p> Kodierung:
+                                <list>
+                            
+                            <item><![CDATA[<rs type="person" key="xml:id">Verweistext Person</rs>]]></item>
+                            <item><![CDATA[<rs type="persons" key="xml:id xml:id xml:id">Verweistext Personengruppe</rs>]]> (im Plural)</item>
+                            <item><![CDATA[<rs type="letter" key="xml:id">Verweistext Brief</rs>]]></item>
+                            <item><![CDATA[<rs type="letters" key="xml:id xml:id xml:id">Verweistext Brief</rs>]]></item>
+                            <item><![CDATA[<rs type="place" key="xml:id">Verweistext Ort</rs>]]></item>
+                            <item><![CDATA[<rs type="places" key="xml:id xml:id xml:id">Verweistext Ort</rs>]]></item>
+                            <item><![CDATA[<rs type="organisation">Verseistext Institution</rs>]]> (vorerst ohne key)</item>
+                            <item><![CDATA[<rs type="biblio" key="xml:id"></rs>]]></item>
+                            <item><![CDATA[<rs type="biblios" key="xml:id xml:id xml:id"></rs>]]></item>
+                                    
+
+                        </list>
+                                Aufbau der verwendeten xml:id : 
+                                <list>
+                                    <item>Person: pers_DE-588-[GND-Nummer]</item>
+                                    <item>Person (nicht in gnd erfasst): pers_no-id_000001 (falls keine GND-Nummer verfügbar)</item>
+                                    <item>Ort: place_GEO-[Geonames-ID]</item>
+                                    <item>Ort (nicht in Geonames erfasst): place_[variables Präfix]-[6 erste Buchstaben des Namens]: Als Präfix werden hier die folgenden Abkürzungen verwendet: GEB=Gebirge, GEW=GEwässer, KON=Kontinente und Länder, STR=Strassen, VER=Verschiedene, WEI=Weitere</item>
+                                    <item>Institutionen: Werden vorläufig noch nicht mit ID angegeben.</item>
+                                    <item>Bibliographier Eintrag: biblio_[Zotero-ID der Einträge in der BEBB-Zotero-Gruppe]</item>
+                                    <item>Brief: Die ID besteht aus dem Präfix"B"_Datum_18-stellige NZ ID der UB Basel (Systemnummer in Swisscollections), z.B. B_1763-12-07_991170514768005501</item>
+                                </list>
+                                
+                            </p>
+                            <p>Die xml:id sind gleichzeitig auch Dateiname der jeweiligen Index-Datei oder der Briefdatei.</p>
+                            <p> Die Vorkommnisse werden im Brieftext durchgehend ausgezeichnet, unabhängig davon,
+                                wo sie sich befinden (Briefanfang, Brieftext und
+                                Briefschluss) In den Fussnoten werden die Vorkommnisse nur ergänzend ausgezeichnet, d.h. falls sie in der dazugehörigen Briefpassage nicht erwähnt sind. Personalpronomina oder
+                                Relativpronomina, die für Personen oder andere auszuzeichnenden
+                                Entitäten stehen, werden nicht ausgezeichnet. Beispiel:  "ille" in
+                                folgender Passage: <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...] an nihil de <rs type="person"
+                                    key="pers_DE-588_104185643">Burneto</rs> inaudiveris, forsan ille
+                                jam in Patriam [...] redux</egXML>. Innerhalb eines Publikationstitels genannte
+                                Entitäten werden nicht zusätzlich ausgezeichnet. (z.B. E. W. von
+                                Tschirnhaus, Responsio ad Observationes Dominorum Bernoulliorum ...) </p>
+                            <div5>
+                                <head>Personen</head>
+                                <p>Personen werden mit dem Tag
+                                    <![CDATA[<rs type="person" key="xml:id">Beispielperson</rs>]]>
+                                    ausgezeichnet. Dabei wird die GND-Nummer als key verwendet.</p>
+                                <p> Ein Wort oder eine Bezeichnung, die mehrere bekannte Personen
+                                    impliziert, wird mit
+                                    <![CDATA[<rs type=persons" key="xml:id xml:id xml:id"/>]]>
+                                    ausgezeichnet, wobei persons (im Plural!) steht und die IDs
+                                    nebeneinander innerhalb eines einzigen key-Tags stehen. </p>
+                                <p>ToDo: welchen key bei Personen, die über keine GND verfügen?</p>
+                            </div5>
+                            <div5>
+                                <head>Briefe</head>
+                                <p>erwähnte Briefe werden mit
+                                    <![CDATA[<rs type="letter" key="Systemnummer">Briefnennung</rs>]]>
+                                    ausgezeichnet.</p>
+                            </div5>
+                            <div5>
+                                <head>Orte</head>
+                            </div5>
+                            <div5>
+                                <head>Institutionen</head>
+                                <p>Institutionen werden vorerst nur mit dem Tag
+                                    <![CDATA[<rs type="organisation">Beispielinstitution</rs>]]>
+                                    ohne Angabe eines ref ausgezeichnet.</p>
+                            </div5>
+                            <div5>
+                                <head>Publikationen</head>
+                            </div5>
+                        </div4>
+                        <div4>
+                            <head>Datumsangaben</head>
+                            <p>Das Datum wird mit <ref
+                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html"
+                                    ><![CDATA[<date/>]]></ref> ausgezeichnet.</p>
+                            
+                        </div4>
+                        <div4>
+                            <head>Massangaben</head>
+                        </div4>
+
+                        <div4>
+                            <head>Verweise</head>
+                            <p> Noch zu klären, ob in BEBB nötig: Kodierung: <![CDATA[<anchor>]]>
+                                und <![CDATA[@xml:id]]>
+                                <!-- https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/verweise.html#topic_e1f_thv_ty__section_m2x_qfd_mkb -->
+                                <!-- https://edition-humboldt.de/richtlinien/ediarum.AVHR/siglen.html -->
+                            </p>
+                        </div4>
+                    </div3>
+                </div2>
+            </div1>
+            <div1>
+                <head>Briefstruktur</head>
+
+                <p> Briefspezifische Textstrukturen, die speziell ausgezeichnet werden, sind:
+                    Briefanfang (Brieferöffnung), Briefschluss, Postskriptum, Beilage und Adresse. </p>
+
+                <div2>
+                    <head>Briefanfang</head>
+                    <p> Code <![CDATA[]]>
+                        <![CDATA[]]>
+                    </p>
+                    <p> Der Briefanfang, der den Schreibort, das Datum und die Anrede umfassen kann,
+                        ist ein Strukturelement des Briefes und wird speziell ausgezeichnet. </p>
+                    <p>Kodierung:</p>
+                    <p>Der Briefanfang wird mit dem Element <ref
+                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-opener.html"
+                            ><![CDATA[<opener>]]></ref>, das NICHT innerhalb eines Paragraphen
+                        <![CDATA[<p>]]> steht, gekennzeichnet. Er kann fakultativ eine Anrede
+                        enthalten, die sich mit <ref
+                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-salute.html"
+                            ><![CDATA[<salute/>]]></ref> auszeichnen lässt. Ebenso kann fakultativ
+                        eine Datumszeile am Beginn des Briefes stehen, die mit <ref
+                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html"
+                            ><![CDATA[<dateline/>]]></ref> ausgezeichnet wird. Zur Auszeichnung von
+                        Ort und Datum in der Dateline siehe die entsprechenden Abschnitte
+                        (Auszeichnung von Ort, Auszeichnung von Datumsangaben). Die Textausrichtung
+                        der Datumszeile wird durch das Attribut <![CDATA[@rend]]>, in der Regel mit
+                        <![CDATA[rend="align(right)"]]> ausgezeichnet.</p>
+                    <p>Bsp.: Brief Nr. <ref
+                            target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433549605504"
+                            >9972433549605504</ref>, <ref
+                            target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
+                            >e-manuscripta</ref>, Bild: <ref
+                            target="https://www.e-manuscripta.ch/download/webcache/2000/1063823">Nr.
+                            1063823</ref>
+                        <figure facs="1063823">
+                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
+                        <graphic width="50em" url="images_jpg/1063823_section_01.jpg"/>
+                    </figure></p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <opener>
+                            <lb/>
+                            <salute>Doctiss.<sup>o</sup> Viro<rs type="person"
+                                    key="pers_DE-588_118509969"> Nicolao Bernoullio</rs> S. P. D
+                                    <lb/><rs type="person" key="pers_DE-588_102552517">Petrus Antonius
+                                    Michelotti</rs></salute>
+                        </opener>
+                    </egXML>
+                    <note>To do: Beispiel mit Ort und Datum in Opener ergänzen.</note>
+
+                </div2>
+                <div2>
+                    <head>Briefschluss</head>
+                    <p> Kodierung: <![CDATA[<closer>]]>, <![CDATA[<salute>]]>, <![CDATA[<signed>]]>,
+                        <![CDATA[<dateline>]]>
+                    </p>
+                    <p>Der Briefschluss wird mit <ref
+                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html"
+                            ><![CDATA[<closer>]]></ref> kodiert, er kann, muss aber nicht, eine
+                        Grussformel <![CDATA[<salute>]]>, Unterschrift <![CDATA[<signed>]]>,
+                        Datumsangabe <![CDATA[<dateline>]]> enthalten.</p>
+                    <p>Ort und Datum werden wie bei der Brieferöffnung beschrieben ausgezeichnet.
+                        Eine sowohl als Autograph oder in Entwürfen von anderer Hand gesetzte
+                        Unterschrift wird mit <ref
+                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-signed.html"
+                            ><![CDATA[<signed>]]></ref> ausgezeichnet, der Personenname wird dabei
+                        zusätzlich mit
+                        <![CDATA[<rs type="person" key="[GND-Nummer]">Referenztext</rs>]]>
+                        getagt.</p>
+                    <p> Oft ist am Briefende der Briefschluss nicht klar vom eigentlichen Brieftext
+                        abgegrenzt, weder inhaltlich noch optisch. Da der closer auf der
+                        Darstellungsebene einen Zeilenumbruch impliziert, kann der Tag nicht immer
+                        an der inhaltlich korrekten Stelle eingefügt werden.</p>
+                    <p>Im folgenden Beispiel beginnt die Grussformel mit "j'ay l'honeur d'estre",
+                        der closer wird trotzdem erst ab "Monsieur" gesetzt, damit der Text an
+                        dieser Stelle nicht umbricht: </p>
+                    <p>Bsp.: Brief <ref
+                            target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000058909"
+                            >000058909</ref>, <ref
+                            target="https://www.e-manuscripta.ch/bau/content/titleinfo/2401988"
+                            >e-manuscripta</ref>, Bild: <ref
+                            target="https://www.e-manuscripta.ch/download/webcache/2000/2401993">Nr.
+                            1063823</ref>
+                        <figure facs="1063823">
+                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
+                        <graphic width="50em" url="images_jpg/2401993_section_01.jpg"/>
+                    </figure>
+                    </p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <p><gap/>
+                            <lb/>avec lequel j'ay l'honeur d'estre</p>
+                        <closer>
+                            <salute>
+                                <lb/>Monsieur et cher et illustre Confrere <lb/>Votre tres humble et
+                                tres obeïssant <lb/>Serviteur</salute>
+                            <signed><rs type="person" key="pers_DE-588_100648940">Tressan</rs>
+                                L.<hi rend="sup">t</hi> g.<hi rend="sup">l</hi></signed>
+                        </closer>
+                    </egXML>
+
+                    <p>Manchmal muss ein closer eingefügt werden, obwohl sich der Briefschluss vom
+                        Layout her nicht vom restlichen Brieftext abhebt. Dies ist vor allem bei
+                        Entwürfen der Fall. Siehe das folgende Beispiel: </p>
+                    <p>Bsp.: Brief <ref
+                            target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056691"
+                            >000056691</ref>, <ref
+                            target="https://doi.org/10.7891/e-manuscripta-24967"
+                        >e-manuscripta</ref>, Bild: <ref
+                            target="https://www.e-manuscripta.ch/download/webcache/2000/1079063">Nr.
+                            1079063</ref>
+                        <figure facs="1079063">
+                        <figDesc>Ausschnitt Bild Nr. 1079063</figDesc>
+                        <graphic width="50em" url="images_jpg/1079063_section_01.jpg"/>
+                    </figure>
+                    </p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <p><gap/>
+                            <lb/>ut propediem accipias.</p>
+                        <closer>
+                            <salute>
+                                <lb/>Nunc quidem Vale Vir Clarissime et me <lb/>amare
+                                perge.</salute>
+                            <dateline>Dabam Basileae <date when="1718-11-02">II. Novemb.
+                                    MDCCXVIII</date>.</dateline>
+                        </closer>
+                    </egXML>
+                    <p>Wie man in der standardmässigen Darstellung sehen kann, entstehen dadurch in
+                        der Leseansicht Zeilenumbrüche und Einrückungen, die in diesem Fall zulässig
+                        sind:</p>
+
+                    <p><gap/>
+                        <lb/>ut propediem accipias.</p>
+                    <closer>
+                        <salute>
+                            <lb/>Nunc quidem Vale Vir Clarissime et me <lb/>amare perge.</salute>
+                        <dateline>Dabam Basileae <date when="1718-11-02">II. Novemb.
+                                MDCCXVIII</date>.</dateline>
+                    </closer>
+                </div2>
+                <div2>
+                    <head>Empfangsvermerk</head>
+                    <p> Das vom Briefempfänger direkt auf dem Brief verfasste Empfangsvermerk kann
+                        folgende Informationen enthalten: Empfangsdatum, Antwortdatum und
+                        Zusammenfassung des Antwortbriefs. </p>
+                    <p> Kodierung: <![CDATA[<note hand="#addressee"></note>]]>
+                    </p>
+                    <p/>
+                    <p> Beispiel </p>
+                    <p>Bsp.: Brief <ref
+                            target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972432842205504"
+                            >9972432842205504</ref>, <ref
+                            target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063064"
+                            >e-manuscripta</ref>, Bild: <ref
+                            target="https://www.e-manuscripta.ch/download/webcache/2000/1063065">Nr.
+                            1063065</ref>
+                        <figure facs="1063065">
+                            <figDesc>Ausschnitt Bild Nr. 1063065</figDesc>
+                            <graphic width="50em" url="images_jpg/1063065_section_01.jpg"/>
+                        </figure></p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <note hand="#addressee">Empf. den 20<hi rend="sup">ten</hi></note>
+                    </egXML>
+                </div2>
+                <div2>
+                    <head>Postskriptum</head>
+                    <p> Kodierung: <![CDATA[
+                     <postscript>
+                     <p>[Text des Postscriptums]</p>
+                     </postscript>
+                    ]]>
+                        <!-- https://www.deutschestextarchiv.de/doku/basisformat/brPostscriptum.html -->
+                    </p>
+                </div2>
+                <div2>
+                    <head>Beilage</head>
+                    <p>Beilagen werden im BIBB im Feld 300|e, (siehe Header-Element <![CDATA[<accMat>]]>) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im Feld 500 hingewiesen (siehe Header-Element <![CDATA[<note type="generalRemark">]]>) </p>
+                    <p>
+                        Eine Beilage, die mit dem Brief ediert wird, ist im Element <![CDATA[<back>]]> als <![CDATA[<div type="attachment">]]> ausgezeichnet. Dieses div umfasst eine editorische Notiz mit Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) usw., die in einem <![CDATA[<div type="editorialNote">]]> steht. Der eigentliche Beilagentext steht hingegen in einem <![CDATA[<div type="attachment_text">]]>.
+                    </p>
+                    <p>Beispiel eines Konstrukts mit zwei angehängten Beilagen:
+                        
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <back>
+                                <div type="attachment">
+                                    <div type="editorialNote">Remark about the first attachment </div>
+                                    <div type="attachment_text">
+                                        <head>Censura Epistolae Dedicatoriae</head>
+                                        <p>Videant.
+                                            
+                                            Antistes Nüscheler. Glaubt, der Hr. Bischoff würde sich von Reformatis mit wenigeren caressen vergnügen.
+                                            
+                                            Hr. verwalter Hoffmeister. Ich wil hoffen, der Hr. Author habe in seiner Dedication mit diesen worten Aram tuam omni splendore fulgentem, dem Baal die Knie nit biegen wollen.
+                                            
+                                            […]
+                                        </p>
+                                    </div>
+                                </div>
+                                    <div type="attachment">
+                                        <div type="editorialNote"> Remark about a second attachment (if there is one).</div>
+                                        <div type="attachment_text">Content of the second attachment </div>
+                                    </div>
+                            </back> 
+                        </egXML>
+                    </p>
+                    
+                    <p> Gedruckte Beilagen, die in der Regel nicht transkribiert werden, sowie Beilagen, die aus anderen Gründen nicht transkribiert werden sollen, werden folgendermassen kodiert: <![CDATA[
+                        <div>
+                        <gap reason="editorial"></gap>
+                        </div>
+                    ]]>
+                    </p>
+
+                    <list>
+                        <item>
+                            <p>Gedruckte Beilagen, die mit dem jeweiligen Brief überliefert sind, werden nicht transkribiert, sondern als Bild-Digitalisat eingebunden und mit dem Element <![CDATA[<gap reason="editorial"></gap>]]> kodiert. Das Attribut reason="editorial" (for features omitted from transcription due to editorial policy,  https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gap.html). In einer editorischen Notiz (div type="editorial_remark") werden Informationen über Autorschaft usw. angegeben.</p>
+                            <p></p>
+                            <p><ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1725-10-16_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob">Beispiel</ref>, <ref target="https://www.e-manuscripta.ch/zuz/content/pageview/919594">Digitalisat e-manuscripta</ref></p>
+                        </item>
+                        <item><p>Gedruckte Beilagen, die nicht mit den jeweiligen Brief überliefert sind, werden, wenn sie identifizierbar sind, in einer Fussnote referenziert und mit bibliothekarischen oder archivalischen Informationen ausgewiesen. Zur Auszeichnung der in den Briefen genannten, diskutierten oder angeführten Texte, siehe Kap. 2.15.3 Werke im Editionskonzept <!-- Link einfügen --> resp. Kap. 1.16.3 Bibliographische Angaben <!-- Link einfügen --></p>
+                            <p><ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1724-09-19_Scheuchzer_Johann_Jakob-Bernoulli_Johann_I">Beispiel</ref></p>
+                        </item>
+                        <item><p>Handschriftliche, gemeinsam mit dem Brieftext überlieferte Beilagen, die auch unter demselben eindeutigen Identifikator laufen, werden nach Möglichkeit ebenso ediert, aber vom Brieftext, der mit <![CDATA[<div type="letter"></div>]]> ausgezeichnet wird, durch die Auszeichnung mit <![CDATA[<div type="attachment"></div>]]> abgetrennt.</p>
+                            <p><ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1720-12-08_Scheuchzer_Johann_Jakob-Bernoulli_Johann_I">Beispiel</ref>, <ref target="https://www.e-manuscripta.ch/bau/content/pageview/651048">Digitalisat e-manuscripta</ref></p>
+                        </item>
+                        <item><p>Handschriftliche Beilagen, die nicht mit dem Brief unter derselben Systemnummer überliefert und aufbewahrt werden, aber digitalsiert zugänglich und rechtlich publizierbar sind, werden entweder als separates Dokument mit dem eigenen unique identifier (UI) in TEI-XML erfasst, ediert und in der Bibliographie (Werkregister) als bibliographischer Eintrag erfasst <!-- SG: Umgang mit diesen Fällen noch nicht ganz geklärt! -->.</p>
+                            <p>https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1720-07-24_Bernoulli_Johann_I-Scheuchzer_Johannes</p>
+                        </item>
+                        <item><p>Handschhriftliche Beilagen, die nicht digitalisiert zugänglich oder aus rechtlichen Gründen nicht publizierbar sind, werden mit ihren bibliographischen Angaben auf BEOL mit einer eindeutigen BEOL-ID erfasst und werden in einer Fussnote entsprechend erfasst und ausgewiesen.</p>
+                        </item>
+                    </list>
+
+                    <p>Nicht erhaltene Beilagen werden in einer Fussnote im Brief kommentiert und
+                        mit ihrer BEOL-ID ausgezeichnet (Zur Auszeichnung vgl. Kap. 1.16.3
+                        Bibliographische Angaben in der Dokumentation.).</p>
+                    <p>Jene handschriftlichen Beilagen, die transkribiert werden, sind als Beilage
+                        mit <![CDATA[<div type="attachment"></div>]]> auszuzeichnen. Dabei werden
+                        Strukturelemente des Beilagentexts, wie z.B. Titel (<![CDATA[<header>]]>,
+                        Abschnitte <![CDATA[</p>]]> u.a. mehr, mit TEI XML-Auszeichnungen erfasst.
+                        [Beispiele folgen]</p>
+                    <p>
+                        <note>Vgl. z. B. <ref target="https://sturm-edition.de/edition/briefe.html">Sturm-Edition</ref> verwendet für edierte Beilagen <![CDATA[<div type="attachment">Beilage.</div>]]></note>
+                    </p>
+                </div2>
+                <div2>
+                    <head>Adresse</head>
+                    <p> Die Adresse wird innerhalb des <![CDATA[<opener>]]> oder <![CDATA[<closer>]]>mit dem Element <![CDATA[<address>]]> ausgezeichnet. Die einzelnen Zeilen werden mit dem Element <![CDATA[<addrLine>]]> umschlossen.
+                    </p>
+                    <p>Personen und Orte werden in der Adresse ausgezeichnet.</p>
+                    <p>Wortrennungen in einer Adresszeile werden mit Trennstrich (ohne spezielle Kodierung) umgesetzt.</p>
+                    <p>Bsp.: Brief <ref
+                            target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056717"
+                            >000056717</ref>, <ref
+                            target="https://www.e-manuscripta.ch/bau/content/titleinfo/1079290"
+                            >e-manuscripta</ref>, Bild: <ref
+                            target="https://www.e-manuscripta.ch/download/webcache/2000/1079294">Nr.
+                            1416638</ref>
+                        <figure facs="1079294">
+                        <figDesc>Ausschnitt Bild Nr. 1416638</figDesc>
+                        <graphic width="50em" url="images_jpg/1079294_section_01.jpg"/>
+                    </figure>
+                    </p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <p>
+                            <address>
+                                <addrLine>A Monsieur</addrLine>
+                                <addrLine>Monsieur <rs type="person" key="pers_DE-588_117589136">Jean
+                                        Bernoulli</rs></addrLine>
+                                <addrLine>Professeur tres celebre de Matematique</addrLine>
+                                <addrLine>à <rs type="place">Basle</rs></addrLine>
+                            </address>
+                        </p>
+                    </egXML>
+
+                </div2>
+
+            </div1>
+
+            <div1>
+                <head>Register</head>
+                <p>In der BEBB werden die folgenden Entitäten in Registern erfasst:
+                <list>
+                    <item>Personen</item>
+                    <item>Orte</item>
+                    <item>Werke</item>
+                </list>
+                    Insititutionen werden mit dem <![CDATA[<rs type="organisation">]]>-Element ausgezeichnet aber nicht in einem Register erfasst.
+                    Erwähnte Briefe werden ausgezeichnet und mittels Brief-Systemnummer mit dem BIBB verlinkt. Siglen sollen in einem weiteren Schritt erfasst werden.
+                </p>
+                <div2>
+                    <head>Personenregister</head>
+                    <p>
+                        Im Personenregister sind die Korrespondenten (Autor, Adressat) und die in den Brieftexten erwähnten Personen erfasst. 
+                    </p>
+                    <p>Kodierung: <![CDATA[<person>]]></p>
+                    <div3>
+                        <head>ID</head>
+                        <p>
+                            Die Personen sind durch die xml:id des Personenregisters identifiziert, diese besteht aus der Norm-ID der GND mit einem vorangestellten Präfix. Wo eine GND-Nummer fehlt, wird diese (falls genügend biographische Informationen vorhanden sind) neu erstellt. Falls nicht genügend Informationen vorhanden sind, wird die Person mit einer internen ID versehen.
+                            
+                        </p>
+                        <p>Kodierung der xml:id <![CDATA[<person xml:id="pers_DE-588-12209025X"></person>]]></p>
+                        <p>Kodierung der idno: <![CDATA[<idno type="gnd">(DE-588)12209025X</idno>]]></p>
+                        <p>Falls keine GND-Nummer vorhanden</p>
+                        <p>Kodierung xml:id </p>
+                        
+                    </div3>
+                    <div3>
+                        <head>Name</head>
+                        <p>Der Name wird in der Regel in der Form Nachname, Vorname erfasst</p>
+                        <p>Kodierung: 
+                            <![CDATA[
+                            <persName type="reg">
+                            <surname>Bernoulli</surname>
+                            <forename>Johann I</forename>
+                            </persName>
+                            ]]></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
+                            <persName type="reg">
+                            <surname>Bernoulli</surname>
+                            <forename>Johann I</forename>
+                        </persName></egXML>
+                        
+                        <p>Alternative Namensformen werden durch das Attribut @type="alt" gekennzeichnet. Sie werden nur ausnahmsweise erfasst, z.B. wenn ein Pseudonym vorliegt. </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <persName type="reg">
+                                <surname>Hottinger</surname>
+                                <forename>Johann Jakob</forename>
+                            </persName>
+                            <persName type="alt">
+                                <surname>Alethaeus</surname>
+                                <forename>Solomon</forename>
+                            </persName>
+                        </egXML>
+
+                        
+                        <p>Geburtsnamen oder Ehenamen (je nachdem welcher Name in der Hauptansetzung gewählt wird) von Frauen werden zusätzlich zum Attribut type="alt" durch das Attribut  subtype="birth" oder subtype="married" gekennzeichnet:
+                            <![CDATA[
+                            <persName type="alt" subtype="birth"> 
+                            oder 
+                            <persName type="alt" subtype="married">
+                            <name></name>
+                            </persName>
+                            ]]></p>
+                        <p>Beispiel: 
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
+                                <persName type="reg">
+                                <surname>Bernoulli</surname>
+                                <forename>Anna Catharina</forename>
+                            </persName>
+                                <persName type="alt" subtype="married">
+                                    <name>Dollfus</name>
+                                </persName>
+                                <persName type="alt" subtype="married">
+                                    <surname>Hammer</surname>
+                                </persName></egXML>
+                            <eg>
+                                <persName type="reg">
+                                <surname>Bernoulli</surname>
+                                <forename>Anna Catharina</forename>
+                                </persName>
+                                <persName type="alt" subtype="married">
+                                    <name>Dollfus</name>
+                                </persName>
+                                <persName type="alt" subtype="married">
+                                    <surname>Hammer</surname>
+                                </persName>
+                             </eg></p>
+                    </div3>
+                    
+                    <div3>
+                        <head>generational name component</head>
+                        <p>Das Element <![CDATA[<genName>]]> enthält Angaben zur Unterscheidung gleicher Namen aufgrund ihres Alters oder Generation (z.B. d.J, d.Ä).</p>
+                        <p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
+                                <persName type="reg">
+                                    <surname>Bernoulli</surname>
+                                    <forename>Niklaus</forename>
+                                    <genName>d.Ä.</genName>
+                                </persName></egXML> 
+                            <eg>
+                                <persName type="reg">
+                                    <surname>Bernoulli</surname>
+                                    <forename>Niklaus</forename>
+                                    <genName>d.Ä.</genName>
+                                </persName> 
+                            </eg>
+                        </p>
+                    </div3>
+                    
+                    <div3>
+                        <head>Adelsprädikate</head>
+                        <p>Bei Adelsprädikaten, die Bestandteil des Namens sind, wird nur der für die alphabetische Sortierung relevante Teil in <![CDATA[<surname>]]> gesetzt, der restliche Teil in <![CDATA[forename]]> </p>
+                        <p>
+                            Beispiel: 
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
+                                <persName type="reg">
+                                    <surname>Montmort</surname>
+                                    <forename>Pierre Rémond de</forename>
+                                </persName></egXML> 
+                        </p>
+                        <p>Adelspredikate, die nicht Bestandteil des Namens sind, werden in einem Element <![CDATA[<roleName>]]> erfasst</p>
+                        <p>
+                            Beispiel, Duc
+                        </p>
+                    </div3>
+                    <div3>
+                        <head>Lebensdaten</head>
+                        <p>
+                            Die Lebensdaten sind in den Elemente <![CDATA[<birth>]]> und <![CDATA[<death>]]> im Attribut @when erfasst. In placeName ist der Geburtort und Todesort angegeben, siehe Kodierungsbeispiel unten.
+                        </p>
+                    </div3>
+                    <div3>
+                        <head>Das Element <![CDATA[<note>]]> umfasst die biographische Notiz. Das Attribut @resp enthält Angaben zur Autorschaft der biographischen Notiz. Darin dient das Element <![CDATA[<bibl> ]]> zur Angabe der für die biographische Notiz verwendete Literatur.</head>
+                    </div3>
+                    <div3>
+                        <head>Kodierungsbeispiel</head>
+                        <p>
+                            <![CDATA[
+                            <person xml:id="pers_DE-588-116170654">
+    <idno type="gnd">pers_DE-588_ 116170654</idno>
+    <persName type="reg">
+        <surname>Bernoulli</surname>
+	<genName>III</genName>
+        <forename>Johann</forename>
+    </persName>
+    <birth when="1744">
+        <placeName>Basel</placeName>
+    </birth>
+    <death when="1807">
+        <placeName>Berlin</placeName>
+    </death>
+    <note resp="XX">Schweizer Astronom und Mathematiker.</note>
+    <bibl>BEBB</bibl>
+</person>
+                            ]]>
+                        </p>
+                    </div3>
+                </div2>
+                <div2>
+                    <head>Ortsregister</head>
+                    
+                    <div3>
+                        <head></head>
+                        <p></p>
+                    </div3>
+                    
+                    <div3>
+                        <head></head>
+                        <p></p>
+                    </div3>
+                    
+                    <div3>
+                        <head></head>
+                        <p></p>
+                    </div3>
+                </div2>
+                
+
+                <div2>
+                    <head>Bibliographie</head>
+                </div2>
+                <div2>
+                    <head>Verzeichnis der erwähnten Briefe</head>
+                </div2>
+                <div2>
+                    <head>Sachregister</head>
+                    <p>Es liegt noch kein Sachregister vor, es sollen jedoch Begriffe vorläufig ausgezeichnet werden, ohne dass eine Verlinkung mit dem Register vorgenommen wird. Dazu dient der Tag <![CDATA[<rs type="keyword">]]>.</p>
+                </div2>
+                <div2>
+                    <head>Institutionenregister</head>
+                </div2>
+            </div1>
+            <div1>
+                <head>Metadaten</head>
+
+
+                <p> Die Metadaten werden im Element <![CDATA[<teiheader>]]> erfasst. <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
+                        <teiheader>
+                            <fileDesc>[Bibliographische Angaben]</fileDesc>
+                            <encodingDesc>[Editorische Richtlinien]</encodingDesc>
+                            <profileDesc>[Dokumentklassifikationen]</profileDesc>
+                        </teiheader>
+                    </egXML>
+                </p>
+                <div2>
+                    <head>Dateibeschreibung (<![CDATA[<fileDesc>]]>)</head>
+                    <p> Die Dateibeschreibung, also die vollständige bibliografische Beschreibung
+                        der der Edition zugrunde liegenden elektronischen Datei ist im Element
+                        <![CDATA[<fileDesc>]]> kodiert. </p>
+
+
+                    <div3>
+                        <head><![CDATA[<titleStmt>]]></head>
+                        
+                        <div4>
+                            <head>Titel</head>
+                            <p>Die einzelnen Titel des Briefes und der Edition sind jeweils in einem Element <![CDATA[<title>]]> mit spezifizierendem Attribut erfasst. Diese Titel werden in einem übergreifenden Element <![CDATA[<title type="full">]]> zusammengefasst.
+                                Die einzelnen Titel werden durch folgende Attribute unterschieden:
+                                <list> 
+                                <item>type="main" kennzeichnet den auf dem Briefkopf im TEI Publisher angezeigten Titel.</item>
+                                <item>Das Attribut type="alt" kennzeichnet hingegen alternative Titel, die aus früheren Datenversionen bei der Transformation übernommen wurden.</item> 
+                               <item> Das Attribut level="s" Kennzeichnet hingegen den übergeordneten Titel der Edition (Basler Edition der Bernoulli-Briefwechsel).</item>
+                                </list>
+                            <!-- ToDo MW: Aktuell wird anstelle des Attributs type="alt" das Attribut type="sub" verwendet. Das sollte bei der Bespielung der Header zu type="alt" geändert werden -->
+                        </p>
+                            <p>
+                                Beipsiel: 
+                                
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <titleStmt>
+                                        <title type="full">
+                                            <title type="main">Pietro Antonio Michelotti an Nicolaus I Bernoulli. Venedig, 14. April 1714</title>
+                                            <title type="alt">1714.04.14: Michelotti, Pietro Antonio (1663-1740) an Bernoulli, Nicolaus (1687-1759)</title>
+                                            <title type="alt">000059189</title>
+                                            <title type="alt">1714-04-14_Michelotti_Pietro_Antonio-Bernoulli_Nicolaus</title>
+                                            <title level="s">Basler Edition der Bernoulli-Briefwechsel</title><!-- ToDo MW: Dieses Feld kommt mit gleichbleibendem Inhalt neu dazu  -->
+                                        </title>
+                                    </titleStmt>
+                                </egXML>
+                            </p>
+                            
+                            <!-- Die Informationen stammen aus den folgenden BIBB-Feldern:
+                                245 	1 	0 	|a Brief an Nicolaus I Bernoulli  |c von Pietro Antonio Michelotti
+                                751 			|a Venedig  |0 pers_DE-588_4062501-1  
+                                046 			|a s  |c 1715.02.22 (hier würde man das Datum idealerweise in das Format tt. Monat jjjj umwandeln, falls das zu viel Aufwand ist, belässt man es so.) -->
+                        </div4>
+                    </div3>
+
+                    <div3>
+                        <head>Angaben zu Edition, EditorInnen und Mitarbeitenden <![CDATA[<editionStmt>]]></head>
+                        <p>Das <![CDATA[editionStmt]]> enthält Angaben zu:
+                         <list>
+                             <item>Edition (kodiert in <![CDATA[<edition>]]></item>
+                            <item>EditorInnen (kodiert in <![CDATA[<editor>]]>)</item>
+                            <item>Mitarbeitenden (kodiert in <![CDATA[<resp>]]>)</item>
+                         </list>
+                        </p>
+                        <div4>
+                            <head>Informationen zur Edition</head><!-- ToDo: überprüfen, ob das nicht aktualisiert werden soll. -->
+                            <p>Diese Information besteht aktuell aus der folgenden Angabe:
+                                <![CDATA[<edition>TEI XML version of BEBB for preliminary "beta"
+                    publication through Exist-DB and TEI Publisher. This content
+                    will eventually be published on BEOL. </edition>
+                <editor>]]>
+                            </p>
+                        </div4>
+                        
+                        <div4>
+                            <head>EditorInnen und Mitarbeitende</head>
+                            <p> Die Information zu den EditorInnen, die für die Edition verantwortlich sind, wird im Element <![CDATA[<editor>]]> kodiert, weitere Mitarbeitdende im Element <![CDATA[<respStmt>]]>. Es können mehrere Editor-Elemente nebeneinander bestehen.</p>
+                            <p>Das Element <![CDATA[<persname>]]> umfasst die Attribute key (mit der GND-Nummer) und xml:id (mit dem Kürzel aus den Namen-Initialen). Es enthält die Unterelemente <![CDATA[<surname>]]>, <![CDATA[<forename>]]></p>
+                            <p></p>
+                            
+                            <p>Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <editionStmt>
+                                    <edition>TEI XML version of BEBB for preliminary "beta"
+                                        publication through Exist-DB and TEI Publisher. This content
+                                        will eventually be published on BEOL. </edition>
+                                    <editor>
+                                        <persName key="pers_DE-588_128594551" xml:id="SG">
+                                            <surname>Gehr</surname>
+                                            <forename>Sulamith</forename>
+                                        </persName>
+                                    </editor>
+                                    <respStmt>
+                                        <persName key="pers_DE-588_2222222" xml:id="EK">
+                                            <surname>Kacl</surname>
+                                            <forename>Eleonora</forename>
+                                        </persName>
+                                        <resp>
+                                            <note type="remarkResponsibility">Mitarbeit</note>
+                                        </resp>
+                                    </respStmt>
+                                </editionStmt>
+                            </egXML>
+                            </p>
+                            
+                        </div4>
+
+                    </div3>
+                    <div3>
+                        <head>Angaben zum publizierten Brief (<![CDATA[<publicationStmt>]]>)</head><!-- ToDo: Kontrollieren, da das zweimal abgehandelt wurde. -->
+                        <p>Informationen zum Publikation finden
+                            sind im Element <![CDATA[<publicationStmt>]]>. Diese Informationen betreffen die veröffentlichende Institution (kodiert in
+                            <![CDATA[ <publisher>]]>), den Publikationsort (<![CDATA[<pubPlace>]]>), das Publikationsdatum (<![CDATA[<date when="9999">]]> die Verfügbarkeit (<![CDATA[<availability>]]>) bzw. Lizenz (<![CDATA[<licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+                            4.0)</licence>]]>) die URL des auf der Bernoulli-Plattform publizierten Briefes
+                            <![CDATA[<idno type="URLWeb">]]>, die URLs der im GitHub-Repository gespeicherten Versionen des Briefes.
+                            und <![CDATA[<idno type="URLXML">]]> (Link zur Seite auf den
+                            GitHub-Repository) finden sich am Schluss des publicationStmt. </p>
+                        
+                        <p>Beispiel: 
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <publicationStmt>
+                                    <publisher>Basler Edition der Bernoulli-Briefwechsel (BEBB) </publisher>
+                                    <pubPlace>Basel</pubPlace>
+                                    <date when="2023">2023</date>
+                                    <availability>
+                                        <licence
+                                            target="https://creativecommons.org/licenses/by/4.0/deed.de"
+                                            >(CC BY 4.0)</licence>
+                                    </availability>
+                                    <idno type="URLWeb">https://bebb.unibas.ch/B991170517054405501</idno>
+                                    <idno type="URLXML">https://bebb.unibas.ch/B991170517054405501.xml</idno>
+                                </publicationStmt>
+                            </egXML>
+                        </p>
+                        
+                    </div3>
+
+                    <div3>
+                        <head>Impressum (<![CDATA[<publicationStmt>]]>)</head>
+                        <div4><head>
+                            Impressum und Copyright sind im Element <![CDATA[<publicationStmt>]]> kodiert 
+                        </head>
+
+                        <p> Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <publisher>Bernoulli-Euler-Zentrum</publisher>
+                                    <pubPlace>Basel</pubPlace>
+                                    <availability>
+                                        <licence
+                                            target="https://creativecommons.org/licenses/by/4.0/deed.de"
+                                            >(CC BY 4.0)
+                                        </licence>
+                                        
+                                    </availability>
+                        </egXML>
+                        </p>
+                        </div4>
+                        
+                        <div4>
+                            <head>Links zum Brief</head>
+                            <p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <idno type="urlBEBB">https://bebb.unibas.ch/ALMA-Systemnummer</idno>
+                                    <!-- Url der Seite des Briefes auf der Bernoulli-Plattform -->
+                                    <idno type="urlXML">https://... .xml</idno>
+                                    <!-- Url des XML-Files auf GitHub -->
+                                    (evtl.)<idno type="urlALMA">https://swisscollections.ch/Record/[hier steht die 18-stellige Systemnummer des Briefes]</idno> <!-- Url des Katalogisats im BIBB -->
+                                (evtl.)<idno type="e-manuscripta"></idno>
+                            </egXML>
+                            </p>
+                        </div4>
+
+                    </div3>
+                    <div3>
+                        <head>Zugehörigkeit zu einem Briefwechsel und zu einer Korrespondenz (<![CDATA[<seriesStmt>]]>)</head>
+                        <p>Die Zugehörigkeit zum Briefwechsel eines Hauptkorrespondenten (Bernoulli
+                            oder Hermann) und zu einer diesem Briefwechsel gehörenden Korrespondenz
+                            wird mit dem Element <![CDATA[<seriesStmt>]]> kodiert. Die Ebene Briefwechsel
+                            wird folgendermassen kodiert: <![CDATA[<title type="Briefwechsel" level="s">Der Briefwechsel von ...</title>]]> , die
+                            Ebene Korrespondenz hingegen folgendermassen
+                            <![CDATA[<title type="Korrespondenz" level="s">Die Korrespondenz mit ...</title>]]>. -->
+                        </p>
+                        <p>Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <seriesStmt>
+                                <title type="Briefwechsel" level="s">Der Briefwechsel von <persName key="pers_DE-588_119166895">Nicolaus I Bernoulli</persName></title>
+                                <title type="Korrespondenz" level="m">Die Korrespondenz mit <persName key="pers_DE-588_102552517">Pietro Antonio Michelotti</persName></title>
+                            </seriesStmt>
+                        </egXML>
+                        </p>
+                    </div3>
+                    <div3>
+                        <head>Zusätzliche Informationen zum Brieftext (<![CDATA[<notesStmt>]]>)</head>
+                        <p> Zusätzliche Informationen zum Brief wie eine allgemeine Anmerkung zur Briefvorlage und die bibliographischen
+                            Angaben zu gedruckten Briefen sind im Element <![CDATA[<notesStmt>]]> zusammengefasst.
+                        </p>
+                        <div4>
+                            <head>Allgemeine Anmerkung zur Briefvorlage</head>
+                            <p>Allgemeine Anmerkungen beispielsweise mit Informationen zur Identifizierung eines Korrespondenten oder Datierungsfragen kommen in ein Element <![CDATA[<note type="generalRemark">]]></p><!-- Info für Margareth: Die Daten stammen aus dem BIBB-Feld 500 |a --><!-- Bemerkung von Martin zum Attribut type: spezifiziert es die Art der Note oder den Inhalt? Wäre hier ein anderes Attribut zu wählen? -->
+                            <p>
+                                Beispiel:
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples"><note type="generalRemark">Von der Hand Nicolaus I Bernoullis. Datum und Signatur autograph.</note></egXML>
+                            </p>
+                        </div4>
+                        
+                        <div4>
+                            <head>Im Druck edierte Briefe</head><!-- Die Informationen stammen aus dem BIBB-Feld 581 |a   -->
+                            <p> Bibliographische Angaben zu im Druck edierten Briefen sind im
+                                Element <![CDATA[<note>]]> erfasst und durch das Attribut
+                                type="print" gekennzeichnet. </p> 
+                            <p>Beispiel: 
+                                
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <note type="print">Druck: <rs type="biblio" key="label"> Leibniz, Math. Schriften III</rs> pp.785-787</note><!-- Inhalt aus BIBB-Feld  -->
+                                </egXML></p>
+                        </div4>
+                        <div4>
+                            <head>Erschliessbarkeit</head>
+                            <p>Die Erschliessbarkeit ist im Element <![CDATA[<note type="erschliessbarkeit">]]> erfasst.</p><!-- ToDo:  Noch klären was genau hineingehört -->
+                        </div4>
+                        <div4>
+                            <head>Informationen zu weiteren handschriftlichen Fassungen des Briefes <![CDATA[<relatedItem type="otherForm">]]></head>
+                            
+                            <p> <!-- Die Information befindet sich im BIBB-Feld 544 0 |n und 544 1|n (beispielsweise 544 	0 		|n Entwurf: UB Basel L I a 668, Nr. 37) -->
+                                Beispiel:
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples"><notesStmt><relatedItem type="otherForm"><msDesc rend="concept"><msIdentifier><altIdentifier><idno type="callNumber">UB Basel L I a 668, Nr. 37</idno></altIdentifier></msIdentifier></msDesc></relatedItem></notesStmt></egXML><!-- Inhalt aus BIBB-Feld 544 	1 |n  (rend="concept" falls in der Notiz "Entwurf:" steht. Hingegen copy, falls es sich um eine Abschrift handelt.  -->
+                            </p>
+                        </div4>
+                        
+                    </div3>
+                    <div3>
+                        <head>Beschreibung der Quelle (<![CDATA[<sourceDesc>]]>, darin als Kindelement <![CDATA[<msDesc>]]>)</head>
+                        <p>Die Beschreibung der für die Textkonstitution verwendeten Quelle ist im
+                            Element <![CDATA[<msDesc>]]> erfasst, das zur Kodierung der Identifikatoren (<![CDATA[<msIdentifier>]]>), der physischen Beschreibung (<![CDATA[<physDesc>]]>) und weiteren Informationen dient.</p>
+                        <p>Die Art der Überlieferung der Textgrundlage ist durch das Attribut @rend festgelegt, siehe dazu Humboldt-Digital: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/metadaten/art_der_textgrundlage.html</p>
+                        <p>Werte für @rend: 
+                        </p>
+                        <list>
+                            <item>Erschlossen: 	notExtant</item>
+                            <item>Entwurf: 	concept</item>
+                            <item>Abfertigung: final-copy</item><!-- final-copy: Bezeichnung für die Abfertigung bei sozinianer.de (https://sozinianer.de/projekt/digitale-methodik.html) -->
+                            <item>Abschrift: 	copy</item>
+                            <item>Druck: 	print</item>
+                        </list>
+                        
+                        <p> Beispiel: 
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><msDesc rend="final-copy"></msDesc></egXML>
+                        </p>
+
+                        <div4>
+                            <head>Identifizierung des Manuskripts (Systemnummer und Signatur)</head>
+                            <!-- Diese Informationen stehen in ALMA in den folgenden Feldern: 
+                            Neue Systemnummer: Feld 001, 
+                            Alte Systemnummer: Feld 035 |a in der Form (HAN)000012345DSV05
+                            Ort der Besitzerinstitution: 852 |z (vor der Kommastelle)
+                            Besitzerinstitution: 852 |z (nach der Kommastelle)
+                            Signatur: 852 |z (zweites öffentlich einsehbares z-Feld, das noch zu erstellen ist, Besprechung mit Monika Studer steht noch aus.)
+                            
+                            Beispiel: 852 	4 		|b A117  |c 117B1  |j -  |z Standort: Hannover, GWLB  |z Signatur: LBr 56, fol.1-4  |9 (41SLSP_UBS)9972406897605504
+                            
+                        -->
+                            <p> Die Angaben zur Identifikation des Briefes finden sich im Element
+                                <![CDATA[<msIdentifier>]]>. Das Bernoulli-Briefinventar als Quelle der in msIdentifier angegebenen Informationen, ist im Attribut @source erfasst <![CDATA[(<msIdentifier source="BIBB"></msIdentifier>)]]>.
+                            </p>
+                            <p> 
+                                <![CDATA[<msIdentifier>]]> umfasst die folgenden Angaben:
+                            </p>
+                                <list>
+                                    <item>Ort und Besitzerinstitution <![CDATA[<repository>]]> ( type="foreign" falls nicht UB sd. in auswärtiger Bibliothek)</item>
+                                    <item>Signatur (<![CDATA[<idno type="callNumber">]]>)</item>
+                                    <item>ALMA-Netzwerkzone-Systemnummer aus BIBB-Feld 001 (ALMA) (<![CDATA[<idno type="ALMA_NZ">]]>). Diese Nummer endet immer mit 01</item>
+                                    <item>ALMA-Institutionszone-Systemnummer aus BIBB-Feld 035 (<![CDATA[<idno type="ALMA_IZ">]]>). Diese Nummer endet immer mit 04</item>
+                                    <item>veraltete Systemnummer ALEPH) (<![CDATA[<altIdentifier><idno type="ALEPH"></altIdentifier>]]>)</item>
+                                </list>
+                            <!-- BIBB-Feld 852 4 (in ALMA in Holding). Standortangaben und Signatur in Feld j. Bei auswärtig aufbewahrten Briefen Standort- und Signaturangaben in zwei separaten Unterfeldern z.  -->
+                            
+                            
+                            <p> Beispiel: 
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <msIdentifier source="BIBB">
+                                        <repository>Basel, Universitätsbibliothek,                                                                  Handschriften
+                                        </repository>
+                                        <idno type="callNumber">L Ia 22:1 Nr.128</idno>
+                                        <altIdentifier>
+                                            <idno type="ALMA_NZ">991170517052505501</idno>
+                                        </altIdentifier>
+                                        <altIdentifier>
+                                            <idno type="ALMA_IZ">9972433547605504</idno>
+                                        </altIdentifier>
+                                        <altIdentifier>
+                                            <idno type="ALEPH">000059198</idno>
+                                        </altIdentifier>
+                                    </msIdentifier>
+                                </egXML>
+                            </p>
+                        </div4>
+                        <div4>
+                            <head>Physische Beschreibung des Manuskripts</head><!-- Für Margareth: Im BIBB ist die phys. Beschr. im Feld 300 (Beispiel: 300 			|a 9 Bl.  |c 23 x 17 cm  |e 2 Beilagen  ) enthalten --> <!-- ToDo: Kontrollieren, was es sich mit dem Feld 525 (Begleitmaterial (Beilagen) auf sich hat. Wurde das beibehalten oder in Feld 300 integriert? 
+                            
+                            Notiz aus Excell-Tabelle von Margareth und Simon: Feld 300 a
+TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/objectDesc/supportDesc/extent
+
+Feld 300 c
+TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/objectDesc/supportDesc/extent/dimensions
+
+innerhalb von dimensions:
+height (Länge, Feld 300 c vor "x" plus Einheit) und width (Breite, Feld 300 c nach "x" plus Einheit)
+TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/objectDesc/supportDesc/extent/dimensions/height
+TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/objectDesc/supportDesc/extent/dimensions/width
+
+TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/origin/note[@type="Feld300e_supplement"]-->
+                            
+                            <p>Die physische Beschreibung ist im Element <![CDATA[<physDesc>]]> erfasst.</p>
+                            <p>Sie umfasst Angaben zu Umfang (<![CDATA[<extent>]]>), Masse (<![CDATA[<dimensions>]]>) und Beilagen (<![CDATA[<accMat>]]>.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <physDesc>
+                                    <objectDesc>
+                                        <supportDesc>
+                                            <extent>9 Bl. <!-- Daten aus BIBB-Feld 300|a -->
+                                                <dimensions unit="cm"><!-- Daten aus BIBB-Feld 300|c Frage an Margareth: Das Element "dimensions" ist nur in dieser granularen Form organisierbar, die Mass-Angaben sind im BIBB hingegen in der Form 23 x 17 cm angegeben. Vermutlich lässt sich das somit nicht auf diesem Weg importieren. -->
+                                                    <height>23</height>
+                                                    <width>17</width>
+                                                </dimensions>
+                                            </extent>
+                                        </supportDesc>
+                                    </objectDesc>
+                                    <handDesc scribe="xml:id"><!-- BIBB-Feld 700 mit Descriptor (700er Feld ist in diesem Fall nur selten ausgefüllt, man muss die Information meistens selber anhand der Handschrift eruieren.)  -->
+                                        Autograph
+                                    </handDesc>
+                                    <accMat><!-- Inhalt von BIBB-Feld 300|e -->
+                                        Beilagen: 2 Bl.
+                                    </accMat>
+                                </physDesc>
+                            </egXML>
+                            
+                        </div4>
+                        <div4>
+                            <head>Briefdatum</head>
+                            <p>Das Originaldatum des Briefes findet sich in der folgenden Element-Struktur <![CDATA[<history><origin><date>]]></p>
+                            <p>
+                                Das Element Date ist normalerweise (es liegt ein Datum nach gregorianischem Kalender vor) durch die Attribut @when bestimmt. 
+                            </p>
+                            <p>
+                                Falls ein Datum in julianischer oder anderweitiger Datierung vorliegt, ist <![CDATA[<date>]]> durch die folgenden Attribute bestimmt:
+                                <list>
+                                    <item>@when (Der Wert besteht aus der standardisierten und in das gregorianische Kalendersystem umgerechnete Datumangabe (diese Information wird automatisch aus dem BIBB bezogen)</item>
+                                     <item>@when-custom (der Wert besteht aus der standardisierten aber nicht umgerechneten Datumsangabe). Dies ist manuell einzugeben</item>
+                                    <item>@calendar="julian"</item>
+                                    <item>@datingMethod="julian"</item>
+                                </list>
+                                
+                                Mögliche Werte für datingMethod sind bisher:
+                                <list>
+                                    <item>julian</item>
+                                    <item>moreveneto</item>
+                                </list>
+                                
+                            </p>
+                            <p>Beispiel:
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <history>
+                                        <origin>
+                                            <origPlace>Bâle </origPlace>
+                                            <date when="1758-09-16">ce 16 7bre 1758</date>
+                                        </origin>
+                                    </history>
+                                </egXML>
+                                
+                                Beispiel einer Datierung gemäss dem venezianischen Kalender:
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <origin>
+                                        <date when="1715-02-28" when-custom="1714-02-28" calendar="moreveneto" datingMethod="moreveneto">Secundo Calendas Martias
+                                            MDCCXV more Veneto.</date>
+                                    </origin>
+                                </egXML>
+                            </p>
+                        </div4>
+                    </div3>
+                    
+                </div2>
+                <div2>
+                    <head>Angaben zur Textsorte (Brief)</head>
+                    <p>Die Angaben zur Textsorte (in der BEBB ist es vorläufig nur die Textsorte
+                        Brief) ist folgendermassen kodiert:</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <encodingDesc><!-- ToDo: in Schema aufnehmen -->
+                            <classDecl>
+                                <taxonomy>
+                                    <category>
+                                        <catDesc>letter</catDesc>
+                                    </category>
+                                </taxonomy>
+                            </classDecl>
+                        </encodingDesc>
+                    </egXML>
+                </div2>
+                <div2>
+                    <head>Angaben zur Beschreibung des Textprofils (Dokumentklassifikation) (<![CDATA[<profileDesc>]]>)</head>
+                    <p> Die Dokumentklassifikation ist im Element <![CDATA[<profileDesc>]]> kodiert.
+                        Dieses Element umfasst die folgenden Bereiche: </p>
+                    <div3>
+                        <head>Correspondence description (<![CDATA[<correspDesc>]]>)</head>
+                        <p>Das Element <![CDATA[<correspDesc>]]> enthält Angaben zum Absender,
+                            Empfänger, Absendeort und Versanddatum des Briefes (organisiert im Element
+                            <![CDATA[<correspAction>]]>), das durch das Attribut type="sent" und
+                            type="received" spezifiziert wird.</p>
+
+                        <p><![CDATA[<correspContext>]]>, d.h. die Stelle, an der sich der Brief innerhalb einer Korrespondenz in
+                            Bezug auf den Vorgänger- und Nachfolgebrief befindet.</p>
+
+                        <p>Beispiel einer <![CDATA[<correspDesc>]]></p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <correspDesc>
+                                <correspAction type="sent">
+                                    <persName key="pers_DE-588_102552517">Michelotti, Pietro Antonio</persName><!-- Inhalt aus BIBB-Feld 100 -->
+                                    <placeName key="3164603">Venedig</placeName> <!-- Inhalt aus BIBB-Feld 751 |a  -->
+                                    <date when="1714-06-08"/><!-- Inhalt aus BIBB-Feld 46 -->
+                                </correspAction>
+                                <correspAction type="received">
+                                    <persName key="pers_DE-588_118509969">Bernoulli, Johann I</persName><!-- Inhalt aus BIBB-Feld 700 rcp -->
+                                </correspAction>
+                                <correspContext>
+                                    <ptr type="prev" target="9972433090805504"/><!-- Manuell einzugeben --><!-- Only systemnummer, the rest will be specified in the root -->
+                                    <!-- If there are letters missing in the correspondence, put the information in the comment -->
+                                    <ptr type="next" target="9972433088505504"/><!-- Manuell einzugeben -->
+                                </correspContext>
+                            </correspDesc>
+                        </egXML>
+                        
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <correspAction type="sent">
+                                <persName key="pers_DE-588_102552517">Michelotti, Pietro Antonio</persName><!-- Inhalt aus BIBB-Feld 700 rcp -->
+                                <placeName key="3164603">Venedig</placeName>
+                                <date notBefore="1755-11-29" notAfter=""/>
+                            </correspAction>
+                            
+                        </egXML>
+                        <div4>
+                            <head>Absender und Empfänger</head>
+                            <p>Die Angaben zu Absender und Empfänger sind im Element
+                                <![CDATA[<correspAction>]]> im Kindelement <![CDATA[<persName>]]>
+                                (mit Angabe der jeweiligen GND-Nummer im Attribut "key")<!-- ToDo: GND-Nummern zu URIs umwandeln evtl. via API. Siehe dazu die Humboldt-Edition https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/brief/sender_empfaenger.html -->
+                                erfasst.</p>
+                        </div4>
+
+                        <div4>
+                            <head>Absende- und Empfangsort</head>
+                            <p> Der Absende- und Empfangsort ist im Element <![CDATA[<correspAction type="sent">]]> bzw. "received" im Kindelement <![CDATA[<placeName key="Geonames-ID">]]> (mit Angabe der jeweiligen Geonames-Nummer im Attribut "ref") erfasst. </p>
+                            <p> Falls die Ortsangabe nicht auf dem Brief steht sondern erschlossen ist, steht der Ortsname zusätzlich im Element <![CDATA[<supplied>]]>. Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples"><placeName key="3164603"><supplied>Venedig</supplied></placeName></egXML></p>
+                        </div4>
+                        <div4>
+                            <head>Absende- und Empfangsdatum</head>
+                            <p>Das Absende- und Empfangsdatum steht im Element <![CDATA[<date>]]> im Format JJJJ-MM-TT (bzw. je nach Datenlage JJJJ-MM oder JJJJ). Die Attribute @when bzw. @from/@to und @notBefore/@notAfter geben an, ob es sich dabei um ein bestimmtes Datum, einen bestimmten Zeitraum oder einen unbestimmten Zeitraum handelt. (notBefore: specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.)</p>
+                            <p>Das Kalendersystem, nach dem das Datum erstellt wurde, wird durch das Attribut calendar="gregorian" und calendar="julian" angegeben. Standard ist "gregorian", "julian wird wo nötig manuell erfasst.</p>
+                            <p>Das Absendedatum wird systematisch erfasst. Wo es im Original fehlt, wird es erschlossen (der extremfall wären die Lebensdaten des Autors). Das Empfangsdatum wird nur erfasst, wenn es im Original in einem Empfangsvermerk angegeben ist.</p>
+                            <p><!-- Im Briefinventar ist das Absendedatum als Originaldatum (gemäss handschriftlicher Vorlage) im BIBB-Feld 264.0 bzw. 264.1 (bei im Druck erschienenen Briefen) und standardisiertes Datum im BIBB-Feld 046 erfasst. Diese Angaben werden im Header aus dem BIBB übernommen und im Element <![CDATA[<date>]]> erfasst. -->
+                                <list>
+                                <item>Bestimmtes Datum: <egXML xmlns="http://www.tei-c.org/ns/Examples"><date when="JJJJ-MM-TT">Datumsangabe in der Originalvorlage</date></egXML>
+                                    Beispiel (ToDo): <egXML xmlns="http://www.tei-c.org/ns/Examples"><date when="1772-12-21">drei Tage vor Heiligabend d. 1772ten Jahres</date></egXML></item>
+                                <item>Unbestimmtes (erschlossenes) Datum vor einem bekannten Datum (Terminus ante quem):     
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notAfter="JJJJ-MM-TT"><supplied>s.d.</supplied></date></egXML>
+                                    
+                                     Beispiel (ToDo): <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notAfter="1804-05-01"><supplied>s.d.</supplied></date></egXML> 
+                                </item> 
+                                
+                                                               
+                                   <item>Unbestimmtes (erschlossenes) Datum nach einem bekannten Datum (Terminus post quem): 
+                                       <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="JJJJ-MM-TT"><supplied>s.d.</supplied></date></egXML>
+                                    
+                                     Beispiel (ToDo): <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="1804-05-01"><supplied>s.d.</supplied></date></egXML> </item> 
+
+                                <item>Unbestimmtes (erschlossenes) Datum innerhalb einer Zeitspanne (Terminus a quo und Terminus ad quem): <egXML xmlns="http://www.tei-c.org/ns/Examples"><date notBefore="JJJJ-MM-TT" notAfter="JJJJ-MM-TT"><supplied>s.d.</supplied></date></egXML> <!-- ToDo: mit Margareth klären, wie das im Datenimport gehandhabt werden soll, da das BIBB bezüglich when und notBefore nicht unterscheidet. Evtl. manuelle Anpassung der Daten im Header falls diese beim automatischen Abgleich mit dem BIBB nicht wieder überschrieben werden. Zum Umgang der UB mit Datumsangaben siehe die TabelleHAN
+Katalogisierungsregeln
+für
+Briefe, p. 52 (https://ub.unibas.ch/digi/a100/diverse_projekte/ubpublikationen/hanregelwerk/BAU_1_006255850.pdf). -->
+                                    
+                                     Beispiel (ToDo): <![CDATA[<date notBefore="1804-05-01" notAfter="1804-05-16"></date>]]>  
+                                </item>
+                                    <item>Genaue Zeitspanne: <![CDATA[<date from="JJJJ-MM-TT" to="JJJJ-MM-TT">Datumsangabe in der Originalvorlage</date>]]>
+                                    
+                                     Beispiel (ToDo): <![CDATA[<date from="1731-11-11" to="1741-09-11">vom 11. November 1731 bis zum 11. Sept. ’41</date>]]> 
+                                </item>
+                            </list>
+                            </p>
+                        </div4>
+                        <div4>
+                            <head>Vorgänger und Nachfolgerbrief <![CDATA[<correspContext>]]></head>
+                            <p> Die Angaben zur Navigation zum Vorgänger- und Nachfolgerbrief finden
+                                sich im Element <![CDATA[<correspContext>]]> im Kindelement
+                                <![CDATA[<ptr>]]> spezifiziert durch das Attribut type="prev" und
+                                type="next" und versehen mit dem Link auf die Briefdatei im Attribut
+                                target festgehalten (siehe das Gesamtbeispiel unten). Der Link setzt
+                                sich aus dem Domainnamen und der ALMA-Systemnummer zusammen
+                                <!-- ToDo: Mit Martin klären, ob diese Linkstruktur sinvoll ist. -->
+                            </p>
+
+                        </div4>
+
+                    </div3>
+                    <div3>
+                        <head>Angaben zur Sprache des Brieftextes (<![CDATA[<langUsage>]]>)</head>
+                        <!-- Sprachcodes sind im BIBB (aleph) Feld Nr. 041 kodiert -->
+                        <p> Die Sprache des Brieftextes wird im Element <![CDATA[<langUsage>]]>
+                            angegeben. Der Sprachcode wird hingegen mit dem Attribut @ident
+                            kodiert. 
+                            <!-- Die Informationen befinden sich in den BIBB-Feldern 546 |a (freies Textfeld, z.B. Lateinisch) und 008 |i (normierter Sprachkode, z.B. lat) -->
+                        </p>
+                        <p>
+                            Beispiel:
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><langUsage><language ident="lat">Latein</language></langUsage></egXML><!-- Der Wert von ident stammt aus dem BIBB-Feld 008 |i (mögliche Kodes: lat, fre, ), der Inhalt von language stammt aus dem BIBB-Feld 546 |a  -->
+                        </p>
+
+                    </div3>
+                    <div3>
+                        <head>Dokumentation der Schreiberhand (<![CDATA[<handNotes>]]>)</head><!-- Das ist inzwischen vermutlich obsolet. ToDo: Mit Martin und Margareth abklären, ob das noch gebraucht wird. Die Schreiberhand ist auch in <handDesc scribe="xml:id"> dokumentiert. Wo ist es besser? -->
+                        <p>Falls die Schreiberhand identifiziert werden kann, wird sie mit dem
+                            Element <![CDATA[<handNotes><handNote></handNote></handNotes>]]>
+                            kodiert.</p><!-- Für Margareth: Die Daten stammen aus dem BIBB-Feld 700. Dass die in diesem Feld eingetragenen Angaben die Schreiberhand betreffen ergibt sich aus dem Unterfeld |e Schreiber/Scriptorium und |4 scr Beispiel: 700 	1 		|a Bernoulli, Nicolaus  |d 1687-1759  |0 pers_DE-588_119166895  |e Schreiber/Scriptorium  |4 scr (Beispiel stammt aus dem Brief https://swisscollections.ch/Record/991170514914605501) -->
+                        <p>Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><handNote><persName key="pers_DE-588_119166895">Bernoulli,
+                                        Niklaus</persName></handNote>
+                            </egXML>
+                        </p>
+                        <p>Falls die Hand nicht bekannt ist
+                            <![CDATA[<handNote>unknown</handNote>]]></p>
+                    </div3>
+                    <div3>
+                        <head>Regest / Zusammenfassung des Briefinhalts</head>
+                        <p>Eine Zusammenfassung des Briefinhalts wird - falls vorhanen - im Element
+                            <![CDATA[<abstract>]]> erfasst.</p>
+                        <!-- ToDo: Mit Margareth und Martin klären, wie mit diesen Texten verfahren wird: Im BIBB finden sich im Feld 520 |a optional Informationen zum Inhalt, die via Import in das Element <abstract> importiert werden sollen. Da die Daten aus dem BIBB stammen, sind Personen, Zitate usw nicht TEI-konform ausgezeichnet. Falls diese Auszeichnung nötig sein soll, z.B. die Basis für ein Stichwortregister bilden soll, müssten die Informationen in Zukunft nicht mehr über das BIBB sd. direkt im Header erfasst werden. Zu beachten ist, dass die Inhaltsangaben wegen der Textlänge manchmal über mehrere Felder verteilt wurden (zumindest was das mit Aleph so).-->
+                        <p> Beispiel: 
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <profileDesc>
+                                    <abstract>
+                                        <p>Henri-Alexandre Barbaud (de Thiancourt) teilt Joh. B.
+                                            seine rein arithmetische Methode zur Herleitung einer
+                                            allgemeinen Formel für die Summe der Potenzen der
+                                            natürlichen Zahlen mit. Er bittet Joh. B. um
+                                            Stellungnahme auch zu seinen Schwierigkeit beim Umgang
+                                            mit der Zentralbewegung fester und flüssiger Körper.
+                                            Bewegen diese sich zentrifugal oder tangential?</p>
+                                    </abstract>
+                                </profileDesc>
+                            </egXML>
+                        </p>
+                        <p>
+                            Das Element <![CDATA[<abstract>]]> enthält zusätzlich die Information aus dem BIBB-Feld 600 (erwähnte Personen): Kodiert wird es folgendermassen: <![CDATA[<listPerson><person><persName></persName><note type="lebensdaten"></date></person></listPerson>]]> dabei sind dynastische Zählungen im Element <![CDATA[<genName>]]> und Adelstitel in <![CDATA[<roleName>]]> erfasst <!-- ToDo: mit Margareth besprechen. Quelle: https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-abstract.html -->
+                            Beispiel:
+                            <![CDATA[<listPerson><!-- Inhalt aus dem Feld 600 (erwähte Person) -->
+                                <person><persName key="pers_DE-588-118509969">Bernoulli, Johann</persName><note type="lebensdaten">1667-1748</note></person>
+                                <person><persName key="pers_DE-588-119291967">Fardella, Michelangelo</persName><note type="lebensdaten">1650-1718</note></person>
+                                <person><persName key="pers_DE-588-119112450">Hermann, Jacob</persName><note type="lebensdaten">1678-1733</note></person>
+                            </listPerson>]]>
+                        </p>
+                    </div3>
+                    
+                </div2>
+
+                
+
+                <div2>
+                    <head>Versionierung und Status (<![CDATA[<revisionDesc>]]>)</head>
+                    <p>Die Bearbeitungsgeschichte des Briefes ist im Element
+                        <![CDATA[<revisionDesc>]]> dokumentiert. Das Element <![CDATA[<change>]]> (das neueste change zuoberst)
+                        mit den Attributen when und who enthält Informationen zu Art, Datum und
+                        Verantwortlichkeit der vorgenommenen Änderung. Im Attribut @status ist der
+                        aktuelle Status des Dokumentes erfasst. Mögliche Werte sind (im
+                        aufsteigenden Grad der Finalisierung): </p>
+                    <list><!-- ToDo: Mit Margareth und Martin besprechen. Diese Liste folgt mehr oder weniger den Angaben in der Excel-Tabelle zum Stand der Edition. -->
+                         <item>kommentiert</item>
+                        <item>grundkommentiert</item>
+                        <item>kollationiert</item>
+                        <item>transkribiert</item>
+                        <item>katalogisiert</item>
+                    </list>
+                    <p>Dazu kommen noch</p>
+                    <list>
+                        <item>gedruckt (falls der Brief in einer Printedition veröffentlicht wurde)</item>
+                        <item>bernoulliwiki (Briefe, die vorläufig in www.ub.unibas.ch/bernoulli ediert sind</item>
+                    </list>
+                    <p>Der Wert in "status" gibt den letzten Bearbeitungsstand an, in der Regel werden die Briefe nach einem festgelegten Workflow bearbeitet, so dass der nächsthöhere Bearbeitungsstand die bisherigen inkludiert. Ein grundkommentierter Brief ist somit auch kollationiert, transkribiert, katalogisiert.</p>
+
+                    <p> Beispiel: </p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <revisionDesc status="grundkommentiert">
+                            <listChange>
+                                <change when="2022-01-15" who="MS">grundkommentiert</change>
+                                <change when="2021-12-22" who="EK SG">kollationiert</change>
+                                <change notAfter="1966-02-14">transkribiert</change>
+                            </listChange>
+                        </revisionDesc>
+                    </egXML>
+<!-- ToDo: klären, wie die Personen in der Revision-Desc erfasst werden, reichen die Initialen oder ist es besser, eine ID wie die GND-Nummer zu verwenden? -->
+                </div2>
+               
+                <div2>
+                    <head>Zitieranweisung</head><!-- ToDo: Muss noch umgesetzt werden. -->
+                    <p>Die Zitieranweisung setzt sich aus dem Inhalt unterschiedlicher Elemente zusammen und besteht aus:</p>
+                    <list>
+                        <item>
+                            Inahlt von: <title type="main"></title>
+                        </item>
+                        <item>
+                            Text: hg. von
+                        </item>
+                        <item>
+                            Inhalt von: <![CDATA[
+                            <editor>
+                                        <persName key="">
+                                            <surname></surname>
+                                            <forename></forename>
+                                        </persName>
+                                    </editor>
+                                    ]]>
+                                
+                                    
+                        </item>
+                        <item>Text: unter Mitarbeit von</item>
+                        <item>
+                            Inhalt von: <![CDATA[<respStmt>]]>
+                                
+                                        <![CDATA[<persName key="">
+                                            <surname></surname>
+                                            <forename></forename>
+                                        </persName>]]>
+                                        
+                                    
+                        </item>
+                        <item>
+                            Text: . In: 
+                        </item>
+                        <item>
+                            Inhalt von: <![CDATA[<title level="s"></title>]]>
+                        </item>
+                        <item>Text: ,</item>
+                        <item>Inhalt von: <![CDATA[<publisher></publisher>]]></item>
+                        <item>Text: , </item>
+                        <item>
+
+                                    <![CDATA[<pubPlace>Basel</pubPlace>]]>
+                        </item>
+                        <item>Text: Version von: </item>
+                        <item>Zu den weiteren Angaben betreffend Version und Publikationsdatum der letzten Fassung sind noch Recherchen durchzuführen, vermutlich stammen diese Angaben nicht direkt aus dem Header (siehe Humboldt-Editon).</item>
+                    </list>
+                </div2>
+
+
+            </div1>
+            <div1>
+                <head>Facsimile</head>
+                <p>Die facsimile werden folgendermassen eingebunden: <![CDATA[<facsimile>/<graphic url="manifest.../>]]></p>
+                
+                <p>
+                    Beispiel:
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <facsimile>
+                            <graphic url="https://www.e-manuscripta.ch/i3f/v20/1063814/manifest"/>
+                        </facsimile>
+                    </egXML>
+                </p>
+                <p>Der Bildnachweis und die Nutzungsbedingungen werden aus dem Bildmanifest eingebunden. Siehe dazu die Lösung bei Humboldt-Digital. Zusätzlich führt ein Link zum Digitalisat auf e-manuscripta oder einer anderen Bild-Plattform. </p>
+            </div1>
+            <div1>
+                <head>Prolog der XML-Datei</head>
+                <p></p>
+                <div2>
+                    <head>XML-Deklaration</head>
+                    <p>
+                        <![CDATA[<?xml version="1.0" encoding="UTF-8"?>]]>
+                    </p>
+                </div2>
+                <div2>
+                    <head>Schema</head>
+                    <p>Die Verarbeitungsanweisung, die für der Verknüpfung des XML-Dokumentes mit dem Schema dient ist <?xml-model?>. Es können mehrere Schemata gleichzeitig verknüpft werden.</p>
+                    <p>Das Schema </p>
+                </div2>
+                <div2>
+                    <head>Root-Element</head>
+                    <p></p>
+                </div2>
+            </div1>
+            <div1>
+                <head>teiCorpus</head>
+               <p><![CDATA[<teiCorpus></teiCorpus>]]></p>
+                <p>XInclude</p>
+            </div1>
+            <div1>
+                <head>Verwendete Elemente</head>
+                <p><![CDATA[
+ <TEI>
+ <abbr>
+ <abstract>
+ <accMat>
+ <add>
+ <addrLine>
+ <address>
+ <altIdentifier>
+ <analytic>
+ <author>
+ <availability>
+ <back>
+ <bibl>
+ <biblScope>
+ <biblStruct>
+ <birth>
+ <body>
+ <catDesc>
+ <category>
+ <cell>
+ <change>
+ <choice>
+ <cit>
+ <classDecl>
+ <closer>
+ <corr>
+ <correspAction>
+ <correspContext>
+ <correspDesc>
+ <country>
+ <date>
+ <dateline>
+ <death>
+ <del>
+ <dimensions>
+ <div>
+ <div>
+ <edition>
+ <editionStmt>
+ <editor>
+ <encodingDesc>
+ <expan>
+ <extent>
+ <facsimile>
+ <figDesc>
+ <figure>
+ <fileDesc>
+ <floruit>
+ <foreign>
+ <forename>
+ <formula>
+ <front>
+ <funder>
+ <g>
+ <gap>
+ <genName>
+ <geo>
+ <graphic>
+ <handDesc>
+ <handNote>
+ <head>
+ <height>
+ <hi>
+ <history>
+ <idno>
+ <imprint>
+ <item>
+ <keywords>
+ <l>
+ <langUsage>
+ <language>
+ <lb>
+ <lg>
+ <licence>
+ <list>
+ <listBibl>
+ <listChange>
+ <listPerson>
+ <listPlace>
+ <location>
+ <metamark>
+ <monogr>
+ <msDesc>
+ <msIdentifier>
+ <name>
+ <note>
+ <notesStmt>
+ <objectDesc>
+ <opener>
+ <orig>
+ <origPlace>
+ <origin>
+ <p>
+ <particDesc>
+ <pb>
+ <pc>
+ <persName>
+ <person>
+ <physDesc>
+ <place>
+ <placeName>
+ <postscript>
+ <profileDesc>
+ <ptr>
+ <pubPlace>
+ <publicationStmt>
+ <publisher>
+ <q>
+ <quote>
+ <ref>
+ <reg>
+ <relatedItem>
+ <repository>
+ <resp>
+ <respStmt>
+ <revisionDesc>
+ <roleName>
+ <row>
+ <rs>
+ <salute>
+ <series>
+ <seriesStmt>
+ <settingDesc>
+ <sic>
+ <signed>
+ <sourceDesc>
+ <subst>
+ <supplied>
+ <supportDesc>
+ <surname>
+ <table>
+ <taxonomy>
+ <teiCorpus>
+ <teiHeader>
+ <term>
+ <text>
+ <textClass>
+ <title>
+ <titleStmt>
+ <unclear>
+ <width>
+
+                    
+                    ]]></p>
+                
+            </div1>
+        </body>
+    </text>
+</TEI>

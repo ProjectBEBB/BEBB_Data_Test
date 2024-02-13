@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--_____________-->
+<TEI xml:id="abbr_list" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Titel des Dokuments</title>
+                <author>Autorenname</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Veröffentlichungsinformationen</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Quellenbeschreibung</p>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>Editorische Erklärungen</p>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date>Erstellungsdatum</date>
+            </creation>
+
+        </profileDesc>
+    </teiHeader>
+
+    <!-- Weitere Inhalts- oder Textelemente können hier folgen -->
+
+
+    <text>
+        <body>
+            <div>
+                <head>Seitenbeginn</head>
+                
+                <p>Der Seitenbeginn wird mit <ref
+                    target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html"
+                    ><![CDATA[<pb facs="Bildnummer"/>]]></ref> ausgezeichnet. Bei der Bildnummer in <ref
+                        target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.facs.html"
+                        ><hi rend="italic">facs</hi></ref> handelt es sich um den Identifier der einzelnen
+                    Faksimile-Bilder auf <ref target="https://www.e-manuscripta.ch"
+                        >e-manuscripta</ref>.</p>
+                <p>
+                    Bei Bildern, die nicht auf e-manuscripta verfügbar sind, wird die interne, auf dem BEBB-iiif-Server vergebene Bildnummer verwendet. <!-- (ToDo: hier ist noch zu klären, wie sich diese Nummer von der e-manuscripta-Nummer bzw. von allfälligen weiteren Bildnummern von externen Anbietern unterscheidet, sobald die ersten iiif-Manifeste generiert wurden.) -->
+                </p>
+                <p>
+                    Die Erfassung  der Foliierung / Paginierung erfolgt im Attribut
+                    <![CDATA[n=""]]>. Hier steht die Seitenzahl gemäss Paginierung bzw. Foliierung auf dem Manuskript. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ... 
+                </p>
+                <p>
+                    Leere Seiten werden <![CDATA[<pb>]]> im Brieftext erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
+                </p>
+                <p>Beispiel: 
+                    <figure>
+                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
+                        <graphic width="50em" url="images_jpg/1063823_section_02.jpg"/>
+                     </figure>
+                </p>
+                <p>
+                    <figure facs="1063824">
+                        <figDesc>Ausschnitt Bild Nr. 1063824</figDesc>
+                        <graphic width="50em" url="images_jpg/1063824_section_01.jpg"/>
+                     </figure>
+                </p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <lb/>manuscriptam transmittes, eam nomine tuo typis illico committam<pb
+                        facs="1063824" n="2"/>
+                    <lb/>Nobiliss.rum Moderatorum nominibus inscribam, iisdemque reddam
+                    <lb/>publici iuris factam. </egXML>
+            </div>
+        </body>
+    </text>
+</TEI>
