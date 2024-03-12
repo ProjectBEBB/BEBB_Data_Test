@@ -33,9 +33,9 @@
             </div1>
 
             <div1>
-                <head><![CDATA[<TEI>]]></head>
-                <p>Das Rootelement <![CDATA[<TEI>]]> umfasst das Dokument als Ganzes, es ist obligatorisch, da es den TEI namespace (<![CDATA[xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"]]>) enthält.</p>
-                <p>Das Attribut @xml:id enthält zudem die Projektinterne ID des Briefes, bestehend aus dem Präfix "B", Datum und Systemnummer des Briefes im Katalog der UB Basel, Beispiel: B_1714-05-15_991170515020505501).</p>
+                <head><gi>TEI</gi></head>
+                <p>Das Rootelement <gi>TEI</gi> umfasst das Dokument als Ganzes, es ist obligatorisch, da es den TEI namespace (<![CDATA[xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"]]>) enthält.</p>
+                <p>Das Attribut <att>xml:id</att> enthält zudem die Projektinterne ID des Briefes, bestehend aus dem Präfix "B", Datum und Systemnummer des Briefes im Katalog der UB Basel, Beispiel: B_1714-05-15_991170515020505501).</p>
             </div1>
             <div1>
                 <head>Text</head>
@@ -45,8 +45,8 @@
                     <!-- <change when="2021-12-01" who="SG" who="EK">Kollationiert</change>-->
                     <div3>
                         <head>Verlinkungen</head>
-                        <p>Verweise auf die Index-Dateien erfolgen mittels <![CDATA[<rs>]]> und @key (Wert=xml:id).</p>
-                        <p><![CDATA[<ptr>]]></p>
+                        <p>Verweise auf die Index-Dateien erfolgen mittels <gi>rs</gi> und <att>key</att> (Wert=xml:id).</p>
+                        <p><gi>ptr</gi></p>
                         
                     </div3>
                 </div2>
@@ -64,16 +64,16 @@
             
             2. <del>dila-</del><lb/><del>tio </del>   -->
 
-                        <p>Kodierung: <![CDATA[<lb/>]]>.</p>
+                        <p>Kodierung: <gi>lb</gi>.</p>
 
                         <p>
                             <list>
-                            <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <![CDATA[<lb/>]]>.</item>
+                            <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <gi>lb</gi>.</item>
                             
                             
                         <item>Zeilenumbruch mit Worttrennung (egal ob mit oder ohne Trennstrich am Zeilenende und unabhängig von der Form des Trennstrichs - einfach oder doppelt): Die Zeile endet mit <![CDATA[<pc type="hyphenation">-</pc>]]> und die neue Zeile beginnt mit <![CDATA[<lb break="no"/>]]></item>
                             <item>Zeilenumbruch bei Seitenwechsel: Die Zeile endet mit <![CDATA[<pc type="hyphenation">-</pc>]]> gefolgt vom Seitenumbruch, die neue Zeile auf der neuen Seite beginnt  mit <![CDATA[<lb break="no"/>]]>.</item>
-                            <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem Bindestrich, die neue Zeile beginnt mit <![CDATA[<lb break="no"/>]]>.</item>
+                            <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
                             <item>
                                 Zeilenumbruch und Worttrennung in einer Adresse (AddrLine usw.): Verweis auf Adresse (toDo)
                             </item>
@@ -151,10 +151,10 @@
                     </div3>
                     <div3>
                         <head>Absatz</head>
-                        <p> Kodierung: <![CDATA[<p>]]> (paragraph). ToDo: Auszeichnung eines
+                        <p> Kodierung: <gi>p</gi> (paragraph). ToDo: Auszeichnung eines
                             Paragraphen, der im Original nur durch Leerschlag/Lücke angezeigt wird:
-                            Reicht dafür <![CDATA[<p>]]> ohne die Angabe von <![CDATA[<lb/>]]> oder
-                            soll die grössere Lücke speziell als <![CDATA[<space>]]> (steht für
+                            Reicht dafür <gi>p</gi> ohne die Angabe von <gi>lb</gi> oder
+                            soll die grössere Lücke speziell als <gi>space</gi> (steht für
                             semantisch bedeutsamer Leerraum) ausgezeichnet werden? </p><!-- Lösungsvorschlag: <p type="space"></p> -->
                     </div3>
                     <div3>
@@ -180,7 +180,7 @@
                                 <![CDATA[n=""]]>. Hier steht die Seitenzahl gemäss Paginierung bzw. Foliierung auf dem Manuskript. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ... 
                         </p>
                         <p>
-                            Leere Seiten werden <![CDATA[<pb>]]> im Brieftext erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
+                            Leere Seiten werden <gi>pb</gi> im Brieftext erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
                         </p>
                         <p>Beispiel: 
                             <figure>
@@ -217,9 +217,9 @@
                         <p>Ein Gedicht, dessen Zeilen im Briefmanuskript visuell durch grössere
                             Seitenränder (Margin) abgesetzt sind, wird als line group <ref
                                 target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html"
-                                ><![CDATA[<lg/>]]></ref>, die sich aus einzelnen lines <ref
+                                ><gi>lg</gi></ref>, die sich aus einzelnen lines <ref
                                 target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html"
-                                ><![CDATA[<l/>]]></ref> zusammensetzt, ausgezeichnet.</p>
+                                ><gi>l</gi></ref> zusammensetzt, ausgezeichnet.</p>
                         <p>Bsp.: Brief Nr. <ref
                                 target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056976"
                                 >000056976</ref>, <ref
@@ -256,11 +256,11 @@
                         
                         <p> Kodierung: <![CDATA[<note></note>]]>. Zur besseren Unterscheidung von
                             anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird
-                            das Attribut @hand verwendet mit
+                            das Attribut <att>hand</att> verwendet mit
                             Angabe der xml:id aus dem Personenregister, beispielsweise
                             <![CDATA[<note hand="pers_DE-588-118509969"></note>]]>.</p>
                         <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem
-                            einheitlichen Tag <![CDATA[<metamark/>]]> wiedergegeben.</p>
+                            einheitlichen Tag <gi>metamark</gi> wiedergegeben.</p>
                         <p>Beispiel:</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <note hand="pers_DE-588-117589136">à M. le C.te de Tressan</note>
@@ -280,25 +280,25 @@
                     </div3>
                     <div3>
                         <head>Figuren und Abbildungen</head>
-                        <p>Figuren im Manuskript werden mit dem Element <![CDATA[<figure>]]> ausgezeichnet. Über das Attribut facs, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat verwiesen. Das Attribut hand enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figut im <![CDATA[<note>]]>-Kindelement festgehalten werden.</p>
-                        <p>Das Element <![CDATA[<figure>]]> kann optional die folgenden Unterelemente enthalten:
+                        <p>Figuren im Manuskript werden mit dem Element <gi>figure</gi> ausgezeichnet. Über das Attribut facs, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat verwiesen. Das Attribut hand enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figut im <gi>note</gi>-Kindelement festgehalten werden.</p>
+                        <p>Das Element <gi>figure</gi> kann optional die folgenden Unterelemente enthalten:
                             <list>
-                                <item><![CDATA[<p>]]> für eine Bildüberschrift im Original</item> 
-                                <item><![CDATA[<figDesc>]]> für eine allfällige editorische Bildbeschreibung.</item>
+                                <item><gi>p</gi> für eine Bildüberschrift im Original</item> 
+                                <item><gi>figDesc</gi> für eine allfällige editorische Bildbeschreibung.</item>
                                 <item><![CDATA[<note type="editorial">]]> für eine editorische Fussnote</item> 
                             </list>
                             </p>
-                        <p>Das Element <![CDATA[<figure>]]> wird im Text nach der Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p><!-- ToDo: Margareth und Martin fragen, ob diese Vorgehensweise korrekt ist. For allem wenn die Figuren nicht auf der selben Seite abgebildet sind, wie die Textstelle mit der Erwähnung der Figur (Beispiel Brief 1714-04-14 von Michelotti, https://www.e-manuscripta.ch/bau/content/zoom/1063869 -->
+                        <p>Das Element <gi>figure</gi> wird im Text nach der Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p><!-- ToDo: Margareth und Martin fragen, ob diese Vorgehensweise korrekt ist. For allem wenn die Figuren nicht auf der selben Seite abgebildet sind, wie die Textstelle mit der Erwähnung der Figur (Beispiel Brief 1714-04-14 von Michelotti, https://www.e-manuscripta.ch/bau/content/zoom/1063869 -->
                         <p>
                             Das Bild wird zu diesem Zweck mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png in einem speziellen Ordner abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer Tiefstrich und Nummer (wobei die Nummerierung pro Seite stattfindet, z.B. 02, falls es sich auf der Seite um die zweite Figur handelt).
                         </p>
                         <p>Kodierung:
                             
-    <![CDATA[<figure facs="abbildung" hand="xml:id">
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><figure facs="abbildung" hand="xml:id">
    <p>[Bildunterschrift im Manuskript]</p>
    <figDesc>[Bildbeschreibung BearbeiterIn]</figDesc>
    <note type="editorial">[Kommentar BearbeiterIn]</note>
-</figure>]]>
+</figure></egXML>
                         </p>
                         <p>
                             Beispiel:
@@ -360,13 +360,13 @@
                     </div3>
                     <div3>
                         <head>Tabellen</head>
-                        <p>Tabellen werden mit dem Element <![CDATA[<table></table>]]> kodiert. Die
-                            erste Zeile <![CDATA[<row>]]> wird mit dem Attribut @role="label"
-                            versehen. Zellen werden mit dem Element <![CDATA[<cell></cell>]]>
+                        <p>Tabellen werden mit dem Element <gi>table</gi> kodiert. Die
+                            erste Zeile <gi>row</gi> wird mit dem Attribut <att>role</att> mit Wert <val>label</val>
+                            versehen. Zellen werden mit dem Element <gi>cell</gi>
                             ausgezeichnet.</p>
                         <p>Tabellen werden mit <ref
                                 target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-table.html"
-                                ><![CDATA[<table>]]></ref>erfasst.</p>
+                                ><gi>table</gi></ref>erfasst.</p>
                         
                         <p>
                             <table>                         
@@ -417,24 +417,24 @@
                     <div3>
                         <head>ToDo sobald es technisch möglich ist, LateX im Html darzustellen: Mathematische Formeln</head>
                         <p>Mathematische Formeln werden mit LaTeX kodiert. Die Formel selbst wird
-                            mit dem XML-Element <![CDATA[<formula></formula>]]> ausgezeichnet.</p>
+                            mit dem XML-Element <gi>formula</gi> ausgezeichnet.</p>
                         <p>Erscheinen die mathematischen Formeln im Brieftext nicht im Fliesstext
                             sondern vom restlichen Text abgesetzt, wird das Element
-                            <![CDATA[<formula></formula>]]> durch das Attribut
+                            <gi>formula</gi> durch das Attribut
                             <![CDATA[rend="display"]]> ergänzt.</p>
                         <p>Korrekturen durch den Editor werden mittels dem Element
-                            <![CDATA[<choice/>]]> umgesetzt. Dabei wird jeweils die Formel als
-                            Ganzes in die Elemente <![CDATA[<sic/>]]> und <![CDATA[<corr/>]]>
+                            <gi>choice</gi> umgesetzt. Dabei wird jeweils die Formel als
+                            Ganzes in die Elemente <gi>sic</gi> und <gi>corr</gi>
                             gesetzt.</p>
                         <p>Innerhalb von mathematischen Formeln ist es wegen der LaTeX-Notation
                             nicht möglich, weitere TEI XML Elemente zu verwenden. Deshalb ist es
                             beispielsweise nicht möglich, Korrekturen durch den Autor in Formeln mit
-                            <![CDATA[<del/>]]>, <![CDATA[<add/>]]> und <![CDATA[<subst/>]]>
+                            <gi>del</gi>, <gi>add</gi> und <gi>subst</gi>
                             auszuzeichnen. Solche Korretkuren müssen deshalb in einer editorischen
                             Note kommentiert werden.</p>
                         <p>Dasselbe gilt für den Zeilenumbruch in einer Formel. In diesem Fall wird
                             die Formel in mehrere Bestandteile aufgeteilt, zwischen denen das
-                            Element <![CDATA[<lb/>]]> mit dem Attribut break="no" verwendet werden
+                            Element <gi>lb</gi> mit dem Attribut break="no" verwendet werden
                             soll. Das Attribut verhindert, dass innerhalb der Formel ein Leerschlag
                             erzeugt wird.</p>
                         <p><list rend="bulleted">
@@ -472,7 +472,7 @@
                         <p> Zitate werden kodiert, wenn sie als solche erkennbar sind, sei es aufgrund einer Hervorhebung des Textes in der Handschrift sei es 
                             aus dem Kontext. Die Kennzeichnung im Manuskript (Unterstreichung, Anführungszeichen) wird gemäss den in den Abschnitten "Hervorhebungen durch den Autor" und "Anführungszeichen" festgehaltenen Richtlinien ausgezeichnet.</p> 
                         
-                        <p>Kodierung: Das Zitat als Ganzes (Zitierter Text als auch bibliographische Referenzen, Kommentare, Einschübe) wird mit dem Element <![CDATA[<cit>]]> umschlossen. Der zitierte Text wird innerhalb von cit mit dem Element ausgezeichnet <![CDATA[<quote>]]>. Allfällige Angaben zur zitierten Textquelle werden mit dem Element <![CDATA[<bibl></bibl>]]> ausgezeichnet, darin werden Personen, Werke, Briefe mit den Registereinträgen verlinkt. Zwischen folgenden Zitat-Typen wird unterschieden:</p>
+                        <p>Kodierung: Das Zitat als Ganzes (Zitierter Text als auch bibliographische Referenzen, Kommentare, Einschübe) wird mit dem Element <gi>cit</gi> umschlossen. Der zitierte Text wird innerhalb von cit mit dem Element ausgezeichnet <gi>quote</gi>. Allfällige Angaben zur zitierten Textquelle werden mit dem Element <gi>bibl</gi> ausgezeichnet, darin werden Personen, Werke, Briefe mit den Registereinträgen verlinkt. Zwischen folgenden Zitat-Typen wird unterschieden:</p>
                         
                         <p>Indirekte Zitate und Paraphrasen werden mittels Attribut @type=indirect und
                             @type=paraphrase von direkten Zitaten unterschieden.</p>
@@ -482,12 +482,12 @@
                         <p>Zusammenfassend kann man folgende Fälle (die auch kombinierbar sind) unterscheiden:</p>
 
                         <list>
-                <item>Direktes Zitat: <![CDATA[<cit><quote></quote></cit>]]></item>
-                <item>Indirektes Zitat: <![CDATA[<cit><quote type="indirect"></quote></cit>]]></item>
-                <item>Zitat mit erklärender Fussnote <![CDATA[<cit><quote></quote></cit><note type="editorial"></note>]]></item>
-                <item>Zitat mit Angabe des Urhebers und/oder der Quelle (mittels dem bibl-Element, darin die bibliographischen Informationen im jeweiligen rs-Element): <![CDATA[<cit><quote></quote><bibl><rs type="person" key="gnd">[Personenname]</rs> <rs>type="biblio" key="label"></rs><rs type="letter"/></bibl></cit>]]></item>
-                <item>Zitat mit Einschüben: <![CDATA[<cit><quote></quote>[Texteinschub, z.B. "il a dit"]<quote></quote></cit>]]></item>
-                <item>Langes Zitat: <![CDATA[<cit type="long">]]></item>
+                <item>Direktes Zitat: <egXML xmlns="http://www.tei-c.org/ns/Examples"><cit><quote></quote></cit></egXML></item>
+                <item>Indirektes Zitat: <egXML xmlns="http://www.tei-c.org/ns/Examples"><cit><quote type="indirect"></quote></cit></egXML></item>
+                <item>Zitat mit erklärender Fussnote <egXML xmlns="http://www.tei-c.org/ns/Examples"><cit><quote></quote></cit><note type="editorial"></note></egXML></item>
+                <item>Zitat mit Angabe des Urhebers und/oder der Quelle (mittels dem bibl-Element, darin die bibliographischen Informationen im jeweiligen rs-Element): <egXML xmlns="http://www.tei-c.org/ns/Examples"><cit><quote></quote><bibl><rs type="person" key="gnd">[Personenname]</rs> <rs>type="biblio" key="label"></rs><rs type="letter"/></bibl></cit></egXML></item>
+                <item>Zitat mit Einschüben: <egXML xmlns="http://www.tei-c.org/ns/Examples"><cit><quote></quote>[Texteinschub, z.B. "il a dit"]<quote></quote></cit></egXML></item>
+                <item>Langes Zitat: <tag>cit type="long"</tag></item>
             </list>
                        
 
@@ -562,16 +562,16 @@
                     <div3>
                         <head>Ergänzungen durch den Autor</head>
                         <p>Die Ergänzungen, die der Autor selbst im Manuskript vorgenommen hat,
-                            werden mit dem Element <![CDATA[<add>]]> ausgezeichnet.</p>
+                            werden mit dem Element <gi>add</gi> ausgezeichnet.</p>
                     </div3>
                     <div3>
                         <head>Streichungen durch den Autor</head>
                         <p>Streichungen durch den Autor werden mit dem Element
-                            <![CDATA[<del></del>]]> ausgezeichnet. Zu beachten ist dabei die
+                            <gi>del</gi> ausgezeichnet. Zu beachten ist dabei die
                             Streichung des Leerschlags (damit in der Lesefassung kein doppelter
                             Leerschlag stehen bleibt).</p>
                         <p>Falls der gestrichene Text unleserlich ist, wird er durch das Element
-                            <![CDATA[<gap/>]]> ersetzt.</p>
+                            <gi>gap</gi> ersetzt.</p>
 
                     </div3>
                     <div3>
@@ -580,8 +580,8 @@
                         </p>
                         <p> Korrekturen sind Streichungen mit gleichzeitigen Hinzufügungen, wobei
                             der gestrichene Text durch einen neuen Text ersetzt wird. Diese
-                            Ersetzung wird mit dem Element <![CDATA[<subst>]]> ausgezeichnet, das
-                            die Elemente <![CDATA[<del>]]> und <![CDATA[<add>]]> umschliesst.</p>
+                            Ersetzung wird mit dem Element <gi>subst</gi> ausgezeichnet, das
+                            die Elemente <gi>del</gi> und <gi>add</gi> umschliesst.</p>
 
                         <p>Beispiel einer Korrektur mit unleserlichem gestrichenem Text: Brief Nr.
                                 <ref
@@ -600,7 +600,7 @@
                             m<subst><del><gap/></del><add>eliora</add></subst>tione quam </egXML>
 
                         <list><head>Einige weitere Beispiele zum Umgang mit Spatien (aus demselben Brief)</head>
-                        <item>Streichung nach <![CDATA[<lb/>]]>:                
+                        <item>Streichung nach <gi>lb</gi>:                
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <lb/><del>ad I </del>modeste
                             </egXML>
@@ -634,7 +634,7 @@
                     <div3>
                         <head>Hervorhebungen durch den Autor</head>
                         <p>Die vom Autor stammenden Hervorhebungen werden mit dem Element
-                            <![CDATA[<hi></hi>]]> ausgezeichnet. Ein entsprechendes Attribut
+                            <gi>hi</gi> ausgezeichnet. Ein entsprechendes Attribut
                             <![CDATA[@rend]]> gibt die Art der Hervorhebung an: Mögliche Werte
                             sind dabei: </p>
                        
@@ -649,7 +649,7 @@
                         <item>Kapitälchen: <![CDATA[<hi rend="k"></hi>]]></item>
                         <item>Rechtsbündigkeit: <![CDATA[<hi rend="right"></hi>]]></item>
                     </list>
-                        <p>Weitere Kodierungsanleitungen zu <![CDATA[<hi>]]> im DTA:
+                        <p>Weitere Kodierungsanleitungen zu <gi>hi</gi> im DTA:
                             https://www.deutschestextarchiv.de/doku/basisformat/typogrAllg.html?hl=unterstreichung</p>
 
 
@@ -698,18 +698,18 @@
                                 Folgenden werden verschiedene Arten von Korrekturen erläutert.</p>
                             <div5>
                                 <head>Korrekturen von Schreibfehlern</head>
-                                <p>Die Kodierung erfolgt mit den Elementen <![CDATA[<sic></sic>]]>
+                                <p>Die Kodierung erfolgt mit den Elementen <gi>sic</gi>
                                     (das den ursprünglichen Text enthält) und
-                                    <![CDATA[<corr></corr>]]> (das den korrigierten Text enthält).
+                                    <gi>corr</gi> (das den korrigierten Text enthält).
                                     Beide Elemente sind mit dem Element <ref
                                         target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"
-                                        ><![CDATA[<choice></choice>]]></ref> umschlossen. </p>
+                                        ><gi>choice</gi></ref> umschlossen. </p>
                                 <p> Die Korrektur fehlerhafter Satzzeichen erfolgt ebenfalls nach
                                     diesem Schema. Überflüssige Zahlpunkte bei Kardinalzahlen und
                                     fehlende Abkürzungspunkte werden als Normalisierung behandelt. </p>
                                 <p> Eigennamen von Personen, Institutionen, Orten oder Titeln, die
                                     aus heutiger Sicht falsch geschrieben sind, werden nicht
-                                    korrigiert sondern durch Verlinkung (<![CDATA[<rs>]]>) dem
+                                    korrigiert sondern durch Verlinkung (<gi>rs</gi>) dem
                                     entsprechenden Registereintrag, in dem die heutige/korrekte
                                     Schreibweise angegeben ist, zugeordnet. </p>
                                 <p> Beispiel (ToDo: Beispiel kontrollieren) <egXML
@@ -731,8 +731,8 @@
                                 <head>Korrekturen in Formeln</head>
                                 <p> Korrekturen von Fehlern in Formeln werden analog zu denen im
                                     normalen Text durchgeführt. Dabei wird die ursprüngliche Fassung
-                                    der Formel mit <![CDATA[<sic>]]> und die korrgierte mit
-                                    <![CDATA[<corr>]]> ausgezeichnet. Die Korrektur einer Formel
+                                    der Formel mit <gi>sic</gi> und die korrgierte mit
+                                    <gi>corr</gi> ausgezeichnet. Die Korrektur einer Formel
                                     wird zusätzlich in einer editorischen Anmerkung kommentiert. </p>
                                 <p>Kodierung: <![CDATA[ 
                                 <choice>
@@ -764,7 +764,7 @@
                             <div5>
                                 <head>Ergänzung eines Wortes oder Satzzeichens</head>
                                 <p> Wenn korrigierend ein ganzes Wort oder ein Satzzeichen ergänzt
-                                    wird, benutzt man das Element <![CDATA[<supplied></supplied>]]>.
+                                    wird, benutzt man das Element <gi>supplied</gi>.
                                     <!-- Wie soll beim Supplied-Tag mit Leerschlägen umgegangen werden, das hängt von der Visualisierung im TEI Publsiher ab. Benötigt wird eine technische Lösung, bei der in der textnahen Fassung nur ein Leerschlag steht während in der Lesefassung kein Leerschlag in die Eckigen kommt. ToDo mit Margareth und Jelena besprechen. -->
                                 </p>
                                 <p> ToDo: Beispiel </p>
@@ -793,15 +793,15 @@
 
                             <p> Normalisierungen werden in der Regel mit den Elementen <ref
                                     target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html"
-                                    ><![CDATA[<orig></orig>]]></ref> (in dem der ursprüngliche Text
+                                    ><gi>orig</gi></ref> (in dem der ursprüngliche Text
                                 steht), <ref
                                     target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html"
-                                    ><![CDATA[<reg></reg>]]></ref> (in dem der normalisierte Text
+                                    ><gi>reg</gi></ref> (in dem der normalisierte Text
                                 steht), ausgezeichnet. Diese Elemente sind mit dem Element <ref
                                     target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"
-                                    ><![CDATA[<choice></choice>]]></ref> umschlossen. Eine
+                                    ><gi>choice</gi></ref> umschlossen. Eine
                                 Besonderheit bilden Abbreviaturzeichen und Diakritische Zeichen, die
-                                mit dem Element <![CDATA[<g></g>]]> ausgezeichnet werden (siehe dazu
+                                mit dem Element <gi>g</gi> ausgezeichnet werden (siehe dazu
                                 den entsprechenden Abschnitt weiter unten). </p>
                             <div5>
                                 <head>Sprachunabhängige Normalisierungen</head>
