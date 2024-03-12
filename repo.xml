@@ -9,6 +9,6 @@
     <type>application</type>
     <target>bebb-data</target>
     <prepare>pre-install.xql</prepare>
-    <finish/>
-    <permissions user="bebb" group="tei" password="bebb" mode="rw-rw-r--"/>
+    <finish>post-install.xql</finish>
+    <permissions xmlns:repo="http://exist-db.org/xquery/repo" password="simple" user="bebb" group="tei" mode="rw-r--r--" />
 </meta>
