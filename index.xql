@@ -140,6 +140,11 @@ declare function idx:get-commentary($text as element(), $context as xs:string) {
         
     };
 
+declare function idx:get-name($person as element()) {
+    let $name := $person/tei:persName
+    let $var1 := string-join($name/*, ' ')
+    let $var2 := if ($name/tei:surname/text()) then $name/tei:surname || ', ' || $name/tei:forename else $name/tei:forename
+    return string-join(($var1, $var2), ' ')};
 
 
 

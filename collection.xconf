@@ -71,7 +71,7 @@
             <text match="//tei:listPlace/tei:place/tei:placeName"/>
             
             <text match="tei:person" index="no">
-                <field name="name" expression="tei:persName"/>
+                <field name="name" expression="nav:get-name(.)"/>
                 <field name="person-note" expression="tei:note"/>
                 <field name="type" expression="'Person'"/>
                 <facet dimension="type" expression="'Person'"/>
