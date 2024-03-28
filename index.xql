@@ -132,7 +132,7 @@ declare function idx:get-diplomaticText($text as element()) {
     };
     
 declare function idx:get-commentary($text as element(), $context as xs:string) {
-    let $comments := ($text/descendant::tei:note[@type = ('editorial', 'comment')], $text/descendant::div[@type eq 'editorialNote'])
+    let $comments := ($text/descendant::tei:note[@type = ('editorial', 'comment')], $text/descendant::tei:div[@type eq 'editorialNote'])
     return 
         switch ($context)
             case 'document' return string-join($comments, '&#xA;')
