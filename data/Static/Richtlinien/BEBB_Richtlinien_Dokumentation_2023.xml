@@ -293,28 +293,13 @@
                     </div3>
                     <div3>
                         <head>Tabellen</head>
-                        <p>Tabellen werden mit dem Element <gi>table</gi> kodiert. Die
+                        <p>Tabellen werden mit <ref
+                            target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-table.html"
+                            ><gi>table</gi></ref>erfasst. Die
                             erste Zeile <gi>row</gi> wird mit dem Attribut <att>role</att> mit Wert <val>label</val>
                             versehen. Zellen werden mit dem Element <gi>cell</gi>
                             ausgezeichnet.</p>
-                        <p>Tabellen werden mit <ref
-                                target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-table.html"
-                                ><gi>table</gi></ref>erfasst.</p>
                         
-                        <p>
-                            <table>                         
-    <row>
-        <cell>Header 1</cell>
-        <cell>Header 2</cell>
-        <cell>Header 3</cell>
-    </row>
-    <row>
-        <cell>Data 1</cell>
-        <cell>Data 2</cell>
-        <cell>Data 3</cell>
-    </row>
-</table>
-                        </p>
                         <p>Beispiel: <figure facs="999898">
                      <figDesc>Ausschnitt Bild Nr. 1005234</figDesc>
                      <graphic width="50em" url="images_jpg/1000026_section_01.jpg"/>
@@ -341,14 +326,9 @@
                             
                         </egXML>
                     </div3>
+                    
                     <div3>
-                        <head>ToDo: Klammerungen</head>
-                        <p>Klammerungen werden gemäss den Richtlinien des DTA umgesetzt:
-                            https://www.deutschestextarchiv.de/doku/basisformat/klammerung.html
-                            (noch zu besprechen)</p>
-                    </div3>
-                    <div3>
-                        <head>ToDo sobald es technisch möglich ist, LateX im Html darzustellen: Mathematische Formeln</head>
+                        <head>Mathematische Formeln</head>
                         <p>Mathematische Formeln werden mit LaTeX kodiert. Die Formel selbst wird
                             mit dem XML-Element <gi>formula</gi> ausgezeichnet.</p>
                         <p>Erscheinen die mathematischen Formeln im Brieftext nicht im Fliesstext
@@ -760,24 +740,81 @@
                                     <item>
                                         Überflüssige Zahlpunkte bei Kardinalzahlen und Formelpunkte werden normalisierend entfernt.
                                     </item>
+                                        <item>
+                                            Handschriftenspezifische Sonderzeichen, die im Druck oder in der heutigen Praxis nicht mehr wiedergegeben werden, werden mit <gi>reg</gi> normalisiert, dabei wird nicht das ganze Wort normalisiert sondern nur das entsprechende Zeichen. Die folgenden Zeichen gehören dazu:
+                                            <list>
+                                        <item> ƚ => ll</item>
+                                        <item> m̄ => mm</item>
+                                        <item> NB (Ligatur) => NB</item>
+                                        <item> : (Zahlendoppelpunkt) => </item>
+                                        <item> . (Zahlenpunkt) => </item>
+                                        <item> n̄ => nn</item>
+                                        <item> ī => im</item>
+                                        <item> ī => in</item>
+                                        <item> j => i</item>
+                                        <item> |: => (</item>
+                                        <item> :| => )</item>
+                                        <item> ō => on</item>
+                                        <item> „ => </item>
+                                        <item> ū => um</item>
+                                        <item> ū => un</item>
+                                    </list>
+                                        </item>
                                 </list>
                                 </div6>
-                                <div6>
-                                    <head>Normalisierung von Abbreviaturzeichen und Diakritische Zeichen in der lateinischen Sprache</head>
-                                    <list>                                <item>Handschriftenspezifische Sonderzeichen, die im Druck oder in der heutigen Praxis nicht mehr wiedergegeben werden, werden mit dem Element <![CDATA[<g></g>]]> umschlossen. ToDo: Die Handhabung von <![CDATA[<g>]]> wird im Folgenden erläutert:</item>
-                                <item>Fehlende i-Punkte oder j-Punkte werden stillschweigend ergänzt.</item>
-                                <item>Fehlende Apostrophe werden normalisierend ergänzt.</item></list>
-                                </div6>
                             </div5>
-
-
                             <div5>
                                 <head>Sprachabhängige Normalisierungen</head>
                                 <div6>
                                     <head>Lateinische Texte</head>
                                     <p>
                                         <list>
-                                <item>Diakritische Zeichen werden in lateinischen Texten in der Regel mit dem Element <![CDATA[<g>]]> normalisierend entfernt.</item> 
+                                <item>Diakritische Zeichen werden in lateinischen Texten in der Regel normalisierend entfernt. Die folgenden Zeichen gehören dazu: 
+                                    <list>                                
+                                        <item></item>
+                                        <item> á => a</item>
+                                        <item>  Á => A</item>
+                                        <item> æ => ae</item>
+                                        <item> Æ => Ae</item>
+                                        <item> à => a</item>
+                                        <item> À => A</item>
+                                        <item> Â => A</item>
+                                        <item> â => a</item>
+                                        <item> ā => am</item>
+                                        <item> ā => an</item>
+                                        <item> ꝯ => con</item>
+                                        <item> đ => die</item>
+                                        <item> é => e</item>
+                                        <item> É => E</item>
+                                        <item> è => e</item>
+                                        <item> È => E</item>
+                                        <item> ê => e</item>
+                                        <item> ē => em</item>
+                                        <item> ē => en</item>
+                                        <item> [sse] => sse</item>
+                                        <item> [est] => est</item>
+                                        <item> &amp; => et</item>
+                                        <item> ì => i</item>
+                                        <item> î => i</item>
+                                        <item> ó => o</item>
+                                        <item> ò => o</item>
+                                        <item> ô => o</item>
+                                        <item> œ => oe</item>
+                                        <item> Œ => Oe</item>
+                                        <item> õ => omn</item>
+                                        <item> &#42833; => par</item>
+                                        <item> &#42833; => per</item>
+                                        <item> pp. => etc.</item>
+                                        <item> q&#772; => qua</item>
+                                        <item> &#xe8bf; => que</item>
+                                        <item> &#xe68a; => qui</item>
+                                        <item> &#xf199; => tur</item>
+                                        <item> ú => u</item>
+                                        <item> ù => u</item>
+                                        <item> û => u</item>
+                                        <item> [us] => us</item>
+                                    </list>
+                                </item> 
                                 <item>Das Trema wird beibehalten, bzw. normalisierend ergänzt, falls ein Bedeutungsunterschied anzuzeigen ist. Z.B. <![CDATA[<choice><orig>aer</orig><reg>aër</reg></choice>]]>.</item>
                             </list>
                                     </p>
@@ -795,7 +832,7 @@
                                 Die in der französischen Sprache übliche oe-Ligatur wird mit dem Sonderzeichen œ wiedergegeben.
                             </item>
                             <item>
-                                ToDo: wie mit der Cédille umgehen? Bis jetzt wurde die Schreibweise im Orginal beibehalten, auch wenn sie falsch war.
+                                Das Cédille-Zeichen wird vorlagengetreu wiedergegeben.
                             </item>
                         </list>
                                 </div6>
@@ -805,11 +842,18 @@
                                         <list>
                                 <item>In deutschen Wörtern werden diakritische Zeichen weitgehend beibehalten. Das
 Distinktionszeichen über dem u (ú) wird weggelassen.</item>
-                                <item>Ein y mit zwei Punkten wird mit dem Element <![CDATA[<g>]]> ausgezeichnet</item>
                                 <item>i/j und I/J werden in deutschen Wörtern entsprechend ihrem Lautwert normalisiert
 wiedergegeben (z.B. aus  dieienige  wird <![CDATA[<choice><orig>dieienige</orig><reg>diejenige</reg></choice>]]>).</item>
                                 <item>v/V und u/U werden entsprechend ihrem Lautwert normalisiert wiedergegeben (z.B.
 aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universität</reg></choice>]]>).</item>
+                                            <item>
+                                               Die folgenden Zeichen werden entsprechend normalisiert:
+                                    <list>
+                                        <item> [und] => und</item>
+                                        <item> &amp; => und</item>
+                                        <item> uͤ => ü</item>
+                                    </list>
+                                            </item>
                             </list>
                                     </p>
                                 </div6>
@@ -837,7 +881,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 Kontext rekonstruiert werden können. Beispiel:
                                 <!-- Brief von Michelotti an Nic. I B. von 1716.06.19 (000059206): Zeile 66-67 (Ve[ne]-tiis -->
                             </p>
-                            <p> Die Ursache für die Ursache für die Unleserlichkeit wird nicht
+                            <p> Die Ursache für die Unleserlichkeit wird nicht
                                 mittels Markup angegeben sondern (wo sinnvoll) kommentierend in
                                 einer Fussnote erläutert. </p>
                         </div4>
