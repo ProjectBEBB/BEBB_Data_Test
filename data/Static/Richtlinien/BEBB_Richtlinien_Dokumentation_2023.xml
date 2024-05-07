@@ -37,6 +37,7 @@
                 <p>Das Rootelement <gi>TEI</gi> umfasst das Dokument als Ganzes, es ist obligatorisch, da es den TEI namespace (<![CDATA[xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"]]>) enthält.</p>
                 <p>Das Attribut <att>xml:id</att> enthält zudem die Projektinterne ID des Briefes, bestehend aus dem Präfix "B", Datum und Systemnummer des Briefes im Katalog der UB Basel, Beispiel: B_1714-05-15_991170515020505501).</p>
             </div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Text</head>
                 <div2>
@@ -872,45 +873,43 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </div4>
                         <div4>
                             <head>Unsichere Lesarten (Konjekturen)</head>
-                            <p> Die Auszeichnug von beschädigtem, schlecht geschriebenem oder
-                                überstrichenem Text erfolgt mit dem Element <ref
-                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-unclear.html"
-                                    ><![CDATA[<unclear>[Zeichen oder Zeichenkette]</unclear>]]></ref>.
-                                Mit <![CDATA[<unclear>]]> werden auch Zeichen oder Wörter
+                            <p>Die Auszeichnug von schwer leserlichen Stellen (sei es wegen Beschädigungen oder unsleserlicher Schrift) erfolgt mit dem Element <gi>unclear</gi> <!-- neu!! --> Wenn der Text komplett verloren ist, erhält das Element zusätzlich das Attribut <att>reason</att> mit dem Wert <val>lost</val>.
+                                <!-- Das gilt nicht mehr!!! Mit <![CDATA[<unclear>]]> werden auch Zeichen oder Wörter
                                 ausgezeichnet, die zwar nicht mehr vorhanden sind, aber aus dem
-                                Kontext rekonstruiert werden können. Beispiel:
-                                <!-- Brief von Michelotti an Nic. I B. von 1716.06.19 (000059206): Zeile 66-67 (Ve[ne]-tiis -->
+                                Kontext rekonstruiert werden können. Beispiel: -->
                             </p>
-                            <p> Die Ursache für die Unleserlichkeit wird nicht
-                                mittels Markup angegeben sondern (wo sinnvoll) kommentierend in
-                                einer Fussnote erläutert. </p>
+                                <p>
+                                    Falls im Text Wörter oder Zeichen ergänzt werden müssen, weil der Autor diese versehentlich weggelassen hat, wird dies als Korrektur ausgezeichent (also mit einem leeren <gi>sic</gi> und <gi>corr</gi>.
+                                <!-- Beispiel: Brief von Michelotti an Nic. I B. von 1716.06.19 (000059206): Zeile 66-67 (Ve[ne]-tiis -->
+                            </p>
+                            <p> Die Ursache für die Unleserlichkeit wird (wo sinnvoll) kommentierend in
+                                einer Fussnote erläutert.</p>
                         </div4>
                         <div4>
                             <head>Auslassungen</head>
 
                             <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert
                                 werden, muss dies mittels Markup kenntlich gemacht werden. Dazu wird
-                                das leere Element <![CDATA[<gap/>]]> mit dem Attribut
+                                das leere Element <gi>gap</gi> mit dem Attribut
                                 <![CDATA[reason="editorial"]]> verwendet. Dieses Attribut dient zur
                                 Unterscheidung zwischen Auslassungen und Textverlust, die beide mit
-                                dem Element <![CDATA[<gap/>]]> ausgezeichnet werden. Zum Textverlust
+                                dem Element <gi>gap</gi> ausgezeichnet werden. Zum Textverlust
                                 siehe oben den Abschnitt "Nicht lesbare Zeichen".
                                 <!--  gap Könnte zum Beispiel dafür genutzt werden, um gedruckte Beilagen, die nicht transkribiert werden sollen, zu kennzeichnen (siehe den Abschnitt "Beilagen") oder auch, um die Umschlagseiten, in die die Briefseiten teilweise eingebunden waren und die mit-digitalisiert wurden, sowie die leeren Manuskriptseiten auzszuzeichnen. --></p>
 
                         </div4>
 
                         <div4>
-                            <head>Abkürzungen <![CDATA[<abbr>]]></head>
-                            <p>Abkürzungen werden mit dem Element <![CDATA[<abbr>]]> ausgezeichnet.
+                            <head>Abkürzungen (<gi>abbr</gi>)</head>
+                            <p>Abkürzungen werden mit dem Element <gi>abbr</gi> ausgezeichnet.
                                 Abgekürzte Wörter, die nicht allgemein verständlich sind, werden
-                                zusätzlich mit <![CDATA[<expan></expan>]]> aufgelöst:
-                                <![CDATA[<choice><abbr></abbr><expan></expan></choice>]]>. </p>
-                            <p> Fehlende Abkürzungspunkte werden normalisierend ergänzt. <!-- Das wurde oft mittels Supplied-Tag gemacht, mit Martin besprechen, was besser ist --></p>
+                                zusätzlich mit <gi>expan</gi> aufgelöst.</p>
+                            <p> Fehlende Abkürzungspunkte werden normalisierend mit <gi>supplied</gi> ergänzt.</p>
                             <p> Falls anstelle des Abkürzungspunktes ein anderes Zeichen verwendet wurde
                                 (meistens ein Doppelpunkt oder ein waagrechter Strich) wird dieses
                                 Zeichen stillschweigend als einfacher Punkt wiedergegeben.</p>
 
-                            <p>Falls der Abkürzungspunkt gleichzeitig die Funktion eines Satzpunktes erfüllt, wird die Abkürzung ohne Abkürzungspunkt getaggt, z.B. <abbr>etc</abbr>. oder <choice><abbr>Vars</abbr><expan>Varsovie</expan></choice>.</p>
+                            <p>Falls der Abkürzungspunkt gleichzeitig die Funktion eines Satzpunktes erfüllt, wird die Abkürzung ohne Abkürzungspunkt getaggt, z.B.  <![CDATA[<abbr>etc</abbr>.]]>. oder <choice><abbr>Vars</abbr><expan>Varsovie</expan></choice>.</p>
                                 <p>Zu beachten gibt es folgende Sonderfälle: <list>
                             <item><!-- ToDo: Das Beispiel soll aufgrund der Besprechung im Team zur Normalisierung des Abkürzugnspunktes noch angepasst werden. -->
                                 Eine Normalisierung (bzw. Korrektur) in einer Abkürzung:
@@ -944,10 +943,10 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             <item>
 
                                 
-                                Abgekürzte Eigennamen werden mit dem Element <![CDATA[<abbr>]]> ausgezeichnet aber nicht aufgelöst, da die Verlinkung mit dem jeweiligen Register über den rs-Tag eine Identifikation (und damit verbunden die Auflösung des Namens) impliziert.
+                                Abgekürzte Eigennamen werden mit dem Element <gi>abbr</gi> ausgezeichnet aber nicht aufgelöst, da die Verlinkung mit dem jeweiligen Register über den rs-Tag eine Identifikation (und damit verbunden die Auflösung des Namens) impliziert.
                             </item>
                             <item>
-                                Abkürzungen in Formeln werden nicht ausgezeichnet. <!-- ToDo: zu besprechen -->
+                                Abkürzungen in Formeln werden nicht ausgezeichnet. 
                             </item>
                              
                             
@@ -959,28 +958,25 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
 
                         <div4>
                             <head>Sprachwechsel</head>
-                            <p> Die Sprache des Dokumentes wird allemein im Header festgehalten,
+                            <p> Die Sprache des Dokumentes wird allgemein im Header festgehalten,
                                 Sprachwechsel im Brieftext wird mit dem Element
-                                <![CDATA[<foreign>]]> und dem Attribut <![CDATA[xml:lang]]>
+                                <gi>foreign</gi> und dem Attribut <att>xml:lang</att>
                                 ausgezeichnet. </p>
-                            <p>Das Attribut gibt die jeweilige Sprache  an
-                                (<![CDATA[<foreign xml:lang="lat"></foreign>]]>). Die im Projekt vorkommenden Werte
-                                sind: </p>
+                            <p>Der Attributwert entspricht dem dreibuchstabigen Code der Sprache (ISO 639-2 Norm, Library of Congress Standards):</p>
                             <list>
-                        
-                           <item>Griechisch: grc</item>
-                        <item>Latein: lat</item>
-                        <item>Hebräisch: heb</item>
-                        <item>Deutsch: 	deu</item>
-                        <item>Französisch: fra</item>
-                        <item>Englisch: 	eng</item>
-                        <item>Russisch: 	rus</item>
-                        <item>Italienisch: ita</item>
-                        <item>Niederländisch: nld</item>
-                        <item>NIcht zu entscheiden: und</item>
-                    </list>
+                                <item>Griechisch: grc</item>
+                                <item>Latein: lat</item>
+                                <item>Hebräisch: heb</item>
+                                <item>Deutsch: 	deu</item>
+                                <item>Französisch: fra</item>
+                                <item>Englisch: eng</item>
+                                <item>Russisch: rus</item>
+                                <item>Italienisch: ita</item>
+                                <item>Niederländisch: nld</item>
+                                <item>Nicht zu entscheiden: und</item>
+                            </list>
 
-                            <p>Der dreibuchstabige Code entspricht der ISO 639-2 Norm (Library of Congress Standards).</p>
+                            <p></p>
 
                             <p> Zu beachten ist Folgendes:
                                 <list>
@@ -990,10 +986,8 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
 </list>
                             </p>
                             <p> In deutschen Texten finden sich häufig Ausdrücke aus anderen
-                                Sprachen. Hier ist es Ermessenssache, ob man einen Satzteil
-                                <![CDATA[<foreign>]]> auszeichnet oder nicht. </p>
-
-
+                                Sprachen. Hier ist es Ermessenssache, ob man einen Satzteil mit <gi>foreign</gi> auszeichnet oder nicht. </p>
+                            
                             <p>Beispiel: Bild: 1063075_section_01</p>
 
                             <p>Bsp.: Brief Nr. <ref
@@ -1026,7 +1020,6 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             <p> Anhand dieses Beispiels sieht man, dass auch ein einzelnes Wort wie
                                 "ex" ausgezeichnet werden kann, wenn es Teil eines umfassenderen
                                 Textteils ist. </p>
-                            <p>ToDo: Sprachangaben in den Metadaten behandeln.</p>
                         </div4>
                         <div4>
                             <head>Transkription von Sonderzeichen</head>
@@ -1037,21 +1030,23 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 <head>Symbole</head>
                                 <p> Symbole für Planeten, chemische Elemente, Masseinheiten oder
                                     Währungen werden analog zu Abkürzungen behandelt. In
-                                    <![CDATA[<abbr></abbr>]]> steht das mit dem entsprechenden
+                                    <gi>abbr</gi> steht das mit dem entsprechenden
                                     Unicode-Zeichen erfasste Sonderzeichen, in
-                                    <![CDATA[<expan></expan>]]> die Auflösung. Falls das benötigte
+                                    <gi>expan</gi> die Auflösung. Falls das benötigte
                                     Sonderzeichen bei Unicode nicht verfügbar ist, kann auf MUFI
                                     ausgewichen werden.
-                                    <!-- Problem, wenn kein entpsrechendes Unicode-Symbol existiert. Nachzeichnen und im Text einbetten? Margareth fragen, ob das technisch möglich ist.-->
                                     Beispiel: &#x0364; Das Unicode-Zeichen soll nach dem
                                     hexadezimalen System kodiert werden. </p>
+                                <p>
+                                    Falls kein Sonderzeichen zur Verfügung steht, kann entweder eine Bilddatei eingebettet oder mittels editorischer Fussnote auf das Manuskript verwiesen werden.
+                                </p>
                             </div5>
                             <div5>
                                 <head>Zahlen</head>
                                 <p> Arabische und römische Zahlen werden vorlagengetreu
                                     transkribiert, d.h. römische Zahlen werden nicht in arabische
                                     umgewandelt und der Wert wird nicht spezifisch
-                                    ausgezeichnet.<!-- ToDo: mit Martin besprechen: Bisher wurde das Zeichen ↀ (Tausend) mit M wiedergegeben. Bei MUFI gibt es dazu ein Sonderzeichen: &romnumCDlig; 2180 NumbFo ROMAN NUMERAL ONE THOUSAND C D -->
+                                    ausgezeichnet.
                                 </p>
                                 <p> Überflüssige Zahlpunkte werden bei Kardinalzahlen normalisierend
                                     entfernt. Punkte bei Ordinalzahlen werden vorlagengetreu
@@ -1198,6 +1193,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                     </div3>
                 </div2>
             </div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Briefstruktur</head>
 
@@ -1474,7 +1470,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
 
             </div1>
-
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Register</head>
                 <p>In der BEBB werden die folgenden Entitäten in Registern erfasst:
@@ -1670,6 +1666,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                     <head>Institutionenregister</head>
                 </div2>
             </div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Metadaten</head>
 
@@ -2319,6 +2316,7 @@ Briefe, p. 52 (https://ub.unibas.ch/digi/a100/diverse_projekte/ubpublikationen/h
 
 
             </div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Facsimile</head>
                 <p>Die facsimile werden folgendermassen eingebunden: <![CDATA[<facsimile>/<graphic url="manifest.../>]]></p>
@@ -2333,7 +2331,8 @@ Briefe, p. 52 (https://ub.unibas.ch/digi/a100/diverse_projekte/ubpublikationen/h
                 </p>
                 <p>Der Bildnachweis und die Nutzungsbedingungen werden aus dem Bildmanifest eingebunden. Siehe dazu die Lösung bei Humboldt-Digital. Zusätzlich führt ein Link zum Digitalisat auf e-manuscripta oder einer anderen Bild-Plattform. </p>
             </div1>
-            <div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+            <div1><!-- Das gehört mit dem ersten Abschnitt zusammen -->
                 <head>Prolog der XML-Datei</head>
                 <p></p>
                 <div2>
@@ -2352,11 +2351,13 @@ Briefe, p. 52 (https://ub.unibas.ch/digi/a100/diverse_projekte/ubpublikationen/h
                     <p></p>
                 </div2>
             </div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>teiCorpus</head>
                <p><![CDATA[<teiCorpus></teiCorpus>]]></p>
                 <p>XInclude</p>
             </div1>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Verwendete Elemente</head>
                 <p><![CDATA[
