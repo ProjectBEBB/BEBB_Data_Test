@@ -45,7 +45,7 @@
                     <!-- <change when="2021-12-01" who="SG" who="EK">Kollationiert</change>-->
                     <div3>
                         <head>Verlinkungen</head>
-                        <p>Verweise auf die Index-Dateien erfolgen mittels <gi>rs</gi> und <att>key</att> (Wert=xml:id).</p>
+                        <p>Verweise auf die Index-Dateien erfolgen mittels <gi>rs</gi>. Das Attribut <att>type</att> den Typ der Entität an (mögliche Werte sind <val>person</val>, <val>place</val>, <val>biblio</val>, <val>letter</val>, <val>organisation</val>, <val>keyword</val>). Das Attribut <att>key</att> gibt hingegen im Attribut hingegen die jeweilige xml:id des Index-Eintrags an.</p>
                         <p><gi>ptr</gi></p>
                         
                     </div3>
@@ -64,22 +64,16 @@
             
             2. <del>dila-</del><lb/><del>tio </del>   -->
 
-                        <p>Kodierung: <gi>lb</gi>.</p>
+                        <p>Kodierung: <gi>lb</gi></p>
 
                         <p>
                             <list>
                             <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <gi>lb</gi>.</item>
                             
                             
-                        <item>Zeilenumbruch mit Worttrennung (egal ob mit oder ohne Trennstrich am Zeilenende und unabhängig von der Form des Trennstrichs - einfach oder doppelt): Die Zeile endet mit <![CDATA[<pc type="hyphenation">-</pc>]]> und die neue Zeile beginnt mit <![CDATA[<lb break="no"/>]]></item>
-                            <item>Zeilenumbruch bei Seitenwechsel: Die Zeile endet mit <![CDATA[<pc type="hyphenation">-</pc>]]> gefolgt vom Seitenumbruch, die neue Zeile auf der neuen Seite beginnt  mit <![CDATA[<lb break="no"/>]]>.</item>
-                            <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
-                            <item>
-                                Zeilenumbruch und Worttrennung in einer Adresse (AddrLine usw.): Verweis auf Adresse (toDo)
-                            </item>
-                            <item>
-                                Zu Gedichtzeilen siehe Gedicht... (ToDo)
-                            </item>
+                        <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <gi>pc</gi> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert "no".</item>
+                            <item>Zeilenumbruch bei Seitenwechsel: vor dem Line-Beginning steht das Element <gi>pb</gi>.</item>
+                            <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem nicht ausgezeichneten Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
                         </list>
                         </p>
                         <p>Beispiel eines normalen Zeilenumbruchs und Zeilenumbruch mit
@@ -99,55 +93,26 @@
                                 <lb/>Huius autem rei demonstrationem apud nullum Hydrostaticae
                                 <lb/>Scriptorem ad invenire potui.</p>
                             <p>
-                                <lb/>Gratum etiam mihi facies si mihi quae sequuntur pro<pc
-                                    type="hyphenation">-</pc>
-                                <lb break="no"/>blemata solveris, quorum usus maximi esse poterit
-                                momenti <lb/>in doctrina de sanguinis missione, quam Deo dante,
-                                teque hu<pc type="hyphenation">-</pc>
+                                <lb/>Gratum etiam mihi facies si mihi quae sequuntur pro<pc type="hyphenation">-</pc>
+                                <lb break="no"/>blemata solveris, quorum usus maximi esse poterit momenti
+                                <lb/>in doctrina de sanguinis missione, quam Deo dante, teque hu<pc type="hyphenation">-</pc>
                                 <lb break="no"/>maniter favente augere conabor.</p>
                         </egXML>
 
                         <p>Beispiel eines Zeilenumbruchs am Seitenende: Brief <ref
-                                target="https://swisscollections.ch/Record/991170517039305501"
-                                >000059215</ref>, <ref
-                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
-                                >e-manuscripta</ref>, Bild: <ref
-                                target="https://www.e-manuscripta.ch/bau/content/pageview/1038363"
-                                >Nr. 1038363</ref>
+                                target="https://swisscollections.ch/Record/991170517039305501">000059215</ref>, <ref
+                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822">e-manuscripta</ref>, Bild: <ref
+                                target="https://www.e-manuscripta.ch/bau/content/pageview/1038363">Nr. 1038363</ref>
                             <figure>
                         <figDesc>Ausschnitt Bild Nr. 1038363</figDesc>
                         <graphic width="50em" url="images_jpg/1038363_section_01.jpg"/>
                             <graphic width="50em" url="images_jpg/1038363_section_02.jpg"/>
                      </figure></p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                            <lb/>cum vix ante festum Divi Antonii hinc profe<pc type="hyphenation"
-                                >-</pc>
+                            <lb/>cum vix ante festum Divi Antonii hinc profe<pc type="hyphenation">-</pc>
                             <pb facs="1038364"/>
-                            <lb break="no"/>cturus sim, poteris interim, si Tibi lubeat, quae veles
-                            a me exequenda, </egXML>
-
-
-
-
-
-
-
-                        <p>Beispiel eines Zeilenumbruchs mit Bindestrich am Zeilenende<!-- ToDo: Ein besseres Beispiel suchen -->: Brief <ref
-                                target="https://swisscollections.ch/Record/991170430085505501"
-                                >000054816</ref>, <ref
-                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
-                                >e-manuscripta</ref>, Bild: <ref
-                                target="https://www.e-manuscripta.ch/bau/content/pageview/1063824"
-                                >Nr. 07</ref>
-                            <figure>
-                        <figDesc>Ausschnitt Bild Nr. 07</figDesc>
-                        <graphic width="50em" url="images_jpg/07_section_01.jpg"/>
-                     </figure></p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                            <lb/>Fahrenheyd. Si la hauteur moyenne du barometre à Neuf-
-                            <lb break="no"/>Chatel est supposée de 26 pouces; les
-                                <formula>\frac{153}{10000}</formula> de 26 pouces font </egXML>
-
+                            <lb break="no"/>cturus sim, poteris interim, si Tibi lubeat, quae veles a me exequenda,
+                        </egXML>
                     </div3>
                     <div3>
                         <head>Absatz</head>
@@ -165,20 +130,7 @@
                     <div3>
                         <head>Seitenbeginn</head>
 
-                        <p>Der Seitenbeginn wird mit <ref
-                                target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html"
-                                ><![CDATA[<pb facs="Bildnummer"/>]]></ref> ausgezeichnet. Bei der Bildnummer in <ref
-                                target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.facs.html"
-                                    ><hi rend="italic">facs</hi></ref> handelt es sich um den Identifier der einzelnen
-                            Faksimile-Bilder auf <ref target="https://www.e-manuscripta.ch"
-                                >e-manuscripta</ref>.</p>
-                        <p>
-                            Bei Bildern, die nicht auf e-manuscripta verfügbar sind, wird die interne, auf dem BEBB-iiif-Server vergebene Bildnummer verwendet. <!-- (ToDo: hier ist noch zu klären, wie sich diese Nummer von der e-manuscripta-Nummer bzw. von allfälligen weiteren Bildnummern von externen Anbietern unterscheidet, sobald die ersten iiif-Manifeste generiert wurden.) -->
-                        </p>
-                        <p>
-                            Die Erfassung  der Foliierung / Paginierung erfolgt im Attribut
-                                <![CDATA[n=""]]>. Hier steht die Seitenzahl gemäss Paginierung bzw. Foliierung auf dem Manuskript. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ... 
-                        </p>
+                        <p>Der Seitenbeginn wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html"><gi>pb</gi></ref> ausgezeichnet. Das Attribut <att>facs</att> enthält im Wert die Bild-ID, mit der das Bild im Manifest gekennzeichnet ist. Das Attribut <att>n</att> enthält in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ...</p>
                         <p>
                             Leere Seiten werden <gi>pb</gi> im Brieftext erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
                         </p>
@@ -204,22 +156,8 @@
                     <div3>
                         <head>Gedicht</head>
 
-                        <p> Kodierung: <![CDATA[
-                        <lg>
-                        <l>[Vers 1]</l>
-                        <l>[Vers 2]</l>
-                        <l>[Vers 3]</l>
-                        </lg>
-                        ]]>
-                            <!-- https://www.deutschestextarchiv.de/doku/basisformat/geProsa.html -->
-                        </p>
+                        <p> Kodierung: Der einzelne Vers wird mit <gi>l</gi> (line), eine Versgruppe mit <gi>lg</gi> (line group) ausgezeichnet.</p>
 
-                        <p>Ein Gedicht, dessen Zeilen im Briefmanuskript visuell durch grössere
-                            Seitenränder (Margin) abgesetzt sind, wird als line group <ref
-                                target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lg.html"
-                                ><gi>lg</gi></ref>, die sich aus einzelnen lines <ref
-                                target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html"
-                                ><gi>l</gi></ref> zusammensetzt, ausgezeichnet.</p>
                         <p>Bsp.: Brief Nr. <ref
                                 target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056976"
                                 >000056976</ref>, <ref
@@ -233,9 +171,10 @@
                         </figure></p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <p>
-                                <lb/>Occasione auspicati ante tres dies Anni <lb/>novi ad Nestoreos
-                                usque Annos fausta tibi <lb/>grataque opto ac foveo animitus omnia
-                                imo </p>
+                                <lb/>Occasione auspicati ante tres dies Anni
+                                <lb/>novi ad Nestoreos usque Annos fausta tibi
+                                <lb/>grataque opto ac foveo animitus omnia imo
+                            </p>
                             <lg>
                                 <l>Θεὸς εὔφρων εἴη</l>
                                 <l>λοιπαῖς εὐχαῖς</l>
@@ -244,23 +183,17 @@
                                 <l>propitius sit Deus</l>
                                 <l>reliquis votis</l>
                             </lg>
-                            <p><lb/>quae vel alij fundunt, vel ipse tibi, vel quae no<pc
-                                    type="hyphenation">-</pc>
-                                <lb break="no"/>tissima Tua per orbem postulant merita.</p>
+                            <p><lb/>quae vel alij fundunt, vel ipse tibi, vel quae no<pc type="hyphenation">-</pc>
+                               <lb break="no"/>tissima Tua per orbem postulant merita.</p>
                         </egXML>
-
                     </div3>
 
                     <div3>
                         <head>Anmerkung im Manuskript</head>
                         
-                        <p> Kodierung: <![CDATA[<note></note>]]>. Zur besseren Unterscheidung von
-                            anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird
-                            das Attribut <att>hand</att> verwendet mit
-                            Angabe der xml:id aus dem Personenregister, beispielsweise
-                            <![CDATA[<note hand="pers_DE-588-118509969"></note>]]>.</p>
-                        <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem
-                            einheitlichen Tag <gi>metamark</gi> wiedergegeben.</p>
+                        <p> Kodierung: <gi>note</gi>. Zur besseren Unterscheidung von anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit
+                            Angabe der xml:id aus dem Personenregister, beispielsweise hand="pers_DE-588-118509969". Falls die Schreiberhand nicht bekannt ist, lautet der Wert "unknown".</p>
+                        <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem einheitlichen Tag <gi>metamark</gi> wiedergegeben.</p>
                         <p>Beispiel:</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <note hand="pers_DE-588-117589136">à M. le C.te de Tressan</note>
@@ -280,7 +213,7 @@
                     </div3>
                     <div3>
                         <head>Figuren und Abbildungen</head>
-                        <p>Figuren im Manuskript werden mit dem Element <gi>figure</gi> ausgezeichnet. Über das Attribut facs, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat verwiesen. Das Attribut hand enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figut im <gi>note</gi>-Kindelement festgehalten werden.</p>
+                        <p>Figuren im Manuskript werden mit dem Element <gi>figure</gi> ausgezeichnet. Über das Attribut facs, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat verwiesen. Das Attribut hand enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figur im <gi>note</gi>-Kindelement festgehalten werden.</p>
                         <p>Das Element <gi>figure</gi> kann optional die folgenden Unterelemente enthalten:
                             <list>
                                 <item><gi>p</gi> für eine Bildüberschrift im Original</item> 
@@ -289,9 +222,8 @@
                             </list>
                             </p>
                         <p>Das Element <gi>figure</gi> wird im Text nach der Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p><!-- ToDo: Margareth und Martin fragen, ob diese Vorgehensweise korrekt ist. For allem wenn die Figuren nicht auf der selben Seite abgebildet sind, wie die Textstelle mit der Erwähnung der Figur (Beispiel Brief 1714-04-14 von Michelotti, https://www.e-manuscripta.ch/bau/content/zoom/1063869 -->
-                        <p>
-                            Das Bild wird zu diesem Zweck mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png in einem speziellen Ordner abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer Tiefstrich und Nummer (wobei die Nummerierung pro Seite stattfindet, z.B. 02, falls es sich auf der Seite um die zweite Figur handelt).
-                        </p>
+                        <!-- Das Bild wird zu diesem Zweck mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png in einem speziellen Ordner abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer Tiefstrich und Nummer (wobei die Nummerierung pro Seite stattfindet, z.B. 02, falls es sich auf der Seite um die zweite Figur handelt). -->
+                       
                         <p>Kodierung:
                             
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"><figure facs="abbildung" hand="xml:id">
@@ -315,11 +247,11 @@
                     </div3>
                     <div3>
                         <head>Listen</head>
-                        <p> Kodierung: Eine Liste wird mit <![CDATA[<list></list>]]> ausgezeichnet.
-                            Die einzelnen Listeneinträge werden mit <![CDATA[<item></item>]]>
+                        <p> Kodierung: Eine Liste wird mit <gi>list</gi> ausgezeichnet.
+                            Die einzelnen Listeneinträge werden mit <gi>item</gi>
                             ausgezeichnet. </p>
-                        <p>Bsp.: Brief Nr. <ref>
-                                target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433096405504"<!-- SG sollten die Links nicht auf Swisscolletions leiten? -->
+                        <!-- <p>Bsp.: Brief Nr. <ref>
+                                target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433096405504" (SG sollten die Links nicht auf Swisscolletions leiten?)
                                 >000056434</ref>, <ref
                                 target="https://www.e-manuscripta.ch/bau/content/titleinfo/999897"
                             />e-manuscripta, Bild: <ref
@@ -356,6 +288,7 @@
                             <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_118703056">Freret</rs> 1</item>
                             <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_102465738">Desplaces</rs> <abbr>Astron.</abbr> 1</item></list>
                         </egXML>
+                        -->
 
                     </div3>
                     <div3>
