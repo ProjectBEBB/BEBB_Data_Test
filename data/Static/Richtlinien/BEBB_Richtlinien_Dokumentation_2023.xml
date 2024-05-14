@@ -935,21 +935,13 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </reg>
                         </choice> 
                     </egXML></p>
-                                
-                        
-                        
-                        
                             </item>
                             <item>
-
-                                
                                 Abgekürzte Eigennamen werden mit dem Element <gi>abbr</gi> ausgezeichnet aber nicht aufgelöst, da die Verlinkung mit dem jeweiligen Register über den rs-Tag eine Identifikation (und damit verbunden die Auflösung des Namens) impliziert.
                             </item>
                             <item>
                                 Abkürzungen in Formeln werden nicht ausgezeichnet. 
                             </item>
-                             
-                            
                         </list>
                             </p>
 
@@ -1021,6 +1013,16 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 "ex" ausgezeichnet werden kann, wenn es Teil eines umfassenderen
                                 Textteils ist. </p>
                         </div4>
+                        
+                        <div4>
+                            <head>Datumsangaben</head>
+                            <p>Das Datum wird mit <gi>date</gi> ausgezeichnet. Im Attribut <att>when</att> ist das Datum in normierter Form yyyy-mm-dd erfasst. Das normierte Datum entspricht immer dem gregorianischen Kalender. Angaben wie "vorgestern" oder "letztes Jahr" werden auch mit <gi>date</gi> ausgezeichnet. Falls das Datum nicht dem gregorianischen Kalender zugehört, wird der Kalender zusätzlich mit dem Attribut <att>calendar</att> versehen: Werte für <att>calendar</att> sind: <list>
+                                <item>julian</item>
+                                <item>venetian (für "more veneto")</item>
+                            </list></p>
+                            
+                            
+                        </div4>
                         <div4>
                             <head>Transkription von Sonderzeichen</head>
                             <p> Für Abbreviaturzeichen siehe den Abschnitt "Normalisierung von
@@ -1054,143 +1056,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             </div5>
                         </div4>
                     </div3>
-                    <div3>
-                        <head>Sachauszeichnung</head>
-                        <div4>
-                            <head>Front-Bereich <![CDATA[<front></front>]]>, <![CDATA[<div type="editorialNote"></div>]]></head>
-                            <p>Der Front-Bereich <![CDATA[<front></front>]]> kann eine Editorische Notiz <![CDATA[<div type="editorialNote"></div>]]> mit allgemeinen Vorbemerkungen zur Quelle, Provenienz oder zur editorischen Behandlung des Briefes. </p>
-                            <p>
-                                Besipiel: 
-                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                    <text>
-                                        <front>
-                                            <div type="editorialNote">
-                                                <head>Bemerkungen zur Transkription</head>
-                                                <p>
-                                                    Der folgende Text wurde nach der Fotografie von fo. 1r der Handschrift in Aristophil, Vente inaugurale, Lot 122, transkribiert.
-                                                </p>
-                                            </div>
-                                        </front>
-                                    </text>
-                                </egXML>
-                            </p>
-                        </div4>
-                        <div4>
-                            <head>Sachkommentar</head>
-                            <p>Der Sachkommentar ist eine erläuternde Fussnote, die der inhaltlichen
-                                Erschliessung dient. Sie wird folgendermassen kodiert:
-                                <![CDATA[<note type="comment">Kommentartext</note>]]>. Der
-                                Bearbeitungszustand (vorläufige interne Notiz, ausgeführte
-                                Anmerkung, redaktionell bearbeitete Anmerkung bereit zur
-                                Publikation) wird mit dem Attribut
-                                <![CDATA[cert="low", cert="middle", cert="high"]]> angegeben. Die
-                                für die Verfassung des Kommentars verantwortliche Person wird mittels Attribut @resp="Personen-Kürzel" erfasst. Die Personenkürzel sind im Personenindex aufgelöst.</p>
-
-                            <p> Sachkommentare können Folgendes umfassen:
-                                <list>
-                            <item>Kommentare zum Kontext der im Brief besprochen Inhalte.</item>
-                            <item>Nachweis von Briefen, die nicht zu den Bernoulli-Briefwechseln gehören.</item>
-                            <item>Stellenverweise von Bibelzitaten und Zitaten der antiken römischen und griechischen Literatur, die nicht eine konkrete Textausgabe referenzieren und somit nicht über die Bibliographie erschlossen werden können.</item>
-                            <item>Erläuterungen zu wenig bekannten Eigennamen (Orte, Berge, Flüsse etc.) und zu historischen Ereignissen.</item>
-                            <item>Worterklärungen (z. B. veralteter oder untergegangener Wörter), falls deren Bedeutung nicht aus dem Kontext ersichtlich ist. </item>
-                            <item/>
-                        </list>
-                            </p>
-                            <p> ToDo: Beispiel </p>
-                        </div4>
-                        <div4>
-                            <head>Personen, Briefe, Orte, Institutionen und Publikationen</head>
-                            
-
-                            <p> Kodierung:
-                                <list>
-                            
-                            <item><![CDATA[<rs type="person" key="xml:id">Verweistext Person</rs>]]></item>
-                            <item><![CDATA[<rs type="persons" key="xml:id xml:id xml:id">Verweistext Personengruppe</rs>]]> (im Plural)</item>
-                            <item><![CDATA[<rs type="letter" key="xml:id">Verweistext Brief</rs>]]></item>
-                            <item><![CDATA[<rs type="letters" key="xml:id xml:id xml:id">Verweistext Brief</rs>]]></item>
-                            <item><![CDATA[<rs type="place" key="xml:id">Verweistext Ort</rs>]]></item>
-                            <item><![CDATA[<rs type="places" key="xml:id xml:id xml:id">Verweistext Ort</rs>]]></item>
-                            <item><![CDATA[<rs type="organisation">Verseistext Institution</rs>]]> (vorerst ohne key)</item>
-                            <item><![CDATA[<rs type="biblio" key="xml:id"></rs>]]></item>
-                            <item><![CDATA[<rs type="biblios" key="xml:id xml:id xml:id"></rs>]]></item>
-                                    
-
-                        </list>
-                                Aufbau der verwendeten xml:id : 
-                                <list>
-                                    <item>Person: pers_DE-588-[GND-Nummer]</item>
-                                    <item>Person (nicht in gnd erfasst): pers_no-id_000001 (falls keine GND-Nummer verfügbar)</item>
-                                    <item>Ort: place_GEO-[Geonames-ID]</item>
-                                    <item>Ort (nicht in Geonames erfasst): place_[variables Präfix]-[6 erste Buchstaben des Namens]: Als Präfix werden hier die folgenden Abkürzungen verwendet: GEB=Gebirge, GEW=GEwässer, KON=Kontinente und Länder, STR=Strassen, VER=Verschiedene, WEI=Weitere</item>
-                                    <item>Institutionen: Werden vorläufig noch nicht mit ID angegeben.</item>
-                                    <item>Bibliographier Eintrag: biblio_[Zotero-ID der Einträge in der BEBB-Zotero-Gruppe]</item>
-                                    <item>Brief: Die ID besteht aus dem Präfix"B"_Datum_18-stellige NZ ID der UB Basel (Systemnummer in Swisscollections), z.B. B_1763-12-07_991170514768005501</item>
-                                </list>
-                                
-                            </p>
-                            <p>Die xml:id sind gleichzeitig auch Dateiname der jeweiligen Index-Datei oder der Briefdatei.</p>
-                            <p> Die Vorkommnisse werden im Brieftext durchgehend ausgezeichnet, unabhängig davon,
-                                wo sie sich befinden (Briefanfang, Brieftext und
-                                Briefschluss) In den Fussnoten werden die Vorkommnisse nur ergänzend ausgezeichnet, d.h. falls sie in der dazugehörigen Briefpassage nicht erwähnt sind. Personalpronomina oder
-                                Relativpronomina, die für Personen oder andere auszuzeichnenden
-                                Entitäten stehen, werden nicht ausgezeichnet. Beispiel:  "ille" in
-                                folgender Passage: <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...] an nihil de <rs type="person"
-                                    key="pers_DE-588_104185643">Burneto</rs> inaudiveris, forsan ille
-                                jam in Patriam [...] redux</egXML>. Innerhalb eines Publikationstitels genannte
-                                Entitäten werden nicht zusätzlich ausgezeichnet. (z.B. E. W. von
-                                Tschirnhaus, Responsio ad Observationes Dominorum Bernoulliorum ...) </p>
-                            <div5>
-                                <head>Personen</head>
-                                <p>Personen werden mit dem Tag
-                                    <![CDATA[<rs type="person" key="xml:id">Beispielperson</rs>]]>
-                                    ausgezeichnet. Dabei wird die GND-Nummer als key verwendet.</p>
-                                <p> Ein Wort oder eine Bezeichnung, die mehrere bekannte Personen
-                                    impliziert, wird mit
-                                    <![CDATA[<rs type=persons" key="xml:id xml:id xml:id"/>]]>
-                                    ausgezeichnet, wobei persons (im Plural!) steht und die IDs
-                                    nebeneinander innerhalb eines einzigen key-Tags stehen. </p>
-                                <p>ToDo: welchen key bei Personen, die über keine GND verfügen?</p>
-                            </div5>
-                            <div5>
-                                <head>Briefe</head>
-                                <p>erwähnte Briefe werden mit
-                                    <![CDATA[<rs type="letter" key="Systemnummer">Briefnennung</rs>]]>
-                                    ausgezeichnet.</p>
-                            </div5>
-                            <div5>
-                                <head>Orte</head>
-                            </div5>
-                            <div5>
-                                <head>Institutionen</head>
-                                <p>Institutionen werden vorerst nur mit dem Tag
-                                    <![CDATA[<rs type="organisation">Beispielinstitution</rs>]]>
-                                    ohne Angabe eines ref ausgezeichnet.</p>
-                            </div5>
-                            <div5>
-                                <head>Publikationen</head>
-                            </div5>
-                        </div4>
-                        <div4>
-                            <head>Datumsangaben</head>
-                            <p>Das Datum wird mit <ref
-                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-date.html"
-                                    ><![CDATA[<date/>]]></ref> ausgezeichnet.</p>
-                            
-                        </div4>
-                        <div4>
-                            <head>Massangaben</head>
-                        </div4>
-
-                        <div4>
-                            <head>Verweise</head>
-                            <p> Noch zu klären, ob in BEBB nötig: Kodierung: <![CDATA[<anchor>]]>
-                                und <![CDATA[@xml:id]]>
-                                <!-- https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/verweise.html#topic_e1f_thv_ty__section_m2x_qfd_mkb -->
-                                <!-- https://edition-humboldt.de/richtlinien/ediarum.AVHR/siglen.html -->
-                            </p>
-                        </div4>
-                    </div3>
+                    
                 </div2>
             </div1>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
@@ -1202,26 +1068,16 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
 
                 <div2>
                     <head>Briefanfang</head>
-                    <p> Code <![CDATA[]]>
-                        <![CDATA[]]>
-                    </p>
-                    <p> Der Briefanfang, der den Schreibort, das Datum und die Anrede umfassen kann,
-                        ist ein Strukturelement des Briefes und wird speziell ausgezeichnet. </p>
-                    <p>Kodierung:</p>
-                    <p>Der Briefanfang wird mit dem Element <ref
-                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-opener.html"
-                            ><![CDATA[<opener>]]></ref>, das NICHT innerhalb eines Paragraphen
-                        <![CDATA[<p>]]> steht, gekennzeichnet. Er kann fakultativ eine Anrede
-                        enthalten, die sich mit <ref
-                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-salute.html"
-                            ><![CDATA[<salute/>]]></ref> auszeichnen lässt. Ebenso kann fakultativ
-                        eine Datumszeile am Beginn des Briefes stehen, die mit <ref
-                            target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html"
-                            ><![CDATA[<dateline/>]]></ref> ausgezeichnet wird. Zur Auszeichnung von
+                    
+                
+                    <p>Der Briefanfang wird mit dem Element <gi>opener</gi>, das NICHT innerhalb eines Paragraphen
+                        <gi>p</gi> steht, gekennzeichnet. Er kann fakultativ eine Anrede
+                        enthalten, die sich mit <gi>salute</gi> auszeichnen lässt. Ebenso kann fakultativ
+                        eine Datumszeile am Beginn des Briefes stehen, die mit <gi>dateline</gi> ausgezeichnet wird. Zur Auszeichnung von
                         Ort und Datum in der Dateline siehe die entsprechenden Abschnitte
                         (Auszeichnung von Ort, Auszeichnung von Datumsangaben). Die Textausrichtung
-                        der Datumszeile wird durch das Attribut <![CDATA[@rend]]>, in der Regel mit
-                        <![CDATA[rend="align(right)"]]> ausgezeichnet.</p>
+                        der Datumszeile wird durch das Attribut <att>rend</att>, in der Regel mit
+                        <val>right</val> oder <val>left</val> ausgezeichnet.</p>
                     <p>Bsp.: Brief Nr. <ref
                             target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433549605504"
                             >9972433549605504</ref>, <ref
@@ -1242,27 +1098,24 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                     Michelotti</rs></salute>
                         </opener>
                     </egXML>
-                    <note>To do: Beispiel mit Ort und Datum in Opener ergänzen.</note>
+                    <!-- To do: Beispiel mit Ort und Datum in Opener ergänzen. -->
 
                 </div2>
                 <div2>
                     <head>Briefschluss</head>
-                    <p> Kodierung: <![CDATA[<closer>]]>, <![CDATA[<salute>]]>, <![CDATA[<signed>]]>,
-                        <![CDATA[<dateline>]]>
+                    <p> Kodierung: <gi>closer</gi>, <gi>salute</gi>, <gi>signed</gi>,
+                        <gi>dateline</gi>
                     </p>
                     <p>Der Briefschluss wird mit <ref
                             target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html"
-                            ><![CDATA[<closer>]]></ref> kodiert, er kann, muss aber nicht, eine
-                        Grussformel <![CDATA[<salute>]]>, Unterschrift <![CDATA[<signed>]]>,
-                        Datumsangabe <![CDATA[<dateline>]]> enthalten.</p>
-                    <p>Ort und Datum werden wie bei der Brieferöffnung beschrieben ausgezeichnet.
-                        Eine sowohl als Autograph oder in Entwürfen von anderer Hand gesetzte
+                            ><gi>closer</gi></ref> kodiert, er kann, muss aber nicht, eine
+                        Grussformel <gi>salute</gi>, Unterschrift <gi>signed</gi>,
+                        Datumszeile <gi>dateline</gi> mit Datum (<gi>date</gi>) enthalten.</p>
+                    <p>Eine sowohl autographe oder in Entwürfen von anderer Hand gesetzte
                         Unterschrift wird mit <ref
                             target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-signed.html"
-                            ><![CDATA[<signed>]]></ref> ausgezeichnet, der Personenname wird dabei
-                        zusätzlich mit
-                        <![CDATA[<rs type="person" key="[GND-Nummer]">Referenztext</rs>]]>
-                        getagt.</p>
+                            ><gi>signed</gi></ref> ausgezeichnet, der Personenname wird dabei
+                        zusätzlich mit dem Element <gi>rs</gi> ausgezeichnet.</p>
                     <p> Oft ist am Briefende der Briefschluss nicht klar vom eigentlichen Brieftext
                         abgegrenzt, weder inhaltlich noch optisch. Da der closer auf der
                         Darstellungsebene einen Zeilenumbruch impliziert, kann der Tag nicht immer
@@ -1298,8 +1151,8 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         Layout her nicht vom restlichen Brieftext abhebt. Dies ist vor allem bei
                         Entwürfen der Fall. Siehe das folgende Beispiel: </p>
                     <p>Bsp.: Brief <ref
-                            target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056691"
-                            >000056691</ref>, <ref
+                        target="https://swisscollections.ch/Record/991170515152005501"
+                        >991170515152005501</ref>, <ref
                             target="https://doi.org/10.7891/e-manuscripta-24967"
                         >e-manuscripta</ref>, Bild: <ref
                             target="https://www.e-manuscripta.ch/download/webcache/2000/1079063">Nr.
@@ -1335,15 +1188,12 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
                 <div2>
                     <head>Empfangsvermerk</head>
-                    <p> Das vom Briefempfänger direkt auf dem Brief verfasste Empfangsvermerk kann
-                        folgende Informationen enthalten: Empfangsdatum, Antwortdatum und
-                        Zusammenfassung des Antwortbriefs. </p>
-                    <p> Kodierung: <![CDATA[<note hand="#addressee"></note>]]>
-                    </p>
+                    <p>Ein Empfangs- oder Antwortvermerk wird als Anmerkung im Manuskript (siehe den entsprechenden Abschnitt) behandelt.</p>
+                    
                     <p/>
-                    <p> Beispiel </p>
+                    <p>Beim folgenden Beispiel handelt es sich um ein Vermerk von Nic. I Bernoulli, deshalb steht im Attribut <att>hand</att> als Wert die xml:id von Nic. I B.</p>
                     <p>Bsp.: Brief <ref
-                            target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972432842205504"
+                        target="https://swisscollections.ch/Record/991170514607505501"
                             >9972432842205504</ref>, <ref
                             target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063064"
                             >e-manuscripta</ref>, Bild: <ref
@@ -1354,26 +1204,22 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             <graphic width="50em" url="images_jpg/1063065_section_01.jpg"/>
                         </figure></p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                        <note hand="#addressee">Empf. den 20<hi rend="sup">ten</hi></note>
+                        <note hand="pers_DE-588_119166895">Empf. den 20<hi rend="sup">ten</hi></note>
                     </egXML>
                 </div2>
                 <div2>
                     <head>Postskriptum</head>
-                    <p> Kodierung: <![CDATA[
-                     <postscript>
-                     <p>[Text des Postscriptums]</p>
-                     </postscript>
-                    ]]>
+                    <p>Ein oder mehrere P.S. werden mit dem Element <gi>postscript</gi> ausgezeichnet.
                         <!-- https://www.deutschestextarchiv.de/doku/basisformat/brPostscriptum.html -->
                     </p>
                 </div2>
                 <div2>
                     <head>Beilage</head>
-                    <p>Beilagen werden im BIBB im Feld 300|e, (siehe Header-Element <![CDATA[<accMat>]]>) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im Feld 500 hingewiesen (siehe Header-Element <![CDATA[<note type="generalRemark">]]>) </p>
+                    <p>Beilagen werden im BIBB im Feld 300|e, (siehe Header-Element <gi>accMat</gi>) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im BIBB-Feld 500 hingewiesen (siehe Header-Element <![CDATA[<note type="generalRemark">]]>).</p>
                     <p>
-                        Eine Beilage, die mit dem Brief ediert wird, ist im Element <![CDATA[<back>]]> als <![CDATA[<div type="attachment">]]> ausgezeichnet. Dieses div umfasst eine editorische Notiz mit Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) usw., die in einem <![CDATA[<div type="editorialNote">]]> steht. Der eigentliche Beilagentext steht hingegen in einem <![CDATA[<div type="attachment_text">]]>.
+                        Die Edition des Beilagentextes ist fakultativ und erfolgt im Element <gi>back</gi>. Jede einzelne Beilage ist in einem Element <![CDATA[<div type="attachment">]]> erfasst. Eine editorische Notiz zur Beilage wird mit <![CDATA[<div type="editorialNote">]]> ausgezeichnet, sie enthält Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) und weitere relevante Informationen. Der Text der Beilage wird hingegen in <![CDATA[<div type="attachment_text">]]> wiedergegeben.
                     </p>
-                    <p>Beispiel eines Konstrukts mit zwei angehängten Beilagen:
+                    <p>Vereinfachtes Beispiel eines Anhangs mit zwei Beilagen:
                         
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <back>
@@ -1399,47 +1245,25 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </egXML>
                     </p>
                     
-                    <p> Gedruckte Beilagen, die in der Regel nicht transkribiert werden, sowie Beilagen, die aus anderen Gründen nicht transkribiert werden sollen, werden folgendermassen kodiert: <![CDATA[
-                        <div>
-                        <gap reason="editorial"></gap>
-                        </div>
-                    ]]>
+                    <p>Falls der Beilagentext nicht transkribiert wird, steht an dessen Stelle ein Element <gi>gap</gi> mit dem Attribut <att>reason</att> und Wert <val>editorial</val>. Kodierung: <![CDATA[<div><gap reason="editorial"></gap></div>]]>.
                     </p>
 
                     <list>
+                        <head>Umgang mit spezifischen Situationen bei Beilagen:</head>
                         <item>
-                            <p>Gedruckte Beilagen, die mit dem jeweiligen Brief überliefert sind, werden nicht transkribiert, sondern als Bild-Digitalisat eingebunden und mit dem Element <![CDATA[<gap reason="editorial"></gap>]]> kodiert. Das Attribut reason="editorial" (for features omitted from transcription due to editorial policy,  https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-gap.html). In einer editorischen Notiz (div type="editorial_remark") werden Informationen über Autorschaft usw. angegeben.</p>
-                            <p></p>
-                            <p><ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1725-10-16_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob">Beispiel</ref>, <ref target="https://www.e-manuscripta.ch/zuz/content/pageview/919594">Digitalisat e-manuscripta</ref></p>
+                            <p>Gedruckte Beilagen werden in der Regel nicht transkribiert, nur das Digitalisat wird eingebunden. Die bibliographische Angabe steht in der editorischen Notiz (<![CDATA[<div type="editorialNote">]]>).</p>
                         </item>
-                        <item><p>Gedruckte Beilagen, die nicht mit den jeweiligen Brief überliefert sind, werden, wenn sie identifizierbar sind, in einer Fussnote referenziert und mit bibliothekarischen oder archivalischen Informationen ausgewiesen. Zur Auszeichnung der in den Briefen genannten, diskutierten oder angeführten Texte, siehe Kap. 2.15.3 Werke im Editionskonzept <!-- Link einfügen --> resp. Kap. 1.16.3 Bibliographische Angaben <!-- Link einfügen --></p>
-                            <p><ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1724-09-19_Scheuchzer_Johann_Jakob-Bernoulli_Johann_I">Beispiel</ref></p>
+                        <item><p>Beilagen, die im Brief erwähnt, jedoch nicht überliefert sind, werden, wenn sie identifizierbar sind, in einer Fussnote referenziert und mit bibliothekarischen oder archivalischen Informationen ausgewiesen.</p>
                         </item>
-                        <item><p>Handschriftliche, gemeinsam mit dem Brieftext überlieferte Beilagen, die auch unter demselben eindeutigen Identifikator laufen, werden nach Möglichkeit ebenso ediert, aber vom Brieftext, der mit <![CDATA[<div type="letter"></div>]]> ausgezeichnet wird, durch die Auszeichnung mit <![CDATA[<div type="attachment"></div>]]> abgetrennt.</p>
-                            <p><ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1720-12-08_Scheuchzer_Johann_Jakob-Bernoulli_Johann_I">Beispiel</ref>, <ref target="https://www.e-manuscripta.ch/bau/content/pageview/651048">Digitalisat e-manuscripta</ref></p>
+                        <item><p>Handschriftliche Beilagen, die nicht mit dem Brief unter derselben Systemnummer überliefert und aufbewahrt werden, jedoch ediert werden sollen, werden als separates Dokument mit einer eigenen xml:id erfasst. Im Brief wird in der editorischen Notiz (<![CDATA[<div type="editorialNote">]]>) innerhalb von <![CDATA[<div type="attachment">]]> auf dieses edierte Dokument verwiesen.</p>
                         </item>
-                        <item><p>Handschriftliche Beilagen, die nicht mit dem Brief unter derselben Systemnummer überliefert und aufbewahrt werden, aber digitalsiert zugänglich und rechtlich publizierbar sind, werden entweder als separates Dokument mit dem eigenen unique identifier (UI) in TEI-XML erfasst, ediert und in der Bibliographie (Werkregister) als bibliographischer Eintrag erfasst <!-- SG: Umgang mit diesen Fällen noch nicht ganz geklärt! -->.</p>
-                            <p>https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1720-07-24_Bernoulli_Johann_I-Scheuchzer_Johannes</p>
-                        </item>
-                        <item><p>Handschhriftliche Beilagen, die nicht digitalisiert zugänglich oder aus rechtlichen Gründen nicht publizierbar sind, werden mit ihren bibliographischen Angaben auf BEOL mit einer eindeutigen BEOL-ID erfasst und werden in einer Fussnote entsprechend erfasst und ausgewiesen.</p>
+                        <item><p>Handschhriftliche Beilagen, die nicht digitalisiert zugänglich oder aus rechtlichen Gründen nicht publizierbar sind, werden mit ihren bibliographischen Angaben im bibliographischen Register erfasst. In der editorischen Notiz (<![CDATA[<div type="editorialNote">]]>) auf diesen Eintrag verwiesen.</p>
                         </item>
                     </list>
-
-                    <p>Nicht erhaltene Beilagen werden in einer Fussnote im Brief kommentiert und
-                        mit ihrer BEOL-ID ausgezeichnet (Zur Auszeichnung vgl. Kap. 1.16.3
-                        Bibliographische Angaben in der Dokumentation.).</p>
-                    <p>Jene handschriftlichen Beilagen, die transkribiert werden, sind als Beilage
-                        mit <![CDATA[<div type="attachment"></div>]]> auszuzeichnen. Dabei werden
-                        Strukturelemente des Beilagentexts, wie z.B. Titel (<![CDATA[<header>]]>,
-                        Abschnitte <![CDATA[</p>]]> u.a. mehr, mit TEI XML-Auszeichnungen erfasst.
-                        [Beispiele folgen]</p>
-                    <p>
-                        <note>Vgl. z. B. <ref target="https://sturm-edition.de/edition/briefe.html">Sturm-Edition</ref> verwendet für edierte Beilagen <![CDATA[<div type="attachment">Beilage.</div>]]></note>
-                    </p>
                 </div2>
                 <div2>
                     <head>Adresse</head>
-                    <p> Die Adresse wird innerhalb des <![CDATA[<opener>]]> oder <![CDATA[<closer>]]>mit dem Element <![CDATA[<address>]]> ausgezeichnet. Die einzelnen Zeilen werden mit dem Element <![CDATA[<addrLine>]]> umschlossen.
+                    <p> Die Adresse wird innerhalb des <gi>opener</gi>- oder <gi>closer</gi>-Elements mit dem Element <gi>address</gi> ausgezeichnet. Die einzelnen Zeilen werden mit dem Element <gi>addrline</gi> umschlossen.
                     </p>
                     <p>Personen und Orte werden in der Adresse ausgezeichnet.</p>
                     <p>Wortrennungen in einer Adresszeile werden mit Trennstrich (ohne spezielle Kodierung) umgesetzt.</p>
@@ -1459,8 +1283,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         <p>
                             <address>
                                 <addrLine>A Monsieur</addrLine>
-                                <addrLine>Monsieur <rs type="person" key="pers_DE-588_117589136">Jean
-                                        Bernoulli</rs></addrLine>
+                                <addrLine>Monsieur <rs type="person" key="pers_DE-588_117589136">Jean Bernoulli</rs></addrLine>
                                 <addrLine>Professeur tres celebre de Matematique</addrLine>
                                 <addrLine>à <rs type="place">Basle</rs></addrLine>
                             </address>
@@ -1470,148 +1293,172 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
 
             </div1>
-            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+            
             <div1>
-                <head>Register</head>
-                <p>In der BEBB werden die folgenden Entitäten in Registern erfasst:
-                <list>
-                    <item>Personen</item>
-                    <item>Orte</item>
-                    <item>Werke</item>
-                </list>
-                    Insititutionen werden mit dem <![CDATA[<rs type="organisation">]]>-Element ausgezeichnet aber nicht in einem Register erfasst.
-                    Erwähnte Briefe werden ausgezeichnet und mittels Brief-Systemnummer mit dem BIBB verlinkt. Siglen sollen in einem weiteren Schritt erfasst werden.
-                </p>
+                <head>Sachauszeichnung und Kommentierung</head>
                 <div2>
-                    <head>Personenregister</head>
-                    <p>
-                        Im Personenregister sind die Korrespondenten (Autor, Adressat) und die in den Brieftexten erwähnten Personen erfasst. 
+                    <head>Sachauszeichnung und Register</head>
+                    <p></p>
+                    <div3><p>Im edierten Text werden die Entitäten Person, Ort, Publikation/Handschrift, Brief, Institution, Thema/Begriff mit dem Element <gi>rs</gi> ausgezeichnet.</p> 
+                    <p>Der im Attribut <att>type</att> angegebene Wert unterscheidet die Entitäten voneinander:
+
+                        <list>
+                            <item>Einzelne Person: <val>person</val></item>
+                            <item>Mehrere Personen (Gruppe): <val>persons</val></item>
+                            <item>Einzelner Ort: <val>place</val></item>
+                            <item>Ortgruppe: <val>places</val></item>
+                            <item>Publikation: <val>publication</val></item>
+                            <item>Publikationen: <val>publications</val></item>
+                            <item>Brief: <val>letter</val></item>
+                            <item>Mehrere Briefe: <val>letters</val></item>
+                            <item>Institution: <val>organisation</val></item>
+                            <item>Mehrere Institutionen: <val>organisations</val></item>
+                        </list>
                     </p>
-                    <p>Kodierung: <![CDATA[<person>]]></p>
+                    <p>
+                        Das <gi>rs</gi>-Element enthält optional das Attribut <att>key</att>, dessen Wert eine xml:id der dazugehörigen Index-Datei (die xml:id ist identisch mit dem Dateinamen) entspricht. Daraus wird der jeweilige Index generiert. Bei den Mehrfach-Tags, die Personengruppen, Ortgruppen usw. auszeichnen, werden die entsprechenden xml:id nacheinander, getrennt durch einen Leerschlag angegeben.</p>
+                    <p>
+                        Beispiel: 
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <rs key="B_1728-01-15_991170430100605501 B_1728-01-25_991170430098105501" type="letters">deux de vos lettres</rs></egXML>
+                    </p>
+                    <p> Die Vorkommnisse werden im Brieftext durchgehend ausgezeichnet, unabhängig davon,
+                        wo sie sich befinden (Briefanfang, Brieftext und
+                        Briefschluss) In den Fussnoten werden die Vorkommnisse nur ergänzend ausgezeichnet, d.h. falls sie in der dazugehörigen Briefpassage nicht erwähnt sind. Personalpronomina oder
+                        Relativpronomina, die für Personen oder andere auszuzeichnenden
+                        Entitäten stehen, werden nicht ausgezeichnet. Beispiel:  "ille" in
+                        folgender Passage: <egXML xmlns="http://www.tei-c.org/ns/Examples"> [...] an nihil de <rs type="person"
+                            key="pers_DE-588_104185643">Burneto</rs> inaudiveris, forsan ille
+                            jam in Patriam [...] redux</egXML>. Innerhalb eines Publikationstitels genannte
+                        Entitäten werden nicht zusätzlich ausgezeichnet. (z.B. E. W. von
+                        Tschirnhaus, Responsio ad Observationes Dominorum Bernoulliorum ...) </p>
+                    <p>In bibliographischen Angaben werden die Entitäten nicht ausgezeichnet.</p></div3>
                     <div3>
-                        <head>ID</head>
-                        <p>
-                            Die Personen sind durch die xml:id des Personenregisters identifiziert, diese besteht aus der Norm-ID der GND mit einem vorangestellten Präfix. Wo eine GND-Nummer fehlt, wird diese (falls genügend biographische Informationen vorhanden sind) neu erstellt. Falls nicht genügend Informationen vorhanden sind, wird die Person mit einer internen ID versehen.
-                            
-                        </p>
-                        <p>Kodierung der xml:id <![CDATA[<person xml:id="pers_DE-588-12209025X"></person>]]></p>
-                        <p>Kodierung der idno: <![CDATA[<idno type="gnd">(DE-588)12209025X</idno>]]></p>
-                        <p>Falls keine GND-Nummer vorhanden</p>
-                        <p>Kodierung xml:id </p>
-                        
-                    </div3>
-                    <div3>
-                        <head>Name</head>
-                        <p>Der Name wird in der Regel in der Form Nachname, Vorname erfasst</p>
-                        <p>Kodierung: 
-                            <![CDATA[
-                            <persName type="reg">
+                        <head>Register</head>
+                            <div4>
+                                <head>Personenregister</head>
+                                <p>
+                                    Im Personenregister sind die Korrespondenten (Autor, Adressat) und die in den Brieftexten erwähnten Personen erfasst. 
+                                </p>
+                                <p>Kodierung: <![CDATA[<person>]]></p>
+                                <div5>
+                                    <head>ID</head>
+                                    <p>
+                                        Die Personen sind durch die xml:id des Personenregisters identifiziert. Falls zu dieser Person eine GND-Nummer vorliegt, ist diese Bestandteil der xml:id (Kodierungsbeispiel: <![CDATA[<person xml:id="pers_DE-588-12209025X"></person>]]>). Die GND-Nummer wird auch im Element <gi>idno</gi> erfasst.
+                                    </p>    
+                                </div5>
+                                <div5>
+                                    <head>Name</head>
+                                    <p>Der Name wird in der Regel in der Form Nachname, Vorname erfasst. Das Attribut <att>type</att> enthält die Werte <val>main</val> (für die Bernoulli), <val>reg</val> (für die Hauptansetzung), <val>alt</val> (für alternative Formen). Bei Eheleuten kann der Wert <val>birth</val> und <val>married</val> im Attribut <att>subtype</att> den Geburtsnamen oder Ehenamen kennzeichnen.</p>
+                                    <p>Kodierungsbeispiele: 
+                                        <![CDATA[
+                            <persName type="main">
                             <surname>Bernoulli</surname>
                             <forename>Johann I</forename>
                             </persName>
                             ]]></p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
-                            <persName type="reg">
-                            <surname>Bernoulli</surname>
-                            <forename>Johann I</forename>
-                        </persName></egXML>
-                        
-                        <p>Alternative Namensformen werden durch das Attribut @type="alt" gekennzeichnet. Sie werden nur ausnahmsweise erfasst, z.B. wenn ein Pseudonym vorliegt. </p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                            <persName type="reg">
-                                <surname>Hottinger</surname>
-                                <forename>Johann Jakob</forename>
-                            </persName>
-                            <persName type="alt">
-                                <surname>Alethaeus</surname>
-                                <forename>Solomon</forename>
-                            </persName>
-                        </egXML>
-
-                        
-                        <p>Geburtsnamen oder Ehenamen (je nachdem welcher Name in der Hauptansetzung gewählt wird) von Frauen werden zusätzlich zum Attribut type="alt" durch das Attribut  subtype="birth" oder subtype="married" gekennzeichnet:
-                            <![CDATA[
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
+                                        <persName type="main">
+                                            <surname>Bernoulli</surname>
+                                            <forename>Johann I</forename>
+                                        </persName></egXML>
+                                    
+                                    <p>Alternative Namensformen werden durch das Attribut @type="alt" gekennzeichnet. Sie werden nur ausnahmsweise erfasst, z.B. wenn ein Pseudonym vorliegt. </p>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                        <persName type="reg">
+                                            <surname>Hottinger</surname>
+                                            <forename>Johann Jakob</forename>
+                                        </persName>
+                                        <persName type="alt">
+                                            <surname>Alethaeus</surname>
+                                            <forename>Solomon</forename>
+                                        </persName>
+                                    </egXML>
+                                    
+                                    
+                                    <p>
+                                        <![CDATA[
                             <persName type="alt" subtype="birth"> 
                             oder 
                             <persName type="alt" subtype="married">
                             <name></name>
                             </persName>
                             ]]></p>
-                        <p>Beispiel: 
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
-                                <persName type="reg">
-                                <surname>Bernoulli</surname>
-                                <forename>Anna Catharina</forename>
-                            </persName>
-                                <persName type="alt" subtype="married">
-                                    <name>Dollfus</name>
-                                </persName>
-                                <persName type="alt" subtype="married">
-                                    <surname>Hammer</surname>
-                                </persName></egXML>
-                            <eg>
-                                <persName type="reg">
-                                <surname>Bernoulli</surname>
-                                <forename>Anna Catharina</forename>
-                                </persName>
-                                <persName type="alt" subtype="married">
-                                    <name>Dollfus</name>
-                                </persName>
-                                <persName type="alt" subtype="married">
-                                    <surname>Hammer</surname>
-                                </persName>
-                             </eg></p>
-                    </div3>
-                    
-                    <div3>
-                        <head>generational name component</head>
-                        <p>Das Element <![CDATA[<genName>]]> enthält Angaben zur Unterscheidung gleicher Namen aufgrund ihres Alters oder Generation (z.B. d.J, d.Ä).</p>
-                        <p>
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
-                                <persName type="reg">
-                                    <surname>Bernoulli</surname>
-                                    <forename>Niklaus</forename>
-                                    <genName>d.Ä.</genName>
-                                </persName></egXML> 
-                            <eg>
-                                <persName type="reg">
-                                    <surname>Bernoulli</surname>
-                                    <forename>Niklaus</forename>
-                                    <genName>d.Ä.</genName>
-                                </persName> 
-                            </eg>
-                        </p>
-                    </div3>
-                    
-                    <div3>
-                        <head>Adelsprädikate</head>
-                        <p>Bei Adelsprädikaten, die Bestandteil des Namens sind, wird nur der für die alphabetische Sortierung relevante Teil in <![CDATA[<surname>]]> gesetzt, der restliche Teil in <![CDATA[forename]]> </p>
-                        <p>
-                            Beispiel: 
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
-                                <persName type="reg">
-                                    <surname>Montmort</surname>
-                                    <forename>Pierre Rémond de</forename>
-                                </persName></egXML> 
-                        </p>
-                        <p>Adelspredikate, die nicht Bestandteil des Namens sind, werden in einem Element <![CDATA[<roleName>]]> erfasst</p>
-                        <p>
-                            Beispiel, Duc
-                        </p>
-                    </div3>
-                    <div3>
-                        <head>Lebensdaten</head>
-                        <p>
-                            Die Lebensdaten sind in den Elemente <![CDATA[<birth>]]> und <![CDATA[<death>]]> im Attribut @when erfasst. In placeName ist der Geburtort und Todesort angegeben, siehe Kodierungsbeispiel unten.
-                        </p>
-                    </div3>
-                    <div3>
-                        <head>Das Element <![CDATA[<note>]]> umfasst die biographische Notiz. Das Attribut @resp enthält Angaben zur Autorschaft der biographischen Notiz. Darin dient das Element <![CDATA[<bibl> ]]> zur Angabe der für die biographische Notiz verwendete Literatur.</head>
-                    </div3>
-                    <div3>
-                        <head>Kodierungsbeispiel</head>
-                        <p>
-                            <![CDATA[
+                                    <p>Beispiel: 
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
+                                            <persName type="reg">
+                                                <surname>Bernoulli</surname>
+                                                <forename>Anna Catharina</forename>
+                                            </persName>
+                                            <persName type="alt" subtype="married">
+                                                <name>Dollfus</name>
+                                            </persName>
+                                            <persName type="alt" subtype="married">
+                                                <surname>Hammer</surname>
+                                            </persName></egXML>
+                                        <eg>
+                                            <persName type="reg">
+                                                <surname>Bernoulli</surname>
+                                                <forename>Anna Catharina</forename>
+                                            </persName>
+                                            <persName type="alt" subtype="married">
+                                                <name>Dollfus</name>
+                                            </persName>
+                                            <persName type="alt" subtype="married">
+                                                <surname>Hammer</surname>
+                                            </persName>
+                                        </eg></p>
+                                </div5>
+                                
+                                <div5>
+                                    <head>Generationsnamen</head>
+                                    <p>Das Element <gi>genName</gi> enthält Angaben zur Unterscheidung gleicher Namen aufgrund ihres Alters oder Generation (z.B. d.J, d.Ä).</p>
+                                    <p>
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
+                                            <persName type="reg">
+                                                <surname>Bernoulli</surname>
+                                                <forename>Niklaus</forename>
+                                                <genName>d.Ä.</genName>
+                                            </persName></egXML> 
+                                        <eg>
+                                            <persName type="reg">
+                                                <surname>Bernoulli</surname>
+                                                <forename>Niklaus</forename>
+                                                <genName>d.Ä.</genName>
+                                            </persName> 
+                                        </eg>
+                                    </p>
+                                </div5>
+                                
+                                <div5>
+                                    <head>Adelsprädikate</head>
+                                    <p>Bei Adelsprädikaten, die Bestandteil des Namens sind, wird nur der für die alphabetische Sortierung relevante Teil in <gi>surname</gi> gesetzt, der restliche Teil in <gi>forename</gi> </p>
+                                    <p>
+                                        Beispiel: 
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
+                                            <persName type="reg">
+                                                <surname>Montmort</surname>
+                                                <forename>Pierre Rémond de</forename>
+                                            </persName></egXML> 
+                                    </p>
+                                    <p>Adelspredikate, die nicht Bestandteil des Namens sind, werden in einem Element <![CDATA[<roleName>]]> erfasst</p>
+                                    <p>
+                                        Beispiel, Duc
+                                    </p>
+                                </div5>
+                                <div5>
+                                    <head>Lebensdaten</head>
+                                    <p>
+                                        Die Lebensdaten sind in den Elemente <gi>birth</gi> und <gi>death</gi> im Attribut <att>when</att> erfasst. In placeName ist der Geburtort und Todesort angegeben, siehe Kodierungsbeispiel unten.
+                                    </p>
+                                </div5>
+                                <div5>
+                                    <head>Das Element <gi>note</gi> umfasst die biographische Notiz. Das Attribut <att>resp</att> enthält Angaben zur Autorschaft der biographischen Notiz. Das Element <gi>bibl</gi> umfasst bibliographische Angaben.</head>
+                                </div5>
+                                <div5>
+                                    <head>Kodierungsbeispiel</head>
+                                    <p>
+                                        <![CDATA[
                             <person xml:id="pers_DE-588-116170654">
     <idno type="gnd">pers_DE-588_ 116170654</idno>
     <persName type="reg">
@@ -1629,44 +1476,122 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
     <bibl>BEBB</bibl>
 </person>
                             ]]>
+                                    </p>
+                                </div5>
+                            </div4>
+                            <div4>
+                                <head>Ortsregister</head>
+                                
+                                <div5>
+                                    <head></head>
+                                    <p></p>
+                                </div5>
+                                
+                                <div5>
+                                    <head></head>
+                                    <p></p>
+                                </div5>
+                                
+                                <div5>
+                                    <head></head>
+                                    <p></p>
+                                </div5>
+                            </div4>
+                            
+                            
+                            <div4>
+                                <head>Bibliographie</head>
+                            </div4>
+                            <div4>
+                                <head>Verzeichnis der erwähnten Briefe</head>
+                            </div4>
+                            <div4>
+                                <head>Sachregister</head>
+                                <p>Es liegt noch kein Sachregister vor, es sollen jedoch Begriffe vorläufig ausgezeichnet werden, ohne dass eine Verlinkung mit dem Register vorgenommen wird. Dazu dient der Tag <![CDATA[<rs type="keyword">]]>.</p>
+                            </div4>
+                            <div4>
+                                <head>Institutionenregister</head>
+                            </div4>
+                    </div3>
+                    
+                </div2>
+            
+                <div2>
+                    <head>Kommentierung</head>
+                    <div3>
+                        <head>
+                            Inhaltliche Kommentierung
+                        </head>
+                        <p>Die Inhaltliche Kommentierung kann in unterschiedlichen Bereichen der Edition erfolgen:
+                        <list>
+                            <item>Stellenkommentare: Werden im Element <gi>note</gi> erfasst. Editorische Noten werden durch den Wert <val>comment</val> und inhaltliche Kommentare mit dem Wert <val>comment</val> im Attribut <att>type</att> gekennzeichnet. Interne Notizen erhalten den Wert <val>internal</val>. Das fakultative Attrivut <att>resp</att> kennzeichnet die Autorschaft des Kommentars.</item>
+                            <item>Zusammenfassungen des Inhalts: Sie werden direkt im Briefinventar im Feld 520 erfasst und im Header in das Element</item>
+                            
+                        </list></p>
+                    </div3>
+                </div2>
+                    
+                    <div2>
+                       
+                        <head>Front-Bereich <![CDATA[<front></front>]]>, <![CDATA[<div type="editorialNote"></div>]]></head>
+                        <p>Der Front-Bereich <![CDATA[<front></front>]]> kann eine Editorische Notiz <![CDATA[<div type="editorialNote"></div>]]> mit allgemeinen Vorbemerkungen zur Quelle, Provenienz oder zur editorischen Behandlung des Briefes. </p>
+                        <p>
+                            Besipiel: 
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <text>
+                                    <front>
+                                        <div type="editorialNote">
+                                            <head>Bemerkungen zur Transkription</head>
+                                            <p>
+                                                Der folgende Text wurde nach der Fotografie von fo. 1r der Handschrift in Aristophil, Vente inaugurale, Lot 122, transkribiert.
+                                            </p>
+                                        </div>
+                                    </front>
+                                </text>
+                            </egXML>
                         </p>
-                    </div3>
-                </div2>
-                <div2>
-                    <head>Ortsregister</head>
+                    </div2>
+                    <div2>
+                        <head>Sachkommentar</head>
+                        <p>Der Sachkommentar dient der inhaltlichen
+                            Erschliessung. Sie wird folgendermassen kodiert:
+                            <![CDATA[<note type="comment">Kommentartext</note>]]>. Der
+                            Bearbeitungszustand (vorläufige interne Notiz, ausgeführte
+                            Anmerkung, redaktionell bearbeitete Anmerkung bereit zur
+                            Publikation) wird mit dem Attribut
+                            <![CDATA[cert="low", cert="middle", cert="high"]]> angegeben. Die
+                            für die Verfassung des Kommentars verantwortliche Person wird mittels Attribut @resp="Personen-Kürzel" erfasst. Die Personenkürzel sind im Personenindex aufgelöst.</p>
+                        
+                        <p> Sachkommentare können Folgendes umfassen:
+                            <list>
+                            <item>Kommentare zum Kontext der im Brief besprochenen Inhalte.</item>
+                            <item>Nachweis von Briefen, die nicht zu den Bernoulli-Briefwechseln gehören.</item>
+                            <item>Stellenverweise von Bibelzitaten und Zitaten der antiken römischen und griechischen Literatur, die nicht eine konkrete Textausgabe referenzieren und somit nicht über die Bibliographie erschlossen werden können.</item>
+                            <item>Erläuterungen zu wenig bekannten Eigennamen (Orte, Berge, Flüsse etc.) und zu historischen Ereignissen.</item>
+                            <item>Worterklärungen (z. B. veralteter oder untergegangener Wörter), falls deren Bedeutung nicht aus dem Kontext ersichtlich ist. </item>
+                            <item/>
+                        </list>
+                        </p>
+                        <p> ToDo: Beispiel </p>
+                    </div2>
                     
-                    <div3>
-                        <head></head>
-                        <p></p>
-                    </div3>
                     
-                    <div3>
-                        <head></head>
-                        <p></p>
-                    </div3>
                     
-                    <div3>
-                        <head></head>
-                        <p></p>
-                    </div3>
-                </div2>
+                    <div2>
+                        <head>Verweise</head>
+                        <p> Noch zu klären, ob in BEBB nötig: Kodierung: <![CDATA[<anchor>]]>
+                            und <![CDATA[@xml:id]]>
+                            <!-- https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/verweise.html#topic_e1f_thv_ty__section_m2x_qfd_mkb -->
+                            <!-- https://edition-humboldt.de/richtlinien/ediarum.AVHR/siglen.html -->
+                        </p>
+                    </div2>
                 
-
-                <div2>
-                    <head>Bibliographie</head>
-                </div2>
-                <div2>
-                    <head>Verzeichnis der erwähnten Briefe</head>
-                </div2>
-                <div2>
-                    <head>Sachregister</head>
-                    <p>Es liegt noch kein Sachregister vor, es sollen jedoch Begriffe vorläufig ausgezeichnet werden, ohne dass eine Verlinkung mit dem Register vorgenommen wird. Dazu dient der Tag <![CDATA[<rs type="keyword">]]>.</p>
-                </div2>
-                <div2>
-                    <head>Institutionenregister</head>
-                </div2>
             </div1>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+          
+            
+            <!-- 
+             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Metadaten</head>
 
