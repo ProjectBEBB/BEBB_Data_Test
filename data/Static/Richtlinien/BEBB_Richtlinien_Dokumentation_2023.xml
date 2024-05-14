@@ -41,18 +41,6 @@
             <div1>
                 <head>Text</head>
                 <div2>
-                    <head>Allgemeine XML-Codes</head>
-                    <!--  <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1038292/manifest"/></facsimile><text><body><div type="letter"> -->
-                    <!-- <change when="2021-12-01" who="SG" who="EK">Kollationiert</change>-->
-                    <div3>
-                        <head>Verlinkungen</head>
-                        <p>Verweise auf die Index-Dateien erfolgen mittels <gi>rs</gi>. Das Attribut <att>type</att> den Typ der Entität an (mögliche Werte sind <val>person</val>, <val>place</val>, <val>biblio</val>, <val>letter</val>, <val>organisation</val>, <val>keyword</val>). Das Attribut <att>key</att> gibt hingegen im Attribut hingegen die jeweilige xml:id des Index-Eintrags an.</p>
-                        <p><gi>ptr</gi></p>
-                        
-                    </div3>
-                </div2>
-                
-                <div2>
                     <head>Textstrukturen</head>
 
                     <div3>
@@ -65,16 +53,14 @@
             
             2. <del>dila-</del><lb/><del>tio </del>   -->
 
-                        <p>Kodierung: <gi>lb</gi></p>
+                        <p>Der Zeilenumbruch wird mit <gi>lb</gi> ausgezeichnet. Dabei werden die folgenden Fälle unterschieden:</p> 
 
                         <p>
                             <list>
                             <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <gi>lb</gi>.</item>
-                            
-                            
-                        <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <gi>pc</gi> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert "no".</item>
-                            <item>Zeilenumbruch bei Seitenwechsel: vor dem Line-Beginning steht das Element <gi>pb</gi>.</item>
+                        <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <gi>pc</gi> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert <val>no</val>.</item>
                             <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem nicht ausgezeichneten Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
+                                <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> steht nach dem Element <gi>pb</gi>.</item>
                         </list>
                         </p>
                         <p>Beispiel eines normalen Zeilenumbruchs und Zeilenumbruch mit
@@ -117,23 +103,19 @@
                     </div3>
                     <div3>
                         <head>Absatz</head>
-                        <p> Kodierung: <gi>p</gi> (paragraph). ToDo: Auszeichnung eines
-                            Paragraphen, der im Original nur durch Leerschlag/Lücke angezeigt wird:
-                            Reicht dafür <gi>p</gi> ohne die Angabe von <gi>lb</gi> oder
-                            soll die grössere Lücke speziell als <gi>space</gi> (steht für
-                            semantisch bedeutsamer Leerraum) ausgezeichnet werden? </p><!-- Lösungsvorschlag: <p type="space"></p> -->
+                        <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html"><gi>p</gi></ref> ausgezeichnet. Falls der Absatz im Original nur durch eine grössere Lücke angezeigt wird dies durch das Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <![CDATA[<p type="space">]]>.
+                            </p>
                     </div3>
                     <div3>
                         <head>Textumstellung</head>
 
-                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung wird nicht speziell ausgezeichnet. Der Text wird stillschweigend in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben.</p>
+                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung wird nicht speziell ausgezeichnet. Der Text wird stillschweigend in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben. In einer textkritischen Fussnote wird darauf verwiesen.</p>
                     </div3>
                     <div3>
                         <head>Seitenbeginn</head>
 
-                        <p>Der Seitenbeginn wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html"><gi>pb</gi></ref> ausgezeichnet. Das Attribut <att>facs</att> enthält im Wert die Bild-ID, mit der das Bild im Manifest gekennzeichnet ist. Das Attribut <att>n</att> enthält in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ...</p>
-                        <p>
-                            Leere Seiten werden <gi>pb</gi> im Brieftext erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
+                        <p>Der Seitenbeginn wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref> ausgezeichnet. Das Attribut <att>facs</att> enthält im Wert die Bild-ID, mit der das Bild im Manifest gekennzeichnet ist. Das Attribut <att>n</att> enthält in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Seitenzahlen durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c, ...</p>
+                        <p>Manuskriptseiten ohne Inhalt werden ebenfalls mit <gi>pb</gi> erfasst und mit dem Attribut type="empty" versehen.<!-- Hier unterscheidet sich BEBB von Humboldt digital (https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/leere_seiten.html#topic_tlg_53k_wcb), wo nach <pb> das Element <gap> verwendet wird: <pb n="132v"/><gap unit="pages" quantity="1" reason="empty"/> -->
                         </p>
                         <p>Beispiel: 
                             <figure>
@@ -157,7 +139,7 @@
                     <div3>
                         <head>Gedicht</head>
 
-                        <p> Kodierung: Der einzelne Vers wird mit <gi>l</gi> (line), eine Versgruppe mit <gi>lg</gi> (line group) ausgezeichnet.</p>
+                        <p> Kodierung: Die Verszeile wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-l.html"><gi>l</gi></ref>, eine Versgruppe mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-lg.html"><gi>lg</gi></ref> ausgezeichnet.</p>
 
                         <p>Bsp.: Brief Nr. <ref
                                 target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056976"
@@ -192,9 +174,11 @@
                     <div3>
                         <head>Anmerkung im Manuskript</head>
                         
-                        <p> Kodierung: <gi>note</gi>. Zur besseren Unterscheidung von anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit
+                        <p> Kodierung: <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-note.html"><gi>note</gi></ref>. Zur besseren Unterscheidung von anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit
                             Angabe der xml:id aus dem Personenregister, beispielsweise hand="pers_DE-588-118509969". Falls die Schreiberhand nicht bekannt ist, lautet der Wert "unknown".</p>
+                        <p>Das Attribut <att>place</att> wird bei Randbemerkungen (Marginalien) dazu verwendet, die Stellung der Randnote auf der Seite anzugeben, die Werte lauten <val>right</val> und <val>left</val>. Zu den Randbemerkungen siehe zusätlich die Anleitungen im <ref target="https://www.deutschestextarchiv.de/doku/basisformat/marginalie.html">DTA</ref>.</p>
                         <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem einheitlichen Tag <gi>metamark</gi> wiedergegeben.</p>
+                        
                         <p>Beispiel:</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <note hand="pers_DE-588-117589136">à M. le C.te de Tressan</note>
@@ -214,25 +198,16 @@
                     </div3>
                     <div3>
                         <head>Figuren und Abbildungen</head>
-                        <p>Figuren im Manuskript werden mit dem Element <gi>figure</gi> ausgezeichnet. Über das Attribut facs, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat verwiesen. Das Attribut hand enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figur im <gi>note</gi>-Kindelement festgehalten werden.</p>
+                        <p>Figuren im Manuskript werden mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-figure.html"><gi>figure</gi></ref> ausgezeichnet. Über das Attribut <att>facs</att>, das als Wert den Dateinamen des Bildes enthält, wird auf das Digitalisat mit dem Ausschnitt, der die Figur zeigt, verwiesen. Das Attribut <att>hand</att> enthält hingegen die Information über die Person, die die Figur gezeichnet hat (falls es sich um eine Kopie einer bestehenden Figur handelt, kann die Urheberschaft der Figur im <gi>note</gi>-Kindelement festgehalten werden.</p>
                         <p>Das Element <gi>figure</gi> kann optional die folgenden Unterelemente enthalten:
                             <list>
                                 <item><gi>p</gi> für eine Bildüberschrift im Original</item> 
-                                <item><gi>figDesc</gi> für eine allfällige editorische Bildbeschreibung.</item>
+                                <item><gi>figDesc</gi> für eine inhaltliche Bildbeschreibung.</item>
                                 <item><![CDATA[<note type="editorial">]]> für eine editorische Fussnote</item> 
                             </list>
                             </p>
-                        <p>Das Element <gi>figure</gi> wird im Text nach der Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p><!-- ToDo: Margareth und Martin fragen, ob diese Vorgehensweise korrekt ist. For allem wenn die Figuren nicht auf der selben Seite abgebildet sind, wie die Textstelle mit der Erwähnung der Figur (Beispiel Brief 1714-04-14 von Michelotti, https://www.e-manuscripta.ch/bau/content/zoom/1063869 -->
+                        <p>Das Element <gi>figure</gi> wird im Text an der ersten Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p>
                         <!-- Das Bild wird zu diesem Zweck mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png in einem speziellen Ordner abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer Tiefstrich und Nummer (wobei die Nummerierung pro Seite stattfindet, z.B. 02, falls es sich auf der Seite um die zweite Figur handelt). -->
-                       
-                        <p>Kodierung:
-                            
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><figure facs="abbildung" hand="xml:id">
-   <p>[Bildunterschrift im Manuskript]</p>
-   <figDesc>[Bildbeschreibung BearbeiterIn]</figDesc>
-   <note type="editorial">[Kommentar BearbeiterIn]</note>
-</figure></egXML>
-                        </p>
                         <p>
                             Beispiel:
                             
@@ -248,8 +223,7 @@
                     </div3>
                     <div3>
                         <head>Listen</head>
-                        <p> Kodierung: Eine Liste wird mit <gi>list</gi> ausgezeichnet.
-                            Die einzelnen Listeneinträge werden mit <gi>item</gi>
+                        <p>Eine Liste wird mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-list.html"><gi>list</gi></ref> ausgezeichnet. Die einzelnen Listeneinträge werden mit <gi>item</gi>
                             ausgezeichnet. </p>
                         <!-- <p>Bsp.: Brief Nr. <ref>
                                 target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433096405504" (SG sollten die Links nicht auf Swisscolletions leiten?)
@@ -330,8 +304,7 @@
                     
                     <div3>
                         <head>Mathematische Formeln</head>
-                        <p>Mathematische Formeln werden mit LaTeX kodiert. Die Formel selbst wird
-                            mit dem XML-Element <gi>formula</gi> ausgezeichnet.</p>
+                        <p>Mathematische Formeln werden mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-formula.html"><gi>formula</gi></ref> ausgezeichnet und sie werden mit LaTeX kodiert.</p>
                         <p>Erscheinen die mathematischen Formeln im Brieftext nicht im Fliesstext
                             sondern vom restlichen Text abgesetzt, wird das Element
                             <gi>formula</gi> durch das Attribut
@@ -353,9 +326,9 @@
                             erzeugt wird.</p>
                         <p><list rend="bulleted">
                         <item>Die Gestaltung von mathematischen Formeln folgt möglichst getreu der Vorlage, d.h. Formeln werden unter Beachtung der historischen Symbole und Formelschreibweise transkribiert. (Beispiele: <formula>aa</formula> statt <formula>a^2</formula>, Vinculum statt Klammern, verschiedene Multiplikationszeichen, Symbole zur Bezeichnung geometrischer Figuren, von Verhältnissen, Proportionen etc.).</item>
-                        <item><p>Buchstaben, die mathematische Grössen (Variablen oder Punkte) bezeichnen, werden als Formeltext markiert. Bezeichnungen für Operatoren (wie «q» für «quadratum», «L» für «logarithmus» oder «n» für «numerus» - die Umkehrfunktion des Logarithmus) werden innerhalb von Formeln in gerader Schrift wiedergegeben, um sie von Variablen oder Punkten zu unterscheiden. Wo der Logarithmus mit einer Minuskel bezeichnet ist, wird diese als rundes «<formula>\ell</formula>» wiedergegeben.</p></item>
+                        <item><p>Buchstaben, die mathematische Grössen (Variablen oder Punkte) bezeichnen, werden als Formeltext markiert. Bezeichnungen für Operatoren (wie "q" für "quadratum", "L" für "logarithmus" oder "n" für "numerus" - die Umkehrfunktion des Logarithmus) werden innerhalb von Formeln in gerader Schrift wiedergegeben, um sie von Variablen oder Punkten zu unterscheiden. Wo der Logarithmus mit einer Minuskel bezeichnet ist, wird diese als "<formula>\ell</formula>" wiedergegeben.</p></item>
                         <item><p>Bei Brüchen stehen in der Vorlage die Zeichen + und - öfters nicht vor dem Bruchstrich, sondern auf der Höhe des Zählers. In diesem Fall werden sie nach heutigem Gebrauch vor den Bruchstrich gesetzt.</p></item>
-                        <item><p>Das Vinculum, ein über einem Term angebrachter Querstrich mit der Funktion einer Klammer, wird beibehalten; doch wird die Länge der Überstreichung, die in den handschriftlichen wie den gedruckten Quellen oft ungenau oder falsch gesetzt ist, stillschweigend präzisiert.</p></item>
+                        <item><p>Das Vinculum, ein über einem Term angebrachter waagrechter Strich mit der Funktion einer Klammer, wird beibehalten; doch wird die Länge der Überstreichung, die in den handschriftlichen wie den gedruckten Quellen oft ungenau oder falsch gesetzt ist, stillschweigend präzisiert.</p></item>
                         <item><p>Das Wurzelzeichen ohne Balken <formula>\sqrt{}</formula> wird bei Radikanden, die nur aus einer einzigen Zahl oder einer Variablen bestehen, beibehalten. Ein Vinculum über den Radikanden wird dem modernen Gebrauch entsprechend mit dem Wurzelzeichen verbunden (Beispiel <formula>\overline{x+y}~\sqrt{}~\overline{a+b}</formula> wird als <formula>\overline{x~+~y}\:\sqrt{a+b}</formula> wiedergegeben).</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <formula>\sqrt{}</formula> (Wurzelzeichen)
@@ -383,15 +356,13 @@
                     </div3>
                     <div3>
                         <head>Zitate</head>
-                        <p> Zitate werden kodiert, wenn sie als solche erkennbar sind, sei es aufgrund einer Hervorhebung des Textes in der Handschrift sei es 
-                            aus dem Kontext. Die Kennzeichnung im Manuskript (Unterstreichung, Anführungszeichen) wird gemäss den in den Abschnitten "Hervorhebungen durch den Autor" und "Anführungszeichen" festgehaltenen Richtlinien ausgezeichnet.</p> 
+                        <p> Zitate werden kodiert, wenn sie als solche erkennbar sind, sei es aufgrund einer Hervorhebung des Textes in der Handschrift, sei es aus dem Kontext. Die Kennzeichnung im Manuskript (Unterstreichung, Anführungszeichen) wird gemäss den in den Abschnitten "Hervorhebungen durch den Autor" und "Anführungszeichen" festgehaltenen Richtlinien ausgezeichnet.</p> 
                         
-                        <p>Kodierung: Das Zitat als Ganzes (Zitierter Text als auch bibliographische Referenzen, Kommentare, Einschübe) wird mit dem Element <gi>cit</gi> umschlossen. Der zitierte Text wird innerhalb von cit mit dem Element ausgezeichnet <gi>quote</gi>. Allfällige Angaben zur zitierten Textquelle werden mit dem Element <gi>bibl</gi> ausgezeichnet, darin werden Personen, Werke, Briefe mit den Registereinträgen verlinkt. Zwischen folgenden Zitat-Typen wird unterschieden:</p>
+                        <p>Kodierung: Das Zitat als Ganzes (Zitierter Text und die dazu gehörenden bibliographischen Referenzen, Kommentare, Einschübe) wird mit dem Element <gi>cit</gi> umschlossen. Der zitierte Text wird innerhalb von <gi>cit</gi> mit dem Element <gi>quote</gi> ausgezeichnet. Allfällige Angaben zur zitierten Textquelle werden mit dem Element <gi>bibl</gi> ausgezeichnet, darin werden Personen, Werke, Briefe mit den Registereinträgen verlinkt. Zwischen folgenden Zitat-Typen wird unterschieden:</p>
                         
-                        <p>Indirekte Zitate und Paraphrasen werden mittels Attribut @type=indirect und
-                            @type=paraphrase von direkten Zitaten unterschieden.</p>
+                        <p>Indirekte Zitate und Paraphrasen werden mittels Attribut <att>type</att> <val>indirect</val> oder <val>paraphrase</val> von direkten Zitaten unterschieden.</p>
                         
-                        <p>Lange Zitate, die als solche speziell gekennzeichnet sind, werden durch das Attribut <![CDATA[<cit type="long">]]> gekennzeichnet. Die Anführungszeichen am Zeilenbeginn werden dabei mit der Entity &quot; wiedergegeben.</p>
+                        <p>Lange Zitate, die als solche auch im Original beispielsweise durch Einrückung oder wiederholten Anführungszeichen am Zeilenbeginn gekennzeichnet sind, werden durch das Attribut <![CDATA[<cit type="long">]]> versehen. Die Anführungszeichen am Zeilenbeginn werden dabei normalisierend entfernt. <!-- Interne Info: Sie werden mit der Entity &quot; ausgezeichnet, die zu einem choice-Element entsprechend umgewandelt wird --></p>
                         
                         <p>Zusammenfassend kann man folgende Fälle (die auch kombinierbar sind) unterscheiden:</p>
 
@@ -433,9 +404,7 @@
          <lb/>rumpatur per <choice><abbr>propos.</abbr><expan>propositionem</expan></choice> <abbr>D.</abbr> <rs type="person" key="pers_DE-588_1089913486">Varignonii</rs> supradictam reperiri ubique
          <lb/>aequalem potentiae sustinenti in <formula>A</formula></hi>.</quote><bibl><rs type="biblio" key="biblio_I2Z37CBH">Joh. I B., 1694</rs></bibl></cit>
                         </p>
-
-                        <div4>
-                            <head>Beispiel eines langen Zitats mit Anführungszeichen am Zeilenbeginn</head>
+                            <p>Beispiel eines langen Zitats mit Anführungszeichen am Zeilenbeginn:</p>
 
                             
                             <p>Link zur Briefseite auf e-manuscripta: https://www.e-manuscripta.ch/zuz/content/zoom/949843. 
@@ -466,32 +435,25 @@
                                 
                                 Kurze Zitate werden im Original meistens durch Unterstreichung (auch doppelte Unterstreichung) hervorgehoben. Beispiel eines kurzen Zitats: https://www.e-manuscripta.ch/zuz/content/zoom/949819) 
                             </p>
-                            <p>ToDo: Anhand von Textbeispielen sollen weitere Formen von Anführungs- und Schlusszeichen dokumentiert werden</p>
+                            
                             <p>Eine Kodierungsliste der im deutschen Raum gebräuchlichen Anführungszeichen findet sich bei DTA (https://www.deutschestextarchiv.de/doku/basisformat/trAnfZeichen.html)</p>
-                        </div4>
+                        
                     </div3>
                 </div2>
                 <div2>
 
                     <div3>
-                        <head>Ergänzungen durch den Autor</head>
+                        <head>Ergänzungen und Streichungen durch den Autor</head>
                         <p>Die Ergänzungen, die der Autor selbst im Manuskript vorgenommen hat,
-                            werden mit dem Element <gi>add</gi> ausgezeichnet.</p>
-                    </div3>
-                    <div3>
-                        <head>Streichungen durch den Autor</head>
+                            werden mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-add.html"><gi>add</gi></ref> ausgezeichnet.</p>
+
                         <p>Streichungen durch den Autor werden mit dem Element
-                            <gi>del</gi> ausgezeichnet. Zu beachten ist dabei die
+                            <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-del.html"><gi>del</gi></ref> ausgezeichnet. <!-- Zu beachten ist dabei die
                             Streichung des Leerschlags (damit in der Lesefassung kein doppelter
-                            Leerschlag stehen bleibt).</p>
+                            Leerschlag stehen bleibt). --></p>
                         <p>Falls der gestrichene Text unleserlich ist, wird er durch das Element
                             <gi>gap</gi> ersetzt.</p>
 
-                    </div3>
-                    <div3>
-                        <head>Korrekturen durch den Autor</head>
-                        <p>Kodierung: <![CDATA[<subst><del></del><add></add></subst>]]>
-                        </p>
                         <p> Korrekturen sind Streichungen mit gleichzeitigen Hinzufügungen, wobei
                             der gestrichene Text durch einen neuen Text ersetzt wird. Diese
                             Ersetzung wird mit dem Element <gi>subst</gi> ausgezeichnet, das
@@ -530,8 +492,8 @@
                         <item>
                             Korrektur bei einer Worttrennung am Zeilenende:
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                <lb/>docendam à <abbr>Ser.</abbr> et <abbr>Potent.</abbr> <rs type="place" key="3164603"><abbr>Republ.</abbr></rs> evocaretur, eamque rem <subst><del>dila<pc type="hyphenation">-</pc>
-                                    <lb break="no"/>tio </del><add><lb/></add></subst>causam esse cur mei promotio ad Cathedram istam Mathe<pc type="hyphenation">-</pc>
+                                <lb/>docendam a Ser. et Potent. Republ. evocaretur, eamque rem <subst><del>dila<pc type="hyphenation">-</pc>
+                                    <lb break="no"/>tio </del><add><lb/></add></subst>causam esse cur mei promotio ad Cathedram istam Mathe-
                             </egXML>
                         </item>
                     </list>
@@ -543,28 +505,26 @@
                         <p> Satzumstellungen (angezeigt im Original z.B. durch kleine Nummern über
                             den Wörtern oder durch Linien) werden nicht mittels Kodierung
                             ausgezeichnet. Der Text wird in der vom Schreiber intendierten
-                            Reihenfolge wiedergegeben. </p>
+                            Reihenfolge wiedergegeben. In einer editorischen Note wird darauf hingewiesen.</p>
                     </div3>
                     <div3>
                         <head>Hervorhebungen durch den Autor</head>
                         <p>Die vom Autor stammenden Hervorhebungen werden mit dem Element
                             <gi>hi</gi> ausgezeichnet. Ein entsprechendes Attribut
-                            <![CDATA[@rend]]> gibt die Art der Hervorhebung an: Mögliche Werte
+                            <att>rend</att> gibt die Art der Hervorhebung an: Mögliche Werte
                             sind dabei: </p>
                        
                         <list>
-                        
-                        <item>Hochstellung: <![CDATA[<hi rend="sup"></hi>]]></item>
-                        <item>Unterstreichung: <![CDATA[<hi rend="u"></hi>]]></item>
-                        <item>Doppelte Unterstreichung: <![CDATA[<hi rend="uu"></hi>]]></item>
-                        <item>Anstreichung am Rand <![CDATA[<hi rend="mMM"></hi>]]></item>                       
-                        <item>Zentrierter Text: <![CDATA[<hi rend="c"></hi>]]></item>
-                        <item>Eingerückter Text: <![CDATA[<hi rend="et"></hi>]]></item>
-                        <item>Kapitälchen: <![CDATA[<hi rend="k"></hi>]]></item>
-                        <item>Rechtsbündigkeit: <![CDATA[<hi rend="right"></hi>]]></item>
+                        <item>Hochstellung: <val>sup</val></item>
+                        <item>Unterstreichung: <val>u</val></item>
+                        <item>Doppelte Unterstreichung: <val>uu</val></item>
+                        <item>Anstreichung am Rand <val>mMM</val></item>                       
+                        <item>Zentrierter Text: <val>c</val></item>
+                        <item>Eingerückter Text: <val>et</val></item>
+                        <item>Kapitälchen: <val>k</val></item>
+                        <item>Rechtsbündigkeit: <val>right</val></item>
                     </list>
-                        <p>Weitere Kodierungsanleitungen zu <gi>hi</gi> im DTA:
-                            https://www.deutschestextarchiv.de/doku/basisformat/typogrAllg.html?hl=unterstreichung</p>
+                        <p>Weitere Kodierungsanleitungen zu <gi>hi</gi> finden sich auf der Seite des <ref target="https://www.deutschestextarchiv.de/">DTA</ref></p>
 
 
                         <p>Mit <![CDATA[<hi rend="sup"></hi>]]> auszuzeichnen ist auch die
@@ -1453,10 +1413,11 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                     </p>
                                 </div5>
                                 <div5>
-                                    <head>Das Element <gi>note</gi> umfasst die biographische Notiz. Das Attribut <att>resp</att> enthält Angaben zur Autorschaft der biographischen Notiz. Das Element <gi>bibl</gi> umfasst bibliographische Angaben.</head>
-                                </div5>
-                                <div5>
-                                    <head>Kodierungsbeispiel</head>
+                                    <head>Kurzbiographie</head>
+                                    <p>Das Element <gi>note</gi> umfasst die biographische Notiz. Das Attribut <att>resp</att> enthält Angaben zur Autorschaft der biographischen Notiz. Das Element <gi>bibl</gi> umfasst bibliographische Angaben.</p>
+                                
+                                
+                                    <p>Kodierungsbeispiel:</p>
                                     <p>
                                         <![CDATA[
                             <person xml:id="pers_DE-588-116170654">
@@ -1478,6 +1439,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             ]]>
                                     </p>
                                 </div5>
+                                
                             </div4>
                             <div4>
                                 <head>Ortsregister</head>
@@ -1524,18 +1486,10 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </head>
                         <p>Die Inhaltliche Kommentierung kann in unterschiedlichen Bereichen der Edition erfolgen:
                         <list>
-                            <item>Stellenkommentare: Werden im Element <gi>note</gi> erfasst. Editorische Noten werden durch den Wert <val>comment</val> und inhaltliche Kommentare mit dem Wert <val>comment</val> im Attribut <att>type</att> gekennzeichnet. Interne Notizen erhalten den Wert <val>internal</val>. Das fakultative Attrivut <att>resp</att> kennzeichnet die Autorschaft des Kommentars.</item>
-                            <item>Zusammenfassungen des Inhalts: Sie werden direkt im Briefinventar im Feld 520 erfasst und im Header in das Element</item>
-                            
-                        </list></p>
-                    </div3>
-                </div2>
-                    
-                    <div2>
-                       
-                        <head>Front-Bereich <![CDATA[<front></front>]]>, <![CDATA[<div type="editorialNote"></div>]]></head>
-                        <p>Der Front-Bereich <![CDATA[<front></front>]]> kann eine Editorische Notiz <![CDATA[<div type="editorialNote"></div>]]> mit allgemeinen Vorbemerkungen zur Quelle, Provenienz oder zur editorischen Behandlung des Briefes. </p>
-                        <p>
+                            <item>Stellenkommentare: Werden im Element <gi>note</gi> erfasst. Editorische Noten werden durch den Wert <val>comment</val> und inhaltliche Kommentare durch den Wert <val>comment</val> im Attribut <att>type</att> unterschieden. Interne Notizen erhalten den Wert <val>internal</val>. Das fakultative Attribut <att>resp</att> kennzeichnet die Autorschaft des Kommentars.</item>
+                            <item>Zusammenfassungen des Inhalts: Sie stehen im Element <gi>abstract</gi> (teiHeader/profileDesc/abstract). Keywords zum Inhalt stehen hingegen im Element <gi>keywords</gi> (teiHeader/profileDesc/textClass/keywords) jeweils in einem Element <gi>term</gi>.</item>
+                            <item>
+                               Separate Vorbemerkungen zur Quelle, Provenienz oder zur editorischen Behandlung des Briefes, falls erforderlich: Sie wird in einem eigenen <gi>div</gi>-Element, das sich im Element <gi>front</gi> befindet, erfasst <p>
                             Besipiel: 
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <text>
@@ -1550,46 +1504,19 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 </text>
                             </egXML>
                         </p>
-                    </div2>
+                            </item>
+                            
+                        </list></p>
+                    </div3>
+                </div2>
                     <div2>
-                        <head>Sachkommentar</head>
-                        <p>Der Sachkommentar dient der inhaltlichen
-                            Erschliessung. Sie wird folgendermassen kodiert:
-                            <![CDATA[<note type="comment">Kommentartext</note>]]>. Der
-                            Bearbeitungszustand (vorläufige interne Notiz, ausgeführte
-                            Anmerkung, redaktionell bearbeitete Anmerkung bereit zur
-                            Publikation) wird mit dem Attribut
-                            <![CDATA[cert="low", cert="middle", cert="high"]]> angegeben. Die
-                            für die Verfassung des Kommentars verantwortliche Person wird mittels Attribut @resp="Personen-Kürzel" erfasst. Die Personenkürzel sind im Personenindex aufgelöst.</p>
-                        
-                        <p> Sachkommentare können Folgendes umfassen:
-                            <list>
-                            <item>Kommentare zum Kontext der im Brief besprochenen Inhalte.</item>
-                            <item>Nachweis von Briefen, die nicht zu den Bernoulli-Briefwechseln gehören.</item>
-                            <item>Stellenverweise von Bibelzitaten und Zitaten der antiken römischen und griechischen Literatur, die nicht eine konkrete Textausgabe referenzieren und somit nicht über die Bibliographie erschlossen werden können.</item>
-                            <item>Erläuterungen zu wenig bekannten Eigennamen (Orte, Berge, Flüsse etc.) und zu historischen Ereignissen.</item>
-                            <item>Worterklärungen (z. B. veralteter oder untergegangener Wörter), falls deren Bedeutung nicht aus dem Kontext ersichtlich ist. </item>
-                            <item/>
-                        </list>
-                        </p>
-                        <p> ToDo: Beispiel </p>
-                    </div2>
-                    
-                    
-                    
-                    <div2>
-                        <head>Verweise</head>
-                        <p> Noch zu klären, ob in BEBB nötig: Kodierung: <![CDATA[<anchor>]]>
-                            und <![CDATA[@xml:id]]>
-                            <!-- https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/verweise.html#topic_e1f_thv_ty__section_m2x_qfd_mkb -->
-                            <!-- https://edition-humboldt.de/richtlinien/ediarum.AVHR/siglen.html -->
+                        <head>Interne Verweise</head>
+                        <p>Verweise, z.B. auf einen Brief oder eine Fussnote in einem Brief werden mit dem Element <gi>ref</gi> umgesetzt. Das Element, auf das verwiesen wird, erhält eine eindeutige xml:id, die für den Verweis benötigt wird, z.B. (Dokument 1) <![CDATA[<note xml:id="fn2">Inhalt der Fußnote im ersten Dokument.</note>]]> und (Dokument 2)
+                            <![CDATA[<ref target="document1.xml#fn2">Verweis auf die Fußnote im ersten Dokument</ref>]]>
                         </p>
                     </div2>
                 
             </div1>
-            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-          
-            
             <!-- 
              %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
