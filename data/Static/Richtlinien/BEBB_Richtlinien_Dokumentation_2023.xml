@@ -824,26 +824,22 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         <div4>
                             <head>Nicht lesbare Zeichen</head><!-- ToDo: Frage: sollen Stellen, bei denen der Textverlust komplett ist (also nicht bloss unleserliche Stellen) speziell kodiert werden, Humboldt benutzt hier das attribut reason="lost" Siehe dazu: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/nicht_lesbar.html#topic_gfh_yfv_ty-->
                             <p> Nicht lesbare Zeichen, deren Bedeutung nicht erschlossen werden
-                                kann, werden mit dem Element <![CDATA[<gap/>]]> ausgezeichnet.
+                                kann, werden mit dem leeren Element <gi>gap</gi> ausgezeichnet.
                                 Umfang und Ursachen des Textverlusts werden nicht ausgezeichnet
                                 sondern (wo sinnvoll) kommentierend in einer Fussnote erläutert. Das
-                                Element <![CDATA[<gap/>]]> wird auch für die Auszeichnung von Text,
+                                Element <gi>gap</gi> wird auch für die Auszeichnung von Text,
                                 der aus editorischen Überlegungen nicht transkribiert wird (siehe weiter unten den Abschnitt
                                 "Auslassungen" verwendet.</p>
                         </div4>
                         <div4>
                             <head>Unsichere Lesarten (Konjekturen)</head>
                             <p>Die Auszeichnug von schwer leserlichen Stellen (sei es wegen Beschädigungen oder unsleserlicher Schrift) erfolgt mit dem Element <gi>unclear</gi> <!-- neu!! --> Wenn der Text komplett verloren ist, erhält das Element zusätzlich das Attribut <att>reason</att> mit dem Wert <val>lost</val>.
-                                <!-- Das gilt nicht mehr!!! Mit <![CDATA[<unclear>]]> werden auch Zeichen oder Wörter
-                                ausgezeichnet, die zwar nicht mehr vorhanden sind, aber aus dem
-                                Kontext rekonstruiert werden können. Beispiel: -->
                             </p>
                                 <p>
                                     Falls im Text Wörter oder Zeichen ergänzt werden müssen, weil der Autor diese versehentlich weggelassen hat, wird dies als Korrektur ausgezeichent (also mit einem leeren <gi>sic</gi> und <gi>corr</gi>.
                                 <!-- Beispiel: Brief von Michelotti an Nic. I B. von 1716.06.19 (000059206): Zeile 66-67 (Ve[ne]-tiis -->
                             </p>
-                            <p> Die Ursache für die Unleserlichkeit wird (wo sinnvoll) kommentierend in
-                                einer Fussnote erläutert.</p>
+                            <p> Die Ursache für die Unleserlichkeit wird (wo sinnvoll) kommentierend in einer Fussnote erläutert.</p>
                         </div4>
                         <div4>
                             <head>Auslassungen</head>
@@ -1401,7 +1397,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                                 <forename>Pierre Rémond de</forename>
                                             </persName></egXML> 
                                     </p>
-                                    <p>Adelspredikate, die nicht Bestandteil des Namens sind, werden in einem Element <![CDATA[<roleName>]]> erfasst</p>
+                                    <p>Adelspredikate, die nicht Bestandteil des Namens sind, werden in einem Element <gi>roleName</gi> erfasst</p>
                                     <p>
                                         Beispiel, Duc
                                     </p>
@@ -1523,7 +1519,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 <head>Metadaten</head>
 
 
-                <p> Die Metadaten werden im Element <![CDATA[<teiheader>]]> erfasst. <egXML
+                <p> Die Metadaten werden im Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-teiHeader.html"><gi>teiheader</gi></ref> erfasst. Sie sind in die Bereiche <gi>fileDesc</gi>, <gi>encodingDesc</gi>, <gi>profileDesc</gi> <egXML
                         xmlns="http://www.tei-c.org/ns/Examples">
                         <teiheader>
                             <fileDesc>[Bibliographische Angaben]</fileDesc>
@@ -1533,28 +1529,25 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                     </egXML>
                 </p>
                 <div2>
-                    <head>Dateibeschreibung (<![CDATA[<fileDesc>]]>)</head>
+                    <head>Dateibeschreibung (<gi>fileDesc</gi>)</head>
                     <p> Die Dateibeschreibung, also die vollständige bibliografische Beschreibung
                         der der Edition zugrunde liegenden elektronischen Datei ist im Element
-                        <![CDATA[<fileDesc>]]> kodiert. </p>
+                        <gi>fileDesc</gi> kodiert. </p>
 
 
                     <div3>
-                        <head><![CDATA[<titleStmt>]]></head>
-                        
-                        <div4>
-                            <head>Titel</head>
-                            <p>Die einzelnen Titel des Briefes und der Edition sind jeweils in einem Element <![CDATA[<title>]]> mit spezifizierendem Attribut erfasst. Diese Titel werden in einem übergreifenden Element <![CDATA[<title type="full">]]> zusammengefasst.
-                                Die einzelnen Titel werden durch folgende Attribute unterschieden:
+                        <head>Titel (<gi>titleStmt</gi>)</head>
+
+                            <p>Die Titel der Edition und des einzelnen Briefes werden mit dem Element <gi>title</gi> mit spezifizierendem Attribut erfasst. Sie sind in einem übergreifenden Element <![CDATA[<title type="full">]]> zusammengefasst.
+                                Die einzelnen Titel (aktueller Titel und Titel aus älteren Versionen der Edition) werden durch folgende Attribute unterschieden:
                                 <list> 
-                                <item>type="main" kennzeichnet den auf dem Briefkopf im TEI Publisher angezeigten Titel.</item>
+                                <item>type="main" kennzeichnet den aktuell gültigen Titel.</item>
                                 <item>Das Attribut type="alt" kennzeichnet hingegen alternative Titel, die aus früheren Datenversionen bei der Transformation übernommen wurden.</item> 
-                               <item> Das Attribut level="s" Kennzeichnet hingegen den übergeordneten Titel der Edition (Basler Edition der Bernoulli-Briefwechsel).</item>
+                               <item> Das Attribut level="s" Kennzeichnet den übergeordneten Titel der Edition (Basler Edition der Bernoulli-Briefwechsel).</item>
                                 </list>
-                            <!-- ToDo MW: Aktuell wird anstelle des Attributs type="alt" das Attribut type="sub" verwendet. Das sollte bei der Bespielung der Header zu type="alt" geändert werden -->
                         </p>
                             <p>
-                                Beipsiel: 
+                                Beispiel: 
                                 
                                 <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                     <titleStmt>
@@ -1573,39 +1566,25 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 245 	1 	0 	|a Brief an Nicolaus I Bernoulli  |c von Pietro Antonio Michelotti
                                 751 			|a Venedig  |0 pers_DE-588_4062501-1  
                                 046 			|a s  |c 1715.02.22 (hier würde man das Datum idealerweise in das Format tt. Monat jjjj umwandeln, falls das zu viel Aufwand ist, belässt man es so.) -->
-                        </div4>
                     </div3>
 
                     <div3>
-                        <head>Angaben zu Edition, EditorInnen und Mitarbeitenden <![CDATA[<editionStmt>]]></head>
-                        <p>Das <![CDATA[editionStmt]]> enthält Angaben zu:
+                        <head>Angaben zu Edition, EditorInnen und Mitarbeitenden (<gi>editionStmt</gi>)</head>
+                        <p>Das <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-editionStmt.html"><gi>editionStmt</gi></ref> enthält Angaben zu:
                          <list>
-                             <item>Edition (kodiert in <![CDATA[<edition>]]></item>
-                            <item>EditorInnen (kodiert in <![CDATA[<editor>]]>)</item>
-                            <item>Mitarbeitenden (kodiert in <![CDATA[<resp>]]>)</item>
+                             <item>Edition (kodiert in <gi>edition</gi>): <![CDATA[<edition>TEI XML version of BEBB for preliminary "beta"
+                    publication through Exist-DB and TEI Publisher.</edition>]]>.</item>
+                            <item><gi>editor</gi>: Umfasst die Information zu den EditorInnen, die für die Edition verantwortlich sind.</item>
+                            <item><gi>respStmt</gi>: Umfasst die Angaben zu weiteren Mitherausgebenden. Das Element <gi>persName</gi> enthält den Namen, das Element <gi>resp</gi> hingegen die Angaben zur Art der Mitarbeit.</item>
                          </list>
                         </p>
-                        <div4>
-                            <head>Informationen zur Edition</head><!-- ToDo: überprüfen, ob das nicht aktualisiert werden soll. -->
-                            <p>Diese Information besteht aktuell aus der folgenden Angabe:
-                                <![CDATA[<edition>TEI XML version of BEBB for preliminary "beta"
-                    publication through Exist-DB and TEI Publisher. This content
-                    will eventually be published on BEOL. </edition>
-                <editor>]]>
-                            </p>
-                        </div4>
                         
-                        <div4>
-                            <head>EditorInnen und Mitarbeitende</head>
-                            <p> Die Information zu den EditorInnen, die für die Edition verantwortlich sind, wird im Element <![CDATA[<editor>]]> kodiert, weitere Mitarbeitdende im Element <![CDATA[<respStmt>]]>. Es können mehrere Editor-Elemente nebeneinander bestehen.</p>
-                            <p>Das Element <![CDATA[<persname>]]> umfasst die Attribute key (mit der GND-Nummer) und xml:id (mit dem Kürzel aus den Namen-Initialen). Es enthält die Unterelemente <![CDATA[<surname>]]>, <![CDATA[<forename>]]></p>
-                            <p></p>
-                            
                             <p>Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <editionStmt>
                                     <edition>TEI XML version of BEBB for preliminary "beta"
                                         publication through Exist-DB and TEI Publisher. This content
-                                        will eventually be published on BEOL. </edition>
+                                        will eventually be published on BEOL.
+                                    </edition>
                                     <editor>
                                         <persName key="pers_DE-588_128594551" xml:id="SG">
                                             <surname>Gehr</surname>
@@ -1624,20 +1603,30 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 </editionStmt>
                             </egXML>
                             </p>
-                            
-                        </div4>
-
                     </div3>
                     <div3>
-                        <head>Angaben zum publizierten Brief (<![CDATA[<publicationStmt>]]>)</head><!-- ToDo: Kontrollieren, da das zweimal abgehandelt wurde. -->
-                        <p>Informationen zum Publikation finden
+                        <head>Impressum, Copyright und Links zu den verfügbaren Dateien der Edition (<gi>publicationStmt</gi>)</head>
+                        <!-- Die Informationen zur Publikation finden
                             sind im Element <![CDATA[<publicationStmt>]]>. Diese Informationen betreffen die veröffentlichende Institution (kodiert in
                             <![CDATA[ <publisher>]]>), den Publikationsort (<![CDATA[<pubPlace>]]>), das Publikationsdatum (<![CDATA[<date when="9999">]]> die Verfügbarkeit (<![CDATA[<availability>]]>) bzw. Lizenz (<![CDATA[<licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
                             4.0)</licence>]]>) die URL des auf der Bernoulli-Plattform publizierten Briefes
                             <![CDATA[<idno type="URLWeb">]]>, die URLs der im GitHub-Repository gespeicherten Versionen des Briefes.
                             und <![CDATA[<idno type="URLXML">]]> (Link zur Seite auf den
-                            GitHub-Repository) finden sich am Schluss des publicationStmt. </p>
-                        
+                            GitHub-Repository) finden sich am Schluss des publicationStmt. --> 
+                        <p>Die folgenden Informationen sind im Element <gi>publicationStmt</gi> und den entsprechenden Kindelementen erfasst:</p>
+                        <list>
+                            <item>
+                                <gi>publisher</gi> (Herausgeber der Edition)
+                            </item>
+                            <item><gi>pubPlace</gi> (Erscheinungsort der Edition),</item>
+                            <item><gi>date</gi> (Publikationsdatum der Version),</item>
+                            <item><gi>availability</gi> (Copyright),</item>
+                            <item><gi>idno</gi> (Links zu den Text- und Bild-Ressourcen der Edition). Das Element <gi>idno</gi> wird durch das Attribut <att>type</att> mit den folgenden Werten weiter unterschieden:
+                            <list>
+                                &&&bis-hier-gemacht<item><val>urlBEBB</val></item> 
+                                <item></item>
+                            </list></item>
+                        </list>
                         <p>Beispiel: 
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <publicationStmt>
@@ -1655,13 +1644,11 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             </egXML>
                         </p>
                         
-                    </div3>
 
-                    <div3>
-                        <head>Impressum (<![CDATA[<publicationStmt>]]>)</head>
-                        <div4><head>
-                            Impressum und Copyright sind im Element <![CDATA[<publicationStmt>]]> kodiert 
-                        </head>
+
+                    <div4>
+                        <head>Impressum ()</head>
+                     
 
                         <p> Beispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                     <publisher>Bernoulli-Euler-Zentrum</publisher>
@@ -1676,9 +1663,12 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </egXML>
                         </p>
                         </div4>
+                        <div4>
+                            <head>Links zur Briefdatei</head>
+                            <p>(teiHeader/fileDesc/publicationStmt/idno)</p>
+                        </div4>
                         
                         <div4>
-                            <head>Links zum Brief</head>
                             <p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                     <idno type="urlBEBB">https://bebb.unibas.ch/ALMA-Systemnummer</idno>
@@ -1749,10 +1739,10 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         
                     </div3>
                     <div3>
-                        <head>Beschreibung der Quelle (<![CDATA[<sourceDesc>]]>, darin als Kindelement <![CDATA[<msDesc>]]>)</head>
+                        <head>Beschreibung der Quelle (<gi>sourceDesc</gi>, darin als Kindelement <gi>msDesc</gi>)</head>
                         <p>Die Beschreibung der für die Textkonstitution verwendeten Quelle ist im
-                            Element <![CDATA[<msDesc>]]> erfasst, das zur Kodierung der Identifikatoren (<![CDATA[<msIdentifier>]]>), der physischen Beschreibung (<![CDATA[<physDesc>]]>) und weiteren Informationen dient.</p>
-                        <p>Die Art der Überlieferung der Textgrundlage ist durch das Attribut @rend festgelegt, siehe dazu Humboldt-Digital: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/metadaten/art_der_textgrundlage.html</p>
+                            Element <gi>msDesc</gi> erfasst, das zur Kodierung der Identifikatoren (<gi>msIdentifier</gi>), der physischen Beschreibung (<gi>physDesc</gi>) und weiteren Informationen dient.</p>
+                        <p>Die Art der Überlieferung der Textgrundlage ist durch das Attribut <att>rend</att> festgelegt, siehe dazu Humboldt-Digital: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/metadaten/art_der_textgrundlage.html</p>
                         <p>Werte für @rend: 
                         </p>
                         <list>
@@ -1779,22 +1769,16 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             Beispiel: 852 	4 		|b A117  |c 117B1  |j -  |z Standort: Hannover, GWLB  |z Signatur: LBr 56, fol.1-4  |9 (41SLSP_UBS)9972406897605504
                             
                         -->
-                            <p> Die Angaben zur Identifikation des Briefes finden sich im Element
-                                <![CDATA[<msIdentifier>]]>. Das Bernoulli-Briefinventar als Quelle der in msIdentifier angegebenen Informationen, ist im Attribut @source erfasst <![CDATA[(<msIdentifier source="BIBB"></msIdentifier>)]]>.
-                            </p>
-                            <p> 
-                                <![CDATA[<msIdentifier>]]> umfasst die folgenden Angaben:
-                            </p>
+                            <p> Die Angaben zur Identifikation des Briefes finden sich im Element <gi>msIdentifier</gi> wobei das Attribu <att>source</att> die Quelle der Identifikatoren angibt, nämlich das Bernoulli-Briefinventar (BIBB): <![CDATA[(<msIdentifier source="BIBB"></msIdentifier>)]]>. <gi>msIdentifier</gi> umfasst die folgenden Angaben: </p>
+                            <p><gi>repository</gi>: Enthält Angaben zur Besitzerinstitution der edierten Quelle. Das Attribut <![CDATA[type="foreign"]]> wird für Quellen benutzt, die sich nicht in der UB Basel befinden sondern in einer anderen Institution.</p>
+                          
+                            <p>Die Identifikatoren und Systemnummern sind im Element <gi>idno</gi> (teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/idno) erfasst, sie sind durch die folgenden Werte im Attribut <att>type</att> gekennzeichnet: 
                                 <list>
-                                    <item>Ort und Besitzerinstitution <![CDATA[<repository>]]> ( type="foreign" falls nicht UB sd. in auswärtiger Bibliothek)</item>
-                                    <item>Signatur (<![CDATA[<idno type="callNumber">]]>)</item>
-                                    <item>ALMA-Netzwerkzone-Systemnummer aus BIBB-Feld 001 (ALMA) (<![CDATA[<idno type="ALMA_NZ">]]>). Diese Nummer endet immer mit 01</item>
-                                    <item>ALMA-Institutionszone-Systemnummer aus BIBB-Feld 035 (<![CDATA[<idno type="ALMA_IZ">]]>). Diese Nummer endet immer mit 04</item>
-                                    <item>veraltete Systemnummer ALEPH) (<![CDATA[<altIdentifier><idno type="ALEPH"></altIdentifier>]]>)</item>
-                                </list>
-                            <!-- BIBB-Feld 852 4 (in ALMA in Holding). Standortangaben und Signatur in Feld j. Bei auswärtig aufbewahrten Briefen Standort- und Signaturangaben in zwei separaten Unterfeldern z.  -->
-                            
-                            
+                                <item><val>callNumber</val>: Signatur der edierten Quelle.</item>
+                                    <item><val>ALMA_NZ</val>: ALMA-Netzwerkzone-Systemnummer aus BIBB-Feld 001 (ALMA). Diese Nummer endet immer mit 01.</item>
+                                    <item><val>ALMA_IZ</val>: ALMA-Institutionszone-Systemnummer aus BIBB-Feld 035. Diese Nummer endet immer mit 04.</item>
+                                    <item><val>ALEPH</val>: Veraltete Systemnummer aus ALEPH.</item>
+                                </list></p> <!-- BIBB-Feld 852 4 (in ALMA in Holding). Standortangaben und Signatur in Feld j. Bei auswärtig aufbewahrten Briefen Standort- und Signaturangaben in zwei separaten Unterfeldern z.  -->
                             <p> Beispiel: 
                                 <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                     <msIdentifier source="BIBB">
