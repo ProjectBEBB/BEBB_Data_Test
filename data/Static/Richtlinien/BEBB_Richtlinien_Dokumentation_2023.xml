@@ -411,10 +411,6 @@
                                  
                                  Kodierung:
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>R=\sqrt{\frac{1}{2}b+\sqrt{\frac{1}{4}bb+a}}</formula></egXML>
-                                
-                                
-                                
-                                
                             
                             <formula>\overline{x+y}\sqrt{}\overline{a+b}</formula> wird als <formula>\overline{x+y}\:\sqrt{a+b}</formula> wiedergegeben).</p>
                             <p>(Beispiel: <formula>aa</formula> statt <formula>a^2</formula>, Vinculum statt Klammern, verschiedene Multiplikationszeichen, Symbole zur Bezeichnung geometrischer Figuren, von Verhältnissen, Proportionen etc.).</p>
@@ -424,10 +420,10 @@
                             </egXML>
                         </item>
                         <item><p>Bei Polynomen sind gelegentlich die Koeffizienten derselben Potenz einer Variablen in einer Spalte untereinander angeordnet. Fehlt dabei eine Potenz, so wird an deren Stelle das Zeichen * gesetzt.</p></item>
-                        <item><p>Die alte Schreibweise <formula>a~.~b~::~x~.~y</formula> für die Proportionen <formula>a~:~b~=~x~:~y</formula> wird beibehalten.</p>
-                            <p>Oft bezeichnen dabei Klammern die Gleichheit von Termen, und die vierte Proportionale wird direkt ausgerechnet. Zum Beispiel fasst die Formel <formula> a~(AB)~.~b~(BC)~::~x~(PQ)~.~y~(PR)~=~bx/a</formula> die Proportion <formula>~:~b~=~x~:~y</formula> mit den Voraussetzungen <formula>a~=~AB, b~=~BC, x~=~PQ, y~=~PR</formula> und der Folgerung <formula>y~=~bx/a</formula> zusammen.</p>
+                        <item><p>Die alte Schreibweise <formula>a . b :: x . y</formula> für die Proportionen <formula>a : b = x : y</formula> wird beibehalten.</p>
+                            <p>Oft bezeichnen dabei Klammern die Gleichheit von Termen, und die vierte Proportionale wird direkt ausgerechnet. Zum Beispiel fasst die Formel <formula> a (AB) . b (BC) :: x (PQ) . y (PR) = bx/a</formula> die Proportion <formula> : b = x : y</formula> mit den Voraussetzungen <formula>a = AB, b = BC, x = PQ, y = PR</formula> und der Folgerung <formula>y = bx/a</formula> zusammen.</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                Alte Schreibweise <formula>a~.~b~::~x~.~y</formula> statt moderner Schreibweise <formula>a~:~b~=~x~:~y</formula>
+                                Alte Schreibweise <formula>a . b :: x . y</formula> statt moderner Schreibweise <formula>a : b = x : y</formula>
                             </egXML>
                         </item>
                         <item><p>Die Zeichen <formula>\square</formula> (Quadrat), <formula>\bigcirc</formula> (Kreis), <formula>\bigtriangleup</formula> (Dreieck), <formula>\angle</formula> (Winkel), die sowohl für geometrische Objekte wie für deren Masszahlen stehen, werden beibehalten.</p>
@@ -537,12 +533,12 @@
                             Streichung des Leerschlags (damit in der Lesefassung kein doppelter
                             Leerschlag stehen bleibt). --></p>
                         <p>Falls der gestrichene Text unleserlich ist, wird er durch das Element
-                            <gi>gap</gi> ersetzt.</p>
+                            <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-gap.html"><gi>gap</gi></ref> ersetzt.</p>
 
                         <p> Korrekturen sind Streichungen mit gleichzeitigen Hinzufügungen, wobei
                             der gestrichene Text durch einen neuen Text ersetzt wird. Diese
-                            Ersetzung wird mit dem Element <gi>subst</gi> ausgezeichnet, das
-                            die Elemente <gi>del</gi> und <gi>add</gi> umschliesst.</p>
+                            Ersetzung wird mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-subst.html"><gi>subst</gi></ref> ausgezeichnet, das
+                            die Elemente <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-del.html"><gi>del</gi></ref> und <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-del.html"><gi>add</gi></ref> umschliesst.</p>
 
                         <p>Beispiel einer Korrektur mit unleserlichem gestrichenem Text: Brief Nr.
                                 <ref
@@ -595,7 +591,7 @@
                     <div3>
                         <head>Hervorhebungen durch den Autor</head>
                         <p>Die vom Autor stammenden Hervorhebungen werden mit dem Element
-                            <gi>hi</gi> ausgezeichnet. Ein entsprechendes Attribut
+                            <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-hi.html"><gi>hi</gi></ref> ausgezeichnet. Ein entsprechendes Attribut
                             <att>rend</att> gibt die Art der Hervorhebung an: Mögliche Werte
                             sind dabei: </p>
                        
@@ -657,9 +653,9 @@
                                 Folgenden werden verschiedene Arten von Korrekturen erläutert.</p>
                             <div5>
                                 <head>Korrekturen von Schreibfehlern</head>
-                                <p>Die Kodierung erfolgt mit den Elementen <gi>sic</gi>
+                                <p>Die Kodierung erfolgt mit den Elementen <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-sic.html"><gi>sic</gi></ref>
                                     (das den ursprünglichen Text enthält) und
-                                    <gi>corr</gi> (das den korrigierten Text enthält).
+                                    <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-corr.html"><gi>corr</gi></ref> (das den korrigierten Text enthält).
                                     Beide Elemente sind mit dem Element <ref
                                         target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"
                                         ><gi>choice</gi></ref> umschlossen. </p>
@@ -723,7 +719,7 @@
                             <div5>
                                 <head>Ergänzung eines Wortes oder Satzzeichens</head>
                                 <p> Wenn korrigierend ein ganzes Wort oder ein Satzzeichen ergänzt
-                                    wird, benutzt man das Element <gi>supplied</gi>.
+                                    wird, benutzt man das Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-supplied.html"><gi>supplied</gi></ref>.
                                     <!-- Wie soll beim Supplied-Tag mit Leerschlägen umgegangen werden, das hängt von der Visualisierung im TEI Publsiher ab. Benötigt wird eine technische Lösung, bei der in der textnahen Fassung nur ein Leerschlag steht während in der Lesefassung kein Leerschlag in die Eckigen kommt. ToDo mit Margareth und Jelena besprechen. -->
                                 </p>
                                 <p> ToDo: Beispiel </p>
@@ -750,18 +746,9 @@
                                 unterschieden. </p>
 
 
-                            <p> Normalisierungen werden in der Regel mit den Elementen <ref
-                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html"
+                            <p> Normalisierungen werden in der Regel mit den Elementen <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-orig.html"
                                     ><gi>orig</gi></ref> (in dem der ursprüngliche Text
-                                steht), <ref
-                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html"
-                                    ><gi>reg</gi></ref> (in dem der normalisierte Text
-                                steht), ausgezeichnet. Diese Elemente sind mit dem Element <ref
-                                    target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"
-                                    ><gi>choice</gi></ref> umschlossen. Eine
-                                Besonderheit bilden Abbreviaturzeichen und Diakritische Zeichen, die
-                                mit dem Element <gi>g</gi> ausgezeichnet werden (siehe dazu
-                                den entsprechenden Abschnitt weiter unten). </p>
+                                steht), <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html"><gi>reg</gi></ref> (in dem der normalisierte Text steht), ausgezeichnet. Diese Elemente sind mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"><gi>choice</gi></ref> umschlossen. Eine Besonderheit bilden Abbreviaturzeichen und Diakritische Zeichen, die mit dem Element <gi>g</gi> ausgezeichnet werden (siehe dazu den entsprechenden Abschnitt weiter unten). </p>
                             <div5>
                                 <head>Sprachunabhängige Normalisierungen</head>
                                 <div6>
@@ -787,7 +774,7 @@
                                         Überflüssige Zahlpunkte bei Kardinalzahlen und Formelpunkte werden normalisierend entfernt.
                                     </item>
                                         <item>
-                                            Handschriftenspezifische Sonderzeichen, die im Druck oder in der heutigen Praxis nicht mehr wiedergegeben werden, werden mit <gi>reg</gi> normalisiert, dabei wird nicht das ganze Wort normalisiert sondern nur das entsprechende Zeichen. Die folgenden Zeichen gehören dazu:
+                                            Handschriftenspezifische Sonderzeichen, die im Druck oder in der heutigen Praxis nicht mehr wiedergegeben werden, werden mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-reg.html"><gi>reg</gi></ref> normalisiert, dabei wird nicht das ganze Wort normalisiert sondern nur das entsprechende Zeichen. Der Grund für diese Sonderbehandlung liegt darin, dass diese Zeichen(folgen) in einem ersten Schritt mit Entities ausgezeichnet werden, die in einem zweiten Schritt in ein <hi>choice</hi>-Element umgewandelt werden. Die folgenden Zeichen gehören dazu:
                                             <list>
                                         <item> ƚ => ll</item>
                                         <item> m̄ => mm</item>
@@ -909,7 +896,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         <div4>
                             <head>Nicht lesbare Zeichen</head><!-- ToDo: Frage: sollen Stellen, bei denen der Textverlust komplett ist (also nicht bloss unleserliche Stellen) speziell kodiert werden, Humboldt benutzt hier das attribut reason="lost" Siehe dazu: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/nicht_lesbar.html#topic_gfh_yfv_ty-->
                             <p> Nicht lesbare Zeichen, deren Bedeutung nicht erschlossen werden
-                                kann, werden mit dem leeren Element <gi>gap</gi> ausgezeichnet.
+                                kann, werden mit dem leeren Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-gap.html"><gi>gap</gi></ref> ausgezeichnet.
                                 Umfang und Ursachen des Textverlusts werden nicht ausgezeichnet
                                 sondern (wo sinnvoll) kommentierend in einer Fussnote erläutert. Das
                                 Element <gi>gap</gi> wird auch für die Auszeichnung von Text,
@@ -918,42 +905,34 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </div4>
                         <div4>
                             <head>Unsichere Lesarten (Konjekturen)</head>
-                            <p>Die Auszeichnug von schwer leserlichen Stellen (sei es wegen Beschädigungen oder unsleserlicher Schrift) erfolgt mit dem Element <gi>unclear</gi> <!-- neu!! --> Wenn der Text komplett verloren ist, erhält das Element zusätzlich das Attribut <att>reason</att> mit dem Wert <val>lost</val>.
+                            <p>Die Auszeichnug von schwer leserlichen Stellen (sei es wegen Beschädigungen oder unsleserlicher Schrift) erfolgt mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-unclear.html"><gi>unclear</gi></ref>. Wenn der Text komplett verloren ist, jedoch aus dem Zusammenhang rekonstruiert werden kann, erhält das Element <gi>unclear</gi> zusätzlich das Attribut <att>reason</att> mit dem Wert <val>lost</val>.
+                            </p>
+                            <p>
+                                Falls eine Textpartie verloren ist, und nicht mehr rekonstruiert werden kann, wird das leere Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-gap.html"><gi>gap</gi></ref> verwendet.
                             </p>
                                 <p>
-                                    Falls im Text Wörter oder Zeichen ergänzt werden müssen, weil der Autor diese versehentlich weggelassen hat, wird dies als Korrektur ausgezeichent (also mit einem leeren <gi>sic</gi> und <gi>corr</gi>.
+                                    Falls im Text hingegen Wörter oder Zeichen ergänzt werden müssen, weil der Autor diese versehentlich weggelassen hat, werden diese mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-supplied.html"><gi>supplied</gi></ref> ausgezeichnet.
                                 <!-- Beispiel: Brief von Michelotti an Nic. I B. von 1716.06.19 (000059206): Zeile 66-67 (Ve[ne]-tiis -->
                             </p>
-                            <p> Die Ursache für die Unleserlichkeit wird (wo sinnvoll) kommentierend in einer Fussnote erläutert.</p>
+                            <p>Die Ursache für die Unleserlichkeit oder Rekonstruktion wird (wo sinnvoll) kommentierend in einer Fussnote erläutert.</p>
                         </div4>
                         <div4>
                             <head>Auslassungen</head>
 
-                            <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert
-                                werden, muss dies mittels Markup kenntlich gemacht werden. Dazu wird
-                                das leere Element <gi>gap</gi> mit dem Attribut
-                                <![CDATA[reason="editorial"]]> verwendet. Dieses Attribut dient zur
-                                Unterscheidung zwischen Auslassungen und Textverlust, die beide mit
-                                dem Element <gi>gap</gi> ausgezeichnet werden. Zum Textverlust
-                                siehe oben den Abschnitt "Nicht lesbare Zeichen".
+                            <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert werden, muss dies mittels Markup kenntlich gemacht werden. Dazu wird das leere Element <gi>gap</gi> mit dem Attribut <![CDATA[reason="editorial"]]> verwendet. Dieses Attribut dient zur Unterscheidung zwischen Auslassungen und Textverlust, die beide mit dem Element <gi>gap</gi> ausgezeichnet werden. Zum Textverlust siehe oben den Abschnitt "Nicht lesbare Zeichen".
                                 <!--  gap Könnte zum Beispiel dafür genutzt werden, um gedruckte Beilagen, die nicht transkribiert werden sollen, zu kennzeichnen (siehe den Abschnitt "Beilagen") oder auch, um die Umschlagseiten, in die die Briefseiten teilweise eingebunden waren und die mit-digitalisiert wurden, sowie die leeren Manuskriptseiten auzszuzeichnen. --></p>
 
                         </div4>
 
                         <div4>
-                            <head>Abkürzungen (<gi>abbr</gi>)</head>
-                            <p>Abkürzungen werden mit dem Element <gi>abbr</gi> ausgezeichnet.
-                                Abgekürzte Wörter, die nicht allgemein verständlich sind, werden
-                                zusätzlich mit <gi>expan</gi> aufgelöst.</p>
-                            <p> Fehlende Abkürzungspunkte werden normalisierend mit <gi>supplied</gi> ergänzt.</p>
-                            <p> Falls anstelle des Abkürzungspunktes ein anderes Zeichen verwendet wurde
-                                (meistens ein Doppelpunkt oder ein waagrechter Strich) wird dieses
-                                Zeichen stillschweigend als einfacher Punkt wiedergegeben.</p>
+                            <head>Abkürzungen</head>
+                            <p>Abkürzungen werden mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-abbr.html"><gi>abbr</gi></ref> ausgezeichnet. Abgekürzte Wörter, die nicht allgemein verständlich sind, werden zusätzlich mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-expan.html"><gi>expan</gi></ref> aufgelöst.</p>
+                            <p> Fehlende Abkürzungspunkte werden normalisierend mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-supplied.html"><gi>supplied</gi></ref> ergänzt.</p>
+                            <p> Falls anstelle des Abkürzungspunktes ein anderes Zeichen verwendet wurde (meistens ein Doppelpunkt oder ein waagrechter Strich) wird dieses Zeichen stillschweigend als einfacher Punkt wiedergegeben.</p>
 
                             <p>Falls der Abkürzungspunkt gleichzeitig die Funktion eines Satzpunktes erfüllt, wird die Abkürzung ohne Abkürzungspunkt getaggt, z.B.  <![CDATA[<abbr>etc</abbr>.]]>. oder <choice><abbr>Vars</abbr><expan>Varsovie</expan></choice>.</p>
                                 <p>Zu beachten gibt es folgende Sonderfälle: <list>
-                            <item><!-- ToDo: Das Beispiel soll aufgrund der Besprechung im Team zur Normalisierung des Abkürzugnspunktes noch angepasst werden. -->
-                                Eine Normalisierung (bzw. Korrektur) in einer Abkürzung:
+                            <item><!-- ToDo: Das Beispiel soll aufgrund der Besprechung im Team zur Normalisierung des Abkürzugnspunktes noch angepasst werden. --> Eine Normalisierung (bzw. Korrektur) in einer Abkürzung:
                                 <![CDATA[<choice>
 <orig><choice><abbr>ursprünglicher Text der Abkürzung</abbr><expan>aufgelöster Text</expan></choice></orig>
 <reg><choice><abbr>normalisierter Text der Akürzung</abbr><expan>aufgelöster Text</expan></choice></reg>
@@ -991,16 +970,15 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
 
                         <div4>
                             <head>Sprachwechsel</head>
-                            <p> Die Sprache des Dokumentes wird allgemein im Header festgehalten,
-                                Sprachwechsel im Brieftext wird mit dem Element
-                                <gi>foreign</gi> und dem Attribut <att>xml:lang</att>
+                            <p> Die Sprache des Dokumentes wird allgemein im Header (<gi>language</gi>) festgehalten, Sprachwechsel im Brieftext wird hingegen mit dem Element
+                                <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-foreign.html"><gi>foreign</gi></ref> und dem Attribut <att>xml:lang</att>
                                 ausgezeichnet. </p>
-                            <p>Der Attributwert entspricht dem dreibuchstabigen Code der Sprache (ISO 639-2 Norm, Library of Congress Standards):</p>
+                            <p>Der Attributwert entspricht dem dreibuchstabigen Code gemäss ISO-639-3-Norm:</p>
                             <list>
-                                <item>Griechisch: grc</item>
+                                <item>Altgriechisch: grc</item>
                                 <item>Latein: lat</item>
                                 <item>Hebräisch: heb</item>
-                                <item>Deutsch: 	deu</item>
+                                <item>Deutsch: deu</item>
                                 <item>Französisch: fra</item>
                                 <item>Englisch: eng</item>
                                 <item>Russisch: rus</item>
@@ -1009,7 +987,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 <item>Nicht zu entscheiden: und</item>
                             </list>
 
-                            <p></p>
+                            <p>Achtung! die Angabe der Sprachcodes im Header-Element <gi>language</gi> entspricht hingegen der ISO-639-2-Norm, siehe den entsprechenden Abschnitt in den Richtlinien zu den Metadaten.</p>
 
                             <p> Zu beachten ist Folgendes:
                                 <list>
@@ -1057,7 +1035,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         
                         <div4>
                             <head>Datumsangaben</head>
-                            <p>Das Datum wird mit <gi>date</gi> ausgezeichnet. Im Attribut <att>when</att> ist das Datum in normierter Form yyyy-mm-dd erfasst. Das normierte Datum entspricht immer dem gregorianischen Kalender. Angaben wie "vorgestern" oder "letztes Jahr" werden auch mit <gi>date</gi> ausgezeichnet. Falls das Datum nicht dem gregorianischen Kalender zugehört, wird der Kalender zusätzlich mit dem Attribut <att>calendar</att> versehen: Werte für <att>calendar</att> sind: <list>
+                            <p>Das Datum wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-date.html"><gi>date</gi></ref> ausgezeichnet. Im Attribut <att>when</att> ist das Datum in normierter Form yyyy-mm-dd erfasst. Das normierte Datum entspricht immer dem gregorianischen Kalender. Angaben wie "vorgestern" oder "letztes Jahr" werden auch mit <gi>date</gi> ausgezeichnet. Falls das Datum nicht dem gregorianischen Kalender zugehört, wird der Kalender zusätzlich mit dem Attribut <att>calendar</att> versehen: Werte für <att>calendar</att> sind: <list>
                                 <item>julian</item>
                                 <item>venetian (für "more veneto")</item>
                             </list></p>
@@ -1111,10 +1089,10 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                     <head>Briefanfang</head>
                     
                 
-                    <p>Der Briefanfang wird mit dem Element <gi>opener</gi>, das NICHT innerhalb eines Paragraphen
+                    <p>Der Briefanfang wird mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-opener.html"><gi>opener</gi></ref>, das NICHT innerhalb eines Paragraphen
                         <gi>p</gi> steht, gekennzeichnet. Er kann fakultativ eine Anrede
-                        enthalten, die sich mit <gi>salute</gi> auszeichnen lässt. Ebenso kann fakultativ
-                        eine Datumszeile am Beginn des Briefes stehen, die mit <gi>dateline</gi> ausgezeichnet wird. Zur Auszeichnung von
+                        enthalten, die sich mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-salute.html"><gi>salute</gi></ref> auszeichnen lässt. Ebenso kann fakultativ
+                        eine Datumszeile am Beginn des Briefes stehen, die mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-dateline.html"><gi>dateline</gi></ref> ausgezeichnet wird. Zur Auszeichnung von
                         Ort und Datum in der Dateline siehe die entsprechenden Abschnitte
                         (Auszeichnung von Ort, Auszeichnung von Datumsangaben). Die Textausrichtung
                         der Datumszeile wird durch das Attribut <att>rend</att>, in der Regel mit
@@ -1144,8 +1122,8 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
                 <div2>
                     <head>Briefschluss</head>
-                    <p> Kodierung: <gi>closer</gi>, <gi>salute</gi>, <gi>signed</gi>,
-                        <gi>dateline</gi>
+                    <p> Kodierung: <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html"><gi>closer</gi></ref>, <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-salute.html"><gi>salute</gi></ref>, <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-signed.html"><gi>signed</gi></ref>,
+                        <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-dateline.html"><gi>dateline</gi></ref>
                     </p>
                     <p>Der Briefschluss wird mit <ref
                             target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html"
@@ -1256,9 +1234,9 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
                 <div2>
                     <head>Beilage</head>
-                    <p>Beilagen werden im Header-Element <gi>accMat</gi>, (siehe Metadaten) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im BIBB-Feld 500 hingewiesen (siehe Header-Element <![CDATA[<note type="generalRemark">]]>).</p>
+                    <p>Beilagen werden im Header-Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-accMat.html"><gi>accMat</gi></ref>, (siehe Metadaten) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im BIBB-Feld 500 hingewiesen (siehe Header-Element <![CDATA[<note type="generalRemark">]]>).</p>
                     <p>
-                        Die Edition des Beilagentextes ist fakultativ und erfolgt im Element <gi>back</gi>. Jede einzelne Beilage ist in einem Element <![CDATA[<div type="attachment">]]> erfasst. Eine editorische Notiz zur Beilage wird mit <![CDATA[<div type="editorialNote">]]> ausgezeichnet, sie enthält Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) und weitere relevante Informationen. Der Text der Beilage wird hingegen in <![CDATA[<div type="attachment_text">]]> wiedergegeben.
+                        Die Edition des Beilagentextes ist fakultativ und erfolgt im Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-back.html"><gi>back</gi></ref>. Jede einzelne Beilage ist in einem Element <![CDATA[<div type="attachment">]]> erfasst. Eine editorische Notiz zur Beilage wird mit <![CDATA[<div type="editorialNote">]]> ausgezeichnet, sie enthält Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) und weitere relevante Informationen. Der Text der Beilage wird hingegen in <![CDATA[<div type="attachment_text">]]> wiedergegeben.
                     </p>
                     <p>Vereinfachtes Beispiel eines Anhangs mit zwei Beilagen:
                         
@@ -1286,7 +1264,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </egXML>
                     </p>
                     
-                    <p>Falls der Beilagentext nicht transkribiert wird, steht an dessen Stelle ein Element <gi>gap</gi> mit dem Attribut <att>reason</att> und Wert <val>editorial</val>. Kodierung: <![CDATA[<div><gap reason="editorial"></gap></div>]]>.
+                    <p>Falls der Beilagentext nicht transkribiert wird, steht an dessen Stelle ein Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-gap.html"><gi>gap</gi></ref> mit dem Attribut <att>reason</att> und Wert <val>editorial</val>. Kodierung: <![CDATA[<div><gap reason="editorial"></gap></div>]]>.
                     </p>
 
                     <list>
@@ -1304,7 +1282,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
                 <div2>
                     <head>Adresse</head>
-                    <p> Die Adresse wird innerhalb des <gi>opener</gi>- oder <gi>closer</gi>-Elements mit dem Element <gi>address</gi> ausgezeichnet. Die einzelnen Zeilen werden mit dem Element <gi>addrline</gi> umschlossen.
+                    <p> Die Adresse wird innerhalb des <gi>opener</gi>- oder <gi>closer</gi>-Elements mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-address.html"><gi>address</gi></ref> ausgezeichnet. Die einzelnen Zeilen werden mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-addrLine.html"><gi>addrline</gi></ref> umschlossen.
                     </p>
                     <p>Personen und Orte werden in der Adresse ausgezeichnet.</p>
                     <p>Wortrennungen in einer Adresszeile werden mit Trennstrich (ohne spezielle Kodierung) umgesetzt.</p>
@@ -1340,7 +1318,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 <div2>
                     <head>Sachauszeichnung und Register</head>
                     <p></p>
-                    <div3><p>Im edierten Text werden die Entitäten Person, Ort, Publikation/Handschrift, Brief, Institution, Thema/Begriff mit dem Element <gi>rs</gi> ausgezeichnet.</p> 
+                    <div3><p>Im edierten Text werden die Entitäten Person, Ort, Publikation/Handschrift, Brief, Institution, Thema/Begriff mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-rs.html"><gi>rs</gi></ref> ausgezeichnet.</p> 
                     <p>Der im Attribut <att>type</att> angegebene Wert unterscheidet die Entitäten voneinander:
 
                         <list>
@@ -1942,7 +1920,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             </p>
                     <div3>
                         <head>Sprache des Brieftextes</head>
-                        <p>Die Sprache des Brieftextes wird sowohl im Element <gi>langUsage</gi> (teiHeader/profileDesc/langUsage) ausgeschrieben als auch als Sprachcode gemäss <ref target="https://www.loc.gov/standards/iso639-2/php/code_list.php">ISO 639-2 der Library of Congress</ref> angegeben. Dieser Code wird als Wert des Attributs <att>ident</att> erfasst.
+                        <p>Die Sprache des Brieftextes wird sowohl im Element <gi>langUsage</gi> (teiHeader/profileDesc/langUsage) ausgeschrieben als auch als Sprachcode gemäss <ref target="https://www.loc.gov/standards/iso639-2/php/code_list.php">ISO 639-2 Norm der Library of Congress Standards</ref> angegeben. Dieser Code wird als Wert des Attributs <att>ident</att> erfasst.
                         </p>
                         <p>
                             Beispiel:
