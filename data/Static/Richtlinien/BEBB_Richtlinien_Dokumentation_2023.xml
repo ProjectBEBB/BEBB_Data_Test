@@ -27,18 +27,15 @@
 
             <div1>
                 <head>Namespace und XML-Deklaration</head>
-                <p>Das Rootelement <gi>TEI</gi> enthält den TEI namespace (<![CDATA[xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"]]>).</p>
+                <p>Das Rootelement <gi>TEI</gi> enthält den TEI namespace (<tag>xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"</tag>).</p>
                 <p>Das Attribut <att>xml:id</att> enthält zudem die Projektinterne ID der Datei. Diese besteht bei den Briefdateien aus dem Präfix "B", Datum und Systemnummer des Briefes im Katalog der UB Basel, (Beispiel: B_1714-05-15_991170515020505501).</p>
                 <p>
                     Die XML-Modell-Deklarationen zur Validierung der TEI XML-Datei sind: 
                 </p>
-                    <p><![CDATA[
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+                    <p><tag>?xml version="1.0" encoding="utf-8"?</tag><tag>?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?</tag>
+                        </p>
                     
-                    ]]></p>
-                    
-                   <p> <![CDATA[<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>]]>
+                   <p> <tag>?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?</tag>
                 </p>
             </div1>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
@@ -57,14 +54,14 @@
             
             2. <del>dila-</del><lb/><del>tio </del>   -->
 
-                        <p>Der Zeilenumbruch wird mit <gi>lb</gi> ausgezeichnet. Dabei werden die folgenden Fälle unterschieden:</p> 
+                        <p>Der Zeilenumbruch wird mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-lb.html"><gi>lb</gi></ref> ausgezeichnet. Dabei werden die folgenden Fälle unterschieden:</p> 
 
                         <p>
                             <list>
                             <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <gi>lb</gi>.</item>
-                        <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <gi>pc</gi> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert <val>no</val>.</item>
+                        <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pc.html"><gi>pc</gi></ref> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert <val>no</val>.</item>
                             <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem nicht ausgezeichneten Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
-                                <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> steht nach dem Element <gi>pb</gi>.</item>
+                                <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> steht nach dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref>.</item>
                         </list>
                         </p>
                         <p>Beispiel eines normalen Zeilenumbruchs und eines Zeilenumbruchs mit Worttrennung: Brief von Nic. I B. an Michelotti von 1713.12.02, p. 1 (BIBB <ref
@@ -110,7 +107,7 @@
                     </div3>
                     <div3>
                         <head>Absatz</head>
-                        <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html"><gi>p</gi></ref> ausgezeichnet. Falls der Absatz im Original nur durch eine grössere Lücke angezeigt wurde, wird dies durch das Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <![CDATA[<p type="space">]]>.
+                        <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html"><gi>p</gi></ref> ausgezeichnet. Falls der Absatz im Original nur durch eine grössere Lücke angezeigt wurde, wird dies durch das Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <tag>p type="space"</tag>.
                             </p>
                     </div3>
                     <div3>
@@ -193,7 +190,7 @@
                     <div3>
                         <head>Anmerkung im Manuskript</head>
                         
-                        <p> Anmerkungen im Original werden mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-note.html"><gi>note</gi></ref> ausgezeichnet. Zur Unterscheidung von Fussnoten und anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit Angabe der xml:id aus dem Personenregister, beispielsweise  <![CDATA[hand="pers_DE-588-118509969"]]>. Falls die Schreiberhand nicht bekannt ist, lautet der Wert "unknown".</p>
+                        <p> Anmerkungen im Original werden mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-note.html"><gi>note</gi></ref> ausgezeichnet. Zur Unterscheidung von Fussnoten und anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit Angabe der xml:id aus dem Personenregister, beispielsweise  <tag>hand="pers_DE-588-118509969"</tag>. Falls die Schreiberhand nicht bekannt ist, lautet der Wert "unknown".</p>
                         <p>Das Attribut <att>place</att> wird bei Randbemerkungen (Marginalien) dazu verwendet, die Stellung der Randnote auf der Seite anzugeben, die Werte lauten <val>right</val> und <val>left</val>. Zu den Randbemerkungen siehe zusätzlich die Anleitungen im <ref target="https://www.deutschestextarchiv.de/doku/basisformat/marginalie.html">DTA</ref>.</p>
                         <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem einheitlichen Tag <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-metamark.html"><gi>metamark</gi></ref> wiedergegeben.</p>
 
@@ -226,7 +223,7 @@
                             <list>
                                 <item><gi>p</gi> für eine Bildüberschrift im Original</item> 
                                 <item><ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-figDesc.html"><gi>figDesc</gi></ref> für eine inhaltliche Bildbeschreibung.</item>
-                                <item><![CDATA[<note type="editorial">]]> für eine editorische Fussnote</item> 
+                                <item><tag>note type="editorial"</tag> für eine editorische Fussnote</item> 
                             </list>
                             </p>
                         <p>Das Element <gi>figure</gi> wird im Text an der ersten Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p>
@@ -349,7 +346,7 @@
                         </p>
                         
                         <p>Falls das Element <gi>choice</gi> dazu verwendet wird, Fehler in der Formel zu korrigieren, werden anstelle von <gi>orig</gi> und <gi>reg</gi> die Elemente <gi>sic</gi> und <gi>corr</gi> verwendet. Korrekturen werden zusätzlich in einer editorischen Fussnote erläutert.</p>
-                        <p>Erscheint die mathematische Formel im Brieftext nicht im Fliesstext sondern vom restlichen Text abgesetzt, wird das Element <gi>formula</gi> durch das Attribut <![CDATA[rend="display"]]> ergänzt.</p>
+                        <p>Erscheint die mathematische Formel im Brieftext nicht im Fliesstext sondern vom restlichen Text abgesetzt, wird das Element <gi>formula</gi> durch das Attribut <tag>rend="display"</tag> ergänzt.</p>
                         <p>Bei Formeln über mehrere Zeilen wird diese in mehrere <gi>formula</gi>-Elemente aufgeteilt, zwischen denen das Element <gi>lb</gi> mit dem Attribut break="no" (Zeilenumbruch ohne Leerschlag) eingefügt wird.</p>
                         
 <p>Buchstaben, die mathematische Grössen (Variablen oder Punkte) bezeichnen, werden ebenfalls mit dem Element <gi>formula</gi> ausgezeichnet. </p>
@@ -444,7 +441,7 @@
                         
                         <p>Indirekte Zitate und Paraphrasen werden mittels Attribut <att>type</att> <val>indirect</val> oder <val>paraphrase</val> von direkten Zitaten unterschieden.</p>
                         
-                        <p>Lange Zitate, die als solche auch im Original beispielsweise durch Einrückung oder wiederholten Anführungszeichen am Zeilenbeginn gekennzeichnet sind, werden durch das Attribut <![CDATA[<cit type="long">]]> versehen. Die Anführungszeichen am Zeilenbeginn werden dabei normalisierend entfernt. <!-- Interne Info: Sie werden mit der Entity &quot; ausgezeichnet, die zu einem choice-Element entsprechend umgewandelt wird --></p>
+                        <p>Lange Zitate, die als solche auch im Original beispielsweise durch Einrückung oder wiederholten Anführungszeichen am Zeilenbeginn gekennzeichnet sind, werden durch das Attribut <tag>cit type="long"</tag> versehen. Die Anführungszeichen am Zeilenbeginn werden dabei normalisierend entfernt. <!-- Interne Info: Sie werden mit der Entity &quot; ausgezeichnet, die zu einem choice-Element entsprechend umgewandelt wird --></p>
                         <p>Text, der sich als Einschub im Zitat befindet, jedoch nicht dazu gehöret, wird in der Regel mit dem Element <gi>said</gi> ausgezeichnet. Falls es sich bei der Unterbrechung um eine bibliographische Angabe handelt, mit dem Element <gi>bibl</gi>.</p>
                         
                         <p>Zusammenfassend kann man folgende Fälle (die auch kombinierbar sind) unterscheiden:</p>
@@ -608,7 +605,7 @@
                         <p>Weitere Kodierungsanleitungen zu <gi>hi</gi> finden sich auf der Seite des <ref target="https://www.deutschestextarchiv.de/">DTA</ref></p>
 
 
-                        <p>Mit <![CDATA[<hi rend="sup"></hi>]]> auszuzeichnen ist auch die
+                        <p>Mit <tag>hi rend="sup"</tag> auszuzeichnen ist auch die
                             Hochstellung im Text</p>
                         
                         <p> Nachträgliche Anstreichungen, z.B. durch den Empfänger, werden nicht
@@ -630,15 +627,15 @@
                                 mit XML-Code durchgeführt. Wo die unten stehenden Regeln für die
                                 Textauszeichnung nicht ausreichen, werden die Eingriffe
                                 kommentierend in der Form einer textkritischen Anmerkung
-                                (<![CDATA[<note type="editorial"></note]]>) erläutert.</p>
+                                (<tag>note type="editorial"</tag>) erläutert.</p>
 
                             <p> ToDo: besser ausformulieren: Der für die textkritische Anmerkung
                                 verantwortlichen Herausgeber könnte man evtl. so auszeichnen:
-                                <![CDATA[<desc resp="[GND des verantwortlichen Herausgebers]">Fritz Nagel</desc>]]>
+                                <tag>desc resp="[GND des verantwortlichen Herausgebers]"Fritz Nagel</tag>
                                 Der Bearbeitungszustand (vorläufige interne Notiz, ausgeführte
                                 Anmerkung, redaktionell bearbeitete Anmerkung bereit zur
                                 Publikation) wird mit dem Attribut
-                                <![CDATA[cert="low", cert="middle", cert="high"]]> angegeben. </p>
+                                <tag>cert="low"</tag>, <tag>cert="middle"</tag>, <tag>cert="high"</tag> angegeben. </p>
                         </div4>
 
                         <div4>
@@ -689,11 +686,12 @@
                                     der Formel mit <gi>sic</gi> und die korrgierte mit
                                     <gi>corr</gi> ausgezeichnet. Die Korrektur einer Formel
                                     wird zusätzlich in einer editorischen Anmerkung kommentiert. </p>
-                                <p>Kodierung: <![CDATA[ 
-                                <choice>
-                                <sic>Fehlerhafte Formel</sic>
-                                <corr>Korrigierte Formel</corr>
-                                </choice>]]>
+                                <p>Kodierung:
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice>
+                                        <sic>Fehlerhafte Formel</sic>
+                                        <corr>Korrigierte Formel</corr>
+                                    </choice>
+                                    </egXML>
                                 </p>
 
                                 <p>ToDo: Bsp. noch zu ergänzen und einzufügen.</p>
@@ -712,7 +710,7 @@
                                 <p>Eine Korrektur durch Tilgung eines ganzen Wortes oder eines
                                     Satzzeichens wird speziell durch das Attribut @type="deleted"
                                     gekennzeichnet
-                                    (<![CDATA[<choice><sic></sic><corr type="deleted"/></choice>]]>).
+                                    (<egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><sic></sic><corr type="deleted"/></choice></egXML>).
                                     Diese Form von Korrektur betrifft meistens
                                     Wortverdoppelungen.</p>
                             </div5>
@@ -760,12 +758,12 @@
                                 </p></item>
                                     <item><p>Nach Semikolon, Doppelpunkt, Ausrufe- und Fragezeichen wird die ursprüngliche Schreibweise belassen.</p></item>
                                     <item><p>Klein geschriebene Werktitel werden normalisiert (z. B.  ars conjectandi  wird zu
-                                     <![CDATA[<choice><orig>ars</orig><reg>Ars></reg></choice>]]> conjectandi  oder  journal des sçavants  wird zu  <![CDATA[<choice><orig>journal</orig><reg>Journal></reg></choice>]]> des sçavants). Dies gilt auch für abgekürzte Titel identifizierbarer Werke und Zeitschriften (aus "actes" für "Acta eruditorum" wird <![CDATA[<choice><orig>actes</orig><reg>Actes></reg></choice>]]>).</p></item>
+                                     <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>ars</orig><reg>Ars></reg></choice></egXML> conjectandi  oder  journal des sçavants  wird zu  <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>journal</orig><reg>Journal></reg></choice></egXML> des sçavants). Dies gilt auch für abgekürzte Titel identifizierbarer Werke und Zeitschriften (aus "actes" für "Acta eruditorum" wird <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>actes</orig><reg>Actes></reg></choice></egXML>).</p></item>
                                     <item><p>
                                        Klein geschriebene Eigennamen (z.B. von Personen oder Orten) werden normaliserend gross geschrieben. Der Umgang mit Grossschreibung von Personennamen (z.B. bei Adelsprädikaten wie "de") wird in einer separaten Richtlinie zur biographischen Erfassung von Personen beschrieben.
                                     </p></item>
                                     <item><p>
-                                        Versalien und Kapitälchen werden zu Kleinbuchstaben normalisiert. Z.B. BERNOULLI wird zu <![CDATA[<choice><orig>BERNOULLI</orig><reg>Bernoulli></reg></choice>]]>. ToDo: Klären, ob es reicht, Kapitälchen so <hi rend="k">Bernoulli</hi> auszuzeichnen, oder ob zusätzlich eine Normalisierung nötig ist.
+                                        Versalien und Kapitälchen werden zu Kleinbuchstaben normalisiert. Z.B. BERNOULLI wird zu <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>BERNOULLI</orig><reg>Bernoulli></reg></choice></egXML>. ToDo: Klären, ob es reicht, Kapitälchen so <hi rend="k">Bernoulli</hi> auszuzeichnen, oder ob zusätzlich eine Normalisierung nötig ist.
                                     </p></item>
                                     <item>
                                         Binnenmajuskeln werden von Fall zu Fall behandelt. In der Regel werden sie bei Eigennamen beibehalten. Z.B. NeufChâtel oder ArchiLyceum Patavinum.
@@ -848,7 +846,7 @@
                                         <item> [us] => us</item>
                                     </list>
                                 </item> 
-                                <item>Das Trema wird beibehalten, bzw. normalisierend ergänzt, falls ein Bedeutungsunterschied anzuzeigen ist. Z.B. <![CDATA[<choice><orig>aer</orig><reg>aër</reg></choice>]]>.</item>
+                                <item>Das Trema wird beibehalten, bzw. normalisierend ergänzt, falls ein Bedeutungsunterschied anzuzeigen ist. Z.B. <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>aer</orig><reg>aër</reg></choice></egXML>.</item>
                             </list>
                                     </p>
                                 </div6>
@@ -876,9 +874,9 @@
                                 <item>In deutschen Wörtern werden diakritische Zeichen weitgehend beibehalten. Das
 Distinktionszeichen über dem u (ú) wird weggelassen.</item>
                                 <item>i/j und I/J werden in deutschen Wörtern entsprechend ihrem Lautwert normalisiert
-wiedergegeben (z.B. aus  dieienige  wird <![CDATA[<choice><orig>dieienige</orig><reg>diejenige</reg></choice>]]>).</item>
+wiedergegeben (z.B. aus  dieienige  wird <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>dieienige</orig><reg>diejenige</reg></choice></egXML>).</item>
                                 <item>v/V und u/U werden entsprechend ihrem Lautwert normalisiert wiedergegeben (z.B.
-aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universität</reg></choice>]]>).</item>
+aus  Vniuersität <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>Vniuersität</orig><reg>Universität</reg></choice></egXML>).</item>
                                             <item>
                                                Die folgenden Zeichen werden entsprechend normalisiert:
                                     <list>
@@ -919,7 +917,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         <div4>
                             <head>Auslassungen</head>
 
-                            <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert werden, muss dies mittels Markup kenntlich gemacht werden. Dazu wird das leere Element <gi>gap</gi> mit dem Attribut <![CDATA[reason="editorial"]]> verwendet. Dieses Attribut dient zur Unterscheidung zwischen Auslassungen und Textverlust, die beide mit dem Element <gi>gap</gi> ausgezeichnet werden. Zum Textverlust siehe oben den Abschnitt "Nicht lesbare Zeichen".
+                            <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert werden, muss dies mittels Markup kenntlich gemacht werden. Dazu wird das leere Element <gi>gap</gi> mit dem Attribut <tag>reason="editorial"</tag> verwendet. Dieses Attribut dient zur Unterscheidung zwischen Auslassungen und Textverlust, die beide mit dem Element <gi>gap</gi> ausgezeichnet werden. Zum Textverlust siehe oben den Abschnitt "Nicht lesbare Zeichen".
                                 <!--  gap Könnte zum Beispiel dafür genutzt werden, um gedruckte Beilagen, die nicht transkribiert werden sollen, zu kennzeichnen (siehe den Abschnitt "Beilagen") oder auch, um die Umschlagseiten, in die die Briefseiten teilweise eingebunden waren und die mit-digitalisiert wurden, sowie die leeren Manuskriptseiten auzszuzeichnen. --></p>
 
                         </div4>
@@ -930,14 +928,13 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             <p> Fehlende Abkürzungspunkte werden normalisierend mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-supplied.html"><gi>supplied</gi></ref> ergänzt.</p>
                             <p> Falls anstelle des Abkürzungspunktes ein anderes Zeichen verwendet wurde (meistens ein Doppelpunkt oder ein waagrechter Strich) wird dieses Zeichen stillschweigend als einfacher Punkt wiedergegeben.</p>
 
-                            <p>Falls der Abkürzungspunkt gleichzeitig die Funktion eines Satzpunktes erfüllt, wird die Abkürzung ohne Abkürzungspunkt getaggt, z.B.  <![CDATA[<abbr>etc</abbr>.]]>. oder <choice><abbr>Vars</abbr><expan>Varsovie</expan></choice>.</p>
+                            <p>Falls der Abkürzungspunkt gleichzeitig die Funktion eines Satzpunktes erfüllt, wird die Abkürzung ohne Abkürzungspunkt getaggt, z.B. <egXML xmlns="http://www.tei-c.org/ns/Examples"><abbr>etc</abbr>.</egXML>. oder <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><abbr>Vars</abbr><expan>Varsovie</expan></choice>.</egXML></p>
                                 <p>Zu beachten gibt es folgende Sonderfälle: <list>
                             <item><!-- ToDo: Das Beispiel soll aufgrund der Besprechung im Team zur Normalisierung des Abkürzugnspunktes noch angepasst werden. --> Eine Normalisierung (bzw. Korrektur) in einer Abkürzung:
-                                <![CDATA[<choice>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice>
 <orig><choice><abbr>ursprünglicher Text der Abkürzung</abbr><expan>aufgelöster Text</expan></choice></orig>
 <reg><choice><abbr>normalisierter Text der Akürzung</abbr><expan>aufgelöster Text</expan></choice></reg>
-</choice>
-]]>
+</choice></egXML>
                           <p>Beispiel: 
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <choice>
@@ -1234,9 +1231,9 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
                 <div2>
                     <head>Beilage</head>
-                    <p>Beilagen werden im Header-Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-accMat.html"><gi>accMat</gi></ref>, (siehe Metadaten) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im BIBB-Feld 500 hingewiesen (siehe Header-Element <![CDATA[<note type="generalRemark">]]>).</p>
+                    <p>Beilagen werden im Header-Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-accMat.html"><gi>accMat</gi></ref>, (siehe Metadaten) dokumentiert. Auf erwähnte, jedoch nicht mehr erhaltene Beilagen wird zudem im BIBB-Feld 500 hingewiesen (siehe Header-Element <tag>note type="generalRemark"</tag>).</p>
                     <p>
-                        Die Edition des Beilagentextes ist fakultativ und erfolgt im Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-back.html"><gi>back</gi></ref>. Jede einzelne Beilage ist in einem Element <![CDATA[<div type="attachment">]]> erfasst. Eine editorische Notiz zur Beilage wird mit <![CDATA[<div type="editorialNote">]]> ausgezeichnet, sie enthält Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) und weitere relevante Informationen. Der Text der Beilage wird hingegen in <![CDATA[<div type="attachment_text">]]> wiedergegeben.
+                        Die Edition des Beilagentextes ist fakultativ und erfolgt im Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-back.html"><gi>back</gi></ref>. Jede einzelne Beilage ist in einem Element <tag>div type="attachment"</tag> erfasst. Eine editorische Notiz zur Beilage wird mit <tag>div type="editorialNote"</tag> ausgezeichnet, sie enthält Angaben zu Autorschaft, Originalquelle (falls es sich um eine Abschrift handelt) und weitere relevante Informationen. Der Text der Beilage wird hingegen in <tag>div type="attachment_text"</tag> wiedergegeben.
                     </p>
                     <p>Vereinfachtes Beispiel eines Anhangs mit zwei Beilagen:
                         
@@ -1264,19 +1261,19 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </egXML>
                     </p>
                     
-                    <p>Falls der Beilagentext nicht transkribiert wird, steht an dessen Stelle ein Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-gap.html"><gi>gap</gi></ref> mit dem Attribut <att>reason</att> und Wert <val>editorial</val>. Kodierung: <![CDATA[<div><gap reason="editorial"></gap></div>]]>.
+                    <p>Falls der Beilagentext nicht transkribiert wird, steht an dessen Stelle ein Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-gap.html"><gi>gap</gi></ref> mit dem Attribut <att>reason</att> und Wert <val>editorial</val>. Kodierung: <egXML xmlns="http://www.tei-c.org/ns/Examples"><div><gap reason="editorial"></gap></div></egXML>.
                     </p>
 
                     <list>
                         <head>Umgang mit spezifischen Situationen bei Beilagen:</head>
                         <item>
-                            <p>Gedruckte Beilagen werden in der Regel nicht transkribiert, nur das Digitalisat wird eingebunden. Die bibliographische Angabe steht in der editorischen Notiz (<![CDATA[<div type="editorialNote">]]>).</p>
+                            <p>Gedruckte Beilagen werden in der Regel nicht transkribiert, nur das Digitalisat wird eingebunden. Die bibliographische Angabe steht in der editorischen Notiz (<tag>div type="editorialNote"</tag>).</p>
                         </item>
                         <item><p>Beilagen, die im Brief erwähnt, jedoch nicht überliefert sind, werden, wenn sie identifizierbar sind, in einer Fussnote referenziert und mit bibliothekarischen oder archivalischen Informationen ausgewiesen.</p>
                         </item>
-                        <item><p>Handschriftliche Beilagen, die nicht mit dem Brief unter derselben Systemnummer überliefert und aufbewahrt werden, jedoch ediert werden sollen, werden als separates Dokument mit einer eigenen xml:id erfasst. Im Brief wird in der editorischen Notiz (<![CDATA[<div type="editorialNote">]]>) innerhalb von <![CDATA[<div type="attachment">]]> auf dieses edierte Dokument verwiesen.</p>
+                        <item><p>Handschriftliche Beilagen, die nicht mit dem Brief unter derselben Systemnummer überliefert und aufbewahrt werden, jedoch ediert werden sollen, werden als separates Dokument mit einer eigenen xml:id erfasst. Im Brief wird in der editorischen Notiz (<tag>div type="editorialNote"</tag>) innerhalb von <tag>div type="attachment"</tag> auf dieses edierte Dokument verwiesen.</p>
                         </item>
-                        <item><p>Handschhriftliche Beilagen, die nicht digitalisiert zugänglich oder aus rechtlichen Gründen nicht publizierbar sind, werden mit ihren bibliographischen Angaben im bibliographischen Register erfasst. In der editorischen Notiz (<![CDATA[<div type="editorialNote">]]>) auf diesen Eintrag verwiesen.</p>
+                        <item><p>Handschhriftliche Beilagen, die nicht digitalisiert zugänglich oder aus rechtlichen Gründen nicht publizierbar sind, werden mit ihren bibliographischen Angaben im bibliographischen Register erfasst. In der editorischen Notiz (<tag>div type="editorialNote"</tag>) auf diesen Eintrag verwiesen.</p>
                         </item>
                     </list>
                 </div2>
@@ -1359,23 +1356,22 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                 <p>
                                     Im Personenregister sind die Korrespondenten (Autor, Adressat) und die in den Brieftexten erwähnten Personen erfasst. 
                                 </p>
-                                <p>Kodierung: <![CDATA[<person>]]></p>
+                                <p>Kodierung: <tag>person</tag></p>
                                 <div5>
                                     <head>ID</head>
                                     <p>
-                                        Die Personen sind durch die xml:id des Personenregisters identifiziert. Falls zu dieser Person eine GND-Nummer vorliegt, ist diese Bestandteil der xml:id (Kodierungsbeispiel: <![CDATA[<person xml:id="pers_DE-588-12209025X"></person>]]>). Die GND-Nummer wird auch im Element <gi>idno</gi> erfasst.
+                                        Die Personen sind durch die xml:id des Personenregisters identifiziert. Falls zu dieser Person eine GND-Nummer vorliegt, ist diese Bestandteil der xml:id (Kodierungsbeispiel: <tag>person xml:id="pers_DE-588-12209025X"></tag>). Die GND-Nummer wird auch im Element <gi>idno</gi> erfasst.
                                     </p>    
                                 </div5>
                                 <div5>
                                     <head>Name</head>
                                     <p>Der Name wird in der Regel in der Form Nachname, Vorname erfasst. Das Attribut <att>type</att> enthält die Werte <val>main</val> (für die Bernoulli), <val>reg</val> (für die Hauptansetzung), <val>alt</val> (für alternative Formen). Bei Eheleuten kann der Wert <val>birth</val> und <val>married</val> im Attribut <att>subtype</att> den Geburtsnamen oder Ehenamen kennzeichnen.</p>
                                     <p>Kodierungsbeispiele: 
-                                        <![CDATA[
-                            <persName type="main">
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName type="main">
                             <surname>Bernoulli</surname>
                             <forename>Johann I</forename>
                             </persName>
-                            ]]></p>
+                           </egXML></p>
                                     <egXML xmlns="http://www.tei-c.org/ns/Examples">                            
                                         <persName type="main">
                                             <surname>Bernoulli</surname>
@@ -1396,13 +1392,11 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                                     
                                     
                                     <p>
-                                        <![CDATA[
-                            <persName type="alt" subtype="birth"> 
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName type="alt" subtype="birth"></persName></egXML> 
                             oder 
-                            <persName type="alt" subtype="married">
-                            <name></name>
-                            </persName>
-                            ]]></p>
+                                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName type="alt" subtype="married">
+                                                <name></name></persName></egXML>
+                                    </p>
                                     <p>Beispiel: 
                                         <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
                                             <persName type="reg">
@@ -1529,7 +1523,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             </div4>
                             <div4>
                                 <head>Sachregister</head>
-                                <p>Es liegt noch kein Sachregister vor, es sollen jedoch Begriffe vorläufig ausgezeichnet werden, ohne dass eine Verlinkung mit dem Register vorgenommen wird. Dazu dient der Tag <![CDATA[<rs type="keyword">]]>.</p>
+                                <p>Es liegt noch kein Sachregister vor, es sollen jedoch Begriffe vorläufig ausgezeichnet werden, ohne dass eine Verlinkung mit dem Register vorgenommen wird. Dazu dient der Tag <tag>rs type="keyword"</tag>.</p>
                             </div4>
                             <div4>
                                 <head>Institutionenregister</head>
@@ -1571,8 +1565,8 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 </div2>
                     <div2>
                         <head>Interne Verweise</head>
-                        <p>Verweise, z.B. auf einen Brief oder eine Fussnote in einem Brief werden mit dem Element <gi>ref</gi> umgesetzt. Das Element, auf das verwiesen wird, erhält eine eindeutige xml:id, die für den Verweis benötigt wird, z.B. (Dokument 1) <![CDATA[<note xml:id="fn2">Inhalt der Fußnote im ersten Dokument.</note>]]> und (Dokument 2)
-                            <![CDATA[<ref target="document1.xml#fn2">Verweis auf die Fußnote im ersten Dokument</ref>]]>
+                        <p>Verweise, z.B. auf einen Brief oder eine Fussnote in einem Brief werden mit dem Element <gi>ref</gi> umgesetzt. Das Element, auf das verwiesen wird, erhält eine eindeutige xml:id, die für den Verweis benötigt wird, z.B. (Dokument 1) <egXML xmlns="http://www.tei-c.org/ns/Examples"><note xml:id="fn2">Inhalt der Fußnote im ersten Dokument.</note></egXML> und (Dokument 2)
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><ref target="document1.xml#fn2">Verweis auf die Fußnote im ersten Dokument</ref></egXML>
                         </p>
                     </div2>
                 
@@ -1602,7 +1596,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                     <div3>
                         <head>Titel (<gi>titleStmt</gi>)</head>
 
-                            <p>Die Titel der Edition und des einzelnen Briefes werden mit dem Element <gi>title</gi> mit spezifizierendem Attribut erfasst. Sie sind in einem übergreifenden Element <![CDATA[<title type="full">]]> zusammengefasst.
+                            <p>Die Titel der Edition und des einzelnen Briefes werden mit dem Element <gi>title</gi> mit spezifizierendem Attribut erfasst. Sie sind in einem übergreifenden Element <tag>title type="full"</tag> zusammengefasst.
                                 Die einzelnen Titel (aktueller Titel und Titel aus älteren Versionen der Edition) werden durch folgende Attribute unterschieden:
                                 <list> 
                                 <item>type="main" kennzeichnet den aktuell gültigen Titel.</item>
@@ -1636,8 +1630,8 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         <head>Angaben zu Edition, EditorInnen und Mitarbeitenden (<gi>editionStmt</gi>)</head>
                         <p>Das <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-editionStmt.html"><gi>editionStmt</gi></ref> enthält Angaben zu:
                          <list>
-                             <item>Edition (kodiert in <gi>edition</gi>): <![CDATA[<edition>TEI XML version of BEBB for preliminary "beta"
-                    publication through Exist-DB and TEI Publisher.</edition>]]>.</item>
+                             <item>Edition (kodiert in <gi>edition</gi>): <egXML xmlns="http://www.tei-c.org/ns/Examples"><edition>TEI XML version of BEBB for preliminary "beta"
+                    publication through Exist-DB and TEI Publisher.</edition></egXML>.</item>
                             <item><gi>editor</gi>: Umfasst die Information zu den EditorInnen, die für die Edition verantwortlich sind.</item>
                             <item><gi>respStmt</gi>: Umfasst die Angaben zu weiteren Mitherausgebenden. Das Element <gi>persName</gi> enthält den Namen, das Element <gi>resp</gi> hingegen die Angaben zur Art der Mitarbeit.</item>
                          </list>
@@ -1759,7 +1753,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             
                         -->
                             <p> Die Angaben zur Identifikation des Briefes finden sich im Element <gi>msIdentifier</gi>, das die folgenden Kindelemente umfasst: </p>
-                            <p><gi>repository</gi>: Enthält Angaben zur Besitzerinstitution der edierten Quelle. Das Attribut <![CDATA[type="foreign"]]> wird für Quellen benutzt, die sich nicht in der UB Basel befinden sondern in einer anderen Institution.</p>
+                            <p><gi>repository</gi>: Enthält Angaben zur Besitzerinstitution der edierten Quelle. Das Attribut <tag>type="foreign"</tag> wird für Quellen benutzt, die sich nicht in der UB Basel befinden sondern in einer anderen Institution.</p>
                           
                             <p>Die Identifikatoren und Systemnummern sind im Element <gi>idno</gi> (teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/idno) erfasst, sie sind durch die folgenden Werte im Attribut <att>type</att> gekennzeichnet: 
                                 <list>
@@ -1954,9 +1948,9 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                     
                 </div2>
                 <div2>
-                    <head>Versionierung und Status (<![CDATA[<revisionDesc>]]>)</head>
+                    <head>Versionierung und Status (<tag>revisionDesc</tag>)</head>
                     <p>Die Bearbeitungsgeschichte des Briefes ist im Element
-                        <![CDATA[<revisionDesc>]]> dokumentiert. Das Element <![CDATA[<change>]]> (das neueste change zuoberst)
+                        <tag>revisionDesc</tag> dokumentiert. Das Element <tag>change</tag> (das neueste change zuoberst)
                         mit den Attributen when und who enthält Informationen zu Art, Datum und
                         Verantwortlichkeit der vorgenommenen Änderung. Im Attribut @status ist der
                         aktuelle Status des Dokumentes erfasst. Mögliche Werte sind (im
@@ -1999,25 +1993,24 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             Text: hg. von
                         </item>
                         <item>
-                            Inhalt von: <![CDATA[
-                            <editor>
+                            Inhalt von: <egXML xmlns="http://www.tei-c.org/ns/Examples"><editor>
                                         <persName key="">
                                             <surname></surname>
                                             <forename></forename>
                                         </persName>
                                     </editor>
-                                    ]]>
+                            </egXML>
                                 
                                     
                         </item>
                         <item>Text: unter Mitarbeit von</item>
                         <item>
-                            Inhalt von: <![CDATA[<respStmt>]]>
+                            Inhalt von: <tag>respStmt</tag>
                                 
-                                        <![CDATA[<persName key="">
+                                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><persName key="">
                                             <surname></surname>
                                             <forename></forename>
-                                        </persName>]]>
+                                        </persName></egXML>
                                         
                                     
                         </item>
@@ -2025,14 +2018,14 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                             Text: . In: 
                         </item>
                         <item>
-                            Inhalt von: <![CDATA[<title level="s"></title>]]>
+                            Inhalt von: <tag>title level="s"></tag>
                         </item>
                         <item>Text: ,</item>
-                        <item>Inhalt von: <![CDATA[<publisher></publisher>]]></item>
+                        <item>Inhalt von: <gi>publisher</gi></item>
                         <item>Text: , </item>
                         <item>
 
-                                    <![CDATA[<pubPlace>Basel</pubPlace>]]>
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><pubPlace>Basel</pubPlace></egXML>
                         </item>
                         <item>Text: Version von: </item>
                         <item>Zu den weiteren Angaben betreffend Version und Publikationsdatum der letzten Fassung sind noch Recherchen durchzuführen, vermutlich stammen diese Angaben nicht direkt aus dem Header (siehe Humboldt-Editon).</item>
@@ -2044,7 +2037,8 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Facsimile</head>
-                <p>Die facsimile werden folgendermassen eingebunden: <![CDATA[<facsimile>/<graphic url="manifest.../>]]></p>
+                <p>Die digitalen Bilder der Handschrift werden folgendermassen eingebunden: Im Element <gi>facsimile</gi> findet sich das Kindelement <gi>graphic</gi>, das im Attribut <att>url</att> als Wert den Manifestlink des Briefes auf e-manuscripta oder aus einer anderen iiif-Plattform beinhaltet. 
+                </p>
                 
                 <p>
                     Beispiel:
@@ -2054,7 +2048,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                         </facsimile>
                     </egXML>
                 </p>
-                <p>Der Bildnachweis und die Nutzungsbedingungen werden aus dem Bildmanifest eingebunden. Siehe dazu die Lösung bei Humboldt-Digital. Zusätzlich führt ein Link zum Digitalisat auf e-manuscripta oder einer anderen Bild-Plattform. </p>
+                <p>Der Bildnachweis und die Nutzungsbedingungen werden aus dem Bildmanifest via Bildviewer automatisch enxtrahiert. Zusätzlich führt ein Link direkt zum Digitalisat auf e-manuscripta oder einer analogen iiif-Plattform.</p>
             </div1>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1><!-- Das gehört mit dem ersten Abschnitt zusammen -->
@@ -2063,7 +2057,7 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
                 <div2>
                     <head>XML-Deklaration</head>
                     <p>
-                        <![CDATA[<?xml version="1.0" encoding="UTF-8"?>]]>
+                        <tag>?xml version="1.0" encoding="UTF-8"?</tag>
                     </p>
                 </div2>
                 <div2>
@@ -2079,157 +2073,157 @@ aus  Vniuersität <![CDATA[<choice><orig>Vniuersität</orig><reg>Universitä
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>teiCorpus</head>
-               <p><![CDATA[<teiCorpus></teiCorpus>]]></p>
+               <p><gi>teiCorpus</gi></p>
                 <p>XInclude</p>
             </div1>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             <div1>
                 <head>Verwendete Elemente</head>
-                <p><![CDATA[
- <TEI>
- <abbr>
- <abstract>
- <accMat>
- <add>
- <addrLine>
- <address>
- <altIdentifier>
- <analytic>
- <author>
- <availability>
- <back>
- <bibl>
- <biblScope>
- <biblStruct>
- <birth>
- <body>
- <catDesc>
- <category>
- <cell>
- <change>
- <choice>
- <cit>
- <classDecl>
- <closer>
- <corr>
- <correspAction>
- <correspContext>
- <correspDesc>
- <country>
- <date>
- <dateline>
- <death>
- <del>
- <dimensions>
- <div>
- <div>
- <edition>
- <editionStmt>
- <editor>
- <encodingDesc>
- <expan>
- <extent>
- <facsimile>
- <figDesc>
- <figure>
- <fileDesc>
- <floruit>
- <foreign>
- <forename>
- <formula>
- <front>
- <funder>
- <g>
- <gap>
- <genName>
- <geo>
- <graphic>
- <handDesc>
- <handNote>
- <head>
- <height>
- <hi>
- <history>
- <idno>
- <imprint>
- <item>
- <keywords>
- <l>
- <langUsage>
- <language>
- <lb>
- <lg>
- <licence>
- <list>
- <listBibl>
- <listChange>
- <listPerson>
- <listPlace>
- <location>
- <metamark>
- <monogr>
- <msDesc>
- <msIdentifier>
- <name>
- <note>
- <notesStmt>
- <objectDesc>
- <opener>
- <orig>
- <origPlace>
- <origin>
- <p>
- <particDesc>
- <pb>
- <pc>
- <persName>
- <person>
- <physDesc>
- <place>
- <placeName>
- <postscript>
- <profileDesc>
- <ptr>
- <pubPlace>
- <publicationStmt>
- <publisher>
- <q>
- <quote>
- <ref>
- <reg>
- <relatedItem>
- <repository>
- <resp>
- <respStmt>
- <revisionDesc>
- <roleName>
- <row>
- <rs>
- <salute>
- <series>
- <seriesStmt>
- <settingDesc>
- <sic>
- <signed>
- <sourceDesc>
- <subst>
- <supplied>
- <supportDesc>
- <surname>
- <table>
- <taxonomy>
- <teiCorpus>
- <teiHeader>
- <term>
- <text>
- <textClass>
- <title>
- <titleStmt>
- <unclear>
- <width>
+                <p>
+ <gi>TEI</gi>
+ <gi>abbr</gi>
+ <gi>abstract</gi>
+ <gi>accMat</gi>
+ <gi>add</gi>
+ <gi>addrLine</gi>
+ <gi>address</gi>
+ <gi>altIdentifier</gi>
+ <gi>analytic</gi>
+ <gi>author</gi>
+ <gi>availability</gi>
+ <gi>back</gi>
+ <gi>bibl</gi>
+ <gi>biblScope</gi>
+ <gi>biblStruct</gi>
+ <gi>birth</gi>
+ <gi>body</gi>
+ <gi>catDesc</gi>
+ <gi>category</gi>
+ <gi>cell</gi>
+ <gi>change</gi>
+ <gi>choice</gi>
+ <gi>cit</gi>
+ <gi>classDecl</gi>
+ <gi>closer</gi>
+ <gi>corr</gi>
+ <gi>correspAction</gi>
+ <gi>correspContext</gi>
+ <gi>correspDesc</gi>
+ <gi>country</gi>
+ <gi>date</gi>
+ <gi>dateline</gi>
+ <gi>death</gi>
+ <gi>del</gi>
+ <gi>dimensions</gi>
+ <gi>div</gi>
+ <gi>div</gi>
+ <gi>edition</gi>
+ <gi>editionStmt</gi>
+ <gi>editor</gi>
+ <gi>encodingDesc</gi>
+ <gi>expan</gi>
+ <gi>extent</gi>
+ <gi>facsimile</gi>
+ <gi>figDesc</gi>
+ <gi>figure</gi>
+ <gi>fileDesc</gi>
+ <gi>floruit</gi>
+ <gi>foreign</gi>
+ <gi>forename</gi>
+ <gi>formula</gi>
+ <gi>front</gi>
+ <gi>funder</gi>
+ <gi>g</gi>
+ <gi>gap</gi>
+ <gi>genName</gi>
+ <gi>geo</gi>
+ <gi>graphic</gi>
+ <gi>handDesc</gi>
+ <gi>handNote</gi>
+ <gi>head</gi>
+ <gi>height</gi>
+ <gi>hi</gi>
+ <gi>history</gi>
+ <gi>idno</gi>
+ <gi>imprint</gi>
+ <gi>item</gi>
+ <gi>keywords</gi>
+ <gi>l</gi>
+ <gi>langUsage</gi>
+ <gi>language</gi>
+ <gi>lb</gi>
+ <gi>lg</gi>
+ <gi>licence</gi>
+ <gi>list</gi>
+ <gi>listBibl</gi>
+ <gi>listChange</gi>
+ <gi>listPerson</gi>
+ <gi>listPlace</gi>
+ <gi>location</gi>
+ <gi>metamark</gi>
+ <gi>monogr</gi>
+ <gi>msDesc</gi>
+ <gi>msIdentifier</gi>
+ <gi>name</gi>
+ <gi>note</gi>
+ <gi>notesStmt</gi>
+ <gi>objectDesc</gi>
+ <gi>opener</gi>
+ <gi>orig</gi>
+ <gi>origPlace</gi>
+ <gi>origin</gi>
+ <gi>p</gi>
+ <gi>particDesc</gi>
+ <gi>pb</gi>
+ <gi>pc</gi>
+ <gi>persName</gi>
+ <gi>person</gi>
+ <gi>physDesc</gi>
+ <gi>place</gi>
+ <gi>placeName</gi>
+ <gi>postscript</gi>
+ <gi>profileDesc</gi>
+ <gi>ptr</gi>
+ <gi>pubPlace</gi>
+ <gi>publicationStmt</gi>
+ <gi>publisher</gi>
+ <gi>q</gi>
+ <gi>quote</gi>
+ <gi>ref</gi>
+ <gi>reg</gi>
+ <gi>relatedItem</gi>
+ <gi>repository</gi>
+ <gi>resp</gi>
+ <gi>respStmt</gi>
+ <gi>revisionDesc</gi>
+ <gi>roleName</gi>
+ <gi>row</gi>
+ <gi>rs</gi>
+ <gi>salute</gi>
+ <gi>series</gi>
+ <gi>seriesStmt</gi>
+ <gi>settingDesc</gi>
+ <gi>sic</gi>
+ <gi>signed</gi>
+ <gi>sourceDesc</gi>
+ <gi>subst</gi>
+ <gi>supplied</gi>
+ <gi>supportDesc</gi>
+ <gi>surname</gi>
+ <gi>table</gi>
+ <gi>taxonomy</gi>
+ <gi>teiCorpus</gi>
+ <gi>teiHeader</gi>
+ <gi>term</gi>
+ <gi>text</gi>
+ <gi>textClass</gi>
+ <gi>title</gi>
+ <gi>titleStmt</gi>
+ <gi>unclear</gi>
+ <gi>width</gi>
 
                     
-                    ]]></p>
+                    </p>
                 
             </div1>
         </body>
