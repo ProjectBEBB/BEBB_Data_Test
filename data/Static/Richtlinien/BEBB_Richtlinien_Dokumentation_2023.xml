@@ -64,19 +64,11 @@
                                 <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> steht nach dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref>.</item>
                         </list>
                         </p>
-                        <p>Beispiel eines normalen Zeilenumbruchs und eines Zeilenumbruchs mit Worttrennung: Brief von Nic. I B. an Michelotti von 1713.12.02, p. 1 (BIBB <ref
-                                target="https://swisscollections.ch/Record/991170517055605501"
-                            >991170517055605501</ref>, BEBB <ref
-                                target="https://bebb.jinntec.de/B_1713-12-02_991170517055605501"
-                                >B_1713-12-02_991170517055605501</ref>, DOI <ref
-                                    target="https://doi.org/10.7891/e-manuscripta-24360"
-                                >e-manuscripta</ref>, Bild: <ref
-                                target="https://www.e-manuscripta.ch/bau/content/pageview/1063824"
-                                >Nr. 1063824</ref>)
+                        <p><hi rend="exampleHeading">Kodierung eines normalen Zeilenumbruchs und eines Zeilenumbruchs mit Worttrennung</hi>
                         </p>
                         <p>
                             <figure>
-                        <figDesc>Ausschnitt Bild Nr. 1063823 xxx</figDesc>
+                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
                         <graphic width="50em" url="images/1063824_03.png"/>
                      </figure></p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -89,11 +81,18 @@
                                 <lb/>in doctrina de sanguinis missione, quam Deo dante, teque hu<pc type="hyphenation">-</pc>
                                 <lb break="no"/>maniter favente augere conabor.</p>
                         </egXML>
+                        <bibl>Quelle: Brief von Nic. I B. an Michelotti von 1713.12.02, p. 1 (BIBB <ref
+                            target="https://swisscollections.ch/Record/991170517055605501"
+                            >991170517055605501</ref>, BEBB <ref
+                                target="https://bebb.jinntec.de/B_1713-12-02_991170517055605501"
+                                >B_1713-12-02_991170517055605501</ref>, DOI <ref
+                                    target="https://doi.org/10.7891/e-manuscripta-24360"
+                                    >e-manuscripta</ref>, Bild: <ref
+                                        target="https://www.e-manuscripta.ch/bau/content/pageview/1063824"
+                                        >Nr. 1063824</ref>)</bibl>
 
-                        <p>Beispiel eines Zeilenumbruchs am Seitenende: Brief von Michelotti an Nic. I B. von 1717.06.03, pp. 1-2
-                            (BIBB <ref target="https://swisscollections.ch/Record/991170517039305501">991170517039305501</ref>, BEBB <ref target="https://bebb.jinntec.de/B_1717-06-03_991170517039305501">B_1717-06-03_991170517039305501</ref>, DOI <ref target="https://doi.org/10.7891/e-manuscripta-24360">e-manuscripta</ref>, Bild-Nr. <ref target="https://www.e-manuscripta.ch/bau/content/pageview/1038363">1038363</ref>)
-                        </p>
-                        <p>
+                        <p><hi rend="exampleHeading">Kodierung eines Zeilenumbruchs am Seitenende</hi>
+                
                             <figure>
                         <figDesc>Ausschnitt Bild Nr. 1038363</figDesc>
                         <graphic width="50em" url="images/1038363_01.png"/>
@@ -104,11 +103,27 @@
                             <pb facs="1038364"/>
                             <lb break="no"/>cturus sim, poteris interim, si Tibi lubeat, quae veles a me exequenda,
                         </egXML>
+                        <bibl>Quelle: Brief von Michelotti an Nic. I B. von 1717.06.03, pp. 1-2
+                            (BIBB <ref target="https://swisscollections.ch/Record/991170517039305501">991170517039305501</ref>, BEBB <ref target="https://bebb.jinntec.de/B_1717-06-03_991170517039305501">B_1717-06-03_991170517039305501</ref>, DOI <ref target="https://doi.org/10.7891/e-manuscripta-24360">e-manuscripta</ref>, Bild-Nr. <ref target="https://www.e-manuscripta.ch/bau/content/pageview/1038363">1038363</ref>)</bibl>
                     </div3>
                     <div3>
                         <head>Absatz</head>
-                        <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html"><gi>p</gi></ref> ausgezeichnet. Falls der Absatz im Original nur durch eine grössere Lücke angezeigt wurde, wird dies durch das Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <tag>p type="space"</tag>.
+                        <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html"><gi>p</gi></ref> ausgezeichnet. Falls der Absatz im Original nur durch eine grössere Lücke angezeigt ist, wird dies durch das Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <tag>p type="space"</tag>.
                             </p>
+                        <p><hi rend="exampleHeading">Kodierung einer Textlücke mit Abasatzfunktion</hi>
+                                <figure>
+                        <figDesc>Ausschnitt Bild Nr. 1042535</figDesc>
+                        <graphic width="50em" url="images/1042535_01.png"/>
+                     </figure></p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>
+                                 [...]
+                                <lb/>promovisti. </p><p type="space">Nondum vacavit stricturas conscribere in Parenti
+                                 [...]</p>
+                        </egXML>
+                            <p><bibl>Quelle: Brief von Jacob Hermann an Joh. I B. von 1710.02.15, p. 1
+                                (BIBB <ref target="https://swisscollections.ch/Record/991170514968705501">991170514968705501</ref>, BEBB <ref target="https://bebb.jinntec.de/B_1717-06-03_991170517039305501">B_1717-06-03_991170517039305501</ref>, DOI <ref target="https://doi.org/10.7891/e-manuscripta-23646">e-manuscripta</ref>, Bild-Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1042535">1042535</ref>)</bibl>
+                        </p>
                     </div3>
                     <div3>
                         <head>Textumstellung</head>
@@ -328,21 +343,18 @@
                         <p>Mathematische Formeln werden mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-formula.html"><gi>formula</gi></ref> ausgezeichnet und sie werden in LaTeX kodiert.</p>
                         <p>Wegen der LaTeX-Notation ist es innerhalb des Elementes <gi>formula</gi> nicht möglich, weitere TEI XML Elemente zu verwenden, weshalb in einigen Fällen auf eine editorische Fussnote zurückgegriffen werden muss.</p>
                         <p>Mathematisches wird möglichst getreu der Vorlage transkribiert, d.h. Formeln werden unter Beachtung der historischen Symbole und Formelschreibweise wiedergegeben. Falls die historische Schreibweise sehr von der heutigen abweicht, können Formeln normalisiert werden. Dabei kommt das Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-choice.html"><gi>choice</gi></ref> zum Einsatz, hier jedoch ergänzt durch das Attribut <att>rend</att> mit dem Wert <val>regFormula</val>, damit die Darstellung der Normalisierung von Formeln im Browser von derjenigen anderer Normalisierungen unterschieden werden kann.</p>
-                        <p>Beispiel: Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174 
-                            (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>)
+                        <p><hi rend="exampleHeading">Kodierung einer Formel mit Normalisierung</hi>
                             
                             <figure facs="images/1038613_01.png">
-                     <figDesc>Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174
- (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>)</figDesc>
-                     <graphic width="50em" url="images/1038613_01.png"/>
-                            <!-- https://www.e-manuscripta.ch/bau/content/zoom/1038613 -->
-                            <!-- B_1726-07-24_991170517024705501 -->
-                            <!-- https://swisscollections.ch/Record/991170517024705501 -->
+                                <graphic width="50em" url="images/1038613_01.png"/> 
+                            </figure>
                             
-                  </figure>
-                            
-                            Kodierung:
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice rend="regFormula"><orig><formula>\overline{BH^{2} - BG^{2}}\cdot bg=\overline{BP^{2}-BH^{2}}\cdot ci</formula></orig><reg><formula>(BH^{2} - BG^{2})bg = (BP^{2} - BH^{2}) ci </formula></reg></choice></egXML>
+                            
+                            <bibl>Quelle:  Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174 (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>, <ref target="https://doi.org/10.7891/e-manuscripta-23436">DOI e-manuscripta</ref>).</bibl>
+                            
+                            <!-- Seite auf e-manuscripta: https://www.e-manuscripta.ch/bau/content/zoom/1038613 -->
+                            <!-- xml:id des Briefes: B_1726-07-24_991170517024705501 -->
                         </p>
                         
                         <p>Falls das Element <gi>choice</gi> dazu verwendet wird, Fehler in der Formel zu korrigieren, werden anstelle von <gi>orig</gi> und <gi>reg</gi> die Elemente <gi>sic</gi> und <gi>corr</gi> verwendet. Korrekturen werden zusätzlich in einer editorischen Fussnote erläutert.</p>
@@ -359,55 +371,83 @@
                             <list rend="bulleted">
                             
                         <item><p>Das Vinculum, ein über einem Term angebrachter waagrechter Strich mit der Funktion einer Klammer: Beim Vinculum wird die Länge der Überstreichung, die oft ungenau oder falsch gesetzt ist, stillschweigend präzisiert. Formeln mit Vinculum werden mit <gi>orig</gi>/<gi>reg</gi> normalisiert.</p>
-                        <p>Beispiel: Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174 
-                            (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>)
+                        <p>
+                            <hi rend="exampleHeading">Kodierung einer Formel mit Vinculum</hi>
                             
                             <figure facs="images/1038613_01.png">
-                     <figDesc>Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174
- (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>)</figDesc>
-                     <graphic width="50em" url="images/1038613_01.png"/>
+                                <figDesc>Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174
+                                    (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>)</figDesc>
+                                <graphic width="50em" url="images/1038613_01.png"/>
+                            </figure>
+                            
+                         
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>\overline{BH^{2} - BG^{2}}\cdot bg=\overline{BP^{2}-BH^{2}}\cdot ci</formula></egXML>
+                            
+                            <bibl>Quelle: Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174 
+                            (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>, <ref target="https://doi.org/10.7891/e-manuscripta-23436">DOI e-manuscripta</ref>)</bibl>
+                            
                             <!-- https://www.e-manuscripta.ch/bau/content/zoom/1038613 -->
                             <!-- B_1726-07-24_991170517024705501 -->
-                            <!-- https://swisscollections.ch/Record/991170517024705501 -->
                             
-                  </figure>
                             
-                             Kodierung:
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>\overline{BH^{2} - BG^{2}}\cdot bg=\overline{BP^{2}-BH^{2}}\cdot ci</formula></egXML>
                         </p></item>
                                 
                         <item><p>Das Wurzelzeichen ohne Balken <formula>\sqrt{}</formula> wird bei Radikanden, die nur aus einer einzigen Zahl oder einer Variablen bestehen, beibehalten. Ein Vinculum über den Radikanden wird dem modernen Gebrauch entsprechend mit dem Wurzelzeichen verbunden.</p>
                             
-                            <p>Beispiel eines Wurzelzeichens ohne Vinculum: Brief von Joh. I B. an P. A. Michelotti von 1715.02.20, p. 5 (<ref target="https://swisscollections.ch/Record/991170515018905501">B_1715-02-20_991170515018905501</ref>)
+                            <p>
+                                <hi rend="exampleHeading">Beispiel eines Wurzelzeichens ohne Vinculum</hi>
                                 
                                 <figure facs="images/1078740_01.png">
-                     <figDesc>Brief von Joh. I B. an P. A. Michelotti von 1715.02.20, p. 5 (<ref target="https://swisscollections.ch/Record/991170515018905501">B_1715-02-20_991170515018905501</ref>)</figDesc>
-                     <graphic width="50em" url="images/1078740_01.png"/>
-                            <!-- https://www.e-manuscripta.ch/bau/content/zoom/1078740 -->
-                             <!-- B_1715-02-20_991170515018905501 -->
-                            <!-- https://swisscollections.ch/Record/991170515018905501 -->
-                            
-                  </figure>
-                                Kodierung:
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>\sqrt{}d.\sqrt{}D::V.v</formula></egXML>
+                                    <figDesc>Brief von Joh. I B. an P. A. Michelotti von 1715.02.20, p. 5 (<ref target="https://swisscollections.ch/Record/991170515018905501">B_1715-02-20_991170515018905501</ref>)</figDesc>
+                                    <graphic width="50em" url="images/1078740_01.png"/>
+                                </figure>
+                                
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>\sqrt{}d.\sqrt{}D::V.v</formula></egXML>
+                                
+                                <bibl>
+                                    Brief von Joh. I B. an P. A. Michelotti von 1715.02.20, p. 5 (Nr. <ref target="https://swisscollections.ch/Record/991170515018905501">991170515018905501</ref> <ref target="https://doi.org/10.7891/e-manuscripta-24932">DOI e-manuscripta</ref>)
+                                </bibl>
+                                
+                                
+                                <!-- B_1715-02-20_991170515018905501 -->
+                                <!-- https://swisscollections.ch/Record/991170515018905501 -->
                             </p>
                             
-                            <p>Beispiel eines Wurzelzeichens, bei dem das "r" nicht mit dem Vinculum verbunden ist: Joh. I B. an W. Burnet von 1708.10.13, p. 3
-                            (Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1073180">991170514865505501</ref>)
+                            <p>
+                                <hi rend="exampleHeading">Beispiel eines Wurzelzeichens, bei dem das "r" nicht mit dem Vinculum verbunden ist</hi>
+                                    
                             
-                            <figure facs="images/1073180_01.png">
-                     <figDesc>Joh. I B. an W. Burnet von 1708.10.13, p. 3
- (Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1073180">991170514865505501</ref>)</figDesc>
-                     <graphic width="50em" url="images/1073180_01.png"/>
-                            <!-- https://www.e-manuscripta.ch/bau/content/zoom/1073180 -->
-                                <!-- https://doi.org/10.7891/e-manuscripta-24555 -->
+                                <figure facs="images/1073180_01.png">
+                                    <figDesc>Joh. I B. an W. Burnet von 1708.10.13, p. 3
+                                        (Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1073180">991170514865505501</ref>)</figDesc>
+                                    <graphic width="50em" url="images/1073180_01.png"/>
+                                    
+                                </figure>
+                                 
+                              
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>R=\sqrt{\frac{1}{2}b+\sqrt{\frac{1}{4}bb+a}}</formula></egXML>
+                                
+                                <bibl>Quelle: Joh. I B. an W. Burnet von 1708.10.13, p. 3
+                            (Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1073180">991170514865505501</ref>, <ref target="https://doi.org/10.7891/e-manuscripta-24555">DOI e-manuscripta</ref>)</bibl>
+                                
                             <!-- B_1708-10-13_991170514865505501 -->
                             <!-- https://swisscollections.ch/Record/991170514865505501 -->
-                            
-                  </figure>
-                                 
-                                 Kodierung:
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>R=\sqrt{\frac{1}{2}b+\sqrt{\frac{1}{4}bb+a}}</formula></egXML>
+                            </p>
+                            <p>
+                                <hi rend="exampleHeading">Beispiel für die Schreibweise eines Quadrats in der Form xx</hi>
+                                
+                                <figure facs="images/ms_fr_00601_f205r.png">
+                                    <graphic width="50em" url="images/ms_fr_00601_f205r.png"/>
+                                </figure>
+                                 <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig><formula>IK=\sqrt{yy-cc}</formula></orig><reg><formula>IK=\sqrt{y^2-c^2}</formula></reg></choice></egXML>
+                                
+                                <bibl>Quelle: Hermann an J. Ch. Fatio von  1708.10.06
+, p. 205 (Nr. <ref target="https://swisscollections.ch/Record/991170430186105501">991170430186105501</ref>, <ref target="https://archives.bge-geneve.ch/ark:/17786/vta9065560cbb9bfc00/dao/0/51">Permalink</ref> zum Bild bei bge-geneve)</bibl>
+                               <!-- B_1708-10-06_991170430186105501 -->
+                            <!-- https://swisscollections.ch/Record/991170430186105501 --> 
+                                <!-- Permalink Digitalisat bei bge-geneve.ch: https://archives.bge-geneve.ch/ark:/17786/vta9065560cbb9bfc00/dao/0/51  --> 
+                            </p>
+                            <p>
                             
                             <formula>\overline{x+y}\sqrt{}\overline{a+b}</formula> wird als <formula>\overline{x+y}\:\sqrt{a+b}</formula> wiedergegeben).</p>
                             <p>(Beispiel: <formula>aa</formula> statt <formula>a^2</formula>, Vinculum statt Klammern, verschiedene Multiplikationszeichen, Symbole zur Bezeichnung geometrischer Figuren, von Verhältnissen, Proportionen etc.).</p>
@@ -1948,12 +1988,11 @@ aus  Vniuersität <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><o
                     
                 </div2>
                 <div2>
-                    <head>Versionierung und Status (<tag>revisionDesc</tag>)</head>
+                    <head>Versionierung und Status</head>
                     <p>Die Bearbeitungsgeschichte des Briefes ist im Element
-                        <tag>revisionDesc</tag> dokumentiert. Das Element <tag>change</tag> (das neueste change zuoberst)
-                        mit den Attributen when und who enthält Informationen zu Art, Datum und
-                        Verantwortlichkeit der vorgenommenen Änderung. Im Attribut @status ist der
-                        aktuelle Status des Dokumentes erfasst. Mögliche Werte sind (im
+                        <gi>revisionDesc</gi> dokumentiert. Das Kindelement <tag>change</tag> (der neueste Eintrag zuoberst)
+                        mit den Attributen <att>when</att> und <att>who</att> enthält Informationen zu Art, Datum und
+                        Verantwortlichkeit der vorgenommenen Änderung. Das Element <gi>revisionDesc</gi> enthält im Attribut <att>status</att> die Information über den Bearbeitungsstand Status des Dokumentes. Mögliche Werte sind (im
                         aufsteigenden Grad der Finalisierung): </p>
                     <list><!-- ToDo: Mit Margareth und Martin besprechen. Diese Liste folgt mehr oder weniger den Angaben in der Excel-Tabelle zum Stand der Edition. -->
                          <item>kommentiert</item>
@@ -1967,7 +2006,11 @@ aus  Vniuersität <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><o
                         <item>gedruckt (falls der Brief in einer Printedition veröffentlicht wurde)</item>
                         <item>bernoulliwiki (Briefe, die vorläufig in www.ub.unibas.ch/bernoulli ediert sind</item>
                     </list>
-                    <p>Der Wert in "status" gibt den letzten Bearbeitungsstand an, in der Regel werden die Briefe nach einem festgelegten Workflow bearbeitet, so dass der nächsthöhere Bearbeitungsstand die bisherigen inkludiert. Ein grundkommentierter Brief ist somit auch kollationiert, transkribiert, katalogisiert.</p>
+                    <p>Der Wert in "status" gibt den letzten abgeschlossenen Bearbeitungsstand an. Die Briefe werden nach einem festgelegten Workflow bearbeitet, so dass der nächsthöhere Bearbeitungsstand die vorherigen inkludiert. Ein grundkommentierter Brief ist in der Regel somit auch kollationiert, transkribiert, katalogisiert. Eine Ausnahme bilden Briefe aus Legacy Data-Gruppen, bei denen gewissen bearbeitungsschritte nicht durchgeführt wurden, so zum Beispiel die für das Bernoulli-Wiki erarbeiteten Briefe, bei denen die das TEI XML-Tagging nur partiell und die Grundkommentierung überhaupt nicht durchgeführt wurde, bei denen jedoch of inhaltliche Kommentare bestehen.</p>
+                    <p>
+                        Eine höhere Status-Bezeichnung wird erst verliehen, wenn die entsprechende Bearbeitung abgeschlossen ist. Wenn der Brief kollationiert und bereits teilweise grundkommentiert wurde, erhält er den Status "kollationiert".
+                    </p>
+                    
 
                     <p> Beispiel: </p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1979,7 +2022,6 @@ aus  Vniuersität <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><o
                             </listChange>
                         </revisionDesc>
                     </egXML>
-<!-- ToDo: klären, wie die Personen in der Revision-Desc erfasst werden, reichen die Initialen oder ist es besser, eine ID wie die GND-Nummer zu verwenden? -->
                 </div2>
                
                 <div2>
