@@ -171,20 +171,14 @@
 
                         <p>Die Verszeile wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-l.html"><gi>l</gi></ref>, eine Versgruppe mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-lg.html"><gi>lg</gi></ref> ausgezeichnet.</p>
 
-                        <p>Beispiel eines Gedichts: Brief Nr. <ref
-                                target="https://aleph.unibas.ch/F/?local_base=DSV05&amp;con_lng=GER&amp;func=find-b&amp;find_code=SYS&amp;request=000056976"
-                                >000056976</ref>, <ref
-                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/999897"
-                            />e-manuscripta, Bild: <ref
-                                target="https://www.e-manuscripta.ch/download/webcache/2000/999898"
-                                >Nr. 999898</ref>
-                            <figure facs="999898">
-                            <figDesc>Ausschnitt Bild Nr. 999898</figDesc>
+                        <p>
+                            <hi>Kodierungsbeispiel eines Gedichts</hi> 
+                            <figure facs="images/999898_01.png">
                             <graphic width="50em" url="images/999898_01.png"/>
-                        </figure></p>
-                        <p>Kodierungsbeispiel:</p>
+                        </figure>
+    
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                            <p>
+                           <p>
                                 <lb/>Occasione auspicati ante tres dies Anni
                                 <lb/>novi ad Nestoreos usque Annos fausta tibi
                                 <lb/>grataque opto ac foveo animitus omnia imo
@@ -200,6 +194,11 @@
                             <p><lb/>quae vel alij fundunt, vel ipse tibi, vel quae no<pc type="hyphenation">-</pc>
                                <lb break="no"/>tissima Tua per orbem postulant merita.</p>
                         </egXML>
+                        <bibl>Quelle: Brief von Joh. I B. an Joh. Scheuchzer von 1711.01.04, p. 1 (Nr. <ref
+                            target="https://swisscollections.ch/Record/991170515088405501"
+                            >991170515088405501</ref>, <ref
+                                target="https://doi.org/10.7891/e-manuscripta-21518">DOI</ref> e-manuscripta</bibl>
+                        </p>
                     </div3>
 
                     <div3>
@@ -463,14 +462,29 @@
                                 Alte Schreibweise <formula>a . b :: x . y</formula> statt moderner Schreibweise <formula>a : b = x : y</formula>
                             </egXML>
                         </item>
-                        <item><p>Die Zeichen <formula>\square</formula> (Quadrat), <formula>\bigcirc</formula> (Kreis), <formula>\bigtriangleup</formula> (Dreieck), <formula>\angle</formula> (Winkel), die sowohl für geometrische Objekte wie für deren Masszahlen stehen, werden beibehalten.</p>
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                Quadrat: <formula>\square</formula>
-                                Kreis: <formula>\bigcirc</formula>
-                                Dreieck: <formula>\bigtriangleup</formula>
-                                Winkel: <formula>\angle</formula>
-                            </egXML>
+                        <item><p>Die Zeichen <formula>\square</formula> (Kodierung: \square), <formula>\bigcirc</formula> (Kodierung: \bigcirc), <formula>\bigtriangleup</formula> (Kodierung: \bigtriangleup), <formula>\angle</formula> (Kodierung: \angle), die sowohl für geometrische Objekte wie für deren Masszahlen stehen, werden beibehalten.</p>
+                            
+                            <p>
+                                <hi>Kodierungsbeispiel eines Quadrates</hi>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    ex reciproca <formula>\square</formula><hi rend="sup">rum</hi> temporum
+                                </egXML>
+                                <figure facs="images/1078758_01.png">
+                                    <graphic width="50em" url="images/1078758_01.png"/>
+                                </figure>
+                                <bibl>Quelle: Brief von Joh. I B. an P. A. Michelotti von 1711.01.04, p. 5 (Nr. <ref
+                                    target="https://swisscollections.ch/Record/991170515018705501"
+                                    >991170515018705501</ref>, <ref
+                                        target="https://doi.org/10.7891/e-manuscripta-21518">DOI</ref> e-manuscripta
+                                </bibl>
+                            </p>
                         </item>
+                        
+                           
+    
+                       
+                        
+                        
                             </list>
                     </div3>
                     <div3>
@@ -1994,8 +2008,8 @@ aus  Vniuersität <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><o
                         mit den Attributen <att>when</att> und <att>who</att> enthält Informationen zu Art, Datum und
                         Verantwortlichkeit der vorgenommenen Änderung. Das Element <gi>revisionDesc</gi> enthält im Attribut <att>status</att> die Information über den Bearbeitungsstand Status des Dokumentes. Mögliche Werte sind (im
                         aufsteigenden Grad der Finalisierung): </p>
-                    <list><!-- ToDo: Mit Margareth und Martin besprechen. Diese Liste folgt mehr oder weniger den Angaben in der Excel-Tabelle zum Stand der Edition. -->
-                         <item>kommentiert</item>
+                    <list>
+                         <item>kommentiert</item><!-- In der Plattform steht finalisiert aber diese Bezeichnung ist verwirrend, da jeder Status ist für sich genommen finalisiert, sobald die jeweilige Bearbeitungsstufe abgeschlossen ist. -->
                         <item>grundkommentiert</item>
                         <item>kollationiert</item>
                         <item>transkribiert</item>
