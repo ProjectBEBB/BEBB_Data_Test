@@ -119,12 +119,12 @@
                     <div3>
                         <head>Absatz</head>
                         <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html"><gi>p</gi></ref> ausgezeichnet. Falls der Absatz im Original nur durch eine grössere Lücke angezeigt ist, wird dies durch das Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <tag>p type="space"</tag>.
-                            </p>
-                        <p><hi rend="exampleHeading">Kodierung einer Textlücke mit Abasatzfunktion</hi>
-                                <figure>
-                        <figDesc>Ausschnitt Bild Nr. 1042535</figDesc>
-                        <graphic width="50em" url="images/1042535_01.png"/>
-                     </figure></p>
+                            <hi rend="exampleHeading">Kodierung einer Textlücke mit Abasatzfunktion</hi>
+                            
+                            <figure>
+                                <graphic width="50em" url="images/1042535_01.png"/>
+                            </figure>
+                        </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <p>
                                  [...]
@@ -139,41 +139,49 @@
                     </div3>
                     <div3>
                         <head>Textumstellung</head>
-
-                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung wird nicht speziell ausgezeichnet. Der Text wird stillschweigend in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben. In einer textkritischen Fussnote wird darauf verwiesen.</p>
+                        
+                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung wird nicht speziell ausgezeichnet. Der Text wird stillschweigend in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben. In einer textkritischen Fussnote wird darauf verwiesen.
+                        </p>
+                        
+                        <p>
+                            <hi rend="exampleHeading">Kodierung einer Wortumstellung</hi>
+                            <figure>
+                                <graphic width="50em" url="images/1038330_01.png"/>
+                            </figure>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <lb/> [...] Patruus meus cap. 15. Manuariae suae Nauticae <note type="editorial">Wortumstellung.</note> [...]
+                            </egXML>
+                            <bibl type="example">Jacob Hermann an Johann Bernoulli. Padua, 15. Februar 1710, p. 1
+                                (<ref type="internal" target="B_1715-10-26_991170517051505501">B_1715-10-26_991170517051505501</ref>)
+                            </bibl>
+                            
+                        </p>
                     </div3>
                     <div3>
-                        <head>Seitenbeginn</head>
-
-                        <p>Der Seitenbeginn wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref> ausgezeichnet. Das Attribut <att>facs</att> enthält im Wert die Bild-ID, mit der das Bild im Manifest gekennzeichnet ist. Das Attribut <att>n</att> enthält in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Angaben durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c usw.</p>
+                        <head>Seitenumbruch</head>
+                        
+                        <p>Der Seitenbeginn wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref> ausgezeichnet. Das Attribut <att>facs</att> enthält im Wert die Bild-ID, mit der das Bild im IIIF-Manifest gekennzeichnet ist. Das Attribut <att>n</att> enthält in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten Seitenzahl. Bei Foliierung werden die Angaben durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (1, 2, 3, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c usw.</p>
                         <p>Manuskriptseiten ohne Inhalt werden ebenfalls mit <gi>pb</gi> erfasst und mit dem Attribut type="empty" versehen.
                         </p>
-                        <p>Beispiel eines Seitenumbruchs: 
-                            
-                            
-                            Brief Nr. <ref
-                                target="https://swisscollections.ch/Record/991170517055605501"
-                                >991170517055605501</ref>, <ref
-                                    target="https://www.e-manuscripta.ch/bau/content/titleinfo/1063822"
-                                    >e-manuscripta</ref>, Bild: <ref
-                                        target="https://www.e-manuscripta.ch/bau/content/pageview/1063823"
-                                        >Nr. 1063824</ref></p>
                         <p>
-                            <hi rend="exampleHeading">Kodierungsbeispiel eines Seitenumbruchs</hi>
-                        
-                        <figure>
-                            <graphic width="50em" url="images/1063823_02.png"/>
-                        </figure>
-                        
-                        <figure>
-                            <graphic width="50em" url="images/1063824_01.png"/>
-                        </figure>
+                            <hi rend="exampleHeading">Kodierung eines Seitenumbruchs</hi>
+                            
+                            <figure>
+                                <graphic width="50em" url="images/1063823_02.png"/>
+                            </figure>
+                            
+                            <figure>
+                                <graphic width="50em" url="images/1063824_01.png"/>
+                            </figure>
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <lb/>manuscriptam transmittes, eam nomine tuo typis illico committam<pb
                                 facs="1063824" n="2"/>
                             <lb/>Nobiliss.rum Moderatorum nominibus inscribam, iisdemque reddam
                             <lb/>publici iuris factam. </egXML>
+                        
+                        <bibl type="example">Pietro Antonio Michelotti an Nicolaus I Bernoulli. Venedig, 02. Dezember 1713, pp. 1-2 (<ref target="B_1713-12-02_991170517055605501">B_1713-12-02_991170517055605501</ref>)
+                        </bibl>
                     </div3>
 
                     <div3>
@@ -182,8 +190,8 @@
                         <p>Die Verszeile wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-l.html"><gi>l</gi></ref>, eine Versgruppe mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-lg.html"><gi>lg</gi></ref> ausgezeichnet.</p>
 
                         <p>
-                            <hi>Kodierungsbeispiel eines Gedichts</hi> 
-                            <figure facs="images/999898_01.png">
+                            <hi rend="exampleHeading">Kodierung eines Gedichts</hi> 
+                            <figure>
                             <graphic width="50em" url="images/999898_01.png"/>
                         </figure>
     
@@ -204,10 +212,8 @@
                             <p><lb/>quae vel alij fundunt, vel ipse tibi, vel quae no<pc type="hyphenation">-</pc>
                                <lb break="no"/>tissima Tua per orbem postulant merita.</p>
                         </egXML>
-                        <bibl>Quelle: Brief von Joh. I B. an Joh. Scheuchzer von 1711.01.04, p. 1 (Nr. <ref
-                            target="https://swisscollections.ch/Record/991170515088405501"
-                            >991170515088405501</ref>, <ref
-                                target="https://doi.org/10.7891/e-manuscripta-21518">DOI</ref> e-manuscripta</bibl>
+                            <bibl>Johann Scheuchzer an Johann Bernoulli. Zürich, 04. Januar 1711, p. 1 (<ref type="internal"
+                            target="B_1711-01-04_991170515088405501">B_1711-01-04_991170515088405501</ref>).</bibl>
                         </p>
                     </div3>
 
@@ -219,10 +225,9 @@
                         <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem einheitlichen Tag <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-metamark.html"><gi>metamark</gi></ref> wiedergegeben.</p>
 
                         
-                        <p>Beispiel einer Anmerkung (in der Abbildung oben in der Mitte): BIBB <ref target="https://swisscollections.ch/Record/991170516783005501"
-                            >991170515503305501</ref>, BEBB <ref target="B_1760-02-03_991170515503305501"
-                                >B_1760-02-03_991170515503305501</ref>, <ref target="https://doi.org/10.7891/e-manuscripta-86588">DOI e-manuscripta</ref>, Bild Nr. <ref
-                                target="https://www.e-manuscripta.ch/bau/content/zoom/2443194">999898</ref>.
+                        <p>
+                            <hi rend="exampleHeading">Kodierung einer Anmerkung (in der Abbildung oben in der Mitte)</hi>
+                            
                         </p>
                         <p>
                             <figure facs="2443194_01">
@@ -230,13 +235,15 @@
                             <graphic width="50em" url="images/2443194_01.png"/>
                         </figure>
                         </p>
-                           <p>
-                               Kodierung: 
-                           </p>
+                          
                         <p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <note hand="pers_DE-588-117589136">à M. le C.te de Tressan</note>
                             </egXML>
+                            
+                            <bibl type="example">
+                                Johann II Bernoulli an Louis Élisabeth de La Vergne de Tressan. Basel, 03. Februar 1760, p. 1 (<ref type="internal" target="B_1760-02-03_991170515503305501">B_1760-02-03_991170515503305501</ref>).
+                            </bibl>
                         </p>
                         
                     </div3>
@@ -253,11 +260,12 @@
                         <p>Das Element <gi>figure</gi> wird im Text an der ersten Stelle eingefügt, wo die Figur erwähnt ist. Im edierten Text wird an dieser Stelle ein anklickbares Figur-Icon angezeigt, über das ein Digitalisat der Figur geöffnet wird.</p>
                         <!-- Das Bild wird zu diesem Zweck mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png in einem speziellen Ordner abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer Tiefstrich und Nummer (wobei die Nummerierung pro Seite stattfindet, z.B. 02, falls es sich auf der Seite um die zweite Figur handelt). -->
                         <p>
-                            Beispiel eines Briefes, wo sich die Figur nicht auf der selben Briefseite befindet, wie der Text, in dem darauf referenziert wird: P. A. Michelotti an Nic. I B. von 1714.04.14, p. 2 und  p. 5 (Nr. <ref target="https://swisscollections.ch/Record/991170517054405501"> 991170517054405501</ref>).
+                            <hi rend="exampleHeading">Kodierung einer Figur, die sich nicht auf der selben Briefseite befindet, wie der Text, in auf sie referenziert wird</hi>
+                            
                             
                             <figure><graphic width="50em" url="images/1063864_01.png"/></figure>
                         <gap/>
-                            <figure><graphic width="50em" url="images/1063867_01.png"/></figure>
+                            <figure><graphic width="20em" url="images/1063867_01.png"/></figure>
                             
                             
                             Kodierung der Angaben zur Figur an der Stelle, wo im Text auf sie verwiesen wird: 
@@ -271,6 +279,9 @@
                                 </figure>
                                 hic apposita canalis conicus ramosus <formula>ABIOSRVTF</formula> durus
                             </egXML>
+                            <bibl type="example">
+                                Pietro Antonio Michelotti an Nicolaus I Bernoulli. Venedig, 14. April 1714, pp. 2 und 5 (<ref type="internal" target="B_1714-04-14_991170517054405501">B_1714-04-14_991170517054405501</ref>).
+                            </bibl>
                         </p>
                         
                     </div3>
@@ -278,14 +289,10 @@
                         <head>Listen</head>
                         <p>Eine Liste wird mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-list.html"><gi>list</gi></ref> ausgezeichnet. Die einzelnen Listeneinträge werden mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-item.html"><gi>item</gi></ref>
                             ausgezeichnet. </p>
-                        <p>Bsp.: Brief Nr. <ref>
-                                target="https://ubs.swisscovery.slsp.ch/permalink/41SLSP_UBS/1g5f9dd/alma9972433096405504" (SG sollten die Links nicht auf Swisscolletions leiten?)
-                                >000056434</ref>, <ref
-                                target="https://www.e-manuscripta.ch/bau/content/titleinfo/999897"
-                            />e-manuscripta, Bild: <ref
-                                target="https://www.e-manuscripta.ch/1045234">Nr. 1045234</ref>
-                            <figure facs="1045234_01.png">
-                            <figDesc>Ausschnitt Bild Nr. 1045234</figDesc>
+                        <p>
+                            <hi rend="exampleHeading">Kodierung einer Liste</hi>
+                            
+                            <figure>
                             <graphic width="50em" url="images/1045234_01.png"/>
                         </figure></p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -317,7 +324,8 @@
                             <item>A <abbr>M.</abbr> <rs type="person" key="pers_DE-588_102465738">Desplaces</rs> <abbr>Astron.</abbr> 1</item></list>
                         </egXML>
                        
-
+                        <bibl type="example">Jean Jacques de Mairan an Johann I Bernoulli. Paris, 30. Mai 1727, p. 3 (<ref type="internal" target="B_1727-05-30_991170514897905501">B_1727-05-30_991170514897905501</ref>).
+                        </bibl>
                     </div3>
                     <div3>
                         <head>Tabellen</head>
@@ -355,7 +363,7 @@
                         <p><hi rend="exampleHeading">Kodierung einer Formel mit Normalisierung</hi>
                             
                             <figure facs="images/1038613_01.png">
-                                <graphic width="50em" url="images/1038613_01.png"/> 
+                                <graphic width="20em" url="images/1038613_01.png"/> 
                             </figure>
                             
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice rend="regFormula"><orig><formula>\overline{BH^{2} - BG^{2}}\cdot bg=\overline{BP^{2}-BH^{2}}\cdot ci</formula></orig><reg><formula>(BH^{2} - BG^{2})bg = (BP^{2} - BH^{2}) ci </formula></reg></choice></egXML>
@@ -386,7 +394,7 @@
                             <figure facs="images/1038613_01.png">
                                 <figDesc>Nic. I B. an P. A. Michelotti von 1726.07.24, p. 174
                                     (Nr. <ref target="https://swisscollections.ch/Record/991170517024705501">991170517024705501</ref>)</figDesc>
-                                <graphic width="50em" url="images/1038613_01.png"/>
+                                <graphic width="20em" url="images/1038613_01.png"/>
                             </figure>
                             
                          
@@ -408,7 +416,7 @@
                                 
                                 <figure facs="images/1078740_01.png">
                                     <figDesc>Brief von Joh. I B. an P. A. Michelotti von 1715.02.20, p. 5 (<ref target="https://swisscollections.ch/Record/991170515018905501">B_1715-02-20_991170515018905501</ref>)</figDesc>
-                                    <graphic width="50em" url="images/1078740_01.png"/>
+                                    <graphic width="20em" url="images/1078740_01.png"/>
                                 </figure>
                                 
                                 <egXML xmlns="http://www.tei-c.org/ns/Examples"><formula>\sqrt{}d.\sqrt{}D::V.v</formula></egXML>
@@ -429,7 +437,7 @@
                                 <figure facs="images/1073180_01.png">
                                     <figDesc>Joh. I B. an W. Burnet von 1708.10.13, p. 3
                                         (Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1073180">991170514865505501</ref>)</figDesc>
-                                    <graphic width="50em" url="images/1073180_01.png"/>
+                                    <graphic width="20em" url="images/1073180_01.png"/>
                                     
                                 </figure>
                                  
@@ -446,7 +454,7 @@
                                 <hi rend="exampleHeading">Beispiel für die Schreibweise eines Quadrats in der Form xx</hi>
                                 
                                 <figure facs="images/ms_fr_00601_f205r.png">
-                                    <graphic width="50em" url="images/ms_fr_00601_f205r.png"/>
+                                    <graphic width="20em" url="images/ms_fr_00601_f205r.png"/>
                                 </figure>
                                  <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig><formula>IK=\sqrt{yy-cc}</formula></orig><reg><formula>IK=\sqrt{y^2-c^2}</formula></reg></choice></egXML>
                                 
@@ -480,7 +488,7 @@
                                     ex reciproca <formula>\square</formula><hi rend="sup">rum</hi> temporum
                                 </egXML>
                                 <figure facs="images/1078758_01.png">
-                                    <graphic width="50em" url="images/1078758_01.png"/>
+                                    <graphic width="20em" url="images/1078758_01.png"/>
                                 </figure>
                                 <bibl>Quelle: Brief von Joh. I B. an P. A. Michelotti von 1711.01.04, p. 5 (Nr. <ref
                                     target="https://swisscollections.ch/Record/991170515018705501"
@@ -821,11 +829,23 @@
                                    Eine Minuskel nach einem mit Punkt abgeschlossenen Satz wird stets zu einer Majuskel normalisiert.
                                 </p></item>
                                     <item><p>Nach Semikolon, Doppelpunkt, Ausrufe- und Fragezeichen wird die ursprüngliche Schreibweise belassen.</p></item>
-                                    <item><p>Klein geschriebene Werktitel werden normalisiert (z. B.  ars conjectandi  wird zu
-                                     <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>ars</orig><reg>Ars></reg></choice></egXML> conjectandi  oder  journal des sçavants  wird zu  <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>journal</orig><reg>Journal></reg></choice></egXML> des sçavants). Dies gilt auch für abgekürzte Titel identifizierbarer Werke und Zeitschriften (aus "actes" für "Acta eruditorum" wird <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>actes</orig><reg>Actes></reg></choice></egXML>).</p></item>
-                                    <item><p>
-                                       Klein geschriebene Eigennamen (z.B. von Personen oder Orten) werden normaliserend gross geschrieben. Der Umgang mit Grossschreibung von Personennamen (z.B. bei Adelsprädikaten wie "de") wird in einer separaten Richtlinie zur biographischen Erfassung von Personen beschrieben.
-                                    </p></item>
+                                        <item><p>Klein geschriebene Werktitel und Eigennamen (z.B. von Personen oder Orten) werden mittels <gi>orig</gi> und <gi>reg</gi> normalisierend gross geschrieben. Dies gilt auch für abgekürzte Titel identifizierbarer Werke und Zeitschriften (aus "actes" für "Acta eruditorum" wird beispielsweise "Actes").</p>
+                                            <p>
+                                                
+                                                <hi rend="exampleHeading">Kodierungbeispiel</hi>
+                                                
+                                                <figure>
+                                                    <graphic width="50em" url="images/1044894_01.png"/>
+                                                </figure>
+                                                
+                                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                                     <lb/>pour l'impression, elle est pourtant la même, que celle de <rs key="place_GEO-3031582" type="place"><choice><orig>bordeaux</orig><reg>Bordeaux</reg></choice></rs> aya<unclear>nt</unclear>
+                                                </egXML>
+                                                <bibl type="example">Jean Jacques de Mairan an Johann I Bernoulli. Paris, 09. Januar 1724, p. 1 (<ref type="internal" target="B_1724-01-09_991170514804005501">B_1724-01-09_991170514804005501</ref>).
+                                                </bibl>
+                                            </p>
+                                        </item>
+                                    
                                     <item><p>
                                         Versalien und Kapitälchen werden zu Kleinbuchstaben normalisiert. Z.B. BERNOULLI wird zu <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>BERNOULLI</orig><reg>Bernoulli></reg></choice></egXML>. ToDo: Klären, ob es reicht, Kapitälchen so <hi rend="k">Bernoulli</hi> auszuzeichnen, oder ob zusätzlich eine Normalisierung nötig ist.
                                     </p></item>
@@ -1604,7 +1624,7 @@ aus  Vniuersität <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><o
                         </head>
                         <p>Die Inhaltliche Kommentierung kann in unterschiedlichen Bereichen der Edition erfolgen:
                         <list>
-                            <item>Stellenkommentare: Werden im Element <gi>note</gi> erfasst. Editorische Noten werden durch den Wert <val>comment</val> und inhaltliche Kommentare durch den Wert <val>comment</val> im Attribut <att>type</att> unterschieden. Interne Notizen erhalten den Wert <val>internal</val>. Das fakultative Attribut <att>resp</att> kennzeichnet die Autorschaft des Kommentars.</item>
+                            <item>Stellenkommentare: Werden im Element <gi>note</gi> erfasst. Editorische Noten werden durch den Wert <val>editorial</val> und inhaltliche Kommentare durch den Wert <val>comment</val> im Attribut <att>type</att> unterschieden. Interne Notizen erhalten den Wert <val>internal</val>. Das fakultative Attribut <att>resp</att> kennzeichnet die Autorschaft des Kommentars.</item>
                             <item>Zusammenfassungen des Inhalts: Sie stehen im Element <gi>abstract</gi> (teiHeader/profileDesc/abstract). Keywords zum Inhalt stehen hingegen im Element <gi>keywords</gi> (teiHeader/profileDesc/textClass/keywords) jeweils in einem Element <gi>term</gi>.</item>
                             <item>
                                Separate Vorbemerkungen zur Quelle, Provenienz oder zur editorischen Behandlung des Briefes, falls erforderlich: Sie wird in einem eigenen <gi>div</gi>-Element, das sich im Element <gi>front</gi> befindet, erfasst <p>
