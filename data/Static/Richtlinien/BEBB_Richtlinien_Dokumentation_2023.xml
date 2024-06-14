@@ -46,31 +46,26 @@
 
                     <div3>
                         <head>Zeilenumbruch</head>
-
-
-                        <!-- SG: Wie ist bei einem Zeilenumbruch mit Worttrennung in einem vom Autor gelöschten Wort vorzugehen?
-                        1. <subst><del>dila<pc type="hyphenation">-</pc>
-            <lb break="no"/>tio</del><add><lb/></add></subst> (aktuell)
-            
-            2. <del>dila-</del><lb/><del>tio </del>   -->
-
+                        
                         <p>Der Zeilenumbruch wird mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-lb.html"><gi>lb</gi></ref> ausgezeichnet. Dabei werden die folgenden Fälle unterschieden:</p> 
-
+                        
                         <p>
                             <list>
-                            <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <gi>lb</gi>.</item>
-                        <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pc.html"><gi>pc</gi></ref> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert <val>no</val>.</item>
-                            <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem nicht ausgezeichneten Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
+                                <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die neue Zeile beginnt mit <gi>lb</gi>.</item>
+                                <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird ausgezeichnet mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pc.html"><gi>pc</gi></ref> mit dem Attribut <att>type</att> und Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein Attribut <att>break</att> mit dem Wert <val>no</val>.</item>
+                                <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet mit dem nicht ausgezeichneten Bindestrich, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
                                 <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> steht nach dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref>.</item>
-                        </list>
+                                <item>Zeilenumbruch innerhalb einer vom Autor gelöschten Textpassage. Die Worttrennung wird nicht speziell ausgezeichnet, der Trennstrich wird einfach als Teil des gelöschten Wortes behandelt.</item>
+                                <note type="internal"></note>
+                            </list>
                         </p>
                         <p><hi rend="exampleHeading">Kodierung eines normalen Zeilenumbruchs und eines Zeilenumbruchs mit Worttrennung</hi>
                         </p>
                         <p>
                             <figure>
-                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
-                        <graphic width="50em" url="images/1063824_03.png"/>
-                     </figure></p>
+                                <graphic width="50em" url="images/1063824_03.png"/>
+                            </figure>
+                        </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <p>
                                 <lb/>Huius autem rei demonstrationem apud nullum Hydrostaticae
@@ -81,30 +76,45 @@
                                 <lb/>in doctrina de sanguinis missione, quam Deo dante, teque hu<pc type="hyphenation">-</pc>
                                 <lb break="no"/>maniter favente augere conabor.</p>
                         </egXML>
-                        <bibl>Quelle: Brief von Nic. I B. an Michelotti von 1713.12.02, p. 1 (BIBB <ref
-                            target="https://swisscollections.ch/Record/991170517055605501"
-                            >991170517055605501</ref>, BEBB <ref
-                                target="https://bebb.jinntec.de/B_1713-12-02_991170517055605501"
-                                >B_1713-12-02_991170517055605501</ref>, DOI <ref
-                                    target="https://doi.org/10.7891/e-manuscripta-24360"
-                                    >e-manuscripta</ref>, Bild: <ref
-                                        target="https://www.e-manuscripta.ch/bau/content/pageview/1063824"
-                                        >Nr. 1063824</ref>)</bibl>
-
-                        <p><hi rend="exampleHeading">Kodierung eines Zeilenumbruchs am Seitenende</hi>
-                
+                        <bibl type="example">Pietro Antonio Michelotti an Nicolaus I Bernoulli. Venedig, 02. Dezember 1713, p. 1 (<ref type="internal" target="B_1713-12-02_991170517055605501">B_1713-12-02_991170517055605501</ref>)
+                        </bibl>
+                        
+                        <p>
+                            <hi rend="exampleHeading">Kodierung eines Zeilenumbruchs am Seitenende</hi>
+                            
                             <figure>
-                        <figDesc>Ausschnitt Bild Nr. 1038363</figDesc>
-                        <graphic width="50em" url="images/1038363_01.png"/>
-                            <graphic width="50em" url="images/1038363_02.png"/>
-                     </figure></p>
+                                <graphic width="50em" url="images/1038363_01.png"/>
+                            </figure>
+                            <figure>
+                                <graphic width="50em" url="images/1038363_02.png"/>
+                            </figure>
+                        </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <lb/>cum vix ante festum Divi Antonii hinc profe<pc type="hyphenation">-</pc>
                             <pb facs="1038364"/>
                             <lb break="no"/>cturus sim, poteris interim, si Tibi lubeat, quae veles a me exequenda,
                         </egXML>
-                        <bibl>Quelle: Brief von Michelotti an Nic. I B. von 1717.06.03, pp. 1-2
-                            (BIBB <ref target="https://swisscollections.ch/Record/991170517039305501">991170517039305501</ref>, BEBB <ref target="https://bebb.jinntec.de/B_1717-06-03_991170517039305501">B_1717-06-03_991170517039305501</ref>, DOI <ref target="https://doi.org/10.7891/e-manuscripta-24360">e-manuscripta</ref>, Bild-Nr. <ref target="https://www.e-manuscripta.ch/bau/content/pageview/1038363">1038363</ref>)</bibl>
+                        
+                        <bibl type="example">Nicolaus I Bernoulli an Pietro Antonio Michelotti. Ohne Ort, 03. Juni 1717, pp. 1-2 (<ref type="internal" target="B_1717-06-03_991170517039305501">B_1717-06-03_991170517039305501</ref>)
+                        </bibl>
+                        
+                        
+                        <p>
+                            <hi rend="exampleHeading">Kodierung einer Zeilentrennung innerhalb einer Textstreichung</hi>
+                            
+                            <figure>
+                                <graphic width="50em" url="images/1038335_01.png"/>
+                            </figure>
+                        </p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>
+                                <lb/>quod maxima hujus negotii tarditas mihi affert, facit ut<del> incipiam cogi-</del>
+                                <lb/><del>tationes meas </del>paulatim animum ab hac cathedra abstraham et de alia
+                            </p>
+                        </egXML>
+                        <bibl type="example">Nicolaus I Bernoulli an Pietro Antonio Michelotti. Ohne Ort, 26. Oktober 1715, p. 139r (<ref type="internal" target="B_1715-10-26_991170517051505501">B_1715-10-26_991170517051505501</ref>)
+                        </bibl>
+                        
                     </div3>
                     <div3>
                         <head>Absatz</head>
@@ -121,9 +131,11 @@
                                 <lb/>promovisti. </p><p type="space">Nondum vacavit stricturas conscribere in Parenti
                                  [...]</p>
                         </egXML>
-                            <p><bibl>Quelle: Brief von Jacob Hermann an Joh. I B. von 1710.02.15, p. 1
-                                (BIBB <ref target="https://swisscollections.ch/Record/991170514968705501">991170514968705501</ref>, BEBB <ref target="https://bebb.jinntec.de/B_1717-06-03_991170517039305501">B_1717-06-03_991170517039305501</ref>, DOI <ref target="https://doi.org/10.7891/e-manuscripta-23646">e-manuscripta</ref>, Bild-Nr. <ref target="https://www.e-manuscripta.ch/bau/content/zoom/1042535">1042535</ref>)</bibl>
-                        </p>
+                        <bibl type="example">Jacob Hermann an Johann Bernoulli. Padua, 15. Februar 1710, p. 1
+                            (<ref type="internal" target="B_1710-02-15_991170514968705501">B_1710-02-15_991170514968705501</ref>)</bibl>
+                        
+                        
+                        
                     </div3>
                     <div3>
                         <head>Textumstellung</head>
@@ -146,18 +158,16 @@
                                     >e-manuscripta</ref>, Bild: <ref
                                         target="https://www.e-manuscripta.ch/bau/content/pageview/1063823"
                                         >Nr. 1063824</ref></p>
-                        <p>Kodierungsbeispiel:</p>
                         <p>
-                            <figure>
-                        <figDesc>Ausschnitt Bild Nr. 1063823</figDesc>
-                        <graphic width="50em" url="images/1063823_02.png"/>
-                     </figure>
-                        </p>
-                        <p>
-                            <figure facs="1063824_01">
-                        <figDesc>Ausschnitt Bild Nr. 1063824</figDesc>
-                        <graphic width="50em" url="images/1063824_01.png"/>
-                     </figure>
+                            <hi rend="exampleHeading">Kodierungsbeispiel eines Seitenumbruchs</hi>
+                        
+                        <figure>
+                            <graphic width="50em" url="images/1063823_02.png"/>
+                        </figure>
+                        
+                        <figure>
+                            <graphic width="50em" url="images/1063824_01.png"/>
+                        </figure>
                         </p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <lb/>manuscriptam transmittes, eam nomine tuo typis illico committam<pb
@@ -210,7 +220,7 @@
 
                         
                         <p>Beispiel einer Anmerkung (in der Abbildung oben in der Mitte): BIBB <ref target="https://swisscollections.ch/Record/991170516783005501"
-                            >991170515503305501</ref>, BEBB <ref target="https://bebb.jinntec.de/B_1760-02-03_991170515503305501"
+                            >991170515503305501</ref>, BEBB <ref target="B_1760-02-03_991170515503305501"
                                 >B_1760-02-03_991170515503305501</ref>, <ref target="https://doi.org/10.7891/e-manuscripta-86588">DOI e-manuscripta</ref>, Bild Nr. <ref
                                 target="https://www.e-manuscripta.ch/bau/content/zoom/2443194">999898</ref>.
                         </p>
