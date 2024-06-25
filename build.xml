@@ -6,6 +6,23 @@
     <property name="build.dir" value="build"/>
     <target name="xar">
         <mkdir dir="${build.dir}"/>
-        <zip basedir="." destfile="${build.dir}/${project.app}-${project.version}.xar" excludes="${build.dir}/* resources/odd/*.rng data/Static/Richtlinien/*"/>
+        <zip destfile="${build.dir}/${project.app}-${project.version}.xar">
+            <fileset dir=".">
+                <exclude name="${build.dir}/*" />
+                <exclude name="resources/odd/*.rng"/>
+                <exclude name="data/Static/Richtlinien/**"/>
+                <exclude name="data/Static/images_jpg/**"/>
+                <exclude name=".git*" />
+                <exclude name="*.tmpl" />
+                <exclude name=".idea/" />
+                <exclude name=".vscode/**" />
+                <exclude name="package*.json" />
+                <exclude name=".existdb.json" />
+                <exclude name=".editorconfig" />
+                <exclude name="node_modules/**" />
+                <exclude name="transform/**" />
+            </fileset>
+            <zipfileset dir="data/Static/Richtlinien" prefix="data/Static"/>
+        </zip>
     </target>
 </project>
