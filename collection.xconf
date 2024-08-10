@@ -19,7 +19,7 @@
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="date-when" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
-                <field name="document" expression="string-join((ancestor::tei:TEI/tei:header, nav:get-normalizedText(.), nav:get-commentary(., 'document')), ' ')"/>
+                <field name="document" expression="string-join((ancestor::tei:TEI/tei:teiHeader, nav:get-normalizedText(.), nav:get-commentary(., 'document')), ' ')"/>
                 <field name="file" expression="util:document-name(.)"/>
                 <!--<field name="text" expression="."/>-->
                 <field name="text" expression="string-join((nav:get-normalizedText(.), nav:get-commentary(., 'text')), ' ')"/>
