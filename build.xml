@@ -9,11 +9,8 @@
         <zip destfile="${build.dir}/${project.app}-${project.version}.xar">
             <fileset dir=".">
                 <exclude name="${build.dir}/*" />
-                <exclude name="resources/odd/*.rng"/>
-                <exclude name="data/Letters/**"/>
-                <exclude name="data/Other_documents/**"/>
-                <exclude name="data/Static/Richtlinien/**"/>
-                <exclude name="data/Static/images_jpg/**"/>
+                <exclude name="resources/**"/>
+                <exclude name="data/Documentation/**"/>
                 <exclude name=".git*" />
                 <exclude name="*.tmpl" />
                 <exclude name=".idea/" />
@@ -24,9 +21,7 @@
                 <exclude name="node_modules/**" />
                 <exclude name="transform/**" />
             </fileset>
-            <zipfileset dir="data/Static/Richtlinien" prefix="data/Static"/>
-            <zipfileset dir="data/Letters" prefix="data/Documents/Letters"/>
-            <zipfileset dir="data/Other_documents" prefix="data/Documents/Other_documents"/>
+            <zipfileset dir="data/Documentation/Supplementary_files/Static_pages/Richtlinien" prefix="data/Static"/>
         </zip>
     </target>
 </project>
