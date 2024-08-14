@@ -36,6 +36,7 @@
                 <field name="place-mentioned" expression="./descendant::tei:rs[@type eq 'place']/@key"/>
                 <field name="work-mentioned" expression="./descendant::tei:rs[@type eq 'biblio']/@key"/>
                 
+                <facet dimension="type" expression="nav:get-metadata(ancestor::tei:TEI, 'type')"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <facet dimension="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
