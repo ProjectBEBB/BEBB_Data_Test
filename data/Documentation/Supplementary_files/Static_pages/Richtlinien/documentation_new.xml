@@ -221,27 +221,6 @@
 
 
                     </div>
-                    
-                    <div>
-                        <head>Wortumstellung</head>
-
-                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels
-                            Nummerierung wird nicht speziell ausgezeichnet. Der Text wird
-                            stillschweigend in der durch die Nummerierung angezeigten Reihenfolge
-                            wiedergegeben. In einer textkritischen Fussnote wird darauf verwiesen. </p>
-
-                        <p>
-                            <hi rend="exampleHeading">Kodierung einer Wortumstellung</hi>
-                            <figure>
-                                <graphic width="50em" url="images/1038330_01.png"/>
-                            </figure>
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                <lb/>[…] Patruus meus cap. 15. Manuariae suae Nauticae 
-                                <note type="editorial">Wortumstellung.</note> […] </egXML>
-                            <bibl type="example">Jacob Hermann an Johann Bernoulli. Padua, 15.
-                                Februar 1710, p. 1 (<ref type="internal" target="B_1715-10-26_991170517051505501">B_1715-10-26_991170517051505501</ref>) </bibl>
-                        </p>
-                    </div>
                     <div>
                       
                         <head>Seitenbeginn</head>
@@ -899,7 +878,7 @@
                             <hi rend="exampleHeading">Beispiel eines kurzen, durch Unterstreichung hervorgehobenen Zitats</hi>
                             
                             <figure>
-                                <graphic width="20em" url="images/949819_01.png"/>
+                                <graphic width="50em" url="images/949819_01.png"/>
                             </figure>
                             
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
@@ -926,7 +905,7 @@
                         <head>Anmerkung im Manuskript</head>
                         
                         <p> Anmerkungen im Original werden mit <gi>note</gi> ausgezeichnet. Zur Unterscheidung von Fussnoten und anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit Angabe der xml:id aus dem Personenregister, beispielsweise  <tag>hand="pers_DE-588-118509969"</tag>. Falls die Schreiberhand nicht bekannt ist, lautet der Wert <val>unknown</val>.</p>
-                        <p>Das Attribut <att>place</att> wird bei Randbemerkungen (Marginalien) dazu verwendet, die Stellung der Randnote auf der Seite anzugeben, die Werte lauten <val>right</val> und <val>left</val>. Zu den Randbemerkungen siehe zusätzlich die Anleitungen im <ref target="https://www.deutschestextarchiv.de/doku/basisformat/marginalie.html">DTA</ref>.</p>
+                        <p>Das Attribut <att>place</att> wird bei Randbemerkungen (Marginalien) dazu verwendet, die Stellung der Randnote auf der Seite anzugeben, die Werte lauten <val>right</val> und <val>left</val>. Zu den Randbemerkungen siehe zusätzlich die Anleitungen auf der entsprechenden <ref target="https://www.deutschestextarchiv.de/doku/basisformat/marginalie.html">Dokumentationsseite</ref> des <ref target="https://www.deutschestextarchiv.de/">DTA</ref>.</p>
                         <p>Ein optional im Manuskript vorkommendes Einfügungszeichen wird mit dem einheitlichen Tag <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-metamark.html"><gi>metamark</gi></ref> wiedergegeben.</p>
                         
                         
@@ -1039,13 +1018,13 @@
                             </item>
                             <item>Eingerückter Text: <val>et</val>
                             </item>
-                            <item>Kapitälchen: <val>k</val>
-                            </item>
                             <item>Rechtsbündigkeit: <val>right</val>
                             </item>
+                            <item>Fett: <val>b</val>
+                            </item>
                         </list>
-                        <p>Weitere Kodierungsanleitungen zu <gi>hi</gi> finden sich auf der Seite
-                            des <ref target="https://www.deutschestextarchiv.de/">DTA</ref>
+                        <p>Weitere Kodierungsanleitungen zu <gi>hi</gi> finden sich auf der Seite <ref target="https://www.deutschestextarchiv.de/doku/basisformat/typogrAllg.html">Richtlinien zur Kodierung typographischer Besonderheiten</ref> in der Dokumentation
+                            des <ref target="https://www.deutschestextarchiv.de/">DTA</ref>.
                         </p>
 
 
@@ -1053,7 +1032,7 @@
                             Text</p>
 
                         <p> Nachträgliche Anstreichungen, z.B. durch den Empfänger, werden nicht
-                            ausgezeichnet sd. kommentierend in einer editorischen Bemerkung im TEI XML header des Briefdokumentes (<tag>note type="generalRemark"</tag>) dokumentiert. </p>
+                            ausgezeichnet sd. kommentierend in einer editorischen Bemerkung im TEI XML-Header des Briefdokumentes (<tag>note type="generalRemark"</tag>) dokumentiert. </p>
 
                     </div>
                     
@@ -1327,9 +1306,7 @@
                                             
                                         </item>
                                     
-                                    <item><p>
-                                        Versalien und Kapitälchen werden zu Kleinbuchstaben normalisiert. Z.B. BERNOULLI wird zu <egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><orig>BERNOULLI</orig><reg>Bernoulli></reg></choice></egXML>. ToDo: Klären, ob es reicht, Kapitälchen so <hi rend="k">Bernoulli</hi> auszuzeichnen, oder ob zusätzlich eine Normalisierung nötig ist.
-                                    </p></item>
+                                    
                                     <item>
                                         Binnenmajuskeln werden von Fall zu Fall behandelt. In der Regel werden sie bei Eigennamen beibehalten. Z.B. NeufChâtel oder ArchiLyceum Patavinum.
                                     </item>
@@ -1345,21 +1322,13 @@
                                     </item>
 <!-- >>>>>>> Stashed changes -->
                                         <item>
-                                            <p> Versalien und Kapitälchen werden zu
-                                                Kleinbuchstaben normalisiert. Z.B. BERNOULLI wird zu
-                                                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                                    <choice>
-                                                        <orig>BERNOULLI</orig>
-                                                        <reg>Bernoulli</reg>
-                                                    </choice>
-                                                </egXML>.
-                                                ToDo: Klären, ob es reicht, Kapitälchen so <hi rend="k">Bernoulli</hi> auszuzeichnen, oder ob
-                                                zusätzlich eine Normalisierung nötig ist.
+                                            <p> Versalien und Kapitälchen werden mittels <gi>choice</gi>-Element zu
+                                                Kleinbuchstaben normalisiert. Z.B. "BERNOULLI" wird zu "Bernoulli".
                                             </p>
                                         </item>
                                         <item> Binnenmajuskeln werden von Fall zu Fall behandelt. In
                                             der Regel werden sie bei Eigennamen beibehalten. Z.B.
-                                            NeufChâtel oder ArchiLyceum Patavinum. </item>
+                                            "NeufChâtel" oder "ArchiLyceum". Ansonsten werden sie mittels <gi>choice</gi> normalisiert.</item>
                                         <item> Überflüssige Zahlpunkte bei Kardinalzahlen und
                                             Formelpunkte werden normalisierend entfernt. </item>
                                         <item> Handschriftenspezifische Sonderzeichen, die im Druck
