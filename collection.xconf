@@ -7,25 +7,26 @@
             <text match="/tei:TEI/tei:text">
                 <ignore qname="tei:div"/>
                 <ignore qname="tei:note"/>
-                <ignore qname="tei:orig"/>
                 <ignore qname="tei:abbr"/>
                 <ignore qname="tei:pc"/>
-                <inline qname="tei:choice"/>
-                <inline qname="tei:orig"/>
-                <inline qname="tei:reg"/>
-                <inline qname="tei:g"/>
+                <ignore qname="tei:g"/>
+                <ignore qname="tei:choice"/>
+                
+                <!--Fields for text search-->
+               
+                <field name="normalized" expression="nav:get-normalizedText(.)"/>
+                <field name="diplomatic" expression="nav:get-diplomaticText(.)"/>
+                <field name="commentaries" expression="nav:get-commentary(., 'document')"/>
+                <field name="metadata" expression="nav:get-metadata(ancestor::tei:TEI, 'header')"/>
+                
+                <field name="text" expression="."/>
                 <field name="title" expression="nav:get-metadata(ancestor::tei:TEI, 'title')"/>
                 <field name="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="date-when" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
-                <field name="document" expression="string-join((ancestor::tei:TEI/tei:teiHeader, nav:get-normalizedText(.), nav:get-commentary(., 'document')), ' ')"/>
                 <field name="file" expression="util:document-name(.)"/>
-                <!--<field name="text" expression="."/>-->
-                <field name="text" expression="string-join((nav:get-normalizedText(.), nav:get-commentary(., 'text')), ' ')"/>
-                <field name="letterContent" expression="nav:get-normalizedText(.)"/>
-                 <field name="letterContentDipl" expression="nav:get-diplomaticText(.)"/>
-                <field name="annotationContent" expression="nav:get-commentary(., 'text')"/>
+                
                 <field name="correspondent-id" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-id')"/>
                 <field name="correspondent-name" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-name')"/>
                 <field name="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>

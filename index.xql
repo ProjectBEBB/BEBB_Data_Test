@@ -90,6 +90,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "korrespondenz" return
                 $header//tei:ptr[@type eq 'Korrespondenz']/@target
             case "type" return head($header//tei:catDesc)
+            case "header" return $header
             default return
                 ()
 };
