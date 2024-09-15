@@ -103,8 +103,8 @@
                             </list>
                         </p>
                         <p>
-                            <hi rend="exampleHeading">Kodierung eines normalen Zeilenumbruchs und
-                                eines Zeilenumbruchs mit Worttrennung</hi>
+                            <hi rend="exampleHeading">Beispiel eines normalen Zeilenumbruchs und
+                                des Zeilenumbruchs in einer Worttrennung</hi>
                         </p>
                         <p>
                             <figure>
@@ -139,7 +139,7 @@
                             Venedig, 02. Dezember 1713, p. 1 (<ref type="internal" target="B_1713-12-02_991170517055605501">B_1713-12-02_991170517055605501</ref>) </bibl>
 
                         <p>
-                            <hi rend="exampleHeading">Kodierung eines Zeilenumbruchs am
+                            <hi rend="exampleHeading">Beispiel eines Zeilenumbruchs am
                                 Seitenende</hi>
                             <figure>
                                 <graphic width="50em" url="images/1038363_01.png"/>
@@ -179,12 +179,12 @@
                     </div>
                     <div>
                         <head>Absatz</head>
-                        <p> In der Regel wird ein Absatz mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-p.html">
-                                <gi>p</gi>
-                            </ref> ausgezeichnet. Falls der Absatz im Original
-                            nur durch eine grössere Lücke angezeigt ist, wird dies durch das
+                        <p>Ein Absatz wird in der Regel mit dem Element <gi>p</gi>
+                             ausgezeichnet. Falls der Absatz im Original
+                            nur durch eine grössere Lücke angezeigt wird, wird dies durch das
                             Attribut <att>type</att> mit dem Wert <val>space</val> angezeigt: <tag>p
-                                type="space"</tag>. <hi rend="exampleHeading">Kodierung einer
+                                type="space"</tag>.</p>
+                            <p><hi rend="exampleHeading">Beispiel einer
                                 Textlücke mit Abasatzfunktion</hi>
                             <figure>
                                 <graphic width="50em" url="images/1042535_01.png"/>
@@ -205,16 +205,12 @@
                       
                         <head>Seitenbeginn</head>
                         
-                        <p><list>
-                            <item>Der Beginn einer neuen Seite wird vor dem ersten Wort der neuen Seite mit <gi>pb</gi> ausgezeichnet.</item>
-                            <item>Das Attribut <att>facs</att> enthält im Wert die Bild-ID aus dem IIIF-Manifest.</item>
-                            <item>Das Attribut <att>n</att> gibt in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe wieder. Bei mehreren Paginierungen richtet man sich nach der in der Signaturangabe gewählten. Foliierungen werden mit r/v (recto/verso) ergänzt.</item>
-                            <item>Fehlt eine Paginierung, werden die Seitenzahlen ergänzt (01, 02, 03, ...). Das gilt auch für Briefe, die nummeriert sind. Für nicht paginierte Beilagen werden fortlaufende Buchstaben (a, b, c ...) an die vorangehende Seitenzahl angehängt. Wurden Seiten im Original versehentlich nicht paginiert, erfolgt eine ähnliche Kennzeichnung.</item>
-                            <item>Manuskriptseiten ohne Inhalt werden ebenfalls mit <gi>pb</gi> erfasst und mit dem Attribut type="empty" versehen.</item>
-                        </list>
-                        </p>
+                        <p>Der Beginn einer neuen Seite wird vor dem ersten Wort der neuen Seite mit <gi>pb</gi> ausgezeichnet. Das Attribut <att>facs</att> enthält die Bild-ID aus dem IIIF-Manifest. Das Attribut <att>n</att> gibt in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe wieder. Bei mehreren Paginierungen folgt man der in der Signaturangabe gewählten Nummerierung. Foliierungen werden mit r/v (recto/verso) ergänzt.</p>
+                        
+                        <p>Fehlt eine Paginierung, werden die Seitenzahlen ergänzt (01, 02, 03 ...). Dies gilt auch für nummerierte Briefe. Nicht paginierte Beilagen erhalten fortlaufende Buchstaben (a, b, c ...) nach der vorangehenden Seitenzahl. Wurden Seiten im Original versehentlich nicht paginiert, erfolgt eine ähnliche Kennzeichnung.</p>
+                        <p>Manuskriptseiten ohne Inhalt werden ebenfalls mit <gi>pb</gi> erfasst und mit dem Attribut <tag>type="empty"</tag> versehen.</p>
                         <p>
-                            <hi rend="exampleHeading">Kodierung eines Seitenumbruchs</hi>
+                            <hi rend="exampleHeading">Beispiel eines Seitenbeginns</hi>
                             <figure>
                                 <graphic width="50em" url="images/1063823_02.png"/>
                             </figure>
@@ -242,7 +238,7 @@
                             </ref> ausgezeichnet.</p>
 
                         <p>
-                            <hi rend="exampleHeading">Kodierung eines Gedichts</hi>
+                            <hi rend="exampleHeading">Beispiel eines Gedichts</hi>
                             <figure>
                                 <graphic width="50em" url="images/999898_01.png"/>
                             </figure>
@@ -291,7 +287,7 @@
 
 
                         <p>
-                            <hi rend="exampleHeading">Kodierung einer Anmerkung (in der Abbildung
+                            <hi rend="exampleHeading">Beispiel einer Anmerkung (in der Abbildung
                                 oben in der Mitte)</hi>
                         </p>
                         <p>
@@ -344,14 +340,12 @@
                             geöffnet wird.</p><note type="internal">Das Bild wird mittels eines Bildbearbeitungsprogramms freigestellt und im Bildformat png im Ordner BEBB-Github/BEBB_Figures abgespeichert. Der Dateiname der Figur besteht aus der e-manuscripta-Bildnummer + Tiefstrich + einer Figurennummer (01, 02, 03 etc.), da auf einer Seite mehrere Figuren abgebildet sein können.</note>
                       
                         <p>
-                            <hi rend="exampleHeading">Beispiel einer Figur, die sich nicht auf der
-                                selben Briefseite befindet, wie der Text, in dem auf sie referenziert
-                                wird:</hi>
-                            Der Text befindet sich in diesem Beispiel auf p. 2 des Briefes:
+                            <hi rend="exampleHeading">Beispiel einer Figur, die sich nicht auf derselben Briefseite wie der referenzierte Text befindet:</hi>
+                            Der Text befindet sich in diesem Beispiel auf Seite 2 des Briefes:
                             <figure>
                                 <graphic width="50em" url="images/1063864_01.png"/>
                             </figure>
-                            Die Figur befindet sich hingegen auf p. 5 des Briefes:
+                            Die Figur befindet sich hingegen auf Seite 5 des Briefes:
                             <figure>
                                 <graphic width="20em" url="images/1063867_01.png"/>
                             </figure> 
@@ -361,7 +355,7 @@
                                 Sit in figura IX <figure facs="1063867_01.png" hand="pers_DE-588-102552517">
                                     <p>Fig. IX</p>
                                     <figDesc>Darstellung eines verzweigten Röhrensystems</figDesc>
-                                    <note type="editorial">Die Figur ist auf p. 5 des Briefes abgebildet.</note>
+                                    <note type="editorial">Die Figur ist auf Seite 5 des Briefes abgebildet.</note>
                                 </figure> hic apposita canalis conicus ramosus
                                     <formula>ABIOSRVTF</formula> durus </egXML>
                             <bibl type="example"> Pietro Antonio Michelotti an Nicolaus I Bernoulli.
@@ -542,7 +536,7 @@
                         <p>Das Element <gi>choice</gi> wird nur optional für Normalisierungen (<gi>orig</gi> und <gi>reg</gi>) verwendet, auf Rechenfehler oder andere inhaltliche Fehler im Original wird in einer editorischen Fussnote hingewiesen. Die Fussnote kann optional auch eine korrigierte Fassung der Formel enthalten.</p>
                        
                         <p>
-                            <hi rend="exampleHeading">Kodierung einer Formel mit Normalisierung</hi>
+                            <hi rend="exampleHeading">Beispiel einer Formel mit Normalisierung</hi>
                             <figure>
                                 <graphic width="20em" url="images/1038613_01.png"/>
                             </figure>
@@ -578,7 +572,7 @@
                                     ist, stillschweigend präzisiert. Formeln mit Vinculum werden mit
                                         <gi>orig</gi>/<gi>reg</gi> normalisiert.</p>
                                 <p>
-                                    <hi rend="exampleHeading">Kodierung einer Formel mit
+                                    <hi rend="exampleHeading">Beispiel einer Formel mit
                                         Vinculum</hi>
                                     <figure>
                                         <graphic width="20em" url="images/1038613_01.png"/>
@@ -689,7 +683,7 @@
                                     die sowohl für geometrische Objekte wie für deren Masszahlen
                                     stehen, werden beibehalten.</p>
                                 <p>
-                                    <hi rend="exampleHeading">Kodierungsbeispiel eines Quadrates</hi>
+                                    <hi rend="exampleHeading">Beispiel eines Quadrates</hi>
                                     <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
                                         ex reciproca <formula>\square</formula>
                                         <hi rend="sup">rum</hi>
@@ -801,7 +795,7 @@
 
 
                         <p>
-                            <hi rend="exampleHeading">Kodierung eines direkten Zitats mit Angabe der
+                            <hi rend="exampleHeading">Beispiel eines direkten Zitats mit Angabe der
                                 zitierten Quelle</hi>
                             <figure>
                                 <graphic width="50em" url="images/1063927_01.png"/>
@@ -837,7 +831,7 @@
                             Venedig, 08. August 1715, p. 5 (<ref type="internal" target="B_1715-08-08_991170517051905501">B_1715-08-08_991170517051905501</ref>). </bibl>
 
                         <p>
-                            <hi rend="exampleHeading">Kodierung eines langen Zitats</hi> Beispiel mit einem Texteinschub (auszuzeichnen mit <gi>said</gi> und mit
+                            <hi rend="exampleHeading">Beispiel eines langen Zitats</hi> Beispiel mit einem Texteinschub (auszuzeichnen mit <gi>said</gi> und mit
                                 Anführungszeichen am Zeilenbeginn (auszuzeichnen mit der internen Entity "quot", die in der produktiven Fassung in ein <gi>orig</gi>/<gi>reg</gi> aufgelöst wird)
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"> 
                                 nuperrime acceptam <cit type="long"><quote>"J'attens<said>, inquit,</said> incessament 
@@ -870,7 +864,7 @@
                             Kurze Zitate werden im Original meistens durch Unterstreichung (auch
                             doppelte Unterstreichung) hervorgehoben. 
                             
-                            <hi rend="exampleHeading">Beispiel eines kurzen, durch Unterstreichung hervorgehobenen Zitats</hi>
+                            <hi rend="exampleHeading">Kodierung eines kurzen, durch Unterstreichung hervorgehobenen Zitats</hi>
                             
                             <figure>
                                 <graphic width="50em" url="images/949819_01.png"/>
@@ -905,7 +899,7 @@
                         
                         
                         <p>
-                            <hi rend="exampleHeading">Kodierung einer Anmerkung (in der Abbildung oben in der Mitte)</hi>
+                            <hi rend="exampleHeading">Beispiel einer Anmerkung (in der Abbildung oben in der Mitte)</hi>
                             
                         
                             <figure>
@@ -1208,7 +1202,7 @@
                                 steht), und <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-reg.html"><gi>reg</gi></ref> (in dem der normalisierte Text steht), ausgezeichnet. Diese Elemente sind mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html"><gi>choice</gi></ref> umschlossen. Eine Besonderheit bildet die Normalisierung von Abbreviaturen und diakritischen Zeichen, die in einem ersten Schritt mittels intern definierten Entities auf Zeichenebene durchgeführt wird und anschliessend in die übliche Elementstruktur umgewandelt wird. Die aktuell verwendeten Entities sind in den entsprechenden Abschnitten weiter unten angegeben. </p>
                                     
                                     <p>
-                                        <hi rend="exampleHeading">Kodierung einer Normalisierung direkt mit <gi>choice</gi></hi>
+                                        <hi rend="exampleHeading">Beispiel einer Normalisierung direkt mit <gi>choice</gi></hi>
                                         <figure>
                                                   <graphic width="50em" url="images/1044894_01.png"/>
                                                 </figure>
@@ -1540,7 +1534,7 @@
                                 Sprachen. Hier ist es Ermessenssache, ob man einen Satzteil mit
                                     <gi>foreign</gi> auszeichnet oder nicht. </p>
                             <p>
-                                <hi rend="exampleHeading">Kodierung des Sprachwechsels</hi>
+                                <hi rend="exampleHeading">Beispiel einer Textstelle mit Sprachwechsel</hi>
                                 <figure>
         <graphic width="50em" url="images/1063075_01.png"/>
     </figure>
@@ -1632,7 +1626,7 @@
                             <val>right</val> oder <val>left</val> ausgezeichnet.</p>
                    
                     <p>
-                        <hi rend="exampleHeading">Kodierung eines Openers</hi>
+                        <hi rend="exampleHeading">Beispiel eines Openers</hi>
                         <figure>
         <graphic width="50em" url="images/1063823_01.png"/>
     </figure>
@@ -1704,7 +1698,7 @@
                     </p>
                     
                     <p>
-                        <hi rend="exampleHeading">Kodierung eines weiteren Beispiels</hi>
+                        <hi rend="exampleHeading">Ein weiteres Beispiel</hi>
                         <figure>
         <graphic width="50em" url="images/1079063_01.png"/>
     </figure>
@@ -1767,7 +1761,7 @@
                         ausgezeichnet. Dabei erhält jedes Postskriptum ein eigenes <gi>postscript</gi>-Element.<note type="internal">Für die entsprechende Seite auf DTA: https://www.deutschestextarchiv.de/doku/basisformat/brPostscriptum.html</note></p>
                        
                         <p>
-                            <hi rend="exampleHeading">Beispiel eines Postskriptum</hi>
+                            <hi rend="exampleHeading">Beispiel eines Postskriptums</hi>
                             <figure>
         <graphic width="50em" url="images/1038310_01.png"/>
     </figure>
@@ -1883,7 +1877,7 @@
                     <p>Personen und Orte werden in der Adresse ausgezeichnet.</p>
                     <p>Postvermerke, Stempel und Siegel werden nur in den Metadaten erfasst.</p>
                     <p>
-                        <hi rend="exampleHeading">Kodierung einer Adresse</hi>
+                        <hi rend="exampleHeading">Beispiel einer Adresse</hi>
                         <figure>
         <graphic width="50em" url="images/1079294_01.png"/>
     </figure>
