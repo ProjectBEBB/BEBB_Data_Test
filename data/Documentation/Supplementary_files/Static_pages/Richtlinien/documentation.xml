@@ -83,32 +83,22 @@
                     <div>
                         <head>Zeilenumbruch</head>
 
-                        <p>Der Zeilenumbruch wird mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-lb.html">
-                                <gi>lb</gi>
-                            </ref> ausgezeichnet. Dabei werden die folgenden
+                        <p>Der Zeilenumbruch wird mit <gi>lb</gi>
+                             ausgezeichnet. Es werden folgende
                             Fälle unterschieden:</p>
 
                         <p>
                             <list>
-                                <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerschlag, die
+                                <item>Normaler Zeilenumbruch: Die Zeile endet ohne Leerzeichen, die
                                     neue Zeile beginnt mit <gi>lb</gi>.</item>
-                                <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird
-                                    ausgezeichnet mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pc.html">
-                                        <gi>pc</gi>
-                                    </ref> mit dem Attribut <att>type</att> und
-                                    Wert ="hyphenation". Der Zeilenumbruch <gi>lb</gi> erhält ein
-                                    Attribut <att>break</att> mit dem Wert <val>no</val>.</item>
-                                <item>Zeilenumbruch mit Bindestrich am Zeilenende: Die Zeile endet
-                                    mit dem nicht ausgezeichneten Bindestrich, die neue Zeile
-                                    beginnt mit <tag>lb break="no"/</tag>.</item>
-                                <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> steht
-                                    nach dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html">
-                                        <gi>pb</gi>
-                                    </ref>.</item>
-                                <item>Zeilenumbruch innerhalb einer vom Autor gelöschten
-                                    Textpassage. Die Worttrennung wird nicht speziell ausgezeichnet,
-                                    der Trennstrich wird einfach als Teil des gelöschten Wortes
-                                    behandelt.</item>
+                                <item>Zeilenumbruch mit Worttrennung: Das Trennzeichen wird mit
+                                        <tag>pc type="hyphenation"</tag> ausgezeichnet, <tag>lb break="no"/</tag>
+                                    markiert den Zeilenumbruch.</item>
+                                <item>Zeilenumbruch mit Bindestrich am Zeilenende: Der Bindestrich bleibt nicht ausgezeichnet, die neue Zeile beginnt mit <tag>lb break="no"/</tag>.</item>
+                                <item>Zeilenumbruch bei Seitenwechsel: Das Element <gi>lb</gi> folgt direkt
+                                    auf <gi>pb</gi>.</item>
+                                <item>Zeilenumbruch in gelöschter Textpassage: Der Trennstrich wird als Teil des gelöschten Wortes
+                                    behandelt, ohne besondere Auszeichnung.</item>
                                 <note type="internal"/>
                             </list>
                         </p>
@@ -132,6 +122,19 @@
                                 teque hu<pc type="hyphenation">-</pc>
                                 <lb break="no"/>maniter favente augere conabor.</p>
                         </egXML>
+                        <eg>
+                            
+                              
+                                    <lb/>Huius autem rei demonstrationem apud nullum Hydrostaticae
+                                    <lb/>Scriptorem ad invenire potui.
+                             
+                                    <lb/>Gratum etiam mihi facies si mihi quae sequuntur pro<pc type="hyphenation">-</pc>
+                                    <lb break="no"/>blemata solveris, quorum usus maximi esse poterit
+                                    momenti <lb/>in doctrina de sanguinis missione, quam Deo dante,
+                                    teque hu<pc type="hyphenation">-</pc>
+                                    <lb break="no"/>maniter favente augere conabor.
+                            
+                        </eg>
                         <bibl type="example">Pietro Antonio Michelotti an Nicolaus I Bernoulli.
                             Venedig, 02. Dezember 1713, p. 1 (<ref type="internal" target="B_1713-12-02_991170517055605501">B_1713-12-02_991170517055605501</ref>) </bibl>
 
@@ -202,8 +205,13 @@
                       
                         <head>Seitenbeginn</head>
                         
-                        <p>Der Beginn einer neuen Seite wird vor dem ersten Wort der neuen Seite mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-pb.html"><gi>pb</gi></ref> ausgezeichnet. Das Attribut <att>facs</att> enthält im Wert die Bild-ID, mit der das Bild im IIIF-Manifest gekennzeichnet ist. Das Attribut <att>n</att> enthält in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe. Falls auf dem Manuskript mehrere Paginierungen nebeneinander bestehen, richtet man sich nach der in der Signaturangabe gewählten. Bei Foliierung werden die Angaben durch r/v (recto/verso) ergänzt. Falls ein Brief nicht paginiert ist, werden die Seitenzahlen ergänzt (01, 02, 03, ...). Das gilt auch für Briefe, die nummeriert sind. Falls in einem paginierten Brief eine nicht paginierte Beilage beigebunden wurde, wird diese mit der vorangehenden Seitenzahl versehen, ergänzt durch die fortlaufenden Buchstaben a, b, c usw. Falls bei der Paginierung im Original Seiten aus Versehen nicht paginiert wurden, wird die vorangehende Seitenzahl ergänzt durch die fortlaufenden Buchstaben a, b, c usw. verwendet.</p>
-                        <p>Manuskriptseiten ohne Inhalt werden ebenfalls mit <gi>pb</gi> erfasst und mit dem Attribut type="empty" versehen.
+                        <p><list>
+                            <item>Der Beginn einer neuen Seite wird vor dem ersten Wort der neuen Seite mit <gi>pb</gi> ausgezeichnet.</item>
+                            <item>Das Attribut <att>facs</att> enthält im Wert die Bild-ID aus dem IIIF-Manifest.</item>
+                            <item>Das Attribut <att>n</att> gibt in der Regel die auf dem Manuskript angegebene Seiten- oder Folioangabe wieder. Bei mehreren Paginierungen richtet man sich nach der in der Signaturangabe gewählten. Foliierungen werden mit r/v (recto/verso) ergänzt.</item>
+                            <item>Fehlt eine Paginierung, werden die Seitenzahlen ergänzt (01, 02, 03, ...). Das gilt auch für Briefe, die nummeriert sind. Für nicht paginierte Beilagen werden fortlaufende Buchstaben (a, b, c ...) an die vorangehende Seitenzahl angehängt. Wurden Seiten im Original versehentlich nicht paginiert, erfolgt eine ähnliche Kennzeichnung.</item>
+                            <item>Manuskriptseiten ohne Inhalt werden ebenfalls mit <gi>pb</gi> erfasst und mit dem Attribut type="empty" versehen.</item>
+                        </list>
                         </p>
                         <p>
                             <hi rend="exampleHeading">Kodierung eines Seitenumbruchs</hi>
