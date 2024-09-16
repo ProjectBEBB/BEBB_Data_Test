@@ -4,7 +4,8 @@
         <fileDesc>
             <titleStmt>
                 <title>Editionskonzept, Datenstruktur und digitale Methodik der BEBB</title>
-                <author>Sulamith Gehr, Fritz Nagel, Martin Kurz</author>
+                <author>Sulamith Gehr</author>
+                
             </titleStmt>
             <publicationStmt>
                 <p>Überblick über die Daten...</p>
@@ -20,35 +21,58 @@
         <body>
                     <div>
                         <head>Einführung</head>
-                        <p>Diese Dokumentation beschreibt die <hi rend="i">Basler Edition der Bernoulli-Briefwechsel (BEBB)</hi>, ein digitales Editionsprojekt, das den umfangreichen Briefwechsel der berühmten Mathematikerfamilie Bernoulli und ihrer Korrespondenten umfasst. Es behandelt die Struktur, Technologien und Workflows, die zur Erstellung und Pflege der Edition verwendet werden.</p>
-                    </div>
-            <div>
-                    <head>Gegenstand der Edition</head>
-                    <p>Die Basler Edition der Bernoulli-Briefwechsel (BEBB) umfasst die ca. 5400 erhaltenen Briefe der Korrespondenzen von Daniel I Bernoulli (1700–1782), Daniel II Bernoulli (1759–1789), Jacob I Bernoulli (1654–1705), Jacob II Bernoulli (1759–1789), Johann I Bernoulli (1667–1748), Johann II Bernoulli (1710–1790), Nicolaus I Bernoulli (1687–1759), Nicolaus II Bernoulli (1695–1726) und Jacob Hermann (1678–1733) sowie weitere eng verwandte Texte wie Reisetagebücher oder akademische Reden.</p> 
+                        
+                        <p>Diese Dokumentation beschreibt die <hi rend="i">Basler Edition der Bernoulli-Briefwechsel (BEBB)</hi>, ein digitales Editionsprojekt, das den umfangreichen Briefwechsel der Mathematikerfamilie Bernoulli erschliesst. Ziel der Edition ist es, die wissenschaftliche, historische und persönliche Korrespondenz der Familie in einer standardisierten, maschinenlesbaren Form zugänglich zu machen.</p>
+                        
+                        <p>Im Zentrum der Edition stehen rund 5.400 erhaltene Briefe, die von verschiedenen Mitgliedern der Familie Bernoulli verfasst wurden. Die Edition umfasst die Korrespondenzen folgender Personen:</p>
+                        
+                        <list>
+  <item>Daniel I Bernoulli (1700–1782)</item>
+  <item>Daniel II Bernoulli (1759–1789)</item>
+  <item>Jacob I Bernoulli (1654–1705)</item>
+  <item>Jacob II Bernoulli (1759–1789)</item>
+  <item>Johann I Bernoulli (1667–1748)</item>
+  <item>Johann II Bernoulli (1710–1790)</item>
+  <item>Nicolaus I Bernoulli (1687–1759)</item>
+  <item>Nicolaus II Bernoulli (1695–1726)</item>
+  <item>Jacob Hermann (1678–1733)</item>
+</list>
+                        
+                        <p>Neben den Briefen enthält die Edition auch verwandte Texte, wie Reisetagebücher, akademische Reden und weitere Dokumente, die das Leben und Werk der Bernoullis und ihrer Zeitgenossen beleuchten.</p>
+                        
+                        <p>Um diese Sammlung zugänglich zu machen, verwendet das <hi rend="i">BEBB-Projekt</hi> moderne digitale Technologien und international anerkannte Standards für die Textkodierung. Die Briefe werden nicht nur inhaltlich erschlossen, sondern auch im <hi rend="i">TEI-XML</hi>-Format kodiert, was eine langfristige und standardisierte Datenspeicherung ermöglicht. Zusätzlich zu den Briefen werden umfangreiche Metadaten erstellt und gepflegt, die Informationen zu Personen, Institutionen, Orten und Werken umfassen.</p>
             </div>
             
                             <div>
-                                <head type="h2">Datenmodell</head>
-                                <p>Die BEBB umfasst verschiedene Datentypen, darunter Metadaten, Textdaten, Strukturdaten zu Personen, Institutionen, Werken und Orten sowie Bilddaten. Die meisten dieser Daten werden intern verwaltet, während externe Daten, insbesondere Normdaten und Bilddaten, zusätzlich eingebunden und nachgenutzt werden. Die Metadaten und Texte sind im TEI-XML-Format kodiert. </p>
+                                <head>Datenmodell</head>
+                                <p>Die BEBB umfasst verschiedene Datentypen, darunter Metadaten, Textdaten, Strukturdaten zu Personen, Institutionen, Werken und Orten sowie Bilddaten. Die meisten dieser Daten werden intern produziert und verwaltet, während externe Daten, insbesondere Normdaten und Bilddaten, zusätzlich eingebunden und nachgenutzt werden. Die Metadaten und Texte sind im TEI-XML-Format kodiert. </p>
+                                
+                                <p>
+                                    <figure>
+                                <graphic width="50em" url="images/Data_Model_BEBB_de.png"/>
+                                       <figDesc>Das Datenmodell der BEBB zeigt, wie die verschiedenen Komponenten des digitalen Editionsprojekts der Bernoulli-Briefwechsel strukturiert und miteinander verknüpft sind. Der zentrale Kern des Modells besteht aus den Briefen und weiteren Quellen, die im TEI-XML-Format gespeichert sind. Diese beinhalten die Metadaten und die edierten Texte. Weitere Bestandteile sind 1. BIBB (Bernoulli-Briefinventar), 2. Bilddateien (IIIF und BEBB), 3. Register und Hilfsdateien, 4. Externe Verlinkungen, 5. Technische Infrastruktur, 6. Zusatzdateien und Technische Dateien
+</figDesc>
+                            </figure>
+                                </p>
                                 
                                 
                                 <div>
                                     <head>Metadaten</head>
-                                    <p>Die Metadaten der Briefe werden im <ref target="https://ub.unibas.ch/bernoulli/index.php/Suche_im_Bibliothekskatalog"><hi rend="i">Basler Inventar der Bernoulli-Briefwechsel</hi></ref> (BIBB) als Teil des elektronischen Handschriftenkatalogs (<ref target="https://ub2.unibas.ch/han/">HAN</ref>) der Universitätsbibliothek Basel erfasst, gepflegt und gesichert. Die im BIBB-Daten sind im Format MARC21 erfasst. Diese Metadaten werden für die BEBB in TEI-XML-Format transformiert, um eine standardisierte, maschinenlesbare Struktur zu gewährleisten. Im Unterschied zur Kodierung der Texte weicht die Kodierung der Metadaten vom DTABf ab, da die BIBB-Daten nicht 1:1 in den DTABf-Standart übertragbar sind. Über eine Schnittstelle werden die Daten abgerufen, mittels Python in TEI-XML transformiert und in die TEI-Header der Briefdateien eingespielt. Die Metadaten werden bei jedem Daten-Release auf diese Weise aktualisiert.</p> 
-                                    <p>Im TEI-Header sind zusätzlich zu diesen automatisch übertragenen Brief-Metadaten aus dem BIBB weitere Metadaten erfasst, die im BIBB aus strukturellen Gründen keinen Platz finden. Diese umfassen die Informationen zu den BearbeiterInnen der Edition und zur Bearbeitungsgeschichte sowie mit dem aktuellen Bearbeitungsstand. Auch die Verweise auf den Vorgänger- und Nachfolgerbrief, die beispiuelsweise zum Blättern in einer Korrespondenz dienen werden nachträglich eingefügt. Die Metadaten sind grundlegend für die strukturierte Suche auf der BEBB-Plattform.</p>
+                                    <p>Die Metadaten der Briefe werden im <ref target="https://ub.unibas.ch/bernoulli/index.php/Suche_im_Bibliothekskatalog"><hi rend="i">Basler Inventar der Bernoulli-Briefwechsel</hi></ref> (BIBB) als Teil des elektronischen Handschriftenkatalogs (<ref target="https://ub2.unibas.ch/han/">HAN</ref>) der Universitätsbibliothek Basel erfasst, gepflegt und gesichert. Die im BIBB-Daten sind im Format MARC21 erfasst. Diese Metadaten werden für die BEBB in TEI-XML-Format transformiert, um eine standardisierte, maschinenlesbare Struktur zu gewährleisten. Im Unterschied zur Kodierung der Texte weicht die Kodierung der Metadaten vom DTABf ab, da die BIBB-Daten nicht 1:1 in den DTABf-Standard übertragbar sind. Über eine Schnittstelle werden die Daten abgerufen, mittels Python in TEI-XML transformiert und in die TEI-Header der Briefdateien eingespielt. Die Metadaten werden bei jedem Daten-Release auf diese Weise aktualisiert.</p> 
+                                    <p>Im TEI-Header sind zusätzlich zu diesen automatisch übertragenen Brief-Metadaten aus dem BIBB weitere Metadaten erfasst, die im BIBB aus strukturellen Gründen keinen Platz finden. Diese umfassen die Informationen zu den BearbeiterInnen der Edition und zur Bearbeitungsgeschichte sowie mit dem aktuellen Bearbeitungsstand. Auch die Verweise auf den Vorgänger- und Nachfolgerbrief, die beispielsweise zum Blättern in einer Korrespondenz dienen werden nachträglich eingefügt. Die Metadaten sind grundlegend für die strukturierte Suche auf der BEBB-Plattform.</p>
                                     <p>Detaillierte Informationen zu den aus dem BIBB übernommenen Metadaten und zur TEI XML-Headerstruktur finden sich in den <ref type="internal" target="documentation">Editionsrichtlinien</ref> im Abschnitt "Metadaten".</p>
                                 </div>
                                 
                                 <div>
-                                    <head type="h3">Edierte Texte</head>
+                                    <head>Edierte Texte</head>
                                     <p>Die edierten Texte sind gemäss den Richtlinien der <ref target="http://www.tei-c.org/ns/1.0">Text Encoding Initiative
-                                        (TEI)</ref> kodiert. Die BEBB richtet sich dabei weitgehend nach dem TEI-Standard  <ref target="http://deutschestextarchiv.de/doku/basisformat/">Basisformat des Deutschen Textarchivs (DTABf)</ref>. Für eine Detallierte Beschreibung der Textkonstitution sowie der dabei verwendeten Kodierung siehe die <ref target="documentation.xml">aktuellen Editionsrichtlinien der BEBB</ref>.
+                                        (TEI)</ref> kodiert. Die BEBB richtet sich dabei weitgehend nach dem TEI-Standard  <ref target="http://deutschestextarchiv.de/doku/basisformat/">Basisformat des Deutschen Textarchivs (DTABf)</ref>. Für eine detaillierte Beschreibung der Textkonstitution sowie der dabei verwendeten Kodierung siehe die <ref target="documentation.xml">aktuellen Editionsrichtlinien der BEBB</ref>.
                                     </p>
                                     <p>Alle weiteren Texte, wie z.B. Einleitungen zu den edierten Korrespondenzen werden ebenfalls in TEI-XML erfasst.</p>
                                 </div>
                                 <div>
                                     <head>Register</head> <p>Personen, Orte, Institutionen und Literatur, die in den edierten Texten erwähnt werden, sind mit ihren entsprechenden Registereinträgen verknüpft, was eine gezielte Navigation und Suche ermöglicht.</p> <p>Die Registereinträge werden in TEI-XML erstellt und gespeichert. Jeder Eintrag erhält eine eindeutige, permanente ID, die eine langfristige Referenzierung sicherstellt. Zusätzlich zu den Basisinformationen können Notizen zu den einzelnen Einträgen hinzugefügt werden, um weiterführende Kontextinformationen bereitzustellen.</p> <p>Soweit vorhanden, werden die Einträge mit URIs aus verschiedenen Normdateien verknüpft. Für Personen und Institutionen wird die GND-Nummer (Gemeinsame Normdatei) verwendet. Sollten Personen oder Institutionen in der GND fehlen, jedoch ausreichende biografische Informationen vorliegen, werden in Zusammenarbeit mit der Universitätsbibliothek Basel neue Einträge in der GND erstellt.</p> <p>Für Orte werden die IDs aus der freien geographischen Datenbank <ref target="https://www.geonames.org">GeoNames</ref> genutzt. GeoNames bietet ebenfalls die Möglichkeit, neue Einträge für Orte zu erstellen, die in der Datenbank noch nicht erfasst sind.</p>
-                                    <p>Die Bibliographie der Edition wird mithilfe der Literaturverwaltungssoftware Zotero in einer derzeit noch projektinternen Zotero-Gruppe verwaltet. Die Bibliotheksdaten werden regelmäßig in das TEI-XML-Format exportiert.</p>
+                                    <p>Die Bibliographie der Edition wird mithilfe der Literaturverwaltungssoftware Zotero in einer derzeit noch projektinternen Zotero-Gruppe verwaltet. Die Bibliotheksdaten werden regelmässig in das TEI-XML-Format exportiert.</p>
                                         
                                 </div>
                               
@@ -74,11 +98,11 @@
             <div>
                 <head>Datenspeicherung, Archivierung und Versionierung</head> 
                 <p>Die Metadatenhoheit liegt beim Bernoulli-Inventar im Online-Katalog der UB Basel. Dort werden die Daten gepflegt und archiviert. Zusätzlich werden die Metadaten auch als Teil der BEBB als Bestandteil der TEI-Header der edierten Texte gesichert.</p>
-                <p>Die XML-Dateien der BEBB werden auf GitHub-Repositories und eXist-db-Servern gespeichert. Die Langzeitarchivierung erfolgt über die regelmäßige Archivierung der verschiedenen Versionen der XML-Dateien auf Zenodo, wobei GitHub als Schnittstelle dient. Zudem ist die Integration einer semistatischen Version der Edition als TEI Publisher-Export bei DASCH geplant, wobei die notwendigen Technologien von DASCH bereitgestellt werden.</p>
+                <p>Die XML-Dateien der BEBB werden auf GitHub-Repositories und eXist-db-Servern gespeichert. Die Langzeitarchivierung erfolgt über die regelmässige Archivierung der verschiedenen Versionen der XML-Dateien auf Zenodo, wobei GitHub als Schnittstelle dient. Zudem ist die Integration einer semistatischen Version der Edition als TEI Publisher-Export bei DASCH geplant, wobei die notwendigen Technologien von DASCH bereitgestellt werden.</p>
                 
                 <p>Alle bereitgestellten Texte und Daten der BEBB werden versioniert. Jede veröffentlichte Version, in der Regel einmal jährlich, bleibt abrufbar und deckt den gesamten Datenbestand ab. Dadurch sind auch die Registereinträge an die jeweilige Version gebunden. Alle Inhalte werden sowohl mit Zitierhinweisen als auch mit Permalinks versehen, die auf die spezifische Version verweisen. Neben den Editionsdaten wird auch die Dokumentation kontinuierlich gepflegt und archiviert, um die langfristige Nachvollziehbarkeit zu gewährleisten.</p>
                 
-                <p>Die technische Infrastruktur der Edition, einschließlich XQL-, XSLT-, JS-Skripten sowie CSS- und sonstigen Dateien, wird intern versioniert und für Entwicklungszwecke in Git bereitgestellt. Die BEBB wird so entwickelt, dass sie sich optimal archivieren lässt. Unabhängig davon werden die Daten dauerhaft auf Zenodo veröffentlicht und archiviert.</p>
+                <p>Die technische Infrastruktur der Edition, einschliesslich XQL-, XSLT-, JS-Skripten sowie CSS- und sonstigen Dateien, wird intern versioniert und für Entwicklungszwecke in Git bereitgestellt. Die BEBB wird so entwickelt, dass sie sich optimal archivieren lässt. Unabhängig davon werden die Daten dauerhaft auf Zenodo veröffentlicht und archiviert.</p>
                 
                 <p>Die Dokumentation des Datenmodells erfolgt sowohl in den <ref target="documentation.xml" type="internal">Editionsrichtlinien</ref> als auch in TEI-XML-ODD-Dateien. Diese ODD-Dateien generieren eine rng-Datei, die zur Validierung der XML-Daten dient. Eine zusätzliche ODD-Datei wird für die Konfiguration der Textdarstellung im TEI Publisher genutzt.</p>
                 
@@ -96,7 +120,7 @@
                         
                         <p>Eine solche Weiterentwicklung ist das <hi rend="i">Annotation Tool</hi> des TEI Publishers, das auch in der BEBB für bestimmte Bearbeitungsschritte eingesetzt werden soll. Dieses Tool dient der Annotation von Texten direkt im Frontend und eignet sich ideal für die Kommentierung durch externe MitarbeiterInnen, die nicht mit Oxygen arbeiten möchten.</p>
                         
-                        <p>Die Weiterentwicklung des TEI Publishers wird vom Verein <ref target="https://www.e-editiones.org/"><hi rend="i">e-editiones</hi></ref> koordiniert, wobei projektspezifische Erweiterungen über <hi rend="i">e-editiones</hi> beauftragt werden können und gemäß dem Open-Source-Prinzip auch anderen Editionsprojekten zur Verfügung stehen.</p>
+                        <p>Die Weiterentwicklung des TEI Publishers wird vom Verein <ref target="https://www.e-editiones.org/"><hi rend="i">e-editiones</hi></ref> koordiniert, wobei projektspezifische Erweiterungen über <hi rend="i">e-editiones</hi> beauftragt werden können und gemäss dem Open-Source-Prinzip auch anderen Editionsprojekten zur Verfügung stehen.</p>
                 </div>
                 
             
@@ -110,7 +134,7 @@
                 
                 <p>Die Navigation ermöglicht das Blättern in den Briefseiten und das Blättern von einem Brief zum nächsten.</p>
                 <p>Der Text ist in mehreren Ansichten, die in nebeneinander liegenden Fenstern geöffnet werden können. Die Fenster sind flexibel konfigurierbar, d.h. es lassen sich beliebig viele Fenster nebeneinander öffnen und die Fenster können mit unterschiedlichen Inhalten (Brieftext, Faksimile, Fussnoten usw.) versehen werden.</p>
-                <p>Die Darstellung nutzt die Mouseover-Funktion des TEI-Publishers, durch die Informationen größtenteils erst durch Nutzerinteraktion angezeigt werden.</p>
+                <p>Die Darstellung nutzt die Mouseover-Funktion des TEI-Publishers, durch die Informationen grösstenteils erst durch Nutzerinteraktion angezeigt werden.</p>
                 <p>Als Hauptschrift der Edition wurde der von MUFI bereitgestellte Font "Junicode" gewählt, da dieser eine grosse Anzahl von Sonderzeichen, die in der textnahen Fassung benötigt werden, umfasst.</p>
                 
                 <p>Bei der Umsetzung des Designs in HTML wurde stark auf CSS gesetzt. Javascript wird
@@ -137,11 +161,11 @@
 </div>
 
 <div>
-    <head type="h3">correspSearch</head>
+    <head>correspSearch</head>
     <p>Die BEBB plant, den Webservice <ref target="http://correspSearch.net">correspSearch</ref> zu integrieren, damit die Briefe in einem weiteren Korrespondenznetzwerk auffindbar sind.</p>
 </div>
                 <div>
-                    <head type="h3">EMLO</head>
+                    <head>EMLO</head>
                     <p>Die BEBB ist dabei, die Metadaten in <ref target="http://emlo.bodleian.ox.ac.uk/home">EMLO</ref> zu integrieren, damit die Briefe auch in diesem Korrespondenznetzwerk auffindbar zu machen.</p>
                 </div>
 <div>
@@ -150,12 +174,12 @@
 </div>
 
 <div>
-    <head type="h3">GeoNames</head>
+    <head>GeoNames</head>
     <p>Die im Register aufgeführten Orte sind in der Regel mit dem Identifier der geographischen Datenbank <ref target="https://www.geonames.org"><hi rendition="#i">GeoNames</hi></ref> versehen. Nur bei sehr spezifischen, meist historischen Ortsbezeichnungen, die keine Entsprechung in GeoNames haben, wird auf die GeoNames-ID verzichtet und stattdessen eine interne ID genutzt.</p>
 </div>
 
 <div>
-    <head type="h3">GND</head>
+    <head>GND</head>
     <p>Personen und Institutionen werden über die <hi rendition="#i">Gemeinsame Normdatei</hi> (GND) eindeutig identifiziert. Künftig soll der Webservice <ref target="https://www.dnb.de/EN/Professionell/Metadatendienste/Datenbezug/Entity-Facts/entityFacts.html">Entity Facts</ref> dazu genutzt werden, in den Personenregisterdateien Portraits aus Wikimedia Commons einzubinden.</p>
 </div>
 
@@ -169,14 +193,14 @@
                         als eigenständige Datenpublikation zur Verfügung.</p>
                 </div>
                 <div>
-                    <head type="h2">Versionierung und Datenpublikation</head>
+                    <head>Versionierung und Datenpublikation</head>
                     <p>Alle edierten Texte, Forschungsbeiträge sowie das Personen-, Orts-,
-                        Institutionen- und bibliographsichen Registers werden auch als Gesamt-TEI-XML-Datensatz
+                        Institutionen- und bibliographischen Registers werden auch als Gesamt-TEI-XML-Datensatz
                         der BEBB in GitHub veröffentlicht. Die Daten werden in regelmässigen Abständen als Releases mit eigener Versionsnummer veröffentlicht. Von GitHub werden die Daten zwecks Langzeitarchivierung nach Zenodo exportiert, wo sie ebenfalls öffentlich zugänglich sind.</p>
                   
                 </div>
             <div>
-                <head type="h2">Permalinks und Zitierhinweise</head>
+                <head>Permalinks und Zitierhinweise</head>
                 
                 <p>Alle Texte sind sowohl mit einem Zitierhinweis, als auch mit Permalinks versehen,
                     die auf die jeweilige Version verweisen.</p>
@@ -188,12 +212,12 @@
                       
             <div>
                 <head>Legacy data</head>
-                <p>Bild mit der Graphik der Legacy data</p>
+                <p>Bild mit der Graphik der Legacy-Data</p>
                 <p>Abbildung mit dem Diagramm zur Anzahl Briefe in den legacy data-Gruppen</p>
                 
                 <p>Damit die BEBB das zu präsentierende Textkorpus möglichst vollständig umfasst, werden auch Texte aus früheren Phasen der Edition  – sei es im Druck oder digital erschienene – in das TEI-XML-Format überführt, homogenisiert und angereichert.</p>
                 
-                <p>Daten, die aus älteren Phasen der BEBB stammen, werden im Hinblick auf die Integration in die neue online-Plattform der BEBB lediglich soweit angepasst, dass sie mit den restlichen Briefen einheitlich prozessiert werden können (Transformation in TEI XML). Das bedeutet, dass sich die in der BEBB-Plattform befindlichen Texte aufgrund der Zugehörigkeit zu bestimmten legacy data-Gruppen auch hinsichtlich dem Editionskonzept und den Editionsregeln unterscheiden können. Für die legacy data gelten die Richtlinien, die bei deren Erstellung befolgt wurden. Diese Richtlinien resp. editorische Vorbemerkungen werden deshalb auf der online-Plattform zusammen mit den legacy data veröffentlicht.</p>
+                <p>Daten, die aus älteren Phasen der BEBB stammen, werden im Hinblick auf die Integration in die neue Online-Plattform der BEBB lediglich soweit angepasst, dass sie mit den restlichen Briefen einheitlich prozessiert werden können (Transformation in TEI XML). Das bedeutet, dass sich die in der BEBB-Plattform befindlichen Texte aufgrund der Zugehörigkeit zu bestimmten legacy data-Gruppen auch hinsichtlich dem Editionskonzept und den Editionsregeln unterscheiden können. Für die legacy data gelten die Richtlinien, die bei deren Erstellung befolgt wurden. Diese Richtlinien resp. editorische Vorbemerkungen werden deshalb auf der Online-Plattform zusammen mit den legacy data veröffentlicht.</p>
             </div>
             </div>
 
