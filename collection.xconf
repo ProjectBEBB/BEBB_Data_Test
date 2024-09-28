@@ -49,6 +49,7 @@
                 <facet dimension="briefwechsel" expression="nav:get-metadata(ancestor::tei:TEI, 'briefwechsel')" hierarchical="yes"/>
                 <facet dimension="correspondent-main" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-main')"/>
                 <facet dimension="correspondence" expression="nav:get-correspondent(ancestor::tei:TEI/tei:teiHeader)"/>
+                <facet dimension="korrespondenz" expression="nav:get-metadata(ancestor::tei:TEI, 'korrespondenz')"/>
                 <facet dimension="person-mentioned" expression="tokenize(./descendant::tei:rs[@type = ('person', 'persons')]/@key, '\s+')"/>
                 <facet dimension="place-mentioned" expression="./descendant::tei:rs[@type eq 'place']/@key"/>
                 <facet dimension="letter-mentioned" expression="./descendant::tei:rs[@type eq 'letter']/@key"/>
