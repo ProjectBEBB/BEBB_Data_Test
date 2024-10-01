@@ -77,6 +77,36 @@
                                 </div>
                               
                             </div>
+            <div>
+                <head>Korrespondenz- und Briefwechsel-Ebene</head>
+                <p>
+                    Die BEBB ist eine kumulative Edition, die mehrere Briefwechsel der Hauptkorrespondenten Bernoulli und Jacob Hermann mit ihren teils sich überschneidenden Korrespondenten) ediert. Diese Struktur bestehend aus Briefwechsel (Gruppe aller Briefe, die von einem Bernoulli bzw. Jacob Hermann mit ihren Korrespondenten gewechselt wurde) und Korrespondenz (Gruppe aller Briefe, die ein bestimmter Bernoulli mit einem bestimmten Korrespondenten gewechselt hat) ist im Header im Element <gi>correspContext</gi> erfasst: 
+                    
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <correspContext>
+                            <ptr target="B_1695-03-15_991170515020605501" type="prev"/>
+                            <ptr target="B_1714-06-08_991170515020405501" type="next"/>
+                            <ptr target="BW_JohIB" type="Briefwechsel"/>
+                            <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
+                        </correspContext>
+                    </egXML>
+                    
+                    Eine Ausnahme Bilden Korrespondenzen zwischen zwei Hauptkorrespondenten, z.B. Johann I Bernoulli mit Nicolaus I Bernoulli. In diesem Fall werden im <gi>correspContext</gi>-Element Briefwechsel und Korrespondenz beider Bernoulli erfasst: 
+                    
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <correspContext>
+                            <ptr target="B_1720-10-10_991170514993005501" type="prev"/>
+                            <ptr target="B_1710-04-09_991170514609605501" type="next"/>
+                            <ptr target="BW_JohIB" type="Briefwechsel"/>
+                            <ptr target="korr_Bernoulli_Nicolaus_I-JohIB" type="Korrespondenz"/>
+                            <ptr target="BW_NicIB" type="Briefwechsel"/>
+                            <ptr target="korr_Bernoulli_Johann_I-NicIB" type="Korrespondenz"/>
+                        </correspContext>
+                    </egXML>
+                    
+                    Das Element <gi>ptr</gi> verweist dabei auf Dateien, in der der Briefwechsel und die Korrespondenz erfasst sind. 
+                </p>
+            </div>
                             
                             
                       
