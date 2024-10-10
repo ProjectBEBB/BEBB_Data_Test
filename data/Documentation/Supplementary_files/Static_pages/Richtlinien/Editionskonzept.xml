@@ -112,8 +112,10 @@
                       
             
             <div>
+                <head>Bilddateien</head>
                 
                <p>Bilddateien sind auf IIIF-Servern gespeichert und über IIIF-Manifeste mit den nötigen Metadaten in die Edition eingebunden.</p> <p>Entitätsbezogene Daten werden in verschiedenen Datenbanken gespeichert und durch eindeutige Kennungen (unique identifiers) referenziert.</p>
+            </div>
                 <div>
                     <head>Externe Ressourcen</head>
                     <p>BIBB: Briefmetadaten</p>
@@ -122,7 +124,7 @@
                 </div>
                 
             
-            <div>
+
                
                 
             <div>
@@ -172,11 +174,8 @@
                     eingesetzt.</p>
             </div> 
                 
-                
-                
-                
-                
                 <div>
+                    <head>Daten-Nachnutzung</head>
                 
                 <p>Die BEBB nutzt in verschiedenen Bereichen Daten aus Drittprojekten nach und greift auf externe Webservices zur Anreicherung und Erweiterung der Edition zu.</p>
 
@@ -217,6 +216,7 @@
                 
             <div>
                 <head>Datenbereitstellung &amp; APIs</head>
+            </div>
                 <div>
                     <head>Lizenzierung</head>
                     <p>Die <hi rendition="#i">BEBB</hi> stellt ihre Daten unter der freien <ref target="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons-Lizenz CC BY-SA 4.0</ref> über eine Schnittstelle (RestFulApi) und
@@ -237,8 +237,8 @@
                 <p>Darüber hinaus sind die einzelnen Texte und Datensätze mit einer kanonischen
                     URL ausgestattet, die stets auf die aktuellste Version weiterleitet. </p>
             </div>
-            </div>
-            </div>
+      
+            
                       
             <div>
                 <head>Legacy data</head>
@@ -248,8 +248,49 @@
                 <p>Damit die BEBB das zu präsentierende Textkorpus möglichst vollständig umfasst, werden auch Texte aus früheren Phasen der Edition  – sei es im Druck oder digital erschienene – in das TEI-XML-Format überführt, homogenisiert und angereichert.</p>
                 
                 <p>Daten, die aus älteren Phasen der BEBB stammen, werden im Hinblick auf die Integration in die neue Online-Plattform der BEBB lediglich soweit angepasst, dass sie mit den restlichen Briefen einheitlich prozessiert werden können (Transformation in TEI XML). Das bedeutet, dass sich die in der BEBB-Plattform befindlichen Texte aufgrund der Zugehörigkeit zu bestimmten legacy data-Gruppen auch hinsichtlich dem Editionskonzept und den Editionsregeln unterscheiden können. Für die legacy data gelten die Richtlinien, die bei deren Erstellung befolgt wurden. Diese Richtlinien resp. editorische Vorbemerkungen werden deshalb auf der Online-Plattform zusammen mit den legacy data veröffentlicht.</p>
+                <p>
+                    In diesem Projekt werden die verschiedenen Daten-Gruppen der Briefe im TEI Header unter dem Element
+                    <tag>note type="dataGroup"</tag> erfasst. Das Element befindet sich an folgender Stelle im TEI-Dokument: <tag>/TEI/teiHeader/fileDesc/notesStmt/note[@type='dataGroup'</tag>.
+                    Diese Daten-Gruppen kennzeichnen die Bearbeitungs- und Veröffentlichungsprozesse der Briefe.
+                </p>
+                <p>Erfasste Daten-Gruppen:
+                    <list>
+                        <item>
+                            <label>TEI XML:</label>
+                            Briefe, die direkt nach den neuen BEBB-Richtlinien in TEI XML bearbeitet wurden.
+                        </item>
+                        <item>
+                            <label>Word:</label>
+                            Briefe, die ursprünglich in Microsoft Word transkribiert und kollationiert wurden und später in TEI XML umgewandelt und bearbeitet wurden.
+                        </item>
+                        <item>
+                            <label>Extern:</label>
+                            Briefe, die nicht zum Hauptkorpus der BEBB gehören, aber auf der BEBB-Plattform veröffentlicht werden, weil sie in engem Bezug zu den edierten Korrespondenzen stehen.
+                        </item>
+                        <item>
+                            <label>Hybrid:</label>
+                            Briefe, die sowohl im Druck ediert als auch digital auf der BEOL-Plattform veröffentlicht wurden.
+                        </item>
+                        <item>
+                            <label>Varignon-Band:</label>
+                            Briefe, die in LaTeX bearbeitet wurden, um sowohl für den Druck als auch für die BEBB-Plattform verwendet zu werden.
+                        </item>
+                        <item>
+                            <label>Druck modern:</label>
+                            Briefe, die in neueren Editionen ab ca. 1900 ediert wurden.
+                        </item>
+                        <item>
+                            <label>Druck historisch:</label>
+                            Briefe, die in älteren Editionen vor ca. 1900 ediert wurden oder nicht den Mindestanforderungen hinsichtlich editorischer Kriterien entsprechen.
+                        </item>
+                    </list></p>
+                <p>Beispiel für die Anwendung im TEI Header: 
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples"><note type="dataGroup">TEI XML</note>
+                    </egXML>
+                </p>
+                
             </div>
-            </div>
+ 
 
         </body>
     </text>
