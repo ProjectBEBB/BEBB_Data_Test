@@ -86,7 +86,7 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
             case "shelfmark" return
                 $header//tei:idno[@type eq 'callNumber']
             case "status" return
-                $header//tei:revisionDesc/@status
+                if ($header//tei:revisionDesc/@status = 'VarignonBand') then 'katalogisiert' else $header//tei:revisionDesc/@status
             case "korrespondenz" return
                 $header//tei:ptr[@type eq 'Korrespondenz']/@target
             case "type" return head($header//tei:catDesc)
