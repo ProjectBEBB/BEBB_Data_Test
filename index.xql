@@ -156,3 +156,14 @@ declare function idx:get-genre($header as element()?) {
     return
         $category/ancestor-or-self::tei:category[parent::tei:category]/tei:catDesc
 };
+
+declare function idx:is-preserved($header as element()) {
+    let $status := $header/descendant::tei:note[@type eq 'erschliessbarkeit']
+    return 
+        switch($status) 
+            case 'Nachgewiesen' return 'no'
+            case 'Erhalten' return 'yes'
+            case 'Privatbesitz' return 'yes'
+            case 'Fragment' return 'yes'
+            default return ()
+};
