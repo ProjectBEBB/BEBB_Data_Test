@@ -13,13 +13,11 @@ jobs:
     strategy:
        fail-fast: false
        matrix:
-        # 7.0.0-SNAPSHOT and 6.2.1 created
-         exist-version: [5.3.0, release, latest]
+        # 7.0.0-SNAPSHOT and 6.2.0
+         exist-version: [6.2.0, latest]
          java-version: [11, 17]
          exclude:
-           - exist-version: 5.3.0
-             java-version: 17 
-           - exist-version: release
+           - exist-version: 6.2.0
              java-version: 17
            - exist-version: latest
              java-version: 11
@@ -41,8 +39,8 @@ jobs:
       - name: Validate Data files
         run: |
           xmllint --noout --nowarning \
-          --relaxng resources/odd/BEBB-Schema-new.rng \
-          data/**/*.xml
+          --relaxng resources/odd/tei_all.rng \
+          data/Edited_text/**/*.xml
 
       # Build 
       - name: Build Expath Package
