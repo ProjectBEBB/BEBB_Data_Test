@@ -51,12 +51,15 @@ jobs:
       - run: ant
 
       # Install
+      - name: Pull container image
+        run: docker pull duncdrum/existdb:${{ matrix.exist-version }}
+
       - name: Start exist-ci containers
         run: |
           docker run -dit -p 8080:8080 -v ${{ github.workspace }}/build:/exist/autodeploy \
           --name exist --rm --health-interval=2s --health-start-period=4s \
           duncdrum/existdb:${{ matrix.exist-version }}
-          sleep 10s
+          sleep 120s
 
       # Test       
       - name: Run test
