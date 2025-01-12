@@ -15,9 +15,14 @@ def create_combined_tei(output_file, input_folders):
         b'type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>\n'
     )
 
+    NSMAP = { None : namespace, 
+              'xi': xi_namespace, 
+              'xml': xml_namespace }
+
     # TEI-Root-Element erstellen
-    tei_root = etree.Element("TEI", xmlns=namespace)
+    tei_root = etree.Element("TEI", nsmap=NSMAP)
     tei_root.set(f"{{{xml_namespace}}}id", "combined-indices")
+
 
     # teiHeader-Element erstellen
     tei_header = etree.SubElement(tei_root, "teiHeader")
@@ -50,7 +55,8 @@ def create_combined_tei(output_file, input_folders):
         for filename in sorted(os.listdir(folder)):
             if filename.endswith(".xml"):
                 file_path = os.path.join(folder, filename)
-                etree.SubElement(list_element, f"{{{xi_namespace}}}include", href=file_path)
+                rel_path = file_path.replace('data/Register/', '')
+                etree.SubElement(list_element, f"{{{xi_namespace}}}include", href=rel_path, parse="xml", xpointer="element(/1)")
 
     # XML-Baum erstellen
     xml_tree = etree.ElementTree(tei_root)
@@ -63,7 +69,8 @@ def create_combined_tei(output_file, input_folders):
     print(f"Kombinierte Datei '{output_file}' wurde erfolgreich erstellt.")
 
 # Basispfad für die Register
-base_path = os.path.expanduser("~/Documents/BEBB-Github/BEBB_Data_Test/data/Register")
+# base_path = os.path.expanduser("~/Documents/BEBB-Github/BEBB_Data_Test/data/Register")
+base_path = os.path.relpath('./data/Register', start=os.curdir)
 
 # Ordner und Listentypen definieren
 input_folders = {
