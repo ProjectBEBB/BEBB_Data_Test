@@ -1,205 +1,483 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1718-03-17_991170514994905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Pierre Rémond de Montmort. Basel, 17. März 1718</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Datum am Briefkopf eigenhändig. Brieftext ab Ende der Seite 4 als Marginalie auf Seite 1 fortgesetzt</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1718-03-17_991170514994905501">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Pierre Rémond de Montmort. Basel,
+            17. März 1718</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000056796</title><title type="alt"
+            >1718-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Montmort, Pierre Rémond de (1678-1719) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Datum am Briefkopf eigenhändig. Brieftext ab Ende der Seite 4
+            als Marginalie auf Seite 1 fortgesetzt</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 665, Nr.10</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514994905501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433082105504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000056796</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>4 S.<dimensions unit="cm">
+                    <height>20,5</height>
+                    <width>16</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bale</origPlace><date when="1718-03-17">ce 17. Mars
+              1718</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 665, Nr.10</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514994905501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433082105504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000056796</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>4 S.<dimensions unit="cm"><height>20,5</height><width>16</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bale</origPlace>
-            <date when="1718-03-17">ce 17. Mars 1718</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1718-03-17">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1718-01-26_991170514995005501" type="prev"/>
-        <ptr target="B_1718-04-03_991170514994805501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person>
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <note type="lebensdaten">(1667-1748)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-          <note type="lebensdaten">(1687-1759)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-          <note type="lebensdaten">(1695-1726)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <note type="lebensdaten">(1678-1733)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-11855333X">Homerus</persName>
-          <note type="lebensdaten">(ca. v8. Jh.)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-          <note type="lebensdaten">(1681-1737)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-124275087">Keill, John</persName>
-          <note type="lebensdaten">(1671-1721)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-          <note type="lebensdaten">(1646-1716)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-          <note type="lebensdaten">(1643-1727)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-100814832">Raphson, Joseph</persName>
-          <note type="lebensdaten">(1648-1715)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-          <note type="lebensdaten">(1685-1731)</note>
-        </person>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1052002/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1052004" n="1"/> <pb facs="1052005" n="2"/> <pb facs="1052006" n="3"/> <pb facs="1052007" n="4"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1718-03-17">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_1718-01-26_991170514995005501" type="prev"/>
+          <ptr target="B_1718-04-03_991170514994805501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+            <note type="lebensdaten">(1667-1748)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1687-1759)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1695-1726)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+            <note type="lebensdaten">(1678-1733)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11855333X">Homerus</persName>
+            <note type="lebensdaten">(ca. v8. Jh.)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+            <note type="lebensdaten">(1681-1737)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-124275087">Keill, John</persName>
+            <note type="lebensdaten">(1671-1721)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+            <note type="lebensdaten">(1646-1716)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-100814832">Raphson, Joseph</persName>
+            <note type="lebensdaten">(1648-1715)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+            <note type="lebensdaten">(1685-1731)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1718-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1052002/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1052004" n="1"/> Bale ce 17. Mars 1718.</p>
+        <p>Monsieur</p>
+        <p>Voici une piece que j'ay fait faire par mon fils<note type="editorial">Bernoulli,
+            Nicolaus II (1695-1726. Bernoulli, Nicolaus II, De Trajectoriis curvas ordinatim
+            positione datas ad Angulos rectos vel alia data lege secantibus ; qua occasione
+            communicatur gemina constructio alicujus problematis a Leibnitio propositi de
+            trajectoriis orthogonalibus : una cum Appendice de Epistola pro Eminente Mathematico
+            Actis Lips. Mens. Jul. A. 1716 inserta, in : AE Junii 1718, pp. 248-262.</note>; j'ay
+          dessein de l'envoyer à Leipsic pour etre inserée dans les Actes.<note type="editorial">Es
+            handelt sich also bei der übersandten "piece" um eine handschriftliche Version des dann
+            im Juli 1718 unter dem Namen von Nicolaus II Bernoullli publizierten Aufsatzes De
+            Trajectoriis. </note> Elle contient entre autres choses deux constructions de mon
+          probleme sur les trajectoires<note type="editorial">Johann Bernoulli hatte Leibniz im
+            Brief von <rs key="B_1716-03-11_991170514912705501" type="letter">1716.03.11</rs> sein
+            verallgemeinertes Trajektorienproblem gesandt, bei welchem nicht nur die Trajektorien
+            sondern auch die zu schneidende Kurve bestimmt werden sollten. Zugleich gab er in diesem
+            Brief Konstruktionen für die Kurven der beiden Teile des Problems an.</note> proposé aux
+          Anglois par feu Mr. Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).
+            Leibniz hat dann das verallgmeinerte Trajektorienproblem Johann Bernoullis wiederum über
+            einen Brief an Abbé Conti von 1716.04.14 den englischen Mathematikern übermittelt. Es
+            sollte auf diese Weise als Testfall für deren vermutete Unfähigkeit zur Lösung
+            dienen.</note>. Mais comme cet ecrit ne pourra étre rendu public qu'en deux ou trois
+          mois d'ici: j'ay crû de ne pas mal faire de Vous en envoyer copie, à fin que Vous puissiez
+          attester en cas de besoin que Vous avez vû mes solutions avant que j'aye vû celles de Mr.
+            Taylor<note type="editorial">Taylor, Brook (1685-1731). Taylor, Brook, Solutio
+            problematis a Domino G. G. Leibnitio, Geometris Anglis nuper propositi in : Phil.
+            Trans., 30, no 354 (October, November and December 1717), London, 1720, pp. 695–701.
+          </note>, en cas que celles-ci paroissent plutot que les miennes. Par l'extrait de la
+          lettre de Mr. Taylor<note type="editorial">Taylor, Brook (1685-1731).</note>, que Vous
+          avez eu la bonté de me communiquer en Anglois<note type="editorial">Dieser Auszug aus
+            Taylors englischsprachigem Brief findet sich im Brief von Montmort an Johann I Bernoulli
+            von <rs key="B_1718-01-26_991170514995005501" type="letter">1718.01.26</rs>.</note> et
+          que j'ay fait traduire par un homme, qui lui meme n'entend pas trop bien ni l'Anglois ni
+          les Mathematiques<note type="editorial">Dieser Übersetzer ist bisher nicht
+            identifiziert.</note>, je comprens que sa solution doit differer beaucoup de la mienne,
+          si bien que je n'ai pas à craindre que l'on ne croye que ma solution ait eté tirée de
+          celle qu'il a publiée ou qu'il publiera dans les Transactions en cas qu'elle paroisse
+          avant la mienne. Car à ce que je voi il s'est plongé dans les fluxions secondes, qui ne
+          sont point necessaires pour cet exemple, quoique d'ailleurs il ait raison de blamer Mr.
+            Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> qui pretend qu'on peut
+          se passer des fluxions secondes dans tous les cas des trajectoires,<note type="editorial"
+            >Hermann, Jacob, Na. 023, Schediasma de Trajectoriis datae Seriei Curvis ad angulos
+            rectos occurrentibus: continens solutionem generalem Problematis in Actis Erud. 1698 p.
+            471 primum propositi et in Actis Anni superioris p. 226 iterati, in: AE Augusti 1717,
+            pp. 348.</note> non obstant que Lui meme s'en serve dans l'exemple de Mr. Leibnits<note
+            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note>, comme le remarque fort
+          bien Mr. Taylor<note type="editorial">Taylor, Brook (1685-1731).</note>. Je ne sçai si Mr.
+            Taylor<note type="editorial">Taylor, Brook (1685-1731).</note> aura reduit sa solution,
+          jusqu'aux quadratures, c'est à dire, si non seulement il aura trouvé une equation en
+          differences ou fluxions premieres, mais aussi qui soit telle que les indeterminées s'y
+          trouvent separées pour pouvoir la construire par le moyen des quadratures. Si sa solution
+          n'est pas dans ce degré de perfection, il ne peut pas se vanter d'avoir satisfait aux
+          conditions de Mr. Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm
+            (1646-1716).</note>. Vous pourez donc avertir Mr. Taylor<note type="editorial">Taylor,
+            Brook (1685-1731).</note>, que Vous avez mes constructions entre les mains, et qu'il ne
+          tient qu'à lui de Vous envoyer aussi ses deux solutions, à fin que Vous puissiez ensuite
+          les echanger en Lui envoyant les miennes et à moi les siennes. Je fus surpris de voir dans
+          les Actes de Leipsic du moi d'Aoust de l'année passée une methode pour les trajectoires
+          sous le nom de Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733). Hermann,
+            Jacob, Na. 023, Schediasma de Trajectoriis datae Seriei Curvis ad angulos rectos
+            occurrentibus: continens solutionem generalem Problematis in Actis Erud. 1698 p. 471
+            primum propositi et in Actis Anni superioris p. 226 iterati, in: AE Augusti 1717, pp.
+            348-352. </note>, qui est tout à fait la meme que celle de mon Neveu<note
+            type="editorial">Bernoulli, Nicolaus I (1687-1759).</note>; ce qui plus est il suit le
+          meme ordre dans l'operation, comme je l'ay conçû, en Vous communiquant cette methode dans
+          une lettre du 10. Juillet, que j'eus honneur de Vous ecrire,<note type="editorial">Brief
+            von Johann I Bernoulli an Montmort von <rs key="B_1717-07-10_991170514995305501"
+              type="letter">1717.07.10</rs>.</note> comme Vous trouverez, si Vous voulez prendre la
+          peine de chercher cette lettre-là, et de confronter ce que Vous y trouverez sur cette
+          matiere avec la regle que Mr. Herman<note type="editorial">Hermann, Jacob
+            (1678-1733).</note> donne dans les Actes du mois suivant<note type="editorial">Hermann,
+            Jacob, Na. 023, Schediasma de Trajectoriis datae Seriei Curvis ad angulos rectos
+            occurrentibus: continens solutionem generalem Problematis in Actis Erud. 1698 p. 471
+            primum propositi et in Actis Anni superioris p. 226 iterati, in: AE Augusti 1717, pp.
+            348-352.</note>. Il a tort de pretendre que cette regle s'etende universellement aux
+          courbes transcendentes aussi bien qu'aux <pb facs="1052005" n="2"/> algebriques; si cela
+          etoit nous n'aurions pas manqué mon Neveu<note type="editorial">Bernoulli, Nicolaus I
+            (1687-1759).</note> et moi, de nous en prevaloir avant Mr. Herman<note type="editorial"
+            >Hermann, Jacob (1678-1733).</note>. Je suis aussi du sentimemt de Mr. Taylor<note
+            type="editorial">Taylor, Brook (1685-1731).</note>, que la solution particuliere de Mr.
+            Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> de l'exemple dont il
+          s'agit est incomplete, en ce qu'il ne montre pas comment son equation est applicable aux
+          cas particuliers. Enfin je me moque du calcul terrible, que le bon Mr. Herman<note
+            type="editorial">Hermann, Jacob (1678-1733).</note> a eu la hardiesse d'entamer pour
+          reduire cet exemple en question qui est son quatrieme<note type="editorial">Hermann, Jacob
+            (1678-1733). Hermann, Jacob, Na. 023, Schediasma de Trajectoriis datae Seriei Curvis ad
+            angulos rectos occurrentibus: continens solutionem generalem Problematis in Actis Erud.
+            1698 p. 471 primum propositi et in Actis Anni superioris p. 226 iterati, in: AE Augusti
+            1717, pp. 351-352. </note> à une equation differentielle du premier degré, dans laquelle
+          on ne voit encore aucune apparence d'en pouvoir separer les indeterminées. Et Dieu sçait
+          s'il seroit jamais venu à bout de cette separation pour le cas particularissime de
+            <formula>m=\frac{1}{2}</formula>, auquel les courbes données sont des cycloides, s'il
+          n'avoit pas vu dans les Actes de 1697 ma construction de la synchrone,<note
+            type="editorial">Bernoulli, Johann, Op. XXXVII, Curvatura radii in diaphanis non
+            uniformibus, Solutioque Problematis a se in Actis 1696, p. 269, propositi, de invenienda
+            Linea Brachystochrona, id est, in qua grave a dato puncto ad datum punctum brevissimo
+            tempore decurrit, &amp; de curva Synchrona seu radiorum unda construenda, in: AE Maji
+            1697, pp. 206-211.</note> qui n'est autre chose que la trajectoire meme des cycloides,
+          comme je le remarque dans l'endroit cité. L'embarras du calcul de Mr. Herman<note
+            type="editorial">Hermann, Jacob (1678-1733).</note> se manifestera trop quand on le
+          comparera avec la simplicité de mes constructions. Je serai curieux de voir si les
+          solutions de Mr. Taylor<note type="editorial">Taylor, Brook (1685-1731).</note> sont
+          telles qu'on puisse determiner, comme par ma premiere, tous les cas auxquels les
+          trajectoires deviennent algebriques: ce seroit là un nouveau probleme, qui n'embarasseroit
+          pas peu Messrs. les soluteurs; mais pour Messrs. les Anglois, il ne faudra plus rien leur
+          proposer, puisque Mr. Taylor<note type="editorial">Taylor, Brook (1685-1731).</note> nous
+          asseure, que personne d'eux ne s'en mettra plus en peine; que sçait-on si Mr. Taylor<note
+            type="editorial">Taylor, Brook (1685-1731).</note>, en cas qu'il n'eut pas reussi, il
+          n'auroit pas voulû nous persuader, qu'il n'avoit jamais pris la peine de s'attacher à
+          nôtre probleme. Je suis tout à fait de Vôtre sentiment Monsieur, touchant le memoire que
+          je Vous ai envoyé contre celui que Mr. Keil<note type="editorial">Keill, John
+            (1671-1721).</note> avoit publié contre moi dans le Journal litteraire de la Haye.<note
+            type="editorial">[Text folgt].</note> Quoique Mr. Keil<note type="editorial">Keill, John
+            (1671-1721).</note> à cause de sa maniere d'ecrire peu honnete et choquante, meritat
+          bien que je ne le menageasse pas, et que je lui rendisse la pareille en le comblant
+          d'expressions picquantes, je n'ai pourtant jamais eu la pensée de publier ce memoire, ni
+          sous mon nom, ni sous telle forme que je Vous l'ay envoyé; car Mr. Keil<note
+            type="editorial">Keill, John (1671-1721).</note> qui ne cherche qu'à troubler mon repos
+          n'aura pas l'honneur que je Lui reponde jamais en personne. Ce memoire ne contenoit donc
+          que la matiere à repondre que je voulois fournir à celuy qui voudra me preter sa plume,
+          comme j'ay fait à peu prés à l'egard de cet inconnu<note type="editorial">Dieser "inconnu"
+            war bekanntlich Johann I Bernoulli selbst. Er hatte den Text, in welchem er seine
+            Verdienste bei der Erfindung und dem Ausbau des Leibnizschen "calculus" gegenüber den
+            Engländern, insbesondere gegen John Keill dokumentieren wollte, in seinem Brief an
+            Christian Wolff von <rs key="B_1716-04-08_991170516538105501" type="letter"
+              >1716.04.08</rs> übermittelt mit der Bitte, diesen Text redaktionell als den eines
+            anonymnen Autors bearbeitet in den Acta Eruditorum zu publizieren.</note> qui a pris la
+          peine de repondre pour moi dans les Actes de Leipsic de l'année 1716 au mois de
+            Juillet;<note type="editorial">[Bernoulli, Johann I], Epistola pro eminente mathematico,
+            Dn. Johanne Bernoullio, contra quendam ex Anglia antogonistam scripta, in: AE Julii
+            1716, pp. 296-315.</note>
+          <note type="editorial">Die folgende Passage hat Montmort an Newton übermittelt. Siehe
+            Brewster, David, Memoirs of the Life, Writings, and Discoveries of Sir Isaac Newton,
+            vol. 2, Edinburgh 1855, p. 439.</note>je ne m'en etois melé aucunement, ni de la forme
+          qu'il vouloit donner à sa reponse, ni des expressions dont il se servoit et que je
+          n'approuve pas toutes; il m'a qualifié de titres que je n'ai jamais eu la vanité
+          d'ambitionner, avec cela il a turlupiné Mr. Keil<note type="editorial">Keill, John
+            (1671-1721).</note> d'une maniere qui ne peut qu'aigrir son esprit trop sujet à prendre
+          feu: cela ne me plaisoit pas, j'aurois souhaité que mon Apologiste eut dit les choses
+          simplement et nettement sans toucher aux personalitez, ce que je Lui aurais recommandé
+          avec empressement, s'il m'avoit communiqué son dessein, lorsqu'il m'offrit par une lettre
+            obligeante<note type="editorial">[Text folgt].</note> de vouloir defendre ma cause
+          contre les insultes <pb facs="1052006" n="3"/> de Keil<note type="editorial">Keill, John
+            (1671-1721).</note> me priant seulement de Lui envoyer les preuves et les documens
+          autentiques, lesquels je ne pouvois pas Lui refuser.<note type="editorial">Hier endet die
+            von Montmort an Newton übermittelte Passage.</note> Pour ce memoire en question Vous en
+          ferez ce qu'il Vous plaira, car je n'oserois Vous donner la peine de le dresser d'une
+          façon propre à voir le jour avec la forme que Vous recommendez et que j'approuve
+          entierement; il me semble cependant qu'il ne seroit pas mal que cet ecrit paroisse dans la
+          meme langue et dans le meme journal où on a vû la critique de Mr. Keil<note
+            type="editorial">Keill, John (1671-1721).</note>, sans cela il faudra me contenter que
+          quelqu'un se trouve, qui voudra faire ma reponse en Latin pour la publier dans les Actes,
+          en ce cas je Vous promets, que je Lui recommenderai la moderation, quoique je ne puisse
+          pas asseurer, que je serai toujours le maitre de sa plume, comme peutetre Mr. Newton<note
+            type="editorial">Newton, Isaac (1643-1727).</note> ne l'est pas de celle de Mr.
+            Keil<note type="editorial">Keill, John (1671-1721).</note>, ou au moins ne veut pas
+          l'etre à l'egard de moi.</p>
+        <p>Quant à ce, que Mr. Keil<note type="editorial">Keill, John (1671-1721).</note> a ecrit à
+          Mr. Taylor<note type="editorial">Taylor, Brook (1685-1731).</note> sur mon chapitre dont
+          celuici Vous a communiqué l'extrait de propos deliberé, et que Vous avez pris la peine de
+          me copier dans Vôtre lettre<note type="editorial">Brief von Montmort an Johann I Bernoulli
+            von <rs key="B_1718-01-26_991170514995005501" type="letter">1718.01.26</rs>.</note>, par
+          où je vois que Mr. Keil<note type="editorial">Keill, John (1671-1721).</note> traitte de
+            <hi rend="u">trifles</hi>, c'est à dire (selon la pensée de mon interprete) de vetilles
+          ou de bagatelles, ce que j'ay publié jusqu'à present. Vous pouvez conter Monsieur, et je
+          Vous prie meme de l'ecrire en reponse à Mr. Taylor<note type="editorial">Taylor, Brook
+            (1685-1731).</note>, que Mr. Keil<note type="editorial">Keill, John (1671-1721).</note>
+          ne viendra pas à bout de son dessein, quand il veut me chagriner par un mepris simulé,
+          qu'il temoigne pour moi ou pour mes productions, au moins qu'il fait semblant de temoigner
+          presentement, je n'en suis pas plus touché que de ses eloges, dont il m'avoit honoré au
+          commencement dans le meme Journal literaire, peutetre pour m'attirer dans son parti contre
+          Mr. Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note>: Les
+          eloges et les injures qui viennent d'une personne de peu de reputation me sont
+          indifferentes, ainsi Mr. Keil<note type="editorial">Keill, John (1671-1721).</note> a beau
+          faire, il n'aura pas le plaisir de me voir en inquietude, à cause de sa mauvaise humeur
+          contre moi: je fais plus de cas du jugement impartial des sçavans, qui joignent
+          l'honneteté à leur Erudition dans le nombre desquels je Vous comte Monsieur
+          principalement; ainsi l'estime dont Vous m'honorez m'est infiniment plus chere que le
+          mepris de Mr. Keil<note type="editorial">Keill, John (1671-1721).</note> ne m'est facheux,
+          je me fie aussi beaucoup sur la droiture de coeur de Mr. Newton<note type="editorial"
+            >Newton, Isaac (1643-1727).</note>, qui en jugeant favorablement de mes decouvertes
+          n'aura pas trahi sa conscience. La disgrace que Mr. Keil<note type="editorial">Keill, John
+            (1671-1721).</note> a jetté sur moi, doit aller bien loin, puisque plutot que d'avouer
+          que je me suis appliqué à quelque chose d'utile et d'important, il aime mieux dire, que la
+          partie des Princ. philos. de Mr. Newton<note type="editorial">Newton, Isaac
+            (1643-1727).</note>, que j'ay un peu examiné en y trouvant <pb facs="1052007" n="4"/>
+          des erreurs et dont il croit que j'ay etudié à fond la matiere, il aime, dis-je, mieux
+          dire, que cette seule partie de la Philosophie de Mr. Newton<note type="editorial">Newton,
+            Isaac (1643-1727).</note> est de nulle importance, ce sont les sections 2.<hi rend="sup"
+            >de</hi>, 3.<hi rend="sup">me</hi> et 4.<hi rend="sup">me</hi> du livre second, où Mr.
+            Newton<note type="editorial">Newton, Isaac (1643-1727).</note> traitte des mouvemens des
+          corps dans des milieux resistans<note type="editorial">Im Manuskript steht
+            "risistans".</note>, ce dont la recherche lui doit avoir paru des plus epineuses et
+          partant d'assez grande consequence, d'autant qu'il la nomme Lui meme <hi rend="u"
+            >perplexas disquisitiones</hi>, voyez la derniere proposition de la section 4.<hi
+            rend="sup">me</hi> du second livre p. 259.<note type="editorial">[Text folgt].</note>
+          Mais on voit bien que si je m'etois attaché à une autre partie de cette philosophie, Mr.
+            Keil<note type="editorial">Keill, John (1671-1721).</note> n'auroit pas manqué de dire,
+          qu'elle seule seroit de nulle utilité; et pourquoi cela? parcequ'il ne m'aime pas; mais
+          pourquoy ne m'aime-t-il pas? parceque je ne suis pas Anglois; il est cependant fort
+          plaisant de le voir se contredire si grossierement, en ce que dans le meme temps, qu'il
+          appelle cette matiere de <hi rend="u">nulle importance</hi>, il en emprunte un probleme et
+          me le propose comme quelque chose d'utile si je voulois <hi rend="u">appliquer ma science
+            à ce qui a de l'utilité</hi>: c'est la proposition inverse comme Vous dites<note
+            type="editorial">Im Manuskript steht "ditez".</note>, de la 10, p. 232 de Mr.
+            Newton<note type="editorial">Newton, Isaac (1643-1727).</note>:<note type="editorial"
+            >[Text folgt].</note> or c'est justement celle où j'ay montré que Mr. Newton<note
+            type="editorial">Newton, Isaac (1643-1727).</note> a commis des bevües; J'ai donc fait
+          tout à la fois un travail utile et inutile. Pour ce qui est du defi en me proposant cette
+          inverse, je voudrois bien sçavoir avant que de m'y attacher, si Mr. Keil<note
+            type="editorial">Keill, John (1671-1721).</note> Lui meme ou quelqu'autre de ses
+          compatriotes a resolu ce probleme jusqu'à la construction, car si par resoudre il n'entend
+          autre chose que trouver une equation differentielle du second ou 3.<hi rend="sup">me</hi>
+          degré, je l'ay resolu il y a longtemps dans les Memoires de 1711<note type="editorial"
+            >Bernoulli, Johann, Op. LXXXVIII, Extrait d'une Lettre de M. Bernoulli, écrite de Basle
+            le 10. Janvier 1711, touchant la maniere de trouver les forces centrales dans les
+            milieux resistans en raison composée de leur densités &amp; des puissances quelconques
+            des vitesses du mobile. Addition de M. (Nicolas) Bernoulli, Neveu de l'Auteur de ce
+            Memoire-cy, in: Mém. Paris 1711 (1714), pp. 47-53; 53-56.</note> et dans les Actes de
+          Leipsic de 1713<note type="editorial">Bernoulli, Johann, Op. XC, De Motu Corporum gravium,
+            Pendulorum, &amp; Projectilium in mediis non resistentibus &amp; resistentibus supposita
+            Gravitate uniformi &amp; non uniformi atque ad quodvis punctum datum tendente, et de
+            variis aliis huc spectantibus, Demonstrationes Geometricae. Continuatio Demonstrationum,
+            quarum initium Mensi superiori pag.77 seqv. insertum est, in: AE Februarii 1713, pp.
+            77-95 und AE Martii 1713, pp. 115-132.</note>. Mais si Mr. Keil<note type="editorial"
+            >Keill, John (1671-1721).</note> exige une solution parfaite, c'est à dire ou
+          algebraique, si la chose le permet, ou reduite aux differences premieres et aux
+          indeterminées separéez propre à construire par les quadratures, il faut que Mr. Keil<note
+            type="editorial">Keill, John (1671-1721).</note> nous convainque auparavant, que dans ce
+          sens il a resolu ce probleme, autrement on Lui dira: <hi rend="u">Quaerit Delirus quod non
+            respondet Homerus<note type="editorial">Homer (ca. 8. Jh. v. Chr.).</note></hi>.<note
+            type="editorial">[Text folgt].</note> Mais en voilà assez sur le chapitre de Mr.
+            Keil<note type="editorial">Keill, John (1671-1721).</note>.<note type="editorial">Der
+            Text ist von "Je serai curieux..." bis hierher am Rand mit Bleistift
+            gekennzeichnet.</note></p>
+        <p>Oserois-je Vous demander Monsieur, si Vous avez ecrit à Mr. Newton<note type="editorial"
+            >Newton, Isaac (1643-1727).</note>, comme Vous Vous en etes chargé, ce que je Vous avois
+          marqué touchant les sentiments que j'ai à son egard: j'auray du plaisir à apprendre sa
+          reponse là dessus. Ce sera aussi une obligation que je Vous aurai, si Vous effectuez, ce
+          que Vous m'offrez de me faire part de ce que l'Histoire des fluxions de Mr. Raphson<note
+            type="editorial">Raphson, Joseph (1648-1715). Raphson, Joseph, The History of Fluxions,
+            Shewing in a Compendious Manner the First Rise Of, and Various Improvements Made in That
+            Incomparable Method. by (the Late) Mr. Joseph Raphson, London (Pearson) 1715 oder
+            Raphson, Joseph, Historia fluxionum sive tractatus originem &amp; progressum peregregiæ
+            istius methodi brevissimo compendio (et quasi synopticè) exhibens. Per Josephum
+            Raphsonum A. M. &amp; R. S. S., Londini (Pearson) 1715.</note> et la nouvelle edition de
+          l'Optique de Mr. Newton<note type="editorial">Newton, Isaac (1643-1727). Newton, Isaac,
+            Opticks or, a treatise of the reflections, refractions, inflections and colours of
+            light. The second edition, with additions, London (W. and J. Innys) 1718 oder Newton,
+            Isaac, Optice sive de reflexionibus, refractionibus, inflexionibus &amp; coloribus
+            lucis, Libri Tres. Authore Isaaco Newton, Equite Aurato. Latine reddidit Samuel Clarke,
+            S.T.P. Editio Secunda, auctior. Londini (G. &amp; J. Innys) 1719.</note> peuvent
+          contenir de curieux et de nouveau: Je me figure bien que les non-Anglois ne feront pas
+          grande figure dans l'Histoire des fluxions: Mon fils<note type="editorial">Bernoulli,
+            Nicolaus II (1695-1726).</note> est de retour ici depuis environ deux mois, il s'etoit
+          arreté à Strasbourg pres de 4 semaines ayant eu la fievre dont il est gueri, il se
+          recommende à l'honneur de Vos bonnes graces; il a aussi apporté les microscopes pour mon
+            Neveu<note type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> à qui j'en ai dejà
+          donné avis, et Vôtre Analyse sur les hazards<note type="editorial">Montmort, Pierre Remond
+            de, Essay d’analyse sur les jeux de hazard, Seconde edition, revüe &amp; augmentée de
+            plusiers lettres, Paris (J. Quillau) 1713.</note> pour Mr. Iselin<note type="editorial"
+            >Iselin, Jacob Christoph (1681-1737).</note>, auquel il la delivra d'abord en main
+          propre, et qui m'a chargé de Vous en faire ses remerciemens, en attendant qu'il trouve
+          l'occasion de s'en acquiter Lui meme par une lettre. Il n'y a point de voye plus<note
+            type="editorial">Der folgende Text findet sich auf dem oberen und dem linken Rand von p.
+            1 des Briefes.</note> courte pour ecrire de chez Vous à mon Neveu<note type="editorial"
+            >Bernoulli, Nicolaus I (1687-1759).</note>, que celle par Turin, il n'y a qu'à mettre
+          tout court <hi rend="u">à Monsr. Bernoulli<note type="editorial">Bernoulli, Nicolaus I
+              (1687-1759).</note> Professeur des Mathematiques à Padoue par Turin</hi>, c'est de
+          cette route, que mon fils<note type="editorial">Bernoulli, Nicolaus II (1695-1726).</note>
+          etant à Paris s'est servi pour ecrire pour Venize et Padoue. En finissant j'ay l'honneur
+          de Vous asseurer que je suis avec le respect et la reconnoissance que je Vous dois
+          Monsieur Vôtre tres-humble et tres obeissant Serviteur J. Bernoulli. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

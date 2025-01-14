@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--pers_DE-588-140736662 Christ, Franz 〈1688-1744〉 --><!--pers_DE-588-118639749 Huygens, Christiaan 〈1629-1695〉 --><!--pers_DE-588-118576682 Malebranche, Nicolas 〈1638-1715〉 --><!--pers_DE-588-117586765 Moivre, Abraham de 〈1667-1754〉 --><!--pers_DE-588-117584401 Nicole, François 〈1683-1758〉 --><!--pers_DE-588-102079056 Renau D'Elicagaray, Bernard 〈1652-1719〉 --><!--pers_DE-588-117526789 Reyneau, Charles René 〈1656-1728〉 --><!--
-            Fesch -> Basler, war in Paris und ist jetzt wieder zurück in Basel.
-
-            Madame de Monmort -> Montmort-Romicourt -> Apoil de Romicourt, Françoise Madeleine pers_DE-588-1155965140
-
-            Mr. de Luci -> Freund von Nic. I. Faesch grüsst ihn.
-
-            Geometres -> ihnen geht es gut. Stehen im Zusammenhang mit Malebranche und Renau
-
-            Hogguer -> wohnt im hôtel de Boulogne rue de Jouy, Faubourg <abbr>st.</abbr> Antoine. Ist ein Freund von Nic. I. Montmort soll ihm ein bestelltes Mikroskop übergeben. Högger zahlt das Geld an Nicole.
-            Zu den Högger siehe: \\itsc-pg2.storage.p.unibas.ch\beol-data$\~snapshot\NDMP_AUTO_SNAPSHOT60080\Bernoulli_Varignon\Dossiers_Personen Dossier Högger
-
-            commissaires -> in England, entscheiden im Streit zwischen Newton und Leibniz.
-            
-            Sr. Sauvage ->
-            
-            Oncle -> Bernoulli, Johann 1667-1748 pers_DE-588-118509969
-            
-            Leibnitz -> Leibniz, Gottfried Wilhelm, 1646-1716 pers_DE-588-118571249
-
-         --><!--_____________--><TEI xml:id="B_1715-01-22_991170517021305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1715-01-22_991170517021305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -220,22 +199,189 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2024-11-13" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
+      <change when="2024-09-20" who="RG">pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
       <change when="2022-07-14" who="MS">Briefstruktur, IIIF-Manifest, Personen, Orte ausgezeichnet</change>
       <change when="2020-05-06" who="MS">Mathe getagt, Platzhalter eingefügt, Personenauflistung</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--pers_DE-588-140736662 Christ, Franz 〈1688-1744〉 -->
+<!--pers_DE-588-118639749 Huygens, Christiaan 〈1629-1695〉 -->
+<!--pers_DE-588-118576682 Malebranche, Nicolas 〈1638-1715〉 -->
+<!--pers_DE-588-117586765 Moivre, Abraham de 〈1667-1754〉 -->
+<!--pers_DE-588-117584401 Nicole, François 〈1683-1758〉 -->
+<!--pers_DE-588-102079056 Renau D'Elicagaray, Bernard 〈1652-1719〉 -->
+<!--pers_DE-588-117526789 Reyneau, Charles René 〈1656-1728〉 -->
+<!--
+            Fesch -> Basler, war in Paris und ist jetzt wieder zurück in Basel.
+
+            Madame de Monmort -> Montmort-Romicourt -> Apoil de Romicourt, Françoise Madeleine pers_DE-588-1155965140
+
+            Mr. de Luci -> Freund von Nic. I. Faesch grüsst ihn.
+
+            Geometres -> ihnen geht es gut. Stehen im Zusammenhang mit Malebranche und Renau
+
+            Hogguer -> wohnt im hôtel de Boulogne rue de Jouy, Faubourg <abbr>st.</abbr> Antoine. Ist ein Freund von Nic. I. Montmort soll ihm ein bestelltes Mikroskop übergeben. Högger zahlt das Geld an Nicole.
+            Zu den Högger siehe: \\itsc-pg2.storage.p.unibas.ch\beol-data$\~snapshot\NDMP_AUTO_SNAPSHOT60080\Bernoulli_Varignon\Dossiers_Personen Dossier Högger
+
+            commissaires -> in England, entscheiden im Streit zwischen Newton und Leibniz.
+            
+            Sr. Sauvage ->
+            
+            Oncle -> Bernoulli, Johann 1667-1748 pers_DE-588-118509969
+            
+            Leibnitz -> Leibniz, Gottfried Wilhelm, 1646-1716 pers_DE-588-118571249
+
+         -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1038775/manifest"/>
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1038776" n="1"/> <pb facs="1038777" n="2"/> <pb facs="1038778" n="3"/> <pb facs="1038779" n="4"/> <pb facs="1038780" n="5"/>
-<opener>Voyés ma lettre<!-- brieftag --> du 1. 9bre 1714.
-            <lb/><salute>Monsieur.</salute></opener>
-<p>Vôtre lettre<!-- brieftag --> du 27. decembre dernier m'a fort rejoui en m'apprenant le bon état de Vôtre santé et en m'annonçant l'agreable nouvelle que Vous me preparés une autre lettre<!-- brieftag --> longue au moins de 18 pages; quel plaisir ne sera ce pour moi de recevoir une lettre<!-- brieftag --> qui me fournira tant de matieres à m'occuper agreablement! J'espere y trouver beaucoup de belles choses, et une ample reponse<!-- brieftag --> à mes deux lettres<!-- brieftag --> du 28<hi rend="#sup">e</hi> Aout et 1<hi rend="#sup">er</hi> 9bre de l'année passée. Je Vous remercie par avance de la peine que Vous allés Vous donner d'écrire une si longue lettre<!-- brieftag -->. Je suis faché que Vous n'ayés pas rencontré <abbr>Mr.</abbr> <rs key="pers_DE-588-140736662" type="person">Christ</rs> à <rs key="place_GEO-2988507" type="place">Paris</rs>, quoiqu'il s'y soit encore trouvé aprés le tems de Vôtre arrivée, car il n'en est parti que le 15<hi rend="#sup">e</hi> decembre; je suis sûr que s'il avoit sçû Vôtre arrivée et Vôtre demeure, il n'auroit pas manqué de Vous aller voir pour avoir l'honneur de Vôtre connoissance et pour Vous donner des marques de la parfaite estime qu'il a comme un alter ego pour Vôtre personne. Il a aussi cherché <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> dans plus de dix endroits sans le trouver, mais je croi qu'il y a un peu de sa faute; peut étre <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> a été comme Vous le chercher chés le <abbr>Sr.</abbr> Sauvage<!-- persontag -->, chés qui il n'a pas demeuré longtemps; il auroit dû en quittant le logis de <abbr>Mr.</abbr> Sauvage<!-- persontag --> y laisser l'adresse de sa nouvelle demeure, et je croi que s'il l'auroit fait, Vous ou <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> l'auriés trouvé. <abbr>Mr.</abbr> Fesch<!-- persontag --> qui est aussi retourné chés nous depuis peu, Vous fait ses tres humbles remerciments du bon accueil que Vous lui avés fait à <rs key="place_GEO-2988507" type="place">Paris</rs>; il Vous prie aussi de l'excuser de ce qu'il est parti de <rs key="place_GEO-2988507" type="place">Paris</rs> sans aller prendre congé de Vous, la fievre l'ayant arreté chés lui jusqu'au jour de son depart; il fait les mêmes remerciments à <abbr>Mad.</abbr> de <rs key="pers_DE-588-1155965140" type="person">Monmort</rs>. laquelle il assure de ses tres humbles respects. Il me prie aussi de faire ses complimens à mon ami <abbr>Mr.</abbr> de Luci<!-- persontag -->, dont il me dit avoir reçû une fois une visite. Vous me dites que <abbr>Mr.</abbr> le <abbr>Chev.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> tient toujours bon, aussi bien que <abbr>R. P.</abbr> <rs key="pers_DE-588-118576682" type="person">Malebranche</rs> et plusieurs autres Geometres<!-- persontag -->, surtout le Pere <rs key="pers_DE-588-117526789" type="person">Reyneau</rs>; en verité, j'ai pitié de ce dernier, c'est un bon homme qui ne voit pas clair, il faut bien qu'il ait des idées fort obscures puisqu'il n'a point été ébranlé par la derniere lettre<!-- brieftag --> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. Pour le <abbr>P.</abbr> <rs key="pers_DE-588-118576682" type="person">Malebranche</rs>, je croi que les speculations metaphysiques et ses autres meditations spirituel les ne lui permettent pas d'approfondir cette matiere comme il faut; et mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, qui d'ailleurs estime infiniment et selon son merite le <abbr>R. P.</abbr> <rs key="pers_DE-588-118576682" type="person">Malebranche</rs>, ne veut pourtant pas le reconnoitre pour assés bon Geometre, qui puisse passer pour juge competent de cette dispute. Pour le <abbr>Chev.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> je croi que la trop grande prévention qu'il a pour sa theorie l'empeche de voir la verité. Le meilleur moyen de convertir ces Messieurs<!-- persontag --> est, ce me semble, de les prier qu'ils voulussent prendre la peine de lire avec application la theorie<!-- werktag --> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, surtout les <abbr>chap.</abbr> 3 et 5.<hi rend="#sup">e</hi><!-- werktag --> Je serois surpris étrangement s'ils trouvoient seulement le moindre mot à redire dans la methode de determiner les vitesses des vaisseaux qui est enseignéedans ces deux chapitres<!-- werktag -->. Leur erreur vient seulement de ce que pour trouver la vitesse d'un vaisseau, dont la route est oblique à la direction de la force du vent, ils imaginent deux vents qui poussent le vaisseau dans deux directions qui sont perpendiculaires l'une à l'autre, et qu'ils supposent que le vaisseau trouve une resistance reelle dans l'eau suivant ces deux directions, au lieu qu'il ne souffre la resistance de l'eau que dans la direction de la route. Or n'y a til pas une methode de determiner la vitesse d'un vaisseau poussé obliquement sans avoir besoin de supposer deux vents verticaux l'un à l'aut re, et sans courir le risque de confondre deux resistances imaginaires avec une reelle? Il me semble que cela se peut faire facilement en cette maniere: Soit <formula>AB</formula> la voile d'un vaisseau <formula>D</formula>, <formula>CD</formula> la direction de la force mouvante du vent, la quelle est toujours perpendiculaire à la voile, <formula>DF</formula> la route du vaisseau; il s'agit de trouver la proportion qu'il y a entre la vitesse du vaisseau allant suivant <formula>DF</formula>, et entre la vitesse que le vaisseau auroit s'il alloit suivant <formula>DE</formula>, qui est la direction de la force du vent. Il est clair que la voile pousse directement le vaisseau allant suivant <formula>DE</formula>, et qu'elle pousse obliquemment le vaisseau allant suivant <formula>DF</formula>; or ces Messieurs<!-- persontag --> qui ne peuvent pas nier que les forces, avec lesquelles une même puissance agit sur un corps obliquemment, sont en raison des sinus des angles d'incidence, seront contraints d'avouer que la force de la voile qui agit sur le vaisseau suivant <formula>DE</formula> peut être exprimée par la droite <formula>DE</formula>, pendant que la force de la voile qui agit sur le vaisseau suivant <formula>DF</formula> est exprimée par la droite <formula>DF</formula>, la quelle en prenant <formula>DE</formula> pour le sinus total est le sinus de l'angle <formula>DEF</formula> ou <formula>FDB</formula>. Donc les resistances de l'eau, lesquel les doivent étre égales aux forces mouvantes, pourront aussi étre exprimées par les lignes <formula>DE</formula> et <formula>DF</formula>; donc les resistances de l'eau étant comme les quarrés des vitesses, les vitesses seront exprimées par <formula>\sqrt{DE}</formula> et <formula>\sqrt{DF}</formula>, ainsi que <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Huyguens</rs> l'a soutenu, et non par les droites <formula>DE</formula> et <formula>DF</formula> elles mêmes, comme <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> le prétend. Je Vous prie de leur expliquer cette demonstration ou bien les deux chapitres<!-- werktag --> susdits 3 et 5 de la theorie<!-- werktag --> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>; et si aprés tout cela ils persistent dans le même sentiment, il faut desesperer de leur conversion.</p>
-<p>Je Vous prie de remettre desormais à <abbr>Mr.</abbr> Hogguer<!-- persontag -->, qui demeure à l'hôtel de Boulogne<!-- orttag? --> rue de Jouy<!-- orttag -->, <rs key="place_WEI-faustantoineparis" type="place">Faubourg <abbr>st.</abbr> Antoine</rs><!-- orttag -->, ce que Vous avés à m'envoyer; ce <abbr>Mr.</abbr><!-- persontag --> est fort de mes amis et ne manquera pas de me le faire tenir aussitôt qu'il sera possible; je le prierai aussi de Vous rembourser l'argent que le microscope coutera. <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> est à present à <rs key="place_GEO-2910831" type="place">Hannover</rs> et il n'y a point d'apparence qu'il ira en <rs key="place_VER-englan" type="place">Angleterre</rs>; mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a reçû ces jours passés une lettre<!-- brieftag --> de lui, dans laquelle il lui a mandé que la Societé Royale<!-- korporationtag --> d'<rs key="place_VER-englan" type="place">Angleterre</rs> prétendoit n'avoir pas decidé l'affaire en question, mais seulement publié le rapport<!-- werktag --> des commissaires<!-- persontag -->, lequel rapport<!-- werktag --> ne devoit pas étre pris pour une decision; c'est peut etre en cette excuse que consiste la revision du procés, dont on Vous a parlé. Ce qui est vrai est que <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>, pour assurer son droit, publiera de son coté toutes les lettres<!-- brieftag --> qui ont été écrites de part et d'autre sur cette matiere; mais je croi qu'il passera beaucoup de temps avant que ce commercium epistolicum<!-- werktag --> paroitra. Il y a longtemps que je n'ai point de nouvelles de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>; quand Vous lui écrirés, je Vous prie de Vous informer s'il a reçû une tres longue lettre<!-- brieftag --> que je lui écrivis au commencement du mois d'Aout dernier, et dans laquel le je lui avois communiqué la solution<!-- werktag --> du Probléme des jettons, qu'il m'avoit proposé. Voici un Probléme que je Vous propose, dont Vous pourrés chercher la solution, quand Vous n'aurés rien à faire: Trouver une formule generale, telle que Vous en avés donné une page 29<!-- werktag -->, pour exprimer combien il y a de hazards pour que plusieurs joueurs, par exemple 3, Pierre, Paul et Jean, tirant chacun entre un nombre de cartes quelconque composé d'un nombre égal d'as, de deux, de trois, <abbr>etc.</abbr> un certain nombre de cartes à volonté, Pierre en tire tant de simples, tant de doubles, tant de triples, <abbr>etc.</abbr>, Paul tant, et Jean tant; j'ai eu la curiosité il y a quelque temps de chercher la solution de ce cas particulier: Trois joueurs tirent entre 36 cartes, dont il y a toujours 4 d'une même espece, ainsi qu'il y a en tout 9 differentes especes, chacun cinq cartes; Pierre parie que chacun de ces trois joueurs tirera cinq cartes simples, Paul soutient le contraire. J'ai trouvé que leurs sorts sont comme 834636288 et 18517691707, c'est à dire environ comme 1 et 22. Je n'ai point fait de decouvertes depuis long temps qui meritent de Vous étre communiquées; voici pourtant un theoréme que Vous trouverés curieux, et qui seroit fort utile à celui qui voudroit entreprendre de nouveau la construction des logarithmes. La difference des logarithmes de deux nombres qui ont entre eux une raison presque d'égalité se trouve de fort prés par cette regle: Il faut multiplier ce nombre 1, 158118616 .... par la difference des cubes des nombres donnés, et diviser le produit par le cube de la somme (ou trois fois par la somme) des nombres donnés. Cette regle sert à trouver fort exactement les logarithmes de tous les nombres qui sont au dessus de 10, et ayant ceux ci, on a aussi les logarithmes des nombres qui sont au dessous de 10. Par <abbr>ex.</abbr> le logarithme de 10 étant donné sçavoir 1,000000000, pour trouver celui de 11, il faut multiplier 1,158118616... par 331 et diviser le produit 383,337261896 trois fois par 21, le quotient 0,041392642... sera la difference entre les logarithmes de 11 et de 10 à une unité prés dans la 8.<hi rend="#sup">e</hi> figure seulement. Apparemment ni mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> ni moi irons à <rs key="place_GEO-3171728" type="place">Padoue</rs>; quoiqu'il en soit, nul eloignement m'empechera d'étre comme je suis sincerement,</p> <closer><salute>Monsieur, Vôtre <abbr>etc.</abbr></salute> <dateline><date when="1715-01-22">22 <abbr>Jan.</abbr> 1715.</date></dateline></closer>
+<pb facs="1038776" n="1"/> 
+  <opener>
+    <lb/>Voyés ma <rs key="B_1714-11-01_991170517021505501" type="letter">lettre</rs> du 1. 9bre 1714.
+  </opener>
+  <opener>
+    <salute>
+      <lb/>Monsieur.
+    </salute>
+  </opener>
+<p>
+  <lb/>Vôtre <rs key="B_1714-12-27_991170517021405501" type="letter">lettre</rs> du 27. decembre dernier m'a fort rejoui en m'apprenant le bon
+  <lb/>état de Vôtre santé et en m'a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>onçant l'agreable nouvelle, que Vous me pre<pc type="hyphenation">-</pc><lb break="no"/>parés une autre <rs type="letter">lettre</rs> longue au moins de 18 pages; quel plaisir ne sera ce
+  <lb/>pour moi de recevoir une <del/><rs type="letter">lettre</rs> qui me fournira<del> beaucoup</del> <add>tant</add> de matieres
+  <lb/>à m'<del/>occuper agreablement! J'espere y trouver beaucoup de belles choses, et une
+  <lb/>ample <rs type="letter">reponse</rs> à mes deux <rs key="B_1714-08-28_991170517021605501 B_1714-11-01_991170517021505501" type="letters">lettres</rs> du 28<hi rend="sup">e</hi> Aout et 1<hi rend="sup">er</hi> 9bre de l'année passée.
+  <lb/>Je Vous remercie par avance de la peine que Vous allés Vous donner d'écrire
+  <lb/>une si longue <rs type="letter">lettre</rs>. Je suis faché que Vous n'ayés pas rencontré <abbr>Mr.</abbr> <rs key="pers_DE-588-140736662" type="person">Christ</rs> à
+  <lb/><rs key="place_GEO-2988507" type="place">Paris</rs>, quoiqu'il s'y soit encore trouvé aprés <add>le tems de</add> vôtre arrivée, car il n'en est parti que
+  <lb/>le 15<hi rend="sup">e</hi>. decembre; je suis sûr que s'il avoit sçû Vôtre arrivée et Vôtre demeure,
+  <lb/>il n'auroit pas manqué de Vous aller voir pour avoir l'honneur de vôtre
+  <lb/>co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissance et pour Vous donner des marques de la parfaite estime
+  <lb/>qu'il a co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un alter ego pour vôtre personne. Il a aussi cherché
+  <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs><del/> dans plus de dix endroits sans le trouver, mais je croi qu'<pc type="hyphenation"></pc>
+  <lb break="no"/>il y a un peu de sa faute;<del/> peut étre <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> a été
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous le chercher chés le <abbr>Sr.</abbr> <rs type="person">Sauvage</rs>, chés qui il n'a pas demeuré
+<pb facs="1038777" n="2"/>
+  <lb/>longtemps; il auroit dû en quittant le logis de <abbr>Mr.</abbr> <rs type="person">Sauvage</rs> y laisser
+  <lb/>l'adresse de sa nouvelle demeure, et je croi que s'il l'auroit fait,
+  <lb/>Vous ou <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> l'auriés trouvé. <abbr>Mr.</abbr> <rs type="person">Fesch</rs> qui est aussi retourné
+  <lb/>chés nous depuis peu <del/>, Vous fait ses tres humbles remerciments du
+  <lb/>bon accueil que Vous lui avés fait à <rs key="place_GEO-2988507" type="place">Paris</rs>; il Vous prie aussi de l'ex<pc type="hyphenation">-</pc><lb break="no"/>cuser de ce qu'il est parti de <rs key="place_GEO-2988507" type="place">Paris</rs> sans aller prendre congé de Vous, la
+  <lb/>fievre l'ayant arreté chés lui jusqu'au jour de son depart; il<del/>
+  <lb/>fait les mêmes remerciments à <abbr>Mad.</abbr> de <rs key="pers_DE-588-1155965140" type="person">Monmort</rs>. laquelle il assure
+  <lb/>de ses tres humbles respects. Il me prie aussi de faire ses complimens
+  <lb/>à mon ami <abbr>Mr.</abbr> de <rs type="person">Luci</rs>, dont il me dit avoir reçû une fois une visite.
+  <lb/><del/>Vous me dites que <abbr>Mr.</abbr> le <abbr>Chev.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> tient toujours
+  <lb/>bon, aussi bien que <abbr>R. P.</abbr> <rs key="pers_DE-588-118576682" type="person">Malebranche</rs> et plusieurs autres <rs type="persons">Geometres</rs>, sur<pc type="hyphenation"></pc>
+  <lb break="no"/>tout le Pere <rs key="pers_DE-588-117526789" type="person">Reyneau</rs>; en verité, j'ai pitié de ce dernier, c'est un bon ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui
+  <lb/>ne voit pas clair, il faut bien qu'il ait des idées fort obscures puisqu'il n'a
+  <lb/>point été ébranlé par la derniere <rs type="letter">lettre</rs> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. Pour le <abbr>P.</abbr> <rs key="pers_DE-588-118576682" type="person">Male<pc type="hyphenation">-</pc><lb break="no"/>branche</rs>, je croi que les speculations metaphysiques <add>et ses autres meditations spirituelles</add> ne lui permettent pas
+  <lb/>d'approfondir cette matiere co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il faut;<del> mon</del> <add>et mon</add> <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, qui d'ailleurs estime
+  <lb/>infiniment et selon son merite le <abbr>R. P.</abbr> <rs key="pers_DE-588-118576682" type="person">Malebranche</rs>, ne veut pourtant pas
+  <lb/>le reconnoitre pour assés bon Geometre, qui puisse passer pour juge com<pc type="hyphenation">-</pc><lb break="no"/>petent<del/> <add>de</add> cette dispute. Pour le <abbr>Chev.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> je croi que
+  <lb/>la trop grande prévention <add>qu'il a</add> pour sa theorie l'empeche de voir la
+  <lb/>verité. Le meilleur moyen de conv<del/><add>ertir</add> ces <rs type="persons">Messieurs</rs> est, ce me semble,
+  <lb/>de les prier qu'ils voulussent prendre la peine de lire avec applica<pc type="hyphenation">-</pc><lb break="no"/>tion la <rs type="biblio">theorie</rs> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, sur tout les <rs type="biblio"><abbr>chap.</abbr> 3 et 5<hi rend="sup">e</hi></rs>. Je serois sur<pc type="hyphenation">-</pc><lb break="no"/>pris étrangement s'ils trouvoi<del>t</del><add>ent</add> seulement le moindre mot à redire dans
+  <lb/>la methode de determiner les vitesses des vaisseaux qui est enseignée
+  <lb/>dans ces deux <rs type="biblios">chapitres</rs>. Leur erreur vient seulement de ce que
+<pb facs="1038778" n="3"/> 
+  <lb/>pour trouver la vitesse d'un vaisseau, dont la route est oblique à la
+  <lb/>direction de la force du vent, ils<del/> imagine<add>nt</add> deux vents qui poussent le
+  <lb/>vaisseau dans deux directions qui sont perpendiculaires l'une à l'autre,
+  <lb/>et qu'ils supposent que le vaisseau trouve une resistance reelle dans
+  <lb/>l'eau suivant ces deux directions, au lieu qu'il ne<del/> souffre<del/>
+  <lb/><del>la </del>la resistance de l'eau que dans la direction de la route. Or n'y a til
+  <lb/>pas une methode de determiner la vitesse d'un vaisseau poussé oblique<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent
+  <lb/>sans avoir besoin de supposer deux vents verticaux l'un à l'autre, et
+  <lb/>sans courir le risque de confondre deux resistances imaginaires avec une
+  <lb/>reelle? Il<del>s</del> me semble que cela se peut faire facilement en cette maniere:
+  <lb/>Soit <formula>AB</formula> la voile d'un vaisseau <formula>D</formula>, <formula>CD</formula> la direction de la
+  <lb/>force mouvante du vent, la quelle est toujours perpen<pc type="hyphenation">-</pc><lb break="no"/>diculaire à la voile, <formula>DF</formula> la route du vaisseau; il s'agit
+  <lb/>de trouver <add>la proportion qu'il y a entre</add> la vitesse du vaisseau <add>allant</add> suivant <formula>DF</formula>, et entre la
+  <lb/>vitesse que le vaisseau auroit s'il alloit suivant <formula>DE</formula>, qui est la
+  <lb/>direction de la force du vent. Il est clair que la<del/> 
+  <lb/><del/>voile pousse <add>directement</add> le vaisseau allant suivant <formula>DE</formula>, et<del/>
+  <lb/><del/>qu'elle pousse oblique<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent le vaisseau allant suivant <formula>DF</formula>; or ces
+  <lb/><rs type="persons">Messieurs</rs> qui ne peuvent pas nier que <add>les forces, avec lesquelles</add> une même puissance agit sur
+  <lb/>un corps<del> directement</del> oblique<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent, sont en raison des sinus des angles d'inci<pc type="hyphenation">-</pc><lb break="no"/>dence, seront contraints d'avouer que la force de la voile qui agit sur le
+  <lb/>vaisseau suivant <formula>DE</formula> peut être exprimée par la droite <formula>DE</formula>, pendant que
+  <lb/>la force de la voile qui agit sur le vaisseau suivant <formula>DF</formula> est exprimée
+  <lb/>par la droite <formula>DF</formula>, la quelle en prenant <formula>DE</formula> pour le sinus total est le sinus
+  <lb/>de l'angle <formula>DEF</formula> ou <formula>FDB</formula>. Donc les resistances de l'eau, lesquel les doivent étre
+  <lb/>égales aux forces mouvantes, pourront aussi étre exprimées par les lignes
+  <lb/><formula>DE</formula> et <formula>DF</formula>; donc les resistances de l'eau étant co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les quarrés des vitesses,
+  <lb/>les vitesses seront exprimées par <formula>\sqrt{DE}</formula> et <formula>\sqrt{DF}</formula>, ainsi que <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Huyguens</rs> l'a
+  <lb/>soutenu, et non par les droites <formula>DE</formula> et <formula>DF</formula> elles mêmes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> le prétend.
+<pb facs="1038779" n="4"/>
+  <lb/>Je Vous prie de leur<del/> <add>expliquer</add> cette demonstration ou<del/> bien les <rs type="biblios">deux cha<pc type="hyphenation">-</pc><lb break="no"/>pitres</rs> susdits <rs type="biblios">3 et 5 de la theorie</rs> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>; et si aprés tout cela ils persistent
+  <lb/>dans le même sentiment, il faut desesperer de leur conversion.
+</p>
+<p>
+  <lb/>Je Vous prie de remettre <add>desormais à</add><del/>
+  <lb/><del/>
+  <lb/><abbr>Mr.</abbr> <rs type="person">Hogguer</rs>, qui demeure à l'hôtel de Boulogne <rs type="place">rue de Jouy</rs>, <rs key="place_WEI-faustantoineparis" type="place">Faux<pc type="hyphenation"></pc>
+  <lb break="no"/>bourg <abbr>st.</abbr> Antoine</rs><!-- orttag -->, ce que Vous avés à m'envoyer; ce <rs type="person"><abbr>Mr.</abbr></rs> est fort de
+  <lb/>mes amis et ne manquera <add>pas</add> de me le faire tenir aussitôt qu'il sera
+  <lb/>possible; je le prierai aussi de Vous rembourser l'argent que le
+  <lb/>microscope coutera. <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> est <del>encore </del><add>à present</add> à <rs key="place_GEO-2910831" type="place">Ha<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>over</rs> et il n'y a
+  <lb/>point d'apparence qu'il ira en <rs key="place_VER-englan" type="place">Angleterre</rs>; mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a reçû ces jours
+  <lb/>passés une <rs type="letter">lettre</rs> de lui, dans laquelle il <add>lui</add> a<del> seulement</del> mandé que la <rs type="organisation">Socie<pc type="hyphenation">-</pc><lb break="no"/>té Royale</rs> d'<rs key="place_VER-englan" type="place">Angleterre</rs> prétendoit n'avoir pas decidé<del/> l'affaire
+  <lb/>en question, mais seulement publié le <rs type="biblio">rapport</rs> des <rs type="persons">commissaires</rs>, lequel <rs type="biblio">rap<pc type="hyphenation">-</pc><lb break="no"/>port</rs><del> un</del> ne devoit pas <add>étre</add> pris<del> de</del> pour une decision; c'est peut etre en cette
+  <lb/>excuse<del/> que consiste la revision du procés, dont on Vous a parlé.
+  <lb/>Ce qui est vrai est que <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>, <add>pour assurer son droit,</add> publiera de son coté <del>les </del><add>toutes</add> les <rs type="letters">lettres</rs> qui
+  <lb/>ont été écrites de part et d'autre sur cette matiere; mais je croi qu'il passe<pc type="hyphenation">-</pc><lb break="no"/>ra beaucoup de temps avant que ce <rs type="biblio">co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ercium epistolicum</rs> paroitra.
+  <lb/>Il y a longtemps que je n'ai point de nouvelles de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>; quand
+  <lb/>vous lui écrirés, je Vous prie de vous informer s'il a reçû une tres longue
+  <lb/><rs type="letter">lettre</rs> que je lui écrivis au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement du mois d'Aout dernier, et
+  <lb/>dans laquel le je lui <del/>avois co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué la <rs type="biblio">solution</rs> du Probléme
+  <lb/>des jettons, qu'il m'avoit proposé. Voici un Probléme que je Vous propose,
+  <lb/>dont Vous pourrés chercher la solution, quand Vous n'aurés rien à faire:
+  <lb/>Trouver une formule generale, <add>telle que Vous en avés donné une <rs type="biblio">page 29</rs>,</add> pour exprimer combien il y a de hazards
+  <lb/>pour que plusieurs joueurs, par exemple 3, <add>Pierre, Paul et Jean,</add> tirant chacun entre un
+  <lb/>nombre de cartes quelconque composé d'un nombre égal d'as, de deux,
+  <lb/>de trois, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> un certain nombre de cartes à volonté, Pierre en tire
+  <lb/>tant de simples, tant de doubles, tant de triples, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr>, Paul tant, et Jean
+<pb facs="1038780" n="5"/>
+  <lb/>tant; j'ai eu la curiosité il y a quelque temps de chercher la solution de ce
+  <lb/>cas particulier: Trois joueurs tirent entre 36 cartes, dont il y a toujours 4
+  <lb/>d'une même espece, ainsi qu'il y a en tout 9 differentes especes, chacun cinq
+  <lb/>cartes; Pierre parie que chacun de ces trois joueurs tirera cinq cartes sim<pc type="hyphenation">-</pc><lb break="no"/>ples, Paul soutient le contraire.<del/> J'ai trouvé que leurs
+  <lb/>sorts sont co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 834636288 et 18517691707, c'est à dire environ co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 1 et 22.
+  <lb/>Je n'ai point fait de decouvertes depuis long temps qui meritent de Vous étre
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquées; voici pourtant un theoréme que Vous trouverés curieux, et qui
+  <lb/>seroit fort utile à <del>un </del><add>celui</add> qui voudroit entreprendre de nouveau la construction
+  <lb/>des logarithmes. La difference des <del>deux </del>logarithmes de deux nombres qui
+  <lb/>ont entre eux<del/> une raison presque d'égalité se trouve de fort prés par
+  <lb/>cette regle: Il faut multiplier<del> la diffe</del> ce nombre 1, 158118616 .... par la
+  <lb/>difference des cubes des nombres donnés, et diviser le produit par le cube de
+  <lb/>la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e (ou trois fois par la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e) des nombres do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>és. Cette regle sert à trouver
+  <lb/>fort exactement<del/> les logarithmes de tous les nombres qui sont au dessus de 10,
+  <lb/>et ayant ceux ci, on a aussi les logarithmes des nombres qui sont au dessous de 10.
+  <lb/>Par <abbr>ex.</abbr> le logarithme de 10 étant donné sçavoir 1,000000000, pour trouver
+  <lb/>celui de 11, il faut multiplier 1,158118616... par 331 et diviser le produit
+  <lb/>383,337261896 trois fois par 21, le quotient 0,041392642... sera la<del/>
+  <lb/>difference entre les logarithmes de 11 et de 10 à <del/><add>une unité</add> prés dans la 8<hi rend="sup">e</hi>. figure
+  <lb/>seulement. Appare<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent ni mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> ni moi irons à <rs key="place_GEO-3171728" type="place">Padoue</rs>; quoiqu'il en soit,
+  <lb/>nul eloignement m'empechera d'étre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je suis <del/>sincerement,
+</p>
+<closer>
+  <salute>Monsieur,
+    <lb/>Vôtre <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr>
+  </salute>
+  <dateline><date when="1715-01-22">22 <abbr>Jan.</abbr> 1715.</date></dateline>
+</closer>
 </div>
 </body>
 </text></TEI>

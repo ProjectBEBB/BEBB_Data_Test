@@ -1,156 +1,482 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1720-01-03_991170515371705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Henri-Alexandre Barbaud. Basel, 03. Januar 1720</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Am Briefkopf eigenhändig "à Mr. de Thiancourt". Eigenhändiges P.S. Beim Adressaten handelt es sich um Henri-Alexandre Barbaud (1686-ca. 1739), der in der Korrespondenz unter dem Namen "de Thiancourt" bekannt ist. Er gehörte einer adligen Familie an, deren Anspruch auf den Adelstitel inzwischen erloschen war. Die Bezeichnung "de Thiancourt" verweist darauf. Überbringer dieses Briefes war ein Bruder Thiancourts, in Frage kommen der jüngere Bruder Alexandre-Nicolas Barbaud, der unter dem Namen "Du Magni" in Joh. I B.s Korrespondenz erwähnt ist oder eher unwahrscheinlich der ältere Bruder Gaspard Étienne Barbaud de Granvillars.</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1720-01-03_991170515371705501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Henri-Alexandre Barbaud. Basel,
+            03. Januar 1720</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000057494</title><title type="alt"
+            >1720-01-03_Bernoulli_Johann_I-Barbaud_Henri_Alexandre</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Barbaud, Henri-Alexandre </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Am Briefkopf eigenhändig "à Mr. de Thiancourt". Eigenhändiges
+            P.S. Beim Adressaten handelt es sich um Henri-Alexandre Barbaud (1686-ca. 1739), der in
+            der Korrespondenz unter dem Namen "de Thiancourt" bekannt ist. Er gehörte einer adligen
+            Familie an, deren Anspruch auf den Adelstitel inzwischen erloschen war. Die Bezeichnung
+            "de Thiancourt" verweist darauf. Überbringer dieses Briefes war ein Bruder Thiancourts,
+            in Frage kommen der jüngere Bruder Alexandre-Nicolas Barbaud, der unter dem Namen "Du
+            Magni" in Joh. I B.s Korrespondenz erwähnt ist oder eher unwahrscheinlich der ältere
+            Bruder Gaspard Étienne Barbaud de Granvillars.</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1720-01-03_Bernoulli_Johann_I-Barbaud_Henri_Alexandre"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 675:Bl.120-123</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170515371705501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433066505504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000057494</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>8 S.<dimensions unit="cm">
+                    <height>21,5</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bale</origPlace><date when="1720-01-03">ce 3. Janvier
+              1720</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1720-01-03_Bernoulli_Johann_I-Barbaud_Henri_Alexandre" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 675:Bl.120-123</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170515371705501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433066505504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000057494</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>8 S.<dimensions unit="cm"><height>21,5</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bale</origPlace>
-            <date when="1720-01-03">ce 3. Janvier 1720</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1720-01-03">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1719-10-23_991170515371805501" type="prev"/>
-        <ptr target="B_1728-02-17_991170515371605501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Barbaud_Henri-Alexandre_de_Thiancourt-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <p>Joh. B. lobt Barbauds (auch als "de Thiancourt" bekannt) Methode und gibt seine eigene analytische Methode zur Bestimmung von Potenzsummen an.</p>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1438577/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1438578" n="1"/> <pb facs="1438580" n="2"/> <pb facs="1438581" n="3"/> <pb facs="1438582" n="4"/> <pb facs="1438583" n="5"/> <pb facs="1438584" n="6"/> <pb facs="1438585" n="7"/> <pb facs="1438586" n="8"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1720-01-03">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_1719-10-23_991170515371805501" type="prev"/>
+          <ptr target="B_1728-02-17_991170515371605501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Barbaud_Henri-Alexandre_de_Thiancourt-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>Joh. B. lobt Barbauds (auch als "de Thiancourt" bekannt) Methode und gibt seine eigene
+          analytische Methode zur Bestimmung von Potenzsummen an.</p>
+        <listPerson>
+          <person>
+            <persName key="pers_no_GND_id">Barbaud, Alexandre Nicolas (Du Magni)</persName>
+            <note type="lebensdaten">(ca. 1687-ca. 1744)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1082012769">Barbaud, Gaspard Étienne</persName>
+            <note type="lebensdaten">(1684-1749)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+            <note type="lebensdaten">(1678-1719)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Riecken</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1720-01-03_Bernoulli_Johann_I-Barbaud_Henri_Alexandre"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1438577/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1438578" n="1"/>Monsieur:</p>
+        <p>Il y a deja quelque temps, que Mr. Votre Frere m'a rendu la tres obligeante lettre, que
+          vous m'avez fait l'honneur, de m'écrire du 23 8bre 1719. Une infinité d'affaires m'ont
+          empeché de vous y répondre plutôt, la meme raison m'empeche encore d'etre long dans ma
+          reponse, elle est pourtant devenû assez longue contre mon attente, que voyci: </p>
+        <p>Je fus surpris de voir que sans le secours de l'analyse vous ayez pû découvrir une
+          methode purement arithmetique pour reduire à des formules generales les sommes des
+          puissances dont les racines suivent la progression naturelle des nombres, quoique je
+          conçoive bien par ce que vous m'en dites, que votre methode demande, qu'on commence par la
+          puissance la plus simple, c'est à dire par la premiere, et de là qu'on passe à la seconde,
+          à la troisiéme et ainsi de suite, jusqu'à ce qu'on soit parvenu à celle dont on cherche
+          l'expression pour determiner la somme des termes elevez à cette puissance, au lieu que par
+          ma methode analytique je puis trouver immediatement la formule pour telle puissance des
+          termes qu'on voudra; je ne laisse pas d'admirer votre penetration naturelle, et la force
+          de votre imagination, qui sans autre aide tirée de l'art vous a mené si avant dans la
+          contemplation des proprietés extremement abstraites, telles que sont celles des nombres;
+          voila un bel échantillon par où vous faites voir, de combien vous seriez capable si vous
+          vouliez faire honneur aux mathematiques et les cultiver avec une application serieuse,
+          vous viendriez à bout des recherches les plus epineuses et vous feriez des decouvertes
+          étonnantes. <pb facs="1438580" n="2"/> Je vai vous communiquer Mr. puisque vous le
+          souhaittez, la methode analytique, dont je me suis servis, pour determiner les sommes des
+          ces progressions, des puissances<note type="editorial">Im Manuskript steht
+            "puissance".</note> qui ont pour racines les suites des nombres naturels: Je pose
+          d'abord pour un lemme ce que vous avez aussi remarqué dans votre remarque quatrieme,
+          sçavoir que le <hi rend="u">plus grand terme de la formule qui exprime la valeur des
+            sommes</hi><note type="editorial">Im Manuskript steht "somme".</note><hi rend="u"> d'une
+            puissance surpasse toujours cette meme puissance d'un dégré</hi>, dont la verité se
+          manifeste pour peu qu'on y fasse d'attention: soit donc par exemple (car c'est la même
+          methode pour tous les autres) la progression des quarrés,
+            <formula>1+4+9+16...+n^{2}</formula> dont on démande la somme que je suppose étre
+            <formula>an^{3}+bn^{2}+cn</formula> (par <formula>a</formula>, <formula>b</formula>,
+            <formula>c</formula>, j'entens des coëfficiens inconnus des termes
+            <formula>n^{3}</formula>, <formula>nn</formula>, <formula>n</formula>) il s'agit de
+          déterminer ces coëfficients, <formula>a</formula>, <formula>b</formula>,
+            <formula>c</formula>, ce que je fais de cette maniere: Comme la formule supposée
+            <formula>an^{3}+bnn+cn</formula> doit étre universelle, pour la somme des quarrés
+          quelque soit le nombre des termes <formula>n</formula>, il faut qu'en augmentant d'une
+          unité le nombre des termes, c'est à dire qu'en mettant <formula>n+1</formula> au lieu de
+            <formula>n</formula> dans la formule supposée, celle qui en resulte, sçavoir </p>
+        <p><formula>\begin{array}{llccccl} an^{3} &amp; + &amp; 3ann &amp; + &amp; 3an &amp; + &amp;
+            a\\ &amp; + &amp; bnn &amp; + &amp; 2bn &amp; + &amp; b\\ &amp; &amp; &amp; + &amp; cn
+            &amp; + &amp; c\end{array}</formula></p>
+        <p>exprime la somme des termes dont le nombre est <formula>n+1</formula>; or cette meme
+          somme est aussi égale à la somme precedente <formula>an^{3}+bnn+cn</formula> augmentée du
+          dernier terme qui est <formula>nn+2n+1</formula> ce qui me fournit cette équation</p>
+        <p><formula>\begin{array}{llccccl} an^{3} &amp; + &amp; 3ann &amp; + &amp; 3an &amp; + &amp;
+            a\\ &amp; + &amp; bnn &amp; + &amp; 2bn &amp; + &amp; b\\ &amp; &amp; &amp; + &amp; cn
+            &amp; + &amp; c\end{array}</formula> = <formula>\begin{array}{lllcccl} an^{3} &amp; +
+            &amp; bnn &amp; + &amp; cn\\ &amp; + &amp; 1nn &amp; + &amp; 2n &amp; + &amp;
+            1\end{array}</formula>,</p>
+        <p>ôtant de part et d'autre ce qu'il y a de commun <formula>an^{3}+bnn+cn</formula>, il en
+          viendra cette autre équation</p>
+        <p><formula>\begin{array}{ccccl} 3ann &amp; + &amp; 3an &amp; + &amp; a\\ &amp; + &amp; 2bn
+            &amp; + &amp; b\\ &amp; &amp; &amp; + &amp; c\end{array}</formula> =
+            <formula>1nn+2n+1</formula></p>
+        <p>Faisant la comparaison des termes homogenes, on trouve <formula>3a=1</formula>,<note
+            type="editorial">Die rechte Seite der Gleichung ist im Manuskript nicht lesbar. Sie ist
+            mit "1" zu ergänzen.</note>
+          <formula>3a+2b=2</formula>, <formula>a+b+c=1</formula>, ce qui me donne les coëfficiens
+          cherchés, sçavoir <formula>a=\frac{1}{3}</formula>, <formula>b=\frac{1}{2}</formula>,
+            <formula>c=\frac{1}{6}</formula>, lesquels étant substitués <pb facs="1438581" n="3"/>
+          dans la formule supposée <formula>an^{3}+bnn+cn</formula>, donneront la véritable
+            <formula>\frac{1}{3}n^{3}+\frac{1}{2}n^{2}+\frac{1}{6}n</formula>, ou en reduisant au
+          même denominateur <formula>\frac{2n^{3}+3nn+n}{6}</formula>, qui est la même que celle que
+          vous avez trouvée. </p>
+        <p>Vous voyez Mr. que cette methode est aisée et generale pour telles puissances qu'on
+          voudra, pourvû qu'on veuille toujours faire le calcul pour chaque puissance en
+            particulier<note type="editorial">Im Manuskript steht "particulieur".</note>: il y a
+          cependent moyen d'exprimer par une suite generale la formule generale pour la puissance
+          indefinie dont l'exposant soit nomé <formula>p</formula>; on demande donc la somme de
+          cette progression <formula>1^{p}+2^{p}+3^{p}+4^{p}...+n^{p}</formula>, pour en trouver la
+          formule je suppose suivant ma methode qu'elle est
+            <formula>an^{p+1}+bn^{p}+cn^{p-1}+dn^{p-2}+en^{p-3}+...\textrm{ etc.}</formula> laquelle
+          par l'augmentation d'une unité du nombre des termes <formula>n</formula>, ou par la
+          substitution de <formula>n+1</formula> au lieu de <formula>n</formula>, se change en celle
+          ci </p>
+        <p><formula>\begin{array}{rrrrrrrrrr} an^{p+1} &amp; + &amp; \frac{p+1}{1}an^{p} &amp; +
+            &amp; \frac{p+1\cdot p}{1\cdot2}an^{p-1} &amp; + &amp; \frac{p+1\cdot p\cdot
+            p-1}{1\cdot2\cdot3}an^{p-2} &amp; + &amp; \textrm{etc.}\\ &amp; + &amp; bn^{p} &amp; +
+            &amp; \frac{p}{1}bn^{p-1} &amp; + &amp; \frac{p\cdot p-1}{1\cdot2}bn^{p-2} &amp; + &amp;
+            \textrm{etc.}\\ &amp; &amp; &amp; + &amp; cn^{p-1} &amp; + &amp; \frac{p-1}{1}cn^{p-2}
+            &amp; + &amp; \textrm{etc.}\\ &amp; &amp; &amp; &amp; &amp; + &amp; dn^{p-2} &amp; +
+            &amp; \textrm{etc.}\\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; + &amp; \textrm{etc.}
+            \end{array}</formula></p>
+        <p>qui par consequent doit étre égale à la somme précedente jointe un dernier terme, c'est à
+          dire</p>
+        <p><formula>=an^{p+1}+bn^{p}+cn^{p-1}+dn^{p-2}+en^{p-3}+\textrm{etc.}+n^{p}+\frac{p}{1}n^{p-1}+\frac{p\cdot
+            p-1}{1\cdot2}n^{p-2}+\frac{p\cdot p-1\cdot p-2}{1\cdot2\cdot3}n^{p-3}+...1=</formula>
+          <formula>\begin{array}{lllllllllll} an^{p+1} &amp; + &amp; bn^{p} &amp; + &amp; cn^{p-1}
+            &amp; + &amp; dn^{p-2} &amp; + &amp; en^{p-3} &amp; + &amp; \textrm{etc.}\\ &amp; +
+            &amp; 1n^{p} &amp; + &amp; \frac{p}{1}n^{p-1} &amp; + &amp; \frac{p\cdot
+            p-1}{1\cdot2}n^{p-2} &amp; + &amp; \frac{p\cdot p-1\cdot p-2}{1\cdot2\cdot3}n^{p-3}
+            &amp; + &amp; \textrm{etc.}\end{array}</formula></p>
+        <p>(NB. j'entens par des points<note type="editorial">Im Manuskript steht "point".</note>
+          entre deux quantités, qu'on les doit multiplier, ainsi par exemple <formula>p\cdot
+            p-1</formula> signifie que <formula>p</formula> doit étre multiplié par
+            <formula>p-1</formula>). Aprez la comparaison des termes homogenes deüement faite, vous
+          trouverez generalement les coëfficients pour la puissance <pb facs="1438582" n="4"/>
+          indefinie <formula>p</formula>, à sçavoir <formula>a=\frac{1}{p+1}</formula>,
+            <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{p}{1\cdot3\cdot4}</formula>,
+            <formula>d=0</formula>, <formula>e=-\frac{p\cdot p-1\cdot
+            p-2}{1\cdot2\cdot3\cdot4\cdot5\cdot6}</formula>, <formula>f=0</formula>
+          <formula>g=\frac{p\cdot p-1\cdot p-2\cdot p-3\cdot
+            p-4}{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot8}</formula>,<note type="editorial">Im
+            Manuskript ist der letzte Faktor im Nenner aus "8" in "6" korrigiert.</note>
+          <formula>h=0</formula>, <formula>i=\frac{p\cdot p-1\cdot p-2\cdot p-3\cdot p-4\cdot
+            p-5\cdot p-6}{1\cdot2\cdot4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10}</formula>,<note
+            type="editorial">Im Manuskript steht im Nenner an Stelle des Faktors "3" eine Lücke. Der
+            Faktor wurde in der Transkription nicht ergänzt.</note>
+          <formula>k=0</formula>, <formula>l=\frac{p\cdot p-1\cdot p-2\cdot p-3\cdot p-4\cdot
+            p-5\cdot p-6\cdot p-7\cdot
+            p-8}{1\cdot2\cdot3\cdot4\cdot6\cdot7\cdot8\cdot9\cdot10\cdot11\cdot6}</formula>,
+            <formula>m=0</formula>; c'est ainsi qu'il faut continuer jusqu'à ce qu'on ait autant de
+          coëfficients qu'il y a des termes requis, pour la formule, c'est à dire autant qu'il y a
+          d'unités en <formula>p+1</formula>. Prenons par exemple la dixieme puissance des nombres
+          naturels, on aura pour les coëfficients ce qui suit <formula>a=\frac{1}{11}</formula>,
+            <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{5}{6}</formula>,
+            <formula>d=0</formula>, <formula>e=1</formula>, <formula>f=0</formula>,
+            <formula>g=1</formula>, <formula>h=0</formula>, <formula>i=-\frac{1}{2}</formula>,
+            <formula>k=0</formula>, <formula>l=\frac{5}{66}</formula>, en sorte que la somme de
+          cette progression <formula>1^{10}{+2}^{10}+3^{10}+4^{10}+\dots n^{10}</formula> sera
+            <formula>=\frac{1}{11}n^{11}+\frac{1}{2}n^{10}+\frac{5}{6}n^{9}+0n^{8}-n^{7}+0n^{6}+n^{5}+0n^{4}-\frac{1}{2}n^{3}+0nn+\frac{5}{66}n</formula>,
+          si on applique cette formule au cas particulier de <formula>n=1000</formula>, et qu'il
+          faille par consequent determiner la somme des mille premiers termes des nombres naturels
+          elevés à la dixieme puissance, c'est à dire déterminer la somme de cette progression
+            <formula>1^{10}+2^{10}+3^{10}+\dots1000^{10}</formula> je dis que cette somme sera
+          91409924241424243424241924242500; comme vous dites Mr. que vous avez les formules toutes
+          calculées des dix premiers puissances, vous pouvez les confronter avec ma formule
+          generale, pour voir si elles y accordent, en ce cas vous seriez assuré que vous ne vous
+          étés pas mépris dans votre calcul. On voit<note type="editorial">Im Manuskript steht
+            "void".</note> au reste par l'expression generale des coefficients <formula>a</formula>,
+            <formula>b</formula>, <formula>c</formula>, <formula>\textrm{etc.}</formula> ce que vous
+          observez seulement pour les trois premiers termes, sçavoir que les coëfficients des
+          premiers termes des progressions pour les puissances, qui augmentent successivement d'une
+          unité, sont dans une progression harmonique decroissante, car <formula>a</formula> ou
+            <formula>\frac{1}{p+1}</formula> fait une telle progression en augmentant
+            <formula>p</formula> continuëllement d'une unité. Les coëfficients des seconds termes ne
+          changent jamais, parceque <formula>b</formula> est toujours
+            <formula>=\frac{1}{2}</formula>[.] Et les coëfficients des troisiemes termes forment
+          entre eux une progression arithmetique, qui va en augmentant, parce <pb facs="1438583"
+            n="5"/> que <formula>c</formula> ou <formula>\frac{p}{1\cdot3\cdot4}</formula> ou
+            <formula>\frac{p}{12}</formula> ou <formula>\frac{1}{12}p</formula> fait une telle
+          progression si <formula>p</formula> augmente successivement d'une unité. Mais vous vous
+          trompez Mr. quand vous croyez, que les coëfficients des autres termes n'ont rien de
+          regulier, car 1.<hi rend="sup">o</hi> les coëfficients des quatriemes termes, comme aussi
+          ceux des sixiemes termes, ceux des huitiemes et ainsi toujours les coëfficients des termes
+          des nombres pairs dans l'ordre depuis le quatriéme sont toujours nuls ou = à 0. 2.do les
+          coëfficients des cinquiemes termes sont toujours negatifs et sont dans une progression de
+          nombres pyramideaux divisés par 120, car <formula>\frac{p\cdot p-1\cdot
+            p-2}{1\cdot2\cdot3}</formula> fait une progression des nombres pyramideaux en augmentant
+          successivement <formula>p</formula> d'une unité, or <formula>\frac{p\cdot p-1\cdot
+            p-2}{1\cdot2\cdot3\cdot4\cdot5\cdot6}</formula> est toujours la cent-vingtiéme partie de
+            <formula>\frac{p\cdot p-1\cdot p-2}{1\cdot2\cdot3}</formula>. 3.<hi rend="sup">o</hi>
+          ainsi de même les coëfficiens des septiemes termes, des neufiemes, des onziémes, en un mot
+          de tels termes qu'on voudra qui sont impairs dans l'ordre depuis les troisiemes, seront
+          toujours dans un certain submultiple d'une progression de nombres figurés dont l'exposant
+          est le nombre des termes dans l'ordre moins 2, j'appelle <hi rend="u">exposant</hi> le
+          nombre qui exprime la dimension d'une progression figurée, par exemple 2 est l'exposant de
+          la progression trigonale, 3 est l'exposant de la progression pyramidale, 4 est celui de la
+          trigono-pyramidale, 5 de la pyramido-pyramidale, et ainsi de suite. Selon cette regle les
+          coefficiens des septiemes termes font un sousmultiple de la progression
+          pyramido-pyramidale, car il faut sçavoir que par l'augmentation continuëlle de
+            <formula>p</formula> d'une unité les coëfficients <formula>g</formula> formeront la
+          deuxcent-cinquante deuxieme partie des nombres qui sont dans cette progression qui est
+          exprimée par <formula>\frac{p\cdot p-1\cdot p-2\cdot p-3\cdot
+            p-4}{1\cdot2\cdot3\cdot4\cdot5}=\frac{p\cdot p-1\cdot p-2\cdot p-3\cdot
+            p-4}{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot6}\times252</formula>. Il y a encore une
+          chose qui est trop curieuse pour la passer sous silence: c'est que si <formula>p</formula>
+            signifi<pb facs="1438584" n="6"/>oit un nombre negatif, ou une fraction, la somme de ces
+          puissances seroit exprimée par une formule qui seroit composée d'un nombre infini de
+          termes ou qui formeroit une suite infinie; de cette maniere on peut trouver la somme de
+            plusieurs<note type="editorial">Im Manuskript steht "plusiers"</note> nombres
+          irrationels par une suite de nombres rationels; par ex. si je veux ajouter en une somme
+          rationelle touts les cent termes de cette progression
+            <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}+\sqrt{5}\dots\sqrt{100}</formula> dont
+          touts les termes sont irrationels, excepté
+            <formula>\sqrt{1}</formula>,<formula>\sqrt{4}</formula>, <formula>\sqrt{9}</formula>,
+            <formula>\sqrt{16}</formula>, <formula>\sqrt{25}</formula>,
+          <formula>\sqrt{36}</formula>, <formula>\sqrt{49}</formula>, <formula>\sqrt{64}</formula>,
+            <formula>\sqrt{81}</formula>, <formula>\sqrt{100}</formula>. Je considere que
+            <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\dots\sqrt{100}</formula> n'est autre chose que
+            <formula>1^{\frac{1}{2}}+2^{\frac{1}{2}}+3^{\frac{1}{2}}+4^{\frac{1}{2}}+5^{\frac{1}{2}}\dots100^{\frac{1}{2}}</formula>,
+          en sorte que <formula>p</formula> est ici <formula>=\frac{1}{2}</formula> ce qu'etant mis
+          à la place de <formula>p</formula> dans les coëfficients generaux, <formula>a</formula>,
+            <formula>b</formula>, <formula>c</formula>, etc. on aura
+            <formula>a=\frac{1}{\frac{1}{2}+1}=\frac{2}{3}</formula>,
+            <formula>b=\frac{1}{2}</formula>,
+            <formula>c=\frac{\frac{1}{2}}{1\cdot2\cdot3}=\frac{1}{24}</formula>,<note
+            type="editorial">Es müsste statt <formula>\frac{1}{24}</formula> richtigerweise
+              <formula>\frac{1}{12}</formula> heissen.</note>
+          <formula>d=0</formula>,
+            <formula>e=\frac{-\frac{1}{2}\cdot-\frac{1}{2}\cdot-\frac{3}{2}}{1\cdot2\cdot3\cdot4\cdot5\cdot6}=-\frac{1}{1920}</formula>,
+            <formula>f=0</formula> ,
+            <formula>g=\frac{+\frac{1}{2}\cdot-\frac{1}{2}\cdot-\frac{3}{2}\cdot-\frac{5}{2}\cdot-\frac{7}{2}}{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot6}=\frac{1}{9216}</formula>,
+            <formula>h=0</formula>,<note type="editorial">Das Zeichen hinter
+            "<formula>h=0</formula>" könnte auch als "," oder als "=" interpretiert werden.</note>
+          <formula>i=\textrm{etc.}</formula> Or puisque <formula>n</formula> est ici
+            <formula>=100</formula>, la formule supposée
+            <formula>an^{p+1}+bn^{p}+cn^{p-1}+dn^{p-2}+en^{p-3}+\dots\textrm{etc.}</formula> se
+          changera en une autre dont chaque terme sera rationel, parce que <formula>n</formula> ou
+          100 est un nombre quarré, par consequent
+            <formula>n^{p+1}=</formula><formula>100^{\frac{3}{2}}=10^{3}=1000</formula>,
+            <formula>n^{p}=100^{\frac{1}{2}}=10</formula>,
+            <formula>n^{p-1}=100^{-\frac{1}{2}}=\frac{1}{100^{\frac{1}{2}}}=\frac{1}{10}</formula>,
+            <formula>n^{p-2}=100^{-\frac{3}{2}}=10^{-3}=\frac{1}{10^{3}}=\frac{1}{1000}</formula>,
+            <formula>n^{p-3}=100^{-\frac{5}{2}}=10^{-5}=\frac{1}{10^{5}}=\frac{1}{100000}</formula>,
+          ayant donc substitué tout cela dans la dite formule, on aura cette suite infinie de
+          nombres rationels
+            <formula>\frac{2000}{3}+5+\frac{1}{240}-\frac{1}{192000000}+\frac{1}{92160000000}-\textrm{etc.}=</formula><formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}\dots\sqrt{100}</formula>.
+          Vous voyez Mr., que cette suite est si prodigieusement convergeante, qu'en prenant
+          seulement les cinq premiers termes, la somme en differera déja si peu de la veritable
+          valeur de <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}+\sqrt{5}\dots\sqrt{100}</formula>,
+          que l'erreur ne sera pas d'une dix million millionième<note type="editorial">Im Manuskript
+            steht "millionémie".</note> partie d'unité, que si on retranche de cette somme les
+          nombres rationels qui se trouvent parmis les termes de la progression
+            <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}\dots\sqrt{100}</formula> sçavoir <pb
+            facs="1438585" n="7"/>
+          <formula>1+2+3+4+5+6+7+8+9+10</formula> qui font ensemble
+            <formula>55=50+5=\frac{150}{3}+5</formula>, il restera<note type="editorial">Im
+            Manuskript steht "restera".</note>
+          <formula>\frac{1850}{3}+\frac{1}{240}-\frac{1}{192000000}+\frac{1}{92160000000}</formula>
+          à fort peu de chose prés = à la somme de toutes les racines<note type="editorial">Im
+            Manuskript steht "racine".</note> quarrées irrationelles comprises entre
+            <formula>\sqrt{1}</formula> et <formula>\sqrt{100}</formula>; on pourroit terriblement
+          embarasser les Geometres en leurs proposant en forme de Problemes de <hi rend="u">trouver
+            la somme de touts ces nombres irrationels en nombre rationel en sorte que l'erreur ne
+            soit pas d'une 10000000000000<hi rend="sup">me</hi> partie de l'unité</hi>, car ils ne
+          s'aviseroient pas aisement de le resoudre par la methode expliquée ici, mais ils
+          tourneroient plutot leur vuë du coté de la methode ordinaire, qui est de reduire
+          separement chaque nombre irrationel dans une suite infinie de termes rationels, et ainsi
+          il faudroit chercher quatre vingt dix suites (car il y a autant de nombres irrationels
+          entre <formula>\sqrt{1}</formula> et <formula>\sqrt{100}</formula>, quoiqu'il soit vray
+          qu'il y a parmi eux plusieurs de commensurable comme <formula>\sqrt{2}</formula>,
+            <formula>\sqrt{8}</formula>, <formula>\sqrt{18}</formula>, item
+            <formula>\sqrt{3}</formula>, <formula>\sqrt{12}</formula>, <formula>\sqrt{27}</formula>,
+          etc. neantmoins il y en auroit encore assez d'incommensurables dont chacun demande<note
+            type="editorial">Im Manuskript steht "demende".</note> une suite particuliere); de
+          toutes les suites il faudroit prendre autant de termes pour additionner qu'il<note
+            type="editorial">Im Manuskript steht "qu'ils"</note> seroit nécessaire<note
+            type="editorial">Im Manuskript steht "necessaires"</note>, afin que touts les restants
+          pris ensemble ne fissent pas la petite partie nommée de l'unité, ce seroit là une peine
+          insurmontable puisqu'il faudroit peut étre plus de 50 termes d'une seule suite pour faire
+          que leur somme ne differe de la veritable valeur du nombre irrationel qu'elle exprime que
+          d'une erreur plus petite<note type="editorial">Im Manuskript steht "petites".</note>, que
+          la petite fraction marquée de l'unité; combien donc de termes ne faudroit il pas, pour que
+          toutes les erreurs ensemble n'excedent pas cette petite partie d'unité? Il faudroit comme
+          je croy quelques<note type="editorial">Im Manuskript steht "quelque".</note> centaines de
+          termes de chaque suite, mais le moyen d'executer ce travail immense? </p>
+        <p>Ce qu'il y a d'admirable dans notre methode, c'est que bien loin que la multitude des
+          nombres irrationels à additionner dans une somme rationelle rende l'operation plus
+          difficile, au contraire elle est plutot achevée, car plus cette multitude est grande <pb
+            facs="1438586" n="8"/> et plus convergeante devient notre suite; ainsi
+            <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}+\sqrt{5}\dots\sqrt{10000}</formula> sera
+          trouvée = à cette suite
+            <formula>\frac{2000000}{3}+50+\frac{1}{2400}-\frac{1}{19200000000000}+\textrm{etc.}</formula>
+          dont les seuls quatre premiers termes pris ensemble different moins de la veritable valeur
+          de <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\dots\sqrt{10000}</formula>, que les 5 termes de la
+          suite precedente ne different de
+            <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}\dots\sqrt{100}</formula>. </p>
+        <p>Il y auroit encore bien des choses à dire sur ce sujet, comme par ex. la maniere
+          d'appliquer cette methode à d'autres progressions que celles des puissances, pourvû
+          qu'elles procedent suivant une loy donnée entre les nombres qui en doivent composer les
+          termes[;] mais en voila deja assez pour une lettre, qui n'est dejà que trop grande; c'est
+          pour la meme raison que je ne dirai rien presentement sur la difficulté que vous avez
+          touchant la tendence des corps qui se meuvent en rond; il y auroit trop à écrire pour une
+          lettre, mais je me reserve à vous éclaircir cette difficulté la premiere fois que j'aurai
+          l'honneur de vous revoir: Je me contente pour le present de vous faire sentir, qu'il
+          semble que vous ne distinguez pas la <hi rend="u">tendance</hi> du mouvement actuel d'un
+          corps qui est agité en rond d'avec la <hi rend="u">direction</hi> de la force centrifuge
+          qui en resulte; la premiere va sans contredit suivant la tangeante du cercle, que le corps
+          agité décrit, mais l'autre est perpendiculaire à celle cy. Il y a deux principes
+          incontestables fondés dans la nature meme qui prouvent assez ces deux verités: car 1.<hi
+            rend="sup">o</hi> tout corps en mouvement tend à continuer son mouvement en ligne
+          droite, donc un corps, qui est obligé de décrire un cercle, c'est à dire un polygone
+          infinilateral, en quelque coté de ce polygone qu'il se trouve il tachera de continuer son
+          mouvement selon la direction de ce coté prolongé qui n'est autre chose que la tangeante du
+          cercle au point où le corps mû se trouve dans un certain instant. 2.do si un corps mû en
+          ligne droite vient à étre detourné à tout moment, la force qui le détourne le plus
+          aisement sera celle dont la direction est perpendiculaire à la tendence du mouvement
+          circulaire, ainsi la direction de la resistance du corps à cette force, sera tout à fait
+          opposée, et partant aussi perpendiculaire à la tangeante, c'est en quoi consiste, l'effort
+          qu'un corps mû en rond fait pour s'eloigner du centre, non obstant la tendence du
+          mouvement circulaire qui a toujours pour direction la tangente. Ma femme vous est tres
+          obligée de votre souvenir, elle vous fait ses compliments<note type="editorial">Im
+            Manuskript steht "compliment".</note> reciproques. Je suis votre serviteur etc.
+          Bernoulli</p>
+        <p>P. S.<note type="editorial">Das hier folgende P. S. samt Datum steht im Manuskript am
+            oberen und unteren Rand von p. 1 des Briefes.</note> Je consens que Vous communiquiez le
+          contenu de cette lettre à Mr. Rieken, si Vous le trouvez à propos. Dans <hi rend="u"
+            >l'Essai d'Analyse sur les jeux de Hazard</hi> publié par feu Mr. de Monmort pag. 312,
+          Edit. 2, Vous trouverez la methode exposée dans cette lettre appliquée aux puissances des
+          nombres figurés. Je Vous souhaite une heureuse nouvelle année. </p>
+        <p>Bale ce 3. Janvier 1720. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

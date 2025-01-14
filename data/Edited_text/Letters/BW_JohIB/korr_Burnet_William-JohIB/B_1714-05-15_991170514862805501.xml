@@ -1,161 +1,341 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1714-05-15_991170514862805501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an William Burnet. Basel, 15. Mai 1714</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Bezug des Briefes zu Bänden der gedruckten Bernoulli Werkausgabe: Op. 87 Op. XC Op. XCI Op. CLXXXI Op. 202 Ms.351.71</p>
-        <p>Bezug des Briefes zu anders bezeichneten Werken: Jac. B. Ars conjectandi</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1714-05-15_991170514862805501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an William Burnet. Basel, 15. Mai
+            1714</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000055711</title><title type="alt"
+            >1714-05-15_Bernoulli_Johann_I-Burnet_William</title><title level="s">Basler Edition der
+            Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Burnet, William (1688-1729) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Bezug des Briefes zu Bänden der gedruckten Bernoulli
+            Werkausgabe: Op. 87 Op. XC Op. XCI Op. CLXXXI Op. 202 Ms.351.71</p><p>Bezug des Briefes
+            zu anders bezeichneten Werken: Jac. B. Ars conjectandi</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1714-05-15_Bernoulli_Johann_I-Burnet_William"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 654, Nr.13</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514862805501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972432944505504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000055711</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>4 S.<dimensions unit="cm">
+                    <height>21</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>à Bâle</origPlace><date when="1714-05-15">ce 15. May
+              1714</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1714-05-15_Bernoulli_Johann_I-Burnet_William" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 654, Nr.13</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514862805501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972432944505504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000055711</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>4 S.<dimensions unit="cm"><height>21</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>à Bâle</origPlace>
-            <date when="1714-05-15">ce 15. May 1714</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1714-05-15">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-104185643">Burnet, William</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1714-04-08_991170514862905501" type="prev"/>
-        <ptr target="B_1705_991170514862705501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Burnet_William-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <p>Joh. B. hat die von Burnet in seinem Brief von 1714 04 08 angekündigten beiden Exemplare des Commercium epistolicum erhalten. Sie waren in der Tat in einem nicht für ihn, sondern für Nic. I B. bestimmten Brief von de Moivre angekündigt worden. Das Exemplar der zweiten Auflage von Newtons Principia ist mit einer Wagenladung etwas beschädigt eingetroffen. De Moivre hat im vor längerer Zeit ein Exemplar als Geschenk Newtons versprochen, sein Versprechen aber nicht gehalten. Nicht nur Anisson, sondern auch andere französische Mathematiker haben ein Geschenkexemplar erhalten, wie Joh. B. von Varignon erfahren hat. Er begreift, dass Newton mit seinem teuren Buch sparsam umgeht, und ist ihm für andere Buchgeschenke nach wie vor dankbar. Für die Neuauflage der Principia hätte Joh. B. jeden Preis bezahlt. Er hofft, dass Newton von seinen Bemerkungen zur Erstauflage befriedigt ist. Nic. I B. hat Newton einen Fehler mit der Korrektur desselben mitgeteilt, allerdings ohne ihm die Methode zu enthüllen, mit der Joh. B. den Fehler gefunden hat. Diese wird Newton den AE entnehmen. Newton hat den Fehler in der zweiten Auflage korrigiert, indem er einige schon gedruckte Blätter durch neue ersetzt hat, ohne allerdings mit einem einzigen Wort zu erwähnen, wem er den Hinweis auf den Fehler verdankt. Er zeigt damit die Missachtung der Engländer gegenüber allen ausländischen Mathematikern. Die Aufrichtigkeit hätte Newton zum Bekenntnis der Wahrheit zur Ehre eines Schweizers veranlassen sollen, ohne dass dadurch das Ansehen der berühmten Nation Schaden genommen hätte. Die Zeichen der Freundschaft, die Newton ihm übermittelt hat, lassen Joh. B. aber glauben, dass es keine persönliche Missachtung ist, wenn sein Name nicht in Newtons Buch erscheint. Wenn Newton jedoch seine Zusätze in der zweitenAuflage mit Joh. B.s Bemerkungen vergleichen wird, wird er einige weitere fehlerhafte Stellen ohne Korrekturen feststellen.</p>
-      <p>Joh. B. hat zur Erstauflage der Principia noch weitere Bemerkungen gemacht, die er vielleicht mit der Zeit mitteilen wird. Newton hat von den Beobachtungen Huygens' profitiert, die ein gewisser Groningius [= Johann Gröning aus Wismar, ca.1670-1721] beim Verkauf von Huygens' Bibliothek erworben und vor ca. 15 oder 16 Jahren zusammen mit einem Traktat über die Zykloide [J. Gröning, Historia cycloeidis, Hamburgi 1701] publiziert hat. Was das Commercum epistolicum betrifft, so möchte sich Joh. B. nicht in den Streit zweier berühmter Männer mischen, die er beide schätzt. Er hofft auf Mässigung der Anhänger Newtons. Man tut so - z.B. nach den Äusserungen von Burnets Cousin Cheyne - als ob alles, was in der Mathematik seit einem halben Jahrhundert erfunden worden ist, allein auf die Fluxionen oder den Differentialkalkül zurückgehe und alle Mathematiker dies nur kommentiert und kleine Korollare formuliert hätten. Wenn Joh. B. streitsüchtig wäre [sic !], würde er zeigen, dass er einiges zur Vervollkommnung der Methoden der "infiniment petits" beigetragen hat. Er war der erste, der gefunden und verbreitet hat, wie man den Übergang von den Fluxionen zu den Fluenten, oder - wie er sagt - von den Differentialen zu den Integralen, in algorithmische Regeln fasst. So entstand der "calcul integral", den er mit diesem Namen getauft hat, weil er damals keinen besser passenden kannte. Vorher kannte man nur spezielle Verfahren ohne Algorithmus und musste oft auf unendliche Folgen oder Reihen zurückgreifen, was die hauptsächliche Anwendung der Engländer ist. Joh. B. könnte durch eifrige Parteigänger überall ausschreien lassen, dass seine Methoden unabhängig von der Fluxionenmethode und dem Differentialkalkül sind. Aber er liebt es nicht, sich durch das Geschrei von Sklaven berühmt machen zu lassen oder sich käuflicher Federn zu bedienen. Die Wahrheit wird von selbst zu seinen Gunsten sprechen.</p>
-      <p>Nach der Lektüre der Quellen in den Büchern und Zeitschriften wird man erkennen, wer der erste Erfinder war. Leibniz, der sich zur Zeit in Wien befindet, hat ein Flugblatt als vorläufige Antwort auf das Commercium epistolicum publiziert, das er Burnet gerne geschickt hätte, es ist aber nicht sehr erfreulich [Epistola qua probatur Analyticam Artem primum a L.... fuisse editam ..., 1713]. Er hat dem Sekretär von Stanian vier Exemplare seiner Théorie de la manoeuvre des vaisseaux für de Moivre, Newton, Halley und Burnet mitgegeben sowie ein weiteres für 'sGravesande in Holland. Das Buch ist gleichsam als ein Nebenprodukt entstanden. Nic. I B. lässt Burnet und Newton grüssen. Sicher hat Burnet Jacob B.s Ars conjectandi erhalten, von der NIc. I B. vier Exemplare für Burnet, Newton, Halley und de Moivre an 'sGravesande gesandt hat. Grüsse von Frau Bernoulli.</p>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1073404/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1073405" n="1"/> <pb facs="1073406" n="2"/> <pb facs="1073408" n="3"/> <pb facs="1073409" n="4"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1714-05-15">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-104185643">Burnet, William</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_1714-04-08_991170514862905501" type="prev"/>
+          <ptr target="B_1705_991170514862705501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Burnet_William-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>Joh. B. hat die von Burnet in seinem Brief von 1714 04 08 angekündigten beiden Exemplare
+          des Commercium epistolicum erhalten. Sie waren in der Tat in einem nicht für ihn, sondern
+          für Nic. I B. bestimmten Brief von de Moivre angekündigt worden. Das Exemplar der zweiten
+          Auflage von Newtons Principia ist mit einer Wagenladung etwas beschädigt eingetroffen. De
+          Moivre hat im vor längerer Zeit ein Exemplar als Geschenk Newtons versprochen, sein
+          Versprechen aber nicht gehalten. Nicht nur Anisson, sondern auch andere französische
+          Mathematiker haben ein Geschenkexemplar erhalten, wie Joh. B. von Varignon erfahren hat.
+          Er begreift, dass Newton mit seinem teuren Buch sparsam umgeht, und ist ihm für andere
+          Buchgeschenke nach wie vor dankbar. Für die Neuauflage der Principia hätte Joh. B. jeden
+          Preis bezahlt. Er hofft, dass Newton von seinen Bemerkungen zur Erstauflage befriedigt
+          ist. Nic. I B. hat Newton einen Fehler mit der Korrektur desselben mitgeteilt, allerdings
+          ohne ihm die Methode zu enthüllen, mit der Joh. B. den Fehler gefunden hat. Diese wird
+          Newton den AE entnehmen. Newton hat den Fehler in der zweiten Auflage korrigiert, indem er
+          einige schon gedruckte Blätter durch neue ersetzt hat, ohne allerdings mit einem einzigen
+          Wort zu erwähnen, wem er den Hinweis auf den Fehler verdankt. Er zeigt damit die
+          Missachtung der Engländer gegenüber allen ausländischen Mathematikern. Die Aufrichtigkeit
+          hätte Newton zum Bekenntnis der Wahrheit zur Ehre eines Schweizers veranlassen sollen,
+          ohne dass dadurch das Ansehen der berühmten Nation Schaden genommen hätte. Die Zeichen der
+          Freundschaft, die Newton ihm übermittelt hat, lassen Joh. B. aber glauben, dass es keine
+          persönliche Missachtung ist, wenn sein Name nicht in Newtons Buch erscheint. Wenn Newton
+          jedoch seine Zusätze in der zweitenAuflage mit Joh. B.s Bemerkungen vergleichen wird, wird
+          er einige weitere fehlerhafte Stellen ohne Korrekturen feststellen.</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-129466697">Anisson, Jean</persName>
+            <note type="lebensdaten">(1642-1721)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1687-1759)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117659606">Cheyne, George</persName>
+            <note type="lebensdaten">(1671-1743)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
+            <note type="lebensdaten">(1673-1764)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118939297">Gravesande, Willem Jacob</persName>
+            <note type="lebensdaten">(1688-1742)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-120597519">Gröning, Johann</persName>
+            <note type="lebensdaten">(1669-1747)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118720066">Halley, Edmond</persName>
+            <note type="lebensdaten">(1656-1742)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
+            <note type="lebensdaten">(1629-1695)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+            <note type="lebensdaten">(1646-1716)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
+            <note type="lebensdaten">(1667-1754)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1022825984">Stanyan, Abraham</persName>
+            <note type="lebensdaten">(1669-1732)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+            <note type="lebensdaten">(1654-1722)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1714-05-15_Bernoulli_Johann_I-Burnet_William"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073404/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1073405" n="1"/> à Bâle ce 15. May 1714</p>
+        <p>Monsieur </p>
+        <p>Ce que vous me mandez dans l'honneur de vôtre derniere du huitieme Avril (apparemment
+          vieux style)<note type="editorial">[Text folgt]</note> touchant les 2 exemplaires du <hi
+            rend="u">Commercium epistolicum</hi>, destinés pour mon Neveu et pour moi, avoit deja
+          eté notifié par Mr. de Moivre dans une lettre, qu'il écrivit, non pas à moi, comme vous
+          pensez mais à mon Neveu.<note type="editorial">[Text folgt]</note> J'ai enfin reçu, mais
+          un peu mal conditioné par la voiture, le livre de Mr. Newton,<note type="editorial">[Text
+            folgt]</note> que vous avez eu la bonté de m'envoyer en present, dont je vous repete les
+          remercimens, que j'ai faits dans ma derniere:<note type="editorial">[Text folgt]</note>
+          Mr. de Moivre m'en avoit promis un exemplaire il y a longtemps de la part de l'Auteur,
+          mais apparement il ne s'est pas trouvé en état de tenir sa parole, puisque je n'en ai
+          point reçu de luy; Vous dites que Mr. Newton n'en a fait aucun present qu'à Mr. Anisson,
+          cependant je sçay, que Mr. Varignon et d'autres Mathematiciens de France, en ont reçu, si
+          bien que Mr. Varignon lui même me dit dans une de ses lettres, qu'il ne doutoit nullement
+          que Mr. Newton ne me fit aussi ce même present comme il luy en avoit fait:<note
+            type="editorial">[Text folgt]</note> mais je ne suis pas surpris, qu'il menage ses
+          exemplaires et qu'il n'en envoye pas à tout le monde car c'est un livre veritablement
+          precieux et il lui en couteroit trop de les prodiguer jusqu'en Suisse; je ne laisse pas de
+          lui être redevable de quelques uns de ses autres livres, dont il m'a regalé autre fois:
+          Pour la nouvelle edition des <hi rend="u">Principia Phil. Nat.</hi><note type="editorial"
+            >[Text folgt]</note> je l'aurois acheté à tout prix, si vous n'aviez pas eu la
+          generosité de m'en rendre possesseur. Pour ce qui est de mes remarques sur l'ancienne
+            edition,<note type="editorial">[Text folgt]</note> j'espere que Mr. Newton en aura toute
+          la satisfaction, qu'il peut souhaiter, il est vray, qu'entre autres de ces <pb
+            facs="1073406" n="2"/> remarques mon Neveu luy a indiqué une meprise avec la correction
+          quoique sans la methode dont je me suis servi pour trouver cette correction et qu'il verra
+          dans les Actes de Leipsiq; Il est vray aussi que là dessus Mr. Newton a corrigé son erreur
+          dans sa nouvelle edition et y a inseré la correction de sa façon en cassant quelques
+          feuilles deja imprimées et en y substituant d'autres sans pourtant faire mention avec un
+          seul mot, par qui il avoit eté averti de sa meprise, ni à qui il en etoit redevable,
+          demarche dont tout autre plus glorieux que moi se plaindroit publiquement, sur tout dans
+          cette conjoncture, où vos Mathematiciens Anglois se mettent en campagne contre les
+          Etrangers et se donnent tant de mouvement pour assurer à leur nation la gloire des
+          decouvertes, qu'on a faites en Geometrie depuis quelque temps: pour vous dire la verité,
+          je croyois que la candeur de Mr. Newton lui arracheroit quelques mots de confession de la
+          verité à l'honneur d'un Suisse sans blesser par là la reputation de vôtre Illustre Nation;
+          mais quelque puisse être la cause de ce silence, j'ai trop bonne opinion de l'amitié de
+          Mr. Newton par les marques qu'il m'en a données pour croire, que ce soit un effet de
+          mepris en me jugeant indigne, que mon Nom paroisse dans son livre. Quant au reste, j'ai
+          remarqué en le parcourant jusqu'ici legerement, qu'il y a inseré plusieurs belles choses
+          et d'autres corrections; il trouvera pourtant, quand il les confrontera avec mes
+          remarques, qu'il a laissé quelques endroits defectueux sans correction. J'ai fait autre
+          fois sur l'anciene edition d'autres remarques, que je n'ai pas encore communiquées, mais
+          que je communiquerai peutêtre avec le temps. Je voi aussi que Mr. Newton a profité des
+          observations de Mr. Huguens, qu'un certain nommé Groningius aprez les avoir achetées à la
+          vente de la bibliotheque de Mr. Huguens fit ensuite imprimer, il y a environ 15 ou 16 ans
+          avec un petit traité sur la Cycloide, que Mr. Newton peut avoir vu.<note type="editorial"
+            >[Text folgt]</note> Vous me demandez Monsieur, mon sentiment sur le <hi rend="u"
+            >Commercium Epistolicum</hi><note type="editorial">[Text folgt]</note>
+          <pb facs="1073408" n="3"/> mais je n'ai garde de decider d'une querelle qui est entre deux
+          grands hommes, que j'estime egalement et qui tous deux m'honorent de leur affection;
+          cependant il y auroit du pour et du contre, sans qu'il me prenne envie de m'en meler, de
+          peur que je n'offense l'un ou l'autre ou peutetre tous les deux. Il seroit à souhaiter,
+          que les partisans de Mr. Newton eussent embrassé sa cause avec moins d'emportement et avec
+          d'autant plus de moderation; selon la maniere decisive dont ils parlent avec un air de
+          superiorité, on diroit que tout ce qu'on a inventé dans les mathematiques depuis prés d'un
+          demi siecle etoit dû uniquement à la Methode des Fluxions ou au Calcul differentiel qu'on
+          pretend être tiré de cette methode, comme si nous autres petits compagnons n'avions rien
+          fait que commenter sur elle et tout au plus en former quelques legers corollaires suivant
+          l'expression de vôtre Cousin Mr. Cheynes. Mais si j'avois l'humeur querelleuse, je
+          pourrois peutêtre montrer que nous n'avons pas peu contribué à la perfection de la methode
+          des infiniment petis, que c'est moi le premier qui ai inventé et communiqué la maniere de
+          reduire en regles d'algorithme pour remonter des fluxions aux fluentes ou comme nous
+          parlons des differentielles aux integrales, dont il est resulté le calcul integral, qui
+          est aussi le nom dont je l'ai baptisé, n'en sçachant alors point de plus convenable; au
+          lieu, qu'auparavant on n'avoit que des regles particulieres sans Algorithme, que l'on
+          employoit suivant l'état des questions, et le plus souvent on étoit obligé de recourir aux
+          suites ou progressions infinies, qui faisoient la principale application de vos Messr. Si
+          de plus mon naturel me le permettoit, je pourrois bien faire valoir mes decouvertes et les
+          faire sonner bien haut par quelques Partisans zelés et outrés en les pronant partout et en
+          montrant, qu'elles sont independantes de la methode des fluxions et du Calcul
+          differentiel; mais je n'aime pas à me rendre celebre par des crieries des esprits serviles
+          et des esclaves, ni à employer <pb facs="1073409" n="4"/> des plumes mercenaires, qui se
+          piquent de dire des flatteries sans mesure quand il s'agit de louer quelqu'un de leur
+          nation. Je me contente que la verité parle elle meme en ma faveur et se developpe à qui
+          voudra s'éclaircir du fait par la lecture des livres et des journaux, qui contiennent nos
+          productions car aprez la lecture on jugera, qui en a eté le premier inventeur. Pour
+          ajouter un mot sur le <hi rend="u">Commercium epistolicum</hi>: Je ne sçai si vous sçavez
+          que Mr. Leibnits, qui se trouve à Vienne depuis plus d'un an, y a publié une petite
+          reponse sur une feuille de papier,<note type="editorial">[Text folgt]</note> qui doit
+          servir d'avant-coureur à une reponse plus ample quand il sera de retour chez luy; si je
+          n'avois eu peur de charger trop cette lettre ou que cela ne vous fut pas agreable, je vous
+          aurois envoyé cette reponse. J'espere que vous aurez maintenant reçu ma Theorie de la
+          manoeuvre des vaisseaux:<note type="editorial">[Text folgt]</note> J'en ai envoyé 4
+          exemplaires à Mr. de Moivre, un pour luy et 2 pour Mess. Newton et Halley; le quatrieme
+          etoit pour vous: J'en ai fait un paquet que j'ai donné au Secretaire de Mr. Stanian, qui
+          s'en retournoit de la Suisse en Angleterre me servant de la meme occasion d'en envoyer un
+          autre exemplaire en Hollande à Mr. S'Gravensande.<note type="editorial">[Text
+            folgt]</note> Vous dites qu'on est impatient chez vous de voir ce traité, mais je crains
+          que quand ils l'auront vu il ne reponde pas à leur attente. Je parle de Mr. Newton et de
+          vos autres grands Maitres, auxquels il faut quelque chose d'exquis pour contenter leur
+          gout; j'espere cependant, qu'ils auront la bonté de considerer que ce traité n'a eté fait
+          que par occasion et <hi rend="u">quasi aliud agendo</hi>. Mon Neveu vous fait ses
+          complimens, je vous prie de faire les miens à Mr. Newton: Vous aurez sans doute reçu <hi
+            rend="u">L'art de conjecturer</hi> de feu mon Frere,<note type="editorial">[Text
+            folgt]</note> dont mon Neveu a envoyé 4 exemplaires à Mr. S'Gravensande pour vous les
+          faire tenir, afin d'en garder un pour vous et de distribuer les 3 autres à Mes. Newton,
+          Halley et de Moyvre. Je n'ai plus rien à ajouter si non la commission que ma femme m'a
+          donnée de vous faire ses complimens. Je suis avec une passion extraordinaire Monsieur
+          Vôtre tres-humble et tres obeissant Serviteur J. Bern. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

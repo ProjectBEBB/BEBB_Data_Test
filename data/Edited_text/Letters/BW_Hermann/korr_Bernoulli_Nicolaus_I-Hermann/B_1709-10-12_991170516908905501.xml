@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<TEI xml:id="B_1709-10-12_991170516908905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_1709-10-12_991170516908905501" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -16,18 +13,18 @@
     <editionStmt>
       <edition>manualPlaceholderContent</edition>
       <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
+        <persName key="SG">
+          <surname>Gehr</surname>
+          <forename>Sulamith</forename>
         </persName>
       </editor>
       <respStmt>
-        <persName key="pers_DE-588-">
+        <persName key="MK">
           <surname/>
           <forename/>
         </persName>
         <resp>
-          <note type="remarkResponsibility"/>
+          <note type="remarkResponsibility"></note>
         </resp>
       </respStmt>
       <funder>SAGW</funder>
@@ -113,12 +110,12 @@
       <correspAction type="sent">
         <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
         <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4044295-0">Padua</placeName>
+        <placeName key="place_GEO-3171728" ref="https://d-nb.info/gnd/4044295-0">Padua</placeName>
         <date when="1709-10-12">pythonPlaceholderContent</date>
       </correspAction>
       <correspAction type="received">
         <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+        <placeName key="place_GEO-2661604" ref="http://d-nb.info/gnd/4004617-5">Basel</placeName>
       </correspAction>
       <correspContext>
         <ptr target="B_1733-01-31_991170430186305501" type="prev"/>
@@ -159,12 +156,25 @@
           <persName key="pers_DE-588-118771167">Wallis, John</persName>
           <note type="lebensdaten">(1616-1703)</note>
         </person>
-      </listPerson>
+      </listPerson><!-- Noch nicht im BIBB: 
+        Niklaus Bernoulli d.Ä. pers_DE-588-135542286, 
+        Ursula Bernoulli-Stähelin: pers_DE-588-1089924429, 
+        Germanus Hermann: pers_DE-588-1048628825, 
+        Pierre Varignon: pers_DE-588-119062372; 
+        Vincenzo Viviani: pers_DE-588-100673287 -->
+      
+      <!-- Zusammenfassung: Hermann gratuliert Nicolaus I Bernoulli zu seiner "Dissertatio mathematico-juridica de usu artis conjectandi in jure", die mit grossem Applaus aufgenommen wurde. Er lobt ihren Nutzen, ihre Neuartigkeit und das Interesse, das sie weckt. Besonders hebt Hermann hervor, dass Nicolaus I Bernoulli mit dieser Arbeit gezeigt hat, dass die Mathematik, insbesondere die Analysis, auch im Bereich der Jurisprudenz angewendet werden kann. Während die Geometrie bereits früher Nutzen für das Zivilrecht hatte, wurde die Wahrscheinlichkeitstheorie – ein damals neues Feld – noch nie zuvor auf das Recht angewandt. Hermann dankt zudem für ein Exemplar der Dissertation, das Nicolaus seinem Vater überreicht hat.
+Er bedauert, dass zwei Briefe, einer an Nicolaus I Bernoulli und einer an dessen Vater, verloren gegangen sind. 
+Hermann berichtet, dass Guido Grandi in einem (verlorenen) Brief sein Werk "De infinitis infinitorum, et infinite parvorum ordinibus disquisitio geometrica" ankündigt. Darin wird Grandi auf Pierre Varignons Kritik an John Wallis’ Konzepten über hyperbolische Flächen eingehen, die 1706 in den Mém. Paris veröffentlicht wurde. Hermann erwähnt Grandis frühere bedeutende Arbeiten und zitiert aus einem weiteren (nicht mehr erhaltenen) Brief, in dem Grandi die Differentialrechnung lobt und beschreibt, wie ihm die Lektüre von L’Hôpitals Analise des infiniment petits geholfen hat, die Geheimnisse dieser Methode zu durchdringen.
+Abschliessend bittet Hermann Nic. I B., seinem Vater Grüsse auszurichten und ihm zur Dissertation zu gratulieren. Er erkundigt sich ausserdem, ob Giuseppe Verzaglia noch in Basel ist, und bittet, diesen in seinem Namen zu grüssen. -->
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="grundkommentiert">
     <listChange>
+      <change when="2024-11-27" who="SG">Abstract</change>
+      <change when="2024-11-26" who="SG">Grundkommentiert</change>
+      <change when="2024-11-25" who="SG MK">Kollationiert</change>
       <change when="2024-03-20" who="SG">Zeilenfall, Seitenzahlen usw.</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
@@ -176,63 +186,69 @@
 <body>
 <div type="letter">
     <pb facs="1063636" n="1r"/>
-<opener><dateline>Patav. <date when="1709-10-12">12. Oct. 1709</date></dateline>
+<opener><dateline><abbr>Patav.</abbr> <date when="1709-10-12">12. <abbr>Oct.</abbr> 1709</date></dateline>
 <lb/><salute>Viro Doctissimo
-    <lb/>Nicolao Bernoulli J. U. Cand.
-    <lb/>Jacobus Hermannus. S. P. D.</salute></opener>
-    <p><lb/>Superiori Mense Julio epistolium ad Te dedi, Vir Doctissime,
-        <lb/>quod magno meo dolore cum aliis nonnullis ad Patrem meum
-        <lb/>directis intercidisse intelligo. Nam literis ejus certior factus
-        <lb/>de felici successu Disputationis à Te conscriptae de Usu Artis
-        <lb/>conjectandi in Jure, quam summo cum applausu omnium Te
+  <lb/><rs type="person" key="pers_DE-588-119166895">Nicolao Bernoulli</rs> <abbr>J. U. Cand.</abbr>
+  <lb/><rs type="person" key="pers_DE-588-119112450">Jacobus Hermannus</rs> <abbr>S. P. D.</abbr></salute></opener>
+  <p><lb/><date when="1709-07">Superiori Mense Julio</date> <rs type="letter">epistolium</rs><!-- ToDo: In BIBB erfassen --> ad Te dedi, Vir Doctissime,
+    <lb/>quod magno meo dolore cum <rs type="letter">aliis nonnullis</rs><!-- ToDo: In BIBB erfassen --> ad <rs type="person" key="pers_DE-588-1048628825">Patrem</rs> meum
+        <lb/>directis intercidisse intelligo. Nam <rs type="letter">literis</rs> ejus certior factus
+      <lb/>de felici successu Disputationis <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> Te conscript<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> de <hi rend="u"><rs type="biblio" key="biblio_ME943KC7">Usu Artis
+        <lb/>conjectandi in Jure</rs></hi>, quam summo cum applausu omnium Te
         <lb/>sustinuisse referunt, mihi sane temperare non potui, quin
-        <lb/>egregium hoc eruditionis et acuminis specimen publice editum
-        <lb/>animitus Tibi gratularer: quod dum praestare satago Deum
-        <lb/>M. O. precor ut qua coepit benedictionis uber tate studiis Tuis
-        <lb/>adesse, reliquos conatus Tuos porro secundet, ad ejus gloriam,
-        <lb/>Parentum solatium et insigne scientiarum incrementum, utque
-        <lb/>Tu denique laudabiliter exantlatorum laborum dignum praemium
+        <lb/>egregi<add><choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></add> hoc eruditionis et acuminis specim<add>e</add>n publice edit<add><choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></add>
+        <lb/>animitus Tibi gratularer: quod dum pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stare satago Deum
+        <lb/><abbr>M. O.</abbr> precor ut qu<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> coepit benedictionis ubertate studiis Tuis
+        <lb/>adesse, reliquos conatus Tuos porr<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> secundet, ad ejus gloriam,
+      <lb/><rs type="persons" key="pers_DE-588-135542286 pers_DE-588-1089924429">Parentum</rs> solatium et insigne scientiarum incrementum, ut<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+        <lb/>Tu deni<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> laudabiliter exantlatorum laborum dignum pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>mi<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
         <lb/>proxime consequaris.</p>
-    <p><lb/>Argumentum Dissertationis Tuae utile, curiosum et novum
-        <lb/>est, nullus enim Ictorum ne per somnium quidem unquam fortasse
+  <p><lb/>Argumentum <rs type="biblio" key="biblio_ME943KC7">Dissertationis</rs> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> utile, curiosum et novum
+        <lb/>est, nullus enim <choice><abbr>JCtorum</abbr><expan>Juris Consultorum</expan></choice> ne per somnium quidem unquam fortasse
         <lb/>cogitasset, res analyticas materiis Juridicis applicari posse, omnes
         <lb/>enim quotquot scio, qui ex professo Matheseos utilitatem in
-        <lb/>Jure civili evincere conati sunt, de Geometria tantum practica
-        <lb/>egerunt, quam in divisionibus latifundiorum <add>aliisque</add> necessariam esse
-        <lb/>ostenderunt. Sed qui Artis conjectandi quae ipsa fere nova est,
-        <lb/>usum in materiis Juris monstraret, repertus est, quod sciam,
-        <lb/>nemo; adeo ut Dissertatio Tua inter alias praerogativas etiam
-        <lb/>novitatis gratiâ floreat. Quod vero uno ejusdem exemplari Patri
+        <lb/><rs type="keyword">Jure Civili</rs> evincere conati sunt, de Geometria tantum practica
+        <lb/>egerunt, quam in divisionibus latifundiorum <add>aliis<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice></add> necessariam esse
+        <lb/>ostenderunt. Sed qui <rs type="keyword">Artis Conjectandi</rs> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ipsa fere nova est,
+        <lb/>usum in materiis <rs type="keyword">Juris</rs> monstraret, repertus est, quod sciam,
+    <lb/>nemo; adeo ut <rs type="biblio" key="biblio_ME943KC7">Dissertatio</rs> Tua inter alias pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>rogativas etiam
+    <lb/>novitatis grati<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> floreat. Quod ver<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> uno ejusdem exemplari <rs type="person" key="pers_DE-588-1048628825">Patri</rs>
         <lb/>meo tradito, me cohonestatum voluisti gratias ago maximas
         <pb facs="1063637" n="1v"/>
-        <lb/>indeque benevolum Tuum in me Animum cognosco, quem aliis
+        <lb/>inde<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> benevolum Tuum in me Animum cognosco, quem aliis
         <lb/>etiam occasionibus perspectum mihi reddidisti. De me vicissim
         <lb/>velim Tibi persuadeas, nihil exoptatius mihi accidere posse, quam
         <lb/>ut occasio mihi suppeditetur, ipso opere comprobandi quanti
-        <lb/>faciam eximias dotes Tuas tum etiam amicitiam quâ me dignaris.</p>
-    <p><lb/>In his oris nihil in re literaria novi habetur, nisi quod Pisis
-        <lb/>P. Guido Grandus Monachus Benedictinus Philosophiae Pro<pc type="hyphenation">-</pc><lb break="no"/>fessor et Doctus Geometra proxime typis exscribendum tradet
-        <lb/>Tractatum aliquem de variis infiniti gradibus in quo, ut literis
-        <lb/>suis mihi significavit, respondebit ad Cl. Varignon Schediasma
-        <lb/>quo Wallisii Plusquam Infinita Spatia nonnullarum Hyper<pc type="hyphenation">-</pc><lb break="no"/>bolarum intra Asymptotas exploduntur et refelluntur in
-        <lb/>Commentariis Academiae Parisinae anni 1706. Egregius
-        <lb/>hic vir variis jam operibus Geometricis nempe Commentariis
-        <lb/>in Vivianea Problemata, Demonstrationibus Hugenianorum
-        <lb/>Theorematum circa Logarithmicam, atque Libello de Quadra<pc type="hyphenation">-</pc><lb break="no"/>tura Circuli et Hyperbolae per series, inclaruit. Et quanquam
-        <lb/>calculus differentialis ipsi serò innotuit, non tamen praejudicatis
+        faciam eximias dotes Tuas tum etiam amicitiam qu<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> me
+      <lb/>dignaris.
+    </p>
+  <p><lb/>In his oris nihil in re literari<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> novi habetur, nisi quod <rs type="place" key="place_GEO_3170647">Pisis</rs>
+      <lb/><choice><abbr>P.</abbr><expan>Pater</expan></choice> <rs type="person" key="pers_DE-588-118937669">Guido Grandus</rs> Monachus Benedictinus Philosophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Pro<pc type="hyphenation">-</pc><lb break="no"/>fessor et Doctus Geometra proxime typis exscribendum tradet
+    <lb/><rs type="biblio" key="biblio_RT94S4R8">Tractatum aliquem de Variis infiniti gradibus</rs> in quo, ut <rs type="letter">literis</rs><!-- ToDo: Nachgewiesener Brief in BIBB erfassen -->
+    <lb/>suis mihi significavit, respondebit ad <abbr>Cl.</abbr> <rs type="person" key="pers_DE-588-119062372">Varignon</rs> <rs type="biblio" key="bibl_MDEJADS3">schediasma</rs>
+    <lb/>quo <rs type="person" key="pers_DE-588-118771167">Wallisii</rs> Plusquam Infinita Spatia nonnullarum Hyper<pc type="hyphenation">-</pc><lb break="no"/>bolarum intra Asymptotas exploduntur et refelluntur in
+        <lb/><rs type="biblio">Commentariis <rs type="organisation">Academi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Parisin<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs></rs> anni 1706. Egregius
+        <lb/>hic Vir variis jam Operibus Geometricis nempe <rs type="biblio">Commentariis</rs><note type="comment">Vermutlich <rs type="biblio" key="bibl_GJ69CTRI">Grandi [1699]</rs></note>
+    <lb/>in <rs type="person" key="pers_DE-588-100673287">Vivianea</rs> <rs type="biblio">Problemata</rs>, <rs type="biblio" key="bibl_E87DDNEH">Demonstrationibus <rs type="person" key="pers_DE-588-118639749">Hugenianor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs>
+      <lb/>Theorematum circa Logarithmicam</rs>, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <rs type="biblio" key="bibl_CFZQXJ3S">Libello de Quadra<pc type="hyphenation">-</pc><lb break="no"/>tur<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> Circuli et Hyperbol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per series</rs>, inclaruit. Et quanquam
+        <lb/>Calculus differentialis ipsi ser<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> innotuit, non tamen pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>judicatis
         <lb/>opinionibus obsitam et impeditam habet mentem quo minus
-        <lb/>illius praestantiam agnoscat, eodemque nunc utatur. Nam in aliqua
-        <lb/>sua epistola ita mihi scribit. <hi rend="u">Ubi Tractatus Hospitaliani ope
-            <lb/>Analyseos hujus (differentialis) mysteria penetrare caepi, fateor
-            <lb/>me pro ludo habuisse quae tunc temporis operosâ demonstratio<pc type="hyphenation">-</pc><lb break="no"/>ne indigere vide bantur</hi>.</p>
-    <p><lb/>Postremo Te rogatum volo, ut Prudentiss.<hi rend="sup">o</hi> <abbr>Dn.</abbr> Parenti Tuo, cui felicem
-        <lb/>Dissertationis Tuae successum laetus gratulor, cultum meum Deferas. Cum non<pc type="hyphenation">-</pc><lb break="no"/>dum adhuc audiverim doctiss. Verzagliam Basileâ profectum esse, eum
-        <lb/>adhuc apud vos agere suspicor, quod si ita sit, si ipsum officiose <add>meo nomine</add> saluta<pc type="hyphenation">-</pc><lb break="no"/>bis nihil ages quod mihi non sit gratissimum.</p>
-<closer>Vale et me ama 
-    <lb/><dateline>Datum Patavii die <date when="1709-10-12">12 8bris 1709</date>.</dateline>
+        <lb/>illius pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stantiam agnoscat, eodem<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> nunc utatur. Nam in aliqua
+    <lb/>su<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> <rs type="letter">epistol<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></rs><!-- zweiter nicht erhaltener Brief von Grandi. ToDo: Nachgewiesener Brief in BIBB erfassen --> ita mihi scribit. <cit><quote><hi rend="u">Ubi <rs type="biblio" key="bibl_6EAMFGYN">Tractatus</rs> <rs type="person" key="pers_DE-588-100814891">Hospitaliani</rs> ope
+            <lb/>Analyseos hujus (differentialis) mysteria penetrare c<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>pi, fateor
+            <lb/>me pro ludo habuisse qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> tunc temporis operos<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> demonstratio<pc type="hyphenation">-</pc><lb break="no"/>ne indigere videbantur.</hi></quote></cit></p>
+  <p><lb/>Postremo Te rogatum volo, ut <abbr>Prudentiss.<hi rend="sup">o</hi></abbr> <abbr>Dn.</abbr> <rs type="person" key="pers_DE-588-135542286">Parenti</rs> Tuo, cui felicem
+    <lb/><rs type="biblio" key="biblio_ME943KC7">Dissertationis</rs> <add>tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add> successum l<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tus gratulor, cultum meum Deferas. Cum non<pc type="hyphenation">-</pc><lb break="no"/>dum adhuc audiverim <abbr>doctiss.</abbr> <rs type="person" key="pers_DE-588-1089923198">Verzagliam</rs> <rs type="place">Basile<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></rs> profectum esse, eum
+        <lb/>adhuc apud Vos agere suspicor, quod si ita sit, si ipsum officiose <add>meo nomine</add> saluta<pc type="hyphenation">-</pc><lb break="no"/>bis nihil ages quod mihi non sit gratissimum.</p> <closer>Vale et me Ama
+          <lb/><dateline>Datum <rs type="place" key="place_GEO-3171728">Patavii</rs> die <date when="1709-10-12">12 <abbr>8bris</abbr> 1709</date>.</dateline>
+          <pb facs="1063638" n="2r" type="empty"/>
+          <pb facs="1063639" n="2v"/>
 <address>
-<addrLine>A Monsieur Monsieur Bernoulli Candidat en Droit à Basle</addrLine>
+<addrLine>A Monsieur</addrLine>
+<addrLine>Monsieur Bernoulli Candidat en Droit</addrLine>
+<addrLine>à <hi rend="u">Basle</hi></addrLine>
 </address></closer>
+  
 </div>
 </body>
 </text></TEI>

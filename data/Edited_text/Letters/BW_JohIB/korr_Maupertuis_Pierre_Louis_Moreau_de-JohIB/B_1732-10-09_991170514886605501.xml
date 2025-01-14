@@ -1,212 +1,384 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1732-10-09_991170514886605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Pierre Louis Moreau de Maupertuis. Basel, 09. Oktober 1732</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Am Briefkopf eigenhändig "à Mr. de Maupertuis". Auf fo.2v 7 Zeilen durchgestrichen. Signatur und die letzten 6 Zeilen des P.S. eigenhändig</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1732-10-09_991170514886605501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Pierre Louis Moreau de Maupertuis.
+            Basel, 09. Oktober 1732</title><title type="alt">get_date!: () an ()</title><title
+            type="alt">000056551</title><title type="alt"
+            >1732-10-09_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de</title><title level="s"
+            >Basler Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Maupertuis, Pierre Louis Moreau de (1698-1759)
+        </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Am Briefkopf eigenhändig "à Mr. de Maupertuis". Auf fo.2v 7
+            Zeilen durchgestrichen. Signatur und die letzten 6 Zeilen des P.S.
+          eigenhändig</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1732-10-09_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 662, Nr.25</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514886605501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433102405504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000056551</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>8 S.<dimensions unit="cm">
+                    <height>22</height>
+                    <width>17</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bâle</origPlace><date when="1732-10-09">ce 9 8bre
+              1732</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1732-10-09_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 662, Nr.25</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514886605501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433102405504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000056551</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>8 S.<dimensions unit="cm"><height>22</height><width>17</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bâle</origPlace>
-            <date when="1732-10-09">ce 9 8bre 1732</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1732-10-09">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-118731998">Maupertuis, Pierre Louis Moreau de</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1732-09-24_991170514886705501" type="prev"/>
-        <ptr target="B_1732-10-20_991170514886505501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Maupertuis_Pierre_Louis_Moreau_de-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person>
-          <persName key="pers_no_GND_id">Barbaud, Alexandre Nicolas (Du Magni)</persName>
-          <note type="lebensdaten">(ca. 1687-ca. 1744)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
-          <note type="lebensdaten">(1686-1739)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
-          <note type="lebensdaten">(1700-1782)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117648388">Cassini, Jacques</persName>
-          <note type="lebensdaten">(1677-1756)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-11852092X">Clairaut, Alexis Claude</persName>
-          <note type="lebensdaten">(1713-1765)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118524844">Descartes, René</persName>
-          <note type="lebensdaten">(1596-1650)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117672491">Gamaches, Étienne-Simon de</persName>
-          <note type="lebensdaten">(1672-1756)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <note type="lebensdaten">(1678-1733)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118561448">Kepler, Johannes</persName>
-          <note type="lebensdaten">(1571-1631)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-11931035X">Mairan, Jean Jacques de</persName>
-          <note type="lebensdaten">(1678-1771)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1046082612">Moula, Frédéric</persName>
-          <note type="lebensdaten">(1703-1782)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-          <note type="lebensdaten">(1643-1727)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117619515">Saurin, Joseph</persName>
-          <note type="lebensdaten">(1655-1737)</note>
-        </person>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1075183/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1075184" n="1"/> <pb facs="1075185" n="2"/> <pb facs="1075186" n="3"/> <pb facs="1075187" n="4"/> <pb facs="1075188" n="5"/> <pb facs="1075189" n="6"/> <pb facs="1075190" n="7"/> <pb facs="1075191" n="8"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1732-10-09">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-118731998">Maupertuis, Pierre Louis Moreau de</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_1732-09-24_991170514886705501" type="prev"/>
+          <ptr target="B_1732-10-20_991170514886505501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Maupertuis_Pierre_Louis_Moreau_de-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_no_GND_id">Barbaud, Alexandre Nicolas (Du Magni)</persName>
+            <note type="lebensdaten">(ca. 1687-ca. 1744)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
+            <note type="lebensdaten">(1686-1739)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
+            <note type="lebensdaten">(1700-1782)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117648388">Cassini, Jacques</persName>
+            <note type="lebensdaten">(1677-1756)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11852092X">Clairaut, Alexis Claude</persName>
+            <note type="lebensdaten">(1713-1765)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118524844">Descartes, René</persName>
+            <note type="lebensdaten">(1596-1650)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117672491">Gamaches, Étienne-Simon de</persName>
+            <note type="lebensdaten">(1672-1756)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+            <note type="lebensdaten">(1678-1733)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118561448">Kepler, Johannes</persName>
+            <note type="lebensdaten">(1571-1630)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11931035X">Mairan, Jean Jacques de</persName>
+            <note type="lebensdaten">(1678-1771)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1046082612">Moula, Frédéric</persName>
+            <note type="lebensdaten">(1703-1782)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117619515">Saurin, Joseph</persName>
+            <note type="lebensdaten">(1655-1737)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1732-10-09_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1075183/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1075184" n="1"/> Monsieur </p>
+        <p>Je suis bien aise que Vous approuviés mon dessein de travailler sur les obliquités des
+          Orbites; pourvû que ce que je donnerai là dessus puisse repondre à ce que Vous en
+          attendés; je me propose de ne traitter pas seulement le sujet en question, parceque cette
+          matiere seule me paroit trop seche, mais afin que ma dissertation ait une juste étendue je
+          donnerai un essai d'un nouveau systeme du Monde, composé de ce qui me paroit de meilleur
+          dans les deux systemes de Descartes et de Newton;<note type="editorial">[Text
+            folgt]</note> j'y prendrai pour base les tourbillons rectifiés, j'eviterai le Vuide et
+          les attractions, en place des quelles j'introduirai la gravitation des Planetes causée par
+          l'impulsion de la maniere que je Vous ai communiqué: de là je deduirai les principaux
+          phénomenes celestes; je finirai mon discours par la solution tirée de mes principes de la
+          question dont il s'agit; voilà en gros le plan de ma piece que je medite et que je
+          l'executerai si Vous croyés que mon travail sera gouté par les Cartesiens, non obstant
+          qu'ils y trouveront une horrible réforme des tourbillons de leur Maitre, qui deviendront
+          par là presque méconnoissables; cette reforme m'a parû necessaire pour sauver les Ellipses
+          des Orbites pour laisser la viguer à la regle de Kepler, enfin pour faire voir que tout ce
+          que Mr. Newton donne de plus essentiel sur le mouvement des Planetes par la supposition du
+          vuide et des attractions, peut étre expliqué sans cette supposition par les seuls
+          principes de mechanique, reçûs de tout les Philosophes <pb facs="1075185" n="2"/> modernes
+          de quel parti qu'il soient; on me reprochera peutetre que ma nouvelle fabrique des
+          tourbillons ne sera pas dans le gout de celle que j'avois adoptée dans mon dernier ouvrage
+          sur l'Ellipticité des Orbites et la mobilité des aphelies;<note type="editorial">[Text
+            folgt]</note> cela est vrai, mais un Phisicien ne doit il pas imiter les Marchands, qui
+          ont garnis leurs boutiques de differentes marchandises de gouts differens et meme opposés
+          les uns aux autres, afin de contenter la fantaisie de chacun qui en voudra acheter? Je
+          laisserai donc pareillement à mes lecteurs le choix de prendre dans mes deux ouvrages ce
+          qui leur agréera le plus. Je ne comprens pas bien tout ce qu'il y a dans le papier de Mr.
+          Cassini, ni la maniere dont il veut qu'on fasse la corection de ce qu'il avoit marqué pour
+          le mouvement des noeuds: par exemple<note type="editorial">Im Manuskript steht
+            "exemble".</note> pour la Terre il donnoit 51" pour le mouvement des noeuds sur
+          l'ecliptique; or l'orbite de la Terre ne fait point de noeuds avec l'ecliptique puisque
+          l'Orbite et l'ecliptique sont<note type="editorial">Im Manuskript steht "son".</note> sur
+          un meme plan; il veut presentement qu'on rebranche par tout 51" du mouvement des noeuds,
+          marqué dans le papier; cependant il y avoit justement 51" pour ces noeuds sur l'equateur
+          du Soleil, pour Saturne, la Terre et Mercure; donc s'il faut retrancher 51" il faudra dire
+          que les noeuds de ces trois Planetes sont immobiles; je souhaiterais d'étre eclairci là
+          dessus. Si ce qu'en à donné Kepler, est le meilleur, je le consulterai, je croi que je le
+          trouveraj dans son Epitome Astron.<note type="editorial">Ein Exemplar aus dem Besitz
+            Johann Bernoullis beifndet isch in der UB Basel (Signatur xxx)</note>: Quant au reste,
+          come je traiterai mon sujet en Physicien et non point en Astronome, je n'aurois pas besoin
+          d'une entiere précision, et il me suffira que je sache, si ces noeuds sont mobiles ou
+          immobiles, et ceux qui sont mobiles en quels sens ils se meuvent par rapport aux etoiles
+          fixes, car suivant la correction il faudroit que quelques uns <pb facs="1075186" n="3"/>
+          allassent à contre sens des autres. Il me souvient fort bien de la reponse de Mr. Saurin
+          sur la gravitation des Planetes; mais puisque son traité, où il pretend l'avoir expliqué,
+          n'a jamais paru, je ne suis pas obligé de deviner sa pensée, outre que j'oserois bien
+          parier 100 contre un, que mon explication sera tout à fait differente de la sienne; Je
+          n'aurois pas trop de joye que mon dernier ouvrage sur l'ellipticité des orbites,<note
+            type="editorial">[Text folgt]</note> eut deja raffermi les Cartesiens dans leurs
+          Tourbillons, comme Vous dites, pour plusieurs siecles, car j'aurois sujet de craindre un
+          mauvais succés pour ma piece que je preparerai quand il verront paroitre les
+            tourbillons<note type="editorial">Im Manuskript steht "toubillons"</note> sous un autre
+          masque, à moins que Mrs. les Cartesiens ne prennent plaisir au changement de modes dans
+          les systemes commes dans les habits. Il y a sans doute bien des choses dans Mr. Newton sur
+          les resistances des corps qui se meuvent dans des milleux qui demandent des corrections,
+          Vous devés Vous souvenir Monsieur de Vous en avoir indiqué beaucoup, et que nous avons
+          epluché ensemble cette matiere pendant assés longtemps, ainsi je m'étonne de Vous voir
+          vous plaindre que Vous n'y entendés rien: Pour Mr. de Gamache, il a fort mauvaise grace de
+          pretendre renverser tout ce que Mr. Newton dit sur la perte du mouvement des corps dans
+          des milieux resistants, car il y a aussi de tres bonnes choses qui sont vraies, que Mr. de
+          Gamaches ne renversera pas avec toutes ses rodomontades; cependant il n'a pas tout à fait
+          tort, quand il veut que dans le plein meme les corps puissent parcourir des espaces
+          infinies auparavant de perdre tout leur mouvement: Car en effet cela arrive lorsque les
+          resistances du milieux sont<note type="editorial">Im Manuskript steht "son"</note> en
+          raison doublée de la vitesse; est il possible que Vous puissiés oublier si tot une chose
+          si facile? Soit l'espace <pb facs="1075187" n="4"/> à parcourir <formula>=x</formula>, la
+          vitesse residue <formula>=v</formula>, le temps <formula>=t</formula>; Vous aurés donc en
+          vertu du principe generale (<formula>pdt=pdx:v=\pm dv</formula>, où <formula>p</formula>
+          signifie la pression ou la resistence) Vous aurés dis je, ici où <formula>p</formula> est
+          supposé <formula>=vv</formula>, cette equasion <formula>vvdx:v=-dv</formula>, ce qui donne
+            <formula>dx=\frac{-dv}{v}</formula>, équation pour la logarithmique, où les abscisses
+            <formula>x</formula> sont sur l'asymtote, marque manifeste que l'espace
+            <formula>x</formula> à parcourir<note type="editorial">Im Manuskript steht
+            "parcurir"</note> devient infini avant que la vitesse <formula>v</formula> s'evanuisse.
+          Vous devés avoir bon nombre de manuscripts sur cette matiere, tant sur les trajectoires de
+          Mr. Newton dans le plein, que sur d'autres cas que nous avons etudiés ensemble, entre
+          autre Vous y trouverés une copie que Vous avés prise d'un ecrit in folio fort long sur les
+          jets perpendiculaires des bombes que j'avois fait à l'occasion d'une experience que mon
+          fils disoit avoir instituée à Petersburg, pour calculer les hauteurs des <pb
+            facs="1075188" n="5"/> ascensions par les temps et les resistances de l'air etc.; j'ai
+          aussi donné quelque chose dans mon discours sur le mouvement. Mais à l'age où je suis,
+          j'oublie tres facilement les routes que j'ais tenue autre fois dans ces sortes de
+          recherches, en sorte que j'eusse cru Vous devoir prier de m'y remettre quand j'en aurois
+          besoin, bien loin de Vous endoctriner là dessus, Vous dis-je, que je regarderai desormais
+          comme mon Maitre; Vous montés et moi je descends: c'est la vicissitude des choses
+          humaines, que les Maitres deviennent les disciples, et les Disciples s'erigent en Maitres. </p>
+        <p>Ce sera peutetre la derniere de mes decouvertes, que celle, que j'ai faite sur l'usage de
+          la force immaterielle dans la solution des problemes de la Mechanique des solides et des
+          fluides; ce n'est qu'un leger echantillon que Vous avés vû sur les deux corps montants et
+          descendants par deux courbes: Mais si Dieu me prolonge la vie, je vous en ferai
+          communication tout au long, après que j'avai fini mon Discours sur la question de
+          l'Academie; Vous savés qu'il m'est impossible de Vous rien cacher, tant j'ai de plaisir de
+          Vous en faire.<note type="editorial">Hier fehlt im Manuskript offensichtlich ein
+            "part"</note>
+        </p>
+        <p>Il est vrai qu'on peut expliquer aussi par là que le centre de gravité de plusieurs
+          corps, doit avant et aprés la collision continuer son état de la meme maniere, mais ma
+          Theorie est independante de la consideration du centre de gravité, et Vous vous
+          souviendrés que je Vous ai dit que j'ai trouvé cette proprieté du centre commun de
+          gravité, avant que de avoir pensé à la force immaterielle. </p>
+        <p>Quoique je ne sache pas à quel dessein Vous me <pb facs="1075189" n="6"/> demandés la
+          permission de lire à l'Academie mes deux écrits sur les Epicycloides Spher. et sur
+          l'investigation des courbes rectifiables et algebr. j'y consens par cela seul que Vous le
+          souhaités, et je remets le reste à votre prudence et discretion pour ce qui regarde le
+          paralogisme de Mr. Herman, commis dans cette recherche. Je suis bien aise d'apprendre que
+          la maniere de Mr. Clairaut de resoudre ces problemes se rapporte assés à la mienne: Il me
+          la communiquera peutetre<note type="editorial">Im Manuskript steht "peuetre".</note> quand
+          il viendra ici; mais la pensée de sa venue m'efraye; je vous en ai dit la raison:
+          j'esperois que le delai que je Lui avois demandé pour son voyage, l'en auroit detourné
+          pour toujours; cependant il persiste dans son dessein, à la bonne heure qu'il vienne, mais
+          à condition qu'il ne s'en prenne qu'à lui meme, quand il ne trouvera pas en moi ce qu'il
+          avoit cherché. Je souhaiterais extremement que Vous vinssiés avec Lui pour avoir en Vous
+          un aide qui me rappellât les idées des sujets que nous traitames ensemble, sans cela il
+          trouvera mes lumieres presque eteintes, qui se rallumeroient par la présence des Votres,
+          outre qu'il en rejailleroit peutetre sur Vous encore quelques etincelles nouvelles, qui
+          vous feroient perdre le regret d'avoir fait un second voyage dans nos pays. Je ne saurois
+          deviner qui peut avoir dit à mon fils, que Vous ayés fait une critique des Memoires de
+          Petersbourg, au moins ce n'est pas moi, mais bien au contraire, je lui ai ecrit que Vous y
+          avés trouvé de belles choses et que Vous souhaitiés de voir bientot la suite de leurs
+          Memoires, pour faire Vos remarques (non point une critique) sur ce qu'il y a de plus <pb
+            facs="1075190" n="7"/> beau, parce que Vous aviés le dessein d'en rendre compte à
+          l'Academie, sans doute favorablement. Voyés si j'ai bien ecrit; mais je vous prie de
+          demander à mon fils, qui est celui qui lui a parlé de critique. Je n'ai pas encore reçû le
+            3.<hi rend="sup">e</hi> Tome des Memoires de Petersbourg, quoique j'aye reçû ces jours
+          passés un gros paquet, mais qui ne contenoit qu'un double exemplaire d'une Grammaire
+          Chinoise et d'un Dictionaire Russico-Germanico-Latinum, comme il n'y avoit point de lettre
+          de mon fils, je ne sai à quoi il destine ces Livres; cependant si Vous en souhaités, il
+          sera à Votre service, pour moi je ne sçai qu'en faire. Je suis bien aise Monsieur
+          d'apprendre, que Vous serés Commissaire pour le prix de 1734; car cela me donne esperance
+          que quand Vous trouverés ma piece plus digne que les autres, Vous augmenterés le nombre
+          des suffrages qui me seront favorables: je ne veux point briguer autrement le votre, qu'à
+          condition que je le merite, dites moi en confidence les Noms des autres 4 Comissaires: Mr.
+          de Mairan me les avoit toujours nommés, quand j'y étois interessé; ce seroit seulement
+          pour me conformer à leur gout en composant ma piece. Je n'ai rien donné à Mr. Moula pour
+          les copies qu'il Vous a faites, et je ne lui donnerai rien, ce que je lui ai dit à lui
+          meme et il est assès honnete pour comprendre qu'il ne devroit rien attendre pour le peu
+          qu'il a travaillé pour vous depuis la derniere fois que Vous l'avés regalé; d'autant plus
+          que la plus grande peine qu'il a eue de copier, ç'a été pour les Epicycloides spher. et
+          pour les courbes rectifiables etc. qui doit étre mise sur mon compte; puisque Vous voulés
+          que ces deux pieces paroissent sous mon nom, et que vous n'en avés que de la peine et <pb
+            facs="1075191" n="8"/> de l'embarras. Mais si aprés tout cela Vous croyés, que Mr. Moula
+          merite en outre quelque petite recompense, c'est à Vous à m'ordonner le quantum; ce qui
+          vient de moi je l'estime si peu, que je ne puis pas adjuger à la copie plus qu'à
+          l'original; en un mot je ne suis pas juge competent <hi rend="u">in propria causa</hi>,
+          c'est le dictum des Jurisconsultes. Quant au reste je suis avec la plus parfaite estime et
+          sincerité Mr. Votre etc. J. Bernoulli</p>
+        <p>Bâle ce 9. 8bre 1732</p>
+        <p>Nous avons appris que Mr. de Thiancourt et son Frere Mr. du Magni ont fait la solemnelle
+          abjuration de leur Religion en embrassant la Votre. Je Vous felicite de cette grande
+          acquisition, quoique je me souvienne encore très bien de ce que je Vous ai oui dire plus
+          d'une fois, que Vous n'estimés gueres les Proselytes. Je suis aussi de Votre sentiments à
+          l'egard de ceux qui quittent Votre Communion pour se jetter dans la notre, car on sait par
+          experience que c'est ordinairement par quelque vue d'interest temporel que ces Gens là se
+          font proselytes. Aussi est on persuadé ici que l'unique motif de la conversion de Vos deux
+          nouveaux convertis a été l'esperance d'avancer leur fortune: Au moins je Leur souhaite
+          qu'ils n'ayent pas à se reprocher d'avoir fait gratis cette demarche d'une si grande
+          importance; je ne laisse pas d'aimer toujours ces deux Freres sur tout l'Ainé, à cause de
+          leur merite personnel et de l'amitié singuliere dont Mr. de Thiancourt m'a honoré; je Vous
+          prie de l'assurer de la continuation de la mienne. Étant sur le point de plier cette
+          lettre, j'en reçois une de Mr. Clairaut contenant deux de ses solutions; je les examinerai
+          avec plaisir, dès que je me porterai mieux; car une grosse fluxion qui me tomba avant hier
+          sur la poitrine, et qui m'etouffe presque, me rend incapable de mediter. Ainsi je prie Mr.
+          Clairaut de prendre patience jusqu'à ma reconvalescence, et en attendant d'étre assuré que
+          je suis son tres humble serviteur. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

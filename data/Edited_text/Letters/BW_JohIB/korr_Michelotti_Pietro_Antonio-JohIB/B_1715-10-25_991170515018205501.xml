@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--Diarium Venetum mit sachtag versehen, evtl. anderen tag verwenden?  --><!-- bis auf die Moderatores (seit dem 8.08.1715 Ruzzini, Zorzi und Pisani), die Mehrpersonentag brauchen, alle GND-Tags eingefügt.
-
-Marino Zorzi, pers_DE-588-1178380696 Schwiegersohn des Riformatore F. Loredan
-
-Carlo Ruzzini 1653-1735, pers_DE-588-1089924410, Sohn des Prokurators Marco Ruzzini, war der 113. Doge von Venedig und regierte von 1732 bis 1735.
-
-Alvise Pisani 1664-1741, pers_DE-588-1111043582, Sohn von Gianfrancesco Pisani. 1735-1741 war er Doge von Venedig.
-
-=> Im BIBB fehlen noch Carlo Ruzzini, Marino Zorzi und Alvise Pisani 18.02.2019.         --><!--_____________--><TEI xml:id="B_1715-10-25_991170515018205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1715-10-25_991170515018205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -190,6 +181,24 @@ Alvise Pisani 1664-1741, pers_DE-588-1111043582, Sohn von Gianfrancesco Pisani. 
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--Diarium Venetum mit sachtag versehen, evtl. anderen tag verwenden?  -->
+<!-- bis auf die Moderatores (seit dem 8.08.1715 Ruzzini, Zorzi und Pisani), die Mehrpersonentag brauchen, alle GND-Tags eingefügt.
+
+Marino Zorzi, pers_DE-588-1178380696 Schwiegersohn des Riformatore F. Loredan
+
+Carlo Ruzzini 1653-1735, pers_DE-588-1089924410, Sohn des Prokurators Marco Ruzzini, war der 113. Doge von Venedig und regierte von 1732 bis 1735.
+
+Alvise Pisani 1664-1741, pers_DE-588-1111043582, Sohn von Gianfrancesco Pisani. 1735-1741 war er Doge von Venedig.
+
+=> Im BIBB fehlen noch Carlo Ruzzini, Marino Zorzi und Alvise Pisani 18.02.2019.         -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1078797/manifest"/>
 </facsimile><text>
@@ -212,11 +221,11 @@ Alvise Pisani 1664-1741, pers_DE-588-1111043582, Sohn von Gianfrancesco Pisani. 
                 <lb/>vestrum problema virium centripetarum solvisse facile
                 <lb/>uti apparet ex pagella hic annexa; etenim Diarii<!-- sachtag --> Authores
                 <lb/>asserunt se plures uniformes problematis solutiones acce<pc type="hyphenation">-</pc><lb break="no"/>pisse. Celeberrimus <rs key="pers_DE-588-119112450" type="person">Hermannus</rs> (<choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> quo heri vespere uti
-                <lb/>etiam ab <choice><abbr>Illustriss.<hi rend="sup">o</hi></abbr><expan>Illustrissimo</expan></choice> <rs key="pers_DE-588-118571249" type="person">Leibnitio</rs> accepi <rs key="brieftag" type="letter">litteras</rs><note type="editorial">Nachweisen (zwei Briefe).</note>) suspicatur
+                <lb/>etiam ab <choice><abbr>Illustriss.<hi rend="sup">o</hi></abbr><expan>Illustrissimo</expan></choice> <rs key="pers_DE-588-118571249" type="person">Leibnitio</rs> accepi <rs key="brieftag" type="letter">litteras</rs><note type="internal">Nachweisen (zwei Briefe).</note>) suspicatur
                 <lb/><rs key="place_KON-italie" type="place">Itali<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> Geometras (illos saltem qui inveniunt problema
                 <lb/>adeo facile et obvium) ad problematis solutionem per<pc type="hyphenation">-</pc><lb break="no"/>venisse via haud vera, siquidem facillima analysi sed
                 <lb/>paraogistica vera curva invenitur. Subdit idem <choice><abbr>Doctiss.<hi rend="sup">us</hi></abbr><expan>Doctissimus</expan></choice>
-<lb/><rs key="pers_DE-588-119112450" type="person">Hermannus</rs> in <rs key="brieftag" type="letter">quadam sua epistola</rs><note type="editorial">Nachweisen.</note> indicasse Bernardino
+<lb/><rs key="pers_DE-588-119112450" type="person">Hermannus</rs> in <rs key="brieftag" type="letter">quadam sua epistola</rs><!-- To do: Brief recherchieren --> indicasse Bernardino
                 <pb facs="1078799" n="1v"/>
 <lb/><rs key="pers_DE-588-117596027" type="person">Zendrino</rs> rerum mathematicarum <choice><abbr>studiosiss.<hi rend="sup">o</hi></abbr><expan>studiosissimo</expan></choice>, curvam pro<pc type="hyphenation">-</pc><lb break="no"/>blematis <rs key="place_KON-italie" type="place">Itali<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> Geometris propositi esse parabolam
                 <lb/>cubicam, analysin tamen vel demonstrationem
@@ -226,7 +235,7 @@ Alvise Pisani 1664-1741, pers_DE-588-1111043582, Sohn von Gianfrancesco Pisani. 
                 <lb/>Italicorum Geometrarum (eorum scilicet qui iactant
                 <lb/>se vestrum problema solvisse facillim<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>) ambitionem
                 <lb/>aliquatenus compescere. Ego vestram sustinebo cau<pc type="hyphenation">-</pc><lb break="no"/>sam in iis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aptus ero.</p>
-<p>Difficultates, quibus impeditus prosequi non poteram doctissi<pc type="hyphenation">-</pc><lb break="no"/>m<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><abbr>Dissertation.</abbr><expan>Dissertationis</expan></choice> <rs key="biblio_BS83R2A4" type="biblio">de Motu Musculorum</rs> studium, quas<pc type="hyphenation">-</pc><lb break="no"/>que <choice><abbr>Clariss.</abbr><expan>Clarissimo</expan></choice> <rs key="pers_DE-588-119166895" type="person">Agnato</rs> Tuo indicaveram in <rs key="B_1715-08-31_991170517051705501" type="letter">antecedenti<pc type="hyphenation">-</pc><lb break="no"/>bus meis litteris</rs><note type="editorial">Pietro Antonio Michelotti an Nikolaus I Bernoulli vom 31. August 1715, die Frage nach den Erklärungen stellt Michelotti im Postskriptum dieses Briefes.</note>, magna ex parte proprio marte supe<pc type="hyphenation">-</pc><lb break="no"/>ravi ope <choice><abbr>Mechan.</abbr><expan>Mechanic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></expan></choice><rs type="biblio" key="BiblioID"/> D. <rs key="pers_DE-588-119062372" type="person">Varignonii</rs>,<note type="editorial">Bibliogr</note> Trigonometri<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, et <choice><abbr>calcul.</abbr><expan>calculi</expan></choice>
+<p>Difficultates, quibus impeditus prosequi non poteram doctissi<pc type="hyphenation">-</pc><lb break="no"/>m<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><abbr>Dissertation.</abbr><expan>Dissertationis</expan></choice> <rs key="biblio_BS83R2A4" type="biblio">de Motu Musculorum</rs> studium, quas<pc type="hyphenation">-</pc><lb break="no"/>que <choice><abbr>Clariss.</abbr><expan>Clarissimo</expan></choice> <rs key="pers_DE-588-119166895" type="person">Agnato</rs> Tuo indicaveram in <rs key="B_1715-08-31_991170517051705501" type="letter">antecedenti<pc type="hyphenation">-</pc><lb break="no"/>bus meis litteris</rs><note type="editorial">Die Frage nach den Erklärungen stellt Michelotti im Postskriptum dieses Briefes.</note>, magna ex parte proprio marte supe<pc type="hyphenation">-</pc><lb break="no"/>ravi ope <choice><abbr>Mechan.</abbr><expan>Mechanic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></expan></choice><rs type="biblio" key="BiblioID"/> D. <rs key="pers_DE-588-119062372" type="person">Varignonii</rs>,<note type="internal">Bibliogr</note> Trigonometri<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, et <choice><abbr>calcul.</abbr><expan>calculi</expan></choice>
 <lb/><choice><abbr>different.</abbr><expan>differentialis</expan></choice> ac <choice><abbr>integr.</abbr><expan>integralis</expan></choice>. Nonnull<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> adhuc supersunt, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> illic<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice>
                 <pb facs="1078800" n="2r"/>
 <lb/>evanescent statim ac dignaberis mihi viam <add>aperire</add>, qua tuos

@@ -1,157 +1,418 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1717-05-03_991170514843405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Jakob Christoph Iselin. Basel, 03. Mai 1717</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Am Briefkopf eigenhändig "à Mr. le Dr. Iselin". Am Fuss von fo.97r eigenhändiger Zusatz. Zwei P.S. auf fo.99r</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1717-05-03_991170514843405501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Jakob Christoph Iselin. Basel, 03.
+            Mai 1717</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000055991</title><title type="alt"
+            >1717-05-03_Bernoulli_Johann_I-Iselin_Jacob_Christoph</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Iselin, Jacob Christoph (1681-1737) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Am Briefkopf eigenhändig "à Mr. le Dr. Iselin". Am Fuss von
+            fo.97r eigenhändiger Zusatz. Zwei P.S. auf fo.99r</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1717-05-03_Bernoulli_Johann_I-Iselin_Jacob_Christoph"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 674:Bl.97-99</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514843405501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972432827705504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000055991</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>5 S.<dimensions unit="cm">
+                    <height>21</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bale</origPlace><date when="1717-05-03">ce 3. Maj
+              1717</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1717-05-03_Bernoulli_Johann_I-Iselin_Jacob_Christoph" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 674:Bl.97-99</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514843405501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972432827705504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000055991</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>5 S.<dimensions unit="cm"><height>21</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bale</origPlace>
-            <date when="1717-05-03">ce 3. Maj 1717</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1717-05-03">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1717-04-14_991170514843505501" type="prev"/>
-        <ptr target="B_1719-02-22_991170514843305501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Iselin_Jacob_Christoph-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <p>Eben am 4.5. erhält Joh. B. Iselins Brief vom 21.3. Er dankt für alles, was Iselin für Nic. II B. unternommen hat. Er selbst hat diesen an Remond de Montmort empfohlen. Montmort ist ein honnete homme und steht dem römischen Aberglauben fern, dazu ist er ein geschickter Mathematiker. Falls Nic. II B. Geld braucht, möge Iselin ihm bei Birr Kredit verschaffen. Er soll jedoch nicht mehr geben, als unbedingt erforderlich ist. Nic. II B. soll Rechenschaft ablegen, für was er das Geld braucht.</p>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1416662/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1416663" n="1"/> <pb facs="1416664" n="2"/> <pb facs="1416666" n="3"/> <pb facs="1416667" n="4"/> <pb facs="1416668" n="5"/> <pb facs="1416669" n="6"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1717-05-03">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_1717-04-14_991170514843505501" type="prev"/>
+          <ptr target="B_1719-02-22_991170514843305501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Iselin_Jacob_Christoph-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>Eben am 4.5. erhält Joh. B. Iselins Brief vom 21.3. Er dankt für alles, was Iselin für
+          Nic. II B. unternommen hat. Er selbst hat diesen an Remond de Montmort empfohlen. Montmort
+          ist ein honnete homme und steht dem römischen Aberglauben fern, dazu ist er ein
+          geschickter Mathematiker. Falls Nic. II B. Geld braucht, möge Iselin ihm bei Birr Kredit
+          verschaffen. Er soll jedoch nicht mehr geben, als unbedingt erforderlich ist. Nic. II B.
+          soll Rechenschaft ablegen, für was er das Geld braucht.</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-118652443">Barbeyrac, Jean</persName>
+            <note type="lebensdaten">(1674-1744)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-116082356">Battier, Johann Jakob</persName>
+            <note type="lebensdaten">(1664-1720)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1687-1759)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1695-1726)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
+            <note type="lebensdaten">(1673-1764)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117604917">Bion, Nicolas</persName>
+            <note type="lebensdaten">(1653-1733)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Birr</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11887067X">Castelli, Benedetto</persName>
+            <note type="lebensdaten">(1577-1644)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118532561">Fermat, Pierre de</persName>
+            <note type="lebensdaten">(1601-1665)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
+            <note type="lebensdaten">(1564-1642)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1161116435">Lect, Catherine</persName>
+            <note type="lebensdaten">(1657-1732)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-129551651">Gregory, David</persName>
+            <note type="lebensdaten">(1659-1708)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118720066">Halley, Edmond</persName>
+            <note type="lebensdaten">(1656-1742)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
+            <note type="lebensdaten">(1629-1695)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1089913974">Högger, Anton</persName>
+            <note type="lebensdaten">(1682-1767)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117573752">La Hire, Philippe de</persName>
+            <note type="lebensdaten">(1640-1718)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1152043242">Lect, Esther-Elisabeth</persName>
+            <note type="lebensdaten">(1651-1730)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117551988">Mariotte, Edme</persName>
+            <note type="lebensdaten">(1620-1684)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118581201">Mersenne, Marin</persName>
+            <note type="lebensdaten">(1588-1648)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+            <note type="lebensdaten">(1678-1719)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117613126">Ozanam, Jacques</persName>
+            <note type="lebensdaten">(1640-1718)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118591843">Pascal, Blaise</persName>
+            <note type="lebensdaten">(1623-1662)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1132220874">Raillard, Jeremias</persName>
+            <note type="lebensdaten">(1691-1744)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-124081428">Riccioli, Giovanni Battista</persName>
+            <note type="lebensdaten">(1598-1671)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118601547">Roberval, Gilles Personne de</persName>
+            <note type="lebensdaten">(1602-1675)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-131975927">Sluse, René-François de</persName>
+            <note type="lebensdaten">(1622-1685)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-121297829">Staehelin, Johann Heinrich</persName>
+            <note type="lebensdaten">(1668-1721)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118623427">Torricelli, Evangelista</persName>
+            <note type="lebensdaten">(1608-1647)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+            <note type="lebensdaten">(1654-1722)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118771167">Wallis, John</persName>
+            <note type="lebensdaten">(1616-1703)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
+            <note type="lebensdaten">(1657-1740)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1717-05-03_Bernoulli_Johann_I-Iselin_Jacob_Christoph"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1416662/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb/> Monsieur </p>
+        <p>Vous voilà donc mon successeur dans la charge du rectorat; je Vous en felicite de tout
+          mon coeur, tout le monde se rejouit de voir dans peu l'academie ornée et gouvernée par un
+          si digne chef, car on espere, que sous Votre Rectorat elle refleurira et reprendra son
+          ancien lustre; tout languit chez nous, mais Vous mettrez en train et ferez revivre les
+          muses à demi mortes. L'election se fit hier à la maniere accoutumée, c'est à dire par les
+          boules, Vous les eutes toutes à la reserve de deux, qui se trouverent dans la boëte des
+          boules non-valables, c'estoient apparemment celles de Messrs. Battier et Stehelin, qui ne
+          pouvant voter pour Vous à cause du parentage, auront rejetté leurs boules. M'etant souvenu
+          que l'année passé, lorsque Vous me donnates Vôtre suffrage pour le Rectorat, Vous aviez
+          accompagné Vôtre boule d'un vers à mon honneur, je voulus hier Vous rendre la pareille, en
+          ecrivant sur le billet, dans lequel j'allois envelopper ma boule le distiche, que voici
+          qui marque peu de poësie, mais beaucoup d'affection et d'estime pour Vous </p>
+        <p>Tam bene qui meruit de nostro saepe Lyceo</p>
+        <p>Iselium sceptro condecorare volo.</p>
+        <p>Mr. le D.<hi rend="sup">r</hi> Werenfels ne fut pas à l'Election, étant parti la semaine
+          passée pour Neuchatel, pour y faire ses leçons academiques.<note type="editorial">[Text
+            folgt]</note>
+        </p>
+        <p>Je Vous raconterai de bouche quelques autres petites particularitez, quand Vous serez ici
+          de retour, ce que j'espere qu'il se fera bientot; hatez donc je Vous prie Votre voyage,
+          Vôtre presence etant necessaire pour la fin de ce mois ci au plus tard. Comme ce sera sans
+          doute la derniere des lettres, que j'ay eu l'honneur <pb/> de Vous ecrire à Paris,
+          j'adresse au bon Dieu mes voeux ardens pour Vôtre heureux voyage et pour la conservation
+          de Vôtre chere Personne, je le prie du plus profond de mon coeur qu'il veuille étre par
+          tout Vôtre Guide et Vous conduire ici en parfaite santé. Si je sçavois le jour de Vôtre
+          arrivée et la route, que Vous prendrez, je me donnerois le plaisir d'aller au devant de
+          Vous pour avoir l'honneur de Vous embrasser le premier. </p>
+        <p>J'espere que Vous aurez reçu ma derniere du 14. Avril, qui etoit une reponse à la Votre
+          du 7. du meme mois;<note type="editorial">[Text folgt]</note> je veux donc m'y referer,
+          sans plus rien y ajouter, touchant mon fils,<note type="editorial">Nicolaus II
+            Bernoulli</note> si non que je crois, qu'il sera parti de Padoue pour Paris, car je lui
+          ecrivis il y a 15 jours de partir incessamment, ensorte, qu'il aura effectué mon ordre, à
+          moins que quelque incident ne l'en ait empesché: D'abord à son arrivée, il s'adressera à
+          Mr. Varignon, à qui Vous aurez la bonté de remettre une lettre pour mon fils, dans
+          laquelle Vous lui donnerez avis de ce que Vous aurez pû faire pour Lui avec des
+          instructions necessaires selon lesquelles il se doit comporter; mais je Vous prie de ne
+          Vous point gener pour l'amour de Lui, j'aime mieux me passer de Vôtre secours quelque
+          besoin que j'en aie que de permettre, que cela Vous cause de l'embaras, ainsi je souhaite
+          que Vous ne fassiez rien au delà de Vôtre bonne commodité. J'ay communiqué à Mesdames de
+          Bonne et de Grandvillars le papier de nouvelles, que Vous m'aviez envoyé, elles en ont été
+          tres satisfaites, et m'ont prié de Vous dire, qu'elles ont reçû les lettres, que Vous leur
+          avez ecrites, de Vous faire bien leurs complimens, et de Vous souhaiter de leur part un
+          bon voyage. Vous n'avez que faire d'être en peine, de ce que Vous avez touché dans Vôtre
+          memoire, qui pouroit Vous nuire, s'il etoit sçû en de certains lieux: car Vous pouvez bien
+          conter que Vôtre interest m'etant aussi cher que le mien, je n'aurai garde de
+          communi<pb/>quer ce memoire à tout le monde, pour ce qui est de nos Messieurs du Senat
+          Academique, qui en ont entendu la lecture, j'espere qu'ils ont assez de discretion pour
+          sçavoir, qu'il en faut menager le secret. On est generalement frappé de surprise
+          d'entendre la merveilleuse liberalité de Mr. le B. Hogguer, dont l'effet envers notre
+          bibliotheque doit etre si considerable à ce que Vous m'avez ecrit en dernier lieu, que le
+          prix du présent montera à plusieurs milliers de livres; on ne sçait qu'en penser, la chose
+          paroit si extraordinaire à quelques uns, qu'ils la regardent comme un songe, jusqu'à ce
+          que la realité les en desabuse, quand ils verront de leurs yeux et toucheront de leurs
+          mains ce qu'ils<note type="editorial">Im Manuskript steht "qui".</note> croyent à present
+          etre un chateau en l'air: pour moi je n'ai jamais douté de la solidité du fait ni de la
+          verité de tout ce que Vous m'avez ecrit ladessus; mais avec tout cela je ne sçaurois assez
+          admirer Votre desinteressement, qui va si loin que parmi touts ces beaux et precieux dons
+          Vous ne prenez pas pour un sou de present pour Vous meme, comme Vous pouriez fort bien le
+          faire et comme tout autre le feroit sans injustice; en verité Vous avez l'ame bien grande
+          et c'est comme Vous dites le moyen d'avancer les interests de l'academie, mais c'est un
+          moyen noble et pur sans melange d'interest propre. Mr. Battier à qui j'ay demandé de Vôtre
+          part les titres de quelques bons livres traitants du droit, m'a remis le billet que voici,
+          pour des livres de Mathematiques que je jugerois bons et dont Vous me demandés aussi les
+          titres, il y en auroit tant, que le choix me feroit de la peine, mais comme c'est sans
+          doute pour la bibliotheque que Vous voulez les procurer et qu'il est impossible que je
+          puisse sçavoir, quels livres se trouveront à Paris, Vous ne feriez pas mal de consulter
+          <pb/> Mr. Varignon, ceux qu'il Vous indiquera ne manqueront pas d'etre bons. En voici
+          cependant quelques uns: les ouvrages de Galilei, de Torricelli, de Cavallieri, de Fermat,
+          de Roberval, de Pascal, de Mersenne, de Mariotte, de Sluse, de Gregori, de Huguens, de
+          Wallis, de Newton; les Anciens Mathematiciens entre lesquels Apollonius Pergaeus de
+          l'edition de Mr. Halley in folio dont il m'a fait present, des ouvrages astronomiques de
+          Riccioli, de Gregori fondé sur le systeme de Newton, les tables de la Hire. Les Memoires
+          de l'Academie des sciences est un ouvrage tant pour les Medecins que pour les
+          Mathematiciens. Les ouvrages d'Ozanam, de Bion et de plusieurs autres sur la pratique ne
+          sont pas inutiles etc. J'ai parlé à Mr. le D.<hi rend="sup">r</hi> Stehelin au sujet de
+          Vôtre rhume accompagné d'un peu de fievre; il m'a dit que Vous faites bien de Vous servir
+          des bouillons rafraichissans, mais il Vous exhorte en meme temps à ne point travailler
+          trop, à Vous moderer un peu de la fatigue de l'esprit, de la lecture nocturne, en un mot à
+          ne Vous attacher pas continuellement aux livres; c'est en quoi je trouve qu'il a raison,
+          Vous devriez donc menager Vôtre santé, sur tout vers le temps de Vôtre depart, où Vous
+          devriez preparer Vôtre corps et Vôtre esprit à pouvoir supporter aisement les fatigues du
+          voyage; contribuez donc, au nom de Dieu! aussi de Votre coté à bien etablir Vôtre santé et
+          à Vous rendre ici sauf et sain comme Vous en etes parti, pensez que Vous nous etes
+          redevable de Vôtre personne, elle nous est chere, elle nous est necessaire, Vous nous la
+          devez, rendez nous la donc en bon etat: Dieu veuille Vous en faire la grace. Ma Femme, qui
+          Vous fait ses complimens joint ses voeux aux miens pour la prosperité de Votre voyage. Je
+          suis avec une passion sans egale Monsieur et tres-honoré Ami Vôtre tres-humble et tres
+          obeissant Serviteur J. Bernoulli. </p>
+        <p>Bale ce 3. Maj 1717.</p>
+        <p>P. S. Quant au reste, je me refere à ma derniere lettre;<note type="editorial">[Text
+            folgt]</note> du depuis il ne s'est plus rien passé touchant ma vocation de Groningue.
+          Mr. Barbeyrac à Lausanne, qui est aussi appellé pour être Professeur en Droit à Groningue
+          et qui a accepté la vocation se fera passer Dr. en droit ici avec Mr. Raillard et avec mon
+          Neveu, à moins que celuici ne change de resolution, à cause des grands fraix que l'on est
+          obligé de faire pour l'absence, j'attens aux premiers jours sa reponse finale;<note
+            type="editorial">Nicolaus I Bernoulli wurde im Mai 1717, als er aus Anlass des Tods
+            seines Vaters von Padua nach Basel gereist war, zum Doktor der Rechte promoviert.
+          </note> Mr. Barbeyrac sera aussi absent. La promotion se fera en 3 ou 4 semaines. </p>
+        <p>Autre P. S. Aujourdhui 4. de ce mois dans le moment, que je veux cacheter cette lettre,
+          je reçois la chere Vôtre du 21. du passé.<note type="editorial">[Text folgt]</note> Pour y
+          repondre en peu de mots, puisque le depart du courier presse, aprez mille remerciments,
+          que je Vous fai, je Vous dis que j'approuve tout ce que Vous avez fait à l'egard de mon
+            fils<note type="editorial">Nicolaus II Bernoulli</note>; je l'avois recommendé à Mr.
+          Remond de Montmort qui est fort de mes amis, en Lui disant, que je Vous avois prié, de
+          chercher à mon fils une condition pour subsister à peu de fraix, c'est sans doute que Mr.
+          de Montmort vint là dessus Vous parler. Quoique je sois asseuré que mon fils seroit tres
+          bien chez ce Monsieur qui est tres honnete homme et fort eloigné des superstitions de Rome
+          outre cela habile Mathematicien; je ne laisse pas d'etre de Vôtre avis, que la place de
+          soussecretaire chez l'Ambassadeur de Hollande ou celui d'Angleterre seroit preferable par
+          plusieurs raisons. Ainsi je Vous laisserai faire tout ce que Vous trouverez le plus
+          convenable pour mon fils. </p>
+        <p>Encor un mot mon cher Ami: comme mon fils à son arrivée à Paris poura avoir besoin de
+          quelque argent, soit pour s'habiller soit pour d'autres choses pressantes, je Vous prie de
+          Lui faire credit auprez de Mr. Birr, à fin qu'il Lui fournisse de l'argent, mais pas plus
+          à la fois, que la plus urgente necessité ne demande, c'est pourquoy je veux que mon fils
+          rende conte à Mr. Birr, à quoy il voudra employer l'argent qu'il recevra. Je rembourserai
+          à Mr. Birr avec beaucoup de remerciment tout ce qu'il aura fourni à mon fils. A Dieu mon
+          tres-honoré Ami, encore une fois bon voyage. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

@@ -1,16 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert am 8.5.2018; Seitenlinks, <expan><am>.<hi rend="sup"></hi></am><ex></ex></expan> und Sachtags (brief-, person, ort-, etc.) eingefügt am 26.11.2018), ACHTUNG: Viele ungetaggte j am Schluss eines Wortes. Evtl. noch einmal anschauen, ob durch <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ersetzen? "An. 1715" Schlusspunkt hereinverbessern?; bibliographiert am 03.06.2019; Briefverweise eingefügt am 1.11.2019 --><!-- <change when="2022-02-07" who="CG">Struktur, Personen, Orte</change>--><!-- <change when="2022-06-13" who="CG">Zeilenfall</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- Von den moderatores (zu der Zeit: Ruzinus, Lauredanus und Pisanus als triumviri moderatores) fehlen noch Lauredanus und Pisanus. Sonst alle Personen oben aufgeführt. 6.12.2018
-         
-Alvise Pisani  1664-1741 pers_DE-588-1111043582 : Sohn von Gianfrancesco Pisani. 1735-1741 war er Doge von Venedig.
-
-Francesco Loredan 1656-1715 (GND-588)1178371670
-
-=> GND-Tagung bis auf Moderatores (Mehrpersonentag noch in Entwicklung) eingefügt am 13.12.2018:        
-=> Moderatores als Ref eingefügt 18.02.2019
-=> Im BIBB fehlen noch: Loredan und Pisani  18.02.2019 
-
-         --><!--_____________--><!--Comments that were in the teiHeader element--><!--<expan><am>.<hi rend="sup"></hi></am><ex></ex></expan>--><!--ACHTUNG: Viele ungetaggte j am Schluss eines Wortes. Evtl. noch einmal anschauen, ob durch <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ersetzen?--><!--_____________--><TEI xml:id="B_1715-01-25_991170515019005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1715-01-25_991170515019005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -174,6 +163,30 @@ Francesco Loredan 1656-1715 (GND-588)1178371670
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert am 8.5.2018; Seitenlinks, <expan><am>.<hi rend="sup"></hi></am><ex></ex></expan> und Sachtags (brief-, person, ort-, etc.) eingefügt am 26.11.2018), ACHTUNG: Viele ungetaggte j am Schluss eines Wortes. Evtl. noch einmal anschauen, ob durch <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ersetzen? "An. 1715" Schlusspunkt hereinverbessern?; bibliographiert am 03.06.2019; Briefverweise eingefügt am 1.11.2019 -->
+<!-- <change when="2022-02-07" who="CG">Struktur, Personen, Orte</change>-->
+<!-- <change when="2022-06-13" who="CG">Zeilenfall</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- Von den moderatores (zu der Zeit: Ruzinus, Lauredanus und Pisanus als triumviri moderatores) fehlen noch Lauredanus und Pisanus. Sonst alle Personen oben aufgeführt. 6.12.2018
+         
+Alvise Pisani  1664-1741 pers_DE-588-1111043582 : Sohn von Gianfrancesco Pisani. 1735-1741 war er Doge von Venedig.
+
+Francesco Loredan 1656-1715 (GND-588)1178371670
+
+=> GND-Tagung bis auf Moderatores (Mehrpersonentag noch in Entwicklung) eingefügt am 13.12.2018:        
+=> Moderatores als Ref eingefügt 18.02.2019
+=> Im BIBB fehlen noch: Loredan und Pisani  18.02.2019 
+
+         -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--<expan><am>.<hi rend="sup"></hi></am><ex></ex></expan>-->
+<!--ACHTUNG: Viele ungetaggte j am Schluss eines Wortes. Evtl. noch einmal anschauen, ob durch <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ersetzen?-->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1078725/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1078726" n="1r"/>
 <opener><salute>Viro Clarissimo ac toto Orbe Celeberrimo
@@ -185,7 +198,7 @@ Francesco Loredan 1656-1715 (GND-588)1178371670
                 <lb/>1500 Thalerorum, quorum quilibet sesquifloreno germa<pc type="hyphenation">-</pc><lb break="no"/>nico <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quipollet, ac per consequens Te Patriam haud
                 <lb/>esse derelicturum ut peregrinas in oras, ad Nos scilicet
                 <lb/>discedas divers<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> religionis homines. Amplissimus Eques
-                <lb/>et D. Marci Procurator <rs key="pers_DE-588-1089924410" type="person">Ruzzinus</rs> iis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <rs key="B_1714-12-19_991170517052705501" type="letter">epistola</rs><note type="editorial">Nikolaus I Bernoulli an Pietro Antonio Michelotti, 19. Dezember 1714 (siehe oben)</note>
+                <lb/>et D. Marci Procurator <rs key="pers_DE-588-1089924410" type="person">Ruzzinus</rs> iis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <rs key="B_1714-12-19_991170517052705501" type="letter">epistola</rs>
 <lb/><rs key="pers_DE-588-119166895" type="person">Agnati</rs> Tui <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> me intellectis doluit maxim<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>, et admi<pc type="hyphenation">-</pc><lb break="no"/>ratus est Tuam in petito Salario 1500 Thalerorum un<pc type="hyphenation">-</pc><lb break="no"/>cialium permanentiam. Ipse <choice><abbr>Nobiliss.<hi rend="sup">us</hi></abbr><expan>Nobilissimus</expan></choice> <rs key="pers_DE-588-1089924410" type="person">Moderator</rs>
 <lb/>maximo amore Tuam Personam omni virtutum
                 <lb/>genere Spectatissimam prosequitur, Tibique hac

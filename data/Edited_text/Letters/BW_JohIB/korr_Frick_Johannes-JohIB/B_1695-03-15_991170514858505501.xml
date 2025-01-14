@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<TEI xml:id="B_1695-03-15_991170514858505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_1695-03-15_991170514858505501" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -134,10 +131,16 @@
     <abstract>
       <p>Johann I Bernoulli hat einen Brief von Frick erhalten. Er weiss aber nicht das Geringste von Büchern, die er laut Frick durch Johann Christoph Reinwald erhalten werde. Jener habe ihm nach seiner Ankunft in Basel einen Bücherkatalog von Frick übergeben. Die Bücher selbst hat er aber nach Strassburg transportieren lassen und versichert, dass er sie ihm sofort nach seiner Ankunft zurücksenden werde. Frick möge nun Reinwald mahnen oder Johann Bernoulli dessen Adresse mitteilen. Johann Bernoulli fürchtet, dass die Bücher in Gefahr sind, wenn die Sendung in Frankreich geöffnet wird. Das ausgelegte Geld wird er bezahlen.</p>
     </abstract>
+    <!-- Personen: 
+    Reinwald, Johann Christoph: GND im BIBB ergänzen: pers_DE-588-120813556
+    Christ im BIBB eintragen
+    Cognatus im BIBB eintragen
+    -->
     <textClass/>
   </profileDesc>
-  <revisionDesc status="bernoulliwiki">
+  <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2024-12-12" who="SG">getagt</change>
       <change when="2023-10">generiert</change>
     </listChange>
   </revisionDesc>
@@ -149,8 +152,33 @@
 <text>
 <body>
 <div type="letter">
-<pb facs="1416549" n="1"/> <pb facs="1416551" n="2"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+<pb facs="1416549" n="1"/> <opener><lb/>Vir Amplissime atque Excellentissime
+    
+    <lb/>Fautor Honoratissime</opener>
+    
+  <p><lb/>Ex quo <rs type="letter">literas</rs><!-- Dieser Brief ist nicht erhalten. ToDo: im BIBB erfassen --> Tuas gratissimas accepi, ne \gr{grù}
+    <lb/>quidem audivi de libris istis quos per <abbr>Dn.</abbr> <rs type="person">Joh. Christ</rs>
+    <lb/><rs type="person">Reinwaldum</rs> me accepturum ais. Equidem ille <add>postquam</add>
+    <lb/>hic appulit statim catalogum Tua ex parte mihi
+    <lb/>tradidit, ipsos autem libros cum supellectili su<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice>
+    <lb/>recta <rs type="place" key="place_GEO-2973783">Argentinam</rs> deferri significabat, asserens se illuc
+    <lb/>abiturum illosque mihi post adventum suum quantocyus
+    <lb/>remissurum. Rogaris igitur Vir Amplissime
+    <lb/>ut vel ipsum <abbr>Dn.</abbr> <rs type="person">Reinwaldum</rs> per literas exhor<pc type="hyphenation">-</pc><lb break="no"/>teris, vel saltem ut inscriptionem ejus <add>quam ex <rs type="person">cognatis</rs> rescire poteris mihi</add> com<pc type="hyphenation">-</pc><lb break="no"/>munices, quo ipse illum compellare possim. Non parum
+    <lb/>sollicitus sum de his libris, vereor quippe ne publicationis
+    <lb/>periculum subeant cum in <rs type="place" key="place_VER-frankr">Galli<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> territorium trans<add>vehuntur</add>.
+    <lb/>Quod reliquum est Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> committo cur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, Teque certum velim,
+    <lb/>me omnia qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vel Tu vel <abbr>Dn.</abbr> <rs type="person">Reinwaldus</rs> pro dictis libris
+    <lb/>persolveritis summa gratiarum actione redditurum; nec
+    <lb/>minus me senties quovis officii genere et
+    <lb/>quavis occasione paratissimum et </p>
+    
+  <closer><lb/>Amplitudinis Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> obsequiosissimum 
+    
+    <lb/><rs type="person" key="pers_DE-588-118509969">Johannem Bernoullium</rs> 
+    
+    <abbr><lb/>D.<hi rend="sup">o</hi></abbr> <abbr>Prof.</abbr> <rs type="person" key="pers_DE-588-123393094">Frick</rs></closer>
+  <pb facs="1416551" n="2" type="empty"/>
 </div>
 </body>
 </text>

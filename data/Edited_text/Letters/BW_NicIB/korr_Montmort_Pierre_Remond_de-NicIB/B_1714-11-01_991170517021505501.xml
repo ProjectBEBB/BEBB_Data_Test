@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--pers_DE-588-140736662 Christ, Franz 〈1688-1744〉 --><!--pers_DE-588-1017119872 Culpeper, Edmund 〈1670-1737〉 --><!--pers_DE-588-117584401 Nicole, François 〈1683-1758〉 --><!--
-         <abbr>Mr.</abbr> de <abbr>M.</abbr> -> Montmort, Pierre Rémond de 1678-1719 pers_DE-588-117601020
-
-         Oncle -> Bernoulli, Johann 1667-1748 pers_DE-588-118509969
-
-         Renau -> Renau d'Eliçagaray, Bernard 1652-1719 pers_DE-588-102079056
-
-         Laurent -> Witwe, betreibt ein Café in der ruë Dauphine
-
-         correspondants -> von Montmort in London
-         
-         <abbr>Mr.</abbr> Sauvage -> Ecrivain Juré, à la ruë Dauphine
-
-         --><!--_____________--><TEI xml:id="B_1714-11-01_991170517021505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1714-11-01_991170517021505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -176,14 +162,45 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--pers_DE-588-140736662 Christ, Franz 〈1688-1744〉 -->
+<!--pers_DE-588-1017119872 Culpeper, Edmund 〈1670-1737〉 -->
+<!--pers_DE-588-117584401 Nicole, François 〈1683-1758〉 -->
+<!--
+         <abbr>Mr.</abbr> de <abbr>M.</abbr> -> Montmort, Pierre Rémond de 1678-1719 pers_DE-588-117601020
+
+         Oncle -> Bernoulli, Johann 1667-1748 pers_DE-588-118509969
+
+         Renau -> Renau d'Eliçagaray, Bernard 1652-1719 pers_DE-588-102079056
+
+         Laurent -> Witwe, betreibt ein Café in der ruë Dauphine
+
+         correspondants -> von Montmort in London
+         
+         <abbr>Mr.</abbr> Sauvage -> Ecrivain Juré, à la ruë Dauphine
+
+         -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1038766/manifest"/>
 </facsimile><text>
 <body>
 <div type="letter">
-         <pb facs="1038767" n="1"/>
-<opener>Refutation des reponses<!-- brieftag --> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person"><abbr>M.</abbr></rs> sur le her.</opener>
-<p>1. <abbr>art.</abbr> cet article est faux, parceque le sort de Paul quand il suit la maxime de changer au 7 est toujours plus grand que 2828, excepté dans le seul cas quand Pierre change au 8. changer 2. <abbr>art.</abbr> Si la maxime de Pierre est de étre indifferent se tenir je demontrerai dans la suite que ce conseil n'est pas meilleur que celui de changer. se tenir au 7 au 8, Paul doit changer au 7 et le sort de Paul sera changer au 7 2834 2831 2833 et non 2832 2838 2833 </p>
+<pb facs="1038767" n="1"/>
+<opener>
+  <lb/>Refutation des <rs type="letter">reponses</rs> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person"><abbr>M.</abbr></rs> sur le her.
+</opener>
+<p>
+  <lb/>1. <abbr>art.</abbr> cet article est faux, parceque le sort de Paul<del/> quand il suit la maxime de
+  <lb/>changer au 7<del/> est<del/> toujours plus grand que 2828, excepté<del/> dans le seul cas
+  <lb/>quand Pierre change au 8. 
+  <lb/>2. <abbr>art.</abbr> Si<del/> la maxime de Pierre est de changer étre indifferent se tenir je demontrerai dans la suite que ce conseil n'est pas meilleur que celui de changer. se tenir au 7 au 8, Paul doit changer au 7 et le sort de Paul sera changer au 7 2834 2831 2833 et non 2832 2838 2833 </p>
 <p>3. <abbr>art.</abbr> Celui qui a conseillé à Paul de suivre sa fantaisie ne peut pas être convaincû d'avoir donné un mechant conseil à Paul par ce raisonnement: Ce conseil posé Pierre changera determinement au 8, auquel cas Paul auroit du prendre le parti de se tenir determinement au 7. Si Vous n'étes pas prevenu en faveur de ce beau raisonnement, j'espere Vous faire voir que ce cercle est vitieux et sophistique: Pour cette fin je veux repeter ce raisonnement et l'achever. Je dis que Paul doit suivre sa fantaisie, donc Pierre doit changer au 8, donc Paul doit se tenir au 7, donc Pierre doit se tenir au 8, donc Paul doit changer au 7, donc Pierre doit changer au 8, donc <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Or puisque chaque membre de ce raisonnement se conclud [sic!] de celui qui le precede immediatement, et que tour à tour on conclud que Paul doit se tenir au 7 et changer au 7, on void, ce me semble, clairement, que ce raisonnement ne peut rien prouver et par consequent qu'il est vitieux et sophistique. Si Vous decidés autrement, j'appelle de Vôtre decision à celle de Madame la Raison. Contra aequantem principia non amplius disputabo.</p>
 <p><abbr>art.</abbr> 4. Si en admettant la voye des jettons le parti de 3 contre 5 à Paul pour changer au 7 est le meilleur que Vous connoissiés, pourquoi donc voulés Vous donner à Paul un autre conseil dans l'art. 6? il suffit pour Paul de suivre la meilleure maxime qu'il puisse connoitre, ce n'est pas assés dire que le cercle a lieu malgré mes raisons, il faut aussi combattre mes raisons.</p>
 <p><abbr>art.</abbr> 5. [Je veux faire un dernier effort pour prouver qu'] il n'est point impossible à ce jeu de Determiner le sort de Paul; et que la maxime de l'indifference pour changer ou se tenir au 7 n'est pas meilleure que celle
@@ -191,7 +208,7 @@
          se changer au 7, et qu'aucune autre qui se puisse établit, lorsqu'on ne reçoit point la voye des jettons. Moi je veux être Pierre, et Vous serés Paul (s'il Vous plait), jouons au her; dites moi sincerement si Vous savés quel parti je prendrai, celui de changer au 8 ou celui de me tenir au 8. Malgré toutes nos reflexions Vous serés sans doute obligé de répondre que Vous ne le savés pas, et que Vous ne pouvés pas croire l'un plutôt que l'autre. Donc en reglant Vôtre conduite Vous devés esperer l'un autant que l'autre, et par consequent à l'égard de Vous <formula>b</formula>, <formula>c</formula> et <formula>d</formula> doivent étre égales, quoiqu'en effet à l'égard de moi peut étre cela ne soit pas vrai et que je me sois proposé une autre maxime que celle de l'indifference. Or si dans l'expression generale de Vôtre sort <formula>\frac{2828ac+2834bc+2838ad+2828bd}{13\cdot17\cdot25\cdot(a+b)\cdot(c+d)}</formula> Vous faites <formula>c=d</formula> (ce que Vous devés faire à cause de Vôtre ignorance à l'égard de ma conduite) Vous aurés <formula>\frac{2833a+2831b}{13\cdot17\cdot25\cdot(a+b)}</formula> pour la valeur de Vôtre esperance; mais pour faire que cette valeur soit un maximum il faut faire <formula>b=0</formula>. Donc Vous devés suivre la maxime de changer au 7, et Vôtre esperance vaut <formula>\frac{1833}{13\cdot17\cdot25}</formula>. Donc on a determiné Vôtre sort et on a établi une meilleure maxime que celle de l'indifference de l'<abbr>art.</abbr> 2, laquelle Vous donne seulement ou <formula>\frac{2831}{13\cdot17\cdot15}</formula>, ou <formula>\frac{2832}{13\cdot17\cdot15}</formula>, ou <formula>\frac{2833}{13\cdot17\cdot15}</formula>.</p>
          <p><abbr>art.</abbr> 6. Je me ris de cet article. Si le conseil que Vous donnés à Paul ici dans l'<abbr>art.</abbr> 6 est le meilleur que Vous savés donner, le conseil de <formula>a=3</formula> et <formula>b=5</formula> n'est donc pas le meilleur que Vous connoissés, contre ce que Vous avés dit dans l'<abbr>art.</abbr> 4 et 5. Voilà, Monsieur, mes dernieres reponses sur nôtre fameuse dispute, j'espere que Vous serés enfin de mon sentiment; je ne veux pas dire absolument que la verité soit de mon coté, mais qu'il soit fort probable que j'aye raison, vû que j'ai persisté toujours dans le même sentiment que j'ai sou<pc type="hyphenation">-</pc>
          <pb facs="1038769" n="3"/>
-                  <lb break="no"/>tenu au commencement de la dispute, pendant que Vous avés souvent changé le Vôtre. Voyés par <abbr>ex.</abbr> <abbr>pag.</abbr> 403 de Vôtre Livre<!-- werktag -->, où il y a ces mots: Il est trés vrai qu'il vaut mieux pour Paul prendre la maxime de changer au 7 que d'en prendre toute autre fixe et determinée; par cette raison <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Comment accorder cela avec les <abbr>art.</abbr> 1. 2. et 5.<hi rend="#sup">me</hi> de Vos réponses<!-- brieftag -->, dont le dernier se contredit lui meme. Je me flatte que j'aurai le bonheur de Vous ramener de Vôtre inconstance comme (si magnis componere parva fas est) mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a fait à l'égard de la dispute de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Sed haec per jocum.</p>
+                  <lb break="no"/>tenu au commencement de la dispute, pendant que Vous avés souvent changé le Vôtre. Voyés par <abbr>ex.</abbr> <abbr>pag.</abbr> 403 de Vôtre Livre<!-- werktag -->, où il y a ces mots: Il est trés vrai qu'il vaut mieux pour Paul prendre la maxime de changer au 7 que d'en prendre toute autre fixe et determinée; par cette raison <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Comment accorder cela avec les <abbr>art.</abbr> 1. 2. et 5.<hi rend="sup">me</hi> de Vos réponses<!-- brieftag -->, dont le dernier se contredit lui meme. Je me flatte que j'aurai le bonheur de Vous ramener de Vôtre inconstance comme (si magnis componere parva fas est) mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a fait à l'égard de la dispute de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Sed haec per jocum.</p>
 <p>Nous avons recû enfin Vos six exemplaires de Vôtre Livre<!-- werktag -->, avec les deux du Commercium Epistolicum<!-- werktag -->, il y a environ 4 semaines; ils ont été un peu gatés en chemin, nous les avons partagés ensemble, mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> et moi. Les exemplaires de Vôtre Livre<!-- werktag --> seront bien employés, je n'en ai encore que deux, dont l'un n'est pas complet, il y manque un cahier<!-- werktag --> de 7 feuilles, savoir les feuilles Rr, Ss, Tt, Uu, Xx, Yy, Zz. Vous m'obligerés de m'envoyer ces feuilles<!-- werktag -->, Vous n'avés qu'à les faire tenir à <abbr>Mr.</abbr> <rs key="pers_DE-588-140736662" type="person">Christ</rs>, qui est un de mes amis qui demeure à présent à <rs key="place_GEO-2988507" type="place">Paris</rs> chés <abbr>Mr.</abbr> Sauvage<!-- persontag -->, Ecrivain Juré, à la <rs key="place_STR-dauphineparis" type="place">ruë Dauphine</rs> vis à vis du caffé de la veuve Laurent<!-- persontag -->. Mais Vous m'obligerés encore davantage, si Vous voulés avoir la bonté de recommender en mon nom ce Monsieur<!-- persontag --> à <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs>; c'est un jeune homme<!-- persontag --> fort savant et qui seroit fort aise d'avoir occasion de jouir de la conversation d'un Mathematicien<!-- persontag --> d'un grand merite. Il y a encore une chose dont j'ose Vous prier, sachant que Vous avés des correspondants<!-- persontag --> à <rs key="place_GEO-2643743" type="place">Londres</rs>, qui Vous envoyent souvent
          <pb facs="1038770" n="4"/>
          les nouveaux Livres qui paroissent en <rs key="place_VER-englan" type="place">Angleterre</rs>; je Vous prie de me faire acheter par quelqu'un de ces amis<!-- persontag --> chés <abbr>Mr.</abbr> <rs key="pers_DE-588-1017119872" type="person">Culpeper</rs> en <rs key="place_WEI-moorfi" type="place">Moorfield</rs> un microscope du prix de 2 <abbr>Sterl.</abbr> ou de deux Guinées avec le petit livret<!-- werktag --> qui en explique l'usage; je chargerai <abbr>Mr.</abbr> <rs key="pers_DE-588-140736662" type="person">Christ</rs>, à qui Vous ferés remettre, s'il Vous plait, ce microscope, d'en rendre le prix à <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs>.</p> <closer><salute>En attendant Vôtre réponse<!-- brieftag --> sur quelques autres articles de ma derniere Lettre, je Vous salue tres humblement.</salute> <dateline><date when="1714-11-01">1. 9bre 1714</date></dateline></closer>

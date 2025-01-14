@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- Lauredanus und Pisanus als moderatores (zu der Zeit: Ruzinus, Lauredanus und Pisanus als triumviri moderatores) fehlen noch. Sonst alle Personen aufgeführt. 6.12.2018 
-
-Alvise Pisani  1664-1741 pers_DE-588-1111043582 : Sohn von Gianfrancesco Pisani. 1735-1741 war er Doge von Venedig.
-
-Francesco Loredan 1656-1715 (GND-588)1178371670
-
-=> GND-Tagung bis auf moderatores (Mehrpersonentag noch in Entwicklung) eingefügt am 13.12.2018:
-        
-=> Moderatores als Ref eingetragen. 18.02.2019
-=> Im BIBB fehlen noch: Loredan und Pisani  18.02.2019 
-         
-
-         --><!--_____________--><!--Comments that were in the teiHeader element--><!--ACHTUNG: Viele ungetaggte j am Schluss eines Wortes. Evtl. noch einmal anschauen, ob durch <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ersetzen?--><!--_____________--><TEI xml:id="B_1714-11-21_991170515019105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1714-11-21_991170515019105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -176,6 +163,28 @@ Francesco Loredan 1656-1715 (GND-588)1178371670
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- Lauredanus und Pisanus als moderatores (zu der Zeit: Ruzinus, Lauredanus und Pisanus als triumviri moderatores) fehlen noch. Sonst alle Personen aufgeführt. 6.12.2018 
+
+Alvise Pisani  1664-1741 pers_DE-588-1111043582 : Sohn von Gianfrancesco Pisani. 1735-1741 war er Doge von Venedig.
+
+Francesco Loredan 1656-1715 (GND-588)1178371670
+
+=> GND-Tagung bis auf moderatores (Mehrpersonentag noch in Entwicklung) eingefügt am 13.12.2018:
+        
+=> Moderatores als Ref eingetragen. 18.02.2019
+=> Im BIBB fehlen noch: Loredan und Pisani  18.02.2019 
+         
+
+         -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--ACHTUNG: Viele ungetaggte j am Schluss eines Wortes. Evtl. noch einmal anschauen, ob durch <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ersetzen?-->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1078717/manifest"/></facsimile><text>
 <body><div type="letter">
 <pb facs="1078718" n="1"/>
@@ -183,7 +192,7 @@ Francesco Loredan 1656-1715 (GND-588)1178371670
                     <lb/><rs key="pers_DE-588-118509969" type="person">Johanni Bernoulli</rs>
 <lb/><abbr>S. P. D.</abbr>
 <lb/><rs key="pers_DE-588-102552517" type="person">Petrus Antonius Michelotti</rs></salute></opener>
-<p>Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <rs key="B_1714-10-20_991170515019305501" type="letter">nuperrimis tuis Litteris</rs><note type="editorial">vom 20. Oktober 1714</note> exposuisti circa va<pc type="hyphenation">-</pc><lb break="no"/>lorem Thaleri uncialis tandem communicavi Am<pc type="hyphenation">-</pc><lb break="no"/>plissimo Moderatori <rs key="pers_DE-588-1089924410" type="person">Ruzzino</rs> Rure in Patriam
+<p>Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <rs key="B_1714-10-20_991170515019305501" type="letter">nuperrimis tuis Litteris</rs> exposuisti circa va<pc type="hyphenation">-</pc><lb break="no"/>lorem Thaleri uncialis tandem communicavi Am<pc type="hyphenation">-</pc><lb break="no"/>plissimo Moderatori <rs key="pers_DE-588-1089924410" type="person">Ruzzino</rs> Rure in Patriam
                 <lb/>reverso; atque ab eodem audivi futurum fere impossi<pc type="hyphenation">-</pc><lb break="no"/>bile ut ipsi Triumviri Sapientissimi Patavini sci<pc type="hyphenation">-</pc><lb break="no"/>licet <rs type="organisation">Archilycei</rs> <rs key="pers_DE-588-1089924410 pers_DE-588-1111043582 pers_DE-588-1178371670" type="persons">Moderatores</rs> salarium Ti<pc type="hyphenation">-</pc><lb break="no"/>bi Vir Doctissime exhibeant atque persolvant
                 <lb/>1500 Thalerorum uncialium quadringentis circiter
                 <lb/>Louis d'or <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quipollentium. Ipsi agnoscunt, atque

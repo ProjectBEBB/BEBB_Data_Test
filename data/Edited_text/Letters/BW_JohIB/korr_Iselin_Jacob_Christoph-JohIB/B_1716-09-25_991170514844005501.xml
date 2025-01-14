@@ -1,157 +1,631 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1716-09-25_991170514844005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Jakob Christoph Iselin. Basel, 25. September 1716</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Am Briefkopf eigenhändig "à Mr. le Dr. Iselin" und eigenhändiges P.S. Blätter falsch gebunden. Foliierung folgt dem Brieftext</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1716-09-25_991170514844005501">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Jakob Christoph Iselin. Basel, 25.
+            September 1716</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000055985</title><title type="alt"
+            >1716-09-25_Bernoulli_Johann_I-Iselin_Jacob_Christoph</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Iselin, Jacob Christoph (1681-1737) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Am Briefkopf eigenhändig "à Mr. le Dr. Iselin" und
+            eigenhändiges P.S. Blätter falsch gebunden. Foliierung folgt dem Brieftext</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1716-09-25_Bernoulli_Johann_I-Iselin_Jacob_Christoph"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 674:Bl.74-84</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514844005501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972432825505504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000055985</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>23 S.<dimensions unit="cm">
+                    <height>21</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bâle</origPlace><date when="1716-09-25">ce 25. 7bre
+              1716</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1716-09-25_Bernoulli_Johann_I-Iselin_Jacob_Christoph" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 674:Bl.74-84</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514844005501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972432825505504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000055985</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>23 S.<dimensions unit="cm"><height>21</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bâle</origPlace>
-            <date when="1716-09-25">ce 25. 7bre 1716</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1716-09-25">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1716-08-14_991170514844105501" type="prev"/>
-        <ptr target="B_1716-11-06_991170514843905501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Iselin_Jacob_Christoph-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <p>Rat Bekel teilt gerade mit, dass er den Wechsel über 140 écus selbst schicken wird. Er fügt ihn nun mit diesem Paket dem seinen mit neuem Umschlag bei.</p>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1416616/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1416617" n="1"/> <pb facs="1416618" n="2"/> <pb facs="1416620" n="3"/> <pb facs="1416621" n="4"/> <pb facs="1416622" n="5"/> <pb facs="1416623" n="6"/> <pb facs="1416624" n="7"/> <pb facs="1416625" n="8"/> <pb facs="1416626" n="9"/> <pb facs="1416627" n="10"/> <pb facs="1416628" n="11"/> <pb facs="1416629" n="12"/> <pb facs="1416630" n="13"/> <pb facs="1416631" n="14"/> <pb facs="1416632" n="15"/> <pb facs="1416633" n="16"/> <pb facs="1416634" n="17"/> <pb facs="1416635" n="18"/> <pb facs="1416636" n="19"/> <pb facs="1416637" n="20"/> <pb facs="1416638" n="21"/> <pb facs="1416639" n="22"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1716-09-25">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_1716-08-14_991170514844105501" type="prev"/>
+          <ptr target="B_1716-11-06_991170514843905501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Iselin_Jacob_Christoph-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>Rat Bekel teilt gerade mit, dass er den Wechsel über 140 écus selbst schicken wird. Er
+          fügt ihn nun mit diesem Paket dem seinen mit neuem Umschlag bei.</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
+            <note type="lebensdaten">(1686-1739)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11579395X">Bauhin, Johann Ludwig</persName>
+            <note type="lebensdaten">(1666-1735)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1133586279">Beckel, Bernhard</persName>
+            <note type="lebensdaten">(1677-1722)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1687-1759)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1695-1726)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
+            <note type="lebensdaten">(1673-1764)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Dumont</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1339957825">Ebneter, Franz</persName>
+            <note type="lebensdaten">(1670-)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1151974722">Faesch, Lucas</persName>
+            <note type="lebensdaten">(1690-1750)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1074070976">Falkner, Emanuel</persName>
+            <note type="lebensdaten">(1674-1760)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118639056">Fontenelle, Bernard Le Bovier de</persName>
+            <note type="lebensdaten">(1657-1757)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1089915209">Gernler, Samuel</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-100156991">Graevius, Johannes Georgius</persName>
+            <note type="lebensdaten">(1632-1703)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-128512725">Harder, Nicolaus</persName>
+            <note type="lebensdaten">(1651-1730)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Herff</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Herwagen</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1089913974">Högger, Anton</persName>
+            <note type="lebensdaten">(1682-1767)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-124275087">Keill, John</persName>
+            <note type="lebensdaten">(1671-1721)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1152043242">Lect, Esther-Elisabeth</persName>
+            <note type="lebensdaten">(1651-1730)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117636290">Lenfant, Jacques</persName>
+            <note type="lebensdaten">(1661-1728)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Linder</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1089914237">Lüdi, Joachim</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-102552517">Michelotti, Pietro Antonio</persName>
+            <note type="lebensdaten">(1673-1740)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-100310923">Montfaucon, Bernard de</persName>
+            <note type="lebensdaten">(1655-1741)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Noiron</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-116052546">Passionei, Domenico</persName>
+            <note type="lebensdaten">(1682-1761)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Pfeiffer</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Planta, de</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Pusterla</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Reboulet</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1012090132">Ritz, Andreas</persName>
+            <note type="lebensdaten">(1684-1767)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-12115002X">Roques, Pierre</persName>
+            <note type="lebensdaten">(1685-1748)</note>
+          </person>
+          <person>
+            <persName key="pers_no_GND_id">Ryhiner</persName>
+            <note type="lebensdaten">(no lifespan info)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+            <note type="lebensdaten">(1654-1722)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1339958457">Werenfels, Johann Jakob</persName>
+            <note type="lebensdaten">(1663-)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1214855210">Werenfels, Johannes</persName>
+            <note type="lebensdaten">(1675-1741)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
+            <note type="lebensdaten">(1657-1740)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1156755212">Wieland, Hans Conrad</persName>
+            <note type="lebensdaten">(1661-1725)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1716-09-25_Bernoulli_Johann_I-Iselin_Jacob_Christoph"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1416616/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1416617" n="1"/> Monsieur et tres honoré Ami</p>
+        <p>La vive douleur, qui me rongeroit le coeur entierement sans l'assistance particuliere
+          d'une consolation, qui me vient d'enhaut, fait que je commence cette lettre par Vous
+          raconter un grand malheur qui me vient d'arriver quoique commun à plusieurs honnetes gens
+          qui y sont enveloppés: C'est que les deux frippons Werenfels Zum Liechtenstein et Ebneter
+          son Associé ont fait banqueroute dans laquelle je suis interessé pour deux milles ecus en
+          especes; c'est une banqueroute de 70000 ecus, peutêtre des plus malicieuses qu'on ait vu
+          dans un siecle; avant que d'eclater on a mené les affaires d'une maniere si secrete et si
+          frauduleuse du coté de Werenfels par le moyen de ses gens affidés auxquels il avoit
+          decouvert son mauvais état, que l'on voit à present evidemment, que l'on a voulû tromper à
+          dessein les Creanciers et les frustrer encore de ce qu'on auroit trouvé de biens chez
+          Werenfels aprez la banqueroute declarée; Voici un peu en detail ce qui s'est passé
+          jusqu'ici. Werenfels fut à Zurzac, où il negocia 13000 ecus sans qu'on sçache ce qu'il en
+          a fait, ou à quoi il les a employé, si ce n'est, comme il est croyable, qu'il les a sauvé
+          quelque part pour les voler apres l'eclat <pb facs="1416618" n="2"/> de la banqueroute
+          qu'il prévoyoit bien ne pouvoir tarder d'arriver, car il n'a rien payé de cet argent ou
+          fort peu: En revenant de Zurzac il decouvrit en chemin à son Frere Jean W. l'extremité où
+          il se trouvoit; je ne sçai ce que celuici lui conseilla, mais tant y a étant de retour
+          ici, il y eut hier trois semaines, ils prirent dans leur conseil Samuel Gernler et je croi
+          quelques autres Personnes; On delibera dans ce conseil sur ce qu'il y auroit à faire pour
+          amuser les Creanciers et pour gagner du temps, cette deliberation dura depuis le dit
+          vendredy jusqu'au mardy suivant, que l'on fut à l'audience pour demander permission de
+          presenter le lendemain au Magistrat une requete de la part du Banqueroutier; cependant on
+          avoit deja envoyé dés le sammedi précedant un Expres à Ebneter, qui etoit à Francfort dans
+          la foire pour lui donner les premieres nouvelles de ce manege et pour le faire decamper de
+          là avant le jour du payement comme aussi pour sauver et mettre en seureté tous les effets
+          que ces deux banqueroutiers avoient encore à Francfort, ce coup leur reussit admirablement
+          bien, puisque, comme on a sçû depuis, sous pretexte de vouloir faire une petite promenade
+          à cheval <pb facs="1416620" n="3"/> [Ebneter] sortit de Francfort, prit la poste et arriva
+          ici en 3 jours: pour revenir donc à Werenfels, on pria le magistrat dans la requete
+          susdite, que comme il avoit assez d'effets et de biens pour contenter ses Creanciers, on
+          voulut bien faire quelques deputés pour prendre connoissance de l'etat de ses affaires,
+          auxquels il montreroit, qu'il auroit assés de quoi satisfaire à ses dettes, et que pas un
+          de ses Creanciers ne perdroit un sol: Hé bien! on accorde cette demande, on fait une
+          deputation de 4 Messieurs, c'etoient Mr. le Conseiller Wieland, Mr. le Cons. Lucas Fäsch,
+          Mr. le Secretaire Gernler et mon beaufrere Mr. Falcner; mais il faut sçavoir que les 3
+          premiers etoient deja destinés à celà la veille de ce jour là du Conseil et mon beaufrere
+          y fut joint aprés peutetre contre le bon plaisir de Werenfels et de ses Conseillers; au
+          lieu donc que le premier de ces deputés devoit encore le meme jour convoquer ses collegues
+          pour commencer l'inventation, parce que dans ces sortes de rencontres, il y a <hi rend="u"
+            >periculum in mora</hi>, il le differa depuis mercredi jusqu'à sammedi, durant cet
+          intervalle et les 3 ou 4 jours aprez qui etoit le temps que dura l'inventation, on nous
+          endormit toujours de la douce esperance qu'il n'y auroit <pb facs="1416621" n="4"/> rien à
+          perdre, quoique peu à peu on commençat à prendre ombrage de la lenteur avec laquelle on
+          trainoit cett' affaire, d'autant plus que les parens et les plus proches de Werenfels eux
+          memes commencerent à diminuer nôtre esperance et à parler de quelque perte que nous
+          souffririons, mais enfin les deputés ayant convoqué les Creanciers, ils leur ont
+          communiqué l'etat de la masse et des dettes de Werenfels et d'Ebneter, cellelà monte par
+          estimation à 113000 florins y compris le bien de la Femme de W... qui consiste en 30000
+          fl. et qu'elle retireroit en cas de rupture, mais les dettes montent à plus de 135000 fl.,
+          nous vimes donc qu'on nous avoit trompé en nous repaissant de vaines esperances et qu'on
+          auroit bien mieux fait de rejetter la requete faite au magistrat, puisque sans doute on
+          auroit d'abord trouvé la masse dans un meilleur etat: que faire donc? Les deputés aprez
+          avoir joué leur rolle prirent congé des Creanciers et quitterent l'assemblée dans une
+          situation fort triste se regardant les uns les autres comme se voulant demander
+          mutuellement conseil et consolation; ils prirent pourtant la resolution de se rassembler
+          l'aprez diné sammedi passé pour prendre des mesures convenables; dans cette assemblée
+          Linder le rahtsredner,<note type="editorial">[Text folgt]</note> se presenta au nom de
+            We<pb facs="1416622" n="5"/>renfels et de ses freres pour faire des propositions à [un]
+          accomodement, mais elles furent trouvées absurdes, malhonnetes, impudentes et meme
+          impossibles, puisque entre autres le Banqueroutier offrant une certaine somme qui n'alloit
+          pas jusqu'à la moitié a eu l'audace d'exiger que les Creanciers de la ville prissent sur
+          eux de contenter les etrangers et d'obliger Mad.<hi rend="sup">e</hi> Rihiner im [St.
+          Bendis]dörfferholz, à qui il doit encore les 5000 ecus qu'a couté la maison Zum
+          Liechtenstein et laquelle maison lui est hypothéquée pour cette somme de reprendre la dite
+          maison pour les 5000 ecus, quoiqu'il soit certain, qu'aujourdhui elle ne vaudra plus 3000
+          ecus, nonobstant que Werenfels ait melioré cette maison de beaucoup y ayant depensé comme
+          il dit 2400 fl. en reparation et en aggrandissement; ainsi cet impudent osa exiger de nous
+          de le garantir de la poursuite de Mad.<hi rend="sup">e</hi> Ryhiner et des Creanciers
+          etrangers, sans que nous sçussions, si peutetre la pretension de ces derniers n'alloit pas
+          bien au delà de ce qu'il nous avoit declaré et peut-etre meme au delà de toute la somme
+          qu'il nous avoit offerte: Ces propositions ayant donc eté rejettées unanimement, on fut
+          sur le point d'aller soliciter le Bourguemaitre regnant <pb facs="1416623" n="6"/> de
+          donner ordre qu'on fermat et scellât les effets de ces deux malheureux encore le meme
+          soir, mais quelques uns des plus moderés ont disposé les autres à surseoir<note
+            type="editorial">Im Manuskript steht "sursoir".</note> cette extremité et à accorder un
+          terme jusqu'au lundi suivant 9 heure du matin, pour laisser le temps aux debiteurs de
+          prendre des mesures plus salutaires pour leur honneur et plus favorables pour notre
+          interest. Le Lundi etant arrivé on s'assembla à 9 heures sur la maison de ville et on
+          commença à parlementer avec tel succés, que l'on convint du principal article, qui est que
+          l'on payeroit aux Creanciers à chacun la moitié sans aucune restriction et que les freres
+          et soeurs de W. seroient cautions. </p>
+        <p>Pendant qu'on traittoit ainsi ensemble, le Schultheis qui avoit amassé à la hate quelques
+          Gerichtsherren entre autres votre voisin dans l'Eglise Mr. Stauder qui s'etant trouvé là
+          sur les rues par hazard sans l'habit de ceremonie en emprunta un avec la fraize, le
+          Schultheiss, dis je, aprez une petite session envoya ses harpyes je veux dire ses amtleüth
+          à la maison de Werenfels et à celle de Ebneter pour les fermer judicialement sous pretexte
+          qu'il etoit obligé <hi rend="u">ex officio</hi> de faire cette <pb facs="1416624" n="7"/>
+          demarche quoiqu'il n'y eut encore personne qui actionnat ni l'un ni l'autre; chose inouie
+          et sans exemple, que Mr. le Conseiller Harder et Mr. le Conseiller Bauhin tous deux
+          autrefois Préteurs avouerent etre un attentat qui sentoit la violence et la tyrannie et
+          que le premier dit touthaut, que de son<note type="editorial">Im Manuskript steht
+            "sont".</note> Pretorat il n'auroit pas pris cent Louis d'or pour commettre une telle
+          violence: aussi cela irrita tellement les Creanciers, qui etoient sur le point de conclure
+          un accord qu'ils voulurent aller sur le champs vers les susdites maisons fermées par les
+          amtleüth pour forcer les cadenas<note type="editorial">Im Manuskript steht
+            "gadenats".</note> et rouvrir ainsi les maisons par la meme violence dont le Schultheiss
+          en avoit usé en les faisant fermer contre les droits fondamentaux; on s'avisa pourtant
+          d'un moyen plus moderé en deputant quelques uns vers le Bourgmaitre regnant, qui envoya
+          ordre au Schultheiss de rouvrir les maisons et de restituer ainsi les choses <hi rend="u"
+            >in integrum</hi> ce qui fut executé l'aprés midi du meme jour: on nomma aussi quelques
+          autres deputés des Creanciers, pour se rendre ce meme soir-là dans la Stifft de Saint
+          Pierre pour achever le traité d'accord avec les Werenfelsiens, on le conclut enfin aprez
+          bien des debats en vertu duquel chacun des Creanciers se doit contenter de la moitié de sa
+          pretension, et quelques uns des Werenfelsiens <pb facs="1416625" n="8"/> seront cautions
+          jusqu'à ce que chaque Creancier soit payé pour sa moitié; pour cet effet les memes deputés
+          des Creanciers iront de temps en temps voir si la vente des maisons, des biens, des
+          meubles, des marchandises etc. se fait de bonne foy: et à mesure qu'on en tire de
+          l'argent, on le partagera <hi rend="u">pro rato</hi> entre les Creanciers, mais ce traité
+          n'est pas encore ratifié, et je doute si tous les interessés tant des Creanciers que des
+          Garans y consentiront sans quelques nouvelles brouilleries: il y en a au moins qui
+          grondent et qui se montrent extremement mecontens: Le Schultheiss lui meme forma avanthier
+          une plainte devant le Conseil, demandant que le magistrat lui accordat de faire sa
+          pretension à la masse, tout comme si on en etoit venu à une rupture formelle, il demande
+          effectivement la somme de 1200 florins, quelle impudence! si un autre avoit commis un
+          semblable attentat, je ne doute nullement, qu'on ne l'eut degradé de sa charge, bien loin
+          d'authoriser son fait: cependant, il y en avoit qui oserent bien soutenir qu'il avoit bien
+          agi selon les formes et entre autres un des plus proches du Gerichtsschreiber, Vous
+          devinerez aisement qui c'est. Enfin on ne decida encore rien sur la demande du
+          Schultheiss, mais on la renvoya au Conseil des XIII, <pb facs="1416626" n="9"/> ce qui
+          fait que l'accord fait entre les Creanciers et les Werenfelsiens est encore bien
+          incertain: quoiqu'il en soit Vous voyez que je perdrai pour le moins mille ecus et les
+          interests des autres mille jusqu'au temps qu'on me les aura payés, perte tres sensible
+          pour un homme comme moi qui doit vivre de ses rentes; Je sçai que Vous avez compassion de
+          mon malheur, c'est pourquoi je Vous ai fait part de cette histoire par ce recit un peu
+          circonstantié, quoiqu'il y ait bien des circonstances que j'ay omises et que je Vous dirai
+          mieux de bouche à Votre retour, car ils se sont passés de telles choses que l'on voit
+          clairement que du coté des Werenfelsiens la fourberie entroit dans leur conduite: En un
+          mot Ebneter est infiniment moins coupable que Werenfels, car depuis son retour de
+          Francfort il n'est jamais sorti de la Ville, il confesse sa faute et se donne coupable de
+          mort, il offre de bonne foi tout ce qu'il a jusqu'à la chemise meme qu'il porte sur le
+          corps, effectivement on le depouillera de tout son bien qui ne monte environ qu'à 8000 fl.
+          ensorte que mon frere le droguiste, qui est son beaufrere<note type="editorial">Hieronymus
+            Bernoulli (1669-1760) war seit 1700 mit Catharina Ebneter (1667-1720), Tochter des Franz
+            Ebneter, Messerschmied und Ratsherr, verheiratet.</note> craint avec raison, qu'il en
+            <pb facs="1416627" n="10"/> sera requis pour l'avoir à sa charge: au lieu que Werenfels
+          a pris la fuite dés le commencement et s'est rendu à Stetten à une lieue d'ici sur les
+          terres du Rhinfelde,<note type="editorial">Stetten bei Rheinfelden</note> où il se trouve
+          encore, il n'a jamais voulu se presenter non obstant le sauf-conduit qu'on lui a offert,
+          il a pris ce parti sans doute par le sage conseil de ses partisans pour etre dispensé de
+          repondre aux questions qu'on lui auroit faite sur chose et d'autre, particulierement sur
+          les 13000 ecus qu'il a negocié à Zurzac dans la derniere foire, item sur les livres de
+          conte où il doit avoir noté ses emprunts et que les marchands appellent <hi rend="u"
+            >carnets</hi>, car il les a ecartés malicieusement, àfin qu'on ne put pas decouvrir ses
+          fripponneries: en un mot il s'est absenté pour etre mieux à son aise et en état de
+          marchander par le moyen de ses gens avec les Creanciers, et ainsi pour devenir plus riche
+          aprez la banqueroute qu'avant la banqueroute en obligeant les Creanciers à un si mauvais
+          accord pour eux, tel qu'ils viennent de conclure. Mon Frere s'etoit offert de rendre
+          caution pour la <pb facs="1416628" n="11"/> masse d'Ebneter, telle qu'on l'avoit inventée
+          et estimée, pourvu que les Werenfelsiens voulussent aussi se charger de la masse de
+          Werenfels comme on l'avoit estimée, car par là on auroit empesché que l'affaire ne fut
+          jamais tirée par devant la justice et on auroit pu vendre les choses à bon loisir, de
+          cette maniere tout le monde croit que les Creanciers auroient pu obtenir pour le moins les
+          deux tiers de leur pretensions; mais les Werenfelsiens n'en voulurent jamais entendre à
+          cela menaçant de laisser aller tout en deroute, si les Creanciers ne vouloient pas se
+          contenter de la moitié et que si mon frere refusoit d'entrer en caution avec eux pour le
+          payement de cette moitié: ainsi pour sauver Ebneter il lui a fallu passer par là, quoique
+          Werenfels ne l'eut point merité de lui, vû que Werenfels et les siens avoient
+          soigneusement caché à mon frere tout ce qu'ils tramoient ensemble avant la banqueroute
+          eclatée et ne trouvoient<note type="editorial">Im Manuskript steht "trouvoit".</note>
+          point bon de l'admettre dans leur conseil. </p>
+        <p>Mais en voilà assez mon cher Ami et peutetre <pb facs="1416629" n="12"/> trop pour Vous
+          ennuyer: excusez moi donc c'est la douleur qui m'en a fait tant dire; et on est bien aise
+          pour sa consolation, quand on peut se decharger un peu de son chagrin sur un si bon Ami
+          comme Vous. Je viens enfin à Vôtre derniere lettre, qui est sans date et que je reçûs
+          sammedi passé avec les autres lettres et pieces le tout enfermé dans un gros paquet.<note
+            type="editorial">[Text folgt]</note> Vous avez ici à recevoir une lettre de change de
+          cent quarante ecus blancs en espece à sçavoir 60 ecus que je Vous envoye suivant Vôtre
+          ordre et que je Vous mets à conte, et les autres 80 ecus restans pour etre employés en
+          livres pour nôtre bibliotheque de la maniere que je Vous dirai cy apres. Il est vrai que
+          ce que j'ay reçu pour Vôtre conte jusqu'ici ne vaut pas les 60 ecus, n'ayant encore touché
+          pour Vous qu'environ 130 lb. argent courant de Bâle qui consiste dans le premier quartier
+          de Vôtre pension et les 46 florins que Mr. l'Enfant<note type="editorial">Siehe den Brief
+            von Johann Bernoulli an Jacques L'Enfant von <rs key="B_1716-09-19_991170514911605501"
+              type="letter">1716.09.19</rs>.</note> me fit payer par Mr. Herwague en
+            20<formula>\frac{1}{2}</formula> Louis blancs neufs et deux sols, ce qui contant une de
+          ces pieces pour 33 bats ne fait en tout que 45 fl. et environ 4 schilling, il est vrai
+          qu'on peut debiter ces pieces là un peu plus haut qu'à 33 batsen; cependant je n'ai<note
+            type="editorial">Die Folien 80 und 81, auf denen der Brieftext fortgesetzt wird, sind
+            irrtümlich hinter fol. 83 eingebunden.</note>
+          <pb facs="1416630" n="13"/> pas manqué d'en faire des remontrances à Mr. Herwague, qui m'a
+          dit qu'il avoit reçu l'ordre de Geneve de me le payer ainsi qu'il l'a fait, je l'ai donc
+          obligé de m'en donner une note de sa main pour ma decharge; c'est donc sans doute le
+          Banquier à Geneve qui ayant l'ordre de Mr. l'Enfant de me faire toucher la valeur de 46
+          fl. d'Allemagne, a cherché sur l'argent ce petit profit ou plutot usure, selon la belle
+          coutume de presque tous les banquiers, surtout des Genevois. J'ai donc jugé à propos de
+          garder Vôtre argent tel qu'il est (à moins que Vous ne me donniez ordre de l'echanger
+          contre des especes à quelque prix que ce soit) et de Vous envoyer à bon conte les dits 60
+          ecus, que j'ai empruntez de la bourse du Recteur dont j'ai l'administration et desquels
+          Vous ne payerez point d'interest; j'en ai usé ainsi pour Vôtre profit, parceque les
+          especes sont presentement d'un prix fort haut, en sorte que l'agio que j'aurois eté obligé
+          de payer pour Vous auroit été trop cher. Pour ce qui est des 80 ecus, qui sont compris
+          dans cette lettre de change de 140 ecus, la Regence ou le Senat Academique m'a ordonné de
+          Vous les remettre à fin que Vous achetiez pour notre Bibliotheque un livre historique ou
+          deux de la valeur de 80 ecus, à la place <pb facs="1416631" n="14"/> du <hi rend="u"
+            >Thesaurus Graevii</hi>,<note type="editorial">Graevius, Joannes Georgius, <hi rend="u"
+              >Thesaurus antiquitatum Romanarum</hi>, 12 vols., Trajecti ad Rhenum [Utrecht], Apud
+            Franciscum Halmam; Lugduni Batavorum [Leiden], Petrum van der Aa, 1694-1699.</note> que
+          l'on a vendu pour ce prix là; la raison pour laquelle nous sommes obligés d'acheter un
+          autre livre à la place du dit <hi rend="u">Thesaurus</hi> c'est que Mr. Herf ayant sçu
+          qu'on l'avoit vendu au grand deshonneur comme il se plaignoit de feu son Pere, qui l'avoit
+          donné en present à la Bibliotheque, en fit un si terrible vacarme que pour l'appaiser il
+          falloit Lui promettre qu'on acheteroit un ou deux autres livres du meme prix que le
+          Thesaurus et qu'on y feroit une inscription devant le titre à l'honneur et à la memoire de
+          feu Mr. Herf comme du Donateur;<note type="editorial">Recherchieren, welches Buch als
+            Ersatz gekauft wurde.</note> c'est pourquoi Vous etes prié d'employer ces 80 ecus pour
+          effectuer notre promesse. Pour ce qui est du grand ouvrage de Dom Bernard Monfaucon,<note
+            type="editorial">[Text folgt]</note> pour la souscription duquel Vous demandés qu'on
+          Vous remette au plutost 70 livres de France, le Senat Academique n'a pu s'y resoudre à
+          cause du peu d'argent, qu'il y a dans le fiscus de la Bibliotheque, pour lequel on a meme
+          eté obligé d'emprunter du fiscus Legatorum les 80 ecus que l'on vous remet pour l'achat du
+          livre qui doit servir d'equivalent contre le thesaurus vendu; il y en avoit dans le Senat
+          qui disoient que le dit ouvrage de Monfaucon contenant sans doute les annales des <pb
+            facs="1416632" n="15"/> Benedictins n'etoit peutetre pas si necessaire pour que nôtre
+          Bibliotheque ne s'en puisse passer; Vous pouvez bien deviner que ceux qui l'ont dissuadé
+          ne sont pas de ceux qui aiment ces sortes de livres. Il y a prés de deux mois que j'ai
+          prevenu Votre desir touchant le pauvre Pfeiffer,<note type="editorial">[Text folgt]</note>
+          puisque je l'ai joint aux deux beneficiers du College, qui sont à la disposition du
+          Recteur pour partager avec eux le benefice, jusqu'à ce qu'il puisse etre accommodé d'une
+          place entiere; cependant Vous sçavez qu'il y a plus d'un an qu'on a promis la premiere
+          place vacante à un Etudiant de Dietz, recommendé par Mr. Rits;<note type="editorial">[Text
+            folgt]</note> Mr. Dumont de Neuchatel jouit effectivement du benefice depuis quelques
+            mois.<note type="editorial">[Text folgt]</note> Je m'impatiente que l'ouvrage, auquel
+          Mr. de Fontenelle travaille<note type="editorial"> </note> vienne au jour; je me flatte
+          d'y trouver de quoi contenter ma curiosité connoissant bien l'habilité extraordinaire de
+          l'Autheur. Je suis ravi d'entendre qu'il ait si bonne opinion de ma tenuité; Je Vous prie
+          de Lui faire bien mes compliments par occasion. Je ne me <pb facs="1416633" n="16"/> mets
+          gueres en peine de ce que quelques Mathematiciens Anglois causent de mes remarques sur la
+          Physique de Mr. Newton;<note type="editorial">[Text folgt]</note> et quoiqu'en dise Keil,
+          que les fautes que j'ai corrigées dans le temps qu'on imprimoit la nouvelle edition de ce
+            livre,<note type="editorial">[Text folgt]</note> etoient si faciles à corriger qu'ils
+          n'auroient pas manqué de les corriger eux memes, si je ne les eusse pas prevenus, c'est
+          une pure gasconnade, car d'où vient qu'ils avoient laissé passer l'impression par dessus
+          ces fautes, s'ils pouvoient les corriger si aisément, si bien qu'ils ont été obligés de
+          casser les feuilles deja imprimées pour y en substituer d'autres aprez qu'ils avoient eté
+          avertis de ces fautes par mon Neveu,<note type="editorial">[Text folgt]</note> sans lequel
+          avertissement tous les exemplaires de la nouvelle edition contiendroient encore ces
+          fautes? Vôtre comparaison est juste en les comparant avec les compagnons de Colombe. <pb
+            facs="1416634" n="17"/> Quant aux nouvelles remarques qui seront sans doute deja
+          imprimées dans les Actes de Leipzig,<note type="editorial">[Text folgt]</note> elles ne
+          porteront pas mon nom, c'est pourquoi je Vous prie de n'en dire à Personne que j'en sois
+          l'auteur. Le miserable Noiron ne merite pas qu'on en parle davantage. Je ne croyois pas
+          que Vous Vous attendissiez à recevoir de nous une Lettre de remerciment à Mr. le Baron
+          Hogguer avant que son nouveau present fut arrivé ici,<note type="editorial">[Text
+            folgt]</note> c'est pourquoi je m'etois contenté de Vous prier de vouloir le remercier
+          par avance au nom de nôtre Université; mais ayant lû cet endroit de Vôtre Lettre dans la
+          Regence, on trouva bon avec Vous de Lui ecrire une Lettre en action de graces et on
+          m'imposa l'execution; il est vrai que la tete ne m'etoit pas disposée à trancher des
+          compliments; Voici pourtant une lettre du mieux que je pouvois concevoir, j'y joins une
+          copie à fin que Vous puissiez juger, si la lettre merite qu'elle soit rendue, ou en cas de
+          contraire, que Vous <pb facs="1416635" n="18"/> la supprimiez pour Vous en envoyer une
+          autre faite par un Ecrivain plus habile que moi: au reste tous nos Messieurs admirent la
+          liberalité outrée de Mr. Hogguer, on en attribue une bonne partie à ce que Vôtre presence
+          et tout ce que Vous Lui aurés dit de louange sur sa generosité, Lui aura donné occasion à
+          en faire davantage. Je dois Vous dire ici que je n'ai pas trouvé dans Vôtre pacquet <hi
+            rend="u">le prix d'un nombre des livres</hi> dont Vous parlez dans Vôtre lettre; Vous
+          aurez donc sans doute oublié en fermant le pacquet de l'y inserer. J'ai fait delivrer
+          toutes les lettres que Vous m'avez envoyées à leurs adresses, mais je Vous prie de ne m'en
+          plus adresser pour le Dr. W...;<note type="editorial">Gemeint ist hier vielleicht Samuel
+            Werenfels (1657-1740).</note> car ce nom m'est devenu puant, outre que ce Dr. n'est pas
+          entierement exemt de l'intrigue qui s'etoit <pb facs="1416636" n="19"/> formée au
+          prejudice des Creanciers de son frere. Pour les pieces imprimées, j'en ai envoyé les
+          latines à Mr. le Doyen de Vôtre faculté et les françoises à Mad.<hi rend="sup">e</hi>
+          Planta, qui me les renvoya, demain ma femme ira les communiquer à Mad.<hi rend="sup"
+            >e</hi> de Bonne: Mr. de Thiancourt etoit deja parti pour se rendre à son Regiment quand
+          je reçus Vôtre paquet, mais je n'ai pas laissé d'envoyer la lettre, qui lui etoit destinée
+          dans le Kohlerhoff.<note type="editorial">Basel, Petersberg. Hier wohnten Mutter und Tante
+            von de Thiancourt.</note></p>
+        <p>Mon fils, duquel Vous me demandés des nouvelles se porte toujours bien à Venize,<note
+            type="editorial">Nicolaus II Bernoulli hielt sich von 1716 bis 1717 in Venedig
+            auf.</note> j'en reçus des lettres avanthier,<note type="editorial">[Text folgt]</note>
+          il confirme la levée du Siege de Corfou; il se loue beaucoup des honnetetés de Mr.
+          Michelotti, dont il est beaucoup cheri, et qui le voudroit bien loger et nourrir pendant
+          plusieurs années. Tous les honneurs que les plus sçavants hommes Vous font quasi à l'envi
+          ne m'etonnent pas, <pb facs="1416637" n="20"/> puisque rien ne Vous arrive que je n'aie
+          prevû: et on ne fait que rendre justice à Vôtre merite: Vous ne sçauriez croire combien
+          avantageusement Mr. Varignon m'a ecrit de Vous, mais sa lettre etoit vieille; quand Vous
+          ecrirez à Mad.<hi rend="sup">e</hi> de Reboulet,<note type="editorial">[Text folgt]</note>
+          Vous aurez la bonté de Lui faire mes excuses de n'avoir pas le temps presentement de Lui
+          repondre, aussi ne suis je pas d'humeur à plaisanter dans ma detresse, n'ayant pas des
+          choses serieuses à ecrire. Mess.<hi rend="sup">r</hi> mes Collegues à qui j'ai fait Vos
+          complimens m'ont chargé de Vous faire reciproquement les leurs. Mr. Roques ne m'a encore
+          rien payé pour Vous. Vous trouverez ici une lettre pour Vous de Mr. Pusterla, et une autre
+          de Mr. Ludi pour Mr. le Baron Hogguer. Ma Femme qui Vous est tres obligée de Vôtre bon
+          souvenir Vous fait mille et mille compliments, elle souhaite avec moi de Vous voir au
+          plutot de retour en pleine santé. En attendant je me nourris toujours d'une parfaite
+          confiance de ce que Vous etes persuadé entierement du sincer attachement, avec lequel je
+          suis à jamais Monsieur Votre tres-humble et tres-obeissant Serviteur J. Bernoulli.</p>
+        <p>Bâle ce 25. 7bre 1716.</p>
+        <p>P. S. Je Vous demande pardon mon cher Monsieur de Vous avoir ecrit une si longue lettre,
+          je puis dire avec verité que je n'ai pas eu le temps de la faire plus courte: Comme la
+          lettre pour Mr. le Baron Hogguer fait grossir le paquet considerablement, il est juste que
+          le fiscus de notre Bibliotheque vous en restitue le port, aussi puis-je vous assurer que
+          la Regence y consentira tres volontiers. Je prens la liberté de Vous dire que la lettre de
+          recommendation de Mr. Passionei<note type="editorial">In seinem Brief von 1716.05.23 hatte
+            Johann I Bernoulli Domenico Passionei um Unterstützung bei Eintreibung einer Schuld von
+            200 Pfund, die Jean Muespach aus dem Bistum Basel bei ihm hat, gebeten. Passionei solle
+            in dieser Angelegenheit an den Bischof von Basel in Pruntrut schreiben. </note> n'a
+          produit aucun effet, vû que malgré cette recommendation la Cour de Porentru ne m'a pas
+          daigné seulement d'une reponse bien loin de me contenter sur ma pretension: quand Vous
+          ecrirés peutetre à Mr. Passionei, ne seroit-il pas bon que Vous Lui donnassiez à entendre
+          le peu de respect qu'on a eu à Porentru pour sa recommendation? afin qu'il put temoigner
+          en temps et lieu son juste ressentiment. Quoique cette lettre soit datée du 25. 7bre, elle
+          ne part pourtant qu'aujourdhui 26. de 7bre: au contraire j'ai daté la lettre à Mr. Hogguer
+          comme du 26. quoiqu'elle fut deja ecrite dés le 23. du courant; j'ai fait cela pour
+          qu'elle ne paroisse pas vieille. Dans ce moment Mr. le Cons.<hi rend="sup">er</hi> Bekel
+          me fait sçavoir qu'il vous enverra Lui meme la lettre de change de 140 ecus en especes,
+          ainsi il la joindra avec ce paquet à la sienne sous une nouvelle enveloppe. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

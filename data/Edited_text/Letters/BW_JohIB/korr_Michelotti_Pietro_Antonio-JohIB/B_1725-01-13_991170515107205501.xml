@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert; Tags, Bibliographie und Personen ausgezeichnet am 19.09.2019 --><!-- <change when="2022-06-03" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- Tags überarbeitet am 14.01.2020 
-
-Cogrossi hat hier keine GND, in den vorhergehenden Briefen aber schon; im BIBB ist er in diesem Brief aber mit Norm-Daten / Lebensdaten aufgeführt, ebenso im UB-Katalog. Das sollte bei einer Aktualisierung der Daten automatisch mitaktualsiert werden
-.
-   --><!--_____________--><!--Comments that were in the teiHeader element--><!-- pers_DE-588-102447322 --><!--_____________--><TEI xml:id="B_1725-01-13_991170515107205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_1725-01-13_991170515107205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -185,6 +180,22 @@ Cogrossi hat hier keine GND, in den vorhergehenden Briefen aber schon; im BIBB i
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert; Tags, Bibliographie und Personen ausgezeichnet am 19.09.2019 -->
+<!-- <change when="2022-06-03" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- Tags überarbeitet am 14.01.2020 
+
+Cogrossi hat hier keine GND, in den vorhergehenden Briefen aber schon; im BIBB ist er in diesem Brief aber mit Norm-Daten / Lebensdaten aufgeführt, ebenso im UB-Katalog. Das sollte bei einer Aktualisierung der Daten automatisch mitaktualsiert werden
+.
+   -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- pers_DE-588-102447322 -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079521/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079522" n="1"/>
 <opener><dateline>de <rs key="place_GEO-3164603" type="place">Venize</rs> ce le <date when="1725-01-13">13 Janvier 1725</date>.</dateline>
@@ -231,5 +242,5 @@ Cogrossi hat hier keine GND, in den vorhergehenden Briefen aber schon; im BIBB i
 <addrLine>Monsieur Jean Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
 <addrLine>Medecin tres Illustre et Profes-</addrLine>
 <addrLine>seur tres Celebre de Matematique</addrLine>
-<addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine><note type="editorial">Postvermerk: "franca par <rs key="place_GEO-3173435" type="place">Milan</rs>"</note></address></closer>
+  <addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs><note type="editorial">Postvermerk: "franca par <rs key="place_GEO-3173435" type="place">Milan</rs>"</note></addrLine></address></closer>
 </div></body></text></TEI>
