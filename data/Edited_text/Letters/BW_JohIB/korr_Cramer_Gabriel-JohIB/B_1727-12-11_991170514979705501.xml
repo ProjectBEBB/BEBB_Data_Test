@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1727-12-11_991170514979705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- noch keine GND: 
+      Robert Caille
+      William Innys
+      John Eames--><!--_____________--><!--Comments that were in the teiHeader element--><!--_____________--><TEI xml:id="B_1727-12-11_991170514979705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -189,12 +193,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert"><!-- status noch ängern, RG 10.01.2025 -->
+  <revisionDesc status="teiKodiert">
     <listChange>
-      <change when="2024-11-15" who="MK SG">space getaggt</change>
-      <change when="2024-11-15" who="MK">note type=comment umformuliert</change>
       <change when="2024-11-11" who="MK SG">Kodierung durchgeschaut, person tag ergänzt</change>
-      <change when="2024-11-11" who="MK SG">kollationieren abgeschlossen</change>
+      <change when="2024-11-11" who="SG MK SG">kollationieren abgeschlossen</change>
       <change when="2024-11-08" who="MK">note comment eingefügt</change>
       <change when="2024-11-07" who="MK">hi rend sup eingefügt, kleine Korrekturen</change>
       <change when="2024-11-07" who="MK SG">kollationieren begonnen</change>
@@ -205,18 +207,6 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!-- noch keine GND: 
-      Robert Caille
-      William Innys
-      John Eames-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!--_____________-->
-
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073600/manifest"/>
 </facsimile><text>
@@ -237,13 +227,13 @@
     <lb/>vous m'avez donnée de vous informer de mes etudes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous consulter sur
     <lb/>les difficultez qui s'y peuvent présenter.</p>
   <p><lb/><rs type="letter" key="B_1727-09-28_991170514897605501">La lettre</rs><!-- Brief vom 28.09.1727 von Johann I an Mairan --> que vous m'avez fait la grace de me donner pour Monsieur
-    <lb/><rs type="person" key="pers_DE-588-11931035X">de Mairan</rs> a été presque inutile, parce qu'il s'est trouvé à la <rs type="place" key="place_GEO-3030195">Campagne</rs><note type="comment">Mit hoher Wahrscheinlichkeit handelt es sich um die Ortschaft Breuilpont, von wo aus de Mairan mehrere Briefe an Johann I Bernoulli schrieb. Darin erwähnt er die Distanz 17 lieues, was der Distanz Breuilpont-Paris (=ca. 80 km entspricht. Es gibt zwei Châteaux in Breuilpont. MK</note><!-- Muss MK stehen oder kann es als XML-Kommentar darstehen? RG 10.01.2025 -->,
+    <lb/><rs type="person" key="pers_DE-588-11931035X">de Mairan</rs> a été presque inutile, parce qu'il s'est trouvé à la <rs type="place" key="place_GEO-3030195">Campagne</rs><note type="comment">Mit hoher Wahrscheinlichkeit handelt es sich um die Ortschaft Breuilpont, von wo aus de Mairan mehrere Briefe an Johann I Bernoulli schrieb. Darin erwähnt die Distanz zu Paris (17 lieues=ca. 80 km), was der Distanz zu Paris entspricht. Es gibt zwei Châteaux in Breuilpont. MK</note>,
                <lb/>pendant le peu de tems que j'ai resté à <rs key="place_GEO-2988507" type="place">Paris</rs>. J'ai pourtant trouvé le moien
                <lb/>de la lui faire tenir par un <rs type="person">ami</rs><!-- identifizierbar? --> qui étoit de sa co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>aissance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il m'a fait
    <lb/>remettre un Exemplaire de votre <rs type="biblio">Dissertation</rs> sur le Mouvement, dont je
                <lb/>vous remercie. Je vous aprendrai <choice><orig>la</orig><reg>là</reg></choice> dessus <add>un</add>e chose qui peut étre vous
                <lb/>surprendra. <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs>, que vous croyiés vous étre opposé, est convaincu de
-               <lb/>la verité de votre Théorie des forces vives. Il m'a parlé du jugement de l'Acade<unclear reason="lost">mie</unclear>
+               <lb/>la verité de votre Théorie des forces vives. Il m'a parlé du jugement de l'Acade <unclear reason="lost">mie</unclear>
             <pb facs="1073604" n="2"/>
 <lb/>touchant les prix comme d'un jugement bien different du sien, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> fondé sur des
                <lb/>préjugez, comme d'un jugement apuié sur la cabale. Il m'a fait entendre qu'on
@@ -287,8 +277,7 @@
                <lb/>egalement, il s'ensuit que quand ils auront perdu toutes leurs forces, ils <add>se</add> seront <abbr>egale<unclear>m.</unclear></abbr>
                <lb/>enfoncés. <choice><abbr>C. Q. F. D.</abbr><expan>Ce qu'il fallait démontrer.</expan></choice> Il attaque ensuite la Théorie des Forces vives par ces mêmes
                <lb/>Expériences, mais par un raisonement extrèmement compliqué <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui ne m'a point
-               <lb/>paru concluant, ce qui fait que je me dispense de vous l'écrire.</p>
-  <p rend="space"><rs type="biblio">N<hi rend="sup">o</hi>. 375<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Janv.</abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>paru concluant, ce qui fait que je me dispense de vous l'écrire.<space type="p"/><rs type="biblio">N<hi rend="sup">o</hi>. 375<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Janv.</abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/><abbr>Febr.</abbr> 1723.</rs> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117632686" type="person">Desaguiliers</rs> tache de refuter le système Leibnitien par des Experiences<unclear reason="lost">.</unclear>
                <lb/>Les unes sont des corps qu'on laisse tomber de differentes hauteurs sur le bras d'une
                <lb/>balance <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui par ce moien soulevent un certain poids placé dans le bassin de l'autre

@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_1711-02-26_991170517024105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- <ptr type="prev" target="placeholder"/> Es handelt sich um den ersten Brief der Korrespondenz zwischen Nic. I und Montmort. --><!--pers_DE-588-117584401 -> Nicole, François  〈1683-1758〉 --><!--
+            Monsieur Remond de Montmort ->Montmort, Pierre Rémond de, (1678-1719) pers_DE-588-117601020
+            
+            mon Oncle -> Bernoulli, Johann pers_DE-588-118509969
+            
+            Huyguens -> Huygens, Christiaan, (1629-1695) pers_DE-588-118639749
+            
+            feu mon Oncle -> Bernoulli, Jakob pers_DE-588-118509950
+            
+            Cousin -> Bernoulli, Nikolaus 〈1687-1769〉 pers_DE-588-135542472
+            
+            Herman -> Hermann, Jacob pers_DE-588-119112450
+        --><!--_____________-->
+
+<TEI xml:id="B_1711-02-26_991170517024105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -48,7 +64,7 @@
       <note type="generalRemark">
         <p>Datum eigenhändig von "ce 20 Fevrier" in "ce 26 Fevrier" korrigiert. Fo.195r/v leer</p>
       </note>
-      <note type="print">Druck: Pierre Rémond de Montmort, Essay d'analyse sur les jeux de hazard, Paris, Quillau, 1713, pp. 308-314.</note>
+      <note type="print">pythonPlaceholderContent</note>
       <note type="erschliessbarkeit">Erhalten</note>
       <note type="dataGroup">Tei XML</note>
       <relatedItem type="otherForm">
@@ -159,8 +175,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
-      <change when="2024-11-05" who="SG FN">Kollationierung weitergeführt</change>
-      <change when="2024-11-04" who="SG FN">Kollationierung begonnen</change>
+      <change when="2024-11-05" who="SG FN">continue kollationieren</change>
+      <change when="2024-11-04" who="SG FN">begin kollationieren</change>
       <change when="2023-12-17" who="RG">"n=..." noch in pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
       <change when="2022-06-14" who="MS">IIIF, Seiten, Orte, Personen, Briefstruktur ausgezeichnet.</change>
@@ -168,29 +184,6 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- <ptr type="prev" target="placeholder"/> Es handelt sich um den ersten Brief der Korrespondenz zwischen Nic. I und Montmort. -->
-<!--pers_DE-588-117584401 -> Nicole, François  〈1683-1758〉 -->
-<!--
-            Monsieur Remond de Montmort ->Montmort, Pierre Rémond de, (1678-1719) pers_DE-588-117601020
-            
-            mon Oncle -> Bernoulli, Johann pers_DE-588-118509969
-            
-            Huyguens -> Huygens, Christiaan, (1629-1695) pers_DE-588-118639749
-            
-            feu mon Oncle -> Bernoulli, Jakob pers_DE-588-118509950
-            
-            Cousin -> Bernoulli, Nikolaus 〈1687-1769〉 pers_DE-588-135542472
-            
-            Herman -> Hermann, Jacob pers_DE-588-119112450
-        -->
-<!--_____________-->
-
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1038644/manifest"/>
 </facsimile><text>
@@ -205,16 +198,15 @@
   <lb/><rs key="place_GEO-2988507" type="place">Paris</rs> je n'aurois pas manqué d'y rester plus long temps, ou bien si j'avois été bien informé de la situa<pc type="hyphenation">-</pc><lb break="no"/>tion de <rs key="place_GEO-2992218" type="place">Vôtre terre</rs>, la quelle je croiois étre proche de <rs key="place_GEO-2984114" type="place">Rheims</rs> et ainsi beaucoup eloignée du chemin
   <lb/>que j'avois à faire, j'aurois infailliblement pris la liberté de Vous saluer en passant, et de profiter
                     <lb/>de Vos lumiéres dans les Mathematiques et sur tout dans les matiéres, que Vous traitez dans Vôtre bel
-  <lb/><rs type="biblio" key="biblio_B9DV33K8">Ouvrage</rs>, dont <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> m'a fait present en Vôtre nom, et dont je Vous remercie aussi bien que
+                    <lb/><rs type="publication">Ouvrage</rs>, dont <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> m'a fait present en Vôtre nom, et dont je Vous remercie aussi bien que
                     <lb/>Luy avec bien de la reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissance. Le bonheur de jouir de Vôtre présence m'ayant donc manqué, je
                     <lb/>Vous suis pourtant bien obligé de Vôtre bienveuillance, dont Vous m'avez donné des marques tres sensibles
-  <lb/>dans Vôtre <rs type="letter" key="B_1710-11-11_991170514996905501">Lettre</rs>,<note type="editorial">Dieser hauptsächlich an Joh. I B. adressierte Brief enthält ein an Nic. I B. gerichtetes P.S. Der Brief wurde in zwei Etappen geschrieben und zweimal datiert: 1710.11.11 und 1710.11.15.</note> à laquelle je viens à répondre à cette heure aprés avoir bien long temps tardé, ce que je
-  <lb/>Vous prie de me pardonner. <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, à qui ses affaires jusques icy n'ont pas permis d'examiner
-  <lb/>toutes les belles choses, dont Vous avez rempli la <rs type="letter" key="B_1710-11-11_991170514996905501">Lettre</rs>, que Vous Vous étez donné la peine de lui écrire,
-  <lb/>m'a chargé de le faire et de Vous y répondre<choice><orig>,</orig><reg>;</reg></choice> en attendant donc du loisir pour cela, j'ai differé jusqu<supplied>'</supplied>
+                    <lb/>dans Vôtre <rs type="letter">Lettre</rs>, à laquelle je viens à répondre à cette heure aprés avoir bien long temps tardé, ce que je
+                    <lb/>Vous prie de me pardonner. <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, à qui ses affaires jusques icy n'ont pas permis d'examiner
+                    <lb/>toutes les belles choses, dont Vous avez rempli la <rs type="letter">Lettre</rs>, que Vous Vous étez donné la peine de lui écrire,
+                    <lb/>m'a chargé de le faire et de Vous y répondre<choice><sic>,</sic><corr>;</corr></choice> en attendant donc du loisir pour cela, j'ai differé jusqu<supplied>'</supplied>
 <lb break="no"/>icy la <rs type="letter">réponse</rs> que je Vous dois.</p>
-  <p>Pour passer maintenant aux matiéres qui sont contenües dans Vôtre <rs type="letter" key="B_1710-11-11_991170514996905501">Lettre</rs>, je co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encerai par la formule
-    <lb/>que Vous avez donnée pour le Pharaon; <choice>
+<p>Pour passer maintenant aux matiéres qui sont contenües dans Vôtre <rs type="letter">Lettre</rs>, je co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encerai par la formule <lb/>que Vous avez donnée pour le Pharaon; <choice>
             <orig><formula>\frac{1}{p\cdot p-1}+\frac{p-q\cdot p-q-1}{p\cdot p-1\cdot p-2\cdot p-3}+\frac{p-q\cdot p-q-1\cdot p-q-2\cdot p-q-3}{p\cdot p-1\cdot p-2\cdot p-3\cdot p-4\cdot p-5} </formula></orig>
             <reg><formula>\frac{1}{p\cdot(p-1)}+\frac{(p-q)\cdot(p-q-1)}{p\cdot(p-1)\cdot(p-2)\cdot(p-3)}+\frac{(p-q)\cdot(p-q-1)\cdot(p-q-2)\cdot(p-q-3)}{p\cdot(p-1)\cdot(p-2)\cdot(p-3)\cdot(p-4)\cdot(p-5)}</formula></reg>
           </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr><note type="internal">Hier muss das etc. noch umgesetzt werden. mit Fritz besprochen, dass wir es aus der Formel herausnehmen und mit einem geschützten Leerzeichen hinter die Formel setzen. </note> multiplié par <lb/><choice>
@@ -223,19 +215,18 @@
           </choice> où Vous avez écrit <formula>p\cdot p-1\cdot\frac{1}{2}A</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><ref><formula>p\cdot(p-1)\cdot\frac{1}{2}A</formula></ref> au lieu de <formula>q\cdot q-1\frac{1}{2}A</formula><ref><formula>q\cdot(q-1)\frac{1}{2}A</formula></ref>. Je la trouve précisément la même que <lb/>chacune de celles, qu'a donné <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, et elle n'en est differente que dans l'ordre des termes, qui <lb/>est renversé; mais il est à observer que toutes ces formules ne sont pas assez co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>odes pour les cas par<pc type="hyphenation">-</pc><lb break="no"/>ticuliers lorsque <formula>p</formula> surpasse de beaucoup <formula>q</formula>, car alors il y faudroit ajouter un grand nombre de <lb/>termes, c'est pourquoy je tiens celle-ci <choice>
             <orig><formula>\frac{1}{4}\times\frac{q}{p-q+1}-\frac{1}{8}\times\frac{q\cdot q-1}{p-q+1\cdot p-q+2}+\frac{1}{16}\times\frac{q\cdot q-1\cdot q-2}{p-q+1\cdot p-q+2\cdot p-q+3}-</formula></orig>
             <reg><formula>\frac{1}{4}\times\frac{q}{p-q+1}-\frac{1}{8}\times\frac{q\cdot(q-1)}{(p-q+1)\cdot{(}p-q+2)}+\frac{1}{16}\times\frac{q\cdot(q-1)\cdot(q-2)}{(p-q+1)\cdot(p-q+2)\cdot(p-q+3)}-</formula></reg>
-          </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>, que j'ai <lb/>donnée dans mes <rs type="biblio">remarques</rs>, plus propre pour l'usage, quoique les signes y soient alternatives, puis<pc type="hyphenation">-</pc><lb break="no"/>que le nombre des termes y sera seulement <formula>q-1</formula>. Si <formula>q</formula> est <formula>= 2</formula>, il faudra encore ajouter <choice>
+          </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>, que j'ai <lb/>donnée dans mes <rs type="publication">remarques</rs>, plus propre pour l'usage, quoique les signes y soient alternatives, puis<pc type="hyphenation">-</pc><lb break="no"/>que le nombre des termes y sera seulement <formula>q-1</formula>. Si <formula>q</formula> est <formula>= 2</formula>, il faudra encore ajouter <choice>
             <orig><formula>\frac{1}{p\cdotp-1}</formula></orig>
             <reg><formula>\frac{1}{p\cdot(p-1)}</formula></reg>
           </choice>; et <formula>\frac{1}{p}</formula> si <lb/><formula>q=1</formula>, ce qui est aussi necessaire dans Vôtre formule et dans celles de <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. J'ai une <lb/>formule semblable pour la Basséte<note type="comment">Basséte Kartenspiel (deutsche Übersetzung angeben).</note>
-          <choice rend="regFormula"><orig><formula>-\frac{1}{3}\times\frac{q\cdot p-q}{p\cdot p-1}+\frac{1}{2}\times\frac{q}{p}-\frac{1}{4}\times\frac{q\cdot q-1}{p\cdot p-q+1}+\frac{1}{8}\times\frac{q\cdot q-1\cdot q-2}{p\cdot p-q+1\cdot p-q+2}-\mbox</formula></orig>
+          <choice>
+            <orig><formula>-\frac{1}{3}\times\frac{q\cdot p-q}{p\cdot p-1}+\frac{1}{2}\times\frac{q}{p}-\frac{1}{4}\times\frac{q\cdot q-1}{p\cdot p-q+1}+\frac{1}{8}\times\frac{q\cdot q-1\cdot q-2}{p\cdot p-q+1\cdot p-q+2}-\mbox</formula></orig>
             <reg><formula>-\frac{1}{3}\times\frac{q\cdot(p-q)}{p\cdot(p-1)}+\frac{1}{2}\times\frac{q}{p}-\frac{1}{4}\times\frac{q\cdot(q-1)}{p\cdot(p-q+1)}+\frac{1}{8}\times\frac{q\cdot(q-1)\cdot(q-2)}{p\cdot(p-q+1)\cdot(p-q+2)}-</formula></reg>
-          </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> laquelle
-    <lb/> 
-    <pb facs="1038646" n="2"/> se doit entendre seulement des cartes prises dans le cours du jeu, car au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement, quand il n'y a point de
-    <lb/>cartes découvertes la formule sera <choice>
-            <orig><formula>-\frac{1}{3}\times\frac{q}{p}+\frac{1}{2}\times\frac{q}{p-q+1}-\frac{1}{4}\times\frac{q\cdot q-1}{p-q+1\cdot p-q+2}+\frac{1}{8}\times\frac{q\cdot q-1\cdot q-2}{p-q+1\cdot p-q+2\cdot p-q+3}-</formula></orig> <reg><formula>-\frac{1}{3}\times\frac{q}{p}+\frac{1}{2}\times\frac{q}{p-q+1}-\frac{1}{4}\times\frac{q\cdot(q-1)}{(p-q+1)\cdot(p-q+2)}+\frac{1}{8}\times\frac{q\cdot(q-1)\cdot(q-2)}{(p-q+1)\cdot(p-q+2)\cdot(p-q+3)}-</formula></reg>
+          </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> laquelle <lb/><pb facs="1038646" n="2"/> se doit entendre seulement des cartes prises dans le cours du jeu, car au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement, quand il n'y a point de <lb/>cartes découvertes la formule sera <choice>
+            <orig><formula>-\frac{1}{3}\times\frac{q}{p}+\frac{1}{2}\times\frac{q}{p-q+1}-\frac{1}{4}\times\frac{q\cdot q-1}{p-q+1\cdot p-q+2}+\frac{1}{8}\times\frac{q\cdot q-1\cdot q-2}{p-q+1\cdot p-q+2\cdot p-q+3}-</formula></orig>
+            <reg><formula>-\frac{1}{3}\times\frac{q}{p}+\frac{1}{2}\times\frac{q}{p-q+1}-\frac{1}{4}\times\frac{q\cdot(q-1)}{(p-q+1)\cdot(p-q+2)}+\frac{1}{8}\times\frac{q\cdot(q-1)\cdot(q-2)}{(p-q+1)\cdot(p-q+2)\cdot(p-q+3)}-</formula></reg>
           </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr><note type="editorial">Am Ende des Nenners des letzten Bruchs befindet sich eine von Nic. I B. getilgte Stelle <formula>\cdot p-q</formula>. Modernisierte Formel: </note> dans <lb/>l'une et dans l'autre il faut ajouter autant de termes qu'il y a d'unités dans <formula>q</formula>, et de plus <formula>\frac{1}{p}</formula> si <formula>q=1</formula><supplied>.</supplied>
-          <lb/>Si l'on prend dans cette derniére formule <formula>p=52</formula>, et <formula>q=4</formula> qui est le dernier cas de Vôtre Table<note type="comment"/>
+          <lb/>Si l'on prend dans cette derniére formule <formula>p=52</formula>, et <formula>q=4</formula> qui est le dernier cas de Vôtre Table<note type="commemt"/>
           <lb/>on trouvera pour l'avantage du Banquier <formula>\frac{454}{32487}=\frac{2453870}{175592235}</formula> et non pas <formula>\frac{2453842}{175592235}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous <add>avez.</add>
           <lb/>Je n'ai pas encore tenté la solution générale du Probléme sur le jeu du Treize, parce qu'elle <lb/>me paroit presque impossible, c'est aussi pourquoy j'étois fort étonné de ce que Vous dites, <lb/>que Vous avez trouvé <formula>\frac{69056823787189897}{241347817621535625}A</formula> pour l'avantage de celui qui tient les cartes, <lb/>mais en examinant la chose un peu de plus prés je suis tombé dans la pensée, que Vous n'avez <lb/>peut-étre resolu généralement ce Probléme que dans la supposition, que celui qui tient les <lb/>cartes ayant gagné ou perdu le jeu finissoit; ce qui me confirme dans cette pensée est que <lb/>j'ai trouvé pour cette h<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>pothése une formule générale, laquelle appliquée au cas particulier <lb/>de 52 cartes donne pour l'avantage de celui qui tient les cartes cette fraction <formula>\frac{99177450342464537}{336245122781568000}A</formula>,<note type="editorial">Mitten im Bruch findet sich ein Zeilenumbruch.</note>
           <lb/>qui est un peu plus grande que la Vôtre, mais qui a pour denominateur un <lb/>nombre composé de presque les mêmes facteurs que celui de la Vôtre, ce qui me fait croire que <lb/>Vous avez fait une faute du calcul dans l'application de Vôtre formule; Voicy la mienne dont <lb/>je viens de parler <choice>
@@ -244,7 +235,7 @@
           </choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> jusqu'à ce qu'on vienne à un <lb/>terme qui soit <formula>=0</formula>, par <formula>p</formula> j'entends le nombre des fois que chaque carte differente est repe<pc type="hyphenation">-</pc><lb break="no"/>tée, et par <formula>n</formula> le nombre de toutes les cartes. J'ai aussi calculé le cas pour 4 cartes, dont Vous <lb/>parlez, et j'ai trouvé <formula>\frac{130225}{172279}=\frac{56908325}{75285923}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous; mais il est à propos d'observer icy, que <lb/>selon les regles de ce Jeu là il ne faut pas supposer, que le jeu soit fini quand celui qui a la main <lb/>vient à perdre, car alors il est obligé de ceder la main à un autre, et le jeu continüe, c'est pour<pc type="hyphenation">-</pc><lb break="no"/>quoy l'avantage de celui qui tient les cartes étant diminué par le désavantage qu'il a en perdant <lb/>la main, ne sera dans le cas susdit que <formula>\frac{130225}{344558}</formula> la moitié de ce qui a été trouvé. Si l'on suppose <lb/>qu'il y ait plusieurs joueurs contre celui qui a la main, et que leur nombre soit <formula>=n</formula>, son <lb/>avantage sera <formula>\frac{130225}{344558}\times n</formula>, et celui des autres joueurs <formula>\frac{130225}{344558}\times</formula> ou <formula>n-2</formula>, ou <formula>n-4</formula>, ou <formula>n-6</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. selon <lb/>le rang que chacun occupe par rapport à la droite de celui qui tient les cartes. Cette remarque <lb/>s'étend sur tous les Jeux dans lesquels la main passe de l'un à l'autre, ainsi dans Vôtre <lb/><pb facs="1038647" n="3"/><!-- bis hier nochmals kollationiert --> prémier cas du Lansquenet j'ai trouvé que l'avantage de Pierre n'est que <formula>\frac{161}{1006}A</formula>, le désavantage <lb/>de Paul <formula>-\frac{163}{4024}A</formula>, et celui de Jacques <formula>-\frac{481}{4024}A</formula>.</p>
 <p>Les formules que Vous donnez dans Vôtre <rs type="letter">Lettre</rs> pour les cas determinés et indeterminés de la <choice><abbr>prop.</abbr><expan>proposition</expan></choice>
 <lb/>30<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> sont précisément les mêmes que celles de <abbr>M.</abbr> mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, mais il y a faute dans celle que Vous
-  <lb/>donnez dans Vôtre <rs type="biblio">livre</rs> pour les cas indeterminés page 137<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ligne 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> où Vous avez mis cette ex<pc type="hyphenation">-</pc><lb break="no"/>pression <formula>B\times k\times C\times l\times D\times m\times E\times n</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr><note type="editorial">Das "k" ist hier und in den nächsten Formeln im Ms. nicht eindeutig minuskel geschrieben, kontrollieren!</note> au lieu de <formula>k^{B}\times l^{C}\times m^{D}\times n^{E}\mbox{\&amp;c.}</formula> Celle que Vous avez trouvé
+  <lb/>donnez dans Vôtre <rs type="publication">livre</rs> pour les cas indeterminés page 137<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ligne 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> où Vous avez mis cette ex<pc type="hyphenation">-</pc><lb break="no"/>pression <formula>B\times k\times C\times l\times D\times m\times E\times n</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr><note type="editorial">Das "k" ist hier und in den nächsten Formeln im Ms. nicht eindeutig minuskel geschrieben, kontrollieren!</note> au lieu de <formula>k^{B}\times l^{C}\times m^{D}\times n^{E}\mbox{\&amp;c.}</formula> Celle que Vous avez trouvé
                     <lb/>pour la <choice><abbr>prop.</abbr><expan>proposition</expan></choice> 31<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> est trés juste et trés-utile pour l'usage, j'ai trouvé la même, quoique sous
                     <lb/>une autre expression par la methode des combinaisons.</p>
   <p><lb/>Le Probléme que Vous proposez sur les Jeux qui se jouent en plusieurs parties en rabattant est fort
@@ -259,10 +250,10 @@
                     <lb/>que la difference entre la somme de toutes les valeurs possibles (c'est à dire en mettant pour
                     <lb/><formula>t</formula> toutes les valeurs qu'il peut avoir depuis <formula>0</formula> jusqu'au plus grand) de cette suite
                     <lb/><formula>1\times\overline{p^{2k-2ts}+q^{2k-2ts}}+h\times\overline{p^{2k-2ts-1}q+q^{2k-2ts-1}}+\frac{h\cdot h-1}{1\cdot 2}\times\overline{p^{2k-2ts-2}qq+q^{2k-2ts-2}pp}+\frac{h\cdot h-1\cdot h-2}{1\cdot 2\cdot 3}\times</formula>
-    <lb/><formula>\overline{p^{2k-2ts-3}q^{3}+q^{2k-2ts-3}p^{3}}+\mbox{\&amp;c.}</formula><ref><formula>1\times\overline{p^{2k-2ts}+q^{2k-2ts}}+h\times\overline{p^{2k-2ts-1}q+q^{2k-2ts-1}}+\frac{h\cdot(h-1)}{1\cdot2}\times\overline{p^{2k-2ts-2}qq+q^{2k-2ts-2}pp}+\frac{h\cdot(h-1)\cdot(h-2)}{1\cdot2\cdot3}\times\overline{p^{2k-2ts-3}q^{3}+q^{2k-2ts-3}p^{3}}+\mbox{etc.}</formula></ref> jusqu'à <formula>\frac{h\cdot h-1\cdot h-2\dots h-k+ts+1}{1\cdot 2\cdot 3\dots k-ts}\times\overline{pq}^{k-ts}</formula><note type="internal">In dieser Formel ist das letzte Vinkulum mit einem zusätzlichen senkrechten Strick versehen, kontrollieren! <formula>\frac{h\cdot(h-1)\cdot(h-2)\dots(h-k+ts+1)}{1\cdot2\cdot3\dots(k-ts)}\times\overline{pq}^{k-ts}</formula></note> le tout multiplié par
+    <lb/><formula>\overline{p^{2k-2ts-3}q^{3}+q^{2k-2ts-3}p^{3}}+\mbox{\&amp;c.}</formula><ref><formula>1\times\overline{p^{2k-2ts}+q^{2k-2ts}}+h\times\overline{p^{2k-2ts-1}q+q^{2k-2ts-1}}+\frac{h\cdot(h-1)}{1\cdot2}\times\overline{p^{2k-2ts-2}qq+q^{2k-2ts-2}pp}+\frac{h\cdot(h-1)\cdot(h-2)}{1\cdot2\cdot3}\times\overline{p^{2k-2ts-3}q^{3}+q^{2k-2ts-3}p^{3}}+\mbox{etc.}</formula></ref> jusqu'à <formula>\frac{h\cdot h-1\cdot h-2\dots h-k+ts+1}{1\cdot 2\cdot 3\dots k-ts}\times\overline{pq}^{k-ts}</formula><note type="intern">In dieser Formel ist das letzte Vinkulum mit einem zusätzlichen senkrechten Strick versehen, kontrollieren! <formula>\frac{h\cdot(h-1)\cdot(h-2)\dots(h-k+ts+1)}{1\cdot2\cdot3\dots(k-ts)}\times\overline{pq}^{k-ts}</formula></note> le tout multiplié par
                     <lb/><formula>\frac{p^{ts+m}q^{ts}}{r^{h}}</formula>, et la somme de toutes les valeurs de celle-ci <formula>1\times\overline{p^{2k-2ts-2n}+q^{2k-2ts-2n}}+h\times</formula>
     <lb/><formula>\overline{p^{2k-2ts-2n-1}q+q^{2k-2ts-2n-1}p}+\frac{h\cdot h-1}{1\cdot 2}\times\overline{p^{2k-2ts-2n-2}qq+q^{2k-2ts-2n-2}pp}+\mbox{\&amp;c.}</formula><ref><formula>1\times\overline{p^{2k-2ts-2n}+q^{2k-2ts-2n}}+h\times\overline{p^{2k-2ts-2n-1}q+q^{2k-2ts-2n-1}p}+\frac{h\cdot(h-1)}{1\cdot2}\cdot\overline{p^{2k-2ts-2n-2}qq+q^{2k-2ts-2n-2}pp}+\mbox{etc.}</formula></ref> jusqu'à
-                    <lb/><formula>\frac{h\cdot h-1\cdot h-2\dots h-k+ts+n+1}{1\cdot 2\cdot 3\dots  k-ts-n}\times\overline{pq}^{k-ts-n}</formula><note type="internal">In dieser Formel ist das Vinculum über <formula>\overline{pq}^{k-ts-n}</formula> mit einem senkrechten Strich versehen. <formula>\frac{h\cdot(h-1)\cdot(h-2)\cdots(h-k+ts+n+1)}{1\cdot2\cdot3\cdots k-ts-n}\times\overline{pq}^{k-ts-n}</formula></note> le tout multiplié par <formula>\frac{p^{ts+s}q^{ts+n}}{r^{h}}</formula>, exprimera le sort
+                    <lb/><formula>\frac{h\cdot h-1\cdot h-2\dots h-k+ts+n+1}{1\cdot 2\cdot 3\dots  k-ts-n}\times\overline{pq}^{k-ts-n}</formula><note type="intern">In dieser Formel ist das Vinculum über <formula>\overline{pq}^{k-ts-n}</formula> mit einem senkrechten Strich versehen. <formula>\frac{h\cdot(h-1)\cdot(h-2)\cdots(h-k+ts+n+1)}{1\cdot2\cdot3\cdots k-ts-n}\times\overline{pq}^{k-ts-n}</formula></note> le tout multiplié par <formula>\frac{p^{ts+s}q^{ts+n}}{r^{h}}</formula>, exprimera le sort
                     <lb/>de celui qui parieroit que Pierre gagnera la partie au moins en <formula>h</formula> coups. Si <formula>k</formula> est plus petit
                     <lb/>que <formula>ts+n</formula>, c'est à dire, si aprés avoir divisé <formula>k</formula> par <formula>s</formula> le reste de la division est plus petit
   <lb/>que <formula>n</formula>, il ne faut pas dans la derniére suite mettre pour <formula>t</formula> toutes ses valeurs depuis 0 jusqu'<lb break="no"/>à <formula>t</formula>, mais seulement jusqu'à <formula>t-1</formula>. Pour avoir le sort de celui qui parieroit que Paul la gagnera<ref>Im Manuskript steht "gnera" am Ende der nächsten Zeile.</ref>
@@ -280,20 +271,20 @@
          <lb/>ce que j'ai trouvé autrefois par une voye differente de celle que j'ai suivi dans la recherche
          <lb/>de ce Probléme. Si <formula>m=n</formula>, et <formula>s=2m</formula> leurs sorts seront co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>p^{2m}-p^{m}q^{m}</formula> et <formula>p^{m}q^{m}-q^{2m}</formula> ou
          <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>p^{m}</formula> et <formula>q^{m}</formula>, et en supposant <formula>m=12</formula>, <formula>p=9</formula>, <formula>q=5</formula> on aura <formula>9^{12}</formula> et <formula>5^{12}</formula> pour les sorts de Pierre
-                    <lb/>et Paul, qui est le cas du <rs type="biblio">Probléme</rs> cinquiéme de <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Hu<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>guens</rs>. Si <formula>p=q</formula> les sorts des deux
+                    <lb/>et Paul, qui est le cas du <rs type="publication">Probléme</rs> cinquiéme de <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Hu<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>guens</rs>. Si <formula>p=q</formula> les sorts des deux
          <lb/>joueurs sont co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>n</formula> et <formula>m</formula>, ce qui se trouve aisément en divisant <formula>p^{s}-p^{m}q^{n}</formula> et <formula>p^{m}q^{n}-q^{s}</formula> par
          <lb/><formula>p-q</formula>, car on aura par cette division deux progressions géométriques, dont le nombre des termes
     <lb/>de la prémiére sera <formula>=n</formula>, et celui de la seconde <formula>=m</formula>, et dont les termes en supposant <formula>p=q</formula> de<pc type="hyphenation">-</pc><lb break="no"/>viendront tous égaux. Si <formula>p=q</formula>, et <formula>s=m+n=12</formula> on a le cas de la page 178<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de Vôtre Livre<!-- werktag -->.
          <lb/>Vôtre formule<ref/> pour trouver combien il y a de coups pour amener précisément un certain nombre
          <lb/>de points avec un certain nombre de dez est fort juste, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi la methode que Vous donnez
                     <lb/>pour trouver la somme des nombres figurés élevés à des puissances quelconques; feu <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs>
-    <lb/><pb facs="1038649" n="5"/> a donné la même regle dans son <rs type="biblio">traité</rs> non seulement pour les nombres figurés élevés à un exposant quelconque, mais généralement pour tous les nombres qui sont semblables aux nombres figurés, c'est
+    <lb/><pb facs="1038649" n="5"/> a donné la même regle dans son <rs type="publication">traité</rs> non seulement pour les nombres figurés élevés à un exposant quelconque, mais généralement pour tous les nombres qui sont semblables aux nombres figurés, c'est
   <lb/>à dire, qui ont ou les prémiéres, ou les secondes, ou les troisiémes <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> differences égales; outre cette
   <lb/>maniére il y en a encore d'autres, dont voilà une qui a été trouvée depuis long temps par <abbr>Mr.</abbr>
   <lb/>mon <rs key="pers_DE-588-118509969" type="person">Oncle le vivant</rs>, elle consiste dans l'assumtion d'une suite de termes affectés de coefficients
   <lb/>indeterminés, par <abbr>ex.</abbr> si l'on vouloit avoir la somme des nombres triangulaires élevés au quarré,
-  <lb/>c'est à dire, la somme de tous les <choice rend="regFormula"><orig><formula>\frac{p\cdot p+1}{1\cdot2}\times\frac{p\cdot p+1}{1\cdot2}</formula></orig><reg><formula>\frac{p\cdot(p+1)}{1\cdot2}\times\frac{p\cdot(p+1)}{1\cdot2}</formula></reg></choice> ou de tous les <formula>\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp</formula>, je la suppose éga<pc type="hyphenation">-</pc><lb break="no"/>le à <formula>ap^{5}+bp^{4}+cp^{3}+dpp+ep+f</formula>, pour determiner les coefficients inconnus je mets dans ces
-  <lb/>deux expressions <formula>p+1</formula> au lieu de <formula>p</formula>, et j'aurai<!-- bis hier mit Fritz kollationiert $$$$$$$ --> <formula>\left.
+  <lb/>c'est à dire, la somme de tous les <choice><orig><formula>\frac{p\cdot p+1}{1\cdot2}\times\frac{p\cdot p+1}{1\cdot2}</formula></orig><reg><formula>\frac{p\cdot(p+1)}{1\cdot2}\times\frac{p\cdot(p+1)}{1\cdot2}</formula></reg></choice> ou de tous les <formula>\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp</formula>, je la suppose éga<pc type="hyphenation">-</pc><lb break="no"/>le à <formula>ap^{5}+bp^{4}+cp^{3}+dpp+ep+f</formula>, pour determiner les coefficients inconnus je mets dans ces
+  <lb/>deux expressions <formula>p+1</formula> au lieu de <formula>p</formula>, et j'aurai<!-- bis hier mit Fritz kollationiert --> <!-- <formula>\left.
             \begin{array}{lclclclclcl}
             ap^{5} \&amp; + \&amp; 5ap^{4} \&amp; + \&amp; 10ap^{3} \&amp; + \&amp; 10app \&amp; + \&amp; 5ap \&amp; + \&amp; a\\
             \&amp;  \&amp; bp^{4} \&amp; + \&amp; 4bp^{3} \&amp; + \&amp; 6bpp \&amp; + \&amp; 4bp \&amp; + \&amp; b\\
@@ -301,58 +292,45 @@
             \&amp;  \&amp;  \&amp;  \&amp;  \&amp; + \&amp; dpp \&amp; + \&amp; 2dp \&amp; + \&amp; d\\
             \&amp;  \&amp;  \&amp;  \&amp;  \&amp;  \&amp;  \&amp; + \&amp; ep \&amp; + \&amp; e\\
             \&amp;  \&amp;  \&amp;  \&amp;  \&amp;  \&amp;  \&amp;  \&amp;  \&amp; + \&amp; f\\
-            \end{array}\right\}=\mbox{à}\ \frac{1}{4}\overline{p+1}^{4}+</formula> 
-    
-    <formula>
-      \begin{array}{lclclclclcl}
-      ap^{5} &amp; + &amp; 5ap^{4} &amp; + &amp; 10ap^{3} &amp; + &amp; 10ap^{2} &amp; + &amp; 5ap &amp; + &amp; a\\
-      &amp;  &amp; bp^{4} &amp; + &amp; 4bp^{3} &amp; + &amp; 6bp^{2} &amp; + &amp; 4bp &amp; + &amp; b\\
-      &amp;  &amp;  &amp; + &amp; cp^{3} &amp; + &amp; 3cp^{2} &amp; + &amp; 3cp &amp; + &amp; c\\
-      &amp;  &amp;  &amp;  &amp;  &amp; + &amp; dp^{2} &amp; + &amp; 2dp &amp; + &amp; d\\
-      &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; + &amp; ep &amp; + &amp; e\\
-      &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp;  &amp; + &amp; f\\
-      \end{array} = \mbox{à} \, \frac{1}{4}\overline{p+1}^{4} + \dots
-    </formula>
-    
-    
+            \end{array}\right\}=\mbox{à}\ \frac{1}{4}\overline{p+1}^{4}+</formula> -->
     
     
     <note type="internal">Diese Formel muss noch kollationiert werden. </note>
-    <choice rend="regFormula"><orig><formula>\frac{1}{2}\overline{{p+1}}^{3}+\frac{1}{4}\overline{{p+1}}^{2}+</formula></orig><reg><formula>\frac{1}{2}({p+1})^{3}+\frac{1}{4}({p+1})^{2}+</formula></reg></choice>
+    <choice><orig><formula>\frac{1}{2}\overline{{p+1}}^{3}+\frac{1}{4}\overline{{p+1}}^{2}+</formula></orig><reg><formula>\frac{1}{2}({p+1})^{3}+\frac{1}{4}({p+1})^{2}+</formula></reg></choice>
    la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de tous les <formula>\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp=\frac{1}{4}p^{4}+\frac{3}{2}p^{3}+\frac{13}{4}pp+3p+1+ap^{5}+bp^{4}+</formula>
     <lb/><formula>cp^{3}+dpp+ep+f</formula>, en ôtant de part et d'autre <formula>ap^{5}+bp^{4}+cp^{3}+dpp+ep+f</formula>, et en comparant en<pc type="hyphenation">-</pc><lb break="no"/>suite les termes homogénes on trouvera <formula>a=\frac{1}{20}</formula>, <formula>b=\frac{1}{4}</formula>, <formula>c=\frac{5}{12}</formula>, <formula>d=\frac{1}{4}</formula>, <formula>e=\frac{1}{30}</formula>, <formula>f=0</formula>, donc la for<pc type="hyphenation">-</pc><lb break="no"/>mule pour la somme des nombres triangulaires élevés au quarré sera <formula>\frac{1}{20}p^{5}+\frac{1}{4}p^{4}+\frac{5}{12}p^{3}+\frac{1}{4}pp</formula>
     <lb/><formula>+\frac{1}{30}p=\frac{3p^{5}+15p^{4}+25p^{3}+15pp+2p}{3\cdot4\cdot5}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous avez trouvé. On peut aussi trouver la somme
-    <lb/>de tels nombres en les reduisant aux nombres figurés, par exemple <choice rend="regFormula"><orig><formula>\frac{p\cdot p+1}{1\cdot2}\times\frac{p\cdot p+1}{1\cdot2}=\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp</formula></orig><reg><formula>\frac{p\cdot(p+1)}{1\cdot2}\times\frac{p\cdot(p+1)}{1\cdot2}=\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp</formula></reg></choice>
-    <lb/><choice rend="regFormula"><orig><formula>\times\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3\cdot4}\times\frac{p\cdot p+1\cdot p+2}{1\cdot2\cdot3}+\frac{p\cdot p+1}{1\cdot2}</formula></orig><reg><formula>\times\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3\cdot4}\times\frac{p\cdot(p+1)\cdot(p+2)}{1\cdot2\cdot3}+\frac{p\cdot(p+1)}{1\cdot2}</formula></reg></choice>, donc la somme de tous les <choice rend="regFormula"><orig><formula>\overline{\frac{p\cdot p+1}{1\cdot2}}</formula></orig><reg><formula>\overline{\frac{p\cdot(p+1)}{1\cdot2}}</formula></reg></choice> sera =
-    <lb/><choice rend="regFormula"><orig><formula>6\int\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3\cdot4}-6\int\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3}+\int\frac{p\cdot p+1}{1\cdot2}=</formula></orig><reg><formula>6\int\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3\cdot4}-6\int\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3}+\int\frac{p\cdot(p+1)}{1\cdot2}=</formula></reg></choice><choice rend="regFormula"><orig><formula>6\times\frac{p\cdot p+1\cdot p+2\cdot p+3\cdot p+4}{1\cdot2\cdot3\cdot4\cdot5}-6\times\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3\cdot4}+</formula></orig><reg><formula>6\times\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)\cdot(p+4)}{1\cdot2\cdot3\cdot4\cdot5}-6\times\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3\cdot4}+</formula></reg></choice>
-    <lb/><choice rend="regFormula"><orig><formula>\frac{p\cdot p+1\cdot p+2}{1\cdot2\cdot3}=</formula></orig><reg><formula>\frac{p\cdot(p+1)\cdot(p+2)}{1\cdot2\cdot3}=</formula></reg></choice><formula>\frac{3p^{5}+^{5}p^{4}+25p^{3}+15pp+2p}{3\cdot4\cdot5}</formula>, comme cydevant.</p>
+    <lb/>de tels nombres en les reduisant aux nombres figurés, par exemple <choice><orig><formula>\frac{p\cdot p+1}{1\cdot2}\times\frac{p\cdot p+1}{1\cdot2}=\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp</formula></orig><reg><formula>\frac{p\cdot(p+1)}{1\cdot2}\times\frac{p\cdot(p+1)}{1\cdot2}=\frac{1}{4}p^{4}+\frac{1}{2}p^{3}+\frac{1}{4}pp</formula></reg></choice>
+    <lb/><choice><orig><formula>\times\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3\cdot4}\times\frac{p\cdot p+1\cdot p+2}{1\cdot2\cdot3}+\frac{p\cdot p+1}{1\cdot2}</formula></orig><reg><formula>\times\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3\cdot4}\times\frac{p\cdot(p+1)\cdot(p+2)}{1\cdot2\cdot3}+\frac{p\cdot(p+1)}{1\cdot2}</formula></reg></choice>, donc la somme de tous les <choice><orig><formula>\overline{\frac{p\cdot p+1}{1\cdot2}}</formula></orig><reg><formula>\overline{\frac{p\cdot(p+1)}{1\cdot2}}</formula></reg></choice> sera =
+    <lb/><choice><orig><formula>6\int\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3\cdot4}-6\int\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3}+\int\frac{p\cdot p+1}{1\cdot2}=</formula></orig><reg><formula>6\int\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3\cdot4}-6\int\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3}+\int\frac{p\cdot(p+1)}{1\cdot2}=</formula></reg></choice><choice><orig><formula>6\times\frac{p\cdot p+1\cdot p+2\cdot p+3\cdot p+4}{1\cdot2\cdot3\cdot4\cdot5}-6\times\frac{p\cdot p+1\cdot p+2\cdot p+3}{1\cdot2\cdot3\cdot4}+</formula></orig><reg><formula>6\times\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)\cdot(p+4)}{1\cdot2\cdot3\cdot4\cdot5}-6\times\frac{p\cdot(p+1)\cdot(p+2)\cdot(p+3)}{1\cdot2\cdot3\cdot4}+</formula></reg></choice>
+    <lb/><choice><orig><formula>\frac{p\cdot p+1\cdot p+2}{1\cdot2\cdot3}=</formula></orig><reg><formula>\frac{p\cdot(p+1)\cdot(p+2)}{1\cdot2\cdot3}=</formula></reg></choice><formula>\frac{3p^{5}+^{5}p^{4}+25p^{3}+15pp+2p}{3\cdot4\cdot5}</formula>, comme cydevant.</p>
 <p>Le Probléme que Vous avez eû dessein de proposer aux Geométres n'a aucune difficulté, j'en ai
   <lb/>trouvé pourtant une autre solution que Vous, voicy co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent j'ai conçû la chose: Il s'agit de trouver
   <lb/>combien la condition de rendre leurs 25<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> livres à ceux qui ayant pris 50<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> billets n'auroient gagné au<pc type="hyphenation">-</pc><lb break="no"/>cun lot dans leurs 50<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> billets, donne d'avantage ou de désavantage à celui qui tient la Lotterie, ce
   <lb/><pb facs="1038650" n="6"/> qui est la même chose que si l'on vouloit chercher le sort de celui qui entreprendroit d'amener avec 20000
   <lb/>dez à 1000000 faces, dont 50<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> seulement sont marquées des points, d'un seul coup<note type="internal">In der Spiesstranskription stand hier ein "ou".</note> au moins une des faces marquées; Or le nombre des cas que cela n'arrive pas est <formula>999950^{20000}</formula> et le nombre de tous les cas <formula>1000000^{20000}</formula>, d'où il suit que cette condition de rendre son argent à chacun qui ne gagne aucun lot
-  <lb/>dans ses 50<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> billets vaut <choice rend="regFormula"><orig><formula>\overline{\frac{999950}{1000000}}^{20000}\times 25</formula></orig><reg><formula>\left(\frac{999950}{1000000}\right)^{20000}\times 25</formula></reg></choice><abbr>℔</abbr>, ce qui fait en tout <choice rend="regFormula"><orig><formula>\overline{\frac{999950}{1000000}}^{20000}\times 500000</formula></orig><reg><formula>\left(\frac{999950}{1000000}\right)^{20000}\times 500000</formula></reg></choice><abbr>℔</abbr>
+  <lb/>dans ses 50<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> billets vaut <choice><orig><formula>\overline{\frac{999950}{1000000}}^{20000}\times 25</formula></orig><reg><formula>\left(\frac{999950}{1000000}\right)^{20000}\times 25</formula></reg></choice><abbr>℔</abbr>, ce qui fait en tout <choice><orig><formula>\overline{\frac{999950}{1000000}}^{20000}\times 500000</formula></orig><reg><formula>\left(\frac{999950}{1000000}\right)^{20000}\times 500000</formula></reg></choice><abbr>℔</abbr>
   <lb/>= (ce qui se trouve par les Logarithmes) 184064<abbr>℔</abbr> et environ dix sols, donc le désavantage du
   <lb/>Banquier qui ne retient que 75000 livres sera <formula>109064\frac{1}{2}</formula><abbr>℔</abbr>, qui n'est pas la moitié de ce que
   <lb/>Vous avez trouvé, mais qui pourtant est assés grand, de sorte qu'il ne se faut point étonner, si
   <lb/>celui qui a tenu une telle Lotterie a fait banqueroute. On pourra par cette même methode et en
-  <lb/>deux mots resoudre la <abbr>prop.</abbr> 44<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de Vôtre <rs type="biblio">Livre</rs>.</p>
+  <lb/>deux mots resoudre la <abbr>prop.</abbr> 44<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de Vôtre <rs type="publication">Livre</rs>.</p>
   <p><lb/>Voila, Monsieur, ce que j'ai trouvé necessaire de Vous écrire sur ces matiéres, une autre fois,
     <lb/>quand j'aurois plus de loisir, je prendrai le plaisir d'examiner les autres choses curieuses de Vôtre bel
-    <lb/><rs type="biblio">Ouvrage</rs>. Pour ce qui regarde le <rs type="biblio" key="biblio_WPXENY2H">traité</rs> de feu <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs>, j'ai proposé l'offre que Vous avez faite
-    <lb/>de faire imprimer ce <rs type="biblio">manuscrit</rs> à mon <rs key="pers_DE-588-135542472" type="person">Cousin</rs> le fils du <rs key="pers_DE-588-118509950" type="person">defunt</rs>, qui en est le maitre, mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il se
+    <lb/><rs type="publication">Ouvrage</rs>. Pour ce qui regarde le <rs type="publication">traité</rs><!-- Ars Conj. --> de feu <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs>, j'ai proposé l'offre que Vous avez faite
+    <lb/>de faire imprimer ce <rs type="publication">manuscrit</rs> à mon <rs key="pers_DE-588-135542472" type="person">Cousin</rs> le fils du <rs key="pers_DE-588-118509950" type="person">defunt</rs>, qui en est le maitre, mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il se
     <lb/>defie de moy aussi bien que de <abbr>Mr.</abbr> mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, et qu'il étoit alors sur le point de partir pour l'<rs key="place_KON-italie" type="place">Italie</rs>,
     <lb/>où il est arrivé depuis quelques semaines, il m'a <rs type="letter">répondu</rs> qu'en passant à <rs key="place_GEO-3171728" type="place">Padoüe</rs> il parleroit ladessus
     <lb/>à <abbr>Mr.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs>, en qui Luy et tous ceux de sa maison mettent une plus grande confiance qu'en nous autres;
-    <lb/>j'ai <rs type="letter">écrit</rs> la dessus à <abbr>Mr.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> même, et je l'ai prié de prendre soin, que ce <rs type="biblio">manuscrit</rs> fût bien tôt
+    <lb/>j'ai <rs type="letter">écrit</rs> la dessus à <abbr>Mr.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> même, et je l'ai prié de prendre soin, que ce <rs type="publication">manuscrit</rs> fût bien tôt
     <lb/>imprimé, mais je n'en ai point encore reçû de <rs type="letter">réponse</rs>. Il est grand do<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>age que la quatriéme partie
-    <lb/>de ce <rs type="biblio">traité</rs>, qui devroit étre la principale, ne soit point achevée, elle n'est guéres co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encée et ne
-    <lb/>contient que cinq chapitres<note type="comment"></note>, dans lesquels il n'y a que des choses générales; ce qui en est le plus re<pc type="hyphenation">-</pc><lb break="no"/>marquable est le chapitre dernier, où il donne la solution d'un Probléme fort curieux, qu'il a pré<pc type="hyphenation">-</pc><lb break="no"/>feré même à la <rs type="keyword">quadrature du Cercle</rs>, c'est de trouver combien il faut faire d'observations pour par<pc type="hyphenation">-</pc><lb break="no"/>venir à un tel degré de probabilité que l'on voudra, et où il démontre en même temps, que par les
+    <lb/>de ce <rs type="publication">traité</rs>, qui devroit étre la principale, ne soit point achevée, elle n'est guéres co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encée et ne
+    <lb/>contient que cinq chapitres<note type="comment"></note>, dans lesquels il n'y a que des choses générales; ce qui en est le plus re<pc type="hyphenation">-</pc><lb break="no"/>marquable est le chapitre dernier, où il donne la solution d'un Probléme fort curieux, qu'il a pré<pc type="hyphenation">-</pc><lb break="no"/>feré même à la quadrature du Cercle, c'est de trouver combien il faut faire d'observations pour par<pc type="hyphenation">-</pc><lb break="no"/>venir à un tel degré de probabilité que l'on voudra, et où il démontre en même temps, que par les
     <lb/>observations souvent reiterées on peut découvrir fort au juste la raison qu'il y a entre le nombre des
     <lb/>cas, où arrivera un certain événement, et le nombre des cas, où il n'arrivera pas. Il seroit à souhaiter
     <lb/>que quelqu'un voulût entreprendre d'achever cette derniére partie, et de traitter à fonds les choses
     <lb/>de politique et de morale, et co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je ne sçai personne qui soit plus capable d'y reussir, que Vous,
-    <lb/>Monsieur, qui en avez donné des preuves si excellentes dans Vôtre bel <rs type="biblio" key="biblio_B9DV33K8">Ouvrage</rs>, je Vous prie de pous<pc type="hyphenation">-</pc><lb break="no"/>ser les vües que Vous avez sur cette matiére, Vous en obligerez beaucoup le public et <abbr>particuliérem.<hi rend="sup">t</hi></abbr>
+    <lb/>Monsieur, qui en avez donné des preuves si excellentes dans Vôtre bel <rs type="publication">Ouvrage</rs>, je Vous prie de pous<pc type="hyphenation">-</pc><lb break="no"/>ser les vües que Vous avez sur cette matiére, Vous en obligerez beaucoup le public et particuliérem.<hi rend="sup">t</hi>
     <lb/>moy, qui suis avec bien du respect et de l'estime,</p> <closer><salute>Monsieur, Vôtre</salute> <choice><orig><g ref="#pp">pp.</g></orig><reg>etc.</reg></choice></closer>
 </div>
 </body>

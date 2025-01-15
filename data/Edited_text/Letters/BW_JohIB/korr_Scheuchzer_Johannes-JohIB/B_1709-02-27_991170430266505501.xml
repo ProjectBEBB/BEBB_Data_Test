@@ -1,332 +1,196 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1709-02-27_991170430266505501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Johann Scheuchzer. Basel, 27.
-            Februar 1709</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000056935</title><title type="alt"
-            >1709-02-27_Bernoulli_Johann_I-Scheuchzer_Johannes</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johannes (1684-1738) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Siegel, Adresse teilweise abgeschnitten. Auf der Adressseite
-            befindet sich die Anmerkung von anderer Hand: "Resp. 10. Martij 1709"</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://ub.unibas.ch/bernoulli/index.php/1709-02-27_Bernoulli_Johann_I-Scheuchzer_Johannes"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms H 321a, Nr. 10, pp. 45-48</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430266505501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406880405504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000056935</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2,5 S.<dimensions unit="cm">
-                    <height>19,5</height>
-                    <width>15,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1709-02-27">a.d. 27. febr.
-                1709</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1709-02-27">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1709-02-17_991170515092605501" type="prev"/>
-          <ptr target="B_1709-03-10_991170515092505501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johannes-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-120052539">Bignon, Jean Paul</persName>
-            <note type="lebensdaten">(1662-1743)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118674978">Burnet, Gilbert</persName>
-            <note type="lebensdaten">(1643-1715)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-104185643">Burnet, William</persName>
-            <note type="lebensdaten">(1688-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-105511176X">Guisnée, N.</persName>
-            <note type="lebensdaten">(-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117526789">Reyneau, Charles René</persName>
-            <note type="lebensdaten">(1656-1728)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-            <note type="lebensdaten">(1672-1733)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117628905">Tournefort, Joseph Pitton de</persName>
-            <note type="lebensdaten">(1656-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1089923198">Verzaglia, Giuseppe</persName>
-            <note type="lebensdaten">(1669-1728)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1709-02-27_Bernoulli_Johann_I-Scheuchzer_Johannes"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/949792/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="949838" n="45"/> Viro Clarissimo atque Doctissimo Johanni Scheuchzero
-          Cogniminato Philippo S. P. D. Joh. Bernoulli Abiturit Tabellarius, quocirca haec
-          festinanter scribo mi Philippe!<note type="editorial">Johannes Scheuchzers Beiname als
-            Mitglied der Leopoldina.</note> ut quidem ante omnia Te rogem velis Cl.<hi rend="sup"
-            >o</hi> Tuo Fratri juxta salutem officiosissimam meo nomine gratias agere pro transmisso
-          suo libro elegantissimo quo me mactare voluit;<note type="editorial">Scheuchzer, Johann
-            Jakob, <hi rend="u">Οὐρεσιφοίτης Helveticus, sive Itinera Alpina tria: in quibus
-              incolae, animalia, plantae, montium altitudines barometricae, coeli et solis
-              temperies, aquae medicatae, mineralia, metalla, lapides figurati, aliaque fossilia; et
-              quicquid insuper in natura, artibus, et antiquitate, per Alpes Helveticas et
-              Rhaeticas, rarum sit, et notatu dignum, exponitur, et iconibus illustratur ...</hi>,
-            Londini (H. Clements) 1708.</note> quod si vero abs Te procedat hoc munus, duplices
-          gratias Tibi actas volo. Ut stationes Botanicas Lugdunensem et Patavinam quas vos ambo
-          ambitis, vel quae potius Vos ambire deberent, tandem nanciscamini ceu meritorum vestrorum
-          praemia, est quod cum primis in votis habeo; cujus negotii felicem exitum libens
-          audiverim: scripsi ea de re ut desiderasti ad Illustr. Bignonium<note type="editorial"
-            >Dieser Brief Bernoullis an Jean-Paul Bignon ist anscheinend nicht erhalten.</note> qui
-          si fieri possit cum Legato Veneto de Te vocando consilium ineat vel inire curet. Scripsi
-          etiam Cl. Varignonio<note type="editorial">Dieser Brief an Pierre Varigon ist anscheinend
-            nicht erhalten. Siehe Joh. I B. <hi rend="u">Briefe</hi> 3, Nr. 108, p. 263.</note> ut
-          prioribus duobus libris a Te petitis (si nondum dimiserit) adjiciat quoque sequentes quos
-          petis, nempe P. Renaldi Algebram seu Analysin quam vocat demonstratam,<note
-            type="editorial">Reyneau, Charles René, <hi rend="u">Analyse démontrée, ou La méthode de
-              résoudre les problêmes des mathématiques, et d’apprendre facilement ces sciences;
-              Expliquée et demontrée dans le premier volume, et appliquée, dans le second, à
-              découvrir les proprietés des figures de la geometrie simple et composée; à resoudre
-              les problèmes de ces sciences et les problêmes des sciences physico-mathematiques, en
-              employant le calcul ordinaire de l’algebre, le calcul differentiel et le calcul
-              integral. Ces derniers calculs y sont aussi expliqués et démontrés. ...</hi>, 2 vols.,
-            Paris (J. Quillau) 1708.</note> Guisnei Algebram,<note type="editorial">Guisnée,
-            [Nicolas], <hi rend="u">Application de l’algèbre à la géométrie, ou Méthode de démontrer
-              par l’algèbre, les théorèmes de géométrie, et d’en résoudre et construire tous les
-              problèmes. L’on y a joint une Introduction qui contient les règles du calcul
-              algebrique</hi>, Paris (J. Boudot/J. Quillau) 1705.</note> Tournefortii
-            Itinerarium,<note type="editorial">Tournefort, Joseph Pitton de, <hi rend="u">Relation
-              d’un voyage du Levant, fait par ordre du Roy. Contenant l’histoire ancienne et moderne
-              de plusieurs isles de l’Archipel, de Constantinople, des côtes de la mer Noire, de
-              l’Arménie, de la Géorgie, des frontières de Perse et de l’Asie Mineure ... . Enrichie
-              de descriptions et de figures ... de plantes rares, de divers animaux; et de plusieurs
-              observations touchant l’histoire naturelle</hi>, 2 vols., Paris (Imprimerie Royale)
-            1717.</note> et Acad. <pb facs="949839" n="46"/> Reg. Commentariorum Tomum ultimum,<note
-            type="editorial">Mém. Paris 1708 (1709).</note> omnes cum binis prioribus in unum
-          fasciculum consarcinandos; nisi forte illi jam antea Parisiis sint profecti, quo casu hi
-          separatim forent mittendi, quod sumtus vecturae (etiam sine hoc satis iniquos) augeret;
-          itaque Tibi melius consuluisses si omnia simul petiisses. Rogavit nuper Hon. Frater Tuus
-          ut significem quando huc appulerit Nob. Burnetus Episcopi Sarisburiensis Filius,<note
-            type="editorial">William Burnet (1688-1729) war der Sohn des Bischofs von Salisbury
-            Gilbert Burnet. Bevor er zu einer Italienreise aufbrach, weilte er im Februar 1709 als
-            Gast im Haus Johann I Bernoullis. Siehe auch den Brief von <rs
-              key="B_1709-02-18_991170514865005501" type="letter">1709.02.18</rs>. Von Johann
-            Bernoullis Korrespondenz mit Burnet sind 31 Briefe erhalten. Burnet, der sich als
-            "amateur des mathématiques" bezeichnete, wurde 1720 Colonial Governor von New York und
-            New Jersey und 1728 Governor von Massachusetts.</note> quem itaque praeterito die
-          Saturni appulisse et meis in aedibus hospitium sumsisse significare poteris; dicit autem
-          se brevi reversurum Genevam et ex ea cum Fratre reliquisque itineris sociis quos ibi
-          reliquit in Italiam profecturum. Etiam hic loci (et ut scribitur ubique locorum) eo quo
-          dixisti tempore intensum fuit frigus, et eodem quo Tu notasti die, ego mercurium in
-          Barometro deprehendi in altitudine 28 poll. paris. et paulo plus, ita ut hic plus quam uno
-          pollice altior fuerit quam apud vos, tantum nempe athmosphaera aërea in nostro loco utpote
-          humiliori fortius premit mercurium quam in vestro: Ab aliquot diebus scilicet pridie quam
-          plenilunium ingrueret, de novo intensum ingruit frigus et etiamnum durat, non tamen tam
-          vehemens ac nuperum; et Hodie mercurius in mediocri stat altitudine nempe 26 poll. 10 lin.
-          quam tu hodie observaveris altitudinem significa quaeso ut cum mea comparare possim.
-          Interim a D. Verzalia cum Cl. Fratre salutatus Vale. Dabam Basileae a. d. 27. febr. 1709.
-            <pb facs="949840" n="47"/>
-          <table>
-            <row>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> ' </cell>
-              <cell> "' </cell>
-            </row>
-            <row>
-              <cell>d. </cell>
-              <cell>27. </cell>
-              <cell> Febr. </cell>
-              <cell> alt. ☿ij in Barom. </cell>
-              <cell> hor. </cell>
-              <cell> 11 </cell>
-              <cell> a. m. </cell>
-              <cell> 26' </cell>
-              <cell> 3½ </cell>
-            </row>
-            <row>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> – </cell>
-              <cell> 4 </cell>
-              <cell> p. m. </cell>
-              <cell> 26' </cell>
-              <cell> 2½ </cell>
-            </row>
-            <row>
-              <cell> frigus erat intensum </cell>
-            </row>
-            <row>
-              <cell> d. </cell>
-              <cell> 2. </cell>
-              <cell> Martij frigore intensiori </cell>
-              <cell> </cell>
-              <cell> h. </cell>
-              <cell> 9 </cell>
-              <cell> a. m. </cell>
-              <cell> 26", </cell>
-              <cell> 6"'. </cell>
-              <cell> Therm. Amont. 30¾ </cell>
-            </row>
-            <row>
-              <cell> d. </cell>
-              <cell> 3. </cell>
-              <cell> martij quo haec scribo </cell>
-              <cell> alt. ☿ij erat<note type="editorial">Notiz von der Hand Johannes
-                  Scheuchzers.</note>
-              </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-              <cell> </cell>
-            </row>
-          </table>
-          <pb facs="949841" n="48"/> A Monsieur Monsieur Jean Scheu- chzer tres Celebre Medec[in] à
-          Zü[ric] </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1709-02-27_991170430266505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Johann Scheuchzer. Basel, 27. Februar 1709</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Siegel, Adresse teilweise abgeschnitten. Auf der Adressseite befindet sich die Anmerkung von anderer Hand: "Resp. 10. Martij 1709"</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://ub.unibas.ch/bernoulli/index.php/1709-02-27_Bernoulli_Johann_I-Scheuchzer_Johannes" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms H 321a, Nr. 10, pp. 45-48</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430266505501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406880405504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000056935</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2,5 S.<dimensions unit="cm"><height>19,5</height><width>15,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1709-02-27">a.d. 27. febr. 1709</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1709-02-27">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1709-02-17_991170515092605501" type="prev"/>
+        <ptr target="B_1709-03-10_991170515092505501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johannes-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-120052539">Bignon, Jean Paul</persName>
+          <note type="lebensdaten">(1662-1743)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118674978">Burnet, Gilbert</persName>
+          <note type="lebensdaten">(1643-1715)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-104185643">Burnet, William</persName>
+          <note type="lebensdaten">(1688-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-105511176X">Guisnée, N.</persName>
+          <note type="lebensdaten">(-1718)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117526789">Reyneau, Charles René</persName>
+          <note type="lebensdaten">(1656-1728)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+          <note type="lebensdaten">(1672-1733)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117628905">Tournefort, Joseph Pitton de</persName>
+          <note type="lebensdaten">(1656-1708)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1089923198">Verzaglia, Giuseppe</persName>
+          <note type="lebensdaten">(1669-1728)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

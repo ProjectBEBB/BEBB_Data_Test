@@ -1,236 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1712-08-20_991170515086405501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Scheuchzer an Johann Bernoulli. Zürich, 20.
-            August 1712</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000056997</title><title type="alt"
-            >1712-08-20_Scheuchzer_Johannes-Bernoulli_Johann_I</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johannes (1684-1738) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc facs="http://dx.doi.org/10.7891/e-manuscripta-21529" rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 668, Nr. 62*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170515086405501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433058005504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000056997</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>1.5 S.<dimensions unit="cm">
-                    <height/>
-                    <width/>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam, utvides, Raptim Tiguri</origPlace><date when="1712-08-20">a.
-                d. 20. Aug: MDCCXII</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4068038-1"
-            >Zürich</placeName>
-          <date when="1712-08-20">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1712-08-17_991170429989905501" type="prev"/>
-          <ptr target="B_1713-08-29_991170429987705501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johannes-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118624326">Tschudi, Aegidius</persName>
-            <note type="lebensdaten">(1505-1572)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1712-08-20_Scheuchzer_Johannes-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/999970/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="999971" n="1"/> Viro Excellentissimo atque Celeberrimo </p>
-        <p>D.<hi rend="sup">o</hi> Johanni Bernoullio </p>
-        <p>S. P. D. </p>
-        <p>Johannes Scheuchzerus.</p>
-        <p>Ita sane est ut suspicaris, Domi meae gratissimas Tuas<note type="editorial">Johann I
-            Bernoulli an Johannes Scheuchzer von <rs key="B_1712-08-17_991170429989905501"
-              type="letter">1712.08.17</rs>.</note> recepi; Pace, ut videtur, totius Helvetiae
-          restaurata, liberiorem rursus spiritum trahimus, restituta quies pristina parum olim
-          aestimata nunc gratior multo quam antea sapit. Faxit D. O. M. ut sit in multa saecula
-          perennans: Apparent tamen hinc inde per Helvetiam, speciatim, per Lucernatum Terras
-          quaedam de novo Turbae, dicunt idem quoque de Cantonibus alijs, quid haec nisi nova
-          discrimina? et nutantium alias rerum denotant ruinas? forsitan ex his omnibus Clerus ille
-          resipiscere vel discet, vel discere cogetur. </p>
-        <p>Me quod attinet, post confectam cum Wilensibus<note type="editorial">Zur Belagerung von
-              <rs key="place_GEO-2657996" type="place">Wil</rs> im <ref
-              target="http://www.hls-dhs-dss.ch/textes/d/D8911.php">Zweiten Villmergerkrieg</ref>
-            siehe den Brief von <rs key="B_1712-06-13_991170515086605501" type="letter"
-              >1712.06.13</rs>.</note> rem, atque rebus in monasterio S. Gallensi<note
-            type="editorial">Die <rs key="http://de.wikipedia.org/wiki/F%C3%BCrstabtei_St._Gallen"
-              type="place">Fürstabtei St. Gallen</rs>.</note> compositis, vel potius direptis, ad
-          militiam nostram ultra Albium montem,<note type="editorial">Der Berg <rs
-              key="place_GEO-2661826" type="place">Albis</rs>.</note> novamque adeo palaestram
-          avocatus fui, adfui expeditionibus contra Tugienses<note type="editorial">Es handelt sich
-            um eine militärische Operation gegen den Stand Zug.</note> susceptis omnibus, tandemque
-          ut reliquis omnibus bonus subsequeretur finis ad defendendum Pontem Rusae fluminis prope
-            Sins,<note type="editorial">Die <rs
-              key="http://de.wikipedia.org/wiki/Reussbr\%C3\%BCcke_Sins\%E2\%80\%93H\%C3\%BCnenberg"
-              type="place">Reussbrücke Sins-Hünenberg</rs>.</note> itemque ad corrigendos hostium
-          nostrorum, quos ipsi<note type="editorial">Im Manuskript steht "ipi".</note> fecerunt
-          Recessus, ac valla missus fui, Praedae interim loco nihil nisi vacuam argento crumenam,
-          corpusque longo et insolito labore defatigatum, et pene etiam consumptum reportavi; As[t]
-          si pro Patria mori dulce, cur non et pro eadem lenta veluti quadam Tabie consumi? gaudeant
-          alij praedis suis per fas nefasque congestis, sufficiet mihi fama honesta, quam tamen
-          multo sudore promeritam, quidam quos malesana premit invidia, jam eripere mihi conantur. </p>
-        <p>Inter copiosa illa Monasterij Sanctogallensis Manuscripta ne grü quidem Tschudianorum
-          Operum inventum fuit,<note type="editorial">Zu Tschudis Schweizerchronik siehe die
-            Anmerkung im Brief von <rs key="B_1712-08-17_991170429989905501" type="letter"
-              >1712.08.17</rs>.</note> providentiores multo fuerant monachi illi, quam ut scripta
-          illa nobis relinquerent, utut reliqua omnia quasi neglexerint. </p>
-        <p>Interim jam Musis meis me nunc de novo restitutum gaudeo, quam dulce cum ijsdem sit
-          commercium nunc demum sentio, postquam nil nisi raucius canere durantibus bellicis Turbis
-          nostris, didiceram, novis viribus, nova vi in dulcissima <pb facs="999972" n="2"/> hacce
-          schola me, Si Deo placet, exercebo. Ad Adgnatum Tuum si quando Literas dabis<note
-            type="editorial">Im Brief von Johann I Bernoulli an Nicolaus I Bernoulli von <rs
-              key="B_1712-08-24_991170514609105501" type="letter">1712.08.24</rs> wird der Gruss
-            nicht ausgerichtet.</note> eum meo nomine et Salvere et felicem esse jube: Pene
-          exciderat mihi, ut nuntiarem Tibi crystallum Islandicam, sive Selenitam<note
-            type="editorial">Selenit oder Spiegelstein ist eine besonders reine Varietät des
-            Minerals Gips.</note> nostrum Rhomboidalem Tandem ad manus Varignonio nostro venisse, id
-          quod mihi per literas significavit,<note type="editorial"> Siehe die Korrespondenz
-            zwischen Johannes Scheuchzer und Pierre Varignon in ZB Zürich, Ms H 348, pp. 227-236.
-          </note> proxime eidem respondebo, cum res meae compositae magis et in ordinem redactae
-          fuerint. Sed Ignosce rudiori stylo, per belli tempus etenim Latine loqui pene dedidici.
-          Vale et favere porro mihi perge. </p>
-        <p>Dabam, ut vides, Raptim Tiguri a. d. 20. Aug. MDCCXII. </p>
-        <p><pb/> A Monsieur </p>
-        <p>Monsieur Bernoulli, Docteur </p>
-        <p>en Medecine, et Professeur en </p>
-        <p>Mathematique Tres celebre </p>
-        <p>à </p>
-        <p>Basle. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1712-08-20_991170515086405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann Scheuchzer an Johann I Bernoulli. Zürich, 20. August 1712</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://dx.doi.org/10.7891/e-manuscripta-21529" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 668, Nr. 62*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170515086405501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433058005504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000056997</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>1.5 S.<dimensions unit="cm"><height/><width/></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam, utvides, Raptim Tiguri</origPlace>
+            <date when="1712-08-20">a. d. 20. Aug: MDCCXII</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4068038-1">Zürich</placeName>
+        <date when="1712-08-20">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1712-08-17_991170429989905501" type="prev"/>
+        <ptr target="B_1713-08-29_991170429987705501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johannes-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118624326">Tschudi, Aegidius</persName>
+          <note type="lebensdaten">(1505-1572)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/999970/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="999971" n="1"/> <pb facs="999972" n="2"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

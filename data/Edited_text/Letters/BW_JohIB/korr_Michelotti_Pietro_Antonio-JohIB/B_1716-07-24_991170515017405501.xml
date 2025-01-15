@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_1716-07-24_991170515017405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--Nicht der richtige Girolamo Venier getagt, richtig ist: Girolamo Venier, 1650-1735 pers_DE-588-1253768439; im Katalog noch falsch--><!-- Procurator Venerius, Moderatores noch nicht oben aufgeführt 7.01.2019. Venerius auch noch nicht mit GND getagt --><!-- Venier: Hieronymus Venerio Eq. D.M.P. Nicolai Eq. D.M.P. Fil. pers_DE-588-1253768439, Girolamo Venier 1650-1735 --><!--_____________--><TEI xml:id="B_1716-07-24_991170515017405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -163,29 +166,18 @@
       <!--Nicht der richtige Girolamo Venier getagt, richtig ist: Girolamo Venier, 1650-1735 pers_DE-588-1253768439; im Katalog noch falsch-->
       <change when="2022-06-20" who="CG">Zeilenfall und GND Korrektur</change>
       <change when="2018-12-04">Personen ausgezeichnet</change>
-      <change when="2018-11-29">Sachtags (person-, brief-, etc.) und Entity "j" eingefügt</change>
+      <change when="2018-11-29">Sachtags (person-, brief-, etc.) und <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> eingefügt</change>
       <change when="2018-08-27">kollationiert</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!--Nicht der richtige Girolamo Venier getagt, richtig ist: Girolamo Venier, 1650-1735 pers_DE-588-1253768439; im Katalog noch falsch-->
-<!-- Procurator Venerius, Moderatores noch nicht oben aufgeführt 7.01.2019. Venerius auch noch nicht mit GND getagt -->
-<!-- Venier: Hieronymus Venerio Eq. D.M.P. Nicolai Eq. D.M.P. Fil. pers_DE-588-1253768439, Girolamo Venier 1650-1735 -->
-<!--_____________-->
-
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1078862/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1078863" n="1"/>
 <opener><salute> Viro <choice><abbr>Praeclariss.<hi rend="sup">o</hi></abbr><expan>Praeclarissimo</expan></choice> et toto Orbe Celeberrimo
             <lb/>Johanni <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> <abbr>S. P. D.</abbr>
 <lb/>Petrus Antonius <rs key="pers_DE-588-102552517" type="person">Michelotti</rs></salute></opener>
-<p>Iucundissimas <rs key="B_1716-07-04_991170515017505501" type="letter">tuas litteras</rs> 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><hi rend="sup">ta</hi> die huius mensis
+<p>Iucundissimas <rs key="B_1716-07-04_991170515017505501" type="letter">tuas litteras</rs><note type="editorial">Johann I Bernoulli an Pietro Antonio Michelotti, 4. Juli 1716</note> 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><hi rend="sup">ta</hi> die huius mensis
              <lb/>ad me datas magna cum L<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>titia accepi. Et quod
              <lb/>de mea acquisita valetudine mihi gratula<pc type="hyphenation">-</pc><lb break="no"/>tus fueris gratias ago maximas. Vocatio so<pc type="hyphenation">-</pc><lb break="no"/>lemnis <choice><abbr>Celeberr.</abbr><expan>Celeberrimi</expan></choice> <rs key="pers_DE-588-119166895" type="person"><choice><sic>Agni</sic><corr>Agnati</corr></choice> Tui</rs> propediem (ut spe<pc type="hyphenation">-</pc><lb break="no"/>ro) ad vos perveniet, iamque pervenisset
              <lb/>nisi Turcarum approximatio ad <rs key="place_WEI-korfua" type="place"><choice><orig>Jnsulam</orig><reg>Insulam</reg></choice></rs>
@@ -247,10 +239,10 @@
              <lb/><choice><abbr><choice><orig>Jngeniosiss.<hi rend="sup">us</hi></orig><reg>Ingeniosiss.<hi rend="sup">us</hi></reg></choice></abbr><expan>Ingeniosissimus</expan></choice> <rs key="pers_DE-588-117589144" type="person">Filius Tuus</rs> publici iuris faciam
              <lb/>(Vobis tamen permittentibus) in meo opusculo,
              <lb/>quod fere ad umbilicum perductum est, de Liquo<pc type="hyphenation">-</pc><lb break="no"/>rum Animalium Philtratione.
-             <lb/><rs key="brieftag" type="letter">Responsum</rs><note type="editorial">Vermutlich gab es keinen solchen Antwortbrief.</note><!-- kontrollieren --> <choice><abbr><choice><orig>Jllustrissimi</orig><reg>Illustrissimi</reg></choice></abbr><expan>Illustrissimi</expan></choice> <rs key="pers_DE-588-118571249" type="person">Leibnitii</rs> ad <rs key="brieftag" type="letter">meas litte<pc type="hyphenation">-</pc>
+             <lb/><rs key="brieftag" type="letter">Responsum</rs><note type="editorial">Vermutlich gab es keinen solchen Antwortbrief (ev. kontrollieren)</note> <choice><abbr><choice><orig>Jllustrissimi</orig><reg>Illustrissimi</reg></choice></abbr><expan>Illustrissimi</expan></choice> <rs key="pers_DE-588-118571249" type="person">Leibnitii</rs> ad <rs key="brieftag" type="letter">meas litte<pc type="hyphenation">-</pc>
 <pb facs="1078867" n="5"/>
 <lb break="no"/>ras</rs><note type="editorial">Vermutlich ist der Brief von Leibniz an Michelotti vom 29. Mai 1716 gemeint.</note> adhuc expecto. Celeberrimus iste <rs key="pers_DE-588-118571249" type="person">Vir</rs> dignatus
-             <lb/>fuit ad me <rs key="brieftag" type="letter"><choice><abbr>humaniss.<hi rend="sup">am</hi></abbr><expan>humanissimam</expan></choice> epistolam</rs><note type="editorial">Vermutlich ist ein Brief Leibniz' an Michelotti vom 17. September 1715 gemeint.</note><!-- kontrollieren--> scribere,
+             <lb/>fuit ad me <rs key="brieftag" type="letter"><choice><abbr>humaniss.<hi rend="sup">am</hi></abbr><expan>humanissimam</expan></choice> epistolam</rs><note type="editorial">Vermutlich ist ein Brief Leibniz' an Michelotti vom 17. September 1715 gemeint. (Kontrollieren)</note> scribere,
              <lb/>in qua pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> reliquis assignare conatur causam prop<pc type="hyphenation">-</pc><lb break="no"/>ter quam Liquores Cognatis adh<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>rescant. Fatetur
              <lb/>posse esse multas, atque inter c<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>teras harmoniam
              <lb/>consentientium vibrationum, motuumve

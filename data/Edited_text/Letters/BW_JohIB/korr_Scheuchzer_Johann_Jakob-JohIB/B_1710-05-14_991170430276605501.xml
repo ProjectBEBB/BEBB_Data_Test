@@ -1,204 +1,161 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1710-05-14_991170430276605501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Johann Jacob Scheuchzer. Basel,
-            14. Mai 1710</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057180</title><title type="alt"
-            >1710-05-14_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johann Jakob (1672-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Auf p.18 Adresse und Siegel</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-05-14_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms. H 318, pp.17-18</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430276605501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406902305504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057180</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>[Unbekannter Umfang]<dimensions unit="cm">
-                    <height/>
-                    <width/>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1710-05-14">a. d. XIV Maij
-                MDCCX</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1710-05-14">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1709-02-10_991170514985705501" type="prev"/>
-          <ptr target="B_1710-05-18_991170514985605501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johann_Jakob-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
-            <note type="lebensdaten">(1684-1738)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1710-05-14_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1005107/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1005122" n="17"/>
-        </p>
-        <p>Viro Celeberrimo</p>
-        <p>Joh. Jacobo Scheuchzero</p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli.</p>
-        <p>En Tibi, Vir Celeb. litteras, quas ad me misit Cl. Varignonius;<note type="editorial"
-            >Dieser Brief von Pierre Varignon an Johann Jakob Scheuchzer von <ref
-              target="http://www.e-manuscripta.ch/doi/10.7891/e-manuscripta-18451">1710.05.06</ref>
-            (ZB Zürich, Ms H 308, pp. 75-76) war dem Brief von Varignon an Johann I Bernoulli von
-              <rs key="B_1710-05-06_991170517259105501" type="letter">1710.05.06</rs> zur
-            Weiterleitung beigelegt.</note> ne solae irent, eas paucis hisce lineis comitari volui,
-          ut simul Te de perenni meo erga Te amoris affectu certiorem reddam. </p>
-        <p>Cum nihil litterarum a Cl. Fratre Tuo ab aliquo tempore acceperim, spero eum bonis avibus
-          iter [s]uum aggressum, meas tamen litteras cum inclusis in Angliam deferendis<note
-            type="editorial">Da Johannes Scheuchzer eine Reise nach Holland, England und Frankreich
-            plante, sandte ihm Johann I Bernoulli mit seinem Brief von <rs
-              key="B_1710-04-09_991170430253005501" type="letter">1710.04.09</rs> einen weiteren,
-            ebenfalls auf <rs key="B_1710-04-09_991170515105105501" type="letter">1710.04.09</rs>
-            datierten Brief (oder vielmehr ein Briefpaket) zur Übermittlung an den in England
-            lebenden Abraham de Moivre. Johannes Scheuchzer konnte diesen Brief an de Moivre wegen
-            einer Änderung seiner Reisepläne erst viel später an den Adressaten übermitteln. </note>
-          prius recte accepisse. Felicem ipsi reditum, Tibi vero fausta quaelibet voveo. Vale Vir
-          Celeb. et fave.</p>
-        <p>Dabam Basileae a. d. XIV. Maij. MDCCX.</p>
-        <p><pb facs="1005123" n="18"/> A Monsieur</p>
-        <p>Monsieur Jean-Jaques Scheüchzer</p>
-        <p>Tres celebre Docteur en Medecine et</p>
-        <p>Professeur des mathematiques etc.</p>
-        <p>à </p>
-        <p>Züric </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1710-05-14_991170430276605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Johann Jacob Scheuchzer. Basel, 14. Mai 1710</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Auf p.18 Adresse und Siegel</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-05-14_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms. H 318, pp.17-18</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430276605501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406902305504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057180</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>[Unbekannter Umfang]<dimensions unit="cm"><height/><width/></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1710-05-14">a. d. XIV Maij MDCCX</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1710-05-14">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1709-02-10_991170514985705501" type="prev"/>
+        <ptr target="B_1710-05-18_991170514985605501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johann_Jakob-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person/>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

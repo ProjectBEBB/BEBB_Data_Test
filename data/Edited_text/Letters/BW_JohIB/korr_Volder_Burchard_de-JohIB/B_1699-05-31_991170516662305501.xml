@@ -1,345 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1699-05-31_991170516662305501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Burcherus de Volder. Groningen,
-            31. Mai 1699</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057782</title><title type="alt"
-            >1699-06-10_Bernoulli_Johann_I-Volder_Burchard_de</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Volder, Burchard de (1643-1709) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1699-06-10_Bernoulli_Johann_I-Volder_Burchard_de"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 675:Bl.166-167</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170516662305501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433598205504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057782</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>4 S.<dimensions unit="cm">
-                    <height>20</height>
-                    <width>15,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Groningae</origPlace><date when="1699-05-31">A. 31 Maij
-              1699</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4094052-4"
-            >Groningen</placeName>
-          <date when="1699-05-31">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1699-04-08_991170516662405501" type="prev"/>
-          <ptr target="B_1699-09-26_991170516662205501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>Joh. B. hat gestern de Volders Brief erhalten und den beigelegten Brief an Leibniz mit
-          dem nächsten Boten weitergeleitet. Eine flüchtige Lektüre hat ihm gezeigt, dass de Volder
-          viele Einwände, die Joh. B. vorausgesehen hatte, darin vorbringt. Diese Dinge sind so
-          dunkel, dass sie wohl kaum alle aufgeklärt werden können. Joh. B. wird also nicht auf
-          alles befriedigen eingehen können. Es scheint Joh. B. lächerlich, wie Malebranche auf
-          Grund von Ordnungsgesetzen das bestimmen zu wollen, was aus menschlicher Sicht keine
-          absolute Notwendigkeit mit sich führt, teils weil wir das Ordnungsgesetz, teils weil wir
-          die Ordnung selbst nicht kennen. Es gibt zwar hinsichtlich der göttlichen Anordnungen
-          nichts, was nicht absolute Notwendigkeit mit sich führt, d.h. was nicht a priori von einem
-          Engel, dem Gott alle seine Anordnungen mitgeteilt hat, bewiesen werden könnte, sodass die
-          Tatsachenwahrheiten nicht weniger notwendig sind als die Verstandeswahrheiten oder die
-          ewigen Wahrheiten. Da aber unsere Vernunft über diese nur gemäss ihres eigenen Vermögens
-          verfügt und über jene nur durch die Erfahrung, scheint es lächerlich, z.B. die Schiefe der
-          Ekliptik a priori beweisen zu wollen, wie dies einst der Schaffhauser Ratsherr Hollander
-          versucht hat und zwar mit der gleichen Sicherheit wie den Winkelsummensatz im Dreieck.
-          Leibniz hat dies nach Joh. B.s Meinung bei weitem besser gemacht, als er sen
-          metaphysisches System nicht als völlig sicher und geometrisch demonstriert vorgestellt,
-          sondern in Form einer Hypothese, die ihre Grundlage in der Erfahrung hat. Joh. B. lässt
-          sich leichte überzeugen, dass z.B. jede Veränderung ohne Sprünge erfolgt, weil ihn die
-          Erfahrung dies lehrt, als wenn es ihm jemande als mathematische Wahrheit aufdrängen will.
-          Für das übrige will er die Antwort Leibnizens abwarten. Der Briefwechsel de Volders mit
-          Leibniz entlässt Joh. B. immer belehrt. Joh. B. möchte weiter am Briefwechsel de Volders
-          mit Leibniz teilhaben.</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-130109363">Braun, Johannes</persName>
-            <note type="lebensdaten">(1628-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
-            <note type="lebensdaten">(1564-1642)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-115381473">Holländer, Tobias</persName>
-            <note type="lebensdaten">(1636-1711)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-            <note type="lebensdaten">(1629-1695)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118576682">Malebranche, Nicolas</persName>
-            <note type="lebensdaten">(1638-1715)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118869361">Noodt, Gerard</persName>
-            <note type="lebensdaten">(1647-1725)</note>
-          </person>
-          <person>
-            <persName key="pers_no_GND_id">Romanus</persName>
-            <note type="lebensdaten">(?-1699)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1699-06-10_Bernoulli_Johann_I-Volder_Burchard_de"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1438697/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1438698" n="1"/> Celeberrimo Viro </p>
-        <p>B. De Volder </p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli</p>
-        <p>Hesterna luce postremas Tuas accepi, inclusas ad Ampliss. Leibnitium primo Cursore
-            expediam.<note type="editorial">[Text folgt]</note> Quantum fugitiva lectione hactenus
-          perspicere licuit, multas moves objectiones quas praevideram; Res hae tanta caligine sunt
-          obseptae, ut non putem illas unquam plenariam lucem aspecturas: adeoque non spero ad omnia
-          Tibi satisfactum iri. Nec mihi arridet ex lege ordinis determinare velle cum Malebrancio
-          ea quae <hi rend="u">humanitus</hi> absolutae necessitatis non sunt; partim quod legem
-          ordinis, partim quod ordinem ipsum ignoramus: quanquam et id verum sit, quod respectu Dei
-          Decretorum nihil sit quod non sit absolutae necessitatis, id est quod non a priori possit
-          demonstrari ab angelo quodam quem Deus omnium suorum decretorum fecisset participem; ita
-          ut evidenter pateret veritates <hi rend="u">facti</hi> non minus necessarias esse quam
-          veritates <hi rend="u">rationis</hi> seu aeternae. Sed cum intellectus noster harum tantum
-          sit capax vi sua propria, illarum vero non nisi per experientiam et eventum; sane mihi
-          oppido ridiculum videtur eadem certitudine demonstrare velle a priori quod ex. gr. ex lege
-          ordinis obliquitas eclipticae nec major nec minor esse possit 23° 30' 43" 27"' quem
-          admodum ante annos aliquot Dn. Hollanderus Consul Schaphusianus in libro quem edidit<note
-            type="editorial">[Text folgt]</note> tanquam theorema geometricum asseruit quod secans
-          compl. obliquitatis eclipticae telluris aequalis est medio proportionali inter radium et
-          peripheriam hinc enim dicta quantitas eme[rg]it: ridiculum i[nqua]m si quis contende[t]
-          hoc eadem certitudine demonstrari posse qua demonstratum habeo quod ex. gr. tres anguli
-            <formula>\triangle\textrm{li}</formula> aequantur duobus rectis. Celeb. Leibnitius longe
-          melius meo quidem judicio faceret, si systema suum metaphysicum non ut omnino certum et
-          geometrice demonstratum venditaret, contentus nimirum illud exhibuisse in modum
-          hypotheseos fundamentum habens in experientia; ita enim haud dubito quin longe avidius
-          acceptaretur; saltem mihi facilius persuadebitur ex. gr. nullas mutationes per saltum
-          fieri, exinde quia id experientia in omnibus hactenus docuit: quam si quis mihi <pb
-            facs="1438700" n="2"/> id obtrudere vellet tanquam veritatem mathematicam: reliqua
-          praetereo, videbimus quid ipse Leibnitius ad ea sit repositurus; gratissimum mihi est
-          vestrum agere internuntium hac in parte, haec sane opera non minus utilis quam jucunda
-          erit, cum nulla fere sit linea eorum quae vel ad Leib. vel ad me scribis unde non doctior
-          evadam, tanta ubique in illis reperitur ingenii vis conjuncta cum mirabili expressionis
-          felicitate, quae duo raro in uno concurrunt: quapropter quaeso enixe ne me prives
-          occasione posthac Tua legendi, si quid tamen erit quod Leibnitio soli dictu[m] volueris,
-          quid impedit quominus adjicias schedulam obsignatam? Jam ad ea quae in Tuis ad me habes:
-          Dicis Te non potuisse percipere vim demonstrationis meae, qua conficere volo idem praecise
-          fieri, sive una libra attollatur ad 4 pedes, sive quatuor librae ad unum; negas namque vim
-          corporis [Figur folgt]<note type="editorial"> [Link folgt] </note>
-          <formula>L</formula> quae continuo ascensu per <formula>LQ</formula> absumitur a contraria
-          vi gravitatis aequalem esse vi ejusdem corporis quam iterum a gravitate accipit descensu
-          suo qualicunque ad pristinum suum locum <formula>L</formula>. Sed videris non attendisse
-          ad principium quod tunc in meis literis adhibueram et quod jam etiam concedis in literis
-          ad Dn. Leibnitium,<note type="editorial">[Text folgt]</note>
-          <hi rend="u">causam nempe aequalem esse effecto</hi>. Hinc enim tanquam generale axioma
-          suppono, <hi rend="u">corpus quod certa celeritate ex loco quodam movetur et post reditum
-            ad eundem locum qualicunque itinere emenso ad quietem redigitur tantam vim habuisse
-            censendum est, quantam durante suo itinere aliis sive corporibus sive elastris
-            impressit</hi>; haec enim virium impressio est imprimentis effectus. Jam igitur cum
-          corpus <formula>L</formula> continuo tractu sursum ascendens et dein descendens per vices
-          tendat quatuor elastra, quibus tensis in eodem loco <formula>L</formula> sistitur, debemus
-          sane dicere quod vis elastrorum tanquam effectus sit aequalis vi corporis
-            <formula>L</formula> ante ascensum tanquam causae. Unde vides me non assumere τὁ <pb
-            facs="1438701" n="3"/> κρινόμενον; nisi forte dixeris tensionem elastrorum non esse
-          effectum immediatum potentiae corporis <formula>L</formula>, quia illa peragatur
-          interveniente gravitatis actione: interim puto axioma valere de mediatis non minus quam
-          immediatis, quoniam concipi non potest quomodo effectus ex nihilo augeri possit quacunque
-          demum medio intercedente, quemadmodum ex Tuis verbis revera sequeretur potentiam augeri
-          posse ex nihilo quando dicis vires elastris impressas majores esse potentia qua corpus
-            <formula>L</formula> uno tractu assurgit; finge enim quatuor ista elastra ita tensa
-          simul restitui et machinamentum aliquod adesse cujus ope suas vires simul corpori
-            <formula>L</formula> iterum imprimant, si igitur ut dicis vires istae superarent
-          potentiam qua assurgit ad <formula>LP</formula>, jam majori potentia acquisita altius
-          assurgeret uno tractu quam prima vice; et sic nihilo contribuente, lucraremur augmentum
-          potentiae seu effectum potiorem causa contra principium nostrum: quin et quod magis
-          inconvenientiam ostendit, si post secundum ascensum continuum descenderet iterum tendendo
-          quatuor elastra, quae se simul restituendo totas suas vires corpori <formula>L</formula>
-          iterum imprimerent, foret ascensus corporis <formula>L</formula> jam adhuc major quam
-          secundus, et sic quartus major quam tertius, quintus quam quartus: unde fieri posset, ut
-          corpus celeritate quantumvis parva ad altitudinem assurgeret quantumvis magnam: quod nec
-          rationi nec experientiae respondet. </p>
-        <p>Modus quem dixi in excerptis contineri, quo materia gravifica omnem suam vim transferat
-          in corpus, in eo etiam consistit quod dixi particulas materiae gravificae posse in poros
-          corporis ita infigi ut post appulsum non statim reflectantur, unde illius particulae vis
-          necessario tota a corpore absorbeatur; pariter ac globi a sclopeto in asserem injecti vis
-          omnino ab eo consumitur; sed bene est quod agnoscas non opus esse ut hoc fiat circa
-          materiam gravificam. Fateor interim etiam me non praecise adeo docere posse cur illi
-          globuli in orbem moveantur, vel cur illi vorticuli ita sint dispositi ut corpora in
-          tellurem impellant perpendiculariter; Cum enim haec dicerem non animus erat gravitatis
-          causam ex professo explicare, sed ostendere volui tantum modum quo possibile sit numerum
-          ictuum materiae gravificae non tempori, sed spatio percurso proportionari; cujus sane
-          veritas quicquid sit vel non sit de illis vorticulis vel ex hoc patet quod utique materia
-          gravifica sit aequaliter et uniformiter diffusa adeoque non secundum tempora sed secundum
-          spatia operetur. Ex abundanti tamen illi vorticuli quodammodo etiam astrui possunt et vel
-          ex ipsa hypothesi Hugeniana: quae nimirum particulis illis motum tribuit in superficie
-          sphaerica in omnes partes ten<pb facs="1438702" n="4"/>dentem, unde facile concipi potest,
-          ex perturbato tali motu sequi illos frequentissime sibi mutuo occurrere et in itinere
-          rectilineo impediri, quo fit ut cum singulis momentis reflectantur tandem cogantur ad
-          gyrum formandum ut tanto liberius moveri possint: ita videmus in fluminibus quando ad
-          ripam sinuosam aqua insequens rapidius fluit quam praecedens, illam in plures tales
-          vortices contorqueri. </p>
-        <p>Pro egregio solamine quo dolorem meum a morsu canum rabidorum contractum lenire satagis
-          gratias ago maximas. Cum Te videam cupidum sciendi quid porro gestum fuerit, laetaberis
-          haud dubie ubi Tibi dixero quod vaticinatus fueris veritatem, revera enim, prout
-          divinasti, fulmina in Theologastros nostros qui ea in me paraverant reciderunt; Classis
-          quae dicitur hic <hi rend="u">occidua</hi> (sapientes ab ortu, stulti ab occasu veniunt)
-          fabricaverat quidem contra me horribile gravamen quod in subsequenti Synodo generali
-          exhibendum erat ut ab ea solenniter declararer haereticus et ut talis condemnarer:
-          Ilustrissimi vero Deputati Ordines hujus Provinciae meam videntes innocentiam illorum vero
-          enormem rabiem, sua qua pollent prudentia fulmen excommunicationis jam jam me percussurum
-          inhibuerunt, interdicentes serio et sub comminatione omnis inclementiae ne vel verbulo
-          mentio fieret in Synodo de inepto isto gravamine multoque minus ventilaretur, nec me
-          posthac ulterius lacesserent: unde vides Proceres nostros bonam causam amplecti non
-          intermittere quando necessitas id requirit talia namque rosaria quae nil nisi sentes
-          producunt in hortis nostris non [fov]ent mearum interim partium credidi esse, ut me
-          scripto aliquo publice purgarem a malevolorum calumniis, quem in finem disputationem
-          scripsi illam quam Tibi nuper misi per duos studiosos Helvetios, si forte non tradiderint,
-          fac sciam, aliud exemplar transmittam; non quidem aliquid magni momenti ibi reperies, quod
-          Tua lectione dignum sit excitabit tamen Tibi risum, quando me tam magistraliter Theologum
-          agere deprehendes: actus Disputationis fuit ferventissimus, tres <hi rend="u">Domini</hi>
-          mihi opposuerunt, suam quisque exquisitissimam eloquentiam producentes: victoria ut ex
-          applausu Auditorum colligere licuit penes me stetit; plura particularia enarrare spatii et
-          temporis angustia non permittit: Fabula ad tempus peracta est usque dum novam Logoli[tem]
-          produxerint in scenam. Si Dn. Roman<note type="editorial">[Text folgt]</note> de sua
-          vocatione desperat, non ideo sibi persuadere debet, quod nostrates de alio medico
-          cogitent; nam quamdiu talem virum invenire non possunt qui homines immortales reddat,
-          tamdiu ut puto sedem medicam relinquent vacuam, sed forte ad eloquentiam propediem aliquis
-          vocabitur, quod bene vorta! Accepi etiam cum Tuis literis Galilaei librum,<note
-            type="editorial">[Text folgt]</note> sed nescio quomodo id intelligis, quando me rogas
-          ut eum a te in bonam partem accipiam, quandoquidem illum a Te petierim sed ita ut pretium
-          ejus mihi indices: ergo aut pretium pete, aut qui alio munere compensare possim significa:
-          utrumvis elegeris gratias ago quam maximas: ad officia habebis me paratissimum. Vale. </p>
-        <p>Cl. Braunio heri verbis Tuis salutem dixi, qui Te vicissim salutat: salvet a nobis
-          plurimum quoque Celeb. Noodius. </p>
-        <p>Groningae die 31 Maij 1699. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1699-05-31_991170516662305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Burcherus de Volder. Groningen, 31. Mai 1699</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1699-06-10_Bernoulli_Johann_I-Volder_Burchard_de" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 675:Bl.166-167</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170516662305501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433598205504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057782</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>4 S.<dimensions unit="cm"><height>20</height><width>15,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Groningae</origPlace>
+            <date when="1699-05-31">A. 31 Maij 1699</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4094052-4">Groningen</placeName>
+        <date when="1699-05-31">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1699-04-08_991170516662405501" type="prev"/>
+        <ptr target="B_1699-09-26_991170516662205501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <p>Joh. B. hat gestern de Volders Brief erhalten und den beigelegten Brief an Leibniz mit dem nächsten Boten weitergeleitet. Eine flüchtige Lektüre hat ihm gezeigt, dass de Volder viele Einwände, die Joh. B. vorausgesehen hatte, darin vorbringt. Diese Dinge sind so dunkel, dass sie wohl kaum alle aufgeklärt werden können. Joh. B. wird also nicht auf alles befriedigen eingehen können. Es scheint Joh. B. lächerlich, wie Malebranche auf Grund von Ordnungsgesetzen das bestimmen zu wollen, was aus menschlicher Sicht keine absolute Notwendigkeit mit sich führt, teils weil wir das Ordnungsgesetz, teils weil wir die Ordnung selbst nicht kennen. Es gibt zwar hinsichtlich der göttlichen Anordnungen nichts, was nicht absolute Notwendigkeit mit sich führt, d.h. was nicht a priori von einem Engel, dem Gott alle seine Anordnungen mitgeteilt hat, bewiesen werden könnte, sodass die Tatsachenwahrheiten nicht weniger notwendig sind als die Verstandeswahrheiten oder die ewigen Wahrheiten. Da aber unsere Vernunft über diese nur gemäss ihres eigenen Vermögens verfügt und über jene nur durch die Erfahrung, scheint es lächerlich, z.B. die Schiefe der Ekliptik a priori beweisen zu wollen, wie dies einst der Schaffhauser Ratsherr Hollander versucht hat und zwar mit der gleichen Sicherheit wie den Winkelsummensatz im Dreieck. Leibniz hat dies nach Joh. B.s Meinung bei weitem besser gemacht, als er sen metaphysisches System nicht als völlig sicher und geometrisch demonstriert vorgestellt, sondern in Form einer Hypothese, die ihre Grundlage in der Erfahrung hat. Joh. B. lässt sich leichte überzeugen, dass z.B. jede Veränderung ohne Sprünge erfolgt, weil ihn die Erfahrung dies lehrt, als wenn es ihm jemande als mathematische Wahrheit aufdrängen will. Für das übrige will er die Antwort Leibnizens abwarten. Der Briefwechsel de Volders mit Leibniz entlässt Joh. B. immer belehrt. Joh. B. möchte weiter am Briefwechsel de Volders mit Leibniz teilhaben.</p>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1438697/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1438698" n="1"/> <pb facs="1438700" n="2"/> <pb facs="1438701" n="3"/> <pb facs="1438702" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

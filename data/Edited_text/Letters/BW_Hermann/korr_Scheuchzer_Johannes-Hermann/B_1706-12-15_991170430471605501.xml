@@ -1,324 +1,200 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1706-12-15_991170430471605501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Scheuchzer. Basel, 15.
-            Dezember 1706</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000059895</title><title type="alt"
-            >1706-12-15_Hermann_Jacob-Scheuchzer_Johannes</title><title level="s">Basler Edition der
-            Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-119112450"
-            type="person">Jacob Hermann</rs> (1678-1733)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johannes (1684-1738) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Siegel. Auf p.95 sowie p.69 (Adress-Seite) Abrechnungen.
-            Beigelegt ist ein Zettel (7,5 x 10,5 cm) mit der Aufschrift (Hand Hermanns) "Memoire
-            pour Monsieur le Docteur jean Scheuchzer 7 Tomes de Memoires reliez 70 Port de Paris a
-            Bale 9 avec l'emballage ---- 79 Auf der Rückseite verschiedene Additionen</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1706-12-15_Hermann_Jacob-Scheuchzer_Johannes"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms H 347, pp.91-96</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430471605501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406951505504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000059895</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2,5 S.<dimensions unit="cm">
-                    <height>22</height>
-                    <width>16</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Basileae</origPlace><date when="1706-12-15">15 Xbris
-              1706</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1706-12-15">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1706-12-08_991170430472105501" type="prev"/>
-          <ptr target="B_1706-12-21_991170430471205501" type="next"/>
-          <ptr target="BW_Hermann" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johannes-Hermann" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-11850777X">Bayle, Pierre</persName>
-            <note type="lebensdaten">(1647-1706)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-141734418">Gloxin, Matthias</persName>
-            <note type="lebensdaten">(1684-1738)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-128895160">Harscher, Nicolaus</persName>
-            <note type="lebensdaten">(1683-1742)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1037529375">König, Johann Ludwig</persName>
-            <note type="lebensdaten">(1653-1711)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118816829">Ludwig</persName>
-            <note type="lebensdaten">(1638-1715)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1156754461">Müller, Melchior</persName>
-            <note type="lebensdaten">(1657-1713)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-            <note type="lebensdaten">(1672-1733)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-11765244X">Stancari, Vittorio Francesco</persName>
-            <note type="lebensdaten">(1678-1709)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119016893">Valsalva, Antonio M.</persName>
-            <note type="lebensdaten">(1666-1723)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1706-12-15_Hermann_Jacob-Scheuchzer_Johannes"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1087665/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1087706" n="91"/> Vir Celeberrime, Amice suavissime Ultimam Tuam Epistolam<note
-            type="editorial">Dieser Brief von Johannes Scheuchzer ist anscheinend nicht
-            erhalten.</note> cum inclusis septem <hi rend="u">Ludovicis Aureis</hi>,<note
-            type="editorial">Louis d'or.</note> et Harscheri Epistola<note type="editorial">Dieser
-            Brief von Nikolaus Harscher an Johannes Scheuchzer ist anscheinend nicht erhalten. In
-            der ZB Zürich (Ms H 347, pp. 33-48) sind vier andere Briefe von Harscher an Johannes
-            Scheuchzer von 1706 erhalten. </note> rite accepi: spero etiam Commentarios<note
-            type="editorial">Mém. Paris.</note> tam avide expectatos Te aut accepisse aut propediem
-          esse accepturum, quandoquidem eos nupera die veneris<note type="editorial">10. Dezember
-            1706.</note> veredario Dn. Melchioris Mulleri<note type="editorial">Es handelt sich um
-            das Handels- und Speditionshaus Melchior Müllers. </note> tradidi bene involutos ne in
-          via laedantur cum eorundem compactura nitidissima et elegantiss.<hi rend="sup">ma</hi> sit
-          Tibique sat scio placitura. Gratissimum mihi quoque fuit tua manu Nuperum Regis Galliae
-          circa Monetam statutum<note type="editorial">Unter Louis XIV. gab es mehrere
-            Währungsreformen. Gemäss der letzten von 1704-1705 entsprach ein Ecu d'argent 4 Livres
-            und 1 Louis d'or 15 Livres. </note> accipere quo utique et pro Te et pro me sollicitus
-          utar; debitum totum solvam Ludovicis aureis pro valore 13½ librarum rogaboque Dn.
-            Varignon<note type="editorial">Pierre Varignon (1654-1722). </note> ut si haec valoris
-          interpretatio impensis suis non satisfaciat id mihi Significare haud detrectat: hac ergo
-          ratione quindecim francos aut libras gallicas superfluas mihi transmisisti cum dimidia,
-          qua propter ludovicum aureum et florenum unum tibi remitto quos eam summam 15½ librarum
-          conficere credo; si vero hac ratione Cl. Varignonio haud exacte satisfactum pro debito
-          cognovero faciam ut scias. Cum Konigio<note type="editorial">Johann Ludwig König
-            (1653-1711). </note> nostro egi circa Dictionarium Criticum Baylii,<note
-            type="editorial">Bayle, Pierre, <hi rend="u">Dictionaire historique et critique ...
-              Seconde édition revuë, corrigée et augmentée par l’auteur</hi>, 3 vols., Rotterdam (R.
-            Leers) 1702. </note> hocque ipso in instanti schedulam ab ipso accipio in qua sententiam
-          suam aperit quae Tibi forsan aliqualiter arridebit, vero Dictionarium nondum accipere
-          ausus sum priusquam de Tua decretoria voluntate mihi constiterit quam proxime me
-          intellecturum spero. Si Tibi Placet oblatas a Konigio conditiones inire fac ut 6
-          exemplaria utriusque anni Novorum Curiosorum Cl.<hi rend="sup">mi</hi> Fratris<note
-            type="editorial">Johann Jakob Scheuchzer (1672-1733). </note> prima occasione accipiam;
-          quibus pro me adjicias rogo numeros 13, 25, 34 qui mihi desunt pro anno 1705; omnesque
-          reliquos a sexto exclusive usque ad finem cum Titulo et indice anni currentis 1706;
-          numerum 42, anni 1705 in duplo habeo pro quo vellem mihi mitteres numerum primum ejusdem
-          anni qui tametsi ad manus mihi sit propter nimias plicas commaculatus existens non commode
-          cum reliquis compingi poterit, mihi si placet pretium indicabis omnium<note
-            type="editorial">Es handelt sich um Exemplare, Jahrgangstitelblätter und Indices aus den
-            Jahren 1705 und 1706 der wöchentlich erscheinenden Zeitschrift von Johann Jakob
-            Scheuchzer <hi rend="u">Seltsamer Naturgeschichten des Schweizer-Lands wochentliche
-              Erzehlung (Beschreibung der Natur-Geschichten des Schweizerlands, Teil 1)</hi>, Zürich
-            (J. J. Scheuchzer) 1706. (<ref target="http://dx.doi.org/10.3931/e-rara-12115"
-              >Digitalisat</ref> bei e-rara). Die Lieferungen eines Jahrgangs wurden jeweils mit
-            einem Titelblatt und einem Index versehen zusammengebunden.</note> ut et Novorum
-          Helvetiae literariorum quorum ultimum biennium<note type="editorial">Scheuchzer, Johann
-            Jakob (ed.), <hi rend="u">Nova literaria Helvetica pro annis ...</hi>, Tiguri [Zürich]
-            (R. Simmler, D. Gessner, J. J. Scheuchzer, M. Schaufelberger/Chr. Hardmeyer)
-            1702-1715.</note> credo jam typis editum esse[.]<note type="editorial">Der Punkt wurde
-            ergänzt.</note>
-          <pb facs="1087707" n="92"/> Gloxini Disputationes,<note type="editorial">Gloxin, Matthias,
-              <hi rend="u">Dissertatio physico-medica de primo infantis vagitu. Quam Praeside viro
-              nobilissimo, amplissimo, experientissimo atque excellentissimo Dn. Joh. Sigismundo
-              Henningero, med. Doct. ejusdemque et anatomiae Prof. publ. celeberrimo, h. t. Decano
-              spectabili, solenni philiatrorum examini submittet Matthias Gloxin, Colmaria Alsatus
-              author. Ad d. 25. mens. novembr. MDCCVI</hi>, Argentorati [Strassburg] (J. Welper)
-            1706. </note> Tuumque Valsalvam etc.<note type="editorial">Es handelt sich um Valsalva,
-            Antonio Maria, <hi rend="u">De aure humana tractatus, in quo integra ejusdem auris
-              fabrica, multis novis inventis, et iconismis illustrata, describitur; omniumque ejus
-              partium usus indagantur. ...</hi>, Bononiae [Bologna] (C. Pisarri) 1704 sowie um ein
-            Manuskript über Botanik. Siehe den Brief Hermanns an Johann Jakob Scheuchzer von <rs
-              key="B_1706-12-25_991170430328205501" type="letter">1706.12.25</rs>. </note> nondum
-          accepi, adeoque non miraberis si ad Te nondum sint perlatae aut transmissae. A decimo
-          Octobris nullas a Dn. Stancario<note type="editorial">Vittorio Francesco Stancari
-            (1678-1709). </note> literas accepi, forsan Tu nuperrime aliquas ab eodem ad Te missas
-          tenes. Coeterum non est quod Te excuses de incommodis mihi inpositis quae prorsum nulla
-          sunt, sed potius Te rogandum duxi ut ita de me Tibi persuadeas, neminem esse qui
-          impensiore studio usibus Tuis inservire commodisque velificari studeat, quam illum qui se
-          toto pectore nominet Celeberrimi Nominis Tui Addictissimum Hermannum Basileae 15 Xbris
-          1706. P. S. Vous serez peut etre surpris de ne point trouver dans cette lettre le Louis
-          d'or avec le goulden lesquels je Vous ay promis, cy dessus de Vous les envoyér, mais comme
-          j'ay receu le billet cy joint de Mr. König<note type="editorial">Dieses Billet Königs
-            wurde nachträglich als p. 93 auf p. 95 des Briefes aufgeklebt.</note> apres que j'eusse
-          deja ecrit de Vous l'envoyer, j'ay jugé à propos de Changer de sentiment vous voyant pret
-          d'accepter l'offre que Mr. Konig Vous fait de prendre six exemplaires des Nouvelles de Mr.
-          Vr. Frere en partie pour le payement du dit livre, et que dans ce cas vous m'envoyeriez de
-          l'argent pour le payer tout à fait, il auroit été superflu d'envoyer de l'argent à Zuric
-          pour le rénvoyer de là ici, tout cela n'auroit servi à rien que de causer de frais
-          inutiles, ainsi je les garde encore jusques à Votre premier ordre. J'ay oublié aussi de
-          Vous prier, de m'envoyer tous les Nova literaria helvetica de Mons.<hi rend="sup">r</hi>
-          Votre Frere, au quel Vous ferez <pb facs="1087708" n="93-94"/>
-          <pb facs="1087709" n="93"/><note type="editorial">Auf dieser Seite folgen einige von
-            Scheuchzer notierte Kostenberechnungen. Auf die gleiche Seite ist das im P.S. erwähnte
-            Billet Königs aufgeklebt. Sein Text lautet: <lb/>
-            <lb/> "Memoire pour Monsieur le Docteur Jean Scheuchzer <table>
-              <row>
-                <cell> </cell>
-                <cell> </cell>
-                <cell> </cell>
-              </row>
-              <row>
-                <cell> </cell>
-                <cell> lb </cell>
-              </row>
-              <row>
-                <cell> 7 Tomes des Memoires reliez, </cell>
-                <cell> 70 </cell>
-              </row>
-              <row>
-                <cell> Port de Paris à Bale avec l'emballage </cell>
-                <cell> 9 </cell>
-              </row>
-              <row>
-                <cell> </cell>
-                <cell> 79" </cell>
-              </row>
-            </table>
-          </note> mes tres humbles complimens, excepté l'an de 1703 que j'ay seul. Je Vous conjure
-          de me marquer le prix de tout ce que je Vous demande pour Vous en satisfaire au plutot.
-          Adieu mon tres cher Monsieur et excusés cette mechante ecriture que j'ay eté obligé de
-          faire fort à l'hate. <pb facs="1087710" n="94"/><note type="editorial">Diese Seite enthält
-            einige von Scheuchzer notierte Kostenberechnungen.</note>
-          <pb facs="1087711" n="95"/> A Monsieur Monsieur Jean Scheuchzer Celebre Docteur en
-          Medecine à Zurich<note type="editorial">Auf dieser Umschlagseite des Briefes finden sich
-            weitere flüchtig notierte Kostenberechnungen von der Hand Scheuchzers.</note>
-        </p>
-      </div>
-      <pb facs="1087712" n="96" type="empty"/>
-    </body>
-  </text>
+<TEI xml:id="B_1706-12-15_991170430471605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann Scheuchzer. Basel, 15. Dezember 1706</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Siegel. Auf p.95 sowie p.69 (Adress-Seite) Abrechnungen. Beigelegt ist ein Zettel (7,5 x 10,5 cm) mit der Aufschrift (Hand Hermanns) "Memoire pour Monsieur le Docteur jean Scheuchzer 7 Tomes de Memoires reliez 70 Port de Paris a Bale 9 avec l'emballage ---- 79 Auf der Rückseite verschiedene Additionen</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1706-12-15_Hermann_Jacob-Scheuchzer_Johannes" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms H 347, pp.93-96</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430471605501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406951505504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000059895</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2,5 S.<dimensions unit="cm"><height>22</height><width>16</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Basileae</origPlace>
+            <date when="1706-12-15">15 Xbris 1706</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1706-12-15">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1706-12-08_991170430472105501" type="prev"/>
+        <ptr target="B_1706-12-21_991170430471205501" type="next"/>
+        <ptr target="BW_Hermann" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johannes-Hermann" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-11850777X">Bayle, Pierre</persName>
+          <note type="lebensdaten">(1647-1706)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-141734418">Gloxin, Matthias</persName>
+          <note type="lebensdaten">(1684-1738)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-128895160">Harscher, Nicolaus</persName>
+          <note type="lebensdaten">(1683-1742)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1037529375">König, Johann Ludwig</persName>
+          <note type="lebensdaten">(1653-1711)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118816829">Ludwig</persName>
+          <note type="lebensdaten">(1638-1715)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1156754461">Müller, Melchior</persName>
+          <note type="lebensdaten">(1657-1713)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+          <note type="lebensdaten">(1672-1733)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-11765244X">Stancari, Vittorio Francesco</persName>
+          <note type="lebensdaten">(1678-1709)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119016893">Valsalva, Antonio M.</persName>
+          <note type="lebensdaten">(1666-1723)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Hermann_Jacob">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

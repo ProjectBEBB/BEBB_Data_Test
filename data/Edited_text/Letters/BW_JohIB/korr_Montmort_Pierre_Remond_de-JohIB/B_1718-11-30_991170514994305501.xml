@@ -1,411 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1718-11-30_991170514994305501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Pierre Rémond de Montmort an Johann Bernoulli.
-            Montmort, 30. November 1718</title><title type="alt">get_date!: () an ()</title><title
-            type="alt">000056802</title><title type="alt"
-            >1718-11-30_Montmort_Pierre_Remond_de-Bernoulli_Johann_I</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Montmort, Pierre Rémond de (1678-1719) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-11-30_Montmort_Pierre_Remond_de-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 665, Nr.20*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514994305501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433078905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000056802</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>4 S.<dimensions unit="cm">
-                    <height>22</height>
-                    <width>17</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>A Monmort</origPlace><date when="1718-11-30">ce 30. Nov.
-              1718</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
-          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/ohneGnd"
-            >Montmort</placeName>
-          <date when="1718-11-30">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1718-11-30_991170514994305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Pierre Rémond de Montmort an Johann I Bernoulli. Montmort, 30. November 1718</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-11-30_Montmort_Pierre_Remond_de-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 665, Nr.20*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514994305501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433078905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000056802</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>4 S.<dimensions unit="cm"><height>22</height><width>17</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>A Monmort</origPlace>
+            <date when="1718-11-30">ce 30. Nov. 1718</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/ohneGnd">Montmort</placeName>
+        <date when="1718-11-30">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1718-10-28_991170514994405501" type="prev"/>
+        <ptr target="B_1719-01-01_991170514994205501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="fre">Französisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1718-10-28_991170514994405501" type="prev"/>
-          <ptr target="B_1719-01-01_991170514994205501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="fre">Französisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1153519720">Birr, Johann Jacob</persName>
-            <note type="lebensdaten">(1677-1765)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118669478">Clarke, Samuel</persName>
-            <note type="lebensdaten">(1675-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124465641">Craig, John</persName>
-            <note type="lebensdaten">(1663-1731)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-            <note type="lebensdaten">(1678-1733)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-            <note type="lebensdaten">(1643-1727)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-            <note type="lebensdaten">(1685-1731)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1718-11-30_Montmort_Pierre_Remond_de-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1052116/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1052117" n="1"/> A Monmort ce 30. Nov. 1718.</p>
-        <p>Je crois vous avoir parlé du livre de M. Craig<note type="editorial">Craig, John
-            (1663-1731).</note> qui paroist depuis peu. Comme il ne tombera peutestre pas si tost
-          entre vos mains je crois vous faire plaisir de vous en rendre compte.</p>
-        <p>Le tittre est De calculo fluentium libri duo quibus subjunguntur libri duo de optica
-            analytica.<note type="editorial">[Text folgt].</note> L'auteur contre son ancienne
-          prattique se sert de points à la maniere Angloise. Dans la 1.<hi rend="sup">ere</hi>
-          section il cherche l'integrale de <formula>zdy</formula> dans les courbes exprimées par
-          ces equations <formula>z^{m}=ay^{n}+bz^{e}y^{r}</formula>,
-            <formula>z^{m}=ay^{n}+bz^{e}y^{r}+b^{e}z^{s}y^{t}</formula> et ainsi de suitte.</p>
-        <p>Voicy son 1.<hi rend="sup">er</hi> Exemple par lequel vous jugerez de sa methode.
-            <formula>z^{m}=</formula><formula>ay^{n}+bz^{e}y^{r}</formula> unde erit
-            <formula>Azy+Bz^{f}y^{g}=\int zdy</formula> quadratura omnium curvarum quarum areae per
-          duos tantum terminos exprimi possunt ex utraque aequatione inveniatur valor quantitatis
-            <formula>dz</formula>, invenietur resultans
-            <formula>y^{n}+z^{e}y^{r}+z^{f-1}y^{g+n-1}+z^{e+f-1}y^{g+r-1}=0</formula>, comparatio
-          termini 2.<hi rend="sup">i</hi>
-          <formula>z^{e}y^{r}</formula> exponentis cum exponentibus termini tertii erit
-            <formula>e=f-1</formula>, <formula>r=g+n-1</formula>, unde <formula>f=e+1</formula> et
-            <formula>g=r-n+1</formula>, quare si brevitatis causa ponatur <formula>c=r-n</formula>
-          et <formula>g=c+1</formula> et <formula>r=c+n</formula>: adeoque
-            <formula>z^{m}=ay^{n}+bz^{e}</formula><formula>y^{c+n}</formula> definiet omnes curvas
-          trinomiales et <formula>Azy+Bz^{e+1}y^{c+1}=\int zdy</formula> quando quadratura constat
-          duobus tantum terminis. Sed si instituta fuisset comparatio inter exponentes termini
-          secundi <formula>z^{e}y^{r}</formula> et termini quarti
-            <formula>z^{e+f-1}y^{g+r-1}</formula> tum foret <formula>e=e+f-1</formula> et
-            <formula>r=g+r-1</formula> unde <formula>f=1</formula> et <formula>g=1</formula>
-          scilicet indeterminati aequales determinatis et proinde rejicienda est haec
-          comparatio.</p>
-        <p>Dans la 2.<hi rend="sup">e</hi> section il cherche conditiones quadrabilitatis et il
-          trouve pour les trinomes que la relation des exposants doit estre determinée par cette
-          équation
-            <formula>\overline{c+n}\times\overline{2e+1}+\overline{m-e}\times\overline{2c+1}=0</formula>.
-          Voicy un cor. assez beau mais que je ne trouve pas demontré. Sit <formula>N</formula>
-          Numerus terminorum aequationis curvas propositas definientis erit
-            <formula>\frac{Nc-2c+2e-Ne+m+n}{-cm-en}</formula> illa quadrabilitatis conditio quae
-          respicit exponentis numerum debet Numerus per hanc quantitatem algebraicam expressus esse
-          integer et positivus unde in curvis trinomialibus debet
-            <formula>\frac{c-e+m+n}{-cm-en}</formula> esse Numerus integer et positivus nam in his
-            <formula>N=3</formula>, similiter in curvis quadrinomialibus debet
-            <formula>\frac{2c-2e+m+n}{-cm-en}</formula> esse Numerus integer et positivus nam in his
-            <formula>N=4</formula> et sic de caeteris. La difficulté est plus grande pour determiner
-          le rapport qui doit estre entre les coefficients. Il trouve que pour integrer l'element de
-          la courbe quadrinomiale <formula>z^{m}=ay^{n}+bz^{e}y^{c+n}+bbz^{2e}y^{2c+n}</formula>
-          dont les quadratures soient exprimées par 3 termes, le rapport des coefficients doit estre
-          exprimé par cette equation <pb facs="1052118" n="2"/>
-          <formula>\frac{\overline{m-2e}\times\overline{1-A}+\overline{2c+n}\times-A}{m\times\overline{2c+1}+n\times\overline{2e+1}}\times\frac{b^{2}}{a}+\frac{\overline{m-e}\times\overline{c+1}+\overline{c+n}\times\overline{e+1}}{m\times\overline{2c+1}+n\times\overline{2e+1}}\times-\frac{bB}{a}=\frac{\overline{m-2e}\times\overline{c+1}+\overline{2c+n}\times\overline{e+1}}{\overline{m-e}\times\overline{2c+1}+\overline{c+n}\times\overline{2e+1}}\times-\frac{bbB}{b}</formula>.
-          (Je copie sans rien changer). J'oubliois de vous dire qu'il suppose
-            <formula>Azy+Bz^{e+1}y^{c+1}+Cz^{2e+1}y^{2c+1}=\int zdy</formula>. Sa suitte pour la
-          quadrature de la courbe exprimée par cette equation
-            <formula>z^{m}=ay^{n}+bz^{e}y^{c+n}+b^{2}z^{2e}y^{2c+n}</formula> est celle qui suit
-            <formula>A=\frac{m}{m+n}</formula>,
-            <formula>B=\frac{\overline{m-e}\times\overline{1-A}-cA-nA}{m\times\overline{c+1}+n\times\overline{e+1}}\times\frac{b}{a}</formula>,
-            <formula>C=\frac{\overline{\overline{m-2e}\times\overline{1-A}+\overline{2c+n}\times-A}\times\frac{b^{2}}{a}}{m\times\overline{2c+1}+n\times\overline{2e+1}}+\frac{\overline{\overline{c+n}\times\overline{e+1}+\overline{m-e}\times\overline{c+1}}\times-\frac{bB}{a}}{m\times\overline{2c+1}+n\times\overline{2e+1}}</formula>,<formula>D=\frac{\overline{\overline{m-2e}\times\overline{c+1}+\overline{2c+n}\times\overline{e+1}}\times-\frac{b^{2}B}{a}}{m\times\overline{3c+1}+n\times\overline{3e+1}}+\frac{\overline{\overline{m-e}\times\overline{2c+1}+\overline{c+n}\times\overline{2e+1}}\times-\frac{bC}{a}}{m\times\overline{3c+1}+n\times\overline{3e+1}}</formula>,<formula>E=\frac{\overline{\overline{m-2e}\times\overline{2c+1}+\overline{2c+n}\times\overline{2e+1}}\times-\frac{b^{2}C}{a}}{m\times\overline{4c+1}+n\times\overline{4e+1}}+\frac{\overline{\overline{m-e}\times\overline{3c+1}+\overline{c+n}\times\overline{3e+1}}\times-\frac{bD}{a}}{m\times\overline{4c+1}+n\times\overline{4e+1}}</formula>.
-          On voit la loy pour continuer.<note type="editorial">Die grossen Vincula im Term
-              "<formula>E</formula>" wurden von Montmort vergessen und sind hier ergänzt.</note>
-          Quando hae figurae sunt quadrabiles tum tot seriei termini sumantur quot sunt unitates in
-            <formula>\frac{2c-2e+m+n}{-cm-en}+1</formula>. Ex. sit
-            <formula>z^{2}=ay^{-1}+2az^{3}y+</formula><formula>az^{6}y^{3}</formula>, ex
-          comparatione hujus cum generali quadrinomio invenies <formula>m=2</formula>,
-            <formula>n=-1</formula>, <formula>c=2</formula>, <formula>e=3</formula> unde
-            <formula>\frac{2c-2e+m+n}{-cm-en}=1</formula> quae est conditio quadrabilitatis
-          exponentes respiciens, et <formula>b=2a</formula>, <formula>b^{2}=a</formula> quibus
-          competunt altera quadrabilitatis conditio ut per meth. in sect. 2 traditam patebit et
-          proinde fig. proposita Geometrica quadr. capax est et quia
-            <formula>\frac{2c-2e+m+n}{-cm-en}+1=2</formula>, ideo quadratura illa obtinetur
-          substituendo praedictos valores quantitatum <formula>\int zdy=2zy-z^{3}y</formula>.</p>
-        <p>Il applique la meme methode aux courbes quarum aequationes definiuntur per aequationem
-          completam quinque, sex etc. terminorum. La section 5 est de quadraturis fig. Geometrice
-          irrationalium. On a deja vu sa methode ailleurs. Apres l'avoir exposé et donné des Ex. il
-          donne ce scolium, ex his quadraturis irrationalibus facile invenietur an figurae portio
-          quaevis sit Geometrice quadrabilis, quaenam portio sit, quaeque ejus quadratura. Nam cum
-          termini irrationales, id est termini quos <formula>v</formula> ingreditur, impediunt
-          quominus areae expressio generalis sit Geometrica ideo ut portio aliqua sit quadraturae
-          Geometricae capax efficiendum est ut evanescant omnes termini in quibus
-            <formula>v</formula> occurrit quod fit ponendo omnes illos terminos nihilo aequales et
-          sic etc. <pb facs="1052119" n="3"/> Il donne ensuitte les quadratures parfaittes des
-          espaces, segmens, secteurs etc. que vous avez determiné autrefois dans la cycloide et il
-          finit en disant, ex hoc fundamento deducuntur omnia illa quae<note type="editorial">Im
-            Manuskript steht "qui".</note> de cycloidis spatiis innumeris Geometrice quadrabilibus
-          tradiderunt fratres clarissimi Jac. et Joh. Bernouilli<note type="editorial">Gemeint sind
-            Jacob I (1655-1705) und Johann I Bernoulli (1667-1748).</note> in Act. Erud. Leip. Ipse
-          autem ni fallor primus detexi hoc fundamentum in Act. phil. R. Soc. 7<hi rend="sup"
-            >bre</hi> 1697 in quibus duo exhibui theoremata innumerarum figurarum irrationalium
-          quadraturas determinantia<note type="editorial">Im Manuskript steht "determinatia".</note>
-          quae in Geometria prorsus nova erant utque pateat Methodi precedentis usus<note
-            type="editorial">Craig, John, <hi rend="u">De calculo fluentium libri duo. Quibus
-              subjunguntur libri duo de optica analytica</hi>, Londini 1718, p. 30.</note> (c'est la
-          vostre), il l'applique aux lunules, à une certaine courbe de M. Leibnitz<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> etc. Ce qui suit regarde
-          la maniere de separer les indeterminées et est plus neuf, le 1.<hi rend="sup">er</hi> cas
-          est facile, je le passe, voicy le 2.<hi rend="sup">e</hi>
-          <formula>ay^{m}dy=by^{m+1}dx+qx</formula></p>
-        <p>in quo <formula>q</formula> denotat quantitatem ex determinatis et <formula>x</formula>
-          utcunque compositam. Sit fluens quaesita <formula>By^{m+1}=z^{e}\times\int
-            z^{n}qdx</formula> (unde <formula>Bz^{-e}y^{m+1}=\int z^{n}qdx</formula>) cujus fluxio
-          est <formula>\overline{m+1}By^{m}dy=z^{e+n}qdx+ez^{e-1}dz\times\int z^{n}qdx</formula> in
-          qua si substituatur praecedens valor quantitatis <formula>\int z^{n}qdx</formula> aequatio
-          erit <formula>\overline{m+1}By^{m}dy=eBy^{m+1}z^{-1}dz+z^{e+n}qdx</formula>. Fiat
-          comparatio inter terminos hujus et aequationis propositae erit (1.<hi rend="sup">a</hi>)
-            <formula>\overline{m+1}By^{m}dy=ay^{m}dy</formula> unde
-            <formula>B=\frac{a}{a+1}</formula>
-          <note type="editorial">Bei Craig, John, <hi rend="u">De calculo fluentium libri duo</hi>.
-              <hi rend="u">Quibus subjunguntur libri duo de optica analytica</hi>, Londini 1718, p.
-            41 steht: <formula>\frac{a}{m+1}</formula>.</note> (2.<hi rend="sup">a</hi>)
-            <formula>eBy^{m+1}z^{-1}dz=by^{m+1}dx</formula> unde <formula>eBz^{-1}dz=bdx</formula>
-          et quia hic separantur indeterminatae cum suis fluxionibus ideo per methodos praecedentes
-          invenietur hujus fluens seu <formula>z</formula> per <formula>x</formula> et determinatas.
-            (3.<hi rend="sup">a</hi>) <formula>z^{e+n}qdx=qdx</formula> unde
-            <formula>z^{e+n}=1</formula> ergo <formula>e+n=0</formula> et quia non plures sunt
-          comparationes ideo sumatur <formula>e</formula> vel <formula>n</formula> ad arbitrium; ut
-          si sumatur <formula>e=1</formula> tum <formula>n=-1</formula>, ex his patet quod
-            <formula>\frac{ay^{m+1}}{m+1}=z\times\int z^{-1}qdx</formula> sit fluens assumpta in qua
-          si pro <formula>z</formula> substituatur valor ejus per <formula>x</formula> et datas
-          expressus per comparationem 2.<hi rend="sup">am</hi> inventus tum fiet separatio
-          indeterminatarum et proinde fluens quantitatis <formula>z^{-1}qdx</formula> dabitur per
-          methodos praecedentes et si exterminatur <formula>z</formula> fluens assumpta dabit
-          relationem inter <formula>y</formula> et <formula>x</formula>.</p>
-        <p><pb facs="1052120" n="4"/> Casus 3.<hi rend="sup">us</hi>
-          <formula>ay^{mdy}=by^{m+1}pdx+qdx</formula></p>
-        <p>in quo <formula>p</formula> et <formula>q</formula> sunt quantitates ex
-            <formula>x</formula> determinatis<note type="editorial">Das <formula>x</formula> vor
-            "determinatis" wurde nach Craigs Druck ergänzt.</note> utcunque compositae. Assumo ut in
-          praecedenti <formula>By^{m+1}=z^{e}\times\int z^{n}qdx</formula> cujus fluxio est
-            <formula>\overline{m+1}\times</formula><formula>By^{m}dy=eBy^{m+1}z^{-1}dz+z^{e+n}qdx</formula>,
-          ex comparatione hujus cum proposita erit
-            <formula>\overline{m+1}By^{m}dy=ay^{m}dy</formula> unde <formula>B=\frac{a}{m+1}\text{
-            et }eBy^{m+1}z^{-1}dz=by^{m+1}pdx</formula> unde <formula>eBz^{-1}dz=bpdx</formula>,
-          quia <formula>p</formula> ex hyppotesi componitur ex <formula>x</formula> et
-          indeterminatis ideo in hac 2.<hi rend="sup">a</hi> comparatione separantur indeterminatae
-            <formula>z</formula>, <formula>x</formula> cum suis fluxionibus <formula>dz</formula>,
-            <formula>dx</formula>, adeoque inveniri potest <formula>z</formula> per
-            <formula>x</formula> et datas denique <formula>z^{e+n}qdx=qdx</formula> unde
-            <formula>z^{e+n}=1</formula> adeoque <formula>e+n=0</formula>, sumatur ad arbitrium
-            <formula>e=1</formula> adeoque <formula>n=-1</formula> ex his valoribus quantitatum
-            <formula>B</formula>, <formula>e</formula>, <formula>n</formula> fluens assumpta erit
-            <formula>\frac{ay^{m+1}}{m+1}=z\times\int z^{-1}qdx</formula> in qua si pro
-            <formula>z</formula> substituatur ejus valor ex comparatione 2.<hi rend="sup">a</hi>
-          inventus et tum dabitur fluens quantitatis <formula>z^{-1}qdx</formula> adeoque habetur
-          fluens quaesita seu aequatio exprimens relationem inter <formula>y</formula> et
-            <formula>x</formula>. Q. E. I.</p>
-        <p>Casus 4.<hi rend="sup">us</hi>
-          <formula>ady=pydx+by^{n}qdx</formula></p>
-        <p>in quo <formula>p</formula> et <formula>q</formula> sunt quantitates compositae ex
-            <formula>x</formula> et determinatis, transmutetur proposita aequatio in simpliciorem
-          hoc modo. Assumatur <formula>y=v^{r}</formula> ubi <formula>v</formula> denotat
-          quantitatem indeterminatam cujus exponens est <formula>r</formula>; ope hujus exterminetur
-            <formula>y</formula> et <formula>dy</formula> ex aequatione proposita et erit
-            <formula>arv^{r-1}dv=pv^{r}dx+bv^{rn}qdx</formula> quae divisa per
-            <formula>v^{rn}</formula> dat <formula>arv^{r-1-rn}dv=pv^{r-rn}dx+bqdx</formula> ut haec
-          simplicissima fiat ponatur <formula>r-1-rn=0</formula> unde
-            <formula>r=\frac{1}{1-n}</formula>, adeoque erit
-            <formula>\frac{adv}{1-n}=pvdx+bqdx</formula>, sed manifestum est hanc aequationem
-          contineri sub aequatione casus 3.<hi rend="sup">ii</hi> scilicet quando
-            <formula>m=0</formula> ergo per meth. in casu 3 traditam invenietur aequationis hujus
-          fluens seu relatio inter <formula>v</formula> et <formula>x</formula>, sed ex assumpta
-            <formula>y=v^{\frac{1}{1-n}}</formula> habetur relatio inter <formula>v</formula> et
-            <formula>y</formula> ergo ex utraque habetur relatio inter <formula>y</formula> et
-            <formula>x</formula>. Q. E. I.</p>
-        <p>Casus V. <formula>ay^{c}dy=by^{n}qdx+pdx</formula></p>
-        <p>in quo <formula>p</formula> et <formula>q</formula> denotant quantitates datas per
-            <formula>x</formula>. Transmutetur aequatio proposita in simpliciorem ut in praecedenti
-          casu. Scilicet assumendo <formula>y=v^{r}</formula> cujus ope si exterminetur
-            <formula>y</formula> et <formula>dy</formula> erit <formula>ar\times
-            v^{cr+r-1}dv=bv^{rn}qdx+pdx</formula>. Destruatur exponens quantitatis
-            <formula>v</formula> in primo termino, ponendo <formula>cr+r-1=0</formula> seu
-            <formula>r=\frac{1}{c+1}</formula> unde
-            <formula>\frac{adv}{c+1}=bv^{\frac{n}{c+1}}qdx+pdx</formula> cujus fluens facile
-          invenietur per methodum <hi rend="uu">quae in casu 2 et 3</hi><note type="editorial">Der
-            im Manuskript unterstrichene Satzteil ist durch ein darunter geschriebenes "non"
-            ausgezeichnet. Das "non" findet sich nicht im Craigs Druck.</note> traditur; ex inventa
-          relatione inter <formula>v</formula> et <formula>x</formula><note type="editorial">An
-            dieser Stelle ist irrtümlich "et assumpta relatione inter <formula>v</formula> et
-              <formula>x</formula>" geschrieben. Diese Passage findet sich nicht in Craigs
-            Druck.</note> et assumpta relatione <formula>y=v^{\frac{1}{c+1}}</formula> inter
-            <formula>v</formula> et <formula>y</formula> habetur relatio inter <formula>y</formula>
-          et <formula>x</formula>. Q. E. I.</p>
-        <p>Dans une lettre que j'ay recu depuis peu de M. Taylor<note type="editorial">Taylor, Brook
-            (1685-1731).</note> il me marque qu'il y a erreur dans la solution de ce 5. cas et qu'il
-          l'a mandé à l'auteur<note type="editorial">Craig, John (1663-1731).</note>. Vous en
-          jugerez. Le livre 2 contient des Exemples[:] dato numero invenire logarithmum, dato
-          logarithmo invenire numerum, invenire series quae exhibeant logarithmos sinuum rectorum,
-          tangentium, secantium, invenire series pro arcu circulari ejusque sinubus, tangente et
-          chorda, deux prob. sur la ligne loxodromique. Tout cela M.<hi rend="sup">r</hi> donné cy
-          devant par vous M.<hi rend="sup">r</hi>, vostre frere<note type="editorial">Bernoulli,
-            Jacob I (1655-1705).</note> et M. Leibnitz<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note> compose les 3 sections de cette 2.<hi rend="sup">e</hi>
-          partie. La 4.<hi rend="sup">eme</hi> et derniere a pour tittre De transmutatione figurarum
-          curvilinearum. M. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> y est
-          cité comme vous jugez bien. Il ne cite personne dans les<note type="editorial">Im
-            Manuskript steht "le".</note> 3 precedentes. Le traitté Optica analytica est court et me
-          paroist bon. J'ay recu depuis peu quelques cayers des Transactions philosophiques dans les
-          quels je trouve des choses qui vous regardent, je vous en ferai part incessament. Je n'ai
-          pas le temps de recommencer une autre feuille. J'ay l'honneur d'estre Monsieur avec mon
-          attachem[ent] ordinaire Vostre tres humble et tres obeissant serviteur Remond de
-          Monmort</p>
-        <p>J'ay fait remettre il y a 15 jours chez M. Birr<note type="editorial">Birr, Johann Jacob
-            (1677-1765).</note> un pacquet à vostre adresse. Il y a pour vous 4 exemplaires du
-          traitté des suittes et le recueil de lettres de M.<hi rend="sup">rs</hi> Leibnitz<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> et Clarc<note
-            type="editorial">Clarke, Samuel (1675-1729).</note>,<note type="editorial">[Text
-            folgt].</note> pour M. vostre neveu<note type="editorial">Bernoulli, Nicolaus I
-            (1687-1759).</note> 3 exemp. de mon livre Essay d'analyse et 4 des suittes, pour M.
-            Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> un exempl. Essay
-          d'analyse et 4 des suittes.<note type="editorial">[Text folgt].</note>
-        </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1153519720">Birr, Johann Jacob</persName>
+          <note type="lebensdaten">(1677-1765)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118669478">Clarke, Samuel</persName>
+          <note type="lebensdaten">(1675-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124465641">Craig, John</persName>
+          <note type="lebensdaten">(1663-1731)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+          <note type="lebensdaten">(1678-1733)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+          <note type="lebensdaten">(1643-1727)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+          <note type="lebensdaten">(1685-1731)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1052116/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1052117" n="1"/> <pb facs="1052118" n="2"/> <pb facs="1052119" n="3"/> <pb facs="1052120" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,277 +1,213 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1705-03-26_991170514969905501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Bernoulli. Basel, 26. März
-            1705</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000055912</title><title type="alt"
-            >1705-03-26_Hermann_Jacob-Bernoulli_Johann_I</title><title level="s">Basler Edition der
-            Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Hermann, Jacob (1678-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>1 leeres Blatt</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1705-03-26_Hermann_Jacob-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 659, Nr.8*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514969905501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972432924205504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000055912</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2 S.<dimensions unit="cm">
-                    <height>21</height>
-                    <width>15,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Basileae</origPlace><date when="1705-03-26">26. Martii
-              1705</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1705-03-26">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1704-12-03_991170514970005501" type="prev"/>
-          <ptr target="B_1705-12-26_991170514969805501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-143126717">Carré, Louis</persName>
-            <note type="lebensdaten">(1663-1711)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117659606">Cheyne, George</persName>
-            <note type="lebensdaten">(1671-1743)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-104188527X">Colas de la Treille, Jacques</persName>
-            <note type="lebensdaten">(1665-1723)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-129551651">Gregory, David</persName>
-            <note type="lebensdaten">(1659-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-12208263X">Gürtler, Nicolaus</persName>
-            <note type="lebensdaten">(1654-1711)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-            <note type="lebensdaten">(1681-1737)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117573752">La Hire, Philippe de</persName>
-            <note type="lebensdaten">(1640-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
-            <note type="lebensdaten">(1667-1754)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
-            <note type="lebensdaten">(1657-1740)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117327727">Wetstein, Hendrik</persName>
-            <note type="lebensdaten">(1649-1726)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1705-03-26_Hermann_Jacob-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1042438/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1042439" n="1"/> Vir Excellentissime et Celeberrime, </p>
-        <p>Fautor et Amice Honoratissime;</p>
-        <p>Oblata hac occasione Doctiss. Nepotis Tui, mitto tandem binas epistolas, unam Cl.
-          Volderi, alteram Dn. de la Treille, ex quibus Tuum studium et curam Ultrajectinae ut
-          admoverer Matheseos Cathedrae, maxima cum voluptate perspexi, Tuamque adeo eximiam erga me
-          Benevolentiam, pro quibus gratias, quas possum ago maximas, Tuam Excellentiam in simul
-          rogitans eodem ut Amore et favore me proporro prosequi dignetur. </p>
-        <p>Si ingrati unquam et molesti quicquam mihi accidit, id sane fuit, quod nulla prorsus
-          occasio aut commoditas se se offerret Commentarios Academiae Regiae Scientiarum Tibi
-          destinatos transmittendi, cujus rei causas in postremis meis literis me aperuisse
-          recordor. Spero interim, Schedulam a Cl. Varignono Te jam accepisse, pro accipiendis iis
-          Commentariis a Bibliopola Amstoledamensi<note type="editorial">[Text folgt]</note>.
-          Historia Academiae A.<hi rend="sup">i</hi> 1702 jam prelo exiit, brevique sequentur
-          Commentarii A. 1703<note type="editorial">[Text folgt]</note>. Novissimos Academiae
-          comentarios A.<hi rend="sup">i</hi> 1702 nondum vidi, scio nihilominus Dn. Varignon
-          specimen de Resistentia Solidorum eis inseruisse, estque Cl. hic Vir ex Parisinis ferme
-          solus qui aliquid egregii promere soleat, dum alii saepe numero talia edant specimina quae
-          non magnam novitatis habent gratiam; ut sunt Cl. Hirii demonstratio analytica Regulae
-          Geometriae Practicae de invenienda ex tribus Trianguli Lateribus, Trianguli aream, Carrei
-          rectificatio Cycloïdis ope Calculi integralis etc.<note type="editorial">[Text
-            folgt]</note>; Tua sunt, Vir Excellentissime, et Cl. Fratris reperta quae, meo quidem
-          judicio gallicanae Societatis Acta ornant. </p>
-        <p>Marpurgo nuperrime literas a Cl. Iselio Hist. et Eloqu. ibidem Professore accepi, in
-          quibus mihi significavit, singulos ibi Professores Principi suo <pb facs="1042440" n="2"/>
-          qui ab ipsis petierat, ut sibi aliquem indicarent, qui vacanti eo in loco Matheseos
-          Professioni praefici posset, me esse commendaturos statim atque aliquam meae voluntatis de
-          acceptanda statione significationem edidissem, sed quia annuum stipendium non ultra 150
-          florenos se extendit, Patavinam Marburgensi praefero, in qua quingentes ad minimum
-          Imperiales accipiam, uti Amicus Italus in postremis suis literis ad me scripsit, qui in
-          iis etiamnum a me petit, ut quale accipere cupiam Professorale praemium libere ipsi
-            dicerem.<note type="editorial">Brief nachweisen</note>
-        </p>
-        <p>Dixi, ni fallor, in ultimis meis me etiam invenisse solutionem Problematis generalissimi
-          inveniendi summam progressionis finitae
-            <formula>a^{n}+b^{n}+c^{n}+d^{n}\textrm{etc.}</formula> nam quantitas
-            <formula>a</formula>, vel <formula>b</formula>, vel <formula>c</formula>, vel
-            <formula>d</formula> etc. exprimi potest per
-            <formula>Af+Bff+Cf^{3}+Df^{4}\textrm{etc.}</formula> ubi <formula>A</formula>,
-            <formula>B</formula>, <formula>C</formula>, <formula>D</formula> etc. sunt
-          coëfficientes, et <formula>f</formula> numerus quilibet integer. Jam
-            <formula>\int\overline{Af+Bff+Cf^{3}+Df^{4}\textrm{etc.}}^{n}</formula> ita invenire
-          licet, quia constat quomodo unum quodlibet multinomium ad datam potestatem
-            <formula>n</formula> elevandum sit, singula infinitae ejus seriei membra summari
-          possunt, eo modo, quem Tibi jam in praecedentibus meis literis ex[p]osui. </p>
-        <p>Vidisti sine dubio, tum Cheynei Librum circa Calculum integralem tum Moyvraei Criticam in
-          eum librum: hoc posterius Moyvraeanum opus nondum nancisci potui tametsi aliquoties jam
-          Amstelodanum scripserim id ut mihi inde mittatur, una cum Newtoni tractatu Latino de
-          Speciebus et Quadratura Curvarum, et Anglico de Coloribus<note type="editorial">[Text
-            folgt]</note>, quem Librum Newtonianum Francofurto avidissime expecto. Cheynei Liber
-          plurima egregia mihi continere videtur; interim curiosissimus sum ex Te scire quid de his
-          recensitis libris et de Gregorii Astronomia Geometrica sentias, quam Wetstenius pretio 16
-          florenorum holl. mihi misit, tametsi ne tertium quidem, ut vocant, alphabetum compleat. </p>
-        <p>Nosti haud dubie quod Cl. Noster Werenfelsius ad Cathedram Theologicam apud Franeckeranos
-          vocatus fuerit, quam tamen<note type="editorial">Im Manuskript steht "tanent"</note>
-          recusavit. Eam stationem forsan nostrum Gürtlerum mansit<note type="editorial">[Text
-            folgt]</note>. Hisce vale, Vir Celeberrime, et mihi fave qui me semper profitebor, </p>
-        <p>Celeberrime Nominis Tui </p>
-        <p>Cultorem perpetuum</p>
-        <p>Hermannum.</p>
-        <p>Basileae 26. Martii 1705. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1705-03-26_991170514969905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann I Bernoulli. Basel, 26. März 1705</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>1 leeres Blatt</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1705-03-26_Hermann_Jacob-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 659, Nr.8*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514969905501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972432924205504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000055912</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2 S.<dimensions unit="cm"><height>21</height><width>15,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Basileae</origPlace>
+            <date when="1705-03-26">26. Martii 1705</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1705-03-26">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1704-12-03_991170514970005501" type="prev"/>
+        <ptr target="B_1705-12-26_991170514969805501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-143126717">Carré, Louis</persName>
+          <note type="lebensdaten">(1663-1711)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117659606">Cheyne, George</persName>
+          <note type="lebensdaten">(1671-1743)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-104188527X">Colas de la Treille, Jacques</persName>
+          <note type="lebensdaten">(1665-1723)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-129551651">Gregory, David</persName>
+          <note type="lebensdaten">(1659-1708)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-12208263X">Gürtler, Nicolaus</persName>
+          <note type="lebensdaten">(1654-1711)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+          <note type="lebensdaten">(1681-1737)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117573752">La Hire, Philippe de</persName>
+          <note type="lebensdaten">(1640-1719)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
+          <note type="lebensdaten">(1667-1754)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
+          <note type="lebensdaten">(1657-1740)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117327727">Wetstein, Hendrik</persName>
+          <note type="lebensdaten">(1649-1726)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1042438/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1042439" n="1"/> <pb facs="1042440" n="2"/> <pb facs="1042441" n="3"/> <pb facs="1042442" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

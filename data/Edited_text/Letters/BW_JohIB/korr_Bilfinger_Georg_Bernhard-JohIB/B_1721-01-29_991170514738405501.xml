@@ -1,268 +1,187 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1721-01-29_991170514738405501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Georg Bernhard Bilfinger an Johann Bernoulli.
-            Tübingen, 29. Januar 1721</title><title type="alt">get_date!: () an ()</title><title
-            type="alt">000055585</title><title type="alt"
-            >1721-01-29_Bilfinger_Georg_Bernhard-Bernoulli_Johann_I</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Bilfinger, Georg Bernhard (1693-1750) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1721-01-29_Bilfinger_Georg_Bernhard-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 653, Nr.6*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514738405501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972432950205504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000055585</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2 Bl.<dimensions unit="cm">
-                    <height>21</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Tubingae</origPlace><date when="1721-01-29">d. 29. Jan.
-              1721</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
-          <persName key="pers_DE-588-118663208">Bilfinger, Georg Bernhard</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4061147-4"
-            >Tübingen</placeName>
-          <date when="1721-01-29">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1721-01-29_991170514738405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Georg Bernhard Bilfinger an Johann I Bernoulli. Tübingen, 29. Januar 1721</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1721-01-29_Bilfinger_Georg_Bernhard-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 653, Nr.6*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514738405501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972432950205504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000055585</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2 Bl.<dimensions unit="cm"><height>21</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Tubingae</origPlace>
+            <date when="1721-01-29">d. 29. Jan. 1721</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118663208">Bilfinger, Georg Bernhard</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4061147-4">Tübingen</placeName>
+        <date when="1721-01-29">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1720-07-03_991170430102205501" type="prev"/>
+        <ptr target="B_1721-02-19_991170430101505501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Bilfinger_Georg_Bernhard-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1720-07-03_991170430102205501" type="prev"/>
-          <ptr target="B_1721-02-19_991170430101505501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Bilfinger_Georg_Bernhard-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118670115">Corneille, Thomas</persName>
-            <note type="lebensdaten">(1625-1709)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118680897">Dryden, John</persName>
-            <note type="lebensdaten">(1631-1700)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-            <note type="lebensdaten">(1685-1731)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1721-01-29_Bilfinger_Georg_Bernhard-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1070009/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1070010" n="1"/> Vir Magnifice, </p>
-        <p>et </p>
-        <p>Mathematice Princeps.</p>
-        <p>Postquam me morosae febris quotidiani insultus tandem aliquando, post menses aliquot,
-          redire patiuntur ad officium, nolo committere, ut, quas Tibi debeo litteras, ulterior mora
-          impediat. Sunt hisce Litteris addita aliquot Jconis Tuae exempla, quae ab amicis in eum
-          finem mihi communicata sunt. Emendati sunt quidam prioris typi errores, video tamen
-          superesse, quos corrigi non potuisse suspicor. Vitam <pb facs="1070011" n="2"/> typis
-          exscriptam proxime expecto. Ex Actis Lips. mense majo et Junio<note type="editorial"
-            >Bernoulli, Nicolaus II, Nic. <hi rend="u">Bernoulli Jo. fil exercitatio Geometrica de
-              Trajectoriis Orthogonalibus, continens varias earum tum inveniendarum tum
-              construendarum methodos, sua vel Demonstratione vel Analysi munitas, cum praemissa
-              discussione quarundam ejusdem problematis solutionem</hi>, in: AE Maji 1720, pp.
-            223-237 und Bernoulli, Nicolaus II, <hi rend="u">Enodatio alicuius problematis
-              Geometrici a Cel. Jac. Hermanno propositi; atque de Inveniendis Curvis Algebraicis, ab
-              eodem Viro propositis, quae non sint indefinite rectificabiles, habeant tamen aliquos
-              arcus rectificationem admittentes</hi>, in: AE Junii 1720, pp. 269-285. </note>
-          intellexi, postquam redire mihi licuit ad studia, Doctissimum filium Tuum nondum ea
-          vidisse, quae T. VI, P. II, p. 402 sqq. Bibliothecae Anglicanae leguntur.<note
-            type="editorial">Es handelt sich um eine Rezension der <hi rend="u">Apologia D. Brook
-              Taylor, J. U. P. et R. S. S. contra V. C. J. Bernoullium, Math. Prof. Basileae</hi>.
-            Sie ist als zweiter Teil des Art. IV, <hi rend="u">Sixieme Extrait des Memoires
-              Philosophiques de la Societé Royale</hi> abgedruckt in: <hi rend="u">Bibliotheque
-              Angloise</hi> T. VI, P. II, Amsterdam 1719, pp. 403-406. </note> Quod enim ipse saltim
-          suspicatur in Schediasmate mense majo,<note type="editorial">Op. 116 </note> id aperte hic
-          Taylorus prodidit. Facit rei indignitas, ut non sine nausea legam imputationes et
-          declamationes tanto ineptiores, quod earum nonnisi in Autore Anglo exemplum invenire
-          potuerunt Bibliothecae Auctores. Describam tamen, aversaeque paginae illinam, ut
-          intelligas, quousque impetus istorum hominum progrediatur. Cetera Tuo, quem penitus ambio,
-          favori me sollicite commendo </p>
-        <p>Tubingae d. 29. Jan. 1721. </p>
-        <p>Tuae Magnificentiae ante omnes Cultor demississimus, M. Georg Bernh. Bülffinger,
-          Stipendii Repetens. </p>
-        <p><pb facs="1070012" n="3"/> Biblioth. Angloise T. VI, P. II, p. 402 sqq. </p>
-        <p>Art. IV. Sixieme Extrait des Memoires Philosophiques de la Societé Royale. Mars, Avril et
-          Maj. 1719, N.<hi rend="sup">o</hi> 360. </p>
-        <p>I. De Maximis et minimis, quae in motibus Corporum Coelestium occurrunt etc. </p>
-        <p>II. Apologia D. Brook Taylor, J. U. D. et R. S. S. contra V. C. J. Bernoullium, Math.
-          Prof. Basileae. </p>
-        <p>On a vu dans les Acta Eruditorum de Leipsic pour les Années 1716, p. 261 et 1718, p. 262
-          que Mr. J. Bernoulli accuse quelques Sçavans Anglois, et Mr. Taylor en particulier, de
-          piller impunement les Sçavans Etrangers, de se parer de leurs biens, et de crier ensuite
-          au voleur contre les gens d'outre-mer. On y reproche sur tout au Geometre Anglois de
-          s'etre approprié les decouvertes de Mr. Bernoulli et d'autres, et on ne lui fait pas ce
-          reproche sans le charger d'injures. Mr. Taylor repond en substance à cela, qu'il n'a
-          traité durement, que les Partisans de Mr. Leibniz, entre lesquels il confesse, que Mr.
-          Bernoulli tient le premier rang; qu'il ne l'a fait, que pour vanger la hauteur injurieuse,
-          avec laquelle ils ont eux memes traité tous les Sçavans Anglois; qu'il n'a jamais emploié
-          d'autre Analyse, que la sienne, à l'exception de l'Isoperimetre, en quoi il reconnoit
-          avoir suivi d'autres personnes; que dans le memoire inseré dans le Journal de Leipsic pour
-          l'Année 1718 le Professeur de Bâle n'a fait, que copier Mr. Taylor et Mr. Bernoulli son
-          propre frere, quoiqu'en les volant il affecte de dire beaucoup de mal de l'un et de
-          l'autre; et qu'enfin l'ancienne Analyse de Mr. Bernoulli etoit detestable; ce que l'on
-          prouve par quelques demonstrations, qui tendent à en faire voir l'erreur. </p>
-        <p>Si Mr. Bernoulli veut repondre, il aura beau jeu; car Mr. Taylor declare dans les formes,
-          qu'il ne repliquera point, et peut etre n'en <pb facs="1070013" n="4"/> a-t-on deja, que
-          trop fait de part et d'autre. Jl me semble, que les Sçavans ne devroient point faire des
-          querelles nationales de leurs querelles particulieres. Jl conviendroit surtout à ceux, qui
-          empruntent d'etre modestes, ou de marquer leurs reconnoissances. Mais les gronder, apres
-          les avoir pillés! cela passe la raillerie; et le fameux Mr. Dryden eut beau deploier son
-          esprit pour s'en laver, il n'y reussit pas entierement. Ce Poete donna 1691 une Comedie,
-          qui a pour titre, L'Amour du soir, ou le faux Astrologue. Ce n'etoit presque qu'une
-          traduction du feint Astrologue de Mr. Thomas Corneille. Cependant Dryden affecta d'y
-          mettre une preface fort étudiée, ou il drappa d'importance le Theatre Francois. Je n'en
-          traduirai que les paroles suivantes, par ou l'on jugera du reste. </p>
-        <p>Apres tout il faut avouer, dit il, que la pluspart des Comedies, que l'on ecrit depuis
-          peu, tiennent trop de la Farce. Mais ceci doit arriver necessairement, jusqu'à ce, qu'on
-          s'abstienne de traduire les Pieces des francois; car leurs Poetes, n'aiant pas asses de
-          jugement pour peindre d'apres nature, sont obligés de suppleer à ces defauts par des
-          postures extravagantes, et par des grimaces ridicules. </p>
-        <p>Cette preface et ces airs de hauteur ne couvrirent point le Plagiat. Jl y avoit trop de
-          francois en Angleterre pour ne pas decouvrir la meche. Mr. Dryden fit bonne mine à mauvais
-          jeu, et se contenta dans un Epilogue de confesser la dette, en ajoutant, que l'on etoit en
-          guerre avec les francois, qu'il leur couroit sus comme a des Ennemis, et que ce qu'il leur
-          enlevoit, etoit de bonne prise. </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118670115">Corneille, Thomas</persName>
+          <note type="lebensdaten">(1625-1709)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118680897">Dryden, John</persName>
+          <note type="lebensdaten">(1631-1700)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+          <note type="lebensdaten">(1685-1731)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1070009/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1070010" n="1"/> <pb facs="1070011" n="2"/> <pb facs="1070012" n="3"/> <pb facs="1070013" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

@@ -1,303 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1699-04-08_991170516662405501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Burcherus de Volder. Groningen,
-            08. April 1699</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057781</title><title type="alt"
-            >1699-04-18_Bernoulli_Johann_I-Volder_Burchard_de</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Volder, Burchard de (1643-1709) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1699-04-18_Bernoulli_Johann_I-Volder_Burchard_de"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 675:Bl.164-165</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170516662405501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433596305504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057781</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>4 S.<dimensions unit="cm">
-                    <height>20,5</height>
-                    <width>16</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Groningae</origPlace><date when="1699-04-08">A 8 April
-              1699</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4094052-4"
-            >Groningen</placeName>
-          <date when="1699-04-08">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1699-01-03_991170516662505501" type="prev"/>
-          <ptr target="B_1699-05-31_991170516662305501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>Joh. B. sendet de Volder einen umfangreichen Brief Leibnizens, den er offen erhalten hat.
-          Leibniz will die Langsamkeit seiner Antwort offenbar durch deren Ausführlichkeit
-          kompensieren. In dieser Antwort hat Leibniz die Schwere mathematisch als eine Eigenschaft
-          der Körper betrachtet, ohne auf deren äussere Ursachen einzugehen. Joh. B. führt jetzt
-          einiges zu seiner eigenen Vorstellung von der Ursache der Schwere aus. Anschliessend
-          berichtet er über seinen Konflikt mit den Groninger Theologen. Schliesslich bittet er de
-          Volder um die Zusendung einer in Leiden gedruckten und de Volder gewidmeten Ausgabe von
-          Galileis Dialoghi (mit einem mechanischen Traktat).</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118514237">Brahe, Tycho</persName>
-            <note type="lebensdaten">(1546-1601)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
-            <note type="lebensdaten">(1564-1642)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-            <note type="lebensdaten">(1629-1695)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_no_GND_id">Longuris</persName>
-            <note type="lebensdaten">(no lifespan info)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118869361">Noodt, Gerard</persName>
-            <note type="lebensdaten">(1647-1725)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1699-04-18_Bernoulli_Johann_I-Volder_Burchard_de"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1438689/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1438690" n="1"/> Celeberrimo Viro </p>
-        <p>B. De Volder </p>
-        <p>S. et O.</p>
-        <p>J. Bernoulli </p>
-        <p>Tarditatem ni fallor compensare voluit Ampliss. Leibnitius prolixitate epistolae suae,
-          quam ut accepi apertam ita mitto.<note type="editorial">[Text folgt]</note> Pauca forsan
-          ad haec remoram injicient, reperies tamen certus sum quam plurima quae profundiorem
-          quandam metaphysicam spirant et penetrantissimum viri judicium. Ne te diu arceam a
-          jucundissima eorum lectione, tuis ad me datis<note type="editorial">[Text folgt]</note>
-          respondendi munere paucissimis defungor: quod demonstrationi Leibnitianae qua ostenditur
-          idem praecise fieri sive una libra attollatur ad 4 pedes, sive 4 librae ad unum, promte
-          adeo acquieverim, ratio haec est: consideravi gravitatem mathematice id est tanquam
-          qualitatem corporibus quae gravia dicuntur connatam<note type="editorial">Im Manuskript
-            steht "connitam".</note>, non attendendo ad ejus causam extrinsecam, jam vero corpus
-            <formula>L</formula> ascendens sua quam habet celeritate primo uno tractu ad altitudinem
-            <formula>P</formula>, <formula>T</formula> supponitur ad quietem redigi adeoque tota
-          ejus vis consumi a contraria vi gravitatis, hac ergo tantundem virium ipsi reddere debet
-          quantum ab ipso accepit quomodocunque demum iterum descendat ad locum
-          <formula>L</formula>, (effectus enim debet esse aequalis causae id quod tanquam axioma
-          suppono) illa autem vis quam corpus descensu suo accipit a gravitate tanta est per hyp.,
-          ut quatuor possit tendere elastra <formula>G</formula>, <formula>H</formula>,
-            <formula>I</formula>, <formula>K</formula>, atqui haec elastra restitutione sua
-          successiva possunt efficere, ut idem vel aequale corpus <pb facs="1438691" n="2"/>
-          assurgat per vices <formula>PQ</formula>, <formula>QR</formula>, <formula>RS</formula>,
-            <formula>ST</formula> ad eandem altitudinem <formula>PT</formula>, igitur eadem vis
-          requiritur ad ascensum continuum quae ad plures interruptos ejusdem altitudinis simul
-          sumptos: vel brevius et clarius ita, corpus <formula>L</formula> reditu suo ad pristinum
-          suum locum <formula>L</formula> totam suam potentiam consumpsit tendendo 4 elastra
-            <formula>G</formula>, <formula>H</formula>, <formula>I</formula>, <formula>K</formula>,
-          et sic revera tanta est vis in omnibus elastris, quanta fuerat in corpore antequam
-          ascenderet (nisi eam vel abundare vel deficere velis, quo sane casu nihil certi in rerum
-          natura esset, supponendum, totam vim corporis <formula>L</formula> translatam esse in
-          elastra) elastrorum vero vis iterum consumitur elevando corpore <formula>L</formula> per
-          vices ad eandem altitudinem, adeoque vis qua corpus <formula>L</formula> primo continuo
-          tractu ascenderat ad <formula>T</formula> est aequalis ei qua per vices eodem postea
-          ascendit <formula>L</formula>, <formula>E</formula>, <formula>D</formula>. Gravitatis
-          actionem explicandi mea ratio quod tibi, non displicuerit impense gaudeo, licet illa
-          rigore geometrico demonstrari non possit ut multa alia a sensibus adeo remota,
-          commendabilis tamen esset tanquam hypothesis qua occurri potest objectionibus ex
-          Galilaeana explicandi ratione petitis; haec enim ipsa quam diu geometrice non est
-          demonstrata eodem jure a me negatur (cum alia aeque probabilis praesto sit) quo illa ab
-          adversario asseritur ideo tantum ut exinde possit aestimationem virium evertere: si
-          veritas aliunde demonstrata sit, plerumque sufficit ad illam tuendam ut respondeamus ad
-          argumenta adversariorum incerta aliis argumentis aeque possibilibus quae licet etiam falsa
-          esse suspicaremus, sic Tycho Brahe novo suo systemate licet falso, optime tamen quietem
-          Terrae tuitus est contra objectiones quas Veneris Phases aliaque Phenomena recens delecta
-          copernicanis suggerebant, quaeque Ptolemaicos misere vexabant: jam autem si a
-          considerationibus physicis abstineamus videbimus Thychonicum systema in abstracto aeque
-          possibile esse ac copernicanum, salvis manentibus Phenomenis coelestibus omnibus. Quod
-          praeterea meam gravitatem explicandi rationem ultra possibilitatem abstractam commendat
-          est id, quod ubique materia gravifica sit aequabiliter et uniformi densitate secundum
-          omnes dimensiones diffusa, adeoque quod ejus ictus non tempori sed spatio proportionari
-          debeant: deinde etiam non opus est ut particulae materiae gravificae totam suam vim
-          transferant in corpus (quamvis quomodo id fieri possit in excerptis habes quae misi).<note
-            type="editorial">[Text folgt]</note> Sufficit dicere partem transferre sed semper
-          aequalem, meo judicio enim corpus quantumcunque habeat celeritatis gradum ut quiescens
-          tamen <pb facs="1438693" n="3"/> est spectandum respectu velocitatis rapidissimae<note
-            type="editorial">Im Manuskript steht "rapissimae".</note> materiae gravificae, a qua
-          proin pari semper modo afficitur id est a singulis particulis gravificis aequali ubique vi
-          impellitur sive quiescat sive moveatur. Non video cur a me exigas ut excogitem simile quid
-          elastici ponendum in globulis meis parvulis illos vorticulos componentibus et materiam
-          gravem ex alio in alium pellentibus sufficit dicam tales vorticulos generari ab ipso motu
-          intestino materiae gravificae, non enim motus ejus progressivus quo tota moles cum terra
-          circa centrum rapitur gravitatis causa est, sed ille confusus et rapidissimus particularum
-          aestus quo sibi mutuo allidentes in se reflecti et tales vorticulos formare coguntur; quam
-          opinionem etiam Hugenius fovisse videtur in dissertatione de causa gravitatis<note
-            type="editorial">[Text folgt]</note> pag. 143 ubi supputatione facta concludit
-          velocitatem materiae gravificae decies septies majorem esse illa quam habet punctum terrae
-          sub aequatore. Celeber. vester Noodtius etiam mihi perelegantem suam orationem
-            donavit,<note type="editorial">[Text folgt]</note> cui proin gratias multas cum salute a
-          me dicito, legi illam summa cum voluptate miror generosam libertatem loquendi qua fretus
-          libertatis causam tam acriter propugnavit et serviles animos tam belle defricuit: si qui
-          sunt quibus displicet haec oratio cogitet auctor incomparabilis quod malis displicere
-          laudari sit. Quaeris quid apud nos agatur? an mea lis cum Theologis<note type="editorial"
-            >[Text folgt]</note> sit composita? quid respondeam, cum forte rumor velox me
-          occupaverit, post breves inducias litem (sopitam fere) resuscitant, bellum aperte
-          indicant, canunt classicum, superos et acheronta movent, machinantur, moliuntur,
-          cursitant, anhelant verbo dicam minantur extrema, et aperta fulmina quibus suggestus
-          crebrius resonant et clancularias insidias struunt, modo clamore et hiatu magno implent
-          omnia, modo delatores et calumniatores subornant, qui me nigro capillo notando perdere
-          debent si possint; quod plus est audio gravamen contra me paratum iri proximae instanti
-          synodo exhibendum. Sciscitaris causam novorum horum tumultuum? eam ecce! cum nuper publice
-          in choro nostri templi academici ubi exercitia academica fieri solent instrumentorum
-          nostrorum prima pericula facerem coram frequentissima spectatorum corona, illaque quasi
-          inaugurarem oratiuncula quadam ad praesentem materiam accommodata occasionem habui
-            Paedagogorum<note type="editorial">Im Manuskript steht "Paedagorum".</note> et
-          Theologastrorum imperitiam invidiam et odium in bonas scientias atque ineptam
-          scholasticorum philosophiam solito rigidius perstringendi, quibus vix <pb facs="1438694"
-            n="4"/> cito satis finitis, malevoli mei hanc quam dixi tragaediam adornarunt ad arma
-          ruentes, volantes; eousque impudentiae perventum est, ut me experimenta in choro faciendo
-          locum sacrum, Domum Dei, Templum Jehovae polluisse et profanasse dicant, nihil interim
-          mussitantes de eo quod interdum in disputationibus inauguralibus eodem in loco haberi
-          solitis inepta multa imo et obscoena a petulcis studiosulis ventilentur, quasi scilicet
-          haec majorem sanctitatem saperent. Longurio noster quem nosti conscribillavit novissime
-          Theses de resurrectione contra socinianos, qualem scopum habuerit ipse facile divinabis.
-          Interea non moror bruta ista fulmina et rideo omnes conatus istos Titanicos. Mihi non
-          desunt patroni cordatiores, qui si opus sit innocentiam meam contra lupos invadentes
-          protegere non gravabuntur. Sed non animadverto quod jam nimis prolixus sim, cum tamen
-          statim promiserim Brevitatem. Perturbasti me valde quod incerta adeo sanitate te uti mihi
-          nuntiaveris, apprecor tibi animitus valetudinem firmam, fac illam recuperes, quoquo modo
-          et abstine tantisper seriis meditationibus quo illis posthac tanto diutius indulgere
-          earumque nobis fructum communicare queas. Vale et me ama. </p>
-        <p>Groningae die 8 April. 1699.</p>
-        <p>P. S. Modo mihi nuntiatur apud vos impressos esse tibique dedicatos Galilaei dialogos de
-          Systemate mundi una cum tractatu mechanico, et de motu;<note type="editorial">[Text
-            folgt]</note> quibus cum caream, pergratam mihi rem faceres si eorum exemplar unum mihi
-          transmitteres, pretium quantocyus restituturo. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1699-04-08_991170516662405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Burcherus de Volder. Groningen, 08. April 1699</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1699-04-18_Bernoulli_Johann_I-Volder_Burchard_de" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 675:Bl.164-165</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170516662405501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433596305504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057781</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>4 S.<dimensions unit="cm"><height>20,5</height><width>16</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Groningae</origPlace>
+            <date when="1699-04-08">A 8 April 1699</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4094052-4">Groningen</placeName>
+        <date when="1699-04-08">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1699-01-03_991170516662505501" type="prev"/>
+        <ptr target="B_1699-05-31_991170516662305501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <p>Joh. B. sendet de Volder einen umfangreichen Brief Leibnizens, den er offen erhalten hat. Leibniz will die Langsamkeit seiner Antwort offenbar durch deren Ausführlichkeit kompensieren. In dieser Antwort hat Leibniz die Schwere mathematisch als eine Eigenschaft der Körper betrachtet, ohne auf deren äussere Ursachen einzugehen. Joh. B. führt jetzt einiges zu seiner eigenen Vorstellung von der Ursache der Schwere aus. Anschliessend berichtet er über seinen Konflikt mit den Groninger Theologen. Schliesslich bittet er de Volder um die Zusendung einer in Leiden gedruckten und de Volder gewidmeten Ausgabe von Galileis Dialoghi (mit einem mechanischen Traktat).</p>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1438689/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1438690" n="1"/> <pb facs="1438691" n="2"/> <pb facs="1438693" n="3"/> <pb facs="1438694" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

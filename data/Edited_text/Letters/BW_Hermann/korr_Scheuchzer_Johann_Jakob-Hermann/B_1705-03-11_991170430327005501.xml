@@ -1,261 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1705-03-11_991170430327005501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Jacob Scheuchzer. Basel, 11.
-            März 1705</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000059963</title><title type="alt"
-            >1705-03-11_Hermann_Jacob-Scheuchzer_Johann_Jakob</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-119112450"
-            type="person">Jacob Hermann</rs> (1678-1733)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johann Jakob (1672-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Siegel abgerissen</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1705-03-11_Hermann_Jacob-Scheuchzer_Johann_Jakob"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms H 318, pp.225-228</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430327005501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406947705504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000059963</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2 S.<dimensions unit="cm">
-                    <height>10,5</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1705-03-11">11 Martii
-                1705</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1705-03-11">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1705-03-04_991170430327205501" type="prev"/>
-          <ptr target="B_1705-03-15_991170430326805501" type="next"/>
-          <ptr target="BW_Hermann" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-119291967">Fardella, Michelangelo</persName>
-            <note type="lebensdaten">(1650-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-            <note type="lebensdaten">(1681-1737)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118560050">Karl</persName>
-            <note type="lebensdaten">(1654-1730)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118867865">Vallisnieri, Antonio</persName>
-            <note type="lebensdaten">(1661-1730)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118773321">Zwinger, Theodor</persName>
-            <note type="lebensdaten">(1658-1724)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1705-03-11_Hermann_Jacob-Scheuchzer_Johann_Jakob"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1009391/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1009430" n="225"/> Vir Celeberrime Fautor et Amice honoratissime!</p>
-        <p>Gratissimam Tuam Epistolam 29 Febr.<note type="editorial">Dieser Brief von Johann Jakob
-            Scheuchzer an Jacob Hermann ist nicht erhalten.</note> postridie quam Tabellarius abhinc
-          discessit mihi transmisit Magnif. Zwingerus<note type="editorial">Theodor III Zwinger
-            (1658-1724) war 1704/05 Rektor der Universität Basel.</note> ex qua maxima cum voluptate
-          collegi non tantum honoris ergo de acceptanda Philosophica apud Patavinos Cathedra<note
-            type="editorial">Gemeint ist die hängige Berufung Hermanns nach Padua.</note> Tecum
-          locutum esse Cl. Vallisnerium,<note type="editorial">Antonio Vallisneri
-            (1661-1730).</note> ut suspicabaris, sed serio maxime affirmativam Tuam responsionem
-          ursisse et etiamnunc acriter urgere. Non dubito quin multo nunc ad oblatam provinciam sis
-          pronior ex quo praecipua difficultas meo judicio remota videtur de annuo stipendio quod
-          non poterit non esse honestissimum. Quod ad me attinet, quoniam quid peterem nesciebam,
-          nihil definiti ab iis petii, sed tantum Eos rogavi, ut quid dare decreverint mecum
-          communicarent, adeoque avide responsum a Cl. Fardella<note type="editorial">Michelangelo
-            Fardella (1650-1718).</note> expecto. Accepi nupero die Iovis literas a Cl. Iselio<note
-            type="editorial">Jakob Christoph Iselin (1681-1737).</note> Marburgo ad me datas<note
-            type="editorial">Dieser Brief Iselins ist nicht erhalten.</note> significantes universos
-          Professores conjunctis consiliis statuisse Sereniss. suum Principem<note type="editorial"
-            >Karl Landgraf von Hessen-Kassel (1654-1730).</note> rogare ut Vacanti apud Marburgenses
-          Professioni Mathematum me praeficeret, statim atque aliquam meae Voluntatis
-          significationem edidissem, at Patavina Cathedra magis mihi arridet praecipue quod mihi
-          nunc spes affulgeat Amplissima Te mihi laborum Socium et Collegam conjunctum iri quo sane
-          nihil auspicatius nihilque jucundius mihi accidere posset; et ut Cel. Vallisnerii verbis
-          utar, <hi rend="u">Cordicitus Te deprecor, ut si potes faveas, non solum equidem Academiae
-          </hi>(cui me devovi)<hi rend="u"> decori, sed utilitati meae nunc velifico</hi>,<note
-            type="editorial">Das Zitat nach Vallisneri stammt wahrscheinlich aus dem oben erwähnten
-            Brief Zwingers.</note> non ita tamen haec accepta velim verba (idem haud dubie quoque
-          dicet <pb facs="1009431" n="226"/> Vallisnerius) ac si post habitis Tuis commodis petito
-          meo ut annuas, a Te contenderem. Sed Cogita, quaeso Te, et perpende, Commoda et Emolumenta
-          quae Tibi ex hac Professione contingere possunt, nam dubitandum non est quia Stipendium
-          sat lautum sit futurum, facile enim Patavini Lycaei Proceres sibi persuadebunt nullum
-          Exterum nedum Reformatae Religioni addictum Virum nisi honestissimis sub conditionibus
-          hujusmodi spartam esse amplexurum. Nosti etiam Patavium Studiosis exteris, imprimis
-          Medicinae operam navantibus scatere, unde ex Collegiis privatis etc. non parum fructus ad
-          Te rediret: Nosti insuper praxin Tuam Medicam multum Tibi quoque profuturam. Vides itaque
-          quod nunquam melius tuis commodis litare possis quam si ablatam Vocationem acceptes. Ad
-          alia. </p>
-        <p>Refractiones utique omnes Observationes astronomicas incertissimas redderent nisi earum
-          haberetur ratio.<note type="editorial">Hermann weist hier auf die Fehler der
-            Poisitionsastronomie hin, die durch die Nichtberücksichtigung der atmosphärischen
-            Lichtbrechung entstehen. </note> Iccirco in plerisque Tabulis Astronomicis reperitur
-          Tabula refractionum ex variis observationibus deductam cujus contexendae methodum passim
-          describunt Autores. Et vere dici potest hanc refractionem esse crucem Astronomorum qua in
-          re Eos raro concordes videas. Si aeris aut Athmosphaerae densitates regulariter
-          decrescerent, geometrice assignari posset via quam radii ex aliquo sydere ad nos venientes
-            decurrerent,<note type="editorial">Die Kurve eines Lichtstrahls in der Atmopshäre hatte
-            Hermann in seiner Beilage (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._101.2C_Modus_metiendi_altitudines_.281704.29."
-              >Na. 101</ref>) zum Brief an Scheuchzer von <rs key="B_1704-01-30_991170430330605501"
-              type="letter">1704.01.30</rs> unter der Hypothese einer "regelmässigen", d. h. mit
-            abnehmender Höhe linear zunehmenden Dichte als eine Logarithmica bestimmt.</note> sed de
-          hoc cum nihil certi adhuc constet, refractiones quibus sydera exaltantur modo mere
-          empyrico determinandae sunt.<note type="editorial">Da die Dichte der Atmosphäre jedoch
-            unregelmässig veränderlich ist, lässt sich nach Hermanns Meinung der Fehler bei der
-            Positionsbestimmung eines Sterns in Folge der atmosphärischen Refraktion nur empirisch
-            ausgleichen.</note>
-        </p>
-        <p>Ecce, Vir Celeberrime, novellas nostras in quibus extat monitum Tuum de evulgandis
-          observationibus Tuis rarioribus;<note type="editorial">Dieses Exemplar der von 1682 bis
-            1796 erscheinenden Basler <hi rend="u">Mittwochs- und Samstags-Zeitung</hi> mit
-            Scheuchzers Aufruf zum Abonnement seiner wöchentlich erscheinenden Zeitschrift <hi
-              rend="u">Seltsamer Naturgeschichten des Schweizer-Lands wochentliche Erzehlung</hi>
-            (Beschreibung der Natur-Geschichten des Schweizerlands, Teil 1), Zürich (J. J.
-            Scheuchzer) 1706, konnte bisher nicht aufgefunden werden.</note> hoc pacto post multa
-          conamina intentum assecutus sum. Hucusque<note type="editorial">Im Manuskript steht
-            "Hususque".</note> nihil nisi primum folium <pb facs="1009432" n="227"/> Tuarum
-          observationum vidi, et spero me continuationem ejus quoque visur[um]<note type="editorial"
-            >Textverlust, da die Ecke des Blattes abgerissen ist.</note> esse. Hisce vale Vir
-          Celeberrime et perge amare Celeberrimi nominis Tui Cultorem perpetuum Hermannum</p>
-        <p>Dabam Basileae 11 Martii 1705.</p>
-        <p><pb facs="1009433" n="228"/> A Monsieur</p>
-        <p>Monsieur Scheuchzer célebre </p>
-        <p>Docteur en Medecine et Membres des </p>
-        <p>Societés Imperiale et Royale d'Angleterre</p>
-        <p>à</p>
-        <p>Zuric </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1705-03-11_991170430327005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann Jacob Scheuchzer. Basel, 11. März 1705</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Siegel abgerissen</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1705-03-11_Hermann_Jacob-Scheuchzer_Johann_Jakob" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms H 318, pp.225-228</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430327005501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406947705504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000059963</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2 S.<dimensions unit="cm"><height>10,5</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1705-03-11">11 Martii 1705</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1705-03-11">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1705-03-04_991170430327205501" type="prev"/>
+        <ptr target="B_1705-03-15_991170430326805501" type="next"/>
+        <ptr target="BW_Hermann" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-119291967">Fardella, Michelangelo</persName>
+          <note type="lebensdaten">(1650-1718)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+          <note type="lebensdaten">(1681-1737)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118560050">Karl</persName>
+          <note type="lebensdaten">(1654-1730)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118867865">Vallisnieri, Antonio</persName>
+          <note type="lebensdaten">(1661-1730)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118773321">Zwinger, Theodor</persName>
+          <note type="lebensdaten">(1658-1724)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Hermann_Jacob">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

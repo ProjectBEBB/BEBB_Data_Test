@@ -1,375 +1,204 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1719-05-08_991170516536905501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Christian von Wolff an Johann Bernoulli. Halle
-            (Saale), 08. Mai 1719</title><title type="alt">get_date!: () an ()</title><title
-            type="alt">000057828</title><title type="alt"
-            >1719-05-08_Wolff_Christian-Bernoulli_Johann_I</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Wolff, Christian (1679-1754) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1719-05-08_Wolff_Christian-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 671, Nr.17*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170516536905501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433442205504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057828</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>3,5 S.<dimensions unit="cm">
-                    <height>22,5</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Halae Saxonum</origPlace><date when="1719-05-08">d. 8 Maji
-                1719</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
-          <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4023025-9">Halle
-            (Saale)</placeName>
-          <date when="1719-05-08">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1719-05-08_991170516536905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Christian von Wolff an Johann I Bernoulli. Halle (Saale), 08. Mai 1719</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1719-05-08_Wolff_Christian-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 671, Nr.17*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170516536905501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433442205504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057828</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>3,5 S.<dimensions unit="cm"><height>22,5</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Halae Saxonum</origPlace>
+            <date when="1719-05-08">d. 8 Maji 1719</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4023025-9">Halle (Saale)</placeName>
+        <date when="1719-05-08">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1719-04-05_991170516537005501" type="prev"/>
+        <ptr target="B_1720-03-27_991170516536805501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Wolff_Christian-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1719-04-05_991170516537005501" type="prev"/>
-          <ptr target="B_1720-03-27_991170516536805501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Wolff_Christian-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118535978">Friedrich Wilhelm</persName>
-            <note type="lebensdaten">(1688-1740)</note>
-          </person>
-          <person>
-            <persName key="pers_no_GND_id">Happius</persName>
-            <note type="lebensdaten">(no lifespan info)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-            <note type="lebensdaten">(1678-1733)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118560050">Karl</persName>
-            <note type="lebensdaten">(1654-1730)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124275087">Keill, John</persName>
-            <note type="lebensdaten">(1671-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-115547584">Bessler, Johann Ernst Elias</persName>
-            <note type="lebensdaten">(1681-1745)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-            <note type="lebensdaten">(1685-1731)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1719-05-08_Wolff_Christian-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/808203/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="808205" n="1"/> Viro Celeberrimo atque Amplissimo </p>
-        <p>Johanni Bernoulli </p>
-        <p>S. P. D. </p>
-        <p>Christianus Wolfius. </p>
-        <p>Accepi, Vir Celeberrime, schediasmata Tua<note type="editorial">Bernoulli, Johann I Op.
-            CXIII, <hi rend="u">Responsio ad nonneminis provocationem, Ejusdem solutio quaestionis
-              ipsi ab eodem propositae de invenienda Linea curva quam describit projectile in medio
-              resistente</hi>: AE Maji 1719, pp. 216-226 und Bernoulli, Johann I Op. CXIV, <hi
-              rend="u">Clar. Taylori Mathematici Angli Problema Analyticum, quod omnibus Geometris
-              non-Anglis proposuit, solutum a Joh. Bernoulli</hi>, in: AE Junii 1719, pp.
-            256-270.</note> et, ubi ea legeram, Lipsiam remisi ut Actis inserantur. Non displicet,
-          quod Keilium rusticis moribus contra Seculi genium inclarescere studentem defricueris, ut
-          meruit. Taylorum esse Mathematicum Keilio longe solidiorem facile largior; an vero a
-          rusticitate Keilii multum absit, de eo fere dubito. Certe non minor Taylori, quam Keilii
-          arrogantia est: id quod vel ex recensione libri ipsius de methodo incrementorum,<note
-            type="editorial">[Anonymus], Renzension von <hi rend="u">Methodus incrementorum. Auctore
-              Brook Taylor, LL.D.&amp;R.S. Secr. Londini. M. DCC. XIV. in 4. pagg. 118</hi>, in:
-            Bibliotheque angloise, Tome quatrieme, seconde partie, à Amsterdam 1718, Article X, pp.
-            523-539. Dem Rezensenten lag nur ein Auszug aus Taylors <hi rend="u">Methodus
-              incrementorum</hi> vor. Das Buch selbst erschien erst 1715. </note> in Bibliotheca
-          Anglica (Bibliotheque Angloise) apparet, quae sine dubio ab ipso venit. Ibi inter alia,
-          quae Te tangunt, p. 535: L'auteur a évité exprés de faire mention de ce, qui avoit été
-          fait par les autres, parce que cela l'auroit engagé necessairement à remarquer plusieurs
-          fautes et imperfections, qui se trouvent dans leurs Solutions: c'est pour cela qu'il n'a
-          pas jugé à propos de parler des Solutions, qui ont été données des figures de la
-            Voile,<note type="editorial">Bernoulli, Johann, <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/Werkverzeichnisjohib#Op._VII_Solution_du_Probl.C3.AAme_de_la_Courbure_que_fait_une_voile_enfl.C3.A9e_par_le_vent"
-              >Op. VII</ref>
-            <hi rend="u">Solution du Problême de la Courbure que fait une voile enflée par le
-              vent</hi>, in: JS 1692 (28. Avril), pp. 189-192. </note> et de la Voute,<note
-            type="editorial">Bernoulli, Jacob, Op. LII, <hi rend="u">Aenigmatis Florentini
-              Solutiones varie infinitae</hi> in: AE Augusti 1692, pp.370-371 - Opera, pp.512-515 -
-            Werke 2, pp.526-528.</note> non plus que de celles des isoperimetres données par Mr.
-          Jacob Bernoulli<note type="editorial">Bernoulli, Jacob, Op. XCIII, <hi rend="u">Solutio
-              Propria Problematis Isoperimetrici</hi>, in: AE Junii 1700, pp.261-266 - Opera,
-            pp.874-887 - Streitschriften, pp.404-419.</note> etc. </p>
-        <p>L'Auteur a crû que son silence sur [l]a Solution du probleme des isoperimetres donnée par
-          Mr. Jean Bernoulli dans les Mem. de l'Acad. Roy. des Sc[iences] 1706<note type="editorial"
-            >Bernoulli, Johann I Op. LXXV, <hi rend="u">Solution Du Problême proposé par M. Jacques
-              Bernoulli dans les Actes de Leipsik du mois de May de l'année 1697, trouvée en deux
-              maniéres par M. Jean Bernoulli son Frere, &amp; communiquée à M. Leibnitz au mois de
-              Juin 1698. Sur les Isoperimetres</hi>, in: Mém. Paris 1706 (1707), pp. 235-245.</note>
-          seroit regardé comme une faveur faite à l' Auteur de cette Solution, parceque, s'il en eût
-          fait mention, il n'auroit pû se dispenser de censurer trois ou quatre faute[s] tres
-          considerables, qui s'y rencontrent. Il n'étoit pas possible que l'Auteur marquat, que Mr.
-          Jean Bernoulli et lui s'étoient servis des mêmes principes sans autre difference, que
-          celle des mots, dans la recherche du <pb facs="808206" n="2"/> centre d'oscillation, parce
-          que la Solution de Mr. Bernoulli<note type="editorial">Bernoulli, Johann I Op. XCVI, <hi
-              rend="u">Nouvelle Theorie du Centre d'Oscillation, Contenant une Regle pour le
-              déterminer dans les Pendules composés &amp; balançans non seulement dans le vuide,
-              mais aussi dans les liqueurs; laquelle Regle est appuyée sur un fondement plus seûr
-              qu'aucun qu'on ait publié jusqu'ici par rapport à cette matiere</hi>, in: Mém. Paris
-            1714 (1717), pp. 208-230.</note> n'a paru que l'année 1717 dans les Mem. de l'Academie
-          Roy. des Sciences pour 1714, cette premiere date étant posterieure de trois années a celle
-          de la publication du livre de l' Auteur<note type="editorial">Taylor, Brook. <hi rend="u"
-              >Methodus incrementorum directa &amp; inversa. Auctore Brook Taylor, LL. D. &amp;
-              Regiae Societatis Secretario</hi>, Londini (Pearson/G. Inys), 1715.</note>, sans
-          compter que son Msc. avoit été en la possession de la Societé Royale environ un an avant
-          ce temps là, c'est à dire, depuis le mois d'Avril 1713." Scilicet non legit Taylorus Acta
-          Eruditorum, licet hanc defensionem opponat Actis Eruditorum A. 1716.<note type="editorial"
-            >Sie war besonders gegen [Bernoulli, Johann I], <hi rend="u">Epistola pro eminente
-              Mathematico</hi>, in: AE Julii 1716, pp. 296-315 gerichtet.</note> Pro dissertatione
-          Tua de phosphoro Mercuriali<note type="editorial">Bernoulli, Johann I (mit Nebel, Wilhelm
-            Bernhard) <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/Werkverzeichnisjohib#Op._112_.7Bmit_W._B._Nebel.7D_Dissertatio_Physica_De_Mercurio_lucente_in_vacuo_..."
-              >Op. 112</ref>, <hi rend="u">Dissertatio Physica De Mercurio lucente in vacuo
-            ...</hi>.</note> gratias ago: misi unum exemplar ad Cel. Hermannum una cum literis
-            adjunctis.<note type="editorial">Dieser Brief Wolffs an Hermann ist nicht
-            erhalten.</note> Curabo, ut in Actis mentio fiat eorum, quae dissentientium placitis
-          opponi merentur. Ego meditationibus metaphysicis, quod facere constitueram, per hiemem
-          vacare non potui, quia valetudo non ferebat, quae tamen, ut spero, mox in integrum
-          restituta erit. Cumque a die 1 Februarii ad praesentem usque in publicum prodire haud
-          potuerim, cessabunt quoque varia circa vegetationem experimenta, quibus vernum tempus
-          destinaveram. Interim mitto, quae Happio cuidam<note type="editorial">Happe, Gottlob
-            Christian, Jurist, kgl. preussischer Kriegsrat.</note> Regi Nostro<note type="editorial"
-            >Friedrich Wilhelm I. (1688-1740), König von Preussen.</note> a consiliis militaribus
-          opponi necessarium duxi,<note type="editorial">Wolff, Christian, <hi rend="u">Entdeckung
-              der wahren Ursache von der wunderbahren Vermehrung des Getraydes, dadurch zugleich der
-              Wachsthum der Bäume und Pflantzen überhaupt erläutert wird als die erste Probe der
-              Untersuchungen von dem Wachsthume der Pflantzen ...</hi>, Halle im Magdeburgischen
-            (Renger) 1718.</note> cum is coram Rege de meo scripto sinistrum judicium ferens
-          promisisset, se inventi mei nullitatem publice ostensurum.<note type="editorial">Happe,
-            Gottlob Christian, <hi rend="u">Kurtze und wohlgemeinte Erinnerungen über des Herren
-              Hof-Raths und Professor Wolffens in Halle vor weniger Zeit heraus gegebene Entdeckung
-              der wahren Ursache von der wunderbahren Vermehrung des Geträidigs, dadurch zugleich
-              der Wachsthum der Bäume und Pflantzen überhaupt erläutert wird, als die erste Probe,
-              der Untersuchung von dem Wachsthum der Pflantzen</hi>, [s.l.] 1718.</note> Alias ab
-          eristicis abhorreo. Rotam Orfyreanam esse perpetuum mobile pure mechanicum, ego sane non
-          dixerim, nec unquam dixi, sed ob allatam a Te rationem aliquid physici subesse suspicor,
-          quodcunque tandem illud sit. Rotam motu valde aequabili nec minus celeri una cum axe suo
-          circumire, nullo motore externo sensibili praesente, ipsemet vidi.<note type="editorial"
-            >Wolff hatte der Vorführung des orffyreischen Rades am 15. Juni 1715 beigewohnt und am
-            31. Oktober 1715 ein positives Gutachten mit anderen unterzeichnet (siehe [Bessler,
-            Johann Ernst Elias et al.], <hi rend="u">Gründlicher Bericht von dem durch den anitzo zu
-              Merseburg sich befindenden Mathematicum Herrn Orffyreum Glücklich inventirten Perpetuo
-              ac per se Mobili, nebst dessen accurater Abbildung : Wie solches seit dem Monath Junio
-              dieses 1715ten Jahres zu gedachten Merseburg von einer grossen Menge Hoher
-              Standes-Personen, gelehrter Leute, Künstler und Curiosorum in Augenschein genommen und
-              genau examiniret, auch allda noch zu sehen ist</hi>, Leipzig (Boethius) 1715, p.
-            19.</note> Orfyreus sancte asseveravit, machinam non agi aliquo elastro, quod retendi
-          opus habet, et Serenissimus Hassiae Landgrafius, soluto inventori praemio 8000 thalerorum
-          vidit structuram internam, antequam <pb facs="808207" n="3"/> testimonium perhiberet. Non
-          ergo video rationem, cur testimonium et asseverationes in dubium vocare debeam, aut cur
-          Orfyreum pro impostore habeam. Licet enim horologia in motu perseverare possint per
-          integrum annum, pondere vel elastro semel tantum retenso: alia tamen rotae Orfyreanae, ut
-          ante dixi, est ratio. Neque hic argumentum petitur ab eo, quod motum continuaverit per
-          aliquot menses; sed quod sine ullo elastro, quod retensione opus habeat, rota una cum axe
-          suo sine motore externo sensibili in orbem redeat. Quae de Filio Tuo<note type="editorial"
-            >Nicolaus II Bernoulli.</note> scribis, magna cum voluptate legi: sed majori perfundas,
-          ubi intellexero, rem ex voto cessisse. Si qua ego conferre possim, faciam id perlubenter,
-          nisi res jam confecta fuerit. </p>
-        <p>Cel. Hermannus dynamica Leibnitii, quorum jacturam fecit orbis eruditus cum morte Viri
-          Summi, in Exercitationibus Francofurtensibus de suo restituere aggressus, data
-          demonstratione theorematis, quod vires sint ut altitudines, per quae gravia
-            ascendunt;<note type="editorial">Hermann, Jacob, <hi rend="u">De quantitate virium recte
-              aestimanda</hi> [1718] (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._033.2C_De_quantitate_virium_recte_aestimanda_.5B1718.5D."
-              >Na. 033</ref>).</note> sed videtur mihi nimis arctos huic scientiae limites
-          constituisse, nec effectus puros, quos vocat Leibnitius, ab aliis vim absorbentibus
-          distinxisse. Sane vires gravium esse ut altitudines, per quae ascendunt, absque longa
-          demonstratione mihi concedendum esse videtur. Si enim gravia ascendentia fuerint aequalia,
-          effectus sunt altitudines, per quae ascendunt. Effectibus vero vim absorbentibus vires
-          sunt proportionales, quod ab omnibus conceditur. Vires esse in ratione duplicata
-          celeritatum, mobili existente eodem vel aequali, in motu aequabili A. 1711 demonstrare
-            conabar,<note type="editorial">Wolff, Christian, <hi rend="u">Defensio virium in
-              corporis existentium contra nuperas objectiones</hi> in: AE Septembris 1711, pp.
-            400-404, und Wolff, Christian, <hi rend="u">Objectiones contra novam definitionem motus
-              in diario erudit. Parisino exhibitam</hi>, in: AE Novembris 1711, pp. 493-495.</note>
-          applicando celeritates ad spatia: quam demonstrationem non improbabat Leibnitius.<note
-            type="editorial">Wolff teilte seinen Beweis in seinem Brief von 1710.12.31 Leibniz mit,
-            dieser schlug in seiner Antwort von 1711.01.12 einige Präzisierungen vor. Die Brieftexte
-            sind abgedruckt in: Gerhardt, Carl Immanuel (ed.), <hi rend="u">Briefwechsel zwischen
-              Leibniz und Christian Wolff aus den Handschriften der koeniglichen Bibliothek zu
-              Hannover herausgegeben</hi>, Halle 1860, pp. 129-133.</note> Sed cum ipse putaret, me
-          gratis assumere, vires esse in isto casu in ratione composita celeritatum et spatiorum, id
-          reprehendebat, et aliam quandam demonstrationem adjiciebat, quod [ra]tiones<note
-            type="editorial">Wolff hat hier "effectus puri" mit einem Tintenklecks in ein anderes
-            unleserliches Wort korrigiert, das gemäss der Antwort Leibnizens an Wolff von 1711.01.12
-            als "rationes" zu lesen ist (Gerhard, op. cit. p. 132).</note> purae sint in ratione
-          composita effectuum et velocitatum: unde meum <pb facs="808208" n="4"/> suppositum, quo
-          utebar, utique deduci potest. Incidit ante aliquod tempus in manus meas scheda quaedam
-          Leibnitii Msc. de summatione dyadica<note type="editorial">Vielleicht Leibniz, Gottfried
-            Wilhelm, <hi rend="u">De Dyadicis</hi>, in: Leibniz, Math. Schriften, 2. Abt., Bd. III,
-            hrsg. vom C.I. Gerhardt, Halle, 1863, pp. 228-234. Dort findet sich "§7. Generalis
-            praxis Additionis". Zum Thema siehe Zacher, Hans J., <hi rend="u">Die Hauptschriften zur
-              Dyadik von G. W. Leibniz. Ein Beitrag zur Geschichte des binären Zahlensystems</hi> (=
-            Veröffentlichungen des Leibniz-Archivs Bd. 5), Frankfurt am Main 1973.</note>, quae
-          inexpectata obtulit, etsi digerere non vacavit. Moliebatur Leibnitius ejus ope
-          restitutionem Analyseos Diophanteae<note type="editorial">Versuche, die Dyadik auf
-            diophantische Probleme anzuwenden, finden sich z.B. in einem undatierten Entwurf
-            Leibnizens <hi rend="u">De Dyadica pulchra</hi> Hannover GWLB, LH XXXV 3 B,5
-            Bl.103r/v.</note> aut, si mavis, veram Analysin arithmeticam, qua absoluta, praeclara
-          sibi promittebat in Geometria altiori.<note type="editorial">Vgl. z.B. Leibnizens
-            Bemerkungen in seinem <hi rend="u">Specimen novum analyseos pro Scientia Infiniti, circa
-              Summas et Quadraturas</hi>, in: AE Maji 1702, p. 219.</note> Non dubito quin plura
-          hisce lateant in schedis Viri Summi, vidi enim ipsummet aliquoties, cum hic Halae
-            esset,<note type="editorial">Leibniz hielt sich Anfang Juni 1700, im Oktober 1711, am
-            29. Oktober 1712 und wahrscheinlich Ende Juli 1716 in Halle auf (siehe Müller,
-            Kurt/Krönert, Gisela, <hi rend="u">Leben und Werk von Gottfried Wilhelm Leibniz. Eine
-              Chronik</hi>, Frankfurt am Main 1969). An den beiden letztgnannten Daten hatte er
-            Gelegenheit zu einem Treffen mit Wolff.</note> in hoc genere meditari. Quodsi de ea
-          juxta mentem ipsius nondum constiterit, mittam istorum lineamentorum apographum.<note
-            type="editorial">Diese Abschrift des Leibniz-Textes zur Dyadik wurde - wie aus Johann
-            Bernoullis Antwortbrief hervorgeht - offenbar von Wolff nicht nach Basel
-            übersandt.</note> Quod superest vale et fave. </p>
-        <p>Dabam Halae Saxonum d. 8 Maji 1719. </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118535978">Friedrich Wilhelm</persName>
+          <note type="lebensdaten">(1688-1740)</note>
+        </person>
+        <person>
+          <persName key="pers_no_GND_id">Happius</persName>
+          <note type="lebensdaten">(no lifespan info)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+          <note type="lebensdaten">(1678-1733)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118560050">Karl</persName>
+          <note type="lebensdaten">(1654-1730)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124275087">Keill, John</persName>
+          <note type="lebensdaten">(1671-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-115547584">Bessler, Johann Ernst Elias</persName>
+          <note type="lebensdaten">(1681-1745)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+          <note type="lebensdaten">(1685-1731)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/808203/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="808205" n="1"/> <pb facs="808206" n="2"/> <pb facs="808207" n="3"/> <pb facs="808208" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

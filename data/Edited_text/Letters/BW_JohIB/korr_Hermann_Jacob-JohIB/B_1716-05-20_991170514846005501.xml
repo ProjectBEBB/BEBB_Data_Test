@@ -1,558 +1,225 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1716-05-20_991170514846005501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Jacob Hermann. Basel, 20. Mai
-            1716</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000055965</title><title type="alt"
-            >1716-05-20_Bernoulli_Johann_I-Hermann_Jacob</title><title level="s">Basler Edition der
-            Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Hermann, Jacob (1678-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Autographe Korrekturen</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1716-05-20_Bernoulli_Johann_I-Hermann_Jacob"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 659, Nr.23</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514846005501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972432826905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000055965</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>16 S.<dimensions unit="cm">
-                    <height>21</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Basileae</origPlace><date when="1716-05-20">a.d. XX. maij
-              1716</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1716-05-20_991170514846005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Jacob Hermann. Basel, 20. Mai 1716</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Autographe Korrekturen</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1716-05-20_Bernoulli_Johann_I-Hermann_Jacob" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 659, Nr.23</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514846005501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972432826905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000055965</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>16 S.<dimensions unit="cm"><height>21</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Basileae</origPlace>
+            <date when="1716-05-20">a.d. XX. maij 1716</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1716-05-20">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1716-04-17_991170514846105501" type="prev"/>
+        <ptr target="B_1716-09-04_991170514845905501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1716-05-20">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1716-04-17_991170514846105501" type="prev"/>
-          <ptr target="B_1716-09-04_991170514845905501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124799361">Hartsoeker, Nicolas</persName>
-            <note type="lebensdaten">(1656-1725)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
-            <note type="lebensdaten">(1648-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124275087">Keill, John</persName>
-            <note type="lebensdaten">(1671-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-102552517">Michelotti, Pietro Antonio</persName>
-            <note type="lebensdaten">(1673-1740)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
-            <note type="lebensdaten">(1667-1754)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-            <note type="lebensdaten">(1643-1727)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
-            <note type="lebensdaten">(1666-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119543885">Riccati, Jacopo</persName>
-            <note type="lebensdaten">(1676-1754)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-            <note type="lebensdaten">(1685-1731)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
-            <note type="lebensdaten">(1657-1740)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
-            <note type="lebensdaten">(1679-1754)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117596027">Zendrini, Bernardino</persName>
-            <note type="lebensdaten">(1679-1747)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1716-05-20_Bernoulli_Johann_I-Hermann_Jacob"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1042887/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1042888" n="1"/> Celeberrimo atque Excellentissimo Viro </p>
-        <p>Jacobo Hermanno </p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli.</p>
-        <p>Si ad novissimas Tuas binas Litteras quas successive accepi praesertim ad penultimas
-          respondere vellem in debita et sufficienti mensura, vereor ne plura hujusmodi folia
-          scribendo impleturus essem, forteque quaedam Tuis acrius nonnihil dictis repositurus quae
-          Tibi minus grata sed vera tamen forent et facile ad serrae reciprocationem ansam
-          praeberent. Quare suffecerit si ad singula capita tam succincte respondeam quam potero. I.
-          Ante omnia gratias ago pro benevolentia quam testaris erga Filium meum; Is nunc Venetiis
-          agit apud Cl. Michelottum, a quo quam humanissime fuit exceptus optimeque hucusque
-          habitus, ita ut non dubitem, quin Filii mei opera et auxilio in prosequendis suis studiis
-          mathematicis contentus sit. Quod si tamen occasio se praeberet Informatioris vel Ephori
-          vices agendi apud quendam Nobilem Studiosum, ad qualem occasionem procurandam Amicos
-          nonnullos operam suam pollicitos esse dicis, id quidem mihi gratius esset, partim quia
-          apud suae Religionis homines degere, partim vero quia sumtibus alienis peregrinari posset.
-          II. Gaudeo reparatam nunc quodammodo esse injuriam mihi illatam a scriptore Diarij
-          Amstelodamensis, qui verba Tua ex praefatione in Phoronomian mutilata dederat non parvo
-          honoris mei detrimento, si res ita mansisset: sed miror quod mihi affrices suspicionem
-          atque identidem repetas, quasi ego suspicatus fuerim, recensionem libri Tui praedicto
-          Diario insertam, si non a Te ipso factam saltem Tuis auspiciis et permissu approbatam in
-          publicum prodiisse, cum tamen non me hoc credere sed <hi rend="u">alios forte esse qui hoc
-            credituri sint, disertis verbis dixerim, quorum utique suspicio non adeo ab omni
-            verisimilitudine aliena sit, cum sibi persuadere possent, Typographum, qui utrumque
-            impressit et librum Tuum et Diarium, ut illum vendibilem redderet Te de ejus recensione
-            consuluisse</hi>; quid hic non recte dictum factumve sit, non video, neque unde habeas
-          assequi valeo, quod dicis me suspicioni isti "meae" sc. tantum indulgere, ut non dubitarim
-          Tibi dira minitari; meam enim non fuisse suspicionem jam probavi, non igitur ei indulsi,
-          quod vero Diarii scriptoris sive incuria <pb facs="1042889" n="2"/> sive malitia me ita
-          asserit, ut justum meum dolorem Tibi significanter expresserim, non putem me male egisse,
-          neque Te si meo loco fuisses idem patienter laturum fuisse; at dira me Tibi minitatum esse
-          causaris, ubi autem ista minarum diritas lateat non explicas; si crimen est quod genubus
-          flexis coram Te non comparui et abs Te non supplicando petii ut mihi justitiam faceres,
-          fateor me criminis reum esse, putabam namque justitiam exercendam esse non ex gratia sed
-          ex debito, quid ergo succenses mihi quod meum est, de jure exigenti non de precario
-          ambienti? caeterum non est quod multum immorer utrum per propositionem propriam alicujus
-          rei intelligi possit inventio, ego certe non pro iisdem haec duo sumerem, si quam rem etsi
-          alienam propono, res quidem ipsa non est propria sed tamen propositio est propria, aliud
-          igitur est propositio <hi rend="u">inventionis propria</hi>, aliud propositio inventionis
-            <hi rend="u">propriae</hi>: sed transeant haec. </p>
-        <p>III. Promisisti utique multoties in Italia adhuc agens, imo ultro et non rogatus
-          promisisti Te mei apologiam suscepturum contra Parentii et Hartsoekeri cavillas, an autem
-          id in libro Tuo facturum Te esse promiseris, non memini sed si bene memini in manuscripto
-          Tuo Codice aliquid vidi pro defensione mei phosphori Mercurialis contra Hartsoekerum,
-          adeoque tantum admirationem meam prodere volebam, cum postea in impresso libro omissa
-          viderem, quae ni fallor in manuscripto extabant; Nunquam interim quod repeto, a Te petivi,
-          ut cum hisce duobus cavillatoribus litem quaereres, sed Tute sponte obtulisti, Vindicem Te
-          meum agere velle contra illos: caeterum haud valde curo an hoc sis in posterum facturus,
-          qui enim per tot annos indefensus mansi, manebo porro citra detrimentum famae meae, quam
-          ab ineptulorum istorum insultibus satis tutam credo. Lepidum vero est figmentum Tuum de
-            <hi rend="u">lepido modo</hi>, quo Parentium fingis <hi rend="u">Te potuisse excipere ex
-            Te quaerendo, qui fiat, ut Tu meam causam Tuam facias, Tuam vero quam mecum habeas
-            propter objectiones meas <pb facs="1042890" n="3"/> adversus solutionem Tuam
-            particularem inversi problematis virium centralium, turpiter negligas; Teque postea
-            hortando, ut solutionem Tuam a stricturis meis prius defendas, quam mea adversus suas
-            objectiones tueri suscipias</hi>. Video hinc, quod hactenus non vidi, Te aegre admodum
-          tulisse, quod animadversiunculam amicam sane illam meam, de integrali constanti omissa in
-          Tua solutione, publicaverim quod tamen non fecissem nisi meam solutionem publicare volenti
-          occasio ejus rei necessitatem imposuisset; oportet sane, cutem valde delicatam habeas, si
-          talia, quae alius ne sentiret quidem aut si sentiret pro blando contactu haberet Tibi
-          stricturas tam dolorificas infligant: quare integrum Tibi etiamnum est, si Tibi
-          conducibile videtur, ut a stricturis istis Te defendas, et ita Riccatum, qui Te sive
-          jubente sive connivente me Tui de causa adorsus est ab hoc onere liberare; Interim non
-          possum, quin pro ipsa qua Te colo amicitia aperte Tibi dicam me vereri ut commercium
-          nostrum diu durare possit si posthac quoque tam facile ignem capis; memini quod aliquando
-          dixeris, Te nisi ex descriptione aliorum nescire, quid sit ira, observo tamen, Temet ipsum
-          non sine bile fuisse, cum Epistolam Tuam penultimam scriberes. </p>
-        <p>IV. Et quidem hoc maxime patet ex eo quod me salse perfricas querelas moventem de
-          neglecta mea demonstratione principii hydraulici a me Tibi primo exposita et de
-          confidentia, qua Te primum Demonstratorem ejus in libro Tuo nominasti: sed quam absurde
-          retundere coneris, meam conquerendi causam, mox videbimus. Dicis quod oblitus fueris Te
-          Demonstrationem meam vidisse, id quidem non negavi, sed jure ta<pb facs="1042891" n="4"
-          />men mirari potui et debui, quod Tu qui felici adeo memoria polles, ut etiam minutissimas
-          circumstantias in libris lectis annotaveris, citaverisque, nunc Tibi tam facile e memoria
-          excidere passus sis, rem istam quam a me in discursu non oscitanter, ut dicis, sed ad
-          longum protracto audivisti, dico <hi rend="u">ad longum protracto</hi> nam conversatio
-          nostra hac super re maximam confabulationis illius pomeridianae fecerat partem,
-          monueramque notanter Te nunc materiam habere in libro Tuo supplendi demonstrationem
-          principii hydraulici a nullo antea scriptore demonstrati; dicebam ideo magis operae
-          pretium fore, quod Newtonus ipse in ejus explicatione et demonstratione peccasset, cui Tu
-          monito non annuebas tantum, sed et quod de Newtono notaveram approbabas, sicut reapse Te
-          Newtoni errantis in libro Tuo egregie recordatum comperio. Agnatus meus qui tum
-          superveniebat, ut dicit, huic nostrae conversationi aut immediate post ex ore meo
-          audiverat horum omnium reminiscitur mecumque miratur, Te tam facile dictorum inter nos
-          atque gestorum oblivisci potuisse. Licet ego de felici memoria haud multum gloriari
-          possim, talia tamen ab Amico mihi concredita nec antea cuiquam cognita nunquam oblitus
-          fuissem, aut si oblivionis metus exegisset ea potius in adversaria mea scripsissem, ne si
-          aliquando de ea re aliquid publicare vellem oblivio mea Amico isti futura fuisset damnosa.
-          Ex quo vides Te male ad exemplum meum provocare, simile enim in <pb facs="1042892" n="5"/>
-          me quod huc quadret non invenies, illud quod allegas, utroque pede claudicat. Dicis <hi
-            rend="u">quod Nepos meus in responsione ad Riccatum spiralem vobis hyperbolicam,
-            reliquasque curvas quas in Act. Lips. 1713 dedi, pro lege virium centralium in reciproca
-            triplicata ratione distantiarum se habentium tanquam novas neque antea cognitas
-            proponat, non obstante quod Varignonius spiralem hyperbolicam in Comm. Acad. Scient.
-            Paris. 1710 et Newtonus Cor. III ad propos. XLI item et corol. 6 prop. XLIV Princip.
-            Phil. nat. easdem jam diu ante exhibuerunt, pro hac eadem lege virium centralium</hi>.
-          Ad haec repono sequentia. 1.<hi rend="sup">o</hi> Nego quod legerimus in Varignonio
-          spiralem hyperbolicam satisfacere curvae quaesitae, adeoque dicere non potes nobis e
-          memoria excidisse, curvan illam jam esse a Varignonio traditam; imo nisi Tu mihi locum
-          indicasses in Comm. Parisiensis etiamnum ignorarem Varignionium quicquam de hac spirali
-          hyperbolica scripsisse, neque hoc mirum Tibi videri debet, utpote cui non semel olim dixi,
-          me a me impetrare non posse, ut vel miniman partem legam eorum quae a Varignonio quotannis
-          proferuntur cum sint diffusissima et plerumque nihil aliud quam commentarii generalizantes
-          nostrorum scriptorum jam antea editorum et Tu quidem idem mecum sentiebas: quomodo ergo
-          supponere potes me illud quod est in quaestione olim legisse et nunc oblitum esse, cum
-          potius si operae pretium esset jurare possem, me nunquam vel somniando quidem scivisse
-          tale quid a Varignonio editum fuisse: cadit igitur Tua retorsio ab exemplo meo desumta.
-            2.<hi rend="sup">do</hi> quod attinet ad curvas quas ex Newtono citas et <pb
-            facs="1042893" n="6"/> quas easdem esse dicis cum meis reliquis quas in Act. 1713
-          proposui et quas easdem esse nunc demum instituto examine deprehendo, tanta est
-          differentia inter utriusque nostrum constructiones, et genesin curvarum illarum ut nemo
-          aequioris judicii suspicari possit, me curvas illas a Newtono mutuatum esse, adeo ut
-          iterum perperam me accuses, quod curvas meas a Newtono didicerim et postea oblitus fuerim.
-            3.<hi rend="sup">o</hi> Varignonius spiralem hyperbolicam sibi proposuit, atque ad eam
-          describendam quaesivit legem virium centralium, id quod nihil aliud est quam exemplum
-          solutionis problematis directi; ego vero curvam illam inter quaesitas (de ea ne cogitando
-          quidem) inveni per methodum meam problematis inversi. Newtonus pro curvis suis usus est
-          methodo synthetica: ego vero meas erui per methodum analyticam. Hinc quia non solum nihil
-          de duorum horum Virorum inventis noveram, sed et quia primus curvas istas analytice erutas
-          dedi, non video quo jure mihi lites intendas. 4.<hi rend="sup">to</hi> quin et ipsa <hi
-            rend="u">tanta confidentia ut major non possit</hi>, qua curvas istas praesertim
-          spiralem hyperbolicam tanquam a me primum inventam proponimus Riccato eandem Tecum
-          objectionem quasi uno ore nobis formantem satis arguit, nos omnino ignorasse quod
-          Varignonius eandem jam nominaverat, alias si nobis hoc innotuisset, olim et postea vel
-          maxime obliti fuissemus, fieri tamen non potuisset quin monente Riccato, non tamen locum
-          nominante, nobis e vestigio res ipsa in memoriam rediisset, sed inventi mei a memet ipso
-          facti tam securus eram, ut <pb facs="1042894" n="7"/> crederem Riccatum sine fundamento
-          attribuisse Varignonio quoniam locum ipsum nominare non poterat, idque etiam num
-          crederemus nisi tu tandem locum indigitasses: alioquin sane stolide factum fuisset ab
-          Agnato meo, qui Riccato negare perseveravit, Spiralem illam a Varignonio nominatam esse
-          siquidem reminisci facile potuisset, quod de contrario tandem convinceretur per citationem
-          ipsius loci. 5. supposito tandem sed minime concesso, me scivisse olim et postea oblitum
-          quod Varignonius spiralem hyperbolicam et Newtonus reliquas quas tradidi curvas jam ante
-          me tradiderint: magna tamen foret differentia inter oblivionem hanc meam et illam Tuam,
-          propter quam factum contendis, ut Tibi primam demonstrationem ascriberes principii
-          hydraulici in quaestione, etenim mea oblivio nemini foret damnosa, si quidem Varignonii et
-          Newtoni inventa publice extant, quibus semper convinci possem, si mihi primam inventionem
-          arrogare vellem. Tua vero oblivio vergit in praejudicium meum, quia, cum demonstrationem
-          meam illius principii nondum publici juris fecerim, asseveratio Tua, qua Tibi primam
-          inventionem arrogas, me impedit, quominus ego mihi primae demonstrationis laudem
-          attribuere possim: ridiculum quippe valde foret, si nunc post editam Tuam, meam edere
-          voluissem eamque primam nuncupare; putas ne Tu quemquam futurum esse, qui non crederet me
-          Tibi primi Demonstratoris laudem ex invidia praeripere velle? vides itaque me Tua
-          oblivione in longe deteriorem statum positum esse, quam mea fieri <pb facs="1042895" n="8"
-          /> potuissent Varignonius et Newtonus. Justum equidem querelae meae et malo inde oriundo
-          afferre promittis remedium in eo consistens, ut Tute demonstrationem meam edendo publicum
-          edoceas me primum Demonstratorem fuisse et per oblivionem factum esse ut Tuam
-          demonstrationem primam crederes. Libenter patiar ut discrimen ostendas quod Tuam inter et
-          meam intercedit, ita enim spero fore ut quilibet intelligens et attendens observet, uno
-          eodemque fundamento utramque niti, quod hoc est ut infima particula liquoris, quae nempe
-          foramini immediate incumbit concipienda sit propter pressionem columnae totius animari a
-          gravitate infinita quae se habeat ad gravitatem ordinariam, ut se habet altitudo totius
-          colummae liquoris ad altitudinem particulae ejus foramini contiguae. Hoc certe, in quo rei
-          caput vertitur et sine quo vix est, ut principii nostri hydraulici demonstratio
-          intelligibilis dari possit, Tu quoque in Tua ponis pro fundamento, quicquid jam sit de
-          diversitate quae conspicitur in progressu nostrarum demonstrationum; ideoque verisimile
-          est, Tibi non obstante oblivione Tua remansisse Ideam illius fundamenti, quod postea
-          utiliter in auxilium vocasti, non amplius cogitans, quod a me venerit. Judices ergo Ipse,
-          quousque mihi fas fuerit dicere, Tuam demonstrationem ex mea quodammodo esse formatam,
-          nisi forte aptius dixissem Tuam in mea <pb facs="1042896" n="9"/> esse fundatam. Debile
-          igitur est argumentum quo evincere conaris totam Tuam demonstrationem ex Tuo fundo proprio
-          emanasse, quando ita erumpis, "In meo" inquis, "opusculo non pauca me difficiliora dedisse
-          puto, quam demonstrationem principii illius hydraulici, ut adeo nulla ratio sit cur ejus
-          demonstrationem mihi adeo imperscrutabilem et supra vires meas positam existimes, ut
-          nullam proprio marte deponere censeri debeam, quae ex Tua formata non sit".<note
-            type="editorial">[Text folgt]</note> Quis enim unquam de penetranti Tuo ingenio
-          dubitavit? aut quis unquam negavit Te dedisse in Libro Tuo difficiliora quam ejusmodi
-          demonstrationem? aut quis demum eam Tibi imperscrutabilem dixit? annon casui et fortunae
-          saepe debemus, quae etsi facilia sagacitatem eluserunt? etenim et hoc fortunae ascribo
-          quod mihi in mentem venerit fundamentum praememoratum: sed quid multis? annon Newtonus
-          eodem Tuo argumento uti posset, interim tamen in prima sui operis editione in demonstrando
-          hoc principio hydraulico misere a scopo aberravit. In altera vero animadvertens errorem
-          suppressit omnino demonstrationem, nullamque aliam suppressae substituit, quia haud dubie
-          nullam habuit, quamquam pariter negare non possis, <hi rend="u">illum</hi> non pauca
-          difficiliora dedisse in suo libro, et forte agnoscas illi non magis quam Tibi <hi rend="u"
-            >imperscrutabilem esse demonstrationem illius principii hydraulici</hi>: quid ergo aliud
-          dicendum quam quod satis fortunatus non fuerit, ut incideret in verum et forsan unicum
-          fundamentum de introducenda gravitate infinita qua infima liquoris guttula animata
-          censenda sit! Addis tandem me Tibi mentem meam <hi rend="u">verbis nonnihil duriusculis
-            explicuisse</hi>, sed pace Tua! nihil minus quam Te <pb facs="1042897" n="10"/>
-          offendere aut pungere volui, sed cum laudem primae meae demonstrationis mihi surreptam,
-          eamque adeo si edere vellem novitatis specie carituram esse crederem, fateor dolorem me
-          impulisse ad liberius loquendum, minime vero ad Te verbis duriusculis lacessendum.</p>
-        <p>V. Nolo hoc loco multum inhaerere iis quae habes de lite quam Riccatus mihi intempestive
-          suscitavit, ea enim mihi jam sordere incipit; quid mihi cum homine novo, qui nisi nostra
-          arma haberet, militare nesciret? si unicuique ex obscuritate surgenti sciolo cui me
-          convellere animus est respondere vellem, inimicus forem tranquillitati meae et tempus meum
-          inglorius transigerem imo prodigerem? quare semel apud me constitui, posthac alto silentio
-          contemnere conscribilationes ejusmodi hominum, qui tantum in scenam prodeunt ut me
-          aliosque otio non abundantes insultent et inde nescio quam inclarescendi viam quaerant,
-          quasi nihil aliud agendum haberemus, quam ut cuilibet ex angulo prosilienti praesto simus.
-          Si Agnato meo qui nuper duplicationem Venetias misit lubeat litem continuare si forte
-          Riccatus ut non dubito, triplicaverit, id per me licebit ex me ipso tamen nihil unquam
-          responsi extundet. Num Agnatus ut dicis Riccatum <hi rend="u">inurbanitatis</hi>
-          taxaverit, nescio; nam scriptum ejus mihi non est ad manus, si id factum est, credo,
-          modestis terminis, id tantum esse subindicatum[;] caeterum vero ut nihil dicam de aculeis,
-          quos passim in me sparsit Riccatus, vel hoc solum parum urbanitatis sapit: <pb
-            facs="1042898" n="11"/> quod ille qui nunquam antea in foro Mathematicorum comparuerat,
-          nunc prima statim vice audeat se immiscere et intrudere rei alienae, quae nempe mihi Tecum
-          fuit idque pluribus annis demum postquam illa inter nosmet ipsos jam fuisset sopita, hoc
-          certe redolet hominem non tantum inurbanum, sed et stolide ferocem et arrogantem.
-          Credimus, Tibi cum eo nullum directe commercium esse, est tamen, quod scimus, cum
-            Zendrino,<note type="editorial">[Text folgt]</note> qui ut pariter scimus cum Riccato
-          omnia communicat; hinc solutione Tua problematis ab Agnato meo Italis propositi, quam
-          Zendrino perscripsisti, Zendrinus, Riccatus aliique Itali superbierunt et tanquam suam
-          passim venditarunt, si solvisses problema generale quod olim Tibi proposui et in postremis
-          meis repetii scilicet, <hi rend="u">data scala temporum invenire scalam virium</hi>; Itali
-          haud dubie jam quoque scirent solutionem, sed Te tacente et illi tacent: me non tangit
-          offensa, quam ab Agnato meo Te accepisse contendis, in eo consistens, quod solutionem Tuam
-          particularem problematis inversi ream paralogismi non obscure accusaverit, eo quod additio
-          differentialis constantis neglecta fuerit; interim ut dicam, quod res est, mihi videtur,
-          illam minime negligendam fuisse ad hoc ut pro certo asseverari possit, solutionem omnes
-          possibiles curvas complecti, nec Tu ipse si bene memini hoc olim abnuebas, quare miror
-          quod nunc demum conatum instituas ad probandum quod in nostro casu additione illa
-          differentialis constantis non sit opus; <pb facs="1042899" n="12"/> etsi vel maxime
-          probatio illa Tua esset bona, vides utique saltem hanc fuisse necessariam, quae adderetur
-          Tuae solutioni quomodo enim alioquin Lector Tuus sibi potuisset persuadere, omissionem
-          differentialis constantis non relinquere solutionem defectuosam seu incompletam, praeterea
-          ut verum fatear non capio quid probatione Tua efficias ad concludendum, quod in Tua
-          solutione post primam integrationem fas Tibi fuerit citra paralogismum negligere
-          additamentum differentialis constantis, nam si examino argumentum Tuum, observo applicari
-          posse ad alios casus, in quibus tamen additio quantitatis constantis post peractas
-          integrationes curvarum naturas omnino mutat. Quicquid sit si secundum conscientiae
-          dictamen loqui velles, fatereris puto omissionem illam differentialis constantis Tibi
-          accidisse ex inadvertentia seu incuria non vero ex industria et ex praevisa ejus
-          superfluitate, hoc enim jam tum monuisses neque in hoc tempus usque reservasses. Quod
-          tandem attinet ad salebrositatem viae quam secutus es in Tua solutione, de ea nihil <hi
-            rend="u">rhetoricabimur</hi>, nam rhetorem agere in scholis non satis didici, utra vero
-          Tuane an mea solvendi via sit salebrosior et utra planior, judicet aequus et peritus
-          Lector. </p>
-        <p>VI. non vacat singula examinare, in quae Te longe lateque diffudisti super canone Tuo
-            <formula>G=\frac{1}{z{}^{3}}+\textrm{etc.}</formula>, cujus encomium decantas, verbis
-          quidem quae me si verum dicere licet nondum <pb facs="1042900" n="13"/> eo adigunt, ut
-          credam in eo canone una cum aequatione Tua
-            <formula>S^{\mu}\textrm{(etc.)}=rZ^{\nu}\textrm{(etc)}</formula> consistere pl[e]nariam
-          solutionem problematis inversi virium centralium pro omnibus curvis algebraicis, ita nempe
-          ut vel Tyro qui tantum differentiare novit canonem Tuum applicare possit, ad exemplum
-          quodlibet particulare et inde statim concludere, an casus propositus sit ad curvam
-          algebraicam nec ne, et si sit algebraica, ipsam curvae aequationem algebraicam exhibere;
-          an vero canon Tuus tantam habeat perfectionem, aequitati Tuae judicandum relinquo; Nam si
-          in applicatione alicujus canonis novo et longo ratiocinio opus est et majori forte ingenii
-          vi, et acie, quam ad ipsam canonis inventionem requirebatur, eo ipso certe desinit habere
-          canonis vel regulae perfectae naturam, perfectus quippe canon analyticus ita esse debet
-          comparatus, ut in applicatione nudam tantum et simplicem quantitatum substitutionem
-          requirat, qualis a quovis ut dixi Tyrone vel novitio peragi potest. Cum igitur Canon Tuus
-          requisita hac perfectione non gaudeat vel Te ipso fatente, non video cur meam formulam non
-          aeque ac Tuam appellem Canonem generalem pro curvis algebraicis, omnes namque curvas
-          algebraicas, quas Tu ex Tua invenies spero me ex mea invenire posse, modo vires intendere
-          lubeat vel potius vacet, saltem exempla, quae dedi me non vana suscipere Te docere debent.
-          Imo et Theorema Moivraeanum huc facit, Tu hoc negas, "quia ad omnes promiscue curvas
-          transcendentes aeque ac algebraicas pertineat", item, "quia nullum indicium theorema illud
-            <pb facs="1042901" n="14"/> sicut et formulae meae legem virium centralium lineis
-          finitis, quantumvis exprimentes includant, quo dignoscatur quando ad algebraicas curvas
-          pertineant et quando nullam algebraicam respicere possint:" deinde concedis quidem <hi
-            rend="u">easdem formulas meas ad omnes curvas pertinentes ita modificari atque restringi
-            posse, ut ad solas curvas algebraicas pertineant</hi>; sed <hi rend="u">negas ac
-            pernegas quemquam ostendisse unquam, quaenam sint et esse debeant hae modificationes et
-            restrictiones formulae Moivreanae, vel alii similes adhibendae ut ad curvas tantum
-            algebraicas restringantur</hi>, propterea addis quod aliquoties repetis, <hi rend="u"
-            >non desinere Tuam formulam generalem sine exemplo esse</hi>, sed ut hisce omnibus
-          satisfiat, oportet tantum Te concedente <hi rend="u">invenire generalem valorem radii
-            circuli osculatoris in omni curva algebraica</hi>; atqui hoc praestiti, nam exhibui
-          generalem expressionem radii osculi in quantatibus finitis pro omnibus et solis NB curvis
-          algebraicis; si legisses totum meum schediasma quod citas ex Actis Lips. 1701 pag. 136 sq.
-          reperisses eam generalem expressionem pag. 139, lin. 19 et 20, ubi absolute et sine
-          consideratione curvae alicujus <hi rend="u">genitricis</hi> exprimo generaliter et in
-          terminis finitis longitudinem radii osculi pro omnibus et solis NB curvis algebraicis;
-          ideoque nescio quid Tibi velis per curvam (a qua excipis) <hi rend="u">genetricem</hi>,
-          siquidem tali nec opus habeo nec de ea quicquam mentionem facio: videris <hi rend="u"
-            >quid</hi> pro <hi rend="u">quo</hi> sumsisse, dum neglecta hac mea expressione
-          analytica legisti tantum constructionem meam geometricam quae habetur pag. 137 haec enim
-            <pb facs="1042902" n="15"/> quae ad omnes porrigitur curvas tam transcendentes quam
-          algebraicas involvit aliquam curvam genetricem. Ergo tandem vides formulam Tuam generalem
-          non <hi rend="u">sine exemplo esse</hi>. Unum adhuc superest quod super hac re dicam,
-          scilicet quod rectius fecisses sensum verborum meorum conciliare potius quam ea captare et
-          torquere contra se mutuo, dixi per regulam Tuam
-            <formula>G=\frac{1}{z^{3}}+\textrm{etc.}</formula>, nonnisi palpando inveniri posse quid
-          pro <formula>A</formula> poni debeat ut prodeat valor = datae quanti[ta]ti
-            <formula>G</formula>, hoc etiamnum dico quia manifestum est, ob <formula>A</formula>
-          variis modis implicatum, cum <formula>B</formula>, <formula>C</formula>, etc. quae ab
-            <formula>A</formula> dependent primo intuitu innotescere non posse, quid pro
-            <formula>A</formula> ponendum sit, ut oriatur valor datus, quid ergo faciendum? haud
-          dubie hoc, ut tentes, ut explores, ut hinc inde videas, ut dispicias, ut lustres, denique
-          ut ingenii vim et aciem intendas, quo commodum eligas, sic itaque <hi rend="u">commode
-            videre</hi> nihil aliud est, quam formulam attente considerare et undiquaque sollicite
-          dispicere, ut tandem post varias tentationes, hoc est <hi rend="u">palpationes</hi>
-          expisceris justum debitumque <formula>A</formula> ut prodeat inde datum
-            <formula>G</formula>. Ergo <hi rend="u">palpas et commode vides</hi> hoc est dispicis
-          sine contradictione. Et hoc modo credimus Te solvisse exemplum ab Agnato meo Tibi
-          propositum, quomodo et per meas formulas solvi posse nullus dubito. Sed scribendo lassus
-          fio, quare tandem abrumpo; si haec Tibi satisfecerint, gaudebo, sin minus, Tuum erit de
-          iis cogitare, quod voles, non puto e re nostra fore, ut mutuas nostras rixas protrahendo
-          tempus nostrum inutiliter perdamus, quod mihi valde ingratum esset, hoc praesertim
-          tempore, quo me fascibus academiis oneratum magna expectat negotiorum nubes, ut adeo
-          inutilia temporis dispendia ferre non possim, adde et taedia quae creant abstrusiora
-          Mathematica, cum nos aliis et longe diversis cogitationibus occupatos inveniunt. </p>
-        <p>VII. Quae ad Varignonium nisi ad retundendas Keilii observationes contra me factas,
-          comparebunt fortassis in Actis Lips. cum aliis multis quae spectant ad lites ab Anglis
-          agitatas: missa sunt illa omnia ab Amico quodam, sub forma epistolae ad Cl. Wolfium, qui
-          eam ut spero tanquam ab Anonymo scriptam publicabit, notantur ibi qui<pb facs="1042903"
-            n="16"/>dam Angli ceu Plagiarii, inter quos ipse Keilius et Taylor (cujus librum nondum
-          vidi) quem dicis in doctrina centri oscillationis methodum meam sequi et sine dubio me non
-          nominato, id fit ut discant Exteris parcere et de suis modestius sentire, atque ne culpent
-          in aliis, quod in suis ipsis deprehendere possunt. </p>
-        <p>VIII. Quae ad nova nostra civica spectant, miror Rever. Tuum Patrem ea non semper Tibi
-          perscribere; Ille intentavit nuper Lydio Praeceptori Amerbachiano processum injuriarum,
-          utpote a quo fuit gravissime laesus. Lüdius autem fretus quibusdam Patronis, initio haud
-          multum sibi Timuit, et revera, nis[i] ego qua Visitator tacitae machinationi obstitissem,
-          Rev. Tuus Pater parum satisfactionis accepisset, in eo enim erat ut cogeretur acquiescere
-          privata et omni formalitate destituta deprecatione, in quam vero, cum ego consentire
-          nollem, res est delata ad Ampl. Regentiam, ubi Lüdius condemnatus fuit ad solennem
-          deprecationem, quam etiam praestitit coram toto senatu Academico et apertis foribus, legit
-          eam ex formula sibi praescripta, cujus jam duo exemplaria sunt paranda et a Lydio proprio
-          manu subscribenda, unum Rev. Patri Tuo, alterum ad conservationem in arca Rectoris Magn.
-          tradendum. Verum est quod Venerandus noster Werenfelsius Professionem suam deponere
-          simulaverit sub praetextu se nunc et imposterum sepositis omnibus negotiis saluti suae
-          aeternae operandae unice incumbere velle, quasi omnes reliqui qui se Professionibus suis
-          non abdicant salutem suam negligerent; petiit autem tantum hoc a Senatu academico bene
-          conscius quod Senatus acad. non habeat jus aliquem ex officio dimittendi; sed a Magistratu
-          Politico dimissionem suam nunquam postulavit, veritus forsan ne nimis facile impetraret.
-          Sic itaque factum est ut Senatus acad. eum rogarit, ut Professionem suam retineret. Et quo
-          facilius se exorari pateretur, dispensatus est ab onere legendi in auditorio publico,
-          ipsique permissum loco Lectionum in aedibus suis confabulari cum studiosis, quorum unum
-          vel alterum non singulis Lectionum diebus sed quandocunque sibi placuerit ad se accersere
-          possit; Et hic forsitan scopus fuit, quem noster habuit et ita egregie consecutus est. Ego
-          quidem gaudeo, vel ideo etiam, quod etsi laboribus suis res nostras academicas parum
-          amplius promoveat; tamen Nomen saltem ejus nostrae universitati sit ornamento. Quod
-          superest Vale et Fave. </p>
-        <p>Dabam Basileae a. d. XX. Maij 1716. </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124799361">Hartsoeker, Nicolas</persName>
+          <note type="lebensdaten">(1656-1725)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
+          <note type="lebensdaten">(1648-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124275087">Keill, John</persName>
+          <note type="lebensdaten">(1671-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-102552517">Michelotti, Pietro Antonio</persName>
+          <note type="lebensdaten">(1673-1740)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
+          <note type="lebensdaten">(1667-1754)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+          <note type="lebensdaten">(1643-1727)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
+          <note type="lebensdaten">(1666-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119543885">Riccati, Jacopo</persName>
+          <note type="lebensdaten">(1676-1754)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+          <note type="lebensdaten">(1685-1731)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
+          <note type="lebensdaten">(1657-1740)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
+          <note type="lebensdaten">(1679-1754)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117596027">Zendrini, Bernardino</persName>
+          <note type="lebensdaten">(1679-1747)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1042887/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1042888" n="1"/> <pb facs="1042889" n="2"/> <pb facs="1042890" n="3"/> <pb facs="1042891" n="4"/> <pb facs="1042892" n="5"/> <pb facs="1042893" n="6"/> <pb facs="1042894" n="7"/> <pb facs="1042895" n="8"/> <pb facs="1042896" n="9"/> <pb facs="1042897" n="10"/> <pb facs="1042898" n="11"/> <pb facs="1042899" n="12"/> <pb facs="1042900" n="13"/> <pb facs="1042901" n="14"/> <pb facs="1042902" n="15"/> <pb facs="1042903" n="16"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

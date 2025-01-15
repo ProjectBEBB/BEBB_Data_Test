@@ -1,424 +1,204 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1704-11-05_991170430329305501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Jacob Scheuchzer. Basel, 05.
-            November 1704</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000059950</title><title type="alt"
-            >1704-11-05_Hermann_Jacob-Scheuchzer_Johann_Jakob</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-119112450"
-            type="person">Jacob Hermann</rs> (1678-1733)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johann Jakob (1672-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Siegelspuren</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1704-11-05_Hermann_Jacob-Scheuchzer_Johann_Jakob"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms H 318, pp.205-208</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430329305501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406947905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000059950</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2,5 S.<dimensions unit="cm">
-                    <height>20,5</height>
-                    <width>16</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1704-11-05">5.to Novembr.
-                1704</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1704-11-05">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1704-06-07_991170430329405501" type="prev"/>
-          <ptr target="B_1704-11-09_991170430329005501" type="next"/>
-          <ptr target="BW_Hermann" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-131366858">Bernard, Jacques</persName>
-            <note type="lebensdaten">(1658-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-128386312">Cluever, Detlev</persName>
-            <note type="lebensdaten">(1645-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-13381792X">Faesi, Johann Jakob</persName>
-            <note type="lebensdaten">(1664-1722)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-129551651">Gregory, David</persName>
-            <note type="lebensdaten">(1659-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-129964026">Naudé, Philippe</persName>
-            <note type="lebensdaten">(1654-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-            <note type="lebensdaten">(1643-1727)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-100239684">Paravicini, Vincentius</persName>
-            <note type="lebensdaten">(1648-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-140012141">Roberti, Gaudenzio</persName>
-            <note type="lebensdaten">(1655-1695)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117327727">Wetstein, Hendrik</persName>
-            <note type="lebensdaten">(1649-1726)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1704-11-05_Hermann_Jacob-Scheuchzer_Johann_Jakob"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1009391/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1009410" n="205"/> Vir Excellentissime, Fautor et Amice honoratissime. </p>
-        <p>Miraberis haud dubie, cum hanc epistolam videas absque Gregorianis quae mutuo mihi
-            misisti<note type="editorial">Johann Jakob Scheuchzer an Jacob Hermann von <rs
-              key="B_1704-02-10_991170430330005501" type="letter">1704.02.10</rs>.</note> et diu
-          nimis quam par est mecum retinui; fatebor itaque libenter non nimis honeste me Tecum
-          egisse, quanquam omnis culpae reus non censebor forsan post quam resciveris Cl. nostrum
-            Bernoulli<note type="editorial">Jacob Bernoulli (1654-1705) war der akademische Lehrer
-            Jacob Hermanns in Basel. Hermann arbeitete bis zu dessen Tod wissenschaftlich eng mit
-            ihm zusammen.</note> Davidis Gregorii Tractatum de Quadraturis spatiorum<note
-            type="editorial">Gemeint ist Gregory, David, <hi rend="u">Exercitatio geometrica de
-              dimensione figurarum sive specimen methodi generalis dimetiendi quasuis figuras</hi>,
-            Edinburgi (J. Kniblus/J. Solingensis/J. Colmarius) 1684, und Gregory, James, <hi
-              rend="u">Exercitationes geometricae</hi>, Londini (W. Godbid) 1668.</note> a me
-          petiisse quem legere posset, non potui ei denegare quod a me petierat; atque ita factum
-          est ut in adornandis ad eum Figuris hactenus impeditus fuerim.<note type="editorial"
-            >Hermann hat im Brief von <rs key="B_1704-02-13_991170430329805501" type="letter"
-              >1704.02.13</rs> seine Absicht erklärt, die in seinem Exemplar von Gregorys Traktat
-            fehlenden geometrischen Figuren zu rekonstruieren.</note> At proxima occasione eum cum
-          promissis schematismis remittam. </p>
-        <p>Nupere Amicus quidam Berolino<note type="editorial">Es handelt sich um Philippe Naudé
-            (1654-1729).</note> litteras ad me dedit Ampl. Leibnitii nomine<note type="editorial"
-            >Dieser Brief, den Philipp Naudé im Namen von Gottfried Wilhelm Leibniz an Hermann
-            geschrieben hat, ist anscheinend nicht erhalten. Hermann war Naudé noch am 28. November
-            1704 die Antwort auf dessen Brief schuldig, wie aus dem Brief von Leibniz an Jacob
-            Bernoulli von <rs key="B_1704-11-28_991170430257605501" type="letter">1704.11.28</rs>
-            hervorgeht. </note> in quibus me certiorem reddit, Illustriss. Leibnitium a Generosiss.
-          Academiae Patavinae Proceribus rogatum, Mathematicum Ipsis ut indicet qui vacantem in eo
-          Lycaeo sedem Mathematicam<note type="editorial">Der Lehrstuhl für Mathematik an der
-            Universität Padua war nach dem Tod von Stefano degli Angeli (1623-1697) vakant, bis er
-            1698 an Dominico Guglielmini übertragen wurde. Guglielmini konnte dann 1702 den höher
-            bezahlten Lehrstuhl für theoretische Medizin übernehmen, allerdings unter der Bedingung,
-            dass er den mathematischen Lehrstuhl weiter betreue, bis er einen Ersatz fände. Da
-            Guglielmini im Folgenden jedoch nur medizinische Vorlesungen hielt, kann der Lehrstuhl
-            für Mathematik an der Universität Padua seit 1702 faktisch als vakant bezeichnet werden.
-            Guglielmini unterstützte dann zusammen mit Michelangelo Fardella und Bernardino
-            Ramazzini - sie alle waren mit Leibniz während dessen italienischer Reise von 1689 bis
-            1690 persönlich bekannt geworden - die Kandidatur eines Mathematikers aus dem
-            Leibniz-Kreis, nicht zuletzt, um den verlorenen Anschluss Paduas an die moderne
-            Mathematik, und das hiess an die Leibnizsche Infinitesimalrechnung, wieder herzustellen.
-            Vgl. zu den Umständen des gesamten Berufungsverfahren Hermanns nach Padua Robinet, <hi
-              rend="u">Empire Leibnizien</hi>, pp. 1-135, und Mazzone/Roero, <hi rend="u">Diffusion
-              of calculus</hi>, pp. 27-38.</note> impleat, me Ipsis nominasse eo quidem cum fructu
-          ut statim de me vocando consentirent Illi Proceres;<note type="editorial">Es fällt auf,
-            dass Hermann hier unerwähnt lässt, dass er bereits vor dem 15. Oktober 1714 durch einen
-            (nicht erhaltenen) Brief von Leibniz an Jacob Bernoulli erfahren hat, dass Leibniz ihn
-            für den Mathematik-Lehrstuhl in Padua empfehlen wollte, und dass er sich bei Leibniz für
-            diese Empfehlung in seinem Brief von <rs key="B_1704-10-15_991170430478405501"
-              type="letter">1704.10.15</rs> bedankt hat.</note> quapropter rescribentes ad Cel.
-          Leibnitium addiderunt litteras proxime ad me daturos esse ut videant conditiones sub
-          quibus talem spartam essem acceptaturus.<note type="editorial">Bei den hier angekündigten
-            Schreiben an Hermann handelt es sich vermutlich um die ab Januar 1705 an ihn gesandten
-            Briefe von Michelangelo Fardella. Sie sind zwar nicht überliefert; ihr Inhalt lässt sich
-            jedoch aus dem vorliegenden Briefwechsel von Hermann mit Johann Jakob Scheuchzer
-            teilweise erschliessen. </note> Rebus itaque sic stantibus, cum sciam Italiae et
-          Academiae Patavinae statum Tibi apprime notum esse,<note type="editorial">Scheuchzer bezog
-            seine Kenntnisse der Verhältnisse in Italien und speziell in Padua vor allem aus seiner
-            Korrespondenz mit italienischen Gelehrten wie Luigi Ferdinando Marsili, Giuseppe Monti
-            und vor allem Antonio Valisneri. Siehe "Lettres des Italiens" und "Lettres de Mr.
-            Valisnieri", ZB Zürich, Ms H 310, 311, 313 bzw. ZB Zürich, Ms H 312.</note> Tuam Excell.
-          etiam atque etiam rogo, ut quid de hac vocatione Tibi videatur haud gravate mihi aperire
-          digneris, quo sane beneficio Tuorum in me meritorum Numerum haud parum augebis. </p>
-        <p>In ultimis Tuis<note type="editorial">Dieser Brief Johann Jakob Scheuchzers an Jacob
-            Hermann ist anscheinend nicht erhalten.</note> meministi Tractatus Newtoniani de Lumine
-          et Coloribus,<note type="editorial">Newton, Isaac, <hi rend="u">Opticks: or, a Treatise of
-              the reflexions, refractions, inflexions and colours of light. Also two treatises of
-              the species and magnitude of curvilinear figures</hi>, London (S. Smith &amp; B.
-            Walford) 1704.</note> quem a Wetstenio Bibliopola Amstelaedamensi<note type="editorial"
-            >Johann Heinrich II Wettstein (1649-1726), Buchhändler in Amsterdam.</note> statim
-            petieram<note type="editorial">Dieser Brief Wettsteins an Jacob Hermann ist anscheinend
-            nicht erhalten.</note> atque Tuas litteras accepissem, at eum non misit, dicens se de eo
-          jam edito nihil rescire posse, neque ejus Amicum in Anglia adeo ut dubitet an prelum jam
-          subierit. At certo mihi constat publicae luci jam esse expositum, cum in Dn. Bernardi<note
-            type="editorial">Jacques Bernard (1658-1718) setzte seit 1699 Pierre Bayles <hi rend="u"
-              >Nouvelles de la republique des lettres</hi> als Herausgeber fort. 1705 wurde er als
-            Nachfolger von Burchard de Volder auf dem Lehrstuhl für Philosophie und Mathematik in
-            Leiden berufen.</note> Novellis Reipublicae Litterariae Gallicis ita ex Anglia ad eum
-          scriptum sit circa finem Maji A. 1704 pag. "Il y a prés d'un Mois que l'Optique de Mr. <hi
-            rend="u">Newton</hi> est publique. En voici le Titre. <hi rend="u">Optics or a Treatise
-            of the Reflections</hi>, etc., <hi rend="u">L'Optique ou Traitté des Réflexions,
-            Refractions, Inflexions et Couleurs de la Lumiere. Avec un Traité des Espéces et de la
-            grandeur des Figures Curvilignes</hi>. Par Mr. Isaac Newton in 4."<note type="editorial"
-              ><hi rend="u">Nouvelles de la republique des lettres. Mois de mai 1704. ...</hi>,
-            Amsterdam (H. Desbordes/D. Pain) 1704, p. 595.</note> Hic Liber non poterit non esse
-          curiosissimus siquidem tantum Autorem agnoscat et de eo in dictis Novellis circa finem
-          Martis 1704 <pb facs="1009411" n="206"/> scribatur: "Je ne scai si l'on Vous a mandé, que
-          Mr. <hi rend="u">Newton</hi> fait imprimer un Traité des Couleurs en Anglois. Au jugement
-          de quelques Personnes intelligentes, qui l'ont veu en manuscrit, il surpassera de beaucoup
-          tout ce qui a jamais été fait sur ce sujet."<note type="editorial"><hi rend="u">Nouvelles
-              de la republique des lettres. Mois de mars 1704. ...</hi>, Amsterdam (H. Desbordes/D.
-            Pain) 1704, p. 347.</note> Forsan ejus contenta jam in Actis Eruditor. reperientur,<note
-            type="editorial">In den AE Decembris 1705, p. 540, wird eine Rezension von Newtons
-            Theorie der Farben in dessen <hi rend="u">Opticks</hi> angekündigt.</note> quo casu
-          etiam atque etiam Te rogarem ea ut mihi indices. </p>
-        <p>Occupor jam in conscribenda responsione<note type="editorial">Ob die hier erwähnte
-            Antwort Hermanns auf Clüvers kritische Einwände gegen die Methoden der neuen
-            Differentialrechnung in Hermann, Jacob, <hi rend="u">Responsio ad Nieuwentiit
-              Considerationes secundas</hi> (1700) (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._002.2C_Responsio_ad_Nieuwentiit_Considerationes_secundas_.281700.29."
-              >Na. 002</ref>) im Druck erschienen ist, ist nicht bekannt. </note> ad ea quae
-          Detlevus Cluverus circa Finem libri cujusdam Germanici<note type="editorial">[Clüver,
-            Detlev], <hi rend="u">Nova crisis temporum oder Curiöser Philosophischer Welt-Mercurius,
-              so die verborgenste und schwereste Sachender Welt-Weissheit, auf eine leichte und
-              verständliche Art zu erkennen gibt, insonderheit was grösten Geheimnisse der
-              Mathematischen und Natürlichen Wissenschafften betrifft ..., Zweyter Theil</hi>,
-            Hamburg (F. C. Greflinger) 1702, pp. 211-212.</note> scripsit, contra meam Responsionem
-          ad Difficultates circa Differentialem calculum a Dn. Nieuwentiit<note type="editorial"
-            >Hermann, Jacob, <hi rend="u">Responsio ad Nieuwentiit Considerationes secundas</hi>
-            (1700) (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._002.2C_Responsio_ad_Nieuwentiit_Considerationes_secundas_.281700.29."
-              >Na. 002</ref>).</note> motas; dicti Libri titulus est: Dethlevi Cluveri Mittglids der
-          Königlichen Societaet zu London Nova Crisis Temporum oder Curioser Philosophischer Welt
-          Mercurius, Welcher die Merckwürdigste und schwärste Sache der Weltweißheit auf eine
-          leichte und verständliche Art zu erkennen gibt.<note type="editorial">[Clüver, Detlev],
-              <hi rend="u">Nova crisis temporum oder Curiöser Philosophischer Welt-Mercurius, so die
-              verborgenste und schwereste Sachender Welt-Weissheit, auf eine leichte und
-              verständliche Art zu erkennen gibt, insonderheit was grösten Geheimnisse der
-              Mathematischen und Natürlichen Wissenschafften betrifft ..., Zweyter Theil</hi>,
-            Hamburg (F. C. Greflinger) 1702. Der erste Teil von Clüvers Werk erschienen 1701, der
-            dritte 1703 mit leicht abweichenden Titelblättern.</note> Audivi nuperrime in Actis
-          Eruditorum alicubi recensionem fieri alicujus libri ab eo haud ita pridem ab eo editi
-          contra Atheos etc.<note type="editorial">Diese Bemerkung bezieht sich wahrscheinlich auf
-            die Erwähnung von Clüver, Detlev, <hi rend="u">Geologia sive philosophemata de genesi ac
-              structura globi terreni, oder: Natürliche Wissenschafft von Erschaffung und Bereitung
-              der Erd-Kugel wie nemlich nach Mosis und der ältesten Philosophen Bericht aus dem
-              Chao, durch Mechanische Gesetze der Bewegungen, die Erde sey herfür gebracht worden
-              ...</hi>, Hamburg (Liebezeit) 1700, in einer Rezension von Dickinson, Edmund, <hi
-              rend="u">Physica vetus et vera. Sive Tractatus de Naturalis Veritate Hexaemeri
-              Mosaici</hi>, London (Ribotteau) 1702, in AE Januarii 1703, pp. 38-39. Nach Meinung
-            des (anonymen) Rezensenten unterstütze Clüver mit seinem Buch Dickinsons Verteidigung
-            der physikalische Deutung der Genesis gegen die Einwände der Atheisten.</note> quia
-          autem locum eum Actorum non vidi, libentissime ejus contenta scirem. Hic Autor ubique
-          ferme est Mysticus adeo ut pauca ex eo disci possint, mihi iratus est quod ei in mea
-          Responsione pag. 57 contradicere ausus sim<note type="editorial">Hermann befasst sich in
-            seiner <hi rend="u">Responsio ad Nieuwentiit Considerationes secundas</hi> (1700) (=
-              <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._002.2C_Responsio_ad_Nieuwentiit_Considerationes_secundas_.281700.29."
-              >Na. 002</ref>) auf pp. 57-59 mit Clüver, Detlev, <hi rend="u">Monitum ad
-              Geometras</hi>, in: AE Octobris 1687, pp. 585-588. Clüver behauptete dort u. a., die
-            neue Differentialrechnung benutze z. B. im Umgang mit unendlichen Reihen zwei
-            "chimärische" Prinzipien. Erstens gebe man irgendwie einen letzten Term solcher Reihen
-            an und zweitens lasse man diesen Term bei abnehmenden Reihen wegen zunehmender Kleinheit
-            zu einem "non-quantum, sive non-ens aut nihil" werden. Hermann weist diese Aussagen
-            Clüvers über die angeblichen Prinzipien der Differentialrechung entschieden zurück. Er
-            wirft demgegenüber Clüver vor, dass dieser die wahren Prinzipien des "calculus" nicht
-            verstanden habe und aus falschen Annahmen falsche Schlüsse ziehe. Zugleich zitiert er
-            dort eine Passage gegen die Parabelquadratur Clüvers aus dem Brief seines Lehrers Jacob
-            Bernoulli an Detlev Clüver von <rs key="B_1697-02-06_991170430084105501" type="letter"
-              >1697.01.27</rs>. Seine Einwände gegen Clüvers irrige Annahme, die Leibnizianer
-            hielten die Differentiale dx, dy, dz etc. für "pro absolute nihilis" hat Hermann auch
-            bereits kurz vor Abfassung des vorliegenden Briefs in einem Brief an Johann I Bernoulli
-            von <rs key="B_1704-06-23_991170514970205501" type="letter">1704.06.23</rs> formuliert.
-            Zu der Kontroverse des Leibnizkreises um Clüver siehe Mancosu, Paolo/Vailati, Ezio, <hi
-              rend="u">Detleff Clüver: An early opponent of the Leibnizian differential
-              calculus</hi>, in: Centaurus 33 (1990), pp. 325-344; Mancosu, Paolo, <hi rend="u"
-              >Philosophy of mathematics and mathematical practice in the seventeenth century</hi>,
-            New York/Oxford 1996, ch. 6.2., sowie Wahl, Charlotte, <hi rend="u">Offenheit und
-              Abgrenzung im Mathematikerkreis um Leibniz. Die Auseinandersetzungen mit Clüver und
-              Nieuwentijt</hi>, in: Mulsow, Martin/Rexroth, Frank (eds.), Was als wissenschaftlich
-            gelten darf. Praktiken der Grenzziehung in gelehrten Milieus der Vormoderne,
-            Frankfurt/New York 2014, pp. 247-278.</note> at hoc non multum curo, spero enim quam
-            evidentissime<note type="editorial">Im Manuskript steht "evidentisse".</note> me ei
-          paralogismos, in ea quam paro responsione ostensurum esse, et receptam Geometriam a
-          cavillationibus et objectionibus ejus vindicaturum. </p>
-        <p>Cl. noster Paravicinus<note type="editorial">Paravicini, Vincentius (1648-1726). Siehe
-            den Brief von <rs key="B_1703-06-05_991170430331905501" type="letter"
-            >1703.06.05</rs>.</note> mihi asseveravit continuationem Novorum literariorum
-            Helvetiae<note type="editorial">Scheuchzer, Johann Jakob (ed.), <hi rend="u">Nova
-              literaria Helvetica pro annis ...</hi>, Tiguri [Zürich] (D. Gessner, J. J. Scheuchzer,
-            M. Schaufelberger/Chr. Hardmeyer) 1702-1715.</note> proxime Te nobis daturum esse, cujus
-          prosperum voveo successum. Nescio an schediasma meum de Iride in Nouvelles de la
-          Republique des Lettres Mois de Juin 1704 pag. 658<note type="editorial">Hermann, Jacob,
-              <hi rend="u">Méthode de déterminer le diamètre de l'arc-en-ciel</hi> (1704) (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._006.2C_M.C3.A9thode_de_d.C3.A9terminer_le_diam.C3.A8tre_de_l.27arc-en-ciel_.281704.29."
-              >Na. 006</ref>).</note> dignum judicabis, cujus Titulum Tuis Novis literariis inseras
-          qui hic est <hi rend="u">Methode Geometrique et Generale de determiner le Diametre de
-            l'Arc en Ciel, quelque Hypothese de la Refraction qu'on supose dans l'eau ou dans toute
-            autre liqueur transparente. Et le Diametre de l'Arc en Ciel étant donné par
-            l'Observation, en trouver la Raison de la Refraction</hi>.<note type="editorial"
-            >Scheuchzer hat angeblich vergessen, diesen Aufsatz Hermanns (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._006.2C_M.C3.A9thode_de_d.C3.A9terminer_le_diam.C3.A8tre_de_l.27arc-en-ciel_.281704.29."
-              >Na. 006</ref>) in seine <hi rend="u">Nova Literaria Helvetiae</hi> aufzunehmen (siehe
-            seinen Brief an Hermann von <rs key="B_1704-01-26_991170430330805501" type="letter"
-              >1704.01.26</rs>).</note></p>
-        <p>Si per aliquot septimanas Gaudentii Miscellaneis Italicis<note type="editorial">Gemeint
-            ist wohl Roberti, Gaudenzio (ed.), <hi rend="u">Miscellanea italica
-              physico-mathematica</hi>, Bononiae [Bologna] (Typographia Pisariana) 1692.</note>
-          commode carere posses, ea humillime a Te peterem ita tamen ut simul promitterem brevi ea
-          me redditurum: vides quam libere Tua humanitate abutar; vellem ego ut pariter ex meis
-          libris eos peteres qui <pb facs="1009412" n="207"/> usui esse possent: de coetero si adhuc
-          exemplaria Tuae Dissertationis de <hi rend="u">Myopibus et Presbytis</hi><note
-            type="editorial">Scheuchzer, Johann Jakob, <hi rend="u">Disquisitio physico-mathematica
-              de presbytis et myopibus, quam sub praesidio M. Joh. Christoph. Sturmii, Philos.
-              Natur. &amp; Mathem. P.P. publice ventilandam exhibet &amp; pro virili defendet,
-              Johannes Jacobus Scheuchzer, Helvet. Tigur. d. Maji MLCXCIII</hi>, Altdorf (J. W.
-            Kohles) 1693.</note> ad manus essent, aliquam a Te exorare non vererer eo usque
-          impudentiae processi! aliquis ex Amicis a me petiit ut sciscitarer quanti Dni. Faesii
-          Deliciae Astronomicae<note type="editorial">Fäsi, Hans Jacob, <hi rend="u">Deliciae
-              astronomicae oder astronomische Ergetzlichkeit. Bestehe[nd] in Beschreibung und
-              Gebrauch sphaerae armillaris, astroscopii, planetolabii, und horologiographiae
-              gnomonicae. Wordurch die kunstliche Eintheilung beydes der Himmel und Erd-Kugel: der
-              Lauff des Gestirns nach seiner Erst- und Andern Bewegung: jeder Sternen, sonderlich
-              der Planeten, Ort: dessgleichen der Tag und die Stund, wann und wie Sonn- und
-              Monds-Finsternussen sich begeben und dergleichen: gesehen, und ohne vil Rechnen,
-              gleichsam kurzweilende gefunden: und dann auch gezeiget wird, wie mit vortheil können
-              aufgerissen und verfertiget werden allerhand Gattungen Sonnen-Uhren ...</hi>, Zürich
-            (H. Bodmer) 1697.</note> vendi soleant; ignosce igitur, Vir Clariss. si et adhuc istud
-          oneris Tibi imponere in animum induxero. Postremo quam humillime Rogo, ut opella mea, ea
-          libertate uti digneris, qua Tua Humanitate hactenus abusus sum, et occasiones mihi
-          suppeditare quibus ipso facto comprobare possim, me Tibi et Celeberrimi Nominis Tui
-          Obstrictissimum servum et perpetuum Cultorem fore Hermannum </p>
-        <p>Dabam Basileae 5.<hi rend="sup">to</hi> Novembr. 1704.</p>
-        <p><pb facs="1009413" n="208"/> A Monsieur</p>
-        <p>Monsieur Scheuchzer</p>
-        <p>Celebre Docteur en Medecine</p>
-        <p>à Zuric </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1704-11-05_991170430329305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann Jacob Scheuchzer. Basel, 05. November 1704</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Siegelspuren</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1704-11-05_Hermann_Jacob-Scheuchzer_Johann_Jakob" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms H 318, pp.205-208</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430329305501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406947905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000059950</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2,5 S.<dimensions unit="cm"><height>20,5</height><width>16</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1704-11-05">5.to Novembr. 1704</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1704-11-05">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1704-06-07_991170430329405501" type="prev"/>
+        <ptr target="B_1704-11-09_991170430329005501" type="next"/>
+        <ptr target="BW_Hermann" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-131366858">Bernard, Jacques</persName>
+          <note type="lebensdaten">(1658-1718)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-128386312">Cluever, Detlev</persName>
+          <note type="lebensdaten">(1645-1708)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-13381792X">Faesi, Johann Jakob</persName>
+          <note type="lebensdaten">(1664-1722)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-129551651">Gregory, David</persName>
+          <note type="lebensdaten">(1659-1708)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-129964026">Naudé, Philippe</persName>
+          <note type="lebensdaten">(1654-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+          <note type="lebensdaten">(1643-1727)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-100239684">Paravicini, Vincentius</persName>
+          <note type="lebensdaten">(1648-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-140012141">Roberti, Gaudenzio</persName>
+          <note type="lebensdaten">(1655-1695)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117327727">Wetstein, Hendrik</persName>
+          <note type="lebensdaten">(1649-1726)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Hermann_Jacob">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

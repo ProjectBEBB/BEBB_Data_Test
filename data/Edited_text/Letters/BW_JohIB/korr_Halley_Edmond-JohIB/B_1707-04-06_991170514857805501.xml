@@ -1,253 +1,157 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1707-04-06_991170514857805501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Edmond Halley. Basel, 06. April
-            1707</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000055896</title><title type="alt"
-            >1707-04-06_Bernoulli_Johann_I-Halley_Edmond</title><title level="s">Basler Edition der
-            Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Halley, Edmond (1656-1742) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Joh. I B. erhielt kurz vor 1706 08 14 einen weiteren (nicht
-            erhaltenen?) Brief von Halley (Hermann an J.Ch.Fatio 1706 08 14).</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1707-04-06_Bernoulli_Johann_I-Halley_Edmond"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 674:Bl.66-67</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514857805501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972432929305504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000055896</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2 Bl.<dimensions unit="cm">
-                    <height>21,5</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1707-04-06">a.d. 6 Aprilis
-                MDCCVII</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1707-04-06">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118720066">Halley, Edmond</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1733-01-27_991170514857905501" type="prev"/>
-          <ptr target="B_1712-11-23_991170514857705501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Halley_Edmond-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>Joh. B. dankt für die Zusendung von Halleys "aureum libellum" [wohl Apollonii Pergaei de
-          sectione rationis]. Bemerkungen dazu. Joh. B. lobt besonders Halleys Scholien.</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-119408007">Cassini, Giovanni Domenico</persName>
-            <note type="lebensdaten">(1625-1712)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119205300">Commandino, Federico</persName>
-            <note type="lebensdaten">(1509-1575)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118532561">Fermat, Pierre de</persName>
-            <note type="lebensdaten">(1601-1665)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-128409029">Guldin, Paul</persName>
-            <note type="lebensdaten">(1577-1643)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118789589">Pappus</persName>
-            <note type="lebensdaten">(ca. 3./4. Jh.)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118797794">Snellius, Willebrordus</persName>
-            <note type="lebensdaten">(1580-1626)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118804480">Viète, François</persName>
-            <note type="lebensdaten">(1540-1603)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1707-04-06_Bernoulli_Johann_I-Halley_Edmond"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1416586/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p> Viro Doctrina et meritis Incomparabili </p>
-        <p>Mathematico summo Edm. Halley </p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli</p>
-        <p>Puderet sane ad humanissimas Tuas litteras<note type="editorial">Dieser Brief Halleys an
-            Johann Bernoulli scheint nicht erhalten zu sein.</note> tam sero respondere nisi me
-          excusaret Bibliopolae Amstelodamensis tarditas qua factum ut aureum Tuum libellum<note
-            type="editorial">[Halley, Edmund, ed.], <hi rend="u">Apollonii Pergaei De sectione
-              rationis libri duo ex arabico msto latine versi. Accedunt ejusdem De sectione spatii
-              libri duo restituti. Opus analyseos geometricae studiosis apprime utile</hi>, Oxford
-            1706.</note> (quem videre prius cupiebam quam responderem) ante paucas demum hebdomadas
-          nactus fuerim. Gratias ante omnia ago pro summa Tua erga me benevolentia quam verbis
-          expressisse non contentus munere etiam splendido mihique certe pretiosissimo Lectori atque
-          confirmare voluisti. Hoc unicum doleo nihil me habere Te dignum quod redhostimenti loco
-          reponere possim nisi animum gratum et ad officia paratum. </p>
-        <p>Quod nunc attinet ad Libellum ipsum, perlustravi eum magna cum voluptate; quantum ego
-          intelligo boni interpretis personam egregie sustinuisti; Id vero me prorsus attonitum
-          habuit, quod Arabicae Linguae ut asseris ignarus ex arabico hanc versionem tam feliciter
-          adornaveris. Tuam Vir Cl. sagacitatem et rerum mathematicarum raram peritiam mirifice hic
-          prodis, nec quispiam facile Te imitabitur; Cassinus fateor Astronomus Parisiensis, aliquid
-          tale praestitit ex sinensium idiomate in Gallicum vertendo,<note type="editorial">[Text
-            folgt]</note> sed hoc quicquid est operis utut in se acutum satis prae Tuo tamen nihili
-          est. </p>
-        <p>Demeruisti impense remp[ublicam] Mathematicam Tuo labore; omnes quot quot sunt quibus
-          cordi est ut veterum Geometrarum inprimis Apollonii eorum facile Principis opera deperdita
-          luci restituantur, deberent Bibliothecas sollicite excutere, et si quem invenirent codicem
-          Tibi submittere, quem Tu quacunque lingua esset sit exaratus (quae enim abs Te non aeque
-          facile deciphraretur ac Arabica?) Latinitate donares. Ego saltem Parisienses amicos de hac
-          re jam admonui, sic tandem spes erit, ut omnia Apolloniana quorum Papyrus mem[i]nit <pb
-            facs="1416587" n="1"/> non tantum ex conjecturis ut fecere Vieta, Snellius, Fermatius
-          alii, sed ex ipsius Auctoris scriptis eruantur et restituantur. Caeterum scholia quae huic
-          de sectione rationis et spatii opusculo passim intertexuisti sunt ingeniosissima, nova
-          quae continent theoremata sunt pulchra, placet prae caeteris quod de parabola invenisti;
-          Datis nimirum positione tribus rectis parabolam tangentibus, et puncto contactus in una,
-          dari etiam puncta contactus in reliquis; item Datis etiam positione quatuor tangentibus
-          sine puncto, dari puncta contactus in omnibus. Quod superest gratulor Tibi Vir Eximie de
-          felicissima Tua detectione regulae centrobaricae Guldini ex Praefatione Pappi;<note
-            type="editorial">Zu dieser Frage cf. Bulmer-Thomas, Ivor, <hi rend="u">Guldin's Theorem
-              - Or Pappus's?</hi>, in: Isis, Vol. 75, No. 2 (Jun. 1984), pp. 348-352.</note> Textus
-          graecus liquidum adeo sensum fundit, modo amfoisma ceu apprime notas reddatur <hi rend="u"
-            >gyrans</hi>, et amfoisimòn <hi rend="u">gyrando genitum</hi>, ut mirer Commandinum tam
-          ineptam et puerilem hujus theorematis versionem tradere nobis potuisse,<note
-            type="editorial">[Commandinus, Federicus, ed.] <hi rend="u">Apollonii Pergei Conicorum
-              lib. IV; una cum Pappi Alexandrini lemmatibus et commentariis Tutocii Ascalonitae
-              sermoni antinensis philoni: Lib. Duo, quae omnia Federicus Commandinus a greco
-              convertit et commentarius illustravit. Quattor lib. physicorum</hi>, Bologna
-            (Alexander Benatius) 1566.</note> sunt enim ut vere dicam verba et voces praetereaque
-          nihil; oportet sane Commandinum fuisse in staticis imperitissimum. Ex quo vero Tuam legi
-          interpretationem eamque cum ipso Textu graeco contuli, in suspicionem fortissimam adductus
-          fui, quod forte Guldinus hanc praefationem Pappi ex manuscripto aliquo graeco nactus hoc
-          theorema centrobaricum ex ea fuerit expiscatus et postea suum fecerit.<note
-            type="editorial">Pauli Guldini ... <hi rend="u">De centro gravitatis trium specierum
-              Quantitatis continuae... Lib. 1-4</hi>, Wien 1635-1641.</note> Vale Vir Celeberrime
-          mihique Tui nominis Cultori obsequiosissimo fave. </p>
-        <p>Dabam Basileae a. d. 6 Aprilis MDCCVII </p>
-        <p>Cum variae jam prodierint phaenomen[orum]<note type="editorial">Im Manuskript steht das
-            halb lateinisch, halb griechische Wort "phaenomenon".</note> Eclipsis solaris superioris
-          anni, et hic et alibi totalis observatae, descriptiones quarum plures ad Te pervenisse
-          nullus dubito; hoc opere nunc ne actum agam lubens supersedeo. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1707-04-06_991170514857805501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Edmond Halley. Basel, 06. April 1707</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Joh. I B. erhielt kurz vor 1706 08 14 einen weiteren (nicht erhaltenen?) Brief von Halley (Hermann an J.Ch.Fatio 1706 08 14).</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1707-04-06_Bernoulli_Johann_I-Halley_Edmond" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 674:Bl.66-67</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514857805501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972432929305504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000055896</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2 Bl.<dimensions unit="cm"><height>21,5</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1707-04-06">a.d. 6 Aprilis MDCCVII</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1707-04-06">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118720066">Halley, Edmond</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1733-01-27_991170514857905501" type="prev"/>
+        <ptr target="B_1712-11-23_991170514857705501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Halley_Edmond-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <p>Joh. B. dankt für die Zusendung von Halleys "aureum libellum" [wohl Apollonii Pergaei de sectione rationis]. Bemerkungen dazu. Joh. B. lobt besonders Halleys Scholien.</p>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1416586/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1416587" n="1"/> <pb facs="1416589" n="2"/> <pb facs="1416590" n="3"/> <pb facs="1416591" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

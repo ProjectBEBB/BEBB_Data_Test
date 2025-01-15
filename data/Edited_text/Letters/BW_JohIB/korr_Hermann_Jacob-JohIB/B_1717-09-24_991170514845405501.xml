@@ -1,298 +1,197 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1717-09-24_991170514845405501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Bernoulli. Frankfurt (Oder),
-            24. September 1717</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000055971</title><title type="alt"
-            >1717-09-24_Hermann_Jacob-Bernoulli_Johann_I</title><title level="s">Basler Edition der
-            Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Hermann, Jacob (1678-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Siegelspuren</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1717-09-24_Hermann_Jacob-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 659, Nr.44*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514845405501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972432828905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000055971</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>3 S.<dimensions unit="cm">
-                    <height>21,5</height>
-                    <width>17</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Ffurti ad Viadrum</origPlace><date when="1717-09-24">d. 24 Sept.
-                1717</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4018122-4"
-            >Frankfurt (Oder)</placeName>
-          <date when="1717-09-24">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1717-09-24_991170514845405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann I Bernoulli. Frankfurt (Oder), 24. September 1717</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Siegelspuren</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1717-09-24_Hermann_Jacob-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 659, Nr.44*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514845405501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972432828905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000055971</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>3 S.<dimensions unit="cm"><height>21,5</height><width>17</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Ffurti ad Viadrum</origPlace>
+            <date when="1717-09-24">d. 24 Sept. 1717</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4018122-4">Frankfurt (Oder)</placeName>
+        <date when="1717-09-24">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1717-09-10_991170514845505501" type="prev"/>
+        <ptr target="B_1718-04-04_991170514845305501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1717-09-10_991170514845505501" type="prev"/>
-          <ptr target="B_1718-04-04_991170514845305501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
-            <note type="lebensdaten">(1648-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-102552517">Michelotti, Pietro Antonio</persName>
-            <note type="lebensdaten">(1673-1740)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
-            <note type="lebensdaten">(1683-1761)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-138151962">Schlabrendorf, Otto</persName>
-            <note type="lebensdaten">(1650-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1089923198">Verzaglia, Giuseppe</persName>
-            <note type="lebensdaten">(1669-1728)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1055335358">Wittich, Jacob</persName>
-            <note type="lebensdaten">(1677-1739)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1717-09-24_Hermann_Jacob-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1042948/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1042949" n="1"/> Viro Excellentissimo atque Celeberrimo</p>
-        <p>Johanni Bernoulli</p>
-        <p>S. P. D.</p>
-        <p>Jac. Hermannus.</p>
-        <p>Acceperis haud dubie epistolium meum responsorium ad postremas Tuas 12<hi rend="sup"
-            >mi</hi> Dec. anni superioris quod litteris meis Patri inscriptis inclusum per
-          Mercatores ad nundinas Fra[n]cofurtenses ad Moenum proficiscentes abhinc miseram: sed
-          Rectoratus negotiis tunc adhuc irretitus nonnisi pauca deproperare licuit. Nunc vero
-          posteaquam recentem meam Professionem Physicam quam Regio jussu priori meae Professioni
-          Mathematum junxi, Oratione solemni <hi rend="u">De duobus in Physicis testibus Ratione et
-            Experientia</hi>,<note type="editorial">[Text folgt]</note> exorsus sum, mihi
-          quadantenus redditus occasioni isti qua Parenti meo scribo, literas ad Te mittendi deesse
-          nolui. </p>
-        <p>Ante omnia vero gratulor Rectoratum Tuum ad finem feliciter deductum atque depositum;
-          faxit Deus ut suprema haec dignitas Academica ad Te incolumem et sospitem pluries redeat.
-          Quod ad meum attinet, post mille taedia et labores exantlatos eum demum etiam feliciter
-          absolvi. In longa illa molestiarum serie quas currente meo Rectoratu expertus longe
-          maximae et gravissimae fuere illae quas multiplices studiosorum rixae cum militibus
-          Praesidii hujus nobis causabantur: inter has rixas vero praesertim quaedam, quae in
-          caupona aliqua acciderunt, Universitati plurimum negotii facessivere; nam cum studiosi
-          novem in ea compotantes nonnullos milites in conclave suum ingressos et nescio quid
-          vociferantes aegre ferentes moderatis terminis exire jussissent, hi vero incomptis verbis
-          abire detrectassent, a verbis ad verbera ventum, militesque vi expulsi fuere qui accepta
-          hac injuria incandescentes quotquot coarcevare potuerunt commilitones armata manu ad
-          cauponam duxerunt, eo eventu, ut studiosi tandem post fortem resistentiam vi majori victi
-          ad communem excubiatorum stationem (corps de garde) abrepti ibique tota <pb facs="1042950"
-            n="2"/> nocte usque ad meridiem posterae diei, quae erat dies Dominica, detenti fuerint
-          praeter consuetudinem hoc loco antea observari solitam, qua studiosi a militibus captivi
-          abducti petenti Rectori solebant semper extradi; et non obstante nostra relatione hujus
-          velitationis ad Regem missa; officialium tamen calumniae, ac si studiosi non solum
-          excubias exploratorias aggressi, sed etiam Regi contumeliosis verbis insectati essent,
-          tantum valuerunt, ut novem illos Juvenes in arcem Custrinensem<note type="editorial"
-            >Küstrin</note> captivos duci et per Commissarios in factum eorum inquiri Jusserit Rex.
-          Haec inquisitio per trimestre spatium duravit eaque in re Universitas aliud obtinere non
-          potuit, quam ut aliquis Professorum nostrorum una cum Syndico nomine Universitatis
-          interesset. Primarius vero Regis commissarius erat Baro A Slabberndorf, Generalis et
-          Fortalitii Custrinensis Gubernator ut ajunt; totus processus in nihilum desiit et post
-          Custodiam plus quam 14 Septimanarum demum captivi liberi dimissi sunt. Hoc sinistrum
-          accidens multum detrimenti Academiae nostrae attulit, plures enim qui studiorum causa huc
-          venire parabant, propositum suum mutarunt, postquam audiverunt quid Juvenibus illis
-          studiosis accidisset, metuentes simile quid in hac Urbe sibi accidere posse; quod tamen
-          deinceps non amplius est metuendum, ex quo provida Regis cura factum et recenti Urbis
-          praesidio militum (prius enim quod ad velitationes illas ansam praebuit, abire jussum est
-          et sub finem mei Rectoratus abhinc discessit) acriter injunctum est, ut a locis illis
-          frequentandis quae studiosi adire solerent, abstinerent milites, nec alias ullam studiosis
-          ad rixas occasionem darent. Nullum tamen aut satis modicum Clementissimae hujus Regiae
-          Declarationis effectum hactenus sensimus; hinc etiam est, quod nullam adhuc Ephori
-          stationem pro Doct. Filio Tuo, quantum libet diligentissime a me quaesitam expiscari mihi
-          licuerit. Nam praeterquam quod paucissimi nunc apud nos degunt Nobiles, inter paucos qui
-          hic sunt nescio an duo reperiantur qui Ephorum habeant, unicum saltem novi, et reliqui
-          fere omnes stipendio Regio aliisve beneficiis apud nos fruuntur, opulentiores vero ab
-          aliquo jam tempore non amplius ad nos accedunt. Amicus de quo in praecedentibus aliquando
-          scripsi est ipse Nobilis Silesius Ephoro carens; is mihi antehac promiserat se pro Dn.
-          Filio Tuo (cujus egregias animi et corporis dotes non minus quam Parentis merita plurimum
-          semper commendaveram) invigilaturum et spem aliquam feceret, nos aliquando voti nostri
-          compotes futuros. Sed quia nunquam oblitus sum quoties <pb facs="1042951" n="3"/> me
-          invisere dignabatur promissi memoriam ipsi refricare, id effecit, ut me jam fugere
-          occipiat nec, quod antea saepissime faciebat, me adire sustineat, adeo ut vanam ejus
-          promissionem fuisse aut saltem praestitu impossibilem hactenus expertus sim. Per alios
-          quoque scopum meum assequi conatus sum, sed nulla adhuc spes proxima affulget fore, ut
-          proxime finem attingam, quod valde doleo quia Tibi Tuisque utilis esse vehementer cupio.
-          Caeterum audio Dn. Filium Tuum nunc Parisiis versari. Adversae fortunae insultus quos in
-          Mercatoribus vestratibus bonis cedentibus subiisti dolui in praecedentibus meis, non tamen
-          serio Te loqui existimo quando tanto Te taedio in Vestra Academia affectum monstras ut, si
-          invidus esses Professionem Tuam offerres cum mea permutandam; cum probe sciam Te nuper ad
-          Academiam Groninganam in qua tanto in honore et pretio habebaris, revocatum detrectasse
-          vocationem. Non defuere qui vocem spargerent me illuc vocatum iri quod tamen vix putem,
-          cum sciam Wittichium quendam Philosophiae et Mathematum Profess. Duisburgensem potentes
-          Amicos Groningae habere qui pro Ipso laborent; nescio tamen an ulli adhuc statio decreta
-          sit. Cl. Nepotem Tuum non solum feliciter Patavium adventasse sed etiam munia sua sub
-          finem anni praeteriti cum laude auspicatum esse ab humanissimo Poleno laetus accepi. Deus
-          porro laboribus ejus benedicat. Acceperis haud dubie Verzaliae libellum famosum contra me
-          in lucem protrusum; ridebis magnopere horrendos hominis Thrasonismos. Probl. ejus
-          inveniendi curvam indefinitae quidem quadraturae incapacem quae tamen tot, quot libuerit
-          spatia admittat quadrabilia absolute, Tecum facillimum et infinitarum solutionum capax
-          existimo. Simplex et elegans est Tua solutio, qua invenis curvae quaesitae aequationem
-            <formula>y=z+\sqrt[p]{ax^{m}+bx^{m-1}+cx^{m-2}+\textrm{etc.}+h}</formula> ubi
-            <formula>z</formula> datur in <formula>x</formula> per hanc aequationem
-            <formula>x^{p}-az^{m}-bz^{m-1}-cz^{m-2}-\textrm{etc.}-h=0</formula>, sed difficultatem
-          in ea offendo, nam etsi per se patet, fore <formula>y=2x</formula>, quando
-            <formula>x=z</formula>, seu
-            <formula>x^{p}-ax^{m}-bx^{m-1}-cx^{m-2}\textrm{etc.}-h=0</formula>, non tamen inde
-          liquet <formula>\int zdx+\int
-            dx\sqrt[p]{ax^{m}+bx^{m-1}+cx^{m-2}\textrm{etc.}-h}</formula> aequari debere spatio
-          rectilineo, quod tamen fieri debet. Annus jam elapsus est ex quo responsionem aliquam ad
-          ultimas meas litteras expecto a Cl. Michelotto nostro quam avidus praestolor: nescio
-          cuinam causae morbone an morti tantum silentium debeam adscribere, cum alias saepe me
-          litteris suis exhilarare solitus fuerit. Hisce Vale Vir Celeberrime meque porro ama ac
-          Celeberrimis Collegis Tuis data occasione cultum meum significa nisi grave est. </p>
-        <p>Ffurti ad Viadrum d. 24 Sept. 1717. </p>
-        <p><pb facs="1042952" n="4"/>
-        </p>
-        <p>A Monsieur</p>
-        <p>Monsieur Bernoulli tres Celebre Professeur </p>
-        <p>en Mathematiques et des Societez Royales des Sciences </p>
-        <p>de Paris, Londres et de Berlin</p>
-        <p>à Basle </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
+          <note type="lebensdaten">(1648-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-102552517">Michelotti, Pietro Antonio</persName>
+          <note type="lebensdaten">(1673-1740)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
+          <note type="lebensdaten">(1683-1761)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-138151962">Schlabrendorf, Otto</persName>
+          <note type="lebensdaten">(1650-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1089923198">Verzaglia, Giuseppe</persName>
+          <note type="lebensdaten">(1669-1728)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1055335358">Wittich, Jacob</persName>
+          <note type="lebensdaten">(1677-1739)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1042948/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1042949" n="1"/> <pb facs="1042950" n="2"/> <pb facs="1042951" n="3"/> <pb facs="1042952" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

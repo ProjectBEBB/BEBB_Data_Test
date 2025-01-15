@@ -1,343 +1,187 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1700-02-13_991170516662105501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Burcherus de Volder. Groningen,
-            13. Februar 1700</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057784</title><title type="alt"
-            >1700-02-13_Bernoulli_Johann_I-Volder_Burchard_de</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Volder, Burchard de (1643-1709) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Im P.S. berichtet Joh. I B., dass er den am vergangenen Montag
-            begonnenen Brief nicht wie geplant am Dienstag, sondern erst am 3. Februar abschicken
-            konnte, da seine Frau inzwischen unerwartet von den Wehen überfallen wurde und einen
-            kleinen Sohn (Daniel I Bernoulli) geboren habe. Dies geschah am 29. Januar 1700. Nach
-            altem Stil war dies ein Montag. Also datiert Joh. I B. hier seine Briefe nach altem
-            Stil.</p></note>
-        <note type="print"><p>Druck: Leibniz, Math.Schriften 3, pp.629-630 (Exzerpt)</p></note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1700-02-13_Bernoulli_Johann_I-Volder_Burchard_de"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 675:Bl.170-172</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170516662105501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433595905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057784</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>5 S.<dimensions unit="cm">
-                    <height>20,5</height>
-                    <width>15,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Groningen</origPlace><date when="1700-02-13">[13. Febr.
-              1700]</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4094052-4"
-            >Groningen</placeName>
-          <date when="1700-02-13">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1699-09-26_991170516662205501" type="prev"/>
-          <ptr target="B_1702-03-28_991170516662005501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-124763340">Bergius, Peter Jonas</persName>
-            <note type="lebensdaten">(1730-1790)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
-            <note type="lebensdaten">(1700-1782)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
-            <note type="lebensdaten">(1673-1764)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-130109363">Braun, Johannes</persName>
-            <note type="lebensdaten">(1628-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118869361">Noodt, Gerard</persName>
-            <note type="lebensdaten">(1647-1725)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1700-02-13_Bernoulli_Johann_I-Volder_Burchard_de"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1438713/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1438714" n="1"/> Celeberrimo Viro </p>
-        <p>Burchero De Volder </p>
-        <p>S. P. </p>
-        <p>J. Bernoulli </p>
-        <p>Lente ut vides procedunt nostrae Responsiones, quanquam non tam mea quam Leibnitii culpa;
-          interim sat cito si sat bene; tuum erit de earum valore judicare: Sperat Vir Amplissimus
-          Tibi hac vice plene satisfactum iri, dissolutis nempe difficultatibus quae Tibi
-          supererant. Quantum ad ipsius probationem seu ut ipse vocat probationis tentamentum
-          momentosae illius quaestionis <hi rend="u">an substantiae per se sint activae</hi>, cujus
-          demonstrationem tantopere desiderasti, vereor ne exclamaturus sis <hi rend="u">parturiunt
-            montes</hi> etc. quamvis alias pauca Leibnitii verba nonnihil inexpectati in se
-          continent et me legentem statim suspensum quodammodo corripuerunt: Vis ejus argumenti huc
-          redit <hi rend="u">substantia in substantiam influere non potest ergo substantia per se
-            activa est</hi>; sed paulo attentius rem considerans, duo protinus dubia reperi; ad
-          antecedens enim regeri posse vidi, quod licet substantia in substantiam non influat, tamen
-          una in aliam agere possit, quemadmodum clavus clavum trudat etiam si non penetret: Deinde
-          consequens non absolute inferri potest hoc modo <hi rend="u">ergo substantia per se est
-            activa</hi>, nisi propositio sit limitata per partem praedicati, ut cum Logicis loquar,
-          quae interdum subintelligitur, ut quando Apostolus ait omnes per Christum
-            justificari,<note type="editorial">[Text folgt]</note> aliud nil voluit dicere quam
-          omnes qui justificantur per Christum justificari: et sic Leibnitii Conclusio aequivaleret
-          huic <hi rend="u">Ergo substantia quae est activa per se est activa quandoquidem activitas
-            aliunde influere non possit,</hi> unde facile patet conclusionem ceu verissimam concedi
-          posse absque ut ideo omnis substantia sit activa; quemadmodum hoc alterum enthymema <hi
-            rend="u">Sapientia infundi non potest, ergo omnes suam sapientiam ex se habent</hi>
-          verissime concludit, quamvis interim omnia sunt plena stultorum <pb facs="1438715" n="2"/>
-          qui nos vexent non enim omnes esse sapientes conclusio contendit, sed tantum omnes suam
-          sapientiam (subintellige si quam habent) ex se habere. Hinc ut verum fatear nondum video
-          quomodo ex concessa impossibilitate influxus substantiae in substantiam, activitas omnis
-          substantiae legitime fluat: Quid Tu sentias avide expecto. Caetera quae de actionibus
-          earumque praestantiis disserit, aliquid ponderis habere videntur; Vellem interim ut inter
-          Vos tandem conveniret: Credo verum esse quod ipse Ampl. Leibnitius fatetur, se nimirum
-          meliora habere cogitata quam quae facile exprimere et alteri manifestare possit, id fere
-          ex eo patet quod semper quidem ad objectiones respondeat, sed raro proprias positiones
-          probet. Jam propero ad Tuam Epistolam ad me datam,<note type="editorial">[Text
-            folgt]</note> ut si forte possibile sit Te et me extricem ex luto in quo tam diu
-          haeremus: Equidem bene perspicio me operam lusurum si eadem qua hactenus via incedere
-          vellem, cum enim mihi neges quae nulla probatione indigere putaveram, frustra sane
-          clariora adducere tentarem qui clarissima jam adduxisse existimo, qualia sunt <hi rend="u"
-            >quod descensus sit ascensus effectus</hi> cum ille sine hoc fieri non possit; <hi
-            rend="u">quod vis corporis moti tanta sit, quantam sese consumendo et ad quietem
-            pristinum locumque redigendo in itinere suo sive ascensu sive descensu uni, duobus,
-            pluribusve elastris imprimere queat. Quod grave quomodocunque moveatur nisi infra
-            horizontem descendat, unde ascendat, non possit acquirere majorem potentiam, quam initio
-            habuerat,</hi> haec sane et alia sua luce mihi videbantur clara; praesertim hoc ultimum;
-          persuasissimum enim mihi habeo potentiam ex nihilo non posse augeri, verum augeretur
-          utique ex nihilo, si descensu existente non majore quam ascensu, id est si grave nunquam
-          infra horizontem suum descendens tamen elastris majore[m] potentiam imprimere posset quam
-          ipsum habet. Nec est quod dicas substitutionem elastrorum esse causam illius augmenti,
-          virium vel potentiae, adeoque non esse mirum si grave aliquod minima vi tandem ad maximam
-          altitudinem ascendere queat substituta nempe successive vehementiore causa; quaesiveri[s]
-            <pb facs="1438717" n="3"/> nuda elastra quae passive tantum se habent dare possent quod
-          non habent, sane quidquid habent virium id antea ab eo acceperunt cui postea reddunt:
-          substitutio itaque elastrorum plane non est causa quae grave ascendere faciat, nisi
-          occasionalis tantum, qua mediante, grave ad ascensum determinatur, recuperatis nempe
-          viribus, quas descendens impenderat: verum dicis, <hi rend="u">grave descendit non quia
-            antea ascendit, descenderet enim etsi non ascendisset, si modo spatium haberet, per quod
-            descendere posset</hi>; facile concedam grave descensurum etsi non ascendisset, sed
-          aptissime addis <hi rend="u">si modo spatium haberet, per quod descendere posset</hi>, ut
-          igitur spatium habeat necesse est ut prius ascendat, adeo ut quocunque modo sumas
-          descensus hoc loco semper sit effectus praevii ascensus. Caeterum quod iterato repetas me
-          assumere τὸ κρινομενον, jam in postremis meis notavi, discrimen esse inter supponere
-          aequales vires requiri pro ascensu continuo et pro ascensu interrupto ejusdem altitudinis;
-          vel pro descensu continuo et descensu interrupto; et inter vires ascensus continui
-          aequales esse viribus descensus interrupti; illud revera esset committere circulum, haud
-          inficior; hoc autem plane non est petitio principii: at inquis <hi rend="u">si hoc non
-            sit</hi> τὸ κρινόμενον<hi rend="u">, certe parum abest</hi>; sed pace Tua, dixerim,
-          propositionem quandam non ideo dici debere esse τὸ κρινόμενον quod ex ea τὸ κρινομενον
-          facile fluat, alias sane omnes demonstrationes mathematicae quae ex axiomatibus immediate
-          procedunt, hujus vitii reae essent: deinde non supposui vires per ascensum continuum
-          consumtas esse aequales viribus in elastra per descensum impressis, sed id demonstravi vel
-          saltem demonstrare volui, ex aequipollentia causae et effectus, quod si vero prout Tibi
-          videtur ansis excidi, non tamen circulum commisi: haec qualiacunque ad objectiones Tuas
-          respondisse sufficiant; permitterim interim Te tuo sensu gaudere, sed permittas mihi prius
-          ut alia jam via incedendo ultimum faciam conatum, quem si eluseris, lubentissime primus
-          ero qui arma abjiciam, et agnoscam me esse bonae causae malum defensorem. Demonstratio
-          quam facturus sum praecipue nititur compositione motuum, quam utique mecum admittes utpote
-          diu receptam: <pb facs="1438718" n="4"/> Demonstrabo<note type="editorial">Der folgende
-            Textabschnitt bis "q. e. d." findet sich als autographes Exzerpt als Beilage zum Brief
-            von Johann Bernoulli an Leibniz von 1700 04 06 (NLB Hannover, LBr 67, 2, Bl. 8). </note>
-          igitur vires per quas corpus ascendit ad certam altitudinem uno saltu esse aequales
-          viribus ejusdem corporis 4 impulsionibus iterum descendentis omnemque vim suam, quam
-          singulis impulsionibus acquisivit impendentis in tensionem elastri; id est aequales esse
-          viribus 4 elastrorum hoc modo tensorum: Ponamus corpus cum ascendere incipit habere duos
-          gradus velocitatis; quandoquidem itaque velocitates sunt in subduplicata ratione
-          altitudinum de quo mecum convenis, et cum ex hypothesi elastra illa quatuor quarta parte
-          altitudinis totius inter se distent, palam est corpus ad singula elastra appellere uno
-          celeritatis gradu, eaque tendere hoc toto celeritatis gradu consumto: Id igitur solum jam
-          probandum incumbit mihi, ut ostendam (nulla nunc attentione facta ad gravitatem) corpus
-          illud (quod ut perfecte durum concipi[o] ne in elasticis tantum id valere putes) in plano
-          horizontali 2 grad. velocitatis motum tendere posse praecise quatuor talia elastra ad quae
-          singula seorsum tendenda unus velocitatis gradus in corpore illo requiritur; nam
-          finge[Figur folgt]<note type="editorial"> [Link folgt] </note> corpus <formula>C</formula>
-          incurrere oblique in elastrum <formula>L</formula> velocitate <formula>CL</formula> (ut 2)
-          angulo inclinationis <formula>CLP</formula> existente 30 grad., cujus nempe sinus
-            <formula>CP</formula> est semissis radii <formula>CL</formula>. Jam quid fiet post
-          incursum corporis <formula>C</formula> in elastrum <formula>L</formula>, sane quoniam
-          motus per <formula>CL</formula> componitur ex duobus collateralibus per
-            <formula>CP</formula> et <formula>PL</formula>, et cum <formula>CP</formula> secundum
-          quam corpus directe impingit in elastrum <formula>L</formula>, exprimat dimidiam
-          celeritatem corporis per <formula>CL</formula>, consumetur hic motus per
-            <formula>CP</formula> tenso elastro, (perinde enim esset ac si corpus
-            <formula>C</formula> celeritate <formula>CP</formula> perpendiculariter incurreret in
-          elastrum, quod per hypothesin eam destruere potest) remanente corporis celeritate et
-          directione <formula>PL</formula>, producta igitur <formula>PL</formula> in
-            <formula>M</formula> ita ut <formula>LM</formula> sit <formula>=PL=\sqrt{3}</formula>
-          (ponitur enim <formula>CL=2</formula>) et applicato in <formula>M</formula> alio simili
-          elastro faciente cum <formula>LM</formula> angulum <formula>LMQ</formula>, cujus sinus
-            <formula>LQ</formula> sit <formula>=CP=1</formula>; per eandem rationem manifestum est,
-          corpus <formula>C</formula> post tensionem elastri <formula>L</formula>
-          <pb facs="1438719" n="5"/> tendere elastrum <formula>M</formula> amisso motu per
-            <formula>LQ</formula>, et servato motu per <formula>QM</formula>; prolongata itaque
-            <formula>QM</formula> ad <formula>N</formula> ut fiat <formula>MN=QM=\sqrt{2}</formula>,
-          ibique substituto elastro constituente cum <formula>MN</formula> angulum
-            <formula>MNR</formula> semirectum, quo scilicet <formula>MR</formula> iterum sit
-            <formula>=CP=1</formula>; patet similiter motum per <formula>MR</formula> totum impendi
-          in tensionem elastri <formula>N</formula>; corpore interim moveri pergente directione et
-          celeritate <formula>RN=1</formula>; denique si hac celeritate residua impingat
-          perpendiculariter in elastrum <formula>O</formula>; huic flectendo totam suam vim reliquam
-          dabit. Hisce ita praemissis argumentor hunc in modum Potentia corporis
-            <formula>C</formula> tanta est ut per se solum nullo auxilio nec gravitatis nec alterius
-          rei adjutum tendere possit praecise quatuor elastra talia ad quae singula seorsum tendenda
-          requiritur ut corpus decidat ex quarta parte altitudinis ejus ad quam corpus sua
-          celeritate initiali assurgere potest. Atqui eadem illa potentia tanta est ut assurgat uno
-          saltu ad totam altitudinem; Ergo ad ascendendum uno saltu<note type="editorial">An dieser
-            Stelle steht im Exzerpt zusätzlich (LBr xxx): "tanta potentia seu". </note> tantae vires
-          impenduntur, quantae in tensionem 4 elastrorum in descensu corporis. q.e.d.</p>
-        <p>Haec assumsi aliquid quod haud aegre admittes, nimirum vires elastrorum in plano ita
-          tensorum <formula>L</formula>, <formula>M</formula>, <formula>N</formula> et
-            <formula>O</formula> simul sumtas aequivalere potentiae corporis <formula>C</formula>;
-          tensio enim ista est effectus plenus et adaequatus quo tota causa exhauritur et
-          consumitur. Haec si satisfecerint impense gaudebo, sin minus desperabo de victoria; saltem
-          ex luto priori enixi sumus, modo non in aliud tenacius hac nova demonstratione delabamur,
-          nosti enim quam facile verum fiat vulgatum illud Incidit in Scyllam etc. </p>
-        <p>Res nostrae academicae alta jam tranquillitate fruuntur, coelum undique sudum et serenum,
-          nisi quod interdum levia quaedam appareant meteora fatui praesertim ignes qui territant
-          magis quam feriunt, sed qui sponte dissipantur. Hactenus fui actor comoediae, nunc
-          spectatorem egi illius, quae nuper peracta est inter nostrum JurisConsultum Juniorem, et
-          Professorem S. S. Theologiam, Philosophiam et Hellenismum Docentem. Et haec fabula finita
-          est, jam ad nos dictum est <hi rend="u">plaudite</hi>. Tu vero vale et me amare perge. </p>
-        <p>P. S. Has jam maximam partem scriptas praeterito die Lunae, sequenti Martis dimissurus
-          eram, sed Uxor meo inopinato parturire incipiens quae postea filiolum feliciter enixa
-            est,<note type="editorial">Es handelt sich um Daniel Bernoulli, geboren am 08.02.1700
-            neuen Stils. </note> me in scribendo interrupit: hoc itaque demum die qui est 3 febr.
-          hasce literas dimitto. Vides autem me hujus retardationis habuisse causam vere
-          praegnantem. </p>
-        <p><pb facs="1438720" n="6"/> Quod me salvere jusserint, Bergius, Noodtius non parum gaudeo.
-          Velim iisdem dicas verbis meis salutem officiosissimam. Etiam a Braunio nostro salutaris.
-        </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1700-02-13_991170516662105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Burcherus de Volder. Groningen, 13. Februar 1700</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Im P.S. berichtet Joh. I B., dass er den am vergangenen Montag begonnenen Brief nicht wie geplant am Dienstag, sondern erst am 3. Februar abschicken konnte, da seine Frau inzwischen unerwartet von den Wehen überfallen wurde und einen kleinen Sohn (Daniel I Bernoulli) geboren habe. Dies geschah am 29. Januar 1700. Nach altem Stil war dies ein Montag. Also datiert Joh. I B. hier seine Briefe nach altem Stil.</p>
+      </note>
+      <note type="print">
+        <p>Druck: Leibniz, Math.Schriften 3, pp.629-630 (Exzerpt)</p>
+      </note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Druck historisch</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1700-02-13_Bernoulli_Johann_I-Volder_Burchard_de" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 675:Bl.170-172</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170516662105501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433595905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057784</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>5 S.<dimensions unit="cm"><height>20,5</height><width>15,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Groningen</origPlace>
+            <date when="1700-02-13">[13. Febr. 1700]</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4094052-4">Groningen</placeName>
+        <date when="1700-02-13">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1699-09-26_991170516662205501" type="prev"/>
+        <ptr target="B_1702-03-28_991170516662005501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-124763340">Bergius, Peter Jonas</persName>
+          <note type="lebensdaten">(1730-1790)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
+          <note type="lebensdaten">(1700-1782)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
+          <note type="lebensdaten">(1673-1764)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-130109363">Braun, Johannes</persName>
+          <note type="lebensdaten">(1628-1708)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118869361">Noodt, Gerard</persName>
+          <note type="lebensdaten">(1647-1725)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1438713/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1438714" n="1"/> <pb facs="1438715" n="2"/> <pb facs="1438717" n="3"/> <pb facs="1438718" n="4"/> <pb facs="1438719" n="5"/> <pb facs="1438720" n="6"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

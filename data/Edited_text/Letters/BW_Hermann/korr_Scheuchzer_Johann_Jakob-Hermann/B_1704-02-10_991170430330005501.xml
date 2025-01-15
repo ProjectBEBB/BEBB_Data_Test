@@ -1,312 +1,204 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1704-02-10_991170430330005501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Jacob Scheuchzer an Jacob Hermann. Zürich, 10.
-            Februar 1704</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000059946</title><title type="alt"
-            >1704-02-10_Scheuchzer_Johann_Jakob-Hermann_Jacob</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-119112450"
-            type="person">Jacob Hermann</rs> (1678-1733)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johann Jakob (1672-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Die Paginierung in Ms H 150a springt von 333 auf 434 und wird
-            dann von 449 auf 349 zurückkorrigiert.</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1704-02-10_Scheuchzer_Johann_Jakob-Hermann_Jacob"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms H 150a, S.438-439</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430330005501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406946905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000059946</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>0,5 S.<dimensions unit="cm">
-                    <height/>
-                    <width/>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>[Zürich]</origPlace><date when="1704-02-10">d. 10. Febr.
-                [1704]</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4068038-1"
-            >Zürich</placeName>
-          <date when="1704-02-10">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1704-02-06_991170430330205501" type="prev"/>
-          <ptr target="B_1704-02-13_991170430329805501" type="next"/>
-          <ptr target="BW_Hermann" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124465641">Craig, John</persName>
-            <note type="lebensdaten">(1663-1731)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118956507">Eimmart, Georg Christoph</persName>
-            <note type="lebensdaten">(1638-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-129551651">Gregory, David</persName>
-            <note type="lebensdaten">(1659-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118718754">Gregory, James</persName>
-            <note type="lebensdaten">(1638-1675)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1055424369">Ott, Johannes</persName>
-            <note type="lebensdaten">(1639-1717)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124081428">Riccioli, Giovanni Battista</persName>
-            <note type="lebensdaten">(1598-1671)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-128356057">Screta, Heinrich</persName>
-            <note type="lebensdaten">(1637-1689)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-100277608">Sturm, Johann Christoph</persName>
-            <note type="lebensdaten">(1635-1703)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118803948">Varenius, Bernhardus</persName>
-            <note type="lebensdaten">(1622-1650)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-12269158X">Volckamer von Kirchensittenbach, Christoph
-              Gottlieb</persName>
-            <note type="lebensdaten">(1676-1729)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1704-02-10_Scheuchzer_Johann_Jakob-Hermann_Jacob"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/818215/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="818587" n="438"/> [...] A Mons.<hi rend="sup">r</hi> Herman à Basle</p>
-        <p>Vir Celeb. </p>
-        <p>Et Tu, Vir Cl. ita me Tibi devincis, ut omnium pene literarum principia jure debeant esse
-          eucharistica. In hac certe Epistola grates tibi habeo, non quas possum, sed quas debeo,
-          maximas tum pro egregio Tuo Ratiocinio Altimetriae correctorio, quod dignum utique judico
-          non solum insertione in Oreographiam meam Helveticam, sed et prelo;<note type="editorial"
-            >Johann Jakob Scheuchzer hatte 1703 begonnen, ein Werk mit dem Arbeistitel <hi rend="u"
-              >Oreographia Helvetica generalis</hi> zu verfassen, das er vor 1714 vollendete, dessen
-            Manuskript heute jedoch verschollen ist (s. Steiger, p. 31, Nr. 86). Offenbar dachte er
-            daran, Hermanns Ausführungen zur Höhenmessung (= <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._101.2C_Modus_metiendi_altitudines_.281704.29."
-              >Na. 101</ref>) bereits in diese Manuskriptfassung zu integrieren. Ein Druck des
-            Werkes erfolgte erst 13 Jahre später unter dem Titel <hi rend="u">Helvetiae
-              stoicheiographia, orographia et oreographia, oder Beschreibung der Elementen, Grenzen
-              und Bergen des Schweitzerlandes</hi>, Zürich (H. Bodmer) 1716. Eine deutschsprachige
-            Version von Hermanns Beitrag druckte Scheuchzer jedoch bereits ab in: Scheuchzer, Johann
-            Jakob, <hi rend="u">Schweizerische Berg-Reisen </hi>(Beschreibung der Natur-Geschichten
-            des Schweizerlands, Teil 3), Zürich (M. Schaufelberger u. Chr. Hardmeier) 1708, pp.
-            159-160 nebst der Figuren III und IV auf der dort beigefügten Tafel. In seiner
-            Publikation von 1716 verwies er dann auf p. 156 ausdrücklich darauf zurück.</note> tum
-          pro Catalogo <pb facs="818588" n="439"/> Librorum Mathematicorum selectissimorum<note
-            type="editorial">Dieses Verzeichnis der mathematischen Bücher in Hermanns Bibliothek
-            wurde im Handschriftenband ZB Zürich Ms H 318 auf pp. 249-254 nach dem Brief Hermanns an
-            Johann Jakob Scheuchzer von <rs key="B_1705-05-27_991170430324705501" type="letter"
-              >1705.05.27</rs> eingebunden. Es wurde daher fälschlicherweise diesem als Beilage
-            zugeschrieben. Das Verzeichnis ist hier wieder richtig dem Brief <rs
-              key="B_1704-02-06_991170430330205501" type="letter">1704.02.06</rs> als dessen
-            ursprüngliche Beilage zugeordnet.</note> Te possessore dignissimo; ex quibus si quos
-          opus habeo, uti facile fieri poterit, cum παρρησία expetam; tum denique pro dono Craigiano
-            gratissimo<note type="editorial">Craig, John, <hi rend="u">Theologiae christianae
-              principia mathematica</hi>, Londini (Child) 1699. Dieses Buch Craigs findet sich
-            später in Scheuchzers Bibliothek, siehe Leu, Urs B., <hi rend="u">Johann Jakob
-              Scheuchzers Privatbibliothek</hi>, in: Leu, Urs B. (ed.), Natura sacra. Der
-            Frühaufklärer Johann Jakob Scheuchzer (1672-1733), Zug 2012, p. 225, Nr. 63.</note>,
-          gratiori certe, quo minus arridet Theologis nostris cultum Mathesεωs. Mitto nunc Gregorij
-          quae petis opuscula;<note type="editorial">Gemeint sind hier Gregory, David, <hi rend="u"
-              >Exercitatio geometrica de dimensione figurarum sive specimen methodi generalis
-              dimetiendi quasuis figuras</hi>, Edinburgi (J. Kniblus/J. Solingensis/J. Colmarius)
-            1684, und Gregory, James, <hi rend="u">Exercitationes geometricae</hi>, Londini (W.
-            Godbid) 1668. Siehe den Brief Hermanns von <rs key="B_1704-02-06_991170430330205501"
-              type="letter">1704.02.06</rs>.</note> utere ijs pro lubitu. Omisi nuper [praeter]
-          Eimmarti Typus Eclipseos Lunari A. 1685,<note type="editorial">Eimmart, Georg Christoph,
-              <hi rend="u">Typus eclipseos lunae totalis, quae anno Christi MDCLXXXV, die ult. Nov.
-              &amp; prim. Decemb. st. v. contigit ...</hi>, s.l., s.a.</note> Ichnographiam de
-            sole,<note type="editorial">Eimmart, Georg Christoph, <hi rend="u">Ichnographia nova
-              contemplationum de sole, in desolatis antiquorum philosophorum ruderibus concepta
-              ...</hi>, Norimbergae (J. E. Adelbulner) 1701.</note> Sturmij Iridis admiranda,<note
-            type="editorial">Sturm, Johann Christop/Volckamer von Kirchensittenbach, Christoph
-            Gottlieb, <hi rend="u">ΘΑΥΜΑΝΤΙΑΔΟΣ θαυμάσια sive Iridis admiranda sub rationis
-              accuratius examen revocata eruditorumque ventilationi publicae in alma Altdorffina
-              Universitate exposita sub praesidio M. Joh. Christophori Sturmii, mathem. et phil.
-              nat. PP. a Christophoro Theophilo Volcamero. P. N.</hi>, Norimbergae [Nürnberg] (W. M.
-            Endter) 1699. </note> Collegium curiosum,<note type="editorial">Sturm, Johann Christoph,
-              <hi rend="u">Collegium experimentale, sive curiosum, in quo primaria hujus seculi
-              inventa &amp; experimenta physico-mathematica, speciatim campan[ae] urinatoriae,
-              camerae obscurae, tubi Torricelliani, seu baroscopii, antliae pneumaticae,
-              thermometrorum, hygroscopiorum, telescopiorum, microscopiorum &amp;c. phaenomena &amp;
-              effecta, partim ab aliis jam pridem exhibita, partim noviter istis superaddita
-              ...</hi>, Norimbergae [Nürnberg] (W. M. &amp; J. A. Endter) 1676, oder Sturm, Johann
-            Christoph, <hi rend="u">Collegii experimentalis sive curiosi, pars secunda in qua porro
-              praesentis aevi experimenta &amp; inventa physico-mathematica compluria, speciatim
-              hygrostathmicorum quorundam instrumentorum, siphonis reflexi grandioris, lachrymarum
-              vitrearum, clepsydrarum &amp; clepsel[a]orum, tubarum stentorophonicarum sive
-              acusticarum, haemisphaeriorum Magdeburgicorum, novae potentiae mechanicae, hydriarum
-              Helmontianarum, sclopeti pneumatici Guerickiani, novarumq[ue] campanae urinatoriae,
-              antliae pneumaticae, laternae megalographicae accessionum &amp;c. phaenomena &amp;
-              effecta ...</hi>, Norimbergae [Nürnberg] (W. M. Endter) 1685.</note> Ottium de Natura
-            visionis,<note type="editorial">Ott, Johannes,<hi rend="u"> Cogitationes
-              physico-mechanicae de natura visionis</hi>, Heidelbergae (J. C. Walter) 1670.</note>
-          Scretam de natura Auditionis,<note type="editorial">Screta, Heinrich, <hi rend="u"
-              >Dissertatio physico-mathematica de caussis ac natura auditionis, quam ex singulari
-              decreto ac indulgentia magnifici amplissimique senatus inclutae et perantiquae
-              academiae palatinae, quae est Heidelbergae, publico eruditorum examini submittet
-              Henricus Screta a Zavorziz Scafusa-Helvetius. Die XXVIII. Decembr. hora locoque
-              consuetis</hi>, Heidelbergae (J. C. Walter) 1670.</note> et Bernoullium de
-            Cometis.<note type="editorial">Bernoulli, Jacob I, <hi rend="u">Neu-erfundene Anleitung,
-              wie man den Lauff der Comet- oder Schwantz-sternen in gewisse grundmässige Gesätze
-              einrichten und ihre Erscheinung vorhersagen könne, auss Anlass des jüngst-entstandenen
-              Cometens im Jahr 1680 und 1681 alles mit Geometrischen Gründen dargethan und bewiesen,
-              sampt angehencktem Prognostico ...</hi>, Basel (J. Werenfels) 1681 (= Op. I<hi
-              rend="sup">a</hi>). Der Autor hat die Schrift auch unter dem Titel Bernoulli, Jacob I,
-              <hi rend="u">Conamen novi systematis cometarum, pro motu eorum sub calculum revocando
-              &amp; apparitionibus praedicendis ...</hi>, Amstelaedami [Amsterdam] (H. Wetstenius)
-            1682 (= Op. I) ins Lateinische übersetzt.</note> Tomum Diss. Mathematicarum, cujus haec
-          sunt contenta.<note type="editorial">In Scheuchzers Briefentwurf sind die Titel der
-            Dissertationen in diesem Sammelbandes nicht wie angekündigt angegeben.</note></p>
-        <p>etc., etc., etc. </p>
-        <p>Modi Altimetrici Riccioliani sunt ijdem seu quos habet Varenius.<note type="editorial"
-            >Die Instrumente und Methoden der trigonometrischen Höhenmessungen werden behandelt in:
-            Varenius, Bernhard, <hi rend="u">Geographia generalis, in qua affectiones generales
-              Telluris explicantur</hi>, Amstelodami (L. Elzevier) 1650, lib. I, cap. IX, prop. II.
-            Montis altitudinem per geodesiam invenire, pp. 81-91, und ausführlicher in: Riccioli,
-            Giovanni Battista, <hi rend="u">Geographiae et hydrographiae reformatae libri duodecim
-              ...</hi>, Bononiae [Bologna] (Haeredes Victorii Benatii) 1661, lib. VI. Altrimetricus,
-            pp. 183-251 oder in: Riccioli, Giovanni Battista, <hi rend="u">Geographiae et
-              Hydrographiae reformatae nuper recognitae, et auctae, libri duodecim</hi>, Venetiis
-            (I. LaNoù) 1672, pp. 176-241. </note> Vale his, etc. J. J. Sch.</p>
-        <p>d. 10. Febr.<note type="editorial">Das vollständige Datum ergibt sich aus der
-            chronologischen Anordnung der Notizen Scheuchzers im entsprechenden Band seiner "Copiae
-            epistolarum" (ZB Zürich, Ms H 150a). </note>
-        </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1704-02-10_991170430330005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann Jacob Scheuchzer an Jacob Hermann. Zürich, 10. Februar 1704</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Die Paginierung in Ms H 150a springt von 333 auf 434 und wird dann von 449 auf 349 zurückkorrigiert.</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1704-02-10_Scheuchzer_Johann_Jakob-Hermann_Jacob" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms H 150a, S.438-439</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430330005501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406946905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000059946</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>0,5 S.<dimensions unit="cm"><height/><width/></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>[Zürich]</origPlace>
+            <date when="1704-02-10">d. 10. Febr. [1704]</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4068038-1">Zürich</placeName>
+        <date when="1704-02-10">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1704-02-06_991170430330205501" type="prev"/>
+        <ptr target="B_1704-02-13_991170430329805501" type="next"/>
+        <ptr target="BW_Hermann" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124465641">Craig, John</persName>
+          <note type="lebensdaten">(1663-1731)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118956507">Eimmart, Georg Christoph</persName>
+          <note type="lebensdaten">(1638-1705)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-129551651">Gregory, David</persName>
+          <note type="lebensdaten">(1659-1708)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118718754">Gregory, James</persName>
+          <note type="lebensdaten">(1638-1675)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1055424369">Ott, Johannes</persName>
+          <note type="lebensdaten">(1639-1717)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124081428">Riccioli, Giovanni Battista</persName>
+          <note type="lebensdaten">(1598-1671)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-128356057">Screta, Heinrich</persName>
+          <note type="lebensdaten">(1637-1689)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-100277608">Sturm, Johann Christoph</persName>
+          <note type="lebensdaten">(1635-1703)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118803948">Varenius, Bernhardus</persName>
+          <note type="lebensdaten">(1622-1650)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-12269158X">Volckamer von Kirchensittenbach, Christoph Gottlieb</persName>
+          <note type="lebensdaten">(1676-1729)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Hermann_Jacob">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

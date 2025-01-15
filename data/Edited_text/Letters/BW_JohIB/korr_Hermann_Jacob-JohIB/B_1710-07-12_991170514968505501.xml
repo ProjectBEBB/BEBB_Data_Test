@@ -1,399 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1710-07-12_991170514968505501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Bernoulli. Padua, 12. Juli
-            1710</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000055926</title><title type="alt"
-            >1710-07-12_Hermann_Jacob-Bernoulli_Johann_I</title><title level="s">Basler Edition der
-            Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Hermann, Jacob (1678-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Hermanns Lösung des inversen Problems. Vgl. Hermann, Metodo
-            d'investigare (Na. 012)</p></note>
-        <note type="print"><p>Druck in: Mém. Paris 1710 (1712), pp.519-521. - Joh. I B. Opera I,
-            pp.469-470</p></note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-07-12_Hermann_Jacob-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 659, Nr.19*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514968505501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972432927405504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000055926</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>4 S.<dimensions unit="cm">
-                    <height>20</height>
-                    <width>14</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Patavii</origPlace><date when="1710-07-12">12 Julii
-              1710</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4044295-0"
-            >Padua</placeName>
-          <date when="1710-07-12">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1710-05-03_991170514968605501" type="prev"/>
-          <ptr target="B_1710-10-07_991170514968405501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-115793895">Battier, Samuel</persName>
-            <note type="lebensdaten">(1667-1744)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-131366858">Bernard, Jacques</persName>
-            <note type="lebensdaten">(1658-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118674978">Burnet, Gilbert</persName>
-            <note type="lebensdaten">(1643-1715)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-12068943X">Buxtorf, Johann</persName>
-            <note type="lebensdaten">(1663-1732)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118941941">Conti, Antonio</persName>
-            <note type="lebensdaten">(1677-1749)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124465641">Craig, John</persName>
-            <note type="lebensdaten">(1663-1731)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118638955">Euclides</persName>
-            <note type="lebensdaten">(ca. v3. Jh.)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-            <note type="lebensdaten">(1681-1737)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124275087">Keill, John</persName>
-            <note type="lebensdaten">(1671-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-            <note type="lebensdaten">(1678-1719)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
-            <note type="lebensdaten">(1666-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
-            <note type="lebensdaten">(1683-1761)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-115643193X">Reboulet, Paul</persName>
-            <note type="lebensdaten">(1655-1710)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1041602804">Serrurier, Joseph</persName>
-            <note type="lebensdaten">(1663-1742)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-121297829">Staehelin, Johann Heinrich</persName>
-            <note type="lebensdaten">(1668-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-100277608">Sturm, Johann Christoph</persName>
-            <note type="lebensdaten">(1635-1703)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1027242383">Themmen, Phoebus</persName>
-            <note type="lebensdaten">(1678-1737)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
-            <note type="lebensdaten">(1643-1709)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
-            <note type="lebensdaten">(1657-1740)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1710-07-12_Hermann_Jacob-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1042550/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1042551" n="1"/> Viro Excellentissimo et Celeberrimo</p>
-        <p>Johanni Bernoulli </p>
-        <p>S. P. D. </p>
-        <p>Jacobus Hermannus. </p>
-        <p>Mensis circiter elapsus est, ex quo humanissimae litterae Tuae 3<hi rend="sup">ii</hi>
-          Maji redditae mihi sunt, Vir Celeberrime, ex quibus prosperam Tuam valetudinem laetus
-          intellexi. Interea temporis certior factus Decanatum Philosophiae non solum in Te
-          collatum, sed reapse nunc elegantissima ut audio, Oratione <hi rend="u">de Viribus et
-            Certitudine rationis in metaphysicis et mathematicis</hi> a Te auspicatum esse;<note
-            type="editorial">[Text folgt]</note> iteratam hanc dignitatem qua Ornatus eras, cum ante
-          hoc triennium ego in Italiam iter meum prosequuturus Tibi Basileam repetenti in Fabariis
-            thermis<note type="editorial">Bad Pfäfers?</note> valedicerem, toto pectore gratulor,
-          Deum precatus, ut non solum, ut ejus auspicia, sic medium et finis laeta esse jubeat, sed
-          etiam ut eadem saepius recurrat. Scriptum meum adversus Parentium<note type="editorial"
-            >Na. </note> dudum quidem inceptum, mihi tot aliis negotiis distracto nondum absolvere
-          vacavit, sed brevi ut spero vacabit. Gratum mihi est ex Te intellexisse utinam locorum
-          nunc degat Nob. Burnetus, de quo nihil amplius resciveram, ex quo Patavio discessit: nam
-          licet jam ab aliquo tempore litteras acceperim ab Ampl. Leibnitio quae responsum continere
-          videbantur ad meum quoddam epistolium<note type="editorial">[Text folgt]</note> cujus ipse
-          Burnetus Lator erat, in illis tamen nulla plane hujus facta erat mentio, adeo ut tunc
-          suspicatus sim, eum litteras meas in manus proprias Ill. Leibnitio non tradidisse, sed eas
-          forte alio ex loco curavisse Hanoveram deferri. Arbitrabar etiam Cathedram Leidensem jam
-          decretam esse Bernardo Novellarum RPublicae literariae Autori,<note type="editorial">[Text
-            folgt]</note> sed ex Litteris Tuis me opinione mea deceptum video, quandoquidem
-          Academiae illius Proceres mediante Burneto fores Tuas denuo pulsandas duxerunt, ut Te
-          forte ad amplectandam stationem tandem expugnarent. Haec Curatorum perseverantia satis
-          evidens praebet indicium, quantum Curae ipsis sit <pb facs="1042552" n="2"/> ut statio
-          quam Cel. Volderus decessu suo vacantem reddidit, Eximio Viro instauretur, simulque satis
-          aperte monstrant Academiae Leidensis decori non posse felicius consuli, quam si Bernoullio
-          potiantur; adeo ut hinc nullus dubitem quin efficacissima quaevis media adhibituri sint,
-          ut ad se trahant; sed in honorem Universitatis Patriae et confirmationem Valetudinis Tuae
-          quae nova soli mutatione detrimentum capere posset, optarem ut eorum conatus irriti fiant.
-          Si Volderus adhuc in vivis esset, haud dubie Keilio spes omnis Provinciam obtinendi quam
-          Tu detrectasses, praecisa esset, sed Celebri Viro nunc fatis functo, non penitus
-          incredibile duco, ut Anglus iste scopum suum assequatur, maxime cum ex nob. Burneto
-          intellexerim illum ab Angliae quibusdam Magnatibus Curatoribus Lugdunensibus fuisse
-          commendatum. Nonne hac in re similis Catastrophe accidere potest, quae antehac apud
-          Trajectinos contigit? qui postquam repulsam a Te passi sunt, animos suos in
-            Serrurerium<note type="editorial">evt. Joseph Serrurier, Prof. in Utrecht</note> quendam
-          verterunt. Quid autem rei cum Keilio futurum sit nescio, sed id tamen optime novi, me Tibi
-          plurimum devinctum esse pro iis quae in mei gratiam Burneto rescribere dignatus es, qua de
-          re gratias ago maximas. Mea sententia bene agis quod eximium Tuum inventum circa motum
-            reptorium,<note type="editorial">[Text folgt]</note> quod Tibi tot mira suppeditavit
-          omni, ut reor, alii methodo impervia adversus Craigii sophismata tueri non negligis, hoc
-          enim modo Geometria insigne augmentum capiet, praesertim cum sperem theoriam Tuam ejusque
-          applicationem apertius quam hactenus factum sit expositum iri. Quanquam ea quae de Vi
-          Centrifuga in praecedentibus litteris tuis disserueras e vestigio scripta norim, id tamen
-          non impedit quo minus eleganter et acute observata sint, mihique adeo non minus quam
-          Illustri Comiti Abbati Conti (cui salutem Tuam denuntiavi quam laetus accepit, Teque
-          officio se resalutari jussit) mire placuerint ut Tua solent omnia, eo quidem usque ut
-          Nobiliss. hic Vir, discursum Tuum propria manu transcribere voluerit. Ego etiam vix adduci
-          possem ut crederem Cl. Varignonium qui de Viribus Centralibus toties jam egit, de inverso
-          earum Problemate nunquam cogitasse, nisi id Tibi diserte asseveraret. Caeterum gaudeo hoc
-          inversum Problema, quod incomparabiliter difficilius existimo directo, plenariam a Te
-          solutionem accepisse,<note type="editorial">[Text folgt]</note> quod mihi quoque animos
-          dedit vires meas qualescunque tentandi; res mihi non prorsus male cessisse videtur. Cum
-          analysi mea etiam Tecum invenerim, Solas Sectiones Conicas efficere ut planetae eas
-          decurrentes urgeantur viribus Centri<pb facs="1042553" n="3"/>petis quadratis distantiarum
-          reciproce proportionalibus; num rem acu tetigerim Tuum est judicare ex sequente analysi
-          quae ut mihi quidem videtur nimia prolixitate non peccat. Sit <formula>ABC</formula> curva
-          quaesita, in qua punctum <formula>S</formula> ponitur esse focus ad quem vires centripetae
-          tendunt, et <formula>LI</formula> axis. Sintque <formula>SI=x</formula>,
-            <formula>IC=y</formula>, <formula>SC=\sqrt{xx+yy}</formula>, et producta particula
-          curvae <formula>BC</formula> in <formula>E</formula>, factaque <formula>BC=CE</formula>
-          erit <formula>BH=CG=dx</formula>, <formula>CH=EG=dy</formula> adeoque
-            <formula>DF=-ddx</formula>, <formula>EF=-ddy</formula>; et
-            <formula>2{\bigtriangleup.}^{\textrm{lum}}</formula>
-          <formula>BSC=</formula><formula>2\bigtriangleup</formula><formula>CSD=ydx-xdy=</formula>const.
-          ipsa vero <formula>ED</formula> aequidistans ponitur <formula>CS</formula>; adeoque
-          propter triangula similia <formula>EDF</formula> et <formula>CSI</formula>, erit
-            <formula>ED=\frac{-ddx\sqrt{xx+yy}}{x}</formula>. Jam cum triangulum
-            <formula>BSC</formula> constans sit erit <formula>DE</formula>, ut vis centripeta in
-          puncto <formula>C</formula>, hoc est, ut <formula>\frac{1}{xx+yy}</formula> vel etiam ut
-            <formula>\frac{\overline{ydx-xdy}^{2}}{xx+yy}</formula>; atque hinc elicitur aequatio
-          curvae differentio differentialis
-            <formula>-addx(=\frac{x,\overline{ydx-xdy}^{2}}{\overline{xx+yy}\sqrt{xx+yy}})=\overline{ydx-xdy}\times\frac{\overline{xydx-xxdy}}{\overline{xx+yy}\sqrt{xx+yy}}</formula>,
-          et sumtis integralibus
-            <formula>-adx=-\frac{y}{\sqrt{xx+yy}}\times\overline{ydx-xdy}=\frac{xydy-yydx}{\sqrt{xx+yy}}</formula>;
-          vel <formula>-\frac{abdx}{xx}=\frac{bxydy-byydx}{xx\sqrt{xx+yy}}</formula>, cujus
-          integralis invenitur <formula>\frac{ab}{x}</formula> vel generalius
-            <formula>\frac{ab}{x}\pm c=\frac{b\sqrt{xx+yy}}{x}</formula>; seu
-            <formula>a\pm\frac{cx}{b}=\sqrt{xx+yy}</formula>. Quae est aequatio ad tres sectiones
-          Conicas, nempe ad Parabolam si <formula>b=c</formula>, ad Ellipsin si <formula>b</formula>
-          major quam <formula>c</formula> et ad hyperbolam ubi <formula>b</formula> minor fuerit
-          quam <formula>c</formula>. Ex hisce quoque elicui modum facilem determinandae vis
-          Centripetae in quavis curva data; nam si in hac Curva <formula>SC</formula> ponatur
-          brevitatis gratia <formula>=z=\sqrt{xx+yy}</formula>
-          <formula>SL</formula> segmentum axis inter focum et tangentem <formula>=r</formula>,
-          existentibus adhuc <formula>SI=x</formula>, <formula>IC=y</formula> et subt.
-            <formula>IL=s</formula>. Et differentietur Curva ad secunda differentialia usque; loco
-            <formula>ddx</formula> tantum substitui debet <formula>\frac{Vrrxyy}{z}</formula>, loco
-            <formula>ddy</formula>, <formula>\frac{Vrxy^{3}}{z}</formula>; loco
-            <formula>dx</formula>, <formula>s</formula> et denique loco <formula>dy</formula>
-          ordinata <formula>y</formula>: et habebitur aequatio finitis quantitatibus expressa, in
-          qua consideranda est <formula>V</formula> designans quantitatem Vi centripetae
-          proportionalem, tanquam quantitas incognita et reliquae <formula>x</formula>,
-            <formula>y</formula>, <formula>r</formula>, <formula>s</formula>, <formula>z</formula>
-          tanquam cognitae. Atque haec de Vi Centripeta argumento a novitate sua parum commendabili,
-          dicta sufficiant. Quod speras Tentamen meum Mechanicae fluidorum<note type="editorial"
-            >Phoronomia</note> mox ad vos delatum iri, praesupponere videris id jam dudum sub praelo
-          sudare cui tamen nondum subjectum est, sed brevi subjicietur. Et quanquam parum curaturus
-          sim quid de eo judicare placebit, ubi in lucem prodierit, Sturmio aliisque levioris
-          armaturae Mathematicis; mihi tamen promittere non ausim, opusculum meum eos in publicum
-          fructus prolaturum quos Tu speras nimis praeclare de me sentiens, verum quicquid de eo
-          sit, Exemplaria ad Te et alios Fautores deferri curabo statim atque prelo exierit. Duo
-          interim ejus occasione Te roganda habeo. 1.<hi rend="sup">o</hi>Ut ideam novi Tui
-          Barometri in quo mutationes aeris <pb facs="1042554" n="4"/> multo sensibiliores
-          exprimantur quam in communibus mecum communicare digneris, ut eam si permiseris tractatui
-          meo inserere possim ne pereat. 2. Ut figura aliqua exprimere velis modum ponderationis
-          aeris per condensationem quo Groningae antehac usus es: hunc quidem descriptum legi thes.
-          7 Dissertationis de Aeris gravitate et Elasticitate a Phaebo Themmen conscripta et sub
-          Praesidio Tuo habita,<note type="editorial">[Text folgt]</note> sed, ut ignorantiam et
-          hebetudinem meam fatear illam descriptionem non satis distincte intelligo: nam quia in meo
-          libello pauca quaedam de aeris ponderatione dicenda sunt, Tuumque modum praestantissimum
-          judico, idcirco hunc etiam adducere vellem.<note type="editorial">Was steht dazu in der
-            Phoronomia?</note> Non adeo pridem accepi Montmortii Librum, <hi rend="u">Essay sur les
-            jeux de</hi> etc.<note type="editorial">[Text folgt]</note> et doctiss. Nepotis Tui
-          Dissertationem de Usu Artis Conjectandi in Jure Civili<note type="editorial">[Text
-            folgt]</note> quam acutis et doctissimis observationibus refertam vidi, adeo ut sperem
-          Sapientiores Ictos non prorsus nihili posthac facturos esse reconditiores Matheseos
-          scientias, visis speciminibus quantum Analyseos studium ad quaestiones Juris momentosas
-          decidendas conferat. Quantum vero ad Montmortii Opusculum attinet, cum tantum de ludis
-          agat nihil vero de rebus moralibus, non existimo materiae utilitatem compensare posse
-          immensos illos calculos quos Autor subducere necesse habuit. A Parente meo non tantum Rev.
-          Rebouleti obitum intellexi, sed etiam applausum quem Concionibus suis gallice habitis sibi
-          promeriti sunt Venerandus Werenfelsius et Clarissimi Viri Buxtorfius atque Iselius. Nullus
-          dubito quin Tibi jam innotuerit apud Patavinae hujus Academiae Reformatores de vocando
-          Cel. Iselio nostro ad Professionem Eloquentiae Graecae et Romanae consilia agitari, quin
-          imo spero fore ut brevi res confiat.<note type="editorial">[Text folgt]</note> Caeterum
-          his in oris nihil novi habetur in re literaria praesertim mathematica, quae hisce
-          temporibus ab Italis meis parum excoluntur; et si quidam sunt qui hisce studiis capiantur,
-          in illustrando Euclide laudem cujus coetero quin avidi sunt, quaerunt; unde nihil mihi
-          suppetit quod palato Tuo sapere existimem. Venetiis excuditur quidem Diarium in quo tamen
-          philosophica et Mathematica pauca aut nulla inveniuntur.<note type="editorial">[Text
-            folgt]</note> Nuperrime Marchio Polenus Collega et Amicus meus exemplar mihi tradidit
-          Opusculi a se haud ita pridem editi, de Barometris et Thermometris, de Machina Arithmetica
-          et Gnomonicis,<note type="editorial">[Text folgt]</note> Tibi cum cultu suo officioso
-          transmittendum, quod prima data occasione Basileam curabo transferendum. Quando analysin
-          tuam Problematis inversi de Viribus Centripetis<note type="editorial">[Text folgt]</note>
-          quam elegantissimam arbitror mecum communicare placebit, me summopere beabis. Hisce Vale,
-          et ut soles, me porro ama ac data occasione Ven. Werenfelsio, Cel. Battieriis, Stehelio,
-          Iselio aliisque Clariss. Collegis Tuis salutem meam et cultum denuntia nisi grave
-          accidat.</p>
-        <p>Patavii 12 Julii 1710. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1710-07-12_991170514968505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann I Bernoulli. Padua, 12. Juli 1710</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Hermanns Lösung des inversen Problems. Vgl. Hermann, Metodo d'investigare (Na. 012)</p>
+      </note>
+      <note type="print">
+        <p>Druck in: Mém. Paris 1710 (1712), pp.519-521. - Joh. I B. Opera I, pp.469-470</p>
+      </note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Druck historisch</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-07-12_Hermann_Jacob-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 659, Nr.19*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514968505501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972432927405504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000055926</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>4 S.<dimensions unit="cm"><height>20</height><width>14</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Patavii</origPlace>
+            <date when="1710-07-12">12 Julii 1710</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4044295-0">Padua</placeName>
+        <date when="1710-07-12">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1710-05-03_991170514968605501" type="prev"/>
+        <ptr target="B_1710-10-07_991170514968405501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-115793895">Battier, Samuel</persName>
+          <note type="lebensdaten">(1667-1744)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-131366858">Bernard, Jacques</persName>
+          <note type="lebensdaten">(1658-1718)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118674978">Burnet, Gilbert</persName>
+          <note type="lebensdaten">(1643-1715)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-12068943X">Buxtorf, Johann</persName>
+          <note type="lebensdaten">(1663-1732)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118941941">Conti, Antonio</persName>
+          <note type="lebensdaten">(1677-1749)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124465641">Craig, John</persName>
+          <note type="lebensdaten">(1663-1731)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118638955">Euclides</persName>
+          <note type="lebensdaten">(ca. v3. Jh.)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+          <note type="lebensdaten">(1681-1737)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124275087">Keill, John</persName>
+          <note type="lebensdaten">(1671-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+          <note type="lebensdaten">(1678-1719)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
+          <note type="lebensdaten">(1666-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
+          <note type="lebensdaten">(1683-1761)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-115643193X">Reboulet, Paul</persName>
+          <note type="lebensdaten">(1655-1710)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1041602804">Serrurier, Joseph</persName>
+          <note type="lebensdaten">(1663-1742)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-121297829">Staehelin, Johann Heinrich</persName>
+          <note type="lebensdaten">(1668-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-100277608">Sturm, Johann Christoph</persName>
+          <note type="lebensdaten">(1635-1703)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1027242383">Themmen, Phoebus</persName>
+          <note type="lebensdaten">(1678-1737)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
+          <note type="lebensdaten">(1643-1709)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-12209025X">Werenfels, Samuel</persName>
+          <note type="lebensdaten">(1657-1740)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1042550/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1042551" n="1"/> <pb facs="1042552" n="2"/> <pb facs="1042553" n="3"/> <pb facs="1042554" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

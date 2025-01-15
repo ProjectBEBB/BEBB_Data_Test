@@ -1,353 +1,184 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1705-05-27_991170430324705501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Jacob Hermann an Johann Jacob Scheuchzer. Basel, 27.
-            Mai 1705</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000059975</title><title type="alt"
-            >1705-05-27_Hermann_Jacob-Scheuchzer_Johann_Jakob</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-119112450"
-            type="person">Jacob Hermann</rs> (1678-1733)</title>
-        <title level="s" type="Korrespondenz">Scheuchzer, Johann Jakob (1672-1733) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>In ZB Zürich Ms H 318 folgt diesem Brief auf pp.249-254 ein
-            "Catalogus Librorum Mathematicorum J.H.". Diese Beilage wurde daher fälschlich diesem
-            Brief zugeordnet.Der Katalog war aber Beilage des Briefes von Hermann an J. J.
-            Scheuchzer von 1704.02.06. und wird nun dort wiedergegeben. Auf pp.255-256 findet sich
-            zudem noch der Text zu "J.H. Animadversiones quaedam circa novissimam regulam ducendi
-            perpendiculares ad Curvas ex Focis descriptas in Secunda Medicinae Mentis Editione
-            Lipsiae facta, publicatam" (2 S., 20,5 x 16) (Na. 007).</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1705-05-27_Hermann_Jacob-Scheuchzer_Johann_Jakob"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>ZB Zürich</repository>
-            <idno type="callNumber">Ms H 318, pp.247-248</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170430324705501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972406947805504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000059975</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2 S.<dimensions unit="cm">
-                    <height>21,5</height>
-                    <width>16</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Basileae</origPlace><date when="1705-05-27">27 Maji
-              1705</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1705-05-27">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1705-05-20_991170430324905501" type="prev"/>
-          <ptr target="B_1705-11-25_991170430324505501" type="next"/>
-          <ptr target="BW_Hermann" type="Briefwechsel"/>
-          <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-1029469601">Bianchi, Vendramino</persName>
-            <note type="lebensdaten">(1667-1738)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1089923392">Dubrit, Isaac</persName>
-            <note type="lebensdaten">(1683-1742)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119291967">Fardella, Michelangelo</persName>
-            <note type="lebensdaten">(1650-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118532049">Fatio de Duillier, Nicolas</persName>
-            <note type="lebensdaten">(1664-1753)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine
-              de</persName>
-            <note type="lebensdaten">(1661-1704)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118624369">Tschirnhaus, Ehrenfried Walther von</persName>
-            <note type="lebensdaten">(1651-1708)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1705-05-27_Hermann_Jacob-Scheuchzer_Johann_Jakob"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1009391/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1009452" n="247"/> Vir Excell.<hi rend="sup">me</hi> et Celeberrime </p>
-        <p>Fautor et Amice Colendiss.<hi rend="sup">me</hi>
-        </p>
-        <p>Post tot Amicitiae erga me Tuae testimonia et specimina iniquum esset vel quicquam
-          dubitare de Tuo erga me Amore, cui acceptum refero quod qualiacunque studia mea apud
-            Ex.<hi rend="sup">um</hi> Dn. Residentem Bianchi<note type="editorial">Vendramino
-            Bianchi (1666-?).</note> commendare voluisti<note type="editorial">Scheuchzer führte
-            laut Brief Hermanns von <rs key="B_1705-05-06_991170430325305501" type="letter"
-              >1705.05.06</rs> immer wieder Gespräche mit dem venezianischen Residenten Bianchi, um
-            Hermann für den Lehrstuhl in Padua zu empfehlen und überreichte ihm dabei auch
-            Empfehlungsschreiben von Leibniz.</note> quoque etiam nomine multum me Tibi obstrictum
-          agnosco, nullus dubitans quin Tua commendatio maximi apud Eum fuerit ponderis bonamque de
-          me conceperit opinionem; et si aliquid in Italiam scripserit mihi honorificum, totum id
-          Tibi debeo, vellemque occasionem quoque habere grati Tibi vicissim aliquid praestandi. </p>
-        <p>Spero quod meum negotium<note type="editorial">Hermanns Berufung nach Padua.</note> bonum
-          successum habiturum sit si verum est quod Tu conjectas, Ill.<hi rend="sup">um</hi>
-          Residentem R. P. Venetae Tuis testimoniis conformiter ad Senatum perscripsisse, quod brevi
-          quantum sperare licet, mihi innotescet ex literis Cl. Dn. Fardellae.<note type="editorial"
-            >Michelangelo Fardella (1650-1718).</note> Gratias ago pro transmissis tuis novis
-            curiosis<note type="editorial">Scheuchzer, Johann Jakob (ed.), <hi rend="u">Nova
-              literaria Helvetica, pro anno 1704 ...</hi>, Tiguri [Zürich] (J. J. Scheuchzer)
-            1705.</note> et quanquam Tibi jam toties molestus fuerim tam literis in Italiam curandis
-          quam aliis in rebus, necessitas me cogit ad Te iterum recurrere rogando ut inclusam
-            hancce<note type="editorial">Dieser Brief Jacob Hermanns an Isaac Dubrit (ca. 1683-1742)
-            ist anscheinend nicht erhalten.</note> ad locum suum curare dignari velis. </p>
-        <p>Nesciebam Dn. Dubrit Tiguro<note type="editorial"><rs key="place_GEO-7287650"
-              type="place">Zürich</rs>.</note> jam abiisse alias eousque impudens non fuissem ejus
-          literas ad Te dirigere, sed recta aut Neocomum<note type="editorial"><rs
-              key="place_GEO-2659496" type="place">Neuenburg</rs>.</note>
-          <pb facs="1009453" n="248"/> aut Genevam fuissem missurus; gratias itaque refero maximas
-          quod eas Tuis includere velis ad eum propediem mittendis. </p>
-        <p>Vale et me Ama. </p>
-        <p>Celeberrimi Nominis Tui Cultori perpetuo I. Hermanno</p>
-        <p>Basileae 27 Maji 1705.</p>
-        <p><pb facs="1009454" n="249"/> I. H. Animadversiones quaedam circa novissimam regulam
-          ducendi perpendiculares ad Curvas ex Focis descriptas in Secunda Medicinae Mentis Editione
-          Lipsiae facta, publicatam. <note type="editorial">Hermann bezieht sich im folgenden Text
-            auf eine Aufgabe in Tschirnhaus, Ehrenfried Walther von, <hi rend="u">Medicina mentis,
-              sive Artis inveniedi praecepta generalia. Editio nova, auctior et correctior, cum
-              praefatione autoris</hi>, Lipsiae (J. T. Fritsch) 1695, pp. 85-86. Tschirnhaus
-            bestimmt dort nach einer von ihm gefundenen Regel die Tangente an eine mittels vier
-            festen Punkten und einer Schnur konstanter Länge mechanisch erzeugten Kurve. Hermann
-            zeigt, dass seine Berechnungen Resultate liefern, die erheblich von denjenigen
-            Tschirnhausens abweichen. Er ruft Tschirnhaus, der seine Beweise bisher nicht aufgedeckt
-            habe, zur Erklärung dieser Diskrepanz auf. Möglicherweise handelt es sich beim
-            vorliegenden Text, der identisch mit <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._007.2C_Animadversiones_circa_novissimam_regulam_in_secunda_Medicinae_mentis_editione_.281704.29."
-              >Na. 007</ref> ist, um eine überarbeitete Fassung des Druckmanuskripts, welches
-            Hermann mit seinem Brief von <rs key="B_1703-06-05_991170430331905501" type="letter"
-              >1703.06.05</rs> an Johann Jakob Scheuchzer gesandt hatte und das dem vorliegenden
-            Briefmanuskript in ZB Zürich, Ms 318 falsch beigebunden wurde.</note></p>
-        <p>Inter egregia illa Ingenii specimina quibus secundam Editionem augere voluit Illustris
-          Medicinae Mentis Auctor,<note type="editorial">Tschirnhaus, Ehrenfried Walther von, <hi
-              rend="u">Medicina mentis, sive Artis inveniendi praecepta generalia. Medicina corporis
-              seu Cogitationes admodum probabiles de conservanda sanitate. Editio nova, auctior et
-              correctior cum praefatione auctoris</hi>, Lipsiae (J. Th. Fritsch) 1695. In der
-            zweiten Auflage der <hi rend="u">Medicina mentis</hi> verwendet Tschirnhaus seine "ars
-            inveniendi" zur Beschreibung der "generatio curvarum per focus".</note> non postremum
-          esse videtur methodus ducendi Perpendiculares ad Curvas ex Focis descriptas, et
-          independenter a gravitatis centri notione, ut ait, pura vero mediante Geometria ab Ipso
-          detecta et pag. 100 et 101 Med. Mentis inserta. Quoniam vero mihi gravitatis Centri Ideae
-          insistenti nonnullae circa talem Regulam obortae sunt difficultates; Generosum Regularum
-          Authorem aegre non laturum spero si eas qua par est modestia apposuero, benevolam earum
-          dissipationem et solutionem expectaturus. Assumam Generosi Autoris Figuram 22,<note
-            type="editorial">Tschirnhaus, <hi rend="u">op. cit.</hi>, p. 100.</note> ne speciali hic
-          opus habeamus, quae quatuor habet centra vel Focos, <formula>H</formula>,
-            <formula>I</formula>, <formula>K</formula>, <formula>L</formula>; sintque
-            <formula>HB=p</formula>, <formula>IB=q</formula>, <formula>KB=r</formula>,
-            <formula>LB=s</formula>, ductaque alia pro lubitu <formula>DG</formula> in qua
-            <formula>DB=a</formula>, <formula>EB=b</formula>, <formula>FB=c</formula>,
-            <formula>GB=d</formula>. Posito jam lineam <formula>BM</formula> curvae
-            <formula>ABC</formula> in concursu <formula>B</formula>, linearum <formula>HB</formula>,
-            <formula>IB</formula>, <formula>KB</formula>, <formula>LB</formula>, et dicantur
-            <formula>DM=f</formula>, <formula>EM=g</formula>, <formula>MF=h</formula>,
-            <formula>MG=i</formula>. His cum Ill. T.<note type="editorial">Tschirnhaus.</note> ita
-          positis in eadem Medic. Mentis Figura centro <formula>B</formula> radio quovis
-            <formula>BR</formula> ducatur arcus <formula>RSTV</formula> (ibi non notatus sed
-          demonstrationis causa hic notandus) lineas <formula>HB</formula>, <formula>IB</formula>,
-            <formula>KB</formula>, <formula>LB</formula> secans in <formula>R</formula>,
-            <formula>S</formula>, <formula>T</formula>, <formula>V</formula> ex quibus concipe in
-          perpendicularem Curvae <formula>BM</formula> normales ductas <formula>R\varphi</formula>,
-            <formula>S\xi</formula>, <formula>T\omega</formula>, <formula>V\gamma</formula> ex
-          punctis quoque <formula>D</formula>, <formula>E</formula>, <formula>F</formula>,
-            <formula>G</formula> in eandem <formula>BM</formula> normales <formula>Dn</formula>,
-            <formula>Em</formula>, <formula>F\beta</formula>, <formula>G\alpha</formula>. Fiat
-          insuper <formula>BR=Dn=</formula> unitati; erunt propter Triangula similia
-            <formula>DnM</formula>, <formula>EmM</formula>, <formula>F\beta M</formula>,
-            <formula>G\alpha M</formula>, <formula>Dn=1</formula>,
-          <formula>Em=\frac{g}{f}</formula>, <formula>F\beta=\frac{h}{f}</formula> et
-            <formula>G\alpha=\frac{i}{f}</formula>. Item quia Triangula <formula>BDn</formula>, et
-            <formula>BR\varphi</formula>; <formula>BEm</formula>, et <formula>BS\xi</formula>;
-            <formula>BF\beta</formula>, et <formula>BT\omega</formula>; <formula>BG\alpha</formula>,
-          et <formula>BV\gamma</formula> similia sunt. Fient institutis proportionibus
-            <formula>R\varphi=\frac{1}{a}</formula>, <formula>S\xi=\frac{g}{bf}</formula>,
-            <formula>T\omega=\frac{h}{cf}</formula> et <formula>V\gamma=\frac{i}{fd}</formula>. Sit
-          jam generalis Curvae <formula>ABC</formula> aequatio
-            <formula>p^{\lambda}+q^{\mu}+r^{\pi}+s^{\theta}=</formula> constanti quantitati (literae
-          graecae <formula>\lambda</formula>, <formula>\mu</formula>, <formula>\pi</formula>,
-            <formula>\theta</formula> sunt exponentes potestatum indeterminatarum
-            <formula>p</formula>, <formula>q</formula>, <formula>r</formula>, <formula>s</formula>)
-          quae differentiata dabit <formula>\lambda p^{\lambda-1}dp+\mu q^{\mu-1}dq+\pi
-            r^{\pi-1}dr+\theta s^{\theta-1}ds=0</formula>. Sed quia in casu quo
-            <formula>BM</formula> Curvae <formula>ABC</formula> perpendicularis est, recte
-            <formula>R\varphi</formula>, <formula>S\xi</formula>, <formula>T\omega</formula>,
-            <formula>V\gamma</formula> infinitesimalibus <formula>d\bar{p}</formula>,
-            <formula>d\bar{q}</formula>, <formula>d\bar{r}</formula>, <formula>d\bar{s}</formula>
-          respective proportionales sunt.<note type="editorial">Im Manuskript steht bei der letzten
-            Aufzählung als erster Ausdruck
-              <formula>\overline{dp}</formula>.<formula>d\bar{q}</formula>.</note> Ita loco harum,
-          illae rectae substitui possint demonstrantibus id Cel. Fatio<note type="editorial"
-            >Möglicherweise ist hier Nicolas Fatio de Duillier (1664-1753) gemeint.</note> et
-          Illustriss. Marchione de l'Hopital<note type="editorial">Guillaume François Antoine de
-            L'Hôpital (1661-1704).</note> in sua <hi rend="u">Analyse des Infiniment petis</hi> pag.
-          27 sq.<note type="editorial">[L’Hôpital, Guillaume François Antoine de], <hi rend="u"
-              >Analyse des infiniment petits, pour l'intelligence des lignes courbes</hi>, Paris
-            (Imprimerie Royale) 1696, p. 27. L'Hôpital behandelt dort das Problem, bei einer mit
-            drei Brennpunkten gegebenen Kurve eine Senkrechte zu der Tangente in einem bestimmten
-            Punkt zu finden.</note> et concedente Generoso nostro Autore; Erit <formula>\lambda
-            p^{\lambda-1}R\varphi+\mu q^{\mu-1}S\xi+\pi r^{\pi-1}T\omega+\theta
-            s^{\theta-1}V\gamma=0</formula> vel ponendo pro his rectis <formula>R\varphi</formula>,
-            <formula>S\xi</formula>, <formula>T\omega</formula>, <formula>V\gamma</formula>
-          <pb facs="1009455" n="250"/> valores analyticos modo inventos
-            <formula>\frac{1}{a}</formula>, <formula>\frac{g}{bf}</formula>,
-            <formula>\frac{h}{cf}</formula>, <formula>\frac{i}{fd}</formula>, et ultima aequatio
-          mutabitur in sequentem <formula>\frac{\lambda p^{\lambda-1}}{a}+\frac{\mu
-            q^{\mu-1}g}{bf}+\frac{\pi r^{\pi-1}h}{cf}+\frac{\theta s^{\theta-1}i}{fd}=0</formula>,
-          vel liberata a Fractionibus <formula>\lambda p^{\lambda-1}bcfd+\mu q^{\mu-1}acgd+\pi
-            r^{\pi-1}abhd+\theta s^{\theta-1}abci=0</formula>. Reducamus jam generalem nostram
-          aequationem ad Casus Autoris et sit</p>
-        <p>
-          <formula>\text{numerus}\left\{ \begin{array}{l} \text{linearum}\\ \square\text{torum}\\
-            \text{Cuborum}\\ \text{quadrato }\square\text{torum}\\
-            \square.^{\text{to}}\text{-Cuborum} \end{array}\right\} </formula>
-          <formula>\begin{array}{l} HB\text{, }IB\text{, }KB\text{,}\\ LB\text{, eritque nobis}\\
-            \text{atque ex generali nos-}\\ \text{tra aequatione fluet}
-            \end{array}</formula><formula>\left\{ \begin{array}{l} bcdf+acdg=-abdh-abci\\
-            pbcdf+qacdg=rabdh-sabci\\ ppbcdf+qqacdg=-rrabdh-ssabci\\
-            p^{3}bcdf+q^{3}acdg=-r^{3}abdh-s^{3}abci\\
-            p^{4}bcdf+q^{4}acdg=-r^{4}abdh-s^{4}abci\text{.} \end{array}\right.</formula></p>
-        <p> Maxima, ut patet, est differentia in Autoris Formulas nostrasque, neque in unica
-          convenimus, quod cuilibet patebit qui Formulas in Medic. Mentis pag. 101 Edit. Lips.
-            extantes<note type="editorial">Tschirnhaus, <hi rend="u">op. cit</hi>., p. 101.</note>
-          cum hisce conferre non detrectabit. Eadem haec discrepantia occurret in Curvis duos tresve
-          tantum Focos habentibus, quod specialiore explicatione non indigere videtur, sufficiet
-          tantum <formula>r</formula> et <formula>s</formula> nihilo aequalia supposuisse et
-          faciendo <formula>\lambda</formula>, <formula>\mu</formula>, <formula>\pi</formula>,
-            <formula>\theta</formula>
-          <formula>=</formula> vel 1 vel 2, vel 3 vel 4 etc.; ad Autoris Casus reduxisse, quod
-          cuilibet harum rerum gnaro obiter hic monuisse sufficiet. Et cum Illustris Autor suarum
-          Regularum demonstrationes hactenus suppresserit, non detrectabit spero has meas
-          difficultates benigne solvere. </p>
-      </div>
-      <pb facs="1009456" n="251" type="empty"/>
-      <pb facs="1009457" n="252" type="empty"/>
-      <pb facs="1009458" n="253" type="empty"/>
-      <pb facs="1009459" n="254" type="empty"/>
-      <pb facs="1009460" n="255" type="empty"/>
-      <pb facs="1009461" n="256" type="empty"/>
-    </body>
-  </text>
+<TEI xml:id="B_1705-05-27_991170430324705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Jacob Hermann an Johann Jacob Scheuchzer. Basel, 27. Mai 1705</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>In ZB Zürich Ms H 318 folgt diesem Brief auf pp.249-254 ein "Catalogus Librorum Mathematicorum J.H.". Diese Beilage wurde daher fälschlich diesem Brief zugeordnet.Der Katalog war aber Beilage des Briefes von Hermann an J. J. Scheuchzer von 1704.02.06. und wird nun dort wiedergegeben. Auf pp.255-256 findet sich zudem noch der Text zu "J.H. Animadversiones quaedam circa novissimam regulam ducendi perpendiculares ad Curvas ex Focis descriptas in Secunda Medicinae Mentis Editione Lipsiae facta, publicatam" (2 S., 20,5 x 16) (Na. 007).</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1705-05-27_Hermann_Jacob-Scheuchzer_Johann_Jakob" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>ZB Zürich</repository>
+          <idno type="callNumber">Ms H 318, pp.247-248</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170430324705501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972406947805504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000059975</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2 S.<dimensions unit="cm"><height>21,5</height><width>16</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Basileae</origPlace>
+            <date when="1705-05-27">27 Maji 1705</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1705-05-27">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1705-05-20_991170430324905501" type="prev"/>
+        <ptr target="B_1705-11-25_991170430324505501" type="next"/>
+        <ptr target="BW_Hermann" type="Briefwechsel"/>
+        <ptr target="korr_Scheuchzer_Johann_Jakob-Hermann" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-1029469601">Bianchi, Vendramino</persName>
+          <note type="lebensdaten">(1667-1738)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1089923392">Dubrit, Isaac</persName>
+          <note type="lebensdaten">(1683-1742)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119291967">Fardella, Michelangelo</persName>
+          <note type="lebensdaten">(1650-1718)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118532049">Fatio de Duillier, Nicolas</persName>
+          <note type="lebensdaten">(1664-1753)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine de</persName>
+          <note type="lebensdaten">(1661-1704)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118624369">Tschirnhaus, Ehrenfried Walther von</persName>
+          <note type="lebensdaten">(1651-1708)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="http://fakeURL.com"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Hermann_Jacob">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

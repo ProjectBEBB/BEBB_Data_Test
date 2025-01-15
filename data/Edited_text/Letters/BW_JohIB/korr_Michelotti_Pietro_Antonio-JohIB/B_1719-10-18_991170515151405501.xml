@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1719-10-18_991170515151405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Personen kontrolliert. GND-Tags eingefügt soweit als möglich am 15.01.2019: Achtung: Anton muss Amadeus sein. Es gibt keinen belegten F. Anton, aber einen belegten F. Amadeus als Gouverneur von Freiburg im Breisgaus. GND stimmmt aber so. Ist auch so im BEOL.
+
+Von den Söhnen und Töchtern von Ferdinand Amadeus war nur einer auffindbar: Ferdinand Philipp von Harrsch (1704-1792), pers_DE-588-136051642
+
+Man müsste noch abklären, ob er mehrere Kinder gehabt hat, z.B. den Anton, der oben in die BIBB-Personenangabe hereingeraten ist, der sich zusammen mit Philipp bei einer Freiburger Veröffentlichung zu mechanisch-Statischen Problemen von 1719 (Das Datum würde eigentlich dazu passen, das Nic. II den Söhnen von Ferdinand Amadeus Harrsch bei diesem Druckwerk geholfen hat, z.B. mit Mathe-Nachhilfe) findet: http://dl.ub.uni-freiburg.de/diglit/harrsch1719/0005?sid=7ee48e5707a4f348f782599d00027aa6 
+         --><!--_____________--><TEI xml:id="B_1719-10-18_991170515151405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -178,20 +184,6 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- Personen kontrolliert. GND-Tags eingefügt soweit als möglich am 15.01.2019: Achtung: Anton muss Amadeus sein. Es gibt keinen belegten F. Anton, aber einen belegten F. Amadeus als Gouverneur von Freiburg im Breisgaus. GND stimmmt aber so. Ist auch so im BEOL.
-
-Von den Söhnen und Töchtern von Ferdinand Amadeus war nur einer auffindbar: Ferdinand Philipp von Harrsch (1704-1792), pers_DE-588-136051642
-
-Man müsste noch abklären, ob er mehrere Kinder gehabt hat, z.B. den Anton, der oben in die BIBB-Personenangabe hereingeraten ist, der sich zusammen mit Philipp bei einer Freiburger Veröffentlichung zu mechanisch-Statischen Problemen von 1719 (Das Datum würde eigentlich dazu passen, das Nic. II den Söhnen von Ferdinand Amadeus Harrsch bei diesem Druckwerk geholfen hat, z.B. mit Mathe-Nachhilfe) findet: http://dl.ub.uni-freiburg.de/diglit/harrsch1719/0005?sid=7ee48e5707a4f348f782599d00027aa6 
-         -->
-<!--_____________-->
-
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079105/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079106" n="1"/>
 <opener><salute>Viro Celeberrimo at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Doctissimo
@@ -225,17 +217,17 @@ Man müsste noch abklären, ob er mehrere Kinder gehabt hat, z.B. den Anton, der
              <lb/>mitto: nam pro qu<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice>libet accipiend<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> et ad eam responsione
              <lb/>danda, etsi simplicissimum habeant volumen erogan<pc type="hyphenation">-</pc><lb break="no"/>dus mihi est dimidius flore<add>n</add>us germanicus, et plus ad<pc type="hyphenation">-</pc><lb break="no"/>huc <add>si paul<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice></add> spiss<add>ius</add> sit volumen. Ex inspectione obiter fact<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice>
              <lb/><rs key="biblio_WCRRQGZT" type="biblio">tenta<add>minis</add></rs> <rs key="pers_DE-588-1055365613" type="person">Keiliani</rs> <add>de motu</add> musculorum video quod pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cipu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> 
-             <lb/>est, esse exscriptum ex <rs key="biblio_JAFFCHKU" type="biblio">dissertatione</rs> mea, et figuras
+             <lb/>est, esse exscriptum ex <rs key="biblio_JAFFCHKU" type="biblio">dissertatione</rs><note type="editorial">Op. XVIII: De Motu musculorum</note> mea, et figuras
              <lb/>quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> meas <rs key="pers_DE-588-1055365613" type="person">Keili<add>um</add></rs> mutuatum ess<add>e</add>, paucis tantum
              <lb/>mutatis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> nihil ad rem faciunt; <add>miror</add> ver<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> impu<pc type="hyphenation">-</pc><lb break="no"/>dentiam Hominis tam <add>crassum</add> plagium co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ittentis
              <lb/>ut etiam nomen meum dissimularit; si quis ex nos<pc type="hyphenation">-</pc><lb break="no"/>tratibus hujus modi plagium contra <choice><orig>anglos</orig><reg>Anglos</reg></choice> patrasset<unclear>,</unclear>
 <lb/>quam non terribili clamore <add>in</add> plagi<choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice>rium debacchare<pc type="hyphenation">-</pc><lb break="no"/>tur; si quidem exteris nihil reli<add>n</add>quere velint, et ne
            <pb facs="1079108" n="3"/>
 <lb/>ea quidem q<unclear>u<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear> in <choice><orig>angli<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></orig><reg>Angli<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></reg></choice> non fuerunt nota, per me licet, ut
-             <lb/>dissertationes meas <add>recudi</add> cures, modo correcta prode<add>ant</add><note type="internal">Interpunktion in diesem Satz ist unklar: Satzbau nochmals anschauen. In der Spiess Transskription ist hier ein Punkt ergänzt</note> ubi
+             <lb/>dissertationes meas <add>recudi</add> cures, modo correcta prode<add>ant</add><note type="editorial">Interpunktion in diesem Satz ist unklar: Satzbau nochmals anschauen. In der Spiess Transskription ist hier ein Punkt ergänzt</note> ubi
    <lb/>otium mihi fuerit examina<add>bo</add> <rs key="biblio_WCRRQGZT" type="biblio">tentamen</rs> <rs key="pers_DE-588-1055365613" type="person">Keilianum</rs> et
              <lb/>mittam Tibi annotationes<!-- ToDo: Nachweisen und auszeichnen --> meas. Intellexi quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ex
-             <lb/><rs key="pers_DE-588-119166895" type="person">Agnato</rs> meo, se valedixisse su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> stationi et propediem<note type="internal">Unleserliches Zeichen im Manuskript, womöglich gestrichen</note>
+             <lb/><rs key="pers_DE-588-119166895" type="person">Agnato</rs> meo, se valedixisse su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> stationi et propediem<note type="editorial">Unleserliches Zeichen im Manuskript, womöglich gestrichen</note>
 <lb/>Patriam<!-- orttag --> repetiturum: nuncius iste de repentin<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> et ino<pc type="hyphenation">-</pc><lb break="no"/>pinata illa mutatione quadrie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>io <add>nondum</add> completo (quod in
              <lb/>ipsius vocatione erat statut<add>um</add>) <add>mirifice</add> me perculit;
              <lb/>Vellem scire qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>na<add>m</add> hujus sit vera causa, et an sit

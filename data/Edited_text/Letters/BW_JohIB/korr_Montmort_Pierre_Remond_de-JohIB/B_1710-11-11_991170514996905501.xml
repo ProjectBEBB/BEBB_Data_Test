@@ -1,500 +1,179 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1710-11-11_991170514996905501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Pierre Rémond de Montmort an Johann Bernoulli.
-            Montmort, 11. November 1710</title><title type="alt">get_date!: () an ()</title><title
-            type="alt">000056776</title><title type="alt"
-            >1710-11-15_Montmort_Pierre_Remond_de-Bernoulli_Johann_I</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Montmort, Pierre Rémond de (1678-1719) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Am Briefkopf Bleistiftvermerk "Cette lettre a été
-            imprimée"</p></note>
-        <note type="print"><p>Teildruck: Monmort,Pierre Remond de, Essay d' Analyse sur les jeux de
-            hazard. Seconde edition. Paris 1713, pp. 63-64</p></note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-11-15_Montmort_Pierre_Remond_de-Bernoulli_Johann_I"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 665, Nr.5*</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514996905501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433080605504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000056776</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>6 S.<dimensions unit="cm">
-                    <height>22</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>A Montmort (am Briefkopf), A Monmort (am Briefende)</origPlace><date
-                when="1710-11-11">ce 11 Nov. 1710 (am Briefkopf), ce 15 Nov. 1710 (am
-                Briefende)</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/ohneGnd"
-            >Montmort</placeName>
-          <date when="1710-11-11">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1710-03-17_991170514997005501" type="prev"/>
-          <ptr target="B_1712-09-05_991170493129605501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="fre">Französisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-1155965140">Apoil de Romicourt, Françoise
-              Madeleine</persName>
-            <note type="lebensdaten">(no lifespan info)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-            <note type="lebensdaten">(1629-1695)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1710-11-15_Montmort_Pierre_Remond_de-Bernoulli_Johann_I"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1051826/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb/><note type="editorial">Gewisse Unstimmigkeiten und Schreibfehler im Manuskript wurden
-            anhand der Druckversion des Briefes in der zweiten Auflage von Montmorts <hi rend="u"
-              >Essay d'Analyse sur les jeux de hazard</hi>, Paris 1713, korrigiert.</note> A Monmort
-          ce 11 Nov. 1710</p>
-        <p>Je ne puis vous exprimer Monsieur combien je suis sensible à l'honneur que vous m'avés
-          fait d'examiner mon petit ouvrage<note type="editorial">Montmort, Pierre Remond de, <hi
-              rend="u"> Essay d’analyse sur les jeux de hazard</hi> , Paris (J. Quillau)
-            1708.</note> et de vouloir bien me communiquer vos scavantes et judicieuses
-            remarques.<note type="editorial">Siehe Brief von Johann I Bernoulli an Montmort von <rs
-              key="B_1710-03-17_991170514997005501" type="letter">1710.03.17</rs>.</note> J'etois à
-          Paris lorsque je reçus votre lettre. J'y suis resté environ trois mois hors d'etat de vous
-          faire reponse par une infinité de distractions et de diverses occupations. Le loisir de la
-          campagne dont je jouis à present m'a permis d'examiner avec soin les matieres qui font le
-          sujet de vostre lettre, je les mettrai selon l'ordre que vous avez suivi.<note
-            type="editorial">Die mathematischen Inhalte der folgenden Antworten von Pierre Remond de
-            Montmort zu Johann I Bernoullis kritischen Bemerkungen zu einigen mathematischen
-            Passagen in seinem Essay von 1708 werden hier nicht kommentiert. Ich verweise vielmehr
-            auf die ausführlichen Kommentare zu den verschiedenen hier angesprochenen mathematischen
-            Problemen in: Henny, Julian, Niklaus und Johann Bernoullis Forschungen auf dem Gebiet
-            der Wahrscheinlichkeitsrechnungen in ihrem Briefwechsel mit Pierre Remond de Montmort,
-            in: Bernoulli, Jacob, Werke 3, Basel 1974, pp. 457-507. </note></p>
-        <p>P. 7. Je conviens Monsieur que j'eusse pu ne point entrer dans l'examen de tous les coups
-          favorables, indifferens ou contraires au Banquier. J'ay dû sans doutte m'appercevoir qu'il
-          y avoit des cas dont la consideration n'etoit point necessaire. Mais dans ce 1<hi
-            rend="sup">er</hi> probleme j'ay cru que la voye la plus longue et la plus detaillée
-          étoit la plus propre à mettre l'esprit du lecteur dans les voyes de la solution. Vous avez
-          pu remarquer que j'avois des methodes meilleures et plus abregées en voyant les formules
-          que je donne aux pages 24 et 25. Celles que vous donnez Monsieur, pour exprimer l'avantage
-          du Banquier, <formula>\frac{m}{2n}\times1+\frac{q-1\cdot q}{1\cdot2}+\frac{q-1\cdot q\cdot
-            q+1\cdot q+2}{1\cdot2\cdot3\cdot4}+\frac{q-1\cdot q\cdot q+1\cdot q+2\dots\cdot
-            q+4}{1\cdot2\cdot3\cdot4\cdot5\cdot6}+\ldots\frac{p-1\cdot q\cdot q+1\dots\cdot
-            p-2}{1\cdot2\cdot3\cdot4\dots\cdot p-q}+\textrm{etc.}</formula> si <formula>q</formula>
-          est un nombre pair et <formula>\frac{q-1\cdot m}{2n}\times1+\frac{q\cdot
-            q+1}{2\cdot3}+\frac{q\cdot q+1\cdot q+2\cdot q+3}{2\cdot3\cdot4\cdot5}+\dots\frac{q\cdot
-            q+1\cdot q+2\dots\cdot p-2}{2\cdot3\cdot4\dots\cdot p-q}+\textrm{etc.}</formula><note
-            type="editorial">Im Manuskript fehlt das "<formula>+</formula>" vor dem
-              "<formula>etc.</formula>". Der letzte Faktor im Nenner des letzten Bruches lautet
-            irrtümlich "<formula>q-q</formula>" statt "<formula>p-q</formula>".</note> si
-            <formula>q</formula> est un nombre impair, sont tres belles. J'en ay une depuis
-          longtemps peu differente des votres, soit que <formula>q</formula> soit pair ou impair; la
-          voicy <formula>\frac{1}{p\cdot p-1}+\frac{p-q\cdot p-q-1}{p\cdot p-1\cdot p-2\cdot
-            p-3}+\frac{p-q\cdot p-q-1\cdot p-q-2\cdot p-q-3}{p\cdot p-1\cdot p-2\cdot p-3\cdot
-            p-4\cdot p-5}+\frac{p-q\cdot p-q-1\cdot p-q-2\cdot p-q-3\cdot p-q-4\cdot p-q-5}{p\cdot
-            p-1\cdot p-2\cdot p-3\cdot p-4\cdot p-5p-3\cdot p-6\cdot p-7}+\textrm{etc.}</formula> le
-          tout multiplié par <formula>p\cdot p-1\cdot\frac{1}{2}A</formula>.</p>
-        <p>Pag. 23. J'avois fait un carton pour cette page et je donnois pour somme de la suitte
-            <formula>\frac{19125}{68408}</formula> c'est un pur hazard que le carton ne se trouve
-          point dans l'exemplaire, que j'ay eu l'honneur de vous envoyer.</p>
-        <p>Pag. 59. Je suis bien aise que vous approuviez la suitte
-            <formula>\frac{1}{1}-\frac{1}{1\cdot2}+\frac{1}{1\cdot2\cdot3}-\frac{1}{1\cdot2\cdot3\cdot4}+\frac{1}{1\cdot2\cdot3\cdot4\cdot5}-\textrm{etc.}</formula>
-          J'ay trouvé bien des choses curieuses sur cette matiere. J'ay trouvé par Ex. que
-          l'avantage de celuy qui tient les cartes sur la mise des joueurs que j'appelle
-            <formula>A</formula> est
-            <formula>\frac{69056823787189897}{241347817621535625}A</formula>. Je vous ferois part de
-          ma methode si je ne craignois d'estre trop long; je me flatte qu'elle seroit de votre
-          goust.</p>
-        <p><pb/>
-          <hi rend="u">Pag. 62</hi>. Il est vray qu'il y a faute en cet endroit, je me pardonne
-          cependant cette distraction et j'aime mieux avoir bronché dans cet endroit qui est facile
-          que dans l'essentiel de quelque Methode ce que je ne me pardonnerois pas si aisement. Je
-          vous remercie de m'en avoir averti et je m'en corrigerai dans une nouvelle edition. J'ay
-          calculé le cas suivant pour 4 cartes et j'ay trouvé que l'argent du jeu étant exprimé par
-          l'unité le sort de celuy qui tient les cartes est
-            <formula>\frac{56908325}{75285923}</formula>.</p>
-        <p><hi rend="u">Pag. 80</hi>. Les proprietés des nombres figurés sont infinies, j'en ai
-          trouvé quelqu'unes neuves et singulieres dont je vous ferai part dans la suitte de cette
-          lettre celle dont vous vous estes apperçu le premier que les bandes perpendiculaires
-          expriment les coefficients des puissances est une des plus belles et des plus utiles.</p>
-        <p><hi rend="u">Pag. 158 et 159</hi>. Je serois assez porté à croire comme vous que le sens
-          du probleme de M. Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note>
-          est plustost celuy que vous luy donnez que celuy de ma solution. J'ay trouvé de même que
-          vous ces trois nombres 77, 53, 35.</p>
-        <p><hi rend="u">Pag. 137.</hi> Vos formules pour les cas tant determinés qu'indeterminés
-          sont tres justes et la remarque que vous faittes que celle des determinés s'applique à la
-          determination du coefficient d'un terme quelconque d'un polynome quelconque est tres
-          subtile. Ma formule pour les cas determinés est celle cy.<note type="editorial">Im
-            Manuskript und im Druck benutzt Montmort als eigens geschaffenes Symbol für die
-            Binomialkoeffizienten ein liegendes Rechteck mit darüber und darunter geschriebenen
-            Zahlen. Diese Rechtecke wurden hier vorerst als Quadrate (Box) wiedergegeben. Die
-            Definition dieser Symbole findet sich in: Montmort, Pierre Remond de, Essay d’analyse
-            sur les jeux de hazard, Paris (J. Quillau) 1708, p. 98: «J’exprimerai aussi par cette
-            marque [Rechteck, darüber q, darunter b] le nombre qui exprime en combien de façons b
-            peut être pris dans q, mettant le plus petit nombre dessous, et le plus grand dessus, et
-            entre cette marque arbitraire [Rechteck].» <formula>\begin{array}{c} p\\ \Box{}\\
-              q\end{array}</formula> bedeutet also in heutiger Formelschreibweise
-              <formula>\binom{p}{q}</formula>. </note>
-          <formula>\begin{array}{c} p\\ \Box{}\\ b\end{array}\times\begin{array}{c} p-b\\ \Box\\
-            c\end{array}\times\begin{array}{c} p-b-c\\ \Box\\ d\end{array}\times\begin{array}{c}
-            p-b-c-d\\ \Box\\ e\end{array}\times\begin{array}{c} p-b-c-d-e\\ \Box\\
-            f\end{array}\times\textrm{etc.}</formula></p>
-        <p>J'en ay une aussi pour les indeterminez un peu plus simple que celle qui est dans mon
-          livre. La voicy</p>
-        <p><formula>\begin{array}{c} q\\ \Box{}\\ B\end{array}\times\begin{array}{c} q-B\\ \Box\\
-            C\end{array}\times\begin{array}{c} q-B-C\\ \Box\\ D\end{array}\times\begin{array}{c}
-            q-B-C-D\\ \Box\\ E\end{array}\times\textrm{etc.}\times\begin{array}{c} p\\ \Box\\
-            b\end{array}\times\begin{array}{c} p-b\\ \Box\\ c\end{array}\times\begin{array}{c}
-            p-b-c\\ \Box\\ d\end{array}\times\begin{array}{c} p-b-c-d\\ \Box\\
-            e\end{array}\times\textrm{etc.}</formula></p>
-        <p>J'entend par <formula>q</formula> le nombre des faces des dez c'est 6 dans les dez
-          ordinaires.</p>
-        <p><hi rend="u">Pag. 159 et 160</hi>. Je ne crois pas que M. Huygens<note type="editorial"
-            >Huygens, Christiaan (1629-1695).</note> ait voulu sous-entendre minimum comme vous le
-          distes apres ces mots <hi rend="u">inter quos tres albi erunt</hi>, en tout cas je n'ai pu
-          le deviner, il m'eust été aussi facile d'une façon que de l'autre.</p>
-        <p><hi rend="u">Pag. 162.</hi> Cette observation est tres importante et je vous suis tres
-          obligé de me l'avoir communiquée<note type="editorial">Im Manuskript steht
-            "communiqué".</note>. Vous avés parfaittement raison et j'ay tort. Voicy la maniere dont
-          je me souviens que cela est arrivé. J'avois resolu il y a cinq ou six ans les cinq
-          problemes de M. Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note>. Ce
-          ne fust qu'à l'occasion de l'Extrait du livre de M.<hi rend="sup">r</hi> votre frere<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note> qui se trouve dans les memoires
-          de l'academie, que je conçus le projet de mon livre. Ce livre achevé j'ay donné dans la
-            3<hi rend="sup">eme</hi> partie ces 5 problemes. Or les resolvans pour la 1<hi
-            rend="sup">ere</hi> fois je les avois resolus par rapport à l'enoncé latin mais etant
-          sur le point de les faire imprimer je ne fis autre chose que de traduire le texte de M.
-            Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note> et le trouvant
-          obscur et ne me ressouvenant plus <pb/> de la solution je luy ay donné un sens, qui ne
-          quadre point avec la solution. Il est vray que ces deux grands nombres 282429536481,
-          244140625 sont la 12<hi rend="sup">eme</hi> puissance de 9 et de 5. La remarque est
-          excellente, vos deux solutions sont exquises. Je ne puis non plus que vous prendre la
-          peine de resoudre le probleme en la maniere qui est l'enoncé dans mon livre. Je m'en tiens
-          à votre Methode, le calcul en seroit trop long.</p>
-        <p><hi rend="u">Pag. 177.</hi> J'aurois bien souhaitté que vous eussiez trouvé pour 3 et 4
-          joueurs une Methode simple et facile telle qu'on l'a pour deux joueurs. Je n'ai pu en
-          venir à bout. La methode analytique et celle<note type="editorial">Im Manuskript steht
-            "celles".</note> des combinaisons sont touttes deux d'une longeur insupportable.</p>
-        <p><hi rend="u">Pag. 178</hi>. C'est un probleme qui merite d'exciter votre curiosité que
-          celuy où il s'agit de determiner combien doit durer la partie lorsqu'on joüe toujours en
-          rabattant. J'ay donné dans le corollaire page 184 la solution du cas où l'on joueroit en
-          trois parties de Picquet.<note type="editorial">Das Piquetspiel wird in Frankreich bereits
-            im 16. Jahrhundert erwähnt. Es zählt damit zu den ältesten französischen
-            Kartenspielen.</note> J'ay la solution generalle de ce probleme. Je vous l'envoyerois si
-          je croiois qu'elle vous fit plaisir. M.<hi rend="sup">r</hi> votre neveu<note
-            type="editorial">Bernoulli, Nicolaus I (1687–1759).</note> qui me paroist capable des
-          choses les plus difficiles et qui pardessus cela est jeune et a peut-etre du loisir
-          devroit en chercher la solution qui est assurement digne de luy. J'ay trouvé presque sans
-          calcul que le sort de celuy qui pariroit que la partie ne durera pas plus de 26 coups sera
-            <formula>\frac{16607955}{33554432}</formula> ce qui fait voir qu'il auroit un peu de
-          desavantage et que le sort de celuy qui pariroit que la partie ne durera pas plus de 28
-          coups sera <formula>\frac{70970250}{133432831}</formula> ce qui étant plus grand que
-            <formula>\frac{1}{2}</formula> fait voir que dans ce cas il y auroit de l'avantage. J'ay
-          trouvé aussi qu'en douze parties il y a de l'avantage à parier que le jeu ne durera pas
-          plus de 124 parties et qu'il y auroit du desavantage à parier qu'il sera fini en 122
-          parties.</p>
-        <p>Je voudrois bien scavoir s'il s'est donné la peine d'examiner la proposition 31. Je n'ai
-          point donné ma Methode. Voicy la formule.</p>
-        <p>Soit <formula>p</formula> le nombre des dez, <formula>\left\langle q\right\rangle
-            </formula><note type="editorial">Im Manuskript hat Montmort die figurierten Zahlen durch
-            umschriebene Kreise gekennzeichnet. In der Transkription werden sie hier vorerst mit
-            spitzen Klammern gekennzeichnet.</note> le nombre figuré de l'ordre
-          <formula>p</formula>, qui repond au quantiesme du point proposé à commencer depuis le plus
-          petit qu'on puisse amener, <formula>\left\langle q-6\right\rangle </formula> le nombre
-          figuré de l'ordre <formula>p</formula> qui repond au quantiesme moins six à commencer
-          depuis le plus petit qu'on puisse amener <formula>\left\langle q-12\right\rangle
-          </formula> le nombre <pb/> figuré de l'ordre <formula>p</formula> qui repond au quantiesme
-          moins douze du nombre proposé à commencer depuis le plus petit qu'on puisse amener etc. La
-          formule <formula>\left\langle q\right\rangle -p\times\left\langle q-6\right\rangle
-            +\frac{p\times p-1}{1\cdot2}\times\left\langle q-12\right\rangle -\frac{p\times
-            p-1\times p-2}{1\cdot2\cdot3}\times\left\langle q-18\right\rangle +\frac{p\times
-            p-1\times p-2\times p-3}{1\cdot2\cdot3\cdot4}\times\left\langle q-24\right\rangle
-            -\frac{p\times p-1\times p-2\times p-3\times p-4}{1\cdot2\cdot3\cdot4\cdot5}\left\langle
-            q-30\right\rangle +\textrm{etc.}</formula> donnera le nombre cherché.<note
-            type="editorial">In der vorstehenden Formel hat Montmort in den drei letzten figurierten
-            Zahlen irrtümlich statt <formula>p</formula> den Buchstaben <formula>q</formula>
-            verwendet.</note></p>
-        <p>Un de mes amis<note type="editorial">Dieser Freund ist noch nicht identifziert.</note> me
-          proposa il y a quelque temps de chercher par une formule combien il y a de coups pour
-          amener precisement un certain nombre de six ou de cinq avec un certain nombre
-            <formula>p</formula> de dez. J'ay trouvé pour formule <formula>m-1^{p-q}</formula>
-          multiplié par autant de produits des quantités
-            <formula>p\cdot\frac{p-1}{2}\cdot\frac{p-2}{3}\cdot\frac{p-3}{4}\cdot\textrm{
-            etc.}</formula> qu'il y a d'unités dans <formula>q</formula>. J'entend par
-            <formula>m</formula> le nombre<note type="editorial">Im Manuskript steht
-            "nombres".</note> des faces des dez et <formula>q</formula> le nombre de dez qui doivent
-          marquer le meme point. On trouve par Ex. qu'il y a à parier 9375 contre 37281 qu'en
-          jettant six dez au hazard il s'y trouvera deux six precisement.</p>
-        <p>Pendant que je suis en train M.<hi rend="sup">r</hi> de vous faire part de mes petittes
-          decouvertes sur ces matieres en voicy une que je ne crois pas sans utilité.</p>
-        <p>On scait trouver depuis long temps la somme d'une suitte de nombres quarrés ou cubes.
-          Peut-etre meme qu'on scait trouver la somme des nombres naturels élevés à des exposants
-          quelconques. J'ay trouvé une Methode pour avoir la somme des nombres figurés quelconques
-          élevés à un exposant aussi quelconque soit que ces nombres soient de suitte ou interrompus
-          également. J'ay suivi deux routtes differentes dans la solution de ce probleme. Je vais
-          Monsieur vous en donner quelque idée par un exemple. Soit une suitte de nombres
-          triangulaires elevés au quarré dont on veut avoir la somme. Je decompose ces nombres 1, 9,
-          36, 100, 225, 441, 784, 1296 etc. en cette sorte cherchant toujours les differences de
-          differences jusqu'à ce que j'en vienne à une difference constante ou bien de cette
-          sorte</p>
-        <p>
-          <formula>\begin{array}{rrrrr} 1\\ &amp; 8\\ 9 &amp; &amp; 19\\ &amp; 27 &amp; &amp; 18\\
-            36 &amp; &amp; 37 &amp; &amp; 6\\ &amp; 64 &amp; &amp; 24\\ 100 &amp; &amp; 61 &amp;
-            &amp; 6\\ &amp; 125 &amp; &amp; 30\\ 225 &amp; &amp; 91\\ &amp; 216\\
-            441\end{array}</formula><formula>\;\;\begin{array}{l} 1\\ 1+8\\ 1+2\times8+1\times19\\
-            1+3\times8+3\times19+1\times18\\ 1+4\times8+6\times19+4\times18+1\times6\\
-            1+5\times8+10\times19+10\times18+5\times6\end{array}</formula></p>
-        <p>où les nombres 8, 19, 18, 6 se trouvent estre les differences 1.<hi rend="sup">ere</hi>,
-            2.<hi rend="sup">e</hi>, 3.<hi rend="sup">eme</hi>, 4.<hi rend="sup">eme</hi>.</p>
-        <p>En General soit <formula>p</formula> le nombre des termes de la suitte dont on veut avoir
-          la somme, <formula>a</formula> le 1.<hi rend="sup">er</hi> terme de la suitte,
-            <formula>b</formula> le second terme, <formula>c</formula> le 3.<hi rend="sup">eme</hi>,
-            <formula>d</formula> le 4.<hi rend="sup">eme</hi> et ainsi de suitte. Soit aussi
-            <formula>b-a=C</formula>, <formula>c-\times\overline{a+2C}=D</formula>,
-            <formula>d-\times\overline{a+3C+3D}=E</formula>,
-            <formula>e-\times\overline{a+4C+6D+4E}=F</formula>,
-            <formula>f-\times\overline{a+5C+10D+10E+5F}=G</formula> etc.<note type="editorial">Die
-            Vincula in den vorangehenden Formeln wurden gemäss Druckfassung ergänzt. Hingegen fehlen
-            die im Manuskript stehenden Multiplikationssymbole <formula>\times</formula> in der
-            Druckfassung.</note> Soit encore <formula>m</formula> l'exposant des termes de la
-          suitte, <formula>n</formula> le quantiesme de l'ordre des nombres figurés. On aura la
-          somme cherchée
-            <formula>=ap+\frac{p\times\overline{p-1}}{1\cdot2}C+\frac{p\cdot\overline{p-1}\cdot\overline{p-2}}{1\cdot2\cdot3}\times
-            D+\frac{p\cdot\overline{p-1}\cdot\overline{p-2}\cdot\overline{p-3}}{1\cdot2\cdot3\cdot4}F+\frac{p\cdot\overline{p-1}\cdot\overline{p-2}\cdot\overline{p-3}\cdot\overline{p-4}}{1\cdot2\cdot3\cdot4\cdot5}G+\textrm{etc.}</formula>
-          Il faudra prendre autant de termes de cette formule que <formula>\overline{n-1}\times
-            m-1</formula> exprime d'unités.<note type="editorial">Im Manuskript steht
-              <formula>\overline{m-1\times n}-1</formula>, wobei Montmort das <formula>m</formula>
-            in <formula>n</formula> korrigiert hat, ohne jedoch das Vinculum entsprechend zu
-            ändern.</note> Supposé par Ex. qu'on veuille avoir la somme des 12 1.<hi rend="sup"
-            >ers</hi>
-          <pb/> nombres triangulaires élevés au quarré, on trouvera <formula>C=8</formula>,
-            <formula>D=19</formula>, <formula>E=18</formula>, <formula>F=6</formula>,
-            <formula>m\times\overline{n-1}-1=5</formula>, adjoutant donc les <formula>5</formula>
-            1.<hi rend="sup">ers</hi> termes de la formule on trouver[a] 18382 pour ce que l'on
-          cherche. Si l'on vouloit avoir des formules particulieres, on les tireroit aisement de la
-          formule generalle. On trouveroit par Ex. la formule pour la somme des nombres
-          triangulaires elevés au quarré
-            <formula>\frac{3p^{5}+15p^{4}+25p^{3}+15pp+2p}{3\cdot4\cdot5}</formula> et la formule
-          pour les nombres triangulaires elevés au cube<note type="editorial">In der folgenden
-            Formel wurde im Nenner der fehlende Faktor 6 ergänzt.</note>
-          <formula>\frac{15p^{7}+105p^{6}+273p^{5}+315p^{4}+140p^{3}-8p}{2\cdot3\cdot4\cdot5\cdot6\cdot7}</formula>.</p>
-        <p>Pour finir cette lettre qui est peut-estre deja trop longue je vous ferai part Monsieur
-          d'un probleme fort curieux que j'avois envie de proposer aux Geometres. C'est sur une
-          lotterie d'une idée neuve et singulierre qui s'est tirée l'année passée à Paris et dont le
-          public a été la duppe, celuy qui tenoit les fonds de la lotterie ayant fait banqueroutte
-          de 25000 livres.<note type="editorial">Zu den Umständen dieser betrügerischen Parise
-            Lotterie von 1710 siehe z.B. Legay, Marie-Lore, Les loteries royales dans l'Europe des
-            Lumières 1680-1815, Villeneuve d'Asq 214, pp. 40-41.</note></p>
-        <p>Les billets etoient de dix sols et il y en avoit un million; pour les 500000 que recevoit
-          du public celuy qui tenoit la lotterie il rendoit 425000 en vingt mil lots. Les deux
-          conditions qui suivent faisoient la singularité de cette lotterie.</p>
-        <p>1.<hi rend="sup">o</hi> tous les Numeros étoient dans une boette et les billets noirs
-          dans une autre. On tiroit en meme temps un Numero et un billet noir et apres qu'on avoit
-          écrit sur le registre quel Numero avoit un tel lot on jettoit dehors de la boette le
-          billet noir et on remettoit le Numero dans la boette aux Numeros. L'on recommencoit
-          ensuitte à tirer, ensorte que par cette maniere de tirer les lots un même Numero pouvoit
-          gagner plusieurs lots et même les avoir tous.</p>
-        <p>2.<hi rend="sup">o</hi> celuy qui tenoit la lotterie pour dedommager le public de 75000
-          qu'il retenoit s'obligeoit de rendre 25<hi rend="sup">lb</hi> à chacun de ceux qui ayant
-          pris 50 billets n'auroient gagné aucun lot dans leurs 50 billets.</p>
-        <p>Probleme.</p>
-        <p>En supposant que tous ceux qui mettront à la lotterie prendront ou 50 ou 100 ou 150
-          billets etc. (Cette supposition paroist recevable) on demande quel est l'avantage ou le
-          desavantage de celuy qui tient la lotterie.</p>
-        <p>Il est aisé de remarquer 1.<hi rend="sup">o</hi> qu'il gagnera 75000 si tous ceux qui ont
-          mis à lotterie ont quelque lot dans leur 50 billets. 2.<hi rend="sup">o</hi> qu'il perdra
-          425000 moins 50<hi rend="sup">lb</hi> si un seul qui aura mis 50 billets emporte tous les
-          lots, ce qui fait voir que cette lotterie est une espece de jeu de hazard où celuy qui
-          tient la lotterie peut perdre et gagner, mais fort inegalement <pb/> dans la proportion de
-          ce qu'il peut gagner et perdre et aussi par rapport à la probabilité qu'il y a qu'il
-          perdra ou qu'il gagnera. J'ay trouvé que celuy qui tient la lotterie rend au public 240000
-          plus qu'il ne devroit en luy donnant 425000 sur 500000 qu'il recoit. Le goust que j'ay
-          pour les speculations algebriques, le plaisir que je trouve à m'entretenir avec un aussi
-          habile homme que vous que je regarderai toujours comme mon maistre, et la reconnoissance
-          que je conserve de l'honneur que vous m'avez fait en m'envoyant vos scavantes remarques,
-          tout cela m'engageroit Monsieur à continuer cette lettre mais je dois craindre de vous
-          estre incommode. Ainsi je finis en vous assurant que je serai toutte ma vie avec une
-          estime infinie et une parfaitte reconnoissance Votre tres humble et tres obeissant
-          serviteur Remond de Monmort</p>
-        <p>A Monmort ce 15 Nov. 1710.</p>
-        <p>Je me donne l'honneur d'ecrire à Monsieur Votre Neveu<note type="editorial">Bernoulli,
-            Nicolaus I (1687–1759). Dieser Brief von Montmort an Nicolaus I Bernoulli mit dem
-            vermutlichen Datum 1710.11.15. scheint nicht erhalten zu sein.</note> à qui je vous prie
-          de faire part de cette lettre. Je suis au desespoir<note type="editorial">Im Manuskript
-            steht "despoir".</note> de n'avoir point profité du sejour qu'il a fait en ce pays.<note
-            type="editorial">Laut seinem Reisetagebuch hielt sich Nicolaus I Bernoulli vom 18. Juni
-            1710 bis zum 13. September 1710 in Paris und Umgebung auf. Er traf in Paris den Abbé
-            Bignon, Varignon, den Père Gouye, Malebranche, Reyneau, Fontenelle, Vater und Sohn
-            Cassini, Vater und Sohn de la Hire, Reaumur, Saurin, Nicole, Homberg, Maraldi, den Père
-            de la Muageray, den Père Vitry, den Abbé de Bragelongne, Mery und andere. Von einer
-            Begegnung mit Pierre Remond de Montmort ist nicht die Rede. (Sie Bernoulli, Nicolaus I,
-            Reisetagebuch, UB Basel Handschriften, L Ia 26).</note> Le nom qu'il porte et son propre
-          merite me rendoit precieux l'honneur de sa connoissance. J'aurois été ravi de luy rendre à
-          Paris mes tres humbles services. Que je suis faché M.<hi rend="sup">r</hi> que vous n'ayez
-          point entre les mains l'ouvrage de M. votre frere<note type="editorial">Bernoulli, Jacob
-            I, Ars conjectandi, Opus posthumum. Accedit Tractatus de seriebus infinitis, et Epistola
-            Gallice scripta de ludo pilae recticularis, Basileae (Gebrüder Thurneysen) 1713.</note>.
-          Quel dommage que ses scavantes veilles soient inutiles au public. Si ceux qui l'ont entre
-          les mains vouloient me le confier je me chargerois de le faire imprimer à mes depens ainsi
-          que j'en ai deja fait imprimer plusieurs pour le bien du public et l'avancement des
-            sciences.<note type="editorial">Der Vorschlag Montmorts, Jacob Bernoullis Manuskript zu
-            seiner Ars conjectandi auf eigene Kosten drucken zu lassen, wurde nicht verwirklicht.
-            Andere Drucke, welche Montmort auf eigene Rechnung veranstaltet hatte, waren z.B.
-            Guisné, Nicolas, Application de l'algèbre à la géométrie ou Méthode de démontrer par
-            l'algèbre les théorèmes de géométrie, &amp; d'en résoudre &amp; construire tous les
-            problèmes, Paris (Boudot et Quillau), 1705 (siehe den Brief von Montmort an Johann I
-            Bernoulli von <rs key="B_1712-12-05_991170514996805501" type="letter">1712.12.05</rs>)
-            oder Newton, Isaac (Remond de Montmort ed.), Tractatus de quadratura curvarum, s.l. et
-            s.a. [Paris [1704-1706 ?].</note> Si l'on vouloit meme en tirer du profit je pourrois
-          composer ladessus car je vous avoue que j'ay une extreme avidité pour les belles choses.
-          Si vous voulez bien vous charger Monsieur de faire cette proposition et qu'elle soit
-          refusée, pourrois je au moins esperer que vous voulussiez me faire le plaisir de faire
-          faire un extrait de touttes les propositions de ce Manuscript, surtout de la 4.<hi
-            rend="sup">eme</hi> partie.<note type="editorial">Montmort interessierte sich
-            insbesondere für diese "quatrième partie" der Ars conjectandi, weil er aus dem Brief von
-            Johann I Bernoulli von <rs key="B_1710-03-17_991170514997005501" type="letter"
-              >1710.03.17</rs> erfahren hatte, dass darin Gegenstände aus "morale et politique"
-            behandelt werden sollten.</note> Je serois ravi de voir les vües qu'a eu M. votre
-            frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> et adjoutant les
-          siennes à celles que j'ay deja, je tacherois de mettre en etat d'en profiter pour une
-            2.<hi rend="sup">e</hi> edition de mon livre<note type="editorial">Diese zweite Auflage
-            von Montmorts Essay erschien dann 1713 fast gleichzeitig mit Jacob Bernoullis Ars
-            conjectandi.</note>. Si vous me faistes l'honneur de m'ecrire M.<hi rend="sup">r</hi>
-          vous me ferez un plaisir infini. Je serai une autre fois plus exact à vous faire reponse,
-          et j'en aurai une parfaitte reconnoissance. Ayez la bonté d'adresser vos lettres chez
-          Madame Remond<note type="editorial">Françoise Apoil de Romicourt (1678-1727). Sie war eine
-            Nichte des P. Malebranche.</note> à l'hotel de Brac, rüe des Bernardins à Paris </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1710-11-11_991170514996905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Pierre Rémond de Montmort an Johann I Bernoulli. Montmort, 11. November 1710</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">1710-11-15_Montmort_Pierre_Remond_de-Bernoulli_Johann_I</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Am Briefkopf Bleistiftvermerk "Cette lettre a été imprimée"</p>
+      </note>
+      <note type="print">
+        <p>Teildruck: Monmort,Pierre Remond de, Essay d' Analyse sur les jeux de hazard. Seconde edition. Paris 1713, pp. 63-64</p>
+      </note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-11-15_Montmort_Pierre_Remond_de-Bernoulli_Johann_I" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 665, Nr.5*</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514996905501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433080605504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000056776</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>6 S.<dimensions unit="cm"><height>22</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>A Montmort (am Briefkopf), A Monmort (am Briefende)</origPlace>
+            <date when="1710-11-11">ce 11 Nov. 1710 (am Briefkopf), ce 15 Nov. 1710 (am Briefende)</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/ohneGnd">Montmort</placeName>
+        <date when="1710-11-11">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1710-03-17_991170514997005501" type="prev"/>
+        <ptr target="B_1712-09-05_991170493129605501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="fre">Französisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-1155965140">Apoil de Romicourt, Françoise Madeleine</persName>
+          <note type="lebensdaten">(no lifespan info)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
+          <note type="lebensdaten">(1629-1695)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1051826/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1051828" n="1"/> <pb facs="1051829" n="2"/> <pb facs="1051830" n="3"/> <pb facs="1051831" n="4"/> <pb facs="1051832" n="5"/> <pb facs="1051833" n="6"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

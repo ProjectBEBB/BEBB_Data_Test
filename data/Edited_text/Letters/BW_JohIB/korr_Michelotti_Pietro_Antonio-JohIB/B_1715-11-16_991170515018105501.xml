@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1715-11-16_991170515018105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- GND-Tag eingefügt am 20.12.2018. Der erwähnte Filius (Nicolaus II (?)) und der Antagonista (Newton?) fehlen oben bei den erwähnten Personen noch.
+            
+Antagonista: Handelt es sich beim Antagonista um Newton? Offensichtlich um Riccati.
+
+Filium: Der scheint gerade das 22. Lebensjahr begonnen zu haben, das müsste also Nicolaus II Bernoulli sein: So eingefügt am 20.12.2018: <person exists="true" gnd="pers_DE-588-119166895">filium</person>
+
+Im BIBB fehlen noch Newton (falls = Antagonista => tag zum Ersetzen von Antagonista: <person exists="true" gnd="pers_DE-588-118587544">Antagonista</person>) und Niklaus II Bernoull. 18.02.2019      --><!--_____________--><TEI xml:id="B_1715-11-16_991170515018105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -170,21 +177,6 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- GND-Tag eingefügt am 20.12.2018. Der erwähnte Filius (Nicolaus II (?)) und der Antagonista (Newton?) fehlen oben bei den erwähnten Personen noch.
-            
-Antagonista: Handelt es sich beim Antagonista um Newton? Offensichtlich um Riccati.
-
-Filium: Der scheint gerade das 22. Lebensjahr begonnen zu haben, das müsste also Nicolaus II Bernoulli sein: So eingefügt am 20.12.2018: <person exists="true" gnd="pers_DE-588-119166895">filium</person>
-
-Im BIBB fehlen noch Newton (falls = Antagonista => tag zum Ersetzen von Antagonista: <person exists="true" gnd="pers_DE-588-118587544">Antagonista</person>) und Niklaus II Bernoull. 18.02.2019      -->
-<!--_____________-->
-
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1078809/manifest"/>
 </facsimile><text>
@@ -224,7 +216,7 @@ Im BIBB fehlen noch Newton (falls = Antagonista => tag zum Ersetzen von Antagoni
 <p>Quod attinet ad difficultates qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Te remorabantur in
              <lb/>Lectione dissertationis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> de motu musculorum,
              <lb/>gaudeo Te eas magna ex parte proprio Marte super<pc type="hyphenation">-</pc><lb break="no"/>asse; qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tibi supersunt eas <choice><sic>utputo</sic><corr>ut puto</corr></choice> pleras<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <rs key="pers_DE-588-119166895" type="person">Adgnatus</rs>
-<lb/>meus in nuperrimis suis ad Te <rs key="B_1715-10-26_991170517051505501" type="letter">litteris</rs> sustulit: Ex iis
+<lb/>meus in nuperrimis suis ad Te <rs key="B_1715-10-26_991170517051505501" type="letter">litteris</rs><note type="editorial">Nikolaus I Bernoulli an Pietro Antonio Michelotti, 26. Oktober 1715</note> sustulit: Ex iis
              <lb/>ut spero videre potuisti primam quam mihi moves diffi<pc type="hyphenation">-</pc><lb break="no"/>cultat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> exinde oriri, quod vim firmitatis totalem in <formula>A</formula>
 <lb/>(vid. fig. 1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><abbr>dissert.</abbr><expan>dissertationis</expan></choice> de motu <choice><abbr>muscul.</abbr><expan>musculorum</expan></choice>) confundis cum vi partiali
              <lb/>oriunda <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> sola potentia <formula>L</formula>, exclusa potentia <formula>K</formula>;

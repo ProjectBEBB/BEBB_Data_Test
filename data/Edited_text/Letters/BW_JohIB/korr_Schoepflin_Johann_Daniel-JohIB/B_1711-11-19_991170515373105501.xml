@@ -1,261 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1711-11-19_991170515373105501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Johann Daniel Schöpflin. Basel,
-            19. November 1711</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057474</title><title type="alt"
-            >1711-11-19_Bernoulli_Johann_I-Schoepflin_Johann_Daniel</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Schöpflin, Johann Daniel (1694-1771) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Enthielt als Beilage einen Brief an den Buchhändler Dulsecker
-            in Strassburg</p></note>
-        <note type="print"><p>Teildruck (ohne das P.S.): Paul Zinsmaier, Neue Beiträge zur
-            Korrespondenz Johann Daniel Schöpflins, in: Festschrift für E. Knittel, Karlsruhe 1959,
-            pp.51-52</p></note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1711-11-19_Bernoulli_Johann_I-Schoepflin_Johann_Daniel"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 675:Bl.109-110</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170515373105501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433185905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057474</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2,5 S.<dimensions unit="cm">
-                    <height>20,5</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1711-11-19">a.d. XIII. Kal.
-                Decemb. MDCCXI</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1711-11-19">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118610260">Schöpflin, Johann Daniel</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1735-06-18_991170429983605501" type="prev"/>
-          <ptr target="B_1726-11-09_991170430270405501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Schoepflin_Johann_Daniel-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>Joh. B. antwortet auf einen Brief Schöpflins, der ihm gezeigt hat, dass Schöpflin seinen
-          Unterricht in Mathematik und Philosophie noch nicht vergessen hat. Er ermutigt Schöpflin,
-          die mathematischen Kenntnisse nicht zu vernachlässigen, die z.B. auch in der Rhetorik
-          nützlich seien, und sagt ihm als einem Mann, der mathematische und humanistische
-          Kenntnisse in sich vereinige, eine glänzende Zukunft voraus. P.S. Joh. B. bestätigt den
-          Empfang einiger von Schöpflin versprochener Fässer, die ihm der Böttcher Klock - versehen
-          mit den Zeichen des Vaters von Schöpflin - überbracht hat. Eines davon - mit anderem
-          Zeichen - war allerdings morsch und zerbrochen. Joh. B. nimmt an, dass der Böttcher es ihm
-          für ein neues unterschieben wollte. Als er die Annahme verweigert hat, hat der Böttcher
-          ihm gedroht, überhaupt kein Fass herauszugeben, so dass er schliesslich eingewilligt hat,
-          die Fässer anzunehmen. Er erwähnt dies, um Schöpflin zu zeigen, was für ein Mensch dieser
-          Böttcher Klock ist.</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-1037505107">Dulssecker, Johann Reinhold</persName>
-            <note type="lebensdaten">(1667-1737)</note>
-          </person>
-          <person>
-            <persName key="pers_no_GND_id">Klock</persName>
-            <note type="lebensdaten">(no lifespan info)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1013749782">Schöpflin, Johann Daniel</persName>
-            <note type="lebensdaten">(1663-1739)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1711-11-19_Bernoulli_Johann_I-Schoepflin_Johann_Daniel"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1438547/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p> Pereximio atque Doctissimo Juveni </p>
-        <p>Joh. Danieli Schoepflino </p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli</p>
-        <p>Ex litteris Tuis quas ad me dare es dignatus,<note type="editorial">Dieser Brief von
-            Johann Daniel Schöpflin an Johann Bernoulli ist anscheinend nicht erhalten.</note> mi
-          elegantissime Schoepfline, intellexi non sine magna voluptate quod Tuum in me amorem et
-          benevolentiam nec temporis longinquitas nec locorum intervallum deleverit; sed contra
-          potius grato memorique animo recolas etiamnum nostra olim quantumvis tenuia in Te collata
-            studia:<note type="editorial">Schöpflin hatte sich nach dem Besuch des Basler Gymnasiums
-            am 11. Oktober 1707 an der Artistenfakultät der Universität Basel immatrikuliert. Hier
-            hörte er vor allem Geschichte bei seinem Verwandten Jakob Christoph Iselin, Griechisch
-            bei Samuel Battier sowie Mathematik und Philosophie bei Johann Bernoulli (siehe Matrikel
-            Basel IV Nr. 2225). Zu Schöpflins Verteidigung der <hi rend="u">Declaratio antiqui
-              lapidis tergestini cum non uno in Romanam antiquitatem excursu quam ... ad diem 20.
-              Mart. MDCCXI ... defendent I. Christoph. Iselius ... praeses et Ioh. Daniel
-              Schoepflinus Marchicus respondens</hi>, Basileae (F. Lüdi) 1711, hat Johann Bernoulli
-            ein interessantes Gedicht beigesteuert. Zu Schöpflins Verteidigung von neuen Thesen zur
-            Physik, vor allem zu Dichte, Schwere, Druck und Aggregatzustand der Luft sowie zu den
-            Meteoren in der Erdatmosphäre unter dem Präsidium von Johann Bernoulli ist nur das
-            Anzeigenplakat überliefert (<hi rend="u">Theses physicae quas sub praesidio ... Iohannis
-              Bernoulli Math. Prof. ad diem 30. Maii 1711. defendet Ioh. Daniel Schoepflinus,
-              philos. stud.</hi>, [Basel] 1711). Siehe dazu Nagel, Fritz, <hi rend="u">Von morschen
-              Fässern und schwerer Luft. Johann Daniel Schöpflin als Student und Briefpartner von
-              Johann I Bernoulli</hi>, Vortrag bei der Historischen und Antiquarischen Gesellschaft
-            zu Basel.</note> nullus dubito quin pauca illa quae in Te conspersi semina ex
-          Mathematicis et Philosophicis pro ea qua es ingenii felicitate et fertilitate insignes
-          aliquando fructus sint prolatura. Interim vehementer doleo, in eo quo nunc degis loco<note
-            type="editorial">Schöpflin hatte sich am 21. August 1711 zum Studium der Theologie an
-            der Universität Strassburg immatrikuliert.</note> utilissima haec studia miserandum in
-          modum squalescere, et neminem esse ut scribis qui de iis ex squalore revocandis et
-          excolendis cogitet: quod equidem temporum quae vivimus calamitati partim, partim perversae
-          quorundam ascribo opinioni, putantium nempe Disciplinas has nostras relegandas esse <pb
-            facs="1438548" n="1"/> in classem earum quas jejunas vocitant et non ad panem lucrandum
-          facientes: sed recte facis quod imperitorum iniqua judicia Te non absterreant, qui semel
-          gustasti dulcissimi suavitatem studii ac cum studio humaniorum litterarum felici adeo
-          successu conjunxisti; ex quo consortio crede mihi tanto majus delectamentum Tibi
-          succrescet quanto nitidius utrumque in uno homine consociatum resplendescere Tuo proprio
-          exemplo compertum habueris: quid enim sodes! pulchrius, quid item gratius existimas quam
-          si subacti judicii vis et Geometrica quasi ἀκρίβεια in eloquio bene composito eluceat?
-          quid etiam venustius, quid jucundius quam veritatem aliquam mathematicam vel philosophicam
-          clare conceptam, ita clare, ita facile exprimere, ut nemo non sentiat vim veritatis, nemo
-          non claritatem. Nolim haec pluribus persequi, quoniam ea longe melius Tuopte ingenio capis
-          quam abs me asseri queant: novi ardorem Tuum, currenti calcaria addere quid opus est? si
-          ita perrexeris ut hic cepisti, profecto nihil non a Te expectare licebit; et jam jam
-          praevideo, imo polliceor magnam nominis claritatem quam intra paucos annos in orbe Erudito
-          Tibi comparabis: memineris mei ubi me Vatem non vanum fuisse expectus fueris.<note
-            type="editorial">Mit seiner Vorhersage einer glänzenden wissenschaftlichen Karierre und
-            eines grossen Renommés Schöpflins hat Johann Bernoulli in der Tat Recht behalten. Siehe
-            dazu Voss, Jürgen, <hi rend="u">Schöpflin, Johann Daniel</hi>, in: Neue Deutsche
-            Biographie 23 (2007), pp. 430-432.</note> Nunc quidem Vale et favere mihi perge. </p>
-        <p>Dabam Basileae a. d. XIII. Kal. Decemb. MDCCXI. </p>
-        <p>P. S. A Vietore quondam Vestro Klockio<note type="editorial">Dieser Basler Böttcher Klock
-            ist bisher nicht identifiziert.</note> accepi tandem post longam tergiversationem dolia
-          a Te mihi concessa, singula signo Honor. Patris Tui notata, uno tamen excepto eoque maximo
-          quod cariosum et vetustate pene corruptum erat, atque alieno signo notatum suspicabar
-          facile illum se mihi hoc vetustum pro novo (ut vestra erant) obtrudere velle,<note
-            type="editorial">Schöpflins Vater Johann Daniel (1663–1739), der am Petersberg in der
-            Nachbarschaft Johann Bernoullis wohnte, hatte offenbar vor dem Umzug der Familie nach
-            Reichenweiher im Elass im Jahr 1710 einige sperrige Fässer seinem Nachbarn günstig
-            überlassen. Der Böttcher Klock, der die Fässer ausliefern sollte, versuchte nun aber,
-            Johann Bernoulli ein morsches Fass für eine gutes anzudrehen. Doch der Bernoulli nahm es
-            genau und prüfte die Fasszeichen, überschlug dann aber sein Risiko und entschloss sich,
-            durch Annahme des morschen Fasses einen drohenden Verlust zu minimieren.</note> adeoque
-          nolebam primo acceptare; ille vero se aliud a vobis non accepisse, et si ego acceptare
-          nollem, se nullum daturum edixit, quare tandem accepi satius existimans, aliquid quam
-          nihil habere. Quod quamvis levissimi momenti, monere tamen volui, ut videres quid hominis
-          esset Vietor iste. </p>
-        <p>Rogo Te ut Epistolam hanc inclusam Bibliopolae Dulsekero<note type="editorial">Dieser
-            beigelegte Brief an den Strassburger Buchändler (Johann Reinhold ?) Dulsecker ist nicht
-            erhalten.</note> tradi cures. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1711-11-19_991170515373105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Johann Daniel Schöpflin. Basel, 19. November 1711</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Enthielt als Beilage einen Brief an den Buchhändler Dulsecker in Strassburg</p>
+      </note>
+      <note type="print">
+        <p>Teildruck (ohne das P.S.): Paul Zinsmaier, Neue Beiträge zur Korrespondenz Johann Daniel Schöpflins, in: Festschrift für E. Knittel, Karlsruhe 1959, pp.51-52</p>
+      </note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1711-11-19_Bernoulli_Johann_I-Schoepflin_Johann_Daniel" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 675:Bl.109-110</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170515373105501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433185905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057474</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2,5 S.<dimensions unit="cm"><height>20,5</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1711-11-19">a.d. XIII. Kal. Decemb. MDCCXI</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1711-11-19">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118610260">Schöpflin, Johann Daniel</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1735-06-18_991170429983605501" type="prev"/>
+        <ptr target="B_1726-11-09_991170430270405501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Schoepflin_Johann_Daniel-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <p>Joh. B. antwortet auf einen Brief Schöpflins, der ihm gezeigt hat, dass Schöpflin seinen Unterricht in Mathematik und Philosophie noch nicht vergessen hat. Er ermutigt Schöpflin, die mathematischen Kenntnisse nicht zu vernachlässigen, die z.B. auch in der Rhetorik nützlich seien, und sagt ihm als einem Mann, der mathematische und humanistische Kenntnisse in sich vereinige, eine glänzende Zukunft voraus. P.S. Joh. B. bestätigt den Empfang einiger von Schöpflin versprochener Fässer, die ihm der Böttcher Klock - versehen mit den Zeichen des Vaters von Schöpflin - überbracht hat. Eines davon - mit anderem Zeichen - war allerdings morsch und zerbrochen. Joh. B. nimmt an, dass der Böttcher es ihm für ein neues unterschieben wollte. Als er die Annahme verweigert hat, hat der Böttcher ihm gedroht, überhaupt kein Fass herauszugeben, so dass er schliesslich eingewilligt hat, die Fässer anzunehmen. Er erwähnt dies, um Schöpflin zu zeigen, was für ein Mensch dieser Böttcher Klock ist.</p>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1438547/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1438548" n="1"/> <pb facs="1438550" n="2"/> <pb facs="1438551" n="3"/> <pb facs="1438552" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

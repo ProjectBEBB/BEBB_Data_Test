@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_1711-01-06_991170430180505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
+      Bruguier -> siehe Brief von Hermann an Bourguet vom 1710.07.14
+      
+      Ami de Bourguet -> handelt es sich dabei um Bruguier?
+      
+      Freunde des Freundes von Bourguet -> 
+      --><!--_____________-->
+
+<TEI xml:id="B_1711-01-06_991170430180505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -150,32 +160,17 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- 
-      Bruguier -> siehe Brief von Hermann an Bourguet vom 1710.07.14
-      
-      Ami de Bourguet -> handelt es sich dabei um Bruguier?
-      
-      Freunde des Freundes von Bourguet -> 
-      -->
-<!--_____________-->
-
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430180505501_01" n="22r"/>
 <opener><salute>Monsieur,</salute></opener>
-<p><lb/>Votre chere <rs key="brieftag" type="letter">lettre</rs> avec <rs key="brieftag" type="letter">l'incluse</rs> de <abbr>M.</abbr> <rs type="person">Bruguier</rs> me fut rendue ce
+<p><lb/>Votre chere <rs key="brieftag" type="letter">lettre</rs> avec <rs key="brieftag" type="letter">l'incluse</rs> de <abbr>M.</abbr> <rs type="person">Bruguier</rs><!-- persontag --> me fut rendue ce
               <lb/>matin. Il est de mon devoir d'y repondre d'abord comme je le fais
               <lb/>par la <rs key="B_1711-01-06_991170430180505501" type="letter">presente</rs>, mais en deux mots seulement, les soins de ma Profession
               <lb/>et autres affaires ne me permettant pas d'etre aussi long que je souhaitte<pc type="hyphenation">-</pc><lb break="no"/>rois. Ce qui est aussi <choice><orig>lac</orig><reg>la</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> cause, que je ne puis pas écrire moy meme à
-              <lb/>Votre <rs type="person">Ami</rs>, à qui Vous aurez donc la bonté de mander, en le saluant de ma
+              <lb/>Votre <rs type="person">Ami</rs><!-- persontag -->, à qui Vous aurez donc la bonté de mander, en le saluant de ma
               <lb/>part, que je suis receu Ministre en touttes les formes, que cy devant
               <lb/>j'ay exercé en ma <rs key="place_VER-basela" type="place">patrie</rs> toutes les fonctions de ce caractere, et enfin
-              <lb/>que je feray volontiers le service à <choice><abbr>Mrs.</abbr><expan>Messieurs</expan></choice> ses Amis qu'il exige de moy, si
+              <lb/>que je feray volontiers le service à <choice><abbr>Mrs.</abbr><expan>Messieurs</expan></choice> ses <rs type="persons">Amis</rs><!-- persontag --> qu'il exige de moy, si
               <lb/>mon départ se pourra differer jusqu'au vintieme de ce Mois, mon employ
               <lb/>ne me laissant pas en liberté de m'absenter plutôt de cette <rs key="place_GEO-3171728" type="place">ville</rs><!-- Nicht ganz sicher, ob Padua gemeint ist, RG 13.04.2022 -->, <choice><orig>ou</orig><reg>où</reg></choice> nos
               <lb/>vacances du Carnaval ne commencent qu'à ce jour là. Je ne m'etend pas
@@ -193,6 +188,6 @@
 <pb facs="991170430180505501_04" n="23v"/>
 <address><addrLine>A Monsieur</addrLine>
 <addrLine>Monsieur <rs key="pers_DE-588-116298553" type="person">Louis Bourguet</rs></addrLine>
-  <addrLine>In <rs type="place">pissine <choice><orig>a</orig><reg>à</reg></choice> <abbr>S.</abbr> Giulian</rs></addrLine>
+<addrLine>In pissine <choice><orig>a</orig><reg>à</reg></choice> <abbr>S.</abbr> Giulian<!-- orttag --></addrLine>
 <addrLine>A <rs key="place_GEO-3164603" type="place">Venise</rs></addrLine></address></closer>
 </div></body></text></TEI>

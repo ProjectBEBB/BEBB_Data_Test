@@ -1,1484 +1,345 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_1718-09-29_991170514994505501">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Pierre Rémond de Montmort. Basel,
-            29. September 1718</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000056800</title><title type="alt"
-            >1718-09-29_Bernoulli_Johann_I-Montmort_Pierre_Remond_de</title><title level="s">Basler
-            Edition der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Montmort, Pierre Rémond de (1678-1719) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>"à Mr. de Monmort" sowie Datum am Briefkopf eigenhändig.
-            Bleistiftrandstriche</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-09-29_Bernoulli_Johann_I-Montmort_Pierre_Remond_de"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 665, Nr.12</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170514994505501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433081505504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000056800</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>39 S.<dimensions unit="cm">
-                    <height>20,5</height>
-                    <width>16,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Bâle</origPlace><date when="1718-09-29">ce 29. 7bre
-              1718</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1718-09-29_991170514994505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Pierre Rémond de Montmort. Basel, 29. September 1718</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>"à Mr. de Monmort" sowie Datum am Briefkopf eigenhändig. Bleistiftrandstriche</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-09-29_Bernoulli_Johann_I-Montmort_Pierre_Remond_de" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 665, Nr.12</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170514994505501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433081505504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000056800</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>39 S.<dimensions unit="cm"><height>20,5</height><width>16,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Bâle</origPlace>
+            <date when="1718-09-29">ce 29. 7bre 1718</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1718-09-29">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1718-06-26_991170514994605501" type="prev"/>
+        <ptr target="B_1718-10-28_991170514994405501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="fre">Französisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
+          <persName key="pers_DE-588-1155965140">Apoil de Romicourt, Françoise Madeleine</persName>
+          <note type="lebensdaten">(no lifespan info)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-128349794">Beaune, Florimond de</persName>
+          <note type="lebensdaten">(1601-1652)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-131366858">Bernard, Jacques</persName>
+          <note type="lebensdaten">(1658-1718)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+          <note type="lebensdaten">(1655-1705)</note>
+        </person>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1718-09-29">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1718-06-26_991170514994605501" type="prev"/>
-          <ptr target="B_1718-10-28_991170514994405501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="fre">Französisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-1155965140">Apoil de Romicourt, Françoise
-              Madeleine</persName>
-            <note type="lebensdaten">(no lifespan info)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-128349794">Beaune, Florimond de</persName>
-            <note type="lebensdaten">(1601-1652)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-131366858">Bernard, Jacques</persName>
-            <note type="lebensdaten">(1658-1718)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-            <note type="lebensdaten">(1655-1705)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1687-1759)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-135542472">Bernoulli, Nikolaus</persName>
-            <note type="lebensdaten">(1687-1769)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1153519720">Birr, Johann Jacob</persName>
-            <note type="lebensdaten">(1677-1765)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117659606">Cheyne, George</persName>
-            <note type="lebensdaten">(1671-1743)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118669478">Clarke, Samuel</persName>
-            <note type="lebensdaten">(1675-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118941941">Conti, Antonio</persName>
-            <note type="lebensdaten">(1677-1749)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118524844">Descartes, René</persName>
-            <note type="lebensdaten">(1596-1650)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118532561">Fermat, Pierre de</persName>
-            <note type="lebensdaten">(1601-1665)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-130064114">Frénicle de Bessy, Bernard</persName>
-            <note type="lebensdaten">(1605-1675)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
-            <note type="lebensdaten">(1564-1642)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118720066">Halley, Edmond</persName>
-            <note type="lebensdaten">(1656-1742)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-141595485">Hayes, Charles</persName>
-            <note type="lebensdaten">(1678-1760)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118869329">Hamilkar Barkas</persName>
-            <note type="lebensdaten">(ca. v290 - v229/8)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118545655">Hannibal</persName>
-            <note type="lebensdaten">(ca. v247/246 - v183)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
-            <note type="lebensdaten">(1648-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-            <note type="lebensdaten">(1678-1733)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118553569">Horatius Flaccus, Quintus</persName>
-            <note type="lebensdaten">(v65-v8)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-            <note type="lebensdaten">(1629-1695)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
-            <note type="lebensdaten">(1681-1737)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124275087">Keill, John</persName>
-            <note type="lebensdaten">(1671-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1218096411">Keill, Robert</persName>
-            <note type="lebensdaten">(no lifespan info)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine
-              de</persName>
-            <note type="lebensdaten">(1661-1704)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119120984">Mencke, Otto</persName>
-            <note type="lebensdaten">(1644-1707)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
-            <note type="lebensdaten">(1667-1754)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-            <note type="lebensdaten">(1643-1727)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
-            <note type="lebensdaten">(1666-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
-            <note type="lebensdaten">(1683-1761)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-100814832">Raphson, Joseph</persName>
-            <note type="lebensdaten">(1648-1715)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-102079056">Renau D'Elicagaray, Bernard</persName>
-            <note type="lebensdaten">(1652-1719)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117526789">Reyneau, Charles René</persName>
-            <note type="lebensdaten">(1656-1728)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118601547">Roberval, Gilles Personne de</persName>
-            <note type="lebensdaten">(1602-1675)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-11879471X">Sauveur, Joseph</persName>
-            <note type="lebensdaten">(1653-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-121297829">Staehelin, Johann Heinrich</persName>
-            <note type="lebensdaten">(1668-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117260266">Stirling, James</persName>
-            <note type="lebensdaten">(1692-1770)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-            <note type="lebensdaten">(1685-1731)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118626574">Vergilius Maro, Publius</persName>
-            <note type="lebensdaten">(v70-v19)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118771167">Wallis, John</persName>
-            <note type="lebensdaten">(1616-1703)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
-            <note type="lebensdaten">(1679-1754)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1718-09-29_Bernoulli_Johann_I-Montmort_Pierre_Remond_de"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1052060/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1052061" n="1"/> Bâle ce 29. 7bre 1718.</p>
-        <p>Monsieur</p>
-        <p>La chaleur excessive qui nous a extremement incommodé depuis plusieurs mois ne m'a pas
-          permis de faire autre chose que chercher la fraicheur, mais comme nous commençons de
-          respirer un air plus moderé je reprens la plume pour repondre à Votre tres agreable lettre
-          du 26. Juin.<note type="editorial">Brief von Montmort an Johann I Bernoulli von <rs
-              key="B_1718-06-26_991170514994605501" type="letter">1718.06.26</rs>.</note></p>
-        <p>Je suis ravi de Vous voir d'accord avec moi sur le chapitre de Mr. Taylor<note
-            type="editorial">Taylor, Brook (1685-1731).</note> qui nous injurie à la maniere
-          Angloise parceque nous ne voulons pas approuver la solution cavaliere de l'Auteur Anonyme
-          dont il est question au sujet du probleme des trajectoires: c'est assurement une methode
-          expeditive de contraindre les gens à gouter les choses les plus impertinentes, il n'y a
-          qu'à affecter comme fait Mr. Taylor<note type="editorial">Taylor, Brook
-            (1685-1731).</note>, une autorité de Dictateur et prononcer par là hardiment que nous
-          sommes tous des ignorans, si nous ne voulons pas reçevoir de lui ce qu'il nous impose de
-          croire. La plus part des Anglois sont d'Etranges Gens, ils veulent etre tous autant de
-          Papes, car ils pretendent de faire en Mathematique, ce que fait le Votre (pardonnés moi ce
-          trait) en matiere de Religion, il veut qu'on accepte purement et simplement la
-          Constitution, sans l'examiner et sans faire d'exception; Mr. Taylor<note type="editorial"
-            >Taylor, Brook (1685-1731).</note> et plusieurs de ses compatriotes voudroient bien nous
-          forcer de recevoir d'Eux une Bulle ou constitution suivant la quelle nous reglerions notre
-          croiance en fait des Mathematiques: Quant à moi je me prepare deja à me voir excommunié et
-          foudroié comme un heretique mathematicien, Mr. Keil<note type="editorial">Keill, John
-            (1671-1721).</note> comme Protonotaire Apostolique prononcera la terrible sentence <hi
-            rend="u">Tradimus Te Satanae</hi> etc. mais j'espere que ce seront <hi rend="u">fulmina
-            ex pelvi</hi>, et que le bon Dieu me preservera de ces anathemes. <pb facs="1052062"
-            n="2"/> Le memoire de mon fils<note type="editorial">Bernoulli, Nicolaus II
-            (1695-1726).</note> sur les trajectoires a paru dans les Actes de Leipsic au mois de
-            Juin:<note type="editorial">[Text folgt].</note> celui de Mr. Taylor<note
-            type="editorial">Taylor, Brook (1685-1731).</note> aura sans doute eté publié dans les
-          Transactions de Londres;<note type="editorial">[Text folgt].</note> Vous avés tres bien
-          fait de lui mander que sa solution des trajectoires est incomplete aussi bien que celle de
-          Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> dont il reconnoissoit
-          pourtant l'imperfection; je ne crois pas qu'il ait le secret de separer les indeterminées
-          de cette equation <formula>\overline{xdz-zdx}\times a^{n-1}=x^{n}dr</formula>, car s'il
-          l'avoit, il n'auroit pas manqué de s'en prevaloir pour rendre sa solution parfaite et
-          partant pour triompher: mais je suis curieux de sçavoir ce qu'il Vous a repondu, et s'il
-          aura bien la candeur de reconnoitre l'insuffisance de sa solution. Dans les Actes du mois
-          de Juillet dernier j'ai trouvé une nouvelle solution de Mr. Herman<note type="editorial"
-            >Hermann, Jacob (1678-1733).</note> du probleme des trajectoires<note type="editorial"
-            >Hermann, Jacob, Na. 025, Supplementum Solutionis Suae problematis de Trajectoriis
-            Curvarum inveniendis Mense Augusto superioris Anni in his Actis exhibitae, in: AE Julii
-            1718, pp. 335-336.</note>, qu'il pretend etre universelle,<note type="editorial">[Text
-            folgt].</note> c'est apparemment celle dont il Vous a parlé en dernier lieu et dont Vous
-          me parlés aussi dans Votre lettre, mais pour vous dire la verité, je n'y comprens rien, et
-          si je veux faire l'application pour les exemples les plus faciles, je trouve tout autre
-          chose que je ne devrois trouver: J'en ai fait l'essai sur les lignes droites qui partent
-          d'un point donné dont il est clair que les trajectoires sont des cercles concentriques qui
-          ont leur centre au point donné; et encore sur les paraboles qui ont le meme axe et le meme
-          sommet dont nous sçavons que les trajectoires sont des ellipses dont le centre commun est
-          dans le sommet des paraboles: Cependant dans l'un et l'autre de ces exemples la nouvelle
-          regle de Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note>, qu'il debite
-          pour generale, donne des courbes pour trajectoires bien differentes <pb facs="1052063"
-            n="3"/> des cercles et des Ellipses;<note type="editorial">[Text folgt].</note> Il est
-          vrai que Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> fait lui meme
-          l'application au probleme en question proposé aux Anglois par Mr. Leibnits<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note>, mais j'avoue qu'il le
-          fait d'une maniere si obscure pour moi, que je ne voi pas comment sa conclusion est tirée
-          de sa regle, encore ne le fait il que pour le cas des cycloides, dont il avoit devant les
-          yeux ma construction publiée dans les Actes de Leipsic de 1697, p. 211.<note
-            type="editorial">[Text folgt].</note></p>
-        <p>Vous approuvés donc Monsieur ce que j'ai dit du caractere de Mr. Keil<note
-            type="editorial">Keill, John (1671-1721).</note> et de presque tous les Anglois en
-          general, mais Vous ajoutés que la ressemblance que je leur trouve avec leurs Dogues est
-            <hi rend="u">exprimé d'une maniere charmante et que Mdme de Monmort<note
-              type="editorial">Apoil de Romicourt, Françoise Madeleine.</note> et une compagnie de
-            Personnes d'elite à qui vous avés lû cet endroit de ma derniere lettre lui ont donné de
-            grans eloges et ont admiré la force et l'elegance de mon style</hi>,<note
-            type="editorial">[Text folgt].</note> en verité ce seroit là de quoi nourrir ma vanité
-          si je ne croyois qu'il y entre un peu de flaterie de Votre part; que Mdme de Monmort<note
-            type="editorial">Apoil de Romicourt, Françoise Madeleine.</note> et ces autres personnes
-          de bon gout aient applaudi à cette ressamblance, passe, mais de me dire qu'on a loué et
-          admiré je ne sçai quelle force et elegance de mon style, c'est me conter des sornettes; me
-          suis je jamais piqué de bien ecrire ou de m'exprimer elegamment, surtout dans une langue
-          etrangere, et en particulier dans la langue françoise que l'on a portée au dernier point
-          de delicatesse, difficile meme à Vos meilleurs ecrivains à ecrire dans toute sa pureté?
-            <pb facs="1052064" n="4"/> je me contente d'ecrire verités sans beautés plutot que
-          beautés sans verités. La chose Vous plait c'est assés, je ne me mets pas en peine de la
-          maniere dont elle est enoncée. Vous avés encore la bonté de reconnoitre la verité qui se
-          trouve comme Vous dites toute entiere dans la peinture que j'ai faite de ces Anglois
-          outrés et inhumains auxquels Horace<note type="editorial">Horatius Flaccus, Quintus (65 v.
-            Chr.-8 v. Chr.).</note> reproche la ferocité envers les etrangers: Je suis cependant
-          d'accord avec Vous qu'il y a plusieurs sçavants Anglois à qui on feroit tort de les
-          vouloir comprendre dans le nombre de ces Misanthropes dont parle Horace<note
-            type="editorial">Horatius Flaccus, Quintus (65 v. Chr.-8 v. Chr.).</note>, car j'en ai
-          connu de fort honnetes gens qui etoient bien polis et bien civilisés et qui m'ont temoigné
-          beaucoup d'honnetetés, je serois un ingrat si je ne me louois pas entre autres de Mssrs.
-            Newton<note type="editorial">Newton, Isaac (1643-1727).</note> et Halley<note
-            type="editorial">Halley, Edmond (1656-1742).</note> qui outre les presens qu'ils m'ont
-          fait de plusieurs de leurs ouvrages ils firent à mon egard mille civilités à mon
-            Neveu<note type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> pendant son sejour
-          à Londres; J'apprens tout fraichement de Mr. Varignon<note type="editorial">Varignon,
-            Pierre (1654-1722).</note> que Mr. Newton<note type="editorial">Newton, Isaac
-            (1643-1727).</note> lui a envoié pour moi un exemplaire de la nouvelle edition latine de
-          son Optique<note type="editorial">Newton, Isaac, Optice sive de reflexionibus,
-            refractionibus, inflexionibus &amp; coloribus lucis, Libri Tres. Authore Isaaco Newton,
-            Equite Aurato. Latine reddidit Samuel Clarke, S.T.P. Editio Secunda, auctior. Londini
-            (G. &amp; J. Innys) 1719.</note>; ce de quoi je Vous prie de le remercier de ma part
-          quand Vous lui ecrirés; Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note>
-          est assurement un homme que j'estime non seulement pour la superiorité de son genie mais
-          aussi pour sa droiture et son bon coeur, il seroit parfait s'il ne pretoit pas trop
-          aisément l'oreille à ses flatteurs et adorateurs tels que sont Keil<note type="editorial"
-            >Keill, John (1671-1721).</note> et ses semblables qui tachent de lui inspirer de
-          l'amour propre pour soi et sa nation, et du mépris pour <pb facs="1052065" n="5"/> les
-          Etrangers. C'est à quoi il faut attribuer je croi les effets de vanité, d'injustice et
-          d'ingratitude qui se trouvent dans les 3 passages que Vous me cités. Pour ne parler que du
-          troisieme, où Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> affecte
-          de donner par coroll. les Ovales de Descartes<note type="editorial">Descartes, René
-            (1596-1650).</note>,<note type="editorial">Newton, Isaac, Principia, 1, section
-            14.</note> c'est là un vice enraciné et commun presque à tous les Anglois, qui marque en
-          meme tems de la vanité, de l'injustice, et de l'ingratitude tout ensemble; car imaginés
-          Vous un homme fanfaron qui Vous dise que tout ce qui est contenu dans Votre livre sur les
-          jeux de hazard, n'est qu'un petit corollaire d'une certaine proposition qu'il pretendroit
-          avoir demontrée, en verité ce seroit une vanité insupportable, mais ce seroit aussi une
-          injustice et une ingratitude parce qu'il Vous oteroit ou tacheroit de Vous oter la gloire
-          qui Vous seroit legitimement due, au lieu de Vous remercier de ce que Vous avés bien voulu
-          enrichir le public de Vos excellentes decouvertes; C'est Cheyne<note type="editorial"
-            >Cheyne, George (1671-1743).</note> du nombre de ces fades flatteurs de Mr. Newton<note
-            type="editorial">Newton, Isaac (1643-1727).</note>, qui donne un bel exemple d'une telle
-          fanfaronade dans son Traité des fluxions pag. 59 et 60, où il dit avec autant d'impudence
-          que de vanité que tout ce que nous autres avions publié dans le tems de 24 ans, n'etoient
-          que des repetitions ou tout au plus des corollaires faciles de ce que Mr. Newton<note
-            type="editorial">Newton, Isaac (1643-1727).</note> a publié ou communiqué à ses amis. Il
-          parle aussi assés sechement pag. 50 de ma suite generale pour reduire les fluxions aux
-            fluen<pb facs="1052066" n="6"/>tes que j'ai publié dans les Actes de Leipsic de
-            1694,<note type="editorial">[Text folgt].</note> comme si cette suite ne meritoit pas
-          d'etre traité autrement que comme une chose qu'il deduit facilement de sa methode; Mais
-          Mr. de Moivre<note type="editorial">Moivre, Abraham de (1667-1754).</note> lui a tres bien
-          montré l'impertinence et la vanité de son affectation, et a fait voir en meme tems que
-            Cheynes<note type="editorial">Cheyne, George (1671-1743).</note> voulant encherir et
-          etendre l'universalité de ma methode n'a rien fait autre chose que l'obscurcir et trahir
-          son ignorance.</p>
-        <p>Revenons à notre tres aimable Mr. Keil<note type="editorial">Keill, John
-            (1671-1721).</note>, Vous avés sans doute ecrit à Mr. Taylor<note type="editorial"
-            >Taylor, Brook (1685-1731).</note> que j'ai resolu generalement le probleme que
-            Keil<note type="editorial">Keill, John (1671-1721).</note> m'a proposé, et que je lui ai
-          accordé du tems jusqu'au premier de Septembre pour declarer s'il Lui meme a resolu son
-          probleme, si au bout de ce terme il ne donnoit point de reponse positive, que je prendrois
-          son silence pour un aveu tacite de son impuissance, et que je ferois voir publiquement
-          l'insolence qu'il auroit eue de me defier par un probleme qu'il ne seroit pas lui meme
-          capable de resoudre; je marquai dans ma derniere que dans le cas le plus simple, la
-          resistance du milieu etant en simple raison des vitesses, la courbe que le mobile decrit
-          sera une ligne tres connue des Geometres, que je ne voulois pas encore nommer alors; mais
-          il n'est pas necessaire d'en cacher plus le nom, car depuis ma lettre j'ai vû dans le
-          discours de Mr. Huguens<note type="editorial">Huygens, Christiaan (1629-1695).</note> de
-          la <pb facs="1052067" n="7"/> cause de la pesanteur pag. 172<note type="editorial"
-            >[Huygens, Christiaan], Traité de la lumière, où sont expliquées les causes de ce qui
-            luy arrive dans la réflexion, et dans la réfraction. Et particulièrement dans l’étrange
-            réfraction du cristal d’Islande. Par C. H. D. Z. [Christiaan Huygens D. Zulichem] Avec
-            un discours de la cause de la pesanteur, Leide (P. van der Aa) 1690, p. 172.</note>,
-          (que j'avois lu autrefois) qu'il donne aussi une construction pour ce cas particulier; je
-          dis donc que c'est la logarithmique et quelques autres courbes qui en dependent, entre
-          autres la courbe de Mr. de Beaune<note type="editorial">Beaune, Florimond de
-            (1601-1652).</note>; Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note>
-          que Mr. Huguens<note type="editorial">Huygens, Christiaan (1629-1695).</note> cite<note
-            type="editorial">[Huygens, Christiaan], Traité de la lumière, où sont expliquées les
-            causes de ce qui luy arrive dans la réflexion, et dans la réfraction. Et
-            particulièrement dans l’étrange réfraction du cristal d’Islande. Par C. H. D. Z.
-            [Christiaan Huygens D. Zulichem] Avec un discours de la cause de la pesanteur, Leide (P.
-            van der Aa) 1690, p. 173</note>, donne aussi une construction pour ce cas particulier
-          dans la Prop. IV du 2. Livre,<note type="editorial">Newton, Isaac, Philosophiae naturalis
-            Principia mathematica, Londini (J. Streater) 1687, lib. 2, prop. IV, pp. 241-245.</note>
-          mais elle est plus embarassée que celle de Mr. Huguens<note type="editorial">Huygens,
-            Christiaan (1629-1695).</note>, et toutes deux moins simples que le mienne; cependant il
-          s'agit ici principalement du cas où la resistance est en raison doublée de la vitesse et
-          en general où elle est en raison d'une puissance quelconque de la vitesse, c'est ce que
-          personne n'a resolu avant moi: Le terme accordé à Mr. Keil<note type="editorial">Keill,
-            John (1671-1721).</note> est expiré, et presque un mois au delà; je suis donc curieux
-          d'apprendre s'il Vous a repondu et en quoi consiste sa reponse.</p>
-        <p>Ne sçavés Vous pas Monsieur si le 2.<hi rend="sup">e</hi> memoire de Mr. Keil<note
-            type="editorial">Keill, John (1671-1721).</note> a paru dans le Journal de la Haye ou
-          ailleurs, quoi qu'il en soit, ma declaration latine que Vous avés vue, se trouve deja dans
-          les Actes de Leipsic en forme d'appendice apres le memoire de mon fils<note
-            type="editorial">Bernooulli, Nicolaus II (1695-1726).</note>.<note type="editorial"
-            >[Text folgt].</note> S'il est vrai que la societé qui faisoit les Journaux litteraires
-          de la Haye soit rompue, je suis sur que Mr. Keil<note type="editorial">Keill, John
-            (1671-1721).</note> n'acquiescera pas et qu'il se servira d'un autre journal pour y
-          publier son invective contre moi, car il <pb facs="1052068" n="8"/> est trop enragé pour
-          en demeurer là, et il semble que son Pere<note type="editorial">Keill, Robert.</note>
-          l'ait fait jurer devant l'Autel de faire la guerre perpetuelle aux etrangers, comme fit
-          autrefois Amilcar<note type="editorial">Hamilkar Barkas (ca. 290 v. Chr.-229/8 v.
-            Chr.).</note> à son Fils Hannibal<note type="editorial">Hannibal (247/246 v. Chr.-183 v.
-            Chr.).</note> pour l'obliger de devenir ennemi irreconciliable des Romains, mais si ce
-          redoutable capitaine a porté ses armes et la terreur jusques devant les portes de Rome,
-          nous pouvons nous consoler parceque l'impuissance de Keil<note type="editorial">Keill,
-            John (1671-1721).</note> et sa crierie ne va gueres loin au de là de la mer.</p>
-        <p>A Vous entendre parler il faut qu'on range Mr. de Moivre<note type="editorial">Moivre,
-            Abraham de (1667-1754).</note> dans la classe des filoux, quoi qu'il faille plus de
-          finesse pour etre filoux que pour etre voleur; Vous dites que Vous etes pillé par lui dans
-          son edition angloise <hi rend="u">De mensura sortis</hi><note type="editorial">Moivre,
-            Abraham de, The doctrine of chances, or, A method of calculating the probability of
-            events in play, London (Pearson) 1718.</note> à peu prés comme je l'ai eté par Mr.
-            Hayes<note type="editorial">Hayes, Charles (1678-1760). Hayes Charles, A treatise of
-            fluxions : or, an introduction to mathematical philosophy. Containing a full explication
-            of that method by which the Most Celebrated geometers of the present Age have made such
-            vast advances in mechanical philosophy. A Work very Useful for those that would know how
-            to apply Mathematicks to Nature. By Charles Hayes, Gent, London (E. Midwinter)
-            1704.</note>, mais avec cette difference, dites Vous, que celui ci est modeste et ne
-          prend point le titre d'inventeur, au lieu que Mr. de Moivre<note type="editorial">Moivre,
-            Abraham de (1667-1754).</note> Vous depouille en faisant semblant qu'il n'a point lu
-          Votre premiere edition<note type="editorial">Montmort, Pierre Remond de, Essay d’analyse
-            sur les jeux de hazard, Paris (J. Quillau) 1708.</note> et qu'il n'a rien pris de la
-            seconde<note type="editorial">Montmort, Pierre Remond de, Essay d’analyse sur les jeux
-            de hazard, Seconde edition, revüe &amp; augmentée de plusiers lettres, Paris (J.
-            Quillau) 1713.</note>; si cela est il faut dire qu'il est entierement Anglisé, en ce que
-          c'est le naturel de presque tous les Anglois de piller de tout coté à droite et à gauche
-          pendant qu'ils ont l'impudence de crier au voleur! temoins Keil<note type="editorial"
-            >Keill, John (1671-1721).</note>, Cheynes<note type="editorial">Cheyne, George
-            (1671-1743).</note>, etc. <hi rend="u">Quis tulerit Gracchos de seditione
-            querentes</hi>:<note type="editorial">Juvenal, Satura 2, 24.</note> Vous avés cependant
-          les armes en main pour Vous venger de l'injustice que Mr. Moivre<note type="editorial"
-            >Moivre, Abraham de (1667-1754).</note> Vous a faite, et <pb facs="1052069" n="9"/> pour
-          Vous remettre dans la possession de ce qui Vous appartient de droit, ce seroit une grande
-          injustice que Vous Vous feriés à Vous meme si tandis que Vous travaillés à redresser les
-          torts et à faire justice aux Auteurs Geometres vivans et morts, Vous negligiés de
-          revendiquer Votre bien pour l'abandonner aux usurpateurs.</p>
-        <p>Ce que Vous me communiqués touchant ce que Mr. Herman<note type="editorial">Hermann,
-            Jacob (1678-1733).</note> Vous a ecrit sur la courbe des resistances regarde mon
-            Neveu<note type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> plutot que moi,
-          puisque c'est le probleme que Mr. Keil<note type="editorial">Keill, John
-            (1671-1721).</note> lui a proposé pour le defier; Vous sçaurés pourtant qu'il y a
-          longtems que nous le construisimes mon neveu<note type="editorial">Bernoulli, Nicolaus I
-            (1687-1759).</note> et moi, par les quadratures tant pour l'hypothese commune des
-          resistances proportionelles aux quarrés des vitesses que pour celles des resistances en
-          simple raison des vitesses; Que la construction que Mr. Herman<note type="editorial"
-            >Hermann, Jacob (1678-1733).</note> donne presentement pour cette derniere hypothese
-          soit bonne ou non, je ne veux pas me donner la peine de l'examiner, mais quoi qu'il dise
-          que ce qu'il a avancé dans le scholie pag. 338 de sa Phoron.<note type="editorial"
-            >Hermann, Jacob, Na. 022, Phoronomia, sive de Viribus et Motibus corporum solidorum et
-            fluidorum libri duo, Autore Jacobo Hermanno Basil. antehac in Illustri Patavino Lyceo;
-            nunc vero in Regio Viadrino Math. Prof. Ord. et Reg. Scientiarum Societatis, quae
-            Berolini est, Sodali, Amstelaedami (R. &amp; G. Wetstein) 1716, p. 338. </note> sur
-          l'impossibilité de construire la courbe des resistances ne se rapporte qu'au probleme
-          general de trouver la dite courbe des resistances dans toute autre hypothese que dans
-          celle de Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> que les
-          resistances soient proportionelles aux quarrés des vitesses, il semble pourtant que
-          lorsqu'il ecrivit ce passage de la Phoron.<note type="editorial">Hermann, Jacob, Na. 022,
-            Phoronomia, sive de Viribus et Motibus corporum solidorum et fluidorum libri duo, Autore
-            Jacobo Hermanno Basil. antehac in Illustri Patavino Lyceo; nunc vero in Regio Viadrino
-            Math. Prof. Ord. et Reg. Scientiarum Societatis, quae Berolini est, Sodali, Amstelaedami
-            (R. &amp; G. Wetstein) 1716, p. 338. </note> qu'il ne sçavoit pas encore reduire le
-          probleme aux quadratures pour cette hypothese particuliere <pb facs="1052070" n="10"/> des
-          resistances en simple raison des vitesses, et qu'il croioit meme la chose impossible;
-          lisés je Vous prie ses propres paroles, <hi rend="u">Etenim</hi>, dit il, <hi rend="u">si
-            resistentiae sunt ut celeritates acquisitae, nondum constat, qua ratione curva
-            </hi><formula>ARC</formula><hi rend="u"> construi debeat, ne quidem concessis
-            quadraturis figurarum curvilinearum</hi>,<note type="editorial">[Text folgt].</note>
-          elles sont trop claires pour faire croire qu'il y parloit de l'hypothese generale, car il
-          dit poositivement <hi rend="u">si resistentiae sunt ut celeritates acquisitae</hi>, et non
-          point <hi rend="u">si resistentiae sunt ut functio qualiscunque celeritatum
-            acquisitarum</hi>, comme il auroit du s'exprimer s'il avoit voulu parler de l'hypothese
-          generale des resistances: De grace Monsieur n'ai je pas raison? et ne voiés Vous pas que
-          Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> tache de couvrir
-          l'impuissance où il etoit alors? il feroit à mon avis plus genereusement d'avouer son
-          foible que de le deguiser d'une maniere si ridicule: ce qui précede cet <hi rend="u"
-            >Etenim</hi> confirme encore trop bien qu'il ne sçavoit alors aucune construction pour
-          l'hypothese des resistances proportionelles aux vitesses, quand il dit <hi rend="u">sed,
-            accurate et Mathematice rem sumendo praenominata </hi><formula>ATRC</formula><hi
-            rend="u"> (curva resistantiarum) non est ellipsis in prima, nec parabola in altera
-            resistentiae hypothesi; sed quantum conjicere licet, utroque casu erit
-            transcendens</hi>,<note type="editorial">[Text folgt].</note> car s'il etoit vrai qu'il
-          avoit une solution pour l'un et l'autre cas, que seroit il besoin de dire <hi rend="u"
-            >quantum conjicere licet</hi>, puisqu'il auroit pu parler avec assurance et dire <hi
-            rend="u">quemadmodum scio</hi>?</p>
-        <p>Vous ajoutés Monsieur que Mr. Herman<note type="editorial">Hermann, Jacob
-            (1678-1733).</note> entre plusieurs choses belles et curieuses dont sa lettre est
-          remplie Vous a communiqué l'integrale et la construction de cette equation differentielle
-            <formula>adx+bdy+cxdx+eydx+fxdy+gydy=0</formula>, <pb facs="1052071" n="11"/> où les
-          coefficiens <formula>a</formula>, <formula>b</formula>, <formula>c</formula>,
-            <formula>e</formula>, <formula>f</formula>, <formula>g</formula> renferment toutes les
-          varietés possibles des signes <formula>+</formula> et <formula>-</formula>; mais il ne
-          Vous a pas dit (selon sa belle<note type="editorial">Im Manuskript steht "belles".</note>
-          coutume) que c'est de moi qu'il a emprunté la regle de separer les indeterminées dans
-          cette equation pour en prendre ensuite l'integrale ou pour la construire, car il faut que
-          Vous sçachiés qu'il possede une copie faite sur la mienne de mes leçons communiquées
-          autrefois à Mr. le M. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François
-            Antoine de (1661-1704).</note>,<note type="editorial">[Text folgt].</note> c'est ce que
-          l'Auteur anonyme de l'<hi rend="u">Epistola pro Eminente</hi> a dit publiquement vid. Act.
-          Lips. 1716. p. 298, et que Mr. Herman<note type="editorial">Hermann, Jacob
-            (1678-1733).</note> n'a garde de nier;<note type="editorial">[Text folgt].</note> or
-          voici ce qui se trouve à la marge de la leçon onzieme,<note type="editorial">[Text
-            folgt].</note> Vous en jugerés si ce n'est pas justement la regle dont Mr. Herman<note
-            type="editorial">Hermann, Jacob (1678-1733).</note> se sera servi "Habentur", dis je à
-          l'endroit marqué, "quaedam regulae generales pro separatione indeterminatarum per
-          substitutionem facienda; sic omnes aequationes differentiales ubi nulla reperitur linea
-          constans pro supplendis homogeneis, hoc est ubi indeterminatarum dimensiones in quolibet
-          termino simul sumtae eundem semper efficiunt numerum, possunt reduci ad alias separabiles
-          si pro <formula>x</formula> substituatur <formula>zy</formula>, adeoque pro
-            <formula>dx</formula>, <formula>zdy+ydz</formula>, vel contra pro <formula>y</formula>,
-            <formula>zx</formula>, proinde pro <formula>dy</formula>, <formula>zdx+xdz</formula>.
-          Item omnes aequationes differentiales ubi indeterminatae <formula>x</formula>, et
-            <formula>y</formula> primam dimensionem non transcendunt" (ce qui est precisement le cas
-          de Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note>) "reduci possunt ad
-          separabiles si ponatur <formula>x=z+m</formula>, et <formula>y=t+n</formula> (per
-            <formula>m</formula>
-          <pb facs="1052072" n="12"/> et <formula>n</formula> intelligo quantitates constantes sed
-          incognitas quas sequenti modo quaero) eorumque valore substituto in aequatione proposita,
-          si termini in quibus reperiuntur pure constantes in utroque membro aequentur nihilo: hoc
-          modo patebit quid pro incognitis constantibus sumendum sit, ut illis in aequatione
-          evanescentibus remaneat aequatio consistens homogeneis solis indeterminatis, quae igitur
-          per praecedentem regulam generalem reduci potest ad separabilitatem". Suivant cette regle
-          Vous trouverés <formula>m=\frac{ag-be}{fe-gc}</formula> et
-            <formula>n=\frac{bc-af}{fe-gc}</formula>, desorte que
-            <formula>x=z+\frac{ag-be}{fe-gc}</formula> et
-          <formula>y=t+\frac{bc-af}{fe-gc}</formula>, substituant donc ces valeurs de
-            <formula>x</formula> et <formula>y</formula> dans l'equation proposée
-            <formula>adx+bdy+cxdx+eydx+fxdy+gydy=0</formula>, elle se changera en celle ci
-            <formula>czdz+etdz+fzdt+gtdt=0</formula>, la quelle n'a plus que quatre termes dans
-          chacun des quels il y a une indeterminée d'une dimension, faisant donc selon la premiere
-          regle generale <formula>z=tu</formula>, et <formula>dz=tdu+udt</formula>, et mettant ces
-          valeurs de <formula>z</formula> et de <formula>dz</formula> dans la derniere equation, il
-          en resultera cette autre où les indeterminées sont toutes separées
-            <formula>\frac{\overline{-cu-e}\times du}{cuu+eu+fu+g}=\frac{dt}{t}</formula>; donc elle
-          se construit par des quadratures, mais ce qui plus est, les deux membres de cette equation
-          etant des fractions rationelles, on la reduit par la methode que je publiois dans les
-          Memoires de l'acad. de 1702,<note type="editorial">[Text folgt].</note> et qui a eu le
-          bonheur <pb facs="1052073" n="13"/> si je m'en souviens de Vous bien plaire, on reduit,
-          dis je, cette equation à une equation algebrique dans les cas où la chose est possible, ou
-          du moins à la quadrature de l'hyperbole ou à celle du cercle, ou enfin toujours à une
-          equation exponentielle, car par la dite methode Vous trouverés (salvo errore calculi)
-          faisant <formula>\alpha=\frac{-e+f-\sqrt{ee+2ef-ff-4gc}}{2\sqrt{ee+2ef+ff-4gc}}</formula>,
-            <formula>\beta=\frac{e+f-\sqrt{ee+2ef+ff-4gc}}{2c}</formula>,
-            <formula>\gamma=\frac{+e-f-\sqrt{ee+2ef+ff-4gc}}{2\sqrt{ee+2ef+ff-4gc}}</formula>,
-            <formula>\epsilon=\frac{e+f+\sqrt{ee+2ef+ff-4gc}}{2c}</formula>, Vous trouverés dis je
-          cette equation exponentielle
-            <formula>\overline{u+\beta}^{\alpha}\times</formula><formula>\overline{u+\epsilon}^{\gamma}=t</formula>,
-          qui pourra etre exprimée en <formula>x</formula> et <formula>y</formula> si on remonte en
-          resubstituant pour <formula>u</formula> sa valeur <formula>\frac{z}{t}</formula>, et
-          ensuite pour <formula>z</formula> et <formula>t</formula> leurs valeurs
-            <formula>x\frac{-ag+be}{fe-gc}</formula>, et
-            <formula>y\frac{-bc+af}{fe-gc}</formula>.<note type="editorial">In den beiden Ausdrücken
-            fehlt zwischen <formula>x</formula> bzw. <formula>y</formula> und dem nachfolgenden
-            Bruch jeweils ein Pluszeichen.</note> Toutes les fois que <formula>\alpha</formula> et
-            <formula>\gamma</formula> deviennent des quantités rationelles, il est clair que la
-          courbe pour l'equation proposée sera algebrique, mais pour avoir une construction aisée de
-          la courbe il vaut mieux de s'en tenir à l'equation trouvée
-            <formula>\frac{\overline{-cu-e}\times du}{cuu+eu+fu+g}=\frac{dt}{t}</formula>, car aiant
-          fait par le moien des quadratures ou des logarithmes la courbe dont les coordonnées soient
-            <formula>u</formula> et <formula>t</formula>, on en tirera <pb facs="1052074" n="14"/>
-          aisement les <formula>x</formula> et <formula>y</formula> qui seront les coordonnées de la
-          courbe cherchée. Notre equation trouvée fait aussi voir tout d'un coup les cas dans les
-          quels la courbe cherchée devient algebrique, car il n'y a qu'à voir quelle supposition il
-          faut faire afin que le numerateur de la fraction <formula>\frac{\overline{-cu-e}\times
-            du}{cuu+eu+fu+g}</formula> devienne le differentiel ou le multiple quelconque du
-          differentiel du denominateur; Voici quelques cas seulement. 1.<hi rend="sup">o</hi> Si
-            <formula>c=0</formula>; 2.<hi rend="sup">o</hi> Si <formula>g=0</formula>; 3.<hi
-            rend="sup">o</hi> Si <formula>e=f</formula>; 4.<hi rend="sup">o</hi> Si
-            <formula>cg=ef</formula>; 5.<hi rend="sup">o</hi> Si <formula>e=-f</formula> et que
-            <formula>\frac{c}{g}</formula> soit un quarré negatif; 6.<hi rend="sup">o</hi> Si
-            <formula>ee+2ef+ff-4cg</formula> est un quarré parfait; notés que je suppose en tout
-          cela que <formula>c</formula>, <formula>e</formula>, <formula>f</formula>,
-            <formula>g</formula> soient des quantités rationelles. Mais c'en est assés sur ce sujet,
-          je me trompe bien si ce que Mr. Herman<note type="editorial">Hermann, Jacob
-            (1678-1733).</note> Vous en a communiqué n'est pas tiré du meme principe c'est à dire de
-          ce qu'il a vû dans la copie de mes manuscrits, ce ne seroit pas la premiere fois que de
-          vouloir <hi rend="u">arare vitula mea</hi>, il le fit bien autrefois, et quelques fois peu
-          honnetement, en voulés Vous un echantillon? Lisés s'il Vous plait l'art. X, pag. 393,
-          Append. de sa Phoron.,<note type="editorial">Hermann, Jacob, Na. 022, Phoronomia, sive de
-            Viribus et Motibus corporum solidorum et fluidorum libri duo, Autore Jacobo Hermanno
-            Basil. antehac in Illustri Patavino Lyceo; nunc vero in Regio Viadrino Math. Prof. Ord.
-            et Reg. Scientiarum Societatis, quae Berolini est, Sodali, Amstelaedami (R. &amp; G.
-            Wetstein) 1716, p. 393. </note> où il se vante faussement que personne avant lui autant
-          qu'il sçache n'a demontré le principe hydraulique <hi rend="u">nec quisquam alius</hi>,
-            <pb facs="1052075" n="15"/> dit il, <hi rend="u">quod sciam (demonstravit) aquam aliumve
-            liquorem ea velocitate</hi> etc. Cependant c'est moi le premier qui lui ai donné une
-          demonstration de ce principe tres bonne et tres legitime deux ou trois ans avant qu'il fit
-          imprimer son livre lorsqu'il passa par ici revenant d'Italie,<note type="editorial">Jacob
-            Hermann hielt sich auf der Rückreise von Padua und vor seiner Weiterreise nach Frankfurt
-            a. d. Oder von Ende Juni 1713 bis zum 20. September 1713 in Basel auf.</note> il y a
-          meme de l'apparence que sans moi il n'auroit jamais pensé à donner une demonstration dans
-          l'appendice; lorsque j'y vis ce passage je fus piqué et je ne manquai pas de lui reprocher
-          vivement par une lettre son peu de discretion envers moi.<note type="editorial">[Text
-            folgt].</note> Effectivement ne pouvant pas nier le fait il en fut si honteux, qu'il ne
-          sçut alleguer autre chose pour son excuse, si non, qu'il avoit oublié d'avoir vû ma
-          demonstration, mais que s'en ressouvenant bien presentement, il me promettoit de la
-          publier et d'avouer publiquement qu'il me reconnoit pour le premier demonstrateur de ce
-          principe en question, en effet il executa sa promesse voiés les Actes de Leipsic de 1716
-          p. 375,<note type="editorial">[Text folgt].</note> quoiqu'un peu trop cavalierement, car
-          il ne dit pas positivement, comme il devoit, qu'avant ma Demonstration il n'en avoit point
-          vu d'autre ni trouvé lui meme, enfin il me faut rire de la foiblesse de sa me<pb
-            facs="1052076" n="16"/>moire dans cette occasion, vû qu'il a d'ailleur la memoire si
-          heureuse qu'il se souvient aisement s'il veut de la moindre circonstance de ce qu'il a vû
-          ou lû longues années auparavant. Quittons cela. Vous dites Monsieur que dans la lettre que
-          Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> Vous a ecrite, il y a
-          plusieurs choses sur les vibrations des cordes, mais si elles ne sont pas plus solides que
-          ce qu'il en a publié deja dans les Actes de Leipsic de 1716 dans le meme memoire où il a
-          communiqué ma demonstration,<note type="editorial">[Text folgt].</note> il n'aura pas
-          sujet de s'en vanter beaucoup, car il me paroit que ce qu'il y donne n'est qu'un pur
-          paralogisme etant fondé sur un faux principe: la solution de Mr. Taylor<note
-            type="editorial">Taylor, Brook (1685-1731).</note> qu'il donne dans son livre <hi
-            rend="u">De methodo incrementorum</hi> Prop. 22 et 23<note type="editorial">[Text
-            folgt].</note> me semble mieux fondée, quoiqu'il y ait aussi quelque chose à redire;
-          j'ai confronté ces deux solutions avec ce que Mr. Sauveur<note type="editorial">Sauveur,
-            Joseph (1653-1716).</note> a ecrit sur cette matiere et avec ses experiences,<note
-            type="editorial">[Text folgt].</note> auxquelles ni l'une ni l'autre ne convenoit pas,
-          mais si je m'en souviens, la solution de Mr. Taylor<note type="editorial">Taylor, Brook
-            (1685-1731).</note> s'en ecartoit moins que celle de Mr. Herman<note type="editorial"
-            >Hermann, Jacob (1678-1733).</note>. Pour moi j'ai une me<pb facs="1052077" n="17"
-          />thode tout à fait differente des leurs. Je considere la corde comme une chaine
-          inextensible, mais qui par son propre poids se courbe tant soit peu, en sorte que c'est la
-          veritable ligne funiculaire ou chainette, mais plus ou moins approchante de la ligne
-          droite horizontale qui passe par les deux extremités, selon que la chaine est plus ou
-          moins fortement tendue ou bandée; je considere donc que les vibrations des cordes ne sont
-          autre chose que des oscillations des chaines courbées en funiculaires, dont il faut
-          chercher le centre d'oscillation; la distance de ce centre à la ligne horizontale qui
-          joint les extremités de la chaine marquera la longueur d'un pendule simple qui sera
-          isochrone avec les vibrations de la chaine qui me represente la corde de musique; voila en
-          peu de mots tout mon systeme, je Vous laisse à decider le quel de ces trois a plus de
-          vraisemblance.</p>
-        <p>Mr. Herman le Pere<note type="editorial">Hermann, Germanus (1648-1729).</note> me dit
-          dernierement qu'aiant reçû de Mr. Birr<note type="editorial">Birr, Johann Jacob
-            (1677-1765).</note> de Paris un paquet de quelques tomes des Memoires pour son Fils<note
-            type="editorial">Hermann, Jacob (1678-1733).</note>, il lui avoit envoié ce paquet le
-          meme jour ou le lendemain sans l'ouvrir; ainsi je ne sçai pas si l'Arithmetica universalis
-          de Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> que Vous avés donné
-          à ce Mr. Birr<note type="editorial">Birr, Johann Jacob (1677-1765).</note> avec la Theorie
-          de Mr. Renau<note type="editorial">Renau D’Elicagaray, Bernard (1652-1719).</note> destiné
-          pour mon neveu<note type="editorial">Bernoulli, Nicolaus I (1687-1759).</note>, se trouve
-          malheureusement dans le meme paquet, en ce cas ces deux livres feroient la promenade
-          jusqu'à Francfort sur l'Oder, à moins que la lettre que Mr. Herman le Pere<note
-            type="editorial">Hermann, Germanus (1648-1729).</note> ecrivit incontinent pour
-          Francfort sur le Main pour y arreter et ouvrir ce paquet, y soit arrivé assés à tems: peut
-          etre que ces deux <pb facs="1052078" n="18"/> livres n'ont pas eté mis dans ce paquet, et
-          que Mr. Birr<note type="editorial">Birr, Johann Jacob (1677-1765).</note> les a encore
-          ches lui, car à ce que Mr. Herman<note type="editorial">Hermann, Germanus
-            (1648-1729).</note> me dit, il faut qu'il y ait prés de 4 mois que ce paquet est parti
-          de Paris, peutetre avant que Mr. Birr<note type="editorial">Birr, Johann Jacob
-            (1677-1765).</note> ait reçû les livres pour nous.</p>
-        <p>J'aurai du plaisir à lire le receuil de lettres entre Mr. Leibnits<note type="editorial"
-            >Leibniz, Gottfried Wilhelm (1646-1716).</note> et Mr. Clark<note type="editorial"
-            >Clarke, Samuel (1675-1729).</note>,<note type="editorial">[Text folgt].</note> si Vous
-          pouvés m'en procurer un exemplaire, je Vous aurai bien de l'obligation; Que Mssrs. les
-          Anglois ont une etrange philosophie comme Vous dites, cela paroit par mille exemples, mais
-          je m'etonne sur tout qu'ils ne veuillent pas reconnoitre la veritable estime de la force
-          des corps qui sont en mouvement, car j'apprens que Mr. Clark<note type="editorial">Clarke,
-            Samuel (1675-1729).</note> la nie encore à Mr. Leibnits<note type="editorial">Leibniz,
-            Gottfried Wilhelm (1646-1716).</note>; il n'a peutetre pas vu ma demonstration contenue
-          dans le premier tome du cours des Mathematiques de Mr. Wolf<note type="editorial">[Text
-            folgt].</note> par la quelle je demontre d'une maniere geometrique et convaincante que
-          les forces vives des corps egaux ne sont pas en simple rasion des vitesses comme croient
-          les Anglois et beaucoup d'autres Mathematiciens mais qu'elles sont en raison des quarrés
-          des vitesses; je voudrois bien que Mr. Clark<note type="editorial">Clarke, Samuel
-            (1675-1729).</note> vit cette demonstration pour sçavoir de quelle maniere il y
-          repondroit. Vous avés laché, dites Vous,<note type="editorial">Siehe den Brief von
-            Montmort an Johann I Bernoulli von <rs key="B_1718-06-26_991170514994605501"
-              type="letter">1718.06.26</rs>.</note> à Mr. Taylor<note type="editorial">Taylor, Brook
-            (1685-1731).</note> la defence de Vos principes physiques et Metaphysiques;<note
-            type="editorial">Montmort, Pierre Remond de, Dissertation de M. de Montmor [sic] sur les
-            principes de physique de M. Descartes, comparez à ceux des philosophes Anglois, in:
-            L’Europe savante, Octobre 1718, Tome cinquième, Seconde partie, La Haye (A. de
-            Rogissart) 1718, Article III, pp. 209-294.</note> je Vous souhaite patience et fermeté
-          dans Votre entreprise, car Vous allés <hi rend="u">irritare crabrones</hi><note
-            type="editorial">Der Ausdruck "Hornissen reizen" ist durch die Adagia des Erasmus von
-            Rotterdam (I i 60) verbreitet. Er geht auf Plautus' Komödie "Amphitryo" zurück.</note>
-          et Vous avés beau vous fier sur la justesse de Vos raisonnemens, ils crieront toujours
-          sans ecouter Vos rai<pb facs="1052079" n="19"/>sons, il s'agit ches eux de la gloire de
-          leur nation en defendant aux depends<note type="editorial">Im Manuskript steht
-            "depend".</note> meme de la saine raison tout sentiment reçu dans leur pays quelque
-          ridicule qu'il soit. Voudriés Vous les convaincre en raisonnant, c'est comme si Vous
-          vouliés emploier une eloquence bien raisonnée pour arreter ou faire taire le
-            tintamarre<note type="editorial">Im Manuskript steht "tintammare".</note> d'un reveille
-          matin; quand il commence à jouer dans une montre ou dans une<note type="editorial">Im
-            Manuskript steht "un".</note> horloge, il faut avoir patience jusqu'à ce que son ressort
-          s'etant entierement debandé il s'arrete enfin de lui meme: Laissés crier Vos antagonistes
-          à plein gosier, ce sont des machines montées par Mr. Newton<note type="editorial">Newton,
-            Isaac (1643-1727).</note>, elles cesseront enfin quand elles n'en pourront plus. Je
-          reçevrai avec plaisir une copie que Vous m'offrés de Votre defense,<note type="editorial"
-            >[Text folgt].</note> je Vous en dirai mon sentiment avec cette franchise et cette
-          cordialité que Vous attribués aux Allemands.</p>
-        <p>C'est un contentement pour moi que Vous soiés presentement instruit des particularités de
-          mon commerce avec feu Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François
-            Antoine de (1661-1704).</note>. Je ne sçai combien de cette histoire le P. Reyneau<note
-            type="editorial">Reyneau, Charles René (1656-1728).</note> Vous a pu communiquer, car
-          ç'auroit eté de Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François
-            Antoine de (1661-1704).</note> lui meme qu'il l'auroit appris; mais pour Mr.
-            Varignon<note type="editorial">Varignon, Pierre (1654-1722).</note> il en sçavoit tres
-          peu autre fois, vu que Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume
-            François Antoine de (1661-1704).</note> m'avoit defendu de lui communiquer toutes les
-          particularités de notre commerce.<note type="editorial">[Text folgt].</note></p>
-        <p>Vous dites Monsieur que le P. Reyneau<note type="editorial">Reyneau, Charles René
-            (1656-1728).</note> avoit un manuscript <pb facs="1052080" n="20"/> complet de mes
-          leçons communiquées à Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François
-            Antoine de (1661-1704).</note>, qu'il Vous preta il y a 13 ou 14 ans; Demandés lui, je
-          Vous prie, qui c'est qui le lui a communiqué ou donné à copier, quant à moi je ne me
-          souviens pas qu'etant à Ouques j'aie pu lui donner ce Manuscript complet, puisque celui
-          que j'ai presentement etoit encore entre les mains de mon ami<note type="editorial"
-            >Staehelin, Johann Heinrich (1668-1721).</note> qui l'avoit copié sur les originaux
-          livrés successivement à Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume
-            François Antoine de (1661-1704).</note>. Il faudroit donc que Mr. de l'Hopital<note
-            type="editorial">L’Hôpital, Guillaume François Antoine de (1661-1704).</note> lui meme
-          eut preté ces originaux au P. Reyneau<note type="editorial">Reyneau, Charles René
-            (1656-1728).</note> pour en prendre copie, ce que j'ai de la peine à croire, vû que Mr.
-          de l'Hop.<note type="editorial">L’Hôpital, Guillaume François Antoine de
-            (1661-1704).</note> etoit extremement mysterieux sur ce chapitre, me priant toujours de
-          ne faire part à personne de ce que je lui communiquois, quelle apparence donc, qu'il ait
-          divulgué ce qu'il souhaitoit que je cachasse. Cependant il peut bien etre que le P.
-            Reyneau<note type="editorial">Reyneau, Charles René (1656-1728).</note> possede quelques
-          papiers qu'il a eu de moi, mais je doute que ce soient les memes qui contiennent les
-          leçons faites pour Mr. le M. de l'Hopital<note type="editorial">L’Hôpital, Guillaume
-            François Antoine de (1661-1704).</note>, ou s'il en a, qu'il les ait toutes. Je ne Vous
-          conteste pas la Regle de droit <hi rend="u">Ille est Pater quem nuptiae demonstrant</hi>,
-          je Vous accorde aussi la consequence que Vous en tirés pour les livres <hi rend="u">Ille
-            est Auctor quem liber demonstrat</hi>; mais avec permission je pourois repondre que
-          l'Analyse des infinim. petits ne demontre pas que Mr. de l'Hop.<note type="editorial"
-            >L’Hôpital, Guillaume François Antoine de (1661-1704).</note> en est l'Auteur, puisque
-          lui meme il ne s'en attribue qu'autant que d'autres <pb facs="1052081" n="21"/> et moi en
-          particulier Lui voudront laisser, il consent meme que nous en revendiquions tout ce qu'il
-          nous plaira, il est vrai comme Vous remarqués fort bien, qu'il le dit d'une maniere trop
-          generale, et c'est aussi en quoi il n'a pas agi trop sincerement avec moi, et dont je me
-          suis toujours plaint; mais il est vrai aussi, comme j'eus l'honneur de Vous en donner des
-          preuves dans ma lettre precedente, que je n'ai jamais manqué de reclamer et de repeter mon
-          droit, durant meme sa vie, toutes les fois que lui ou d'autres le vouloient faire passer
-          pour l'auteur de mes inventions contenues dans l'Analyse; que si neantmoins le public ne
-          vouloit pas en etre persuadé, quoique je sois assuré que si non en France, au moins dans
-          les pais etrangers on est generalement prevenu de la verité que je soutiens et qu'on me
-          rend bonne justice là dessus, j'aurois le moien de desabuser le public du contraire, en
-          faisant publier les lettres de Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume
-            François Antoine de (1661-1704).</note> et les miennes,<note type="editorial">Dieser
-            Briefwechsel wurde erstmals 1955 von Otto Spiess in Joh. B. <hi rend="u">Briefe 1</hi>
-            publiziert.</note> qui feroient foi et montreroient la verité plus clairement que si je
-          faisois imprimer mes anciennes leçons, les quelles, outre qu'elles ne seroient plus de
-          saison aiant perdu l'air de nouveauté et de curiosité, on les pouroit toujours soupçonner
-          comme faites aprés la publication du livre de l'Analyse; je consens pourtant volontiers
-          que quelcun prenne la peine de les faire imprimer, je lui preterai ma copie, qui est la
-          plus ancienne <pb facs="1052082" n="22"/> puisqu'elle a eté faite immediatement sur les
-          originaux à mesure que je les avois composés; mais aiant eté copiée par une personne qui
-          n'entendoit nullement la matiere elle est remplie d'une infinité de fautes tant dans les
-          figures (qui sont tres mal faittes) que dans les calculs, il faudroit donc les corriger
-          soigneusement et puis faire un extrait de mes lettres ecrites à Mr. de l'Hopital<note
-            type="editorial">L’Hôpital, Guillaume François Antoine de (1661-1704).</note> dans
-          lesquelles je lui ai fait part de mes decouvertes qui sont les principales et par
-          consequent plus considerables que ce qu'il y a dans les leçons; il est vrai que je n'ai
-          pas toujours gardé copie de mes lettres; j'en ai pourtant de la plus grande partie, et les
-          Heritiers de feu Mr. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François
-            Antoine de (1661-1704).</note> pourroient suppleer à ce qui manque,<note
-            type="editorial">[Text folgt].</note> mais oseroit on esperer cette complaisance? Vous
-          avés raison Monsieur, Roberval<note type="editorial">Roberval, Gilles Personne de
-            (1602-1675).</note> etoit un homme vain et faux, il etoit effectivement ambitieux
-          menteur, je me suis souvent mis en colere en lisant les pieces contestées entre lui et ses
-          contemporains voiant l'effronterie et l'impudence avec la quelle il soutenoit des
-          faussetés et des menteries outre les paralogismes qu'il a souvent commis dans ses
-          raisonnements, comme j'en ai fait voir quelques uns publiquement touchant par exemple la
-          refraction et la trochoide qui est notre cycloide.<note type="editorial">[Text
-            folgt].</note> C'est encore tres bien rencontré que de joindre Mr. Parent<note
-            type="editorial">Parent, Antoine (1666-1716).</note> à Roberval<note type="editorial"
-            >Roberval, Gilles Personne de (1602-1675).</note>, celui là etoit le veritable portrait
-          de celuici, et tous deux font une belle pair de chevaux de carosse; j'ai aussi senti
-          l'effet de l'humeur atrabilaire de Mr. Parent<note type="editorial">Parent, Antoine
-            (1666-1716).</note> en<pb facs="1052083" n="23"/>vieux au dernier point, ne pouvant
-          souffrir la gloire d'un autre; je crois qu'il est mort de chagrin et d'envie; il est vrai
-          que je ne me suis jamais mis en peine de ses morsures, voiant qu'il n'epargnoit pas meme
-          les plus grands genies et qu'il attaquoit avec une egale fierté les Huguens<note
-            type="editorial">Huygens, Christiaan (1629-1695).</note>, les Leibnits<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note>, les Newtons<note
-            type="editorial">Newton, Isaac (1643-1727).</note>, etc.</p>
-        <p>Mais il est tems Monsieur que je Vous tire de Votre etonnement; je Vous etonne, dites
-          Vous, de dire que mon Frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note>
-          n'a pu resoudre le probleme de la chainette; oui, je Vous le dis encore, car c'est une
-          verité incontestable, dont je Vous donnerai des preuves qui feront cesser Votre
-          etonnement; voions auparavant si les raisons qui Vous font croire le contraire sont assés
-          solides; Vous dites que mon frere<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note> avoit proposé ce probleme;<note type="editorial">[Text
-            folgt].</note> cela est vrai, mais s'en suit il que dans ce tems il en avoit une
-          solution? point du tout: lorsqu'il proposa ce probleme par ma suggestion (car j'y ai pensé
-          le premier), nous n'etions encore ni l'un ni l'autre en etat de le resoudre, nous
-          desesperions meme comme d'une chose insoluble, jusqu'à ce que Mr. Leibnits<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> eut averti le public
-          dans les Actes de Leipsic de 1690, p. 360, d'avoir resolu ce probleme sans donner la
-            solution<note type="editorial">[Text folgt].</note> pour laisser du tems aux autres
-          Analystes, ce qui nous anima mon frere<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note> et moi à nous y appliquer de nouveau; les efforts de mon frere<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note> furent sans succes, pour moi je
-          fus plus heureux car je trouvai l'adresse (je le dis sans me vanter, pourquoi cacherois-je
-          la verité?) <pb facs="1052084" n="24"/> de le resoudre pleinement et de le reduire à la
-          rectification de la parabole, il est vrai que cela me couta des meditations qui me
-          deroberent le repos d'une nuit entiere, c'etoit beaucoup pour ce tems là et pour le peu
-          d'age et d'exercice que j'avois, mais le lendemain tout rempli de joie je courus ches mon
-            frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note>, qui luttoit encore
-          miserablement avec ce noeud Gordien sans rien avancer, soupçonnant toujours comme
-            Galilée<note type="editorial">Galilei, Galileo (1564-1642).</note> que la chainette
-          etoit une parabole; Cessés! cessés! lui dis-je, ne Vous tourmentés plus à chercher
-          l'identité entre la chainette et la parabole là où il n'y en a point, celleci aide bien à
-          construire l'autre, mais ce sont deux courbes aussi differentes, que peuvent l'etre une
-          courbe algebrique et une transcendente, j'ai developpé tout le mystere; aiant dit cela je
-          lui montrai ma solution et decouvris la methode qui m'y avoit conduit, elle lui plut
-          d'abord, et il vit incontinent (quoique cela ne fut plus difficile aprés la methode
-          trouvée) que cette methode etoit applicable à toute sorte de chainettes en supposant que
-          les chaines sont d'inegale grosseur, voila l'origine des mots de <hi rend="u">Coepit Hon.
-              frater<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> speculationem hanc
-            extendere</hi> etc. Mais Vous m'etonnés à mon tour d'en inferer que mon frere<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note> a trouvé une methode de resoudre
-          ce probleme, d'autant qu'il est naturel de suppléer à ces mots latins que Vous cités, ces
-          autres <hi rend="u">postquam nempe methodum meum ipsi aperuissem</hi>, de plus, je Vous
-          demande, croiés Vous bien que si mon frere<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note> avoit resolu le probleme en question, il auroit <pb facs="1052085"
-            n="25"/> eu la complaisance pour moi de ne pas paroitre parmi les soluteurs pour me
-          ceder la gloire de comparoitre seul sur la scene en qualité de premier soluteur avec
-          Mssrs. Huguens<note type="editorial">Huygens, Christiaan (1629-1695).</note> et
-            Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note>? Vous avés
-          connu l'humeur de mon frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note>,
-          il m'auroit plutot ravi (s'il l'avoit pu honnetement) l'honneur de la premiere invention
-          que de me laisser participer seulement bien loin de me le ceder s'il avoit eté à lui. Ce
-          que Vous allegués du memoire de Mr. Leibnits<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note> p. 277 <hi rend="u">Et ipse cum fratre... Bernoullius<note
-              type="editorial">Johann I (1667-1748) und Jacob I Bernoulli (1655-1705).</note></hi>
-          ne veut rien dire pour prouver Votre these, car Mr. Leibnits<note type="editorial"
-            >Leibniz, Gottfried Wilhelm (1646-1716).</note> (à qui mon frere<note type="editorial"
-            >Bernoulli, Jacob I (1655-1705).</note> avoit signifié que nous possedions la veritable
-          solution sans lui dire que c'etoit moi qui l'avoit trouvée, remarqués qu'alors je n'etois
-          pas en correspondence ni avec Mr. Leibnits<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note> ni avec le collecteur des Actes<note type="editorial"
-            >Mencke, Otto (1644-1707).</note>) Mr. Leibnits<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note> dis-je, ne sçachant à qui de nous deux freres<note
-            type="editorial">Johann I (1667-1748) und Jacob I Bernoulli (1655-1705).</note>
-          l'invention de la methode annoncée etoit deue, pour ne se pas tromper s'est servi de cette
-          expression vague <hi rend="u">Et ipse cum fratre Bernoullius<note type="editorial">Johann
-              I (1667-1748) und Jacob I Bernoulli (1655-1705).</note></hi>; mais le Collecteur des
-            Actes<note type="editorial">Mencke, Otto (1644-1707).</note>, à qui j'avois ecrit pour
-          la premiere fois, en envoiant mon memoire,<note type="editorial">[Text folgt].</note> deja
-          mieux informé parle d'une maniere positive pag. 273 en m'attribuant à moi et non pas à mon
-            frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> la solution
-          communiquée <hi rend="u">solvit vero illud, solutionemque nobis communicavit proponentis
-            frater Johannes Bernoulli<note type="editorial">Bernoulli, Johann I
-            (1667-1748).</note></hi>, il dit <hi rend="u">proponentis frater Joan. Bern.<note
-              type="editorial">Bernoulli, Johann I (1667-1748).</note></hi> et non pas <hi rend="u"
-            >ipse proponens</hi> Jac. Bern.<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note> Ensuite Mr. Leibnits<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note> connut certainement que mon frere<note type="editorial"
-            >Bernoulli, Jacob I (1655-1705).</note> a appris de moi la methode de resoudre les
-          chainettes: Voici ce qu'il m'ecrivit dans plusieurs lettres: dans celle du 15. Avril 1706
-          il dit <hi rend="u">Illud verissimum est, Vos vestro Marte, sed Te ante fratrem<note
-              type="editorial">Bernoulli, Jacob I (1655-1705).</note>, applicationem (calculi
-            infinite</hi><pb facs="1052086" n="26"/><hi rend="u">simalis) ad difficilius problema,
-            nempe catenarium, me tamen praemonente de successu, reperisse, et inde aditu aperto ad
-            laudem famamque inventi non minus contulisse quam me ipsum me certe applaudente et
-            gaudente</hi>.<note type="editorial">Leibniz, <hi rend="u">Math. Schriften</hi> III, pp.
-            789-790.</note> Dans celle du 20 Aoust 1706 où il se plaint de ce que Mr. Bernard<note
-            type="editorial">Bernard, Jacques (1658-1718).</note> avoit inseré dans son journal
-          appellé Nouvelles de la Republique des Lettres que les deux freres Bernoulli<note
-            type="editorial">Johann I (1667-1748) und Jacob I Bernoulli (1655-1705).</note> avoient
-          resolu de lui enlever la gloire de l'invention du Systeme des infinitesimales, Mr.
-            Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> s'exprime
-          en cette maniere <hi rend="u">Non optima fide contexta fuit narratio quam Bernardus<note
-              type="editorial">Bernard, Jacques (1658-1718).</note> collectionibus suis inseruit,
-            nec mihi tantum sed et tibi parum aequa videtur, cum non attingatur quod verissimum est,
-            te ante Dn. fratrem<note type="editorial">Johann I (1667-1748) und Jacob I Bernoulli
-              (1655-1705).</note> in difficilis problematis (catenarii) interiora penetrasse, eumque
-            hac in re non parum tibi debuisse id ergo non plane dissimulandum putavi, ut suum cuique
-            tribuatur.</hi><note type="editorial">Leibniz, <hi rend="u">Math. Schriften</hi> III,
-            pp. 795.</note> Peu de tems aprés Mr. Leibnits<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note> fit inserer un memoire dans le meme journal de Mr.
-            Bernard<note type="editorial">Bernard, Jacques (1658-1718).</note>,<note
-            type="editorial">[Text folgt].</note> où il repeta publiquement la meme chose, mais afin
-          que Vous sçachiés ce qu'il pensoit par rapport à mon commerce avec Mr. de l'Hopital<note
-            type="editorial">L’Hôpital, Guillaume François Antoine de (1661-1704).</note>, je veux
-          bien transcrire le passage qui parle de l'un et de l'autre. "Feu Mr. Bernoulli<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note>", dit il, "voiant qu'un nouveau
-          champ etoit ouvert, il me pria de penser, si par la meme analyse on ne pouroit arriver à
-          des problemes plus difficiles, maniés inutilement par d'autres, et particulierement à la
-          courbe qu'une chaine doit former, supposé qu'elle soit parfaitement flexible partout, que
-            Galilei<note type="editorial">Galilei, Galileo (1564-1642).</note> avoit cru etre la
-          parabole. J'y pensois et j'en vins à bout d'abord, mais au lieu de publier ma solution,
-          j'encourageois Mr. Bernoulli<note type="editorial">Bernoulli, Jacob I (1655-1705).</note>
-          à la chercher aussi. Mon succés fut cause sans doute, que les deux freres<note
-            type="editorial">Johann I (1667-1748) und Jacob I Bernoulli (1655-1705).</note> s'y <pb
-            facs="1052087" n="27"/> appliquerent fortement et (NB.) que le plus jeune depuis
-          Professeur à Groningue et maintenant à Bâle,<note type="editorial">Bernoulli, Johann I
-            (1667-1748).</note> eut l'avantage d'y reuissir entierement ... . Ils m'ont toujours
-          fait la justice de m'attribuer l'invention de cette analyse, comme on le voit par
-          plusieurs endroits de leurs ecrits dans les Actes de Leipsic et ailleurs, et par l'ouvrage
-          de M. le M. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François Antoine de
-            (1661-1704).</note>, à qui Mons. Bernoulli le jeune<note type="editorial">Bernoulli,
-            Johann I (1667-1748).</note> en avoit communiqué les fondemens à Paris: et moi, je leur
-          ai rendu la pareille, en avouant, qu'ils avoient beaucoup de part à l'utilité que le
-          public en a tiré, et que personne n'avoit plus fait valoir cette invention qu'Eux
-            etc."<note type="editorial">[Text folgt].</note></p>
-        <p>Je crois, Monsieur, que Vous ne serez pas faché de voir aussi ce que je repondis sur cela
-          à Mons. Leibniz<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> dans
-          ma lettre du 11. 7bre 1706. "Legi animadversionem Tuam Novellis litterariis inserendam,
-          placet ea mihi, atque propositum Tuum, cuique suum tribuendi, quo Tua Tibi summo jure
-          vindicentur, Ego plane non improbo; Potuisses tamen etiam hoc non omittere, quod post
-          publicatum Tuum Algorithmum calculi differentialis, modumque quantitates differentiandi,
-          Ego primus fuerim, qui proprio Marte cogitarim de altera calculi parte, qua a differentiis
-          ad summas regressus quaeritur, cujus antea nec volam nec vestigium sive in Actis, sive
-          alibi videram, quem ideo, cum commodius vocabulum nescirem, novo nomine calculi
-          integralis, nunc passim recepto, insigniebam; Ac postea regulas plures eodem tempore pro
-          eo calculo a me inventas, partim cum fratre partim cum aliis communicavi: Mihi enim tum
-          temporis persuadebam nemini ante me in mentem venisse cogitationem de conversione methodi
-          differentialium, ejusque inversionis modo et usu. Ut itaque, quanquam et Te et
-            Newtono<note type="editorial">Newton, Isaac (1643-1727).</note> sim posterior, nihilo
-          minus tamen, quantum ad calculum integralium spectat, aliquo modo in inventionis gloriae
-          partem jure merito vobiscum venire possem. De problemate curvae catenariae quod dicis,
-          illud a fratre Tibi fuisse propositum, non addis, quod id fecerit ex meo instinctu,
-          considerabam enim eam curvam ante Fratrem<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note>, nescius tamen uterque, eandem illam jam a Galilaeo<note
-            type="editorial">Galilei, Galileo (1564-1642).</note> fuisse tentatam, in hoc vero
-          problemate solvendo, cum ille frustra desudasset, ego vero primum usum regularum mearum
-          pro calculo integralium feliciter adhibuissem et solutionem meam Fratri<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note> ostendissem, inceperat meas
-          regulas pluris quam antea aestimare et excolere. Hoc modo calculus iste paulatim
-          incrementa nova et perfectiones accepit. Lutetiam tandem profectus communicavi cum Domino
-            Hospitalio<note type="editorial">L’Hôpital, Guillaume François Antoine de
-            (1661-1704).</note> omnes nostras regulas du<pb facs="1052088" n="28"/>plicis calculi
-          Differentialium et Integralium: Pro opere autem Hospitaliano<note type="editorial"
-            >L’Hôpital, Guillaume François Antoine de (1661-1704).</note> postea edito, certe non
-          tantum fundamenta, ut innuis, sed materiam ipsam totam suppeditavi, sicuti id per
-          manuscripta et litteras bene multas, etiamnum apud me asservatas, atque jam a multis viris
-          Doctis et fide dignis saepe visas planissime constat; Ita ut non minori jure, quod olim
-            Virgilius<note type="editorial">Vergilius Maro, Publius (70 v. Chr.-19 v. Chr.).</note>
-          de versibus suis ab alio usurpatis,<note type="editorial">Dieser Vers ist lediglich aus
-            Aelius Donatus (ca. 320-ca. 380), Das Leben des Vergil, 17, überliefert. (Bibliographie
-            präzisieren, evtl. Büchner).</note> id ego de hoc opusculo dicere possem:</p>
-        <p>Hunc Ego codiculum feci, tulit alter honores,</p>
-        <p>Sic vos, non vobis..."<note type="editorial">Leibniz, <hi rend="u">Math. Schriften</hi>
-            III, pp. 800-801.</note></p>
-        <p>À tout cela Mr. Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm
-            (1646-1716).</note> repliqua en peu de mots dans sa lettre du 3. Octobre 1706. "Dn.
-            Fratrem<note type="editorial">Bernoulli, Jacob I (1655-1705).</note>", dit il, "Tuum p.
-          m. se suggerente de Catenaria quaesisse, ignorabam, quia vero indicas, non dissimulabo:
-          Addam etiam, uti asseris, materiam ipsam a Te Hospitalio<note type="editorial">L’Hôpital,
-            Guillaume François Antoine de (1661-1704).</note> suppeditatam, ut Tibi Tuum
-            tribuatur".<note type="editorial">Leibniz, <hi rend="u">Math. Schriften</hi> III, pp.
-            802. Der zweite Satz des Zitates findet sich in dem von Gerhardt nach dem Entwurf in
-            Hannover erstellten Text nicht. Hingegen steht er in der eigenhändigen Abfertigung
-            Leibnizens in Ms UB Basel L I a 19,2, fo. 248v.</note> Voici une autre preuve de ce
-          qu'au commencement le probleme de la chainette n'a pas eté resolu par mon frere<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note>. Mons. Herman<note
-            type="editorial">Hermann, Jacob (1678-1733).</note>, qui a eté le disciple de feu mon
-            frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> pendant plusieurs
-          années et qui sçavoit de sa bouche toutes ses affaires et ce qui s'etoit passé entre nous
-          touchant cette matiére et autre chose, Mr. Herman<note type="editorial">Hermann, Jacob
-            (1678-1733).</note>, dis je, ne nomme pas mon frere<note type="editorial">Bernoulli,
-            Jacob I (1655-1705).</note> entre les soluteurs, comme, sans doute, il n'auroit eu garde
-          de l'omettre, s'il avoit aussi resolu le probleme, soit avant moi, soit avec moi, d'autant
-          plus que Mons. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> prend à
-          tache, comme de raison, d'exalter en toute occasion la gloire de son premier maitre; Or
-          lisez, s'il vous plait, ce qu'il ecrit dans sa Phoron. p. 265.<note type="editorial">[Text
-            folgt].</note> Vous y trouverez ces paroles: "Bernoulli<note type="editorial">Bernoulli,
-            Jacob I (1655-1705).</note> invenerunt velum ab allabente vento in eam ipsam curvam
-          flecti debere, quam Joh. Bernoullius<note type="editorial">Bernoulli, Johann I
-            (1667-1748).</note> et Leibnitius<note type="editorial">Leibniz, Gottfried Wilhelm
-            (1646-1716).</note> et Hugenius<note type="editorial">Huygens, Christiaan
-            (1629-1695).</note> funi laxa atque flexili, vel catenulae ab ambobus sui terminis
-          pendenti convenire docuerunt etc."<note type="editorial">[Text folgt].</note> Si mon
-            frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> avoit eu part à la
-          solution de cette courbe, Mr. Herman<note type="editorial">Hermann, Jacob
-            (1678-1733).</note> auroit parlé en pluriel, <hi rend="u">quam ambo Bernoullii<note
-              type="editorial">Johann I (1667-1748) und Jacob I Bernoulli (1655-1705).</note> et
-              Leibnitius<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> et
-              Hugenius<note type="editorial">Huygens, Christiaan (1629-1695).</note> etc.</hi> comme
-          il fait en parlant de nos solutions de la voiliere; Une autre preuve, qui ne souffre pas
-          de replique, c'est, qu'etant autrefois en dispute avec mon frere<note type="editorial"
-            >Bernoulli, Jacob I (1655-1705).</note>, au sujet du probleme des Isoperimetres,
-          laquelle duroit assez long tems, avec beaucoup de chaleur de part et d'autre, sur ce qu'il
-          m'avoit reproché d'avoir appris de lui les premiers commencements de la Geometrie, je lui
-          retorquai ce reproche en le faisant souvenir, qu'il m'etoit redevable d'autres choses de
-          plus grande importance, entre autre de la premiere theorie des chainettes; On n'a qu'à
-          lire pour cela mon memoire inseré dans le Journal <pb facs="1052089" n="29"/> des sçavants
-          de Paris du 8. Decembr. <hi rend="u">1698.</hi> On y trouvera ces termes "Je prie
-          seulement mon frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note>, de se
-          resouvenir, à qui il est redevable de la premiere Theorie des chainettes, de laquelle il
-          se sert presentement en maitre dans toute sa lettre; Les gens qui le<note type="editorial"
-            >Im Manuskript steht "qu'ils".</note> sçavent, sçauront qu'en penser; Ces sortes de
-          reproches sentent trop la vanité etc."<note type="editorial">[Text folgt].</note> Je lui
-          ai dit cela, comme vous voyez, à sa barbe, cependant il a avallé la pillule, sans y
-          toucher dans sa replique, marque evidente, que sa conscience ne lui permettoit pas de
-          contredire ou de nier ce fait. Enfin cette Theorie, dont je parle ici, est la meme, que
-          celle que j'ai communiqué aprés dans mes leçons à Mr. de l'Hopital<note type="editorial"
-            >L’Hôpital, Guillaume François Antoine de (1661-1704).</note>, ce que j'ai encore
-          affirmé publiquement du vivant de Mr. de l'Hop.<note type="editorial">L’Hôpital, Guillaume
-            François Antoine de (1661-1704).</note> ce qui vous servira encore de preuve, que ce
-          n'est pas aprés sa mort seulement, mais aussi durant sa vie, quand j'en ai eu l'occasion,
-          de reclamer mon droit sur ce que je lui avois communiqué; Je l'ai fait dans une lettre
-          imprimée dans l'Histoire des ouvrages des sçavans, que l'on imprimoit à Roterdam au mois
-          de Juin 1697, p. 460 où, donnant mon sentiment sur les solutions qui avoient parû peu
-          auparavant dans les Actes de Leipsic du probleme de la plus vite descente,<note
-            type="editorial">[Text folgt].</note> et parlant de celle de Mr. le M. de l'Hopital<note
-            type="editorial">L’Hôpital, Guillaume François Antoine de (1661-1704).</note> je dis,
-          "qu'il m'a fait sçavoir que sa methode est fondée sur mes principes que je lui avois
-          communiqués autrefois pour la recherche generale des funiculaires, ou des courbes des
-          chainettes, lors qu'on considere les cordes ou les chaines d'une pesanteur non uniforme
-            etc.".<note type="editorial">[Text folgt].</note> Je me suis etendu un peu plus sur cet
-          article, parceque vous vous plaignez, que comme Historien vous n'etes pas assez instruit
-          par ma derniere lettre; je suis tout à fait de votre sentiment, que pour ecrire une
-          histoire, il faut des monuments certains, mais les preuves authentiques que je viens de
-          vous donner, ne sont ce pas des monumens certains? De grace que pourriez vous demander de
-          plus fort ou de plus demonstratif? Oseriez vous bien dire, que ce sont de simples ouïr
-          dire ou des ouïr dire d'ouïr dire? Plût à Dieu que toutes les histoires que nous avons,
-          fussent baties sur des fondemens aussi solides que ceux que je vous ai mis devant les yeux
-          dans cette lettre et dans ma derniere. Un Historien neutre et impartial, comme vous etes,
-          n'est pas obligé de produire toujours des monumens publics, quand il n'en peut pas avoir,
-          il suffit, qu'il atteste, qu'il est assuré de la verité du fait, soit par ses propres
-          connoissances, soit par des documens particuliers qu'on lui a fait voir, et que le public
-            <pb facs="1052090" n="30"/> n'a pas vû; Un tel historien doit etre crû sur sa bonne foi.
-          Mess. les Anglois, qui dans la cause de la primauté pretendue sont juges, parties et
-          temoins, ont fait l'histoire de la naissance du calcul des fluxions, et pour l'appuyer de
-          preuves ils ont produit de leurs Archives de certaines lettres, que le public n'a jamais
-          vû, incertain par consequent, si elles ne sont pas supposées ou falsifiées, cependant ils
-          pretendent qu'on les en croye; Combien plus donc avez vous raison d'esperer une croyance
-          generale, vous qui n'avez ni interest, ni passion pour l'un plûtôt que pour l'autre? Je
-          passe outre pour repondre aux articles qui restent de votre lettre. Je suis, Monsieur, de
-          votre opinion, que trois personne ont travaillé à forger le mémoire contre moi publié dans
-          le Journal Litteraire,<note type="editorial">[Text folgt].</note> sçavoir Mr. Newton<note
-            type="editorial">Newton, Isaac (1643-1727).</note> comme directeur, qui a fourni les
-          matieres et les argumens, Mr. Keil<note type="editorial">Keill, John (1671-1721).</note>
-          comme secretaire, qui en a conceu et composé le memoire farci de tant de fades sailles, et
-          Mr. de Moivre<note type="editorial">Moivre, Abraham de (1667-1754).</note> comme
-          traducteur, qui l'a traduit en françois. Il faut bien que cette piece, qui a passé par les
-          mains de trois habiles forgerons soit impenetrable et à l'epreuve des coups, comme le
-          bouclier d'Achille fabriqué par Vulcain et ses Cyclopes.<note type="editorial"> Gemeint
-            ist der aus fünf Schichten bestehende undurchdringliche Schild, den Vulkan auf Bitten
-            von Thetis für deren Sohn Achilles schmiedete, als dieser zum zweiten Mal mit neuen
-            Waffen in die Schlacht um Troja ziehen wollte, um den Tod seines Freundes Patroklus zu
-            rächen (siehe Homer Ilias, Buch 8).</note></p>
-        <p>J'ai cité les pages 511 et 544, l'un pour le passage de Mr. Frenicle<note
-            type="editorial">Frénicle de Bessy, Bernard (1605-1675).</note> l'autre pour faire voir,
-          que du tems de Mr. Fermat<note type="editorial">Fermat, Pierre de (1601-1665).</note>,
-          Mess. les Anglois etoient deja accoutumés à mepriser tout ce qu'ils n'entendoient pas, ou
-          qui n'etoit<note type="editorial">Im Manuskript steht "etoient".</note> pas produit dans
-          leurs pays, et qu'ils s'estiment eux memes plus que les autres; Voici comme il s'exprime
-          par rapport à Mr. Wallis<note type="editorial">Wallis, John (1616-1703).</note>, homme
-          rempli de soi meme et jaloux au dernier point de la gloire de sa nation au commencement du
-          second paragraphe de la page 844. Mons. de Fermat<note type="editorial">Fermat, Pierre de
-            (1601-1665).</note> dit parlant de Mons. Wallis<note type="editorial">Wallis, John
-            (1616-1703).</note>: <hi rend="u">Je suis toujours surpris de quoi il meprise
-            constamment tout ce qu'il ne sçait pas.</hi> Et sur la fin du paragraphe suivant, où il
-          rabat un peu la créte à Mr. Wallis<note type="editorial">Wallis, John (1616-1703).</note>,
-          parle ainsi, <hi rend="u">Je ne veux point entreprendre que celles que je vous ai
-            proposées sont du haut etage et dignes d'etre recherchées, c'est que ni lui (Wallis<note
-              type="editorial">Wallis, John (1616-1703).</note>) qui s'estime tant, ne les a pas
-            encore demontrées, ni Mons. Frenicle<note type="editorial">Frénicle de Bessy, Bernard
-              (1605-1675).</note> meme, que je mets au dessus de lui sans lui faire tort</hi>
-          (quelle mortification <pb facs="1052091" n="31"/> pour un Anglois orgueilleux de se voir
-          abbaissé au dessous de Mr. Frenicle<note type="editorial">Frénicle de Bessy, Bernard
-            (1605-1675).</note>) <hi rend="u">et ce dernier qui connoit merveilleusement les
-            mysteres les plus cachés des nombres ne les a pas meprisées.</hi><note type="editorial"
-            >[Text folgt].</note> Si Mr. l'Abbé Conti<note type="editorial">Conti, Antonio
-            (1677-1749).</note> a vû et lû le 2.<hi rend="sup">e</hi> Memoire de Mr. Keil<note
-            type="editorial">Keill, John (1671-1721).</note>,<note type="editorial">[Text
-            folgt].</note> il vous aura sans doute fait un detail des injures et des grossieretés
-          que mon adversaire juré a lancé contre moi, j'aurois du plaisir à en apprendre quelques
-          echantillons en attendant que le memoire, lui meme, paroisse, et qu'il me tombe entre les
-          mains. Mr. Keil<note type="editorial">Keill, John (1671-1721).</note> aura du chagrin,
-          quand il verra que son avantage du <hi rend="u">mea formula</hi> sur lequel il aura fait
-          grand bruit, lui est rendu inutile par ma declaration nouvellement publiée,<note
-            type="editorial">[Text folgt].</note> par laquelle je desavoue la façon de la lettre <hi
-            rend="u">pro Emin</hi>.</p>
-        <p>Mons. Iselin<note type="editorial">Iselin, Jacob Christoph (1681-1737). (Matrikel Basel
-            IV, Nr. 1510).</note> a receu votre lettre, vous aurez aussi depuis receu sa reponse et
-          son ecrit sur la nouveauté du monde,<note type="editorial">[Text folgt].</note> qu'il me
-          dit vous avoir envoyé. Lorsque mon fils<note type="editorial">Bernoulli, Nicolaus II
-            (1695-1726).</note> arriva ici de France, mon neveu<note type="editorial">Bernoulli,
-            Nicolaus I (1687-1759).</note> etoit deja reparti pour Padouë,<note type="editorial"
-            >[Text folgt].</note> mais je lui donnai avis du microscope, que vous avez donné pour
-          lui à mon fils<note type="editorial">Bernoulli, Nicolaus II (1695-1726).</note>, mon
-            Neveu<note type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> me repondit, me
-          priant de garder ce microscope jusqu'à son retour ici. J'espere qu'il aura fait mention
-          dans une des lettres qu'il vous aura ecrites.<note type="editorial">[Text folgt].</note>
-          Je ne sçaurois vous rien dire au sujet du denombrement des lignes du troisieme ordre que
-          mon frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> doit avoir fait
-          dans un ouvrage pareil à celui de Mr. Newton<note type="editorial">Newton, Isaac
-            (1643-1727).</note>,<note type="editorial">[Text folgt].</note> j'ai bien ouï dire,
-          qu'il avoit tenté quelque chose de semblable, mais s'il l'a parachevé, c'est ce que je ne
-          sçais pas, car je n'ai jamais rien vû de ses papiers et des manuscripts laissés apres sa
-          mort; Je crois que se voyant mourir, il a pris les precautions en ordonnant que rien de
-          ses ecrits ne me seroit communiqué, quand il seroit mort; Mais Mr. Herman<note
-            type="editorial">Hermann, Jacob (1678-1733).</note> vous en pourra dire des nouvelles,
-          car d'abord apres la mort de mon frere<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note>, Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note>
-          eut autant de fois qu'il vouloit un libre acces dans sa bibliotheque, d'où il prit des
-          ecrits du defunt, tout ce qui l'accomodoit, en sorte que pas un billet des papiers de mon
-            frere<note type="editorial">Bernoulli, Jacob I (1655-1705).</note> a pû echapper des
-          mains de Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note>, et qu'il ne
-          tenoit qu'à lui de le copier ou de le garder selon qu'il le trouvoit à propos:<note
-            type="editorial">[Text folgt].</note> Il est vrai que du depuis le fils du defunt<note
-            type="editorial">Bernoulli, Nicolaus d. J. (1687–1769).</note> a donné à mon Neveu<note
-            type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> de Padouë une <pb
-            facs="1052092" n="32"/> bonne partie des manuscripts de feu son Pere<note
-            type="editorial">Bernoulli, Jacob I (1655-1705).</note>, mais il ne m'a pas dit que
-          l'Enumeratio linearum tertii ordinis s'y trouve, vous pouvez en demander des nouvelles de
-          lui meme.<note type="editorial">Jacob I Bernoullis <hi rend="u">Typus Locorum
-              Hypersolidorum</hi> (Op. TL) ist in MS UB Basel, L I a 1, pp. 77-80 von der Hand Jacob
-            Hermanns (1678-1733) mit Randbemerkungen von Nicolaus I Bernoulli (1687-1759)
-            überliefert. Es wurde publiziert in Jac. B. <hi rend="u">Werke</hi> 5, pp.
-            385-411.</note> Je suis rempli de joie de ce que ma nouvelle methode des Isoperimetres
-          vous a tant plû jusqu'à vous charmer et enchanter comme vous dites; Car comme vous êtes si
-          grand Connoisseur pour les bonnes pieces en mathematique, je m'imagine que je dois avoir
-          fait quelque chose de bon, puisqu'il a merité votre approbation accompagnée d'un
-          applaudissement si singulier et si glorieux pour moi.</p>
-        <p>Il y a quelque tems que mon Neveu<note type="editorial">Bernoulli, Nicolaus I
-            (1687-1759).</note> m'adressa une lettre pour Vous, que je vous envoyai incontinent
-          aprés accompagnée d'une lettre de mon fils<note type="editorial">Bernoulli, Nicolaus II
-            (1695-1726).</note>,<note type="editorial">[Text folgt].</note> j'espere que vous les
-          aurez receuës; À ce que j'apprens, dans celle de mon Neveu<note type="editorial"
-            >Bernoulli, Nicolaus I (1687-1759).</note> etoit contenue une solution du probleme des
-          trajectoires, que mon Neveu<note type="editorial">Bernoulli, Nicolaus I
-            (1687-1759).</note> trouva aprés que je lui eusse indiqué que le veritable fondement,
-          dont on peut tirer la solution de l'exemple fourni par moi à Mr. Leibnits<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> et proposé ensuite par
-          Lui à Mess. les Anglois,<note type="editorial">[Text folgt].</note> consiste dans la
-          consideration de la similitude des courbes proposées, car cette consideration bien
-          employée fournit une solution aisée et generale, non seulement pour l'exemple en question,
-          mais en meme tems, pour tous les exemples des courbes semblables; Ainsi celui que mon
-            fils<note type="editorial">Bernoulli, Nicolaus II (1695-1726).</note> dans son memoire
-          propose à Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note>,<note
-            type="editorial">[Text folgt].</note> contenant aussi des courbes semblables, sera ipse
-          facto resolu par la solution generale fondée<note type="editorial">Im Manuskript steht
-            "fondées".</note> sur la similitude des courbes, au lieu que de la maniere, dont se sont
-          pris Mess. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> et Taylor<note
-            type="editorial">Taylor, Brook (1685-1731).</note> en voulant tirer la solution de
-          l'equation particuliere qui exprime la nature des courbes proposées, on se plongeroit dans
-          un abyme de calcul, dont on ne sortiroit jamais; C'est pourquoi pour cacher cet artifice,
-          j'ai fait proposer cet exemple par mon fils<note type="editorial">Bernoulli, Nicolaus II
-            (1695-1726).</note>, sans faire mention de la similitude, l'equation des courbes
-          proposées à coupes à angles droits
-            <formula>dx=\frac{a^{m}+fa^{m-1}y+ga^{m-2}yy\,\textrm{...}+hy^{m}}{\sqrt{na^{2m}+pa^{2m-1}y+qa^{2m-2}yy\,\textrm{...}+ry^{2m}}}dy</formula>
-          n'y est exprimée, que pour faire donner dans le panneau, afin que ces <pb facs="1052093"
-            n="33"/> Mess. les soluteurs s'accrochant à cette equation comme ils ont fait à celle
-          des courbes de l'exemple proposé par Mons. Leibnits<note type="editorial">Leibniz,
-            Gottfried Wilhelm (1646-1716).</note>, ils n'en puissent plus se debarasser, et soient
-          ainsi convaincu de l'imperfection de leur methode. J'ai lieu de m'etonner que Mr.
-            Taylor<note type="editorial">Taylor, Brook (1685-1731).</note> s'appercevant que les
-          courbes de l'exemple de Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm
-            (1646-1716).</note> sont semblables, n'y ait pas fait reflexion, mais qu'il soit passé
-          par dessus si legerement, car je suis assuré que s'il y eut pensé tant soit peu, il auroit
-          infailliblement decouvert le mystere, et qu'il ne seroit pas allé chercher de loin et par
-          des detours se fourant dans un calcul long et epineux, ce qu'il avoit devant ses pieds, et
-          qu'il auroit pourtant mené infiniment plus loin que ce qu'il cherchoit; Je dis la même
-          chose de Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> qui s'est
-          tant tourmenté pour une chose qui est si facile s'il s'etoit mis à contempler la proprieté
-          de la similitude des courbes; Puis donc que mon Neveu<note type="editorial">Bernoulli,
-            Nicolaus I (1687-1759).</note> a commencé d'ouvrir le pot aux roses, je veux bien
-          achever de vous montrer tout le secret, car non obstant que je lui aye dit, qu'il falloit
-          s'en tenir uniquement à la consideration de la similitude, la solution qu'il en deduisit
-          et qu'il vous communiqua dernierement n'est pas encore la plus simple, parceque par elle
-          il ne parvient pas immediatement à une equation où les indeterminées soient separées, mais
-          où pour venir à bout d'une telle separation, il a besoin d'une nouvelle substitution: Au
-          lieu que ma solution est tres simple et donne une equation qui ne consiste qu'en deux
-          termes avec les indeterminées separées sans aucune substitution preallable: La voici, vous
-          en jugerez. Soit <formula>LBM</formula> (Je tracerai la figure à la page suivante)<note
-            type="editorial">[Text folgt].</note> la trajectoire cherchée, qui coupe à angles droits
-          toutes les courbes semblables <formula>ABb</formula>, <formula>CDd</formula> etc.,
-          decrites du Pole commun <formula>H</formula>. Je prens une de ces courbes comme
-            <formula>CDd</formula> pour invariable, que j'appelle la <pb facs="1052094" n="34"/>
-          Principale. Ayant mené du Pole <formula>H</formula> deux lignes droites
-            <formula>HDB</formula>, <formula>Hdb</formula>, qui fassent un angle
-            <formula>BHb</formula> infiniment petit et les deux petits arcs <formula>BF</formula>,
-            <formula>DG</formula>; soit <formula>HD=x</formula>, <formula>HB=y</formula> et partant
-            <formula>Gd=dx</formula>, <formula>FN=-dy</formula> (j'ecris<formula>-dy</formula>
-          parceque l'ordonnée <formula>HD</formula> de la principale augmentant, l'ordonnée
-            <formula>HB</formula> de la trajectoire <formula>LBM</formula> diminuë). Or à cause que
-          la courbe <formula>CDd</formula> est donnée la petite ligne <formula>DG</formula> sera
-          donnée en <formula>x</formula> et <formula>dx</formula>. Soit donc
-            <formula>DG=Xdx</formula> (j'entens par <formula>X</formula> une quantité quelconque
-          donnée en <formula>x</formula> et constantes, ou à ma façon de parler une fonction
-          quelconque d'<formula>x</formula>.)<note type="editorial">NB. Hier taucht der Begriff
-            "fonction" auf.</note> à cause de la similitude des courbes <formula>CDd</formula>,
-            <formula>ABb</formula> les triangles <formula>DGd</formula>, <formula>BFb</formula> sont
-          semblables, ainsi on aura
-            <formula>DG\,\textrm{(}Xdx\textrm{)}.Gd\,\textrm{(}dx\textrm{)}::BF\,\textrm{(}\frac{yXdx}{x}\textrm{)}.bF</formula>
-          et partant <formula>bF=\frac{ydx}{x}</formula> ce que j'aurois pû voir immediatement de ce
-          que
-            <formula>HD\,\textrm{(}x\textrm{)}.HB\,\textrm{(}y\textrm{)}::DG.BF::Gd\,\textrm{(}dx\textrm{)}.Fb</formula>,
-          donc <formula>Fb=\frac{ydx}{x}</formula> mais par la condition du probleme l'angle
-            <formula>NBb</formula> est droit, par consequent
-            <formula>BF^{2}\,\textrm{(}\frac{yyXXdx^{2}}{xx}\textrm{)}=bF\times
-            FN\,\textrm{(}\frac{ydxdy}{x}\textrm{)}</formula>; apres la reduction on trouve cette
-          equation toute separée <formula>\frac{XXdx}{x}=\frac{-dy}{y}</formula> qui exprime
-          generalement la nature de la trajectoire <formula>LBM</formula> pour toutes les courbes
-          semblables de quelque genre qu'elles soient algebriques ou transcendentales. Vous voyez
-          aussi, Monsieur, qu'elle se construit aisement par la quadrature de l'hyperbole ou par les
-          logarithmes et par la quadrature d'une ligne courbe, dont l'abscisse etant
-            <formula>x</formula>, l'ordonnée est <formula>\frac{XX}{x}</formula>. En effet ma
-          seconde construction du probleme proposé par Mr. Leibniz<note type="editorial">Leibniz,
-            Gottfried Wilhelm (1646-1716).</note> laquelle mon fils<note type="editorial">Bernoulli,
-            Nicolaus II (1695-1726).</note> a inserée dans son memoire est tirée de notre equation
-            <formula>\frac{XXdx}{x}=\frac{-dy}{y}</formula> comme Vous le verrez bien, si vous
-          voulez prendre la peine de l'examiner <pb facs="1052095" n="35"/> et puisque cette
-          construction là est generale pour tous les genres de courbes semblables et non pas
-          seulement pour celles de l'exemple en question, cela a fait dire à mon fils<note
-            type="editorial">Bernoulli, Nicolaus II (1695-1726).</note>: <hi rend="u">Placet
-            adjungere aliam constructionem, quae non tantum idem praestat in hoc exemplo, sed et ad
-            alia infinita eodem successu accommodari potest</hi>, sans ajouter pourtant le mot de
-            <hi rend="u">semblables</hi>, c'est à dire <hi rend="u">ad alia infinita exempla
-            curvarum similium</hi>,<note type="editorial">[Text folgt].</note> de peur que cela ne
-          donnat occasion d'entrer facilement dans le mystere, qui est peu de chose (comme vous
-          voyez) quand on le sçait, je crois meme qu'il n'est pas encore tems de le decouvrir à
-          personne, vous le menagerez donc, s'il vous plait, pour voir combien de tems les Anglois
-          et Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note> y croupiront
-          encore, et particulierement comment ils se prendront pour resoudre le dernier exemple
-          proposé par mon fils<note type="editorial">Bernoulli, Nicolaus II (1695-1726).</note> à
-          Mr. Herman<note type="editorial">Hermann, Jacob (1678-1733).</note>, que vous voyez etre
-          egalement resolu avec les autres par mon equation
-            <formula>\frac{XXdx}{x}=\frac{-dy}{y}</formula>. Il est clair, pour le dire en passant,
-          que si les courbes proposées sont des logarithmiques spirales semblables autour du Pole
-            <formula>H</formula> leur trajectoire <formula>LBM</formula> sera aussi une
-          Logarithmique spirale, parceque l'angle <formula>HBM</formula> complement de l'angle
-          invariable est aussi invariable; ainsi le nombre des manieres par lesquelles la <hi
-            rend="u">Spira mirabilis</hi> de mon Frere<note type="editorial">Bernoulli, Jacob I
-            (1655-1705).</note> est engendrée d'elle meme, est augmentée par cette proprieté où nous
-          voyons que les trajectoires de ces spirales sont aussi des spirales de la meme nature,
-          quoique non semblables aux premieres si non dans le cas où l'angle <formula>HBA</formula>
-          est un demidroit, car alors l'angle <formula>HBM</formula> est egal à l'angle
-            <formula>HBA</formula>; remarqués qu'au lieu de nommer <formula>HD</formula>,
-            <formula>x</formula>; et <formula>HB</formula>, <formula>y</formula> on pourroit sur
-          l'axe des courbes <formula>HO</formula> nommer l'abscisse de la principale
-            <formula>HE</formula>, <formula>x</formula>; et l'abscisse de la trajectoire
-            <formula>HK</formula>, <formula>y</formula>; car on trouveroit aussi immediatement une
-          equation où les indeterminées seroient separées sans autre operation, par consequent on
-          seroit en etat de construire aisement la trajectoire moyennant les quadratures; Mais
-          l'equation qui vient de cette <pb facs="1052096" n="36"/> maniere n'est pas si simple
-          comme la precedente. Quant au reste il faut sçavoir que cette methode peut etre appliquée
-          à toutes sortes d'autres conditions que celle de la similitude, à sçavoir à toutes les
-          courbes <formula>CDd</formula>, <formula>ABb</formula>, etc. soit algebriques ou
-          transcendentales quoique non semblables, pourveû qu'au lieu de la raison constante entre
-            <formula>HD</formula> et <formula>HB</formula> ou entre <formula>Hd</formula> et
-            <formula>Hb</formula>, il y ait une relation quelconque exprimée par une equation
-          algebrique, ou bien que la relation entre les appliquées <formula>BK</formula> et
-            <formula>PK</formula> soit exprimée par une equation algebrique, dans laquelle je
-          suppose une espece de parametre c'est à dire une lettre qui signifie une ligne invariable
-          dans une meme courbe <formula>ABb</formula> mais variable d'une courbe à l'autre. Soit par
-          exemple la principale <formula>CDd</formula> une courbe donnée quelconque transcendente ou
-          algebrique et que la relation entre <formula>HD</formula> et <formula>HB</formula> soit
-          exprimée par cette equation <formula>R\times DB=HB\times HD</formula>, j'entens par
-            <formula>R</formula> le parametre, qui etant changé, change la courbe
-            <formula>ABb</formula> et qui dans la meme courbe <formula>ABb</formula> demeure<note
-            type="editorial">Im Manuskript steht "dememe".</note> invariable desorte que comme
-            <formula>R\times DB=HB\times HD</formula> ainsi aussi partout ailleurs <formula>R\times
-            db=Hb\times Hd</formula>; je dis que la trajectoire <formula>LBM</formula> pour toutes
-          les courbes <formula>ABb</formula> gardant les memes lettres que cidessus se determinera
-          par cette equation <formula>XXdx=-dy</formula> laquelle se construit aussi fort aisement
-          par les quadratures.</p>
-        <p>Voilà Monsieur une lettre furieusement longue, qui en vaut bien six autres pour la
-            longueur;<note type="editorial">Wie wahr!!</note> vous en serez, je crois, aussi
-          rassasié pour six mois et peut etre pour plus longtemps, si le degoût vous en prend. Je
-          ferois grace à votre patience en finissant ici, comme je me le proposois, si une lettre
-          que je reçois tout fraichement de mon Neveu<note type="editorial">Bernoulli, Nicolaus I
-            (1687-1759).</note> ne me fournissoit pas nouvelle matiere pour vous fatiguer encore un
-          peu. Mons. Varignon<note type="editorial">Varignon, Pierre (1654-1722).</note> Vous aura
-          fait tenir un des deux Exemplaires que je lui avois envoyé du traité de Mr. Poleni<note
-            type="editorial">Poleni, Giovanni (1683-1761).</note>
-          <hi rend="u">De motu aquae mixto</hi>.<note type="editorial">[Text folgt].</note> Mon
-            Neveu<note type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> me mande
-          presentement, que je recevrai de la part de Mr. Poleni<note type="editorial">Poleni,
-            Giovanni (1683-1761).</note> un paquet de 3 exemplaires d'un autre traité qu'il a fait
-            <pb facs="1052097" n="37"/>
-          <hi rend="u">De Castellis</hi>,<note type="editorial">[Text folgt].</note> dont deux sont
-          derechef destinés pour Vous et Mr. Varignon<note type="editorial">Varignon, Pierre
-            (1654-1722).</note> et le troisieme à moi, j'aurai soin de vous envoyer le votre et
-          celui de Mr. Varignon<note type="editorial">Varignon, Pierre (1654-1722).</note> par la
-          premiere occasion que je trouverai, quand je les aurai receu avec quelques autres livres
-          (sans en sçavoir les titres) que mon Neveu<note type="editorial">Bernoulli, Nicolaus I
-            (1687-1759).</note> me dit se trouver pour vous dans le meme paquet. Mon Neveu<note
-            type="editorial">Bernoulli, Nicolaus I (1687-1759).</note> m'a chargé de traduire en
-          françois le compliment que Mr. Poleni<note type="editorial">Poleni, Giovanni
-            (1683-1761).</note> l'a prié de vous faire de sa part, comme aussi à Mr. Varignon<note
-            type="editorial">Varignon, Pierre (1654-1722).</note>, en vous envoyant ces deux livres,
-          je m'en aquite donc, voici le compliment, traduit de l'Italien mot à mot: <hi rend="u"
-            >Puisque la famille Bernoullienne a la bonté de me procurer encore une occasion
-            d'envoyer mes livres, vous me ferez la grace de faire specifier à ces deux
-            Messieurs</hi> (sçavoir à Vous et à Mr. Varignon<note type="editorial">Varignon, Pierre
-            (1654-1722).</note>) <hi rend="u">en bonne phrase françoise que je leur envoye ces
-            livres comme un temoignage de mon veritable respect.</hi><note type="editorial">[Text
-            folgt].</note> Comme je suis mauvais connoisseur des bonnes phrases, j'ai crû ne pouvoir
-          mieux m'aquitter de ma commission qu'en traduisant les frases memes de Mr. Poleni<note
-            type="editorial">Poleni, Giovanni (1683-1761).</note> qui me paroissent tres emphatiques
-          à la maniere des Italiens et des Espagnols. Mon Neveu<note type="editorial">Bernoulli,
-            Nicolaus I (1687-1759).</note> dit qu'il vous a ecrit touchant le microscope il y a deja
-          quelques mois,<note type="editorial">[Text folgt].</note> mais qu'il ne sçait pas si vous
-          avez receu sa lettre: qu'il a conclu de votre derniere, que vous devez lui avoir ecrit une
-          lettre, qu'il n'a jamais receu, dans laquelle vous avez voulu lui faire part de quelques
-          unes de vos decouvertes et d'autres choses: Que vous Vous plaignez aussi à lui de la
-          Volerie commisse contre Vous et lui par Mr. Moivre<note type="editorial">Moivre, Abraham
-            de (1667-1754).</note>: Que Vous ne lui avez rien ecrit touchant la querelle avec les
-          Anglois, mais qu'un certain Mr. Sterling<note type="editorial">Stirling, James
-            (1692-1770).</note> lui avoit preté l'<hi rend="u">Histoire des fluxions</hi> par Mr.
-            Raphson<note type="editorial">Raphson, Joseph (1648-1715).</note>, où se trouvoit la
-          reponse que Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> fit aux
-          deux lettres que Mr. Leibniz<note type="editorial">Leibniz, Gottfried Wilhelm
-            (1646-1716).</note> ecrivit à Mr. Conti<note type="editorial">Conti, Antonio
-            (1677-1749).</note>.<note type="editorial">[Text folgt].</note> Il croit que vous
-          m'aurez fait part de tout ce qu'il y a dans ce livre ou du moins dans ces lettres,
-          puisqu'il y a plusieurs choses qui me re<pb facs="1052098" n="38"/>gardent, c'est pourquoi
-          il se contente de me communiquer un extrait de quelques passages traduits en Allemand, par
-          lesqueles je vois que Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note>
-          s'est servi de quelques expressions qui ne me sont pas trop honorables. En sorte que je
-          suis tout etonné de vous voir garder le silence et ne m'en pas avertir d'un seul mot.
-          C'est la premiere fois que Mr. Newton<note type="editorial">Newton, Isaac
-            (1643-1727).</note> me cite publiquement, mais d'une maniere, qui ne convient gueres
-          avec celle dont il a usé dans ses discours et dans quelques unes de ses lettres
-          particulieres, où il a dit mille honetetés de moi, en n'attribuant des eloges qui sont au
-          dessus de mon merite. Je vous prens Mr. à temoin, vous m'avez fait, vous meme, un rapport
-          des expressions et des termes dont il s'etoit servi pour vous marquer l'estime toute
-          singuliere qu'il sembloit avoir pour moi; Mais maintenant dans ses reponses à Mr.
-            Leibnits<note type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> qu'on a
-          renduës publiques, il parle de moi assez sechement, peu s'en faut, qu'il ne me traitte
-          d'homme lache et de suppot de feu Mr. Leibnits<note type="editorial">Leibniz, Gottfried
-            Wilhelm (1646-1716).</note>, qu'il nomme mon maitre et moi son disciple, il dit que je
-          suis <hi rend="u">homo novus et rerum ante actarum parum peritus</hi>,<note
-            type="editorial">[Text folgt].</note> en represaille de ce que Mr. Leibnits<note
-            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716).</note> avoit objecté à Mr.
-            Keil<note type="editorial">Keill, John (1671-1721).</note>; Il me range par moquerie
-          dans l'ordre des Chevaliers errants et mille autre bassesses par lesquelles il tache de me
-          fletrir; Comment accorder tout cela avec les marques d'estime qu'il me faisoit sentir en
-          plusieurs occasions et encore en dernier lieu, par le present de sa derniere edition de
-          son Optique, que Mr. Varignon<note type="editorial">Varignon, Pierre (1654-1722).</note>
-          me mande que Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> lui a
-            envoyé<note type="editorial">Im Manuskript steht "envoyer".</note> pour me le faire
-            tenir.<note type="editorial">[Text folgt].</note> Mais encore un coup comment accorder
-          ces deux manieres d'agir si opposées avec le grand âge et avec la gravité et la candeur
-          tant preconisée de Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note>,
-          sont cela des marques de sa droiture? Comment enfin maintiendra-t-il son epithete <hi
-            rend="u">Vir moribus antiquis</hi>? Ou faut il, peut etre, entendre avoir le coeur
-          double <pb facs="1052099" n="39"/> par avoir des moeurs antiques. Je ne sçaurois deviner
-          la cause qui peut avoir irrité<note type="editorial">Im Manuskript steht "irriter".</note>
-          Mr. Newton<note type="editorial">Newton, Isaac (1643-1727).</note> contre moi, si ce n'est
-          qu'il s'imagine sans aucun fondement que je suis l'Autheur d'une certaine lettre du 7 Juin
-          1713 que l'on a produit contre lui dans une feuille volante,<note type="editorial">[Text
-            folgt].</note> quoiqu'il avouë qu'il n'en est pas assuré et que cela ne vienne que de ce
-          qu'il n'a pas bien entendu de quelle Lettre Mr. Leibnits<note type="editorial">Leibniz,
-            Gottfried Wilhelm (1646-1716).</note> avoit parlé. Mon neveu<note type="editorial"
-            >Bernoulli, Nicolaus I (1687-1759).</note> ajoute que Mr. Raphson<note type="editorial"
-            >Raphson, Joseph (1648-1715).</note> cite du livre de Mr. Chaines<note type="editorial"
-            >Cheyne, George (1671-1743).</note> la suite generale que j'ai donné autrefois dans les
-          Actes de Leipsic pour la valeur de <formula>\int ydz</formula>,<note type="editorial"
-            >[Text folgt].</note> mais qu'il semble, qu'il n'en parle pas fort avantageusement, <hi
-            rend="u">scilicet pro genio et more Anglorum</hi> qui est, comme vous dites tres bien,
-            <hi rend="u">de mepriser les autres hommes, et de les haïr quand ils ne peuvent les
-            mepriser</hi>. J'aurois encore bien des choses à vous dire, mais l'espace me manque, et
-          je ne veux pas commencer une nouvelle feuille, à peine m'en reste-t-il autant qu'il faut
-          pour vous assurer Monsieur, que personne ne vous est plus devoué que Votre tres humble et
-          tres obeïssant serviteur J. Bernoulli. </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1687-1759)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-135542472">Bernoulli, Nikolaus</persName>
+          <note type="lebensdaten">(1687-1769)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1153519720">Birr, Johann Jacob</persName>
+          <note type="lebensdaten">(1677-1765)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117659606">Cheyne, George</persName>
+          <note type="lebensdaten">(1671-1743)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118669478">Clarke, Samuel</persName>
+          <note type="lebensdaten">(1675-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118941941">Conti, Antonio</persName>
+          <note type="lebensdaten">(1677-1749)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118524844">Descartes, René</persName>
+          <note type="lebensdaten">(1596-1650)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118532561">Fermat, Pierre de</persName>
+          <note type="lebensdaten">(1601-1665)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-130064114">Frénicle de Bessy, Bernard</persName>
+          <note type="lebensdaten">(1605-1675)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
+          <note type="lebensdaten">(1564-1642)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118720066">Halley, Edmond</persName>
+          <note type="lebensdaten">(1656-1742)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-141595485">Hayes, Charles</persName>
+          <note type="lebensdaten">(1678-1760)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118869329">Hamilkar Barkas</persName>
+          <note type="lebensdaten">(ca. v290 - v229/8)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118545655">Hannibal</persName>
+          <note type="lebensdaten">(ca. v247/246 - v183)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
+          <note type="lebensdaten">(1648-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+          <note type="lebensdaten">(1678-1733)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118553569">Horatius Flaccus, Quintus</persName>
+          <note type="lebensdaten">(v65-v8)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
+          <note type="lebensdaten">(1629-1695)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+          <note type="lebensdaten">(1681-1737)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124275087">Keill, John</persName>
+          <note type="lebensdaten">(1671-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1218096411">Keill, Robert</persName>
+          <note type="lebensdaten">(no lifespan info)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine de</persName>
+          <note type="lebensdaten">(1661-1704)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119120984">Mencke, Otto</persName>
+          <note type="lebensdaten">(1644-1707)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
+          <note type="lebensdaten">(1667-1754)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+          <note type="lebensdaten">(1643-1727)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
+          <note type="lebensdaten">(1666-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
+          <note type="lebensdaten">(1683-1761)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-100814832">Raphson, Joseph</persName>
+          <note type="lebensdaten">(1648-1715)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-102079056">Renau D'Elicagaray, Bernard</persName>
+          <note type="lebensdaten">(1652-1719)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117526789">Reyneau, Charles René</persName>
+          <note type="lebensdaten">(1656-1728)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118601547">Roberval, Gilles Personne de</persName>
+          <note type="lebensdaten">(1602-1675)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-11879471X">Sauveur, Joseph</persName>
+          <note type="lebensdaten">(1653-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-121297829">Staehelin, Johann Heinrich</persName>
+          <note type="lebensdaten">(1668-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117260266">Stirling, James</persName>
+          <note type="lebensdaten">(1692-1770)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+          <note type="lebensdaten">(1685-1731)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118626574">Vergilius Maro, Publius</persName>
+          <note type="lebensdaten">(v70-v19)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118771167">Wallis, John</persName>
+          <note type="lebensdaten">(1616-1703)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
+          <note type="lebensdaten">(1679-1754)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1052060/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1052061" n="1"/> <pb facs="1052062" n="2"/> <pb facs="1052063" n="3"/> <pb facs="1052064" n="4"/> <pb facs="1052065" n="5"/> <pb facs="1052066" n="6"/> <pb facs="1052067" n="7"/> <pb facs="1052068" n="8"/> <pb facs="1052069" n="9"/> <pb facs="1052070" n="10"/> <pb facs="1052071" n="11"/> <pb facs="1052072" n="12"/> <pb facs="1052073" n="13"/> <pb facs="1052074" n="14"/> <pb facs="1052075" n="15"/> <pb facs="1052076" n="16"/> <pb facs="1052077" n="17"/> <pb facs="1052078" n="18"/> <pb facs="1052079" n="19"/> <pb facs="1052080" n="20"/> <pb facs="1052081" n="21"/> <pb facs="1052082" n="22"/> <pb facs="1052083" n="23"/> <pb facs="1052084" n="24"/> <pb facs="1052085" n="25"/> <pb facs="1052086" n="26"/> <pb facs="1052087" n="27"/> <pb facs="1052088" n="28"/> <pb facs="1052089" n="29"/> <pb facs="1052090" n="30"/> <pb facs="1052091" n="31"/> <pb facs="1052092" n="32"/> <pb facs="1052093" n="33"/> <pb facs="1052094" n="34"/> <pb facs="1052095" n="35"/> <pb facs="1052096" n="36"/> <pb facs="1052097" n="37"/> <pb facs="1052098" n="38"/> <pb facs="1052099" n="39"/> <pb facs="1052100" n="40"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

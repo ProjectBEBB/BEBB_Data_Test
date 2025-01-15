@@ -1,272 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1706-05-08_991170516661505501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Burcherus de Volder. Basel, 08.
-            Mai 1706</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057790</title><title type="alt"
-            >1706-05-08_Bernoulli_Johann_I-Volder_Burchard_de</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Volder, Burchard de (1643-1709) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"/>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1706-05-08_Bernoulli_Johann_I-Volder_Burchard_de"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 675:Bl.189-190</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170516661505501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433597905504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057790</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>2,5 S.<dimensions unit="cm">
-                    <height>20</height>
-                    <width>15,5</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1706-05-08">d. VIII. Maij
-                MDCCVI</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
+  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1706-05-08">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1704-01-07_991170516661605501" type="prev"/>
-          <ptr target="B_1706-11-13_991170516661405501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>Joh. B. hat einen Brief de Volders von 1706 03 08 erhalten, der dessen Abschiedsrede
-          enthielt, die Joh. B. mit Freude gelesen hat. Er hat leider keine Musse zu literarischen
-          Tätigkeiten.</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-1153514060">Bernoulli, Anna Katharina</persName>
-            <note type="lebensdaten">(1698-1780)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
-            <note type="lebensdaten">(1700-1782)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1089913494">Battier, Dorothea</persName>
-            <note type="lebensdaten">(1704-1800)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1089913281">Bernoulli, Niklaus</persName>
-            <note type="lebensdaten">(1623-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
-            <note type="lebensdaten">(1673-1764)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-130536431">Bernoulli, Margaretha</persName>
-            <note type="lebensdaten">(1628-1673)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117641987">Burman, Pieter</persName>
-            <note type="lebensdaten">(1668-1741)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-129551651">Gregory, David</persName>
-            <note type="lebensdaten">(1659-1708)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-            <note type="lebensdaten">(1629-1695)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124275087">Keill, John</persName>
-            <note type="lebensdaten">(1671-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-            <note type="lebensdaten">(1643-1727)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-104340932">Pembroke, Thomas Herbert</persName>
-            <note type="lebensdaten">(1656-1733)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1706-05-08_Bernoulli_Johann_I-Volder_Burchard_de"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1438775/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="1438776" n="1"/> Celeberrimo Viro</p>
-        <p>Burchero De Volder</p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli</p>
-        <p>Accepi ante aliquot dies litteras Tuas VIII Marti datas juxta Orationem Tuam
-            valedictoriam<note type="editorial">[Text folgt]</note> quam mihi mittere dignatus es,
-          et pro qua debitas ago gratias. Legi illam ea voluptate qua omnia quae limatissimum
-          sapiunt judicium legere consuevi; utinam mihi quoque frui daretur otio illo litterario,
-          Tibi tantopere laudato; uberiores sane fructus promitterem ex meditationibus quibus unice
-          tunc vacare possem, quam ex negotiis quae ad Tyronum arbitrium disponere cogimur,
-            trivialia<note type="editorial">Im Manuskript steht "trivala".</note> tantum inculcando
-          eaque aliis continuo succedentibus ad fastidium iterando; in nostra hac praesertim
-          Academia, ubi ob plerorumque discipulorum maturam aetatem et judicium nonnisi puerilia
-          fere mihi peragenda sunt; ut vel hac de causa, stationem aliquam extraneam iterum optarem,
-          adeo hic mihi omnia sordent; de qua re quominus hactenus potuerim cogitare nihil mihi
-          defuit praeter sonticam aliquam rationem quam apud Parentes aliosque qui me aegre
-          dimitterent praetexere possem: Puto autem mox aliquem se mihi praetextum oblaturum, quo
-          obstacula quaevis summovere licebit; <pb facs="1438777" n="2"/> foret, fateor, secundus
-          abitus difficilis et molestus non tantum propter uxorem et liberos qui me patrem
-          constituunt jam satis numerosae familiae, sed inprimis ideo quod valedicendum esset in
-          perpetuum Parentibus, cognatis et Patriae sine ulla reversionis spe quod utique durum est.
-          Tibi interim Vir Cl. hanc meam mentem volui aperire, sed tamen adhuc silentio
-          committendam; ut cum nullus hucusque successor Ordinarius Tibi suffectus sit, mihi
-          quantocyus scribere digneris, an ex Tua commendatione aliqua mihi vocationis spes
-          supersit, et quales conditiones sperandae; nosti vero haud dubie illas quas Trajectini
-          postremo mihi obtulerunt; Non crediderim Trajectinos nunc alium desiderare Professorem
-          mathes. et philos. postquam Cl. Serrurierium Tuum quondam discipulum vocarunt, res haud
-          dubie satis feliciter et ex voto gerentem; quare illos mei jam oblitos esse facile
-          colligo, eoque magis quod Cl. Burmannus jam a longo tempore ad ultimas meas ad se datas
-          nihil respondit.<note type="editorial">[Text folgt]</note> Non aegre adducor ut credam
-          quod scribis Johannem Keill Scotum Vestris vehementer commendatum fuisse a Comite
-          Pembrokiae, Newtono, Gregorio, hos enim omnes singulari modo obstrinxit; nam Pembrokio
-          dedicavit suam introductionem physicam, in qua Newtonum singulis fere paginis novis
-          elogiis condecorat, Gregorium vero popularem suum arrepta levi qualibet occasione extollit
-          quandoque etiam ultra meritum. Quantum ad ipsum hoc opusculum, quod Tibi visum puto;
-          profecto illud non tanti deprehendi, quam primo aspectu sperabam; particulares enim
-          corporum affectiones eorumque phaenomena physica plane non explicat; in praefatione
-          sugillat quidem modum communem explicandi gravitatis causam per pressionem materiae
-          subtilis, et absurdissimas diuque obsoletas objectiones contra eum movet, quo ostendit se
-          non legisse Dissertationem incomparabilis Hugenii De causa gravitatis;<note
-            type="editorial">[Text folgt]</note> interim <pb facs="1438779" n="3"/> quod mireris per
-          totum libellum melioris explicationis nec volam nec vestigium reperies; multa reprehendit
-          alia, quibus tamen mediocri in contextu substituere (ut quidem ab eo expectabam) postea
-          non meminit: Habet quidem in sequentibus nonnulla physico-mathematica, de viribus et motu
-          gravium quae sunt alicujus momenti et quibus indicat, se aliquousque ad haec interiora
-          penetrasse, sed si verum dicere fas est, nihil novi reperio quod non compilaverit ex
-          Newtonianis aut ex Hugenianis aut ex Nostris etiam; quamvis peregrinos plerumque tanti non
-          aestimet ut quid ex illis hauserit profiteatur, more scilicet multorum Britannorum, adeo
-          ut nihil novi ex sua penu nobis dederit; imo nequidem demonstrationes [...] Theorematum
-          Hugenianorum de vi centrifuga aliquid singulare continent, nihil enim aliud sunt quam
-          repetitiones nonnihil mutatae aliarum quae diu antea extabant. Interim Tu qui haec optime
-          intelligis ipse judicabis. Vale et ut soles me ama. </p>
-        <p>Dabam Basileae d. VIII. Maij MDCCVI. </p>
-      </div>
-    </body>
-  </text>
+<TEI xml:id="B_1706-05-08_991170516661505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Burcherus de Volder. Basel, 08. Mai 1706</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark"/>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1706-05-08_Bernoulli_Johann_I-Volder_Burchard_de" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 675:Bl.189-190</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170516661505501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433597905504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057790</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>2,5 S.<dimensions unit="cm"><height>20</height><width>15,5</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1706-05-08">d. VIII. Maij MDCCVI</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1706-05-08">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-120665182">Volder, Burcherus de</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1704-01-07_991170516661605501" type="prev"/>
+        <ptr target="B_1706-11-13_991170516661405501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Volder_Burchard_de-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <p>Joh. B. hat einen Brief de Volders von 1706 03 08 erhalten, der dessen Abschiedsrede enthielt, die Joh. B. mit Freude gelesen hat. Er hat leider keine Musse zu literarischen Tätigkeiten.</p>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1438775/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="1438776" n="1"/> <pb facs="1438777" n="2"/> <pb facs="1438779" n="3"/> <pb facs="1438780" n="4"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>

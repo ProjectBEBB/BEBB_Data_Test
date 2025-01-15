@@ -1,515 +1,218 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_1718-04-13_991170516537405501" xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Christian von Wolff. Basel, 13.
-            April 1718</title><title type="alt">get_date!: () an ()</title><title type="alt"
-            >000057823</title><title type="alt"
-            >1718-04-13_Bernoulli_Johann_I-Wolff_Christian</title><title level="s">Basler Edition
-            der Bernoulli-Briefwechsel</title></title>
-      </titleStmt>
-      <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
-        <respStmt>
-          <persName key="pers_DE-588-"><surname/><forename/></persName>
-          <resp><note type="remarkResponsibility"/></resp>
-        </respStmt>
-        <funder>SAGW</funder>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Bernoulli-Euler-Zentrum</publisher>
-        <pubPlace>Basel</pubPlace>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
-            4.0)</licence>
-        </availability>
-        <idno type="URLWeb">pythonPlaceholderContent</idno>
-        <idno type="URLXML">pythonPlaceholderContent</idno>
-        <date when="9999-01-01">01.01.9999</date>
-      </publicationStmt>
-      <seriesStmt>
-        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
-            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
-        <title level="s" type="Korrespondenz">Wolff, Christian (1679-1754) </title>
-      </seriesStmt>
-      <notesStmt>
-        <note type="generalRemark"><p>Autographe Korrekturen. Längeres PS</p></note>
-        <note type="print">pythonPlaceholderContent</note>
-        <note type="erschliessbarkeit">Erhalten</note>
-        <note type="dataGroup">Bernoulli-Wiki</note>
-        <relatedItem type="otherForm">
-          <msDesc>
-            <msIdentifier>
-              <repository>PlaceholderContent</repository>
-            </msIdentifier>
-          </msDesc>
-        </relatedItem>
-      </notesStmt>
-      <sourceDesc>
-        <msDesc
-          facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-04-13_Bernoulli_Johann_I-Wolff_Christian"
-          rend="pythonPlaceholderContent">
-          <msIdentifier source="BIBB">
-            <repository>Universitätsbibliothek Basel, Handschriften</repository>
-            <idno type="callNumber">UBH L Ia 671, Nr.10</idno>
-            <altIdentifier>
-              <idno type="ALMA_NZ">991170516537405501</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALMA_IZ">9972433441205504</idno>
-            </altIdentifier>
-            <altIdentifier>
-              <idno type="ALEPH">000057823</idno>
-            </altIdentifier>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <extent>8 S.<dimensions unit="cm">
-                    <height>21</height>
-                    <width>17</width>
-                  </dimensions></extent>
-              </supportDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote scribe="author">manualPlaceholderContent</handNote>
-            </handDesc>
-            <accMat>pythonPlaceholderContent</accMat>
-          </physDesc>
-          <history>
-            <origin><origPlace>Dabam Basileae</origPlace><date when="1718-04-13">a.d. XIII. Aprilis
-                1718</date></origin>
-          </history>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <classDecl>
-        <taxonomy>
-          <category>
-            <catDesc>letter</catDesc>
-          </category>
-        </taxonomy>
-      </classDecl>
-    </encodingDesc>
-    <profileDesc>
-      <correspDesc>
-        <correspAction type="sent">
+<?xml version="1.0" encoding="utf-8"?>
 
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="B_1718-04-13_991170516537405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <fileDesc>
+    <titleStmt>
+      <title type="full">
+        <title type="main">Johann I Bernoulli an Christian von Wolff. Basel, 13. April 1718</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title type="alt">manualPlaceholderContent</title>
+        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
+      </title>
+    </titleStmt>
+    <editionStmt>
+      <edition>manualPlaceholderContent</edition>
+      <editor>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+      </editor>
+      <respStmt>
+        <persName key="pers_DE-588-">
+          <surname/>
+          <forename/>
+        </persName>
+        <resp>
+          <note type="remarkResponsibility"/>
+        </resp>
+      </respStmt>
+      <funder>SAGW</funder>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Bernoulli-Euler-Zentrum</publisher>
+      <pubPlace>Basel</pubPlace>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
+      </availability>
+      <idno type="URLWeb">pythonPlaceholderContent</idno>
+      <idno type="URLXML">pythonPlaceholderContent</idno>
+      <date when="9999-01-01">01.01.9999</date>
+    </publicationStmt>
+    <seriesStmt>
+      <title level="s" type="Briefwechsel"/>
+      <title level="s" type="Korrespondenz">
+</title>
+    </seriesStmt>
+    <notesStmt>
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+      <note type="generalRemark">
+        <p>Autographe Korrekturen. Längeres PS</p>
+      </note>
+      <note type="print">pythonPlaceholderContent</note>
+      <note type="erschliessbarkeit">Erhalten</note>
+      <note type="dataGroup">Bernoulli-Wiki</note>
+      <relatedItem type="otherForm">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msDesc>
+          <msIdentifier>
+            <repository>PlaceholderContent</repository>
+          </msIdentifier>
+        </msDesc>
+      </relatedItem>
+    </notesStmt>
+    <sourceDesc>
+      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1718-04-13_Bernoulli_Johann_I-Wolff_Christian" rend="pythonPlaceholderContent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <msIdentifier source="BIBB">
+          <repository>Universitätsbibliothek Basel, Handschriften</repository>
+          <idno type="callNumber">UBH L Ia 671, Nr.10</idno>
+          <altIdentifier>
+            <idno type="ALMA_NZ">991170516537405501</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALMA_IZ">9972433441205504</idno>
+          </altIdentifier>
+          <altIdentifier>
+            <idno type="ALEPH">000057823</idno>
+          </altIdentifier>
+        </msIdentifier>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <extent>8 S.<dimensions unit="cm"><height>21</height><width>17</width></dimensions></extent>
+            </supportDesc>
+          </objectDesc>
+          <handDesc>
+            <handNote scribe="author">manualPlaceholderContent</handNote>
+          </handDesc>
+          <accMat>pythonPlaceholderContent</accMat>
+        </physDesc>
+        <history>
+          <origin>
+            <origPlace>Dabam Basileae</origPlace>
+            <date when="1718-04-13">a.d. XIII. Aprilis 1718</date>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <classDecl>
+      <taxonomy>
+        <category>
+          <catDesc>letter</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  </encodingDesc>
+  <profileDesc>
+    <correspDesc>
+      <correspAction type="sent">
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
+        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1718-04-13">pythonPlaceholderContent</date>
+      </correspAction>
+      <correspAction type="received">
+        <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
+        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+      </correspAction>
+      <correspContext>
+        <ptr target="B_1717-10-11_991170516537505501" type="prev"/>
+        <ptr target="B_1718-05-10_991170516537305501" type="next"/>
+        <ptr target="BW_JohIB" type="Briefwechsel"/>
+        <ptr target="korr_Wolff_Christian-JohIB" type="Korrespondenz"/>
+      </correspContext>
+    </correspDesc>
+    <langUsage>
+      <language ident="lat">Lateinisch</language>
+    </langUsage>
+    <abstract>
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
+      <p>initialPythonPlaceholderContent</p>
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
+      <listPerson>
+        <person>
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
-          <date when="1718-04-13">pythonPlaceholderContent</date>
-        </correspAction>
-        <correspAction type="received">
-          <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
-        </correspAction>
-        <correspContext>
-          <ptr target="B_1717-10-11_991170516537505501" type="prev"/>
-          <ptr target="B_1718-05-10_991170516537305501" type="next"/>
-          <ptr target="BW_JohIB" type="Briefwechsel"/>
-          <ptr target="korr_Wolff_Christian-JohIB" type="Korrespondenz"/>
-        </correspContext>
-      </correspDesc>
-      <langUsage>
-        <language ident="lat">Lateinisch</language>
-      </langUsage>
-      <abstract>
-        <p>PythonPlaceholderContent</p>
-        <listPerson>
-          <person>
-            <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-            <note type="lebensdaten">(1667-1748)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118669478">Clarke, Samuel</persName>
-            <note type="lebensdaten">(1675-1729)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-1156357152">Krauss, Heinrich</persName>
-            <note type="lebensdaten">(1678-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118958461">Eckhart, Johann Georg von</persName>
-            <note type="lebensdaten">(1674-1730)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-            <note type="lebensdaten">(1678-1733)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-124275087">Keill, John</persName>
-            <note type="lebensdaten">(1671-1721)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-            <note type="lebensdaten">(1646-1716)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-            <note type="lebensdaten">(1678-1719)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-            <note type="lebensdaten">(1643-1727)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-117584401">Nicole, François</persName>
-            <note type="lebensdaten">(1683-1758)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-102792976">Rast, Georg Heinrich</persName>
-            <note type="lebensdaten">(1695-1726)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-            <note type="lebensdaten">(1685-1731)</note>
-          </person>
-          <person>
-            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-            <note type="lebensdaten">(1654-1722)</note>
-          </person>
-        </listPerson>
-      </abstract>
-      <textClass/>
-    </profileDesc>
-    <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1718-04-13_Bernoulli_Johann_I-Wolff_Christian"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
-    </revisionDesc>
-  </teiHeader>
-  <facsimile>
-    <graphic url="https://www.e-manuscripta.ch/i3f/v20/808154/manifest"/>
-  </facsimile>
-  <text>
-    <front>
-      <div type="editorialNote">
-        <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
-      </div>
-    </front>
-    <body>
-      <div type="letter">
-        <p>
-          <pb facs="808156" n="1"/> Viro Celeberrimo atque Nobilissimo </p>
-        <p>Christiano Wolfio </p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli </p>
-        <p>Vidi in Actorum Lips. Mense Augusto superioris anni Solutionem Hermannianam<note
-            type="editorial">Hermann, Jacob, <hi rend="u">Schediasma de Trajectoriis</hi> (1717
-              (=<ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/WerkverzeichnisHermann#Na._023.2C_Schediasma_de_trajectoriis_.281717.29."
-              >Na. 023</ref>).</note> problematis mei a Leibnitio Anglis propositi;<note
-            type="editorial">[Nicolaus II Bernoulli und Johann I Bernoulli Op. 104] <hi rend="u"
-              >Problema: Data serie linearum per rectae in eadem Linea constantis variationem
-              prodeunte invenire aliam seriem linearum, quarum quaevis priores omnes ad angulos
-              rectos secet</hi>, in: AE Maji 1716 p. 226-230. Leibniz schreibt in seinem Brief von
-              <rs key="B_1716-06-07_991170514912405501" type="letter">1716.06.07</rs> an Johann I
-            Bernoulli, dass dieses Problem dazu dienen könne, den Fortschritt bei der
-            Infinitesimalrechnung zu zeigen. Johann Bernoulli hatte allerdings nicht an eine solche
-            Verwendung gedacht, weil das Problem zu einfach war.</note> quae omnino diversa est ab
-          illa altera, quam jam antea ad me miserat Leibnitius ex Tua communicatione una cum
-          solutione Angli Anonymi.<note type="editorial">Leibniz hatte in seinem Brief von <rs
-              key="B_1716-10-23_991170514912005501" type="letter">1716.10.23</rs> Johann I Bernoulli
-            die Abschrift der Lösung des Problems der Bestimmung der Orthogonaltrajektorien der
-            Hyperbel durch Newton gesandt, die anonym in den Phil. Trans. erschienen war. ([Newton,
-            Isaac], <hi rend="u">Problematis olim in Actis Eruditorum Lipsiae propositi Solutio
-              Generalis</hi> in: Phil. Trans., London, vol. 29 (March 1716), Nr. 347, pp. 399-400).
-            Leibniz hatte sie wie auch Johann Bernoulli durch Wolff erhalten.</note> Postquam vero
-          nuperrime sig[n]ificasset mihi Monmortius Geometra Gallus,<note type="editorial">Siehe
-            Brief von Pierre Rémond de Montmort an Johann I Bernoulli von <rs
-              key="B_1718-01-26_991170514995005501" type="letter">1718.01.26</rs>. Darin befindet
-            sich ein Auszug eines Briefes Taylors in englischer Sprache an Montmort nebst
-            angehängter deutscher Übersetzung durch Nicolaus I Bernoulli.</note> intellexisse se ex
-          litteris Taylori Mathematici Angli, ipsum quoque invenisse aliquam solutionem,<note
-            type="editorial">Taylor, Brook, <hi rend="u">Solutio Problematis a Dom.no G.G.Leibnitio,
-              Geometris Anglis nuper propositi. ...</hi>, in: Phil. Trans. 354 (October-December
-            1717), pp. 695-701.</note> quam propediem in Tra[n]sactionibus Londinensibus editurus
-          sit, nisi fortassis hoc jam fecerit, ipsum proin me monere, ut quantocyus meam exhiberem
-          Monmortio cui suam Taylorus eodem tempore vellet submittere. Demandavi respondendi
-          provinciam filio meo, qui statim composuit hoc quod Tibi hic mitto schediasma, Actis si
-          lubet, ubi legeris, inserendum;<note type="editorial">Bernoulli, Nicolaus II op. 108, <hi
-              rend="u">De trajectoriis curvas ordinatim positione datas ad Angulos rectos vel alia
-              data lege secantibus; qua occasione communicatur gemina constructio alicujus
-              poblematis a Leibnitio propositi de trajectoriis orthogonalibus: una cum Appendice de
-              Epistola pro Eminente Mathematico Actis Lips. Mens. Jul. A. 1716 inserta</hi>, in: AE
-            Junii 1718, pp. 248-262.</note> simile exemplar ante duos circiter menses Monmortio
-            transmisi;<note type="editorial">Johann I Bernoulli an Pierre Rémond de Montmort von <rs
-              key="B_1718-03-17_991170514994905501" type="letter">1718.03.17</rs>.</note> reperies
-          in eo juxta binas meas solutiones et constructiones etiam judicium nostrum de alteris
-          illis solutionibus quae hactenus ad nos pervenerunt; nec poteram aliter quam censurae
-          subjicere, quae minus recte se habere videbantur, hujus quippe problematis Auctorem me
-          esse, cum quamvis me invito innotuerit, officii mei esse putabam, ut quid in una quaque
-          desiderabatur publice indicarem; quod si tamen Tibi visum fuerit, aliquid in hoc
-          schediasmate dici quod inprimis optimum nostrum Hermannum offendere queat, libertatem Tibi
-          largior illud pro prudentia Tua mitigandi, corrigendi, omittendi, aut quocunque <pb
-            facs="808157" n="2"/> modo mutandi, quanquam Filio meo eam injunxerim cautelam, ut quam
-          posset modestissime ageret cum Hermanno nobis amicissimo, quod ut mihi videtur exacte
-          satis observavit, ut non habeat de quo queratur. Acta post Septembrem anni praeteriti
-          nondum vidi, adeoque nescio an quid aliud insuper de hac materia prodierit: neque an et in
-          quonam mense extent meditationes meae de Isoperimetris<note type="editorial">Bernoulli,
-            Johann I <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/Werkverzeichnisjohib#Op._CIII_.7B.C3.BCbersetzt_von_P._Varignon.7D_Remarques_Sur_ce_qu.27on_a_donn.C3.A9_jusqu.27ici_de_solutions_des_Probl.C3.AAmes_sur_les_Isoperimetres_..."
-              >Op. CIII</ref> (lat. Fassung), <hi rend="u">De Solutionibus quae extant Problematum
-              isoperimetricorum, ejusque nova eorundem problematum, aliorumque cognatorum citra
-              calculum solvendorum methodus brevis plana &amp; facilis</hi>, in: AE Januarii 1718,
-            pp. 15-31, und <hi rend="u">Continuatio Observationis Bernoullianae de solutionibus quae
-              exstant Problematum Isoperimetricorum &amp;c.</hi>: AE Februarii 1718, pp.
-            74-88.</note> quas Tibi haud displicuisse spero. Gaudeo quod arriserit series mea ipsius
-            <formula>\int</formula><formula>x^{x}dx</formula> praesertim quae ex illa fluxit
-            <formula>1-\frac{1}{2^{2}}+\frac{1}{3^{3}}-\frac{1}{4^{4}}\textrm{etc.}</formula>
-          Optandum foret postuma Leibnitiana ab alio magis Geometra editum iri quam ab Eckhardo
-          Matheseos et Philosophiae rudi. Inveniet inter ea sine dubio varii generis argumenta, si
-          lucrum captat ex eorum editione, edat historica aliaque non mathematica quae ipsius fori
-          sunt, habebit opinor sat largam messem etsi falcem segeti mathematicae non immittat, notum
-          enim est Defunctum nostrum in omni fere scibili, ut ajunt, versatum fuisse; Tibi vero
-          tradat curam eorum quae non nisi a Mathematicis intelliguntur; quod utique faciet nam
-          facere tenetur si vel tantillum existimationi Viri summi consultum velit, Tecum enim
-          pro[r]sus sentio, talia nisi cum selectu et cura edantur, a malevolis facile detorqueri,
-          eaque proin famae Viri nostri officere magis quam prodesse posse. Hortamur itaque Te
-          publici nomine, ne desistas Eckhardum urgere ut Tibi concedat manuscripta Leibnitiana quae
-          ad rem Mathematicam et philosophicam spectant, ex quibus seligas quae praelo digna sint et
-          lucem ferre possint. Si rationes nostras praegnantes ipsi ob oculos posueris, nulli
-          dubitamus, quin tandem illis sit auscultaturus. Haud capio qui factum sit ut in novellis
-            littera<pb facs="808158" n="3"/>riis quae Lipsiae in 4.<hi rend="sup">o</hi> prodeunt
-          nunciaretur, me moliri editionem Commercii Epistolici mearumque Schedarum inventa nondum
-          publicata comprehendentium;<note type="editorial">Diese Meldung über eine geplante Edition
-            des Briefwechsels und von Werktexten Johann I Bernoullis in den Leipziger <hi rend="u"
-              >Nova Literaria</hi> ist noch bibliographisch nachzuweisen.</note> fateor me aliquando
-          hac de re cogitasse stimulante quodam Bibliopola, sed non memini id me ei promisisse,
-          quamvis sit mihi copia non exigua variorum ineditorum; modo essent in ordinem digesta, et
-          ita conscripta ut praelo subjici possent. Sed otio destituor non minus quam viribus, quas
-          cum aetate progrediente jam jam mihi languescere sentio; fortassis aliquando istud
-          negotium tradam filiis meis. Quod attinet ad commercium meum epistolare, de rebus
-          Mathematicis et philosophicis, nescio an illi quibuscum commutavi litteras quorum multi
-          etiamnum in vivis sunt, consentire vellent ut in publicum producantur. Inter schedas
-          Leibnitianas reperietur ingens epistolarum mearum farrago, inde a triginta fere annis ad
-          ipsum scriptarum, ex quibus ut et ex illis quas ad me vicissim dedit, nonnulla colligi
-          posse non invitus permiserim. De controversiis quas cum Clarkio habuit Leibnitius, multa
-          ab ipso Leibnitio audivi, et post mortem hujus Anglus ille, qui ante aliquot annos ex mea
-          commendatione Te vidit,<note type="editorial">Es handelt sich um John Arnold (geb. ca.
-            1688) aus Exeter.</note> promisit se mihi earum copiam facturum, sed nihil hactenus
-          accepi; miror interim qui infringere possit sive Clarkius sive, ut suspicaris, Newtonus
-          aestimationem virium vivarum, lubens equidem viderem quid objicerent contra meam
-          demonstrationem quam sane clarissimam et omni exceptione majorem puto: fortassis autem eam
-          nondum viderunt. Laetus intelligo Te non Mathesi sola sed aliis quoque scientiis
-          excolendis occupari, publicum inde Tibi fortius obstrictum se sentiet; curiosa sunt <pb
-            facs="808159" n="4"/> quae circa vegetationem detexisti, inprimis experimenta de
-          aristarum germinatione.<note type="editorial">Wolff, Christian, <hi rend="u">Entdeckung
-              der wahren Ursache von der wunderbaren Vermehrung des Getraydes, dadurch zugleich der
-              Wachsthum der Bäume und Pflanzen überhaupt erläutert wird</hi>, Halle im
-            Magdeburgischen (Renger) 1718.</note> Gaudeo ea a Te typis mandari, hoc namque modo ad
-          meam etiam notitiam pervenient. Non minus quoque bene merebis de publico si quod
-          promittere videris, meditationes Tuas Metaphysicas et de Philosophia practica imprimi
-            curaveris.<note type="editorial">Johann I Bernoulli bezieht sich hier wohl auf Wolff,
-            Christian, <hi rend="u">Vernünftige Gedanken von Gott, der Welt und der Seele des
-              Menschen, auch allen Dingen überhaupt</hi>, 1. Theil, Halle 1720, und auf Wolff,
-            Christian, <hi rend="u">Vernünftige Gedanken von der Menschen Thun und Lassen, zur
-              Beförderung der Glückseligkeit</hi>, Halle 1720.</note> Rastium<note type="editorial"
-            >Rast, Georg Heinrich aus Königsberg (1695-1726).</note> quem mihi commendabas satis
-          versatum deprehendi in Mathematicis, per breve tempus quod in nostra urbe trivit, quotidie
-          ejus videndi copiam habui. In Galliam euntem comitatus sum litteris commendatitiis, agit
-          Lutetiae a Varignonio aliisque Mathematicis comiter receptus.<note type="editorial">Der
-            von Mencke empfohlene Rast aus Königsberg hatte auf der Durchreise nach Paris fünf Hefte
-            der AE von Mai bis September 1717 und die Sectio XI u. XII von Bd. 6 der Supplementa
-            überbracht. Johann Bernoulli hatte Rast nach Paris Empfehlungsschreiben mitgegeben
-            (Siehe den Brief von Johann I Bernoulli an Johann Burkhard Mencke von <rs
-              key="B_1718-04-13_991170514783305501" type="letter">1718.04.13</rs> und dne Brief von
-            Pierre Varignon an Johann I Bernoulli von <rs key="B_1717-12-31_991170516553105501"
-              type="letter">1717.12.31</rs>.</note> Vale et fave. </p>
-        <p>Dabam Basileae a. d. XIII. Aprilis 1718. </p>
-        <p>P. S. Oblitus fere fuissem respondere ad id quod offers Vir Celeberr. Te velle componere
-          responsionem formalem si Tibi misero notas meas tumultuarias in Schedam Keilianam<note
-            type="editorial">Im Nachlass Johann I Bernoullis finden sich zahlreiche Notizen und
-            Marginalien zu John Keill, z.B. Bernoulli Johann I Ms 351.42, <hi rend="u">Addenda Ad
-              Notas in Keillii Epistolam ad Joh. Bernoulli</hi> (Ms UB Basel L Ia 14, "N° 9" = fol.
-            25-32).</note> deproperatas. Hoc quidem nuper suscepit aliquis ex Auditoribus meis
-          nomine Crusius, qui in Mathesi non levia jecit fundamenta, sed rem istam non satis ad
-          mentem meam executus est;<note type="editorial">Crusius, Johann Heinrich, <hi rend="u">M.
-              Jo. Henr. Crusii Responsio ad Cl. Viri Johannis Keil, Astronomiae Professoris
-              Oxoniensis, Defensionem pro Nobilissimo Viro Js. Newtono in Diario Literario Hagiensi
-              A. 1716 editam</hi>, in: AE Octobris 1718, pp. 454-466.</note> mallem illum minus
-          prolixum sed magis nervosum, ita tamen ut Lectores honestos et aequi amantes non offendat,
-          neque ea propter in me invehi possit Keilius. Quare consultum duco utrumque Tibi mittere
-          scriptum, ut ex meo videas quid in Crusiano commode mutari aut omitti possit. Sub Crusii
-          nomine (ipso permittente) publicari poterit, ne putet Keilius (de quo subinde questus est)
-          sibi semper rem esse cum umbris.</p>
-        <p><pb facs="808160" n="5"/> 2. P. S. In eo jam eram ut omnes has Schedas in fasciculum
-          complicarem ad Te Vir Clarissime protinus dimittendum, cum ecce hoc ipso die ex inopinato
-          advolant litterae ex Gallia a Nob. Monmortio:<note type="editorial">Pierre Remond de
-            Montmort an Johann I Bernoulli von <rs key="B_1718-04-03_991170514994805501"
-              type="letter">1718.04.03</rs>.</note> quibus reseratis invenio varia quae oportet Te
-          scire; primo habetur ibi schediasma sed male scriptum a copista ut videtur non satis
-          intelligente continens solutionem Taylori<note type="editorial">Taylor, Brook, <hi
-              rend="u">Solutio Problematis a Dom.no G. G. Leibnitio, Geometris Anglis nuper
-              propositi</hi>: Phil. Trans. October-December 1717, Num. 354, pp. 695-701.</note>
-          problematis Leibnitiani de Trajectoriis; quanquam otii satis non suppetat ad singula
-          accurate examinanda video tamen solutorem non multo longius progressum esse quam Dn.
-          Hermannum, quandoquidem ad similem quam Hermannus habet aequationem pervenit, nimirum
-          adhanc <formula>\overline{\dot{z}x-z\dot{x}}\times a^{n-1}=\dot{r}x^{n}</formula>, ubi
-            <formula>x</formula> et <formula>z</formula> sunt coordinatae curvae curvae quaesitae,
-            <formula>a</formula> constans arbitraria et <formula>\dot{r}</formula> elementum curvae.
-          Pro separandis indeterminatis ne hilum quidem profecit, quin potius asserit "haud proclive
-          esse" (sunt Taylori verba) "aequationem istam, manente <formula>n</formula> in terminis
-          generalibus, revocare ad aequationem fluentes tantum involventem, vel ad quadraturam
-          curvarum"; cujus asserti partem posteriorem falsam esse ediscet ille ex meis
-          constructionibus, in quibus namque manente licet "<formula>n</formula>" in terminis
-          generalibus problema construxi per quadraturas; visa itaque hac Taylori solutione, quae
-          sane non eam habet perfectionem et elegantiam ad quam videndam ob praeviam Anglorum
-          ebucinationem me praeparabam, plane non habeo cur me poeniteat mearum solutionum quae
-          certe citra jactantiam omnibus aliis hactenus editis facile palmam praeripiet; ideoque
-          rogo ut cures ut schediasma filii mei<note type="editorial">Bernoulli, Nicolaus II op.
-            108, <hi rend="u">De trajectoriis curvas ordinatim positione datas ad Angulos rectos vel
-              alia data lege secantibus; qua occasione communicatur gemina constructio alicujus
-              poblematis a Leibnitio propositi de trajectoriis orthogonalibus: una cum Appendice de
-              Epistola pro Eminente Mathematico Actis Lips. Mens. Jul. A. 1716 inserta</hi>, in: AE
-            Junii 1718, pp. 248-262.</note> brevi lucem videat, quia Taylorus suum quoque in
-          Transactionibus publicandum reapse jam exhibuit; etiamsi alias testari possit Monmortius
-          quod nostrum receperit scriptum ante Taylorianum. In prae<pb facs="808161" n="6"/>fatione
-          quam Taylorus suis solutionibus praemisit,<note type="editorial">Taylor, Brook, <hi
-              rend="u">Solutio Problematis a Dom.no G.G. Leibnitio, Geometris Anglis nuper
-              propositi</hi>, in: Phil. Trans. October-December 1717, Num. 354, pp. 695-696.</note>
-          arroganter loquitur et elata crista de optimo Leibnitio ejusque (quos ita nominat)
-          "Fautoribus", sic enim incipit "Cum Dom. G. G. Leibnitius nuper defunctus in controversia
-          jam pridem orta circa inventionem Methodi fluxionum (quam is differentialem vocare maluit,
-          sibique pertinaciter appropriari nisus est) nihil omnino responsi dederit argumentis,
-          quibus inclyti istius inventi gloria Dom. Newtono vendicatur; en tandem hortante Dom.
-          Joan. Bernoulli, problema Geometris Anglis solvendum proposuit; quo scilicet vires eorum
-          in methodo ista experiretur etc." postea dicit "... nec istis certe Leibnitii fautoribus,
-          qui problematis solutionem etiamnum continenter efflagitant, jus ullum est nos ad certamen
-          ingeniorum tanta cum licentia provocandi, adeoque problema eorum jure merito negligi
-          posset. Verum ne aliquando exinde occasionem triumphandi arripiant etc." pergit deinde
-          "Verum in Transactione philosophica n.<hi rend="sup">o</hi> 347 subinde prodiit
-            solutio[<note type="editorial">[Newton, Isaac], <hi rend="u">Problematis olim in Actis
-              Eruditorum Lipsiae propositi Solutio Generalis</hi> in: Philosophical Transactions,
-            London, vol. 29 (March 1716), Nr. 347, pp. 399-400.</note> maxime generalis. Sed nec
-          illa contenti fuerunt Leibnitius et Fautores ejus, quin illam derisui habuere, quasi qui
-          illam excogitaverat non potuisset eam ad casum specialem applicare. Si nondum viderint
-          quomodo ex illa aequationes sint deducendae, id profecto eorum imperitiae tribuendum erit.
-          etc.". Vides Vir Excell. ex his eodem fere animo in exteros concitari quo Keilius aliique
-          nonnulli fervidi Angli, non levis est ejus impudentiae nota, quod me vocet Leibnitii
-          hortatorem cum potius contrarium appareat, ex filii schediasmate<note type="editorial"
-            >Bernoulli, Nicolaus II op. 108, <hi rend="u">De trajectoriis curvas ordinatim positione
-              datas ad Angulos rectos vel alia data lege secantibus; qua occasione communicatur
-              gemina constructio alicujus poblematis a Leibnitio propositi de trajectoriis
-              orthogonalibus: una cum Appendice de Epistola pro Eminente Mathematico Actis Lips.
-              Mens. Jul. A. 1716 inserta</hi>, in: AE Junii 1718, pp. 248-262.</note> et certum sit
-          quod ipse Leibnitius me non semel instigaverit ut problema aliquod sibi suppeditarem.
-          Adjunxit Monmortius schedae Taylorianae aliud scriptum sibi datum a Nicolio Mathematico ut
-          mihi mitteret, quo ille communicat aliquam suam ejusdem problematis solutionem, vel potius
-          solutionis tentamen, quod consistit in aequatione aliqua differentias secun<pb
-            facs="808162" n="7"/>das et praeterea inter se permixtas, necdum separabiles
-          complectente: fatetur Nicolius ulterius progredi non potuisse, nec ego methodum examinandi
-          adhuc tempus habui, quare ei diutius non immoror: aequatio ejus haec est
-            <formula>\frac{1}{m}dxdy^{2}-ydsddy-ydxddy=0</formula>, ubi <formula>x</formula> et
-            <formula>y</formula> significant coordinatas, <formula>ds</formula> elementum curvae et
-            <formula>m</formula> numerum rationis. [<note type="editorial">Der folgende lange Absatz
-            bis " ... proferre conentur." ist im Manuskript mit anderer Tinte in eckigen Klammern
-            eingeschlossen.</note>Addit Monmortius Newtonum esse Auctorem illius solutionis quae sub
-          nomine Anonymi in Transactionibus comparuit, rem esse in Anglia pervagatam de qua nemo
-          dubitet, quod si ita est, credo non arrisurum Newtono nostrum quod de hac solutione
-          tulimus judicium Hermannus et ego, sed quid tum? sibi imputet quod tam supinam et se
-          minime dignam solutionem publico obtrudere voluerit: ignoramus nos quem illa agnoscat
-          auctorem, nec aliud dicere possumus quam quod quandoque bonus dormitet Homerus<note
-            type="editorial">Horaz, <hi rend="u">Ars poetica</hi>.</note>, et quod levi negotio pro
-          more suo peragere voluerit (quamvis infeliciter hac in parte) quod alii non sine sudore
-          conficere conantur. Praecipuum quod restat et de quo Te certiorem volo, est id quod
-          Monmortius scribit, Keilium dedisse vel propediem daturum esse in Diario Hagiensi specimen
-          alterum suae impudentiae et rusticitatis<note type="editorial">Keill, John, <hi rend="u"
-              >Lettre de Monsieur Jean Keyll, Docteur en Medecine, et Professeur en Astronomie de
-              l'Université d'Oxford, à Monsieur Jean Bernoulli Professeur en Mathematique de
-              l'Université de Basle: Ecrite en Avril 1617</hi> [sic!], in: Journal literaire de
-            l'année 1719, tome dixième, Seconde partie, La Haye (T. Johnson) 1720, pp.
-            261-287.</note>, in quo acerbissime exagitet epistolam pro eminente Mathematico Actis
-          Lips. m. Jul. anni 1716 insertam<note type="editorial">[Bernoulli, Johann I] <ref
-              target="http://www.ub.unibas.ch/bernoulli/index.php/Werkverzeichnisjohib#Nr._201_.7Bpubl._von_Ch._Wolff.7D_Epistola_pro_eminente_Mathematico_..."
-              >Nr. 201</ref>, {publ. von Ch. Wolff} <hi rend="u">Epistola pro eminente Mathematico
-              ...</hi> in: AE Julii 1716, pp. 296-315.</note>, en ipsa Monmortii verba "J'ai
-          appris", inquit, "qu'il" (Mr. Keil) "avoit donné un 2.<hi rend="sup">e</hi> memoire dans
-          ces memes journaux" (de la Haie) "et qu'il y attaque fortement l'ecrit intitulé Epistola
-          pro Eminente Math. et je crois qu'il Vous faut attendre que Vous aiés vu cet ecrit pour
-          repondre au premier etc.". Et paulo post sequentia subdit "Je ne sçai rien du nouveau
-          Memoire de Mr. Keil si ce n'est qu'il est vehement, et qu'il pretend prouver que Vous etes
-          l'auteur du Memoire Epistola pro Emin. Math., et ce fait supposé, Vous jugés bien qu'il se
-          donne carriere, et qu'il a beau jeu, mais quand vous aurés nié ce fait tout tombera; Vous
-          pouvés soutenir les faits qui sont vrais et Vous attribuer ce qui Vous appartient
-            etc.".<note type="editorial">Pierre Remond der Montmort an Johann I Bernoulli, von <rs
-              key="B_1718-04-03_991170514994805501" type="letter"> 1718.04.03</rs>.</note> Consilium
-          hoc non puto rejiciendum esse quare rogo ut retineas notas meas tumultuarias, et Crusii
-          scriptum, ejusque impressionem differas donec videris Keilianum, ut secundum hujus tenorem
-          adjicere possis mutationes vel additiones quas ipse convenientes judicaveris. Interim
-          consultum duco ut sine mora et antequam scriptum Keilii jam late divulgatum sit, in Actis
-          publicetur declaratio mea quae ad calcem schediasmatis filii mei<note type="editorial"
-            >Bernoulli, Nicolaus II op. 108, <hi rend="u">De trajectoriis curvas ordinatim positione
-              datas ad Angulos rectos vel alia data lege secantibus; qua occasione communicatur
-              gemina constructio alicujus poblematis a Leibnitio propositi de trajectoriis
-              orthogonalibus: una cum Appendice de Epistola pro Eminente Mathematico Actis Lips.
-              Mens. Jul. A. 1716 inserta</hi>, in: AE Junii 1718, pp. 248-262. Der Appendix stammt
-            also von Johann I Bernoulli selbst. </note> ceu appendix subnecti posset, cujus
-          substantia huc rediret, me scilicet aegre ferre percipiendo in Anglia voces <pb
-            facs="808163" n="8"/> spargi quod habear a nonnullis pro Auctore illius Epistolae pro
-          Emin. Mathem. me quidem negare non posse quod res ipsas in illa Epistola contentas quoad
-          maximam partem Amico alicui in Germania nude simpliciterque ac sine ulla animi commotione
-          perscripserim et quidem ab ipso rogatus, hunc vero Amicum postea Epistolam illam tali
-          forma quae in Actis extat concinnasse, eique forte ex nimio Amicitiae Zelo admiscuisse
-          multas expressiones quas omissas cuperem; me enim neque delectari immodius honoris titulis
-          quos ut nunquam merui ita nunquam ambivi; neque approbare ea quae in alios aliumve (licet
-          mihi infensum quam ob rem nescio) durius dicta censeri possunt. Quae cum ita se habeant,
-          meam culpam non esse, ubiquis se laesum putaverit, siquidem epistola illa me nec sciente
-          nec jubente in lucem prodierit, quamvis forsan Editor autumaverit sibi licuisse par pari
-          referre et similibus pugnare armis quibus utitur antagonista. Me itaque declarare, quod
-          non omnia quae in dicta epistola continentur mea faciam praesertim quae ad ejus formam et
-          modum scribendi spectant, cujus ego neutiquam particeps esse velim vel possim, quod vel
-          hinc pateat, quia circa finem Epistolae oblitus sit Editor ex inadvertentia me sibi
-          loquentem de quadam "mea formula" repraesentare (ut ubique solebat) veluti personam de qua
-          quid narrabat, manifesto sane indicio, nihil mihi imputari posse quicquid in verbis
-          modisve quibus conscripta est Epistola non recte positum deprehendatur. Quare si quid
-          contra eam in publicum venerit quod non nisi conviciis, aculeis, et scommatibus scatent ut
-          fieri solet ab Antagonista quodam, cui aliam offensam non dedi quam quod Anglus vel Scotus
-          non sim, me solenniter declarare, quod ad hujusmodi libellos respondere nunquam dignabor,
-          utpote indignos, qui Virorum honestatis et modestiae amantium attentionem mereantur: nam
-          si conviciis et clamore decertandum, me ultro fateri quod ex hoc certaminis genere palmam
-          reportare non sperem. Quicunque vero voluerit res ipsas placide, moderate, et prout decet
-          Virum bene moratum seposito partium studio atque animi affectu mecum discutere, idque eo
-          tantum fine ut unicuique Tros Rutulusve fuat<note type="editorial">"Tros Rutulusve fuat,
-            nullo discrimine habebo", Vergil, <hi rend="u">Aeneis</hi>, lib. 10, Vers 108.</note>
-          suum tribuatur, ut veritas asseratur, atque imprimis ut Scientiae augeantur, cum tali me
-          committere non detrectaturum, sed sponte omnia collaturum quae in viribus meis sunt ad
-          dirimendas lites, quae hactenus viguere inter Eruditos Geometras magno proh dolor!
-          nobilissimae scientiae dedecori et detrimento. Hoc quippe ardentissimis in votis me
-          habere, ut cessantibus rixis disputantes in gratiam secum invicem redeant atque junctis
-          viribus ceu unius Reip. Mathematicae cives ejus pomoeria latius proferre conentur.]<note
-            type="editorial">Hier endet der im Manuskript durch eckige Klammern eingeschlossene
-            Abschnitt.</note></p>
-        <p>Haec sunt Vir Celeberrime quae salvo Tuo meliori judicio declarationem meam citissime
-          publicandam ingredi possent. Ignosce vero quod tantum negotii facessam Tibi, aliis
-          negotiis ut scio occupatissimo. Vides interim non meam tantum sed communem causam agi.
-          Vale iterum etiam atque etiam. </p>
-      </div>
-    </body>
-  </text>
+          <note type="lebensdaten">(1667-1748)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118669478">Clarke, Samuel</persName>
+          <note type="lebensdaten">(1675-1729)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-1156357152">Krauss, Heinrich</persName>
+          <note type="lebensdaten">(1678-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118958461">Eckhart, Johann Georg von</persName>
+          <note type="lebensdaten">(1674-1730)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+          <note type="lebensdaten">(1678-1733)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-124275087">Keill, John</persName>
+          <note type="lebensdaten">(1671-1721)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+          <note type="lebensdaten">(1646-1716)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+          <note type="lebensdaten">(1678-1719)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+          <note type="lebensdaten">(1643-1727)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-117584401">Nicole, François</persName>
+          <note type="lebensdaten">(1683-1758)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-102792976">Rast, Georg Heinrich</persName>
+          <note type="lebensdaten">(1695-1726)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+          <note type="lebensdaten">(1685-1731)</note>
+        </person>
+        <person>
+          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+          <note type="lebensdaten">(1654-1722)</note>
+        </person>
+      </listPerson>
+    </abstract>
+    <textClass/>
+  </profileDesc>
+  <revisionDesc status="bernoulliwiki">
+    <listChange>
+      <change when="2023-10">generiert</change>
+    </listChange>
+  </revisionDesc>
+</teiHeader>
+
+<facsimile>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/808154/manifest"/>
+</facsimile>
+<text>
+<body>
+<div type="letter">
+<pb facs="808156" n="1"/> <pb facs="808157" n="2"/> <pb facs="808158" n="3"/> <pb facs="808159" n="4"/> <pb facs="808160" n="5"/> <pb facs="808161" n="6"/> <pb facs="808162" n="7"/> <pb facs="808163" n="8"/>
+<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
+</div>
+</body>
+</text>
 </TEI>
