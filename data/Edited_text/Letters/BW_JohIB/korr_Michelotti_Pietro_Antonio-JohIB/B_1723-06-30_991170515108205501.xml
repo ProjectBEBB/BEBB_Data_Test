@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- vorbereitet am 22.11.2018 --><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Personen im BIBB vorhanden, mit GNDs getagt am 20.02.2019 --><!--_____________--><TEI xml:id="B_1723-06-30_991170515108205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515108205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -119,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1723-06-04_991170515108305501" type="prev"/>
-        <ptr target="B_1723-08-20_991170515108105501" type="next"/>
+        <ptr target="B_991170515108305501" type="prev"/>
+        <ptr target="B_991170515108105501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -155,13 +154,23 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- vorbereitet am 22.11.2018 -->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Personen im BIBB vorhanden, mit GNDs getagt am 20.02.2019 -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079403/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079404" n="1"/>
 <opener><salute>Pereximio at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> celeberrimo Viro
              <lb/>Petro Antonio <rs key="pers_DE-588-102552517" type="person">Michelotto</rs>
 <lb/><abbr>S. P. D.</abbr>
 <lb/><rs key="pers_DE-588-118509969" type="person"><choice><abbr>Joh.</abbr><expan>Johannes</expan></choice> Bernoully</rs>.</salute></opener>
-<p>Ex <rs key="B_1723-06-04_991170515108305501" type="letter">novissimis Tuis Litteris</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 4. Juni 1723</note> die <date when="1723-06-04">4. labentis hujus
+<p>Ex <rs key="B_991170515108305501" type="letter">novissimis Tuis Litteris</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 4. Juni 1723</note> die <date when="1723-06-04">4. labentis hujus
     <lb/>mensis Junii</date> exaratis optatum Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> valetudin<subst><del>e</del><add>is</add></subst> statum<del> intelle-</del>
 <lb/><del>xi</del> su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>a cum voluptate intellexi, Filius meus <rs key="pers_DE-588-118656503" type="person">Daniel</rs>
 <lb/>receptionem sui a Te sibi factam benignissimam jam
@@ -174,7 +183,7 @@
          <lb/>occasionem exercendi sese in praxi medicin<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, siquidem
          <lb/>ductu et auspiciis Tuis <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>gros visitare, morbos observare
          <lb/>atque medicamentorum operationes, ac pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>scriptiones
-         <lb/>addiscere potest. In nuperis meis <rs key="brieftag" type="letter">litteris</rs><!-- Dieser Brief an Daniel ist nicht erhalten. Nachgewiesener Brief in BIBB erfassen. --> ei stimulos
+         <lb/>addiscere potest. In nuperis meis <rs type="letter">litteris</rs><!-- Dieser Brief an Daniel ist nicht erhalten. Nachgewiesener Brief in BIBB erfassen. --> ei stimulos
          <lb/>addidi ac <subst><del><gap/></del><add>severa</add></subst> cum adhortatione serio co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endavi, ne
          <lb/>istam insignem occasionem negligat vel inutiliter pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>terire sinat; Quo<subst><del>niam</del><add>circa</add></subst> Te vir <choice><abbr>Clariss.</abbr><expan>Clarississime</expan></choice> etiam at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> etiam
          <lb/>obsecro, ut si forte eum deprehenderis rem medicam

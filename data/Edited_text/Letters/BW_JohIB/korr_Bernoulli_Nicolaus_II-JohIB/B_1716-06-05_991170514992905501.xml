@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert am 8. Mai 2020 --><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- Link zu Katalogisat und Digitalisat: https://aleph.unibas.ch/F/?local_base=DSV05&con_lng=GER&func=find-b&find_code=SYS&request=000056822 --><!--_____________--><!--Comments that were in the teiHeader element--><!-- In BIBB zu ergänzende Personen: 
-         Jacob Bernoulli 1654-1705  pers_DE-588-118509950
-         H. Holz (Laut Matrikel Basel IV, Nr. 2508, ist ein Laurentius Holtz 1713-1717 als Stud. theol an der Universität Basel bezeugt.)
-
-      --><!--_____________--><TEI xml:id="B_1716-06-05_991170514992905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514992905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -125,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1701-05-28_991170514739805501" type="prev"/>
-        <ptr target="B_1720-10-10_991170514993005501" type="next"/>
+        <ptr target="B_991170514739805501" type="prev"/>
+        <ptr target="B_991170514993005501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Bernoulli_Nicolaus_II-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -147,16 +142,31 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert am 8. Mai 2020 -->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- Link zu Katalogisat und Digitalisat: https://aleph.unibas.ch/F/?local_base=DSV05&con_lng=GER&func=find-b&find_code=SYS&request=000056822 -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- In BIBB zu ergänzende Personen: 
+         Jacob Bernoulli 1654-1705  pers_DE-588-118509950
+         H. Holz (Laut Matrikel Basel IV, Nr. 2508, ist ein Laurentius Holtz 1713-1717 als Stud. theol an der Universität Basel bezeugt.)
+
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079580/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079581" n="1"/>
 <opener><dateline><rs key="place_GEO-3164603" type="place">Venedig</rs> den <date when="1716-06-05">5.<hi rend="sup">ten</hi> Junii 1716</date>.</dateline><note type="editorial">Ort und Datum von anderer Hand.</note>
 <salute> Monsieur mon tres cher et tres honoré Pere.</salute></opener>
-<p>Der <abbr>H.</abbr> <rs key="pers_DE-588-102552517" type="person">Michelotti</rs> hatt mir diesen <rs key="B_1716-06-06_991170515017605501" type="letter">brieff</rs> gegeben umb
-         <lb/>ihn zu zu machen,<note type="editorial">Dieses Schreiben füllt die letzte Seite des Briefes von Michelotti an Joh. I B. aus Venedig von <rs key="B_1716-06-06_991170515017605501" type="letter">1716.06.06</rs>.</note>
+<p>Der <abbr>H.</abbr> <rs key="pers_DE-588-102552517" type="person">Michelotti</rs> hatt mir diesen <rs key="B_991170515017605501" type="letter">brieff</rs> gegeben umb
+         <lb/>ihn zu zu machen,<note type="editorial">Dieses Schreiben füllt die letzte Seite des Briefes von Michelotti an Joh. I B. aus Venedig von <rs key="B_991170515017605501" type="letter">1716.06.06</rs>.</note>
 <!-- Nic. II B. hält sich zu diesem Zeitpunkt in Venedig bei Michelotti auf.--> deßwegen weilen sehe daß noch
          <lb/>platz ubrig diese wenigen zeilen darzu setze umb den
          <lb/><rs key="pers_DE-588-118509969" type="person">Vatter</rs> meines respects zu versichern <choice><orig><g ref="#und">[und]</g></orig><reg>und</reg></choice> ihm
-         <lb/>zu notificiren daß ich seinen <rs key="brieftag" type="letter">brieff</rs><!--Brief-ID noch unbekannt (SG: nachgewiesener Brief in BIBB erstellen und Systemnummer einfügen.) --> vom 23. pass.<note type="editorial">Abkürzung ausführen.</note>
+         <lb/>zu notificiren daß ich seinen <rs type="letter">brieff</rs><!--Brief-ID noch unbekannt (SG: nachgewiesener Brief in BIBB erstellen und Systemnummer einfügen.) --> vom 23. pass.<note type="editorial">Abkürzung ausführen.</note>
 <lb/>heüt morgen empfangen,<note type="editorial">Dieser Brief von Joh. I B. an Nic. II B. ist anscheinend nicht erhalten.</note> werde auff selbigen über
          <lb/>acht tag weitlaüffiger antworten.<note type="editorial">Dieser Brief von Nic. II B. an Joh. I B. ist anscheinend nicht erhalten.</note><!--Brief-ID noch unbekannt (SG: nachgewiesener Brief in BIBB erstellen und Systemnummer einfügen.) -->  Jetzund will
          <lb/>nur melden daß <abbr>H.</abbr> <rs key="pers_DE-588-102552517" type="person">Michelotti</rs> mir auff

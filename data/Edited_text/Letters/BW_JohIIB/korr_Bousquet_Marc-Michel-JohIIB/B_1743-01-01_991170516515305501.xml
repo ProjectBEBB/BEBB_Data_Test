@@ -1,12 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-    Monsieur vre. Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
-    
-    les relieurs -> 
-    
-    Mr. Cramer -> Cramer, Gabriel pers_DE-588-11670912X
-    --><!--_____________--><TEI xml:id="B_1743-01-01_991170516515305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170516515305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -126,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1742-12-25_991170516515405501" type="prev"/>
-        <ptr target="B_1743-01-02_991170430342405501" type="next"/>
+        <ptr target="B_991170516515405501" type="prev"/>
+        <ptr target="B_991170430342405501" type="next"/>
         <ptr target="BW_JohIIB" type="Briefwechsel"/>
         <ptr target="korr_Bousquet_Marc-Michel-JohIIB" type="Korrespondenz"/>
       </correspContext>
@@ -158,6 +151,21 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+    Monsieur vre. Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
+    
+    les relieurs -> 
+    
+    Mr. Cramer -> Cramer, Gabriel pers_DE-588-11670912X
+    -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/3832618/manifest"/>
 </facsimile><text>
@@ -167,7 +175,7 @@
 <opener><salute>Monsieur</salute></opener>
 <p>Je commence ma reponce à l'honneur de vos deux <rs key="brieftag brieftag" type="letters">Lettres</rs>, par vous temoigner ma grande afliction sur la maladie de Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs>, ce qui me tranquilise un peu c'est que les Rumes, opressions &amp; fievres sont de mode partout, &amp; ainsi j'espere que cette incommodité ne sera que passagere; je fais au Ciel les voeux les plus ardents pour sa guerison &amp; que j'aye la douce satisfaction de le voir bien portant le mois de Mars prochain, en attendant Monsieur, je vous prie de lui presenter mes respects &amp; de prendre votre part des voeux que je fais dans cette nouvelle année pour ce <rs key="pers_DE-588-118509969" type="person">grand homme</rs> &amp; pour tout ce qui lui est cher &amp; à vous aussi. Je prends la liberté de lui faire une etrenne, à savoir de 50 exempes. de son Portrait en grand papier que j'ay fait tirer exprès pour lui à <rs key="place_GEO-2988507" type="place">Paris</rs> de cette façin là qui sans doute lui sera agreable, c'est ce que je souhaite ardemment. Je le prie aussi bien que vous Monsieur d'en etre un peu oeconomes dans la distribution, jusques à ce que son ouvrage paroisse. Vous en recevrés le paquet par la messagerie avec les épreuves des planches qui entrent dans le Tom. 3e. jusques à la Tab. 76 inclus, de meme que ce qu'il y a deja d'imprimé dans le Tome 4e. plusieurs signatures n'ont que 4 pages au lieu de 8 à cause de la quantité de signes, qui ont necessité cette precaution afin d'avancer davantage; cela revient au meme, &amp; il n'y aura que les <rs key="GND GND" type="persons">relieurs</rs> qui en enrageront un peu. On travaille à la suite avec toute la diligence &amp; l'attention dont on est capable.</p>
 <p>J'envoye ce soit à Mr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs> tout ce que vous m'adressés pour lui, &amp; je suis assuré qu'il se rendra aux excellentes raisons que vous lui allegués pour faire une Preface que lui seul peut faire convenablement j'en conviens.</p>
-<p>Par raport à la <rs key="brieftag" type="letter">Lettre</rs> que je vous demande &amp; que j'imprimerai ou dans la Preface ou à la fin, il sufit que Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs> la signe &amp; que vous la fassiés en son nom: Elle m'est plus necessaire que vous ne pensés pour fermer la bouche à la jalousie, qui souvent engendre la calomnie. J'ay l'honneur d'etre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</p>
+<p>Par raport à la <rs type="letter">Lettre</rs> que je vous demande &amp; que j'imprimerai ou dans la Preface ou à la fin, il sufit que Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs> la signe &amp; que vous la fassiés en son nom: Elle m'est plus necessaire que vous ne pensés pour fermer la bouche à la jalousie, qui souvent engendre la calomnie. J'ay l'honneur d'etre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</p>
 <closer><dateline>à <rs key="place_GEO-2659994" type="place">Lausanne</rs> le <date when="1743-01-01">1er. Janv. 1743</date></dateline></closer>
 </div>
 </body>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- Barbaud, Henri-Alexandre de Thiancourt〈1686-1739〉 pers_DE-588-1161136878 fehlt im Katalog--><!-- Cramer, Jean 1701-1773 pers_DE-588-1048590259 --><!-- Schwägerin von Cramer, Sara Chomel, keine GND --><!--_____________--><!--Comments that were in the teiHeader element--><!--_____________--><TEI xml:id="B_1729-07-12_991170514978305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514978305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -118,8 +117,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1729-07-04_991170514978405501" type="prev"/>
-        <ptr target="B_1729-08-03_991170514978205501" type="next"/>
+        <ptr target="B_991170514978405501" type="prev"/>
+        <ptr target="B_991170514978205501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Cramer_Gabriel-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -186,11 +185,23 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-04-13" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-10-06" who="CG">Header, Seitenzahlen, Briefstruktur, Personen und Orte</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- Barbaud, Henri-Alexandre de Thiancourt〈1686-1739〉 pers_DE-588-1161136878 fehlt im Katalog-->
+<!-- Cramer, Jean 1701-1773 pers_DE-588-1048590259 -->
+<!-- Schwägerin von Cramer, Sara Chomel, keine GND -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073790/manifest"/>
 </facsimile><text>
@@ -200,33 +211,33 @@
 <opener><salute>Monsieur</salute>,</opener>
 <p><lb/>Si je n'avois été en Campagne dans le tems que Mr. <rs type="person">votre fils</rs> est arrivé dans
                <lb/><rs key="place_GEO-2660646" type="place">nôtre ville</rs>, j'aurois eu l'honneur de vous répondre plûtôt. Je suis revenu dès que
-               <lb/>j'ai apris son arrivée, &amp; je saisis avec joie l'occasion qui se présente de vous temoi<pc type="hyphenation">-</pc><lb break="no"/>gner, en rendant à Mr. <rs type="person">votre fils</rs> tous les Services qui pourront dependre de moi, combien
-               <lb/>je suis sensible aux obligations que je vous ai, &amp; avec quelle reconnoissance je me souviens
+               <lb/>j'ai apris son arrivée, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je saisis avec joie l'occasion qui se présente de vous temoi<pc type="hyphenation">-</pc><lb break="no"/>gner, en rendant à Mr. <rs type="person">votre fils</rs> tous les Services qui pourront dependre de moi, combien
+               <lb/>je suis sensible aux obligations que je vous ai, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> avec quelle reconnoissance je me souviens
                <lb/>de vos bontés. Il paroit si bien élevé qu'il seroit fort inutile de l'exhorter à son devoir.
-               <lb/>Je le regarderai comme un frère, &amp; je souhaite aussi qu'il me regarde de même.
+               <lb/>Je le regarderai comme un frère, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je souhaite aussi qu'il me regarde de même.
                <lb/>Je ne connois pas particulièrement Mr. <rs type="person">Malvesin</rs>, <!-- keine GND -->mais <rs key="pers_DE-588-1048590259" type="person">mon frère</rs><!-- Jean Cramer --> ainé qui est fort
-               <lb/>de sa connoissance, puisqu'il étoit Conseiller tutelaire de <rs type="person">ma belle-soeur</rs>, <!-- Sara Chomel, keine GND. Quelle: https://hls-dhs-dss.ch/de/articles/016280/2001-04-17/ -->&amp; qui a occasion
+               <lb/>de sa connoissance, puisqu'il étoit Conseiller tutelaire de <rs type="person">ma belle-soeur</rs>, <!-- Sara Chomel, keine GND. Quelle: https://hls-dhs-dss.ch/de/articles/016280/2001-04-17/ --><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui a occasion
                <lb/>de le voir souvant, étant cotuteurs des soeurs de sa femme, lui recommandera
-               <lb/>fortement &amp; souvent <rs type="person">vôtre fils</rs>: car toute ma famille aussi bien que moi, nous
+               <lb/>fortement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> souvent <rs type="person">vôtre fils</rs>: car toute ma famille aussi bien que moi, nous
                <lb/>ne négligeons rien de ce qui peut vous étre agréable.</p>
 <p><lb/>J'esperois de trouver ces féries l'occasion favorable pour aller jouir de vôtre conversation.
                <lb/>Des Circonstances imprévuës m'attachent encore ici cette année. J'espère que votre bonté
                <lb/>pour moi sera la même l'année prochaine.</p>
 <p><lb/>Je ne sais à quoi tient la conversion de Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> sur l'article des forces vives.
-               <lb/>Il m'a paru, dans toute sa conversation, penetré de l'amour de la verité, &amp; n'avoir d'autre
-               <lb/>soin que celui de la chercher. Il dit &amp; repete, de bonne foi, j'en suis convaincu, qu'il est prêt
+               <lb/>Il m'a paru, dans toute sa conversation, penetré de l'amour de la verité, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> n'avoir d'autre
+               <lb/>soin que celui de la chercher. Il dit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> repete, de bonne foi, j'en suis convaincu, qu'il est prêt
                <lb/>à l'embrasser de tout son coeur dès qu'il l'apercevra. Il est d'ailleurs homme d'esprit
-               <lb/>&amp; de savoir, &amp; qui doit certainement sentir la force de vos démonstrations. Cependant
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de savoir, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui doit certainement sentir la force de vos démonstrations. Cependant
                <lb/>il ne se rend point à vos raisons. Il est même déclaré, en quelque façon, le Chef des
                <lb/>Defenseurs de l'Ancien Système (c'est ainsi qu'ils apellent celui qui ne reconnoit
             <pb facs="1073793" n="2"/>
-<lb/>point une differente mesure des forces vives &amp; des forces mortes) &amp; je n'espère pas
+<lb/>point une differente mesure des forces vives <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des forces mortes) <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je n'espère pas
                <lb/>de le voir changé si tôt. Il m'a parlé plusieurs fois de son Discours lû à l'Académie:
-               <lb/>Il m'a assuré qu'il n'y avançoit rien que sur des idées claires &amp; distinctes. Aussi dit on
-               <lb/>qu'il a mis cette matière dans un jour tout nouveau &amp; qu'il la présentée sous un
-               <lb/>point de vuë si lumineux, que quelques personnes &amp; entre autres Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs>
+               <lb/>Il m'a assuré qu'il n'y avançoit rien que sur des idées claires <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> distinctes. Aussi dit on
+               <lb/>qu'il a mis cette matière dans un jour tout nouveau <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'il la présentée sous un
+               <lb/>point de vuë si lumineux, que quelques personnes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> entre autres Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs>
 <lb/>lui en faisant compliment en ma présence, avoua que n'aiant rien compris aupa<pc type="hyphenation">-</pc><lb break="no"/>ravant à cette matière, il voioit maintenant clair comme le jour, en quoi
-               <lb/>consiste la difficulté &amp; ce qui vous avoit jetté dans l'erreur avec tous les Leibnitiens.
+               <lb/>consiste la difficulté <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ce qui vous avoit jetté dans l'erreur avec tous les Leibnitiens.
                <lb/>(Je ne puis m'empêcher de faire ici une paranthese pour une reflexion qui me
                <lb/>vint en ce moment dans l'esprit. Si Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs>, me disoisje, avant la lecture
                <lb/>du Discours de Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> ne comprenoit rien à cette dispute, comment pouvoit-il
@@ -236,15 +247,15 @@
                <lb/><hi rend="u">si l'on n'en a dit que trop, ce trop est une espèce d'egard que l'on doit à des grands noms</hi>.
                <lb/>Je reconnois toute la supériorité du génie de Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs>, mais j'ai néantmoins
                <lb/>bien de la peine à comprendre qu'on puisse refuter solidement ce qu'on ne comprend pas.)
-               <lb/>Je reviens à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>. Je l'ai prié &amp; pressé de me laisser lire son Discours. Il s'en
+               <lb/>Je reviens à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>. Je l'ai prié <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pressé de me laisser lire son Discours. Il s'en
                <lb/>est excusé, sur les Statuts ou Coutumes de l'Académie. Un mot qu'il a laissé échaper
                <lb/>me fait voir, du moins si je l'ai bien compris, que malgré l'évidence de ses preuves, il
                <lb/>y aura cependant donné lieu à de bonnes objections. Il me soutint <del>que </del><add>contre</add> la Proposition 6 du
                <lb/>Chap. VI de votre Discours, que 12 ressorts autant bandés que 3 ne produiront dans des
                <lb/>corps égaux pas plus de vitesse que ces 3. Je me contentai de dire que vous prouvieés le
                <lb/>contraire (au Chap. VII.) par les Principes communs de la Méchanique. Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>
-<lb/>repliqua qu'il souhaiteroit en voir l'expérience, &amp; la conversation changea de sujet.
-               <lb/>J'avouë que ce doute me parut fort extraordinaire &amp; aisé à lever. Au reste le tour qu'il
+<lb/>repliqua qu'il souhaiteroit en voir l'expérience, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la conversation changea de sujet.
+               <lb/>J'avouë que ce doute me parut fort extraordinaire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> aisé à lever. Au reste le tour qu'il
                <lb/>donne à son discours me paroit plûtôt positif que polémique, car il m'a dit qu'il n'y
                <lb/>nommoit personne.
             <pb facs="1073794" n="3"/>
@@ -252,29 +263,29 @@
                <lb/><rs key="pers_DE-588-118663208" type="person">Bullfinger</rs>, je vous avouerai que je n'en suis pas extrémement satisfait. Son
                <lb/>Système me paroit extrémement chargé. Je demontrai à quelques Académiciens
                <lb/>(le lendemain que j'eus lû la pièce de Mr. <rs key="pers_DE-588-118663208" type="person">Bullfinger</rs>) que ses 4 tourbillons qui se
-               <lb/>meuvent en sens contraires &amp; se coupent à angles droits, étant mus sur les 2 axes
+               <lb/>meuvent en sens contraires <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> se coupent à angles droits, étant mus sur les 2 axes
                <lb/><formula>AC</formula>, <formula>BD</formula> (Fig. XV. § LXV) ne suffisent pas pour faire tomber au
                <lb/>Centre un Corps placé ailleurs que dans le meridien <formula>ABcd</formula>
 <lb/>qui passe par les 4 poles. Car soit le corps en <formula>e</formula> les tourbillons
                <lb/>mûs en sens contraires dont l'axe est <hi rend="u"><formula>ac</formula></hi>, lui donnent une
-               <lb/>tendance selon <hi rend="u"><formula>eg</formula></hi>, &amp; les tourbillons dont l'axe est <hi rend="u"><formula>bd</formula></hi><note type="editorial">Die folgenden Terme unterstrichen</note> lui
-               <lb/>donnent une impression selon <hi rend="u"><formula>ef</formula></hi>, &amp; la tendance composée
+               <lb/>tendance selon <hi rend="u"><formula>eg</formula></hi>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les tourbillons dont l'axe est <hi rend="u"><formula>bd</formula></hi><note type="editorial">Die folgenden Terme unterstrichen</note> lui
+               <lb/>donnent une impression selon <hi rend="u"><formula>ef</formula></hi>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la tendance composée
                <lb/>de ces deux est selon <hi rend="u"><formula>eh</formula></hi>: qui ne va pas au centre, puisqu'elle est dans le plan <hi rend="u"><formula>feh</formula></hi>
-<lb/>qui coupe les axes <hi rend="u"><formula>bd</formula></hi>, <hi rend="u"><formula>ae</formula></hi>, en <hi rend="u"><formula>f</formula></hi>, &amp; <hi rend="u"><formula>g</formula></hi> &amp; par conséquent en d'autres points que le centre.
+<lb/>qui coupe les axes <hi rend="u"><formula>bd</formula></hi>, <hi rend="u"><formula>ae</formula></hi>, en <hi rend="u"><formula>f</formula></hi>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <hi rend="u"><formula>g</formula></hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par conséquent en d'autres points que le centre.
                <lb/>Mr. <rs key="pers_DE-588-118663208" type="person">Bulfinger</rs> semble n'avoir pas fait attention à la difference qu'il y a entre le
-               <lb/>Cercle &amp; le Sphère. Il paroit n'avoir pas remarqué que quoique <hi rend="u">in plano</hi>, on ne
+               <lb/>Cercle <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le Sphère. Il paroit n'avoir pas remarqué que quoique <hi rend="u">in plano</hi>, on ne
                <lb/>peut mener que deux lignes perpendiculaires l'une à l'autre, cependant <hi rend="u">in solido</hi>
 <lb/>on en peut mener trois, de sorte qu'outre les deux Axes <hi rend="u"><formula>ae</formula></hi>, <hi rend="u"><formula>bd</formula></hi>, il en faut imaginer
-               <lb/>un troisième perpendiculaire à ces deux, &amp; au plan de la figure. Mais alors il y aura
-               <lb/>6 vortices mûs en sens contraires deux à deux, &amp; se coupant à angles droits en chaque
-               <lb/>point de la sphére. Mais je ne sais quelle subtilité &amp; hétérogéneité des matières
-               <lb/>qu'on suppose, si elles pourront suffire pour rendre se Système possible &amp; éxécutable
-               <lb/>&amp; si une telle hypothèse peut subsister avec la simplicité de la Nature. Ne diroit-on
+               <lb/>un troisième perpendiculaire à ces deux, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> au plan de la figure. Mais alors il y aura
+               <lb/>6 vortices mûs en sens contraires deux à deux, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> se coupant à angles droits en chaque
+               <lb/>point de la sphére. Mais je ne sais quelle subtilité <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> hétérogéneité des matières
+               <lb/>qu'on suppose, si elles pourront suffire pour rendre se Système possible <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> éxécutable
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si une telle hypothèse peut subsister avec la simplicité de la Nature. Ne diroit-on
                <lb/>pas qu'on nous ramène aux Cieux Cristallins des Anciens Astronomes. Un seul
                <lb/>vortice emporteroit les Corps en Occident. On a recours à un second qui coulant
                <lb/>vers l'Orient remédie à ce defaut. Mais ces deux tourbillons feroient tomber le
                <lb/>corps vers l'axe! Le Magazin des vortices n'est pas epuisé. On en a deux autres
-               <lb/>tout prets à empêcher ce malheur, &amp; à faire tendre le Corps vers le Centre. Mais
+               <lb/>tout prets à empêcher ce malheur, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à faire tendre le Corps vers le Centre. Mais
             <pb facs="1073795" n="4"/>
 <lb/>ils ne suffisent pas! Eh bien, on en ajoutera 2 de plus. Fort bien, c'est donc à dire,
                <lb/>que chaque nouvelle difficulté<del/> demandera 2 nouveaux Tourbillons. Mais
@@ -284,12 +295,12 @@
                <lb/>marqué dans quelque Lettre que toute l'Académie n'est pas unanime contre
                <lb/>la Théorie des Forces vives. Vous voiés ce qu'en pense Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs>. Je suis bien
                <lb/>aise que vous apreniés d'un autre que moi, les mêmes choses que je vous avois
-               <lb/>ecrites, &amp; qu'il a niées à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>. Je n'ai pas cru devoir lui en parler pendant
-               <lb/>mon séjour à <rs key="place_GEO-2988507" type="place">Paris</rs>, ces sortes de tracasseries &amp; d'éclaircissements n'étant point
-               <lb/>de mon gout, &amp; ne convenant pas à un Etranger. Je savois quelles étoient les ideés
-               <lb/>de Mrs. <rs key="pers_DE-588-117584401" type="person">Nicole</rs> &amp; <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>. Le premier balance encore, quoiqu'il panche beaucoup
+               <lb/>ecrites, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'il a niées à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>. Je n'ai pas cru devoir lui en parler pendant
+               <lb/>mon séjour à <rs key="place_GEO-2988507" type="place">Paris</rs>, ces sortes de tracasseries <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'éclaircissements n'étant point
+               <lb/>de mon gout, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne convenant pas à un Etranger. Je savois quelles étoient les ideés
+               <lb/>de Mrs. <rs key="pers_DE-588-117584401" type="person">Nicole</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>. Le premier balance encore, quoiqu'il panche beaucoup
                <lb/>de nôtre côté. Mais l'autre est entièrement persuadé de vos raisons. Il a pourtant
-               <lb/>passé quelques mois en <rs key="place_VER-englan" type="place">Angleterre</rs>, &amp; a une grande estime pour les Mathemati<pc type="hyphenation">-</pc><lb break="no"/>ciens Anglois. Mais elle ne le seduit pas au point de ne voir que par leurs yeux.</p>
+               <lb/>passé quelques mois en <rs key="place_VER-englan" type="place">Angleterre</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> a une grande estime pour les Mathemati<pc type="hyphenation">-</pc><lb break="no"/>ciens Anglois. Mais elle ne le seduit pas au point de ne voir que par leurs yeux.</p>
 <p><lb/>Monsieur s'<rs key="pers_DE-588-118939297" type="person">Gravesande</rs> a commencé à répondre dans le Journal Litteraire
                <lb/>qu'on a repris, aux Objections des Adversaires des Forces vives. Il n'a encore
                <lb/>paru que la première partie de sa reponse où il règle seulement quelques
@@ -297,13 +308,13 @@
                <lb/>envers lui et envers vous. Du reste il n'y a rien encore sur le fonds de la matière.
                <lb/>Le Docteur est mort depuis peu.</p>
 <p><lb/>Il y a quelque tems que je cherche, sans pouvoir la trouver, la construction 
-               <lb/>d'une Courbe dont voici la propriété. <formula>A</formula> &amp; <formula>B</formula> sont deux points fixes
+               <lb/>d'une Courbe dont voici la propriété. <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> sont deux points fixes
                <lb/>donnés, d'où l'on abaisse des perpendiculaires <formula>AD</formula>, <formula>BE</formula>, sur la Touchante
                <lb/>en <formula>C</formula>. On a partout <formula>AD.BE::AC2.a2</formula>. </p>
 <closer><salute>J'ai l'honneur d'étre
                <lb/>avec un profond respect
                <lb/>Monsieur
-               <lb/>Votre très humble &amp; très obéissant Serviteur</salute>
+               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant Serviteur</salute>
 <lb/><signed>G. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs></signed>.
                <lb/><dateline>Geneve ce <date when="1729-07-12">12. Juillet 1729</date>.</dateline></closer>
 </div>

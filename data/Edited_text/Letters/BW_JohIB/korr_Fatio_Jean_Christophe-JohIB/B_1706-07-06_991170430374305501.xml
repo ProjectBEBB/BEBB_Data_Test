@@ -1,14 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--
-      Monsr. Herman -> Hermann, Jacob pers_DE-588-119112450
-
-      mon frere -> Nicolas Fatio de Duillier pers_DE-588-118532049
-
-      Mr. le President de la Societé Royale d'Angleterre -> Newton, Isaac pers_DE-588-118587544
-    --><!--_____________-->
-
-<TEI xml:id="B_1706-07-06_991170430374305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170430374305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -126,8 +116,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1706-04-03_991170430374905501" type="prev"/>
-        <ptr target="B_1706-07-31_991170430373905501" type="next"/>
+        <ptr target="B_991170430374905501" type="prev"/>
+        <ptr target="B_991170430373905501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Fatio_Jean_Christophe-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -146,13 +136,28 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--
+      Monsr. Herman -> Hermann, Jacob pers_DE-588-119112450
+
+      mon frere -> Nicolas Fatio de Duillier pers_DE-588-118532049
+
+      Mr. le President de la Societé Royale d'Angleterre -> Newton, Isaac pers_DE-588-118587544
+    -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="http://fakeURL.com"/>
 </facsimile><text>
 <body>
 <div type="letter">
 <opener><salute>Monsieur</salute>,</opener>
-<p>Il s'est passé bien du tems sans que j'aye fait reponse a l'obligeante <rs key="brieftag" type="letter">lettre</rs><!--vermutlich 1706-04-03, Systemnummer: 000055853--> que je receus de votre part peu aprés mon retour d'<rs key="place_VER-elsass" type="place">Alsace</rs>. Quoi que je me sois par la grace de Dieu toujours bien porté du depuis, il m'est survenu plusieurs afaires qui ont laissé tres peu de tems à ma disposition. Ce que j'en dis, Monsieur, tend a m'excuser, suposé que ma négligence soit excusable. Monsr. <rs key="pers_DE-588-119112450" type="person">Herman</rs> est informé des ocupations facheuses qui m'ont detourné de mes occupations ordinaires. etre en procez, et plaider pour autrui sont des choses tres propres a distraire, et peu capables de satisfaire l'esprit. C'est encore l'état auquel je me rencontre presentement, et duquel je ne me vois pas pret de sortir. Pendant que j'agissois dans ces <rs key="place_GEO-2660646" type="place">quartiers</rs> pour mon <rs key="pers_DE-588-118532049" type="person">frere</rs> qui est en <rs key="place_VER-englan" type="place">Angleterre</rs>, lui de son coté, sans que j'en fusse informé, pria Mr. le <rs key="pers_DE-588-118587544" type="person">President</rs> de la Societé Royale d'<rs key="place_VER-englan" type="place">Angleterre</rs> de me proposer au Conseil de cette Societé pour en étre élu l'un des membre[s]. Ce qu'ayant été fait aussi tost, et le conseil ayant agréé ma nomination la Societé Royale me fit l'honneur de proceder à mon Election le <date when="1706-04-03">3e d'Avril dernier</date> et en ma faveur par un bonheur extraordinaire toutes les voix de l'assemblée, qui étoit alors fort nombreuse, à l'exception d'une voix seulement. Voila une recompense pour le tems que je puis avoir employé à l'étude des arts et des sciences, à laquelle je ne m'atendois pas, et que je n'aurois point pu prétendre, si la Societé Royale ne recevoit dans son corps que des mathematiciens du premier ordre. Adieu, mon cher Monsieur, conservés moi, je vous en conjure, quelque part dans votre amitié et soyés bien persuadé que je suis tres sincerement ........</p>
+<p>Il s'est passé bien du tems sans que j'aye fait reponse a l'obligeante <rs type="letter">lettre</rs><!--vermutlich 1706-04-03, Systemnummer: 000055853--> que je receus de votre part peu aprés mon retour d'<rs key="place_VER-elsass" type="place">Alsace</rs>. Quoi que je me sois par la grace de Dieu toujours bien porté du depuis, il m'est survenu plusieurs afaires qui ont laissé tres peu de tems à ma disposition. Ce que j'en dis, Monsieur, tend a m'excuser, suposé que ma négligence soit excusable. Monsr. <rs key="pers_DE-588-119112450" type="person">Herman</rs> est informé des ocupations facheuses qui m'ont detourné de mes occupations ordinaires. etre en procez, et plaider pour autrui sont des choses tres propres a distraire, et peu capables de satisfaire l'esprit. C'est encore l'état auquel je me rencontre presentement, et duquel je ne me vois pas pret de sortir. Pendant que j'agissois dans ces <rs key="place_GEO-2660646" type="place">quartiers</rs> pour mon <rs key="pers_DE-588-118532049" type="person">frere</rs> qui est en <rs key="place_VER-englan" type="place">Angleterre</rs>, lui de son coté, sans que j'en fusse informé, pria Mr. le <rs key="pers_DE-588-118587544" type="person">President</rs> de la Societé Royale d'<rs key="place_VER-englan" type="place">Angleterre</rs> de me proposer au Conseil de cette Societé pour en étre élu l'un des membre[s]. Ce qu'ayant été fait aussi tost, et le conseil ayant agréé ma nomination la Societé Royale me fit l'honneur de proceder à mon Election le <date when="1706-04-03">3e d'Avril dernier</date> et en ma faveur par un bonheur extraordinaire toutes les voix de l'assemblée, qui étoit alors fort nombreuse, à l'exception d'une voix seulement. Voila une recompense pour le tems que je puis avoir employé à l'étude des arts et des sciences, à laquelle je ne m'atendois pas, et que je n'aurois point pu prétendre, si la Societé Royale ne recevoit dans son corps que des mathematiciens du premier ordre. Adieu, mon cher Monsieur, conservés moi, je vous en conjure, quelque part dans votre amitié et soyés bien persuadé que je suis tres sincerement ........</p>
 </div>
 </body>
 </text></TEI>

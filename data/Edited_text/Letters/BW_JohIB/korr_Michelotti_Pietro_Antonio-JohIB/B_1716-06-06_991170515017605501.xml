@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- GND-Tags eingefügt am 20.12.2018. Alle erwähnten Personen oben aufgeführt ausser den moderatores (unten aufgeführt), die einen Mehrpersonentag brauchen.
-ACHTUNG: Mir ist das erst in diesem Brief aufgefallen: Girolamo Venier ist laut GND seit 2 Jahren tot. Ist das ein Problem? Ist er der erwähnte Mäzen?
-moderatores der Zeit sind:
-Theupolo: Laurentius Theupolo Eq. D.M.P. pers_DE-588-121843858, Tiepolo, Lorenzo 〈1673-1742〉
-Venier: Hieronymus Venerio Eq. D.M.P. Nicolai Eq. D.M.P. Fil. pers_DE-588-1253768439, Girolamo Venier 1650-1735
-Zorzi, Marino: Marinus Georgius Marini F., pers_DE-588-1178380696, Marino Zorzi, Schwiegersohn des Riformatore F. Loredan
---><!-- CG: Nicht der richtige Girolamo Venier getagt, richtig ist:          
-      Girolamo Venier, 1650-1735 pers_DE-588-1253768439      
-
-      am 20-06-2022 Tags korrigiert, im Katalog noch falsch --><!--_____________--><TEI xml:id="B_1716-06-06_991170515017605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515017605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -130,8 +120,8 @@ Zorzi, Marino: Marinus Georgius Marini F., pers_DE-588-1178380696, Marino Zorzi,
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1716-04-25_991170515017705501" type="prev"/>
-        <ptr target="B_1716-07-04_991170515017505501" type="next"/>
+        <ptr target="B_991170515017705501" type="prev"/>
+        <ptr target="B_991170515017505501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -195,6 +185,25 @@ Zorzi, Marino: Marinus Georgius Marini F., pers_DE-588-1178380696, Marino Zorzi,
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- GND-Tags eingefügt am 20.12.2018. Alle erwähnten Personen oben aufgeführt ausser den moderatores (unten aufgeführt), die einen Mehrpersonentag brauchen.
+ACHTUNG: Mir ist das erst in diesem Brief aufgefallen: Girolamo Venier ist laut GND seit 2 Jahren tot. Ist das ein Problem? Ist er der erwähnte Mäzen?
+moderatores der Zeit sind:
+Theupolo: Laurentius Theupolo Eq. D.M.P. pers_DE-588-121843858, Tiepolo, Lorenzo 〈1673-1742〉
+Venier: Hieronymus Venerio Eq. D.M.P. Nicolai Eq. D.M.P. Fil. pers_DE-588-1253768439, Girolamo Venier 1650-1735
+Zorzi, Marino: Marinus Georgius Marini F., pers_DE-588-1178380696, Marino Zorzi, Schwiegersohn des Riformatore F. Loredan
+-->
+<!-- CG: Nicht der richtige Girolamo Venier getagt, richtig ist:          
+      Girolamo Venier, 1650-1735 pers_DE-588-1253768439      
+
+      am 20-06-2022 Tags korrigiert, im Katalog noch falsch -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1078846/manifest"/>
 </facsimile><text>
@@ -203,7 +212,7 @@ Zorzi, Marino: Marinus Georgius Marini F., pers_DE-588-1178380696, Marino Zorzi,
 <pb facs="1078847" n="1"/>
 <opener><salute>Viro <choice><abbr>Pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>clariss.<hi rend="sup">o</hi></abbr><expan>Pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>clarissimo</expan></choice> et toto Orbe <choice><abbr>Celeber.<hi rend="sup">o</hi></abbr><expan>Celeberrimo</expan></choice>
 <lb/>Johanni <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> <abbr>S. P. D.</abbr> Petrus Antonius <rs key="pers_DE-588-102552517" type="person">Michelotti</rs>.</salute></opener>
-<p><hi rend="u"><choice><orig><g ref="#AE">Æ</g></orig><reg>Ae</reg></choice>gritudine difficili atque laborios<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></hi> coactus sum res<pc type="hyphenation">-</pc><lb break="no"/>ponsum usque in hanc diem differre ad humanissi<pc type="hyphenation">-</pc><lb break="no"/>mas <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>que ac <choice><abbr>eruditiss.<hi rend="sup">as</hi></abbr><expan>eruditissimas</expan></choice> <rs key="B_1716-04-25_991170515017705501" type="letter">tuas litteras</rs><note type="editorial">Johann I Bernoulli an Pietro Antonio Michelotti, 25. April 1716</note> die 25. pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>teri<pc type="hyphenation">-</pc><lb break="no"/>ti Aprilis conscriptas: quibus me pluribus Tibi obs<pc type="hyphenation">-</pc><lb break="no"/>trinxisti et potissimum <hi rend="u">eleganti</hi> ac ingeniosa solutio<pc type="hyphenation">-</pc><lb break="no"/>ne problematis quod proposueram. Corporis valitu<pc type="hyphenation">-</pc><lb break="no"/>do non satis firma, vires morbo fract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in causa
+<p><hi rend="u"><choice><orig><g ref="#AE">Æ</g></orig><reg>Ae</reg></choice>gritudine difficili atque laborios<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></hi> coactus sum res<pc type="hyphenation">-</pc><lb break="no"/>ponsum usque in hanc diem differre ad humanissi<pc type="hyphenation">-</pc><lb break="no"/>mas <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>que ac <choice><abbr>eruditiss.<hi rend="sup">as</hi></abbr><expan>eruditissimas</expan></choice> <rs key="B_991170515017705501" type="letter">tuas litteras</rs> die 25. pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>teri<pc type="hyphenation">-</pc><lb break="no"/>ti Aprilis conscriptas: quibus me pluribus Tibi obs<pc type="hyphenation">-</pc><lb break="no"/>trinxisti et potissimum <hi rend="u">eleganti</hi> ac ingeniosa solutio<pc type="hyphenation">-</pc><lb break="no"/>ne problematis quod proposueram. Corporis valitu<pc type="hyphenation">-</pc><lb break="no"/>do non satis firma, vires morbo fract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in causa
              <lb/>sunt ut animum a studiis pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ter meam volun<pc type="hyphenation">-</pc><lb break="no"/>tatem per aliquod tempus <hi rend="u">abstrahere debeam</hi>.
              <lb/>Quocirca his meis litteris solum Te certiorem
              <lb/>faciam (quod etiam pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stare rogavi eruditis<pc type="hyphenation">-</pc><lb break="no"/>simum mihique carissimum <rs key="pers_DE-588-117589144" type="person">Filium</rs> Tuum
@@ -252,5 +261,5 @@ Zorzi, Marino: Marinus Georgius Marini F., pers_DE-588-1178380696, Marino Zorzi,
          <lb/>meque amare perge.</salute>
 <dateline>Dabam <rs key="place_GEO-3164603" type="place">Venetiis</rs> <date when="1716-06-06">6 Junii
             <lb/>1716</date>.</dateline></closer>
-<postscript><p>P. S. Responsio <rs key="pers_DE-588-119166895" type="person">Agnati</rs> Tui<note type="editorial">Annahme: Nicolaus I Bernoulli, nicht der Maler. Prüfen!</note> ad Comitem Jacobum <rs key="pers_DE-588-119543885" type="person">Ric<pc type="hyphenation">-</pc><lb break="no"/>catum</rs> inserta iam est Diarii Veneti<!-- sachtag --> Tomo XXIII.</p></postscript>
+<postscript><p>P. S. Responsio <rs key="pers_DE-588-119166895" type="person">Agnati</rs> Tui<note type="internal">Annahme: Nicolaus I Bernoulli, nicht der Maler. Prüfen!</note> ad Comitem Jacobum <rs key="pers_DE-588-119543885" type="person">Ric<pc type="hyphenation">-</pc><lb break="no"/>catum</rs> inserta iam est Diarii Veneti<!-- sachtag --> Tomo XXIII.</p></postscript>
 </div></body></text></TEI>

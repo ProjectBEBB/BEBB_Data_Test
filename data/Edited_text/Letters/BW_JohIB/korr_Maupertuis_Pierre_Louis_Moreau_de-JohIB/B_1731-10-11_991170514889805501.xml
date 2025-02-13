@@ -1,236 +1,523 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1731-10-11_991170514889805501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Pierre Louis Moreau de Maupertuis. Basel, 11. Oktober 1731</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Am Briefkopf eigenhändig "à Mr. de Maupertuis". Ebenso Schlussfloskel und Signatur. Am Kopf von fo.3r findet sich eine Bleistiftnotiz (von Joh. III B.?) "cette presente copie est de sa main". Sie bezieht sich auf die Textstelle, in der Joh.I B. schreibt, dass sein dritter Sohn der gerade aus Genf zurückgekommen sei, für ihn Kopien angefertigt habe, da er leserlicher schreibe als sein Bruder Jean. NB. Jean war der dritte Sohn von Joh. I B.!</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514889805501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Pierre Louis Moreau de Maupertuis.
+            Basel, 11. Oktober 1731</title><title type="alt">get_date!: () an ()</title><title
+            type="alt">000056528</title><title type="alt"
+            >1731-10-11_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de</title><title level="s"
+            >Basler Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Maupertuis, Pierre Louis Moreau de (1698-1759)
+        </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Am Briefkopf eigenhändig "à Mr. de Maupertuis". Ebenso
+            Schlussfloskel und Signatur. Am Kopf von fo.3r findet sich eine Bleistiftnotiz (von Joh.
+            III B.?) "cette presente copie est de sa main". Sie bezieht sich auf die Textstelle, in
+            der Joh.I B. schreibt, dass sein dritter Sohn der gerade aus Genf zurückgekommen sei,
+            für ihn Kopien angefertigt habe, da er leserlicher schreibe als sein Bruder Jean. NB.
+            Jean war der dritte Sohn von Joh. I B.!</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1731-10-11_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 662, Nr.13</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514889805501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433098005504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000056528</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>12 S.<dimensions unit="cm">
+                    <height>21,5</height>
+                    <width>17</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bâle</origPlace><date when="1731-10-11">ce 11o 8bre
+              1731</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1731-10-11_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 662, Nr.13</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514889805501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433098005504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000056528</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>12 S.<dimensions unit="cm"><height>21,5</height><width>17</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bâle</origPlace>
-            <date when="1731-10-11">ce 11o 8bre 1731</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1731-10-11">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-118731998">Maupertuis, Pierre Louis Moreau de</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1731-09-12_991170514890005501" type="prev"/>
-        <ptr target="B_1731-10-23_991170514889505501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Maupertuis_Pierre_Louis_Moreau_de-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person>
-          <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
-          <note type="lebensdaten">(1700-1782)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1153515857">Bernoulli, Franz</persName>
-          <note type="lebensdaten">(1705-1777)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1089913311">Bernoulli, Jacob</persName>
-          <note type="lebensdaten">(1712-1769)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117589136">Bernoulli, Johann</persName>
-          <note type="lebensdaten">(1710-1790)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117622974">Bouguer, Pierre</persName>
-          <note type="lebensdaten">(1698-1758)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-11670912X">Cramer, Gabriel</persName>
-          <note type="lebensdaten">(1704-1752)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
-          <note type="lebensdaten">(1564-1642)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117553239">Graham, George</persName>
-          <note type="lebensdaten">(1673-1751)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <note type="lebensdaten">(1678-1733)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-124520839">Kühn, Joachim</persName>
-          <note type="lebensdaten">(1647-1697)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine de</persName>
-          <note type="lebensdaten">(1661-1704)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d'Allonville de</persName>
-          <note type="lebensdaten">(1671-1732)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-11931035X">Mairan, Jean Jacques de</persName>
-          <note type="lebensdaten">(1678-1771)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1156430828">Longueil, Jean René de</persName>
-          <note type="lebensdaten">(1699-1731)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1046082612">Moula, Frédéric</persName>
-          <note type="lebensdaten">(1703-1782)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-          <note type="lebensdaten">(1643-1727)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118610260">Schöpflin, Johann Daniel</persName>
-          <note type="lebensdaten">(1694-1771)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
-          <note type="lebensdaten">(1685-1731)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-          <note type="lebensdaten">(1654-1722)</note>
-        </person>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1074957/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1074958" n="1"/> <pb facs="1074959" n="2"/> <pb facs="1074960" n="3"/> <pb facs="1074961" n="4"/> <pb facs="1074962" n="5"/> <pb facs="1074963" n="6"/> <pb facs="1074964" n="7"/> <pb facs="1074965" n="8"/> <pb facs="1074966" n="9"/> <pb facs="1074967" n="10"/> <pb facs="1074968" n="11"/> <pb facs="1074969" n="12"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1731-10-11">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-118731998">Maupertuis, Pierre Louis Moreau de</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_991170514890005501" type="prev"/>
+          <ptr target="B_991170514889505501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Maupertuis_Pierre_Louis_Moreau_de-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-118656503">Bernoulli, Daniel</persName>
+            <note type="lebensdaten">(1700-1782)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1153515857">Bernoulli, Franz</persName>
+            <note type="lebensdaten">(1705-1777)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1089913311">Bernoulli, Jacob</persName>
+            <note type="lebensdaten">(1712-1769)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117589136">Bernoulli, Johann</persName>
+            <note type="lebensdaten">(1710-1790)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117622974">Bouguer, Pierre</persName>
+            <note type="lebensdaten">(1698-1758)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11670912X">Cramer, Gabriel</persName>
+            <note type="lebensdaten">(1704-1752)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
+            <note type="lebensdaten">(1564-1642)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117553239">Graham, George</persName>
+            <note type="lebensdaten">(1673-1751)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+            <note type="lebensdaten">(1678-1733)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-124520839">Kühn, Joachim</persName>
+            <note type="lebensdaten">(1647-1697)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine
+              de</persName>
+            <note type="lebensdaten">(1661-1704)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d'Allonville
+              de</persName>
+            <note type="lebensdaten">(1671-1732)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11931035X">Mairan, Jean Jacques de</persName>
+            <note type="lebensdaten">(1678-1771)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1156430828">Longueil, Jean René de</persName>
+            <note type="lebensdaten">(1699-1731)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1046082612">Moula, Frédéric</persName>
+            <note type="lebensdaten">(1703-1782)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118610260">Schöpflin, Johann Daniel</persName>
+            <note type="lebensdaten">(1694-1771)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118801481">Taylor, Brook</persName>
+            <note type="lebensdaten">(1685-1731)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+            <note type="lebensdaten">(1654-1722)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1731-10-11_Bernoulli_Johann_I-Maupertuis_Pierre_Louis_Moreau_de"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1074957/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1074958" n="1"/> Monsieur </p>
+        <p>Pour repondre à l'honneur de Votre lettre ecrite de St. Malo le 12.<hi rend="sup">e</hi>
+          septembre je commence par l'article concernant Mr. le President de Maisons, qui devoit
+          faire un tour en Alsace pour voir ses terres et pousser ensuitte jusqu'à Basle exprés pour
+          me voir, comme Vous dites, ce qui m'auroit causé une joye inexprimable de recevoir la
+          visite d'un Homme si illustre: Mais le lendemain de la reception de Votre lettre, cette
+          joie se changea subitement dans un déplaisir sensible, lorsque je lus dans notre gazette
+          que Mr. de Maisons avoit eté attaqué de la petite verole, quoique pour adoucir cette
+          mechante nouvelle on y ait dit en meme tems que le venin sortoit tres bien et avec
+          beaucoup de succés; Cependant la gazette suivante nous annonça sa mort contre toute
+          attante, j'en fus jetté, je Vous asseure dans la derniere consternation, de voir que cette
+          Personne d'une des plus illustres familles et d'un merite distingué nous est enlevée par
+          la mort dans la fleur de son age, n'ayant eu que 32 ans; tandis que tant d'autres gens,
+          qui ne sont d'aucune utilité dans le monde, que pour faire du mal, et pour consumer les
+          fruits de la Terre, <hi rend="u">fruges consumere nati</hi>, vivent heureux pendant un
+          grand nombre d'années jusqu'à une vieillesse decrepite. La gazette ajoute que notre
+          illustre Defunt avoit fait un livre tres curieux qui venoit justement de sortir de dessous
+          la Presse, en 2 Tomes in 4.<hi rend="sup">to</hi> avec quantité de figures en taille
+          douce, ce livre est une histoire de l'Isle de St. Dominique,<note type="editorial">[Text
+            folgt]</note> tres bien ecrite et receue dans le Public avec beaucoup d'applaudissement,
+          à ce que dit la Gazette. Ce Mr. Chefflin (ou <hi rend="u">Schöpflin</hi> comme <pb
+            facs="1074959" n="2"/> il s'ecrit) que Vous trouvates ches Mr. de Maisons, a eté
+          autrefois mon Disciple pendant deux ans avec bien de succés;<note type="editorial">[Text
+            folgt]</note> il avoit un talent admirable pour les Mathematiques, mais il les a
+          quittées pour embrasser l'etude des belles lettres et des antiquités, où il excelle
+          présentement et surtout dans la connoissance des medailles. Il a succedé au fameux Mr.
+          Khun, Professeur de l'histoire et de l'Eloquence Romaine. Mon fils intime ami de Mr.
+          Schoepflin, lui avoit procuré la vocation à la Chaire de cette science à Petersbourg avec
+          un appointement de 1200 Roubels; mais Mr. Schöpflin a mieux aimé rester à Strasbourg, où
+          il est estimé, que d'aller devenir le Collegue de mon fils dans un Pays si eloigné, où il
+          n'auroit pas manqué de se faire estimer aussi: Ainsi il a refusé la vocation. Il seroit à
+          souhaitter pour les Pretendants aux Prix que Mr. Bouguer fut déja Membre de l'Academie,
+          afin qu'il ne put plus leur ravir le prix, dont il a remporté deja trois, à l'exemple de
+          Mr. de Mairan, que Vous dites qu'il imite, et qui a aussi remporté trois fois le prix de
+          Bourdeaux. Il est vrai que les pieces de Mr. Bouguer, comme celles de Mr. de Mairan, sont
+          extremement longues; c'est cette longueur qui a fait que je n'en ai encore leu que la
+          premiere sur la mature des Vaisseaux,<note type="editorial">[Text folgt]</note> que j'ai
+          trouvé asses bonne, à la longueur prés: Ces deux Messieurs sont asseurement des Champions
+          redoutables, l'un pour ses concurrants aux prix, l'autre pour ces adversaires; L'un et
+          l'autre les metamorphosent en statues par leurs longues pieces comme Persée le faisoit par
+          l'aspect de la Tete de Meduse. Vous dites, Monsieur, que Dieu <pb facs="1074960" n="3"/>
+          merci Vous ne serés pas si tot du nombre des Juges, mais moi je souhaitterois fort que
+          Vous en fussiés deja ou bientot, afin que l'envie me prit de travailler derechef à quelque
+          piece pour un sujet qui me seroit convenable, au lieu que sans cela je ne serois plus
+          gueres tenté de revenir à la charge, dans l'incertitude où on est de reussir ou d'echouer
+          quelque bonne que soit la piece que l'on auroit faitte. Enfin il est facheux de travailler
+          à l'avanture et de dependre du caprice de ceux qui ne suivent que leur propre gout, qu'on
+          ne peut attrapper que par hazard, comme je crois qu'il m'est arrivé en composant ma piece
+          sur les Planettes.<note type="editorial">[Text folgt]</note> Je crois que rien ne presse
+          pour aller en Angleterre, et les petites commissions que j'ai eu la fantaisie de Vous
+          donner pour les Mathematiciens de ce Pays là, peuvent fort bien rester inexecutées. Ce
+          sera une plus grande satisfaction pour moi, si Vous remplissés l'esperance que Vous me
+          faittes de me revenir voir l'année prochaine ici à Basle; auquel cas je Vous prie de
+          prendre d'abord Votre logement dans notre Maison, ou nous Vous logeront et traitteront le
+          mieux que nous pourrons. Comme ce ne sera qu'une visite dont Vous nous honorerés, il est
+          bien juste que nous Vous possedions entierement; les raisons qui ne me permettoient pas
+          d'avoir l'honneur de Vous recevoir chés nous la premiere fois,<note type="editorial">[Text
+            folgt]</note> n'auront pas lieu quand il s'agit d'une visite qui me sera des plus
+          agreables et honorables. Le caractére de gallant homme que Vous attribués à Mr. Taylor ne
+          devoit pas lui permettre de m'accabler d'injures et de grossieretés dans un Ecrit publié
+          contre moi, pendant que dans ses discours et conversations particulieres il me rendoit
+          justice et <pb facs="1074961" n="4"/> me droyoit digne de son estime; Cela s'appelle
+          dementir ses sentiments interieurs, ce qu'un gallant homme ne pratique jamais; si je lui
+          ai donné quelque sujet de mécontentement dans un Ecrit, où je lui ai pourtant donné toute
+          sorte d'Eloges,<note type="editorial">[Text folgt]</note> un petit éclaircissement auroit
+          peu redresser tout cela: ce qui plus est, aprés son invective deja publiée,<note
+            type="editorial">[Text folgt]</note> j'ai eu l'honnetteté de lui offrir par Mr. Varignon
+          ma reconciliation<note type="editorial">[Text folgt]</note> moyenant un mot de lettre
+          d'excuse que Mr. Taylor eut pû prendre la peine de m'ecrire, sans que j'eusse prétendu
+          qu'il le fit publiquement; Mais s'en etant moqué avec mépris et une hauteur insupportable,
+          je me suis enfin crû en droit de lacher mon apologie: voilà comme cette affaire s'est
+          passée, c'est à Vous Monsieur, à juger, qui de nous deux a plus observé le caractére de
+          gallant homme, de Lui ou de moi, aprés les avances que je lui fis faire. </p>
+        <p>Si Vous croyés que tout ce que j'ai fait sur les forces vives étoit réuni dans un corps
+          d'ouvrage, seroit capable de triompher sur les esprits renitents, nous pourrons travailler
+          ensemble, quand Vous serés ici, à fouiller dans mes papiers pour en recuillir ce que Vous
+          jugerés le plus important dans cette matiere; il faudra mettre le tout en ordre et en bon
+          françois, mais je ne sache personne, qui soit plus au fait et partant plus capable que
+          Vous Monsieur d'executer l'un et l'autre. En attendant pour Vous satisfaire sur ce que
+          Vous me demandés touchant la reponse que j'ai donnée à l'objection tirée de l'experience
+          de Mr. Graham, faitte avec une plaque de cuivre, que l'on chargeoit d'un poids egal de
+          plomb pendant qu'elle faisoit ses oscillations;<note type="editorial">[Text folgt]</note>
+          j'ai creu ne pouvoir mieux faire, pour <pb facs="1074962" n="5"/> m'epargner la peine de
+          recoucher par ecrit ce que j'ai deja fait une fois, que de Vous communiquer les Extraits
+          de deux Lettres que j'avois ecrites là dessus à Mr. Cramer; J'ai fait copier ces Extraits
+          par mon troisieme fils <note type="editorial">Hier ein + und darüber am obern Rande der
+            Seite die Bemerkung in Bleistiftschrift: "cette presente copie est de sa main".</note>
+          nouvellement arrivé de Geneve, qui ecrit plus lisiblement que son frére Jean: Mr. Moula
+          est allé faire un tour à Neufchatel sa Patrie, et je ne sai quand il en reviendra ainsi il
+          n'a pas pû faire ces copies, comme Vous l'auriés peut etre souhaitté. Vous avés trop bonne
+          opinion de la cause des forces vives, lorsque Vous dites, que heuresement elle n'a plus
+          besoin de rien d'etre decidée; Car outre la longue piece de Mr. de Mairan donnée dans les
+          memoires de 1728, Vous devés en avoir veu une de Mr. le Chevallier de Louville dans les
+          memoires de 1729, qui n'est gueres moins longue, encore nous menacet-il de nous en donner
+          une autre; ces Messieurs chantent victoire à pleine gorge, voyant que personne n'ose leur
+          repondre pour defendre les forces vives; Est ce donc que Vous pouvés dire avec raison, que
+          la cause de nos forces triomphe n'ayant plus besoin de rien d'etre décidée? Il est vrai,
+          pour parler serieusement, que Mr. de Louville l'emporte sur Mr. de Mairan, parce qu'on
+          entend au moins ce qu'il veut, au lieu que celui cy n'est pas intelligible et partant
+          irrefutable: Mais je n'ai rien vû de si ridicule que les arguments dont se sert Mr. de
+          Louville, pour détruire la plus forte demonstration que j'ai donnée en faveur des forces
+          vives dans mon discours sur le mouvement;<note type="editorial">[Text folgt]</note> c'est
+          celle qui se trouve au Chap. VII fondée sur la nature de l'accelleration, dont le principe
+          (consistant en cette equation <formula>pdt=\frac{pdx}{v}=dv</formula> ) est receu comme
+          Vous savés de tout le monde, et meme en Angleterre, puisque tout le livre de Mr. Newton
+          est presque bati sur ce principe. Cependant Mr. de Louville <pb facs="1074963" n="6"/> a
+          la hardiesse de me contester ce principe pag. 173. Et pour colorer son audace il invente
+          p. 172 cette heureuse distinction entre les pressions <hi rend="u">continuelles</hi> et
+            <hi rend="u">continues</hi>, prétendant que la pression des ressorts (dont la cause
+          vient des impulsions d'un fluide subtil) est bien <hi rend="u">continuelle,</hi> mais non
+          pas <hi rend="u">continue</hi>; Et qu'ainsi dans l'estimation des forces d'un ressort qui
+          se debande, il faut avoir egard à la frequence des impulsions de la matiere subtile, dont
+          la multitude selon lui dans un tems donné, est en raison reciproque du nombre des ressorts
+          uniformes dont est composé une suitte: De là il tire cette étrange conclusion qu'une suite
+          d'un grand nombre de ressorts uniformes et comprimés à un meme degré de compression
+          n'imprime pas une plus grande vitesse par son debandement à un corps qu'il chasse, que
+          feroit une suitte d'un petit nombre de ressorts egaux aux premiers et egalement bandés sur
+          un autre corps egal au premier, quoique l'experience puisse refuter mille fois par jour
+          cette chimére; car une grande charge de poudre à canon, ne porterat-elle pas la bale plus
+          loin, que fera une petite charge? Or les grains de la poudre que sont ils autre chose que
+          de petits ressorts, qui se debandend quand on y met le feu? Ainsi les grains situés bout à
+          bout en ligne droite representent une suite de ressorts, et il y a autant de ces suites
+          dans la petite charge que dans la grande, parceque je suppose que l'experience se fait
+          avec un meme mousquet ou avec deux mousquets de meme calibre. On devroit étre bien obligé
+          à Mr. de Louville de sa belle découverte, parcequ'on pourroit epargner beaucoup de poudre,
+          si on pouvoit faire le meme effet avec une petite quantité qu'avec une plus grande. Mais
+          je m'etonne que <pb facs="1074964" n="7"/> Mr. de Louville ose reproduire cette niaiserie,
+          aprés que je lui ai deja fait voir le ridicule il y a quelques années dans une lettre à
+          Mr. de Mairan,<note type="editorial">[Text folgt]</note> qui m'avoit envoyé une pièce en
+          manuscript contre les forces vives, faite par Mr. de Louville<note type="editorial">[Text
+            folgt]</note> mais il faut qu'il ait supprimé cette piece là, puisqu'elle etoit
+          differente de celle qu'il a donnée maintenant dans les memoires; je m'etois servi dans ma
+          lettre de la meme experience à faire avec deux charges inegales de poudre à canon; est ce
+          que ces Messieurs veulent encore douter de la verité du fait? </p>
+        <p>Revenons à l'heureuse decouverte de l'inegalité de frequence des impulsions du fluide qui
+          cause la force du ressort: Ces impulsions dit-il sont moins frequentes sur les ressorts
+          particuliers qui composent une longue suitte, que sur ceux qui en composent une moins
+          longue, mais il ne se met pas en peine de nous en donner aucune raison, pour faire voir
+          pourquoi le meme fluide fait ses impulsions sur les memes petits ressorts particuliers
+          tantot plus tantot moins frequemment selon que ces ressorts sont en moins grand ou en plus
+          grand nombre; le bon sens ne dictet-il pas, que comme le fluide agit toujours sur chaque
+          petit ressort independamment des autres, il faut qu'il imprime dans un tems donné le meme
+          nombre d'impulsions soit que ce ressort soit unique ou qu'il soit joint à d'autres, <hi
+            rend="u">posita causa ponitur effectus</hi>, c'est un axiome que personne ne s'est avisé
+          de nier; Mais Mr. de Louville le nie, parceque cela l'accomode, cependant il ne prend pas
+          garde, qu'il en resulte une plaisante consequence; la voici, s'il y a deux suites de
+          ressorts, l'une par exemple de douze et l'autre de trois petits ressorts, il faut
+          attribuer au fluide une intelligence et meme l'art de conter les deux nombres de ces
+          ressorts, afin qu'il fasse des impulsions <pb facs="1074965" n="8"/> quatre fois plus
+          frequentes sur les trois ressorts de la petite suitte qu'il n'en doit faire sur la longue
+          suitte de 12 ressorts; Qui est ce donc qui donne cet instinct à la nature, pour faire
+          qu'une meme cause fasse ses effets elementaires tantot plus tantot moins frequemment?
+          Pourquoi son action n'est elle pas toujours et partout uniforme? ces petits intervalles de
+          tems que Mr. de Louville met entre les impulsions successives, ne sont qu'une pure
+          imagination, dont il est bien permis de se servir comme Galilée s'est servi le premier
+          dans l'effet de la pesanteur pour en deduire la loi de l'accélleration, mais il n'avoit
+          garde de croire que ces impulsions etoient réellement separées, les unes des autres par de
+          petits intervalles de tems, dans les quels la pesanteur demeure dans l'inaction; C'est
+          ainsi aussi que les Géometres considérent les courbes comme des polygones infini lateraux,
+          les aires curvilignes comme composées de petits rectangles, les mouvements accellerés
+          comme ayant des vitesses uniformes pendant un tems infiniment petits etc. sans prétendre
+          pour cela que ces choses soyent telles dans la nature meme; car <hi rend="u">Natura non
+            facit saltum</hi>, tout est continu et toute quantité est divisible à l'infini, or une
+          force morte ou une pression est une quantité, ses parties sont donc continues, son action
+          est donc sans interruption, sans intervalle, enfin sans cesser d'un moment à l'autre. Mais
+          quoi qu'il en soit, le bon Mr. de Louville prend etrangement le change quand il croit
+          trouver dans la nature des ressorts un subside pour détruire ma demonstration du chap. 7
+          dans les discours sur le mouvement;<note type="editorial">[Text folgt]</note> il
+          s'accroche vainement aux ressorts et à leur maniere imaginaire d'agir par petits
+          intervalles; ne voit-il pas, que la supposition des ressorts ne fait pas une partie
+          essentielle de la demonstration, puisqu'ils n'y sont que comme les lignes que l'on <pb
+            facs="1074966" n="9"/> suppose tirées dans les figures quand on veut demontrer quelque
+          theoréme? Si les ressorts ne lui paroissent pas propres, parceque leur pression n'est pas
+          continue mais entrecoupée par petits intervalles; hé bien! je lui permets d'abandonner les
+          ressorts et de leur substituer d'autres agents quelqu'ils soyent, qui ayent la vertu de
+          presser continuement et sans interruption comme fait la cause de la pesanteur, pourvû que
+          ces Agents soyent tous egaux entre eux et semblables; m'accorderat-il qu'en ce cas ma
+          demonstration sera bonne? je n'en demande pas d'avantage, car il s'ensuit toujours que la
+          force vive d'un corps est proportionelle au carré de sa vitesse: me repliquerat-il, que de
+          tels agents ne se trouveront peutetre pas dans la nature des choses? mais qu'importe? une
+          impossibilité physique n'est pas une impossibilité absolue, qui implique une
+          contradiction; il s'agit icy de demontrer simplement et non pas d'executer. Si
+          l'impossibilité de l'execution de ce qu'on suppose dans la demonstration etoit une raison
+          suffisante pour la rejetter, on pourroit rejetter avec le meme droit l'application de la
+          Trigonometrie dans l'Astronomie, car qui est ce qui tirera les lignes d'une etoile à
+          l'autre ou d'un point du Ciel à l'autre, que les regles trigonometriques prescrivent de
+          tirer pour entendre et faire les calculs? L'instance que Mr. de Louville Astronome lui
+          meme voudroit faire, qu'il faut tirer ces lignes par l'imagination, ne Lui serviroit de
+          rien, car je repondrois tout aussi tot, qu'il n'y a qu'à employer par la pensée des Agents
+          qui pressent continuement, ma demonstration ne laissera pas d'etre toujours bonne, à moins
+          qu' il ne prétende qu'un tel Agent est un être de raison, ou quelque chose de
+          contradictoire, ce qu'il ne prouvera jamais. À propos de la <pb facs="1074967" n="10"/>
+          plaisante distinction entre la pression <hi rend="u">continuelle</hi> et <hi rend="u"
+            >continue</hi>: Mr. de Louville seroit embarassé de traduire sa piece en latin, il lui
+          faudroit pour cela inventer un nouveau terme fort barbare en distinguant <hi rend="u"
+            >inter pressionem continualem et continuam</hi>. J'aurois bien des choses à dire encore
+          sur l'absurdité du Systeme de Mr. de Louville, je Lui ferois voir entre autres, que son
+          propre raisonnement se peut retorquer directement contre ce qu'il veut prouver, et que par
+          consequent c'est un miserable sophysme. Mais en voilà bien assés Monsieur, pour le
+          confondre; Cependant si Vous croyés que sa pièce merite une reponse, d'autant plus qu'il
+          s'adresse à moi et me nomme, Vous pourriés mettre en ordre ce que je viens de dire icy
+          sans ordre, et en composer un mémoire en forme, soit sous Votre nom ou sous le mien, je ne
+          doute pas que la richesse de Votre propre fond ne Vous fournisse quantité d'autres
+          remarques à faire sur l'ecrit de Mr. de Louville, si Vous voulés prendre la peine de le
+          lire avec un peu d'attention: Et la reponse faitte de Votre plume aura mille fois plus de
+          grace et de force, qu'elle n'auroit si elle partoit seulement de ma plume particulierement
+          auprés de ceux qui se seront laissés eblouir par l'air d'autorité et de confiance avec
+          lequel Mr. de Louville affecte de parler magistralement dans tout le cours de sa pièce,
+          osant meme nous reprocher que nous confondons les forces de differente nature ce que nous
+          reprochons justement aux Adversaires des forces vives; <hi rend="u">Quis tulerit Gracchos
+            etc.</hi><note type="editorial">Juvenal, <hi rend="u">Satiren</hi>, II, 24</note> La
+          methode pour integrer de Mr. Herman contenu dans le I Volume des Memoires de
+            Petersbourg<note type="editorial">Hermann, Jacob Na. 042, <hi rend="u">De caluculo
+              integrali</hi>, CP I, 1726 (1728), pp. 149-167</note> dont Vous me demandés mon avis,
+          ne me paroit pas aussi generale qu'il la vente; car il y faut aller en tatonnant <pb
+            facs="1074968" n="11"/> comme dans les methodes ordinaires, pour determiner ses
+          veritables <formula>dK</formula> et <formula>R</formula> etant visible que le
+            <formula>R^{\lambda}dK</formula> souffre dans chaque exemple une infinité de
+          décompositions en deux facteurs, sans qu'on puisse voir d'abord lesquels sont ceux qu'il
+          faut choisir. Prennons son 3.<hi rend="sup">e</hi> exemple
+            <formula>du=x^{3}dx:\sqrt{}(aa-xx)</formula>, où il dit, <hi rend="u">In hoc exemplo
+            fit</hi>
+          <formula>dK=x^{3}dx</formula>, <formula>R=aa-xx</formula>
+          <hi rend="u">et</hi>
+          <formula>\lambda=-\frac{1}{2}</formula>; mais pourquoi ne fait-il pas tout court
+            <formula>dK=dx</formula>, <formula>R=x^{3}:\sqrt{}(aa-xx)</formula> et
+            <formula>\lambda=1</formula>, ou bien <formula>dK=xdx</formula>,
+            <formula>R=xx:\sqrt{}(aa-xx)</formula> et <formula>\lambda=1</formula>; ou aussi
+            <formula>dK=x^{3}dx</formula> comme il fait, mais <formula>R=\sqrt{}(aa-xx)</formula> et
+            <formula>\lambda=-1</formula>, ou en telle autre manière que l'on voudra; dirat-il que
+          tout cela est arbitraire, en ce cas je voudrois bien voir l'application de sa Regle pour
+          toute sorte de facteurs qui composent le <formula>x^{3}dx:\sqrt{}(aa-xx)</formula>. Quand
+          on a un peu d'adresse et d'experience on integrera plus facilement les exemples qu'il
+          allegue, en observant ce que j'ai expliqué sur cela dans mes Leçons pour Mr. de
+            l'Hopital;<note type="editorial">[Text folgt]</note> il n'y a qu'à bien choisir sa
+          quantité que j'appelle <hi rend="u">quantitatem absolutam</hi>, et voir si sa
+          differentielle se trouve multipliée par une ou par la somme des multiples ou sous
+          multiples de plusieurs puissances de la quantité absolue, auquel cas la differentielle
+          proposée sera toujours integrable. Il semble que Mr. Herman ait formé sa Regle par un long
+          circuit sur mon Précepte, aussi ce meme exemple et la plupart des autres qu'il propose,
+          sont empruntés de moi: soit pour un echantillon son 5.<hi rend="sup">e</hi> exemple
+            <formula>du=3kdz-lzzdz:zz\sqrt{}(kz-lz^{3}+mz^{4}),</formula> je cherche ma quantité
+          absolue dans le <formula>kz-lz^{3}+mz^{4}</formula>, mais voyant que sa differentielle a
+          trois termes au lieu que la formule n'en a que deux, où le <formula>m</formula> n'entre
+          pas, c'est pourquoi je divise le <formula>mz^{4}</formula> et par consequent touts les
+          autres dans le numerateur et denominateur, par <formula>\sqrt{}z^{4}</formula> afin que le
+            <formula>m</formula> ne se trouve pas dans la differentielle de la quantité absolue, de
+          cette maniere j'aurai
+            <formula>3kdz-lzzdz:zz\sqrt{}(kz-lz^{3}+mz^{4})=\frac{3kdz}{z^{4}}-\frac{ldz}{zz}:\sqrt{}(\frac{k}{z^{3}}-\frac{l}{z}+m)</formula>,
+            <pb facs="1074969" n="12"/> où je vois tout d'un coup que le numerateur est la
+          differentielle prise negativement de la quantité absolue aprés le signe du dénominateur
+            <formula>\frac{k}{z^{3}}-\frac{l}{z}+m</formula>, ainsi cette fraction est integrable,
+          son intégrale etant <formula>=-2\sqrt{}(\frac{k}{z^{3}}-\frac{l}{z}+m)</formula> ou
+            <formula>-2\sqrt{}(mz^{3}-lzz+k):\sqrt{}z^{3}</formula>. Il est vrai que dans tout ceci
+          il faut de la sagacité, mais je crois que la practique de la Regle de Mr. Herman n'en
+          demande pas moins, puisque il n'y a rien de certain pour le choix de
+          <formula>dK</formula>, <formula>R</formula> et <formula>\lambda</formula>;<note
+            type="editorial">Durch Nachrechnen prüfen, ob jeweils <formula>k</formula> oder
+              <formula>K</formula> gemeint ist.</note> et qu'il faut les choisir par son adresse,
+          qui est la seule regle qu'on doit consulter. Nous en parlerons plus amplement quand
+          j'aurai le plaisir de Vous voir. </p>
+        <p>Voilà Monsieur une lettre, qui doit bien fatiguer Votre patience mais prenés Vous en à la
+          multitude des matières dont Vos Lettres sont remplies, et auxquelles il m'est impossible
+          de repondre succinctement, n'ayant pas encore appris l'art du laconisme sans etre obscur,
+          sur tout quand il me faut ecrire dans Votre langue que j'entens si imparfaitement. Mon
+          Neveu est enfin arrivé depuis peu;<note type="editorial">[Text folgt]</note> il me dit
+          mille choses de toutes les honnettetés dont Vous l'avés comblé; lui et son Père aussi bien
+          que moi, nous Vous en sommes touts infiniment redevables: je sai bien que moi seul devrois
+          me charger de toutes les obligations qu'on Vous en a, parceque ce n'est qu'en ma
+          consideration que Vous avés fait sentir tant de bontés à un jeune homme, qui sans moi Vous
+          auroit eté entierement indifferent et inconnu; aussi est ce par cet endroit comme par
+          plusieurs autres que je Vous dois une sincère et eternelle reconnoissance jointe à la
+          parfaitte estime avec laquelle j'ai l'honneur d'etre Monsieur Votre etc. J. Bernoulli </p>
+        <p>Bale ce 11.<hi rend="sup">e</hi> 8<hi rend="sup">bre</hi> 1731 </p>
+      </div>
+    </body>
+  </text>
 </TEI>

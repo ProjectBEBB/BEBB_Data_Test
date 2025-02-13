@@ -1,16 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-      Monsieur vre. Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
-      
-      l'imprimeur -> 
-      
-      Mr. le Profr. Cramer -> Cramer, Gabriel pers_DE-588-11670912X
-      
-      les personnes désignées ->
-      
-      un ami -> 
-      --><!--_____________--><TEI xml:id="B_1743-01-15_991170516515205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170516515205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -130,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1743-01-02_991170430342405501" type="prev"/>
-        <ptr target="B_1743-01-29_991170516515105501" type="next"/>
+        <ptr target="B_991170430342405501" type="prev"/>
+        <ptr target="B_991170516515105501" type="next"/>
         <ptr target="BW_JohIIB" type="Briefwechsel"/>
         <ptr target="korr_Bousquet_Marc-Michel-JohIIB" type="Korrespondenz"/>
       </correspContext>
@@ -162,6 +151,25 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+      Monsieur vre. Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
+      
+      l'imprimeur -> 
+      
+      Mr. le Profr. Cramer -> Cramer, Gabriel pers_DE-588-11670912X
+      
+      les personnes désignées ->
+      
+      un ami -> 
+      -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/3833177/manifest"/>
 </facsimile><text>
@@ -169,7 +177,7 @@
 <div type="letter">
 <pb facs="3833178" n="1"/> <pb facs="3833179" n="2"/> <pb facs="3833180" n="3"/> <pb facs="3833181" n="4"/>
 <opener><salute>Monsieur</salute></opener>
-<p>Voici de renvoy la lre. <rs key="brieftag" type="letter">Lettre</rs> de Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs> lequel je m'assure à present ne fera rien metre dans aucun Journal, ni nulle part, qui pût tendre à décrediter notre edition; il y en a bien assés dans la <rs key="brieftag" type="letter">Lettre</rs> en question &amp; qui est entre les mains de l'<rs type="person">imprimeur</rs>; je l'envoyerai dabord à Mr. le Profr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs> qui ne reculera plus pour la Preface, si necessaire &amp; qui est la seule chose qui me manque à present pour rendre complet le ler. Tome à la tete duquel tout cela doit etre placé; car pour le reste du Tom. 4e. nous avançons beaucoup, esperant que dans 4 ou 5 semaines il n'y aura plus que la Table des Matieres à imprimer. Il faut que tout soit achevé &amp; parfait avant qu'il en sorte un seul exempre. de chés nous, mais vous pouvés compter que ceux pour les <rs key="GND GND" type="persons">personnes désignées</rs> partiront les premiers &amp; que j'aurai grand soin qu'un chacun les reçoive, sans pourtant vouloir m'obliger d'en exiger leur receu, &amp; lorsque vous y reflechirés Monsieur &amp; que j'aurai l'honneur d'etre mieux connu de vous, vous verrés que je n'ay pas besoin de ce diplome pour etre crû, &amp; qu'il ne seroit pas meme honnete de demander à ces <rs key="GND GND" type="persons">savans</rs>.</p>
+<p>Voici de renvoy la lre. <rs type="letter">Lettre</rs> de Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs> lequel je m'assure à present ne fera rien metre dans aucun Journal, ni nulle part, qui pût tendre à décrediter notre edition; il y en a bien assés dans la <rs type="letter">Lettre</rs> en question &amp; qui est entre les mains de l'<rs type="person">imprimeur</rs>; je l'envoyerai dabord à Mr. le Profr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs> qui ne reculera plus pour la Preface, si necessaire &amp; qui est la seule chose qui me manque à present pour rendre complet le ler. Tome à la tete duquel tout cela doit etre placé; car pour le reste du Tom. 4e. nous avançons beaucoup, esperant que dans 4 ou 5 semaines il n'y aura plus que la Table des Matieres à imprimer. Il faut que tout soit achevé &amp; parfait avant qu'il en sorte un seul exempre. de chés nous, mais vous pouvés compter que ceux pour les <rs key="GND GND" type="persons">personnes désignées</rs> partiront les premiers &amp; que j'aurai grand soin qu'un chacun les reçoive, sans pourtant vouloir m'obliger d'en exiger leur receu, &amp; lorsque vous y reflechirés Monsieur &amp; que j'aurai l'honneur d'etre mieux connu de vous, vous verrés que je n'ay pas besoin de ce diplome pour etre crû, &amp; qu'il ne seroit pas meme honnete de demander à ces <rs key="GND GND" type="persons">savans</rs>.</p>
 <p>Je vous rend mille graces Monsieur de votre politesse en m'invitant d'aller loger chés vous en passant, comme la chose ne peut avoir lieu qu'au commencement d'Avril nous avons le tems d'y penser. Je vous le prometrois ce moment meme sans la crainte de vous incommoder, &amp; l'inconvenient d'un <rs type="person">ami</rs> qui sans doute sera avec moi &amp; que je ne voudrai pas quiter.</p>
 <p>Mes respectueuses obeissances s. v. P. à Monsieur votre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, &amp; l'assurance des voeux que je fais pour sa conservation, aussi bien que pour la votre, ayant l'honneur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</p>
 <closer><dateline>à <rs key="place_GEO-2659994" type="place">Lausanne</rs> le <date when="1743-01-15">15 Janv. 1743</date></dateline></closer>

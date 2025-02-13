@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Nicht ganz sicher aus, welcher Zeit die Originaltranskription kommt, RG 17.08.2022 --><!--_____________--><TEI xml:id="B_1718-01-01_991170514608405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170514608405501" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -122,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1717-12-10_991170514608505501" type="prev"/>
-        <ptr target="B_1718-01-29_991170514608305501" type="next"/>
+        <ptr target="B_991170514608505501" type="prev"/>
+        <ptr target="B_991170514608305501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Bernoulli_Nicolaus_I-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -155,6 +152,15 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Nicht ganz sicher aus, welcher Zeit die Originaltranskription kommt, RG 17.08.2022 -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1037758/manifest"/>
 </facsimile><text>
@@ -163,7 +169,7 @@
 <pb facs="1037759" n="1r"/>
 <p>
 <!--[Nr. 14]-->
-<lb/>Excerptum ex Epistola ad <rs>Patruum</rs> <abbr>d.</abbr> <date when="1718-01-01">1. <abbr>Jan.</abbr> 1718</date>.</p><!-- Mit Helena besprechen, wie wir Überschriften im Brieftext auszeichnen sollen: <head>? -->
+<lb/>Excerptum ex Epistola ad <rs type="person">Patruum</rs> <abbr>d.</abbr> <date when="1718-01-01">1. <abbr>Jan.</abbr> 1718</date>.</p><!-- Mit Helena besprechen, wie wir Überschriften im Brieftext auszeichnen sollen: <head>? -->
 <!--[Kopie Basel Un.Bibl.Mscr.L Ia 21,13]-->
 <p><lb/><figure facs="1037759_01.png" hand="pers_DE-588-119166895"/> Sit <formula>GHJ</formula> trajectoria ad angulos rectos secans
                    <lb/>omnes Curvas curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>AH</formula> similes, quarum
@@ -192,11 +198,11 @@
                    <lb/>et logarithmorum numeris, suppletisque homogeneis erit <formula>y^{m}\,ds:c^{m-1}=</formula>
 <lb/><formula>x\,dy-y\,dx</formula>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> est <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio <rs key="pers_DE-588-119112450" type="person">Hermanni</rs>, in qua si pro <formula>ds</formula> ponatur ipsius
                    <lb/>valor <formula>\frac{a^{m} dy}{z^{m}}</formula>,<note type="internal">Kontrollieren (nachrechnen), ob das "m" im Nenner tatsächlich hochgestellt ist.</note> et pro <formula>\frac{x\,dy-y\,dx}{yy}</formula> ipsius valor <formula>\frac{u\,dz-z\,du}{zz}</formula>, habebitur
-<lb/><choice rend="regFormula"><orig><formula>\frac{a^{m}y^{m-2}\,dy}{c^{m-1}}=\overline{u\,dz-z\,du}\times z^{m-2}</formula></orig><reg><formula>\frac{a^{m}y^{m-2}\,dy}{c^{m-1}}=(u\,dz-z\,du)\times z^{m-2}</formula></reg></choice>, <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio in qua separat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt inde<pc type="hyphenation">-</pc><lb break="no"/>terminat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>. <foreign xml:lang="deu">Ich hab observirt, daß obige general <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quation <formula>q\,dy=-dx</formula>
+<lb/><choice rend="regFormula"><orig><formula>\frac{a^{m}y^{m-2}\,dy}{c^{m-1}}=\overline{u\,dz-z\,du}\times z^{m-2}</formula></orig><reg><formula>\frac{a^{m}y^{m-2}\,dy}{c^{m-1}}=(u\,dz-z\,du)\times z^{m-2}</formula></reg></choice>, <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio in qua separat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt inde<pc type="hyphenation">-</pc><lb break="no"/>terminat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>. <foreign xml:lang="ger">Ich hab observirt, daß obige general <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quation <formula>q\,dy=-dx</formula>
 <lb/>oder</foreign> <formula>dz\,dy=-du\,dx</formula> pro<note type="internal">In der Spiesstranskription stand hier "wo", möglicherweise eine Emendation. Kontrollieren, ob das "wo" nicht sinnvoll erscheint, es könnte sich hier um einen Schreibfehler beim Kopieren des Textes handeln.</note> trajectoria omnes curvas similes ad angulos
-<lb/>rectos secante <foreign xml:lang="deu">ohne unsrer general regul sehr leicht zu finden, dan
+<lb/>rectos secante <foreign xml:lang="ger">ohne unsrer general regul sehr leicht zu finden, dan
                    <lb/>wan man ad Curvas <formula>AH</formula>, <formula>AF</formula> zeucht die normales <formula>GE</formula>, <formula>FC</formula>, so hat man
-<lb/>gleich</foreign> propter similitudinem Curvarum <formula>BF.BC\;::\;HD.DE</formula>. <foreign xml:lang="deu">Das ist,</foreign> 
+<lb/>gleich</foreign> propter similitudinem Curvarum <formula>BF.BC\;::\;HD.DE</formula>. <foreign xml:lang="ger">Das ist,</foreign> 
                    <lb/><formula>du.dz\;::dy.-dx</formula>.</p> 
 <!-- Horizontale Linie über die ganze Zeilenlänge. -->
                    <p><lb/><hi rend="c">Problema.</hi></p>

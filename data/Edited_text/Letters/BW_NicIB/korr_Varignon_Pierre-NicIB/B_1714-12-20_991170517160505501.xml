@@ -1,14 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- Platzhalter eingefügt, Personenauflistung, Briefrecherche, Briefe getagt, Personen getagt, 27.04.2020, MS; --><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--MS: Ich gehe davon aus, dass dieser Brief falsch datiert wurde. Der Brief von Nic. I an de Moivre hätte ein Jahr nach Paris gebraucht und V schreibt, dass die Post nach England erst kürzlich wieder offen ist und das Jahr erst vor kurzem begonnen hat. Die Briefe von JIB an V, die im PS. des Briefes in Frage kommen sind aus dem April.--><!--_____________--><!--Comments that were in the teiHeader element--><!--pers_DE-588-117586765--><!--
-            amis -> Freunde von Varignon für die JIB das Porto übernommen hat.
-
-            König -> Nic. I hat V den Auftrag gegeben, dass König ihm Geld ausbezahlt. Varignon möchte aber lieber Bücher als Geld.
-
-            hotesse -> von König
-
-            --><!--_____________--><TEI xml:id="B_1714-12-20_991170517160505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-            <teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170517160505501" xmlns="http://www.tei-c.org/ns/1.0">
+            <teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -125,8 +117,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1714-11-25_991170517160605501" type="prev"/>
-        <ptr target="B_1716-04-05_991170517160405501" type="next"/>
+        <ptr target="B_991170517160605501" type="prev"/>
+        <ptr target="B_991170517160405501" type="next"/>
         <ptr target="BW_NicIB" type="Briefwechsel"/>
         <ptr target="korr_Varignon_Pierre-NicIB" type="Korrespondenz"/>
       </correspContext>
@@ -169,24 +161,43 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- Platzhalter eingefügt, Personenauflistung, Briefrecherche, Briefe getagt, Personen getagt, 27.04.2020, MS; -->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--MS: Ich gehe davon aus, dass dieser Brief falsch datiert wurde. Der Brief von Nic. I an de Moivre hätte ein Jahr nach Paris gebraucht und V schreibt, dass die Post nach England erst kürzlich wieder offen ist und das Jahr erst vor kurzem begonnen hat. Die Briefe von JIB an V, die im PS. des Briefes in Frage kommen sind aus dem April.-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--pers_DE-588-117586765-->
+<!--
+            amis -> Freunde von Varignon für die JIB das Porto übernommen hat.
+
+            König -> Nic. I hat V den Auftrag gegeben, dass König ihm Geld ausbezahlt. Varignon möchte aber lieber Bücher als Geld.
+
+            hotesse -> von König
+
+            -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1362316/manifest"/></facsimile><text><body><div type="letter">
                         <pb facs="1362317" n="257r"/>          
 <opener>Monsieur,</opener>
-<p><lb/>Le soir du 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de ce mois-ci je reçu votre <rs key="B_1713-12-30_991170517160905501" type="letter">lettre</rs> dans le paquet 
-            <lb/>de laquelle il y en avoit <rs key="B_1713-12-30_991170517024405501" type="letter">une</rs> pour M. <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, que vous me disiez 
+<p><lb/>Le soir du 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de ce mois-ci je reçu votre <rs key="B_991170517160905501" type="letter">lettre</rs> dans le paquet 
+            <lb/>de laquelle il y en avoit <rs key="B_991170517024405501" type="letter">une</rs> pour M. <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, que vous me disiez 
             <lb/>de mettre à la poste d'ici pour l'<rs type="place">Angleterre</rs>. <choice><orig>c</orig><reg>C</reg></choice>'etoit apparemment par 
             <lb/>un Esprit prophetique que vous deviniez que quand je recevrois ce paquet 
             <lb/>le commerce de lettres seroit <choice><sic>ratabli</sic><corr>rétabli</corr></choice> entre les Anglois <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous; car il 
             <lb/>ne l'est que du commencement de cette année-ci, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> quand je reçu votre 
-            <lb/><rs key="B_1713-12-30_991170517160905501" type="letter">lettre</rs> je ne le scavois pas encore. Mais le landemain en portant à 
-            <lb/>M. <rs key="pers_DE-588-129466697" type="person">Anisson</rs> <rs key="B_1713-12-30_991170517024405501" type="letter">celle</rs><!-- brieftag --> que vous écriviez à <choice><orig>m</orig><reg>M</reg></choice>. <rs key="pers_DE-588-117586765" type="person"><choice><orig>moivre</orig><reg>Moivre</reg></choice></rs>, pour le prier de la lui rendre 
+            <lb/><rs key="B_991170517160905501" type="letter">lettre</rs> je ne le scavois pas encore. Mais le landemain en portant à 
+            <lb/>M. <rs key="pers_DE-588-129466697" type="person">Anisson</rs> <rs key="B_991170517024405501" type="letter">celle</rs><!-- brieftag --> que vous écriviez à <choice><orig>m</orig><reg>M</reg></choice>. <rs key="pers_DE-588-117586765" type="person"><choice><orig>moivre</orig><reg>Moivre</reg></choice></rs>, pour le prier de la lui rendre 
             <lb/>quand il sera en <rs type="place">Angleterre</rs> <choice><orig>ou</orig><reg>où</reg></choice> il retourne dans peu de la part du <rs key="pers_DE-588-118816829" type="person">Roy</rs> pour 
             <lb/>l'affaire du negoce entre les Anglois <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous, j'apercu par les rues des affiches qui anonçoient ce commerce de lettres retabli entre eux 
             <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous; ce qui me fist sur le champ tourner mes pas vers la grande Poste<!-- korporationtag -->, 
-            <lb/>dans la boête de laquelle je mis votre <rs key="B_1713-12-30_991170517024405501" type="letter">lettre</rs> pour <choice><orig>m</orig><reg>M</reg></choice>. <rs key="pers_DE-588-117586765" type="person">Moivre</rs> 
+            <lb/>dans la boête de laquelle je mis votre <rs key="B_991170517024405501" type="letter">lettre</rs> pour <choice><orig>m</orig><reg>M</reg></choice>. <rs key="pers_DE-588-117586765" type="person">Moivre</rs> 
             <lb/>qui l'aura recue peu de jours apres. Je croy que vous vous môquez 
             <lb/>de moy quand vous me dites que vous me tiendrez compte du port 
-            <lb/>de cette <rs key="B_1713-12-30_991170517024405501" type="letter">lettre</rs>: est-ce ainsi qu'on en use avec un amis tel que 
+            <lb/>de cette <rs key="B_991170517024405501" type="letter">lettre</rs>: est-ce ainsi qu'on en use avec un amis tel que 
             <lb/>je suis par raport à vous <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à toutte votre famille? n'en parlons pas 
             <lb/>davantage, je vous prie, à moins que vous ne vouliez me facher, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 
             <lb/>me reprocher les ports que j'ay fait couter à Monsieur votre 
@@ -194,7 +205,7 @@
             <lb/>voulu que je lui en aye tenu compte: cette occasion de diminuer 
             <lb/>un peu la honte que j'en ay, me rend même votre redevable en 
             <lb/>cela.</p>
-<p><lb/>Si cette proposition de me rendre le port de cette <rs key="B_1713-12-30_991170517024405501" type="letter">lettre</rs> m'offense, vous 
+<p><lb/>Si cette proposition de me rendre le port de cette <rs key="B_991170517024405501" type="letter">lettre</rs> m'offense, vous 
             <lb/>me faites d'un autre coté beaucoup de plaisir par touttes les 
             <lb/>marques que vous me donnez de votre bon c<choice><orig><g ref="#oe">œ</g></orig><reg>oe</reg></choice>ur à mon égard, en me 
             <lb/>souhaitant cette nouvelle annee-ci aussi heureuse que vous me la souhaitez. Quelque persuadé que je sois de la sincerité de vos souhaits 
@@ -224,13 +235,13 @@
             <lb/>de votre part <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de celle de M. votre <rs key="pers_DE-588-118509969" type="person">oncle</rs> 43<hi rend="sup">lb</hi> avec 1<hi rend="sup">lb</hi> 5 ß que 
             <lb/>ce <rs type="biblio">livre</rs> coûte, lui marquant en meme tems que cette somme 
             <lb/>pressoit d'autant moins que j'avois prié M. votre <rs key="pers_DE-588-118509969" type="person">oncle</rs> de me 
-            <lb/>l<supplied>'</supplied>employer en livres; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> justement peu de jours apres votre <rs key="B_1713-12-30_991170517160905501" type="letter">lettre</rs> 
+            <lb/>l<supplied>'</supplied>employer en livres; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> justement peu de jours apres votre <rs key="B_991170517160905501" type="letter">lettre</rs> 
             <lb/>reçue j'en ay reçu <rs type="letter">une</rs><note type="internal">MS: die 43 lb kommen in meherern Briefen vor: JIB an V, 1714.02.10, Systemnummer:000057672  JIB an V, 1714.04.02, Systemnummer:000057674</note> de M. votre <rs key="pers_DE-588-118509969" type="person">oncle</rs> qui me marque 
             <lb/>qu'il aura la bonté de le faire. Je fus aussi tost pour le dire 
             <lb/>à M. <rs type="person">König</rs>; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne l'ayant point encore trouvé chez lui, j'y laissay 
             <lb/>encore une <rs type="letter">lettre</rs> pour lui dans laquelle je le lui disois, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>ou</orig><reg>où</reg></choice> je 
             <lb/>lui marquois que j'aimois mieux des livres de mon goust que de 
-            <lb/>l<supplied>'</supplied>argent. C'est ainsi que j'ay reparé la faute que votre <rs key="B_1713-12-30_991170517160905501" type="letter">lettre</rs> 
+            <lb/>l<supplied>'</supplied>argent. C'est ainsi que j'ay reparé la faute que votre <rs key="B_991170517160905501" type="letter">lettre</rs> 
             <lb/>m'avoit fait faire à son égard. L'ayant égarée, j<supplied>'</supplied>oubliois de vous le 
             <lb/>dire, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous donner avis du <rs type="biblio">livre</rs> que je lui ay donné pour vous. 
             <lb/>Peut-être oubliay-je encore quelque chose de ce qu<supplied>'</supplied>elle contenoit; vous 

@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- GND-tags eingefügt am 10.01.2019. Alle Personen bis auf einen unidentifizierten Anatomicus quidam oben aufgeführt.
-            
-Anatomicus quidam taurinensis muss noch gefunden werden. Er scheint eine propositio des Bellini zu propagieren. Michelotti hätte zu dieser Propositio gern eine Expertise von Joh. I B.         
-
-         --><!--_____________--><TEI xml:id="B_1717-11-26_991170515152905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515152905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -125,8 +120,8 @@ Anatomicus quidam taurinensis muss noch gefunden werden. Er scheint eine proposi
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1717-11-12_991170515153005501" type="prev"/>
-        <ptr target="B_1717-12-01_991170515152805501" type="next"/>
+        <ptr target="B_991170515153005501" type="prev"/>
+        <ptr target="B_991170515152805501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -167,14 +162,27 @@ Anatomicus quidam taurinensis muss noch gefunden werden. Er scheint eine proposi
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- GND-tags eingefügt am 10.01.2019. Alle Personen bis auf einen unidentifizierten Anatomicus quidam oben aufgeführt.
+            
+Anatomicus quidam taurinensis muss noch gefunden werden. Er scheint eine propositio des Bellini zu propagieren. Michelotti hätte zu dieser Propositio gern eine Expertise von Joh. I B.         
+
+         -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1078973/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1078974" n="1"/>
 <opener><salute>Viro <choice><abbr>Illustriss.<hi rend="sup">o</hi></abbr><expan>Illustrissimo</expan></choice> et toto Orbe <choice><abbr>Celeberr.<hi rend="sup">o</hi></abbr><expan>Celeberrimo</expan></choice> D. Johanni <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs>
 <lb/><abbr>S. P. D.</abbr> Petrus Antonius <rs key="pers_DE-588-102552517" type="person">Michelotti</rs></salute></opener>
-<p><rs key="B_1717-11-12_991170515153005501" type="letter">Epistolam me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 12. November 1717</note> ad Te missam ante quindecim dies istuc perve<pc type="hyphenation">-</pc><lb break="no"/>nisse confido; uti etiam <rs key="brieftag" type="letter">Litteras</rs><note type="internal">Identifizieren! ev. Anhaltspunkt: Nikolaus I an Michelotti (19. Nov. 1717): Eidem patruo meo praeterita die Sabbati omnia perscripsi, quae jussisti ratione expensarum pro litteris Tuis.</note> quas <choice><abbr>Clariss.<hi rend="sup">us</hi></abbr><expan>Clarissimus</expan></choice> <rs key="pers_DE-588-119166895" type="person">Agnatus</rs><note type="editorial">Briefe</note> tuus
+<p><rs key="B_991170515153005501" type="letter">Epistolam me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></rs> ad Te missam ante quindecim dies istuc perve<pc type="hyphenation">-</pc><lb break="no"/>nisse confido; uti etiam <rs type="letter">Litteras</rs><note type="internal">Identifizieren! ev. Anhaltspunkt: Nikolaus I an Michelotti (19. Nov. 1717): Eidem patruo meo praeterita die Sabbati omnia perscripsi, quae jussisti ratione expensarum pro litteris Tuis.</note> quas <choice><abbr>Clariss.<hi rend="sup">us</hi></abbr><expan>Clarissimus</expan></choice> <rs key="pers_DE-588-119166895" type="person">Agnatus</rs> tuus
              <lb/>per <rs key="place_GEO-3182164" type="place">Bergom<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> amandavit, scribens me soluturum fore ad tu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
-             <lb/>libit<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> expensas, quas facere cogeris in accipiendis ac transmit<pc type="hyphenation">-</pc><lb break="no"/>tendis pro me litteris. Fortasse antequam respondeas ad <rs key="B_1717-11-12_991170515153005501" type="letter">pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>fat<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
-                <lb/>me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> epistol<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></rs><note type="editorial">Siehe oben</note> hanc etiam quam do accipies: qua peto non<pc type="hyphenation">-</pc><lb break="no"/>nullor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> problemat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> solution<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>.</p>
+             <lb/>libit<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> expensas, quas facere cogeris in accipiendis ac transmit<pc type="hyphenation">-</pc><lb break="no"/>tendis pro me litteris. Fortasse antequam respondeas ad <rs key="B_991170515153005501" type="letter">pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>fat<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+                <lb/>me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> epistol<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></rs><note type="internal">Siehe oben</note> hanc etiam quam do accipies: qua peto non<pc type="hyphenation">-</pc><lb break="no"/>nullor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> problemat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> solution<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>.</p>
 <p>Fluens sanguis per arterias viribus contractilibus Cordis et Arte<pc type="hyphenation">-</pc><lb break="no"/>riar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> sive canali<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> contractili<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> et distractili<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> duplicem of<pc type="hyphenation">-</pc><lb break="no"/>fendit resistenti<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>: quar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> una est sanguis antecedens qui
              <lb/>sanguini succedenti impedimento est: altera ver<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> sunt ar<pc type="hyphenation">-</pc><lb break="no"/>teri<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ips<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> distractioni sive dilatationi repugnant
              <lb/>quum semper contrahi nitantur. Datis ergo viribus

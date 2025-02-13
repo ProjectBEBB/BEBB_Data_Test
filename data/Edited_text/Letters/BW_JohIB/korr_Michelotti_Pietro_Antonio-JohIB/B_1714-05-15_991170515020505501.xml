@@ -1,12 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!-- Im BIBB aufnehmen:
-Carlo Ruzzini  1653-1735 (GND-588)1089924410 
-Alvise Pisani  1664-1741 (GND-588)1111043582 
-Francesco Loredan 1656-1715  (GND-588)1178371670 -->
-
-<TEI xml:id="B_1714-05-15_991170515020505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515020505501" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -123,8 +116,8 @@ Francesco Loredan 1656-1715  (GND-588)1178371670 -->
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1695-03-15_991170515020605501" type="prev"/>
-        <ptr target="B_1714-06-08_991170515020405501" type="next"/>
+        <ptr target="B_991170515020605501" type="prev"/>
+        <ptr target="B_991170515020405501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -157,6 +150,11 @@ Francesco Loredan 1656-1715  (GND-588)1178371670 -->
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!-- Im BIBB aufnehmen:
+Carlo Ruzzini  1653-1735 (GND-588)1089924410 
+Alvise Pisani  1664-1741 (GND-588)1111043582 
+Francesco Loredan 1656-1715  (GND-588)1178371670 -->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1078598/manifest"/></facsimile><text>
 <body>
 <div type="letter">
@@ -164,8 +162,8 @@ Francesco Loredan 1656-1715  (GND-588)1178371670 -->
 <opener><salute><lb/>Viro Clarissimo at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Doctissimo
            <lb/><rs key="pers_DE-588-102552517" type="person">Petro Antonio Michelotti</rs>
 <lb/><abbr>S. P. D.</abbr>
-<lb/><rs key="pers_DE-588-118509969" type="person"><choice><abbr>Joh.</abbr><expan>Johannes</expan></choice> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></salute></opener>
-<p>Ex <rs key="B_1714-04-14_991170517054405501" type="letter">litteris</rs> quas postremo ad Agnatum meum
+<lb/><rs key="pers_DE-588-118509969" type="person"><abbr>Joh.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></salute></opener>
+<p>Ex <rs key="B_991170517054405501" type="letter">litteris</rs> quas postremo ad Agnatum meum
          <lb/><rs key="pers_DE-588-119166895" type="person">Nicolaum</rs> exarare dignatus es vidi te exoptare,
          <lb/>ut ad te scribam, Vir clarissime mentem<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> meam
          <lb/>aperiam num si invitarer honestis conditionibus
@@ -173,12 +171,12 @@ Francesco Loredan 1656-1715  (GND-588)1178371670 -->
          <lb/><rs type="organisation">Archilyceo</rs> <rs key="place_GEO-3171728" type="place">Patavino</rs> invitationi essem obtemperaturus.<note type="comment">Johann I Bernoulli kommt Michelottis Wunsch nach, sich zu seiner Bereitschaft zu äussern, den Lehrstuhl für Mathematik in Padua als Nachfolger von Hermann anstelle von Nicolaus I Bernoulli zu übernehmen. Er lehnt das Angebot jedoch ab und empfiehlt stattdessen weiterhin seinen Neffen Nicolaus I Bernoulli, der bisher als Kandidat für diese Position in Betracht gezogen wurde.</note>
 <lb/>Doleo quod <choice><abbr>Cl.</abbr><expan>Clarissimus</expan></choice> Abbas <rs key="pers_DE-588-119291967" type="person">Fardella</rs> negotium pro <rs key="pers_DE-588-119166895" type="person">Agnato</rs>
 <lb/>tam feliciter inchoatum mei de caus<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> interrupe<pc type="hyphenation">-</pc><lb break="no"/>rit, quod rei attulit t<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>diosam dilationem: nescio, quid
-         <lb/>ex <rs key="B_1714-02-14_991170514861105501" type="letter">Epistola mea</rs><note type="editorial">Joh. I B. an Michelangelo Fardella von 1714.02.14.</note> ad se scripta elicuerit, quod de adven<pc type="hyphenation">-</pc><lb break="no"/>tu meo spem aliquam excitare potuisset.<note type="comment">Anlass für den Beginn dieses Briefwechsels zwischen Joh. I B. und Antonio Michelotti sind die Verhandlungen zur Besetzung des Paduaner Mathematiklehrstuhls. Mit der Unterstützung von Leibniz konnte Nic. I B. sich  bereits erfolgreich als Kandidat für diesen Lehrstuhl positionieren, als plötzlich auch Joh. I B. als möglicher Stellenanwärter ins Spiel gebracht wurde. Ursache dafür war ein Brief, den Leibniz am 4. August 1713 (nach André Robinet, <hi rend="i">L'Empire Leibnizien</hi>, Trieste 1991, 194f. ist dieser Brief nicht mehr erhalten) aus Wien an Michelangelo Fardella geschrieben hat, in dem er diesem vertraulich mitgeteilt hat, er würde lieber Joh. I B. auf dem Lehrstuhl sehen. Aus Fardellas Brief an Nic. I B. von <rs key="B_1714-01-11_991170517058805501" type="letter">1714.01.11</rs> geht hervor, dass dieser in Venedig mit Freunden und Gönnern darüber gesprochen hat, was zu Neuverhandlungen führte. Auch Joh. I B. hat vermutlich unfreiwillig zu dieser Situation beigetragen, indem er in seinem <rs key="B_1714-02-14_991170514861105501" type="letter">Brief</rs> an Fardella vom 14. Februar 1714 seine grosse Freude über die ehrenvolle Einladung äussert, gleichzeitig jedoch verschiedene Gründe nennt, die ihn davon abhalten, ihr nachzugehen. Die hier beschriebenen Ereignisse sind eingehend in André Robinet, <hi rend="i">L'Empire Leibnizien</hi>, pp. 194-220, behandelt.</note> <choice><orig>fateor</orig><reg>Fateor</reg></choice> qui<pc type="hyphenation">-</pc><lb break="no"/>dem si mei juris essem at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> permitterent innumera
-         <lb/>in <rs key="B_1714-02-14_991170514861105501" type="letter">litteris illis</rs> memorata obstacula,<note type="editorial">Joh. I B. hatte in seinem Brief an Michelangelo Fardella vom <rs key="B_1714-02-14_991170514861105501" type="letter">14. Februar 1714</rs> eine ganze Reihe an Gründen aufgeführt, die ihm einen Wechsel nach Padua unmöglich machten.</note> gestire mihi
+         <lb/>ex <rs key="B_991170514861105501" type="letter">Epistola mea</rs> ad se scripta elicuerit, quod de adven<pc type="hyphenation">-</pc><lb break="no"/>tu meo spem aliquam excitare potuisset.<note type="comment">Anlass für den Beginn dieses Briefwechsels zwischen Joh. I B. und Antonio Michelotti sind die Verhandlungen zur Besetzung des Paduaner Mathematiklehrstuhls. Mit der Unterstützung von Leibniz konnte Nic. I B. sich  bereits erfolgreich als Kandidat für diesen Lehrstuhl positionieren, als plötzlich auch Joh. I B. als möglicher Stellenanwärter ins Spiel gebracht wurde. Ursache dafür war ein Brief, den Leibniz am 4. August 1713 (nach André Robinet, <hi rend="i">L'Empire Leibnizien</hi>, Trieste 1991, 194f. ist dieser Brief nicht mehr erhalten) aus Wien an Michelangelo Fardella geschrieben hat, in dem er diesem vertraulich mitgeteilt hat, er würde lieber Joh. I B. auf dem Lehrstuhl sehen. Aus Fardellas Brief an Nic. I B. von <rs key="B_991170517058805501" type="letter">1714.01.11</rs> geht hervor, dass dieser in Venedig mit Freunden und Gönnern darüber gesprochen hat, was zu Neuverhandlungen führte. Auch Joh. I B. hat vermutlich unfreiwillig zu dieser Situation beigetragen, indem er in seinem <rs key="B_991170514861105501" type="letter">Brief</rs> an Fardella vom 14. Februar 1714 seine grosse Freude über die ehrenvolle Einladung äussert, gleichzeitig jedoch verschiedene Gründe nennt, die ihn davon abhalten, ihr nachzugehen. Die hier beschriebenen Ereignisse sind eingehend in André Robinet, <hi rend="i">L'Empire Leibnizien</hi>, pp. 194-220, behandelt.</note> <choice><orig>fateor</orig><reg>Fateor</reg></choice> qui<pc type="hyphenation">-</pc><lb break="no"/>dem si mei juris essem at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> permitterent innumera
+         <lb/>in <rs key="B_991170514861105501" type="letter">litteris illis</rs> memorata obstacula,<note type="editorial">Joh. I B. hatte in seinem Brief an Michelangelo Fardella vom <rs key="B_991170514861105501" type="letter">14. Februar 1714</rs> eine ganze Reihe an Gründen aufgeführt, die ihm einen Wechsel nach Padua unmöglich machten.</note> gestire mihi
          <lb/>animum aliquam adhuc extraneam Provinciam
          <lb/>obeundi: sed ut videas Vir <choice><abbr>Clariss.</abbr><expan>Clarissime</expan></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nam sint illa
          <lb/>obstacula, mittet <rs key="pers_DE-588-119166895" type="person">Agnatus</rs> meus apographum illius
-         <lb/>meae <rs key="B_1714-02-14_991170514861105501" type="letter">Epistol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs><note type="comment">Diese Abschrift des <rs key="B_1714-02-14_991170514861105501" type="letter">Briefes von Joh. I B. an Fardella</rs> ist anscheinend nicht erhalten.</note> ad Abbatem <rs key="pers_DE-588-119291967" type="person">Fardellam</rs> dat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>. Tantum
+         <lb/>meae <rs key="B_991170514861105501" type="letter">Epistol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs><note type="comment">Diese Abschrift des <rs key="B_991170514861105501" type="letter">Briefes von Joh. I B. an Fardella</rs> ist anscheinend nicht erhalten.</note> ad Abbatem <rs key="pers_DE-588-119291967" type="person">Fardellam</rs> dat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>. Tantum
          <lb/>autem abest <rs key="pers_DE-588-119291967" type="person">huic Viro</rs> de <rs type="organisation">Archilyceo</rs> <rs key="place_GEO-3171728" type="place">Patavino</rs> de<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
          <lb/>universa <choice><abbr>rep.</abbr><expan>republica</expan></choice> litteraria tam bene merenti me mei
        <pb facs="1078602" n="1v"/>

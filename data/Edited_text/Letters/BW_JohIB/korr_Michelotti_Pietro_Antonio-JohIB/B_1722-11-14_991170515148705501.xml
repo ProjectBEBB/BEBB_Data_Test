@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert; tags eingetragen am 22.11.2018; Personen ausgezeichnet am 19.02.2019 --><!-- <change when="2022-04-26" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Federico Tiepolo, pers_DE-588-1122613067
-         Bruder Lorenzos. Senator Venetus und Verleger --><!--_____________--><TEI xml:id="B_1722-11-14_991170515148705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515148705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -122,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1722-11-11_991170515148805501" type="prev"/>
-        <ptr target="B_1722-11-18_991170515108705501" type="next"/>
+        <ptr target="B_991170515148805501" type="prev"/>
+        <ptr target="B_991170515108705501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -202,17 +200,29 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert; tags eingetragen am 22.11.2018; Personen ausgezeichnet am 19.02.2019 -->
+<!-- <change when="2022-04-26" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Federico Tiepolo, pers_DE-588-1122613067
+         Bruder Lorenzos. Senator Venetus und Verleger -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079349/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079351" n="1"/>
 <opener>à M. Michelotti
              <lb/><salute>Monsieur</salute></opener>
-<p>Par la derniere <rs key="B_1722-11-11_991170515148805501" type="letter">lettre</rs><note type="editorial">Brief  von Pietro Antonio Michelotti an Johann I Bernoulli vom 11.11.1722</note> que Vous m'avez fait
+<p>Par la derniere <rs key="B_991170515148805501" type="letter">lettre</rs><note type="editorial">Brief  von Pietro Antonio Michelotti an Johann I Bernoulli vom 11.11.1722</note> que Vous m'avez fait
              <lb/>l'honneur de m'ecrire et que je reçus avant
              <lb/>hier, j<supplied>'</supplied>ay pu connoitre que vous entendez le fran<pc type="hyphenation">-</pc><lb break="no"/>çois, ce qui fait que je vous repons presentement
              <lb/>dans la meme langue. Vous ne me marquez
              <lb/>pas si Vous avez reçu ma precedente que j'avois adressée
              <lb/>à <rs key="pers_DE-588-128382058" type="person">Mr. Saltzman</rs> suivant votre ordre avec l'incluse
-             <lb/>de <rs key="pers_DE-588-117589144" type="person">mon fils ainé</rs>. Dans ces deux lettres<note type="editorial">Gemeint sind der <rs key="B_1722-11-11_991170515148905501" type="letter">längere lateinische</rs> und der <rs key="B_1722-11-11_991170515148805501" type="letter">kürzere französische</rs> Brief vom 11. November 1722 von Pietro Antonio Michelotti an Johann I Bernoulli.</note> nous vous invi<pc type="hyphenation">-</pc><lb break="no"/>tions tres instamment, de pousser la promenade
+             <lb/>de <rs key="pers_DE-588-117589144" type="person">mon fils ainé</rs>. Dans ces deux lettres<note type="editorial">Gemeint sind der <rs key="B_991170515148905501" type="letter">längere lateinische</rs> und der <rs key="B_991170515148805501" type="letter">kürzere französische</rs> Brief vom 11. November 1722 von Pietro Antonio Michelotti an Johann I Bernoulli.</note> nous vous invi<pc type="hyphenation">-</pc><lb break="no"/>tions tres instamment, de pousser la promenade
              <lb/>jusqu'ici pour nous honorer d'une visite. Mais je
              <lb/>suis tres-faché de me voir trompé dans mon esperance par la maladie de <choice><abbr>Monseign:<hi rend="sup">r</hi></abbr><expan>Monseigneur</expan></choice> l'Ambassadeur <rs key="pers_DE-588-121843858" type="person">T<unclear>i</unclear>eupolo</rs>:
              <lb/>quoique je me flatte encore de Vous embrasser, si aprez
@@ -238,7 +248,7 @@
              <lb/>tout autre que Lui<note type="editorial">Schluss-j</note> auroit gouté mes raisons, que 
              <lb/>je vous communiqua<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> la premiere fois, que vous
              <lb/>me proposates ces difficultés.
-             <lb/>Depuis votre depart de <rs key="place_GEO-2988507" type="place">Paris</rs> j'ay reçu une <rs key="B_1722-10-30_991170516663905501" type="letter">lettre</rs><!-- brieftag --><note type="editorial">Pierre Varignon an Johann I Bernoulli, vom 30. Oktober 1722. Für die Erwähnung der Exemplare der Optik und die Memoiren siehe die dritte Seite des Briefes.</note>
+             <lb/>Depuis votre depart de <rs key="place_GEO-2988507" type="place">Paris</rs> j'ay reçu une <rs key="B_991170516663905501" type="letter">lettre</rs><!-- brieftag --><note type="editorial">Pierre Varignon an Johann I Bernoulli, vom 30. Oktober 1722. Für die Erwähnung der Exemplare der Optik und die Memoiren siehe die dritte Seite des Briefes.</note>
 <lb/>de Mr. <rs key="pers_DE-588-119062372" type="person">Varignon</rs>, par laquelle il me donnoit
              <lb/>avis, que Vous Vous etiez chargé de 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> exemplaires
              <lb/>de l'<choice><orig>optique</orig><reg>Optique</reg></choice> françoise de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> avec les <choice><orig>memoires</orig><reg>Memoi<pc type="hyphenation">-</pc><lb break="no"/>res</reg></choice> de <choice><abbr>l'Acad.</abbr><expan><rs type="organisation">l'Académie</rs></expan></choice> pour 172<unclear>0</unclear>,<note type="editorial">kontrollieren: Die Mém. Paris 1720 (1722) werden im Brief vom 11. Nov. 1722 referenziert. Auch wenn sie erst 1722 vollständig publiziert sind, wird von ihnen dort als von den 1720er Mém. Paris geschrieben.</note> j'espere de les reçevoir

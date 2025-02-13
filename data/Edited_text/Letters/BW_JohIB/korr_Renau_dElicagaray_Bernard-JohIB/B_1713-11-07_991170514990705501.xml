@@ -1,188 +1,618 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1713-11-07_991170514990705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Bernard Renau D'Elicagaray. Basel, 07. November 1713</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Bezug des Briefes zu Bänden der gedruckten Bernoulli Werkausgabe: 1</p>
-      </note>
-      <note type="print">
-        <p>Druck: Joh. I B. Op. XCI, Essay d'une nouvelle Theorie de la Manoeuvre des Vaisseaux, avec quelques Lettres sur le même Sujet, Basle 1714, pp. 193-220</p>
-        <p>Druck: Joh. I B. Opera, t.2, pp.153-167</p>
-      </note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Druck historisch</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514990705501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Bernard Renau D'Elicagaray. Basel,
+            07. November 1713</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000056874</title><title type="alt"
+            >1713-11-07_Bernoulli_Johann_I-Renau_d_Elicagaray_Bernard</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Renau d'Eliçagaray, Bernard (1652-1719) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Bezug des Briefes zu Bänden der gedruckten Bernoulli
+            Werkausgabe: 1</p></note>
+        <note type="print"><p>Druck: Joh. I B. Op. XCI, Essay d'une nouvelle Theorie de la Manoeuvre
+            des Vaisseaux, avec quelques Lettres sur le même Sujet, Basle 1714, pp.
+            193-220</p><p>Druck: Joh. I B. Opera, t.2, pp.153-167</p></note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1713-11-07_Bernoulli_Johann_I-Renau_d_Elicagaray_Bernard"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 666, Nr.2</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514990705501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433199605504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000056874</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>16 S.<dimensions unit="cm">
+                    <height>20,5</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>[Basel]</origPlace><date when="1713-11-07">7 Nov.
+              1713</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1713-11-07_Bernoulli_Johann_I-Renau_d_Elicagaray_Bernard" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 666, Nr.2</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514990705501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433199605504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000056874</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>16 S.<dimensions unit="cm"><height>20,5</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>[Basel]</origPlace>
-            <date when="1713-11-07">7 Nov. 1713</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1713-11-07">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-102079056">Renau D'Elicagaray, Bernard</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1713-09-15_991170514990805501" type="prev"/>
-        <ptr target="B_1714-07-19_991170514990605501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Renau_dElicagaray_Bernard-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person>
-          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-          <note type="lebensdaten">(1687-1759)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118524844">Descartes, René</persName>
-          <note type="lebensdaten">(1596-1650)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-          <note type="lebensdaten">(1629-1695)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118816829">Ludwig</persName>
-          <note type="lebensdaten">(1638-1715)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-          <note type="lebensdaten">(1678-1719)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-102079056">Renau D'Elicagaray, Bernard</persName>
-          <note type="lebensdaten">(1652-1719)</note>
-        </person>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1061212/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1061213" n="1"/> <pb facs="1061214" n="2"/> <pb facs="1061215" n="3"/> <pb facs="1061216" n="4"/> <pb facs="1061217" n="5"/> <pb facs="1061218" n="6"/> <pb facs="1061219" n="7"/> <pb facs="1061220" n="8"/> <pb facs="1061221" n="9"/> <pb facs="1061222" n="10"/> <pb facs="1061223" n="11"/> <pb facs="1061224" n="12"/> <pb facs="1061225" n="13"/> <pb facs="1061226" n="14"/> <pb facs="1061227" n="15"/> <pb facs="1061228" n="16"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1713-11-07">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-102079056">Renau D'Elicagaray, Bernard</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_991170514990805501" type="prev"/>
+          <ptr target="B_991170514990605501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Renau_dElicagaray_Bernard-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1687-1759)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118524844">Descartes, René</persName>
+            <note type="lebensdaten">(1596-1650)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
+            <note type="lebensdaten">(1629-1695)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118816829">Ludwig</persName>
+            <note type="lebensdaten">(1638-1715)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+            <note type="lebensdaten">(1678-1719)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-102079056">Renau D'Elicagaray, Bernard</persName>
+            <note type="lebensdaten">(1652-1719)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1713-11-07_Bernoulli_Johann_I-Renau_d_Elicagaray_Bernard"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1061212/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1061213" n="1"/> 7 nov. 1713.</p>
+        <p>Monsieur </p>
+        <p>Si pour complaire à une Personne que l'on estime il étoit permis d'embrasser aveuglément
+          son opinion bien ou mal fondée, je Vous proteste que je serois l'homme du monde le plus
+          porté à sacrifier pour Vous ma conscience en faisant semblant d'acquiescer à l'apparence
+          de Vos raisonnements et aux honnetes expressions dont Vous remplissez vos lettres. Mais je
+          sçay que Vous ne Vous contenteriez pas d'une telle complaisance; les Mathematiciens ne se
+          payent point de complimens; ils veulent des raisons et des raisons solides; Il faut
+          convaincre ou etre convaincu; il n'y a point de milieu; puisque aussy le vray et le faux
+          n'en admettent point. </p>
+        <p>Vous dites que Vous ne serez pas bien satisfait que lorsque Vous n'aurez plus contre Vous
+          mon Authorité; je dis la meme chose de moy par rapport à la Vôtre; Cependant comme en fait
+          de mathematiques on ne doit point se servir d'Authorité à moins qu'elle ne soit appuyée de
+          fort bonnes raisons; sachons de nous en donner mutuellement jusqu'à ce que l'evidence de
+          la verité ait dissipé l'erreur de quelque coté qu'elle se trouve: Je ne dis pas cela que
+          je ne sois déja tres bien persuadé par la force de mes demonstrations qu'elle est
+          entierement de Votre coté, mais je le dis pour Vous faire voir combien je serois disposé à
+          deferer à Vos raisonnemens, si le moindre doute troubloit l'evidence des miens. </p>
+        <p>Pardonnez moy Monsieur si je dis que Vous avez en quelque façon droit d'étre prevenu en
+          faveur de Vôtre Theorie, qui est si simple et si facile que c'est <pb facs="1061214" n="2"
+          /> dommage, qu'elle ne soit pas aussy veritable que vraysemblante, vû la grande utilité
+          qu'elle porteroit à la Navigation: Vôtre importante Charge Vous a engagé à publier votre
+          livre, Vous l'avez publiée du commendement exprés de sa Majesté; il a été reçû par les
+          sçavans avec applaudissement; et la plus part d'eux qui ne l'ont pas examiné avec soin se
+          sont laissé tromper par le beau dehors de Vos explications; Le moyen donc d'abandonner si
+          aiséement une Theorie si bien inventée? mais moy je n'ay pas de semblables raisons qui
+          m'induisent à ne pas demordre de mon sentiment, car il en resulte une Theorie tres
+          difficile et tres compliquée, que la reputation ne m'oblige pas de soutenir pour l'avoir
+          autrefois precipité au jour, puis qu'au contraire un rapport confus et imparfait qu'on me
+          fit de Vôtre Dispute avec Mr. Huguens m'avoit jetté au commencement dans Vôtre partie:
+          Ensorte que si je l'ay quitté, c'est le seul interest de la verité qui m'y a porté; ce qui
+          doit servir de grande presomtion, que je ne l'aurois fait sans la voir avec une entiere
+          evidence: Je souhaiterois seulement de pouvoir Vous la developper aussy clairement qu'elle
+          me paroit à moy. Pour cette fin je Vous supplie Monsieur de me preter une attention
+          desinteressée et non prevenue; je Vous leveray premierement les difficultés que vous avez
+          sur ma Regle de determiner la route et la vitesse du vaisseau; Ensuite je demontreray
+          cette meme Regle par le principe ordinaire de statique fondé dans la composition des
+          forces. </p>
+        <p>Pour ce qui est de vos difficultés, voycy en quoy elles consistent. </p>
+        <p><pb facs="1061215" n="3"/> Selon ma regle je pretendois et je pretens encore que si
+            <formula>BK</formula> marque la direction et la vitesse uniforme que le vaisseau auroit
+          par la seule impulsion du vent perpendiculaire sur la voile <formula>ABC</formula>; et
+            <formula>BL</formula> la direction et la vitesse uniforme du vaisseau poussé seulement
+          par le second vent perpendiculaire sur la voile <formula>DBE</formula>; La direction du
+          vaisseau poussé par les deux vents ensemble sera <formula>BH</formula> diagonale du
+          rectangle <formula>BIHK</formula> fait par les cotés <formula>BK</formula> et
+            <formula>BI</formula> troisieme proportionelle de <formula>BK</formula> à
+            <formula>BL</formula>; et la vitesse sera designée par <formula>BO</formula> moyenne
+          proportionelle entre <formula>BH</formula> et <formula>BK</formula>. </p>
+        <p>Mais Vous croyez Monsieur que cette regle mene à des contradictions, ce que Vous voulez
+          faire voir par deux differentes conclusions; mais il est si aisé de repondre à la
+          premiere, que Vous en avez prevu Vous meme la reponse que je vous donnerois: Car aprez
+          avoir montré la pretendue absurdité en ces termes "Le vaisseau allant donc suivant
+            <formula>BH</formula> avec la vitesse <formula>BO</formula>, <hi rend="u">sa vitesse
+            suivant</hi>
+          <formula>BL</formula>
+          <hi rend="u">sera</hi>
+          <formula>Bq</formula><hi rend="u">, et suivant</hi>
+          <formula>BK</formula>
+          <hi rend="u">sera</hi>
+          <formula>Bp</formula> supposant <formula>Oq</formula> perpendiculaire à
+            <formula>BI</formula>, et <formula>Op</formula> perpendiculaire à <formula>BK</formula>.
+          Or <formula>BO</formula>, <formula>Bq</formula>, et <formula>Bp</formula> sont entre elles
+          comme <formula>BH</formula>, <formula>BI</formula> et <formula>BK</formula>, qui
+          representent par Votre hypothese les forces qui poussent le vaisseau dans ces directions;
+          donc les vitesses uniformes seroient entre elles, comme les forces, ou ce qui est la meme
+          chose, les vitesses uniformes dans un milieu qui resiste, seroient entre elles, comme les
+          resistances, car les resistances sont comme les forces; ce qui seroit absurde, par ce que
+          les resistances sont toujours comme les quarrés des vitesses, comme vous en convenez Vous
+          meme."</p>
+        <p>Vous remarqués fort à propos que je diray à cela <hi rend="u">"qu'il ne s'agit pas icy de
+            comparer les resistances laterales qui ne sont qu'ideales, et rien en effet, et qu'il ne
+            faut avoir eagrd qu'à la resistance directe</hi>
+          <formula>BO</formula><hi rend="u">, qui est la seule reelle</hi>." Vous promettés <pb
+            facs="1061216" n="4"/> meme <hi rend="u">d'y consentir si l'on veut</hi>; non Monsieur,
+          je ne le veux pas de Vous par courtoisie, mais j'espere que la verité deployée Vous y
+          obligera; J'ajouteray icy seulement en passant que les vitesses étant toujours simples à
+          proprement parler ne se resolvent pas comme les forces, en vitesses laterales, mais ce
+          sont plutot leur determinations qui se resolvent; ainsi il falloit dire <hi rend="u">que
+            le vaisseau allant suivant </hi><formula>BH</formula>
+          <hi rend="u">avec la vitesse </hi><formula>BO</formula><hi rend="u">, la determination de
+            la meme vitesse suivant </hi><formula>BL</formula><hi rend="u"> sera
+            </hi><formula>Bq</formula><hi rend="u">; et suivant </hi><formula>BK</formula>
+          <hi rend="u">sera</hi>
+          <formula>Bp</formula>, ce qui ne renferme aucune absurdité. </p>
+        <p>Passons à l'autre objection, qui paroit avoir plus de fondement, d'autant que la
+          conclusion est directement contraire à ma regle, et qu'il n'est pas si aisé d'en decouvir
+          l'illegimité; j'en ay pourtant le denouement; mais voyons auparavant comment Vous
+          raisonnez. Aprez que Vous consentez qu'il ne s'agit pas icy de comparer les resistances
+          laterales qui ne sont qu'ideales, Vous continuez Monsieur en ces termes: "Pour en avoir
+          une autre (resistance) aussy directe à luy comparer; soit supposé que la force qui pousse
+          le vaisseau suivant <formula>BK</formula> soit double de la force designée par
+            <formula>BK</formula>, et que la force qui pousse le vaisseau suivant
+            <formula>BI</formula> soit aussy double de la force designée par <formula>BI</formula>;
+          prolongeant <formula>BK</formula> en <formula>R</formula> ensorte que
+            <formula>BR</formula> soit double de <formula>BK</formula>, et <formula>BI</formula> en
+            <formula>S</formula>, ensorte que <formula>BS</formula> soit double de
+            <formula>BI</formula>; <formula>BR</formula> designera la nouvelle force avec la quelle
+          le vaisseau sera poussé suivant <formula>BK</formula>; et <formula>BS</formula> designera
+          celle avec la quelle il sera poussé suivant <formula>BI</formula>: Et par Vôtre regle le
+          Vaisseau poussé par ces deux forces à la fois, doit aller suivant la direction
+            <formula>BT</formula> diagonale du parallelogramme <formula>BSTR</formula>
+          <hi rend="u">avec la vitesse </hi><formula>BX</formula><hi rend="u"> moyenne
+            proportionelle entre </hi><formula>BT</formula>
+          <hi rend="u">et</hi>
+          <formula>BR</formula>; mais comme <formula>BT</formula> n'est que <formula>BH</formula>
+          prolongée en <formula>T</formula>; à cause des rectangles semblables
+            <formula>BH.BT::BO.BX</formula>, c'est à dire, la force <formula>BH</formula> à la force
+            <formula>BT</formula>, comme la vitesse <pb facs="1061217" n="5"/>
+          <formula>BO</formula> à la vitesse <formula>BX</formula>, c'est à dire que les vitesses
+          directes du vaisseau seroient entre elles comme les forces qui poussent le Vaisseau, ce
+          qui seroit absurde, car ces vitesses sont toujours comme les racines des forces ou ce qui
+          revient au meme comme les racines des resistances."</p>
+        <p>Je conviens Monsieur que ce raisonnement seroit dans les formes et qu'il détruiroit par
+          consequent ma regle, s'il étoit vray ce que Vous supposez que selon elle
+            <formula>BX</formula> moyenne proportionelle entre <formula>BT</formula> et
+            <formula>BR</formula> designe la vitesse du vaisseau poussé à la fois par les deux
+          forces <formula>BR</formula> et <formula>BS</formula> doubles des forces
+            <formula>BK</formula> et <formula>BI</formula>; Mais je nie que <formula>BX</formula> en
+          consequence de ma regle doive étre la vitesse du vaisseau: Il est vraysemblant, je
+          l'avoue, que comme <formula>BO</formula> moyenne proportionelle entre
+            <formula>BH</formula> et <formula>BK</formula> marque selon ma regle la vitesse du
+          vaisseau poussé à la fois avec les forces simples <formula>BK</formula> et
+            <formula>BI</formula>, ainsi aussi <formula>BX</formula> moyenne proportionelle entre
+            <formula>BT</formula> et <formula>BR</formula> marquera la vitesse du meme vaisseau
+          poussé à la fois avec les forces doubles <formula>BR</formula> et <formula>BS</formula>:
+          Cependant cette anlogie de raisonnement ne peut pas avoir lieu icy, et si on entre bien
+          dans le vray sens de ma regle; on verra que la vitesse du vaisseau dans le cas des forces
+          doubles sera exprimée par <formula>BZ</formula> moyenne proportionelle entre
+            <formula>BT</formula> et <formula>BK</formula> et non point entre <formula>BT</formula>
+          et <formula>BR</formula>.</p>
+        <p>Pour Vous en faire comprendre la raison, souvenez Vous Monsieur, que dans les
+          constructions Geometriques où il s'agit d'exprimer la proportion des quarrés par des
+          lignes droites, on en choisit une arbitraire pour l'unité; la quelle étant une fois posée,
+          il faut s'en tenir dans tout le cours de la construction, n'étant pas permis de prendre
+          pour l'unité tantot une ligne tantot <pb facs="1061218" n="6"/> une autre sans donner dans
+          le paralogisme: Or dans la construction que prescrit ma regle j'ay pris
+            <formula>BK</formula> pour l'unité; car comme <formula>BK</formula> et
+            <formula>BL</formula> marquent par hypothese les vitesses uniformes que le vaisseau
+          auroit s'il etoit poussé separément dans les directions <formula>BK</formula> et
+            <formula>BL</formula>; il etoit necessaire de faire un parallelogramme
+            <formula>KI</formula> dont les cotés <formula>BK</formula> et <formula>BI</formula>
+          fussent comme les quarrés des vitesses pour exprimer la proportion des forces des deux
+          vents; et ainsi pour construire ces deux cotés dans la dite proportion, j'ay pris pour
+          l'amour de la brieveté et de la simplicité une des vitesses elles memes sçavoir
+            <formula>BK</formula> pour l'unité, faisant <formula>BI</formula> troisieme
+          proportionelle de <formula>BK</formula> à <formula>BI</formula>, car de cette maniere on
+          aura <formula>BK^{2}.BL^{2}::BK.BI</formula>; ensorte que c'est de pure liberté que la
+          meme <formula>BK</formula> marque icy en meme temps l'unité, une vitesse du vaisseau et
+          une force du premier vent: Or puisque <formula>BH</formula> diagonale du parallelogramme
+            <formula>KI</formula>, doit exprimer necessairement (en vertu de la composition
+          ordinaire des forces, que l'on peut appliquer à ce cas cy aussy bien qu'aux deux poids qui
+          tirent obliquement un troisieme comme je l'expliqueray cy aprez) la force moyenne avec
+          laquelle le vaisseau est poussé par l'action des deux vents ensemble; pour trouver donc la
+          vitesse uniforme du vaisseau dans la direction <formula>BH</formula> qui produise une
+          resistance de l'eau egale à cette force moyenne resultante par l'action des deux vents
+          ensemble; il est manifeste que l'on doit prendre la racine de <formula>BH</formula>, ce
+          qui se fait en prenant <formula>BO</formula> moyenne proportionelle entre
+            <formula>BH</formula> et l'unité c'est à dire entre <formula>BH</formula> et
+            <formula>BK</formula> entend que cellecy est l'unité. Il en est donc de meme des forces
+            <formula>BR</formula>, <formula>BS</formula> doubles, triples etc. de
+            <formula>BK</formula>, <formula>BI</formula>; celle qui en resulte sera
+            <formula>BT</formula> diagonale du parallelogramme <formula>RS</formula>; et la vitesse
+          du vaisseau sera <formula>\sqrt{}BT</formula> ou <formula>BZ</formula>,<note
+            type="editorial">Gemeint ist wohl <formula>\sqrt{BZ}</formula>.</note> moyenne
+          proportionelle entre <formula>BT</formula> et l'unité c'est à dire entre
+            <formula>BT</formula> et <formula>BK</formula> et non pas <formula>BX</formula> moyenne
+          proportionelle entre <formula>BT</formula> et <formula>BR</formula>; comme Vous l'avez
+          fait en adoptant tacitement deux differentes unités sçavoir <formula>BK</formula> et
+            <formula>BR</formula>, contre les regles d'une bonne construction. </p>
+        <p><pb facs="1061219" n="7"/> Je voy bien au reste que la simplicité que j'ay affectée dans
+          ma construction Vous a donné lieu d'en tirer Vôtre illegitime consequence; Car si, sans
+          avoir egard à la simplicité, j'avois exprimé l'unité par une autre ligne prise à
+          discretion, j'aurois obtenu une meme longueur pour <formula>BO</formula>, et Vous n'auriez
+          pas eu l'occasion de faire Vôtre objection, mais la construction en auroit été un peu plus
+          prolixe, dont voycy la maniere: Soit donc comme auparavant <formula>BK</formula> la
+          vitesse uniforme que le vaisseau auroit par la seule force du vent qui donne sur la voile
+            <formula>ABC</formula>; et <formula>BL</formula> la vitesse uniforme imprimée au
+          vaisseau si le second vent agissoit tout seul sur la voile <formula>DBE</formula>: Soit
+          maintenant <formula>N</formula> une ligne quelconque prise pour l'unité; Que l'on fasse
+            <formula>BQ=</formula> troisieme proportionelle de <formula>N</formula> à
+            <formula>BK</formula>, et <formula>BT=</formula> troisieme proportionelle de
+            <formula>N</formula> à <formula>BL</formula>: Soit achevé le parallelogramme
+            <formula>QBTV</formula>; Je dis que le vaisseau etant poussé par les deux forces
+          ensemble ira dans la diagonale <formula>BV</formula> et avec une vitesse
+            <formula>BO</formula> exprimée par la moyenne proportionelle entre <formula>BV</formula>
+          et l'unité <formula>N</formula>.</p>
+        <p>Je ne pense pas qu'il soit besoin de prouver au long que cette construction icy et celle
+          de ma lettre precedente donnent tout à fait la meme chose tant pour la direction de la
+          route que pour la vitesse: Car
+            <formula>BQ(\frac{BK^{2}}{N}).BT(\frac{BL^{2}}{N})::BK^{2}.BL^{2}::BK.BI</formula>, donc
+          les parallelogrammes <formula>QT</formula> et <formula>QS</formula> sont semblables, et
+            <pb facs="1061220" n="8"/> par consequent leurs diagonales <formula>BV</formula> et
+            <formula>BH</formula> sont sur une meme ligne droite ou dans une meme direction. De plus
+          par ma premiere construction on a <formula>BO^{2}=BH\times BK</formula>, et par la seconde
+            <formula>BO^{2}=BV\times N</formula>; mais à cause de
+            <formula>N.BK::BK.BQ::BH.BV</formula>, on a <formula>BH\times BK=BV\times N</formula>:
+          d'où il suit que <formula>BO</formula> de la premiere est = à <formula>BO</formula> de la
+          seconde construction. </p>
+        <p>Que si Vous faites maintenant l'application de cette seconde construction au cas qui fait
+          le sujet de Vôtre objection, en prenant des forces laterales doubles de
+            <formula>BQ</formula> et <formula>BT</formula>, et en gardant toujours la meme ligne
+            <formula>N</formula> pour l'unité; Vous trouverez que l'absurdité apparente que vous
+          m'avez objectée disparoitra entierement. </p>
+        <p>Voyla donc Monsieur levées Vos deux plus grands difficultés: ce que Vous ajoutez ensuite
+          partie pour appuyer ces memes difficultez partie pour confirmer Vôtre opinion, ne sont à
+          ce qui me semble que des repetitions sous d'autres expressions de ce que Vous avez
+          amplement deduit dans Vôtre Memoire; ou tout au plus ce ne sont que des argumens qui y
+          reviennent tous par un petit changement; en sorte que je Vous causerois peut etre de
+          l'ennuy si je reiterois de meme les reponses, que je Vous ay deja données dans ma premiere
+            lettre,<note type="editorial">[Text folgt]</note> d'autant plus que l'enodation que je
+          viens de faire de vos difficultés, et la verité bien affermie par la demonstration que je
+          m'en vay Vous communiquer, Vous mettra en état de Vous satisfaire Vous meme sur tout ce
+          qui Vous reste encore de scrupule. Cependant pour dire quelques mots sur ces argumens, je
+          remarque Monsieur que Vous abusez du terme de <hi rend="u">composition</hi> des forces en
+          Luy donnant une signification trop étroite, comme si c'étoit une composition de parties
+            <hi rend="u">integrantes</hi> dont il se fait un <hi rend="u">tout composé</hi>; au lieu
+          que ce n'est qu'une combinaison des forces laterales dont il resulte une force moyenne
+          egale à une troisieme directement opposée, la quelle quoiqu'inegale à la somme des deux
+          laterales ne laisse pas de les tenir en <pb facs="1061221" n="9"/> equilibre ou de les
+          contrebalancer par la seule disposition de sa direction; comme on le peut faire voir par
+          une infinité d'exemples de statique: Quoiqu'il en soit ce raisonnement que Vous faites en
+          ces termes: <hi rend="u">Vôtre force moyenne designée par </hi><formula>BH</formula><hi
+            rend="u"> etant moindre que la somme des deux forces qui la composent, sçavoir la somme
+            des forces designées par </hi><formula>BK</formula><hi rend="u"> et
+            </hi><formula>BI</formula><hi rend="u">; il faudroit necessairement, qu'il y eut pour
+            cela de la force de detruire dans les duex forces composantes ce qui ne peut pas etre,
+            la direction de la force </hi><formula>BK</formula><hi rend="u"> etant perpendiculaire à
+            la direction de la force </hi><formula>BI</formula><hi rend="u">, et on n'aura pas de
+            peine à en convenir, si on fait reflexion, qu'il n'y a point de force sans vitesse; or
+            la force </hi><formula>BK</formula><hi rend="u"> n'a point de vitesse contre la force
+            </hi><formula>BI</formula><hi rend="u">, ni </hi><formula>BI</formula><hi rend="u">
+            contre </hi><formula>BK</formula><hi rend="u">; d'où il suit que ces deux forces ne se
+            peuvent rien detruire l'une à l'autre</hi>. Ce raisonnement, dis-je, n'est pas plus
+          concluant, que cet autre, par lequel un certain Italien<note type="editorial">I.F. Vanni
+            (?)</note> pretendoit autrefois detruire une proposition de statique incontestable en
+          elle meme qui est que le<hi rend="u"> moment ou la force avec la quelle une boule tache de
+            descendre sur un plan incliné se tient au poids absolu de la boule comme la hauteur
+            perpendiculaire de ce plan à sa longueur</hi>;<note type="editorial">[Text folgt]</note>
+          Car de ce que considerant la boule soutenue par deux plans inclinés qui font ensemble un
+          angle droit, il voyoit que la somme des deux forces avec les quelles les deux plans sont
+          pressés par la boule seroit en vertu de cette proposition plus grande que la force totale
+          ou le poids absolu de la boule; il croyoit mal à propos que cela étoit une absurdité
+          (voyez les Actes de Leipsic de l'année 1684, pag. 512).<note type="editorial">Specimen
+            libri de momentis gravium etc., Autore I.F.V[anni] Lucensi, AE Novembris MDCLXXXIV, pp.
+            510-514</note></p>
+        <p>Si Vous prenez la peine Monsieur de reflechir un peu sur l'etat de notre question, Vous
+          verrez que Vôtre raisonnement est fort peu different de celuy de cet Italien, tout comme
+          les deux sujets le sont aussy fort peu, je suis meme assez hardy de dire, que tous deux se
+          reduisent à la meme chose; Voycy comment: La boule peut represen<pb facs="1061222" n="10"
+          />ter le vaisseau; le poids absolu de la boule et sa direction verticale representent la
+          force de la resistance de l'eau et la route du vaisseau: et enfin les deux reactions ou
+          renitences des deux plans inclinés se rapportent aux deux forces avec les quelles les deux
+          voiles du vaisseau sont poussées. On pouroit donc former icy la meme objection en disant,
+          que <hi rend="u">les forces passives avec les quelles la boule est repoussée par les plans
+            et dont les directions sont perpendiculaires ne se detruisent en rien, et que si elles
+            agissent sur la boule qui donne lieu par l'action de son poids, que chacune d'elles
+            agisse de toute sa force, cette boule sera poussée par une force qui sera egale à la
+            somme des deux</hi>; cependant la veritable statique nous apprend que la somme de ces
+          deux forces passives des plans est plus grande que le poids absolu de la boule et par
+          consequent plus grande que la force moyenne passive avec la quelle la boule est repoussée
+          verticalement en haut, et qui doit étre egale au poids absolu à cause de l'egalité entre
+          l'action et la reaction.</p>
+        <p>Je Vous entens déja repliquer que Vous ne trouvez pas que cet exemple non plus que le
+          principe de statique du quel je Vous ay parlé dans ma precedente fasse rien à Vôtre
+          affaire; Qu'un poids qui tend ou qui tire perpendiculairement à l'horizon, tend ou tire en
+          meme temps obliquement et que c'est toujours une meme masse qui agit suivant toutes les
+          directions, par consequent que les forces de ce poids suivant toutes les directions seront
+          comme les vitesses avec les quelles il tendra aussy à se mouvoir; au lieu que la force du
+          vent consiste dans le produit d'une masse et d'une vitesse differente de la masse et de la
+          vitesse qui produisent la force d'un autre vent, en sorte que, puis que les masses sont
+          comme les vitesses, les forces seront toujours comme les quarrés des vitesses, au lieu que
+          dans l'exemple de statique supposant que <pb facs="1061223" n="11"/> c'est la meme masse
+          qui tire en tout sens, il est necessaire que les forces soient comme les vitesses avec
+          lesquelles cette meme masse tend à se mouvoir, ce qui fait que la regle de statique pour
+          la composition des mouvemens ne peut pas étre admise dans le cas du vaisseau poussé par
+          deux Vents dont la direction est perpendiculaire l'une à l'autre et qui donnent
+          perpendiculairement sur deux Voiles etc. Mais toutes ces exceptions et d'autres semblables
+          quelques specieuses qu'elles soient si on les regarde de prés on trouvera qu'elles ne
+          contiennent aucune solide raison, pourquoy vouloir que ce cas particulier du vaisseau
+          poussé continuellement par trois forces à sçavoir par celles des deux vents et de la
+          resistance de l'eau; soit exempté de la regle generale de statique, en vertu de la quelle
+          on conclud universellement et sans exception que si un point mobile <formula>B</formula>
+          est tenu en equilibre par la sollicitation de trois puissances dont les directions et
+          quantités soient exprimées par les trois lignes <formula>BK</formula>,
+            <formula>BI</formula>, <formula>BY</formula> chacune d'elles <formula>BY</formula> par
+          exemple, sera egale et dans la meme direction avec la diagonale <formula>BH</formula> du
+          parallelogramme <formula>KI</formula> fait par les lignes des deux autres puissances
+            <formula>BK</formula> et <formula>BI</formula>. Aussy ne Vous etés Vous avisé Monsieur
+          de chercher ces exceptions que depuis que Vous avez reçû ma premiere lettre, où j'ay
+          montré les absurdités dans les quelles on tomberoit si on vouloit rejetter cette regle
+          generale de statique reconnue de tout temps; car Vous ne pouvez pas disconvenir que Vous
+          ne l'ayez au commencement condamnée tout à plat, sans admettre meme le cas des poids,
+          temoins l'expression dont Vous Vous étes servi dans Vôtre premiere lettre <pb
+            facs="1061224" n="12"/> où Vous parlés en generale de cette regle comme <hi rend="u"
+            >d'une pure tradition qui avoit passé des Anciens Geometres jusqu'à notre
+            temps</hi><note type="editorial">[Text folgt]</note> sans en avoir d'autres preuves que
+            l'<hi rend="u">Authorité des Grand Geometres</hi>; Temoin aussy une des lettres que Mr.
+          de Montmort, qui est de Vôtre parti, a ecrit à mon Neveu, dans la quelle je trouve ces
+          mots: <hi rend="u">Si Mr. Renau a raison il faut reformer tout ce qui a été ecrit en
+            mechanique jusqu'à present et en particulier celle de Mr. Varignon</hi>,<note
+            type="editorial">[Text folgt]</note> donc aussy la regle ou le principe de la
+          composition des forces pris dans toute son etendue. Vous commencez presentement d'en
+          reconnoitre la verité pour les poids; Voyla Monsieur un grand pas que Vous faites vers
+          moy; encore un ou deux, et nous serons joints; c'est de quoy j'espere de venir à bout. </p>
+        <p>Effectivement la distinction que Vous faites entre la force des poids et celle des vents,
+          n'est point une raison d'admettre le principe de statique pour ceux-là et le rejetter pour
+          ceux-cy; car cette distinction ne regarde que les causes productrices de ces forces; or il
+          n'est pas question de sçavoir comment les forces sont produites, il suffit qu'elles soient
+          existentes, de quelques causes qu'elles proviennent elles feront toujours la meme
+          impression, la meme action, par consequent le meme effet, pourvû que ces forces soient
+          appliquées d'une meme maniere: Car dés qu'une force uniforme est continuellement appliquée
+          sur un corps, elle est dans ce corps comme innée ou intrinseque; ce seroit prendre le
+          change si pour raisonner de l'energie des forces dans la statique, on vouloit s'amuser
+          premierement à penetrer la cause physique de la pesanteur pour sçavoir si c'est une
+          qualité intrinseque et essentielle des corps, comme le pretendent les Peripateticiens, ou
+          si elle est causée par la pression externe de la matiere <pb facs="1061225" n="13"/>
+          subtile, selon que disent Messrs. les Cartesiens; ou enfin suivant quelques modernes<note
+            type="editorial">Im Manuskript stand zuvor "Anglois".</note> elle consiste dans un
+          attraction mutuelle des corps; De cette maniere on ne seroit jamais assuré de la certitude
+          d'une proposition de statique, puisque si elle étoit vraye dans le systeme d'Aristote elle
+          seroit fausse selon Vôtre maniere de distinguer dans celuy de Des Cartes. Je ne croy pas
+          que Vous soyez formellement dans le sentiment, de vouloir faire dependre la certitude de
+          la statique de celle de la Physique. Cependant je Vous ay fait voir Monsieur, que Vôtre
+          Distinction en porte une telle dependence; reflechissez-y, je Vous prie, et faites
+          attention à l'exemple de statique que voycy, qui me servira de Lemme dont je tireray la
+          demonstration de la construction que je Vous ay donnée pour determiner la route et la
+          vitesse du vaisseau poussé par deux forces perpendiculaires. </p>
+        <p>Concevez donc dans un plan vertical [Figur folgt]<note type="editorial"> [Link folgt]
+          </note> que le point mobile <formula>B</formula> soit attaché aux trois cordes
+            <formula>BLN</formula>, <formula>BMO</formula>, et <formula>BP</formula>, dont les deux
+          premieres faisant un angle droit <formula>LBM</formula> passent par dessus les deux
+          poulies <formula>L</formula> et <formula>M</formula>, ensorte que les portions repliées
+            <formula>LN</formula> et <formula>MO</formula> et la troisieme corde
+            <formula>BP</formula> soient verticales; Aux extremités de ces trois cordes
+            <formula>N</formula>, <formula>O</formula>, et <formula>P</formula> soient attachés
+          perpendiculairement dans les milieus trois plans horizontaux mobiles et sans pesanteur
+            <formula>AC</formula>, <formula>DE</formula> et <formula>FG</formula>, les grandeurs des
+          quels soient, aprez avoir prolongé <formula>PB</formula> en <formula>H</formula>, comme
+          les sinus des angles <formula>HBM</formula>, <formula>HBL</formula> et
+            <formula>LBM</formula>; ou, ce qui revient au meme, comme les deux cotés
+            <formula>BK</formula>, <formula>BI</formula> et la diagonale <formula>BH</formula> du
+          parallelogramme <formula>KI</formula> fait autour du diametre <formula>BH</formula>,
+          supposé par exemple qu'ils soient comme ces trois nombres 3, 4, et 5: Imaginez Vous
+          presentement qu'un vent vienne fondre de haut en bas sur ces trois plans <pb
+            facs="1061226" n="14"/> suivant les directions verticales <formula>LN</formula>,
+            <formula>MO</formula>, <formula>BP</formula>; ensorte que les plans recevant les
+          impressions du vent en raison de leurs grandeurs c'est à dire des nombres 3, 4, et 5; il
+          tireront le point mobile <formula>B</formula> suivant les trois directions
+            <formula>BL</formula>, <formula>BM</formula> et <formula>BP</formula> avec des forces
+          qui seront dans la meme raison de 3, 4, et 5 ou de <formula>BK</formula>,
+            <formula>BI</formula> et <formula>BH</formula>. Ainsi je Vous demande Monsieur si Vous
+          ne concevez pas clairement, que les trois cordes dans cette supposition seront bandées par
+          la force du vent de la meme maniere, qu'elles le seroient, si au lieu des plans pressés
+          par le vent on chargeoit les extremités des cordes <formula>N</formula>,
+            <formula>O</formula> et <formula>P</formula>; de trois poids equivalens, c'est à dire,
+          aussy en raison de 3, 4 et 5; Vous concevez donc que le vent et les poids feront le meme
+          effet sur le point <formula>B</formula>; Or le point <formula>B</formula> seroit mis en
+          equilibre dans la supposition des poids, ce que Vous m'accordés; il le seroit donc aussy
+          dans la supposition du vent: He bien cela Vous paroit clair comme le jour, et qui est ce
+          qui en douteroit? cependant c'est là justement le cas de notre question; ainsi il ne faut
+          qu'un peu d'explication, pour demontrer la construction que j'ay donnée pour determiner la
+          route et la vitesse du vaisseau poussé à la fois par deux voiles perpendiculaires. </p>
+        <p>Pour ce qui est de la route Vous serez Monsieur sans doute d'accord avec moy, que sa
+          direction doit etre celle suivant la quelle un troisieme vent donnant en sens contraire
+          sur une voile perpendiculaire <formula>aBc</formula>, pourroit contrebalancer les deux
+          premiers vents et arreter ainsi le vaisseau en <formula>B</formula>. </p>
+        <p>En considerant les vents comme n'etant pas infiniment rapides je suppose pour une plus
+          juste application à notre cas que les deux premiers vents donnent sur les voiles du
+          vaisseau en repos avec leur vitesses relatives c'est à dire avec l'excés dont la vitesse
+          du vent suivant <formula>BG</formula> surpasse la vitesse uniforme <formula>BK</formula>
+          que le vaisseau auroit s'il étoit poussé par ce seul vent, comme aussy avec l'excés dont
+          la vitesse du vent suivant <formula>BF</formula> excede la vitesse uniforme
+            <formula>BL</formula> que le vaisseau auroit par la seule impulsion de ce vent. </p>
+        <p><pb facs="1061227" n="15"/> Ainsi voyla le vaisseau en <formula>B</formula> comme un
+          point mobile tiré et contrebalancé par trois puissances, suivant les trois directions
+            <formula>BG</formula>, <formula>BF</formula> et <formula>Bm</formula>; or par le lemme
+          precedent <formula>Bm</formula> prolongée sera la diagonale <formula>BH</formula> du
+          parallelogramme <formula>KI</formula> dont les cotés <formula>BK</formula> et
+            <formula>BI</formula> expriment la raison des deux autres puissances, les quelles sont
+          comme les quarrés des vitesses uniformes que le vaisseau auroit étant poussé par chaque
+          puissance laterale separément, c'est à dire comme <formula>BK^{2}</formula> et
+            <formula>BL^{2}</formula>: C'est pourquoy le vaisseau poussé à la fois par les deux
+          puissances laterales sans la troisieme, suivra la route <formula>BH</formula>, qui seroit
+          la direction de cette troisieme, ce qu'il falloit demontrer pour la route. </p>
+        <p>Quant à la vitesse uniforme que ce vaisseau aura, il est clair qu'elle doit etre d'un tel
+          degré, que la resistance de l'eau qui en resulte puisse etre egale à la troisieme
+          puissance qui contrebalance les deux autres laterales; comme donc par le lemme precedent
+          la troisieme puissance est exprimée par <formula>BH</formula>, on aura
+            <formula>\sqrt{}BH</formula>, c'est à dire <formula>BO</formula> ou la moyenne
+          proportionelle entre <formula>BH</formula> et l'unité <formula>BK</formula> pour la
+          vitesse du vaisseau qui produit une resistance egale à la troisieme puissance, ce qu'il
+          falloit demontrer pour la vitesse. </p>
+        <p>Je me sers icy du mot de puissance au lieu de celuy de force, afin de me rendre plus
+          intelligible en faisant voir que la force des vents n'a point de prerogative sur un autre
+          genre de puissance continuellement et uniformement appliquée. Ainsi quittons les vents et
+          les voiles, et concevons deux vertus par ex. magnetiques qui fassent des efforts
+          continuels et uniformes pour mouvoir le vaisseau l'un<note type="editorial">Im Manuskript
+            steht hier am Rand der neuen Zeile "e". </note> suivant la direction
+            <formula>BG</formula> et l'autre suivant la direction <formula>BF</formula>; en telle
+          condition que la premiere sans le concours de l'autre pouroit procurer au vaisseau une
+          vitesse uniforme exprimée par <formula>BK,</formula> et l'autre sans <pb facs="1061228"
+            n="16"/> le concours de la premiere luy pouroit causer une vitesse uniforme designée par
+            <formula>BL</formula>. Il suit de là que leurs efforts seront comme le quarré de
+            <formula>BK</formula> et le quarré de <formula>BL</formula>, c'est à dire comme
+            <formula>BK</formula> et <formula>BI</formula>: Concevons presentement aussy qu'une
+          corde <formula>Bm</formula> retienne et empeche le vaisseau d'obeir aux efforts de ces
+          deux vertus. Il est manifeste par le principe de statique sur lequel est bati mon lemme
+          que la corde prendra une situation qui sera dans la meme direction avec la diagonale
+            <formula>BH</formula>, et que <formula>BH</formula> designera la force avec la quelle la
+          corde se bandera; Nous voyons donc clairement que le vaisseau quoique arreté par la corde
+          ne laisseroit pas d'avoir une tendence continuelle à se mouvoir dans la direction
+            <formula>BH</formula>: si bien que si on rompoit la corde, le vaisseau commenceroit
+          effectivement à se mouvoir dans la route <formula>BH</formula> et pendant que les vertus
+          continueroient de faire toujours les memes efforts dans les memes directions, le vaisseau
+          s'accelereroit de plus en plus suivant <formula>BH</formula>, jusqu'à ce que la resistance
+          qu'il trouveroit en sens contraire fut precisement egale à la force avec la quelle la
+          corde se bandoit avant la rupture. </p>
+        <p>Au reste Monsieur j'espere que Vous ne Vous offenserez pas de la naiveté avec la quelle
+          j'ay dit mes pensées; Vous avez l'esprit trop clairvoyant pour n'appercevoir pas la
+          verité, et le coeur trop bien placé pour ne la pas reverer en quelqu'état qu'elle
+          paroisse. C'est pourquoy je sousmets mes raisons à vôtre propre jugement, si Vous les
+          trouvez assez solides, pour Vous y rendre enfin, il me sera bien glorieux d'avoir fait une
+          si belle conquete. Cependant quoiqu'il arrive Vous me ferez la justice de croire que je ne
+          cesseray d'etre avec tout le respect dû à vôtre rang et à vôtre merite Monsieur Votre tres
+          humble et tres obeissant serviteur J. Bernoulli. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

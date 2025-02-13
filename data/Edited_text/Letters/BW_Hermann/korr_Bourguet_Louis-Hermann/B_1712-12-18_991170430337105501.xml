@@ -1,22 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-      Bruguier -> Perückenmacher in Venedig
-      
-      Conti -> Antonio Conti (1677-1749) pers_DE-588-118941941
-      
-      Vallisnieri -> Antonio Vallisnieri (1661-1730) pers_DE-588-118867865
-      
-      Personne -> Hat Hermann über ihren Venedig Aufenthalt erzählt, das es dort die GLI für 2 Livre gibt.
-      
-      Libraire -> Hat sein Geschäft "sotto le Procuratie vechie" und verkauft die GLI für 2 Livre. Sulamith hat evlt. mehr Informationen zu den Geschäften die in den Arkaden dieses Gebäudes waren.
-      Gibt sicher seit den 1640er Jahren dort Büchergeschäfte.
-      
-      Reviseur de Livres -> ist er der P. Inquisiteur? In Papadopoli weiterschauen.
-      
-      Hertz -> Giovanni Gabriele Hertz pers_DE-588-1037587715
-
-      --><!--_____________--><TEI xml:id="B_1712-12-18_991170430337105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170430337105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -137,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1712-12-04_991170430337205501" type="prev"/>
-        <ptr target="B_1712-12-26_991170430337005501" type="next"/>
+        <ptr target="B_991170430337205501" type="prev"/>
+        <ptr target="B_991170430337005501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -180,11 +163,36 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+      Bruguier -> Perückenmacher in Venedig
+      
+      Conti -> Antonio Conti (1677-1749) pers_DE-588-118941941
+      
+      Vallisnieri -> Antonio Vallisnieri (1661-1730) pers_DE-588-118867865
+      
+      Personne -> Hat Hermann über ihren Venedig Aufenthalt erzählt, das es dort die GLI für 2 Livre gibt.
+      
+      Libraire -> Hat sein Geschäft "sotto le Procuratie vechie" und verkauft die GLI für 2 Livre. Sulamith hat evlt. mehr Informationen zu den Geschäften die in den Arkaden dieses Gebäudes waren.
+      Gibt sicher seit den 1640er Jahren dort Büchergeschäfte.
+      
+      Reviseur de Livres -> ist er der P. Inquisiteur? In Papadopoli weiterschauen.
+      
+      Hertz -> Giovanni Gabriele Hertz pers_DE-588-1037587715
+
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430337105501_01" n="48r"/>
 <opener><salute>Monsieur</salute></opener>
 <p><lb/>Je Vous remercie fort du soin que Vous avez pris <choice><orig>a</orig><reg>à</reg></choice> me faire tenir la Perruque
-                  <lb/>que <abbr>M.</abbr> <rs type="person">Bruguier</rs><!-- persontag --> a eu la bonté de me faire faire, elle est belle et bonne et j'en suis
+                  <lb/>que <abbr>M.</abbr> <rs type="person">Bruguier</rs> a eu la bonté de me faire faire, elle est belle et bonne et j'en suis
                   <lb/>tout <choice><orig>a</orig><reg>à</reg></choice> fait content; je Vous remercie bien aussi de Vôtre obligeant compliment que
                   <lb/>m'avez fait sur ce sujet, Vous souhaitant pareillement toutes sortes de prosperités,
                   <lb/>sur tout une santé parfaite et durable et une heureuse entrée au<!-- 29.9.23, MS: Korrektur? Überprüfen --> Nouvel an suivi
@@ -193,27 +201,27 @@
                   <lb/>voulu l'affranchir pour plus de seureté, outre que je Vous dois encore la boete que je Vous
                   <lb/>restitueray ce Carneval quand j'auray la satisfaction de Vous voir <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-3164603" type="place">Venise</rs> s'il plait
                   <lb/>à Dieu.</p>
-<p>J'ay fait donner Vôtre <rs key="brieftag" type="letter">lettre</rs> <choice><orig>a</orig><reg>à</reg></choice> <abbr>M.</abbr> l'Abbé <rs key="pers_DE-588-118941941" type="person">Conti</rs> le meme jour que je
-            <lb/>l'ay receue et <rs key="brieftag" type="letter">celle</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-118867865" type="person">Vallisnieri</rs> je la luy ay portée moy meme, je n'ay point
+<p>J'ay fait donner Vôtre <rs type="letter">lettre</rs> <choice><orig>a</orig><reg>à</reg></choice> <abbr>M.</abbr> l'Abbé <rs key="pers_DE-588-118941941" type="person">Conti</rs> le meme jour que je
+            <lb/>l'ay receue et <rs type="letter">celle</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-118867865" type="person">Vallisnieri</rs> je la luy ay portée moy meme, je n'ay point
             <lb/>encore <choice><orig>Vu</orig><reg>vu</reg></choice> <abbr>M.</abbr> <rs key="pers_DE-588-118941941" type="person">Conti</rs> ne l'ayant pas trouvé <choice><orig>a</orig><reg>à</reg></choice> sa maison par diverses fois que je<add> le</add> suis
-            <lb/>allé chercher; j'espere pourtant bien de voir votre <rs key="brieftag" type="letter">lettre</rs> que Vous luy avez ecrite
+            <lb/>allé chercher; j'espere pourtant bien de voir votre <rs type="letter">lettre</rs> que Vous luy avez ecrite
             <lb/>et que <abbr>M.</abbr> <rs key="pers_DE-588-118867865" type="person">Vallisnieri</rs> m'a dit étre bien sçavante; je la liray avec plaisir: cependant
             <lb/>je Vous suis obligé de ce que Vous m'en avez bien voulu informer de son contenu.</p>
-<p><lb/>Une Personne<!-- persontag --> m'a dit qu'etant <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-3164603" type="place">Venise</rs>, le petit Libr<add>a</add>ire<!-- persontag --> qui<add> y</add> est <hi rend="u">sotto le Procuratie
-                      <lb/>vechie<!-- orttag --></hi><choice><orig>;</orig><reg>,</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> luy avoit offert le <rs type="keyword">Journal de' Letterati d'<rs key="place_KON-italie" type="place">Italia</rs></rs><!-- Ist nicht im Gazetier universel. Es handelt sich aber um "Giornale de' litterati d'Italia" Es erschien mehrfach pro Jahr.--> qui s'imprime <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-3164603" type="place">Venise</rs> a
+  <p><lb/>Une <rs type="person">Personne</rs> m'a dit qu'etant <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-3164603" type="place">Venise</rs>, le petit <rs type="person">Libr<add>a</add>ire</rs> qui<add> y</add> est <hi rend="u">sotto le <rs type="place">Procuratie
+    <lb/>vechie</rs></hi><choice><orig>;</orig><reg>,</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> luy avoit offert le <rs type="keyword">Journal de' Letterati d'<rs key="place_KON-italie" type="place">Italia</rs></rs><!-- Ist nicht im Gazetier universel. Es handelt sich aber um "Giornale de' litterati d'Italia" Es erschien mehrfach pro Jahr.--> qui s'imprime <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-3164603" type="place">Venise</rs> a
                       <lb/>due lire il tometto; Je Vous prie de me faire la <subst><del><gap/></del><add>G</add></subst>race de Vous en informer, quand Vous
                    <lb/>aurez le loisir, et de prendre pour moy tous les <rs type="keyword">dix tomes</rs> en cas qu'il les veuille donner
                       <lb/>au prix que je vien de dire de 2 L.<!-- Abkürzung oder Währungszeichen? --> par tome. Je me suis défait de tous ceux que
                    <lb/>j'avois, et je n'ay pas assés de Courage de l'acheter<choice><orig>-</orig><reg> </reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur -->derechef pour 3 livres le tome
                    <lb/>comme on les <choice><orig>vendois</orig><reg>vendoit</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> ordinairement.</p>
-<p><lb/>On ne me mande rien de mon <rs key="biblio_WS22BVK4" type="biblio">livre</rs><note type="comment">Na. 022.</note> s'il ira bien tot sous la presse ce que je desire fort, appa<pc type="hyphenation">-</pc><lb break="no"/>remment que le bon <choice><abbr>R.</abbr><expan>Révérend</expan></choice> <choice><abbr>P.</abbr><expan>Père</expan></choice> Reviseur de Livres<!-- persontag --> ne se hâte pas trop <choice><orig>a</orig><reg>à</reg></choice> <choice><orig>reuoir</orig><reg>revoir</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> le mien qui ne
+<p><lb/>On ne me mande rien de mon <rs key="biblio_WS22BVK4" type="biblio">livre</rs><note type="comment">Na. 022.</note> s'il ira bien tot sous la presse ce que je desire fort, appa<pc type="hyphenation">-</pc><lb break="no"/>remment que le bon <choice><abbr>R.</abbr><expan>Révérend</expan></choice> <choice><abbr>P.</abbr><expan>Père</expan></choice> <rs type="person">Reviseur de Livres</rs> ne se hâte pas trop <choice><orig>a</orig><reg>à</reg></choice> <choice><orig>reuoir</orig><reg>revoir</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> le mien qui ne
                   <lb/>contient pas des <choice><orig>mets</orig><reg>mots</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --><!-- Vielleicht ist "mets" gemeint, überprüfen. --> de son gout, et que <subst><del>c</del><add><unclear>s</unclear></add></subst>ait on s'il ne fera de la difficulté de le laisser
                    <lb/>courir <choice><orig>a</orig><reg>à</reg></choice> cause de quelques endroits <choice><orig>ou</orig><reg>où</reg></choice> je parle du <choice><abbr>mouvem.<hi rend="sup">t</hi></abbr><expan>mouvement</expan></choice> journalier de la terre. 
                                   <pb facs="991170430337105501_02" n="48v"/>
 <lb/>Cependant puis que mon <rs key="biblio_WS22BVK4" type="biblio">traité</rs><note type="comment">Na. 022.</note> est un livre de Geometrie, je ne croy pas qu'il le lira
                    <lb/>ainsi <choice><orig>a</orig><reg>à</reg></choice> la menue. Quoy qu'il en soit je desire fort qu'on l'imprime bientot, c'est pour
                    <lb/>cela je veux ecrire un de ces premiers jours <choice><orig>a</orig><reg>à</reg></choice> <abbr>M.</abbr> <rs key="pers_DE-588-1037587715" type="person">Hertz</rs>. Enfin, je Vous prie de faire
-                   <lb/>tenir cette <rs key="brieftag" type="letter">lettre</rs> à notre <abbr>M.</abbr> Bruguier;<!-- persontag --> il ne m'a pas encore été possible de Vous
+  <lb/>tenir cette <rs type="letter">lettre</rs> à notre <abbr>M.</abbr> <rs type="person">Bruguier</rs>; il ne m'a pas encore été possible de Vous
                   <lb/>servir du <rs type="biblio">memoire</rs> touchant l'etude de la Geometrie que je Vous ay promis,<!-- MS: siehe auch Brief vom 1712.12.04. --> <choice><orig>ie</orig><reg>je</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur -->
 <lb/>m'acquiteray de ma promesse le plutôt que je pouray, en attendant je suis toujours
                    <lb/><del>et </del>avec beaucoup d'estime et de tout mon coeur</p>

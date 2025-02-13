@@ -1,157 +1,417 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1719-10-23_991170515371805501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Henri-Alexandre Barbaud an Johann I Bernoulli. Lille, 23. Oktober 1719</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Beim Verfasser handelt es sich um Henri-Alexandre Barbaud (1686-ca. 1739), der in der Korrespondenz unter dem Namen "de Thiancourt" bekannt ist. Er gehörte einer adligen Familie an, deren Anspruch auf den Adelstitel inzwischen erloschen war. Die Bezeichnung "de Thiancourt" verweist darauf. Der Brief enthält Barbaud de Thiancourts Essai "Expressions generales des sommes des six premières Puissances reduites à une même denomination".</p>
-        <p>Bl. 101: leer</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515371805501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Henri-Alexandre Barbaud an Johann Bernoulli. Lille,
+            23. Oktober 1719</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000057493</title><title type="alt"
+            >1719-10-23_Barbaud_Henri_Alexandre-Bernoulli_Johann_I</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Barbaud, Henri-Alexandre </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Beim Verfasser handelt es sich um Henri-Alexandre Barbaud
+            (1686-ca. 1739), der in der Korrespondenz unter dem Namen "de Thiancourt" bekannt ist.
+            Er gehörte einer adligen Familie an, deren Anspruch auf den Adelstitel inzwischen
+            erloschen war. Die Bezeichnung "de Thiancourt" verweist darauf. Der Brief enthält
+            Barbaud de Thiancourts Essai "Expressions generales des sommes des six premières
+            Puissances reduites à une même denomination".</p><p>Bl. 101: leer</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc facs="http://dx.doi.org/10.7891/e-manuscripta-127040"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 725:Bl.91-101</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170515371805501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433065305504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000057493</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>9 Bl.<dimensions unit="cm">
+                    <height>23</height>
+                    <width>17</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>2 Beilagen</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>A Lille</origPlace><date when="1719-10-23">ce 23e 8bre
+              1719</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://dx.doi.org/10.7891/e-manuscripta-127040" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 725:Bl.91-101</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170515371805501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433065305504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000057493</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>9 Bl.<dimensions unit="cm"><height>23</height><width>17</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>2 Beilagen</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>A Lille</origPlace>
-            <date when="1719-10-23">ce 23e 8bre 1719</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4114418-1">Lille</placeName>
-        <date when="1719-10-23">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1719-03-20_991170514610605501" type="prev"/>
-        <ptr target="B_1720-01-03_991170515371705501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Barbaud_Henri-Alexandre_de_Thiancourt-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <p>Henri-Alexandre Barbaud (de Thiancourt) teilt Joh. B. seine rein arithmetische Methode zur Herleitung einer allgemeinen Formel für die Summe der Potenzen der natürlichen Zahlen mit. Er bittet Joh. B. um Stellungnahme auch zu seinen Schwierigkeit beim Umgang mit der Zentralbewegung fester und flüssiger Körper. Bewegen diese sich zentrifugal oder tangential?</p>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/3491647/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="3491648" n="1"/> <pb facs="3491649" n="2"/> <pb facs="3491650" n="3"/> <pb facs="3491651" n="4"/> <pb facs="3491652" n="5"/> <pb facs="3491653" n="6"/> <pb facs="3491654" n="7"/> <pb facs="3491655" n="8"/> <pb facs="3491656" n="9"/> <pb facs="3491657" n="10"/> <pb facs="3491658" n="11"/> <pb facs="3491659" n="12"/> <pb facs="3491660" n="13"/> <pb facs="3491661" n="14"/> <pb facs="3491662" n="15"/> <pb facs="3491663" n="16"/> <pb facs="3491664" n="17"/> <pb facs="3491665" n="18"/> <pb facs="3491666" n="19"/> <pb facs="3491667" n="20"/> <pb facs="3491668" n="21"/> <pb facs="3491669" n="22"/> <pb facs="3491670" n="23"/> <pb facs="3491671" n="24"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-1161136878">Barbaud, Henri-Alexandre</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4114418-1"
+            >Lille</placeName>
+          <date when="1719-10-23">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_991170514610605501" type="prev"/>
+          <ptr target="B_991170515371705501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Barbaud_Henri-Alexandre_de_Thiancourt-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>Henri-Alexandre Barbaud (de Thiancourt) teilt Joh. B. seine rein arithmetische Methode
+          zur Herleitung einer allgemeinen Formel für die Summe der Potenzen der natürlichen Zahlen
+          mit. Er bittet Joh. B. um Stellungnahme auch zu seinen Schwierigkeit beim Umgang mit der
+          Zentralbewegung fester und flüssiger Körper. Bewegen diese sich zentrifugal oder
+          tangential?</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-108991332X">Falkner, Dorothea</persName>
+            <note type="lebensdaten">(1673-1764)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119408007">Cassini, Giovanni Domenico</persName>
+            <note type="lebensdaten">(1625-1712)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118524844">Descartes, René</persName>
+            <note type="lebensdaten">(1596-1650)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117205508">Iselin, Jakob Christoph</persName>
+            <note type="lebensdaten">(1681-1737)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1042458626">La Hire, Gabriel Philippe de</persName>
+            <note type="lebensdaten">(1677-1719)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1719-10-23_Barbaud_Henri_Alexandre-Bernoulli_Johann_I"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/3491647/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p> A Monsieur </p>
+        <p>Monsieur Bernouli Proffesseur</p>
+        <p>des mathematiques à Basle et</p>
+        <p>Membre de L'accademie</p>
+        <p>Royale des sciences à Paris, de</p>
+        <p>Celle de Berlin, et de la societé</p>
+        <p>Royale de Londres; </p>
+        <p>Illustre entre les</p>
+        <p>Sçavants,</p>
+        <p>Et digne de tous ces Postes qu'Il</p>
+        <p>remplit avec distinction. </p>
+        <p><pb facs="3491648" n="1"/> Monsieur </p>
+        <p>Je me souviens que vous me fites l'honneur de me dire la derniére fois que j'ay êté en
+          Suisse que vous aviez trouvé la maniere d'exprimér analitiquement par des formules
+          infiniment generales les sommes des Puissances dont les Racines suivoient la progression
+          naturelle des nombres. J'avois deja trouvé alors celle de reduire à de pareilles
+          expressions les sommes des nombres triangulaires, des quarrez et des cubes en me servant
+          de methodes particuliéres. Mais peu content d'une recherche trop bornées, J'ay essayé
+          Monsieur à vôtre exemple de resoudre ce probléme d'une maniére generale et qui put
+          s'appliquér à toutes sortes de puissances, à quelque degré qu'on les fit montér. Je vous
+          avourai cependant Monsieur, que depourvu du secours de L'analise, elle ne m'a servi qu'à
+          donnér à mes expressions toute L'étendue dont elles <pb facs="3491649" n="2"/> sont
+          susceptibles. La methode que j'ay suivie est purement arithmetique, et je crois même qu'il
+          seroit difficille d'en trouver une plus abregée quelque longue qu'Elle parroisse. Voicy en
+          quoy cette methode consiste. </p>
+        <p>J'ay consideré, en 1.<hi rend="sup">r</hi> lieu la Nature des Progressions de divers
+          ordres qui derivent d'une Constante quelconque, fixe, et aprés avoir exprimé leur Valeur
+          par des formules infiniment generales; J'ay cherché en 2.<hi rend="sup">d</hi> lieu à
+          determiner tous les changements qui peuvent arrivér dans ces sortes de progressions
+          lorsque leur constante varie dans un ou plusieurs termes. </p>
+        <p>La chose resolue, il m'a êté facile de reduire à de pareilles formules l'expression de
+          tous les nombres piramidaux possibles, dont la premiére Constante etant toujours 1, toutes
+          les autres conservent entre elles la même valeur. </p>
+        <p>Les sommes des Puissances seroient sans doute Monsieur determinées par cela seul, si ces
+          sommes formoient une suite de nombres Piramidaux Reguliérs. Mais les sommes des Puissances
+          se reduisant à une Constante <pb facs="3491650" n="3"/> qui ne devient fixe que lorsque le
+          nombre de ses termes egale le nombre d'unitez qui entrent dans l'exposant de la Puissance
+          dont on cherche à exprimér les sommes; Il est evident qu'on est obligé de recourir à la
+          methode dont je viens de parlér pour reduire à une formule generale les sommes de ces
+          progressions piramidales irreguliéres, Et c'est en quoy consiste l'une des difficultez de
+          ce problême: Car devant connoitre la suite irreguliére des Constantes d'une progression de
+          puissances pour pouvoir determinér la valeur de ses sommes, on est obligé d'en venir à des
+          soustractions reïterées assez longues lorsque la puissance donnée est d'un degré un peu
+          elevé. </p>
+        <p>L'autre difficulté nait des operations à quoy engage l'Irregularité que produit dans ces
+          sortes de progressions la variation de leurs Constantes. Il me seroit aisé d'eclaircir ce
+          que je dis icy par des Exemples, si je ne parlois à une Personne trop habile pour être
+          aretée par des idées metaphisiques quelques <pb facs="3491651" n="4"/> abstraites qu'elles
+          puissent être. Je me reserve dailleurs le plaisir de vous communiquér ma methode, et de la
+          soumettre Monsieur à vôtre Jugement la premiere fois que j'aurai l'honneur de vous revoir.
+          Je me borne donc à present aux remarques suivantes. </p>
+        <p>1. Dans les progressions que forment la suite des sommes des Puissances, la Constante ne
+          devient fixe qu'au terme exprimé par leur Exposant, sçavoir au 2.<hi rend="sup">d</hi>
+          terme dans les quarrez; au 3.<hi rend="sup">e</hi> dans la progression des Cubes; au 6.<hi
+            rend="sup">e</hi> terme dans celle des sixiemes Puissances. etc. </p>
+        <p>2. La Constante fixe d'une progression des Puissances est toujours egale au produit
+          successif de l'Exposant de cette puissance, ou au nombre de fois que les unitez qui le
+          composent peuvent être permutées. 120 par exemple est la Constante fixe de la progression
+          des Cinquiemes puissances; 40320 de celles des 8.<hi rend="sup">mes</hi> etc. </p>
+        <p>3. La Variation des Constantes d'une puissance est toujours telle que la somme des
+          Extremes de ses constantes variables est egale à sa Constante fixe. </p>
+        <p>4. La formule qui exprime la Valeur des sommes <pb facs="3491652" n="5"/> d'une
+          puissance, surpasse toujours cette même puissance d'un degré. </p>
+        <p>5. Les Exposants des 3 premiérs termes des formules vont toujours en diminuant d'une
+          unité; L'Exposant du 4.<hi rend="sup">e</hi> terme est de deux unitez moindre que celuy du
+            3.<hi rend="sup">e</hi> et de même du 5.<hi rend="sup">e</hi> et de tous les autres
+          termes à l'Infini dont l'Exposant va toujours en diminuant de deux unitez à mesure qu'il
+          s'eloigne de celuy qui le precede immediatement. </p>
+        <p>6. La formule qui exprime la Valeur des Puissances du 1.<hi rend="sup">r</hi> degré est
+          composée de 2 termes. </p>
+        <p>Celle des 2.<hi rend="sup">me</hi> et 3.<hi rend="sup">me</hi> degrez l'est de 3. </p>
+        <p>La formule des Puissances<note type="editorial">Im Manuskript steht "Puissance".</note>
+          du 4.<hi rend="sup">me</hi> et 5.<hi rend="sup">me</hi> degré de 4. </p>
+        <p>Celle des puissances des 6.<hi rend="sup">mes</hi> et 7.<hi rend="sup">mes</hi> degrez de
+          5. </p>
+        <p>Des 8.<hi rend="sup">mes</hi> et 9.<hi rend="sup">mes</hi> degrez de 6 et ainsi de toutes
+          les autres formules à l'Infini en augmentant toujours d'un terme pour deux degrez qui se
+          suivent immediatement. </p>
+        <p>7. Les 3 premiers termes d'une formule sont toujours positifs; Les autres alternent de
+          moins en plus. </p>
+        <p><pb facs="3491653" n="6"/> 8. Les Coëfficients des 3 premiérs termes d'une suite de
+          formules reduites à une même denomination gardent entre Eux un ordre invariable. </p>
+        <p>Les Coëfficients des premiérs termes sont dans une progression harmonique decroissante:
+          Ceux des seconds termes ne changent jamais; Et ceux des troisiemes termes forment entre
+          eux une progression arithmetique qui va en augmentant. </p>
+        <p>Les Coëfficients des autres termes n'ont rien de reguliér; Ils se sentent de la Variation
+          de leurs Constantes. Je ne donnerai icy qu'un Exemple pris des six premiéres puissances,
+          quoy que j'aye les formules des dix premiéres toutes calculées, et qu'on puisse par cette
+          methode determinér la Valeur de ses sommes, à quelque degré qu'on eléve une puissance. </p>
+        <p>Expressions generales<note type="editorial">Im Manuskript steht "generale".</note> des
+          sommes des six premiéres Puissances reduites à une même Denomination. </p>
+        <p>Puissances </p>
+        <p>1.<hi rend="sup">res</hi>
+          <formula>\frac{30nn+30n}{60}</formula>.</p>
+        <p>2.<hi rend="sup">des</hi>
+          <formula>\frac{20n^{3}+30nn+10n}{60}</formula>.</p>
+        <p>3.<hi rend="sup">es</hi>
+          <formula>\frac{15n^{4}+30n^{3}+15nn}{60}</formula>.</p>
+        <p>4.<hi rend="sup">es</hi>
+          <formula>\frac{12n^{5}+30n^{4}+20n^{3}-2n}{60}</formula>.</p>
+        <p>5.<hi rend="sup">es</hi>
+          <formula>\frac{10n^{6}+30n^{5}+25n^{4}-5nn}{60}</formula>.</p>
+        <p>6.<hi rend="sup">es</hi>
+          <formula>\frac{8\frac{4}{7}n^{7}+30n^{6}+30n^{5}-10n^{3}+1\frac{3}{7}n}{60}</formula>.</p>
+        <p>Mr. Riecken officiér de nôtre Regiment entendu dans l'analise à qui j'ay communiqué cette
+          methode m'a êté d'un grand secours dans la Recherche de quelques formules; Il ne comprend
+          pas Monsieur, non plus que moy comment Vous avez pû parvenir à determinér cés mêmes
+          formules par le seul secours de l'analyse, la methode dont je me suis servi nous
+          paroissant à tous deux la seule qu'on puisse employér à la recherche d'un Probléme aussi
+          compliqué. Cependant Monsieur, comme vos vuës sont beaucoup plus etendues que les notres,
+          si vous aviez une methode analitique de resoudre ce Problême, vous nous feriez un sensible
+          plaisir de nous la communiquér. </p>
+        <p>Je passe des preuves abstraites, tirées de la Nature des nombres, à des conjectures sur
+          la <pb facs="3491654" n="7"/> Phisique. </p>
+        <p>M.<hi rend="sup">r</hi> Descartes a cru, et beaucoup de Philosophes à son exemple, qu'un
+          corps mû en rond tendoit à s'echappér par une tangente à la Circonference du cercle qu'il
+          decrivoit: on a supposé la même chose des corps liquides, et m.<hi rend="sup">r</hi> de la
+          Hire le fils, mort depuis peu, m'a Luy même assuré qu'il avoit fait des Experiences qui
+          veriffioient ce princippe. </p>
+        <p>Je n'entrerai point dans le detail d'une Experience que j'ignore; mais j'ay lieu de
+          croire, que bien loin que les Corps solides ou liquides mûs en rond tendent à s'echappér
+          par une ligne tangente au Cercle qu'ils decrivent; leur direction les determine au
+          contraire à s'eloignér en ligne droitte du Centre de leur mouvement. Je me fonde en
+          raisons et en Experiences.</p>
+        <p>Mes raisons sont, que la tendance d'un Corps à un mouvement n'estant autre chose que
+          l'Effort que ce Corps fait pour se mouvoir suivant une direction determinée; ce Corps
+          parcoureroit effectivement cette direction, si faisant cessér l'obstacle qui le <pb
+            facs="3491655" n="8"/> retient, il passoit d'une simple tendance au mouvement à un
+          mouvement actuel: le Princippe est trop clair pour pouvoir être contesté. Or dez qu'on
+          l'admet une fois, on ne peut plus niér qu'une pierre muë violemment dans<note
+            type="editorial">Das zweite "dans" im Manuskript wurde gelöscht.</note> une fronde ne
+          tende à s'echappér par le rayon continué du Cercle qu'elle decrit; L'extréme tension de la
+          Corde prouvant assez que la direction de cette pierre est dans une ligne tirée du Centre
+          de son mouvement par son Centre de gravité. </p>
+        <p>Il me semble dailleurs que tout corps, de quelque nature qu'il puisse être, mû en rond
+          avec violence acquiert par cela seul une force qui tend à le faire eloignér du Centre de
+          son mouvement par une ligne directement oposée à celle qui l'en rapprocheroit, puisque la
+          direction de ces deux mouvements est precisement oposée, ce qui ne se peut faire que
+          lorsque la ligne de direction du Corps mû parcourt un rayon prolongé. </p>
+        <p>Je viens aux experiences: elles sont fort <pb facs="3491656" n="9"/> simples, et communes
+          Monsieur dans les Lieux où vous êtes. La seule fête des tonneliérs m'en fourniroit plus
+          d'un Exemple. On voit tous les jours des Enfants faire tournér avec rapidité un cercle
+          qu'ils tiennent à la main, sans qu'une Pierre posée sur ce cercle tombe, ou que la liqueur
+          dont un vase soutenu par ce cercle est rempli se repande, ce qui ne pouroit pas arrivér si
+          la direction de l'effort ou de la tendance au mouvement qu'imprime à cés corps etrangérs
+          le mouvement du Cercle n'etoit dans une direction precisement oposée au Centre de leur
+          mouvement, et non le long d'une tangente à la Courbe que ces corps decrivent: un peu de
+          reflexion mettra cette Verité dans son jour.</p>
+        <p>[Figur folgt]<note type="editorial"> [Link folgt] Im Manuskript steht am Rand "fig. 1.<hi
+              rend="sup">re</hi>" </note><formula>AB</formula> est un cercle mobile autour du point
+          fixe <formula>C</formula>. <formula>I</formula> est une elevation en forme de piramide
+          clouée sur la surface interieure du Cercle <formula>AB</formula>, dont le sommet un peu
+          applati est diametralement oposé au Centre de mouvement <formula>C</formula>. Soit posé
+          sur cette Elevation <pb facs="3491657" n="10"/> un corps quelconque <formula>D</formula>;
+          Je dis que si on fait tournér avec vitesse le cercle <formula>AB</formula>, autour du
+          point fixe <formula>C</formula>, le corps <formula>D</formula> demeurera fermement attaché
+          à l'elevation <formula>I</formula>, dans quelque situation qu'on suppose ce cercle, ce qui
+          ne pouroit pas arrivér si la Direction de l'effort qui determine le corps
+            <formula>D</formula> à se mouvoir ne se faisoit le long de la ligne
+            <formula>IF</formula>, prolongement du rayon <formula>CI</formula>, puisque rien ne
+          retiendroit ce corps, s'il tendoit à se mouvoir selon toute autre direction. Le peu de
+          fondement de cette opinion parroitra encore plus evidemment, si on examine la Direction
+          que le corps <formula>D</formula> devroit avoir lorsque le Cercle <formula>AB</formula>
+          est parvenu dans une situation où le Diamétre <formula>CI</formula> forme une ligne
+          horizontale;[Figur folgt]<note type="editorial"> [Link folgt] Im Manuskript steht am Rand
+            "fig. 2.<hi rend="sup">de</hi>". </note> car selon Descartes et ses sectateurs, le Corps
+            <formula>D</formula>, etant determiné allors, tant par le mouvement du Cercle
+            <formula>AB</formula>, que par son propre poids à parcourir la tangente
+            <formula>DE</formula>, sans que rien s'opposat à son effort, il est indubitable que si
+          leur sentiment etoit conforme aux Loix de la <pb facs="3491658" n="11"/> Nature, le corps
+            <formula>D</formula> abbandonneroit la piramide <formula>I</formula> pour se mouvoir
+          avec rapidité le long de la droite <formula>DE</formula>, contre ce que l'experience
+          montre tous les jours. </p>
+        <p>Ce que nous venons de dire des corps solides se peut egalement appliquér aux Liqueurs; Et
+          si on soutenoit que la force imprimée à une Liqueur pour se mouvoir le long de la tangente
+          etoit assez grande pour surmontér entierement la direction que son propre poids donne à
+          toute Liqueur; il s'ensuivroit qu'un Vase ouvert par le bas pouroit être mû aisement le
+          long d'un plan horizontal sans que la liqueur qu'il contient se repandit, puisque cette
+          situation repondroit parfaitement à celle qu'a le meme Vase lorsque le point
+            <formula>I</formula> du Cercle <formula>AB</formula> est parvenu directement audessus du
+          point fixe <formula>C</formula>.[Figur folgt]<note type="editorial"> [Link folgt] Im
+            Manuskript steht am Rand "fig. 3.<hi rend="sup">e</hi>". </note> Ajoutez à ce que nous
+          venons de dire, que si la liqueur contenue dans un Vase, tendoit effectivement de même que
+          ce Vase à se mouvoir le long de la tangente, il s'ensuivroit que le Vase qui la contient
+          devroit se renversér du Coté <pb facs="3491659" n="12"/> où la liqueur tend à se mouvoir,
+          puisque agissant seule sur le coté de ce Vase oposé à son mouvement, il ne trouveroit rien
+          qui le contrebalanceat du coté oposé. Telles sont Monsieur les raisons qui me portent à
+          croire que tout corps mu en rond avec un certain degré de vitesse, tend à s'echappér par
+          le rayon continué du Cercle qu'il decrit, et non par une tangente au même cercle. M.<hi
+            rend="sup">r</hi> de Cassini le fils m'a parru panchér vers cette opinion; peut être un
+          peu plus de reflexion le determinera entiérement. J'aurai l'honneur de luy communiquér mes
+          conjectures et de vous priér Monsieur et l'un et l'autre de vouloir bien me marquér ce que
+          Vous en pensez. </p>
+        <p>Mais si je me trouve en cela d'un sentiment diferent de celuy de m.<hi rend="sup">r</hi>
+          Descartes, je crois comme Luy que toute matiére est Homogéne ou d'une même nature, quelque
+          diversité qui se remarque entre les Corps qui tombent sous nos sens. <pb facs="3491660"
+            n="13"/> Mon opinion est fondée sur l'egalité de l'acceleration des corps inegaux en
+          poids qu'on laisse tombér. En effet, il parroit que cette egalité d'accelleration dans la
+          chutte des Corps inegalement pesants ne peut être causée que par ce que les particules
+          indefiniment petites qui composent le propre Volume de chaque corps pesent egalement
+          prises d'une même grosseur, de sorte que l'accelleration de l'une etant egale à
+          l'accelleration de l'autre, elles doivent toutes descendre avec une même vitesse, soit
+          qu'elles se trouvent reunies ou separées; ou qu'il y entre dans la Composition des corps
+          un plus grand, ou un moindre nombre de ces particules. </p>
+        <p>Et il seroit inutile d'objectér qu'on remarque quelque diference de tems dans la chute
+          des corps inegalement pesants lorsqu'ils tombent d'un lieu fort elevé; Car la vitesse de
+          leur chute n'êtant point proportionnée à la diference de leurs poids, quoy qu'egaux en <pb
+            facs="3491661" n="14"/> figure et en volume, il s'ensuit que la raison de cette
+          diversité vient d'une cause etrangére, et non de l'inegalité de[s] poids de leurs
+          particules solides: aussi les voit-on descendre avec une même rapidité dans la machine du
+          Vuide où la plume tombe aussi vite que le plomb; d'où l'on peut conjecturér avec assez de
+          Vraissemblance que la substance de toute matiere est uniforme, puisque les particules qui
+          composent la matiére propre de chaque Corps pesent egalement, ce qui revient à l'opinion
+          de Mons.<hi rend="sup">r</hi> Descartes. </p>
+        <p>Mais je ne m'apperçois pas que le plaisir de vous entretenir m'emporte au delà des justes
+          bornes d'une lettre. C'est là Monsieur, un de ces inconvenients où l'on tombe lorsqu'on se
+          livre aussi facilement et avec autant d'honnêteté que Vous le faites; quelque fois le
+          merite devient à charge, <pb facs="3491662" n="15"/> et une reputation trop brillante
+          attire des importuns. Dûssai-je cependant passér pour tel, je ne sçaurois Monsieur me
+          repentir d'avoir ecrit, si la liberté que j'ay prise vous engage à me decouvrir vos
+          sentiments. J'ay l'honneur d'etre avec toute la Consideration possible Monsieur Vôtre trés
+          humble et tres obeïssant serviteur de Thiancourt. </p>
+        <p>À Lille ce 23.<hi rend="sup">e</hi> 8.<hi rend="sup">bre</hi> 1719.</p>
+        <p>Permettez moy Monsieur d'assurér icy de mes respects Madame Vôtre Epouse et nôtre
+          Illustre ami Mons.<hi rend="sup">r</hi> Iselin. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

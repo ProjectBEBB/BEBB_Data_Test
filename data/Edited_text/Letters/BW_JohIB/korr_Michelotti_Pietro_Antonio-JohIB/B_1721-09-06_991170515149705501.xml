@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert am 12.11.2018, Personen ausgezeichnet am 13.02.2019 (fehlt noch Auszeichnung von Daniel Bernoulli im Brief, wo tatsächlich erwähnt) --><!-- <change when="2022-04-04" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Alle Personen im BIBB verzeichnet. --><!--_____________--><TEI xml:id="B_1721-09-06_991170515149705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515149705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -119,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1721-08-08_991170515149805501" type="prev"/>
-        <ptr target="B_1722-01-23_991170515149605501" type="next"/>
+        <ptr target="B_991170515149805501" type="prev"/>
+        <ptr target="B_991170515149605501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -172,13 +171,24 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert am 12.11.2018, Personen ausgezeichnet am 13.02.2019 (fehlt noch Auszeichnung von Daniel Bernoulli im Brief, wo tatsächlich erwähnt) -->
+<!-- <change when="2022-04-04" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Alle Personen im BIBB verzeichnet. -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079260/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079261" n="1"/><!-- Achtung, bei diesem Brief stand in Status "teilkollationiert" der Text scheint aber kollationiert worden zu sein. -->
 <opener><salute>Pereximio at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Celeberrimo Viro
              <lb/>Petro Antonio <rs key="pers_DE-588-102552517" type="person">Michelotti</rs>
 <lb/><abbr>S. P. D.</abbr>
 <lb/><choice><abbr>Joh.</abbr><expan>Johannes</expan></choice> <rs key="pers_DE-588-118509969" type="person">Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.</salute></opener>
-<p><lb/>Poteram in postremis meis <rs key="B_1721-07-30_991170515149905501" type="letter">litteris</rs><note type="editorial">Meint den letzten Brief Johann I Bernoullis vom 30. Juli 1721</note> omittere argumentum
+<p><lb/>Poteram in postremis meis <rs key="B_991170515149905501" type="letter">litteris</rs><note type="editorial">Meint den letzten Brief Johann I Bernoullis vom 30. Juli 1721</note> omittere argumentum
          <lb/>illud quod inter alia ex abundanti adjeci ad infringendam demon<pc type="hyphenation">-</pc><lb break="no"/>strationem <rs key="pers_DE-588-119543885" type="person">Riccatianam</rs>, reliqua suffecissent; Hoc quippe, in
          <lb/>quo Tibi jam scrupulus superest et quod est ex eorum
          <lb/>numero, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vocantur <hi rend="u">argumenta ad hominem</hi> non habebat
@@ -233,7 +243,7 @@
          <lb/>Te suscitaturus sis; Certe si omnes silerent, unus ille
          <lb/><rs key="pers_DE-588-124275087" type="person"><choice><abbr>Joh.</abbr><expan>Johannes</expan></choice> Keillius</rs> homo vanus et turbulentus non silebit;
          <pb facs="1079264" n="4"/>
-<lb/>videtur ille rixis et litibus saginari potius quam delectari. Se<pc type="hyphenation">-</pc><lb break="no"/>cundum id quod intellexi ex <rs key="brieftag" type="letter">Litteris</rs><note type="editorial">Im Briefinventar findet sich nur der Brief 000056822 von Nic. II B. an Joh. I B. vom 5. Juni 1716.</note> Filii mei <rs key="pers_DE-588-117589144" type="person">Nicolai</rs>
+<lb/>videtur ille rixis et litibus saginari potius quam delectari. Se<pc type="hyphenation">-</pc><lb break="no"/>cundum id quod intellexi ex <rs type="letter">Litteris</rs><note type="editorial">Im Briefinventar findet sich nur der Brief 000056822 von Nic. II B. an Joh. I B. vom 5. Juni 1716.</note> Filii mei <rs key="pers_DE-588-117589144" type="person">Nicolai</rs>
 <lb/>novissimis oportet ut cum <choice><abbr>Illustr.</abbr><expan>Illustrissimo</expan></choice> et <choice><abbr>Excell.</abbr><expan>Excellentissimo</expan></choice> Comite
          <lb/><rs key="pers_DE-588-121710742" type="person">Vezzi</rs> <rs key="place_GEO-3164603" type="place">Venetias</rs> redierit ex acidulis, sed simul audio, ob
          <lb/>perpetuam <choice><abbr>Exc.</abbr><expan>Excellentissimi</expan></choice> <rs key="pers_DE-588-121710742" type="person">Comitis</rs> valetudinem adversam <rs key="pers_DE-588-117589144" type="person">filium</rs>

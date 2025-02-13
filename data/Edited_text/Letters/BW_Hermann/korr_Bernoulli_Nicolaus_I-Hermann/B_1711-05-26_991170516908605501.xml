@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<TEI xml:id="B_1711-05-26_991170516908605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170516908605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -90,7 +87,7 @@
         </physDesc>
         <history>
           <origin>
-            <origPlace>Basileae</origPlace>
+            <origPlace>Basile<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></origPlace>
             <date when="1711-05-26">d. 26. Maji 1711</date>
           </origin>
         </history>
@@ -119,8 +116,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1710-12-27_991170516908705501" type="prev"/>
-        <ptr target="B_1712-04-01_991170517003805501" type="next"/>
+        <ptr target="B_991170516908705501" type="prev"/>
+        <ptr target="B_991170517003805501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bernoulli_Nicolaus_I-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -177,8 +174,11 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2024-12-16" who="MK SG">kollationiert</change>
+      <change when="2024-12-08" who="MK">tagging, Grundkommentierung 1. Teil</change>
+      <change notAfter="2024-11-28" who="SG">Zeilenfall</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -188,10 +188,41 @@
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1038123" n="1"/> <pb facs="1038124" n="2"/>
-<opener><salute>Viro Clarissimo atque Celeberrimo D. Jacobo Hermanno S. P. D. N. Bernoullj.</salute></opener>
-<p>Redditae sunt à Rev. Domino Parente tuo Patri meo literae tuae, quasque iisdem pro me incluseras mihi tradidit Pater, qui tibi pro officiosissima Tua responsione et pro studio, que Te teneri, non solum ex literis Tuis, sed aliunde jam satis experti sumus, promovendi commoda Adgnati mei Venetiis nunc degentis, summas agit gratias, Teque quam maxime rogatum cupit, ut eum porro data occasione officii sui admonere velis hortarique, ut Tibi subinde exemplum aliquod picturae suae mittat, si non alium in finem, saltem ut sese exercendi otiumque fugiendi ansam habeat. Male certe habet Patrem meum, quod nullum hactenus picturae suae exemplum Tibi miserit, cum tamen Te aliquod petiisse ipsemet jam ante mensem scripserit, atque hoc signum esse (judicans,) eum desidiae quam laboris amantiorem esse censet, cum Matre ejus et propinquis, illum quovis modo et si nequeat adhortationibus, inopia et parcius subministrata pecunia ad laborem adigendum esse, quorum si conatibus ipse quoque aderis, obstringes quam maxime familiam nostram, prae sertim quoque Parentem meum, quem vicissim ad quaevis officia nunquam non habebis paratis simum. Haec jussu Patris. Quod attinet ad posthumumopus Patrui mei p. m. scripsit mihi quidem Adgnatus, se quantum per se liceat libenter illud Domino Montmortio concessurum, sed cum Mater, penes quam est hic Tractatus, non eodem sit animo, rogavi eum per literas, ut ipse cum Matre sua hac de re ageret, eique tam multum temporis diuturna ista cuncta tione inutiliter perdi persuaderet. De lite exorta super dissertatione Domini Prof. Battierii de Mundo non est cur aliquid dicam, cum illa mox sopita fuerit morte D. Profes soris Wetstenii, qui primus hanc sententiam publice fuisse defensam inique tulit, deque hac re in conventu theologico graviter conquestus voluit ut Professoribus Philosophiae defensio ejus modi opinionum in posterum interdiceretur. Turbas tamen etiam excitavit haec dissertatio Tiguri, et occasionem dedit dissertationi cuidam ridiculae, cui Titulus Liber Naturae etc. quam rem omnem sine dubio jam intellexisti ex D. Scheuchzero juniore, qui Te, ut audivi, nuper Patavii visitavit. Conterraneum ejus quendam, Henricum Hirzelium Theologiae studiosum, qui peracto per Belgium et Germaniam itinere literario, hic aliquamdiu moratus est, crastinaque die Tigurum, et inde in Thermas Fabarienses, dehinc Patavium proficiscetur, ibidem Mathesi Te Magistro operam daturus, ut amicum Tibi commendare audeo, hunc si quo officiorum genere adjuvabis, habebis et illum et me, qui Tibi jam multis nominibus sum devinctus gratissimum.</p>
-<closer>Vale. <dateline>Basileae d. <date when="1711-05-26">26. Maji 1711</date>.</dateline></closer>
+<pb facs="1038123" n="1"/> 
+  <opener><salute><lb/>Viro Clarissimo <add>atque</add> Celeberrimo <abbr>D.</abbr> <rs type="person" key="pers_DE-588-119112450">Jacobo Hermanno</rs> <abbr>S. P. D.</abbr> <rs type="person" key="pers_DE-588-119166895">NBernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.</salute></opener>
+  <p><lb/><add>R</add>eddit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <abbr>Rev.</abbr> Domino <rs type="person">Parente</rs> Tuo <rs type="person">Patri</rs> meo <rs type="letters">liter<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, quasque iisdem pro
+    <lb/>me incluseras mihi tradidit <rs type="person">Pater</rs>, qui Tibi pro officiosissima Tua <rs type="letter">responsione</rs> et
+    <lb/>pro studio, quo <add>T</add>e teneri, <add>non solum ex <rs type="letter">literis</rs> Tuis sed aliunde jam satis</add> <add>ex</add>perti sumus, promoven<pc type="hyphenation">-</pc><lb break="no"/>di co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>oda <rs type="person">Adgnati</rs> mei <rs type="place" key="place_GEO-3164603">Venetiis</rs> nunc degentis, su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>as agit gratias, Teque quam<pc type="hyphenation">-</pc><lb break="no"/>maxime rogatum cupit, ut eum porro <add>data occasione</add> officii sui admonere velis hortarique, ut
+    <lb/>Tibi subinde exemplum aliquod pictur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> mittat, si non alium in finem, saltem
+    <lb/>ut sese exercendi otiumque fugiendi ansam habeat. Male certe habet <rs type="person">Patrem</rs>
+    <lb/>meum, quod nullum hactenus pictur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> exemplum Tibi miserit,
+    <lb/>cum tamen Te aliquod petiisse ipsemet jam ante mensem scripserit, <add>atque</add>
+    <lb/>hoc signum esse judi<add>cans</add>, eum desidi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quam laboris amantiorem esse <add>censet</add>
+    <lb/><add>cum <rs type="person">Matre</rs></add> ejus et propinquis, illum <add>quovis modo et</add> si nequeat adhortationibus, inopia et
+    <lb/>parcius subministrata pecunia ad laborem adigendum esse, quorum si conatibus
+    <lb/>ipse quoque aderis, obstringes quam maxime <rs type="persons">familiam</rs> nostram, pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim
+    <lb/>quoque <rs type="person">Parentem</rs> meum, qu<unclear>e</unclear>m vicissim ad qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>vis officia nunquam
+    <lb/>non habebis paratissimum. H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c jussu <rs type="person">Patris</rs>. Quod attinet ad posthum<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+    <lb/><rs type="biblio">Opus</rs> <rs type="person">Patrui</rs> mei <choice><abbr>p. m.</abbr><expan>piae memoriae</expan></choice> scripsit mihi quidem <rs type="person">Adgnatus</rs>, se quantum per se liceat
+    <lb/>libenter illud Domino <rs type="person" key="pers_DE-588-117601020">Montmortio</rs> concessurum, sed cum <rs type="person">Mater</rs>, penes quam
+    <lb/>est hic <rs type="biblio">Tractatus</rs>, non eodem sit animo, rogavi eum per <rs type="letters">literas</rs>, ut ipse cum
+    <lb/><rs type="person">Matre</rs> sua hac de re ageret, ei<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> tam multum temporis diuturna
+    <lb/>ista cunctatione inutiliter perdi persuaderet. De lite 
+    <lb/>exorta super <rs type="biblio">dissertatione</rs> Domini <abbr>Prof.</abbr> <rs type="person" key="pers_DE-588-115793895">Battierii</rs><note type="editorial">Wortumstellung.</note>
+    <lb/><hi rend="u">de Mundo</hi> non est cur aliquid dicam, cum illa
+    <lb/>mox sopita fuerit morte <abbr>D.</abbr> Professoris <rs type="person" key="pers_DE-588-100704514">Wetstenii</rs>, qui prim<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+    <lb/>hanc sententiam publice fuisse defensam inique tulit, deque hac re in
+    <lb/>conventu Theologico <add>grav</add>iter conquestus voluit ut Professoribus Philo<pc type="hyphenation">-</pc><lb break="no"/>sophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> defensio ejusmodi opinionum in posterum interdiceretur.</p>
+  <pb facs="1038124" n="2"/>
+  <p><lb/>Turbas tamen etiam excitavit h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c <rs type="biblio">dissertatio</rs> <rs type="place" key="place_GEO-2657896">Tiguri</rs>, et occasionem dedit
+    <lb/><rs type="biblio">dissertationi</rs> cuidam ridicul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, cui Titulus <hi rend="u">Liber Natur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></hi> <choice><orig><g ref="#pp">pp.</g></orig><reg>etc.</reg></choice> <add>quam</add> rem omn<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+    <lb/>sine dubio jam intellexisti ex <abbr>D.</abbr> <rs type="person" key="pers_DE-588-120379260">Scheuchzero</rs> juniore, qui Te, ut audivi,
+    <lb/>nuper <rs type="place" key="place_GEO-3171728">Patavii</rs> visitavit. Conterraneum ejus quendam, <rs type="person" key="pers_DE-588-1036931382">Henricum Hirzeli<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs>
+    <lb/>Theologi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> studiosum, qui peracto per <rs type="place" key="place_VER-belgie">Belgium</rs> et <rs type="place" key="place_KON-deutsch">Germaniam</rs> itinere lite<pc type="hyphenation">-</pc><lb break="no"/>rario, hi<add>c</add> <add>aliquandiu moratus est,</add> crastinaque die <rs type="place" key="place_GEO-2657896">Tigurum</rs>, et inde in <rs type="place" key="place_GEO-2659224">Thermas Fabarienses</rs>,
+    <lb/>dehinc <rs type="place" key="place_GEO-3171728">Patavium</rs> proficiscetur, ibidem Mathesi Te <rs type="person">Magistro</rs> operam
+    <lb/>daturus, ut amicum Tibi co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endare audeo, hunc si quo officio<pc type="hyphenation">-</pc><lb break="no"/>rum genere adjuvabis, habebis et illum et me, qui Tibi jam multis nominib<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+    <lb/><add>sum</add> devinctus, gratissimum.</p>
+  <closer><lb/><salute>Vale.</salute> <dateline><rs type="place" key="place_GEO-2661604">Basile<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> <abbr>d.</abbr> <date when="1711-05-26">26. Maji 1711</date>.</dateline></closer>
 </div>
 </body>
 </text></TEI>

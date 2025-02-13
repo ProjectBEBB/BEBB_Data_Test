@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- keine GND: 
-      John Eames --><!-- GND fehlt im BIBB: Fantet de Lagny, Thomas〈1660-1734〉pers_DE-588-100175473 --><!--_____________--><!--Comments that were in the teiHeader element--><!-- Die Abschrift wurde verwendet, Original BPU Genf --><!--_____________--><TEI xml:id="B_1728-01-15_991170514979605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514979605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -121,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1727-12-11_991170514979705501" type="prev"/>
-        <ptr target="B_1728-03-10_991170514979505501" type="next"/>
+        <ptr target="B_991170514979705501" type="prev"/>
+        <ptr target="B_991170514979505501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Cramer_Gabriel-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -199,248 +197,262 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
-      <!-- Die Abschrift wurde verwendet, Original BPU Genf -->
+      <change when="2025-02-03" who="SG">Stichprobenweise Kontrolle, Korrektur und Kommentar zu Martins editorischen Eingriffen ab S. 6.</change>
+      <change when="2025-01-23" who="MK RG">kollationiert</change>
+      <change when="2025-01-17" who="MK RG">kollationiert</change>
+      <change when="2025-01-15" who="MK">tagging ergänzt/korrigiert</change>
+      <change when="2025-01-15" who="MK RG">kollationiert</change>
+      <change when="2025-01-13" who="MK RG">kollationiert</change>
+      <change when="2024-11-15" who="MK">pb facs n korrigiert</change>
+      <change when="2024-11-14" who="MK SG">Erster Teil kollationiert</change>
       <change when="2023-01-06" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2022-11-10" who="CG">Briefe und bibliotags</change>
       <change when="2022-09-13" who="CG">Header angepasst, Seitenzahlen eingefügt, Briefstruktur, Personen und Orte ausgezeichnet</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
+
+<!-- keine GND: John Eames -->
+  
+<!-- GND fehlt im BIBB: Fantet de Lagny, Thomas〈1660-1734〉pers_DE-588-100175473 -->
+  <!-- Die Abschrift wurde verwendet, Original BPU Genf. SG: Stimmt dieser Kommentar noch? Gemäss der Information aus Genf sollte es von diesem Brief keine weitere Fassung geben, evtl. nachprüfen oder Kommentar löschen.   -->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073609/manifest"/>
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="-" n="1"/><!-- Titelseite -->
-<pb facs="-" n="2"/><!-- Figuren -->
-<pb facs="-" n="3"/>
-<opener><dateline><date when="1728-01-15">15 Janv. 1728.</date></dateline></opener>
-<p><lb/>La tres obligeante <rs key="B_1727-12-11_991170514979705501" type="letter">Lettre</rs><!-- Brief vom 11.12.1727 -->dont Vous
+  <pb facs="1073612" n="1"/><!-- Der Brief fängt bei E-Manuscripta auf Seite 3 an. Der Brief wird im Moment nicht auf der Editionsseite angezeigt, Problem könnte vielleicht hier liegen. RG 06.02.2025 -->
+<opener><note hand="pers_DE-588-118509969">à <abbr>Mr.</abbr> le <abbr>Prof.</abbr> Cramer</note>
+  <dateline><date when="1728-01-15">15 <abbr>Janv.</abbr> 1728.</date></dateline></opener>
+<p><lb/>La tres obligeante <rs key="B_991170514979705501" type="letter">Lettre</rs> dont Vous
                <lb/>m'avez honoré m'a fait beaucoup de plai<pc type="hyphenation">-</pc><lb break="no"/>sir à plusieurs Egards. C'en est un d'avoir
                <lb/>apris Votre heureuse arrivée à <rs key="place_GEO-2643743" type="place">Londres</rs>;
                <lb/>c'en est encor un de voir que je suis
                <lb/>toujours bien placé, dans votre Souvenir,
-               <lb/>Surtout, les Particularitez que Vous a<pc type="hyphenation">-</pc><lb break="no"/>vez pris la peine de me co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer tout
+  <lb/>Surtout, les Particularitez que Vous <choice><orig>à<pc type="hyphenation">-</pc><lb break="no"/>vez</orig><reg>a<pc type="hyphenation">-</pc><lb break="no"/>vez</reg></choice> pris la peine de me co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer tout
                <lb/>au long de ce qui me regarde de plus prés
                <lb/>sont des preuves evidentes de Votre sincere
-               <lb/>attachement. J'ai reçu une <rs key="B_1727-12-29_991170514897405501" type="letter">Lettre</rs><!-- Brief vom 29.12.1727 von Mairan an Johann I. --> peu de
-               <lb/>jours après la Votre de Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>, qui
+               <lb/>Attachement. J'ai reçu une <rs key="B_991170514897405501" type="letter">Lettre</rs><!-- Brief vom 29.12.1727 von Mairan an Johann I. --> peu de
+               <lb/>Jours après la Votre de <abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>, qui
                <lb/>paroit extremement mortifié d'avoir été à la
                <lb/>Campagne pendant Votre presence à <rs key="place_GEO-2988507" type="place">Paris</rs>;
                <lb/>il se console par l'esperance de pouvoir reparer
-               <lb/>ce qu'il à manqué, quand vous prendrez votre
+  <lb/>ce qu'il <choice><orig>à</orig><reg>a</reg></choice> manqué, quand vous prendrez <choice><orig>vótre</orig><reg>votre</reg></choice>
                <lb/>retour par <rs key="place_GEO-2988507" type="place">Paris</rs>; Voici ce qu'il m'ecrit sur
-               <lb/>Votre Chapitre "Je vous dois", dit il, "des Remercimens
-               <lb/>de m'avoir voulu procurer la Connoissance de
-               <lb/>Mr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs>: J'ai grand Opinion de son merite &amp; tout
-               <lb/>ce que vous m'en dites, et je suis bien faché de m'étre
-            <pb facs="-" n="4"/>
-<lb/>trouvé à la Campagne et à 17 lieues de <rs key="place_GEO-2988507" type="place">Paris</rs>
-<lb/>lorsqu'il y est arrivé: Si javois été moins éloigné et
-               <lb/>à Portée d'avoir des voitures, je me serois transpor<pc type="hyphenation">-</pc><lb break="no"/>té à <del>portes </del><rs key="place_GEO-2988507" type="place">Paris</rs> avant son depart pour l'<rs type="place" key="place_VER-englan">An<pc type="hyphenation">-</pc><lb break="no"/>gleterre</rs>; mais j'espere qu'à son retour il voudra
-               <lb/>bien me do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er lieu de me dedo<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ager. Un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-               <lb/>d'Esprit qui a passé 4 ou 5 mois avec vous, est
-               <lb/>pour moi une Chose rare et pretieuse, et
-               <lb/>j'auroi par là tout au moins de la seconde main
-               <lb/>quantité de Particularitez de votre Perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e et
-               <lb/>de vos Entretiens, que je m'estimerois infiniment
-               <lb/>heureux d'avoir de la première <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c."</p>
-<p><lb/>Vous n'avez pas mal deviné en me disant que le lan<pc type="hyphenation">-</pc><lb break="no"/>gage de Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> me surprendrait peutetre, car
+  <lb/><choice><orig>Vòtre</orig><reg>Votre</reg></choice> Chapitre <cit type="long"><quote>&quot;Je vous dois<said>, dit il, </said>des Remercimens
+               <lb/>&quot;de m'avoir voulu procurer la Connoissance de
+               <lb/>&quot;Mr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs>: J'ai grand Opinion de son merite <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tout
+               <lb/>&quot;ce que Vous m'en dites, et je suis bien faché de m'étre
+    <pb facs="1073613" n="2"/>
+<lb/>&quot;trouvé à la <rs type="place">Campagne</rs> et à 17 lieues de <rs key="place_GEO-2988507" type="place">Paris</rs>
+<lb/>&quot;lorsqu'il y est arrivé: Si j'avois été moins éloigné et
+               <lb/>&quot;à Portée d'avoir des voitures, je me serois transpor<pc type="hyphenation">-</pc><lb break="no"/>&quot;té à <del>portes</del><rs key="place_GEO-2988507" type="place">Paris</rs> avant son depart pour l'<rs type="place" key="place_VER-englan">An<pc type="hyphenation">-</pc><lb break="no"/>&quot;gleterre</rs>; mais j'espere qu'<choice><orig>a</orig><reg>à</reg></choice> son retour il voudra
+               <lb/>&quot;bien me do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er lieu de me dedo<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ager. Un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+               <lb/>&quot;d'Esprit qui <choice><orig>à</orig><reg>a</reg></choice> passé 4 ou 5 mois avec vous, est
+               <lb/>&quot;pour moi une Chose rare et pretieuse, et
+               <lb/>&quot;j'auroi par <choice><orig>la</orig><reg>là</reg></choice> tout au moins de la seconde main
+               <lb/>&quot;quantité de Particularitez de votre Perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e et
+               <lb/>&quot;de vos Entretiens, que je m'estimerois infiniment
+               <lb/>&quot;heureux d'avoir de la première <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c."</quote></cit></p>
+<p><lb/>Vous n'avez pas mal deviné en me disant <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> le lan<pc type="hyphenation">-</pc><lb break="no"/>gage de <abbr>Mr<supplied>.</supplied></abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> me surprendr<subst><del>oit</del><add>a</add></subst> peutetre, car
                <lb/>il m'a effectivement surpris, non pas tant qu'il soit
                <lb/>convaincu de la Verité de ma Theorie, car il a assez
                <lb/>d'Esprit pour voir la verité et pour reconnoitre interi<pc type="hyphenation">-</pc><lb break="no"/>eurement qu'elle est du Coté de ma Theorie, mais ce qui
-               <lb/>me surprend le plus, c'est qu'il fait semblant de n'avoir
+               <lb/><unclear>m</unclear>e surprend le plus, c'est qu'il fait semblant de n'avoir
                <lb/>pas été du nombre de ceux qui ont opiné contre ma
-               <lb/>Piece en lui preferant une miserable rhabsodie d'Eco<pc type="hyphenation">-</pc><lb break="no"/>lier, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il l'apelle lui méme: Quoiqu'il veuille s'en laver
+               <lb/>Piece en lui preferant une miserable rhabsodie d'Eco<pc type="hyphenation">-</pc><lb break="no"/>lier, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il l'apelle lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> méme: Quoiqu'il veuille s'en laver
                <lb/>les mains, prevoyant la mauvaise impression, que ce
                <lb/>beau Jugement des Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>issaires fera sur le Public, il
-               <lb/>est trés probable et Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> <del>ma </del><add>me l'a</add> laissé entrevoir
-               <lb/>que Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> a do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é ouvertement son suffrage contre
-               <lb/>ma Piece, quelque convaincu qu'il soit de son Excellence et
-            <pb facs="-" n="5"/>
-<lb/>de sa solidité, enfin Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> me paroit un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e dont la
-               <lb/>probité et la bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e foi me sont suspectes, par plusieurs raisons
+               <lb/>est trés probable et <abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> <add>me l'a</add> laissé entrevoir
+  <lb/>que Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> <choice><orig>à</orig><reg>a</reg></choice> do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é ouvertement son suffrage contre
+               <lb/>ma <rs type="biblio">Piece</rs>, quel<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> convaincu qu'il soit de son Excellence et
+  <pb facs="1073614" n="3"/>
+<lb/>de sa solidité, enfin <abbr>Mr.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> me paroit un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e dont la
+               <lb/>probité et la bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e foi me sont suspectes, par <choice><sic>plusieur</sic><corr>plusieurs</corr></choice> raisons
                <lb/>que vous savez aussi bien que moi. Si je me trompois, il faudroit
-               <lb/>que les 3 autres Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>issaires, qui etoient Mr. <rs key="pers_DE-588-100175473" type="person">de Lagni</rs>, <rs key="pers_DE-588-117584401" type="person">Ni<pc type="hyphenation">-</pc><lb break="no"/>cole</rs> et <rs key="pers_DE-588-119408007" type="person">Cassini</rs> eussent fait la pluralité des suffrages pour
-               <lb/>me condamner, conformément à la Cabale dont <del/>
-<lb/><del>m'avez parlé </del>Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> Vous a parlé; mais je ne saurois
-               <lb/>croire que Mr. <rs key="pers_DE-588-117584401" type="person">Nicole</rs> m'ait été oposé, puisqu'autres fois il a
+               <lb/>que les 3 autres Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>issaires, qui etoient <abbr>Mr.</abbr> <rs key="pers_DE-588-100175473" type="person">de Lagni</rs>, <rs key="pers_DE-588-117584401" type="person">Ni<pc type="hyphenation">-</pc><lb break="no"/>cole</rs> et <rs key="pers_DE-588-119408007" type="person">Cassini</rs> eussent fait la pluralité des suffrages pour
+               <lb/>me condamner, conformément à la Cabale dont
+  <lb/><abbr>Mr<supplied>.</supplied></abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> Vous <choice><orig>à</orig><reg>a</reg></choice> parlé; mais je ne saurois
+  <lb/>croire que <abbr>Mr<supplied>.</supplied></abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> m'ait été oposé, puisqu'autres fois il <choice><orig>à</orig><reg>a</reg></choice>
                <lb/>été de mes Amis, et je ne sache pas qu'il ait jamais ecrit
-               <lb/>sur le mouvement ou sur les forces vives, qui put lui
+               <lb/>sur le mouvement ou sur les <rs type="keyword">forces vives</rs>, qui pût lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>
                <lb/>exciter la honte de se dedire et de louer ce qu'il avoit
                <lb/>condamné. Quoiqu'il en soit, quand Vous serez de retour
-               <lb/>à <rs key="place_GEO-2988507" type="place">Paris</rs>, Vous aurez Occasion de sonder de plus prés
-               <lb/>Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>, je croi même que si vous le prenés
-               <lb/>adroitement, il ne vous sera pas difficile de lui tirer le
-               <lb/>vers du né. Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs> qui m'a toujours paru m'e<pc type="hyphenation">-</pc><lb break="no"/>tre <del/><add>trés</add> affectio<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é, Vous pouvoit aussi decouvrir des particula<pc type="hyphenation">-</pc><lb break="no"/>ritez; à propos de Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs>, Vous saurés que
+               <lb/>à <rs key="place_GEO-2988507" type="place">Paris</rs>, Vous aurez Occasion de sonder de plus près
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>, je croi même que si vous le prenés
+               <lb/><abbr>adroitem<supplied>.</supplied>t</abbr>, il ne vous sera pas difficile de lui tirer le
+               <lb/>vers du né<unclear>z</unclear>: <abbr>Mr.</abbr> <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs> qui m'a toujours paru m'e<pc type="hyphenation">-</pc><lb break="no"/>tre <del/><add>trés</add> affectio<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é, Vous pouvoit aussi decouvrir des particula<pc type="hyphenation">-</pc><lb break="no"/>ritez; à propos de <abbr>Mr.</abbr> <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs>, Vous saurés que
                <lb/>son <rs type="biblio">Ouvrage</rs> sur les infiniment petits vient de
-               <lb/>paroitre, Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> m'ecrit que j'en aurai bien<pc type="hyphenation">-</pc><lb break="no"/>tot un Exemplaire. Je serai curieux de voir les pa<pc type="hyphenation">-</pc><lb break="no"/>radoxes qu'il contient: Celui des grandeurs finies dont
-               <lb/>le quarré est infini, est justement celui, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous cro<pc type="hyphenation">-</pc><lb break="no"/>yez qui a fait la matiere des Lettres, que nous
+               <lb/>paroitre, <abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> m'ecrit que j'en aurai bien<pc type="hyphenation">-</pc><lb break="no"/>tot un Exemplaire; Je serai curieux de voir les pa<pc type="hyphenation">-</pc><lb break="no"/>radoxes qu'il contient: Celui des grandeurs finies dont
+               <lb/>le quarré est infini, est justement celui, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous cro<pc type="hyphenation">-</pc><lb break="no"/>yez qui <choice><orig>à</orig><reg>a</reg></choice> fait la matiere des Lettres, que nous
                <lb/>avons changées ensemble, il y auroit trop à
                <lb/>ecrire si je voulois vous faire part
-               <lb/>de tout ce qui s'est dit mutuel<pc type="hyphenation">-</pc><lb break="no"/>lement là dessus, suffit que je
-            <pb facs="-" n="6"/>
+               <lb/>de tout ce qui s'est dit mutuel<pc type="hyphenation">-</pc><lb break="no"/>lement <choice><orig>la dessus</orig><reg>là-dessus</reg></choice>, suffit que je
+  <pb facs="1073615" n="4"/>
 <lb/>Vous dise, qu'il m'a été impossible de lui faire
                <lb/>abando<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er ses creuses Speculations, lesquelles,
                <lb/>dit entre nous, me paroissent de pures Vetilles. Je
-               <lb/>pourrai vous co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer les Lettres et les Repon<pc type="hyphenation">-</pc><lb break="no"/>ses en Original ecrites sur ce sujet de part et d'au<pc type="hyphenation">-</pc><lb break="no"/>tre, quand Vous aurez fini. Votre Voyage et
-               <lb/>que vous serés de Retour à <rs key="place_GEO-2660646" type="place">Geneve</rs>.</p>
-<p><lb/>Je ne pretens pas faire des Proselytes en <rs key="place_VER-englan" type="place">An<pc type="hyphenation">-</pc><lb break="no"/>gleterre</rs>, Les Anglois sont sans doute trop Escla<pc type="hyphenation">-</pc><lb break="no"/>ves de leur Ambition et laissent trop Mr.
+               <lb/>pourrai vous co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer les <rs type="letters">Lettres</rs> et les <rs type="letters">Repon<pc type="hyphenation">-</pc><lb break="no"/>ses</rs> en Original ecrites sur ce sujet de part et d'au<pc type="hyphenation">-</pc><lb break="no"/>tre, quand Vous aurez fini. Votre Voyage et
+               <lb/>que Vous serés de Retour à <rs key="place_GEO-2660646" type="place">Geneve</rs>.</p>
+<p><lb/>Je ne pretens pas faire des Proselytes en <rs key="place_VER-englan" type="place">An<pc type="hyphenation">-</pc><lb break="no"/>gleterre</rs>, Les Anglois sont sans doute trop Escla<pc type="hyphenation">-</pc><lb break="no"/>ves de leur Ambition et laissent trop <abbr>Mr.</abbr>
                <lb/><rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> pour admettre la Verité qui vient
                <lb/>de lui, ainsy je perdrois tout mon latin à les
-               <lb/>vouloir convertir; je les abandonne donc à leur
-               <lb/>Opiniatreté et à leur passion, la Vérité ne lais<pc type="hyphenation">-</pc><lb break="no"/>sera pas de triompher, et quand ils auront tout
+               <lb/>vouloir convertir je les abandonne donc à leur
+               <lb/>Opiniatreté et à leur passion, la Verité ne lais<pc type="hyphenation">-</pc><lb break="no"/>sera pas de triompher, et quand ils auront tout
                <lb/>dit, ils seront obligés de la reconnoistre
                <lb/>malgré bongré, quoique la haine et le mepris pour
-               <lb/>nous autres Etrangers puisse toujours les <del>obliges</del>
+               <lb/>nous autres Etrangers puisse toujours les
 <lb/>empecher de confesser exterieurement et de
-               <lb/>bouche leur Conviction, Semblables en cela aux,
+               <lb/>bouche leur Conviction, Semblables en cela aux
                <lb/>Moines et autres Gens d'Eglise, qui du tems de
                <lb/>la Réformation aimèrent mieux garder leurs
                <lb/>vieilles erreurs, parcequ'ils y trouvoient leurs comptes
-               <lb/>que de reconnoitre la Vérité. Cependant
+               <lb/>que de reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre la Verité. Cependant
                <lb/>tout ce que Vous me dites des raison<pc type="hyphenation">-</pc><lb break="no"/>nements et experiences des anglois
-               <lb/>pour refuter notre doctrine des
-               <lb/>forces vives ne sont que des
-            <pb facs="-" n="7"/>
-<lb/>repetitions auxquelles on a repondu cent fois, en leur
+  <lb/><choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> refuter notre doctrine des
+               <lb/>forces vives ne sont que des 
+  <pb facs="1073616" n="5"/><!-- SG: bis hier scheint es in Ordnung zu sein. -->
+<lb/>repetitions auxquelles on <choice><orig>à</orig><reg>a</reg></choice><!-- SG: <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> Entity wird in lateinischen Texten zur Normalisierung von diakritischen Zeichen verwendet. In französischen Texten wird ohne Entity normalisiert.  --> repondu cent fois, en leur
                <lb/>faisant voir qu'ils confondent les forces mortes avec les
                <lb/>forces vives, et qu'ils n'ont point, ou qu'ils ne veulent
                <lb/>point avoir une idée claire de ces dernieres; ils ne veulent pas
                <lb/>comprendre que la force vive est quelque chose de reel, qui
                <lb/>subsiste dans le Corps, qui est en mouvement, quand tout
-               <lb/>le reste de l'Univers viendroit à étre aneanti, au lieu que la
+  <lb/>le reste de l'Univers viendroit à étre<!-- SG: Keine Korrektur notwendig, falls doch, dann mit orig/reg  --> aneanti, au lieu que la
                <lb/>force morte depend d'une relation ou de la maniere dont
-               <lb/>un Corps agit sur l'autre, de sorte, que la force morte con<pc type="hyphenation">-</pc><lb break="no"/>siste toujours dans une action et reaction et demande tou<pc type="hyphenation">-</pc><lb break="no"/>jours l'Existance de deux Corps, l'un co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e agent et l'au<pc type="hyphenation">-</pc><lb break="no"/>tre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e reagent, mais la force vive est quelque chose d'
+               <lb/>un Corps agit sur l'autre, de sorte, que la force morte con<pc type="hyphenation">-</pc><lb break="no"/>siste toujours dans une action et reaction et demande tou<pc type="hyphenation">-</pc><lb break="no"/>jours l'Exis<unclear>t</unclear>ance de deux Corps, l'un co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e agent et l'au<pc type="hyphenation">-</pc><lb break="no"/>tre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e reagent, mais la force vive est quelque chose d'<pc type="hyphenation"></pc>
                <lb/>absolu dans le Corps qui se meut avec une certaine
-               <lb/>Vitesse et qui y subsiste independe<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent de tout au<pc type="hyphenation">-</pc><lb break="no"/>tre Corps. La quantité de cette force consiste en ce qu'
-               <lb/>elle peut faire, non pas en ce qu'elle fait actuellement,
+               <lb/>Vitesse et qui y subsiste independe<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent de tout au<pc type="hyphenation">-</pc><lb break="no"/>tre Corps. La quantité de cette force consiste en ce qu'<pc type="hyphenation"></pc>
+               <lb/>elle peut faire, non pas en ce qu'elle fait <abbr>actuellemt.</abbr>,
                <lb/>pouvant quelquefois plus faire qu'elle ne fait,
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e p. Ex. quand un Corps, aprés avoir bandé un
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>Ex.</abbr> quand un Corps, aprés avoir bandé un
                <lb/>ressort, conserve encore quelque Vitesse; De sorte que
-               <lb/>Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> auroit peut étre mieux fait de lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er
-               <lb/>le nom de <hi rend="u">pouvoir</hi>, plutôt que celui de <hi rend="u">force vive</hi>, pour
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> auroit peut étre mieux fait de lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er
+               <lb/>le nom de <hi rend="u">pouvoir</hi>, plutôt que celu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> de <hi rend="u">force vive</hi>, <abbr>p.<hi rend="sup">r</hi></abbr>
                <lb/>eviter l'ambiguité de ce mot <add>de</add> <hi rend="u">force</hi>; Il est donc clair
-               <lb/>que la quantité de ce <hi rend="u">pouvoir</hi> doit étre mesurée par un
-               <lb/>Effet homogène en tout, qu'il peut produire ou qu'il pro<pc type="hyphenation">-</pc><lb break="no"/>duit actuellement en se consumant, sans faire attention
-            <pb facs="-" n="8"/>
+               <lb/>que la quantité de ce <hi rend="u">pouvoir</hi> doit étre mesurée <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> un
+               <lb/>Effet homogène en tout, qu'il peut produire ou qu'il pro<pc type="hyphenation">-</pc><lb break="no"/>duit actuellement en se consumant, sans faire attenti<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice>
+  <pb facs="1073617" n="6"/>
 <lb/>au tems qu'il employe à cela, la notion que nous avons
                <lb/>de l'egalité entre la Cause efficiente et son Effet i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ediat
-               <lb/>le dicte. Supposons p. ex. deux boules <formula>A</formula> et <formula>B</formula> egales se
-               <lb/>mouvoir d'un mouvement parallele<note type="editorial">Figur</note>et avec
+  <lb/>le dicte. Supposons <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>: <abbr>ex.</abbr> deux boules <formula>A</formula> et <formula>B</formula> egales se
+  <lb/><figure facs="B_991170514979605501_1073612_06.png" hand="pers_DE-588-118509969"><figDesc>Darstellung von zwei Parallelen auf denen die Kugeln A sowie B stehen.</figDesc><note type="editorial">Figur</note></figure> mouvoir d'un mouvement parallele et avec
                <lb/>egales vitesses, chacune contre un nombre de
                <lb/>ressorts egaux entre eux, mais où les interstices
                <lb/>que doit bander la boule <formula>B</formula>, soit doubles de ceux,
-               <lb/>que doit bander la boule <formula>A</formula>. Supposons de plus que chacune
-               <lb/>des Boules puisse bander p. ex. 4 Ressorts avant que
-               <lb/>leur mouvement soyt entierement aneanty; ne faut il pas
+               <lb/>que doit bander la Boule <formula>A</formula>. Supposons de plus que chacune
+  <lb/>des Boules puisse bander <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> 4 Ressorts avant que
+               <lb/>leur<del>s</del> mouvement<del>s</del> soyt entierement aneanty; ne faut il pas
                <lb/>dire, je vous prie, que les 2 forces vives des boules ou leurs
                <lb/><hi rend="u">Pouvoirs</hi> sont egaux, nonobstant que la Boule <formula>B</formula> em<pc type="hyphenation">-</pc><lb break="no"/>ploye 2 fois plus de tems à produire son Effet complet
-               <lb/>que la boule <formula>A</formula>: L'une fait son Effet plus vite, l'autre
+               <lb/>que la Boule <formula>A</formula>: L'une fait son Effet plus vite l'autre
                <lb/>plus tard, qu'est ce que cela fait? c'est toujours le méme
                <lb/>Effet, aprés l'abattement de chaque ressort la boule
-               <lb/>peut courir avec ce qui lui reste de vitesse dans
+               <lb/>peut courir avec ce qui lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> reste de vitesse dans
                <lb/>le vuide sans en rien perdre jusqu'à ce qu'il ren<pc type="hyphenation">-</pc><lb break="no"/>contre un autre Ressort, quand méme il seroit eloigné
-               <lb/>du precedent de 100.000 lieues; ainsi c'est le nombre
+               <lb/>du precedent de 100<supplied>'</supplied>000 lieues; ainsi c'est le nombre
                <lb/>des ressorts pliés et non pas leur distance, qui doit
                <lb/>uniquement mesurer la quantité du Pouvoir des boules
                <lb/><formula>A</formula> et <formula>B</formula>. Si j'ai deux Bourses d'argent, Chacune
                <lb/>contenant 100 R, de l'une je depense chaque jour
-               <lb/>1 R et de l'autre <del>tout les 2 jours, R </del>je depense 1 R tous
-               <lb/>les 2 jours, l'une sera vuide au bout de 100 jours, mais
-            <pb facs="-" n="9"/>
+               <lb/>1 R et de l'autre <del>tout les 2 jours, R</del>je depense 1 R tous
+               <lb/><unclear>l</unclear>es 2 jours, l'une sera vuide au bout de 100 <choice><sic>jour</sic><corr>jours</corr></choice>, mais
+  <pb facs="1073618" n="7"/>
 <lb/>l'autre, à la fin de 200 jours; s'en suit il de la diversité
                <lb/>des tems qu'au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement l'une de ces 2 bourses ait
-               <lb/>été 2 fois plus riche que l'autre? quelle extravagan<pc type="hyphenation">-</pc><lb break="no"/>ce de dire cela? Revenons à nos boules <formula>A</formula> et <formula>B</formula>, et
-               <lb/>sup[p]osons presentement que les Ressorts de la Boule <formula>B</formula> soyent
+               <lb/>ete 2 fois plus riche que l'autre? quelle extravagan<pc type="hyphenation">-</pc><lb break="no"/>ce de dire cela? Revenons à nos boules <formula>A</formula> et <formula>B</formula>, et
+               <lb/><choice><sic>suposons</sic><corr>supposons</corr></choice> <abbr>presentemt.</abbr> que les Ressorts de la boule <formula>B</formula> soyent
                <lb/>autant eloignés les uns des autres, que ceux de la
                <lb/>boule <formula>A</formula>, mais que la Boule <formula>A</formula> ait moins de <del>vitesse</del>
 <lb/><del>et sa </del>masse et plus de vitesse suffisa<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent que la Bou<pc type="hyphenation">-</pc><lb break="no"/>le <formula>B</formula>, pour que chacune puisse precisement plier ses
-               <lb/>4 ressorts et <add>que</add> les ayant pliés, chacune perde tout son mou<pc type="hyphenation">-</pc><lb break="no"/>vement; il est manifeste que la boule <formula>A</formula> aura plutôt
+               <lb/>4 ressorts et <add>que</add> les ayant pliés, chacune perde tout son mou<pc type="hyphenation">-</pc><lb break="no"/>vement; il est manifeste que la boule <formula>A</formula> aura plutòt<!-- SG: Hier keine Entities für Diakritische Zeichen, höchstens Normalisierung von plutòt zu plutôt mittels orig reg   -->
                <lb/>achevé de produire son Effet total que la Boule <formula>B</formula>.
                <lb/>Mais peut on étre assez fol pour dire que la boule
                <lb/><formula>A</formula> ait eu moins de force que la boule <formula>B</formula>, après avoir
-               <lb/>demontré que les intervalles des Ressorts ne contri<pc type="hyphenation">-</pc><lb break="no"/>buent en rien à augmenter ou a diminuer les forces.
-               <lb/>Si les Ressorts ne plaisent pas, qu'on sup[p]ose d'autres
+               <lb/>demontré que les Intervalles des Ressorts ne contri<pc type="hyphenation">-</pc><lb break="no"/>buent en rien à augmenter ou à diminuer les forces.
+  <lb/>Si les Ressorts ne plaisent pas, qu'on <choice><sic>supose</sic><corr>suppose</corr></choice> d'autres
                <lb/>obstacles à surmonter, pourvu qu'ils fassent touts
-               <lb/>une egale resistance, Vous voyez que c'est là
-               <lb/>justement le Cas des <del>Ep </del>Experiences de Mr.
-               <lb/><rs key="pers_DE-588-11887733X" type="person">Poleni</rs>, que Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> à entrepris de
+               <lb/>une egale resistance. Vous voyez que c'est là
+               <lb/>justement le Cas des <del>Ep </del>Experiences de <abbr>Mr.</abbr>
+               <lb/><rs key="pers_DE-588-11887733X" type="person">Poleni</rs>, que <abbr>Mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> à entrepris de
                <lb/>refuter, mais assurement d'une maniere qui
-               <lb/>fait pitié. Quant à Mr. <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> il est trop
-               <lb/>petit Geomètre pour étre crû sur ses raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ements, qu'il
-               <lb/>tire de ses Experiences; d'ailleurs je sai par experience
-            <pb facs="-" n="10"/>
+               <lb/>fait pitié. Quant à <abbr>Mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> il est trop
+  <lb/>petit Geomètre <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> étre cr<choice><orig><g ref="#uacut">ú</g></orig><reg>u</reg></choice> sur ses raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ements, qu'il
+               <lb/>tire de ses Experiences; d'ailleurs je sai <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> experience
+  <pb facs="1073619" n="8"/>
 <lb/>qu'il ne raporte pas trop fidellement le resultat des <del>ses</del>
-<lb/>Experiences qu'il fait lui-même, et qu'il ne les fait
+<lb/>Experiences qu'il fait lui méme, et qu'il ne les fait
                <lb/>pas toujours selon qu'il devroit les faire, c'est ainsi
-               <lb/>qu'il a falsifié l'Experience, que Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> proposoit
-               <lb/>de faire pour rendre raison pourquoi le vif argent bais<pc type="hyphenation">-</pc><lb break="no"/>se <del>il </del>dans le baromètre, car l'experience que <rs key="pers_DE-588-117632686" type="person">Desaguil<pc type="hyphenation">-</pc><lb break="no"/>liers</rs> faisoit n'est pas celle que Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> avoit pro<pc type="hyphenation">-</pc><lb break="no"/>posée. En un mot Mr. <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> n'est rien moins
-               <lb/>que bon Raisonneur. L'Experience qu'il assure avoir
+               <lb/>qu'il a falsifié l'Experience, que <abbr>mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> proposoit
+  <lb/>de faire <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> rendre raison pourquoi le vif argent bais<pc type="hyphenation">-</pc><lb break="no"/>se<del>il</del> dans le baromètre, car l'experience que <rs key="pers_DE-588-117632686" type="person">Desaguil<pc type="hyphenation">-</pc><lb break="no"/>liers</rs> faisoit n'est pas celle que <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> avoit pro<pc type="hyphenation">-</pc><lb break="no"/>posée. En un mot <abbr>Mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> n'est rien moins
+               <lb/>que bon Raisonneur: l'Experience qu'il assure avoir
                <lb/>faite, avec des Corps qu'on laisse tomber de dif<pc type="hyphenation">-</pc><lb break="no"/>ferentes hauteurs sur le bras d'une balance pour
-               <lb/>lever un certain poids (sans dire jusqu'à quelle hau<pc type="hyphenation">-</pc><lb break="no"/>teur) ou il pretend avoir trouvé, que les hauteurs doivent
-               <lb/>étre reciproquement proportionelles aux quar<pc type="hyphenation">-</pc><lb break="no"/>rés des poids, cette experience, dis-je, m'est fort suspe<pc type="hyphenation">-</pc><lb break="no"/>cte, aussi bien que la bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e foi de l'Auteur. Pour ce qui
+               <lb/>lever un certain poids (sans dire jusqu'à quelle hau<pc type="hyphenation">-</pc><lb break="no"/>teur) ou il pretend avoir trouvé, que les hauteur<supplied>s</supplied> doivent
+               <lb/>étre reciproquement proportionelles aux quar<pc type="hyphenation">-</pc><lb break="no"/>rés des poids, cette experience, dis je, m'est fort suspe<pc type="hyphenation">-</pc><lb break="no"/>cte, aussi bien que la bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e foi de l'<rs key="pers_DE-588-117632686" type="person">Auteur</rs>. Pour ce qui
                <lb/>est de l'experience qui lui paroit demonstrative, qui
                <lb/>est celle de 2 Corps inegaux, que le Poids d'un 3.<hi rend="sup">e</hi> contraint
                <lb/>de s'approcher l'un de l'autre, en quel cas les masses sont
-               <lb/>reciproques aux Vitesses, il est plaisant, que
-               <lb/>justement cette experience qui lui paroit pro<pc type="hyphenation">-</pc><lb break="no"/>pre pour refuter la Theorie des forces vives,
+               <lb/>reciproques <choice><sic>aus</sic><corr>aux</corr></choice> Vitesses, il est plaisant, que
+               <lb/>justement cette experience qui lui paroit pro<pc type="hyphenation">-</pc><lb break="no"/>pre pour refutér la Theorie des forces vives,
                <lb/>est mon <hi rend="u">Argumentum Achilleum</hi> pour en
-               <lb/>prouver la Verité, voyez le Cor. 3 au §. 6. du
-               <lb/>Chap. 3. de <rs type="biblio">mon Discours</rs> sur le mouvement.
-            <pb facs="-" n="11"/>
+               <lb/>prouver la Verité, voyez le <abbr>Cor.</abbr> 3 au §. 6. du
+  <lb/><abbr>Chap.</abbr> 3. de mon <rs key="biblio_QYV8YG25" type="biblio">Discours</rs> sur le mouvement.
+  <pb facs="1073620" n="9"/>
 <lb/>car au lieu de faire approcher les 2 <del>poids p le</del>
-<lb/><del>poids </del>corps par le poids d'un 3.<hi rend="sup">e</hi> je les fais é<pc type="hyphenation">-</pc><lb break="no"/>loigner l'un de l'autre par l'entremise d'un ressort
-               <lb/>qui en se debandant leur imprime des Vitesses
+<lb/><del>poids </del>corps <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> le poids d'un 3<hi rend="sup">e</hi> je les fais é<pc type="hyphenation">-</pc><lb break="no"/>loigner l'un de l'autre <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> l'entremise d'un ressort
+               <lb/>qui en se debandant leur imprime<del>nt</del> des Vitesses
                <lb/>reciproques aux Masses, ce qui revient à la méme
-               <lb/>Chose, car dans l'une et l'autre maniere, les ac<pc type="hyphenation">-</pc><lb break="no"/>croissemens de Vitesses Elementaires sont causés par
-               <lb/>de pures Solicitations ou forces mortes, or nous ne
+               <lb/>Chose, car dans l'une et l'autre maniere, les ac<pc type="hyphenation">-</pc><lb break="no"/>croissemens de Vitesses Elementaires sont causés <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
+               <lb/>de pures Solicitations ou <rs type="keyword">forces mortes</rs>, or nous ne
                <lb/>nions pas, que ces accroissemens de vitesse, que
-               <lb/>j'appelle vitesses virtuelles, produits en differents
-               <lb/>Corps par une méme force motrice, c'est à dire, par
+               <lb/>j'appelle <rs type="keyword">vitesses virtuelles</rs>, produits en differents
+               <lb/>Corps <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> une méme force motrice, c'est à dire, par
                <lb/>un même Effort, ne soient en raison reciproque
-               <lb/>des masses: C'est un Principe <del>be </del>de Statique
+               <lb/>des masses: C'est un Principe <del>be </del>de <rs type="keyword">Statique</rs>
                <lb/>que je pose pour fondement, pour prouver
-               <lb/>dans l'Endroit cité <del>de </del><add>que</add> la force vive du Corps
-               <lb/>A est à la force vive du Corps <formula>B::a.b::</formula> (par<pc type="hyphenation">-</pc><lb break="no"/>ceque <formula>aA=bB</formula>) <formula>a\times aA.b\times bB::aaA.bbB</formula>, et par<pc type="hyphenation">-</pc><lb break="no"/>tant en raison composée de <formula>A</formula> à <formula>B</formula>, et de <formula>aa</formula> à
-               <lb/><formula>bb</formula>; Cette Demonstration quelque courte,
+               <lb/>dans l'Endroit cité <del>de </del><add><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice></add> la force vive du Corps
+               <lb/><formula>A</formula> est à la force vive du Corps <formula>B::a.b=::</formula> (par<pc type="hyphenation">-</pc><lb break="no"/>ceque <formula>aA=bB</formula>) <formula>a\times aA.b\times bB::aaA.bbB</formula>, et <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
+               <lb/>tant en Raison composée de <formula>A</formula> à <formula>B</formula>, et de <formula>aa</formula> à
+               <lb/><formula>bb</formula>; Cette <choice><sic>Demonstrative</sic><corr>Demonstration</corr></choice> quelque courte,
                <lb/>quelque <del>Der </del>facile et quelque imprevüe
-               <lb/>qu'elle soit, elle est pourtant seule Capable
-               <lb/>de convaincre le plus Opiniâtre Adversaire
-               <lb/>Anglois, je les defie touts de m'y montrer
-            <pb facs="-" n="12"/>
+               <lb/>qu<supplied>'</supplied>elle soit, elle est pourtant seule Capable
+  <lb/>de convaincre le plus Opiniàtre<!-- SG: Schreibweise in dieser Form in älteren Quellen, z.B. Wörterbüchern bezeugt. Ansonsten normalisierend anpassen mit orig/reg --> Adversaire
+               <lb/>Anglois, je les defie toùts<!-- SG: Originalschreibweise beibehalten oder normalisierend anpassen mit orig/reg --> de m'y montrer
+  <pb facs="1073621" n="10"/>
 <lb/>le moindre defaut. Voyés donc si ce principe de
-               <lb/>Statique peut servir à <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> pour me
-               <lb/>refuter, moi qui en tire le plus fort argument
-   <lb/>pour notre These. Mr. <rs type="person" key="pers_DE-588-1325550264">Eames</rs>, dont le nom
+               <lb/><rs type="keyword">Statique</rs> peut servir à <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> pour me
+               <lb/>refuter, moi qui en tire le plus fort Argument
+   <lb/>pour notre These. <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-1325550264">Eames</rs>, dont le nom
                <lb/>m'est inco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>u semble avoir l'idée des forces vives
-               <lb/>aussi peu claire, que Mr. <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs>, au moins
-               <lb/>il ne comprens pas ce que les Corps non-elastiques
+               <lb/>aussi peu claire<del>s</del>, que <abbr>mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs>, au moins
+               <lb/>il ne comprens pas ce que les <rs type="keyword">Corps non-elastiques</rs>
                <lb/>peuvent donner de lumiere touchant la mesure
-               <lb/>des forces vives, car par le Choc des Corps non<pc type="hyphenation">-</pc><lb break="no"/>elastiques une Partie des forces vives se perd
-               <lb/>ou plûtôt est employée pour faire la Compres<pc type="hyphenation">-</pc><lb break="no"/>sion, et cette Partie ainsi employée ne revient
+               <lb/>des forces vives, car <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> le Choc des Corps non-
+<lb break="no"/>elastiques une Partie des forces vives se perd,
+               <lb/>ou plûtôt<!-- SG: Form ist bezeugt, zum Umgang mit Diakritischen Zeichen siehe oben. --> est employée pour faire la Compres<pc type="hyphenation">-</pc><lb break="no"/>sion, et cette Partie ainsi employée ne revient
                <lb/>plus au Corps à moins qu'ils ne se remettent de leur
                <lb/>Compression, ainsi je ne voi pas ce qu'il peut in<pc type="hyphenation">-</pc><lb break="no"/>ferer du Choc des Corps non Elastiques pour
                <lb/><del>entreprendre </del><add>enfreindre</add> la Doctrine des forces vives. Mais
-               <lb/>pour son autre Argument par <add>lequel</add> il pretend prouver que
-               <lb/>le mien des 4 Ressorts bandés par 2 degrez de vitesse
-               <lb/>est un Sophisme, je vous avoue que je n'ai pû
+               <lb/>pour son autre Argument <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <add>lequel</add> il pretend prouver <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>le mien des 4 Ressorts bandés <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> 2 degrez de vitesse
+  <lb/>est un Sophisme, je vous avoue que je n'ai pû<!-- SG: Änliche Form wie circonflex weiter oben. Form ist bezeugt. Kein Gebrauch von Entities bei diakritischen Zeichen im Fr. -->
                <lb/>lire son raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement sans Emotion, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent
                <lb/>est il possible qu'on souffre d'inserer dans les
-               <lb/>transactions de telles puerilitez? Je vous de<pc type="hyphenation">-</pc><lb break="no"/>mande est ce que Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, cet habile Ma<pc type="hyphenation">-</pc><lb break="no"/>thématicien, aprouve le Raisonnement de Mr.
-            <pb facs="-" n="13"/>
-   <lb/><rs type="person" key="pers_DE-588-1325550264">Eames</rs>, le goutet-il? Il faut étre bien hardi et igno<pc type="hyphenation">-</pc><lb break="no"/>rant en méme tems pour oser avancer de telles pau<pc type="hyphenation">-</pc><lb break="no"/>vretez. Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent le Corps <formula>C</formula>. (vid. fig. 9. de mon <rs type="biblio">discours</rs>)
-               <lb/>que je supose pouvoir bander precisément un seul res<pc type="hyphenation">-</pc><lb break="no"/>sort, s'il le choque avec un degré de vitesse perpen<pc type="hyphenation">-</pc><lb break="no"/>diculairement, et que je démontre en pouvoir bander
-               <lb/>4 de ces Ressorts, s'il co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ence par choquer le 1<hi rend="sup">er</hi>. avec
-               <lb/>2 degrés de vitesse sous un angle de 30 degrés. Com<pc type="hyphenation">-</pc><lb break="no"/>ment, dis-je, peut il démontrer que dans les memes
+               <lb/>transactions de telles puerilitez? Je vous de<pc type="hyphenation">-</pc><lb break="no"/>mande est ce que <abbr>mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> cet habile Ma<pc type="hyphenation">-</pc><lb break="no"/>thématicien aprouve le Raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement de <abbr>Mr.</abbr>
+  <pb facs="1073622" n="11"/>
+   <lb/><rs type="person" key="pers_DE-588-1325550264">Eames</rs>, le goutet-il? Il faut étre bien hardi et igno<pc type="hyphenation">-</pc><lb break="no"/>rant en méme tems pour oser avancer de telles pau<pc type="hyphenation">-</pc><lb break="no"/>vretez. Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent le Corps <formula>C</formula>. (<abbr>vid.</abbr><abbr>fig.</abbr> 9. de mon <rs type="biblio">discours</rs>)
+               <lb/>que je supose pouvoir bander precisèment un seul res<pc type="hyphenation">-</pc><lb break="no"/>sort, s'il le choque avec un degré de vitesse perpen<pc type="hyphenation">-</pc><lb break="no"/>diculairement, et que je démontre en pouvoir bander
+               <lb/>4 de ces Ressorts, s'il co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ence <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> choquer le 1.<hi rend="sup">er</hi> avec
+               <lb/>2 degrés de vitesse sous un angle de 30 degrés. Com<pc type="hyphenation">-</pc><lb break="no"/>ment, dis<supplied>-</supplied>je, peut il démontrer que dans les mémes
                <lb/>Circonstances le Corps <formula>C</formula> bandera les mémes 4
                <lb/>ressorts avec un degré de vitesse seulement, puisqu'il ne
                <lb/>pourra pas meme bander le seul premier ressort, lequel
-               <lb/>pour étre bandé <del>eg </del>exige par hypothese un degré de vites<pc type="hyphenation">-</pc><lb break="no"/>se perpendiculaire, en sorte qu'un degré de vitesse oblique
+               <lb/>pour étre bandé <del>eg </del>exige <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> hypothese un degré de vites<pc type="hyphenation">-</pc><lb break="no"/>se perpendiculaire, en sorte qu'un degré de vitesse oblique
                <lb/>ne seroit pas capable de le bander; que veut il donc,
-               <lb/>quand il dit, que le <hi rend="u">Corps mû avec un degré de vitesse
+               <lb/>quand il dit, que le <hi rend="u">Corps mû<!-- SG: Falsch umgesetzt! mû wird auch heute noch mit Accent circonflexe geschrieben --> avec un degré de vitesse
                <lb/>peut en decomposant son mouvement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e l'autre
                <lb/>bander 4 ressorts</hi>, n'étant pas capable d'en bander
                <lb/>un seul? S'il entend d'autres ressorts que ceux que
@@ -449,126 +461,127 @@
                <lb/>et substituons y 4 boules parfaitement
                <lb/>elastiques, chacune egale à la boule <formula>C</formula>. que
                <lb/>je suppose aussi parfaitement elastique:
-               <lb/>Ne <del>vous </del>voyés vous pas que la boule
+               <lb/>Ne <del>vous</del>voyes vous pas que la boule
                <lb/><formula>C</formula>. avec ses 2 degrés de vitesse mettra
-            <pb facs="-" n="14"/>
-<lb/>toutes les 4 Boules en mouvement et do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>era à chacune
-               <lb/>un degré de vitesse? Donc la boule <formula>C</formula> avec 2 degrés de vi<pc type="hyphenation">-</pc><lb break="no"/>tesse avoit autant de force vive, que toutes les 4 boules cha<pc type="hyphenation">-</pc><lb break="no"/>cune egale à elle ont ensemble etant mues avec un degré
-               <lb/>de Vitesse; puisque c'est la seule boule <formula>C</formula>. qui les à toutes
+  <pb facs="1073623" n="12"/>
+  <lb/>toutes les 4 Boules en mouvement et do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>era à<!-- SG: Falsch umgesetzt! à wird auch heute noch mit Accent aigu geschrieben --> chacune
+               <lb/>un degré de vitesse? Donc la boule <formula>C</formula> avec 2 degrés de vi<pc type="hyphenation">-</pc><lb break="no"/>tesse avoit autant de force vive, que toutes les 4 boules cha<pc type="hyphenation">-</pc><lb break="no"/>cune egale à elle ont ensemble etant mües<!-- SG: Fehllesung. Trema wird beibehalten --> avec un degré
+               <lb/>de Vitesse; puisque c'est la seule boule <formula>C</formula>. qui les <choice><sic>à</sic><corr>a</corr></choice> toutes
                <lb/>mises en mouvement, ou veut il que l'effet ne soit
                <lb/>pas toujours egal à sa Cause? C'est une miserable
                <lb/>defaite, que de dire, qu'il faudroit que les Corps, qui
                <lb/>se choquent conservassent leurs directions ou qu'ils
                <lb/>en changeassent tous deux, force est toujours force
-               <lb/>et vitesse est toujours vitesse, quelqu'en soit la direction;
-               <lb/>S'il ne s'agit que de leur faire avoir une direction don<pc type="hyphenation">-</pc><lb break="no"/>née, il n'y a qu'à les faire reflechir après le Choc d'une
+               <lb/>et vitesse est toujours Vitesse, quelqu'en soit la direction;
+               <lb/>S'il ne s'agit que de leur faire avoir une direction don<pc type="hyphenation">-</pc><lb break="no"/>née, il n'y a qu'à les faire reflechir aprés le Choc d'une
                <lb/>telle manière qu'on voudra par le moyen des plans
-               <lb/>parfaitement <del>durs </del><add>roides</add>, contre lesquels ils heurte<pc type="hyphenation">-</pc><lb break="no"/>ront et en reflechiront sous tels angles d'incidence
+               <lb/>parfaitement <del>durs</del><add>roides</add>, contre lesquels ils heurte<pc type="hyphenation">-</pc><lb break="no"/>ront et en reflechiront sous tels angles d'incidence
                <lb/>qu'il sera necessaire pour que toutes les 4 boules
-               <lb/>pre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ent une direction do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée p. ex. d'occident
+               <lb/>pre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ent une direction do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> d'occident
                <lb/>en orient; mais je me lasse de repondre à de
                <lb/>semblables niaiseries. Il est vrai ce que vous
                <lb/>dites, qu'on peut aisément deduire de la
-               <lb/>proposition 39 de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> que les
+               <lb/>proposition 39 de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> que les
                <lb/>forces des Corps, ou leurs <hi rend="u">Pouvoirs</hi>, sont
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les <del>cos </del><add>quarrés</add> de leurs vitesses, je ne croi
-               <lb/>pourtant <add>pas</add> que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> lui
-               <lb/>meme ait jamais fait cette deduction
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les <del>cos</del><add>quarrés</add> de leurs vitesses, je ne croi
+               <lb/>pourtant <add>pas</add> que <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> lui
+               <lb/>meme ait jamais fait cette deducti<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice>
                <lb/>ni qu'il ait pensé à la veritable
                <lb/>estimation des forces vives, pas
-               <lb/>plus que Mr. <rs key="pers_DE-588-118639749" type="person">Huguens</rs> qui savoit fort
-               <lb/>bien la verité de ce Theoreme
-            <pb facs="-" n="15"/>
-<lb/>que la So<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des Produits des masses par les quarrés
-               <lb/>des <del>leurs </del>vitesses demeuroit la méme aprez et
+               <lb/>plus que <abbr>Mr</abbr> <rs key="pers_DE-588-118639749" type="person">Hu<supplied>y</supplied>guens</rs> qui savoit fort
+               <lb/>bien la verit<add>é</add><del>able</del> de ce Theoreme
+  <pb facs="1073624" n="13"/>
+<lb/>que la So<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des Produits des masses <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> les quarrés
+               <lb/>des <del>leurs </del>Vitesses demeuroit la méme aprez et
                <lb/>avant le Choc, car on en voit la Demonstration dans
-               <lb/>son traité de la percussion, mais ce n'etoit qu'un pur
+               <lb/>son <rs type="biblio">traité</rs> de la <rs type="keyword">percussion</rs>, mais ce n'etoit qu'un pur
                <lb/>Theorème chez lui sans savoir que c'etoit en quoi con<pc type="hyphenation">-</pc><lb break="no"/>siste la quantité de la force vive.</p>
-<p><lb/>Voilà ce que j'ai eu à repondre aux pretendus arguments des
+<p><lb/>Voila ce que j'ai eu à repondre aux pretendus arguments des
                <lb/>Anglois contre les forces vives, il seroit peutétre à propos
-               <lb/>de faire un Extrait de cette Lettre que Vous feriés in<pc type="hyphenation">-</pc><lb break="no"/>serer dans les Transactions ou (en cas qu'on le refuset quoique
-               <lb/>je sois aussi de la Societé de <rs key="place_GEO-2643743" type="place">Londres</rs>) dans quelque Jour<pc type="hyphenation">-</pc><lb break="no"/>nal litteraire de <rs key="place_VER-hollan" type="place">Hollande</rs>. Si aprés cela les Anglois
-               <lb/>s'avisent de continuer leurs Criailleries, ils ne feront par
-               <lb/>là qu'augmenter les Trophées de la Verité quand elle <del>vien</del><pc type="hyphenation">-</pc><lb break="no"/><del>dr</del> vaincra à la fin et leur Confusion deviendra d'au<pc type="hyphenation">-</pc><lb break="no"/>tant plus honteuse. Cependant vous ne m'avez pas en<pc type="hyphenation">-</pc><lb break="no"/>core dit le Jugement que les Anglois font de mon dis<pc type="hyphenation">-</pc><lb break="no"/>cours sur le Mouvement, car ce que Vous m'avez
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué des Transact. a parû longtems avant
-               <lb/>l'impression de mon dit discours. Ainsi je serois curieux
-               <lb/>de savoir ce qu'ils repondront aux autres demonstra<pc type="hyphenation">-</pc><lb break="no"/>tions que j'y do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e qui toutes me paroissent ne souffrir
-               <lb/>aucune replique, surtout celle dont j'ai parlé ci-<pc type="hyphenation">-</pc><lb break="no"/>dessus, Chap. 3. §. 6. item celle Chap. 7. § 2. qui est
-               <lb/>generale et tirée des principes mémes, que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>
-<lb/>et les autres Anglois employent. Item celles
-               <lb/>qui sont au Ch. 8. §. 4. 5. Se roidiront ils contre
+               <lb/>de faire un Extrait de cette <rs type="letter">Lettre</rs> que Vous feriés in<pc type="hyphenation"><supplied>-</supplied></pc>
+<lb break="no"/>serer dans les Transactions ou (en cas qu'on le refus<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>t<!-- SG: Müsste refusât lauten --> quoique
+               <lb/>je sois aussi de la <rs type="organisation">Societé</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs>) dans quelque <rs type="biblio">Jour<pc type="hyphenation">-</pc><lb break="no"/>nal litteraire</rs> de <rs key="place_VER-hollan" type="place">Hollande</rs>. Si aprés cela les Anglois
+  <lb/>s'avisent de continuer leurs Criailleries, ils ne feront <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
+  <lb/><choice><orig>la</orig><reg>là</reg></choice><!-- SG: Akzent mit Unterscheidungsfunktion la/là normalisierend ergänzt --> qu'augmenter les Trophées de la Verité quand elle <del>vien</del><pc type="hyphenation">-</pc><lb break="no"/><del>dr</del> vaincra à la fin et leur Confusion deviendra d'au<pc type="hyphenation">-</pc><lb break="no"/>tant plus honteuse. Cependant Vous ne m'avez pas en<pc type="hyphenation">-</pc><lb break="no"/>core dit le Jugement que les Anglois font de mon <rs key="biblio_QYV8YG25" type="biblio">dis<pc type="hyphenation">-</pc><lb break="no"/>cours</rs> sur le Mouvement, car ce que Vous m'avez
+  <lb/><choice><orig>Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</orig><reg>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</reg></choice><!-- SG: Kleinschreibung nicht stillschweigend anpassen, entweder gross belassen oder mit orig/reg normalisieren. --> des <rs type="biblio"><abbr>Transact.</abbr></rs> <choice><orig>à</orig><reg>a</reg></choice><!-- SG: Falsche Akzentuierung im Original normalisierend korrigiert --> paru<!-- SG: parù kommt in der Literatur nur sehr selten vor, parû öfters. Entweder ist ein flüchtigers circonflexe gemeint, Cramer schreibt es manchmal so. Man könnte auch "parù" lesen und normalisierend zu "paru" modernisieren. Hier wäre  eine editorische Entscheidung zu treffen. --> longtems avant
+               <lb/>l'impression de mon dit discours; Ainsi je serois curieux
+               <lb/>de savoir ce qu'ils repondront aux autres demonstra<pc type="hyphenation">-</pc><lb break="no"/>tions que j'y do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e qui toutes me paroissent ne sou<unclear>ff</unclear>rir
+               <lb/>aucune replique, surtout celle dont j'ai parlé ci<supplied>-</supplied>
+<lb break="no"/>dessus, <abbr>Chap.</abbr> 3. §. 6. Item celle <abbr>Chap.</abbr> 7 § 2. qui est
+               <lb/>generale et tirée des principes mémes, que <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+<lb/>et les Autres Anglois employent. Item celles
+               <lb/>qui sont au <abbr>Ch.</abbr> 8. §. 4. 5. Se roidiront ils contre
                <lb/>l'Evidence de toutes ces demonstrations? He bien!
                <lb/>qu'on en vie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e donc à leur proposer des <del/>
-<pb facs="-" n="16"/>
+  <pb facs="1073625" n="14"/>
 <lb/>Problemes tels que je vous ai fait voir ici, qui peuvent
-               <lb/>étre resolus fort facilement par notre Theorie des forces vives
-               <lb/>p. ex. de determiner les vitesses et les tems qu'employeroit
-               <lb/>un Corps pesant qui descendroit par des hauteurs données
-               <lb/>en roulant où en detortillant un fil qui seroit entortillé
-               <lb/>autour d'un axe Cylindrique passant par le Centre de
-               <lb/>Gravité du Corps pesant. On defieroit donc ces Mes<pc type="hyphenation">-</pc><lb break="no"/>sieurs à chercher par leur principe la vitesse du
-               <lb/>Centre de Gravité de <add>ce</add> Corps ainsi descendant en tour<pc type="hyphenation">-</pc><lb break="no"/>noyant et le tems qu'il lui faut pour une hauteur don<pc type="hyphenation">-</pc><lb break="no"/>née à parcourir. Je leur demanderois aussi la ten<pc type="hyphenation">-</pc><lb break="no"/>sion du fil, c'est à dire, de quelle force le fil est ten<pc type="hyphenation">-</pc><lb break="no"/>du pendant que le Corps pesant descend en bas en
-               <lb/>tournoyant: je trouve que cette force de tension
+               <lb/>étre resolus fort facilement <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> notre Theorie des forces vives
+               <lb/><abbr><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>.</abbr> <abbr>ex.</abbr> de determiner les vitesses et les tems qu'employeroit
+               <lb/>un Corps pesant qui descendroit <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> des hauteurs données
+               <lb/>en roulant ou en detortillant un fil qui seroit entortillé
+               <lb/>autour d'un axe Cylindrique passant <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> le Centre de
+               <lb/>Gravité du Corps pesant. On defieroit donc ces Mes<pc type="hyphenation">-</pc><lb break="no"/>sieurs à chercher <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> leur principe la vitesse du
+               <lb/>Centre de <rs type="keyword">Gravité</rs> de <add>ce</add> Corps ainsi descendant en tour<pc type="hyphenation">-</pc><lb break="no"/>noyant et le tems qu'il lui faut <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> une hauteur don<pc type="hyphenation">-</pc><lb break="no"/>née à parcourir. Je leur demanderois aussi la ten<pc type="hyphenation">-</pc><lb break="no"/>sion du fil, c'est à dire, de quelle force le fil est ten<pc type="hyphenation">-</pc><lb break="no"/>du pendant que le Corps pesant descend en bas en
+               <lb/>tournoyant: je trouve que cette <rs type="keyword">force de tension</rs>
                <lb/>est toujours constante pendant la descente du
-               <lb/>Corps pesant, en sorte que si l'on attachoit l'
-               <lb/>extremité du fil à l'un des bras d'une balance et
+  <lb/>Corps pesant, en sorte que si l'on attachoit l'<pc type="hyphenation">-</pc><lb break="no"/>extremité du fil à l'un des bras d'une balance et
                <lb/>à l'autre bras un Contrepoids egal à cette force que
-               <lb/>je determine par ma Theorie, on verroit avec plaisir
+               <lb/>je determine <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> ma Theorie, on verroit avec plaisir
                <lb/>que la balance se conserveroit en equilibre durant
-               <lb/>toute la descente du Corps tournoyant; j'ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>u<pc type="hyphenation">-</pc><lb break="no"/>niqué à <rs key="pers_DE-588-117589144" type="person">mon fils</rs> à <rs key="place_GEO-498817" type="place">Petersbourg</rs>, qui vous fait bien
+               <lb/>toute la descente du Corps tournoyant, j'ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>u<pc type="hyphenation">-</pc><lb break="no"/>niqué à mon <rs key="pers_DE-588-117589144" type="person">fils</rs> à <rs key="place_GEO-498817" type="place">Petersbourg</rs>, qui vous fait bien
                <lb/>des Complimens, mes solutions de ces problemes tirées
-               <lb/>de la Consideration des forces vives, il vient de
-               <lb/>me repondre, me faisant savoir que les Experien<pc type="hyphenation">-</pc><lb break="no"/>ces qu'il en a faites ont été conformes à mes so<pc type="hyphenation">-</pc><lb break="no"/>lutions. Ainsi Mess. les Anglois n'ont qu'à don<pc type="hyphenation">-</pc><lb break="no"/>ner <add>les</add> leurs fondées sur leurs principes; voici la
-               <lb/>pierre de touche, savoir l'Experience qui decidera
-            <pb facs="-" n="17"/>
+               <lb/>de la Consideration des <rs type="keyword">forces vives</rs>; il vient de
+               <lb/>me repondre, me faisant savoir que les Experien<pc type="hyphenation">-</pc><lb break="no"/>ces qu'il en a faites ont été conformes à mes so<pc type="hyphenation">-</pc><lb break="no"/>lutions. Ainsi <abbr>Msrs</abbr> les Anglois n'ont qu'a don<pc type="hyphenation">-</pc><lb break="no"/>ner <add>les</add> leurs fondées sur leurs principes; voici la
+               <lb/>pierre de touche savoir l'Experience qui decidera
+  <pb facs="1073626" n="15"/>
 <lb/>à leur Confusion, c'est le seul moyen de leur
                <lb/>fermer la bouche, sans cela ils criailleront à l'infini
-               <lb/>et ne se rendront jamais aux raisonnemens les plus
-               <lb/>solides. Je suis meme prét à parier avec eux tout
-               <lb/>ce qu'ils voudront que l'Experience decidera en ma fa<pc type="hyphenation">-</pc><lb break="no"/>veur. Mais vous devriez étre present quand on
+               <lb/>et ne se rendront jamais aux raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>emens les plus
+               <lb/>Solides. Je suis meme prèt à parier avec eux tout
+               <lb/>ce qu'ils voudront que l'Experience decidera en ma fa<pc type="hyphenation">-</pc><lb break="no"/>veur; Mais vous devriez étre present quand on
                <lb/>la feroit, car ils ne sont pas gens à se fier sur
                <lb/>leur bonne foi.</p>
-<p><lb/>Je vous aurai de l'Obligation si vous voulés
-               <lb/>prendre la peine de m'envoyer la <rs type="biblio">dernière Edition
-               <lb/>des principes</rs> de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, je vous ferai rembour<pc type="hyphenation">-</pc><lb break="no"/>ser l'Argent avec beaucoup de remerecimens aussitôt
-               <lb/>que je saurai ce que ce Livre vous aura couté. Mr.
-               <lb/><rs key="pers_DE-588-143687417" type="person">Pemberton</rs> qui a procuré cette edition a merité gran<pc type="hyphenation">-</pc><lb break="no"/>de Louange de l'avoir falsifiée en cassant le fameux
-               <lb/>Scholium du Lemme 2 du Liv. II et en y substituant
-               <lb/>un autre (sans <del>suposé </del>doute suposé) où Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>
-<lb/>doit s'attribuer la Gloire du Calcul des fluxions di<pc type="hyphenation">-</pc><lb break="no"/>sent qu'il en avoit ecrit un livre en 1671. Mais l'Au<pc type="hyphenation">-</pc><lb break="no"/>thorité de Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> sera toujours dementie par
-               <lb/>les 2 premieres Editions qu'il a si lachement mu<pc type="hyphenation">-</pc><lb break="no"/>tilées en retranchant le temoignage <del>de l </del>sincere de
-               <lb/>Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> qu'il a do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é lui méme à Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>,
-               <lb/>savoir que celui ci avoit co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué (à Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>)
+  <p><lb/>Je Vous aurai de l'Obligati<choice><orig><g ref="#oacut">ó</g></orig><reg>o</reg></choice>n<!-- SG: Falsch umgesetzte Normalisierung. Aus meiner Sicht zudem nicht erforderlich, da es sich eher um einen durchgestrichenen I-Punkt als um einen Accent aigu handelt. --> si vous voulés
+  <lb/>prendre la peine de m'envoyer la <rs key="biblio_73DJ8AIG" type="biblio">dernière Edition
+               <lb/>des principes</rs> de <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, je vous ferai rembour<pc type="hyphenation">-</pc><lb break="no"/>ser l'Argent avec beaucoup de remercimens <choice><orig>aussitót</orig><reg>aussitôt</reg></choice><!-- SG: Entweder keine Normalisierung, falls ja, dann von ó (der Strich geht von unten nach oben) zu ô (modern).  -->
+               <lb/>que je saurai ce que ce <rs type="biblio">Livre</rs> vous aura couté. <abbr>Mr.</abbr>
+  <lb/><rs key="pers_DE-588-143687417" type="person">Pemberton</rs> qui a procuré cette <rs key="biblio_73DJ8AIG" type="biblio">Edition</rs> a merité gran<pc type="hyphenation">-</pc><lb break="no"/>de Louange de l'avoir falsifiée en cassant le fameux
+               <lb/>Scholium du Lemme 2 du <abbr>Liv.</abbr> II et en y substituant
+               <lb/>un autre (sans <del>suposé</del>doute suposé) où <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+<lb/>doit s'attribuer la Gloire du <rs type="keyword">Calcul des fluxions</rs> di<pc type="hyphenation">-</pc><lb break="no"/>sent qu'il en avoit ecrit un livre en 1671. Mais l'Au<pc type="hyphenation">-</pc><lb break="no"/>thorité de <abbr>Mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> sera toujours dementie <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
+               <lb/>les <rs type="biblio">2 premieres Editions</rs> qu'il <choice><orig>à</orig><reg>a</reg></choice><!-- SG: Grammatik! --> si lachement mu<pc type="hyphenation">-</pc><lb break="no"/>tilées en retranchant le temoignage <del>de l </del>sincere de
+    <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> qu'il <choice><orig>à</orig><reg>a</reg></choice> do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é lui méme à <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>,
+               <lb/>savoir que celui ci avoit co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué (à <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>)
                <lb/>les principes du Calcul differentiel ou des
-               <lb/>fluxions, avant que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> en ait com<pc type="hyphenation">-</pc><lb break="no"/>muniqué la moindre Chose; vouloir dire
-               <lb/>que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> en avoit ecrit un livre en 1671
-            <pb facs="-" n="18"/>
-<lb/>que perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e n'a jamais vu, ne prouve pas plus que s'il disoit
-               <lb/>que deja Archimede avoit fait un tel livre; <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> n'est
-               <lb/>pas assés digne de foi pour l'en croire sur sa parole, mais
-               <lb/>que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> ait ecrit ce pretendu livre ou qu'il n'ait
+               <lb/>fluxions, avant que <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> en ait com<pc type="hyphenation">-</pc><lb break="no"/>muniqué la moindre Chose; vouloir dire
+               <lb/>que <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> en avoit ecrit un <rs type="biblio">livre</rs> en 1671
+  <pb facs="1073627" n="16"/>
+    <lb/>que perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e n'a jamais vù,<!-- SG: Falls eine Normalisierung vorgenommen wird, dann mit orig/reg modernisierend zu „vu“. Alternativ könnte es auch als flüchtiges Circonflexe gelesen werden, was historisch üblicher wäre. --> ne prouve pas plus, que s'il disoit
+  <lb/>que deja <rs key="pers_DE-588-118503863" type="person">Archimede</rs> avoit fait un tel livre; <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> n'est
+               <lb/>pas assés digne de foi <abbr>p.<hi rend="sup">r</hi></abbr> l'en croire sur sa parole, mais
+               <lb/>que <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> ait ecrit ce pretendu <rs type="biblio">livre</rs> ou qu'il n'ait
                <lb/>point ecrit, ce n'est pas la question; il s'agit de savoir si
-               <lb/>Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> a apris son Calcul differ. de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le pretendent les Champions Newtoniens. Or Mr.
-               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> lui meme do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e à Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> le temoignage
-               <lb/>d'en avoir reçu la methode des fluxions avant que de
-               <lb/>la lui avoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée, c'en est assez. <rs type="person">Pemberton</rs> a
-               <lb/>beau dire, il ne sera pas cru, puisqu'il a eu la temeri<pc type="hyphenation">-</pc><lb break="no"/>té de falsifier un passage si considerable. C'est une
+    <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> <choice><orig>à</orig><reg>a</reg></choice> apris son Calcul <choice><abbr>differ.</abbr><expan>différentiel</expan></choice> de <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le pretendent les Champions Newtoniens. Or <abbr>mr.</abbr>
+               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> lui meme do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e à <abbr>mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> le temoignage
+               <lb/>d'en avoir reçù<!-- SG: keine Normalisierung nötig, evtl. zu lesen als flüchtiges circonflexe, was der Schreibweise des 18. Jh. entsprechen würde, siehe weiter unten... --> la methode des fluxions avant que de
+               <lb/>la lui avoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée, c'en est assez, <rs type="person">Pemberton</rs> à
+    <lb/>beau dire, il ne sera pas cru, puisqu'il <choice><orig>à</orig><reg>a</reg></choice> eu la temeri<pc type="hyphenation">-</pc><lb break="no"/>té de falsifier un passage si considerable. C'est une
                <lb/>Chose odieuse que de corrompre les Livres d'autrui.
-               <lb/>Quand vous passerez en hollande vous ferez s. v. p.
-               <lb/>mes Compliments à Mr. de  <rs key="pers_DE-588-118939297" type="person">S' Gravesande</rs> en lui deman<pc type="hyphenation">-</pc><lb break="no"/>dant s'il a reçû mon ouvrage sur le mouvement, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-               <lb/>j'en avois do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission à Mr. <rs type="person">de Mairan</rs> de lui en <del>trou-</del>
+  <lb/>Quand Vous passerez en <rs key="place_VER-hollan" type="place"><choice><orig>hollande</orig><reg>Hollande</reg></choice></rs> vous ferez <choice><abbr>s. v. p.</abbr><expan>s'il vous plaît</expan></choice>
+               <lb/>mes Complimens à <abbr>mr.</abbr> de <rs key="pers_DE-588-118939297" type="person">S'Gravesande</rs> en lui deman<pc type="hyphenation">-</pc><lb break="no"/>dant s'il à reçû<!-- Keine Normalisierung, da übliche Schreibweise im 18. Jh.! --> mon <rs key="biblio_QYV8YG25" type="biblio">ouvrage</rs> s<del/><add>u</add>r le mouvement, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+  <lb/>j'en avois do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission à <abbr>mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">Demairan</rs> de Lui en <del>trou-</del>
 <lb/>envoyer un Exemplaire s'il trouvoit l'occasion; En
-               <lb/>cas que Mr. <rs key="pers_DE-588-118939297" type="person">S'Gravesande</rs> ne l'ait point reçû, je vous
+               <lb/>Cas que <abbr>mr.</abbr> <rs key="pers_DE-588-118939297" type="person">S'Gravesande</rs> ne l'ait point reçù,<!-- SG: Keine Normalisierung, falls ja, mit orig/reg --> je vous
                <lb/>prie de lui offrir de ma part le votre, et je vous
-               <lb/>ferai avoir un autre en sa place quand vous re<pc type="hyphenation">-</pc><lb break="no"/>viendrez à paris. Excusés la furieuse longueur
+               <lb/>ferai avoir un autre en sa place quand vous re<pc type="hyphenation">-</pc><lb break="no"/>viendrez à <rs key="place_GEO-2988507" type="place"><choice><orig>paris</orig><reg>Paris</reg></choice></rs>. Excusés la furieuse longueur
                <lb/>de cette lettre.</p>
 <closer>Je suis avec une Estime
                <lb/>toute particuliere
-               <lb/>Monsieur
-               <lb/>Votre très humble et tr. ob. Servt. 
-               <lb/><signed>J. <rs type="person">Bernoulli</rs></signed>
-<lb/><dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1728-01-15">15. Janv. 
+               <lb/>Monsieur.<!-- SG: Hier evtl. zu einem Komma normalisieren, da der Satz nicht aufgeht, vielleicht ist es nicht einmal ein Punkt sd. ein angedeutetes Komma. -->
+               <lb/><choice><abbr>V. T. H. E. T. O. Serv.</abbr><expan>Votre très humble et très obéissant Serviteur</expan></choice> 
+  <lb/><signed> <rs key="pers_DE-588-118509969" type="person">J<supplied>.</supplied><!-- Abkürzungspunkt ergäntz. --> Bernoulli</rs></signed>
+<lb/><dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1728-01-15">15. <abbr>Janv.</abbr> 
                <lb/>1728</date>.</dateline></closer>
 </div>
 </body>

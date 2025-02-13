@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Personenliste komplett, GND eingefügt am 15.01.2019, Fabris muss noch identifiziert werden. --><!-- <change when="2022-03-14" who="CG">Nachbearbeitung</change>--><!--_____________--><TEI xml:id="B_1720-04-06_991170515151005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515151005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -121,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1720-03-22_991170515151105501" type="prev"/>
-        <ptr target="B_1720-04-11_991170515150905501" type="next"/>
+        <ptr target="B_991170515151105501" type="prev"/>
+        <ptr target="B_991170515150905501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -163,8 +162,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change notAfter="2023-01-01" who="SG">Vermutlich kollationiert, besser prüfen!</change>
       <change when="2022-09-08" who="RG">Seitenzahl "n" ergänzt</change>
       <change when="2022-08-29" who="RG">Zeilenfall</change>
       <change when="2022-08-23" who="CG">Header angepasst</change>
@@ -174,12 +174,22 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Personenliste komplett, GND eingefügt am 15.01.2019, Fabris muss noch identifiziert werden. -->
+<!-- <change when="2022-03-14" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079137/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079138" n="1"/>
 <opener><salute>Viro Illustrissimo et <choice><abbr>Celeber.<hi rend="sup">o</hi></abbr><expan>Celeberrimo</expan></choice>
 <lb/><choice><abbr>Jo:</abbr><expan>Johanni</expan></choice> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> <choice><abbr>P.</abbr><expan>Petrus</expan></choice> <choice><abbr>An.<hi rend="sup">us</hi></abbr><expan>Antonius</expan></choice> <rs key="pers_DE-588-102552517" type="person">Michelotti</rs>
 <lb/><abbr>S. P. D.</abbr></salute></opener>
-<p><lb/>Peto veniam de multiplicatione literarum mear<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, quas repe<pc type="hyphenation">-</pc><lb break="no"/>tere cogor, quia usque huc null<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> accepi respons<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> literarum<note type="editorial">Damit sind vermutlich zwei Briefe Michelottis an Nikolaus I Bernoulli gemeint: Sie datieren vom <rs key="B_1720-03-02_991170517025805501" type="letter">2. März</rs> und vom <rs key="B_1720-03-10_991170517025705501" type="letter">10. März 1720</rs>.</note>
+<p><lb/>Peto veniam de multiplicatione literarum mear<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, quas repe<pc type="hyphenation">-</pc><lb break="no"/>tere cogor, quia usque huc null<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> accepi respons<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> literarum<note type="editorial">Damit sind vermutlich zwei Briefe Michelottis an Nikolaus I Bernoulli gemeint: Sie datieren vom <rs key="B_991170517025805501" type="letter">2. März</rs> und vom <rs key="B_991170517025705501" type="letter">10. März 1720</rs>.</note>
 <lb/>quas ante mensem fere misi, et per <rs key="place_VER-tirola" type="place">Tyrolim</rs> et per <rs key="place_GEO-3182164" type="place">Bergo<pc type="hyphenation">-</pc><lb break="no"/>m<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> ad <choice><abbr>Illustriss.</abbr><expan>Illustrissimum</expan></choice> <rs type="person" key="pers_DE-588-119166895">Agnat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> Tu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>. Sed inducor ad scribend<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> Tibi
   <lb/>etiam hoc die propterea quod a <choice><abbr>Clariss.</abbr><expan>Clarisso</expan></choice> <rs type="person" key="pers_DE-588-1343364833">Fabris</rs> nuper certior fac<pc type="hyphenation">-</pc><lb break="no"/>tus sum de voluntate tua quam habes mittendi huc Eru<pc type="hyphenation">-</pc><lb break="no"/>ditissim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <rs type="person" key="pers_DE-588-118656503">Filium</rs> tu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> (de quo mihi retulit quum h<choice><orig><g ref="#ihat">î</g></orig><reg>i</reg></choice>c dege<pc type="hyphenation">-</pc><lb break="no"/>ret <choice><abbr>Illustris.</abbr><expan>Illustrissimus</expan></choice> <rs type="person" key="pers_DE-588-117589144">Agnatus</rs> <rs type="person" key="pers_DE-588-119166895">Nicolaus</rs>) una c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> altero <rs type="person" key="pers_DE-588-117589144">Filio</rs>
              <lb/><choice><abbr>Clariss.</abbr><expan>Clarissimo</expan></choice> quem jam expectamus. Novisti Vir <choice><abbr>Illustriss.</abbr><expan>Illustrissime</expan></choice>
@@ -192,7 +202,7 @@
              <lb/>atque hor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> similibus nihil expensorum habebit. In iis
              <lb/>autem qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad rem cibariam uti alimenta, et vinum
              <lb/>pertinent poterit qualibet die jubere qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ipsi magis
-             <lb/>libebunt; etenim efficiam ut meus cubicularius ei inser<pc type="hyphenation">-</pc><lb break="no"/>viat. Si iis litteris, quas periisse ali<choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice>s monui, require<pc type="hyphenation">-</pc><lb break="no"/>bas meam voluntatem pro hac re, en eam Tibi aper<pc type="hyphenation">-</pc><lb break="no"/>tam. Mitte ergo quamprim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ambos <rs type="persons" key="pers_DE-588-118656503 pers_DE-588-117589144">Filios</rs> Tuos Pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cla<pc type="hyphenation">-</pc><lb break="no"/>rissimos, quos amabo, et quibus in omnibus iis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+             <lb/>libebunt; etenim efficiam ut meus cubicularius ei inser<pc type="hyphenation">-</pc><lb break="no"/>viat. Si iis <rs type="letter">litteris</rs>, quas periisse ali<choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice>s monui, require<pc type="hyphenation">-</pc><lb break="no"/>bas meam voluntatem pro hac re, en eam Tibi aper<pc type="hyphenation">-</pc><lb break="no"/>tam. Mitte ergo quamprim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ambos <rs type="persons" key="pers_DE-588-118656503 pers_DE-588-117589144">Filios</rs> Tuos Pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cla<pc type="hyphenation">-</pc><lb break="no"/>rissimos, quos amabo, et quibus in omnibus iis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
              <lb/>mihi possibilia sunt, inserviam, cumque eis mittas
              <lb/>rogo me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <rs key="biblio_M3G2JA79" type="biblio">Dissertation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice></rs><note type="editorial">Michelotti, Pietro Antonio, De separatione fluidorum in corpore animali dissertatio physico-mechanico-medica, Venetiis (A. &amp; A. Pinelli) 1721. (Digitalisat bei BSB digital)</note>, et Appendices si quas
              <lb/>facere lubuit ad Dissertation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> <rs key="biblio_JAFFCHKU" type="biblio">de Motu Muscu<pc type="hyphenation">-</pc>
@@ -222,12 +232,12 @@
              <lb/>mot<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> Fluidi producit, <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis est ponderi Cylindri ejusdem
              <lb/>Fluidi, cujus basis orificio, et cujus altitudo dupl<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> line<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>AB</formula>
 <lb/>est <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis, ut patet <choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> secundo Corollario 36 Propositionis,
-             <lb/>in secundo libro <rs key="biblio_6CP8LL78" type="biblio">Principiorum Newtonianorum</rs><note type="editorial">werktag: Welche Edition der Principia zu grunde lag, ist nicht ersichtlich. Hier wurde die 1713er verlinkt, die 1687er hat die ID newtonbgih.</note>.
+             <lb/>in secundo libro <rs key="biblio_6CP8LL78" type="biblio">Principiorum Newtonianorum</rs><note type="editorial">Welche Edition der Principia zu Grunde lag, ist nicht ersichtlich. Hier wurde die 1713er verlinkt.</note>.
            <pb facs="1079140" n="3"/>
 <lb/>Cur sumitur dupla <formula>AB</formula> pro altitudine Cylindri Fluidi, cuius
              <lb/>basis est = orificio, ex quo prosilit Fluid<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>? Id certe non
              <lb/>intelligitur per <choice><abbr>Corollar.</abbr><expan>Corollarium</expan></choice> <choice><abbr>proposit.</abbr><expan>propositionis</expan></choice> 36 <rs key="biblio_6CP8LL78" type="biblio">Newtonianor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
-             <lb/>Principiorum</rs><note type="editorial">werktag: Welche Edition der Principia zu grunde lag, ist nicht ersichtlich. Hier wurde die 1713er verlinkt, die 1687er hat die ID newtonbgih.</note>.<note type="editorial">Hier wurde eine Linie zur Trennung der Absätze eingefügt.</note></p>
+               <lb/>Principiorum</rs><note type="editorial">Welche Edition der Principia zu Grunde lag, ist nicht ersichtlich. Hier wurde die 1713er verlinkt.</note>.<note type="editorial">Hier wurde eine Linie zur Trennung der Absätze eingefügt.</note></p>
 <p><lb/>Sanguis (scribit <rs key="pers_DE-588-1055365613" type="person">Keillius</rs>) qui ex corde profluit, ab anteriore san<pc type="hyphenation">-</pc><lb break="no"/>guine, in arteriis, et venis contento, mult<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> tardatur, quapropter
              <lb/>non omni ea velocitate fluit, quam illi cor impertiret, si nulla
              <lb/>esset resistentia; imminuitur enim aliquantulum impetus ejus,
@@ -274,7 +284,7 @@
              <lb/>Velocitas est ad velocitatem sanguinis sine omni renitentia
              <lb/>in Aortam fluentis, ut 30 ad 6.5. Sed secund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> Galil<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>um,
              <lb/>altitudines, unde cadentia corpora datas velocitates acqui<pc type="hyphenation">-</pc><lb break="no"/>runt sunt ut quadrata velocitatum, i. e. ut 900 ad 42.
-             <lb/>25<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> quare <note type="editorial">Diesen Satz nochmals überprüfen. In der Spiess-Transskription wurde hier ein ut eingefügt.</note> 900 ad 42.25, ita 15 ad .74.<note type="editorial">Vermutlich ist 0.704 statt 0.74 gemeint.</note> H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c altitudo bis
+             <lb/>25<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> quare <note type="internal">Diesen Satz nochmals überprüfen. In der Spiess-Transskription wurde hier ein ut eingefügt.</note> 900 ad 42.25, ita 15 ad .74.<note type="editorial">Vermutlich ist 0.704 statt 0.74 gemeint.</note> H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c altitudo bis
              <lb/>sumpta dat 1.48 sive digitos 17<choice><orig>,</orig><reg>.</reg></choice>76, et h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c est altitudo Cy<pc type="hyphenation">-</pc><lb break="no"/>lindri sanguine pleni, cujus basis <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis est Aort<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> orificio,
              <lb/>quod <del>0.486</del> 0.4187 <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quale esse posuimus. Solid<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> itaque
              <lb/>contentum est 7.436112, cujus pondus vi cordis absolut<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
@@ -291,7 +301,7 @@
              <lb/>Aorta fluentis, non eam proportionem ad se invicem
            <pb facs="1079143" n="6"/>
 <lb/>habere, quam habet 3 ad <formula>7+\frac{1}{2}</formula>, sed eam, quam 3 ad 15, verita<pc type="hyphenation">-</pc><lb break="no"/>tis stabiliend<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> caus<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice>, ponamus. Neque tantus experimenti
-             <lb/>error esse potest, ut h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c differentia inde<note type="editorial">Möglicherweise auch "unde"</note> oriatur. Sed si compu<pc type="hyphenation">-</pc><lb break="no"/>tationes nostr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ab hac proportione sumantur, Vim cor<pc type="hyphenation">-</pc><lb break="no"/>di<unclear>s</unclear> sedecim tantum uncias paululum modo excedere
+             <lb/>error esse potest, ut h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c differentia inde<note type="internal">Kontrollieren. Möglicherweise auch "unde"</note> oriatur. Sed si compu<pc type="hyphenation">-</pc><lb break="no"/>tationes nostr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ab hac proportione sumantur, Vim cor<pc type="hyphenation">-</pc><lb break="no"/>di<unclear>s</unclear> sedecim tantum uncias paululum modo excedere
              <lb/>reperiemus. Alia adhuc methodus, qua cordis vim inve<pc type="hyphenation">-</pc><lb break="no"/>nire possumus, nobis occurrit, pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cedenti et facilior multo,
              <lb/>et simplicior. A Mechanices Scriptoribus s<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>pe demonstra<pc type="hyphenation">-</pc><lb break="no"/>tum est, omne corpus, sive fluid<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> sit, sive solidum,
              <lb/>quod ex data altitudine secund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> directionem horizon<pc type="hyphenation">-</pc><lb break="no"/>talem projicitur, motu suo Parabolam describere, cujus
@@ -311,13 +321,13 @@
              <lb/>Parabol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> rectangul<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, sub latere recto, et altitudine
              <lb/><formula>AB</formula> contentum, quadrato ex <formula>BC</formula> est <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quale, <del>est</del> hoc est
              <lb/><formula>4AD\times AB=BC\text{q.}</formula><note type="editorial">q. steht für die Quadratzahl.</note>, sive <formula>AD\times AB=\frac{1}{4}BC\text{q.}</formula> ut igitur
-             <lb/><formula>AB</formula> ad <formula>\frac{1}{2}BC</formula> ita <formula>\frac{1}{2}BC</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ad <formula>AD</formula>, i. e. <formula>28:18::18:11,5</formula>
+  <lb/><formula>AB</formula> ad <formula>\frac{1}{2}BC</formula> ita <formula>\frac{1}{2}BC</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ad <formula>AD</formula>, i. e. <choice><orig><formula>28:18::18:11,5</formula></orig><reg><formula>28:18=18:11,5</formula></reg></choice>
 <pb facs="1079144" n="7"/>
 <lb/>Ab altitudine igitur digitor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>11+\frac{1}{2}</formula> si cadat sanguis, eam
              <lb/>velocitatem acquirit, quacum a corde projicitur. H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c alti<pc type="hyphenation">-</pc><lb break="no"/>tudo bis sumpta, Cylindri longitudinem dabit, cujus basis
              <lb/>Aort<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> orificio, et cujus pondus cordis viribus <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quale <choice><sic>st</sic><corr>est</corr></choice>.
              <lb/>Cylindri itaque longitudo digitis viginti et tribus constat.
-             <lb/>Aort<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> orificium hujusce canis .096<note type="editorial">Überprüfen, ob 0.096 gemeint ist: Konvention? (und kontrollieren ob ndot)</note> inveni, solidum itaque
+             <lb/>Aort<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> orificium hujusce canis .096<note type="internal">Überprüfen, ob 0.096 gemeint ist: Konvention? (und kontrollieren ob ndot)</note> inveni, solidum itaque
              <lb/>Cylindri contentum est 2.208, qui numerus uni unci<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>,
              <lb/>et unci<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> parti terti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, nempe vi cordis hujus canis, est <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qua<pc type="hyphenation">-</pc><lb break="no"/>lis. Ejusdem Canis Cor duas uncias ponderabat; si itaque
              <lb/>duo Corda, quod ad vires spectat, eandem ad se propor<pc type="hyphenation">-</pc><lb break="no"/>tionem obtinere ponamus, quam habent eorum pondera

@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Jean Caze, 1682-1751 pers_DE-588-1196135738 --><!--
-            Herport -> Beat Herbort (1692-1741) pers_DE-588-120269333
-            Johann Philipp Herport war nach den Matrikel Basel IV, Nr. 2582, 1721 in Neuenburg und bis 1732 Hauslehrer in Lyon.
-         --><!--_____________--><TEI xml:id="B_1731-06-11_991170430373405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170430373405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -124,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1731-03-03_991170430374805501" type="prev"/>
-        <ptr target="B_1731-07-14_991170430373305501" type="next"/>
+        <ptr target="B_991170430374805501" type="prev"/>
+        <ptr target="B_991170430373305501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -151,6 +147,19 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Jean Caze, 1682-1751 pers_DE-588-1196135738 -->
+<!--
+            Herport -> Beat Herbort (1692-1741) pers_DE-588-120269333
+            Johann Philipp Herport war nach den Matrikel Basel IV, Nr. 2582, 1721 in Neuenburg und bis 1732 Hauslehrer in Lyon.
+         -->
+<!--_____________-->
+
 <facsimile>
   <graphic url="manifests/M_1731-06-11_991170430373405501"/>
 </facsimile><text>
@@ -158,7 +167,7 @@
 <div type="letter">
 <pb facs="991170430373405501_01" n="7r"/>
 <opener><salute>Monsieur</salute></opener>
-<p><lb/>J'ai reçû de la main de <abbr>Mr.</abbr> <rs key="pers_DE-588-1089876122" type="person">Herport</rs> Votre derniere <rs key="brieftag" type="letter">Lettre</rs><note type="comment">Dieser Brief Bourguets ist nicht erhalten.</note>
+<p><lb/>J'ai reçû de la main de <abbr>Mr.</abbr> <rs key="pers_DE-588-1089876122" type="person">Herport</rs> Votre derniere <rs type="letter">Lettre</rs><note type="comment">Dieser Brief Bourguets ist nicht erhalten.</note>
 <lb/>pleine de civilité dont je Vous suis sensiblement obligé. Voici le paquet
                <lb/>contenant les lettres de <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> avec mes reponses, elles sont
                <lb/>numerottées, y ayant 144 lettres de <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> et 92 des miennes,<note type="comment">In UB Basel Handschriften, L Ia 18 finden sich 94 Briefe von Johann I Bernoulli an Leibniz, in L Ia 19 finden sich 147 Briefe von Leibniz an Johann I Bernoulli.<!-- MS: Bourguet gibt in seinem Antwortvermerk andere Zahlen als JIB an. Bei Bourguet sind 145 Briefe von Leibniz und 91 von JIB. Daneben hat es, nach Bourguet, 5 papiers détachés. Siehe letzte Fussnote. Ist es möglich hier direkt das BIBB zu verlinken? --></note> outre 
@@ -170,12 +179,12 @@
                <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> sans reponse. Je me souviens d'avoir eu sur la Dyadique<!-- bibliotag --><!-- Ich habe kein spezifisches Werk gefunden, es handelt sich um das Dualsystem. -->
 <lb/>de ce grand Ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des pensées assés semblables aux Votres, quoique l'appli<pc type="hyphenation">-</pc><lb break="no"/>cation que Vous en faites à la Musique ne me soit pas venue dans l'esprit;<note type="comment" resp="SG">Bourguets Auseinandersetzung mit der Dyadik und binärer Arithmetik </note> 
                <lb/>Vous en trouverés seurement quelque chose dans nos lettres. Quand je serai 
-               <lb/>de loisir je lirai avec plus d'attention l'extrait de Votre <rs key="brieftag" type="letter">Lettre</rs> à <abbr>Mr.</abbr>
-<lb/><rs key="pers_DE-588-1196135738" type="person">Caze</rs><note type="comment">Jean Caze (1682-1751) war ein hugenottischer “refugié” aus Montpellier, der 1700 Bürger von Genf geworden war.</note> et je tacherai d'en profiter; Lorsque je reçus la <rs key="brieftag" type="letter">Votre</rs> on me 
+               <lb/>de loisir je lirai avec plus d'attention l'extrait de Votre <rs type="letter">Lettre</rs> à <abbr>Mr.</abbr>
+<lb/><rs key="pers_DE-588-1196135738" type="person">Caze</rs><note type="comment">Jean Caze (1682-1751) war ein hugenottischer “refugié” aus Montpellier, der 1700 Bürger von Genf geworden war.</note> et je tacherai d'en profiter; Lorsque je reçus la <rs type="letter">Votre</rs> on me 
                <lb/>fit Doyen de notre <rs type="organisation">faculté</rs>,<note type="editorial">Johann I Bernoulli war 1731 zum sechsten Mal zum Dekan der Philosophischen Fakultät gewählt worden.</note> c'est une charge penible qui me donnera
                <lb/>pour un an beaucoup d'occupations et m'otera par consequent une bonne
                <lb/>partie de mon temps pour vaquer aux meditations. C'est encore la 
-               <lb/>raison Monsieur pourquoi je suis court dans cette <rs key="B_1731-06-11_991170430373405501" type="letter">lettre</rs>; Cependant
+               <lb/>raison Monsieur pourquoi je suis court dans cette <rs key="B_991170430373405501" type="letter">lettre</rs>; Cependant
                <lb/>Vous voulés bien me permettre que je Vous encourage d'executer
                <lb/>Votre dessein de travailler sur la question de l'année prochaine;<note type="editorial">Da die Pariser Akademie keine der für 1732 eingereichten Schriften mit einem Preis auszeichnen wollte, wiederholte sie die gleiche Preisfragen für die Jahre 1733 für 1734 unter Verdoppelung der Preissumme. Laut Brief von Johann Bernoulli an Louis Bourguet von 1733.04.09 hat Bourguet auf eine Teilnahme an diesem Wettbewerb verzichtet.</note>
 <lb/>la piece<!-- bibliotag --><!-- Bourguet hat am Wettbewerb nicht teilgenommen. MS: Ich habe im neuenburgischen Katalog kein Manuskrip gefunden, ist darum ein Werktag hier angebracht?--> que Vous ferés ne poura qu'etre fort excellente, puisque
@@ -193,7 +202,7 @@
                <lb/><signed><rs key="pers_DE-588-118509969" type="person"><abbr>J</abbr>Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></signed>
 <lb/><dateline><rs key="place_GEO-2661604" type="place">Bâle</rs>
 <lb/>ce <date when="1731-06-11">11<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> Juin 1731</date>.</dateline>
-<note hand="pers_DE-588-116298553"><choice><abbr>Rece</abbr><expan>Recue</expan></choice> le <date when="1731-06-21">21<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> du <choice><abbr>d:</abbr><expan>dit</expan></choice></date> <choice><abbr>p</abbr><expan>par</expan></choice> le Messager<!-- Braucht es hier einen Kommentar zum Postwesen oder sogar einen Personentag? --> <choice><abbr>Repondu</abbr><expan>Repondu</expan></choice><!-- ToDo: Abkürzung überprüfen --> le <rs key="brieftag" type="letter"><date when="1731-06-22">22</date></rs>. Et envoyé une Reconnoissance <choice><abbr>p</abbr><expan>pour</expan></choice><!-- Überprüfen --> les 145<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> Lettres de <abbr>Mr</abbr> <rs key="pers_DE-588-118571249" type="person">Leibniz</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 91<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> des sie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es outre cinq papiers détachez qui traitent des mêmes choses que les Lettres.</note>
+<note hand="pers_DE-588-116298553"><choice><abbr>Rece</abbr><expan>Recue</expan></choice> le <date when="1731-06-21">21<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> du <choice><abbr>d:</abbr><expan>dit</expan></choice></date> <choice><abbr>p</abbr><expan>par</expan></choice> le Messager<!-- Braucht es hier einen Kommentar zum Postwesen oder sogar einen Personentag? --> <choice><abbr>Repondu</abbr><expan>Repondu</expan></choice><!-- ToDo: Abkürzung überprüfen --> le <rs type="letter"><date when="1731-06-22">22</date></rs>. Et envoyé une Reconnoissance <choice><abbr>p</abbr><expan>pour</expan></choice><!-- Überprüfen --> les 145<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> Lettres de <abbr>Mr</abbr> <rs key="pers_DE-588-118571249" type="person">Leibniz</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 91<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> des sie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es outre cinq papiers détachez qui traitent des mêmes choses que les Lettres.</note>
 <pb facs="991170430373405501_03" n="8r" type="empty"/>
 <pb facs="991170430373405501_04" n="8v"/>
 <address><addrLine>A Monsieur</addrLine>

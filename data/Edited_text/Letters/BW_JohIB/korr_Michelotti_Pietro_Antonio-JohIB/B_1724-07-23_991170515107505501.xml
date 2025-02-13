@@ -1,12 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- Vorbereitet und Personen ausgezeichnet am 01.04.2019; bibliographiert am 30.08.2019 --><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- 20.01.2020
-   
-   Falls es sich bei "Merano" um DeMairan handelt, sollte er so eingetragen werdn im BIBB und mit Persontag versehen werden.
-   
-   
-   
-   --><!--_____________--><!--Comments that were in the teiHeader element--><!--_____________--><TEI xml:id="B_1724-07-23_991170515107505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515107505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -125,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1724-06-30_991170515107605501" type="prev"/>
-        <ptr target="B_1724-12-30_991170515107405501" type="next"/>
+        <ptr target="B_991170515107605501" type="prev"/>
+        <ptr target="B_991170515107405501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -175,8 +168,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-02-05" who="CG SG">Kollationieren abgeschlossen</change>
+      <change when="2025-01-31" who="CG SG">Kollationieren begonnen</change>
       <change when="2022-09-08" who="CG">Orttags und Seitenzahlen eingefügt</change>
       <change when="2022-08-19" who="CG">Header angepasst</change>
       <change when="2019-08-30">bibiographiert</change>
@@ -185,66 +180,68 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079495/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079496" n="1r"/>
 <opener><salute>Illustrissimo ac Celeberrimo Viro
-  <lb/><choice><abbr>J.</abbr><expan>Johanni</expan></choice> <rs key="pers_DE-588-118509969" type="person">Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.
+  <lb/><rs key="pers_DE-588-118509969" type="person"><abbr>J.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>
   <lb/>Petrus Antonius <rs key="pers_DE-588-102552517" type="person">Michelottus </rs><abbr>S. P. D.</abbr></salute></opener>
-  <p>Nollem Tua, Vir Celeberrime, patientia abuti in lite<pc type="hyphenation">-</pc><lb break="no"/>ris Tibi nimis frequenter mittendis, sed Tua fretus humani<pc type="hyphenation">-</pc><lb break="no"/>tate audeo inprimis Te certiorem facere de nuperrima Mathe<pc type="hyphenation">-</pc><lb break="no"/>maticarum <choice><abbr>Jngeniosiss</abbr><expan>Jngeniosissimi</expan></choice> Filii Tui <rs key="pers_DE-588-118656503" type="person">Danielis</rs> Exercitationum
-    <lb/><rs key="biblio_WZBB3ZSY" type="biblio">Editione</rs><note type="editorial">Michelotti könnte sich hier auf das vermutlich gerade frisch gedruckte Werk Daniel I. B.'s beziehen: St.4 Exercitationes quaedam mathematicae, Venetiis: Apud Dominicum Lovisam, 1724 - Werke 1, pp.297-362.</note>, inde me ejusmodi <rs key="biblio_WZBB3ZSY" type="biblio">Mathematicarum Exercitationum</rs><note type="editorial">Müsste dasselbe Werk Daniels sein, das Michelotti nach Leipzig schickt: St.4	Exercitationes quaedam mathematicae, Venetiis: Apud Dominicum Lovisam, 1724 - Werke 1, pp.297-362.</note>
-    <lb/>Exemplar commoda occasione <rs key="place_GEO-2879139" type="place">Lipsiam</rs> <choice><abbr>Cl.</abbr><expan>Clarissimo</expan></choice> <rs key="pers_DE-588-118783181" type="person">Menkenio</rs> hodierno die
-    <lb/>misisse <add>me</add> aliaque exemplaria post tres dies <rs key="place_GEO-2988507" type="place">Lutetiam</rs> Pa<pc type="hyphenation">-</pc><lb break="no"/>risiorum Nobilissimo Abbati de Comitibus, Clarissimo <rs key="pers_DE-588-118639056" type="person">Fon<pc type="hyphenation">-</pc><lb break="no"/>tenello</rs>, atque <rs key="pers_DE-588-11931035X" type="person">Merano</rs><note type="internal">Kontrollieren: Ist es richtig, dass es sich hier um Michelottis italo-latinisierte Variante von Mairan handelt?</note> esse missurum Tibi, Amicis<pc type="hyphenation">-</pc><lb break="no"/>sime Vir significo: nimirum uti etiam ex hoc
-    <lb/>quanti Praeclarissimum <rs key="pers_DE-588-118656503" type="person">Filium Tuum</rs> faciam, quantum<pc type="hyphenation">-</pc><lb break="no"/>que eum diligam, cognoscas. Hac occasione difficultatem
-    <lb/>aliquam contra praeclarum Tuum {*} de determinatione
-    <lb/>velocitatis aqu[a]e ex vase per foramen erumpentis Theo<pc type="hyphenation">-</pc><lb break="no"/>rema<note type="editorial">Handelt sich vermutlich um: Op. XCIX {publ. von J. Hermann} Demonstratio Principii Hydraulici de aequalitate velocitatis quacum aqua per foramina vasorum erumpere incipit, cum ea quam aquae gutta acquirere posset motu naturaliter accelerato cadendo ex altitudine aequali illi quam aqua habet in vasi supra foramen, pp. 375-376 in [Na.021]: J. Hermanni De Vibrationibus Chordarum tensarum Disquisitio, cui accedit Cl. Viri Joh.Bernoulli Demonstratio Principii Hydraulici de aequalitate velocitatis quacum aqua per foramina vasorum erumpere incipit, cum ea quam aquae gutta acquirere posset motu naturaliter accelerato cadendo ex altitudine aequali illi quam aqua habet in vasi supra foramen, in: AE Augusti 1716, pp. 370-377. http://www.izwtalt.uni-wuppertal.de/Acta/AE1716.pdf#page=385</note> {*}{*}<note type="internal">DM, 20.01.2020: Die Sterne in geschweiften Klammern sind unklar. Was für eine Bedeutung haben Sie?</note> Tecum communicare volo. Eam movit celebris Geo<pc type="hyphenation">-</pc><lb break="no"/>metra <choice><abbr>P.</abbr><expan>P</expan></choice> Abbas <rs key="pers_DE-588-118937669" type="person">Guido Grandi</rs> Camuldulensis
-    <lb/>Monachus in <rs key="biblio_ISAKUI3V" type="biblio">quoda[m] italico libro</rs><note type="internal">DM, 20.01.2020: Zeitlich kommen mehrere italienische Werke Grandis in Frage: https://www.e-rara.ch/zut/content/titleinfo/20607955, https://books.google.ch/books?id=Aa42AAAAMAAJ&amp;dq=inauthor%3AGuido%20Grandi&amp;hl=de&amp;pg=PP5, </note>, de quo Amicissimus ad
-    <lb/>me scripsit<!-- brieftag --> <rs key="pers_DE-588-11887733X" type="person">Polenus</rs>. Difficultas haec est. <rs key="pers_DE-588-117551988" type="person">Mariottus</rs> in Tracta<pc type="hyphenation">-</pc><lb break="no"/>tu <rs key="biblio_CY6QWW45" type="biblio">de motu Aquarum</rs> Part. III. Dissertat. II. narrare, dicit <rs key="pers_DE-588-118937669" type="person">Gran<pc type="hyphenation">-</pc><lb break="no"/>dius</rs>, ex accuratissimis pluribus experimentis sibi constare,
-    <lb/>ex foramine rotundo, cuius diameter linearum trium, ubi ejus
+  <p>Nollem Tua, Vir Celeberrime, patientia abuti in lite<pc type="hyphenation">-</pc><lb break="no"/>ris Tibi nimis frequenter mittendis, sed Tua fretus humani<pc type="hyphenation">-</pc><lb break="no"/>tate audeo inprimis Te certior<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> facere de nuperrima Mathe<pc type="hyphenation">-</pc><lb break="no"/>maticarum <choice><abbr>Ingeniosiss.</abbr><expan>Ingeniosissimi</expan></choice> Filii Tui <rs key="pers_DE-588-118656503" type="person">Danielis</rs> <rs key="biblio_WZBB3ZSY" type="biblio">Exercitationum</rs>
+    <lb/>editione,<note type="editorial">Michelotti könnte sich hier auf das vermutlich gerade frisch gedruckte Werk Daniel I. B.'s beziehen: St.4 Exercitationes qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dam mathematic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, Venetiis: Apud Dominicum Lovisam, 1724 - Werke 1, pp.297-362.</note> inde me ejusmodi <rs key="biblio_WZBB3ZSY" type="biblio">mathematicar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> Exercitation<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs><note type="editorial">Müsste dasselbe Werk Daniels sein, das Michelotti nach Leipzig schickt: St.4	Exercitationes qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dam mathematic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, Venetiis: Apud Dominicum Lovisam, 1724 - Werke 1, pp.297-362.</note>
+    <lb/>exemplar commoda occasione <rs key="place_GEO-2879139" type="place">Lipsi<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></rs> <abbr>Cl.</abbr> <rs key="pers_DE-588-118783181" type="person">Menkenio</rs> hodierno die
+    <lb/>misisse <add>me,</add> aliaque exemplaria post tres dies <rs key="place_GEO-2988507" type="place">Lutetiam Pa<pc type="hyphenation">-</pc><lb break="no"/>risiorum</rs> Nobilissimo <rs type="person" key="pers_DE-588-118941941">Abbati de Comitibus</rs>, Clarissimo <rs key="pers_DE-588-118639056" type="person">Fon<pc type="hyphenation">-</pc><lb break="no"/>tenello</rs>, atque <rs key="pers_DE-588-11931035X" type="person">Merano</rs> esse missurum Tibi, Amicis<pc type="hyphenation">-</pc><lb break="no"/>sime Vir significo: nimirum uti etiam ex hoc
+    <lb/>quanti Pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>clarissimum <rs key="pers_DE-588-118656503" type="person">Filium Tu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> faciam, quantum<pc type="hyphenation">-</pc><lb break="no"/>que eum diligam, cognoscas. Hac occasione difficultat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+    <lb/>aliquam contra p<add>r</add><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>clar<add>u</add>m <choice><sic>Tuam</sic><corr>Tuum</corr></choice> de determinatione
+    <lb/>velocitatis <choice><sic>aque</sic><corr>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></corr></choice> ex vase per foramen erumpentis Theo<pc type="hyphenation">-</pc><lb break="no"/>rema<note type="editorial">Handelt sich vermutlich um: Op. XCIX {publ. von J. Hermann} Demonstratio Principii Hydraulici de aequalitate velocitatis quacum aqua per foramina vasorum erumpere incipit, cum ea quam aquae gutta acquirere posset motu naturaliter accelerato cadendo ex altitudine aequali illi quam aqua habet in vasi supra foramen, pp. 375-376 in [Na.021]: J. Hermanni De Vibrationibus Chordarum tensarum Disquisitio, cui accedit Cl. Viri Joh.Bernoulli Demonstratio Principii Hydraulici de aequalitate velocitatis quacum aqua per foramina vasorum erumpere incipit, cum ea quam aquae gutta acquirere posset motu naturaliter accelerato cadendo ex altitudine aequali illi quam aqua habet in vasi supra foramen, in: AE Augusti 1716, pp. 370-377. http://www.izwtalt.uni-wuppertal.de/Acta/AE1716.pdf#page=385</note> Tecum communicare volo. Eam movit celebris Geo<pc type="hyphenation">-</pc><lb break="no"/>metra <abbr>P.</abbr> Abbas <rs key="pers_DE-588-118937669" type="person">Guido Grandi</rs> Camuldulensis
+    <lb/>Monachus in <choice><sic>quoda</sic><corr>quodam</corr></choice> italico <rs key="biblio_ISAKUI3V" type="biblio">libro</rs>,<note type="internal">DM, 20.01.2020: Zeitlich kommen mehrere italienische Werke Grandis in Frage: https://www.e-rara.ch/zut/content/titleinfo/20607955, https://books.google.ch/books?id=Aa42AAAAMAAJ&amp;dq=inauthor%3AGuido%20Grandi&amp;hl=de&amp;pg=PP5, </note> de quo Amicissimus ad
+    <lb/>me <rs type="letter">scripsit</rs> <rs key="pers_DE-588-11887733X" type="person">Polenus</rs>. Difficultas h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c est. <rs key="pers_DE-588-117551988" type="person">Mariottus</rs> <add>in</add> Tracta<pc type="hyphenation">-</pc><lb break="no"/>tu <rs key="biblio_CY6QWW45" type="biblio">de motu Aquar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> <abbr>Part.</abbr> III<choice><orig>.</orig><reg>,</reg></choice> <abbr>Dissert.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> narrare, dicit <rs key="pers_DE-588-118937669" type="person">Gran<pc type="hyphenation">-</pc><lb break="no"/>dius</rs>, ex accuratissimis pluribus experimentis sibi constare,
+    <lb/>ex foramine r<add>o</add>tundo, cuius diameter linear<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> tri<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, ubi ejus
     <lb/>centrum tredecim pedibus sit intra superficiem superiorem
-    <lb/>aquae in lato tubo stagnantis effluere temporis minuto 14
-    <lb/>aquae mensuras ejus generis ut earundem 35 cubicum pe<pc type="hyphenation">-</pc><lb break="no"/>dem ex[a]equent, quae 14 mensurae aequales fere inveniun<pc type="hyphenation">-</pc><lb break="no"/>tur pollicibus cubicis 6 91. Hoc ita posito concludit memoratus
+    <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in lato tubo Stagnantis effluere temporis minuto 14
+    <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> mensuras ejus generis <unclear>ad</unclear> earundem 35 cubicum pe<pc type="hyphenation">-</pc><lb break="no"/>dem <choice><sic>exequent</sic><corr>ex<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quent</corr></choice>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> 14 mensur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales fere inveniun<pc type="hyphenation">-</pc><lb break="no"/>tur pollicibus cubicis <unclear>6</unclear>91. Hoc ita posito concludit memoratus
          <pb facs="1079497" n="1v"/>
-    <lb/><rs key="pers_DE-588-118937669" type="person">Grandus</rs> aquam minuto temporis ex proposito foramine ro<pc type="hyphenation">-</pc><lb break="no"/>tundo fluentem, deformatam in cylindrum, cujus basis illud idem
+    <lb/><rs key="pers_DE-588-118937669" type="person">Grandus</rs> aquam minuto temporis ex proposito foramine ro<pc type="hyphenation">-</pc><lb break="no"/>tundo fluent<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>, deformatam in cylindrum, cujus basis illud id<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
     <lb/>foramen, extensum iri in longitudinem pedum 1148,
-    <lb/>atque hujusmodi esse videri illius aquae velocitatem. Hanc
+    <lb/>atque hujusmodi esse videri illius aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> velocitatem. Hanc
     <lb/>autem minorem esse ea velocitate, quam grave corpus
-    <lb/>adipisceretur de altitudine pedum dumtaxat duodecim deci<pc type="hyphenation">-</pc><lb break="no"/>dens: quandoquidem adepta hac velocitate corpus illud
+    <lb/>adipisceretur de altitudine <add>pedum</add> dumtaxat duodecim deci<pc type="hyphenation">-</pc><lb break="no"/>dens: quandoquid<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> adepta hac velocitate corpus illud
     <lb/>temporis minuto, percurreret pedes 1440; decidens vero
-    <lb/>de altitudine pedum tredecim, pedes circiter 1493 per<pc type="hyphenation">-</pc><lb break="no"/>agraret. Quod postquam ita constituit aliis, ait. <rs key="pers_DE-588-118937669" type="person">Gran<pc type="hyphenation">-</pc><lb break="no"/>dus</rs>, se relinquere, difficultatis hujusce solutionem,
-    <lb/>atque hanc ad absolutiorem inducendam perfectionem
-    <lb/>huic scientiae conducturum, asseverat. Consimile fecisse
+    <lb/>de altitudine pedum tredecim, pedes circiter 1493 per<pc type="hyphenation">-</pc><lb break="no"/>agraret. Quod postquam ita constituit aliis, ait, <rs key="pers_DE-588-118937669" type="person">Gran<pc type="hyphenation">-</pc><lb break="no"/>dus</rs> se relinquere, difficultatis hujusce solutionem,
+    <lb/>atque hanc ad absolutior<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> inducend<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> perfectionem
+    <lb/>huic scienti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> conductur<unclear><choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></unclear>, asseverat. Consimile fecisse
     <lb/>se experimentum ad me scribit<!-- brieftag --> laudatissimus <rs key="pers_DE-588-11887733X" type="person">Polenus</rs>, et
-    <lb/>invenisse tempore unius minuti effluxisse pollices cu<pc type="hyphenation">-</pc><lb break="no"/>bicos aquae 713, in <rs key="pers_DE-588-117551988" type="person">Mariotti</rs> experimento pollices
-    <lb/>691 subiicit. Monet in utroque experimento fuisse
-    <lb/>supra centra foraminum altitudines aquae pares,
-    <lb/>aequalia lumina, tempus idem; seque inde arguere,
-    <lb/>fuisse etiam in utroque experimento inter forami<pc type="hyphenation">-</pc><lb break="no"/>num figuras eam rationem, propter quam fluxus aquae
-    <lb/>fere aequales inter se fieri potuerint. Si ad Abbatis
-    <lb/><rs key="pers_DE-588-118937669" type="person">Grandi</rs> difficultatem respondere Te haud pigeat, difficul<pc type="hyphenation">-</pc><lb break="no"/>tatis solutionem mecum ut ejusmodi communicare
-    <lb/>velis (aveo enim in Tua sententia magis magis<pc type="hyphenation">-</pc><lb break="no"/>que confirmari) etiam atque etiam oro, et quaeso.
+    <lb/>invenisse tempore unius minuti effluxisse pollices cu<pc type="hyphenation">-</pc><lb break="no"/>bicos aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> 713, in <rs key="pers_DE-588-117551988" type="person">Mariotti</rs> experimento pollices
+    <lb/>691<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> subiicit. Monet in utroque experimento fuisse
+    <lb/>supra centra foramin<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> altitudines aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> pares,
+    <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualia lumina, tempus id<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>; seque <add>i</add>nde arguere,
+    <lb/>fuisse etiam in utroque experimento inter forami<pc type="hyphenation">-</pc><lb break="no"/>num figuras eam ration<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>, propter quam fluxus aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+    <lb/>fere <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales inter se fieri potuerint. Si ad Abbatis
+    <lb/><rs key="pers_DE-588-118937669" type="person">Grandi</rs> difficultatem respondere Te haud pigeat,
+    <lb/>difficul<pc type="hyphenation">-</pc><lb break="no"/>tatis solution<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> mecum <add>ut ejusmodi</add> communicare
+    <lb/>velis (aveo enim in Tua sententia magis magis<pc type="hyphenation">-</pc><lb break="no"/>que confirmari) etiam atque etiam oro, et qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>so.
          <pb facs="1079498" n="2r"/>
-<lb/>Quum illam quoque difficultatem praeter aliam, de qua
-    <lb/>ante hos 20 dies ad Te <rs key="B_1724-06-30_991170515107605501" type="letter">perscripsi</rs><note type="editorial">DM: Der letzte, hier verlinkte Brief ist vor wenig mehr als 20 Tagen an Bernoulli abgegangen.</note>, sustuleris, nihil mi<pc type="hyphenation">-</pc><lb break="no"/>hi hac in re desiderandum supererit, polliceorque eximiis Tuis
-    <lb/>adjutus doctrinis contra et Anglos, et Jtalos etiam
-    <lb/>in perpetuum, si opus fuerit, disputare. Mea ad <rs key="pers_DE-588-119507978" type="person">Jurinum</rs>
-    <lb/>Responsio<!-- brieftag --><!-- DM, 20.01.2020: Es scheint hier einen Brief oder eine schriftliche Reaktion seitens Michelotti gegenüber Jurin zu geben. Recherchieren. --> Epistolae<!-- brieftag --><!-- Jurin scheint vorher einen Brief an Antonio Conti geschrieben zu haben --> ad Doctissimum Virum Abbatem
-    <lb/><rs key="pers_DE-588-118941941" type="person">Antonium de Comitibus</rs> Patritium <rs key="place_GEO-3164603" type="place">Venetum</rs> <rs key="place_GEO-2988507" type="place">Parisiis</rs> com<pc type="hyphenation">-</pc><lb break="no"/>morantem scriptae forma<note type="internal">Michelotti hat seine Antwort auf Jurins Vorwände also in Form eines Briefes an Antonio Conti verfasst. Recherchieren!</note>, propediem in publicum
+<lb/>Quum illam quoque difficultat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ter ali<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>, de qua
+    <lb/>ante hos <hi rend="u">20</hi> dies ad Te <rs key="B_991170515107605501" type="letter">perscripsi</rs><note type="editorial">DM: Der letzte, hier verlinkte Brief ist vor wenig mehr als 20 Tagen an Bernoulli abgegangen.</note>, sustuleris, nihil mi<pc type="hyphenation">-</pc><lb break="no"/>hi hac in re desiderand<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> supererit, polliceorque <add>eximiis</add> Tuis
+    <lb/>adjutus doctrinis contra et Anglos, et Italos etiam
+    <lb/>in perpetu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, si opus fuerit, disputare. Mea ad <rs key="pers_DE-588-119507978" type="person">Jurin<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs>
+    <lb/>Responsio<!-- brieftag --><!-- DM, 20.01.2020: Es scheint hier einen Brief oder eine schriftliche Reaktion seitens Michelotti gegenüber Jurin zu geben. Recherchieren. --> Epistol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><!-- brieftag --><!-- Jurin scheint vorher einen Brief an Antonio Conti geschrieben zu haben --> ad <abbr>Doctiss.<hi rend="sup"><choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></hi></abbr> Vir<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> Abbat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+    <lb/><rs key="pers_DE-588-118941941" type="person">Antoni<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> de Comitibus</rs> Patriti<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <rs key="place_GEO-3164603" type="place">Venet<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> <rs key="place_GEO-2988507" type="place">Parisiis</rs> com<pc type="hyphenation">-</pc><lb break="no"/>morant<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> script<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> forma,<note type="internal">Michelotti hat seine Antwort auf Jurins Vorwände also in Form eines Briefes an Antonio Conti verfasst. Recherchieren!</note> propediem in publicum
     <lb/>prodibit. Statim ac edita fuerit, commoda
-    <lb/>occasione, simul cum limatissimo <rs key="pers_DE-588-118656503" type="person"><choice><abbr>Cl.</abbr><expan>Clarissimi</expan></choice> Filii
-      <lb/>Tui</rs> {*}<note type="internal">DM, 20.01.2020: Stern in geschweifter Klammer?</note> <rs key="biblio_WZBB3ZSY" type="biblio">libro</rs><note type="editorial">Michelotti könnte sich hier auf das vermutlich gerade frisch gedruckte Werk Daniel I. B.'s beziehen: St.4	Exercitationes quaedam mathematicae, Venetiis: Apud Dominicum Lovisam, 1724 - Werke 1, pp.297-362.</note> supralaudato, ad Te mitti curabo<note type="internal">DM, 20.01.2020: Es scheint ienen Brief von Michelotti an Conti zu geben betreffend der Argumente Jurins gegen Michelottis Thesen. Wikipedia sagt zu der wissenschaftlichen Auseinandersetzung: "Alors, s'appuyant sur certaines démonstrations de Daniel, Michelotti réfuta dans une lettre à Conti (Venise 1724) les arguments par lesquels le médecin anglais James Jurin avait risposté au De separatione fluidorum." https://fr.wikipedia.org/wiki/Pietro_Antonio_Michelotti. =&gt; Noch genauer und mit richtigen Belegen zu recherchieren.</note>:
+    <lb/>occasione, simul cum limatissimo <abbr>Cl.</abbr> <rs key="pers_DE-588-118656503" type="person">Filii</rs>
+      <lb/><choice><sic>Tuo</sic><corr>Tui</corr></choice> <rs key="biblio_WZBB3ZSY" type="biblio">libro</rs><note type="editorial">Michelotti könnte sich hier auf das vermutlich gerade frisch gedruckte Werk Daniel I. B.'s beziehen: St.4	Exercitationes qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dam mathematic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, Venetiis: Apud Dominicum Lovisam, 1724 - Werke 1, pp.297-362.</note> supra laudato, ad Te mitti curabo.<note type="internal">DM, 20.01.2020: Es scheint ienen Brief von Michelotti an Conti zu geben betreffend der Argumente Jurins gegen Michelottis Thesen. Wikipedia sagt zu der wissenschaftlichen Auseinandersetzung: "Alors, s'appuyant sur certaines démonstrations de Daniel, Michelotti réfuta dans une lettre à Conti (Venise 1724) les arguments par lesquels le médecin anglais James Jurin avait risposté au De separatione fluidorum." https://fr.wikipedia.org/wiki/Pietro_Antonio_Michelotti. =&gt; Noch genauer und mit richtigen Belegen zu recherchieren.</note>
     <lb/>Ne pigeat, obsecro, Sapientissime Vir, ad
-    <lb/>hanc, et ad <rs key="B_1724-06-30_991170515107605501" type="letter">alteram meam epistolam</rs> (longa
-    <lb/>enim oratione opus haud est) respondere.</p>
+    <lb/>hanc, et ad <rs key="B_991170515107605501" type="letter">alter<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> meam epistol<add><choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></add></rs> <supplied>(</supplied>longa
+    <lb/>enim oratione opus haud es<unclear>t</unclear>) respondere.</p>
 <lb/><closer><salute>Vale plurimum, mihique, quod hactenus
-  <lb/>semper fecisti, favere perge. </salute>
-<dateline><choice><abbr>D.</abbr><expan>Dabam</expan></choice> Venetiis
-  <lb/>Decimo Kalendas Sextiles MDCCXXIV.</dateline>
+  <lb/>semper fecisti, favere perge.</salute>
+<dateline><choice><abbr>D.</abbr><expan>Dabam</expan></choice> <rs type="place">Venetiis</rs>
+  <lb/>Decimo Kalendas Sextiles MDCCXXIIII.</dateline>
 <pb facs="1079499" n="2v"/>
 <address>
 <addrLine>A Monsieur</addrLine>
 <addrLine>Monsieur Jean Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
 <addrLine>tres celebre Docteur en Medecine</addrLine>
-<addrLine>et Professeur tres Illustre de Ma<pc type="hyphenation">-</pc><lb break="no"/>thematique.</addrLine>
-<addrLine>franca per <rs key="place_GEO-2775220" type="place">Jnsprug</rs>.</addrLine>
-<addrLine>a <rs key="place_GEO-2661604" type="place">Basle</rs>.</addrLine></address></closer>
+<addrLine>et Professeur tres Illustre de Ma<pc type="hyphenation">-</pc><lb break="no"/>thematique</addrLine>
+<addrLine>franca <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <rs key="place_GEO-2775220" type="place">Insprug</rs></addrLine>
+<addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine></address></closer>
 </div></body></text></TEI>

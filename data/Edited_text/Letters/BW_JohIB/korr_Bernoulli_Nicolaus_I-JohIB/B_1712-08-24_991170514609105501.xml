@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Venhuysen zwar aufgenommen, aber eine GND-Nummer konnte nicht gefunden werden. --><!-- Hulter, de zwar oben aufgenommen, aber eine GND-Nummer konnte nicht gefunden werden. --><!-- Nicht ganz sicher aus, welcher Zeit die Originaltranskription kommt, RG 17.08.2022 --><!--_____________-->
-
-<TEI xml:id="B_1712-08-24_991170514609105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170514609105501" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -120,8 +116,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1712-07-15_991170514609205501" type="prev"/>
-        <ptr target="B_1712-11-23_991170514609005501" type="next"/>
+        <ptr target="B_991170514609205501" type="prev"/>
+        <ptr target="B_991170514609005501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Bernoulli_Nicolaus_I-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -237,6 +233,17 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Venhuysen zwar aufgenommen, aber eine GND-Nummer konnte nicht gefunden werden. -->
+<!-- Hulter, de zwar oben aufgenommen, aber eine GND-Nummer konnte nicht gefunden werden. -->
+<!-- Nicht ganz sicher aus, welcher Zeit die Originaltranskription kommt, RG 17.08.2022 -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1062934/manifest"/>
 </facsimile><text>
@@ -334,7 +341,7 @@
 <lb break="no"/>ciler als jetzund; ich hoffe aber er werde endlich auff meine Demon<pc type="hyphenation">-</pc><lb break="no"/>strationen die augen auffthun. Wie es in unserem <rs key="place_VER-schweiz" type="place">Schweitzerland</rs> er<pc type="hyphenation">-</pc><lb break="no"/>gangen, seit dem angefangenen Krieg; Wie die Berner be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> <rs key="place_GEO-2661407" type="place">Bremgar<pc type="hyphenation">-</pc><lb break="no"/>ten</rs> das erste mahl gesieget, darauff die Lucerner und übrigen Catholi<pc type="hyphenation">-</pc><lb break="no"/>schen simulieret als ob sie Fried machen wollten, auch effective einen
                    <lb/>tractat geschlossen, aber heimlich zu gleicher Zeit zu einem newen
                    <lb/>angriff anstallt gemachet, wie sie dan in 6000 starck be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> der so
-                   <lb/>genandten <rs cert="low" key="place_WEI-senseb" type="place">Sensen bruck</rs> 1200 berner überfallen, sie geschlagen und
+                   <lb/>genandten <rs key="place_WEI-senseb" type="place">Sensen bruck</rs> 1200 berner überfallen, sie geschlagen und
                    <lb/>2 stuck abgejaget haben, darauff einen newen muth <del>gek</del> beko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en,
                    <lb/>sich be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> die 18 à 20000 man versa<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>let, welche dan zu <rs key="place_GEO-2658119" type="place">Vilmergen</rs>
 <lb/>alwo <abbr>a<hi rend="sup">o</hi>.</abbr> 1656 die berner eine hassliche schlappen empfangen, jetz<pc type="hyphenation">-</pc><lb break="no"/>und den<!-- "en" als Verschleifung, RG 24.06.2022 --> 25 Juli die berner welche nicht stärcker waren als
@@ -354,7 +361,7 @@
                    <lb/>Ewer <rs key="pers_DE-588-1156361664" type="person">Schwester</rs> ist seit einigen tagen auß dem Saurbro<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en
                     <lb/>zu <rs key="place_GEO-2973995" type="place">Sultzbach</rs><!--Wahrscheinlich Soultzbach-les-bains gemeint, liegt im Elsass ToDo: kontrollieren, Kommentar erstellen --> alwo sie mit <rs type="person">Ewerer Tante</rs><!-- ToDo: identifizieren (wenn möglich) --> auff der <rs key="GeoNamesID" type="place">Eisen gaß</rs><!-- ToDo: verlinken? -->
 <lb/>gewesen, alhier wider angelangt. Wie mir newlich Ewer
-                    <lb/><rs key="pers_DE-588-135542286" type="person">Vatter</rs> gesagt, so wird er noch ein <rs key="brieftag" type="letter">brieff</rs> von Eüch erwarten
+                    <lb/><rs key="pers_DE-588-135542286" type="person">Vatter</rs> gesagt, so wird er noch ein <rs type="letter">brieff</rs> von Eüch erwarten
                    <lb/>ehe Er Eüch schreiben wird. Sonsten weiß ich nichts mehr zu melden
                    <lb/>als einen <abbr>frl.</abbr> gruß von unß allen. Verbleibe under <abbr>Göttl.</abbr> Schutz</p>
 <closer><lb/>Monsieur et tres-cher <rs key="pers_DE-588-119166895" type="person">Neveu</rs>
@@ -364,8 +371,8 @@
 <lb/>und <rs key="pers_DE-588-1132220874" type="person">Raillard</rs> einen dienstlichen gruß
                    <lb/>zu melden. <choice><orig>H</orig><reg>H.</reg></choice> <rs key="pers_DE-588-140736662" type="person">Christ</rs> ist schon seit etlichen
                    <lb/>wochen von hier auff <rs key="place_GEO-2659496" type="place">Neuchatel</rs> verreißt.</p></postscript>
-<postscript><p><lb/>Ewers <rs key="pers_DE-588-135542286" type="person">Vatters</rs> <rs key="brieftag" type="letter">schreiben</rs> darin mein <rs key="brieftag" type="letter">voriges</rs> eingeschlossen, ist an die <abbr><choice><orig>HH</orig><reg>HH.</reg></choice></abbr> <rs type="person">De Hulter</rs> in <rs key="place_GEO-2759794" type="place">Amsterdam</rs> adressiert gewesen.
-                    <lb/><unclear>I</unclear>n diesem Augenblick empfange ich einen <rs key="B_1712-08-18_991170516558905501" type="letter">brieff</rs> von <abbr>Mr.</abbr> <rs key="pers_DE-588-119062372" type="person">Varignon</rs> darin er endlich seinen fehler erkennet.</p></postscript>
+<postscript><p><lb/>Ewers <rs key="pers_DE-588-135542286" type="person">Vatters</rs> <rs type="letter">schreiben</rs> darin mein <rs type="letter">voriges</rs> eingeschlossen, ist an die <abbr><choice><orig>HH</orig><reg>HH.</reg></choice></abbr> <rs type="person">De Hulter</rs> in <rs key="place_GEO-2759794" type="place">Amsterdam</rs> adressiert gewesen.
+                    <lb/><unclear>I</unclear>n diesem Augenblick empfange ich einen <rs key="B_991170516558905501" type="letter">brieff</rs> von <abbr>Mr.</abbr> <rs key="pers_DE-588-119062372" type="person">Varignon</rs> darin er endlich seinen fehler erkennet.</p></postscript>
 </div>
 </body>
 </text></TEI>

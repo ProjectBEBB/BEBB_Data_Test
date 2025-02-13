@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert; tags (person, brief, ort, werk) eingefügt am 22.11.2018 --><!-- <change when="2022-05-02" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-Bis auf den Ambassadeur von Venedig sind alle Personen erwähnt im BIBB.
-
-Alle Personen ausser Ambassadeur, der noch zu recherchieren ist, mit GND-Tag eingefügt. 20.02.2019         --><!--_____________--><TEI xml:id="B_1723-09-18_991170515108005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515108005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -124,8 +120,8 @@ Alle Personen ausser Ambassadeur, der noch zu recherchieren ist, mit GND-Tag ein
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1723-08-20_991170515108105501" type="prev"/>
-        <ptr target="B_1724-04-21_991170515107905501" type="next"/>
+        <ptr target="B_991170515108105501" type="prev"/>
+        <ptr target="B_991170515107905501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -176,12 +172,26 @@ Alle Personen ausser Ambassadeur, der noch zu recherchieren ist, mit GND-Tag ein
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert; tags (person, brief, ort, werk) eingefügt am 22.11.2018 -->
+<!-- <change when="2022-05-02" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+Bis auf den Ambassadeur von Venedig sind alle Personen erwähnt im BIBB.
+
+Alle Personen ausser Ambassadeur, der noch zu recherchieren ist, mit GND-Tag eingefügt. 20.02.2019         -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079421/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079422" n="1"/>
 <opener>à M. Michelotti
             <dateline><rs key="place_GEO-2661604" type="place">Basle</rs> ce <date when="1723-09-18">18 7bre 1723</date></dateline>
 <lb/><salute>Monsieur</salute></opener>
-<p>Par l'honneur de <rs key="B_1723-08-20_991170515108105501" type="letter">votre Lettre du 20 du mois passé</rs> j'apprens que
+<p>Par l'honneur de <rs key="B_991170515108105501" type="letter">votre Lettre du 20 du mois passé</rs> j'apprens que
           <lb/>vous avez reçeu la mienne dans la quelle je vous faisois
           <lb/>part de mes sentiments sur le memoire de <choice><abbr>Monsr:</abbr><expan>Monsieur</expan></choice>
 <lb/><rs key="pers_DE-588-116692782" type="person">Helvetius</rs> touchant la respiration et l'inegalité des
@@ -201,7 +211,7 @@ Alle Personen ausser Ambassadeur, der noch zu recherchieren ist, mit GND-Tag ein
           <lb/>et selon mon souhait de l'y exhorter <choice><abbr>continuellemt</abbr><expan>continuellement</expan></choice><supplied>.</supplied>
 <pb facs="1079423" n="2"/>
 <lb/>Je l'ay aussi souvent exhorté et <choice><abbr>nouvellemt</abbr><expan>nouvellement</expan></choice> encore il
-          <lb/>y a environ deux mois par <rs key="brieftag" type="letter">une Lettre</rs><note type="editorial">Im HAN findet sich nur ein Brief von Daniel Bernoulli an Johann I Bernoulli vom 1731.05.25</note> que je lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ecrivis
+          <lb/>y a environ deux mois par <rs type="letter">une Lettre</rs><note type="editorial">Im HAN findet sich nur ein Brief von Daniel Bernoulli an Johann I Bernoulli vom 1731.05.25</note> que je lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ecrivis
           <lb/>par la voye de notre Ambassadeur<note type="editorial">Identifizieren</note><!-- persontag --> qui alloit <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2659836" type="place">Lugano</rs>
 <lb/>et autres endroits au dela des <rs key="place_GEB-alpena" type="place">Alpes</rs> qui appartiennent
           <lb/>aux <choice><orig>suisses</orig><reg>Suisses</reg></choice>, qui y envoyent leurs deputés tous

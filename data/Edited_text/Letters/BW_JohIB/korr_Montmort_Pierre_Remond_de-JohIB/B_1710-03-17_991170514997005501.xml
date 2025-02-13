@@ -1,199 +1,779 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<TEI xml:id="B_1710-03-17_991170514997005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Pierre Rémond de Montmort. Basel, 17. März 1710</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Am Briefkopf eigenhändig " à Mr. De Montmort". Letzte Seite leer</p>
-      </note>
-      <note type="print">
-        <p>Druck in: [Monmort, Pierre Remond de] Essay d'analyse sur les jeux de hazard. Seconde Edition, Paris 1713, pp. 281-298; Joh. I B. Opera, t.I, pp.453-468 (hier irrtümlich auf 17. Mai 1707 datiert)</p>
-      </note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Druck historisch</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_991170514997005501">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Pierre Rémond de Montmort. Basel,
+            17. März 1710</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000056775</title><title type="alt"
+            >1710-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Montmort, Pierre Rémond de (1678-1719) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Am Briefkopf eigenhändig " à Mr. De Montmort". Letzte Seite
+            leer</p></note>
+        <note type="print"><p>Druck in: [Monmort, Pierre Remond de] Essay d'analyse sur les jeux de
+            hazard. Seconde Edition, Paris 1713, pp. 281-298; Joh. I B. Opera, t.I, pp.453-468 (hier
+            irrtümlich auf 17. Mai 1707 datiert)</p></note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 665, Nr.2</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514997005501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972433081905504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000056775</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>15 S.<dimensions unit="cm">
+                    <height>21</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bale</origPlace><date when="1710-03-17">ce 17. Mars
+              1710</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 665, Nr.2</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514997005501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972433081905504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000056775</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>15 S.<dimensions unit="cm"><height>21</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bale</origPlace>
-            <date when="1710-03-17">ce 17. Mars 1710</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1710-03-17">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1709-09-15_991170515103805501" type="prev"/>
-        <ptr target="B_1710-11-11_991170514996905501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person>
-          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-          <note type="lebensdaten">(1655-1705)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
-          <note type="lebensdaten">(1687-1759)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-          <note type="lebensdaten">(1678-1733)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
-          <note type="lebensdaten">(1629-1695)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine de</persName>
-          <note type="lebensdaten">(1661-1704)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-          <note type="lebensdaten">(1646-1716)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-          <note type="lebensdaten">(1643-1727)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118591843">Pascal, Blaise</persName>
-          <note type="lebensdaten">(1623-1662)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-          <note type="lebensdaten">(1654-1722)</note>
-        </person>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1051806/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1051807" n="1"/> <pb facs="1051808" n="2"/> <pb facs="1051809" n="3"/> <pb facs="1051810" n="4"/> <pb facs="1051811" n="5"/> <pb facs="1051812" n="6"/> <pb facs="1051813" n="7"/> <pb facs="1051814" n="8"/> <pb facs="1051815" n="9"/> <pb facs="1051816" n="10"/> <pb facs="1051817" n="11"/> <pb facs="1051818" n="12"/> <pb facs="1051819" n="13"/> <pb facs="1051820" n="14"/> <pb facs="1051821" n="15"/> <pb facs="1051822" n="16"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1710-03-17">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-117601020">Montmort, Pierre Rémond de</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_991170515103805501" type="prev"/>
+          <ptr target="B_991170514996905501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Montmort_Pierre_Remond_de-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+            <note type="lebensdaten">(1655-1705)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1687-1759)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+            <note type="lebensdaten">(1678-1733)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118639749">Huygens, Christiaan</persName>
+            <note type="lebensdaten">(1629-1695)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-100814891">L'Hôpital, Guillaume François Antoine
+              de</persName>
+            <note type="lebensdaten">(1661-1704)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+            <note type="lebensdaten">(1646-1716)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118591843">Pascal, Blaise</persName>
+            <note type="lebensdaten">(1623-1662)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+            <note type="lebensdaten">(1654-1722)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1710-03-17_Bernoulli_Johann_I-Montmort_Pierre_Remond_de"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1051806/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1051807" n="1"/> Bale ce 17. Mars. 1710.</p>
+        <p>Monsieur</p>
+        <p>Comme je n'ay reçû Vôtre beau livre<note type="editorial">Montmort, Pierre Remond de, <hi
+              rend="u"> Essay d’analyse sur les jeux de hazard</hi> , Paris (J. Quillau)
+            1708.</note> que longtemps aprez Vôtre derniere lettre;<note type="editorial">Montmort
+            an Johann I Bernoulli von <rs key="B_991170515103805501" type="letter"
+              >1709.09.15</rs>.</note> j'ay bien voulu differer la reponse jusqu'à ce que je l'eusse
+          reçû et lû, pour etre en etat de Vous en dire mon sentiment; quoique une fluxion sur les
+          yeux dont je suis souvent incommodé, m'empeche de travailler beaucoup sur des choses qui
+          demandent de longs calculs sur tout dans le temps de l'hyver, je n'ay pas laissé
+          d'examiner aux heures oisives les principaux endroits de Vôtre traité, et de faire moy
+          meme, autant que la foiblesse de mes yeux m'a permis, le calcul de la plus part des
+          problemes; J'y ay trouvé effectivement plusieurs choses tres belles et tres curieuses pour
+          la speculation, et utiles pour l'usage qu'on en peut tirer dans les occasions; mais pour
+          vous faire part des remarques en particulier que j'ay faites ça et là en lisant vôtre
+          ouvrage, puisque Vous les souhaitez; les voycy:<note type="editorial">Die folgenden
+            kritischen Bemerkungen von Johann I Bernoulli zu verschiedenen mathematischen Passagen
+            von Montmorts Essay von 1708 werden hier nicht kommentiert. Ich verweise vielmehr auf
+            die ausführlichen Kommentare zu den verschiedenen hier angesprochenen mathematischen
+            Problemen in: Henny, Julian, Niklaus und Johann Bernoullis Forschungen auf dem Gebiet
+            der Wahrscheinlichkeitsrechnungen in ihrem Briefwechsel mit Pierre Remond de Montmort,
+            in: Bernoulli, Jacob, Werke 3, Basel 1974, pp. 457-507, oder auf Hald, Anders, A History
+            of Probability and Statistics and Their Applications before 1750, New York, Chichester,
+            Brisband, Toronto, Singapore (Wiley) 1990, besonders: pp. 286-325 (Montmort and the
+            Essay d'Analyse sur les Jeux de Hazard, 1708 and 1713) und pp. 375-396 ( Nicholas
+            Bernoulli). Wie ernst Montmort die Kritik von Johann I Bernoulli nahm, erhellt aus der
+            Tatsache, dass er den grössten Teil des hier vorliegenden Briefes in der "Cinquième
+            partie" der zweiten Auflage seines Essays abdruckte. Siehe Montmort, Pierre Remond de,
+            Essay d’analyse sur les jeux de hazard, Seconde edition, revüe &amp; augmentée de
+            plusiers lettres, Paris (J. Quillau) 1713, pp. 283-298.</note> 1.<hi rend="sup">o</hi>
+          La route generale que vous tenez, qui est de chercher d'abord le nombre des cas qu'une
+          telle et telle chose peut arriver, est tres seure et bonne; mais il est de la prudence du
+          calculateur de ne se pas plonger dans un calcul long et ennuyeux, en multipliant les cas
+          plus qu'il ne faut et au delà<note type="editorial">"delà" fehlt im Manuskript.</note> de
+          la necessité; Par exemple Pierre parie contre Paul que d'entre 300 jettons (dont il y a
+          egalement de blancs, de noirs et de rouges) il tirera un jetton blanc; pour sçavoir la
+          raison de leur sort, je dis qu'il n'est pas necessaire de dire qu'il y a 100 cas qui font
+          gagner Pierre et 200 qui le font perdre; Voyant evidemment, qu'à cause de l'indiffe<pb
+            facs="1051808" n="2"/>rence ou de l'egale facilité avec laquelle chaque couleur peutetre
+          tirée; ce ne sont proprement que 3 cas à considerer, un pour le blanc, un pour le noir et
+          un pour le rouge, en sorte qu'il vaut mieux de s'attacher au nombre de diverses couleurs
+          qui peuvent arriver avec une egale facilité, qu'au nombre des jettons dont la multitude
+          egale de chaque couleur, ne varie aucunement le sort des joueurs qui est toujours comme 1
+          à 2. Il semble cependant, que Vous n'avez pas observé cela avec beaucoup de soin; en voycy
+          quelques exemples dans vôtre livre; pag. 8<note type="editorial">Montmort, Pierre Remond
+            de, Essay d’analyse sur les jeux de hazard, Paris (J. Quillau) 1708, p. 8.</note> sur le
+          jeu du Pharaon pour chercher le sort du Banquier qui tient quatre cartes entre les mains,
+          parmi lesquelles la carte du ponte est une fois; Vous faites le denombrement de tous les
+          24 arrangemens des 4 cartes, pour en prendre les favorables au Banquier, sans faire
+          reflexion, que ce ne sont pas proprement les divers arrangements, mais seulement les
+          diverses situations de la carte du ponte entre les autres qui font la diversité des cas;
+          ainsi au lieu de vos 24 arrangemens, je n'ay que ces 4 variations à considerer, (je nomme
+            <formula>a</formula> la carte du ponte et <formula>b</formula> chacune des autres)</p>
+        <p>1. <formula>bbba</formula> 3. <formula>babb</formula></p>
+        <p>2. <formula>bbab</formula> 4. <formula>abbb</formula></p>
+        <p>de ces 4 variations la premiere est indifferente au Banquier, la seconde et la quatrieme
+          le font gagner et le troisieme le fait perdre, son sort sera donc <formula>=\frac{1\times
+            A+2\times2A+1\times0}{4}=\frac{5}{4}A=A+\frac{1}{4}A</formula>, tout comme vous avez
+          trouvé. Si la carte du ponte se trouve deux fois entre les cartes du Banquier, il y aura
+          ces six variations, au lieu de 24 arrangemens.</p>
+        <p>1. <formula>bbaa</formula> 4. <formula>baab</formula></p>
+        <p>2. <formula>baba</formula> 5. <formula>abab</formula></p>
+        <p>3. <formula>abba</formula> 6. <formula>aabb</formula>
+          <pb facs="1051809" n="3"/> La premiere, la troisième et la cinquieme font gagner le
+          Banquier, la seconde et la quatrieme le font perdre, et la sixieme luy donne la moitié de
+          la mise du ponte, et partant le sort du Banquier sera
+            <formula>\frac{3\times2A+2\times0+1\times\frac{3}{2}A}{6}=\frac{5}{4}A=A+\frac{1}{4}A</formula>,
+          encore comme Vous. Si la carte du Ponte se trouve trois fois entre les cartes du Banquier,
+          on voit clairement qu'il doit y avoir autant de variations, que lorsque la carte du ponte
+          n'y est qu'une fois; car il n'y a qu'à faire une permutation de lettres
+            <formula>a</formula> en <formula>b</formula> et <formula>b</formula> en
+            <formula>a</formula></p>
+        <p>1. <formula>baaa</formula> 3. <formula>aaba</formula></p>
+        <p>2. <formula>abaa</formula> 4. <formula>aaab</formula></p>
+        <p>d'où l'on tire derechef le sort du Banquier <formula>=A+\frac{1}{4}A</formula>. Par cette
+          maniere de distribuer les cas on voit<note type="editorial">Im Manuskript steht
+            "void".</note> sans peine que tel nombre de carte que tienne le Banquier, exprimé par
+            <formula>p</formula>, si celle du Ponte ne s'y trouve qu'une fois, l'avantage du
+          Banquier sera <formula>\frac{1}{p}A</formula>. Il n'en est guere autrement si la carte du
+          ponte se trouve plus d'une fois entre les cartes du Banquier; car au lieu de tous les
+          arrangemens qu'il faudroit examiner et dont le nombre est immense pour un nombre mediocre
+          de cartes, icy il ne faut que considerer le nombre des variations des deux lettres
+            <formula>a</formula> et <formula>b</formula>, qui est toujours egal au nombre des
+          combinaisons que des choses dont le nombre est celuy de la carte du ponte peuvent etre
+          prises differement dans le nombre de toutes les cartes: Et puis de ces combinaisons dont
+          le nombre est toujours beaucoup plus petit que celuy de tous les arrangements, il sera
+          facile de choisir celles qui font gagner ou entierement ou en partie le Banquier, et ainsi
+          de determiner son sort. Par exemple donnons au Banquier six cartes, entre lesquelles
+          supposons que la carte du Ponte est deux fois; dans cette supposition je n'ay que faire
+          d'examiner comme vous faites tous les 720 arrangemens que les six cartes peuvent subir, me
+          contentant de parcourir simplement ces 15 variations possibles, que la lettre
+            <formula>a</formula> prise deux fois peut faire avec la lettre <formula>b</formula>
+          <pb facs="1051810" n="4"/> prise quatre fois</p>
+        <p>1. <formula>bbbbaa</formula> 6. <formula>bbbaab</formula> 11.
+          <formula>bababb</formula></p>
+        <p>2. <formula>bbbaba</formula> 7. <formula>bbabab</formula> 12.
+          <formula>abbabb</formula></p>
+        <p>3. <formula>bbabba</formula> 8. <formula>babbab</formula> 13.
+          <formula>baabbb</formula></p>
+        <p>4. <formula>babbba</formula> 9. <formula>abbbab</formula> 14.
+          <formula>ababbb</formula></p>
+        <p>5. <formula>abbbba</formula> 10. <formula>bbaabb</formula> 15.
+          <formula>aabbbb</formula></p>
+        <p>entre les 15 variations on en conte sept qui donnent le tout au Banquier, deux qui Luy
+          donnent sa mise avec la moitié de la mise du ponte, et les six autres qui le font perdre;
+          ensorte que le sort du Banquier sera
+            <formula>=\frac{7\times2A+2\times\frac{3}{2}A+6\times0}{15}=\frac{17}{15}A=A+\frac{2}{15}A</formula>,
+          conformement à ce que vous avez trouvé. Ainsi de meme si la carte du Ponte est trois fois
+          entre les six cartes du Banquier, il n'y aura que<note type="editorial">Im Manuskript
+            steht "qui".</note> 20 façons de varier la situation de deux lettres
+            <formula>a</formula> et <formula>b</formula> prise chacune trois fois, qui etant
+          demelées feront voir que le sort du Banquier sera <formula>A+\frac{3}{20}A</formula>.
+          Suivant ce principe voycy les formules generales que j'ay trouvées pour quelque nombre de
+          cartes qu'il y ait entre les mains du Banquier, et quelque nombre de fois que la carte du
+          ponte s'y trouve, sans supposer connu le sort du Banquier dans un nombre de cartes exprimé
+          par <formula>p-2</formula>, comme Vous faites dans Vôtre formule generale, que j'ay aussy
+          trouvée aisement; voycy, dis je, les miennes: Soient
+            <formula>1\cdot2\cdot3\cdot4\ldots\cdot p-q=m</formula>, <formula>q+1\cdot q+2\cdot
+            q+3\ldots\cdot p=n</formula>, <formula>p-q+1\cdot p-q+2\cdot p-q+3\ldots\cdot
+            p=l</formula> je dis que l'avantage du Banquier que je nomme <formula>p</formula>, si
+            <formula>q</formula> est un nombre pair, sera exprimé par cette suite
+            <formula>p=\frac{m}{2n}\times1+\frac{q-1\cdot q}{1\cdot2}+\frac{q-1\cdot q\cdot q+1\cdot
+            q+2}{1\cdot2\cdot3\cdot4}+\frac{q-1\cdot q\cdot q+1\dots
+            q+4}{1\cdot2\cdot3\cdot4\cdot5\cdot6}+\ldots\frac{q-1\cdot q\cdot q+1\dots\cdot
+            p-2}{1\cdot2\cdot3\cdot4\dots\cdot p-q}</formula></p>
+        <p>ou bien par cellecy <formula>p=\frac{q-1\cdot
+            q}{2l}\times\overline{1\cdot2\cdot3\dots\cdot q-2}+\overline{3\cdot4\cdot5\dots\cdot
+            q}+\overline{5\cdot6\cdot7\dots\cdot q+2}+\ldots\overline{p-q+1\cdot p-q+2\cdot\dots
+            p-2}</formula></p>
+        <p>mais si <formula>q</formula> est un nombre impair, on aura<note type="editorial">Im
+            Manuskript hat Johann I Bernoulli die beiden vorherigen Summen zunächst mit
+              <formula>S</formula> bezeichnet und danach in <formula>p</formula> korrigiert. Bei den
+            folgenden Summen verfuhr er offenbar analog. Die Korrektur in <formula>p</formula> ist
+            infolge eines Papierschadens nicht mehr vorhanden.</note>
+          <formula>\textrm{[}p\textrm{]}=\frac{q-1\cdot m}{2n}\times1+\frac{q\cdot
+            q+1}{2\cdot3}+\frac{q\cdot q+1\cdot q+2\cdot q+3}{2\cdot3\cdot4\cdot5}+\dots\frac{q\cdot
+            q+1\cdot q+2\dots\cdot p-2}{2\cdot3\cdot4\dots\cdot p-q}</formula>, ou bien
+            <formula>[p]=\frac{q-1\cdot q}{2l}\times\overline{2\cdot3\cdot4\dots\cdot
+            q-1}+\overline{4\cdot5\cdot6\dots\cdot q+1}+\overline{6\cdot7\cdot8\dots\cdot
+            q+3}+\ldots\overline{p-q+1\cdot p-q+2}\overline{\dots\cdot p-2}</formula>
+          <pb facs="1051811" n="5"/> où il faut remarquer que les nombres <formula>p</formula> et
+            <formula>q</formula> peuvent etre quelconques, pourvu que <formula>q</formula> ne soit
+          pas moins grand que 3. Si Vous voulez prendre la peine, Vous pourrez examiner ces formules
+          generales si elles s'accordent avec les vôtres que vous donnez pour des cas particuliers
+          pagg. 24 et 25.<note type="editorial">Montmort, Pierre Remond de, Essay d’analyse sur les
+            jeux de hazard, Paris (J. Quillau) 1708, pp. 24-25.</note> Au reste ce que j'ay dit
+          jusqu'icy sur le jeu du pharaon se doit aussy entendre sur celuy de la Bassette<note
+            type="editorial">Das Kartenspiel Bassette ist eine Vorgängerversion des
+            Pharospiels.</note> pag. 66 et suivans, ou pareillement pour calculer les cas favorables
+          et les desavantageux au Banquier, on peut s'epargner la peine de perlustrer tous les
+          arrangemens possibles des cartes qui sont entre les mains du Banquier, en n'employant que
+          les variations des deux lettres <formula>a</formula> et <formula>b</formula>, comme il a
+          été fait cy dessus. Mais passons à d'autres:</p>
+        <p>Pag. 32, l. 9-15. En parlant de l'avantage d'avoir la main au jeu du Lansquenet,<note
+            type="editorial">Das Kartenspiel Lansquenet hat seinen Namen vom deutschen Wort
+            Landsknecht. Es ist ebenfalls eine Vorgängerversion des Pharospiels.</note> Vous dites
+          Monsieur <hi rend="u">qu'on ne peut exprimer cet avantage que par une suite composée d'un
+            nombre infini de termes, qui iront toujours en diminuant, et qu'on ne pourra jamais
+            avoir la valeur précise de l'avantage de Pierre</hi><note type="editorial">Montmort,
+            Pierre Remond de, Essay d’analyse sur les jeux de hazard, Paris (J. Quillau) 1708, p.
+            32, Z. 9-15.</note>; Il semble qu'en ecrivant cela vous n'ayez pas encore pris garde,
+          que cette suite va toujours en progression geometrique, laquelle parconsequent quoique
+          continuée à l'infini fait une somme qu'on peut trouver fort aisement, par les regles
+          communes; la suite par ex. que Vous donnez pag. 35 est sommable,<note type="editorial"
+            >Montmort, Pierre Remond de, Essay d’analyse sur les jeux de hazard, Paris (J. Quillau)
+            1708, p.35.</note> qu'est-il donc besoin d'approcher de la juste valeur en ajoutant un
+          grand nombre de termes? puisqu'on peut trouver au juste cette valeur dans un moment et
+          sans peine, etant precisement <formula>\frac{1125}{4024}</formula>, qui est plus grand que
+            <formula>\frac{1}{4}</formula> ou <formula>\frac{4}{16}</formula>, et parconsequent en
+          aproche plus que de <formula>\frac{4}{17}</formula> que Vous avez mis pour la quantité
+          aprochante: Mais il semble aussy que Vous Vous soyez enfin aperçû que ce sont des
+          progressions dont on peut donner la somme de tous les termes, car à la page 51 Vous donnez
+          les valeurs exactes de l'avantage et du desavantage des coupeurs. Voicy une formule
+          generale qui expri<pb facs="1051812" n="6"/>me l'avantage de celuy qui a la main dans
+          quelque sorte de jeu que ce soit et qui recommence à avoir la main autant de fois qu'il
+          gagne jusqu'à ce qu'il perde, soit nommé <formula>a</formula> l'avantage qu'il a dans
+          chaque main, <formula>m</formula> le nombre des cas qui le font gagner, et
+            <formula>n</formula> le nombre des cas qui le font perdre, je dis que son avantage total
+          sera (en supposant <formula>\frac{m}{m+n}=p</formula>)
+            <formula>=a+pa+p^{2}a+p^{3}a+p^{4}a\textrm{ etc}.</formula> dont la somme est
+            <formula>=\frac{a}{1-p}=\frac{m+n}{n}a=a+\frac{m}{n}a</formula>, on peut trouver la meme
+          chose sans le secours d'une progression par l'algebre, voycy comment: soit
+            <formula>z</formula> la mise de chaque joueur et ainsi le sort pour le premier jeu de
+          celuy qui tient la main sera
+            <formula>\frac{m\times2z+n\times0}{m+n}=\frac{2mz}{m+n}</formula>, et partant son
+          avantage <formula>=\frac{2mz}{m+n}-z=\frac{m-n}{m+n}z=a</formula>; d'où il suit que
+          nommant <formula>a</formula> l'avantage de chaque main on aura
+            <formula>z=\frac{m+n}{m-n}a</formula>, la mise des joueurs étant ainsi trouvée, soit
+            <formula>x</formula> l'avantage total qui consiste dans le droit de Pierre de tenir les
+          cartes autant de fois qu'il gagne; il y aura donc, lorsqu'il commence à jouer,
+            <formula>m</formula> cas qui le font gagner la mise de son antagoniste plus l'avantage
+          total de continuer le jeu, sçavoir <formula>\frac{m+n}{m-n}a+x</formula>, et
+            <formula>n</formula> cas qui le font perdre sa mise, c'est à dire qui le font avoir
+            <formula>\frac{-m-n}{m-n}a</formula>; on aura donc cette egalité
+            <formula>x=\frac{m\times\overline{\frac{m+n}{m-n}a+x}+n\times\frac{-m-n}{m-n}a}{m+n}</formula>;
+          laquelle etant reduite donnera pour l'avantage total
+            <formula>x=\frac{m+n}{n}a=a+\frac{m}{n}a</formula> tout comme cy dessus; Cette voye est
+          plus commode que celle par la progression, parce qu'on peut ainsi trouver avec une egale
+          facilité l'avantage de Pierre en supposant que Pierre ayant perdu une fois, le jeu ne
+          finisse pas encore, mais qu'on le continue à l'infini, la main passant alternativement
+          d'un joueur à l'autre: Soit donc <formula>t</formula> l'avantage de Pierre qui commence à
+          avoir la main, il y aura <formula>m</formula> cas qui luy donnent pour gain la mise de son
+          antagoniste plus l'avantage que luy donne le droit de recommencer, sçavoir <pb
+            facs="1051813" n="7"/>
+          <formula>\frac{m+n}{m-n}a+t</formula>, et <formula>n</formula> cas qui Luy ôtent sa mise,
+          et qui en meme temps le metent dans l'état où étoit son antagoniste lorsqu'on alloit
+          commencer le jeu, c'est à dire qui le font avoir <formula>\frac{-m-n}{m-n}a-t</formula>;
+          d'où il resulte cette egalité
+            <formula>t=\frac{m\times\overline{\frac{m+n}{m-n}a+t}+n\times\overline{\frac{-m-n}{m-n}a-t}}{m+n}</formula>;
+          par la reduction de laquelle on trouve <formula>t=\frac{m+n}{2n}a</formula>, en sorte que
+          l'avantage de Pierre en supposant que le jeu doit étre continué à l'infini, n'est que la
+          moitié de l'avantage qu'il auroit dans la supposition que le jeu finisse aussitot qu'il
+          perd la main; je m'étonne que Vous n'ayez pas pris soin de determiner l'avantage dans
+          cett'autre supposition-là, comme la plus naturelle et la plus convenable à l'intention des
+          joueurs, qui ne commencent pas le jeu dans le dessein de le finir dés que celuy qui a le
+          premier la main la perdra; mais plutot de faire passer le droit de la main d'un joueur à
+          l'autre un assez grand nombre de fois, ensorte que le jeu peut étre censé durer à
+          l'infini.</p>
+        <p>Pag. 59, l. 26. La suite que Vous donnés icy pour determiner le sort de Pierre tenant la
+          main au jeu du treize<note type="editorial">[Text folgt]</note> est tres belle et tres
+          curieuse, on la tire aisément de la formule generale de la page 58; j'ay aussy trouvé
+          cette formule, avec une autre qui m'a fourni la meme suite, mais sans changement de signes
+          et qui suppose les sorts des nombres precedens des cartes connus, comme Vous allez voir:
+          Soit <formula>S</formula> le sort de Pierre que l'on cherche le nombre des cartes que
+          Pierre tient étant exprimé par <formula>n</formula>; <formula>t</formula> le sort de
+          Pierre, le nombre des cartes étant <formula>n-1</formula>; <formula>s</formula> son sort
+          le nombre des cartes etant <formula>n-2</formula>; <formula>r</formula> le sort quand le
+          nombre des cartes est <formula>n-3</formula>; et ainsi de suite; on aura
+            <formula>S=\frac{1}{1}+\frac{1}{1\cdot2}+\frac{1}{1\cdot2\cdot3}+\frac{1}{1\cdot2\cdot3\cdot4}+\dots\frac{1}{1\cdot2\cdot3\dots\cdot
+            n}-\frac{t}{1}-\frac{s}{1\cdot2}-\frac{r}{1\cdot2\cdot3}-\ldots\frac{o}{1\cdot2\cdot3\dots
+            n}</formula>, cela peut passer pour un theoreme; Vôtre suite étant plus propre pour
+          trouver d'abord la valeur de <formula>S</formula>.</p>
+        <p>Pag. 63, l. 2. Vous faites <formula>x=\frac{1}{2}\times\overline{4A+S}+\frac{1}{2}\times
+            A</formula>; mais Vous Vous trompez; il faut faire
+            <formula>x=\frac{1}{2}\times\overline{4A+S-A}+\frac{1}{2}\times A</formula>, et ainsi
+          l'avantage de Pierre est <formula>\frac{1}{3}A</formula>, et non pas
+            <formula>\frac{2}{3}A</formula>. Par la meme raison p. 64, l. 11 <hi rend="u">a
+            fine</hi>
+          <pb facs="1051814" n="8"/> ce que Vous dites que l'avantage de Pierre seroit
+            <formula>2A+\frac{16}{57}A</formula>, n'est pas juste, car je ne trouve que
+            <formula>A+\frac{16}{57}A</formula>.</p>
+        <p>Pag. 80. Il ne semble pas que Mr. Pascal<note type="editorial">Pascal, Blaise
+            (1623-1662).</note> luy meme ait compris tout l'usage de sa table; une des plus belles
+          proprietés, dont on ne fait pas mention icy, etant, que les bandes perpendiculaires
+          expriment les coëfficiens des puissances d'un binome; car si l'exposant d'une puissance
+          quelconque se nomme <formula>p</formula>, on aura
+            <formula>\overline{a+b}^{p}=1a^{p}+\frac{p}{1}a^{p-1}b</formula><formula>+\frac{p\cdot
+            p-1}{1\cdot2}a^{p-2}b^{2}+\frac{p\cdot p-1\cdot
+            p-2}{1\cdot2\cdot3}a^{p-3}b^{3}+\frac{p\cdot p-1\cdot p-2\cdot
+            p-3}{1\cdot2\cdot3\cdot4}a^{p-4}b^{4}+\textrm{etc.}</formula> ce que j'ay trouvé
+          autrefois par une voye toute particuliere, et j'en ay communiqué la demonstration à feu
+          Mr. le M. de l'Hopital<note type="editorial">L’Hôpital, Guillaume François Antoine de
+            (1661-1704). Ob diese Mitteilung der Berechnung der Koeffizienten der Summanden bei der
+            Reihenentwicklung eines Binoms von Johann I Bernoulli an L'Hôpital brieflich oder
+            mündlich erfolgte, ist noch zu recherchieren.</note>, on en voit quelque chose dans son
+          livre posthume à l'endroit que Vous alleguez pag. 92.<note type="editorial">[Text
+            folgt]</note></p>
+        <p>Pag. 158 et 159. Vous pretendez Monsieur d'avoir resolu le second probleme de Mr.
+            Huyguens<note type="editorial">Die im folgenden erwähnten fünf Probleme von Christiaan
+            Huygens zur Wahrscheinlichkeitsrechnung finden sich als Anhang in: Huygens, Christiaan,
+            De ratiociniis in ludo aleae, in: Schooten, Frans van, Exercitationum mathematicarum
+            liber V, Lugduni Batavorum (J. Elsevirius) 1657, pp. 533-534. Siehe dazu Hald, Anders, A
+            History of Probability and Statistics and Their Applications before 1750, New York,
+            Chichester, Brisband, Toronto, Singapore (Wiley) 1990, pp. 198-219 (Solutions of
+            Huygens’ five Problems). Diese Probleme wurden erneut wiedergegeben und gelöst in:
+            Bernoulli, Jacob, Ars conjectandi, Opus posthumum. Accedit Tractatus de seriebus
+            infinitis, et Epistola Gallice scripta de ludo pilae recticularis, Basileae (Gebrüder
+            Thurneysen) 1713, pp. 49-71. Das hier genannte zweite Problem von Christiaan Huygens
+            findet sich in: Huygens, Christiaan, De ratiociniis in ludo aleae, in: Schooten, Frans
+            van, Exercitationum mathematicarum liber V, Lugduni Batavorum (J. Elsevirius) 1657, p.
+            534. Es lautet: In einer Urne befinden sich 12 Kugeln, die durch Berührung nicht zu
+            unterscheiden sind. 4 Kugeln sind weiß und 8 Kugeln sind schwarz gefärbt. 3 Spieler A, B
+            und C ziehen abwechselnd zufällig je eine Kugel, ohne sie wieder zurück zu legen. Der
+            erste Spieler, der eine weiße Kugel gezogen hat, gewinnt. Die Spieler ziehen in
+            alphabetischer Reihenfolge. Wie groß sind die Wahrscheinlichkeiten für einen Gewinn für
+            jeden der Spieler? </note>, ce que Vous avez effectué à la verité dans le sens que Vous
+          donnez à ce probleme, qui est qu'on doit supposer que chaque joueur ayant tiré un jetton
+          noir le remette incontinent dans le pot, pour laisser à son successeur la douzaine de
+          jettons toujours complete; ce qui rend le probleme fort facile et fait trouver les sorts
+          des trois Joueurs dans la raison de 9, 6, et 4, comme Vous avez trouvé: Mais il semble que
+          Mr. Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note> ait proposé ce
+          probleme dans un autre sens qui paroit plus naturel, qui est que toutes les fois qu'on
+          tire un jetton noir, il ne soit plus remis dans le pot, si bien que le premier tireur
+          ayant manqué en tirant un jetton noir, le second quand il vient à tirer ne trouve plus que
+          11 jettons, et le second ayant aussy manqué, le troisieme ne trouve plus que 10 jettons,
+          et celuy cy ayant pareillement tiré un noir ne laisse que 9 jettons au premier qui doit
+          recommencer à tirer, et ainsi consecutivement;<note type="editorial">Johann I Bernoulli
+            weisst mit Recht auf den unterschiedlichen Schwierigkeitsgrad beim Lösen des zweiten
+            Huygensschen Problems hin, je nachdem man den Zufallsversuch ohne oder mit Zurücklegen
+            der Jetons nach dem jewiligen Ziehen ausführt.</note> le probleme étant conçû dans ce
+          sens devient un peu plus difficile et en rend le calcul plus long; essayez-le pour voir si
+          Vous Vous accordez avec moi; J'en ay mis la solution aprez la proposition dans le traité
+            <hi rend="u">de Ratioc. in Lud. aleae</hi><note type="editorial">Huygens, Christiaan,
+              <hi rend="u">De ratiociniis in ludo aleae</hi>, in: Schooten, Frans van,
+            Exercitationum mathematicarum liber V, Lugduni Batavorum (J. Elsevirius) 1657, pp.
+            517-534.</note> il y a bien 12 ans;<note type="editorial">Wo Johann I Bernoulli diese
+            Lösung niedergeschrieben hat, ist noch zu recherchieren. Möglicherweise tat er dies in
+            seinem Exemplar von Huygens' Schrift.</note> en le consultant je trouve que j'y ay ecrit
+          ces trois nombres 77, 53, 35 pour la raison des Sorts des 3 Joueurs.</p>
+        <p><pb facs="1051815" n="9"/> Pag. 137 vid. infra.</p>
+        <p>Pag 159 et 160. Les deux problemes que Vous met[t]ez icy comme le troisieme et le
+          quatrieme, sont dans le traité de Mr. Huguens le quatrieme et le troisieme;<note
+            type="editorial">Beide Probleme finden sich ebenfalls in: Huygens, Christiaan, De
+            ratiociniis in ludo aleae, in: Schooten, Frans van, Exercitationum mathematicarum liber
+            V, Lugduni Batavorum (J. Elsevirius) 1657, p. 534. Das vierte Problem lautet: In einer
+            Urne befinden sich 12 Kugeln, die durch Berührung nicht zu unterscheiden sind. 4 Kugeln
+            sind weiß und 8 Kugeln sind schwarz gefärbt. Spieler A wettet mit Spieler B, dass er
+            beim Ziehen von 7 Kugeln ohne Zurücklegen genau 3 schwarze Kugeln erhält. Gefragt ist
+            die Wahrscheinlichkeit, mit der dieses Ereignis eintritt. Das dritte Problem lautet: Ein
+            Kartenspiel besteht aus 40 Karten in den Farben rot, gelb, grün, blau. Zu jeder Farbe
+            gehören 10 Karten, die jeweils durchnummeriert sind von 1 bis 10. Spieler A zieht 4
+            Karten und wettet darauf, dass er von jeder Farbe eine Karte zieht. Spieler B wettet
+            dagegen. Wie groß sind die Wahrscheinlichkeiten für einen Gewinn für jeden der Spieler?
+          </note> pour ce qui est de celuy là c'est à dire du quatrieme selon l'ordre de Mr.
+            Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note> ou du troisieme
+          dans vôtre livre, il est bien resolu en tant que Pierre parie que parmi les 7 jettons
+          qu'il va prendre il s'y en trouveront justement trois blancs ni plus ni moins; car je
+          trouve aussy que le sort de Pierre sera à celuy de Paul dans cette supposition comme 35 à
+          64 ou comme 280 à 512: mais si ont veut que Pierre ait gagné aussy quand il tire tous les
+          quatre blancs, ce qui paroit étre le veritable sens des paroles de Mr. Huygens<note
+            type="editorial">Huygens, Christiaan (1629-1695).</note>
+          <hi rend="u">inter quos 3 albi erunt</hi>,<note type="editorial">Huygens, Christiaan, <hi
+              rend="u">De ratiociniis in ludo aleae</hi>, in: Schooten, Frans van, Exercitationum
+            mathematicarum liber V, Lugduni Batavorum (J. Elsevirius) 1657, p. 534.</note> où il
+          faut suppléer <hi rend="u">minimum</hi>, comme si Pierre s'engageoit à tirer 3 blancs pour
+          le moins parmi les septs jettons qu'il prend entre les douze: Ce sens étant donné au
+          probleme on trouve que les sorts de Pierre et de Paul seront comme 14 et 19.</p>
+        <p>P. 162. La proposition que Vous faites icy du probleme 5<hi rend="sup">e</hi> de Mr.
+            Huygens<note type="editorial">Dieses fünfte Problem findet sich ebenfalls in: Huygens,
+            Christiaan, De ratiociniis in ludo aleae, in: Schooten, Frans van, Exercitationum
+            mathematicarum liber V, Lugduni Batavorum (J. Elsevirius) 1657, p. 534. Es lautet: Zwei
+            Spieler A und B besitzen zu Beginn eines Spieles jeweils 12 Münzen. Sie spielen mit 3
+            Würfeln. Wenn die Würfelsumme 11 ist, gibt A eine Münze an B. Wenn die Würfelsumme 14
+            ist, gibt B eine Münze an A. Derjenige, der zuerst alle Münzen besitzt, gewinnt das
+            Spiel. Zu zeigen ist, dass sich die Gewinnchancen von A zu B wie 244'140'625 zu
+            282'429'536'481 verhalten.</note>, Luy donne un sens tout different, et ce n'est plus le
+          meme probleme. Pour Vous faire voir la grandissime difference je vais vous donner icy les
+          simples solutions de l'un et de l'autre proposé en general: Selon les conditions de Mr.
+            Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note> soit nommé
+            <formula>n</formula> le nombre des jettons que chaque joueur prend au commencement,
+            <formula>a</formula> le nombre des coups qui font gagner Pierre un jetton de Paul, et
+            <formula>b</formula> le nombre des coups qui font gagner Paul un jetton de Pierre, je
+          dis que leurs sorts seront comme <formula>a^{n}</formula> et <formula>b^{n}</formula>; et
+          ainsi pour le cas particulier qui est en question des trois dez, où
+            <formula>n=12</formula>, <formula>a=27</formula>, et <formula>b=15</formula>, ensorte
+          que <formula>a.b::27.15::9.5</formula>. Je dis que le sort de Pierre sera à celuy de Paul
+            <formula>::9^{12}.5^{12}::282429536481.244140625</formula>. Vous n'avez pas observé je
+          croy, que ces deux grands nombres ne sont autre chose que la 12.<hi rend="sup">e</hi>
+          puissance de 9 et 5. Mais selon les conditions de Vôtre proposition, nommons encore
+            <formula>n</formula> le nombre des jettons qu'un des deux Joueurs doit gagner le premier
+          pour gagner la partie, c'est à dire la moitié des jettons que Jaques distributieur tient
+          au commencement entre ses mains, soit aussy <formula>a</formula> le nombre des coups
+          favorables à Pierre et <formula>b</formula> celuy des coups favorables pour Paul: je
+          trouve que les Sorts des deux Joueurs seront exprimés<note type="editorial">Im Manuskript
+            steht "sera exprimé".</note> par les deux sommes <pb facs="1051816" n="10"/> des deux
+          moitiés des termes du binome <formula>a+b</formula> elevé à la puissance
+            <formula>2n-1</formula>. Par exemple si <formula>n=3</formula>, les sorts de Pierre et
+          de Paul seront comme la somme des trois premiers et la somme des trois derniers termes de
+            <formula>\overline{a+b}^{5}</formula>, c'est à dire comme
+            <formula>a^{5}+5a^{4}b+10a^{3}bb</formula> et
+          <formula>b^{5}+5b^{4}a+10b^{3}aa</formula>; Et ainsi en general, supposant
+            <formula>2n-1=p</formula>, ces deux suites
+            <formula>a^{p}+\frac{p}{1}a^{p-1}b^{1}+\frac{p\cdot
+            p-1}{1\cdot2}a^{p-2}b^{2}+\frac{p\cdot
+            p-1.p-2}{1\cdot2\cdot3}a^{p-3}b^{3}+\textrm{etc.}</formula> et
+            <formula>b^{p}+\frac{p}{1}b^{p-1}a^{1}+\frac{p\cdot
+            p-1}{1\cdot2}b^{p-2}a^{2}+\frac{p\cdot p-1\cdot
+            p-2}{1\cdot2\cdot3}b^{p-3}a^{3}+\textrm{etc.}</formula> continuées chacune jusqu'au
+          nombre de termes exprimé par <formula>n</formula>, donneront la raison des sorts de Pierre
+          et de Paul: dans Vôtre cas particulier où <formula>n=12</formula>, et
+            <formula>a.b::9.5</formula> il faudroit prendre douze termes de chacune de ces deux
+          suites
+            <formula>9^{23}+\frac{23}{1}9^{22}5^{1}+\frac{23\cdot22}{1.2}9^{21}5^{2}+\frac{23\cdot22\cdot21}{1\cdot2\cdot3}9^{20}5^{3}+\frac{23\cdot22\cdot21\cdot20}{1\cdot2\cdot3\cdot4}9^{19}5^{4}+\textrm{etc.}</formula>
+          et
+            <formula>5^{23}+\frac{23}{1}5^{22}9^{1}+\frac{23\cdot22}{1\cdot2}5^{21}9^{2}+\frac{23\cdot22\cdot21}{1\cdot2\cdot3}5^{20}9^{3}+\frac{23\cdot22\cdot21\cdot20}{1\cdot2\cdot3\cdot4}5^{19}9^{4}+\textrm{etc.}</formula>
+          ce qui produira deux nombres si grands que le premier consistera (selon ma conjecture)
+          pour le moins en 25 figures; si vous avez envie de faire le calcul, voila de la besoigne
+          pour exercer Vôtre patience; cependant vous voyez l'extreme difference qu'il y a entre les
+          deux manieres de proposer le probleme 5 de Mr. Huygens<note type="editorial">Huygens,
+            Christiaan (1629-1695).</note>, si bien que ce sont effectivement deux problemes touts
+          differents, dont je vous ay resolu chacun generalement. Vous serez peut etre étonné, que
+          Vos 23 egalités Vous fournissent pourtant la meme solution de Mr. Huygens<note
+            type="editorial">Huygens, Christiaan (1629-1695).</note> non obstant que Vous proposez
+          le probleme dans un sens qui le fait, comme je vients de vous montrer, si different de
+          celuy de Mr. Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note>; mais
+          la raison en est, par ce que Vous suivez effectivement, en formant vos egalités, les
+          conditions de Mr. Huygens<note type="editorial">Huygens, Christiaan (1629-1695).</note>,
+          et non pas celles de vôtre proposition; car je vois que Vous supposez que les Sorts des
+          deux Joueurs sont les memes lorsqu'il y a <pb facs="1051817" n="11"/> une meme difference
+          entre le nombre des jettons que l'un a déja gagné et le nombre des jettons que l'autre a
+          gagné, ensorte que Vous supposez par ex. que leurs sorts sont les memes soit que Pierre
+          ayant gagné 5 jettons, Paul en ait 3 ou que Pierre ayant deux jettons, Paul n'en ait
+          point; or c'est cette supposition qui n'est pas juste, ne pouvant subsister avec le
+          probleme pris dans le sens que Vous Luy donnez. Vid. infra.</p>
+        <p>P. 137. J'ay trouvé une formule qui s'exprime et se fait entendre plus facilement en
+          cette maniere; pour les cas determinés, le nombre en est
+            <formula>=\frac{1\cdot2\cdot3\cdot4\dots\cdot p}{1\cdot2\cdot3\dots\cdot
+            b\times1\cdot2\cdot3\dots\cdot c\times1\cdot2\cdot3\dots\cdot
+            d\times1\cdot2\cdot3\dots\cdot e\textrm{ etc.}}</formula> c'est à dire = une fraction
+          dont le numerateur est le nombre des arrangemens d'une multitude exprimée par
+            <formula>p</formula>, et le denominateur le produit des nombres des arrangemens des
+          multitudes exprimées par <formula>c</formula>, <formula>d</formula>, <formula>e</formula>
+          etc.: Il est remarquable, que cette formule exprime justement la methode que j'ay trouvée
+          autrefois pour la determination du coëfficient de quelque terme que l'on voudra d'un
+          polynome quelconque elevé<note type="editorial">Im Manuskript steht "elevée".</note> à une
+          puissance quelconque, ce qui me fut proposé autrefois par Mr. Leibnitz<note
+            type="editorial">Leibniz, Gottfried Wilhelm (1646-1716). Siehe den Brief von Leibniz an
+            Johann I Bernoulli von <rs key="B_991170514841605501" type="letter"
+              >1695.05.16</rs>. Leibniz sieht hier eine Analogie zwischen der Entwicklung von
+              <formula>(x + y)^n</formula> und <formula>d^1xy</formula>, <formula>d^2xy</formula>,
+              <formula>d^3xy</formula>, <formula>d^4xy</formula> usw. Er gibt weiter an, er habe
+            schon vor längerer Zeit eine Formel zur Bestimmund der Koeffizienten nicht nur bei der
+            Entwicklung von Binomen, sondern auch von Trinomen usw. gefunden, die es ihm ermögliche
+            z. B. bei einem Trinom <formula>x+y+z</formula> zehnten Grades sofort den Koeffizienten
+            des Summanden <formula>x^5y^3z^1</formula> zu bestimmen.</note>, qui approuva fort la
+          solution que je luy en avois donnée<note type="editorial">Brief von Johann Bernoulli an
+            Leibniz von <rs key="B_991170430100005501" type="letter"
+            >1695.06.18</rs>.</note> et la trouva utile pour elever promtement un polynome à une
+          haute puissance;<note type="editorial">Brief von Leibniz an Johann I Bernoulli von <rs
+              key="B_991170514841505501" type="letter">1695.06.24</rs>.</note> car soit
+          le polynome de puissance <formula>\overline{t+x+y+z+\textrm{etc.}}^{p}</formula> dont il
+          faille trouver le coefficient du terme
+            <formula>t^{b}x^{c}y^{d}z^{e}\textrm{etc.}</formula>, en supposant
+            <formula>b+c+d+e+f\textrm{etc.}=p</formula>; je dis que le coefficient cherché sera
+          comme cy dessus <formula>\frac{1\cdot2\cdot3\dots\cdot p}{1\cdot2\cdot3\dots\cdot
+            b\times1\cdot2\cdot3\dots\cdot c\times1\cdot2\cdot3\dots\cdot
+            d\times1\cdot2\cdot3\dots\cdot e\textrm{ etc.}}</formula>.<note type="editorial">Im
+            Manuskript sind im Nenner des Bruches "<formula>e\textrm{ etc.}</formula>" sowie der
+            Satzschlusspunkt wegen Papierschaden am Rand nicht mehr lesbar.</note> Mais pour revenir
+          à la question sur les dez, et pour sçavoir combien il y a de cas indeterminés, qu'avec un
+          certain nombre de dez on peut amener tant d'une espece, tant d'un autre etc. soit nommé la
+          valeur de cette fraction <formula>v</formula>, il faut multiplier <formula>v</formula>
+          (supposant <formula>R</formula> le nombre des faces de chaque dez) par cette suite
+            <formula>R\cdot R-1\cdot R-2\cdot R-3</formula> continuée jusqu'à ce qu'il y ait autant
+          de termes qu'il y a d'exposans <pb facs="1051818" n="12"/> et diviser le produit par
+            <formula>1\cdot2</formula> s'il y a deux exposans egaux; et le diviser encore par
+            <formula>1\cdot2\cdot3</formula> s'il y a trois exposans egaux; et encore par
+            <formula>1\cdot2\cdot3\cdot4</formula> s'il y en a quatre egaux; et ainsi de suite s'il
+          y en a d'autres exposants egaux. Pag. 159 vid. supra.</p>
+        <p>Pag. 177, l. 12 et 13, <hi rend="u">à qui il manque le moins de poins.</hi> Cette
+          restriction qu'il doit manquer à Pierre le moins de poins est superflue, la regle que vous
+          donnez n'etant pas moins bonne, quand il manqueroit à Pierre le plus de poins; il seroit
+          meme plus expeditif de supposer que Pierre soit celuy à qui il manque le plus de poins,
+          car Vôtre suite aura un plus petit nombre de termes, qui seront par consequent plutot
+          ajoutés en une somme que dans l'autre supposition. Quant au reste, je resous ce probleme
+          plus generalement et par une expression plus simple et plus naturelle; Je l'enonce ainsi
+            <hi rend="u">Pierre et Paul jouent en plusieurs parties à un jeu inegal où le nombre des
+            cas favorable à Pierre et à celuy des cas favorables à Paul
+            </hi><formula>::a.b</formula><hi rend="u">; et aprez avoir joué quelque temps le nombre
+            des parties qui manquent encor à Pierre soit </hi><formula>p</formula><hi rend="u">, et
+            le nombre des parties qui manquent à Paul soit </hi><formula>q</formula><hi rend="u">,
+            on demande la raison de leur sorts</hi>. Solution. Elevez le binome
+            <formula>\overline{a+b}</formula> à la puissance <formula>p+q-1=r</formula>, le nombre
+          des termes en sera <formula>p+q</formula>; je dis que la somme des premiers termes dont le
+          nombre est <formula>q</formula>, est à la somme du reste des termes dont le nombre sera
+            <formula>p</formula>, comme le sort de Pierre est à celuy de Paul: or ces deux sommes
+          seront <formula>a^{r}+\frac{r}{1}a^{r-1}b^{1}+\frac{r\cdot
+            r-1}{1\cdot2}a^{r-2}b^{2}+\frac{r\cdot r-1\cdot
+            r-2}{1\cdot2\cdot3}a^{r-3}b^{3}+\textrm{etc.}</formula> continué jusqu'au nombre de
+          termes exprimé par <formula>q</formula> et
+            <formula>b^{r}+\frac{r}{1}b^{r-1}a^{1}+\frac{r\cdot
+            r-1}{1\cdot2}b^{r-2}a^{2}+\frac{r\cdot r-1\cdot
+            r-2}{1\cdot2\cdot3}b^{r-3}a^{3}+\textrm{etc}.</formula> continué jusqu'au nombre de
+          termes exprimé par <formula>p</formula>. Supposant <formula>p</formula> et
+            <formula>q</formula> egaux, nous tombons dans le cas du probleme 5.<hi rend="sup">e</hi>
+          de Mr. Hugens<note type="editorial">Huygens, Christiaan (1629-1695).</note> pris dans le
+          sens que Vous le proposez p. 162 sur le quel je vous ay parlé amplement cy dessus.</p>
+        <p>P. 178, l. 9, <hi rend="u">Voycy une table etc.</hi> Je m'etonne que Vous n'ayez pas
+          observé l'uniformité de cette table, et la grande facilité avec la quelle on construit une
+          table generale pour quelque nombre de parties qu'on joue toujours en ra<pb facs="1051819"
+            n="13"/>battant; car soit le nombre des parties en lesquelles Pierre et Paul conviennent
+          de jouer, <formula>n</formula>, voycy la table de leur sorts. Table
+            <formula>\begin{array}{|c|c|c|c|c|c|} \hline \text{Si Pierre a} &amp; \text{nul point,}
+            &amp; \text{son sort est} &amp; n+0 &amp; \text{contre} &amp; n-0 \\ \hline \ldots &amp;
+            \text{un point,} &amp; \ldots &amp; n+1 &amp; \ldots &amp; n-1 \\ \hline \ldots &amp;
+            \text{deux points,} &amp; \ldots &amp; n+2 &amp; \ldots &amp; n-2 \\ \hline \ldots &amp;
+            \text{trois points,} &amp; \ldots &amp; n+3 &amp; \ldots &amp; n-3 \\ \hline \ldots
+            &amp; \text{quatre points,} &amp; \ldots &amp; n+4 &amp; \ldots &amp; n-4 \\ \hline
+            \ldots &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots \\ \hline \ldots
+            &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots \\ \hline \ldots &amp;
+            \ldots &amp; \ldots &amp; \ldots &amp; \ldots &amp; \ldots \\ \hline \ldots &amp; n
+            \text{points,} &amp; \ldots &amp; n+n &amp; \ldots &amp; n-n \\ \hline
+            \end{array}</formula></p>
+        <p>Vous voyez que leurs sorts vont en progression arithmetique, l'une ascendente, l'autre
+          descendente; en effet votre table que vous avez faite pour le nombre six seulement,
+          s'accorde avec la mienne generale, car <formula>\begin{array}{|c|c|c|c|c|c|c|c|} \hline
+            \text{le sort de} &amp; \text{7} &amp; \text{contre} &amp; \text{5} &amp; \text{est la
+            meme chose que} &amp; 6+1 &amp; \text{contre} &amp; 6-1 \\ \hline \ldots &amp; \text{2}
+            &amp; \ldots &amp; \text{1} &amp; \ldots &amp; 6+2 &amp; \ldots &amp; 6-2 \\ \hline
+            \ldots &amp; \text{3} &amp; \ldots &amp; \text{1} &amp; \ldots &amp; 6+3 &amp; \ldots
+            &amp; 6-3 \\ \hline \ldots &amp; \text{5} &amp; \ldots &amp; \text{1} &amp; \ldots &amp;
+            6+4 &amp; \ldots &amp; 6-4 \\ \hline \ldots &amp; \text{11} &amp; \ldots &amp; \text{1}
+            &amp; \ldots &amp; 6+5 &amp; \ldots &amp; 6-5 \\ \hline \end{array}</formula> P. 181, l.
+          13, <hi rend="u">elles sont absolument impraticables etc.</hi> Au contraire comme c'est
+          une progression geometrique, on en peut ajouter dans un moment autant de termes qu'on veut
+          par des regles communes qu'on trouve dans tous les livres d'arithmetique, ainsi, le nombre
+          des termes etant <formula>h</formula>, je trouve que la somme de tous ces termes sera
+            <formula>=\frac{p\times\overline{m^{h}-q^{h}}}{\overline{m-q}\times m^{h}}</formula>.
+          Mais pour le reste Vous faites bien d'employer les logarithmes, je m'en suis servi
+          utilement dans une pareille occasion il y a bien 12 ans, où il s'agissoit de determiner
+          combien il restoit de vin et d'eau mélé ensemble dans un tonneau, lequel etant au
+          commencement tout plein de vin, on en tireroit tous les jours pendant une année une
+          certaine mesure, en le remplissant incontinent aprez chaque extraction, avec de l'eau
+          pure; <pb facs="1051820" n="14"/> Vous trouverez la solution de cette question, qui est
+          assez curieuse, dans ma dissertation de <hi rend="u">Nutritione</hi><note type="editorial"
+            >Bernoulli, Johann I, Op. LIII, <hi rend="u">Joh. Bernoulli Math. Disputatio
+              Medico-Physica de Nutritione. Quam sub ejus Praesidio Deo Annuente Publice examinandam
+              exhibet Scato Gockinga Groninganus Respondens. Ad diem [11.] Maji Loco Horisque
+              Solitis</hi>, Groningae (C. Zandt), 1699.</note> que Mr. Varignon<note
+            type="editorial">Varignon, Pierre (1654-1722).</note> Vous pourra communiquer: Je fis
+          cette question pour faire comprendre comment on peut determiner la quantité de vieille
+          matiere qui reste dans nos corps melée avec de la nouvelle qui nous vient tous les jours
+          par la nourriture pour reparer la perte que nos corps font insensiblement par la
+          transpiration continuelle.</p>
+        <p>Mais en voilà bien assez Monsieur et peutetre plus qu'il ne faut pour Vous causer de
+          l'ennuy, c'est pour cela que je ne parle pas des fautes soit de calcul soit d'impression
+          que j'ay rencontré en quelques endroits: Je Vous prie cependant de prendre en bonne part
+          tout ce que j'ay dit jusqu'icy; c'estoit pour l'amour de la verité que j'ay crû Vous
+          devoir communiquer avec ma franchise ordinaire mes remarques, d'autant plus que Vous me
+          les avez demandées; je ne laisse pas d'estimer Vôtre livre autant qu'on peut estimer un
+          ouvrage qui fait honneur à son Auteur et qui en marque tout ensemble une profonde
+          penetration d'esprit et une patience infatigable à faire de longs et penibles calculs. Il
+          seroit à souhaiter que Vous voulussiez prendre la peine d'etendre Vôtre livre et d'en
+          faire un ouvrage plus ample et plus riche,<note type="editorial">Dieser Anregung von
+            Johann I Bernoulli ist Montmort mit der zweiten Auflage seines Essays von 1713
+            gefolgt.</note> la matiere ne vous manqueroit pas, sur tout si Vous vouliez entrer dans
+          la morale et la politique, comme mon frere<note type="editorial">Bernoulli, Jacob I
+            (1655-1705).</note> avoit commencé de faire dans son ouvrage<note type="editorial"
+            >Bernoulli, Jacob I, Ars conjectandi, Opus posthumum. Accedit Tractatus de seriebus
+            infinitis, et Epistola Gallice scripta de ludo pilae recticularis, Basileae (Gebrüder
+            Thurneysen) 1713. Entsprechendes findet sich in: Bernoulli, Jacob, Artis Conjectandi
+            Pars quarta tradens usum &amp; applicationem praecedentis doctrinae in civilibus,
+            moralibus &amp; oeconomicis. </note>, qui selon toutes les apparences ne paroitra
+          jamais, tandis que ses heritiers persistent à ne me point prier de me charger du soin de
+          le faire imprimer, et moy à ne leur point montrer d'empressement de leur demander le
+          manuscript à eux qui ont tant de mefiance de moy, craignant peutetre que je ne
+          m'attribuasse la gloire d'en étre Auteur;<note type="editorial">Siehe Kohli, Karl, Zur
+            Publikationsgeschichte der Ars Conjectandi, in: Bernoulli, Jacob, Werke 3, pp.391-403,
+            und Mattmüller, Martin, The difficult birth of stochastics: Jacob Bernoulli's Ars
+            Conjectandi (1713), in: Historia Mathematica, vol. 41, Issue 3, August 2014, pp.
+            277-290.</note> sotte peur! comme si je n'avois pas assez de matiere de mon propre fond,
+          si je voulusse me repaitre de cette vaine gloire. J'entens avec plaisir que les
+          mathematiques <pb facs="1051821" n="15"/> malgré les miseres de la guerre<note
+            type="editorial">Gemeint ist der Spanische Erbfolgekrieg (1701-1714).</note> fleurissent
+          de plus en plus et deviennent meme en honneur en France; icy dans nos pays nous ne pouvons
+          pas nous vanter du meme bonheur; depuis le depart de Mr. Herman,<note type="editorial"
+            >Jacob Hermann (1678-1733) wurde 1707 als Professor der Mathematik nach Padua
+            berufen.</note> je ne sçache personne excepté mon Neveu<note type="editorial">Bernoulli,
+            Nicolaus I (1687–1759).</note>, et tres peu d'autres, dont il faille esperer de grands
+          progres dans ces sciences, lesquelles étant considerées comme n'etre pas <hi rend="u">de
+            pane lucrando</hi> on les neglige comme des choses seches et peu utiles. Les quatre
+          problemes que vous proposez à la fin de Vôtre traité sont curieux, mais le premier me
+          paroit insoluble<note type="editorial">Es handelt sich um das "Premier problème. Sur le
+            jeu du Treize. Déterminer generalement quel est à ce jeu l'avantage de celui qui tient
+            les cartes". Siehe Montmort, Pierre Remond de, Essay d’analyse sur les jeux de hazard,
+            Paris (J. Quillau) 1708, p. 185.</note> pour la longueur de calcul qu'il demanderoit et
+          que la vie humaine ne seroit pas suffisante d'achever; je n'entens pas bien le sens du
+          quatrieme: le second et le troisieme me paroissent traittables, quoique non sans beaucoup
+          de peine et de travail, que j'ayme mieux Vous laisser pour apprendre de Vous la solution,
+          que de travailler longtemps au depens de mes occupations ordinaires qui ne me laissent
+          guere de loisir de m'appliquer à d'autres choses. Il me tarde de voir la nouvelle edition
+          du Livre de Mr. Newton,<note type="editorial">Die zweite Auflage von Newton, Isaac, <hi
+              rend="u">Principia mathematica</hi> erschien erst 1713.</note> il y a longtemps qu'il
+          m'a promis qu'il me l'enverroit dés qu'il seroit imprimé, mais du depuis je n'en ay plus
+          rien entendu,<note type="editorial">Wann hatte Newton dies versprochen?</note> quand vous
+          l'aurez reçû je Vous prie de me mander par occasion ce que Vous y aurez trouvé de nouveau.
+          En attendant je me donne l'honneur de me nommer Monsieur Vôtre tres humble et tres
+          obeissant serviteur J. Bernoulli.</p>
+        <p>P. S. Mon Neveu<note type="editorial">Bernoulli, Nicolaus I (1687–1759).</note> qui Vous
+          fait ses complimens reciproques vient de me<note type="editorial">Im Manuskript steht
+            "mes".</note> donner ses remarques<note type="editorial">Ob diese "remarques" mindestens
+            im Entwurf erhalten sind, ist noch zu recherchieren.</note> (que je vous envoye icy
+          aussy) sur Vôtre Livre, que je luy avois preté; je n'ay pas encore eu le temps de les
+          examiner. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

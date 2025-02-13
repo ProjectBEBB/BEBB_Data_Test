@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-      Bernardo Trevisano -> Bernardo Trevisan (1652-1720) pers_DE-588-100656862
-      
-      Malebranche -> Nicolas Malebranche (1638-1715) pers_DE-588-118576682
-      
-      Francesco Ruschi -> Gastgeber von Hermann, als Hermann das letzte Mal in Venedig war. Bourguet sollt ihm ein Buch geben, falls Bourguet es nicht mehr braucht. Ruschi werde für das feste de Madonna nach Padua kommen. Siehe auch Brief 1708.09.07.
-      
-      St. Antoine -> Antonius von Padua (1195-1231) pers_DE-588-118503510
-      
-      Bayle -> Pierre Bayle (1647-1706) pers_DE-588-11850777X
-      --><!--_____________-->
-
-<TEI xml:id="B_1708-09-06_991170430182505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170430182505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -131,8 +117,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1708-09-04_991170430182805501" type="prev"/>
-        <ptr target="B_1708-09-07_991170430182205501" type="next"/>
+        <ptr target="B_991170430182805501" type="prev"/>
+        <ptr target="B_991170430182205501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -178,13 +164,32 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+      Bernardo Trevisano -> Bernardo Trevisan (1652-1720) pers_DE-588-100656862
+      
+      Malebranche -> Nicolas Malebranche (1638-1715) pers_DE-588-118576682
+      
+      Francesco Ruschi -> Gastgeber von Hermann, als Hermann das letzte Mal in Venedig war. Bourguet sollt ihm ein Buch geben, falls Bourguet es nicht mehr braucht. Ruschi werde für das feste de Madonna nach Padua kommen. Siehe auch Brief 1708.09.07.
+      
+      St. Antoine -> Antonius von Padua (1195-1231) pers_DE-588-118503510
+      
+      Bayle -> Pierre Bayle (1647-1706) pers_DE-588-11850777X
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text>
 <body>
 <div type="letter">
 <pb facs="991170430182505501_01" n="6r"/>
 <opener><salute>Monsieur</salute></opener>
 <p><lb/>J<supplied>'</supplied>espere que Vous aurez receus votre <rs key="biblio_GPQXKN47" type="biblio">livre</rs> des Preadamites<!-- Sachtag Preadamiten --><note type="comment">Vermutlich [La Peyrère, Isaac de] : Praeadamitae: sive exercitatio super versibus … 1655 s.l.</note>
-<lb/>et ma <rs key="B_1708-09-04_991170430182805501" type="letter">lettre</rs> que j'y avois jointe en Vous l'avoyant par la
+<lb/>et ma <rs key="B_991170430182805501" type="letter">lettre</rs> que j'y avois jointe en Vous l'avoyant par la
               <lb/>poste. Je suis faché de n'avoir pas eu le tems de Vous
               <lb/>l'envoyer plutot pour satisfaire à la Curiosité de <abbr>Mons.<hi rend="sup">r</hi></abbr>
 <lb/><rs key="pers_DE-588-100656862" type="person">Bernardo <choice><sic>Frevisano</sic><corr>Trevisano</corr></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --></rs> qui est encore mon Patron. En cas

@@ -1,21 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-         Messieurs les Reformateurs -> Nach Papadopoli waren 1712 Reformatori: Girolamo Venier (1650-1735) pers_DE-588-1253768439, Giovan Francesco Morosini (1658-1739)pers_DE-588-1089585993 und Federicus Marcellus D.M.P. Andreae F.
-         GNDs nach Liste von David.
-        Marcellus ist zu diesem Zeitpunkt bereits tot. Es kann sich also nicht um ihn handeln. Wer ist sein Nachfolger?
-        Sein Nachfolger ist wohl Marino Zorzi  pers_DE-588-1178380696.
-         
-         Leibnitz -> Gottfried Wilhelm Leibniz (1646-1716) pers_DE-588-118571249
-         
-          M. Bernoulli -> Johann I Bernoulli (1667-1748) pers_DE-588-118509969
-          
-          M. Scheuchzer-> Johann Jacob Scheuchzer (1672-1733) pers_DE-588-118607308
-          
-          Mr. Herman -> Jacob Hermann (1678-1733) pers_DE-588-119112450
-      --><!--_____________-->
-
-<TEI xml:id="B_1712-04-15_991170430180105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170430180105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -134,8 +117,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1712-02-20_991170430180305501" type="prev"/>
-        <ptr target="B_1712-04-25_991170430479805501" type="next"/>
+        <ptr target="B_991170430180305501" type="prev"/>
+        <ptr target="B_991170430479805501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -196,11 +179,33 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+         Messieurs les Reformateurs -> Nach Papadopoli waren 1712 Reformatori: Girolamo Venier (1650-1735) pers_DE-588-1253768439, Giovan Francesco Morosini (1658-1739)pers_DE-588-1089585993 und Federicus Marcellus D.M.P. Andreae F.
+         GNDs nach Liste von David.
+        Marcellus ist zu diesem Zeitpunkt bereits tot. Es kann sich also nicht um ihn handeln. Wer ist sein Nachfolger?
+        Sein Nachfolger ist wohl Marino Zorzi  pers_DE-588-1178380696.
+         
+         Leibnitz -> Gottfried Wilhelm Leibniz (1646-1716) pers_DE-588-118571249
+         
+          M. Bernoulli -> Johann I Bernoulli (1667-1748) pers_DE-588-118509969
+          
+          M. Scheuchzer-> Johann Jacob Scheuchzer (1672-1733) pers_DE-588-118607308
+          
+          Mr. Herman -> Jacob Hermann (1678-1733) pers_DE-588-119112450
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430180105501_01" n="26r"/>
 <opener><salute>Monsieur</salute></opener>
 <p><lb/>Graces au Seigneur ce n'est pas Maladie qui m'a empeché de repondre d'abord
-                        <lb/>à Votre precedente et scavante <rs key="brieftag" type="letter">lettre</rs>, mais c'est un nombre prodigieux de lettres
+                        <lb/>à Votre precedente et scavante <rs type="letter">lettre</rs>, mais c'est un nombre prodigieux de lettres
                         <lb/>que je devois ecrire pour l'<rs key="place_KON-deutsch" type="place">Allemagne</rs> joint au devoir de mon poste,<!-- Im vorhergehenden Brief schreibt Hermann noch, dass er schon lange keine Briefe mehr aus Deutschland erhalten habe. --> qui m'ont
                         <lb/>derobé tout le temps de Vous ecrire comme il faut sur Vos propositions, je ne
                         <lb/>puis pas meme à l<supplied>'</supplied>heure qu'il est m'y etendre autant qu'il faut ou que je souhaiterois
@@ -214,7 +219,7 @@
 <lb/>et meme je Vous en conjure, parce que j'ay beaucoup de motifs de tenir la chose secrette
                         <lb/><choice><orig>jusqu'ace</orig><reg>jusqu'à ce</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> que j'aye obtenu mon congé.<del> <gap/></del> J'espere en votre bonté que scachant
                         <lb/>les causes de mon silence que Vous ne vous facherez pas t<subst><del><gap/></del><add><unclear>a</unclear></add></subst>nt si j'ay tardé un peu de
-                        <lb/>satisfaire <choice><orig>a</orig><reg>à</reg></choice> mon devoir de Vous faire reponce. Mais revenons à Vos deux lettres<note type="comment">Gemeint sind die Briefe <rs key="brieftag" type="letter"/><rs key="brieftag" type="letter"/>.</note> dans
+                        <lb/>satisfaire <choice><orig>a</orig><reg>à</reg></choice> mon devoir de Vous faire reponce. Mais revenons à Vos deux lettres<note type="comment">Gemeint sind die Briefe <rs type="letter"/><rs type="letter"/>.</note> dans
                         <lb/>les quelles <!-- Beginn Zitat Bourguet [Siehe Kommentar in letzter Fussnote] -->Vous Vous étonnez avec raison qu'on ne se soit pas encore avisé d'appliquer
                         <lb/>les regles de la Mecanique et de la Geometrie à la structure de Nôtre Globe terrestre
                         <lb/>si digne de nôtre recherche ne fut-ce que pour justifier au <choice><orig>mon</orig><reg>moins</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> en quelque <choice><orig>m'aniere</orig><reg>maniere</reg></choice>
@@ -265,7 +270,7 @@
                         <lb/>serviteur
                         <lb/><signed><rs key="pers_DE-588-119112450" type="person"><abbr>J</abbr>Herman</rs></signed>
 <dateline><lb/><rs key="place_GEO-3171728" type="place">Padoue</rs> ce <date when="1712-04-15">15 Avril 1712</date>.</dateline></closer>
-<note hand="pers_DE-588-116298553"><lb/>Ecrit une ample <rs key="brieftag" type="letter"><choice><abbr>Lett.</abbr><expan>Lettre</expan></choice></rs> le <date when="1726-05-28">28 May<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 1726<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice></date> <choice><orig>a</orig><reg>à</reg></choice><!-- MS: siehe auch Antwortvermerk im Brief Hermann an Bourguet vom 1712.04.15. und von Hermann an Bourguet 1720.04.06. --> <rs key="place_GEO-498817" type="place">Petersbourg</rs>
+<note hand="pers_DE-588-116298553"><lb/>Ecrit une ample <rs type="letter"><choice><abbr>Lett.</abbr><expan>Lettre</expan></choice></rs> le <date when="1726-05-28">28 May<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 1726<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice></date> <choice><orig>a</orig><reg>à</reg></choice><!-- MS: siehe auch Antwortvermerk im Brief Hermann an Bourguet vom 1712.04.15. und von Hermann an Bourguet 1720.04.06. --> <rs key="place_GEO-498817" type="place">Petersbourg</rs>
 <lb/>capitale de <rs key="place_VER-russia" type="place">Russie</rs> où <abbr>Mr.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> est <choice><abbr>Profess:</abbr><expan>Professeur</expan></choice> en <choice><abbr>Mathemat:</abbr><expan>Mathematique</expan></choice>
 <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Academicien. Et parlé de ma <rs key="biblio_LNQMLUTR" type="biblio">decouverte</rs><!-- Es handelt sich wohl um das 1729 als Anhang zu den "Lettres philosophiques sur la formation des sels..." publizierte "Memoire sur la theorie de la terre". Online: https://archive.org/details/bub_gb_5NITAAAAQAAJ/page/n221. Auf Seite 189 zitiert Bourguet wortwörtlich aus diesem Brief. Ich habe die Stelle oben im Text markiert. https://archive.org/details/bub_gb_5NITAAAAQAAJ/page/n235 --> sur les Contours 
                             <lb/>des <choice><abbr>Mont:</abbr><expan>Montagnes</expan></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> du Calcul qu'on y pourroit apliquer</note>

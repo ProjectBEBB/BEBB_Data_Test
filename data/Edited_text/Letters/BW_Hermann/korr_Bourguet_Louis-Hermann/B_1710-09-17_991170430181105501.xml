@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-         Serry -> Giacomo Giacinto Serry, (François Jaques Hyacinthe Serry) (1659-1738) pers_DE-588-122781074
-         
-         Ostervald -> Jean Frédéric Ostervald (1663-1747) pers_DE-588-12364433X
-         
-         Messieurs les Reformateurs -> Nach Papadopoli p. 77 im September 1710 Alvise Pisani (1664-1741) pers_DE-588-1111043582, Francesco Loredan (1656-1715) pers_DE-588-1178371670 und Carlo Ruzzini (1653-1735) pers_DE-588-1089924410 Riformatori der Universität Padua.
-         Papadopuli, Historia, 1726. Online:
-         Band I: https://books.google.ch/books?id=kUs26JWqMw8C&hl=de&pg=PP5#v=onepage&q&f=false
-         Band II: https://archive.org/details/bub_gb_0fGGnspkO2IC
-         GND aus Liste von David.
-
-         Lazarini -> Domenico Lazzarini (1668-1734) pers_DE-588-12898497X
-         
-         Iselin -> Jakob Christoph Iselin (1681-1737) pers_DE-588-117205508
-      --><!--_____________-->
-
-<TEI xml:id="B_1710-09-17_991170430181105501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170430181105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -135,8 +117,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1710-07-30_991170430181405501" type="prev"/>
-        <ptr target="B_1710-12-07_991170430180905501" type="next"/>
+        <ptr target="B_991170430181405501" type="prev"/>
+        <ptr target="B_991170430180905501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -195,16 +177,39 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+         Serry -> Giacomo Giacinto Serry, (François Jaques Hyacinthe Serry) (1659-1738) pers_DE-588-122781074
+         
+         Ostervald -> Jean Frédéric Ostervald (1663-1747) pers_DE-588-12364433X
+         
+         Messieurs les Reformateurs -> Nach Papadopoli p. 77 im September 1710 Alvise Pisani (1664-1741) pers_DE-588-1111043582, Francesco Loredan (1656-1715) pers_DE-588-1178371670 und Carlo Ruzzini (1653-1735) pers_DE-588-1089924410 Riformatori der Universität Padua.
+         Papadopuli, Historia, 1726. Online:
+         Band I: https://books.google.ch/books?id=kUs26JWqMw8C&hl=de&pg=PP5#v=onepage&q&f=false
+         Band II: https://archive.org/details/bub_gb_0fGGnspkO2IC
+         GND aus Liste von David.
+
+         Lazarini -> Domenico Lazzarini (1668-1734) pers_DE-588-12898497X
+         
+         Iselin -> Jakob Christoph Iselin (1681-1737) pers_DE-588-117205508
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430181105501_01" n="16r"/>
 <opener><salute>Monsieur</salute></opener>
-<p><lb/>Il y a prés d'un mois <choice><orig>qu'a</orig><reg>qu'à</reg></choice> mon retour de la Campagne<!-- orttag --> Votre agreable <rs key="brieftag" type="letter">lettre</rs>
+<p><lb/>Il y a prés d'un mois <choice><orig>qu'a</orig><reg>qu'à</reg></choice> mon retour de la Campagne<!-- orttag --> Votre agreable <rs type="letter">lettre</rs>
 <lb/>me fut rendue; et <choice><orig>qu'oy</orig><reg>quoy</reg></choice> que j'avoue ingenument que j'ay un peu trop tardé
                     <lb/>de m'aquitter de mon <choice><orig>deuoir</orig><reg>devoir</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> en<subst><del>s</del><add>v</add></subst>ers Vous, en me donnant l'honneur de Vous faire
                    <lb/>reponce, et que je ne manque pas de bonnes excuses je ne vous en alleguerai<add> pourtant</add> aucune
                     <lb/>parce qu'avec toutes ces excuses je ne scaurois r'a<subst><del><gap/></del><add>tt</add></subst>raper le tems que j'ay été obligé
                     <lb/>d<subst><del><gap/></del><add>e</add></subst> laisser écouler avant de Vous<del> faire</del> ecrire. Quand Vous prites la peine à ecrire
-                   <lb/>votre <rs key="brieftag" type="letter">lettre</rs> à la quelle <rs key="B_1710-09-17_991170430181105501" type="letter">celle cy</rs> doit servir de reponce, il faut que Vous ayez bien
+                   <lb/>votre <rs type="letter">lettre</rs> à la quelle <rs key="B_991170430181105501" type="letter">celle cy</rs> doit servir de reponce, il faut que Vous ayez bien
                    <lb/><del>etre </del>été en train de philosopher, puis qu'outre Vos belles reflexions physiques,
                    <lb/>Vous y avez fait un preambule rempli en partie de beaux traits de<del> la</del> morale
                    <lb/>sur la tranquillité de l'ame <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> il y a seulement une chose qui ne sent pas trop son

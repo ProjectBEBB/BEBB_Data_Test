@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-      Bourguet -> Louis Bourguet (1678-1742) pers_DE-588-116298553
-      
-      mon Pere -> Germanus Hermann (1648-1729) pers_DE-588-1048628825
-      --><!--_____________-->
-
-<TEI xml:id="B_1712-08-21_991170430478205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170430478205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -127,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1712-07-10_991170430478705501" type="prev"/>
-        <ptr target="B_1712-09-22_991170430477605501" type="next"/>
+        <ptr target="B_991170430478705501" type="prev"/>
+        <ptr target="B_991170430477605501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -168,6 +160,19 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+      Bourguet -> Louis Bourguet (1678-1742) pers_DE-588-116298553
+      
+      mon Pere -> Germanus Hermann (1648-1729) pers_DE-588-1048628825
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430478205501_01" n="34r"/>
 <opener><salute>Monsieur</salute></opener><note hand="pers_unknown"><rs key="pers_DE-588-116298553" type="person">Bourguet</rs> s'impatiente de ne savoir des nouvelles de ce qui se passe en <rs key="place_VER-schweiz" type="place">Suisse</rs> - Guerre de <rs key="place_GEO-2658119" type="place">Vilmergen</rs>.</note>
@@ -190,7 +195,7 @@
          <lb/>j<supplied>'</supplied>avois si peu <choice><orig>a</orig><reg>à</reg></choice> Vous communiquer, que rien; au lieu que Vous en aviez deja des avis beaucoup
          <lb/>mieux circonstantiés que j'aye jamais receu<!-- 29.9.23, MS: Korrektur? Überprüfen. --> de mon <rs key="pers_DE-588-1048628825" type="person">Pere</rs>, qui n'est pas grand Nouvelliste,
          <lb/>et qui est pourtant le seul qui m'<subst><del><gap/></del><add>ait</add></subst> ecrit touchant les brouilleries en <rs key="place_VER-schweiz" type="place"><choice><orig>suisse</orig><reg>Suisse</reg></choice></rs>. Dans ses
-         <lb/>dernieres lettres<note type="comment"><rs key="brieftag" type="letter"/><rs key="brieftag" type="letter"/>.</note> que je receus hier, il me marque qu<supplied>'</supplied>on tient la Paix pour faite quoy qu'on
+         <lb/>dernieres lettres<note type="comment"><rs type="letter"/><rs type="letter"/>.</note> que je receus hier, il me marque qu<supplied>'</supplied>on tient la Paix pour faite quoy qu'on
          <lb/>ne scache pas<add> encore</add> bien <choice><abbr>precisem.<hi rend="sup">t</hi></abbr><expan>precisement</expan></choice> les <rs type="biblio">articles</rs><note type="comment">Zum Text des Friedensschlusses: siehe http://doi.org/10.3931/e-rara-31093 die Ratificationen wurden auch publiziert: http://doi.org/10.3931/e-rara-28051</note> quoy qu'il y en ait de nouveaux ajoutés <choice><orig>a</orig><reg>à</reg></choice> ceux qui
          <lb/>furent debatt<subst><del><gap/></del><add><unclear>u</unclear></add></subst> et signés le 18 Juillet <choice><orig>a</orig><reg>à</reg></choice> la <rs type="organisation">Diete Generale</rs> de <rs key="place_GEO-2661881" type="place">Arau</rs>; entre ces nouveaux <rs type="biblio">articles</rs>
 <lb/>on croit qu'il en a un qui regarde <rs key="place_GEO-2659099" type="place">Rapersvil</rs> que <choice><abbr>Messrs.</abbr><expan>Messieurs</expan></choice> de <rs key="place_VER-zueric" type="place">Zurich</rs> et de <rs key="place_VER-bernka" type="place">Berne</rs> pretendent de
@@ -202,7 +207,7 @@
          <lb/>de <rs key="place_GEO-2661604" type="place">Basle</rs><del> soient jamais</del> ayent jamais marché, au moins mon <rs key="pers_DE-588-1048628825" type="person">Pere</rs> ne m'en écrit point <choice><orig>qu'oy</orig><reg>quoy</reg></choice> qu'il
          <lb/>m'ait mandé diverses fois qu'on les tient toutes pretes pour <subst><del>l</del><add>é</add></subst>tre employées au premier besoin.
          <lb/>Sur les matieres philosophiques dont Vous me faites l'honneur de me parler dans votre
-         <lb/><rs key="brieftag" type="letter">lettre</rs>, j<supplied>'</supplied>auray l'honneur de Vous entretenir quand je viendray à <rs key="place_GEO-3164603" type="place">Venise</rs>. Je reste toujours et
+         <lb/><rs type="letter">lettre</rs>, j<supplied>'</supplied>auray l'honneur de Vous entretenir quand je viendray à <rs key="place_GEO-3164603" type="place">Venise</rs>. Je reste toujours et
          <lb/>de tout mon coeur</p>
 <closer><lb/>Monsieur
                 <lb/>Votre tres humble et tres <choice><abbr>obeiss.<hi rend="sup">t</hi></abbr><expan>obeissant</expan></choice> <choice><abbr>serv.<hi rend="sup">teur</hi></abbr><expan>serviteur</expan></choice>

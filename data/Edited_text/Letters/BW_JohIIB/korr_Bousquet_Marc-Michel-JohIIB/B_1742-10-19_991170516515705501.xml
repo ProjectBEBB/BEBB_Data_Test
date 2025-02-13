@@ -1,20 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-    Monsieur votre Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
-    
-    Mr. Cramer -> Cramer, Gabriel pers_DE-588-11670912X
-    
-    de Pardies -> Pardies, Ignace Gaston (1636-1673) pers_DE-588-123249201
-    
-    Mr. Ortmann ->
-    
-    vos Libraires ->
-    
-    Empereur -> Karl VII., Heiliges Römisches Reich, Kaiser (1697-1745) pers_DE-588-118560115
-    
-    Roi de Pologne Electr. de Saxe -> August III., Polen, König (1696-1763) pers_DE-588-118505092
-    --><!--_____________--><TEI xml:id="B_1742-10-19_991170516515705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170516515705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -134,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1742-10-09_991170516515805501" type="prev"/>
-        <ptr target="B_1742-11-20_991170516515605501" type="next"/>
+        <ptr target="B_991170516515805501" type="prev"/>
+        <ptr target="B_991170516515605501" type="next"/>
         <ptr target="BW_JohIIB" type="Briefwechsel"/>
         <ptr target="korr_Bousquet_Marc-Michel-JohIIB" type="Korrespondenz"/>
       </correspContext>
@@ -178,6 +163,29 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+    Monsieur votre Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
+    
+    Mr. Cramer -> Cramer, Gabriel pers_DE-588-11670912X
+    
+    de Pardies -> Pardies, Ignace Gaston (1636-1673) pers_DE-588-123249201
+    
+    Mr. Ortmann ->
+    
+    vos Libraires ->
+    
+    Empereur -> Karl VII., Heiliges Römisches Reich, Kaiser (1697-1745) pers_DE-588-118560115
+    
+    Roi de Pologne Electr. de Saxe -> August III., Polen, König (1696-1763) pers_DE-588-118505092
+    -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/3833207/manifest"/>
 </facsimile><text>
@@ -185,8 +193,8 @@
 <div type="letter">
 <pb facs="3833208" n="1"/> <pb facs="3833209" n="2"/>
 <opener><salute>Monsieur</salute></opener>
-<p>L'honneur de la <rs key="brieftag" type="letter">votre</rs> du <date when="1742-10-17">17 de ce mois</date> ma fait un plaisir inexprimable de voir votre contentement sur notre ouvrage. Les soins doivent redoubler &amp; je le fais aussi, à present que nous entrons dans les Piéces anecdotes; ce n'est point parce que ce sont des Mssc. mais à cause des calculs immenses dont ils sont chargés, &amp; singulierement le Calcul Integral qui prendra plus de tems que je ne l'avois prévu, c'est pourquoi je crains de ne pouvoir pas tenir la parole que j'ay eu l'honneur de vous donner de vous en voyer le reste du Tome 3e. avant le <date when="1742-11-15">15 9bre-</date> en tout cas ce sera le mardi d'après 20e<!-- Datumstag? -->.</p>
-<p>Vous etes à tems pour m'envoyer ce que Monsieur votre <rs key="pers_DE-588-118509969" type="person">Pere</rs> veut joindre au Traité Propositiones <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. meme jusques à la fin de ce mois, en attendant j'ay envoyé votre <rs key="brieftag" type="letter">lettre</rs> à Mr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs> pour ajouter ce que vous marqués deja.</p>
+<p>L'honneur de la <rs type="letter">votre</rs> du <date when="1742-10-17">17 de ce mois</date> ma fait un plaisir inexprimable de voir votre contentement sur notre ouvrage. Les soins doivent redoubler &amp; je le fais aussi, à present que nous entrons dans les Piéces anecdotes; ce n'est point parce que ce sont des Mssc. mais à cause des calculs immenses dont ils sont chargés, &amp; singulierement le Calcul Integral qui prendra plus de tems que je ne l'avois prévu, c'est pourquoi je crains de ne pouvoir pas tenir la parole que j'ay eu l'honneur de vous donner de vous en voyer le reste du Tome 3e. avant le <date when="1742-11-15">15 9bre-</date> en tout cas ce sera le mardi d'après 20e<!-- Datumstag? -->.</p>
+<p>Vous etes à tems pour m'envoyer ce que Monsieur votre <rs key="pers_DE-588-118509969" type="person">Pere</rs> veut joindre au Traité Propositiones <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. meme jusques à la fin de ce mois, en attendant j'ay envoyé votre <rs type="letter">lettre</rs> à Mr. <rs key="pers_DE-588-11670912X" type="person">Cramer</rs> pour ajouter ce que vous marqués deja.</p>
 <p>Nous n'avons point fait venir de <rs key="pers_DE-588-123249201" type="person">Pardies</rs> faute d'occasion, mais je viens de faire votre commission à Mr. <rs type="person">Ortmann</rs> qui vous fait ses saluts &amp; qui se porte à merveille.</p>
 <p>Je ne suis pas plus en peine du debit des ouvrages de l'Illustre Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs>, que de la continuation de la jalousie de vos <rs key="GND GND" type="persons">Libraires</rs> qui éclate de tems en tems; elle est fondée puisqu'ils ont laissé echaper par une négligence ompardonnable les Productions du <rs key="pers_DE-588-118509969" type="person">Prince des Mathematiciens</rs> qu'ils avoient sous leurs mains; la honte qu'ils en auront par toute l'<rs key="place_KON-europa" type="place">Europe</rs> durera long tems. En attendant je suis muni du Privilege de l'<rs key="pers_DE-588-118560115" type="person">Empereur</rs> &amp; de celui du <rs key="pers_DE-588-118505092" type="person">Roi de <rs key="place_VER-polenk" type="place">Pologne</rs> Electr. de <rs key="place_VER-sachse" type="place">Saxe</rs></rs>, &amp; l'ouvrage se donnant tout à la fois je leur défie de le contrefaire. J'ay l'honneur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</p>
 <closer><dateline>à <rs key="place_GEO-2659994" type="place">Lausanne</rs> le <date when="1742-10-19">19e. 8bre. 1742</date></dateline></closer>

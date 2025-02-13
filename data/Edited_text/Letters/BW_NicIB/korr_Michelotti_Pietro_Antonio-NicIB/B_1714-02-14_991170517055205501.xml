@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Kontrollieren, ob Savioni, Francesco, Venezianischer Resident in Zürich, im BIBB/UB Katalog eingetragen ist mit GND eingetragen ist. --><!--_____________--><TEI xml:id="B_1714-02-14_991170517055205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517055205501" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -101,8 +98,8 @@
                <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
             </correspAction>
             <correspContext>
-               <ptr target="B_1714-01-24_991170517055305501" type="prev"/>
-               <ptr target="B_1714-03-10_991170517054905501" type="next"/>
+               <ptr target="B_991170517055305501" type="prev"/>
+               <ptr target="B_991170517054905501" type="next"/>
                <ptr target="BW_NicIB" type="Briefwechsel"/>
                <ptr target="korr_Michelotti_Pietro_Antonio-NicIB" type="Korrespondenz"/>
             </correspContext>
@@ -151,7 +148,16 @@
             <change notAfter="1966-02-14">transkribiert</change>
          </listChange>
       </revisionDesc>
-   </teiHeader><facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1038278/manifest"/></facsimile><text><body><div type="letter">
+   </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Kontrollieren, ob Savioni, Francesco, Venezianischer Resident in Zürich, im BIBB/UB Katalog eingetragen ist mit GND eingetragen ist. -->
+<!--_____________-->
+<facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1038278/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1038279" n="125r"/>
 <opener>
 <lb/>Viro Clarissimo et Excellentissimo 
@@ -167,7 +173,7 @@
          <lb/>Illustri <gap/> Arch<subst><del>y</del><add>i</add></subst>lyceo promovear. Cumque <unclear>exliteris vestris</unclear>
 <lb/>humanissimis perspiciam co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endationes vestras tantum pondus
          <lb/>habere apud Proceres Vestros</del>
-<lb/>Ex <rs key="B_1714-01-24_991170517055305501" type="letter">Literis</rs><note type="editorial">Brief von Pietro Antonio Michelotti an Nicolaus I Bernoulli von 1714.01.14</note> Tuis ut et <choice><sic>Clarisimi</sic><corr>Clarissimi</corr></choice> Abbatis <rs key="pers_DE-588-119291967" type="person">Fardell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> <rs key="B_1713-11-26_991170517059105501" type="letter">huma<pc type="hyphenation">-</pc><lb break="no"/>nissimis</rs><note type="editorial">Brief von Michelangelo Fardella an Nicolaus I Bernoulli von 1713.11.26</note><del>cum vel</del> denuo perspexi, quam magno studio <add>et fervore</add><!-- et fervore wurde eingefügt, mit Fritz kontrollieren -->
+<lb/>Ex <rs key="B_991170517055305501" type="letter">Literis</rs><note type="editorial">Brief von Pietro Antonio Michelotti an Nicolaus I Bernoulli von 1714.01.14</note> Tuis ut et <choice><sic>Clarisimi</sic><corr>Clarissimi</corr></choice> Abbatis <rs key="pers_DE-588-119291967" type="person">Fardell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> <rs key="B_991170517059105501" type="letter">huma<pc type="hyphenation">-</pc><lb break="no"/>nissimis</rs><note type="editorial">Brief von Michelangelo Fardella an Nicolaus I Bernoulli von 1713.11.26</note><del>cum vel</del> denuo perspexi, quam magno studio <add>et fervore</add><!-- et fervore wurde eingefügt, mit Fritz kontrollieren -->
 <lb/>continue agatis<del> ut</del> apud <abbr>Illmos</abbr> et <abbr>Excellmos</abbr> Studii 
          <lb/><rs type="organisation">Patavini</rs><rs key="pers_DE-588-1111043582 pers_DE-588-1178371670 pers_DE-588-1089585993" type="persons">Moderatores</rs><note type="editorial">Von 14.10.1713-7.03.1714 waren die Moderatoren der Universität Padua Alvise Pisani (1664-1741), Francesco Loredan (1656-1715), Giovan Francesco  Morosini (1658-1739)</note>, ut at Cathedram Mathematicam
          <lb/>in illustri isto <rs type="organisation">Archilyc<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>o</rs> promovear, et quam benigne 

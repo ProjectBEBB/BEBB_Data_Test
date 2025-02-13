@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-    Monsieur vre. Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
-    
-    Mr. &amp; Made. Orttmann -> 
-    
-    Madame Batier ->
-    
-    Mrs. Merian ->
-    
-    Roi de Prusse -> Friedrich II., Preußen, König (1712-1786) pers_DE-588-118535749
-    
-    M. Bischoff ->
-    --><!--_____________--><TEI xml:id="B_1743-06_991170516514305501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170516514305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -132,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1743-05-21_991170516514405501" type="prev"/>
-        <ptr target="B_1743-06-18_991170516514205501" type="next"/>
+        <ptr target="B_991170516514405501" type="prev"/>
+        <ptr target="B_991170516514205501" type="next"/>
         <ptr target="BW_JohIIB" type="Briefwechsel"/>
         <ptr target="korr_Bousquet_Marc-Michel-JohIIB" type="Korrespondenz"/>
       </correspContext>
@@ -176,6 +163,27 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+    Monsieur vre. Pere -> Johann I Bernoulli, Johann 〈1667-1748〉 pers_DE-588-118509969
+    
+    Mr. &amp; Made. Orttmann -> 
+    
+    Madame Batier ->
+    
+    Mrs. Merian ->
+    
+    Roi de Prusse -> Friedrich II., Preußen, König (1712-1786) pers_DE-588-118535749
+    
+    M. Bischoff ->
+    -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/3833119/manifest"/>
 </facsimile><text>
@@ -185,11 +193,11 @@
 <opener><salute>Monsieur</salute></opener>
 <p>Il a falu donner quelques jours au repos &amp; à la devotion de la Pentecote depuis mon heureuse arrivée, &amp; ensuite j'ay trouvé une si grande quantité d'occupations, que je ne puis qu'aujourd'huy Monsieur avoir l'honneur de vous ecrire, pour vous assurer aussi bien que Monsieur vre. <rs key="pers_DE-588-118509969" type="person">Pere</rs> &amp; toute votre chere famille, de mes respectueuses obeissances, &amp; vous adresser à tous les sinceres remerciemens que je vous dois &amp; que je vous fais du fonds de mon coeur, pour toutes les politesses &amp; amitiés que vous m'avés faites dans votre maison &amp; pendant mes deux passages à <rs key="place_GEO-2661604" type="place">Basle</rs>. Je n'oublierai de ma vie ces pretieux temoignages de vos bontés pour moi, &amp; negligerai non plus aucune occasion de vous marquer ma vive &amp; ardente reconnoissance. Je vous suplie aussi Monsieur d'assurer Mr. &amp; Made. <rs type="persons">Orttmann</rs> que j'ay pour eux le meme retour à leurs largesses &amp; à l'accueil gracieux qu'ils m'ont fait, &amp; que je leur presente mes civilités les plus humbles &amp; les plus sinceres.</p>
 <p>Votre male ou plutot celle de Madame <rs type="person">Batier</rs> est pleine de Livres pour etre renvoyée à <rs key="place_GEO-2661604" type="place">Basle</rs> chés Mrs. <rs type="persons">Merian</rs> par le premier charretier qui partira. Je ne manquerai pas non plus Monsieur de souder votre compte le plutot qu'il me sera possible &amp; sans que vous preniés la peine de me le demander, je sais que votre grande exactitude doit etre le modelle de la mienne.</p>
-<p>Je fus tout surpris Lundi dernier de recevoir une <rs key="brieftag" type="letter">Lettre</rs> du <rs key="pers_DE-588-118535749" type="person">Roi de <rs key="place_VER-preuss" type="place">Prusse</rs></rs> de laquelle vous trouverés cy bas la copie, elle me fait autant &amp; plus d'honneur que la médaille.</p>
+<p>Je fus tout surpris Lundi dernier de recevoir une <rs type="letter">Lettre</rs> du <rs key="pers_DE-588-118535749" type="person">Roi de <rs key="place_VER-preuss" type="place">Prusse</rs></rs> de laquelle vous trouverés cy bas la copie, elle me fait autant &amp; plus d'honneur que la médaille.</p>
 <p>Je ne puis trouver d'expressions assés fortes pour vous dire Monsieur combien parfaitement j'ay l'honneur d'etre &amp; avec une consideration infinie</p>
 <closer>Monsieur Votre très humble &amp; très obeissant Serviteur <signed><rs key="pers_DE-588-136952968" type="person">Bousquet</rs></signed></closer>
-<postscript><!-- Könnte auch eine Beilage sein. Zudem: Soll hier nochmals eine Briefstruktur mit coser, dateline etc. eingebaut werden? --><p>Copie de la <rs key="brieftag" type="letter">lettre</rs> du <rs key="pers_DE-588-118535749" type="person">Roi</rs></p>
-<p>J'ay receu votre <rs key="brieftag" type="letter">lettre</rs> du <date when="1743-05-16">16 de ce mois</date> par laquelle vous me marqués vos sentimens de devotion et de reconnoissance à cause de la medaille dont je vous ai fait present. Mon intention est que vous la portiés sur votre personne comme une marque de ma bienveillance Royale qui ne se dementira jamais. Sur ce je prie Dieu de vous avoir en sa sainte garde fait à <rs key="place_GEO-2852458" type="place">Potzdam</rs> ce <date when="1743-05-27">27 May 1743</date>. signé <rs key="pers_DE-588-118535749" type="person">Frederic</rs></p>
+<postscript><!-- Könnte auch eine Beilage sein. Zudem: Soll hier nochmals eine Briefstruktur mit coser, dateline etc. eingebaut werden? --><p>Copie de la <rs type="letter">lettre</rs> du <rs key="pers_DE-588-118535749" type="person">Roi</rs></p>
+<p>J'ay receu votre <rs type="letter">lettre</rs> du <date when="1743-05-16">16 de ce mois</date> par laquelle vous me marqués vos sentimens de devotion et de reconnoissance à cause de la medaille dont je vous ai fait present. Mon intention est que vous la portiés sur votre personne comme une marque de ma bienveillance Royale qui ne se dementira jamais. Sur ce je prie Dieu de vous avoir en sa sainte garde fait à <rs key="place_GEO-2852458" type="place">Potzdam</rs> ce <date when="1743-05-27">27 May 1743</date>. signé <rs key="pers_DE-588-118535749" type="person">Frederic</rs></p>
 <p>M. <rs type="person">Bischoff</rs> le libraire vous livrera quinze florins d'<rs key="place_VER-heilig" type="place">Empe.</rs> pour nous.</p></postscript>
 </div>
 </body>

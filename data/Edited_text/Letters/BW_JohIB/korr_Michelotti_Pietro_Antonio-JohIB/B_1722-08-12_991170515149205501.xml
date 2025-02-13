@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert am 20.11.2018, Personen ausgezeichnet am 15.02.2019 (Fehlt die Identifikation des Abbas und die Umsetzung der beiden Filii (zwei Personen auf einmal nicht mit Tag versehbar) am Ende des Briefes) --><!-- <change when="2022-04-11" who="CG">Nachbearbeitung (1 Orttag fehlt)</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 18.02.2019
-         
-         Personentags: Abbas de Comitibus (Kontrollieren: Antonio Schinella Conti) und Burcard (Muss Johannes Burckhardt sein: Erwähnt in Scheuchzer-Brief) fehlen noch.  utroque filio, sowie ggf. nos und Anglos als allfällige Mehrpersonentags fehlen auch noch. 
-
-Johannes Burckhardt (1691-1743): Theologie, Mathematik; MA UBasel 1710, Cand. S. Minist. 1714, Pfarrer in Kleinhüningen b. Basel ab 1721 (zugleich Katechet am Basler Gymnasium ab 1725), in Oltingen ab 1732
-=> GND: pers_DE-588-1089632444
-
-Antonio Schinelli Conti (1677-1749): Antonio Schinella Conti (1677–1749), also known by his religious title as Abate Conti, was an Italian writer, translator, mathematician, philosopher and physicist. He was born in Padua on 22 January 1677 and died there on 6 April 1749. (wikipedia)
-=> GND: pers_DE-588-118941941   
-      --><!--_____________--><TEI xml:id="B_1722-08-12_991170515149205501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515149205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -130,8 +120,8 @@ Antonio Schinelli Conti (1677-1749): Antonio Schinella Conti (1677–1749), also
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1722-08-01_991170515149305501" type="prev"/>
-        <ptr target="B_1722-09-02_991170515149105501" type="next"/>
+        <ptr target="B_991170515149305501" type="prev"/>
+        <ptr target="B_991170515149105501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -195,13 +185,33 @@ Antonio Schinelli Conti (1677-1749): Antonio Schinella Conti (1677–1749), also
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert am 20.11.2018, Personen ausgezeichnet am 15.02.2019 (Fehlt die Identifikation des Abbas und die Umsetzung der beiden Filii (zwei Personen auf einmal nicht mit Tag versehbar) am Ende des Briefes) -->
+<!-- <change when="2022-04-11" who="CG">Nachbearbeitung (1 Orttag fehlt)</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 18.02.2019
+         
+         Personentags: Abbas de Comitibus (Kontrollieren: Antonio Schinella Conti) und Burcard (Muss Johannes Burckhardt sein: Erwähnt in Scheuchzer-Brief) fehlen noch.  utroque filio, sowie ggf. nos und Anglos als allfällige Mehrpersonentags fehlen auch noch. 
+
+Johannes Burckhardt (1691-1743): Theologie, Mathematik; MA UBasel 1710, Cand. S. Minist. 1714, Pfarrer in Kleinhüningen b. Basel ab 1721 (zugleich Katechet am Basler Gymnasium ab 1725), in Oltingen ab 1732
+=> GND: pers_DE-588-1089632444
+
+Antonio Schinelli Conti (1677-1749): Antonio Schinella Conti (1677–1749), also known by his religious title as Abate Conti, was an Italian writer, translator, mathematician, philosopher and physicist. He was born in Padua on 22 January 1677 and died there on 6 April 1749. (wikipedia)
+=> GND: pers_DE-588-118941941   
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079306/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079307" n="1"/>
 <opener><salute>Celeberrimo at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Doctissimo Viro
              <lb/>Petro Antonio <rs key="pers_DE-588-102552517" type="person">Michelotto</rs>
 <lb/><abbr>S. P. D.</abbr>
 <lb/><choice><abbr>Joh.</abbr><expan>Johanni</expan></choice> <rs key="pers_DE-588-118509969" type="person">Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></salute></opener>
-<p>Novissimas <rs key="B_1722-08-01_991170515149305501" type="letter">Litteras</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 1. August 1722</note> Tuas, Vir <choice><abbr>Cl.</abbr><expan>Clarissime</expan></choice> <rs key="place_GEO-2988507" type="place">Luteti<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></rs> ad me
+<p>Novissimas <rs key="B_991170515149305501" type="letter">Litteras</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 1. August 1722</note> Tuas, Vir <choice><abbr>Cl.</abbr><expan>Clarissime</expan></choice> <rs key="place_GEO-2988507" type="place">Luteti<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice></rs> ad me
              <lb/>datas <choice><abbr>d.</abbr><expan>die</expan></choice> 1. <choice><abbr>Aug.</abbr><expan>Augusti</expan></choice> accepi hic <rs key="place_GEO-2991214" type="place">Mulhusii</rs>,<note type="editorial">Siehe auch den Brief von  1722.07.28  an Varignon, in dem Joh. I B. von seinem Aufenthalt in Mühlhausen berichtet. Unter anderem schreibt er, er halte sich mit seinem älteren Sohn (Nic. II B.) dort auf, was Rückschlüsse auf den Schreiber des Briefentwurf erlaubt.</note> ubi adhuc co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>o<pc type="hyphenation">-</pc><lb break="no"/>ror et in quod oppidum concessi ut me subtraherem
          <lb/>aliquamdiu negotiis tam publicis quam privatis ad
              <lb/>potandas aquas minerales <rs key="place_GEO-2659224" type="place">Fabarienses</rs><!-- sachtag --><note type="editorial">Mineralwasser aus Bad Pfäfers.</note> (quas huc depor<pc type="hyphenation">-</pc><lb break="no"/>tari curavi) omni qu<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> licet tranquillitate et otio. Noli
@@ -216,7 +226,7 @@ Antonio Schinelli Conti (1677-1749): Antonio Schinella Conti (1677–1749), also
          <lb/>valedicere cogar. En habes, Vir Illustrissime, diuturni
          <pb facs="1079308" n="2"/>
 <lb/>mei silentii causam, quo factum, ut ad
-         <lb/><rs key="B_1722-01-23_991170515149605501" type="letter">epistolam</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 23. Januar 1722</note> Tuam bene longam pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terito jam
+         <lb/><rs key="B_991170515149605501" type="letter">epistolam</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 23. Januar 1722</note> Tuam bene longam pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terito jam
          <lb/>mense Januario ad me exaratam nondum respon<pc type="hyphenation">-</pc><lb break="no"/>derim ne<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ob rerum multitudinem per litteras
          <lb/>respondere queam, scilicet non permittit viri<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
          <lb/>attritio ut long<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> scriptioni man<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> admoveam,
@@ -307,7 +317,7 @@ Antonio Schinelli Conti (1677-1749): Antonio Schinella Conti (1677–1749), also
          <lb/>c<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>teris summopere laudanda; utinam simile quid
          <lb/>in Anglis laudari posset! Rogo<note type="editorial">Ab hier bis zum Ende des Briefes eigenhändig.</note> Vir Clarissime, ut meis
          <lb/>verbis salutem dicas Amicis meis et Fautoribus quos in Urbe<!-- orttag --> amplissi<pc type="hyphenation">-</pc><lb break="no"/>ma in qua jam degis reperies, inprimis Illustrissimo <rs key="pers_DE-588-118639056" type="person">Fontenellio</rs> et <choice><abbr>Celeberr.</abbr><expan>Celeberrimo</expan></choice>
-<lb/><rs key="pers_DE-588-119062372" type="person">Varignonio</rs>, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ex Hoc qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ras num <rs key="B_1722-07-28_991170516664105501" type="letter">litteras</rs><note type="editorial">Johann I Bernoulli an Pierre Varignon, vom 28. Juli 1722</note> meas ad se datas
+<lb/><rs key="pers_DE-588-119062372" type="person">Varignonio</rs>, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ex Hoc qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ras num <rs key="B_991170516664105501" type="letter">litteras</rs><note type="editorial">Johann I Bernoulli an Pierre Varignon, vom 28. Juli 1722</note> meas ad se datas
          <lb/>28 Juli<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> recte acceperit. Ubi denuo videris Virum <choice><abbr>Nobiliss.</abbr><expan>Nobilissimum</expan></choice> <rs key="pers_DE-588-118941941" type="person">Abba<pc type="hyphenation">-</pc><lb break="no"/>tem </rs><note type="editorial">Identifizieren: Vermutlich Abt Conti, was latinisiert "de Comitibus" heisst, vgl. z.B. Brief von J. Hermann an Joh. I Bernoulli (1709-01-03_Hermann_Jacob-Bernoulli_Johann_I)</note> de Comitibus qui internuncius quondam fuit inter <rs key="pers_DE-588-118571249" type="person">Leibnitium</rs>
 <lb/>et <rs key="pers_DE-588-118587544" type="person">Newtonum</rs>, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <rs key="pers_DE-588-118801481" type="person">Taylorum</rs> in <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dibus<!-- orttag --> <rs key="pers_DE-588-119062372" type="person">Varignonii</rs> de me
          <lb/>conquerentem audivit ipsi tamen non in omnibus adstipulatus

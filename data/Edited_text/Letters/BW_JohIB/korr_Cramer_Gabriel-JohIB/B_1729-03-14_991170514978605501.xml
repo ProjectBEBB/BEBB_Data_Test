@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1729-03-14_991170514978605501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514978605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -120,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1729-02-06_991170514978705501" type="prev"/>
-        <ptr target="B_1729-03-31_991170430093705501" type="next"/>
+        <ptr target="B_991170514978705501" type="prev"/>
+        <ptr target="B_991170430093705501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Cramer_Gabriel-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -188,6 +187,7 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-04-03" who="RG">Zeilenabstände eingefügt</change>
       <change when="2022-10-03" who="CG">Header, Seitenzahlen, Briefstruktur</change>
     </listChange>
@@ -200,28 +200,28 @@
 <div type="letter">
 <pb facs="1073757" n="1"/>
 <opener><salute>Monsieur,</salute></opener>
-<p><lb/>J'ai reçeu avec un grand plaisir votre chère <rs key="B_1729-02-06_991170514978705501" type="letter">Lettre du 6. Fevrier</rs> puis qu'outre
+<p><lb/>J'ai reçeu avec un grand plaisir votre chère <rs key="B_991170514978705501" type="letter">Lettre du 6. Fevrier</rs> puis qu'outre
                <lb/>le grand nombre de bonnes choses qu'elles contient, j'aprens par là que je suis
                <lb/>assez heureux que vous vous interessiez à ma santé. Elle est très bonne,
-               <lb/>Dieu merci, &amp; j'aurois eu l'honneur de répondre plûtôt à vôtre Lettre, si la
-               <lb/>dissipation d'une Ville comme <rs key="place_GEO-2988507" type="place">Paris</rs>, &amp; d'un tems comme le Carnaval dont
+               <lb/>Dieu merci, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j'aurois eu l'honneur de répondre plûtôt à vôtre Lettre, si la
+               <lb/>dissipation d'une Ville comme <rs key="place_GEO-2988507" type="place">Paris</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'un tems comme le Carnaval dont
                <lb/>nous sortons, m'avoit laissé du loisir pour le faire.</p>
 <p><lb/>Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> m'a chargé de vous faire ses très humbles complimens,
-               <lb/>&amp; de vous faire ses excuses s'il n'a pû encore vous répondre à cause du grand
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous faire ses excuses s'il n'a pû encore vous répondre à cause du grand
                <lb/>nombre de ses occupations. Jl me charge aussi de vous dire qu'il s'est opposé dans
                <lb/>l'Académie à ce qu'on imprimât <rs type="biblio">le Memoire</rs> de Mr. <rs key="pers_DE-588-117683280" type="person">de Louville</rs> contre votre
-               <lb/><rs type="biblio">Dissertation</rs>, &amp; qu'il espere qu'il ne s'imprimera point: mais que s'il s'imprime,
+               <lb/><rs type="biblio">Dissertation</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'il espere qu'il ne s'imprimera point: mais que s'il s'imprime,
                <lb/>il se fait fort d'obtenir qu'on imprimera dans les mêmes Mémoires votre Reponse
                <lb/>en cas que vous en daigniez faire une, ou une déclaration telle que vous jugerés
                <lb/>à propos de la faire. Il m'a paru par toutes les con<del>sidir</del><add>vers</add>ations que j'ai eues avec
-               <lb/>lui &amp; où nous nous entretenons souvent de vous, qu'il a un grand respect &amp;
-               <lb/>beaucoup de consideration pour vous, &amp; même un attachement sincère pour
+               <lb/>lui <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> où nous nous entretenons souvent de vous, qu'il a un grand respect <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>beaucoup de consideration pour vous, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même un attachement sincère pour
                <lb/>votre personne. Il est vrai qu'il n'embrasse pas vos idées sur les forces vives,
-               <lb/>&amp; je pense même qu'il sera très difficile de lui faire changer d'opinion sur
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je pense même qu'il sera très difficile de lui faire changer d'opinion sur
             <pb facs="1073758" n="2"/>
 <lb/>cet article, qu'il envisage sans doute d'un autre point de vuë que vous, mais je
                <lb/>suis persuadé que cette difference de sentimens ne fait aucun tort à l'amitié
-               <lb/>&amp; à l'estime qu'il a pour vous. Aussi n'ai-je point fait de difficulté de lui donner
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à l'estime qu'il a pour vous. Aussi n'ai-je point fait de difficulté de lui donner
                <lb/>une Copie de vôtre <rs type="biblio">Déclaration</rs> contre la pretenduë réfutation de Robins,
                <lb/>qu'il s'est chargé de faire inserer dans le Journal des Scavans, dont il connoit
                <lb/>intimément les Auteurs. Elle paroitra donc dans le <rs type="biblio">Journal de Mars</rs>. Je n'ai
@@ -230,20 +230,20 @@
                <lb/>Grande Bretagne</rs>. Mais le Libraire est tellement en retard, que Mr. <rs key="pers_DE-588-124763715" type="person">de la
                <lb/>Chapelle</rs>, qui en est l'Autheur, m'a assuré qu'il est obligé de donner son Manuscript
                <lb/>6 ou 8 mois avant qu'il soit achevé d'imprimer.</p>
-<p><lb/>J'aprens que vous trouverez bientôt un autre adversaire &amp; plus illustre.
+<p><lb/>J'aprens que vous trouverez bientôt un autre adversaire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> plus illustre.
                <lb/>Voici ce que m'écrit de <rs key="place_GEO-2643743" type="place">Londres</rs> Mr. <rs key="pers_DE-588-117260266" type="person">Sterling</rs>. "Mr. <rs key="pers_DE-588-117517747" type="person">Mac Laurin</rs> à <rs key="place_GEO-2650225" type="place">Edimbourg</rs>
 <lb/>fait imprimer une réponse au livre de Mr. <rs type="person">Bernoulli</rs> touchant les forces
-               <lb/>vives. J'ai eu differentes Lettres de lui touchant cette matiere, &amp; je crois que son
+               <lb/>vives. J'ai eu differentes Lettres de lui touchant cette matiere, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je crois que son
                <lb/>Livre plaira à ceux de nôtre parti: Mais pour ce qui est de convertir les autres, à 
-               <lb/>cette heure que cette dispute a été poussée avec tant de chaleur de part &amp; d'autre,
+               <lb/>cette heure que cette dispute a été poussée avec tant de chaleur de part <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'autre,
                <lb/>nous pouvons aussi bien nous flatter de convertir Le Pape à nôtre Réligion.
                <lb/>Je ne vous détaille rien, ajoute-t-il, de la reponse de Mr. <rs key="pers_DE-588-117517747" type="person">Mac Laurin</rs>, parceque
                <lb/>vous la verrez dans peu."</p>
 <p><lb/>Je vous rends mille graces pour vôtre nouvelle <rs type="biblio">Demonstration</rs> de la Propo<pc type="hyphenation">-</pc><lb break="no"/>sition que l'Increment de la vitesse doit étre proportionel à la pression multipliée
-               <lb/>par le tems. Elle m'a charmé par sa simplicité &amp; son evidence, mais surtout par
-               <lb/>le jour qu'elle repand sur cette Matiere. Elle dissipe entièrement les tenebres &amp; les
+               <lb/>par le tems. Elle m'a charmé par sa simplicité <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> son evidence, mais surtout par
+               <lb/>le jour qu'elle repand sur cette Matiere. Elle dissipe entièrement les tenebres <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les
             <pb facs="1073759" n="3"/>
-<lb/>nuages qui me restoient, &amp; je ne crois pas qu'il me reste aucune difficulté embarassante.
+<lb/>nuages qui me restoient, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne crois pas qu'il me reste aucune difficulté embarassante.
                <lb/>Je voiois bien par la Demonstration précedente que la Proposition étoit vraie, mais
                <lb/>je ne voiois pas, ce que je comprens très bien à présent, d'où vient qu'elle étoit vraie,
                <lb/>d'ou vient que c'est la vitesse plûtôt que la force qui est proportionée à la pression.
@@ -251,7 +251,7 @@
                <lb/>de la mesure des forces vives. La force necessaire pour donner à un Corps un certain
                <lb/>degré de vitesse, est la somme des forces qui s'emploient pour produire sur ce corps
                <lb/>pendant un certain tems, un certain degré de pression (que je supposerai constant
-               <lb/>&amp; que j'appelerai p) Soit <formula>x</formula> <note type="editorial">Im folgenden sind die mathematischen Terme im Manuskript unterstrichen</note> l'espace que ce Corps a parcouru d'un mouvement acce<pc type="hyphenation">-</pc><lb break="no"/>leré, gagnant, à chaque instant un infiniment petit de vitesse, <formula>dx</formula>, l'espace qu'il
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que j'appelerai p) Soit <formula>x</formula> <note type="editorial">Im folgenden sind die mathematischen Terme im Manuskript unterstrichen</note> l'espace que ce Corps a parcouru d'un mouvement acce<pc type="hyphenation">-</pc><lb break="no"/>leré, gagnant, à chaque instant un infiniment petit de vitesse, <formula>dx</formula>, l'espace qu'il
                <lb/>va parcourir, dans le moment, <formula>u</formula>, la vitesse qu'il a acquise <formula>du</formula>, celle qu'il va
                <lb/>acquerir; <formula>f</formula> la force dejà emploiée pour lui donner cette vitesse, <formula>u</formula> et <formula>df</formula> celle qu'il
                <lb/>faudra emploier pour lui donner le petit degré <formula>du</formula> de vitesse. Or cette force <formula>df</formula>
@@ -263,64 +263,64 @@
 <lb/>3.<hi rend="sup">o</hi> de <formula>u</formula>, c'est à dire <formula>df=p\times\frac{pdx}{u}\times u=pdx</formula>. Mais aussi <formula>du=\frac{pdx}{u}</formula> ou <formula>udu=pdx</formula>. Donc
                <lb/><formula>udu=df</formula>, ou <formula>uu=2f</formula>.<note type="editorial">bloss <formula>f</formula></note> La force est proportionée au quarré de la vitesse. Je ne vois
                <lb/>pas qu'on puisse rien me nier, si ce n'est, peutétre le 3.<hi rend="sup">e</hi>point. Je <hi rend="u">sais a posteriori</hi>
-<lb/>qu'il est vrai, &amp; que pour donner à un Corps, dans un certain tems, un certain degré
+<lb/>qu'il est vrai, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que pour donner à un Corps, dans un certain tems, un certain degré
                <lb/>d'augmentation de vitesse, il faut d'autant plus de force qu'il a plus de vitesse, quand
                <lb/>ce degré d'augmentation est infiniment petit. Mais je serois embarassé de le prouver
             <pb facs="1073760" n="4"/>
-<lb/><hi rend="u">a priori</hi>. Il me semble bien clair, &amp; je crois que tout le monde en conviendra, qu'il
+<lb/><hi rend="u">a priori</hi>. Il me semble bien clair, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je crois que tout le monde en conviendra, qu'il
                <lb/>faut plus de force pour presser également un Corps qui cède à la pression, que sur
-               <lb/>un corps qui lui resiste par son repos, &amp; pour presser un corps qui échape fort vite que
+               <lb/>un corps qui lui resiste par son repos, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour presser un corps qui échape fort vite que
                <lb/>celui qui cède lentement, mais comment prouver qu'il faut d'autant plus de force
                <lb/>précisement que le corps échape avec plus de vitesse?</p>
 <p><lb/>J'ai lû avec un plaisir singulier votre Theoreme sur la force vive d'un Système
-               <lb/>de Corps en mouvement, &amp; avec d'autant plus de plaisir que je vois par là que j'ai
+               <lb/>de Corps en mouvement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> avec d'autant plus de plaisir que je vois par là que j'ai
                <lb/>eu le bonheur de me rencontrer avec vous. Car avant que de recevoir vôtre
                <lb/>Lettre, j'avois pensé a peu près la même chose. Voici comment j'avois été
                <lb/>conduit à cette proposition. Voiant que la force vive de deux Corps mûs autour
                <lb/>de leur centre de gravité, qui se meut lui même en ligne droite, est
                <lb/>constamment la même, je me suis avisé de chercher si cela étoit ainsi pour
-               <lb/>3 ou plusieurs Corps, &amp; trouvant que cela réussissoit, j'ai cherché quelle étoit
-               <lb/>cette grandeur constante, &amp; j'ai trouvé, comme vous, que c'étoit la somme des
+               <lb/>3 ou plusieurs Corps, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> trouvant que cela réussissoit, j'ai cherché quelle étoit
+               <lb/>cette grandeur constante, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j'ai trouvé, comme vous, que c'étoit la somme des
                <lb/>forces vives qui resultent de leur mouvement de gyration, plus la force vive
                <lb/>qui resulte du mouvement rectiligne de tout le Système. Mais je regardois
-               <lb/>seulement ce Theorème comme beau, digne de remarque, &amp; confirmatif de la
+               <lb/>seulement ce Theorème comme beau, digne de remarque, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> confirmatif de la
                <lb/>Théorie des forces vives; Vous me faites apercevoir de plus qu'il est utile, en indiquant
                <lb/>des usages auxquels je n'aurois pas eu l'esprit de penser.</p>
 <p><lb/>Je vois bien aussi que je m'étois trompé dans mon Calcul de la Tension du fil
                <lb/>qui soutient des Corps qui descendent en roulant, non pas que cette Tension soit
                <lb/>inégale des deux Côtés de la Poulie mais par ce que je supposois que le Corps qui remonte
                <lb/>ne tend le fil qu'avec un effort égal à son propre poids. Je vous rends graces de la
-               <lb/>communication de votre Methode, &amp; je vous prie de faire mes remercimens à
+               <lb/>communication de votre Methode, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je vous prie de faire mes remercimens à
                <lb/>Mr. <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs>. On me fait esperer que je pourrai le voir bientôt dans ce Pais,
                <lb/>Je serai ravi d'y étre encore quand il y viendra. Pour moi, je lui envie le bonheur
-               <lb/>qu'il a d'étre auprès de vous, &amp; je m'estimerai heureux d'en pouvoir jouir une 2.<hi rend="sup">e</hi> fois.</p>
+               <lb/>qu'il a d'étre auprès de vous, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je m'estimerai heureux d'en pouvoir jouir une 2.<hi rend="sup">e</hi> fois.</p>
 <pb facs="1073761" n="5"/>
 <p><lb/>Je ne crois pas vous avoir marqué que Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> eut de la haine pour Mr.
                <lb/><rs key="pers_DE-588-117586765" type="person">de Moivre</rs>. La raison de leur mésintelligence n'est qu'une concurrence de gloire.
                <lb/>Vous avés lû, peut etre, le Livre de Mr. <rs key="pers_DE-588-121009645" type="person">Cotes</rs> intitulé, <rs type="biblio">Harmonia Mensurarum</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.
                <lb/>Il y en a un extrait dans les Journaux de Leipsick. Dans ce livre est contenuë
-               <lb/>une très belle &amp; très savante Méthode pour <add>reduire</add> l'intégration de quantité de differentielles
+               <lb/>une très belle <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très savante Méthode pour <add>reduire</add> l'intégration de quantité de differentielles
                <lb/>à la Division du Cercle en parties égales. Mais cette proposition y est <del>sans</del> avancée
                <lb/>sans Démonstration. Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> en aiant decouvert une, non seulement
-               <lb/>très simple &amp; très facile, mais encore qui rend cette Méthode beaucoup plus
-               <lb/>féconde, il en publia le fondement d'une manière un peu voilée, &amp; sans demons<pc type="hyphenation">-</pc><lb break="no"/>tration dans un papier à part, dont j'ai envoié une Copie à Monsieur vôtre <rs key="pers_DE-588-119166895" type="person">Neveu</rs>.
+               <lb/>très simple <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très facile, mais encore qui rend cette Méthode beaucoup plus
+               <lb/>féconde, il en publia le fondement d'une manière un peu voilée, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sans demons<pc type="hyphenation">-</pc><lb break="no"/>tration dans un papier à part, dont j'ai envoié une Copie à Monsieur vôtre <rs key="pers_DE-588-119166895" type="person">Neveu</rs>.
                <lb/>Peu auparavant Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> en avoit publié une Demonstration de sa
                <lb/>façon, c'est à dire, fort difficile à entendre, dans un petit Livre intitulé, <hi rend="u">Epistola
                <lb/>de Cotesij inventis</hi>, où il tachoit de faire voir que cette invention de Mr. <rs key="pers_DE-588-121009645" type="person">Cotes</rs>
-<lb/>n'étoit rien de plus que ce que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit deja connu &amp; inseré dans
+<lb/>n'étoit rien de plus que ce que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit deja connu <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> inseré dans
                <lb/>son <rs type="biblio">Traitté des Quadratures</rs>. Mais ayant vû le papier de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, il
                <lb/>ajouta un <hi rend="u">appendix</hi>, où il donnoit, à ce qu'il soutient, la Demonstration des
                <lb/>Theorèmes de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>. Celui ci piqué de ce que l'autre le talonoit ainsi,
                <lb/>publia dans les <rs type="biblio">Transactions Philosophiques</rs> un petit Mémoire, mais très curieux
                <lb/><hi rend="u">De Sectione Anguli</hi>, qui contient une addition considérable à sa Methode. Mais
-               <lb/>Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> a quitté la Partie, &amp; n'a pas voulu ou n'a pas pu en donner la
+               <lb/>Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> a quitté la Partie, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> n'a pas voulu ou n'a pas pu en donner la
                <lb/>Démonstration. Outre cela, je crois qu'il y avoit auparavant quelque froideur
-               <lb/>entr'eux, parce que Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> est plus calculateur &amp; plus versé dans la Méthode
-               <lb/>Analytique que dans la Méthode synthetique emploiée par les Anciens &amp; par
+               <lb/>entr'eux, parce que Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> est plus calculateur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> plus versé dans la Méthode
+               <lb/>Analytique que dans la Méthode synthetique emploiée par les Anciens <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par
                <lb/>Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> dans les Principes, là où Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, qui est apparemment
                <lb/>plus éxercé dans cette dernière Méthode, affecte de mépriser l'Analyse Algebrique
-               <lb/>&amp; les Calculs. Vous en pouvez juger par ses Lettres anonymes sur les Trajectoires
-               <lb/>réciproques, &amp; je crois vous avoir dit avec quel succés il a emploié la Synthese
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les Calculs. Vous en pouvez juger par ses Lettres anonymes sur les Trajectoires
+               <lb/>réciproques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je crois vous avoir dit avec quel succés il a emploié la Synthese
             <pb facs="1073762" n="6"/>
 <lb/>dans ce qu'il a donné touchant la figure des Vesicules Musculaires. Mais
                <lb/>en voici un autre Exemple, tiré de son <del/>noueveau Livre, sur lequel j'ai jetté
@@ -330,21 +330,21 @@
                <lb/>des Mathématiques. Il s'agit de leur expliquer la fameuse Regle de Kepler
                <lb/>qu'on enonce ordinairement ainsi, Les Quarrés des Tems périodiques sont
                <lb/>comme les Cubes des Distances. D'abord Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> evite cet Enoncé,
-               <lb/>parceque les Termes tirent leur origine de l'Arithmetique, &amp; propose ainsi
+               <lb/>parceque les Termes tirent leur origine de l'Arithmetique, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> propose ainsi
                <lb/>cette Règle d'aprés Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, Les Tems periodiques sont en raison sesquipliquée
-               <lb/>des Distances, &amp; pour expliquer cette Phrase, il veut qu'on fasse 4 progressions
-               <lb/>Geometriques, les deux premières de trois Termes, &amp; les deux autres de 4 Termes.
+               <lb/>des Distances, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour expliquer cette Phrase, il veut qu'on fasse 4 progressions
+               <lb/>Geometriques, les deux premières de trois Termes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les deux autres de 4 Termes.
                <lb/>Que l'unité soit le premier Terme de </p>
 <p>1. T.A </p>
 <p>1. t.a</p>
 <p>1. D.B.C.</p>
 <p>1. d.b.c.</p>
 <p><lb/>toutes les 4 progressions.
-               <lb/>Que les Temps periodiques <formula>T</formula> &amp; <formula>t</formula> des deux Planettes qu'on veut
+               <lb/>Que les Temps periodiques <formula>T</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>t</formula> des deux Planettes qu'on veut
                <lb/>comparer soient les seconds termes des deux premières Progressions
-               <lb/>&amp; <formula>A</formula>, <formula>a</formula>, les derniers termes: Que <formula>D</formula> &amp; <formula>d</formula>, les Distances des deux
-               <lb/>Planètes, soient les seconds termes des deux autres Progressions, &amp; <formula>B</formula>, <formula>b</formula> les
-               <lb/>troisièmes &amp; <formula>C</formula>, <formula>c</formula>, les quatrièmes termes; alors, dit-il, <formula>A</formula> sera à <formula>a</formula> comme
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>A</formula>, <formula>a</formula>, les derniers termes: Que <formula>D</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>d</formula>, les Distances des deux
+               <lb/>Planètes, soient les seconds termes des deux autres Progressions, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula>, <formula>b</formula> les
+               <lb/>troisièmes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>C</formula>, <formula>c</formula>, les quatrièmes termes; alors, dit-il, <formula>A</formula> sera à <formula>a</formula> comme
                <lb/><formula>C</formula> est à <formula>c</formula>. Jugez, Monsieur, de la facilité qu'un homme qui n'aura jamais
                <lb/>ouvert un Livre de Mathematique, aura à comprendre tout cela.</p>
 <p><lb/>Mr. <rs key="pers_DE-588-118939297" type="person">'s Gravesande</rs>, dans la <rs type="biblio">Démonstration</rs> de l'égalité des Tems que
@@ -361,13 +361,13 @@
 <p><lb/>J'attens avec une grande impatience les Mémoires de <rs type="organisation">l'Académie de <rs key="place_GEO-498817" type="place">Petersbourg</rs></rs>,
                <lb/>mais j'aprehende qu'ils ne soient rares dans nôtre partie de l'Europe, à moins
                <lb/>qu'on ne les rimprime en <rs key="place_VER-hollan" type="place">Hollande</rs>.</p>
-<p><lb/>Je compte de rester à <rs key="place_GEO-2988507" type="place">Paris</rs> jusqu'au mois de Maj, &amp; ainsi d'y étre encore
+<p><lb/>Je compte de rester à <rs key="place_GEO-2988507" type="place">Paris</rs> jusqu'au mois de Maj, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ainsi d'y étre encore
                <lb/>dans le tems qu'on distribuera les Prix. Je serai ravi de m'aquiter de la
-               <lb/>Comission dont il vous plaira alors de me charger,</p> <closer>&amp; de vous temoigner
+               <lb/>Comission dont il vous plaira alors de me charger,</p> <closer><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous temoigner
                <lb/>par mon empressement la parfaite reconoissance que j'ai pour vos bontez
-               <lb/>&amp; le Zele avec lequel je suis
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le Zele avec lequel je suis
                <lb/>Monsieur
-               <lb/>Votre très humble &amp; très
+               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très
                <lb/>obeissant Serviteur
                <lb/><signed>G. Cramer</signed>.
                <dateline><rs key="place_GEO-2988507" type="place">Paris</rs> ce <date when="1729-03-14">14 Mars 1729</date></dateline>

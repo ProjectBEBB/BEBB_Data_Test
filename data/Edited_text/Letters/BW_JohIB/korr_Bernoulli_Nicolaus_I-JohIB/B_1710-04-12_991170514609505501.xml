@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- |a Verzaglia, Giuseppe  |d 1669-1728  |0 pers_DE-588-1089923198  |2 gnd fehlt im BIBB  --><!--_____________--><!--Comments that were in the teiHeader element--><!-- Nicht ganz sicher aus, welcher Zeit die Originaltranskription kommt, RG 17.08.2022 --><!--_____________-->
-
-<TEI xml:id="B_1710-04-12_991170514609505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170514609505501" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -122,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1710-04-09_991170514609605501" type="prev"/>
-        <ptr target="B_1710-06-10_991170514609405501" type="next"/>
+        <ptr target="B_991170514609605501" type="prev"/>
+        <ptr target="B_991170514609405501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Bernoulli_Nicolaus_I-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -191,6 +187,16 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- |a Verzaglia, Giuseppe  |d 1669-1728  |0 pers_DE-588-1089923198  |2 gnd fehlt im BIBB  -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Nicht ganz sicher aus, welcher Zeit die Originaltranskription kommt, RG 17.08.2022 -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1062920/manifest"/>
 </facsimile><text>
@@ -209,9 +215,9 @@
 <lb/><abbr>S. P. D<supplied>.</supplied></abbr>
 <lb/><rs key="pers_DE-588-118509969" type="person"><abbr>Joh.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></salute></opener>
 <p><lb/>Iter Tuum Adgnate Optime quod meditaris in <rs key="place_VER-frankr" type="place">Galliam</rs> ex 
-                    <lb/><rs key="brieftag" type="letter">novissimis Tuis</rs> l<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tus intellexi, illud ut ex animi sententia 
+                    <lb/><rs type="letter">novissimis Tuis</rs> l<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tus intellexi, illud ut ex animi sententia 
                    <lb/>absolvas, Te<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> nobis Deus reducem reddat salvum et sospi<pc type="hyphenation">-</pc><lb break="no"/>tem, est quod Tibi ardentissime voveo et apprecor.</p>
-<p><lb/>Ecce hic <rs key="brieftag" type="letter">litteras</rs> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endatitias sub sigillo quod ajunt volante
+<p><lb/>Ecce hic <rs type="letter">litteras</rs> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endatitias sub sigillo quod ajunt volante
                     <lb/>ad <abbr>Nob.</abbr> <rs key="pers_DE-588-103763058" type="person">Fatium</rs>, cui eas postquam lectas obsignaveris
                    <lb/>tradas statim ac <rs key="place_GEO-2660646" type="place">Genev<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> appuleris: Si quid in Tui gratiam
                    <lb/>possit efficere, non dubito quin sit lubens facturus
@@ -241,7 +247,7 @@
                    <lb/>et meas, sed nullam responsionem adhuc <subst><del>de</del><add>ab</add></subst> eo tuli; haud
                    <lb/>dubie de ejusmodi rebus et aliis cum eo agendi et Te in mathe<pc type="hyphenation">-</pc><lb break="no"/>maticis exercendi copiosa et frequens dabitur occasio <rs key="place_GEO-2988507" type="place">Parisiis</rs>.</p>
 <closer><lb/>Interim vale ab <rs key="pers_DE-588-108991332X" type="person">uxore</rs> et <rs key="pers_DE-588-117589144 pers_DE-588-1153514060 pers_DE-588-118656503 pers_DE-588-1089913494" type="persons">liberis meis</rs> quam plurimum salu<pc type="hyphenation">-</pc><lb break="no"/>tatus. <dateline>Dabam <rs key="place_GEO-2661604" type="place">Basile<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> <choice><abbr>a. d.</abbr><expan>ad diem</expan></choice> <date when="1710-04-12">XII. Aprilis MDCCX</date>.</dateline></closer>
-<postscript><p><abbr>P. S.</abbr><note type="editorial">Das P.S. befindet sich nur in der Fassung UB Basel, L Ia 673:Bl.54.</note> Il y a environ deux mois que je reçus une <rs key="brieftag" type="letter">lettre</rs> de <abbr>Mr.</abbr> <rs key="DE-588)119112450" type="person">Herman</rs> Profe<unclear>s</unclear><pc type="hyphenation">-</pc><lb break="no"/>seur en <rs key="place_GEO-3171728" type="place">Padoue</rs>, il se porte bien, et s'y plait assez; mais <choice><orig>a</orig><reg>à</reg></choice> ce qu'il me donne <choice><orig>a</orig><reg>à</reg></choice> en<pc type="hyphenation">-</pc><lb break="no"/>tendre il souhaiteroit de changer sa station avec une autre en <rs key="place_VER-hollan" type="place">Hollande</rs>,
+<postscript><p><abbr>P. S.</abbr><note type="editorial">Das P.S. befindet sich nur in der Fassung UB Basel, L Ia 673:Bl.54.</note> Il y a environ deux mois que je reçus une <rs type="letter">lettre</rs> de <abbr>Mr.</abbr> <rs key="DE-588)119112450" type="person">Herman</rs> Profe<unclear>s</unclear><pc type="hyphenation">-</pc><lb break="no"/>seur en <rs key="place_GEO-3171728" type="place">Padoue</rs>, il se porte bien, et s'y plait assez; mais <choice><orig>a</orig><reg>à</reg></choice> ce qu'il me donne <choice><orig>a</orig><reg>à</reg></choice> en<pc type="hyphenation">-</pc><lb break="no"/>tendre il souhaiteroit de changer sa station avec une autre en <rs key="place_VER-hollan" type="place">Hollande</rs>,
                     <lb/>quand je luy ecriray je me souviendray de luy dire que vous m'avez <choice><sic>demendé</sic><corr>demandé</corr></choice><del> aprez</del>
 <lb/>aprez ses nouvelles. 
                 </p></postscript>

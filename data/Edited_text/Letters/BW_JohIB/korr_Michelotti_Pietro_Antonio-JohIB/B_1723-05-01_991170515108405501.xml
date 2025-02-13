@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- tags (person, werk, ort, brief) am 22.11.2018; kollationiert am 26.02.2019--><!-- <change when="2022-05-02" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Personen im BIBB. Mit GND-Tags ausgezeichnet. 20.02.2019 --><!--_____________--><TEI xml:id="B_1723-05-01_991170515108405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515108405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -119,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1723-04-16_991170515108505501" type="prev"/>
-        <ptr target="B_1723-06-04_991170515108305501" type="next"/>
+        <ptr target="B_991170515108505501" type="prev"/>
+        <ptr target="B_991170515108305501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -164,16 +163,27 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- tags (person, werk, ort, brief) am 22.11.2018; kollationiert am 26.02.2019-->
+<!-- <change when="2022-05-02" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Personen im BIBB. Mit GND-Tags ausgezeichnet. 20.02.2019 -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079387/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079389" n="1"/>
 <opener><salute>Celeberrimo ac doctissimo Viro 
              <lb/>Petro Antonio <rs key="pers_DE-588-102552517" type="person">Michelotto</rs>
 <lb/><abbr>S. P. D.</abbr>
 <lb/><choice><abbr>Joh:</abbr><expan>Johannes</expan></choice> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs></salute></opener>
-<p><rs key="B_1723-04-16_991170515108505501" type="letter">Litter<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli vom 16. April 1723</note> 16 <choice><abbr>Apr.</abbr><expan>Aprili</expan></choice> dat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad me rectissime pervenerunt,
+<p><rs key="B_991170515108505501" type="letter">Litter<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli vom 16. April 1723</note> 16 <choice><abbr>Apr.</abbr><expan>Aprili</expan></choice> dat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad me rectissime pervenerunt,
          <lb/>ex quibus valetudinem Tuam secundam su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>o c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <choice><sic>gau-</sic><corr>gaudio</corr></choice>
 <lb/>percepi. Filius meus <rs key="pers_DE-588-118656503" type="person">Daniel</rs> nunc <rs key="place_GEO-2661552" type="place">Bern<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> agit apud
-         <lb/>Fratrem suum <rs key="pers_DE-588-117589144" type="person">Nicolaum</rs>, ubi Litteras<rs key="brieftag" type="letter"/> expectavit
+         <lb/>Fratrem suum <rs key="pers_DE-588-117589144" type="person">Nicolaum</rs>, ubi Litteras<rs type="letter"/> expectavit
          <lb/><rs key="place_GEO-3164603" type="place">Venetiis</rs>: in eo vero est ut propedi<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> se itineri co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ittat
          <lb/>ad Vos migraturus, id quod fiet, credo, proximo die
          <lb/>Lun<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; Fortassis ipsemet has Litteras, quippe quas

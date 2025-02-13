@@ -1,160 +1,326 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1724-03-08_991170429987505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Johann Jacob Scheuchzer. Basel, 08. März 1724</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>p 58 ist leer. Beilagen: 1. pp. 59-61: Auszug aus dem lat. Brief Bilfingers an Joh. I Bernoulli von 1724 02 14. 2. p. 63: Brief Bilfingers an Joh. I Bernoulli von 1724 02 28. 3. pp. 64-66 Abschrift des Briefes von Christian Wolff an Bilfinger von 1724.11.02 "De Fatis suis".</p>
-      </note>
-      <note type="print">pythonPlaceholderContent</note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Bernoulli-Wiki</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="B_991170429987505501">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Johann Jacob Scheuchzer. Basel,
+            08. März 1724</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000057287</title><title type="alt"
+            >1724-03-08_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob</title><title level="s">Basler
+            Edition der Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Scheuchzer, Johann Jakob (1672-1733) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>p 58 ist leer. Beilagen: 1. pp. 59-61: Auszug aus dem lat.
+            Brief Bilfingers an Joh. I Bernoulli von 1724 02 14. 2. p. 63: Brief Bilfingers an Joh.
+            I Bernoulli von 1724 02 28. 3. pp. 64-66 Abschrift des Briefes von Christian Wolff an
+            Bilfinger von 1724.11.02 "De Fatis suis".</p></note>
+        <note type="print">pythonPlaceholderContent</note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1724-03-08_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>ZB Zürich</repository>
+            <idno type="callNumber">Ms. H 321, pp.55-57</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170429987505501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972406923005504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000057287</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>pythonPlaceholderContent <dimensions unit="cm">
+                    <height>pythonPlaceholderContent</height>
+                    <width>pythonPlaceholderContent</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Bâle</origPlace><date when="1724-03-08">ce 8. Mars
+              1724</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1724-03-08_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>ZB Zürich</repository>
-          <idno type="callNumber">Ms. H 321, pp.55-57</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170429987505501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972406923005504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000057287</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>pythonPlaceholderContent <dimensions unit="cm"><height>pythonPlaceholderContent</height><width>pythonPlaceholderContent</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Bâle</origPlace>
-            <date when="1724-03-08">ce 8. Mars 1724</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1724-03-08">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1724-01-29_991170429988405501" type="prev"/>
-        <ptr target="B_1724-03-10_991170515276305501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Scheuchzer_Johann_Jakob-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="fre">Französisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person/>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="http://fakeURL.com"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1724-03-08">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_991170429988405501" type="prev"/>
+          <ptr target="B_991170515276305501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Scheuchzer_Johann_Jakob-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="fre">Französisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-118663208">Bilfinger, Georg Bernhard</persName>
+            <note type="lebensdaten">(1693-1750)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1037542061">Brandmüller, Johann</persName>
+            <note type="lebensdaten">(1678-1741)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11851685X">Buddeus, Johann Franz</persName>
+            <note type="lebensdaten">(1667-1729)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118535978">Friedrich Wilhelm</persName>
+            <note type="lebensdaten">(1688-1740)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118560050">Karl</persName>
+            <note type="lebensdaten">(1654-1730)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118569376">Lange, Joachim</persName>
+            <note type="lebensdaten">(1670-1744)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+            <note type="lebensdaten">(1646-1716)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-138676909">Natzmer, Dubislaw Gneomar von</persName>
+            <note type="lebensdaten">(1654-1739)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-114183734X">Pergen, Leopold Gottlieb von</persName>
+            <note type="lebensdaten">(1700-1749)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118592955">Peter</persName>
+            <note type="lebensdaten">(1672-1725)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-120379260">Scheuchzer, Johann</persName>
+            <note type="lebensdaten">(1684-1738)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1089647085">Waser, Hans Kaspar</persName>
+            <note type="lebensdaten">(1682-1763)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118634771">Wolff, Christian von</persName>
+            <note type="lebensdaten">(1679-1754)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1724-03-08_Bernoulli_Johann_I-Scheuchzer_Johann_Jakob"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/919461/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="919514" n="55"/> Monsieur et tres honoré Ami</p>
+        <p>Je compte que Vous aurés reçû ma derniere;<note type="editorial">Johann I Bernoulli an
+            Johann Jakob Scheuchzer von <rs key="B_991170429988405501" type="letter"
+              >1724.01.29</rs>.</note> je Vous ecris maintenant celleci pour accompagner les
+            extraits<note type="editorial">Im Manuskript steht "extrais".</note> que voici:<note
+            type="editorial">Es handelt sich um Kopien und Auszüge aus Briefen von Georg Bernhard
+            Bilfinger an Johann I Bernoulli von <rs key="B_991170514737805501"
+              type="letter">1724.02.14</rs> und von <rs key="B_991170514737705501"
+              type="letter">1724.02.28</rs> sowie eines Briefes von Christian Wolff an Georg
+            Bernhard Bilfinger von 1724.02.11 mit der Überschrift <hi rend="u">De fatis suis</hi>,
+            den Bilfinger im Auftrag von Christian Wolff als Kopie an Johann I Bernoulli zugesandt
+            hatte, die sich in ZB Zürich, Ms H 321, <ref
+              target="http://www.e-manuscripta.ch/zuz/content/pageview/919518">pp. 59-65</ref>,
+            befinden und von denen die erste im Anhang dieses Briefes wiedergegeben ist.</note>
+          C'est pour Vous donner notification suivant ma promesse de ce que j'ai reçû touchant
+          l'affaire de Mr. Wolf. La premiere lettre ou plutot extrait de lettre est de Mr.
+          Bulfinguer habile Mathematicien et Philosophe à Tubingue, ci devant Disciple de Mr. Wolf
+          et notre commun Ami, la seconde piece contient encore une lettre du meme Mr. Bulfinguer et
+          la Copie d'une lettre de Mr. Wolf lui meme, que M. Bulfinguer m'a communiquée par son
+            ordre.<note type="editorial">Dieser Text Wolffs "De fatis suis" war von Wolff zunächst
+            an Georg Bernhard Bilfinger gesandt worden. Bilfinger zitierte in seinem Brief an Johann
+            I Bernoulli von <rs key="B_991170514737705501" type="letter">1724.02.28</rs>
+            die folgende Passage aus Wolffs Begleitschreiben an ihn: "Optarem, ut cum Viro insigni
+            Bernoullio literas has communicares in Apographo, vel prout commodum visum fuerit." Er
+            legte dann - Wolffs Auftrag folgend - unter der Überschrift "Copia Epistolae Chr.
+            Wolffi: Marpurgi 11 Febr. 1724. De Fatis Suis" eine Abschrift des Textes seinem Brief an
+            Johann I Bernoulli bei. Der Text von Wolffs "De fatis suis" ist publiziert in: Nagel,
+            Fritz, <hi rend="u">Kooperation und Kontroverse. Christian Wolff im Briefwechsel mit
+              Johann I Bernoulli</hi>, in: Stolzenberg J./Rudolph O.-P. (eds.), Christian Wolff,
+            Gesammelte Werke, Dokumente und Materialien, II,4. Christian Wolff und die europäische
+            Aufklärung. Akten des 1. Internationalen Christian-Wolff-Kongresses, Halle (Saale),
+            4.-8. April 2004, Teil 4, Sektion 8: Mathematik und Naturwissenschaften, Sektion 9:
+            Ästhetik und Poetik. (Stolzenberg J./Rudolph O.-P. eds.), Hildesheim/Zürich/New York
+            2008, pp. 79-81.</note> Vous y verrés une relation bien detaillée de sa querelle avec
+          les Theologiens Hypocrites et de toute la suite avec quelques autres circonstances par
+          rapport à son etablissement à Marpurg et à la vocation de Russie. Vous trouverés qu'il ne
+          fait pas mention du crime de lese Majesté qu'on Lui a voulu imputer, pour avoir fait, dit
+          on, une dedicace au Czar, dans la quelle il doit avoir fait un parallele injurieux au Roi
+          de Prusse:<note type="editorial"> Gemeint ist Christian Wolffs Widmung an Peter I. d. Gr.,
+            Kaiser von Russland, in seiner Schrift <hi rend="u">Vernünfftige Gedancken von den
+              Würckungen der Natur, den Liebhabern der Wahrheit mitgetheilet ...</hi>, Halle
+            (Rengerische Buchhandlung) 1723. In dieser Widmung findet sich jedoch kein Vergleich mit
+            Friedrich Wilhelm I. von Preussen.</note> Ensorte que je ne sçai si ç'a été une calomnie
+          contre le pauvre Mr. Wolf, ou si celuici a dissimulé le fait; <pb facs="919515" n="56"/>
+          pour moi, je suspens mon jugement, au moins Mr. Bulfinguer lui donne-t-il le temoignage
+          qu'il parle et qu'il ecrit de son Roi aussi honorablement comme s'il n'avoit jamais été
+          outragé. Peutetre que le Roi se repentira de sa sentence rigoureuse donnée avec tant de
+          precipitation. </p>
+        <p>N'y a-t-il point encore de nouvelles de notre Comte;<note type="editorial">Leopold
+            Gottlieb Graf von Pergen (1700-1749).</note> a-t-il passé les oubliettes, ou ne peut on
+          pas sçavoir ce qu'il est devenu aprés qu'il est sorti de la Suisse? Si Vous en sçavés
+          quelque chose par le Canal de Mr. le Baillif Waser,<note type="editorial">Johann Kaspar
+            Waser (1682-1763), Landvogt auf Sax.</note> je vous prie de m'en donner communication.
+          Vous obligerés beaucoup Monsieur Votre treshumble et tres-obeissant Serviteur J.
+          Bernoulli</p>
+        <p>Bâle ce 8. Mars 1724.</p>
+        <p>P. S. Ma cordiale salutation s. v. p. à Mr. Votre Frere. </p>
+        <p>Je reçois dans ce moment de Mr. Brandmuller<note type="editorial">Johann Brandmüller der
+            Jüngere (1678-1741).</note> cette feuille imprimée. C'est le plan d'un Lexicon qu'il
+          veut imprimer sur celui de Buddeus avec beaucoup d'augmentations particulierement <pb
+            facs="919516" n="57"/> touchant la Suisse.<note type="editorial">Iselin, Jakob
+            Christoph, <hi rend="u">Neu-vermehrtes Historisch- und Geographisches Allgemeines
+              Lexicon ... Dissmahlen von neuem mit Fleiss gantz übersehen, von einer grossen Anzahl
+              Fehlern ... gereiniget, und sonderlich was die Schweitzerische und angräntzender Orten
+              und Ländern Sachen betrifft, gantz umgegossen, und um ein grosses vermehret ...</hi>,
+            Basel (J. Brandmüller) 1726-1727.</note> J'ai crû que Vous seriés peutetre bien d'en
+          étre informé, c'est pourquoi j'ajoute cette feuille à mes papiers. <note type="editorial"
+            >Es folgen im Manuskript die oben erwähnten drei Beilagen, von denen hier nur die erste
+            (ein Auszug aus dem Brief von Georg Bernhard Bilfinger an Johann I Bernoulli von <rs
+              key="B_991170514737805501" type="letter">1724.02.14</rs>) wiedergegeben
+            wird.</note>
+          <pb facs="919465" n="4"/> Excerpta ex Litt. Cl. Bulfingeri ad J. B. d. 14. febr.
+            1724.<note type="editorial">Die Überschrift ist von Johann I Bernoulli eigenhändig, der
+            Brieftext von Kopistenhand geschrieben.</note>
+        </p>
+        <p>Praebuisse Hassiae Principem Celeb. Wolffio perfugium sine dubio ex novellis didicisti.
+          Exspectavi Litteras Viri, ut compertiora Tibi Significare possim, quas Theologi Halenses
+          Viro lites excitarunt: subinde magis magisque incensae sunt, et publicis Theologi,
+          Joachimi Langii scriptis atque Responsionibus Wolffianis<note type="editorial">Im
+            Manuskript steht "Wollfianis".</note> asperatae. Delata est ad Regem causa et mandata
+          Theologis Berolinensibus ejus cognitio. Audio, illos agnovisse, quam parum candide
+          Adversarii Wolffio Spinosismum exprobrarent, et Religionis universae et Prudentiae Civilis
+          exterminium. Halenses igitur causae diffisos, Nazmero Copiarum Regiarum praefecto, Halam
+          in Itinere transeunti persuasisse, Wolffium publicis Lectionibus docere fatum, idemque hoc
+          ipso Exemplo declarare: si maximo Rex sumtu Milites conscribat iidemque signa deserant,
+          injustissimum id factum esset, si ea de causa miseri puniantur, fato enim actos esse et
+          nihil adversus Regem peccasse: <pb facs="919466" n="5"/> Retulit id Regi Nazmerus, cum
+          Litteratis alia de causa indignaretur, eoque facto Regem permovit ut sua ipse manu
+          decretum perscriberet quo Terris Regiis intra bidui spatium Wolffius excedere juberetur;
+          ni pareret suspensum iri. Exiit igitur Academia quam ornaverat, et Casselam contendit,
+          quoniam Seren. Landgravius Professionem ipsi Marpurgensem antea obtulerat, clementer ille
+          exceptus est, et Cathedram obtinuit Philosophiae primariam cum salario 1000 Thalerorum.
+          Videtur Sereniss. Princeps vereri abitum Viri si melior conditio offeratur, itaque
+          peculiarem ipsi domum denovo extrui curat atque omnino Honoratissime illum complectitur.
+          Wolffius de Rege suo et loquitur et scribit, quasi nihil laesus esset, honorificentissime:
+          Orationem ipsius inauguralem, et in Metaphysicam Notas audio Typis excudi
+          Francofurtensibus, Responsionem item ad Criminationes Jo. Franc. Buddei, Theologi <pb
+            facs="919467" n="6"/> Jenensis, quem Halensibus accessisse fama est. Meum quendam
+          Tractatum de Origine et Permissione Mali Scriptum (quo parum abfuit quin grave infortunium
+          mihi invidia quorundam in consulto zelo praefervidorum conflatum fuisset) mittam
+          Francofurto Proximis Nundinis; neque enim citior occasio erit. Dici non potest quam
+          infensi sint Philosophiae Leibnitianae homines quidam dominabundi inter Theologos. Saltim,
+          ubi Wolffiana inter nos fata cognita sint: inhiabant occasioni adversarii mei neque per
+          illos stabat, quo minus affligerer; diversum Deo placuit, qui meam hactenus causam et
+          fortunam tuitus est. Intelliges ex dictis, Vir Magnifice, quare parcius attingere
+          Mathematica licuerit, posthac spero diligentius colenda. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

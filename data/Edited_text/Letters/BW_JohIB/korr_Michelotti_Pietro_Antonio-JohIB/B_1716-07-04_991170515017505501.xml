@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!--Nicht der richtige Girolamo Venier getagt, richtig ist: Girolamo Venier, 1650-1735 pers_DE-588-1253768439; im Katalog noch falsch--><!-- Moderatores ergänzen --><!-- Mecenates, aus dem Kontext ergänzen --><!-- Theupolo: Laurentius Theupolo Eq. D.M.P. pers_DE-588-121843858, Tiepolo, Lorenzo 〈1673-1742〉
-Venier: Hieronymus Venerio Eq. D.M.P. Nicolai Eq. D.M.P. Fil. pers_DE-588-1253768439, Girolamo Venier 1650-1735
-
-Zorzi, Marino: Marinus Georgius Marini F., Keine GND, Marino Zorzi, Schwiegersohn des Riformatore F. Loredan --><!--_____________--><TEI xml:id="B_1716-07-04_991170515017505501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515017505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -124,8 +120,8 @@ Zorzi, Marino: Marinus Georgius Marini F., Keine GND, Marino Zorzi, Schwiegersoh
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1716-06-06_991170515017605501" type="prev"/>
-        <ptr target="B_1716-07-24_991170515017405501" type="next"/>
+        <ptr target="B_991170515017605501" type="prev"/>
+        <ptr target="B_991170515017405501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -171,12 +167,27 @@ Zorzi, Marino: Marinus Georgius Marini F., Keine GND, Marino Zorzi, Schwiegersoh
       <change when="2022-06-20" who="CG">Zeilenfall und GND Korrektur</change>
       <change when="2022-02-18" who="CG">Struktur, Personen,Orte: mecenates fehlen noch, Moderatores muss überprüft und ergänzt werden</change>
       <change when="2021-12-04">Personen ausgezeichnet; zwei Einträge fehlen noch: Moderatores und Mecenates</change>
-      <change when="2018-11-29">Sachtags (person-, brief-, etc.) und <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> eingefügt</change>
+      <change when="2018-11-29">Sachtags (person-, brief-, etc.) und Entity "j" eingefügt</change>
       <change when="2018-08-27">kollationiert</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--Nicht der richtige Girolamo Venier getagt, richtig ist: Girolamo Venier, 1650-1735 pers_DE-588-1253768439; im Katalog noch falsch-->
+<!-- Moderatores ergänzen -->
+<!-- Mecenates, aus dem Kontext ergänzen -->
+<!-- Theupolo: Laurentius Theupolo Eq. D.M.P. pers_DE-588-121843858, Tiepolo, Lorenzo 〈1673-1742〉
+Venier: Hieronymus Venerio Eq. D.M.P. Nicolai Eq. D.M.P. Fil. pers_DE-588-1253768439, Girolamo Venier 1650-1735
+
+Zorzi, Marino: Marinus Georgius Marini F., Keine GND, Marino Zorzi, Schwiegersohn des Riformatore F. Loredan -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1078853/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1078854" n="1"/>
 <opener><salute>Viro Pereximio at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Clarissimo
@@ -197,7 +208,7 @@ Zorzi, Marino: Marinus Georgius Marini F., Keine GND, Marino Zorzi, Schwiegersoh
 <lb/><rs type="organisation">Archilycei Patavini</rs> destinata sit <rs key="pers_DE-588-119166895" type="person">Adgnato
                 <lb/>meo</rs> <rs type="organisation">Cathedra Mathematica</rs>, non dubito, quin Tibi
              <lb/>fere soli felicem hunc successum debeat, quod
-             <lb/>etiam mecum agnoscit, ut ex <rs key="B_1716-06-06_991170517051105501" type="letter">ejus litteris nuperis</rs><note type="editorial">Nikolaus I Bernoulli an Pietro Antonio Michelotti, 06. Juni 1716</note>
+             <lb/>etiam mecum agnoscit, ut ex <rs key="B_991170517051105501" type="letter">ejus litteris nuperis</rs>
 <lb/>intellexeris: miror autem quod nondum acceperit
              <lb/>litteras solennes su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vocationis, optand<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, ut quam
              <lb/>citissime mittan<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim si proximo mense
@@ -227,7 +238,7 @@ Zorzi, Marino: Marinus Georgius Marini F., Keine GND, Marino Zorzi, Schwiegersoh
              <lb/>gratissima, quod <rs key="pers_DE-588-117589144" type="person">Filius meus</rs> Mecenates<!-- persontag --> Tuos invisat, ipsis<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> suum
              <lb/>cult<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> et observanti<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> offerat, spero nam<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> fore ut cum ipsis satis innotu<pc type="hyphenation">-</pc><lb break="no"/>erit aliquam ab ipsis, Tua pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim commendatione stipatus, promo<pc type="hyphenation">-</pc><lb break="no"/>tionem impetrare possit, ut fortasse cum <rs key="pers_DE-588-119166895" type="person">Agnato meo</rs> <rs key="place_GEO-3171728" type="place">Patavii</rs> docere
              <lb/>queat, quod mihi magno solatio foret; aut saltem ut aliquando illius successor fiat<choice><orig>.</orig><reg>,</reg></choice>
-<lb/>studiosus aliquis assidue describit manuscripta mea Lectionum mearum<note type="editorial">Nachweisen</note><rs type="biblio" key="BiblioID"/>
+<lb/>studiosus aliquis assidue describit manuscripta mea Lectionum mearum<note type="internal">Nachweisen</note><rs type="biblio" key="BiblioID"/>
 <lb/>secretior<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> et sublimiorum pro <rs key="pers_DE-588-100814891" type="person">Hospitalio</rs> quondam <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> me compositarum<supplied>,</supplied><!--unklar welches Werk hier gemeint ist, kein Endtag vorhanden-->
 <lb/>transmittam Tibi apograph<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <rs key="pers_DE-588-119166895" type="person">Agnatum</rs>, qui Tibi salut<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> dicit plu<pc type="hyphenation">-</pc><lb break="no"/>rimam, respondebit<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ad nuperrimas Tuas, ubi quid certius de vocatione
              <lb/>perceperit, in ea cum sit persuasione, solennem vocationem diu e<pc type="hyphenation">-</pc><lb break="no"/>manere non posse, si de se vocando serio convent<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> fuerit inter <choice><abbr>Excell.</abbr><expan>Excellentissimos</expan></choice>

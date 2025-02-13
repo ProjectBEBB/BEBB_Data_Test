@@ -1,227 +1,578 @@
-<?xml version="1.0" encoding="utf-8"?>
-  <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
-<TEI xml:id="B_1710-10-07_991170514968405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <fileDesc>
-    <titleStmt>
-      <title type="full">
-        <title type="main">Johann I Bernoulli an Jacob Hermann. Basel, 07. Oktober 1710</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title type="alt">manualPlaceholderContent</title>
-        <title level="s">Basler Edition der Bernoulli-Briefwechsel</title>
-      </title>
-    </titleStmt>
-    <editionStmt>
-      <edition>manualPlaceholderContent</edition>
-      <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
-      <respStmt>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-        <resp>
-          <note type="remarkResponsibility"/>
-        </resp>
-      </respStmt>
-      <funder>SAGW</funder>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Bernoulli-Euler-Zentrum</publisher>
-      <pubPlace>Basel</pubPlace>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY 4.0)</licence>
-      </availability>
-      <idno type="URLWeb">pythonPlaceholderContent</idno>
-      <idno type="URLXML">pythonPlaceholderContent</idno>
-      <date when="9999-01-01">01.01.9999</date>
-    </publicationStmt>
-    <seriesStmt>
-      <title level="s" type="Briefwechsel"/>
-      <title level="s" type="Korrespondenz">
-</title>
-    </seriesStmt>
-    <notesStmt>
-      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-      <note type="generalRemark">
-        <p>Autographe Korrekturen. Die letzten 8 Zeilen mit Datum autograph. Enthält Johanns Lösung des inversen Problems sowie seine Kritik an Hermanns Lösung</p>
-      </note>
-      <note type="print">
-        <p>Druck in: Mém. Paris 1710 (1712), pp.521-533 (Extrait). - Joh.I B. Opera I, pp.470-480</p>
-      </note>
-      <note type="erschliessbarkeit">Erhalten</note>
-      <note type="dataGroup">Druck historisch</note>
-      <relatedItem type="otherForm">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msDesc>
-          <msIdentifier>
-            <repository>PlaceholderContent</repository>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514968405501" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="full"><title type="main">Johann Bernoulli an Jacob Hermann. Basel, 07. Oktober
+            1710</title><title type="alt">get_date!: () an ()</title><title type="alt"
+            >000055927</title><title type="alt"
+            >1710-10-07_Bernoulli_Johann_I-Hermann_Jacob</title><title level="s">Basler Edition der
+            Bernoulli-Briefwechsel</title></title>
+      </titleStmt>
+      <editionStmt>
+        <edition>manualPlaceholderContent</edition>
+        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <respStmt>
+          <persName key="pers_DE-588-"><surname/><forename/></persName>
+          <resp><note type="remarkResponsibility"/></resp>
+        </respStmt>
+        <funder>SAGW</funder>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Bernoulli-Euler-Zentrum</publisher>
+        <pubPlace>Basel</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">(CC BY
+            4.0)</licence>
+        </availability>
+        <idno type="URLWeb">pythonPlaceholderContent</idno>
+        <idno type="URLXML">pythonPlaceholderContent</idno>
+        <date when="9999-01-01">01.01.9999</date>
+      </publicationStmt>
+      <seriesStmt>
+        <title level="s" type="Briefwechsel">Der Briefwechsel von <rs key="pers_DE-588-118509969"
+            type="person">Johann I Bernoulli</rs> (1667-1748)</title>
+        <title level="s" type="Korrespondenz">Hermann, Jacob (1678-1733) </title>
+      </seriesStmt>
+      <notesStmt>
+        <note type="generalRemark"><p>Autographe Korrekturen. Die letzten 8 Zeilen mit Datum
+            autograph. Enthält Johanns Lösung des inversen Problems sowie seine Kritik an Hermanns
+            Lösung</p></note>
+        <note type="print"><p>Druck in: Mém. Paris 1710 (1712), pp.521-533 (Extrait). - Joh.I B.
+            Opera I, pp.470-480</p></note>
+        <note type="erschliessbarkeit">Erhalten</note>
+        <note type="dataGroup">Bernoulli-Wiki</note>
+        <relatedItem type="otherForm">
+          <msDesc>
+            <msIdentifier>
+              <repository>PlaceholderContent</repository>
+            </msIdentifier>
+          </msDesc>
+        </relatedItem>
+      </notesStmt>
+      <sourceDesc>
+        <msDesc
+          facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-10-07_Bernoulli_Johann_I-Hermann_Jacob"
+          rend="pythonPlaceholderContent">
+          <msIdentifier source="BIBB">
+            <repository>Universitätsbibliothek Basel, Handschriften</repository>
+            <idno type="callNumber">UBH L Ia 659, Nr.7</idno>
+            <altIdentifier>
+              <idno type="ALMA_NZ">991170514968405501</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALMA_IZ">9972432923705504</idno>
+            </altIdentifier>
+            <altIdentifier>
+              <idno type="ALEPH">000055927</idno>
+            </altIdentifier>
           </msIdentifier>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <extent>9 S.<dimensions unit="cm">
+                    <height>21,5</height>
+                    <width>16,5</width>
+                  </dimensions></extent>
+              </supportDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote scribe="author">manualPlaceholderContent</handNote>
+            </handDesc>
+            <accMat>pythonPlaceholderContent</accMat>
+          </physDesc>
+          <history>
+            <origin><origPlace>Basileae</origPlace><date when="1710-10-07">a.d. 7. 8bris
+              1710</date></origin>
+          </history>
         </msDesc>
-      </relatedItem>
-    </notesStmt>
-    <sourceDesc>
-      <msDesc facs="http://www.ub.unibas.ch/bernoulli/index.php/1710-10-07_Bernoulli_Johann_I-Hermann_Jacob" rend="pythonPlaceholderContent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <msIdentifier source="BIBB">
-          <repository>Universitätsbibliothek Basel, Handschriften</repository>
-          <idno type="callNumber">UBH L Ia 659, Nr.7</idno>
-          <altIdentifier>
-            <idno type="ALMA_NZ">991170514968405501</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALMA_IZ">9972432923705504</idno>
-          </altIdentifier>
-          <altIdentifier>
-            <idno type="ALEPH">000055927</idno>
-          </altIdentifier>
-        </msIdentifier>
-        <physDesc>
-          <objectDesc>
-            <supportDesc>
-              <extent>9 S.<dimensions unit="cm"><height>21,5</height><width>16,5</width></dimensions></extent>
-            </supportDesc>
-          </objectDesc>
-          <handDesc>
-            <handNote scribe="author">manualPlaceholderContent</handNote>
-          </handDesc>
-          <accMat>pythonPlaceholderContent</accMat>
-        </physDesc>
-        <history>
-          <origin>
-            <origPlace>Basileae</origPlace>
-            <date when="1710-10-07">a.d. 7. 8bris 1710</date>
-          </origin>
-        </history>
-      </msDesc>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <classDecl>
-      <taxonomy>
-        <category>
-          <catDesc>letter</catDesc>
-        </category>
-      </taxonomy>
-    </classDecl>
-  </encodingDesc>
-  <profileDesc>
-    <correspDesc>
-      <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
-        <date when="1710-10-07">pythonPlaceholderContent</date>
-      </correspAction>
-      <correspAction type="received">
-        <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
-      </correspAction>
-      <correspContext>
-        <ptr target="B_1710-07-12_991170514968505501" type="prev"/>
-        <ptr target="B_1710-12-06_991170514968305501" type="next"/>
-        <ptr target="BW_JohIB" type="Briefwechsel"/>
-        <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
-      </correspContext>
-    </correspDesc>
-    <langUsage>
-      <language ident="lat">Lateinisch</language>
-    </langUsage>
-    <abstract>
-      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
-      <p>initialPythonPlaceholderContent</p>
-      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
-      <listPerson>
-        <person>
-          <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
-          <note type="lebensdaten">(1655-1705)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
-          <note type="lebensdaten">(1695-1726)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-104185643">Burnet, William</persName>
-          <note type="lebensdaten">(1688-1729)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-124465641">Craig, John</persName>
-          <note type="lebensdaten">(1663-1731)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
-          <note type="lebensdaten">(1564-1642)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118937669">Grandi, Guido</persName>
-          <note type="lebensdaten">(1671-1742)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
-          <note type="lebensdaten">(1648-1729)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
-          <note type="lebensdaten">(1646-1716)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
-          <note type="lebensdaten">(1667-1754)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
-          <note type="lebensdaten">(1643-1727)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
-          <note type="lebensdaten">(1666-1716)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
-          <note type="lebensdaten">(1683-1761)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-120166658">Sacheverell, Henry</persName>
-          <note type="lebensdaten">(1674-1724)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-124548881">Santorio, Santorio</persName>
-          <note type="lebensdaten">(1561-1636)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
-          <note type="lebensdaten">(1672-1733)</note>
-        </person>
-        <person>
-          <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
-          <note type="lebensdaten">(1654-1722)</note>
-        </person>
-      </listPerson>
-    </abstract>
-    <textClass/>
-  </profileDesc>
-  <revisionDesc status="bernoulliwiki">
-    <listChange>
-      <change when="2023-10">generiert</change>
-    </listChange>
-  </revisionDesc>
-</teiHeader>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <classDecl>
+        <taxonomy>
+          <category>
+            <catDesc>letter</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
 
-<facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1042558/manifest"/>
-</facsimile>
-<text>
-<body>
-<div type="letter">
-<pb facs="1042559" n="1"/> <pb facs="1042560" n="2"/> <pb facs="1042561" n="3"/> <pb facs="1042562" n="4"/> <pb facs="1042563" n="5"/> <pb facs="1042564" n="6"/> <pb facs="1042565" n="7"/> <pb facs="1042566" n="8"/> <pb facs="1042567" n="9"/> <pb facs="1042568" n="10"/> <pb facs="1042569" n="11"/> <pb facs="1042570" n="12"/>
-<head>Der edierte Brieftext kann vorläufig im <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/Kategorie:Bernoulli_Johann_I">Bernoulli-Wiki</ref> konsultiert werden.</head>
-</div>
-</body>
-</text>
+          <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
+            >Basel</placeName>
+          <date when="1710-10-07">pythonPlaceholderContent</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName key="pers_DE-588-119112450">Hermann, Jacob</persName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
+            >manualPlaceholderContent</placeName>
+        </correspAction>
+        <correspContext>
+          <ptr target="B_991170514968505501" type="prev"/>
+          <ptr target="B_991170514968305501" type="next"/>
+          <ptr target="BW_JohIB" type="Briefwechsel"/>
+          <ptr target="korr_Hermann_Jacob-JohIB" type="Korrespondenz"/>
+        </correspContext>
+      </correspDesc>
+      <langUsage>
+        <language ident="lat">Lateinisch</language>
+      </langUsage>
+      <abstract>
+        <p>PythonPlaceholderContent</p>
+        <listPerson>
+          <person>
+            <persName key="pers_DE-588-118509950">Bernoulli, Jakob</persName>
+            <note type="lebensdaten">(1655-1705)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117589144">Bernoulli, Nicolaus</persName>
+            <note type="lebensdaten">(1695-1726)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-104185643">Burnet, William</persName>
+            <note type="lebensdaten">(1688-1729)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-124465641">Craig, John</persName>
+            <note type="lebensdaten">(1663-1731)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118537229">Galilei, Galileo</persName>
+            <note type="lebensdaten">(1564-1642)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118937669">Grandi, Guido</persName>
+            <note type="lebensdaten">(1671-1742)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-1048628825">Hermann, Germanus</persName>
+            <note type="lebensdaten">(1648-1729)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118571249">Leibniz, Gottfried Wilhelm</persName>
+            <note type="lebensdaten">(1646-1716)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-117586765">Moivre, Abraham de</persName>
+            <note type="lebensdaten">(1667-1754)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118587544">Newton, Isaac</persName>
+            <note type="lebensdaten">(1643-1727)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-105511131X">Parent, Antoine</persName>
+            <note type="lebensdaten">(1666-1716)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
+            <note type="lebensdaten">(1683-1761)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-120166658">Sacheverell, Henry</persName>
+            <note type="lebensdaten">(1674-1724)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-124548881">Santorio, Santorio</persName>
+            <note type="lebensdaten">(1561-1636)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-118607308">Scheuchzer, Johann Jacob</persName>
+            <note type="lebensdaten">(1672-1733)</note>
+          </person>
+          <person>
+            <persName key="pers_DE-588-119062372">Varignon, Pierre</persName>
+            <note type="lebensdaten">(1654-1722)</note>
+          </person>
+        </listPerson>
+      </abstract>
+      <textClass/>
+    </profileDesc>
+    <revisionDesc status="kollationiert">
+  <listChange>
+      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
+          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
+          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
+          mit der Universitätsbibliothek Basel</title> at <ptr
+          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1710-10-07_Bernoulli_Johann_I-Hermann_Jacob"
+        />
+      </change>
+      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
+          <ptr
+          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
+        />
+      </change>
+  </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="https://www.e-manuscripta.ch/i3f/v20/1042558/manifest"/>
+  </facsimile>
+  <text>
+    <front>
+      <div type="editorialNote">
+        <head>Editorische Vorbemerkung</head>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
+          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
+          zugrundeliegenden Editionsrichtlinien können <ref
+            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
+            >hier</ref> eingesehen werden.</p>
+      </div>
+    </front>
+    <body>
+      <div type="letter">
+        <p>
+          <pb facs="1042559" n="1"/> Viro Doctissimo atque Celeberrimo</p>
+        <p>Jacobo Hermanno </p>
+        <p>S. P. D.</p>
+        <p>Joh. Bernoulli. </p>
+        <p>Gratias refero Vir Celeber. pro humanissima Tua gratulatione, qua in litteris Tuis die
+          12. Julij datis prosequi voluisti Decani munus praeter omnem expectationem et mirabili
+          modo in me licet invitum iterata vice collatum, quanquam si bene numeres annos ex quo
+          prima vice ad hanc dignitatem admovebar facile intelligas, biennium adhuc requiri, donec
+          ordo me tangeret, sed ita fuit in fatis, et verum esse comperio tritum illud "accidit in
+          puncto, quod non speratur in anno"<note type="editorial">[Text folgt]</note>. Scriptum
+          Tuum contra Parentium mature prodierit, quandocunque prodierit, nam sat cito si sat bene,
+          adeoque non est quod festines in praejudicium graviorum Tuorum negotiorum Nob. Burnetus
+          secundum ea quae nuper mihi scripsit, nunc forte in Angliam reversus, ubi magnam rerum
+          catastrophen deprehendet, postquam factio illa quae vocatur "Rigidorum" alteri
+          "Moderatorum" praevaluit<note type="editorial">Es handelt sich um die Parteien der Whigs
+            und der Tories.</note>, occasionem huic mutationi praebente quodam Saccheverello Th.
+          Doctore homine perniciosissimo<note type="editorial">Henry Sacheverell (1674-1724),
+            Ideologe der Tories</note>; ex quo novo rerum statu, multi ex sagacioribus nihil boni
+          pro belli eventu ominantur, et abruptas a Gallis pacis Tractationes non allii causae quam
+          huic adscribunt, opinantes scilicet ex ea re Gallos favorabiliorem fortunam, quae res suas
+          collapsas restituere queat, sperare. Negotium Leidense de vocando Professore nunc iterum
+          silet, nihilque de eo aliud mihi constat quam quod in novissimis meis ad Te perscripsi.
+          Scriptum meum quod adversus Craigium paraveram in defensionem inventi mei circa motum
+            reptorium<note type="editorial">[Text folgt]</note>, et quod miseram Cl. Scheuchzero
+          juniori in Angliam deferendum ad Cl. Moyvraeum, audio nunc in Angliam non trajecisse
+          Scheuchzerum, sed Belgio relicto recta Lutetiam petiisse, et ita scriptum meum insalutato
+          Moyvraeo ad me remissum iri, quod me male habet, ob frustra insumtum laborem in
+          conficienda responsione satis prolixa et taediosa, conabor tamen <pb facs="1042560" n="2"
+          /> alia occasione illud mittere in Angliam, interim aliquid de ea re insertum videbis,
+          quod responsionis loco erit, in Miscellaneis Berolinensibus<note type="editorial">[Text
+            folgt]</note>, quae significante Ampl. Leibnitio jam prodierunt, sed quae nondum vidi.
+          Utrum Cl. Varignonius qui de viribus centralibus ad nauseam usque egit, de inverso earum
+          problemate nunquam cogitaverit, an vero, quod probabilius est, cum solvendo se parem non
+          senserit, studio silentio illud praeterierit nunc quidem non disceptabimus, sed quod
+          satius duco et ad rem ipsam promovendam utilius; solutionem Tuam utut bonam et ingenii Tui
+          acumen satis pandentem non nihil examinabo, et postea meam solvendi methodum Tibi quia
+          petis fusius exponam: quod igitur statim attinet ad Tuam analysin, videtur ea ex consilio
+          accomodata ad quaesitum, quod Tibi jam antea innotuit; Quis enim Tibi dixisset aequationem
+          ad quam pervenis
+            <formula>\frac{-ddx\sqrt{xx+yy}}{x}=</formula><formula>\frac{\overline{ydx-xdy}{}^{^{2}}}{xx+yy}</formula>,
+          ad hanc formam esse reducendam
+            <formula>-addx=\overline{ydx-xdy}\times\frac{\overline{xydx-xxdy}}{\overline{xx+yy}\sqrt{xx+yy}}</formula>,
+          ut posses ejus integralia sumere? et quis iterum Te docuisset quomodo integralia illa sint
+          sumenda, et postea integralium integralia, siquidem indeterminatae <formula>x</formula>,
+            <formula>y</formula>, <formula>dx</formula>, <formula>dy</formula>,
+            <formula>ddx</formula>, in tantum sint intricatae, ut eas separare velle res esset
+          desperati laboris; permixtas vero eas integrare ut Tu fecisti, tantum non penitus fuisset
+          impossibile, nisi jam ante suspicatus esses sectiones conicas isti aequationi
+          differentio-diferentiali solas satisfacere, quam ergo variis modis tentando et ad scopum
+          praevisum torquendo tandem feliciter ad aequationem algebraicam reduxisti: quod si
+          conjectura me fallit, optarem ut methodum Tuam tentares in hypothesi generali, hoc est ut
+          data quacunque lege virium centripetarum invenires curvam trajectoriam saltem concessa
+          spatiorum curvilineorum quadratura; videbis enim in quantum labyrinthum indeterminatarum
+          permixtio Te deducet, ex quo Te extricandi nullum reperies filum, nisi aliam solvendi viam
+          ineas. Caeterum ex solutione Tua pro hypothesi particulari nondum sequitur solas sectiones
+          conicas satisfacere, oblitus enim es post primam integrationem aequationis differentio
+          differentialis, alterutri membro adjicere quantitatem constantem, unde aliquis facile
+          suspicari posset, forte aliud curvarum genus praeter sectiones conicas (ut plerunque
+          accidit) quaesito posse respondere, hoc vero loco ex adjectione quantitates constantis
+          nihil pro natura curvarum mutari ostendere debuisses; quod a Te omissum nunc ita suppleo;
+          in aequatione Tua differentio-differentiali <pb facs="1042561" n="3"/>
+          <formula>-addx=\overline{ydx-xdy}\times\frac{xydx-xxdy}{\overline{xx+yy}\sqrt{xx+yy}}</formula>
+          pro integrali membri <formula>-addx</formula>, pono non tantum <formula>-adx</formula>, ut
+          Tu facis, sed <formula>-adx\pm\textrm{Constante}</formula>, hoc est <formula>-adx\pm
+            e\times\overline{ydx-xdy}</formula>; reliqua nunc Tecum ita prosequor; sumtis
+          integralibus, erit <formula>-adx\pm
+            e\overline{ydx-xdy}=-\frac{y}{\sqrt{xx+yy}}\times\overline{ydx-xdy}=\frac{xydy-yydx}{\sqrt{xx+yy}}</formula>;
+          vel
+            <formula>-\frac{abdx}{xx}\pm\frac{eb}{xx}\times\overline{ydx-xdy}=\frac{bxydy-byydx}{xx\sqrt{xx+yy}}</formula>,
+          cujus integralis invenitur <formula>\frac{ab}{x}\mp\frac{eby}{x}\pm
+            c=\frac{b\sqrt{xx+yy}}{x}</formula>, seu (posito <formula>eb=h</formula> et reducta
+          aequatione) <formula>ab\mp hy\pm cx=b\sqrt{xx+yy}</formula>, quae non obstante quod nunc
+            <formula>hy</formula> accedat, quod in Tua abest, tamen aequatio est ad tres sectiones
+          conicas; quod si vero constans illa quam Tu neglexisti
+            <formula>e\times\overline{ydx-xdy}</formula> divisa per <formula>xx</formula>, non
+          fuisset integrabilis, vel saltem si ejus integrale dedisset <formula>y</formula> plurium
+          quam unius dimensionum, vides utique tunc alias curvas praeter sectiones conicas, Te
+          inscio et non credente, satisfacturas fuisse, ita ut non dubitem, quin Tuam solutionem
+          utpote non satis generalem defectuosam hac in parte libenter agnoscas. His ita praemissis,
+          lubet nunc meam solvendi methodum, Tibi eam petenti, pandere, quam non displicituram
+          spero, quoniam 1.<hi rend="sup">o</hi> generalis est, exhibens constructionem concessa
+          spatiorum curvilineorum quadratura pro qualibet hypothesi, nam
+            2<formula>.{}^{\text{do}}</formula> pervenio ad aequationem in qua indeterminatae sponte
+          separantur et 3.<hi rend="sup">io</hi> aequatio illa primis tantum differentialibus
+          constat, neque differentio differentialibus opus est. Ut itaque totum negotium ab ovo
+          deducam et paulo prolixius (non tamen ingrata prolixitate) prosequar, ante omnia hoc
+          propono </p>
+        <p><hi rend="u">Lemma</hi>
+        </p>
+        <p>Si duo corpora ex eodem puncto <formula>A</formula> aequali cum velocitate
+            <formula>AD</formula> incipiant descendere et iisdem viribus urgeantur ad punctum
+            <formula>O</formula>, unum quidem directe secundum rectam <formula>AO</formula>, alterum
+          vero oblique secundum trajectoriam quam describet <formula>ABC</formula>, dico illa duo
+          corpora in singulis a centro virium <formula>O</formula> aequalibus distantiis in
+            <formula>B</formula> et <formula>E</formula> fore aeque velocia, hoc est, si
+            <formula>EG</formula> designet velocitatem acquisitam in <formula>E</formula> corporis
+          recta descendentis, eandem quoque fore celeritatem in <formula>B</formula> corporis
+          trajectoriam <formula>ABC</formula> describentis. Demonstratio hujus habetur apud Newtonum
+          pag. 125<note type="editorial">[Text folgt]</note>, sed operosa et pro more ejus perplexa,
+          eam planiorem reddo hoc pacto: concipiantur tam curva <formula>ABC</formula>, quam recta
+            <formula>AEO</formula>, dividi per infinitos circulos concentricos quam proximos in
+          elementa sua <formula>Bb</formula> et <formula>Ee</formula>; jam cum ubique vis in
+            <formula>E</formula> recta urgens, sit ad eandem oblique urgentem secundum
+            <formula>Bb</formula>, ut ipsum <formula>Bb</formula> ad <formula>Ee</formula> (ceu ex
+          Mechanicis liquet); et quia etiam velocitatum incrementa se habent in ratione composita
+          illarum virium et elementorum temporis, haec vero elementa temporis sunt ab <pb
+            facs="1042562" n="4"/> initio <formula>A</formula> et ideo postea semper ut ipsae
+          longitudines lineolarum <formula>Bb</formula> et <formula>Ee</formula>; unde patet duo
+          ista corpora primis elementis Linearum percursis, acquirere aequalia velocitatis
+          incrementa; et sic aequali velocitate ad secunda pervenient, quibus itaque percursis,
+          iterum aequalia velocitatis incrementa acquirent, adeo ut etiam ad tertia, et ita ad
+          quarta, quinta, et sic deinceps ad quaecunque puncta <formula>B</formula> et
+            <formula>E</formula> aequali velocitate perveniant. Q. E. D. </p>
+        <p>Hoc Lemmate praemisso quaero nunc curvam velocitatum <formula>DGH</formula>, hoc est eam
+          cujus applicatae <formula>EG</formula> designent velocitates acquisitas in
+            <formula>E</formula> corporis recta descendentis, vel in <formula>B</formula> corporis
+          trajectoriam <formula>ABC</formula> describentis, quam ipsam trajectoriam postea facile
+          inveniemus: sit itaque <formula>OE=x</formula>, <formula>EG=v</formula>, et vis centripeta
+          = <formula>\xi</formula>, (intelligo per <formula>\xi</formula> datam quamcunque per
+            <formula>x</formula> et constantes hoc est quamcumque legem virium): jam quia tempus per
+            <formula>Ee</formula> aequatur ipsi <formula>\frac{dx}{v}</formula>, tempus vero hoc
+          multiplicatum per vim centripetam dat incrementum velocitatis si descendit, vel
+          decrementum si ascendit corpus; adeoque <formula>\frac{\xi dx}{v}=-dv</formula> vel
+            <formula>\xi dx=-vdv</formula> sumtisque integralibus <formula>\int\xi
+            dx=ab-vv</formula> (per <formula>ab</formula> intelligo quantitatem quamvis constantem,
+          quam integralibus adjicere licet pro arbitrio) hinc ergo <formula>v=\sqrt{ab-\int\xi
+            dx}</formula>. Q. E. D. </p>
+        <p>Ipsam nunc trajectoriam <formula>ABC</formula> determino, hoc pacto: sit
+            <formula>OA=a</formula>, et arcus eo radio descriptus <formula>AL=z</formula>,
+            <formula>Ll=dz</formula>, adeoque <formula>Nb=\frac{xdz}{a}</formula>, et
+            <formula>Nb\times BO</formula> (h. e. 2 areae <formula>\bigtriangleup</formula>li
+            <formula>BOb</formula> seu tempus per <formula>Bb</formula>)
+            <formula>=\frac{xxdz}{a}</formula>, hoc vero multiplicatum per velocitatem nempe per
+            <formula>\sqrt{ab-\int\xi dx}</formula>, dat spatium <formula>Bb</formula>, unde
+          aequatio <formula>\frac{xxdz}{a}\sqrt{ab-\int\xi
+            dx}=Bb=\sqrt{dx^{2}+\frac{xxdz^{2}}{aa}}</formula> qua reducta habetur
+            <formula>dz=\frac{caadx}{\sqrt{abx^{4}-x^{4}\int\xi dx-a^{2}c^{2}xx}}</formula>, (per
+            <formula>c</formula> intelligo quantitatem arbitrariam constantem ad supplenda homogenea
+          introductam) quae exprimit naturam trajectoriae quaesitae <formula>ABC</formula>. Q. E. I.
+          Vides itaque me statim pervenisse ad aequationem differentialem primi gradus, ubi nulla
+          est indeterminatarum implicatio, et sic constructio geometrica, concessis figurarum
+          curvilinearum quadraturis, facile adornari potest, imo commodius quam fecit Newtonus pag.
+          127 et seqq.<note type="editorial">Kontrollieren, ob ev. p. 122</note> Praeterea ex mea
+          aequatione statim patet utrum trajectoria quaesita sit algebraica nec ne incerta virium
+          hypothesi, quod si enim integrale ipsius <formula>\frac{caadx}{\sqrt{abx^{4}-x^{4}\int\xi
+            dx-{aa}^{}ccxx}}</formula> sit reducibile ad arcum circuli cujus radius ad
+            <formula>OA</formula> vel a sit ut numerus ad numerum, curva quaesita
+            <formula>ABC</formula> erit necessario Algebraica; atque sic in vulgari hypothesi ubi
+          nempe vires centripetae, sunt quadratis distantiarum reciproce proportionales, h. e. ubi
+            <formula>\xi=\frac{aag}{xx}</formula> valore ipsius <formula>dz</formula> abeunte in
+            <formula>\frac{caadx}{\sqrt{abx^{4}+aagx^{3}-aaccxx}}</formula> vel
+            <formula>\frac{caadx}{x\sqrt{abxx+aagx-aacc}}</formula>, quod ad hujus modi arcum
+          circuli reduci potest; hinc equidem protinus video curvam nostram <formula>ABC</formula>
+          in hac hypothesi semper esse algebraicam, quod vero insuper sit necessario sectio conica,
+          it ulteriori indagine opus habet, quam rem a Newtono neglectam et pag. 55, coroll. I <note
+            type="editorial">Kontrollieren, ob coroll. röm. I</note>sine de<pb facs="1042563" n="5"
+          />monstratione paralogistice assumtam, ego demonstrative conficio, hunc in modum: ut valor
+          ille reducatur ad formulam ordinariam differentialis arcus circularis, ponatur
+            <formula>x=\frac{aa}{y}</formula>, et habebitur substitutione facta,
+            <formula>\frac{caadx}{x\sqrt{abxx+aagx-aacc}}=\frac{-cady}{\sqrt{a^{3}b+aagy-ccyy}}</formula>
+          <formula>=</formula> (posito <formula>y=\frac{aag}{2cc}-t</formula>)
+            <formula>\frac{cadt}{\sqrt{a^{3}b+\frac{a^{4}gg}{4cc}-cctt}}=</formula> (posito
+          brevitatis gratia <formula>a^{3}b+\frac{a^{4}gg}{4cc}=cchh</formula>)
+            <formula>\frac{adt}{\sqrt{hh-tt}}=dz</formula> adeoque
+            <formula>\frac{dz}{a}=\frac{dt}{\sqrt{hh-tt}}=\frac{1}{h}\times\frac{hdt}{\sqrt{hh-tt}}</formula>
+          hoc est = differentiali arcus, cujus radius est <formula>h</formula>, et sinus
+            <formula>t</formula>, diviso per radium; cum autem arcus divisus per suum radium,
+          designet quantitatem anguli quem arcus iste subtendit, erit
+            <formula>\frac{dz}{a}</formula> quantitas anguli LOl, et
+            <formula>\frac{1}{h}\times\frac{hdt}{\sqrt{hh-tt}}</formula>, erit quantitas anguli
+          differentialis radio existente <formula>h</formula>, et sinu <formula>t</formula>; adeoque
+          ob aequalitatem illorum angulorum differentialium, erunt etiam anguli integrales aequales,
+          aut (ut rem generaliter sumam) alter alterum constanti angulo excedens. Quare si radio
+            <formula>OM=h</formula>, describatur circulus <formula>MST</formula>, et angulus
+            <formula>AOL</formula> (<formula>\int\frac{dz}{a})</formula> diminuatur vel augeatur
+          angulo constanti LOS, ut habeatur angulus <formula>MOS</formula>
+            (<formula>\int\frac{1}{h}\times\frac{hdt}{\sqrt{hh-tt}}</formula>), manifestum est
+          demissam in <formula>AO</formula> perpendicularem <formula>SP</formula> fore
+            <formula>=t</formula>, ex hac vero determinatur retrogrado ordine <formula>y</formula>,
+          et postea <formula>x</formula> seu <formula>OE</formula>, quae erit
+            <formula>\frac{2aacc}{aag-cct}</formula>, descripto itaque radio <formula>OE</formula>,
+          arcu <formula>EB</formula>, qui secet rectam <formula>OL</formula> in puncto
+            <formula>B</formula>, erit punctum <formula>B</formula> in trajectoria
+            <formula>ABC</formula>, quam dico esse sectionem conicam, quod sic demonstro: primo
+          attendenti patet angulum illum constantem <formula>LOS</formula>, quo angulus
+            <formula>AOL</formula> augetur vel minuitur, non mutare naturam curvae
+            <formula>ABC</formula>, sed tantum ejus situm vel promovere vel retrotrahere circa
+          punctum <formula>O</formula>, dum singula ejus punct[a] <formula>B</formula>, in suis
+          respective arcubus <formula>EB</formula> similiter vel [u]tra protrahuntur vel
+          retroaguntur quasi scilicet totum planum curvae <formula>ABC</formula> circa centrum
+            <formula>O</formula> rotaretur: facilioris itaque calculi gratia supponam angulam
+            <formula>AOL</formula> non augeri vel minui, id est angulum <formula>MOS</formula> esse
+          = angulo <formula>AOL</formula>. Esto nunc in hac altera figura (ubi iisdem litteris eadem
+          denotantur) [ad] <formula>AO</formula> perpendicularis
+            <formula>OQ=\frac{aag}{cc}</formula>, et centro <formula>Q</formula> super
+            <formula>QO</formula> descripta intelligatur hyperbola aequilatera
+            <formula>VXZ</formula>, cujus rectangulum coordinatarum <formula>QYX</formula>, vel
+            <formula>QOZ=2aa</formula>; producta itaque <formula>XY</formula> ordinata qualibet
+          hyperbolae, quae secet circulum <formula>MST</formula> in <formula>S</formula>, per quod
+          ducatur recta <formula>OS</formula> sumatur in illa (si opus prolongata)
+            <formula>OB=XY</formula> erit <formula>B</formula> in trajectoria
+          <formula>ABC</formula>; est enim
+            <formula>OB=XY=</formula><formula>\frac{2aa}{QY}=\frac{2aa}{\frac{aag}{cc}-t}=\frac{2aacc}{aag-cct}</formula>;
+          Est vero etiam (vi hujus constructionis) <formula>ABC</formula> sectio conica; sicut
+          calculus ordinarius facile ostendit, si enim quaeratur aequatio inter coordinatas
+            <formula>OF</formula> et <formula>FB</formula>, quas <pb facs="1042564" n="6"/> jam
+          lubet nominare <formula>x</formula> et <formula>y</formula>, invenietur
+            <formula>\overline{a^{4}gg-c^{4}hh}\times xx=4aac^{4}hx-a^{4}ggyy+4a^{4}c^{4}</formula>,
+          quae est aequatio ad sectionem conicam. Et quidem ad parabolam, quando
+            <formula>OQ(\frac{aag}{cc})=OT(h)</formula>, ad ellipsin si <formula>OQ&lt;OT</formula>,
+          ad hyperbolam vero ubi <formula>OQ&gt;OT</formula>. Q. E. D. Quod vero attinet ad modum
+          determinandi vim centripetam in quavis curva data ecce pro hoc theorema non inelegans,
+          cujus demonstrationem inveni jam olim independenter a solutione hujus problematis inversi,
+          eamque communicavi cum Cl. Moyvraeo in litteris meis ad ipsum datis die 16 Febr.
+            1706,<note type="editorial">[Text folgt]</note> his verbis (<formula>EPp</formula> est
+          curva trajectoria data, <formula>S</formula> focus vel centrum virium,
+            <formula>AP</formula> Tangens, <formula>SA</formula> perpendicularis in tangentem) "soit
+          tirée du centre des forces <formula>S</formula> une droite
+            <formula>S</formula><formula>\pi</formula> infiniment proche de <formula>SP</formula>,
+          et qui coupe la tangente prolongée en <formula>\pi</formula> et la courbe en
+            <formula>p</formula>, soit aussy tirée la petite perpendiculaire
+            <formula>p\varpi</formula>; supposant donc que le triangle <formula>PSp</formula> qui
+          marque le temps que le mobile employe a parcourir l'element de la courbe
+            <formula>Pp</formula> soit constant, on poura faire <formula>SA\times Pp=1</formula>: or
+          vous sçavez que le rayon de la developée en <formula>P</formula> (que je nomme
+            <formula>R</formula>) est a <formula>Pp</formula>, comme <formula>Pp</formula> à
+            <formula>p\varpi=\frac{Pp^{2}}{R}</formula>, mais à cause des triangles semblables
+            <formula>SA</formula><formula>\pi</formula>, et <formula>\pi\varpi p</formula>, on fait
+            <formula>SA\cdot S\pi(SP)::p\varpi(\frac{Pp^{2}}{R})\cdot p\pi</formula>, ainsi on
+          trouvera <formula>p\pi</formula>, ou l'eloignement momentain de la tangente, c'est à dire
+          la force centripete = <formula>\frac{SP\times Pp^{2}}{SA\times R}=\frac{SP\times
+            SA^{2}\times Pp^{2}}{SA^{3}\times R}</formula> = (à cause de <formula>SA^{2}\times
+            Pp^{2}=1</formula>) <formula>\frac{SP}{SA^{3}\times R}</formula>, en sorte que la force
+          centripete est en raison directe des distances, et en raison reciproque composée du rayon
+          des d[e]velopées, et du cubes des perpendiculaires sur les tangentes, etc." Sic itaque vis
+          centripeta terminis finitis generaliter expressa habetur. Hoc theorema inservit etiam ad
+          aliam solutionem obtinendam problematis inversi virium, quam si bene memini jam ante 15
+          annos inveni, statim nempe post adventum meum ad Batavos, deducit illa quidem ad
+          differentias secundas, cum tamen se mihi obtulerit singularis aliquis modus eas separandi
+          et postea integrandi reducendique ad aequationem supra inventam, hanc solvendi <pb
+            facs="1042565" n="7"/> viam tecum pariter communicare non pigebit. Sit itaque ut ibi
+          (Vid. Fig. 1) <formula>OB=OE=x</formula>, <formula>AL=z</formula>,
+          <formula>OA=a</formula>, <formula>BN=dx</formula>, <formula>Nb=dy</formula>, vis
+          centripeta in <formula>B=\xi=</formula> (per hoc theorema)
+            <formula>\frac{x}{p^{3}r}</formula>, (voco autem <formula>p</formula> perpendicularem ex
+            <formula>O</formula> in tangentem), et <formula>r</formula> radium evolutae in
+            <formula>B</formula>; est autem per ordinarias formulas
+            <formula>p=\frac{xdy}{\sqrt{dx^{2}+dy^{2}}}</formula>, et nulla adhuc posita constante
+          differentiali invenitur
+            <formula>r=\frac{\overline{xdx^{2}+xdy^{2}}\sqrt{dx^{2}+dy^{2}}}{dx^{2}dy+dy^{3}+xdxddy-xdyddx}</formula>,
+          erit itaque <formula>\frac{x}{p^{3}r}</formula> seu
+            <formula>\xi=\frac{dy^{3}+dx^{2}dy-xdyddx+xdxddy}{x^{3}dy^{3}}</formula>; Artificium
+          nunc separandi indeterminatas easque integrandi (quod alias aegre fieret) in hoc
+          consistit, ut haec prolixa quantitas abbrevietur, id quod obtineri potest si attendatur,
+          qualis differentialis (est enim res arbitraria) ponenda sit constans, per cujus
+          substitutionem duo termini se destruant, et ita duo tantum remaneant; video autem facile
+          hoc fieri duobus modis ponendo aut <formula>xdy</formula> aut
+            <formula>\frac{dx}{x}</formula> = constanti, sit enim primo <formula>x</formula>
+          <formula>dy=c</formula>, quo posito habebitur
+            <formula>\xi=\frac{dy^{3}-xdyddx}{c^{3}}</formula>, hoc nunc sic integratur ex
+          differentiatione constantis <formula>xdy</formula>, oritur <formula>xddy+dxdy=0</formula>,
+          seu <formula>dy=\frac{-xddy}{dx}</formula>, hoc igitur valore ipsius <formula>dy</formula>
+          substituto in aequatione <formula>\xi=\frac{dy^{3}-xdyddx}{c^{3}}</formula>, proveniet
+            <formula>\xi=\frac{-dyddy-dxddx}{ccdx}</formula> seu <formula>\xi
+            dx=\frac{-dyddy-dxddx}{cc}</formula>, sumtisque integralibus <formula>\int\xi
+            dx=\frac{-\frac{1}{2}dy^{2}-\frac{1}{2}dx^{2}}{cc}\pm n</formula>; ad hanc aequationem
+          aliter et facilius perveniri potest, hoc modo: aequatio integranda
+            <formula>\xi=\frac{dy^{3}-xdyddx}{c^{3}}</formula> multiplicetur per
+            <formula>dx</formula>, et dispescatur in partes, ut habeat[ur] <formula>\xi
+            dx=\frac{dy^{3}dx}{c^{3}}(\frac{dx}{x^{3}})\frac{-xdxdyddx}{c^{3}}(\frac{-dxddx}{xxdy^{2}})</formula>
+          sumtis itaque integralibus erit <formula>\int\xi
+            dx=-\frac{1}{2xx}-\frac{dx^{2}}{2xxdy^{2}}\pm n</formula> (per <formula>n</formula>
+          intelligo, ut ante quantitatem quamlibet constantem) = iterum
+            <formula>\frac{-\frac{1}{2}dy^{2}-\frac{1}{2}dx^{2}}{xxdy^{2}}\pm n</formula>. Sit nunc
+          secundo <formula>\frac{dx}{x}</formula> constans, superior aequatio
+            <formula>\xi=\frac{dy^{3}+dx^{2}dy-xdyddx+xdxddy}{x^{3}dy^{3}}</formula> abit in hanc
+            <formula>\xi=\frac{dy^{3}+xdxddy}{x^{3}dy^{3}}</formula>, quae rursus duobus modis
+          integrari potest, sed posteriori tantum utendo, multiplicetur per <formula>dx</formula> et
+          distribuatur in partes, ut vides <formula>\xi
+            dx=\frac{dx}{x^{3}}+\frac{dx^{2}ddy}{xxdy^{3}}</formula>, quarum integralia sumta (ob
+            <formula>\frac{dx^{2}}{xx}</formula> constans) dant <formula>\int\xi
+            dx=\frac{-1}{2xx}\frac{-dx^{2}}{2xxdy^{2}}\pm
+            n=\frac{-\frac{1}{2}dy^{2}-\frac{1}{2}dx^{2}}{xxdy^{2}}\pm n</formula> ut ante; reducta
+          itaque nostra aequatione differentio-differentiali, ad aequationem differentialem
+          ordinariam, illa nunc porro si rite tractetur ad hanc reducitur (observata homogeneorum
+          suppletione) <formula>\frac{bbdx}{\sqrt{nnxx-xx}\int\xi
+            dx-b^{4}}=dy=\frac{xdz}{a}</formula> adeoque
+            <formula>dz=\frac{abbdx}{\sqrt{nnx^{4}-x^{4}}\int\xi dx-b^{4}xx}</formula> quae prorsus
+          similis est illi, quam per superiorem methodum inveni, ex qua itaque nunc iterum fluit
+          constructio universalis trajectoriae et sectionis conicae determinatio ex hypothesi
+          particulari virium centripetarum quadratis distantiarum reciproce proportionalium, per
+          modum supra ad<pb facs="1042566" n="8"/>hibitum. Sed haec tandem de hoc problemate virium,
+          inverso si non novo, saltem nunquam antea soluto dicta sufficiant: reliqua nunc Tuae
+          epistolae capita omni qua potero brevitate perstringam. </p>
+        <p>Mechanicam Tuam Fluidorum spero brevi absolutum iri, postea sine mora Typothetae
+          tradendam, cujus exemplar si ad me deferri curaveris, id bonitati Tuae ascribam. Mitto
+          Tibi hic descriptionem mei barometri excerptam ex litteris ad Cl. Varignonium, una cum
+          hujus responsione et mea replicatione, ut videas quid Galli aliqui ex invidia forte
+          objecerint, et quomodo inventum vindicaverim.<note type="editorial">[Text folgt]</note>
+          Modus quo quondam ponderavi aerem per condensationem nihil magni in se continet, ut adeo
+          non mereatur ejus descriptione et per figuram delineatione, epistolam hanc jam nimis
+          longam ultra modum extendere; si bene memini, simile quid de ponderatione aeris condensati
+          apud Galilaeam legi: hoc tamen insuper effeci, ut non tantum simpliciter aëris (quem in
+          cylindro aereo ope antliae pneumaticae fortiter compressam) pondus ad lancem examinarem,
+          sed ut etiam scirem quantum praecise aëris intruserim in cylindrum, hoc est quantum
+          spatium occuparet si juris sui factus consistentiam suam naturalem recuperaret, et ita
+          mihi patesceret, quam rationem haberet gravitas specifica aëris ad gravitatem specificam
+          aquae, hoc autem ita facile obtinui, nempe aërem condensatum ex cylindro per epistomium,
+          quod pro lubitu magis minusve aperire poteram, et sub aqua in vase ampliori demersum, aër
+          hoc modo emissus, et in recipiens immissus superiora petens sese ad statum suum naturalem
+          expandit, et per expulsionem aquae mihi indicavit quantum spatii ad naturalem
+          consistentiam redactus occupaverit, factum autem est ut aliquando ter vel quater totum
+          recipiens evacuaverit ab aqua, et praeterea partem aliquam, singulis scilicet
+          evacuationibus peractis promte occlusi epistomium cylindri et deinde recipiens iterum aqua
+          replevi, donec tandem omnis aër condensatus, ex cylindro per vices fuisset egressus, et
+          recipiens mensurandi spatii gratia subiisset. <pb facs="1042567" n="9"/> Modus hic,
+          ponderandi aërem, prae altero illo communi qui peragitur per extractionem aëris magis
+          arridet, possum enim hac ratione magnam quantitatem aëris simul ponderare, et ita ejus
+          gravitatem specificam multo accuratius determinare. Adgnatus meus ex Galliis in Patriam
+          redux salutem Tibi meis verbis ascribit, Si Tuus quondam successor ex Tua commendatione
+          fieri posset post discessum Tuum Patavio (audio enim Te aliquot adhuc annis ibi transactis
+          stationi valedicturum) rem faceres egregiam et mutuis quibuslibet officiis erga Te
+            demerendam.<note type="editorial">[Text folgt]</note>Nuper vidi quam nobiscum
+          communicavit Rev. Pater Tuus Sanctorii medicinam staticam Tuo nomini honorifice
+          inscriptam, gratulor Tibi, de tam illustri dedicatione meritis Tuis dignissima.<note
+            type="editorial">Santorio Santorio (1561- 1636), Physiologe, Professor in
+            Padua.Verfasser einer Medicina statica, Ausgabe nachweisen !</note> Accepi quoque Tuo
+          missu a Rev. Parente Cl. Guidonis Grandi Libellum egregium de infinitis infinitorum<note
+            type="editorial">[Text folgt]</note>, pro quo Tibi non minus quam Cl. Auctori gratias
+          ago summas; Cl. Varignonius contra quem scriptus est hic libellus, sumsit olim ex
+          quibusdam litteris meis scriptis die 22 Juli 1692 occasionem mihi primo movendi litem
+          super <hi rend="u">plus quam infinitis</hi>, quae disputatio inter nos duravit per
+          integrum fere annum, donec tandem illum ad silentium redegerim, et se a me convictum
+          fassus fuerit, adeo ut mirer eum postea hanc litem publice renovasse, postquam enim multis
+          ipsi ostendissem, quemadmodum infiniti sint gradus dif[f]erentialium, seu infinite
+          parvorum, tandem in litteris suis ad me datis die 22 Apr. 1698 in haec erupit verba "Enfin
+          je suis plainement satisfait de vos eclaircissemens sur les plusqu'infinis", et in
+          litteris sequentibus die 22 Maji 1698 sibi iterum satisfactum fatetur his verbis: "Vôtre
+          sentiment sur l'infinité me paroit tres vray ... Tout cela me paroit une suite necessaire
+          de la doctrine des infinis de differens genres."<note type="editorial">[Text folgt]</note>
+          Si Cl. Grandi institutum mihi innotuisset, potuissem ipsi suppeditare mea de hoc argumento
+          Cogitata, aut si optaverit nunc quidem communicabo; forte lucem non exiguam huic rei
+          offundent. Illustr. Marchionis Poleni opusculum de Barometris mihi erit gratissimum.<note
+            type="editorial">[Text folgt]</note> Cultum meum, ut ipsi vicissim deferas summopere
+          rogo. Vale et me amare perge. </p>
+        <p>Dabam Basileae a. d. 7. 8bris 1710. </p>
+      </div>
+    </body>
+  </text>
 </TEI>

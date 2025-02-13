@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- Vorbereitung begonnen (bis zum Tag); Personen ausgezeichnet am 19.03.2019 --><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Hat diese GND im BIBB: pers_DE-588-119507978 --><!--_____________--><TEI xml:id="B_1724-05-31_991170515107705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515107705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -121,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1724-04-30_991170515107805501" type="prev"/>
-        <ptr target="B_1724-06-30_991170515107605501" type="next"/>
+        <ptr target="B_991170515107805501" type="prev"/>
+        <ptr target="B_991170515107605501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -179,8 +178,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-01-31" who="SG CG">Kollationieren abgeschlossen</change>
+      <change when="2024-12-06" who="SG CG">Kollationieren weitergeführt</change>
+      <change when="2024-11-29" who="SG CG">Kollationieren weitergeführt</change>
+      <change when="2024-11-15" who="CG SG">Kollationieren begonnen</change>
       <change when="2022-09-13" who="CG">Seitenzahlen eingefügt</change>
       <change when="2022-08-22" who="CG">Header angepasst</change>
       <change when="2019-03-19">Vorbereitung und Personenauszeichnung</change>
@@ -188,6 +191,16 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- Vorbereitung begonnen (bis zum Tag); Personen ausgezeichnet am 19.03.2019 -->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Hat diese GND im BIBB: pers_DE-588-119507978 -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079455/manifest"/></facsimile><text>
 <front>
 <div type="editorialNote">
@@ -197,523 +210,637 @@
 </front>
 <body><div type="letter">
 <pb facs="1079456" n="1"/>
-<opener><salute>Celeberrimo atque Doctissimo Viro
+<opener><salute>Celeberrimo at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> doctissimo Viro
              <lb/>Petro Antonio <rs key="pers_DE-588-102552517" type="person">Michelotto</rs>
 <lb/><abbr>S. P. D</abbr>
-<lb/><choice><abbr>Joh.</abbr><expan>Johannes</expan></choice> <rs key="pers_DE-588-118509969" type="person">Bernoullj</rs>.</salute></opener>
-<p>Verissimum est quod dicis, me hactenus fuisse occupatissi<pc type="hyphenation">-</pc><lb break="no"/>mum, id vero sum non tantum in solvendis problematis
+  <lb/><abbr>Joh.</abbr> <rs key="pers_DE-588-118509969" type="person">Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.</salute></opener>
+<p>Verissimum est quod dicis, me hacten<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice> fuisse occupatissi<pc type="hyphenation">-</pc><lb break="no"/>mum, id vero sum non tantum in solvendis problematis
              <lb/>ab <rs type="organisation">Academia Scientiarum Parisiensi</rs> propositis, sed in
-             <lb/>multis aliis quoque negotiis peragendis, tam publicis
+             <lb/>multis aliis quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> negotiis peragendis, tam publicis
              <lb/>quam domesticis quibus omnibus expediendis fere me
-             <lb/>imparem sentio cui accedit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tas mea ingravescens variis<pc type="hyphenation">-</pc><lb break="no"/>que advers<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> valetudinis incommodis impetita, sicuti
-             <lb/>nuper admodum gravi catarrho laborans per trimestre
+             <lb/>imparem sentio cui accedit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tas mea ingravescens variis<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> advers<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> valetudinis incommodis impetita, sicuti
+             <lb/>nuper admodum gravi catarrho laborans <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> trimestre
              <lb/>in <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dibus detentus animum ad studia applicare
-             <lb/>haud potui. Talia faciunt ut mox cogar meditationi<pc type="hyphenation">-</pc><lb break="no"/>bus mathematicis omnique litterarum Commercio
-             <lb/>valedicere. ab aliquo jam tempore me constitui
-             <lb/><add>exemplo <rs key="pers_DE-588-118587544" type="person">Newtoni</rs></add> Adversariis meis qui me publice refutare <add>contendunt</add> nihil
-             <lb/>respondere, cui enim bono erra esset reciprocanda cum
-             <lb/>pertinacibus hominibus, unde nihil aliud reportarem
-             <lb/>quam Tranquillitatis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> perturbationem?
-             <lb/>lubet tamen hac adhuc vice resondere, Tui gratia<note type="editorial">In Kopie 2 steht: "Tui tantum in gratiam".</note> ,
-             <lb/>ad objectiones <choice><abbr>Cl.</abbr><expan>Clarissimi</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> contra modum meum demon<pc type="hyphenation">-</pc><lb break="no"/>strandi velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex vase effluentis,
+             <lb/>haud potui. Talia faciunt ut mox cogar meditationi<pc type="hyphenation">-</pc><lb break="no"/>bus mathematicis omni<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> litterarum Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ercio
+             <lb/>valedicere. <choice><orig>ab</orig><reg>Ab</reg></choice> aliquo jam tempore apud me constitui
+             <lb/><add>exemplo <rs key="pers_DE-588-118587544" type="person">Newtoni</rs></add> Adversariis meis qui me public<unclear>e</unclear> refuta<unclear>re</unclear> <add>contendunt</add> <unclear>nihil</unclear>
+             <lb/>respondere, cui enim bono serra esset reciprocanda c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+             <lb/>pertinacibus hominibus, unde nihil aliud reportar<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+             <lb/>quam Tranquillitatis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>turbationem?
+             <lb/><choice><orig>lubet</orig><reg>Lubet</reg></choice> tamen hac adhuc vice resondere, Tui gratia<note type="editorial">In Kopie 2 steht: "Tui tantum in gratiam".</note>
+             <lb/>ad Objectiones <choice><abbr>Cl.</abbr><expan>Clarissimi</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> contra modum meum demon<pc type="hyphenation">-</pc><lb break="no"/>strandi velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex vase effluentis
              <pb facs="1079457" n="2"/>
-<lb/>quod eo lubentius<note type="editorial">K.2: "libentius".</note> facio, quia video <rs key="pers_DE-588-119507978" type="person">Jurinum</rs> omni erga
-             <lb/>nos humanitate usum esse, secus ac multi solent
-             <lb/>Anglorum, qui me acerbe tractarunt<note type="editorial">K.2: "tractaverunt".</note> adeoque indigni
-             <lb/>quibus respondeam. Objectiones <rs key="pers_DE-588-119507978" type="person">Jurinian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> tam frivol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+<lb/>quod eo lubentius<note type="editorial">K.2: "libentius".</note> facio quia video <rs key="pers_DE-588-119507978" type="person">Jurinum</rs> omni erga
+             <lb/>nos humanitate usum esse<supplied>,</supplied> secus ac multi solent
+             <lb/>Anglorum, qui me acerbe tractarunt<note type="editorial">K.2: "tractaverunt".</note> adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> indigni
+             <lb/>quibus responde<unclear>a</unclear>m. Objectiones <rs key="pers_DE-588-119507978" type="person">Juri<add>ni</add>an<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> tam frivol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
              <lb/>sunt, ut mirer eum tam crasse errare potuisse.
-             <lb/>Videtur Vir bonus<note type="editorial">Euphemismus für Jurin.</note> principia hydrostatica non
-             <lb/>sat bene intelligere, nisi forsan eum occ<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ca<pc type="hyphenation">-</pc><lb break="no"/>verit vehemens cupido et desiderium ardens
-             <lb/>quo fertur more fere omnium Anglorum
+             <lb/>Vide<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> vir bonus<note type="editorial">Euphemismus für Jurin.</note> principia hydrostatica non
+             <lb/>sat bene intelligere, nisi forsan eum occ<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ca<pc type="hyphenation">-</pc><lb break="no"/>verit vehemens cupido <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> desiderium ardens
+             <lb/>quo fer<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> more fere omnium Anglorum
              <lb/>ad tuendam gloriam suorum popularium,
-             <lb/>etiamsi id esset in pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>judicium veritatis;
-             <lb/>ita namque catarrhactam<note type="editorial">"catarrhactam" ist an verschiedenen Stellen verschieden geschrieben, an einer Stelle aber von Joh. I selbst in der richtigen Orthographie eingesetzt.</note> illam a <rs key="pers_DE-588-118587544" type="person">Newtono</rs> in
+             <lb/>etiamsi id esset in pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>judicium veritatis,
+             <lb/>ita nam<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> cataractam<note type="editorial">"catarrhactam" ist an verschiedenen Stellen verschieden geschrieben, an einer Stelle aber von Joh. I selbst in der richtigen Orthographie eingesetzt.</note> illam <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <rs key="pers_DE-588-118587544" type="person">Newtono</rs> in
              <lb/>scenam productam mordicus defendere sata<pc type="hyphenation">-</pc><lb break="no"/>git, quamvis certe commentum sit omnino
-             <lb/>ridiculum, atque si propius examinetur clarissi<pc type="hyphenation">-</pc><lb break="no"/>me statim appareat, suppositionem hujusmodi
-             <lb/>cataract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse meram petitionem principii.
-             <lb/>Dicit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> meam Demonstrationem sibi nulla
-             <lb/>ex parte satisfacere, fatetur tamen facilius accidere
-             <lb/>posse, ut ipse a vero aberret, quam ut jure me
+             <lb/>ridiculum, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> si propius examine<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, clarissi<pc type="hyphenation">-</pc><lb break="no"/>me statim appareat, suppositionem hujusmodi
+             <lb/>catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse meram petitionem principii.
+             <lb/>Dicit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> meam Demonstrationem <add>sibi</add> nulla
+             <lb/>ex parte satisfacere, fate<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> tamen facilius accidere
+             <lb/>posse, ut ipse <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> vero aberret, quam ut jure m<unclear>e</unclear>
              <lb/>erroris alicujus redarguat: postea vero ex pa<pc type="hyphenation">-</pc><lb break="no"/>gin<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intervallo fidenter asserit meam
-             <lb/>demonstrationem fatiscere.
+             <lb/>demonstrationem fatiscere
              <pb facs="1079458" n="3"/>
-<lb/>meque ipsum errare, quid sibi velit inconstantis <note type="editorial">In der Kopie 2 steht an dieser stelle "h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c".</note> animi fluctua<pc type="hyphenation">-</pc><lb break="no"/>tio non capio; Cona<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in ipso limine convellere fundament<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
-             <lb/>Demonstrationis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, quod dixi, <hi rend="u">in hoc consistere,
-                <lb/>ut consideretur guttula liquoris infima et foramini vasis
+<lb/>me<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ipsum errare, quid sibi velit inconstantis <note type="editorial">In der Kopie 2 steht an dieser stelle "h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c".</note> animi fluctua<pc type="hyphenation">-</pc><lb break="no"/>tio non capio; Cona<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in ipso limine convellere fundament<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+             <lb/>Demonstrationis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, quod dixi <hi rend="u">in hoc consistere, ut
+                <lb/>considere<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice><!-- To Do: überprüfen ob Komma --> guttula liquoris infima <unclear>in</unclear> foramini vasis
                 <lb/>immediate incumbens tanquam pressa vel (ut ego voco)
                 <lb/>animata <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> gravitate quadam <del>accelet</del> acceleratrice, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
                 <lb/>se habet ad gravitatem naturalem, ut altitudo aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-                <lb/><del>scilicet, ut pondus absolutum</del> vel liquoris totius fo<pc type="hyphenation">-</pc><lb break="no"/>ramini vasis incumbentis ad altitudinem guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> scilicet
+                <lb/>scilicet, ut pondus absolutum vel liquoris totius fo<pc type="hyphenation">-</pc><lb break="no"/>ramini vasis<note type="editorial">Wortumstellung</note> incumbentis ad altitudinem guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> scilicet
                 <lb/>ut pondus absolutum column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foraminis insistentis
-                <lb/>ad pondus absolutum guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ... (quam guttulam ut
-                <lb/>columellam solidam concipio).</hi> Concedit uti<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+                <lb/>ad pondus absolutum guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ..... (quam guttulam ut
+                <lb/>columnellam solidam concipio).</hi> Concedit uti<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
              <lb/><choice><abbr>Cl.</abbr><expan>Clarissimus</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> negari non posse pressionem guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-             <lb/>esse <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualem ponderi column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini insistentis
-             <lb/>quandoquidem dicit quamdiu foramen clausum tene<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
-             <lb/><hi rend="u">urgebi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> sane guttula foramini proxima toto pon<pc type="hyphenation">-</pc><lb break="no"/>dere column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> incumbentis.</hi> Sed negat illam
-             <lb/>ideo animari <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> majore vi acceleratrice, quid autem <add>facit</add> Vir bonus ut su<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
-             <lb/>negationem probet? egregio scilicet uti<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> paralogismo, dum
-   <lb/><hi rend="u">ponit omnem <!--omnem kontrollieren  --> aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> tot<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> columnam <add>ambient<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> congelari, concipit<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> t<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> reserato foramine columnam</add><note type="editorial">Der eingefügte Text befindet sich am unteren Blattrand.</note> aque<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> politissim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> glaci<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+             <lb/>esse <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualem ponderi column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini insistentis,
+             <lb/>quandoquidem dicit, quamdiu foramen clausum tene<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+             <lb/><hi rend="u">urgebi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> sane guttula foramini proxima toto pon<pc type="hyphenation">-</pc><lb break="no"/>dere column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aqu<unclear>e<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear> incumbentis<supplied>.</supplied></hi> <unclear>S</unclear>ed negat illam
+             <lb/>ideo animari <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> majore vi <choice><orig>acceletrice</orig><reg>acceleratrice</reg></choice>, quid autem <add>facit</add> Vir bonus ut su<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+             <lb/>negationem probet? <choice><orig>egregio</orig><reg>Egregio</reg></choice> scilicet uti<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> paralogismo, dum
+  <lb/><hi rend="u">ponit <choice><orig><g ref="#omn">õ</g></orig><reg>omn</reg></choice>em aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> tot<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <choice><orig>colum̄am</orig><reg>columnam</reg></choice> <metamark/><add>ambient<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> congelari, concipit<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> t<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> reserato foramine column<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></add><note type="editorial">Der eingefügte Text befindet sich am unteren Rand der Briefseite.</note> aque<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> politissim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> glaci<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
                 <lb/>sine omni resistentia labi:</hi> Hoc ita posito mehercle v<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cors
              <lb/>essem si vellem negare totam<note type="editorial">in K.2 "solam".</note> column<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> aqueam instar corporis
-   <lb/>solidi <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> tub<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> glacial<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> delabi,<del>delabi</del> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> gravitate accelera<pc type="hyphenation">-</pc><lb break="no"/>trice naturali coactam adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> null<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> inde separari guttul<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+   <lb/>soli<unclear>d</unclear>i <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> tub<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> glacial<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> delabi<del>delabi</del> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> gravitate accelera<pc type="hyphenation">-</pc><lb break="no"/>trice naturali coactam adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> null<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> inde separari guttul<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
              <pb facs="1079459" n="4"/>
 <lb/>infimam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> possit majori gravitate acceleratrice
-             <lb/>animari: Verum enimvero quo jure audet <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> po<pc type="hyphenation">-</pc><lb break="no"/>nere casum, qui <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> nostro diversissimus est, ambos<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+             <lb/>animari; Verum enimvero quo jure audet <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> po<pc type="hyphenation">-</pc><lb break="no"/>nere casum, qui <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> nostro diversissimus est, ambos<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
              <lb/>inter se confundere? Ego suppono in Demonstra<pc type="hyphenation">-</pc><lb break="no"/>tione mea, aquam in vase esse fluidam, ille
              <lb/>vero tollit hanc suppositionem fingendo aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
              <lb/>omnem in vase congelari excepta columna fora<pc type="hyphenation">-</pc><lb break="no"/>mini incumbente, quasi hi duo casus essent
              <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quipollentes at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> alter pro altero substitui
-             <lb/>posset; oportet sane tyronem<note type="editorial">K.2: "tironem"</note> esse in hydrostaticis
-             <lb/>qui non videt <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> congelationem interc<subst><del></del><add>ipii</add></subst><!-- gestrichene Buchstaben unklar --> action<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+  <lb/>posset, oportet sane tyronem<note type="editorial">K.2: "tironem"</note> esse in hydrostaticis
+             <lb/>qui non videt <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> congelationem <unclear>intercipii</unclear><!-- To Do: Korrektur kontrollieren --> action<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
              <lb/>fluiditatis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> actio in eo consistit ut guttula
-             <lb/>infima non tantum desu<choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> proma<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in directione
-   <lb/>verticali <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> pondere incumbentis column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sicuti
-             <lb/>fieret in Tubo congelato, sed etiam <add><choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice></add> lateribus
-             <lb/>undiqua<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> in directionibus horizontalibus; Est aut<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+             <lb/>infima non tantum desu<choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> pr<unclear>o</unclear>ma<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice><!-- To Do: kontrollieren --> in directione
+   <lb/>verticali <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> pondere incumbentis column<unclear><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear> sicuti
+             <lb/>fieret in Tubo congelato, sed etiam <add><choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice></add> laterib<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+  <lb/>undiqua<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> in directionibus horizontalibus; Est aut<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
              <lb/>h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c pressio horizontalis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> producit subitane<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
-             <lb/>illam explosion<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> colum<subst><del>n<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></del><add>ell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add></subst> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> foramen vasis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ill<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> animat tanta vi gravitatis ut <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> exigu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> sui
-             <lb/>altitudinem cadendo acquirat velocitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> quant<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
-             <lb/>acquireret si per totam altitudin<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> incum<pc type="hyphenation">-</pc><lb break="no"/>bentis vi naturalis gravitatis descenderet, ut cla<pc type="hyphenation">-</pc><lb break="no"/>rius me intelligas ecce: rem ita concipio: Sit <formula>ABCD</formula> vas
+             <lb/>illam explosion<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> columell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> foramen vasis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ill<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> anim<unclear>a</unclear>t tanta vi gravitatis ut <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> exigu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> sui
+  <lb/>altitudinem cadendo acquir<unclear>a</unclear>t<!-- To Do: kontrollieren --> velocitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> quant<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+             <lb/>acquireret si <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> totam altitudin<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> incum<pc type="hyphenation">-</pc><lb break="no"/>bentis vi naturalis gravitatis descenderet<choice><orig>,</orig><reg>.</reg></choice> Ut cla<pc type="hyphenation">-</pc><lb break="no"/>rius me intelligas, ecce: rem ita concipio: Sit <formula>ABCD</formula> vas
              <lb/>aqua plen<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, cujus in fundo <formula>BC</formula> sit foram<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice> <formula>O</formula> quod primo
-   <lb/>obturatum suppono: ei certe i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>inet gutta pro<pc type="hyphenation">-</pc><!-- bis hier überarbeitet 01.10.24 cg -->
-         <pb facs="1079460" n="5"/>
-   <lb break="no"/>xima quam licet considerare tanquam columellam solidam
-             <lb/><formula>OE</formula>, cujus basis superior <formula>E</formula> urgetur quidem a pondere totius
+   <lb/>obturatum suppono: <add>ei</add> certe i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>inet gutta pro<pc type="hyphenation">-</pc><pb facs="1079460" n="5"/>
+   <lb break="no"/>xima qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> licet considerare tanqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> colu&mn;ell<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> solid<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+             <lb/><formula>OE</formula>, cujus basis superior <formula>E</formula> <add>u</add>rge<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> quid<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> <add>a</add> pondere totius
              <lb/>column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> insistentis <formula>EF</formula>; sed etiam ejus latera
    <lb/><figure facs="1079460_01.png" hand="pers_DE-588-118509969"/>ut notum est ex legibus hydrostaticis et ex
-             <lb/>natura fluiditatis comprimuntur a colum<pc type="hyphenation">-</pc><lb break="no"/>nis lateralibus quales sunt <formula>EH</formula>, <formula>EG</formula>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> continuo
-             <lb/>moliuntur separare partes inferiores a su<pc type="hyphenation">-</pc><lb break="no"/>perioribus; concipiamus nunc remoto obtu<pc type="hyphenation">-</pc><lb break="no"/>raculo aperiri subito foramen <formula>O</formula>; quid fiet?
-             <lb/>incipiet sane columella <formula>OE</formula> primo instanti
+             <lb/>natura fluiditatis comprimun<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> colum<pc type="hyphenation">-</pc><lb break="no"/>nis lateralibus quales sunt <formula>EH</formula>, <formula>EG</formula>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> continuo
+             <lb/>moliun<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> separare partes inferiores <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> su<pc type="hyphenation">-</pc><lb break="no"/>perioribus concipiamus nunc remoto obtu<pc type="hyphenation">-</pc><lb break="no"/>raculo aperiri subito foramen <formula>O</formula>; quid fiet:
+             <lb/>incipiet sane columella <!-- To Do: Schreibweise columella kontrollieren --><formula>OE</formula> primo instanti
              <lb/>descendere sola vi su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> naturalis gravitatis,
-             <lb/>velletque sequi columna <formula>EF</formula> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> incumbit,<note type="editorial">In Kopie 2 folgende Variante: "velletque sequi columna incumbens <formula>EF</formula>, h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c vero...".</note> h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c vero a contra<pc type="hyphenation">-</pc><lb break="no"/>ponderantibus <formula>EH</formula>, <formula>EG</formula> a descensu impeditur unde
-             <lb/>divulsio oriri debet colummell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> infim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>OE</formula>
-<note type="editorial">In Kopie 2: "<formula>OG</formula>".</note> tanquam
-             <lb/>solid<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> spertat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> a columna superiori <formula>EF</formula>; hinc
-             <lb/>minimo facto hiatu <formula>Ee</formula>, column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> laterales
-             <lb/><formula>EH</formula>, <formula>EG</formula>, eodem momento apices infimos defigunt
-             <lb/>instar cuneorum in interstitium <formula>Ee</formula>. Videamus
-             <lb/>autem qualis effectus ex hac actione sequatur; Ex
-             <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualitate virium qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ut constat ex mechanicis imprimuntur
-             <lb/>hinc inde partibus divellendis a cuneo fluit, tanta
-             <lb/>vi massam totius column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>eF</formula> sursum urgeri quanta co<pc type="hyphenation">-</pc><lb break="no"/>lummella <formula>EO</formula> urgetur deorsum. Vis prior sustinet colum<pc type="hyphenation">-</pc><lb break="no"/>nam <formula>eF</formula> in <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quilibrio, adeoque est <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis ejus ponderi
-             <lb/><formula>=M\times g</formula> (intelligo per <formula>M</formula> massam column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>eF</formula>, [in K. 2: et] per <formula>g</formula> gravitatem
-             <lb/>naturalem qua corpora naturaliter animantur).
+             <lb/>vellet<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> sequi columna <formula>EF</formula> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> incumbit<note type="editorial">In Kopie 2 folgende Variante: "velletque sequi columna incumbens <formula>EF</formula>, h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c vero...".</note> h<unclear><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear>c<!-- To Do: kontrollieren --> vero <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> contra<pc type="hyphenation">-</pc><lb break="no"/>ponderantibus <formula>EH</formula>, <formula>EG</formula> a descensu impedi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> unde
+             <lb/>divulsio oriri debet colu&mn;ell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> infim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>OE</formula>
+<note type="editorial">In Kopie 2: "<formula>OG</formula>".</note> tanqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+             <lb/>solid<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> spectat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> columna superiori <formula>EF</formula> hinc
+             <lb/>minimo facto hiatu <formula>Ee</formula> column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> laterales
+             <lb/><formula>EH</formula>, <formula>EG</formula> eodem momento apices infimos defigunt
+             <lb/>instar cuneorum in interstiti<add>um</add> <formula>Ee</formula>. Videamus
+             <lb/>aut<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> qualis <choice><sic>effectas</sic><corr>effectus</corr></choice> ex hac actione sequa<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>; Ex
+             <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualita<add>t</add>e viri<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ut constat ex mechanicis imprimun<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>             <lb/>hinc inde partibus divellendis <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> cuneo fluit, tanta
+             <lb/>vi mass<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> toti<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice> column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>eF</formula> surs<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> urgeri quanta co<pc type="hyphenation">-</pc><lb break="no"/>lumnella <formula>EO</formula> urge<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> deors<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>; Vis prior sustinet col<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>n<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <formula>eF</formula> in <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quilibrio, adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> est <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis ejus ponderi
+             <lb/><formula>=M\times g</formula> (intelligo <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <formula>M</formula> mass<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>eF</formula><note type="editorial">in Kopie 2: et</note> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <formula>g</formula> gravitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+             <lb/>natural<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> qua corpora naturaliter animan<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice><supplied>).</supplied>
              <pb facs="1079461" n="6"/>
-<lb/>Vis altera qua deorsum urgetur columella<note type="editorial">In K.1 fälschlicherweise columnella resp. <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>.</note>
+<lb/>Vis altera qua deors<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> urge<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> columnella
 <formula>EO</formula>
-<lb/>est <formula>m\times G</formula> (Intelligo hic pariter perm massam columell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><note type="editorial">In K.1 fälschlicherweise columnella resp. <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>.</note>
-<lb/><formula>EO</formula> et per <formula>G</formula> gravitatem novam acceleratricem ex ista
+<lb/>est <formula>m\times G</formula> (Intelligo hic pariter <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <formula>m</formula> massam columnell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+<lb/><formula>EO</formula> et <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <formula>G</formula> gravitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> nov<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> acceleratric<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> ex ista
              <lb/>cunei pressione oriundam qua quantitas materi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-             <lb/>in <formula>EO</formula> content<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> animari debet.); cum igitur du<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ist<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+             <lb/>in <formula>EO</formula> content<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> animari debet)<supplied>.</supplied> <choice><orig>cum</orig><reg>Cum</reg></choice> igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> du<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ist<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
              <lb/>vires sint inter se <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales utpote ab eadem
-             <lb/>cunei actione product<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, erit <formula>M\times g=m\times G</formula> proinde
-             <lb/><formula>g.G::m.M</formula>; Est vero <formula>m</formula> ad <formula>M</formula> ut altitudo columell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-             <lb/><formula>OE</formula> ad altitudinem column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> eF, hoc est (ob infinite
-             <lb/>parvam <formula>OE</formula> vel <formula>O</formula>e) ad totam altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-             <lb/><formula>OF</formula>. Patet ergo veritas ejus quod in Demonstrati<pc type="hyphenation">-</pc><lb break="no"/>one mea asserui guttulam infimam foramini
-             <lb/>imminentem in descensu suo animari a gravitate
-             <lb/>acceleratrice qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> se habet ad gravitatem naturalem
-             <lb/>reciproce ut tota altitudo aquea <formula>OF</formula> ad altitudi<pc type="hyphenation">-</pc><lb break="no"/>nem minimam <formula>OE</formula>, hinc sequitur fundamentum de<pc type="hyphenation">-</pc><lb break="no"/>monstrationis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse validum atque firmo
-             <lb/>stare talo. Q. E. D. </p>
-<p><choice><abbr>Coroll.</abbr><expan>Corollarium</expan></choice> 1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> falsum igitur est quod <choice><abbr>Cl.</abbr><expan>Clarissimus</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>
-<lb/>dicit, scilicet <hi rend="i">quam primum guttula <add>infima</add> moveri</hi>
-<note type="editorial">In Kopie 2 steht hier noch "deorsum".</note>
-<hi rend="u">incipit
-            <lb/><add>eam non amplius urgeri nisi sola</add> gravitate sua acceleratrice naturali;</hi> urgetur
-         <lb/>enim inter descendendum a pressione cuneorum lateralium
-         <lb/>tamdiu continuata donec tota guttula
-         <lb/>per foramen exierit. <choice><abbr>Coroll.</abbr><expan>Corollarium</expan></choice> 2<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> constat porro pes<pc type="hyphenation">-</pc><lb break="no"/>sime confundi a <rs key="pers_DE-588-119507978" type="person">Jurino</rs> casum quem fingit
+  <lb/>cunei action<unclear>e</unclear> product<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, erit <formula>F\times g=m\times G</formula><note type="editorial">Der erste Term der Formel ist stark korrigiert und schlecht leserlich. Der überschriebene Text lautete vermutlich <formula>M\times g</formula></note><!-- To Do: Formel kontrollieren -->proinde
+  <lb/><choice><sic><formula>g.G::m M</formula></sic><corr><choice><orig><formula>g.G::m.M</formula></orig><reg><formula>g:G=m:M</formula></reg></choice></corr></choice>; Est vero <add><formula>m</formula></add> ad <formula>M</formula> ut altitudo columell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+             <lb/><formula>OE</formula> ad altitudinem column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>eF</formula><note type="editorial">Der Buchstabe e ist undeutlich.</note>, hoc est (ob infinite
+             <lb/>parvam <formula>OE</formula> vel <formula>Oe</formula>) ad totam altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+             <lb/><formula>OF</formula>: Patet ergo veritas ejus quod in Demonstrati<pc type="hyphenation">-</pc><lb break="no"/>one mea asserui guttulam infim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> foramini
+             <lb/>imminent<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> in descensu suo animari <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> gravitate
+             <lb/>acceleratrice qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> se habet ad gravitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> natural<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+             <lb/>reciproce ut tota altitudo aquea <formula>OF</formula> ad altitudi<pc type="hyphenation">-</pc><lb break="no"/>nem minim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <formula>OE</formula>, hinc sequi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> fundament<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> de<pc type="hyphenation">-</pc><lb break="no"/>monstrationis me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse valid<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> firmo
+             <lb/>stare talo: Q. E. D. </p>
+<p><choice><abbr>Coroll<supplied>.</supplied></abbr><expan>Corollarium</expan></choice> 1 fals<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> est quod Cl<supplied>.</supplied> <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>
+<lb/>dicit, scilicet <hi rend="i">quam prim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> guttula <add>infima</add> moveri<note type="editorial">In Kopie 2 steht hier noch "deorsum".</note> incipit
+  <lb/><add>eam non amplius urgeri nisi sola</add> gravitate sua acceleratrice naturali</hi><add>;</add> urge<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+  <lb/>enim inter descendend<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> pressione cuneorum la<pc type="hyphenation">-</pc><lb break="no"/>terali<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> t<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> diu continuata donec tota guttula
+         <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> foram<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice> exierit: <choice><abbr>Coroll.</abbr><expan>Corollarium</expan></choice> 2 constat porr<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> pes<pc type="hyphenation">-</pc><lb break="no"/>sime confundi <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <rs key="pers_DE-588-119507978" type="person">Jurino</rs> cas<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> qu<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> fingit
          <pb facs="1079462" n="7"/>
-<lb/>per congelationem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> columnam ambientis cum nostro casu quem
-         <lb/>cum suo (ratione effectus)<note type="editorial">Die Klammer findet sich nur in K.2.</note> identicum putat, cum tamen
-         <lb/>ambo sint diversissimi sublata enim per congelationem
-         <lb/>fluiditate aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ambientis tollitur pressio lateralis, tollitur
-         <lb/>proin ingens illa vis acceleratrix qua infima gutta per minimam
-         <lb/>sui altitudinem descendens eandem velocitatem acquirat quam ac<pc type="hyphenation">-</pc><lb break="no"/>quireret corpus naturaliter grave cadens per integram aquame
-         <lb/>altitudinem. Ut diversitas casuum aptius ob oculos sistatur
-         <lb/>attende, Vir Clarissime quid in utroque contingat, in statu
-         <lb/>congelationis tota moles aquea column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>OF</formula> simul instar cor<pc type="hyphenation">-</pc><lb break="no"/>poris solidi descendit motu naturaliter accelerato: at vero
+<lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> congelation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> column<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ambientis c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> nostro casu qu<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>cum suo ratione effectus<note type="editorial">Die Klammer findet sich nur in K.2.</note> identic<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> putat, c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> tam<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice>
+  <lb/>ambo sint diversissimi sublata enim <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> congelation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>fluiditate aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ambientis tolli<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> pressio lateralis, tolli<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+         <lb/>proin ingens illa vis acceleratrix qua infima gutta <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> minim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+         <lb/>sui altitudin<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> descendens eand<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> velocitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> acquirat qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ac<pc type="hyphenation">-</pc><lb break="no"/>quireret corpus naturali<add>te</add>r grave cadens <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> integr<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+  <lb/>altitudinem. Ut diversitas casuum aptius ob oculos s<unclear>i</unclear>sta<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>,
+         <lb/>attende, Vir clarissime, quid in utro<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> contingat; in Statu
+         <lb/>congelationis tota mol<unclear>es</unclear> aquea column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>OF</formula> simul instar cor<pc type="hyphenation">-</pc><lb break="no"/>poris solidi descendit motu naturaliter accelerato: at vero
          <lb/>in statu fluiditatis nulla pars aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in toto vase content<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
          <lb/>sensibilem habet motum<note type="editorial">In K. 2 steht "motum habet".</note> excepta gutta foramini
-         <lb/>contigua; unde et vel hinc patet ejus motum velocissime
-         <lb/>accelerari debere; quia ea sola omnem motus quantitatem
-         <lb/>in se recipere debet, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> alias in statu congelationis per totam
-         <lb/>columnam aqueam superincumbentem distribuitur.
-         <lb/>Imbecillitas argumenti Juriniani, quo meam demonstrationem
-         <lb/>labefactare annisus est, ex eo quoque manifesta fit, quod veri<pc type="hyphenation">-</pc><lb break="no"/>tatem quam plurium Theorematum in Hydrostatica receptorum atque demonstratorum non minus quam meam Demonstrationem
-         <lb/>subverteret; En aliquod <choice><abbr>exempl.</abbr><expan>exemplum</expan></choice> nosti Vir <choice><abbr>Celeb.</abbr><expan>Celeberrimi</expan></choice> fluidum ali<pc type="hyphenation">-</pc><lb break="no"/>quod grave in vase cujuscunque figur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contentum ea vi premere
-         <lb/>fundum horizontale vasis qua vi premeret fundum si vas super
-         <lb/>eo haberet figuram cylindricam: sit igitur vas
-         <lb/>aliquod <formula>ECMABNDF</formula>, amplum habens fundum <formula>AB</formula> sed
-         <lb/>desinens in collum angustius <formula>DE</formula>; sitque plenum aqua usq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> 
+         <lb/>contigua; unde et v<add>el</add> hinc patet ej<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice> mot<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> velocissime
+         <lb/>accelerari debere, quia ea sola omn<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> motus quantitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+  <lb/>in se recipere debet, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> alias in statu congelationis <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> tot<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+         <lb/>columnam aqueam superincumbent<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> distribuitu<unclear>r.</unclear>
+  <lb/>Imbellicitas argumenti <rs key="pers_DE-588-119507978" type="person">Juri<add>ni</add>ani</rs>, quo me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> demonstration<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>labefactare annisus est, ex eo quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> manifesta fit, quod veri<pc type="hyphenation">-</pc><lb break="no"/>tat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> pluri<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> Theoremat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> in Hydrostatica receptor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+  <lb/>at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> demonstrator<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> non minus qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> Demonstration<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>subverteret; Ex aliquod <abbr>Exempl.</abbr> nosti Vir <choice><abbr>Celeb.</abbr><expan>Celeberrimi</expan></choice> fluid<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ali<pc type="hyphenation">-</pc><lb break="no"/>quod grave in vase cujuscun<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> figur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> content<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ea vi <choice><sic>preme<add>mere</add></sic><corr>premere</corr></choice>
+         <lb/>fund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> horizontale vasis qua vi premeret fund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> si vas su<choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>
+         <lb/>eo haberet figur<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> Cylindric<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>; sit igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> vas
+         <lb/>aliquod <formula>ECMABNDF</formula> ampl<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> habens fund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>AB</formula> sed
+         <lb/>desinens in coll<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> angusti<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice> <formula>DE</formula> sit<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> plen<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> aqua usq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> 
          <pb facs="1079463" n="8"/>
-<lb/>ad <formula>EF</formula>; Certe nemo qui vel tantillum initiatus est principiis
-   <lb/>hydrostaticis ignorat, vim qua premitur fundum<note type="editorial">sic.</note>
-   <formula>AB</formula> esse<figure facs="1079463_01.png" hand="pers_DE-588-118509969"/>
-<lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualem ponderi Cylindri aquei <formula>ABHG</formula> cujus
-         <lb/>basis esset <formula>AB</formula> et altitudo <formula>BH</formula> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis al<pc type="hyphenation">-</pc><lb break="no"/>titudini quam obtinet aqua in vase proposito
-         <lb/><formula>EB</formula>. Ponamus nunc cun <rs key="pers_DE-588-119507978" type="person">Jurino</rs>, siquidem ita
-         <lb/>ponere licet, aquan omnem in vase congelari ita
-         <lb/>ut in massam rigidam mutetur; Quid putas Vir pereximie
-         <lb/>ex illa mutatione futurum esse? Secundum <rs key="pers_DE-588-119507978" type="person">Jurini</rs>
-<lb/>opinionem fundum <formula>AB</formula> perget premi ab incumbente
-         <lb/>glacie eadem vi qua ante congelationem ab aqua flui<pc type="hyphenation">-</pc><lb break="no"/>da premebatur, quia ut ille opinatur ex fluiditatis
+<lb/>ad <formula>EF</formula>; Certe nemo qui vel tantill<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <choice><sic>inniti<unclear>at</unclear>us</sic><corr>initiatus</corr></choice> <add>es</add>t principiis
+   <lb/>hydrostaticis ignorat, vim qua premi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> fund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+   <formula>AB</formula> esse
+  <lb/><figure facs="1079463_01.png" hand="pers_DE-588-118509969"/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qual<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> ponderi Cylindri aquei <formula>ABHG</formula> cujus
+         <lb/>basis esset <formula>AB</formula> et altitudo <formula>BH</formula> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis al<pc type="hyphenation">-</pc><lb break="no"/>titudini qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> obtinet aqua in vase proposito
+         <lb/><formula>EB</formula>. Ponamus nunc c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <rs key="pers_DE-588-119507978" type="person">Jurino</rs>, siquidem ita
+         <lb/>ponere licet, aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> omn<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> in vase congelari ita
+         <lb/>ut in mass<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> rigidam mute<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>; Quid p<add>u</add>tas Vir <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>eximie
+         <lb/>ex illa mutatione f<add>u</add>tur<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> esse? Secundum <rs key="pers_DE-588-119507978" type="person">Jurini</rs>
+<lb/>opinion<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> fund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>AB</formula> perget premi ab incumbente
+         <lb/>glacie ead<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> vi qua ante congelation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> ab aqu<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> flui<pc type="hyphenation">-</pc><lb break="no"/>da premeba<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, quia ut ille opina<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> ex fluiditatis
          <lb/>destructione nulla fit mutatio in
-         <lb/>modo gravitandi. Tu vero omnesque qui naturam gra<pc type="hyphenation">-</pc><lb break="no"/>vitationis fluidorum intelligunt ita mecum statuent,
-         <lb/>quod a sana ratione dictatur, atque ab experientia
-         <lb/>confirmatur, nimirum fundum <formula>AB</formula> post congelationem
-         <lb/>premi tantum a proprio pondere aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> congelat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, adeoque
-         <lb/>pressionem in tantum imminutam esse, quanto minoris
+         <lb/>modo gravitandi. Tu vero omnes<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> qui natur<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> gra<pc type="hyphenation">-</pc><lb break="no"/>vitationis fluidor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> intelligunt ita mec<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> statuent,
+         <lb/>quod <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> sana ratione dicta<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice>b experientia
+         <lb/>confirma<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, nimir<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> fund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>AB</formula> post congelation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>premi tant<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> proprio pondere aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> congelat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+         <lb/>pression<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> in <add>tantum</add> imminutam esse, quanto minoris
          <lb/>est ponderis aqua in vase contenta, quam esset
-         <lb/>cylindrus aqueus <formula>AH</formula>. Sed h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c tam trita sunt ut mirer
-         <lb/><choice><abbr>Cl.</abbr><expan>Clarissimum</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurinum</rs> in iis cespitasse, quando ex supina oscitan<pc type="hyphenation">-</pc><lb break="no"/>tia duos diversos casus ac si unum quid facerent inter se confundit.
+         <lb/>cylindrus aqueus <formula>AH</formula><choice><orig>.</orig><reg>;</reg></choice> sed <add>h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c</add> t<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> trita sunt ut mirer
+         <lb/><choice><abbr>Cl.</abbr><expan>Clarissimum</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurin<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> in iis cespitasse, quando ex supina oscit<choice><orig><g ref="#an">ā</g></orig><reg>an</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>tia duos diversos casus ac si un<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> quid facere<add>n</add>t inter se
+  <lb/>confundit.
          <pb facs="1079464" n="9"/>
-<lb/>His ita demonstratis et probe intellectis iam
-         <lb/>sponte corruunt<note type="editorial">In K. 2 "concurrunt".</note> omnes reliqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><abbr>Cl.</abbr><expan>Clarissimi</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> argumentationes,
+<lb/>His ita demonstratis et probe intellectis j<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> sponte
+  <lb/><add>corruunt</add><note type="editorial">In K. 2 "concurrunt".</note> omnes reliqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><abbr>Cl.</abbr><expan>Clarissimi</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> argumentationes,
          <lb/>quibus adeo sigillatim respondere plane non necesse
-         <lb/>arbitror. Quis ex. gr. non videt nullius momenti esse
-         <lb/>id quod dicit <hi rend="u">Fieri non posse ut columna aquea guttulam
-            <lb/>subjectam premat, nisi ab illa guttula impediatur in
-            <lb/>descensu. Non autem impediri quia non conatur velocius
-            <lb/>descendere quam infima guttula gravitate sua deor<pc type="hyphenation">-</pc><lb break="no"/>sum fertur;</hi> Nam etiamsi columna aquea non impediatur
-         <lb/>in descensu a guttula subjecta, impeditur tamen, sed
+         <lb/>arbitror; Quis <abbr>ex. gr.</abbr> non videt nullius momenti esse
+         <lb/>id quod dicit <cit><quote><hi rend="u">Fieri non posse ut columna aquea guttul<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+            <lb/>subject<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> premat, nisi ab illa guttula impedia<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> <add>in</add><note type="editorial">Nach in folgt ein unleserliches Zeichen.</note><!-- To Do: mit Zitat vergleichen -->
+           <lb/>desce<unclear>nsu</unclear>.<!-- To Do: mit Zitat vergleichen --> Non aut<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> impediri, quia non cona<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> velocius
+            <lb/>descendere quam infima guttula gravitate sua deor<pc type="hyphenation">-</pc><lb break="no"/>sum fer<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>;</hi></quote></cit> Nam etiam<add>s</add>i columna aquea n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> impedia<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+         <lb/>in descensu a guttula subjecta, impedi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> tam<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice>, sed
          <lb/>a columnis lateralibus contraponderantibus. Plane
-         <lb/>non fuit oper<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> pretium adducere simile desumtum
-         <lb/>a columna solida ex centum aureis sibi invicem
-         <lb/>impositis confecta et mens<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> imposita ubi notat,
-         <lb/>aureum infimum etiamsi urgeatur a superincumbentibus
-         <lb/>subducta mensa non aliter descendere cum reliquis
+         <lb/>non fuit oper<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> preti<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> add<add>u</add>cere simile desumtu<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+         <lb/>a columna solid<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex cent<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> aureis sibi invicem
+         <lb/>impositis confe<unclear>c</unclear>ta et mens<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> imposita ubi notat,
+         <lb/>aureum infim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> etiamsi urgea<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> superincumbentib<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+         <lb/>subducta mensa n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> aliter descendere c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> reliquis
          <lb/>omnibus ac si solus ille aureus in mensa
          <lb/>constitutus fuisset: Vides facile Vir <choice><abbr>Cl.</abbr><expan>Clarissime</expan></choice>
-<lb/>hoc simile huc non quadrare; repr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sentat
-         <lb/>enim tantum eum casum quem fingit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>
-<lb/>per congelationem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> columnam ambientis, qui
-         <lb/>casus autem a vero fluiditatis casu, qui est in
-         <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stione, alienus est, et diversissimus.
+<lb/>hoc simile huc non quadrare repr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sentat
+         <lb/>enim tantum eum casum quem fingit <rs key="pers_DE-588-119507978" type="person">Jurin<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice></rs>
+<lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> congelation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> column<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ambientis, qui
+         <lb/>casus autem <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> vero fluiditatis casu, qui est in
+         <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stione, alienus est <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> diversissimus<supplied>.</supplied>
          <pb facs="1079465" n="10"/>
-<lb/>Quod nunc attinet ad alteram <rs key="pers_DE-588-119507978" type="person">Jurini</rs> objectionem
-         <lb/>(ad duas enim objectiones quicquid mihi objectat
-         <lb/>reduci potest) ex eo desumtam, <hi rend="u">quod si quis ex
-            <lb/>velocitate, quacum aqua secundum mea placita
-            <lb/>ex foramine egreditur, et ex determinata per
+  <lb/>Quod nunc attinet ad alter<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> objection<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>(ad duas enim objectiones quicquid <add>m</add><unclear>i</unclear>hi objectat
+         <lb/>reduci potest) ex eo desumtam <cit><quote><hi rend="u">Quod si quis ex
+           <lb/>velocitate, quac<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> aqua secundum mea placita
+            <lb/>ex foramine egredi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> et ex determinata <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>
             <lb/>eam velocitatem mole aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> dato quovis tempore
-            <lb/>Motum ejusdem definire voluerit, eundem (ut pu<pc type="hyphenation">-</pc><lb break="no"/>tat <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>) duplo majorem reperturus sit,
-            <lb/>quam qui ex pondere column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> forami<pc type="hyphenation">-</pc><lb break="no"/>ni insistentis gravitatis vi generari queat,</hi>
-<note type="editorial">In K. 2: "queant.</note>
-<lb/>antum sane abest, ut ex quantitate aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-         <lb/>dato tempore effluentis demonstratio mea destru<pc type="hyphenation">-</pc><lb break="no"/>atur, ut potius ex illa ipsa quantitate mirifice
-         <lb/>confirmetur, ex adverso autem Newtonianum catar<pc type="hyphenation">-</pc><lb break="no"/>rhacta figmentum funditus evercatur; Nego
-         <lb/>enim, quod supponit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> cum <rs key="pers_DE-588-118587544" type="person">Newtono</rs>,
-         <lb/>quantitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> effluentis eo tempore quo
-         <lb/>corpus grave cadere posset ex altitudine aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini
+            <lb/>Mot<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ejusdem definire voluerit, eundem</hi> <said>(ut pu<pc type="hyphenation">-</pc><lb break="no"/>tat <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>)</said> <hi rend="u">major<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> reperturus sit,
+            <lb/>quam qui ex pondere column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> forami<pc type="hyphenation">-</pc><lb break="no"/>ni insistentis gravitatis vi generari queant,</hi></quote></cit>
+<lb/>ant<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> sane abest, ut ex quantitate aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+         <lb/>dato tempore effluentis demonstratio mea destru<pc type="hyphenation">-</pc><lb break="no"/>a<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, ut potius ex illa ipsa quantitate mirifice
+         <lb/>confirme<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, ex adverso autem Newtonian<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> catar<pc type="hyphenation">-</pc><lb break="no"/>rhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> figmentum funditus everta<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>; Nego
+         <lb/>enim quod supponit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <rs key="pers_DE-588-118587544" type="person">Newtono</rs>,
+         <lb/>quantitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> effluentis eo tempore quo
+         <lb/>corpus grave <add>cadere posset</add> ex altitudine aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini
          <lb/>incumbentis esse duplam cylindri aquei
          <lb/>cujus basis <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis est foramini et
          <lb/>altitudo <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis ipsi illi altitudini aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase content<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>;
          <pb facs="1079466" n="11"/>
-<lb/>quantitas enim illa non est dupla sed omnino
+  <lb/>quantitas enim illa non est dupla sed omnino
          <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dicto cylindro. Lege si placet qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tibi olim de
-         <lb/>hac re scripsit meo jussu <rs key="pers_DE-588-118656503" type="person">Filius meus Daniel</rs> de Separatio<pc type="hyphenation">-</pc><lb break="no"/>ne guttularum ex foramine successive exilientium relic<pc type="hyphenation">-</pc><lb break="no"/>to inter singulas interstitiolo ipsi guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quali.
+  <lb/>hac re scripsit meo jussu Filius meus <rs key="pers_DE-588-118656503" type="person">Daniel</rs> de Separatio<pc type="hyphenation">-</pc><lb break="no"/>ne guttular<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ex foramine successive exilientium relic<pc type="hyphenation">-</pc><lb break="no"/>to inter singul<unclear>a</unclear>s interstitiolo ipsi guttul<unclear><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quali.
          <lb/>Confer etiam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> postea ad rem clarius explicandam
-         <lb/>Tibi perscripsi in <rs key="B_1723-05-01_991170515108405501" type="letter">litteris</rs><note type="editorial">Johann I Bernoulli an Pietro Antonio Michelotti vom 1. Mai 1723.</note> 1. Maji superioris Anni dat[is].
-         <lb/>Ostendimus namque si aqua esset summe fluida,
-         <lb/>si effluxus ex vase fieret in vacuo hoc est si nullus
-         <lb/>adesset aër nullaque materia subtilis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> radium
-         <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> effluentis comprimendo attenuaret, si denique
-         <lb/>foramen esset in lamina tenuissima nullam
+         <lb/>Tibi perscripsi in <rs key="B_991170515108405501" type="letter">Litteris</rs> 1 Maij superioris Anni <choice><sic>dat</sic><corr>datis</corr></choice>.
+         <lb/>Ostendimus nam<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> si aqua esset su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e fluida,
+         <lb/>si effluxus ex vase fieret in vacuo hoc est si null<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+         <lb/>adesset aër nulla<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> materia subtilis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> radi<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+         <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> effluentis, comprimendo attenuaret, si deni<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+  <lb/>foramen esset in lamina tenuissima nullam
          <lb/>omnino crassitiem habente, futurum esse ut
-         <lb/>radius<note type="editorial">In K. 2 fehlt "radius".</note> vel, ut vocat Newtonus, vena prosiliens
-         <lb/>non sit continua, sed interrupta et in minimas
-         <lb/>portiunculas discerpta cum intervallulis unicuique<note type="editorial">In K. 2: "utriusque".</note> portiuncul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualibus; sed quia vena penetrat
-         <lb/>per aërem vel saltem (sublato aëre) per <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>therem,
-         <lb/>fieri ut singul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> portiuncul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> paulo + post exitum
-         <lb/>ex foramine comprimantur secundum crassitiem
-         <lb/>et compress<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in duplum elongentur donec inter
-         <lb/>se contigu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> evadant et hoc modo forment venam
-         <lb/>continuam sed duplo angustiorem quam est foramen;
-         <lb/>dixi <hi rend="u">paulo post exitum</hi> nam immediate post e<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>itum
+  <lb/>rad<unclear>iu</unclear>s<note type="editorial">In K. 2 fehlt "radius".</note> vel ut vocat <rs key="pers_DE-588-118587544" type="person">Newtonus</rs>, vena prosiliens
+         <lb/>non sit continua, sed interrupta <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> in minimas
+         <lb/>portiunculas discerpta c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> intervallulis unicui<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice><note type="editorial">In K. 2: "utriusque".</note>
+  <lb/>portiuncul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualibus; sed quia vena penetrat
+         <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> aërem vel saltem (sublato aëre) <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ther<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>,
+         <lb/>fieri ut singul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> portiuncul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> paulo post exit<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+  <lb/>ex foramine compriman<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> secund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> crassitiem
+         <lb/>et compress<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in dupl<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> elongen<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> donec inter
+         <lb/>se contigu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> evad<unclear>a</unclear>nt et hoc modo forment ven<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+  <lb/>continu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> sed duplo angustiorem qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> est foram<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice><supplied>,</supplied>
+         <lb/>dixi <hi rend="u">paulo post exit<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></hi> n<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ediate post exitum
          <pb facs="1079467" n="12"/>
-<lb/>ad brevissimam a foramine distantiam aquea vena
-         <lb/>conspicitur ejusdem fere amplitudinis cujus
-         <lb/>est ipsum foramen, sed citissime attenua<pc type="hyphenation">-</pc><lb break="no"/>tur et induit quam dixi dimidiam ejus
+<lb/><add>ad</add> brevissim<add><choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></add> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> foramine distantiam aquea vena
+         <lb/>conspici<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> ejusdem fere amplitudinis cujus
+         <lb/>est ipsum foramen<supplied>,</supplied> sed citissime attenua<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> et induit quam dixi dimidiam ejus
          <lb/>amplitudinem; hanc meam hujus
-         <lb/>Ph<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nomeni explicationem egregie confir<pc type="hyphenation">-</pc><lb break="no"/>mant experimenta a Nobilissimo
-         <lb/><rs key="pers_DE-588-11887733X" type="person">Poleno</rs> instituta; ex iis enim ob<pc type="hyphenation">-</pc><lb break="no"/>servavi rationem diametri foraminis
+         <lb/>Ph<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nomeni explicationem egregie confir<pc type="hyphenation">-</pc><lb break="no"/>mant experimenta <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> Nobilissimo
+         <lb/><rs key="pers_DE-588-11887733X" type="person">Poleno</rs> instituta; ex iis enim ob<pc type="hyphenation">-</pc><lb break="no"/>serva<add>v</add>i ration<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> diametri foraminis
          <lb/>ad diametrum ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> tanto
-         <lb/>propius accedere ad rationem <formula>\sqrt{2}</formula> ad
-         <lb/>1 quanto c<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>teris paribus lamina in qua
+         <lb/>propius accedere ad rationem <add><formula>\sqrt{2}</formula></add> ad
+         <lb/>1 quanto c<add><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add>teris paribus lamina in qua
          <lb/>foramen erat magis esset tenuis,
-         <lb/>ita ut non dubitem quin + si posset esse {*} 
-         <lb/>omnis crassitiei expers, aqua quam
+         <lb/>ita ut non dubitem quin si posset esse
+         <lb/>omnis crassitiei expers, aqua qua<add>m</add>
          <lb/>suppono fluidissimam haberet
          <lb/>in partibus ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini proximis
          <lb/>diametrum qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esset ad diametrum
-         <lb/>in partibus remotioribus ut <formula>\sqrt{2}</formula> ad 1, + +
+         <lb/>in partibus remotioribus ut <formula>\sqrt{2}</formula> ad 1,
          <pb facs="1079468" n="13"/>
 <lb/>adeo ut amplitudo foraminis sit ad amplitudinem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-         <lb/>attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ut 2 ad 1; Nescio sane quomodo <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> ex
-         <lb/><rs key="biblio_KGWAEINJ" type="biblio">catarrhacta Newtoniania</rs> deducere possit hanc attenuatio<pc type="hyphenation">-</pc><lb break="no"/>nem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; multo minus rationem reddere, cur illa
-         <lb/>attenuatio procedat ad dimidiam usque amplitudinem
-         <lb/>foraminis: hoc sane, si quicquam aliud, commendat {*}
-         <lb/>systema meum, et quo magis illud enervare conten<pc type="hyphenation">-</pc><lb break="no"/>dit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>, eo magis ejus validitas enitescit.
-         <lb/>H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c sunt Vir Nobilissime qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad contenta <rs key="B_1724-04-21_991170515107905501" type="letter">Epistol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-            <lb/>prioris</rs><note type="editorial">Pietro Antonio Michelotti an Johann I Bernoulli, vom 21. April 1724.</note> respondenda censui; ea qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> continentur in Tua
-         <lb/>posteriore ex <rs key="biblio_M6Z9EVAL" type="biblio">Dissertatione</rs> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> excerpta<!-- Sind die Excerpta fassbar und als Werk oder Brief referenzierbar? --> + + + ad Te
-         <lb/>potius quam ad me spectant: pauca tamen
-         <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> me propius tangunt per ea qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> hucusque
-         <lb/>dixi jam sunt refutata; perstringam interim
-         <lb/>generaliter ex abundanti hanc etiam × partem <rs key="biblio_M6Z9EVAL" type="biblio">Dissertatio<pc type="hyphenation">-</pc><lb break="no"/>nis Jurinian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs>: Distinguit inter motum aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex
-         <lb/>vase per foramen delabitur, et motum totius aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-         <lb/>seu Cataract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intra vas versus foramen
-         <lb/>descendit, et de hoc altero motu magna pompa loquitur
-         <lb/><hi rend="u">eum a nemine adhuc × × quod sciret fuisse deter<pc type="hyphenation">-</pc><lb break="no"/>minatum, neminemque Mathemati<pc type="hyphenation">-</pc><lb break="no"/>corum vel verbo attigisse,</hi> quasi id tam
-         <lb/>difficile nobis fuisset si e re nostra
+         <lb/>attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <add>ut</add> 2 ad 1; Nescio sane quomodo <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> <unclear>ex</unclear>
+         <lb/><rs key="biblio_KGWAEINJ" type="biblio">Catarrhacta Newtoniania</rs> deducere possit hanc attenuatio<pc type="hyphenation">-</pc><lb break="no"/>nem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; multominus rationem reddere, cu<add>r</add> illa
+         <lb/>attenuatio procedat ad dimidiam us<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> amplitudin<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>foraminis: hoc sane, si quicquam aliud, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endat
+         <lb/>systema meum, et quo magis illud enervare conten<pc type="hyphenation">-</pc><lb break="no"/>dit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>, eo magis ejus validitas enit<unclear>e</unclear>scit<supplied>.</supplied>
+  <lb/>H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c sunt Vir Nobilissime qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad contenta <rs key="B_991170515107905501" type="letter">Epistol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+  <lb/>prioris respondenda censui, ea qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> continen<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in Tua
+         <lb/>posteriore ex <rs key="biblio_M6Z9EVAL" type="biblio">Dissertatione</rs> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> excerpta ad Te
+         <lb/>potius qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ad me spectant: pauca tamen
+         <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> me propius tangunt <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> ea qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> hucus<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+         <lb/>dixi j<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> sunt refutata; perstringam interim
+         <lb/>generaliter ex abundanti hanc etiam partem <rs key="biblio_M6Z9EVAL" type="biblio">Dissertatio<pc type="hyphenation">-</pc><lb break="no"/>nis <add>Jurinian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add></rs>: Distinguit inter motum aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex
+         <lb/>vase <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> foram<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice> delabi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, et motum totius aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+         <lb/>seu Catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aque<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intra vas versus foramen
+         <lb/>descendit; et de hoc altero motu magna pompa loqui<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+         <lb/><hi rend="u">eum a nemine adhuc quod sciret fuisse deter<pc type="hyphenation">-</pc><lb break="no"/>minatum, neminem<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Mathemati<pc type="hyphenation">-</pc><lb break="no"/>cor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> vel verbo attigisse,</hi> quasi id tam
+         <lb/>difficile nobis fuisset si ere<!-- To Do: si ere kontrollieren --> nostra
          <lb/>censuissemus eundem determinare, sed
-         <lb/>quandoquidem catarrhactam illam tanquam
+         <lb/>quandoquidem catarr<add>h</add>actam illam tanqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
          <pb facs="1079469" n="14"/>
-<lb/>rem chim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ricam rejici mus, inepte admodum de nobis dicitur,
-         <lb/>ejus motum a nobis non fuisse determinatum: ex men<pc type="hyphenation">-</pc><lb break="no"/>te nostra catarrhacta est <hi rend="u">non ens,</hi> non entis nulla sunt
-         <lb/>accidentia, nullus per consequens motus nulla adeoque
+<lb/>rem chim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ricam rejicimus, inepte admodum de nobis dici<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>,
+         <lb/>ejus motum a nobis non fuisse determinatum: ex men<pc type="hyphenation">-</pc><lb break="no"/>te nostra catarracta est <hi rend="u">non ens,</hi> non entis nulla sunt
+         <lb/>accidentia, nullus <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <abbr>conseq</abbr> mot<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice> nulla adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
          <lb/>determinatio ejus; Plaudat ergo sibi soli <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> de
-         <lb/>tam nobili Invento, et desinat nobis exprobrare quod non
-         <lb/>determinaverimus motum rei alicujus non existentis.
-         <lb/><rs key="pers_DE-588-119507978" type="person">Jurinus</rs> ait se non magis de me cogitasse {*} quam de Sinen<pc type="hyphenation">-</pc><lb break="no"/>sium Jmperatore<note type="editorial">Zu der Zeit wäre Yongzengh<!-- persontag --> Kaiser von China gewesen, vgl. https://de.wikipedia.org/wiki/Yongzheng, zuletzt am 21.01.2020, aber es ist hier wohl proverbial gemeint.</note>, cum scriptum illud suum pararet quo
-         <lb/>visum nobis fuit voluisse illam {*}{*} Demonstrationem meam
+         <lb/>tam nobili Invento et desinat nobis exprobrare quod n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice>
+         <lb/>determinaverimus motum <add>rei</add> alicujus non existentis.
+         <lb/><rs key="pers_DE-588-119507978" type="person">Jurinus</rs> ait se non magis de me cogitasse quam de Sinen<pc type="hyphenation">-</pc><lb break="no"/>sium Jmperatore<note type="internal">Zu der Zeit wäre Yongzengh Kaiser von China gewesen, vgl. https://de.wikipedia.org/wiki/Yongzheng, zuletzt am 21.01.2020, aber es ist hier wohl proverbial gemeint.</note>, cum
+         <lb/>visum nobis fuit voluisse Demonstrationem meam
          <lb/>extenuare; hoc potest esse, sed si non extenuavit
          <lb/>dedita opera casu tamen etsi inscius extenuavit,
-         <lb/>verba enim illa <hi rend="u">fieri omnino non potest, ut aliquis {*</hi>{*}{*}
-         <lb/><add>motus</add> cum Pondere quiescente conferatur} nemo
+         <lb/>verba enim illa <hi rend="u">fieri omnino non potest, ut aliqu<add>i</add>s
+         <lb/><add>motus</add> cum Pondere quiescente conferatur</hi> nemo
          <lb/>non judicabit contra meam demonstrationem
-         <lb/>dicta quamquam reapse eam non feriant. Asserit
-         <lb/><rs key="pers_DE-588-119507978" type="person">Jurinus</rs> <hi rend="u">se <rs key="biblio_KGWAEINJ" type="biblio">Catarrhactam ex Newtono</rs> desumtam proposuisse
-            <lb/>non ut ex tripode editam sed evidentia mathe<pc type="hyphenation">-</pc><lb break="no"/>matica omnibus oraculis certiore munitam; et statim
-            <lb/>subdit, Quod cata[r]rhacta talis formari debeat ex
+         <lb/>dicta quamquam reapse eam non feriant; asserit
+         <lb/><rs key="pers_DE-588-119507978" type="person">Jurinus</rs> <hi rend="u">se <rs key="biblio_KGWAEINJ" type="biblio">Catar<add>rh</add>act<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ex Newtono</rs><!-- To Do: kontrollieren on ex oder <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> --> desumtam proposuisse<!-- To Do: proposuisse ist in der Transkription ergänzt, vergleichen mit Zitat-->
+            <lb/>non ut ex Tripode editam sed evidentia mathe<pc type="hyphenation">-</pc><lb break="no"/>matica omnibus oraculis certiore munitam;</hi> et statim
+  <lb/>subdit, <hi rend="u">Quod, cataracta talis formari deb<unclear>ea</unclear>t ex
             <lb/>aqua libere descendente, et accelerata in modum
-            <lb/>corporum omnium gravium</hi> additque istud <hi rend="u">apertam
-               <lb/>rem esse</hi>; Interim non curat rationem reddere
+            <lb/>corpor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> omnium gravium</hi> addit<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> istud <hi rend="u">apertam
+               <lb/>rem esse;</hi> Interim non curat rationem reddere
          <lb/>illius subitane<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> velocitatis quam singul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> partes
-         <lb/>per totam{*} catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinem eo ipso momento
-         <lb/>acquirere deberent quo orificium inferius quod primo
+         <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> totam catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinem eo ipso momento
+         <lb/>acquire<unclear>re</unclear> deberent quo orificium inferius quod pri<add>m</add>o
          <pb facs="1079470" n="15"/>
-<lb/>obturatum supponitur repente aperitur; non capio quomodo
-         <lb/>corpus aliquod grave per gravitatem naturalem in uno
-         <lb/>instanti ex quiete ad velocitatem determinatam pervenire
+<lb/>obturatum supponi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> repente aperi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>; non capio quomodo
+         <lb/>corpus aliquod grave <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> gravitatem naturalem in uno
+         <lb/>instanti ex quiete ad velocitatem determinatam <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>venire
          <lb/>possit; annon hoc est supponere imo plus supponere
-         <lb/>quam est in qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stione? Supponit enim quamlibet
-         <lb/>catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> partem remoto obturaculo ab orifi<pc type="hyphenation">-</pc><lb break="no"/>cio incipere statim descendere ea cum velocitate,
-         <lb/>quam acquisivisset si actu descendisset ex summita<pc type="hyphenation">-</pc><lb break="no"/>te catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad eam quam occupat profunditatem;
-         <lb/>quod ergo supponit de singulis, supponit etiam
-         <lb/>de infima parte orificio proxima, eam scili<pc type="hyphenation">-</pc><lb break="no"/>cet exire cum velocitate quam haberet ex casu per
-         <lb/>totam{*} catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinem, atqui hoc ipsum est quod
-         <lb/>demonstrari debet, non supponi; supponit igitur manifeste
+         <lb/>quam est in qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stione? supponit enim quamlibet
+         <lb/>catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> partem remoto obt<add>u</add>raculo ab orifi<pc type="hyphenation">-</pc><lb break="no"/>cio incipere statim descen<add>d</add>ere ea cum velocitat<unclear>e,</unclear>
+         <lb/>quam acquisivisset si actu descendisset ex su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ita<pc type="hyphenation">-</pc><lb break="no"/>te catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, ad eam quam occupat profunditatem
+         <lb/>quod <add>e</add>rgo supponit de singulis, supponit etiam
+         <lb/>de infima parte orificio proxima, eam scili<pc type="hyphenation">-</pc><lb break="no"/>cet exire cum velocitate quam haberet ex casu <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>
+         <lb/>tot<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinem, atqui hoc ipsum <add>est</add> quod
+         <lb/>demonstrari debet, non supponi; supponit igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> manifeste
          <lb/>id quod est in qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stione imo plura supponit pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ter
-         <lb/>necessitatem. Quam ridiculus autem sit pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ceps ille
-         <lb/>delapsus partium aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in catarrhacta imaginaria content<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-         <lb/>exposuisti <rs key="pers_DE-588-119507978" type="person">Jurino</rs> {*} {*} in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs> p. 128 ab initio, quia
-         <lb/>corpus ejusdem specific<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> gravitatis cum aqua colloca<pc type="hyphenation">-</pc><lb break="no"/>tum a regione centri foraminis pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ceps ruere deberet
+         <lb/>necessitatem. Qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ridiculus autem sit pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ceps ille
+         <lb/>delapsus partium aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in catarracta imaginaria content<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+         <lb/>exposuisti <rs key="pers_DE-588-119507978" type="person">Jurino</rs> in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs> p. 128 ab initio, quia
+         <lb/>corpus ejusdem specific<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> gravitatis cum aqua colloca<pc type="hyphenation">-</pc><lb break="no"/>tum <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> regione centri foraminis pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ceps ruere deberet
          <lb/>versus foramen; item quia partes aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase extra
-         <lb/>catarrhactam posit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> se sensim {*} {*} {*} confundunt cum aqua in
-         <lb/>ipsa catarrhacta quod patet ex tinctura eo deposita, mani<pc type="hyphenation">-</pc><lb break="no"/>festo indicio aquam extra catarrhactam <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>que ac illam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intra
+         <lb/>catarractam posit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> se sensim confundunt cum aqua in
+         <lb/>ipsa catarracta quod patet ex tinctura eo deposita, mani<pc type="hyphenation">-</pc><lb break="no"/>festo indicio aquam extra catarractam; <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <add>ac</add> ill<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intra
          <pb facs="1079471" n="16"/>
-<lb/>catarrhactam existit communi motu moveri, quamvis
-         <lb/>insensibili, modo vas sit satis amplum, neque foramen
+<lb/>catarractam existit communi mot<add>u</add> moveri quamvis
+         <lb/>insensibili, modo vas sit satis amplum ne<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> foramen
          <lb/>nimis magnum: Huic accedit experimentum quod
-         <lb/><choice><abbr>Nobiliss.</abbr><expan>Nobilissimus</expan></choice> <rs key="pers_DE-588-11887733X" type="person">Polenus</rs> post <rs key="pers_DE-588-117650897" type="person"><choice><abbr>Joh.</abbr><expan>Johannem</expan></choice> Cevam</rs> instituit, cujus
-         <lb/>meminit in Libro suo <rs key="biblio_KGKQAP5S" type="biblio">de Castellis</rs> p. 21 et 37 ubi
-         <lb/>clarissime testatur, <hi rend="u">suprema aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> parte fusco
-            <lb/>colore infecta + non nisi post longiusculum tempus
-            <lb/>infectionem aliquam ejusdem coloris in effluen<pc type="hyphenation">-</pc><lb break="no"/>te aqua apparere.</hi> Dicat nunc mihi <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>
-<lb/>quo pacto lentus hic aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase motus et pau<pc type="hyphenation">-</pc><lb break="no"/>lativa {*} illa tinctur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> infectio consistere queat
-         <lb/>cum pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cipiti casu catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>.
-         <lb/>Interim quod miror, <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> altum servat
-         <lb/>silentium ad hanc objectionem,
+  <lb/><choice><abbr>Nobiliss.</abbr><expan>Nobilissimus</expan></choice> <rs key="pers_DE-588-11887733X" type="person">Polen<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice></rs> post <rs key="pers_DE-588-117650897" type="person">Joh.</rs> Cevam instituit, cujus
+         <lb/>meminit in Libro suo <rs key="biblio_KGKQAP5S" type="biblio">de Castellis</rs> p. 21 <unclear><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice></unclear> 37 ubi
+         <lb/>clarissime testa<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, <hi rend="u">suprema aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> parte fusco
+            <lb/>colore infecta non nisi post longiusculum tempus
+            <lb/>infe<unclear>c</unclear>tionem aliquam ejusdem coloris in effluen<pc type="hyphenation">-</pc><lb break="no"/>te aqua apparere:</hi> Dicat nunc mihi <rs key="pers_DE-588-119507978" type="person">Jurin<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice></rs>
+<lb/>quo pacto lentus hic aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase motus et pau<pc type="hyphenation">-</pc><lb break="no"/>lativa<!-- to Do: kontrollieren paulativa oder paulatina --> illa tinctur<add><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add> infectio consistere queat
+         <lb/>cum pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cipiti casu catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>.
+         <lb/>Interim quo<unclear>d</unclear> miror, <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> alt<add>u</add>m servat
+         <lb/>silentium ad hanc objectionem
          <lb/>ad quam tamen, cum jam fuerit ipsi
-         <lb/>proposita in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs>, necessarie respon<pc type="hyphenation">-</pc><lb break="no"/>dere debuisset, sicuti etiam ad reliquas
+         <lb/>proposita in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs>, necessarie respon<pc type="hyphenation">-</pc><lb break="no"/>dere debuisset, sicuti etiam ad reliquas<!-- Korrektur kontrollieren -->
          <lb/>quas pariter silentio pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terit,
-         <lb/>in eadem <rs key="biblio_M3G2JA79" type="biblio">libri Tui</rs> pagina 128 et <choice><abbr>seq</abbr><expan>sequenti</expan></choice> expositas;
+         <lb/>in eadem <rs key="biblio_M3G2JA79" type="biblio">libri Tui</rs> <add>pagina</add> 128 et <choice><abbr>seq.</abbr><expan>sequenti</expan></choice> expositas
          <lb/>nimirum supponendo casum
-         <lb/>quo maximam aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> partem annihilari
-         <lb/>concipimus ad remanentiam partis tantum
-         <lb/>perexigu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinis, atque in annihilat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+         <lb/><add>quo maxim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> partem</add> annihilari
+         <lb/>concipimus ad remanentiam<!-- To Do: kontrollieren ob Komma -->partis tant<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+  <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>exigu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinis, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> in annihilat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
          <pb facs="1079472" n="17"/>
-<lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> locum eodem temporis momento substitui
-         <lb/>corpus solidum eiusdem cum aqua gravitatis,
+<lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> locum eodem temporis momento <add>substitui</add>
+         <lb/>corpus solidum e<add>jus</add>dem cum aqua gravitatis<choice><orig>.</orig><reg>,</reg></choice>
          <lb/>quod vasis parietes exacte impleat, tamen
-         <lb/>sine affrictu liberrime descendat ita ut eo<pc type="hyphenation">-</pc><lb break="no"/>dem <add>pondere</add> premat substratam aquam restantem,
-         <lb/>quo premebatur <add>ab</add> aqua superiori ante annihilationem;
-         <lb/>Supponendo etiam alterum casum, priori statim
+         <lb/>sine affrictu liberrime descendat ita ut eo<pc type="hyphenation">-</pc><lb break="no"/>dem <add>pondere</add> premat substratem aquam restant<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>,
+         <lb/>quo premeba<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> <add>ab</add> aqua superiori ante a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ihilatione<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>Supponendo etiam alterum casum priori statim
          <lb/>subnexum in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs>,
-         <lb/>quo scilicet finxi aliquod fluidum elasticum
-         <lb/>nullius ponderis sed ejusdem densitatis
+         <lb/>quo scilicet finxi aliquod fluidum elastic<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+  <lb/>nullius ponderis sed ejusdem densitatis
          <lb/>cum aqua, quod elaterio suo tanta vi
          <lb/>premat fundum vasis, quanta alias aqua
-         <lb/>ipsa suo pondere premere {*} {*} potest; Quis
+         <lb/>ipsa suo pondere premere potest; Quis
          <lb/>sana mente pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ditus dubitabit, in
-         <lb/>utroque horum casuum aquam vel fluidum
+         <lb/>utro<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> horum casuum aquam vel fluidum
          <lb/>elasticum eadem velocitate erumpere
-         <lb/>per foramen, qua velocitate erumpit ex vase
-         <lb/>aqua pleno, siquidem eadem pressio, eademque quantitas
+         <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> foramen, qua velocitate erumpit ex vase<note type="editorial">Wortumstellung</note> aqua
+         <lb/>pleno, siquidem eadem pressio, eadem<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> quantitas
          <lb/>materi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> insit particul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> incumbit foramini,
          <lb/>verum in suppositione horum duorum casuum
-         <lb/>non potest esse locus catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs>
-<lb/>jam fuere objecta <rs key="pers_DE-588-119507978" type="person">Jurino</rs>, sed ad ea nihil
-         <lb/>reposuit: sine dubio {*} quia nihil habuit quod reponeret. Possem
-         <lb/>hic <rs key="pers_DE-588-119507978" type="person">Jurino</rs> majori jure objicere exemplum illud quod contra Demons<pc type="hyphenation">-</pc><lb break="no"/>trationem meam tam male formavit fingendo suam illam colummnam solidam ex centum
+         <lb/>non potest esse locus catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c in <rs key="biblio_M3G2JA79" type="biblio">Libro Tuo</rs>
+  <lb/>jam fuere object<unclear>a</unclear> <rs key="pers_DE-588-119507978" type="person">Jurino</rs>, sed ad ea nihil
+         <lb/>reposui<unclear>t</unclear> sine dubio quia nihil habuit quod reponeret. Poss<unclear>em</unclear>
+         <lb/>hic <rs key="pers_DE-588-119507978" type="person">Jurino</rs> majori jure objicere exempl<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> illud quod contra Demons<pc type="hyphenation">-</pc><lb break="no"/>trationem me<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> t<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> male formavit fingendo su<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ill<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> colummn<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> solid<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ex 100
          <pb facs="1079473" n="18"/>
-<lb/><add>aureis</add> sibi invicem impositis conectam, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ab initio quiesce<pc type="hyphenation">-</pc><lb break="no"/>re ponatur in mensa; ostendi utique supra, quod hoc
-         <lb/>simile nihil omnino quadret contra me, ob dispa<pc type="hyphenation">-</pc><lb break="no"/>ritatem pressionis a fluiditate oriund<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et eius
-         <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> unice desuper provenit a pondere corporis
-         <lb/>solidi incumbentis; possem inquam hac 
-         <lb/>omparationem uti ad catarractam destruendam
-         <lb/>contra <rs key="pers_DE-588-119507978" type="person">Jurinum</rs>, qui nullam facit attentionem
+  <lb/><add>aureis</add> sibi invicem impositis confectam, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ab initio quie<unclear>sce</unclear><pc type="hyphenation">-</pc><lb break="no"/>re pona<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in mensa; ostendi uti<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> supra quod hoc
+         <lb/>simile nihil omnino quadret contra me ob dispa<pc type="hyphenation">-</pc><lb break="no"/>ritatem; pressionis <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> fluiditate oriund<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et eius
+         <lb/>qu<unclear><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear> unice desuper provenit <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> pondere corporis
+         <lb/>solidi incumbentis; possem, inquam, hac
+         <lb/>comparatione uti ad catarractam destruendam
+         <lb/>contra <rs key="pers_DE-588-119507978" type="person">Jurinum</rs>, qui nullam facit attention<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
          <lb/>ad fluidorum pressiones laterales quando supponit
-         <lb/>perinde esse sive congeletur + aqua ambiens columnam
-         <lb/>foramini insistentem, sive omnis aqua in vase
-         <lb/>fluida maneat; utar igitur verbis <rs key="pers_DE-588-119507978" type="person">Jurini</rs> dicendo:
-         <lb/><hi rend="u">Quiescere ponatur in mensa columna solida
-            <lb/>ex centum aureis sibi invicem impositis confecta</hi> + +
-         <lb/>(hoc tantum discrimine ut concipia[n]tur + + + aure inon <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qua<pc type="hyphenation">-</pc><lb break="no"/>les sed altiores gradatim majores inferioribus ita
-         <lb/>ut intra figuram catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> similem omnes
-         <lb/>contineantur) <hi rend="u">urgetur, ut fit, aureus infimus: quamprimum
-            <lb/><add>iste aureus descendere incipiet liberabitur statim ab aureorum incumbentium</add>
-<lb/>pondere, et eadem velocitate descendet tum aureus
-            <lb/>infimus, tum reliqui omnes, ac si solus ille
-            <lb/>aureus in mensa constitutus fuisset.</hi> Vides itaque
+         <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>inde esse sive congele<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> aqua ambiens column<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+         <lb/>foramini insistentem sive omnis aqua in vase
+         <lb/>fluida maneat; utar igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> verbis <rs key="pers_DE-588-119507978" type="person">Jurini</rs> dicendo
+         <lb/><cit><quote><hi rend="u">Quiescere pona<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in mensa columna solida
+            <lb/>ex centum aureis sibi invicem impositis confectam</hi></quote></cit>
+  <lb/>(hoc <add>ta</add>ntum discrimine ut concipian<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> aure in<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> <unclear><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear>qua<pc type="hyphenation">-</pc><lb break="no"/>les sed altiores gradatim majores inferioribus ita
+         <lb/>ut intra figuram Catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> similem; omn<unclear>es</unclear>
+         <lb/>continea<add>n</add><choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>) <cit><quote><hi rend="u">urge<add>n</add><choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>,<!-- To Do: urgentur kontrollieren --> ut fit, aureus infim<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>: quamprim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice><!-- To Do: kontrollieren a darunter? -->
+            <lb/><add>iste aureus descendere incipiet liberabitur; statim ab aureorum incumbentium</add>
+           <lb/>pondere, et eadem velocitate descendet tum aureus
+            <lb/>infimus, tum reliqui omnes, <add>ac</add> si solus ille
+            <lb/>aureus in mensa constitutus fuisset.</hi></quote></cit> Vides itaq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice>
          <lb/>Vir <choice><abbr>Cl.</abbr><expan>Clarissime</expan></choice> <rs key="pers_DE-588-119507978" type="person">Jurinum</rs>, qui ex congelatione nullam diversi<pc type="hyphenation">-</pc><lb break="no"/>tatem actionis oriri credit, ipsomet suo gladio
          <lb/>jugulari, aut dicat si potest cur infima pars
-         aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in Catarrhacta fortius prematur atque
+  <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in Catarracta fortius prematur at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
          <pb facs="1079474" n="19"/>
-<lb/>ad majorem accelerationem × incitetur quam infimus
-         <lb/>aureus in columna catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> figuram repr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sen<pc type="hyphenation">-</pc><lb break="no"/>tante; certe in quamcunque se vertat faciem, nul<pc type="hyphenation">-</pc><lb break="no"/>lam reperiet subitane<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> illius accelerationis
-         <lb/>causam, nisi mecum recurrat ad rationem premendi
-         <lb/>fluidis peculiarem: Habeo quidem alium adhuc
-         <lb/>modum idem explicandi ex natura virium vivarum desumtum,
-         <lb/>sed qui eodem recidit cum altero meo {*} priori, huncque
-         <lb/>adeo egregie confirmat; eum vero nolo hic expo<pc type="hyphenation">-</pc><lb break="no"/>nere, ne cum Anglis, qui veram <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stimationem
-         <lb/>virium vivarum nondum agnoscunt, in novam
-         <lb/>contraversiam incidam; dabitur aliquando occasio,
+<lb/>ad majorem accelerationem incite<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> infim<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+         <lb/>aureus in columna catharract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> figuram <unclear>re</unclear>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sen<pc type="hyphenation">-</pc><lb break="no"/>tante, certe in quamcun<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> se vertat faciem; nul<pc type="hyphenation">-</pc><lb break="no"/>lam reperiet subitane<unclear><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></unclear> illius accelerationis
+         <lb/>causam, nisi mecum recurr<unclear>a</unclear>t ad rationem premen<unclear>di</unclear>
+         <lb/>fluidis peculiarem: Habeo quidem alium adhu<unclear>c</unclear>
+         <lb/>modum idem <add>explicandi</add> ex natura virium vivar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> desumt<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>,
+         <lb/>sed qui eodem r<unclear>e</unclear>cidit cum altero meo priori, hunc<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+         <lb/>adeo egregie confirmat; eum vero nolo hic expo<pc type="hyphenation">-</pc><lb break="no"/>nere, ne cum Anglis qui veram <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stimationem
+         <lb/>virium vivar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> nondum agnoscunt, in novam
+  <lb/>contraversiam incidam, dabi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> aliquando occasio,
          <lb/>qua id tutius et majori cum fructu pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stare
          <lb/>queam. Pergit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> ac vellet se liberare ab eo
-         <lb/>quod illi imputaveris, <hi rend="u">ipsum sumere quod est in
-            <lb/>contentione</hi>; <hi rend="u">cessare igitur qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stionem et totam</hi> × × <hi rend="u">demon<pc type="hyphenation">-</pc><lb break="no"/>strationem abire in hypothesin;</hi> × × × interim fatetur
+         <lb/>quod illi imputaveris, <cit><quote><hi rend="u">ipsum sumere quod est in
+            <lb/>contentio necessare igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stionem <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> totam Demon<pc type="hyphenation">-</pc><lb break="no"/>strationem abire in hypothesin;</hi> <said>interim fatetur;</said>
          <lb/><hi rend="u">se velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> effluentis ex <rs key="pers_DE-588-118587544" type="person">Newtono</rs>
-<lb/>determinasse</hi>; hoc est ut ipse interpretatur
-         <lb/><hi rend="i">sumsisse, positis scilicet iis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> a <rs type="person">Newtono</rs>
-<lb/>posita fuerant, aquam nempe gravitatis vi libere
-            <lb/>cadere et inter cadendum accelerari</hi>; nos vero demonstra<pc type="hyphenation">-</pc><lb break="no"/>vimus hanc Demonstrationem Newtonianam esse meram
-         <lb/>petitionem Principii, adeoque annon <rs key="pers_DE-588-119507978" type="person">Jurino</rs>, qui eam Demonstrationem assumsit, {*}
-         <lb/>summo jure exprobrari potuit quod pariter commiserit
-         <lb/>petitionem Principii? imo quod plus est, dico eam <choice><abbr>demonst.</abbr><expan>demonstrationen</expan></choice>
-<lb/>involvere manifestam contradictionem; quod si enim aqua sola<note type="editorial">Im Manuskript folgt hier die falsch eingebundene Seite 20, deren Text nach hinten verschoben wurde.</note>
+           <lb/>determinasse;</hi> <said>hoc est ut ipse interpreta<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice></said>
+  <lb/><hi rend="i">sumsisse; positis scilicet iis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <rs type="person">Newtono</rs>
+    <lb/>posita fuerant, aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> nempe gravitatis vi liber<add>e</add>
+    <lb/>cadere <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> inter cadendum accelerari;</hi></quote></cit> nos vero demonstra<pc type="hyphenation">-</pc><lb break="no"/>vimus hanc Demonstration<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> Newtonian<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> esse mer<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+         <lb/>petitionem Principii, adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice><choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> <rs key="pers_DE-588-119507978" type="person">Jurino</rs>, qui e<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> Demonstrationem <add>assumsit</add>,
+  <lb/>summo jure exprobrari potuit quod pariter co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>iserit
+         <lb/>petition<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> Principii? imo quod plus est, dico e<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <abbr>demonst.</abbr>
+  <lb/><choice><sic>involverere</sic><corr>involvere</corr></choice> manifest<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> contradiction<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>; quod si en<choice><orig><g ref="#im">ī</g></orig><reg>im</reg></choice> aqua sola<note hand="pers_DE-588-118509969"><abbr>vid.</abbr> <abbr>p.</abbr> 21.</note><note type="editorial">Im Manuskript folgt hier die falsch eingebundene Seite 20.</note>
 <pb facs="1079476" n="21"/>
-<lb/><hi rend="i">gravitatis vi libere cadit et effluit ex orificio</hi> qui fit qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>so
-         <lb/>ut infima gutta catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ante reseratio<pc type="hyphenation">-</pc><lb break="no"/>nem orificii quiescit, postea aperto orificio repente
-         <lb/>acquirat determinatam velocitatem, cum tamen
-         <lb/>corpora naturaliter gravia a quiete libere ca<pc type="hyphenation">-</pc><lb break="no"/>dendo non nisi post tempus et spatium aliquod fini<pc type="hyphenation">-</pc><lb break="no"/>tum emensum acquirere possint determinatam
+<lb/><hi rend="i">gravitatis v<unclear>i</unclear> liber<add>e</add> cadit et effluit ex orificio,</hi> qui fit qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><unclear>so</unclear>
+         <lb/>ut infima gutta catarract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ante reserratio<pc type="hyphenation">-</pc><lb break="no"/>nem orificii quiescit, postea aperto orificio repente
+         <lb/>acquirat determinatam velocitatem, c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> tamen
+         <lb/>corpora naturaliter gravia <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <add>quiete</add> liber<add>e</add> ca<pc type="hyphenation">-</pc><lb break="no"/>dendo non nisi post tempus et spatium aliquod fini<pc type="hyphenation">-</pc><lb break="no"/>tum emensum acquirere possint determinatam
          <lb/>aliquam velocitatem? dicere autem
-         <lb/>velle ab initio fluxum ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse lentissi<pc type="hyphenation">-</pc><lb break="no"/>mum; eumque paulatim intendi, sicuti, ni fallor, ex
+         <lb/>velle ab initio fluxum ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse lentissi<pc type="hyphenation">-</pc><lb break="no"/>mum, eum<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> paulatim intendi, sicuti, ni fallor, ex
          <lb/><rs key="pers_DE-588-117551988" type="person">Mariotto</rs> contendunt Angli, id est absurdissimum
-            <lb/>atque quotidian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> experienti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> refragatur.
-             <lb/>Pergo nunc ad <rs key="pers_DE-588-119507978" type="person">Jurini</rs> thrasonismum<note type="editorial">Thrasonismus: Grosssprecherei, Prahlerei, vgl. H. A. Pierer (Hrsg.), Universal-Lexikon der Gegenwart und Vergangenheit oder neuestes encyclopädisches Wörterbuch der Wissenschaften, Künste und Gewerbe, Band 31, Altenburg: H. A. Pierer, 1845, S. 271, (online: https://books.google.ch/books?id=qa65Q-yCOaUC&amp;lpg=PA217&amp;ots=gmeRr8NPi7&amp;dq=thrasonismus&amp;hl=de&amp;pg=PA217#v=onepage&amp;q=thrasonismus&amp;f=false).</note>, qui eum
-         <lb/>non potest non exponere risui omnium saniorum
-         <lb/>Mathematicorum, dum suscipit defendere
+            <lb/>at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> quotidian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> experienti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> refragat<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>.</p>
+             <p><lb/>Pergo nunc ad <rs key="pers_DE-588-119507978" type="person">Jurini</rs> thrasonismum<note type="editorial">Thrasonismus: Grosssprecherei, Prahlerei, vgl. H. A. Pierer (Hrsg.), Universal-Lexikon der Gegenwart und Vergangenheit oder neuestes encyclopädisches Wörterbuch der Wissenschaften, Künste und Gewerbe, Band 31, Altenburg: H. A. Pierer, 1845, S. 271, (online: https://books.google.ch/books?id=qa65Q-yCOaUC&amp;lpg=PA217&amp;ots=gmeRr8NPi7&amp;dq=thrasonismus&amp;hl=de&amp;pg=PA217#v=onepage&amp;q=thrasonismus&amp;f=false).</note>, qui eum
+         <lb/>non potest <add>non</add> exponere <add>ri</add>sui omni<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> sanio<add>ru</add>m
+         <lb/>Mathematicorum, dum suscipit defendere,
          <lb/>erroneam illam <rs key="pers_DE-588-118587544" type="person">Newtoni</rs> Demonstrationem
-         <lb/>traditam Prop. 37 lib. 2. <rs key="biblio_MF4GV2BJ" type="biblio">Princ. prim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> editionis</rs><note type="editorial">Newton, Isaac, Philosophiae naturalis Principia mathematica, Londini (J. Streater) 1687. (Digitalisat https://books.google.ch/books?id=-dVKAQAAIAAJ&amp;printsec=frontcover&amp;dq=Newton+Principia+1687&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwjD88W3v4PVAhVHtBoKHaeXDbw4ChDoAQglMAA#v=onepage&amp;q&amp;f=false).</note>,
-         <lb/>ubi Auctor demonstrare voluit, <hi rend="i">aquam ex foramine in
-            <lb/>fundo vasis ea cum velocitate erumpere, {*</hi> qua assur<pc type="hyphenation">-</pc><lb break="no"/>gere possit ad dimidiam altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in
-         <lb/>vase existentis}; Profecto nemo non videt, <rs key="pers_DE-588-118587544" type="person">Newtonum</rs>
+         <lb/>traditam Prop. 37 Lib. 2. <rs key="biblio_MF4GV2BJ" type="biblio">Princ. prim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> editionis,</rs><note type="internal">Newton, Isaac, Philosophiae naturalis Principia mathematica, Londini (J. Streater) 1687. (Digitalisat https://books.google.ch/books?id=-dVKAQAAIAAJ&amp;printsec=frontcover&amp;dq=Newton+Principia+1687&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwjD88W3v4PVAhVHtBoKHaeXDbw4ChDoAQglMAA#v=onepage&amp;q&amp;f=false).</note> ubi
+         <lb/>Auctor demonstrare voluit; <cit><quote><hi rend="i">Aquam ex foramine in
+            <lb/>fundo vasis ea cum velocitate erumpere, qua assur<pc type="hyphenation">-</pc><lb break="no"/>gere possit ad dimidiam altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in
+         <lb/>vase existentis</hi></quote></cit> Profecto nemo non videt, <rs key="pers_DE-588-118587544" type="person">Newton<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs>
 <lb/>ipsum hanc suam primam demonstrationem
          <lb/>tanquam falsam et experienti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> repugnantem
-         <lb/>omnino deseruisse, quia in secunda editione
-         <lb/>eam non solum {*} supprimit, quod utique non fecisset si
+         <lb/>omnino deseruisse, quia in secunda Editione
+         <lb/>eam non solum supprimit, quod uti<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> non fecisset si
          <pb facs="1079477" n="22"/>
 <lb/>eam aliquid valere credidisset, sed etiam nulla prorsus
-         <lb/>mentione ejus facta, aliam adornat Demonstrationem
-         <lb/>ex Catarrhacta desumtam, vi cujus aqua ex foramine
+         <lb/>mentione ejus facta, aliam adornat Demonstration<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+         <lb/>ex Catarracta desumtam, vi cujus aqua ex foramine
          <lb/>effluens velocitatem acquirat qua assurgere possit
-         <lb/>ad integram altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase existentis. <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> vero
+         <lb/>ad integram altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase existentis: <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> vero
          <lb/>ex sua sagacitate feliciter detexit modum defendendi
-         <lb/>utramque demonstrationem, etiamsi manifeste sibi invi<pc type="hyphenation">-</pc><lb break="no"/>cem contradicant; qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur ante omnia an <rs key="pers_DE-588-118587544" type="person">Newtonus</rs>
-<lb/>ipse hoc felicissimum <rs key="pers_DE-588-119507978" type="person">Jurini</rs> inventum approbet, adeoque
+         <lb/>utram<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> demonstrationem, etiamsi manifeste sibi invi<pc type="hyphenation">-</pc><lb break="no"/>cem contradicant; qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ri<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> ante omnia an <rs key="pers_DE-588-118587544" type="person">Newtonus</rs>
+               <lb/>ipse hoc felicissimum <rs key="pers_DE-588-119507978" type="person">Jurini</rs> inventum approbet, adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
          <lb/>an primam suam Demonstrationem cui aliam
          <lb/>substituit etiamnum tueri velit, de quo ob rationem
-         <lb/>modo allegatam valde dubito. Simili modo olim <rs key="pers_DE-588-124275087" type="person"><choice><abbr>Joh.</abbr><expan>Joh</expan></choice>
-<lb/>Keillius</rs> alium <rs key="pers_DE-588-118587544" type="person">Newtoni</rs> errorem, ab ipsomet <rs key="pers_DE-588-118587544" type="person">Newtono</rs>
-<lb/>evidenter commissum, rejicere conatus est admodum
-         <lb/>inepte in culpam Typothet<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; usque adeo nempe
-         <lb/>addicti sunt Angli partibus <rs key="pers_DE-588-118587544" type="person">Newtoni</rs>, ut ipso quoque
-         <lb/>nolente et invito lapsus ejus non solum excusare,
-         <lb/>sed tanquam veritates nobis obtrudere non erubescant.
-         <lb/>Videamus autem qua arte utatur <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> ad stabiliendam
+         <lb/>modo allegatam valde dubito. Simili modo olim <rs key="pers_DE-588-124275087" type="person"><abbr>Joh.</abbr>
+           <lb/>Keillius</rs> alium <rs key="pers_DE-588-118587544" type="person">Newtoni</rs> errorem, ab ipsomet <rs key="pers_DE-588-118587544" type="person">Newtono</rs>
+               <lb/>evidenter commissum, rejicere conatus est admodum
+         <lb/>inepte in culpam Typothet<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> us<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> adeo nempe
+         <lb/>addicti sunt Angli partibus <rs key="pers_DE-588-118587544" type="person">Newtoni</rs>, ut ipso quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+         <lb/>nolente et invito lapsus ejus non sol<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <add>excusare</add>
+         <lb/>sed tanquam veritates nobis obtr<add>u</add>dere n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> erubescant.
+         <lb/>Videamus autem qua arte uta<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> ad stabiliend<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
          <lb/>illam primam demonstrationem <rs key="pers_DE-588-118587544" type="person">Newtoni</rs>, quam
-         <lb/>huiusque + nos omnes tanquam conclamatam atque
-         <lb/>ab ipso <rs key="pers_DE-588-118587544" type="person">Newtono</rs> desertam et neglectam reputavimus,
+         <lb/>huius<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> nos omnes tanquam conclamatam at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+         <lb/>ab ipso <rs key="pers_DE-588-118587544" type="person">Newtono</rs> desertam et neglectam reputa<add>vi</add>m<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>,
          <lb/>ac non obstante mirabili Invento <rs key="pers_DE-588-119507978" type="person">Jurini</rs> adhucdum
-         <lb/>reputamus: Ratiocinari incipit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> hunc in modum;
-         <lb/><hi rend="i">Demonstrandi</hi>, ait, <hi rend="i">rationem nemo refellit: conclusionem
-            <lb/>plures redarguunt</hi>; sed facilis responsio; Demonstrandi
-         <lb/>rationem nemo refellit, quia eam nemo intelligit, et ++ forsan
-         <lb/>ne <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> quidem; adeoque multo minus <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> se
-         <lb/>jactare {*} potest eam a se intelligi, quare sufficit videre
+         <lb/>reputamus: Ratiocinari incipit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> hunc in mod<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>;
+         <lb/><cit><quote><hi rend="i">Demonstrandi</hi><said>, ait,</said> <hi rend="i">rationem nemo refellit: conclusionem
+            <lb/>plures redarguunt</hi></quote></cit>, sed facilis responsio;<!-- To Do: kontrollieren --> Demonstrandi
+         <lb/>rationem nemo refellit, quia eam nemo intelligit et forsan
+         <lb/>ne <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> quidem; adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> multo minus <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> se
+         <lb/>jactare potest eam <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> se intelligi, quare sufficit videre
          <pb facs="1079478" n="23"/>
 <lb/>conclusionem esse falsam ut pronunciemus et ipsam
-         <lb/>Demonstrationem <add>quam propter obscuritatem non intelligimus pariter</add> esse falsam: Si nunc propius
-         <lb/>accedamus ad commentum <rs key="pers_DE-588-119507978" type="person">Jurini</rs>, quo tam ingeniose
-         <lb/>sc. conciliat 2 istas <rs key="pers_DE-588-118587544" type="person">Newtoni</rs> demonstrationes tam
+         <lb/>Demonstrationem <add>quam propter obscuritatem n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> intelligimus pariter</add> esse falsam; si nunc propius
+         <lb/>accedamus ad commentum <rs key="pers_DE-588-119507978" type="person">Jurini</rs>, qu<add>o</add> tam ingeniose
+         <lb/><abbr>sc.</abbr> conciliat 2 istas <rs key="pers_DE-588-118587544" type="person">Newtoni</rs> demonstrationes tam
          <lb/>aperte sibi mutuo adversantes, lepidum omnino est
-         <lb/>attendere {*}{*} ad jucundam quam <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> excogitavit
-         <lb/>distinctionem inter velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> immediate ex foramine
-         <lb/>effluentis et velocitatem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad parvam
-         <lb/>a foramine distantiam, quam dicit esse ut 1 ad <formula>\sqrt{2}</formula> proxime,
-         <lb/>primam velocitatem asserit evinci ex <rs key="biblio_6CP8LL78" type="biblio">prima Demonstra<pc type="hyphenation">-</pc><lb break="no"/>tione Newtoniana</rs><!-- Ist  hier wirklich ein Werktag zu setzen? -->, alteram vero ex secunda, ac proinde
+         <lb/>attendere ad jucundam quam <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> excogitavit
+         <lb/>distinctionem inter velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ediate ex foramine
+         <lb/>effluentis et velocitatem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad parv<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+         <lb/><choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> foramine distantiam, quam dicit esse ut 1 ad <formula>\sqrt{2}</formula> proxime,
+         <lb/>prim<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> velocitatem asserit evinci ex <rs key="biblio_6CP8LL78" type="biblio">prima Demonstra<pc type="hyphenation">-</pc><lb break="no"/>tione Newtoniana</rs>, alteram vero ex secunda, ac proinde
          <lb/>ambas demonstrationes sine contradictione subsistere;
-         <lb/><hi rend="i">si</hi>, nimirum, <hi rend="i">ea sit velocitas ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, qua aqua
-            <lb/>prosiliat ad integram altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase,</hi>
-<lb/>concludit <hi rend="i">non majorem fore aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> velocitatem in ipso
-            <lb/>foramine, quam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad dimidiam altitudinem deferatur:</hi>
-<lb/>profecto belle! Sed speciem tantum habent
-         <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tereaque nihil, vix enim credideris quanta absur<pc type="hyphenation">-</pc><lb break="no"/>ditatum farrago explicationem hanc, qua
-         <lb/>tantopere sibi plaudit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>, comitetur; En
-         <lb/>Tibi quasdam tantum: 1.<hi rend="sup">o</hi> sit, facto foramine 
-         <lb/>in pariete non in fundo {*}{*}{*} vasis, directio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> horizon<pc type="hyphenation">-</pc><lb break="no"/>talis; aqua igitur qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> opinante <rs key="pers_DE-588-119507978" type="person">Jurino</rs> ex foramine
-         <lb/>tardius postea velocius movetur subit accelera<pc type="hyphenation">-</pc><lb break="no"/>tionem qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> nullam habet causam sui, × nam
-         <lb/>non a gravitate provenire potest, quia directio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-         <lb/>est horizontalis, non etiam produci
+         <lb/><cit><quote><hi rend="i">si</hi><said>, nimirum, </said><hi rend="i">ea sit velocitas ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, qu<unclear>a</unclear> aqua
+            <lb/>prosiliat ad integram altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase,</hi><said> concludit</said>
+               <lb/><hi rend="i">non majorem fore aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> velocitatem in ipso
+                 <lb/>foramine quam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><!-- To Do: konntrollieren ob qua oder quae --> ad dimidiam altitudinem defera<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>:</hi></quote></cit>
+               <lb/>profecto belle! Sed speciem tantum habent
+               <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terea<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> nihil; vix enim credideris quanta absur<pc type="hyphenation">-</pc><lb break="no"/>ditatum farrago explicationem hanc, qua
+         <lb/>tantopere sibi plaudit <rs key="pers_DE-588-119507978" type="person">Jurinus</rs>, comite<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>; En
+         <lb/>Tibi quasdam tantum<supplied>:</supplied> 1.<hi rend="sup">o</hi> sit, facto foramine
+         <lb/>in pariete non in fundo vasis, directio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> horizon<pc type="hyphenation">-</pc><lb break="no"/>talis; aqua igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> opinante <rs key="pers_DE-588-119507978" type="person">Jurino</rs> ex foramine
+         <lb/>tardius postea velocius move<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, subit accelera<pc type="hyphenation">-</pc><lb break="no"/>tionem qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> nullam habet causam sui, nam
+         <lb/>non <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> gravitate provenire potest, quia directio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>est horizontalis, non etiam produci
          <pb facs="1079479" n="24"/>
-<lb/>potest a pressione partium aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> insequentium et antecedentes urgentium, quia insequentes lentius moventur, et velocius pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cedentes. 2.<hi rend="sup">o</hi> Ex natura catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prout <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> eam explicat oportet aquam ex ipso jam foramine non tantum ad parvam ab eo distantiam ea velocitate prosilire, qua ascendere possit ad integram altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase, dicendo itaque aquam ex foramine minori velocitate effluere destruit. <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> effectum Catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quam ipse dixit generari et accelerari gravitatis vi per liberum casum ex tota {*} altitudine aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase; si hoc non sit sibi contradicere nescio quid demum sit sibi contradicere. 3.<hi rend="sup">o</hi> Ratio sectionis ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad sectionem foraminis deberet utique esse ut 1 ad <formula>\sqrt{\sqrt{2}}</formula> sed accuratissima experimenta demonstrant veram illam rationem esse multo minorem quam 1 ad <formula>\sqrt{2}</formula> nam invenit diligentissimus <rs key="pers_DE-588-11887733X" type="person">Polenus</rs> diametrum ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex foramine in lamina tenui profluentis fuisse ad diametrum ipsius foraminis ut 20 ad 26 <choice><abbr>h.</abbr><expan>hoc</expan></choice> <choice><abbr>e.</abbr><expan>est</expan></choice> ut 10 ad 13; est vero 20 ad 26 multo minor quam 21 ad 25 et 21 ad 25 adhuc minor quam 1 ad <formula>\sqrt{\sqrt{2}}</formula> [ergo 10 ad 13 longe minor quam 1 ad <formula>\sqrt{\sqrt{2}}</formula> per consequens eorum quadrata sumendo ad habendam rationem sectionum erit ratio <formula>20\times20</formula>
+               <lb/>potest <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> pressione partium aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> pone insequenti<pc type="hyphenation">-</pc><lb break="no"/>um et antecedentes urgentium, quia inseq<add>u</add>entes
+               <lb/>lentius moven<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, et velocius pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cedentes<supplied>.</supplied> 2<supplied>.</supplied><hi rend="sup">o</hi> Ex natura
+               <lb/>catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prout <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> eam explicat
+               <lb/>oportet aquam ex ipso jam foramine non
+               <lb/>tantum ad parvam ab eo distantiam
+               <lb/>ea velocitate prosilire qua ascendere possit
+               <lb/>ad integram altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase, dicendo ita<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>aquam ex foramine minori velocitate effluere<supplied>,</supplied> destruit
+               <lb/><rs key="pers_DE-588-119507978" type="person">Jurinus</rs> effectum Catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ipse dixit genera<pc type="hyphenation">-</pc><lb break="no"/>ri et accelerari gravitatis vi <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> liberum cas<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ex tota
+               <lb/>altitudin<unclear>e</unclear> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase; si hoc non sit sibi contra<pc type="hyphenation">-</pc><lb break="no"/>dicere, nescio quid demum sit sibi contra<pc type="hyphenation">-</pc><lb break="no"/>dicere<supplied>.</supplied> 3.<hi rend="sup">o</hi> Ratio sectionis ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad section<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+               <lb/>foraminis deberet uti<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> esse ut 1 ad <formula>\sqrt{\sqrt{2}}</formula>, sed accura<pc type="hyphenation">-</pc><lb break="no"/>tissima experimenta demonstrant veram illam
+               <lb/>rationem esse multo minorem quam 1 ad <formula>\sqrt{2}</formula>; nam
+               <lb/>invenit diligentissimus <rs key="pers_DE-588-11887733X" type="person">Polenus</rs> diametrum ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex foramine in lamina tenui profluen<pc type="hyphenation">-</pc><lb break="no"/>tis fuisse ad diametrum ipsius foraminis ut
+               <lb/>20 ad 26, <choice><abbr>h. e.</abbr><expan>hoc est</expan></choice> ut 10 ad 13; est vero 20 ad 2<add>6</add> multo minor quam 21 ad 25 et 21 <add>ad</add> 25 <add>adhuc minor quam 1 ad <formula>\sqrt{\sqrt{2}}</formula> ergo 10 ad 13 longe</add> minor quam 1 ad
+               <lb/><formula>\sqrt{\sqrt{2}}</formula> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> consequens eorum quadrata sumendo ad ha<pc type="hyphenation">-</pc><lb break="no"/>bendam rationem section<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> erit ratio <formula>20\times20</formula>
 <pb facs="1079480" n="25"/>
-<lb/>ad <formula>26\times26</formula> seu <formula>10\times10</formula> ad <formula>13\times13</formula> adhuc minor quam <formula>1\times1</formula> ad <formula>\sqrt{\sqrt{2}}\times\sqrt{\sqrt{2}}</formula> seu l ad <formula>\sqrt{2}</formula> illaque prior qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> est ut 100 ad 169 propius accedit ad rationem subduplam quam ad subdupl<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> subduplicatam qualis est 1 ad <formula>\sqrt{2}</formula> Observatum est per eos qui accuratissima experimenta instituerunt, rationem illam inter sectionem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> confract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vel (ut ego voco) attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et foraminis sectionem {*}{*}{*} tanto propius accedere ad rationem subduplam, quanto lamina, in qua insculptum {*}{*}{*}{*} est foramen, est tenuior: illa certe qua usus est <rs key="pers_DE-588-11887733X" type="person">Polenus</rs>, ubi rationem utriusque sectionis invenit ut 100 ad 169, habebat crassitiem unius line<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>, <choice><abbr>vid.</abbr><expan>vide</expan></choice> <choice><abbr>p.</abbr><expan>paginam</expan></choice> 21 § 36 unde nullus dubito quin si adhibuisset laminam perquam tenuem et nullius sensibilis crassitiei, ratio illa sectionum proditura fuisset, si non omnino subdupla, tamen a subdupla vix minimum abludens. × Sensit quidem ll. <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> hanc difficultatem, fateturque omnia <rs key="pers_DE-588-11887733X" type="person">Poleni</rs> experimenta a suis ratiociniis abludere, atque constanter minorem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quantitatem nunquam majorem exhibere quam secundum suum calculum exhibere deberent; huic vero difficultati ut <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> obviam eat, nescius quo pacto se possit ex ea extricare, tandem feliciter evadere conatur accusando vasorum angustiam, dicens <hi rend="i">quod forte angustiora fuerint vasa pro ratione amplitudinis foraminum;</hi> cum tamen diameter fundi vasis superaverit 42 pollices, ipsius autem
+               <lb/>ad <formula>26\times26</formula> seu <formula>10\times10</formula> ad <add><formula>13\times13</formula></add> adhuc minor quam <add><formula>1\times1</formula></add> ad <add><formula>\sqrt{\sqrt{2}}\times\sqrt{\sqrt{2}}</formula></add>
+               <lb/>seu <add>1 ad <formula>\sqrt{2}</formula></add>; illa<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> prior qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> est <choice><sic>ud</sic><corr>ut</corr></choice> 100 ad <add>169</add>
+              <lb/>propius accedit ad rationem subduplam quam ad
+               <lb/>subdupl<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> subduplicatam qualis est 1 ad <formula>\sqrt{2}</formula>. Observat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+               <lb/>est p<choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> eos qui accuratissima experimenta institue<pc type="hyphenation">-</pc><lb break="no"/>runt, rationem illam inter section<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> contract<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>vel (ut ego voco) attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et foraminis section<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+               <lb/>tanto propius accedere ad rationem subduplam,
+               <lb/>quanto lamina, in qua insculptum est foramen, est 
+               <lb/>tenuior; illa certe qua usus est <rs key="pers_DE-588-11887733X" type="person">Polenus</rs>, ubi <choice><abbr>rat.</abbr><expan>rationem</expan></choice>
+               <lb/>utrius<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> sectionis invenit ut 100 ad <add>169</add>, habebat crassiti<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+               <lb/>unius line<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <abbr>vid.</abbr> <abbr>p.</abbr> 21 § 36 unde nullus dubit<add>o</add> quin si adhib<pc type="hyphenation">-</pc><lb break="no"/>uisset laminam <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> tenuem et nullius sensibilis crassitiei,
+               <lb/>ratio illa sectionum proditura fuisset, si n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> omnino
+               <lb/>subdupla tamen <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> subdupla vix minim<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> abludens.
+               <lb/>Sensit quidem <add><abbr>Cl.</abbr></add> <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> hanc difficultatem, fatetur<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>omnia <rs key="pers_DE-588-11887733X" type="person">Poleni</rs> experimenta <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> suis ratiociniis abludere,
+               <lb/>at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> constanter minor<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quantitatem nunqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+               <lb/>majorem exhibere quam secund<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> su<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> calcul<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+               <lb/>exhibere deberent; huic vero difficultati
+               <lb/>ut <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> obviam eat, nescius quo pacto se
+               <lb/>possit ex ea extricare, tandem feliciter
+               <lb/>evadere cona<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> accusando vasorum angustiam,
+               <lb/>dicens <cit><quote><hi rend="i">quod forte angustiora fuerint vasa pro ratione
+                 <lb/>amplitudinis foraminum;</hi></quote></cit> cum tamen diameter
+               <lb/>fundi vasis superaverit 42 pollices, ipsius autem
          <pb facs="1079481" n="26"/>
-<lb/>foraminis Diameter fuerit tantum 26 linearum, alio experimento {*} quod recenset p.<choice><abbr/><expan/></choice><!-- ToDo: Kontrollieren, ob manuelle Bereinigung der Abkürzung notwendig ist. --> 25 § 47 diameter foraminis habuerit nonnisi 9 lineas, ita ut vasis fundi amplitudo plusquam 3000 vicibus major fuerit quam erat amplitudo {*}{*} foraminis, nec tamen in hoc quoque Experimento deprehendebatur ratio Diametri ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad <choice><abbr>Diam.</abbr><expan>Diametrum</expan></choice>]<!-- woher kommt diese eckige Klammer? --> foraminis notabiliter discrepans ab illa priore 10 ad 13, adeo ut firmiter mihi persuadeam, nullam differentiam observatum iri, si in immensum usque augeretur amplitudo vasis. Ex his omnibus colligere est, si lamina esset infinite parv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> spissitudinis, c<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>teraque se haberent sicuti in Demonstrationibus supponitur, fore ut sectio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sit ad sectionem foraminis ut 1 ad 2, non vero ut 1 ad <formula>\sqrt{2}</formula> idque omnino congruit cum mea Demonstratione per quam nimirum explicavi causam physicam ob quam sectio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad dimidium foraminis attenuatur quia unaquaque guttularum post exitum ex foramine antrorsum et retrorsum extenditur in duplum ad expellenda illa interstitiola inania qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> inter jacent inter guttulas exilientes, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>que ipsis guttulis sunt <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualia; adeo ut dato tempore effluat tantum dimidia pars aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ejus quam <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> cum vulgo credit effluere; altera namque dimidia pars est mera vacuitas ex interstitiolis inanibus conflata: Quando igitur vena immediate post exitum ex foramine crassior est quam in distantia ab eodem, id minime arguit, quod {*}{*} <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> perperam existimat, velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex foramine prosilientis
+               <lb/>foraminis Diameter fuerit tant<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> 26 linearum, alio
+               <lb/>experimento quod recenset <abbr>p.</abbr> 25 § 47 diameter foraminis
+               <lb/>habuerit n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> nisi 9 line<unclear>as</unclear>, ita ut vasis fundi amplitu<pc type="hyphenation">-</pc><lb break="no"/>do plusquam 3000 vicibus major fuerit q<unclear>ua</unclear>m <add>era</add>t
+               <lb/>amplitudo foraminis<supplied>,</supplied> nec tamen in hoc quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Experimen<pc type="hyphenation">-</pc><lb break="no"/>to deprehendeba<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> ratio Diametri ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad <choice><abbr>Diam.</abbr><expan>Diametrum</expan></choice>
+               <lb/>foraminis notabiliter discrepans ab illa priore 10 ad
+               <lb/>1<unclear>3</unclear> adeo ut firmiter mihi persuadeam nullam
+               <lb/>differentiam; observatum iri, si in i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ensum us<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>augere<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> amplitudo vasis. Ex his omnibus colligere
+               <lb/>est, si lamina esset infinit<add>e</add> parv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> spissitudinis<supplied>,</supplied>
+               <lb/>c<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tera<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> se haberent sicuti in Demonstrationib<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+               <lb/>supponi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>, fore ut sectio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sit ad
+               <lb/>sectionem foraminis ut 1 ad <unclear>2</unclear><supplied>,</supplied> non vero ut 1 ad <formula>\sqrt{2}</formula>
+               <lb/>id<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> omnino congruit cum mea Demonstratione
+               <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> quam nimirum explicavi causam physicam
+               <lb/>ob quam sectio ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ad dimidium foraminis attenua<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+               <lb/>quia unaqua<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> guttular<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> post exit<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ex foramine
+               <lb/>antrorsum et retrorsum extendi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> in duplum ad
+               <lb/>expellenda illa interstiti<add>o</add>la inania qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> interjacen<unclear>t</unclear>
+               <lb/>inter guttulas exilientes, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ipsis guttulis sunt
+               <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualia; adeo ut dato tempore effluat tant<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> dimidia
+               <lb/>pars aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ej<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice> quam <rs key="pers_DE-588-119507978" type="person">Jurin<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice></rs> c<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> vulgo credit effluere<supplied>;</supplied>
+               <lb/>altera nam<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> dimidia pars est me<add>r</add>a vacuitas ex
+               <lb/>interstitiolis inanibus conflata: Quando igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+               <lb/>vena i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ediate post exitum ex foramine crassior
+               <lb/>est quam in distantia ab eodem, id minime
+               <lb/>arguit, quod <rs key="pers_DE-588-119507978" type="person">Jurinus</rs> perper<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> existimat
+               <lb/>velocitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex foramine prosilientis
          <pb facs="1079482" n="27"/>
-<lb/>esse minorem quam velocitatem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; Sed id potius indicat aquam effluentem et foramini proximam ob interstitiola nondum explosa esse rariorem et minus densam quam est aqua ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> utpote cujus guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> jamjam in continuitatem-coaluerunt, unde in<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualitas illa crassitiei ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ab initio tumidioris et postea gracilioris nihil plane impedit quominus velocitas ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in singulis a foramine intervallis sit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quabilis et uniformis, quamdiu nempe vena a situ horizontali non sensibiliter deflectit. Succurrit hanc in rem singularis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dam observatio, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> hanc raritatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini proxim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et densitatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> remotioris ad oculum demonstrat meumque, adeo systema totum mirifice confirmat: Observatur scilicet pars ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prosilientis ex foramine turbida et opaca ad eam usque distantiam ubi venac crassities decreere desinit, postea ad <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quabilem gracilitatem redacta induere conspicitur perfectam pellucidaitatem; Sit <formula>AB</formula><!-- Figurtag --> foramen in tenui lamina factum, sit ex eo prosiliens horizontaliter vena aquea <formula>AEFB</formula> cuius pars foramini contigua <formula>ACDB</formula> in crassitie continuo usque ad <formula>CD</formula> decrescit, altera pars <formula>CEFD</formula> uniformis est spissitudinis et ad dimidium foraminis attenuata, ita ut diameter <formula>EF</formula> vel <formula>CD</formula> sit ad Diamet <formula>AB</formula> ut 1 ad <formula>\sqrt{2}</formula> Observatur, inquam, pars ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>ACDB</formula> opaca et quidem magis opaca versus <formula>AB</formula> quam versus <formula>CD</formula>; altera vero pars <formula>CEFD</formula> deprehenditur pellucida instar crystalli: qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nam autem est hujus mirabilis ph<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nomeni causa? ex meo certe principio facillime deducitur, non item ex <rs key="biblio_M6Z9EVAL" type="biblio">Juriniano</rs>;
+               <lb/>esse minorem quam velocitatem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; sed
+               <lb/>id potius indicat aquam effluentem et forami<add>n</add>i
+               <lb/>proximam ob interstitiola nondum explosa
+               <lb/>esse <add>r</add>ariorem et minus densam quam est aqua
+               <lb/>ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> attenuat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> utpote cujus guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> jam jam in
+               <lb/>continuitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> coaluerunt; unde in<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualitas
+               <lb/>ill<add>a</add> crassitiei ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ab initio tumidioris et postea
+               <lb/>gracilioris nihil plane impedit quo minus
+               <lb/>velocitas ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in singulis <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> foramine intervallis
+               <lb/>sit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qua<add>b</add>ilis et uniformis, quamdiu nempe vena <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> situ
+               <lb/>horizontali non sensibiliter deflectit. Succurrit
+               <lb/>hanc in rem singularis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dam observatio, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>hanc raritatem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini proxim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et densitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+               <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> remotioris ad oculum demonstrat me<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>adeo systema totum mirifice confirmat: Observa<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+               <lb/>scilicet pars ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prosilientis ex foramine turbida
+               <lb/>et opaca ad eam us<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> distantiam ubi vena<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> crassities
+               <lb/>decrescere desinit, postea ad <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quabilem gracilitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> redac<pc type="hyphenation">-</pc><lb break="no"/>ta induere conspici<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> perfectam pelluciditat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>; Sit <formula>AB</formula>
+               <lb/><figure facs="1079482_01.png" hand="pers_DE-588-118509969"/>foramen in tenui lamina factum, sit ex eo prosili<pc type="hyphenation">-</pc><lb break="no"/>ens horizontaliter vena aquea <formula>AEFB</formula><note type="editorial">Das B wurde nachträglich über einen anderen Buchstaben geschrieben.</note> cujus
+               <lb/>pars <choice><sic>forami</sic><corr>foramini</corr></choice> contigua <formula>ACDB</formula> in crassitie continuo
+               <lb/>us<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ad <formula>CD</formula> decrescit; altera pars <formula>CEFD</formula> uniformis est
+               <lb/>spissitudinis et ad dimidium foraminis attenuata, ita ut
+               <lb/>Diameter <formula>EF</formula> vel <formula>CD</formula> sit ad <abbr>Diamet.</abbr> <formula>AB</formula> ut 1 ad <formula>\sqrt{2}</formula><supplied>.</supplied> Observatur,
+               <lb/>inquam, pars ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>ACDB</formula> opaca et quidem magis opaca
+               <lb/>versus <formula>AB</formula> quam versus <formula>CD</formula>; altera vero pars <formula>CEFD</formula> depre<pc type="hyphenation">-</pc><lb break="no"/>hendi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> pellucida instar crystalli: qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nam autem
+               <lb/>est hujus mirabilis ph<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nomeni causa? ex meo
+               <lb/>certe principio facillime deduci<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> non item ex <rs key="biblio_M6Z9EVAL" type="biblio">Jurini<unclear>ano</unclear></rs>;
          <pb facs="1079483" n="28"/>
-<lb/>assero enim partem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>ACDB</formula> ideo esse opacam, quia ejus guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> minim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> a se invicem disjunct<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt neque unum continuum faciunt, quo fit ut radii luminis interrumpantur et hoc pacto pelluciditas turbetur; e contrario vero partes aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>CEFD</formula> in unum coalescentes constituunt substantiam per totum homogeneam adeoque lumini perviam, unde ejus pelluciditas prorsus ad mentem ipsius <rs key="pers_DE-588-118587544" type="person">Newtoni</rs>, qui non aliter explicat materi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> opacitatem quam per interruptionem ejus homogeneitatis, et diaphaneitatem per ejusdem uniformem continuationem. Hinc quoque patet cur partes aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prope foramen <formula>AB</formula> opaciores sint quam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vergunt versus terminum <formula>CD</formula> quoniam in illis maxima est particularum aquearum divulsio, in his vero particul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> jamjam sunt coalitur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>: propterea partem <formula>ACDB</formula> {*} ex particulis adhuc a se invicem divulsis constantem punctulis notavi, sed partem reliquam <formula>CEFD</formula> ad naturalem suum densitatis statum constipatam expressi lineolis parallelis: Ex his demum concludo partes aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per <formula>AD</formula> eadem velocitate moveri qua moventur per venam attenuatam <formula>CF</formula>, non obstante majore illius quam hujus sectione, quia partium aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <formula>CF</formula> major densitas compensat majorem amplitudinem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> foramini <formula>AD</formula> proxim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> {*}: atque proin concludo assertionem <rs key="pers_DE-588-119507978" type="person">Jurini</rs> aquam in <formula>AD</formula> lentius, quam in <formula>CF</formula> moveri asserentis prorsus esse falsam, {*}{*} absurdam et contra leges natur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> pugnantem per cons, nullo modo idoneam ad salvandam <choice><abbr/><expan/></choice><!-- ToDo: Kontrollieren, ob manuelle Bereinigung der Abkürzung notwendig ist. -->Demonstr[at]. prop. 37 lib. 2. <rs key="biblio_6CP8LL78" type="biblio">Princ[ip]. prim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Edit[ion]is</rs><!--Werktag nötig?, siehe oben-->. qua <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> demonstrare voluit <hi rend="i">aquam ex foramine in fundo vasis ea cum velocit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> erumpere, qua assurgere possit ad dimidiam altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase existentis.</hi> Falsa igitur est h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c propos: prim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Edit.<choice><abbr/><expan/></choice><!-- ToDo: Kontrollieren, ob manuelle Bereinigung der Abkürzung notwendig ist. -->, et falsa est Demonstratio Catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <rs key="biblio_6CP8LL78" type="biblio">2[d]a. Edit.<choice><abbr/><expan/></choice><!-- ToDo: Kontrollieren, ob manuelle Bereinigung der Abkürzung notwendig ist. --></rs><note type="editorial">Newton, Isaac, Philosophiae naturalis principia mathematica. Editio secunda auctior et emendatior, Cantabrigiae [Cambridge] (C. Crownfield) 1713.</note>, atque altera alteri contradicit. <choice><abbr>Q. E. D.</abbr><expan>Quod erat demonstrandum</expan></choice><note type="editorial">Die folgende Seite ist in der Handschrift fälschlicherwese nach Seite 19 eingebunden und hier in der korrekten Reihenfolge wiedergegeben.</note></p>
-<pb facs="1079475" n="20"/>
-<p><lb/>H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c sunt Vir <choice><abbr>Cel.</abbr><expan>Celeberrime</expan></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> multo labore et sudore conscripsi
-         <lb/>adhibita magna attentione et diligentia atque sepositis
-         <lb/>per 2 hebdomadas omnibus meis negotiis urgentis<pc type="hyphenation">-</pc><lb break="no"/>simis, eum tantam in finem ut Tibi aliquando semel pro
-         <lb/>semper satisfacerem: Non enim amplius licet
-         <lb/>in posterum valetudinem meam jam satis labefactam, {*}{*}{*}
-         <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim oculorum meorum usum nimis eheu: debilitatum
-         <lb/>usque adeo defatigare, ut ante mortem plane inutilis
-         <lb/>fiam etiam ad ea negotia obeunda, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt citra
-         <lb/>omnem dispensationem necessaria: Hortantur sane Medici,
+               <lb/>assero enim partem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>ACDB</formula> ideo esse opac<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> quia ejus guttul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>minim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> se invicem disjunct<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt ne<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> un<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> continuum
+               <lb/>faciunt, quo fit ut radii luminis interrumpan<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>
+               <lb/>et hoc pacto pelluciditas turbe<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice>; <choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> contrario vero partes
+               <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>CEFD</formula> in unum coalescentes constituunt substantiam
+               <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> totum homogene<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> lumini perviam unde ejus
+               <lb/>pelluciditas prorsus ad mentem ipsius <rs key="pers_DE-588-118587544" type="person">Newtoni</rs> qui n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice>
+               <lb/>aliter explicat materi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> opacitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> interruption<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> ejus
+               <lb/>homogeneitatis, et diaphaneitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> ejusd<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> uniform<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> continu<unclear>a</unclear><pc type="hyphenation">-</pc><lb break="no"/>tionem. Hinc quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <add>patet</add> c<add>u</add>r partes aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prope fo<add>ra</add>m<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice> <formula>AB</formula> opaciore<unclear>s</unclear>
+               <lb/>sint qu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vergunt versus termin<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>CD</formula> quoniam in illis
+               <lb/>maxima est particularum aquear<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> divulsio, in his vero
+               <lb/>particul<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> jam jam sunt coalitur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>: propterea <add>partem <formula>ACDB</formula></add>
+               <lb/><add>ex particulis adhuc <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> se invicem divulsis constantem pun<unclear>c</unclear>tulis notavi, sed partem reliquam <formula>CEFD</formula></add>
+               <lb/>ad naturalem suum densitatis statum constipat<add>a</add>m ex<pc type="hyphenation">-</pc><lb break="no"/>pressi lineolis parallelis: Ex his demum concludo partes
+               <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <formula>AD</formula> eadem velocitate moveri qua moven<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> <choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>
+               <lb/>venam attenuat<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> <formula>CF</formula>, non obstante majore illius
+               <lb/>quam; hujus sectione, quia partium aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <formula>CF</formula> majo<unclear>r</unclear>
+               <lb/>densitas compensat major<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> amplitudinem ven<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>foramini <add><formula>AD</formula> proximam</add><note type="internal">In der Spiess-Transkription steht hier proximae. Kontrollieren ob Korrektur</note> at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> proin concludo assertion<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> <rs key="pers_DE-588-119507978" type="person">Jurini</rs> aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+               <lb/>in <add><formula>AD</formula></add> lentius, quam in <formula>CF</formula> moveri asserentis prorsus esse
+               <lb/>falsam, absurdam, et contra Leges natur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> pugnantem
+               <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> <abbr>cons.</abbr> nullo modo idoneam ad salvandam; <abbr>Demonstr.</abbr>
+               <lb/><abbr>prop.</abbr> 37<choice><orig>.</orig><reg>,</reg></choice> <abbr>Lib.</abbr> 2<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <rs key="biblio_6CP8LL78" type="biblio"><abbr>Princ.</abbr> prim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <abbr>Edit.</abbr></rs> qua <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> de<pc type="hyphenation">-</pc><lb break="no"/>monstrare voluit: <hi rend="i">aqu<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> ex foramine in fundo vasis
+                 <lb/>ea cum velocite erumpere, qua assurgere possit
+                 <lb/>ad dimidiam altitudinem aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in vase existentis<supplied>.</supplied></hi>
+               <lb/>Falsa igi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> est h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c <abbr>propos.</abbr> prim<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Edit., et falsa est
+               <lb/>Demonstratio Catarrhact<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in <rs key="biblio_6CP8LL78" type="biblio">2.<hi rend="sup">a</hi> <abbr>Edit.</abbr></rs> at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> altera alteri
+               <lb/>contradicit. <abbr>Q. E. D.</abbr><note type="editorial">Die folgende Seite ist in der Handschrift fälschlicherwese nach Seite 19 eingeordnet.</note></p>
+  <pb facs="1079475" n="20"/>
+  <p><lb/>H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c sunt Vir <abbr>Cel.</abbr>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> multo labore et sudore conscripsi
+         <lb/>adhibita magna attentione et diligent<add>ia</add> at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> sepositis
+         <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> 2 hebdomadas omnibus meis negociis urgenti<add>s</add><pc type="hyphenation">-</pc><lb break="no"/>simis, eum tant<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> in fin<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> ut Tibi aliquando s<add>e</add>mel pro
+         <lb/>semper satisfacerem; Non enim amplius licet
+         <lb/>in posterum valetudinem meam jam satis <choice><sic>labetact<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></sic><corr>labefact<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></corr></choice><supplied>,</supplied>
+         <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim oculor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> meor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> usum nimis eheu! <choice><sic>debil<add>a</add>tat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></sic><corr>debilitat<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></corr></choice>
+         <lb/>us<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> adeo defatigare, ut ante mort<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> plane inutilis
+         <lb/>fiam etiam ad ea negocia obeunda<supplied>,</supplied> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sunt citra
+         <lb/>omn<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> dispensation<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> necessaria: Hortan<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> sane Medici,
          <lb/>ut si velim residu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> valetudini prospicere, mihi
-         <lb/>temperem a meditationibus atque imprimis a scriptione
-         <lb/>prolixarum litterarum qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intensam requirant applicationem:
-         <lb/>Interim rogo ut hanc epistolam legendam tradas Filio meo <rs type="person"><choice><abbr>Dan.</abbr><expan>Danieli</expan></choice></rs>
-<lb/>ut videat quousque su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> meditationes cum meis conspirent. </p>
-<p>Quod si ex his nostris ut dicis concinnare volueris Respon<pc type="hyphenation">-</pc><lb break="no"/>sionem Defensioni<!-- werktag --><note type="editorial">Die Responsio auf die Defensio wird, wie Joh. I B. Michelotti hier anrät, 1724 in Venedig bei den Brüdern Pinelli gedruckt: https://books.google.ch/books?id=pHx_GKBaAMUC&amp;dq=Iacobi%20Jurini%20...%20Dissertationis%20de%20motu%20aquarum%20fluentium%20contra%20nonnullas%20Petri%20Antonii%20Michelotti%20animadversiones%20Defensio&amp;hl=de&amp;pg=PA1#v=onepage&amp;q=Iacobi%20Jurini%20...%20Dissertationis%20de%20motu%20aquarum%20fluentium%20contra%20nonnullas%20Petri%20Antonii%20Michelotti%20animadversiones%20Defensio&amp;f=false.</note> Jurinian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> opponendam, suadeo ut
-                <lb/>illam potius <rs key="place_GEO-3164603" type="place">Venetiis</rs> imprimi cures et impressum
-                <lb/>postea ad <rs key="pers_DE-588-119507978" type="person">Jurinum</rs> transmittas Actis <choice><abbr>Lond.</abbr><expan/></choice><choice><abbr/><expan/></choice><!-- ToDo: Kontrollieren, ob manuelle Bereinigung der Abkürzung notwendig ist. --> Si volue<pc type="hyphenation">-</pc><lb break="no"/>rit inserendam. Verendum enim est ne, si miseris respon<pc type="hyphenation">-</pc><lb break="no"/>sionem in scripto, eam vel plane supprimat, vel quoquomodo
-                <lb/>corrumpat, aut falsificat, quando pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim in ea reperiet
-                <lb/>ad qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> solide respondere non poterit; constat enim mihi
-                <lb/>per Experientiam de genio Anglorum, eam consuetudinem habentium
-                <lb/>ut exteris sua vel detrahant vel depravent; id aliquando <rs key="pers_DE-588-117601020" type="person">Mon<pc type="hyphenation">-</pc><lb break="no"/>mortius</rs> a <rs key="pers_DE-588-118801481" type="person">Tayloro</rs>, et ego quoque ab aliis Anglis experti sumus.
-                <lb/>Exhortare qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>so <rs type="person">Danielem</rs> meum ut ductu Tuo medicinam practicam pro viribus
-                <lb/>excolat; ita facile efficere poterit ut inter omnes Medicos
-                <lb/>populares suos, post obitum <rs key="pers_DE-588-118773321" type="person">Zwingeri</rs>, excellat.</p> <closer><salute><choice><abbr>V.</abbr><expan>Vale</expan></choice> <choice><abbr>V.</abbr><expan>Vir</expan></choice> <choice><abbr>Cl.</abbr><expan>Clarissime</expan></choice></salute>
+         <lb/>temper<add>e</add>m <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> meditationib<add>u</add>s at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> imprimis <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> scriptione
+         <lb/>prolixarum Litterarum qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> intens<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> requirant application<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>:
+         <lb/>Interim rogo ut hanc epistol<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> legendam tradas Filio meo <rs type="person"><abbr>Dan<supplied>.</supplied></abbr></rs>
+    <lb/>ut videat quous<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> su<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> meditationes cum meis conspirent.</p>
+  <p><lb/>Quod si ex his nostris ut dicis, conci<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>are volueris <rs key="biblio_42TNNPE9" type="biblio">Respon<pc type="hyphenation">-</pc><lb break="no"/>sion<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice></rs> Defensioni<note type="editorial">Die Responsio auf die Defensio wird, wie Joh. I B. Michelotti hier anrät, 1724 in Venedig bei den Brüdern Pinelli gedruckt.</note> Jurinian<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> opponendam, suadeo ut
+    <lb/>illam potius <rs key="place_GEO-3164603" type="place">Venetiis</rs> imprimi cures et impress<unclear>u</unclear>m
+    <lb/>postea ad <rs key="pers_DE-588-119507978" type="person">Jurin<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice></rs> transmittas Actis <abbr>Lond.</abbr> si volue<pc type="hyphenation">-</pc><lb break="no"/>rit inserendam: Verend<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> en<choice><orig><g ref="#im">ī</g></orig><reg>im</reg></choice> est, ne si miseris respon<pc type="hyphenation">-</pc><lb break="no"/>sionem in scripto, e<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> vel plane supprimat<supplied>,</supplied> vel quoquomod<unclear>o</unclear>
+    <lb/>corrumpat, aut falsificet, quando pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim in ea reperiet
+    <lb/>ad qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> solide respondere non poterit; constat enim mihi
+    <lb/>per Experienti<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> de genio Anglor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> e<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> consuetudin<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> habenti<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+    <lb/>ut exteris sua vel detrahant vel depravent: id aliquando <rs key="pers_DE-588-117601020" type="person">M<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>mortius</rs> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <rs key="pers_DE-588-118801481" type="person">Tayloro</rs>, et ego quo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ab aliis Anglis experti sumus<supplied>.</supplied>
+    <lb/>Exhortare qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>so <rs type="person"><abbr>Dan.</abbr></rs> me<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ut ductu Tuo <abbr>Medic.</abbr> <abbr>pract.</abbr> pro virib<choice><orig><g ref="#us">[us]</g></orig><reg>us</reg></choice>
+    <lb/>excolat; ita facile efficere poterit <add>u</add>t inter omnes Medicos
+    <lb/>populares suos, post obit<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <rs key="pers_DE-588-118773321" type="person">Zuingeri</rs>, <add>ex</add>cellat<supplied>.</supplied></p> <closer><salute><choice><abbr>V.</abbr><expan>Vale</expan></choice> <choice><abbr>V.</abbr><expan>Vir</expan></choice> <choice><abbr>Cl.</abbr><expan>Clarissime</expan></choice></salute>
 <dateline><choice><abbr>D</abbr><expan>Dabam</expan></choice> <choice><abbr>B</abbr><expan><rs key="place_GEO-2661604" type="place">Basile<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs></expan></choice> <choice><abbr>a. d.</abbr><expan>ad diem</expan></choice> 31. Maii 1724.</dateline></closer> <note type="editorial">In der Stockholmer Sammlung ist der Rest dieses Briefes irrtümlicherweise als selbständiger unvollkommener Brief registriert worden. Die Schlusseite des Briefes befand sich auf dem ersten Teil. Vorstehende Kopie enthält den vollkommenen zusammengesetzten Brief in richtiger Seitenfolge.</note>
 <note type="editorial">Die zahlreichen unsichern Stellen in dieser Kopie wurden nach der in Ba. Un. Go. 674, Nr. 21, befindlichen zweiten Kopie bereinigt.</note>
 </div></body></text></TEI>

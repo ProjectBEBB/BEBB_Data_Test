@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- tags (ort, person, werk) eingetragen am 22.11.2018; Personen ausgezeichnet am 19.02.2019 --><!-- <change when="2022-04-28" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Federico Tiepolo, pers_DE-588-1122613067 (im BIBB steht nur "Tiepolo, Bruder von Lorenzo Tiepolo")
-         Bruder Lorenzos. Senator Venetus und Verleger --><!--_____________--><TEI xml:id="B_1722-11-18_991170515108705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515108705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -120,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1722-11-14_991170515148705501" type="prev"/>
-        <ptr target="B_1723-01-02_991170515108605501" type="next"/>
+        <ptr target="B_991170515148705501" type="prev"/>
+        <ptr target="B_991170515108605501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -245,6 +243,18 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- tags (ort, person, werk) eingetragen am 22.11.2018; Personen ausgezeichnet am 19.02.2019 -->
+<!-- <change when="2022-04-28" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Federico Tiepolo, pers_DE-588-1122613067 (im BIBB steht nur "Tiepolo, Bruder von Lorenzo Tiepolo")
+         Bruder Lorenzos. Senator Venetus und Verleger -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079357/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079358" n="1"/>
 <opener><salute>Monsieur</salute></opener>
@@ -267,9 +277,9 @@
    <lb/>venir chez vous. Outre cela je ne suis pas sur que <rs key="pers_DE-588-121843858" type="person">son
             <lb/><choice><abbr>Excell.</abbr><expan>Excellence</expan></choice></rs> me donne la permission volontier parce queilhà tou<pc type="hyphenation">-</pc><lb break="no"/>jour besoin de mois, et pour politesse je ne dois pas le quitter.
          <pb facs="1079359" n="2"/>
-<lb/>Les <rs key="brieftag" type="letter">lettres</rs> que vous me marquez m'avoir adressè à Mr. <rs key="pers_DE-588-128382058" type="person">Sal<pc type="hyphenation">-</pc><lb break="no"/>tzman</rs>,<note type="editorial">Recherchieren: Nur der Brief von Joh. I B. an Johann Salzmann von 1724.07.23 ist im BIBB enthalten. Der Anatomieprofessor Johann Salzmann in Strassburg. Er übermittelte mehrere Briefe Michelottis nach Basel.<!-- https://aleph.unibas.ch/F/?local_base=DSV05&con_lng=GER&func=find-b&find_code=SYS&request=000056885 --></note> je ne le ay pas encore reçú à cause que Mr. <rs key="pers_DE-588-128382058" type="person">Saltz<pc type="hyphenation">-</pc><lb break="no"/>man</rs> me le avoiet envoyè à <rs key="place_GEO-2988507" type="place">Paris</rs>; mais je le reçeverai
+<lb/>Les <rs type="letter">lettres</rs> que vous me marquez m'avoir adressè à Mr. <rs key="pers_DE-588-128382058" type="person">Sal<pc type="hyphenation">-</pc><lb break="no"/>tzman</rs>,<note type="editorial">Recherchieren: Nur der Brief von Joh. I B. an Johann Salzmann von 1724.07.23 ist im BIBB enthalten. Der Anatomieprofessor Johann Salzmann in Strassburg. Er übermittelte mehrere Briefe Michelottis nach Basel.<!-- https://aleph.unibas.ch/F/?local_base=DSV05&con_lng=GER&func=find-b&find_code=SYS&request=000056885 --></note> je ne le ay pas encore reçú à cause que Mr. <rs key="pers_DE-588-128382058" type="person">Saltz<pc type="hyphenation">-</pc><lb break="no"/>man</rs> me le avoiet envoyè à <rs key="place_GEO-2988507" type="place">Paris</rs>; mais je le reçeverai
          <lb/>certainement dans cette semain. Je vous remercie,
-         <lb/>Monsieur, parce que vous avez expedié par la voye d'<rs key="place_GEO-2775220" type="place">Ins<pc type="hyphenation">-</pc><lb break="no"/>prug</rs> la <rs key="brieftag" type="letter">lettre</rs><note type="editorial">Der Brief von Michelotti (oder Lorenzo Tiepolo) an Frederico Tiepolo wird auch im <rs key="B_1722-11-14_991170515148705501" type="letter">Brief</rs> vom 14. November 1722 erwähnt.</note> pour le <choice><sic>frer</sic><corr>frere</corr></choice> de Mr. <rs key="pers_DE-588-121843858" type="person">Tiepolo</rs>, et je vous
+         <lb/>Monsieur, parce que vous avez expedié par la voye d'<rs key="place_GEO-2775220" type="place">Ins<pc type="hyphenation">-</pc><lb break="no"/>prug</rs> la <rs type="letter">lettre</rs><note type="editorial">Der Brief von Michelotti (oder Lorenzo Tiepolo) an Frederico Tiepolo wird auch im <rs key="B_991170515148705501" type="letter">Brief</rs> vom 14. November 1722 erwähnt.</note> pour le <choice><sic>frer</sic><corr>frere</corr></choice> de Mr. <rs key="pers_DE-588-121843858" type="person">Tiepolo</rs>, et je vous
          <lb/>rend mille graces aussi parce que vous me prometez de
          <lb/>me satisfair touchant les objections, et le difficultès
          <lb/>de Mr. le comte <rs key="pers_DE-588-119543885" type="person">Riccati</rs>, le quelle si'l ne voudrà pas se ren<pc type="hyphenation">-</pc><lb break="no"/>dre à votres <choice><sic>raisonements</sic><corr>raisonnements</corr></choice> tres solides, et <choice><sic>convaicants</sic><corr>convaincants</corr></choice>,

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Einige Personen darunter Condet wurden noch nicht referenziert. RG 29.09.2023 --><!--_____________--><TEI xml:id="B_1732-04-10_991170514977405501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514977405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -118,8 +117,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1731-12-05_991170514977505501" type="prev"/>
-        <ptr target="B_1732-05-30_991170514977305501" type="next"/>
+        <ptr target="B_991170514977505501" type="prev"/>
+        <ptr target="B_991170514977305501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Cramer_Gabriel-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -170,6 +169,7 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-09-29" who="RG">Personen und Orte ausgezeichnet</change>
       <!-- Einige Personen darunter Condet wurden noch nicht referenziert. RG 29.09.2023 -->
       <change when="2023-06-13" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
@@ -177,6 +177,15 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Einige Personen darunter Condet wurden noch nicht referenziert. RG 29.09.2023 -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073890/manifest"/>
 </facsimile><text>
@@ -185,33 +194,33 @@
 <pb facs="1073891" n="1"/>
 <opener><salute>Monsieur,</salute></opener>
 <p><lb/>Je profite de l'occasion de Mr. le Ministre <rs key="pers_DE-588-119259028" type="person">Vernet</rs> mon bon ami, que je
-               <lb/>vous supplie d'avoir pour recommandé, pour repondre à vôtre chère Lettre, &amp;
+               <lb/>vous supplie d'avoir pour recommandé, pour repondre à vôtre chère Lettre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/>pour vous envoier la Copie du Discours que j'avois présenté à l<rs type="organisation">'Académie de
-               <lb/>Paris</rs>. Vous y trouverés mille &amp; mille raisons pour justifier le Jugement de ces
-               <lb/>Messieurs, &amp; la préférence qu'ils ont donnée à vôtre pièce: mais d'ailleurs je ne
+               <lb/>Paris</rs>. Vous y trouverés mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille raisons pour justifier le Jugement de ces
+               <lb/>Messieurs, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la préférence qu'ils ont donnée à vôtre pièce: mais d'ailleurs je ne
                <lb/>vois pas que vous y trouviés rien qui puisse satisfaire votre curiosité. C'est ce qui
                <lb/>m'avoit fait différer de vous l'envoier, ne voiant pas ce qui pourroit vous y plaire.
                <lb/>D'ailleurs c'est la seule copie qui m'en reste, encore n'est elle pas entièrement conforme
                <lb/>à ce que j'ai envoié à l'Académie. Car étant très pressé, je fis diverses corrections à
                <lb/>mésure que je la recopiois, que je n'eus pas le loisir de marquer sur la minute. Je
-               <lb/>vous prie donc quand vous l'aurez luë &amp; examinée tout à votre loisir, d'avoir la bonté
+               <lb/>vous prie donc quand vous l'aurez luë <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> examinée tout à votre loisir, d'avoir la bonté
                <lb/>de me la renvoier par la Messagerie ou autrement.</p>
 <p><lb/>Je suis faché de ne pouvoir étre d'aucun usage à Mr. vôtre <rs type="person">fils</rs>, auprès de 
                <lb/>Mess.<hi rend="sup">s</hi> <rs key="GND GND" type="persons">Gondet</rs> à <rs key="place_GEO-2995469" type="place">Marseille</rs>. Peu après la mort de mon <rs type="person">frère</rs>, mon <rs type="person">Pere</rs> leur
                <lb/>écrivit pour les prier de prendre en sa place un jeune homme de nos proches
-               <lb/>parents &amp; même des leurs. Ces Messieurs repondirent, qu'ils n'en avoient
+               <lb/>parents <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même des leurs. Ces Messieurs repondirent, qu'ils n'en avoient
                <lb/>nul besoin. Cependant mon Pere leur a écrit à l'occasion de Monsieur votre
                <lb/>fils, sans avoir pû reçevoir aucune réponse.</p>
 <pb facs="1073892" n="2"/>
 <p><lb/>Je ne sçais si Monsieur Clairaut s'est exercé sur le Problème de la Ligne la plus
                <lb/>courte qui se puisse tracer entre deux points sur une surface courbe donnée. Ce
-               <lb/>problème ne me paroit pas infiniment difficile, &amp; j'espererois d'y reussir, si j'avois
+               <lb/>problème ne me paroit pas infiniment difficile, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j'espererois d'y reussir, si j'avois
                <lb/>quelque loisir pour y travailler: mais je suis obligé de laisser un peu reposer les
                <lb/>études Mathematiques, à cause de la maladie d'un de nos Professeurs en Philosophie
-               <lb/>dont on nous a chargés mon Collègue &amp; moi de remplir les fonctions, comme étant
+               <lb/>dont on nous a chargés mon Collègue <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moi de remplir les fonctions, comme étant
                <lb/>les plus jeunes. Ces Leçons qui sont au nombre de 5 par semaines ne laissent pas de
                <lb/>me prendre une bonne partie de mon tems, parceque ces matières ne me sont pas
-               <lb/>si familières qu'il ne me faille préparer, &amp; même les écrire. Joignés à cela nombre de
+               <lb/>si familières qu'il ne me faille préparer, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même les écrire. Joignés à cela nombre de
                <lb/>leçons particulières, qui vont jusqu'à 7 ou 8 par jour.</p>
 <p><lb/>J'ai reçu <hi rend="u">novissime</hi> des Lettres de Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> qui ne me marque pas qu'il se
                <lb/>soit attaché à ce Problème, quoiqu'il ait reçu la Lettre où je lui envoiois l'extrait de la
@@ -225,8 +234,8 @@
                <lb/>quelque Mémoire de votre façon, mais je n'y ai rien trouvé.</p>
 <p><lb/>Mr. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> pourroit répondre à vôtre Objection qu'il ne suppose pas elastiques
                <lb/>les particules de son fluide qui cause la pesanteur. Mais que ce fluide est si rare, que ces
-               <lb/>particules ne se rencontreront que très rarement, &amp; qu'au surplus il ne se ferait pas
-               <lb/>de peine d'acorder que le mouvement de ce fluide diminuë peu à peu &amp; insensiblement.
+               <lb/>particules ne se rencontreront que très rarement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'au surplus il ne se ferait pas
+               <lb/>de peine d'acorder que le mouvement de ce fluide diminuë peu à peu <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> insensiblement.
                <lb/>Vous faites mention dans vos Découvertes sur le mouvement des Planètes d'un Système
                <lb/>que vous vous étes formé sur la Pesanteur. Pourrois [je] savoir en quoi il consiste?</p>
 <pb facs="1073893" n="3"/>
@@ -236,29 +245,29 @@
 <p><lb/>Voici comment je conçois la Demonstration de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> sur la propagation du Son.
                <lb/>Il pose d'abord que le mouvement des particules de l'air est tel qu'il le veut prouver, c'est
                <lb/>à dire, analogue aux vibrations d'un Pendule. Il examine en conséquence qu'elle est la densité
-               <lb/>&amp; l'élasticité de l'air à diverses distances du Centre de l'onde, &amp; trouvant que la difference
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l'élasticité de l'air à diverses distances du Centre de l'onde, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> trouvant que la difference
                <lb/>d'Elasticité est proportionelle aux Distances du Centre, il conclud que cette différence, qui est
                <lb/>la force motrice est précisement telle qu'il faut pour produire un mouvement tel qu'il
                <lb/>l'a supposé. D'où il infère que sa supposition primitive est juste. Malheureusement
                <lb/>il arrive que faisant telle supposition qu'on voudra, la conséquence s'en tirera de la même
-               <lb/>manière, &amp; par un raisonnement tout semblable, on aura le même droit de conclure que
+               <lb/>manière, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par un raisonnement tout semblable, on aura le même droit de conclure que
                <lb/>cette Supposition est bonne.</p>
 <p><lb/>Voici la manière dont on peut calculer la vitesse du son fondée sur un Theorème dont vous
                <lb/>m'avez communiqué la Demonstration. Soit <formula>L</formula> la longueur, <formula>p</formula> le poids d'une corde de Musique
-               <lb/>tenduë par un poids <formula>P</formula>. Soit encore <formula>D</formula> la longueur d'un Pendule quelconque, &amp; <formula>1.c</formula> c la raison
+               <lb/>tenduë par un poids <formula>P</formula>. Soit encore <formula>D</formula> la longueur d'un Pendule quelconque, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>1.c</formula> c la raison
                <lb/>du Diamètre à la Circonférence. Cette Corde pendant le tems que le Pendule fera une vibration,
                <lb/>en fera un nombre exprimé par la formule <formula>c\sqrt{\frac{DP}{Lp}}</formula>. Cela posé, je considère une Onde de l'air
-               <lb/>agité par le mouvement qui produit le son, comme un ressort de même longueur, &amp; je cherche
+               <lb/>agité par le mouvement qui produit le son, comme un ressort de même longueur, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je cherche
                <lb/>le tems qu'il emploie à faire une vibration. C'est précisement dans ce tems qu'on peut dire,
                <lb/>que le son a passé d'un bout de l'onde à l'autre, ou qu'il a parcouru la largeur de l'Onde.
                <lb/>Or il est manifeste qu'il en est de ce ressort aërien comme d'une corde de Musique qui fait
                <lb/>ses vibrations. Car quoiqu'il y ait cette différence, que le poids qui tend la corde fait effort
-               <lb/>pour l'allonger, &amp; qu'ici le poids qui comprime l'air qui compose cette onde (&amp; qui n'est autre
+               <lb/>pour l'allonger, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'ici le poids qui comprime l'air qui compose cette onde (<choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui n'est autre
                <lb/>chose que le poids de l'Atmosphère) fait effort pour la resserver. Cependant l'analogie est
                <lb/>exacte, le ressort de la corde faisant contre le poids qui la tend un effort tout senblable à
-               <lb/>celui que le ressort de l'air fait contre le poids de l'Atmosphère. Et dans l'un &amp; l'autre cas,
+               <lb/>celui que le ressort de l'air fait contre le poids de l'Atmosphère. Et dans l'un <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l'autre cas,
                <lb/>l'equilibre etant parfait, si l'on le trouble en augmentant le ressort ou la tension de la 
-               <lb/>corde, par la Courbure qu'on lui donne en la pinçant, &amp; en augmentant le ressort de l'air,
+               <lb/>corde, par la Courbure qu'on lui donne en la pinçant, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en augmentant le ressort de l'air,
             <pb facs="1073894" n="4"/>
 <lb/>par une compression étrangère, cet équilibre se restitue promptement après quelques
                <lb/>vibrations. Soit donc <formula>L</formula> la largeur de l'Onde produite dans l'air par un corps sonore,
@@ -273,16 +282,16 @@
 <p><lb/>Je n'ai point vû le Mémoire de Mr. <rs key="pers_DE-588-117683280" type="person">de Louville</rs> de l'année 1729. Ces Mémoires n'arrivent
                <lb/>ici que quelques années après qu'ils ont paru. Je ne conçois pas sur quels fondements, il
                <lb/>peut nier la verité du Theorème <formula>pdt=du</formula>, ni ce que fait à cela la distinction de l'action
-               <lb/>continuë &amp; continuelle de la matière subtile. Les Mathematiciens se seroient à plaindre
+               <lb/>continuë <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> continuelle de la matière subtile. Les Mathematiciens se seroient à plaindre
                <lb/>si l'on pouvoit opposer à leurs demonstrations des distinctions fondées uniquement sur
                <lb/>des hypotheses Physiques. Le principe contenu dans ce Theoreme <formula>pdt=du</formula> est si essentiel
                <lb/>à la Mechanique, que si on le conteste, il faudra recommencer à batir une nouvelle
                <lb/>Mechanique sur de nouveaux fondemens. Car il y a peu de Propositions dans cette Science
                <lb/>qui ne supposent <note type="editorial">Im Manuskript steht "suppose"</note> ce Principe, excepté, peutétre, ce qui regarde les puissances agissant par des
                <lb/>machines. Ainsi je pense que Mr. <rs key="pers_DE-588-117683280" type="person">de Louville</rs> sera refuté suffisamment par lui même.</p>
-<closer><salute><lb/>J'ai l'honneur d'étre avec une parfaite estime &amp; un profond respect
+<closer><salute><lb/>J'ai l'honneur d'étre avec une parfaite estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un profond respect
                <lb/>Monsieur
-               <lb/>Votre très humble &amp; très obeissant
+               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
                <lb/>Serviteur</salute>
 <signed><lb/>G. Cramer.</signed>
 <dateline><lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1732-04-10">10 avril 1732</date>.</dateline></closer>

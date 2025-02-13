@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-      Bayer -> Bayer, Theophilus Siegfried (1694-1738) pers_DE-588-119099292
-      
-      Bulfinguer -> Bilfinger, Georg Bernhard (1693-1750) pers_DE-588-118663208
-      
-      voyageur -> sollte ein Brief von Bayer an Bourguet zu Hermann, resp. Schumacher transportieren. Siehe Brief Hermann an Bourguet, 1733.01.19
-      
-      Schumacher -> Schumacher, Johann Daniel (1690-1761) pers_DE-588-117647691
-      War Leiter der Kanzlei der Akademie in Petersburg. Ist er die gesuchte Person im Brief Hermann an Bourguet vom 1733.01.03? -> Ja!
-      
-      Mr. le President de l'Academie -> hat die Biblotheque Italique erhalten.
-      Blumentrost, Laurentius (1692-1755) pers_DE-588-117608629
-      --><!--_____________--><TEI xml:id="B_1733-04-01_991170430334905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170430334905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -133,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1733-01-03_991170430335005501" type="prev"/>
-        <ptr target="B_1733-05-13_991170430334805501" type="next"/>
+        <ptr target="B_991170430335005501" type="prev"/>
+        <ptr target="B_991170430334805501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -179,15 +166,36 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+      Bayer -> Bayer, Theophilus Siegfried (1694-1738) pers_DE-588-119099292
+      
+      Bulfinguer -> Bilfinger, Georg Bernhard (1693-1750) pers_DE-588-118663208
+      
+      voyageur -> sollte ein Brief von Bayer an Bourguet zu Hermann, resp. Schumacher transportieren. Siehe Brief Hermann an Bourguet, 1733.01.19
+      
+      Schumacher -> Schumacher, Johann Daniel (1690-1761) pers_DE-588-117647691
+      War Leiter der Kanzlei der Akademie in Petersburg. Ist er die gesuchte Person im Brief Hermann an Bourguet vom 1733.01.03? -> Ja!
+      
+      Mr. le President de l'Academie -> hat die Biblotheque Italique erhalten.
+      Blumentrost, Laurentius (1692-1755) pers_DE-588-117608629
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430334905501_01" n="85r"/>
 <opener><salute>Monsieur</salute></opener>
 <p><lb/>Comme je viens de recevoir ce matin un paquet de lettres de <rs key="place_GEO-498817" type="place"><abbr>S.<hi rend="sup">t</hi></abbr> Petersbourg</rs> dans le quel
-                                  <lb/>j'ai trouvé une <rs key="brieftag" type="letter">lettre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs> pour vous, que voici, telle que je l'ay receue, je n'ai pas
+                                  <lb/>j'ai trouvé une <rs type="letter">lettre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs> pour vous, que voici, telle que je l'ay receue, je n'ai pas
                                   <lb/>voulu<del> manquer</del> tarder un moment à Vous l'envoyer quoi que <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs> m'ait prié
                                   <lb/>d'en envoyer une <rs type="biblio">copie</rs><!-- MS: Abklären in Neuchatel, was in der dort erhaltenen Kopie eines Briefes von Bayer an Bourguet steht. --> à <abbr>Mr.</abbr> <rs key="pers_DE-588-118663208" type="person">Bulfinguer</rs>. Ce pendant si Vous me voulussiés faire faire
                                   <lb/>une copie je Vous en aurois beaucoup d'obligation. Vous verrez exposés<add> les</add> raisons pour
-                                  <lb/>quoi Vous n'avez point encore receu la precedente <rs key="brieftag" type="letter">lettre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs> qu'il avoit
+                                  <lb/>quoi Vous n'avez point encore receu la precedente <rs type="letter">lettre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs> qu'il avoit
                                   <lb/>confiée à un voyageur<!-- persontag --> pour me la faire tenir ou plutot <abbr>Mr.</abbr> <rs key="pers_DE-588-117647691" type="person">Schumacher</rs><supplied>.</supplied></p>
 <p><lb/><abbr>Mr.</abbr> le <rs key="pers_DE-588-117608629" type="person">President</rs> de l'<rs type="organisation">Academie</rs> a receu avec plaisir le Cahier de la <rs type="keyword">Biblio<pc type="hyphenation">-</pc><lb break="no"/>theque Italique</rs><!-- Im Gazetier Universel: http://gazetier-universel.gazettes18e.fr/periodique/bibliotheque-italique-1728-1734 --> que Vous m'aviés adressé pour lui. Il<choice><orig> me</orig><reg type="deleted"/></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --> me prie de Vous en
                                   <lb/>faire des remercimens de sa part souhaitant de Vous pouvoir envoyer aussi
@@ -203,7 +211,7 @@
                             <lb/>tres obeissant serviteur
                                 <lb/><signed><rs key="pers_DE-588-119112450" type="person"><abbr>J</abbr>Herman</rs></signed>
 <dateline><lb/>A <rs key="place_GEO-2661604" type="place">Basle</rs> ce <date when="1733-04-01">1 Avril 1733</date>.</dateline></closer>
-<note hand="pers_DE-588-116298553"><choice><abbr>Rece</abbr><expan>Receu</expan></choice> le <date when="1733-04-03">3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> dudit</date><supplied>.</supplied> <choice><abbr>Rep</abbr><expan>Repondu</expan></choice> le <rs key="brieftag" type="letter"><date when="1733-04-06">6<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice> dit</date></rs><supplied>.</supplied> Envoyé <rs type="biblio">copie</rs> de la <rs key="brieftag" type="letter">Lettre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs></note>
+<note hand="pers_DE-588-116298553"><choice><abbr>Rece</abbr><expan>Receu</expan></choice> le <date when="1733-04-03">3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> dudit</date><supplied>.</supplied> <choice><abbr>Rep</abbr><expan>Repondu</expan></choice> le <rs type="letter"><date when="1733-04-06">6<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice> dit</date></rs><supplied>.</supplied> Envoyé <rs type="biblio">copie</rs> de la <rs type="letter">Lettre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-119099292" type="person">Bayer</rs></note>
 <pb facs="991170430334905501_02" n="85v" type="empty"/>
 <pb facs="991170430334905501_03" n="86r" type="empty"/>
 <pb facs="991170430334905501_04" n="86v" type="empty"/>

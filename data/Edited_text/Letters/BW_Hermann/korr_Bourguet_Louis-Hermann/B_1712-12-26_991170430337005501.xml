@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- 
-      Libraire -> Siehe Brief vom 1712.12.18, Hermann ist auf der Suche nach günstigen Exemplaren der GLI.
-      
-      Apostolo Zen -> Apostolo Zeno (1668-1750) pers_DE-588-116980257
-      
-      Hertz -> Giovanni Gabriele Hertz pers_DE-588-1037587715
-      
-      Michelotti -> Pietro Antonio Michelotti (1663-1740) pers_DE-588-102552517
-      
-      Conti -> Antonio Conti (1677-1749) pers_DE-588-118941941
-      
-      Leibnitz -> Gottfried Wilhelm Leibniz (1646-1716) pers_DE-588-118571249
-      
-      Ehefrau von Bourguet -> Susanne Jourdan (1668-1738) pers_DE-588-118617577X
-      
-      Vater von Bourguet -> Jean Bourguet (1652-) pers_DE-588-1188760025
-      Jean Bourguet (1652-) verheiratet mit Catherine Rey (1653-).
-      
-      Brüder von Bourguet -> Jean Bourguet pers_DE-588-1186849312 und weitere
-
-      --><!--_____________--><TEI xml:id="B_1712-12-26_991170430337005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170430337005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -141,8 +120,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1712-12-18_991170430337105501" type="prev"/>
-        <ptr target="B_1713-01-08_991170430336905501" type="next"/>
+        <ptr target="B_991170430337105501" type="prev"/>
+        <ptr target="B_991170430336905501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Bourguet_Louis-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -213,13 +192,42 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- 
+      Libraire -> Siehe Brief vom 1712.12.18, Hermann ist auf der Suche nach günstigen Exemplaren der GLI.
+      
+      Apostolo Zen -> Apostolo Zeno (1668-1750) pers_DE-588-116980257
+      
+      Hertz -> Giovanni Gabriele Hertz pers_DE-588-1037587715
+      
+      Michelotti -> Pietro Antonio Michelotti (1663-1740) pers_DE-588-102552517
+      
+      Conti -> Antonio Conti (1677-1749) pers_DE-588-118941941
+      
+      Leibnitz -> Gottfried Wilhelm Leibniz (1646-1716) pers_DE-588-118571249
+      
+      Ehefrau von Bourguet -> Susanne Jourdan (1668-1738) pers_DE-588-118617577X
+      
+      Vater von Bourguet -> Jean Bourguet (1652-) pers_DE-588-1188760025
+      Jean Bourguet (1652-) verheiratet mit Catherine Rey (1653-).
+      
+      Brüder von Bourguet -> Jean Bourguet pers_DE-588-1186849312 und weitere
+
+      -->
+<!--_____________-->
+
 <facsimile><graphic url="http://fakeURL.com"/></facsimile><text><body><div type="letter">
 <pb facs="991170430337005501_01" n="50r"/>
 <opener><salute>Monsieur</salute></opener>
-<p><lb/>Il y a quelques jours que j'ay receu l'honneur de Votre <rs key="brieftag" type="letter">lettre</rs> du 20 du Courant, de la quelle j'ay veu
+<p><lb/>Il y a quelques jours que j'ay receu l'honneur de Votre <rs type="letter">lettre</rs> du 20 du Courant, de la quelle j'ay veu
                    <lb/>avec plaisir que Vous avez receu les 5 filippes et demi <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Vous ne m'en avez aucune obligation
                    <lb/>mais bien moy du soin que Vous avez pris pour me faire avoir la Perruque. Je Vous remercie
-                   <lb/>bien aussi de la peine que Vous avez prise de parler au Libraire<!-- persontag --> dont je Vous ay ecrit dans ma <rs key="B_1712-12-18_991170430337105501" type="letter">preceden<pc type="hyphenation">-</pc><lb break="no"/>te</rs>, touchant i <rs type="keyword">Giornali de' Letterati d'<rs key="place_KON-italie" type="place">Italia</rs></rs><!-- Siehe Brief vom 1712.12.18 -->, qu'ils Vous a dit etre déja vendu. Si Vous<add> les</add> pouviez avoir
+                   <lb/>bien aussi de la peine que Vous avez prise de parler au Libraire<!-- persontag --> dont je Vous ay ecrit dans ma <rs key="B_991170430337105501" type="letter">preceden<pc type="hyphenation">-</pc><lb break="no"/>te</rs>, touchant i <rs type="keyword">Giornali de' Letterati d'<rs key="place_KON-italie" type="place">Italia</rs></rs><!-- Siehe Brief vom 1712.12.18 -->, qu'ils Vous a dit etre déja vendu. Si Vous<add> les</add> pouviez avoir
                    <lb/>de <abbr>M.</abbr> <rs key="pers_DE-588-116980257" type="person">Apostolo Zen</rs> ou par un'autre
                    occasion à 50 sols le tome, je Vous prierois d'en prendre les
                    <lb/>dix premiers tomes, étant deja pourvu de l'onzieme, et je Vous en enverrois l'argent incontinent.
@@ -229,7 +237,7 @@
                    <lb/>l'impression et de me renvoyer le <rs key="biblio_WS22BVK4" type="biblio">Manuscrit</rs>, s'il croyoit que cela ne se puisse pas dans le temps mar<pc type="hyphenation">-</pc><lb break="no"/>qué; sur quoy il m'a repondu, qu'il etoit absolument impossible de terminer l'impression en trois mois,
                    <lb/>et que je n'avois qu'<choice><orig>a</orig><reg>à</reg></choice> faire reprendre mon Manuscrit ou bien de luy mander si je veux qu'il me le
                    <lb/>renvoye par la poste. Je luy ecrivis sur cela qu'il pouvoit seulement restituer mes papiers <choice><orig>a</orig><reg>à</reg></choice> <abbr>M.</abbr> <rs key="pers_DE-588-102552517" type="person">Miche<pc type="hyphenation">-</pc><lb break="no"/>lotti</rs><del> a</del> que j'avois prié<del>r</del> de luy rembourser les frais de l'impression du titre ou autrement. <abbr>M.</abbr> <rs key="pers_DE-588-102552517" type="person">Michelotti</rs>
-<lb/>m'ecrit dans une <rs key="brieftag" type="letter">lettre</rs> que je viens de recevoir ce matin, qu'il a conferé avec <abbr>M.</abbr> <rs key="pers_DE-588-1037587715" type="person">Hertz</rs>, et que celui-cy
+<lb/>m'ecrit dans une <rs type="letter">lettre</rs> que je viens de recevoir ce matin, qu'il a conferé avec <abbr>M.</abbr> <rs key="pers_DE-588-1037587715" type="person">Hertz</rs>, et que celui-cy
                    <lb/>luy <subst><del>avait</del><add>a</add></subst> aussi exposé l'impossibilité d'achever mon <rs key="biblio_WS22BVK4" type="biblio">livre</rs> dans le temps que je desire, ajoutant qu<supplied>'</supplied>il
                    <lb/>en veu<subst><del>lait</del><add>t</add></subst> bien hater l'impression, mais à son aise et sans sujetion (<cit><quote><foreign xml:lang="ita">a suo commodo e senza sugezzione</foreign></quote></cit>)
                    <lb/>enfin je vois de tout cela<del>qu'ant</del> que l'impression se traineroit en longueur, ce qui ne m<supplied>'</supplied>agrée pas;
@@ -247,12 +255,12 @@
 <lb/><choice><orig>a</orig><reg>à</reg></choice> tous ceux que j'ay en veue<supplied>.</supplied></p>
 <p><lb/><abbr>M.</abbr> <rs key="pers_DE-588-118941941" type="person">Conti</rs> se trouvant difficilement chez luy, je n'ay point encore eu la fortune depuis quelque
                    <lb/>temps de le <choice><orig>Voir</orig><reg>voir</reg></choice> dans sa chambre; cependant je veux bien esperer de le rencontrer un jour et de lire<!-- 29.9.23, MS: Korrektur? Überprüfen -->
-<lb/>votre <rs key="brieftag" type="letter">lettre</rs><!-- Siehe auch Brief von Hermann an Bourguet vom 1712.12.18 --> que Vous luy avez ecrite en defence du Systeme de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> contre ses <rs type="biblio">Objections</rs><!-- Siehe auch Brief von Hermann an Bourguet vom 1712.12.04. Dort schreibt Hermann, dass er gerne die "Observations" von Bourguet zur Theodizee sehen würde.
+<lb/>votre <rs type="letter">lettre</rs><!-- Siehe auch Brief von Hermann an Bourguet vom 1712.12.18 --> que Vous luy avez ecrite en defence du Systeme de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> contre ses <rs type="biblio">Objections</rs><!-- Siehe auch Brief von Hermann an Bourguet vom 1712.12.04. Dort schreibt Hermann, dass er gerne die "Observations" von Bourguet zur Theodizee sehen würde.
          SG: Mit den hier genannten "Objections" des Abbé Conti ist vermutlich ein Brief Contis an Vallisneri von 1712, von dem Bourguet eine Kopie angefertigt hatte (BPUN, Ms 1287, Nr. 6 "Conti, abbé, Copie de sa lettre à Ant. Vallisnieri...") und der Anonym in <rs type="biblio" key="biblio_BR2N2F6N">Opere diverse del Sig. Antonio Vallisneri, III, (Istoria della generazione...); Venezia 1721, pp. 222-237</rs>, abgedruckt ist (siehe https://books.google.ch/books?id=vyJgAAAAcAAJ&lpg=PA5&ots=Tbr9gsIoCS&dq=opere%20diverse%20antonio%20vallisneri%20mdccxxi&hl=de&pg=PA222#v=onepage&q&f=false) 
          Eine weitere Schrift, die in Frage kommen könnte ist: <rs type="biblio" key="biblio_S8KMNV8M">Conti, Antonio, Lettera del Sig. Abate Conte Antonio Conti a Monsignor Illustriss. e Reverendiss. Filippo del Torre, Vescovo d'Adria, sopra le Considerazioni, ec. del Sig. Nigrisoli, in: GLI 1712 (vol. 12), pp. 240-330</rs>. Darin ist Leibniz am Rande erwähnt, aber nicht in kritischer Absicht. 
          Eine weitere Schrift, die gemeint sein könnte, ist die in "Prose e poesie" (https://books.google.ch/books?id=7Ha91gWI1ikC&lpg=RA1-PA18&ots=JCKBOOyMRN&dq=antonio%20conti%20dissertazione%201713&hl=de&pg=PP11#v=onepage&q=antonio%20conti%20dissertazione%201713&f=false) , p. 15 erwähnte "dissertazione al Dott. Baroni" über die Leibnizsche Dynamik, die ich jedoch noch nicht identifizieren konnte. Vielleicht findet sich zu dieser dissertazione mehr in Conti, A. "scritti filosofici", per Anschaffungsvorschlag für die UB bestellt). 
          In <rs type="biblio" key="biblio_6AW2E9CD">Badaloni, Nicola "Antonio Conti. Un abate libero pensatore tra Newton e Voltaire, Milano 1968</rs> (liegt im Handapparat), pp. 29-32, ist C.s Kritik am Leibnizschen Kraftbegriff (Verhältnis Kraft, Materie, unendliche Teilbarkeit der Materie, Kontinuum etc.) beschrieben. Die Thematik ist in der Korrespondenz Contis 1710-1711 behandelt. Der Briefwechsel Conti-Bourguet ist erhalten, muss noch nachgewiesen werden. Die erste Begegnung Bourguets mit Conti ist dokumentiert im Brief von 1710.05.16 (Biblioteca Labronica nella Autografoteca Bastogi (Carte Conti) Siehe Badaloni 1968, p. 33.  -->. Je
-                   <lb/>vois de la <rs key="brieftag" type="letter">Votre</rs> qu'il exalte fort la Clarté des principes Cartesiens<!-- persontag --> et l'obscurité de ceux de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leib<pc type="hyphenation">-</pc><lb break="no"/>nitz</rs>; mais s'il avoit examiné de près les principes qu'il dit etre si clairs, je me trompe fort, s'il ne
+                   <lb/>vois de la <rs type="letter">Votre</rs> qu'il exalte fort la Clarté des principes Cartesiens<!-- persontag --> et l'obscurité de ceux de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leib<pc type="hyphenation">-</pc><lb break="no"/>nitz</rs>; mais s'il avoit examiné de près les principes qu'il dit etre si clairs, je me trompe fort, s'il ne
                    <lb/><add>les </add>trouveroit pas plus obscurs que ceux de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>; il n'y a rien de plus equivoque que les termes
                    <lb/>de clarté et d'obscurité. Il seroit aisé de le faire voir par plusieurs exemples, mais je n'ay
                    <lb/>pas aujourdhui assez de loisir de m'y arreter d'avantage, ce sera une autre fois. Je Vous re<pc type="hyphenation">-</pc><lb break="no"/>pete mes sinceres compliments Vous souhaitant<!-- 29.9.23, MS: Korrektur? Überprüfen --> une heureuse entrée dans le Nouvel An, et une

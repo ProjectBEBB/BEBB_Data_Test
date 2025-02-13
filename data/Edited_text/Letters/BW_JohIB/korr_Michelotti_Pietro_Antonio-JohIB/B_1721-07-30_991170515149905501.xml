@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--_____________--><!--Comments that were in the teiHeader element--><!-- Jurin noch erfassen im BIBB. Tag schon möglich: <person exists="true" gnd="pers_DE-588-119507978"> </person>
-            
-Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch zu identifizieren und mit einem Mehrpersonentag zu versehen  => Als Ref angemerkt. 19.02.2019      
-         --><!--_____________--><TEI xml:id="B_1721-07-30_991170515149905501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515149905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -124,8 +120,8 @@ Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch 
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1721-07-11_991170515150005501" type="prev"/>
-        <ptr target="B_1721-08-08_991170515149805501" type="next"/>
+        <ptr target="B_991170515150005501" type="prev"/>
+        <ptr target="B_991170515149805501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -177,6 +173,18 @@ Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch 
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Jurin noch erfassen im BIBB. Tag schon möglich: <person exists="true" gnd="pers_DE-588-119507978"> </person>
+            
+Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch zu identifizieren und mit einem Mehrpersonentag zu versehen  => Als Ref angemerkt. 19.02.2019      
+         -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079238/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079239" n="1"/>
 <opener><salute>
@@ -184,7 +192,7 @@ Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch 
              <lb/>Petro Antonio <rs key="pers_DE-588-102552517" type="person">Michelotto</rs>
 <lb/><abbr>S. P. D.</abbr>
 <lb/>Johannes <rs key="pers_DE-588-118509969" type="person">Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>.</rs></salute></opener>
-<p><lb/>Quod ad aliquot Tuas <rs key="brieftag" type="letter">Epistolas</rs><note type="editorial">Meint die letzten fünf Briefe Michelottis an Johann I Bernoulli vom <rs key="B_1720-09-22_991170515150405501" type="letter">22. September 1720</rs>, <rs key="B_1721-04-12_991170515150305501" type="letter">12. April 1721</rs>, <rs key="B_1721-05-02_991170515150205501" type="letter">2. Mai 1721</rs>, <rs key="B_1721-05-30_991170515150105501" type="letter">30. Mai 1721</rs> sowie vom <rs key="B_1721-07-11_991170515150005501" type="letter">11. Juli 1721</rs></note> successive <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> me acceptas non <choice><orig>stati&#x0303;</orig><reg>statim</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --><!-- Kontrollieren ob Entities mit Tilde umgesetzt werden -->
+<p><lb/>Quod ad aliquot Tuas <rs type="letter">Epistolas</rs><note type="editorial">Meint die letzten fünf Briefe Michelottis an Johann I Bernoulli vom <rs key="B_991170515150405501" type="letter">22. September 1720</rs>, <rs key="B_991170515150305501" type="letter">12. April 1721</rs>, <rs key="B_991170515150205501" type="letter">2. Mai 1721</rs>, <rs key="B_991170515150105501" type="letter">30. Mai 1721</rs> sowie vom <rs key="B_991170515150005501" type="letter">11. Juli 1721</rs></note> successive <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> me acceptas non <choice><orig>stati&#x0303;</orig><reg>statim</reg></choice><!-- ToDo: Kontrollieren, ob Normalisierung oder Korrektur --><!-- Kontrollieren ob Entities mit Tilde umgesetzt werden -->
 <lb/>responderim, varias habeo rationes, quar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cipue sunt h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> du<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>;
          <lb/>1. Expectare volebam advent<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> fasciculi continentis duo exemp<pc type="hyphenation">-</pc><lb break="no"/>laria <rs key="biblio_M3G2JA79" type="biblio">Libri</rs> Tui elegantissimi, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <rs key="pers_DE-588-119166895" type="person">Agnato</rs> meo et mihi dono miseras, ut
          <lb/>simul possem gratias agere.</p>
@@ -285,7 +293,7 @@ Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch 
          <lb/>naturalis, vicissim ut altitudo aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> totius ad altitudinem gutt<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
          <lb/>jamjam elapsur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quam consideravi instar columell<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
          <lb/>infinit<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> parv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinis:</p>
-<p>C<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terum ex <rs key="B_1721-05-02_991170515150205501" type="letter">Litteris Tuis <choice><abbr>d.</abbr><expan>die</expan></choice> 2 Ma<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>i datis</rs><note type="editorial">Brief Michelottis vom 2. Mai 1721</note> liquet, <rs key="pers_DE-588-119543885" type="person">Riccatum</rs> fuisse
+<p>C<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terum ex <rs key="B_991170515150205501" type="letter">Litteris Tuis <choice><abbr>d.</abbr><expan>die</expan></choice> 2 Ma<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>i datis</rs><note type="editorial">Brief Michelottis vom 2. Mai 1721</note> liquet, <rs key="pers_DE-588-119543885" type="person">Riccatum</rs> fuisse
          <lb/>etiam in opinione <rs key="pers_DE-588-118587544" type="person">Newtonum</rs> per <hi rend="u">vim</hi> in qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stione intellexisse vim quand<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
          <lb/>acceleratricem, <rs key="pers_DE-588-119543885" type="person">Riccati</rs> enim Ratiocinium Te referente ita incipit<supplied>:</supplied>
    <lb/><hi rend="u">Per vim motum aliquem producentem nihil aliud intel<pc type="hyphenation">-</pc><lb break="no"/>ligit <rs key="pers_DE-588-118587544" type="person">Newtonus</rs>, nisi vim
@@ -296,7 +304,7 @@ Tags überarbeitet am 18.02.2019   => malevoli Angli und Newtoniani wären noch 
 <lb/>Ratiocinio, <rs key="pers_DE-588-118587544" type="person">Newtonum</rs> potuisse dicere vim illam esse <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualem ponderi<unclear>s</unclear>
 <lb/>cylindric<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> column<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> altitudinis non tantum <formula>2GI</formula>, sed cujuscun<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> alterius
          <lb/>altitudinis, quod sane ridiculum esset; in hunc finem transcribam verba <rs key="pers_DE-588-119543885" type="person">Riccati</rs>
-<lb/>ex <rs key="B_1721-05-02_991170515150205501" type="letter">Litteris</rs><note type="editorial">Brief Michelottis an Johann I Bernoulli vom 2. Mai 1721</note> Tuis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> verba nihil aliud sunt quam paraphrasis verbor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+<lb/>ex <rs key="B_991170515150205501" type="letter">Litteris</rs><note type="editorial">Brief Michelottis an Johann I Bernoulli vom 2. Mai 1721</note> Tuis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> verba nihil aliud sunt quam paraphrasis verbor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
          <lb/>Newtonianor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice><note type="editorial">Als Personen eintragen, falls sich der Kreis einengen lässt. [Meint wohl eher, dass Riccati "newtonianische Worte" paraphrasiert, aber - nach Joh. I Bernoullis Meinung - nichts eigenes sagt. DM 21.05.2019]</note> <hi rend="u">"Per vim motum aliquem producentem nihil aliud intelligit <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> (inquit <rs key="pers_DE-588-119543885" type="person">Riccatus</rs>) nisi vim quandam ad motum sol<pc type="hyphenation">-</pc><lb break="no"/>licitantem qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> posito tempore constanti est ut quantitas motus, sive ut massa ducta</hi>
 <pb facs="1079246" n="8"/>
 <lb/><hi rend="u">in velocitatem, et posita etiam velocitate constanti, vis erit ut massa.

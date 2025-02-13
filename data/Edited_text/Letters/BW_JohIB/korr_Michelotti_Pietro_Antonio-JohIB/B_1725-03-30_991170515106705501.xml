@@ -1,16 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!-- kollationiert --><!-- <change when="2022-06-09" who="CG">Nachbearbeitung</change>--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!-- 14.01.2020 überarbeitet
-   
-Santorini noch ohne GND im BIBB   => Eintragen mit seiner GND 117618993
-
-* 6. Juni 1681; † 7. Mai 1737, Arzt, veröffentlicht 1724 die "Observationes Anatomicae"
-
-https://de.wikipedia.org/wiki/Giovanni_Domenico_Santorini, 14.01.2020
-
-<person exists="true" gnd="pers_DE-588-117618993"></person>
-   
-   --><!--_____________--><!--Comments that were in the teiHeader element--><!-- Datum unbekannt --><!--_____________--><TEI xml:id="B_1725-03-30_991170515106705501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170515106705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -131,8 +120,8 @@ https://de.wikipedia.org/wiki/Giovanni_Domenico_Santorini, 14.01.2020
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1725-02-23_991170515106805501" type="prev"/>
-        <ptr target="B_1725-04-13_991170515106605501" type="next"/>
+        <ptr target="B_991170515106805501" type="prev"/>
+        <ptr target="B_991170515106605501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Michelotti_Pietro_Antonio-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -184,18 +173,40 @@ https://de.wikipedia.org/wiki/Giovanni_Domenico_Santorini, 14.01.2020
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!-- kollationiert -->
+<!-- <change when="2022-06-09" who="CG">Nachbearbeitung</change>-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!-- 14.01.2020 überarbeitet
+   
+Santorini noch ohne GND im BIBB   => Eintragen mit seiner GND 117618993
+
+* 6. Juni 1681; † 7. Mai 1737, Arzt, veröffentlicht 1724 die "Observationes Anatomicae"
+
+https://de.wikipedia.org/wiki/Giovanni_Domenico_Santorini, 14.01.2020
+
+<person exists="true" gnd="pers_DE-588-117618993"></person>
+   
+   -->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!-- Datum unbekannt -->
+<!--_____________-->
+
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1079551/manifest"/></facsimile><text><body><div type="letter">
 <pb facs="1079552" n="1"/>
 <opener><dateline><rs key="place_GEO-3164603" type="place">Venize</rs> ce le <date when="1725-03-30">30 Mars 1725</date>.</dateline>
 <lb/><salute>Monsieur</salute></opener>
 <p>Bienque je sçai que vous avez milles occupations tres importants
           <lb/>qui vous occupent continuellement comme j'ay apprì dernierment
-          <lb/>par l'obligeant <rs key="brieftag" type="letter">lettre</rs><note type="editorial">Kein Brief von Joh. II. B. an Michelotti im BIBB enthalten.</note> du M.<hi rend="sup">r</hi> <rs key="pers_DE-588-117589136" type="person">Jean</rs> votre tres cher enfant: j'ose
+          <lb/>par l'obligeant <rs type="letter">lettre</rs><note type="editorial">Kein Brief von Joh. II. B. an Michelotti im BIBB enthalten.</note> du M.<hi rend="sup">r</hi> <rs key="pers_DE-588-117589136" type="person">Jean</rs> votre tres cher enfant: j'ose
           <lb/>ce non obstant vous incomoder avec cette petite lettre, avec la
           <lb/>quelle je vous supplie autant que je puis envoier à <rs key="place_GEO-2879139" type="place">Lipsick</rs> le plus
-          <lb/>tost qu'il vous serà possible à M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118783181" type="person">Menkenius</rs> la <rs key="brieftag" type="letter">lettre</rs><note type="editorial">Der Brief an Mencke müsste an diesen vorliegenden Brief angehängt gewesen sein. Er wird vermutlich publiziert als: [Michelotti, Pietro Antonio], De sublingualibus salivae ductibus Anonymi Epistola ad Actorum Eruditorum, quae Lipsiae publicantur, Autores, in: AE Julii 1725, pp. 325-328. </note> latine, qui est
+          <lb/>tost qu'il vous serà possible à M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118783181" type="person">Menkenius</rs> la <rs type="letter">lettre</rs><note type="editorial">Der Brief an Mencke müsste an diesen vorliegenden Brief angehängt gewesen sein. Er wird vermutlich publiziert als: [Michelotti, Pietro Antonio], De sublingualibus salivae ductibus Anonymi Epistola ad Actorum Eruditorum, quae Lipsiae publicantur, Autores, in: AE Julii 1725, pp. 325-328. </note> latine, qui est
           <lb/>içi, et que je me suis resolù fair dans deux jours apres le depart de
-          <lb/>M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118656503" type="person">Daniel</rs> mon tres cher, et tres estimè Amì. Je vous confie, Mon<pc type="hyphenation">-</pc><lb break="no"/>sieur, en Amì que je suis l'auteur de la dite <rs key="brieftag" type="letter">lettre</rs><note type="editorial">Vgl. vorhergehender brieftag</note>, et que M.<hi rend="sup">r</hi> <rs key="pers_DE-588-104265264" type="person">Morga<pc type="hyphenation">-</pc><lb break="no"/>gni</rs> n'en sçait rien de tout. Comme j'aime la veritè, et je estime
+          <lb/>M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118656503" type="person">Daniel</rs> mon tres cher, et tres estimè Amì. Je vous confie, Mon<pc type="hyphenation">-</pc><lb break="no"/>sieur, en Amì que je suis l'auteur de la dite <rs type="letter">lettre</rs><note type="editorial">Vgl. vorhergehender brieftag</note>, et que M.<hi rend="sup">r</hi> <rs key="pers_DE-588-104265264" type="person">Morga<pc type="hyphenation">-</pc><lb break="no"/>gni</rs> n'en sçait rien de tout. Comme j'aime la veritè, et je estime
           <lb/>au dessù des touts les Anatomiciens M.<hi rend="sup">r</hi> <rs key="pers_DE-588-104265264" type="person">Morgagni</rs> aussi j'ay voulù
           <lb/>fair voir que M.<hi rend="sup">r</hi> <rs key="pers_DE-588-104265264" type="person">Morgagni</rs> <choice><orig>à</orig><reg>a</reg></choice> decouvert le premiers les preten<pc type="hyphenation">-</pc><lb break="no"/>deux <hi rend="i">ductus salivales novos</hi>. Je vous prie de dir à M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118783181" type="person">Menke<pc type="hyphenation">-</pc><lb break="no"/>nius</rs> que je ne suis pas l'Auteur de cette lettre latine, vous
           <lb/>pourrez luy dir que la lettre <choice><orig>à</orig><reg>a</reg></choice> etè ecrite dehors d'<rs key="place_KON-italie" type="place">Italie</rs>, mais
@@ -220,5 +231,5 @@ https://de.wikipedia.org/wiki/Giovanni_Domenico_Santorini, 14.01.2020
 <addrLine>A Monsieur</addrLine>
 <addrLine>Monsieur Jean Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
 <addrLine>Professeur tres Celebre de Matematique</addrLine>
-<addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine><note type="editorial">Postvermerk "franca par <rs key="place_GEO-2775220" type="place">Insprug</rs>"</note></address></closer>
+  <addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs><note type="editorial">Postvermerk "franca par <rs key="place_GEO-2775220" type="place">Insprug</rs>"</note></addrLine></address></closer>
 </div></body></text></TEI>

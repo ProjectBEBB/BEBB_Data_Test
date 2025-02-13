@@ -1,14 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<!--_____________--><!--Comments that were before TEI element--><!--_____________--><!--Comments that were in TEI element but not further down in the xml tree--><!--Keine Digitalisate auf e-Rara.--><!--_____________--><!--Comments that were in the teiHeader element--><!--
-         Monsr. Votre Frere -> von Fatio de Duillier -> Nicolas Fatio de Duillier pers_DE-588-118532049
-
-         Monsr. Bernoulli -> Jacob I Bernoulli pers_DE-588-118509950
-
-         Leibnitz ->  Leibniz, Gottfried Wilhelm pers_DE-588-118571249
-      --><!--_____________-->
-
-<TEI xml:id="B_1704-04-09_991170430332805501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170430332805501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -128,8 +118,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1707-05-18_991170430332905501" type="prev"/>
-        <ptr target="B_1704-06-08_991170430332705501" type="next"/>
+        <ptr target="B_991170430332905501" type="prev"/>
+        <ptr target="B_991170430332705501" type="next"/>
         <ptr target="BW_Hermann" type="Briefwechsel"/>
         <ptr target="korr_Fatio_Jean_Christophe-Hermann" type="Korrespondenz"/>
       </correspContext>
@@ -153,13 +143,29 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
+<!--_____________-->
+<!--Comments that were before TEI element-->
+<!--_____________-->
+<!--Comments that were in TEI element but not further down in the xml tree-->
+<!--Keine Digitalisate auf e-Rara.-->
+<!--_____________-->
+<!--Comments that were in the teiHeader element-->
+<!--
+         Monsr. Votre Frere -> von Fatio de Duillier -> Nicolas Fatio de Duillier pers_DE-588-118532049
+
+         Monsr. Bernoulli -> Jacob I Bernoulli pers_DE-588-118509950
+
+         Leibnitz ->  Leibniz, Gottfried Wilhelm pers_DE-588-118571249
+      -->
+<!--_____________-->
+
 <facsimile>
 <graphic url="http://fakeURL.com"/>
 </facsimile><text>
 <body>
 <div type="letter">
 <opener><salute>Monsieur</salute></opener>
-<p>J'ai un souverain déplaisir de Vous avoir tant incommodé par ma <rs key="Systemnummer" type="letter">lettre</rs>, que j'ai pris la liberté de Vous écrire. Je Vous ai une double obligation, tant pour la bonté de Votre promesse touchant la Methode de Monsr. Votre <rs key="pers_DE-588-118532049" type="person">Frere</rs> pour la Quadrature du Cercle par aproximation, que pour les éclaircissemens que Vous avés pris la peine de me donner sur ce que je Vous ai consulté; je Vous en rens donc, Monsieur, trés humbles actions de graces.</p>
+<p>J'ai un souverain déplaisir de Vous avoir tant incommodé par ma <rs type="letter">lettre</rs>, que j'ai pris la liberté de Vous écrire. Je Vous ai une double obligation, tant pour la bonté de Votre promesse touchant la Methode de Monsr. Votre <rs key="pers_DE-588-118532049" type="person">Frere</rs> pour la Quadrature du Cercle par aproximation, que pour les éclaircissemens que Vous avés pris la peine de me donner sur ce que je Vous ai consulté; je Vous en rens donc, Monsieur, trés humbles actions de graces.</p>
 <p>Monsr. <rs key="pers_DE-588-118509950" type="person">Bernoulli</rs> se porte assés bien à l'heure qu'il est, je ne luy ai pu faire Vos complimens que hier matin en sortant du College, où il soutint une These de Seriebus infinitis<!--werktag-->. Il m'a prie qu'en Vous récrivant je Vous fasse ses Complimens, et que je Vous assurasse de l'estime qu'il fait de Vos merites.</p>
 <p>Pour l'equation <formula>y\,dx=2x\,dy</formula> dont il s'agit de trouver la valeur de <formula>y</formula> ou de <formula>x</formula>. On transpose les deux membres de l'equation d'un même côté, de cette maniere <formula>y\,dx-2x\,dy=0..A</formula>. ensuite je prens cette equation <formula>x<hi rend="sup">m</hi>y<hi rend="sup">n</hi> = a</formula> (où <formula>m</formula> et <formula>n</formula> sont les exposants de <formula>x</formula> et <formula>y</formula> qu'on cherche et <formula>a</formula> est constant) dont <formula>mx^{m-1}y^{n}\,dx+nx^{m}y^{n-1}\,dy=0</formula> est la différence la quelle se change en <formula>my\,dx+nx\,dy=0</formula> apres l'avoir divisé par <formula>x^{m-1}y^{n-1}</formula>. Or si on compare cette equation trouvée, avec celle marquée par <formula>A</formula>, nous trouverons <formula>my\,dx\int=y\,dx</formula>, ou <formula>m=1</formula>, et <formula>nx\,dy=-2x\,dy</formula> ou <formula>n=-2</formula>. Mettant donc ces valeurs trouvées de <formula>m</formula> et de <formula>n</formula> dans l'equation <formula>x<hi rend="sup">m</hi>y<hi rend="sup">n</hi> = a</formula>, il en vient <formula>xy<hi rend="sup">-2</hi> = a<hi rend="sup">-1</hi></formula> (je mets ici <formula>a<hi rend="sup">-1</hi></formula> ou <formula>\frac{1}{a}</formula> à la place de la constante <formula>a</formula>, pour observer la loy des homogenes) ou <formula>\frac{x}{yy}=</formula>_{i}nset Formula <formula>\frac{1}{a}</formula>, et enfin <formula>ax=yy</formula> qui est un lieu à la Parabole, ce qu'on sait d'ailleurs étre vrai. Voici une autre maniere de resoudre la même equation <formula>y\,dx=2x\,dy</formula>, ou <formula>y\,dx-2x\,dy=0</formula>, on n'a qu'à multiplier cette equation par <formula>\frac{y}{y^{4}}</formula>, et le produit <formula>\frac{yy\,dx-2xy\,dy}{y^{4}}=0</formula> sera une quantité dont on poura prendre l'integrale, qui sera <formula>\frac{x}{yy} =</formula> à une quantité constante; comme nous l'avons trouvé tantôt.</p>
 <p>Je prendrai avec bien du plaisir une Copie du Memoire<!--werktag--> de Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> touchant la Methode inverse des Tangentes, pour Vous l'envoyer, Monsieur, et pour Vous témoigner par là, que je suis trés parfaitement,</p>

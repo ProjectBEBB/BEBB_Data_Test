@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:id="B_1733-10-28_991170514977005501" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"><teiHeader xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170514977005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -120,8 +119,8 @@
         <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
       </correspAction>
       <correspContext>
-        <ptr target="B_1733-05-30_991170514977105501" type="prev"/>
-        <ptr target="B_1743-05-01_991170430088405501" type="next"/>
+        <ptr target="B_991170514977105501" type="prev"/>
+        <ptr target="B_991170430088405501" type="next"/>
         <ptr target="BW_JohIB" type="Briefwechsel"/>
         <ptr target="korr_Cramer_Gabriel-JohIB" type="Korrespondenz"/>
       </correspContext>
@@ -144,6 +143,7 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-06-22" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-11-04" who="CG">Header, Seitenzahlen, Briefstruktur</change>
     </listChange>
@@ -156,8 +156,8 @@
 <div type="letter">
 <pb facs="1073931" n="1"/>
 <opener><salute>Monsieur,</salute></opener>
-<p><lb/>J'aprens dans cet instant que Monsieur vôtre fils vient d'etre élu Professeur en Anatomie
-               <lb/>&amp; en Botanique. Cela m'oblige à vous écrire quoique fort à la hâte, mais je croirois manquer
+  <p><lb/>J'aprens dans cet instant que Monsieur vôtre <rs key="pers_DE-588-118656503" type="person">fils</rs> vient d'etre élu Professeur en Anatomie
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en Botanique. Cela m'oblige à vous écrire quoique fort à la hâte, mais je croirois manquer
                <lb/>à mon devoir si je differois un seul moment à vous temoigner la joye que j'en ressens.
                <lb/>Il vous doit etre bien doux, Monsieur, de rapeller auprès de vous un si digne Fils, qui
                <lb/>en étoit si éloigné. Je vous félicite du fonds de mon coeur, de la consolation que vous en reçevés.
@@ -177,7 +177,7 @@
                <lb/>la voulois suivre jusqu'au bout, je trouverois que l'Element de la Courbe est proportionel à
                <lb/><formula>qdz-rdy</formula>, ou à <formula>pdz-rdx</formula>, ce que je soubçonne étre faux. Je serois cependant envieux de savoir
             <pb facs="1073932" n="2"/>
-<lb/>si l'equation cy-dessus s'acorde en quelque manière à ce que vous avés trouvé, &amp; dans ce cas là,
+<lb/>si l'equation cy-dessus s'acorde en quelque manière à ce que vous avés trouvé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans ce cas là,
                <lb/>comment vous prouvés generalement qu'elle peut se reduire au premier degré dans le cas
                <lb/>des Conoides droits.</p>
 <p><lb/>Par raport au mouvement de l'Air dans le Son, j'ai peine à conçevoir comment vous
@@ -186,12 +186,12 @@
             <p>Je suis contraint de vous avouer ma foiblesse par raport au Problème de la ligne la plus courte tracée sur une surface donnée. Il est vray que je n'ai gueres eu le loisir d'y penser, mais je n'ai pu me satisfaire encore entièrement là dessus, même après les indications que vous m'avés fait la grace de me fournir. Quand j'ai voulu emploier le Principe du Plan Osculateur, perpendiculaire au Plan Tangent, ces differens plans se sont tellement brouillés dans ma Tête, pleine à present de tout autres idées, que je n'ai pu rien en tirer. J'ai bien deduit par une methode directe une equation qui ne descend pas audessous des secondes differences. Mais outre qu'elle est un peu longue, ayant au moins six Termes, je ne vois pas comment dans le cas des Conoides droits, on peut la reduire generalement au 1er. degré. </p>
             <p>La voici. L'equation de la surface étant <formula>pdx+qdy+rdz=0</formula>, l'equation de la courbe se trouvera, en la combinant avec elle-ci <formula>pdzddy-pdyddz+qdzddx-qdxddz+rdyddx-rdxddy=0</formula>. D'ailleurs la methode que j'ai suivi[e], me paroit un peu douteuse, car il me semble que si je la voulois suivre jusqu'au bout, je trouverois que l'Element de la Courbe est proportionel à <formula>qdz-rdy</formula>, ou à <formula>pdz-rdx</formula>, ce que je soubçonne étre faux. Je serois cependant envieux de savoir si l'equation cy-dessus s'acorde en quelque manière à ce que vous avés trouvé, et dans ce cas là, comment vous prouvés generalement qu'elle peut se reduire au premier degré dans le cas des Conoides droits. </p>
             <p>Par raport au mouvement de l'Air dans le Son, j'ai peine à conçevoir comment vous trouvés que la force qui meut les Globules aeriens est proportionelle à <formula>-ddy</formula>. Car soient-->
-<lb/>trois particules <formula>A</formula>, <formula>B</formula>, <formula>C</formula> en repos, les distances <formula>AB</formula> &amp; <formula>BC</formula> soient nommées <formula>dx</formula>.
+<lb/>trois particules <formula>A</formula>, <formula>B</formula>, <formula>C</formula> en repos, les distances <formula>AB</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>BC</formula> soient nommées <formula>dx</formula>.
                <lb/>Quand par le tremoussement d'un corps sonore ces Particules viennent
-               <lb/>à courir, que <formula>A</formula> se meuve par l'espace <formula>Aa</formula>, <formula>B</formula> par l'espace <formula>Bb</formula> &amp; <formula>C</formula> par l'espace <formula>Cc</formula>. Soit <formula>Aa=y</formula>, <formula>Bb=</formula>
+               <lb/>à courir, que <formula>A</formula> se meuve par l'espace <formula>Aa</formula>, <formula>B</formula> par l'espace <formula>Bb</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>C</formula> par l'espace <formula>Cc</formula>. Soit <formula>Aa=y</formula>, <formula>Bb=</formula>
 <lb/><formula>y-dy</formula>, <formula>Cc=y-zdy+ddy</formula>. Donc <formula>ab=AB+Bb-Aa=dx+y-dy-y=dx-dy</formula>. <formula>bc=BC+Cc-Bb=</formula>
 <lb/><formula>dx+y-zdy+ddy-y+dy=dx-dy+ddy</formula>. La force avec laquelle <formula>b</formula> tend à s'ecarter de <formula>c=\frac{1}{bc}=\frac{1}{dx-dy+ddy}</formula>
-<lb/>&amp; celle avec laquelle elle tend à s'eloigner de <formula>a=\frac{1}{ab}=\frac{1}{dx-dy}</formula>. Donc l'excés de l'une sur l'autre, qui
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celle avec laquelle elle tend à s'eloigner de <formula>a=\frac{1}{ab}=\frac{1}{dx-dy}</formula>. Donc l'excés de l'une sur l'autre, qui
                <lb/>est la force avec laquelle elle tend vers le centre de l'onde <formula>=\frac{1}{dx-dy+ddy}-\frac{1}{dx-dy}=\frac{-ddy}{(dx-dy)(dx-dy+ddy)}</formula> ou
                <lb/>si vous voulés <formula>\frac{-ddy}{(dx-dy)^{2}}</formula>. A moins que mettant <formula>dy</formula> infiniment petit par raport à <formula>dx</formula> vous ne
                <lb/>le reduisiés à <formula>-ddy:dx^{2}</formula>. Ce qui peut étre, je pense, admis.</p>
@@ -204,16 +204,16 @@
 <pb facs="1073933" n="3"/>
 <p><lb/>Voilà, Monsieur, bien des Articles sur lesquels j'ai besoin de vos Lumières. Je suis dans
                <lb/>une extrème impatience de pouvoir trouver quelques mois de loisir, pour me rendre auprès
-               <lb/>de vous, &amp; vous temoigner de bouche ma reconnoissance pour toutes vos bontés, mon
-               <lb/>attachement inviolable à vôtre service &amp; à celui de vôtre Famille, ma Veneration pour
+               <lb/>de vous, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous temoigner de bouche ma reconnoissance pour toutes vos bontés, mon
+               <lb/>attachement inviolable à vôtre service <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à celui de vôtre Famille, ma Veneration pour
                <lb/>vôtre Personne. J'esperois de pouvoir jouir de cette Satisfaction pendant cet automne.
                <lb/>Une circonstance imprevuë ne me l'a pas permis. Je suis présentement bien aise
                <lb/>de ce renvoi, puisqu'il me procurera le bonheur de rencontrer Monsieur votre fils,
-               <lb/>avec qui je serai ravi de faire connoissance, &amp; de cimenter une amitié qui <del/>me
+               <lb/>avec qui je serai ravi de faire connoissance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de cimenter une amitié qui <del/>me
                <lb/>seroit bien chère.</p> <closer>En attendant cette entrevuë, qui me comblera de joye, soiés
                <lb/>persuadé, Monsieur, que c'est avec une entière sincerité, que j'ai l'honneur
                <lb/>de me dire
-               <lb/>Votre très humble &amp; très obéissant
+               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant
                <lb/>Serviteur G. Cramer.
      <dateline><lb/>Geneve ce <date when="1733-10-28">28. Octobre 1733</date>.</dateline></closer>
 <postscript><p><lb/>Oseroisje vous prier d'assurer Monsieur
