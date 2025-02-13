@@ -15,14 +15,11 @@ def create_combined_tei(output_file, input_folders):
         b'type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>\n'
     )
 
-    NSMAP = { None : namespace, 
-              'xi': xi_namespace, 
-              'xml': xml_namespace }
+    NSMAP = {None: namespace, 'xi': xi_namespace, 'xml': xml_namespace}
 
     # TEI-Root-Element erstellen
     tei_root = etree.Element("TEI", nsmap=NSMAP)
     tei_root.set(f"{{{xml_namespace}}}id", "combined-indices")
-
 
     # teiHeader-Element erstellen
     tei_header = etree.SubElement(tei_root, "teiHeader")
@@ -37,7 +34,11 @@ def create_combined_tei(output_file, input_folders):
     etree.SubElement(publication_stmt, "publisher").text = "Bernoulli-Euler-Zentrum"
     etree.SubElement(publication_stmt, "pubPlace").text = "Basel"
     availability = etree.SubElement(publication_stmt, "availability")
-    etree.SubElement(availability, "licence", target="https://creativecommons.org/licenses/by/4.0/deed.de").text = "(CC BY 4.0)"
+    etree.SubElement(
+        availability,
+        "licence",
+        target="https://creativecommons.org/licenses/by/4.0/deed.de"
+    ).text = "(CC BY 4.0)"
 
     # sourceDesc hinzufügen
     source_desc = etree.SubElement(file_desc, "sourceDesc")
@@ -55,7 +56,7 @@ def create_combined_tei(output_file, input_folders):
         for filename in sorted(os.listdir(folder)):
             if filename.endswith(".xml"):
                 file_path = os.path.join(folder, filename)
-                rel_path = file_path.replace('data/Register/', '')
+                rel_path = os.path.relpath(file_path, os.path.dirname(output_file))  # Korrekte relative Pfade setzen
                 etree.SubElement(list_element, f"{{{xi_namespace}}}include", href=rel_path, parse="xml", xpointer="element(/1)")
 
     # XML-Baum erstellen
@@ -68,11 +69,11 @@ def create_combined_tei(output_file, input_folders):
 
     print(f"Kombinierte Datei '{output_file}' wurde erfolgreich erstellt.")
 
-# Basispfad für die Register
-# base_path = os.path.expanduser("~/Documents/BEBB-Github/BEBB_Data_Test/data/Register")
-base_path = os.path.relpath('./data/Register', start=os.curdir)
+# **Basispfad für die Register relativ zum Skript-Verzeichnis setzen**
+script_dir = os.path.dirname(os.path.abspath(__file__))
+base_path = os.path.join(script_dir)
 
-# Ordner und Listentypen definieren
+# **Ordner und Listentypen definieren**
 input_folders = {
     "listPlace": os.path.join(base_path, "Places"),
     "listPerson": os.path.join(base_path, "Persons"),
@@ -80,5 +81,11 @@ input_folders = {
     "listOrg": os.path.join(base_path, "Organisations")
 }
 
-# Kombinierte Datei erstellen
-create_combined_tei(os.path.join(base_path, "combined-indices.xml"), input_folders)
+# **Sicherstellen, dass die Verzeichnisse existieren**
+for path in input_folders.values():
+    if not os.path.isdir(path):
+        raise FileNotFoundError(f"Fehlendes Verzeichnis: {path}")
+
+# **Kombinierte Datei erstellen**
+output_file = os.path.join(base_path, "combined-indices.xml")
+create_combined_tei(output_file, input_folders)
