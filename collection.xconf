@@ -83,13 +83,13 @@
             <text match="//tei:listPlace/tei:place/tei:placeName"/>
             
             <text match="tei:person" index="no">
-                <field name="name" expression="nav:get-name(.)"/>
+                <field name="name" expression="nav:normalization(nav:get-name(.))"/>
                 <field name="person-note" expression="tei:note"/>
                 <field name="type" expression="'Person'"/>
                 <facet dimension="type" expression="'Person'"/>
             </text>
             <text match="tei:place" index="no">
-                <field name="name" expression="tei:placeName"/>
+                <field name="name" expression="tei:placeName/nav:normalization(.)"/>
                 <field name="country" expression="tei:note"/>
             </text> 
              <text match="tei:biblStruct" index="no">
