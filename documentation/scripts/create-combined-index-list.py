@@ -71,14 +71,14 @@ def create_combined_tei(output_file, input_folders):
 
 # **Basispfad für die Register relativ zum Skript-Verzeichnis setzen**
 script_dir = os.path.dirname(os.path.abspath(__file__))
-base_path = os.path.join(script_dir)
+base_path = os.path.join(script_dir, "../../data/register")
 
 # **Ordner und Listentypen definieren**
 input_folders = {
-    "listPlace": os.path.join(base_path, "Places"),
-    "listPerson": os.path.join(base_path, "Persons"),
-    "listBibl": os.path.join(base_path, "Bibliography"),
-    "listOrg": os.path.join(base_path, "Organisations")
+    "listPlace": os.path.join(base_path, "places"),
+    "listPerson": os.path.join(base_path, "persons"),
+    "listBibl": os.path.join(base_path, "bibliography"),
+    "listOrg": os.path.join(base_path, "organisations")
 }
 
 # **Sicherstellen, dass die Verzeichnisse existieren**
