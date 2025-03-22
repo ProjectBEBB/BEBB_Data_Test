@@ -44,11 +44,12 @@ jobs:
       - name: generate combined indices
         run: python documentation/scripts/create-combined-index-list.py
 
+      # TODO(DP): use BEBB_schema.rng once xmllint no longer chokes on it silently
       - name: Validate Data Files
         run: |
           xmllint --noout --nowarning \
-          --relaxng resources/odd/BEBB_schema.rng \
-          data/edited_text/**/*.xml
+          --relaxng resources/odd/tei_all.rng \
+          data/edited_texts/**/*.xml
 
       - name: Validate Register Files
         run: |
