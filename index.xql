@@ -167,3 +167,10 @@ declare function idx:is-preserved($header as element()) {
             case 'Fragment' return 'yes'
             default return ()
 };
+
+declare function idx:normalization($node as item()*) as text() {
+ let $replacements := map {"ö": "oe", "ä": "ae", "ü": "ue"}  
+ return
+    text {fold-left(map:keys($replacements), string($node), function($value, $key) {replace($value, $key, $replacements($key))})}
+     
+    };

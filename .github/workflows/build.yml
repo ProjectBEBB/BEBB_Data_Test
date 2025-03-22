@@ -42,19 +42,19 @@ jobs:
       # Run Python script to combine register files for validation
       # TODO(DP): commit this file back?
       - name: generate combined indices
-        run: python data/Register/create-combined-index-list.py
+        run: python documentation/scripts/create-combined-index-list.py
 
       - name: Validate Data Files
         run: |
           xmllint --noout --nowarning \
           --relaxng resources/odd/BEBB_schema.rng \
-          data/Edited_text/**/*.xml
+          data/edited_text/**/*.xml
 
       - name: Validate Register Files
         run: |
           xmllint --noout --nowarning \
           --xinclude --relaxng resources/odd/tei_all.rng \
-          data/Register/combined-indices.xml
+          data/register/combined-indices.xml
 
       # Build 
       - name: Build Expath Package

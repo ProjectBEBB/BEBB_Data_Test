@@ -33,9 +33,15 @@
                 <field name="date-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'date-sent')"/>
                 <field name="correspondent-main" expression="nav:get-metadata(ancestor::tei:TEI, 'correspondent-main')"/>
                 <field name="briefwechsel-name" expression="nav:get-name-main(ancestor::tei:TEI/tei:teiHeader)"/>
+                <field name="korrespondenz" expression="nav:get-metadata(ancestor::tei:TEI, 'korrespondenz')"/>
                 <field name="person-mentioned" expression="./descendant::tei:rs[@type eq 'person']/@key"/>
                 <field name="place-mentioned" expression="./descendant::tei:rs[@type eq 'place']/@key"/>
                 <field name="work-mentioned" expression="./descendant::tei:rs[@type eq 'biblio']/@key"/>
+                
+                <!-- Fields for generated overview -->
+                <field name="sender" expression="nav:get-metadata(ancestor::tei:TEI, 'sender')"/>
+                <field name="addressee" expression="nav:get-metadata(ancestor::tei:TEI, 'addressee')"/>
+                
                 
                 <facet dimension="type" expression="nav:get-metadata(ancestor::tei:TEI, 'type')"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
@@ -77,13 +83,13 @@
             <text match="//tei:listPlace/tei:place/tei:placeName"/>
             
             <text match="tei:person" index="no">
-                <field name="name" expression="nav:get-name(.)"/>
+                <field name="name" expression="nav:normalization(nav:get-name(.))"/>
                 <field name="person-note" expression="tei:note"/>
                 <field name="type" expression="'Person'"/>
                 <facet dimension="type" expression="'Person'"/>
             </text>
             <text match="tei:place" index="no">
-                <field name="name" expression="tei:placeName"/>
+                <field name="name" expression="tei:placeName/nav:normalization(.)"/>
                 <field name="country" expression="tei:note"/>
             </text> 
              <text match="tei:biblStruct" index="no">
