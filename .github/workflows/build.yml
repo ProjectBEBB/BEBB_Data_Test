@@ -34,7 +34,7 @@ jobs:
         run: pip install lxml
           
       # sanity check
-      - name: Ensure all XML files are well-formed
+      - name: Ensure all XML Files are Well-formed
         run: |
           xmllint --noout \
             $(find . -type f -name '*.xml')
@@ -44,13 +44,14 @@ jobs:
       - name: generate combined indices
         run: python documentation/scripts/create-combined-index-list.py
 
-      - name: Validate Data files
+      # TODO(DP): use BEBB_schema.rng once xmllint no longer chokes on it silently
+      - name: Validate Data Files
         run: |
           xmllint --noout --nowarning \
           --relaxng resources/odd/tei_all.rng \
           data/edited_texts/**/*.xml
 
-      - name: Validate Register files
+      - name: Validate Register Files
         run: |
           xmllint --noout --nowarning \
           --xinclude --relaxng resources/odd/tei_all.rng \
