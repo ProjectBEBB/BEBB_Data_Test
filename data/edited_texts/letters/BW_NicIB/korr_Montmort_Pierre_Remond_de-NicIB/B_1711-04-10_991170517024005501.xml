@@ -164,6 +164,7 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-02-20" who="SG">Formeln mit Binomialkoeffizienten bearbeitet.</change>
       <change when="2024-11-19" who="FN SG">Kollationierung abgeschlossen</change>
       <change when="2024-11-14" who="FN SG">Kollationierung weitergeführt</change>
       <change when="2024-11-13" who="FN SG">Kollationierung weitergeführt</change>
@@ -176,12 +177,7 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
+
 <!--<gnd>pers_DE-588-118652443</gnd> <name>Barbeyrac, Jean</name> <date>1674-1744</date> MS: Kommt er im Brief vor?-->
 <!--pers_DE-588-118639749 Huygens, Christiaan 〈1629-1695〉-->
 <!--pers_DE-588-119062372 Varignon, Pierre 〈1654-1722〉 -->
@@ -196,7 +192,6 @@
             
             Hermant -> Hermann, Jacob pers_DE-588-119112450
             -->
-<!--_____________-->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1361675/manifest"/>
@@ -462,20 +457,90 @@
     <lb/>les avoir tres nettement dans l<supplied>'</supplied>esprit sans pouvoir les mettre sur le papier.
     <lb/>Seriez vous content par <abbr>ex.</abbr> de la demonstration qui suit pour la <choice><orig>pposition</orig><reg>proposition</reg></choice>
     <lb/>14 <rs type="biblio"><abbr>pag<supplied>.</supplied></abbr> 97</rs>.<note type="comment">Siehe Essay d'Analyse https://www.e-rara.ch/zut/content/zoom/1623844</note></p>
-  <p><lb/><choice><orig>les</orig><reg>Les</reg></choice> produits <!-- ToDo: Die folgende Formel muss zumindest in der textnahen Fassung noch umgesetzt werden. Mithilfe des Rechtecksymbols bezeichnet Montmort in heutiger Terminologie Binomialcoeffizienten. --><formula>{q \choose b}^B\times{q \choose c}^C\times{q \choose d}^D\times{q \choose e}^E</formula> <abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> sont demontrés par la
+  <p><lb/><choice><orig>les</orig><reg>Les</reg></choice> produits <!-- ToDo: Die folgenden Formel mit Binomialkoeffizienten wurden in der textnahen Fassung nachträglich umgesetzt und sollte nochmals sowohl anhand der Handschrift als auch auf der BEBB-Webseite überprüft werden. --><choice><orig><formula>
+    \begin{array}{cc}
+    q &amp;  \\[-0.5em]
+    \text{▭} &amp; \hspace{-0.9em} {}^{\displaystyle B} \\[-0.5em]
+    b &amp;  
+    \end{array}
+    \times
+    \begin{array}{cc}
+    q &amp;  \\[-0.5em]
+    \text{▭} &amp; \hspace{-0.9em} {}^{\displaystyle C} \\[-0.5em]
+    c &amp;  
+    \end{array}
+    \times
+    \begin{array}{cc}
+    q &amp;  \\[-0.5em]
+    \text{▭} &amp; \hspace{-0.9em} {}^{\displaystyle D} \\[-0.5em]
+    d &amp;  
+    \end{array}
+    \times
+    \begin{array}{cc}
+    q &amp;  \\[-0.5em]
+    \text{▭} &amp; \hspace{-0.9em} {}^{\displaystyle E} \\[-0.5em]
+    e &amp;  
+    \end{array}</formula></orig><reg><formula>{q \choose b}^B\times{q \choose c}^C\times{q \choose d}^D\times{q \choose e}^E</formula></reg></choice> <abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> sont demontrés par la
     <lb/><choice><abbr>pposition</abbr><expan>proposition</expan></choice> precedente <abbr>pag.</abbr> 94<choice><orig>.</orig><reg>,</reg></choice> car il est clair que la <choice><abbr>pposition</abbr><expan>proposition</expan></choice> 13 n<supplied>'</supplied>est
     <lb/>differente de celle cy qu'en ce que dans celle<choice><orig> la</orig><reg>-là</reg></choice> les simples, les doubles,
     <lb/>les triples <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> sont determinez <choice><orig>a</orig><reg>à</reg></choice> estre ou des as ou des deux ou des trois <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
     <lb/>au lieu qu'ils sont icy <choice><orig>indetermines</orig><reg>indeterminés</reg></choice>. A l<supplied>'</supplied>egard des autres <choice><orig>quantites</orig><reg>quantités</reg></choice>
-    <lb/><!-- ToDo: Die folgende Formel muss zumindest in der textnahen Fassung noch umgesetzt werden.  --><formula>{p \choose B}\times{p-B \choose C}\times{p-B-C \choose D}\times{p-B-C-D \choose E}</formula> pour voir qu'ils doivent multiplier
+    <lb/><!-- ToDo: Die folgenden Formel mit Binomialkoeffizienten wurden in der textnahen Fassung nachträglich umgesetzt und sollte nochmals sowohl an der Handschrift als auch auf der Webseite überprüft werden.  --><choice><orig><formula>
+      \begin{array}{c}
+      p \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      B
+      \end{array}
+      \times
+      \begin{array}{c}
+      p - B \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      C
+      \end{array}
+      \times
+      \begin{array}{c}
+      p - B - C \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      D
+      \end{array}
+      \times
+      \begin{array}{c}
+      p - B - C - D \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      E
+      \end{array}</formula></orig><reg><formula>{p \choose B}\times{p-B \choose C}\times{p-B-C \choose D}\times{p-B-C-D \choose E}</formula></reg></choice> pour voir qu'ils doivent multiplier
     <lb/>les produits precedens<supplied>,</supplied> il suffit de remarquer que dans un jeu de
     <lb/>cartes entier <choice><orig>ou</orig><reg>où</reg></choice> il se trouve quatre cartes de chaque espece et des
     <lb/>cartes de 13 especes differentes. Si l<supplied>'</supplied>on demande par <abbr>ex.</abbr> trois quadruples<supplied>,</supplied>
   <pb facs="1361684" n="8"/>
-    <lb/>cinq doubles et 4 simples, il faut multiplier <formula>{q \choose b}^B</formula> par <formula>{p \choose B}</formula> ou <formula>{13 \choose 3}</formula> puisque
+    <lb/>cinq doubles et 4 simples, il faut multiplier <choice><orig><formula>\begin{array}{cc}
+      q &amp;  \\[-0.5em]
+      \text{▭} &amp; \hspace{-0.9em} {}^{\displaystyle B} \\[-0.5em]
+      b &amp;  
+      \end{array}</formula>
+    </orig><reg><formula>{q \choose b}^B</formula></reg></choice> par <choice><orig><formula>\begin{array}{c}
+      p \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      B
+      \end{array}</formula>
+    </orig><reg><formula>{p \choose B}</formula></reg></choice> ou <choice><orig><formula>\begin{array}{c}
+      13 \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      3
+      \end{array}</formula>
+    </orig><reg><formula>{13 \choose 3}</formula></reg></choice> puisque
     <lb/>ces trois quadruples peuvent etre pris de differente espece en autant de
     <lb/>facons que 3 peut etre pris dans 13<choice><orig>.</orig><reg>,</reg></choice> et qu'ensuitte il faut multiplier <formula>{q \choose c}^C</formula>
-    <lb/>par <formula>{p-B \choose C}</formula> ou <formula>{10 \choose 5}</formula><supplied>,</supplied> puisqu'il ne reste plus que dix especes parmi lesquelles
+    <lb/>par <choice><orig><formula>\begin{array}{c}
+      p-B \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      C
+      \end{array}</formula>
+    </orig><reg><formula>{p-B \choose C}</formula></reg></choice> ou <choice><orig><formula>\begin{array}{c}
+      19 \\[-0.5em]
+      \text{▭} \\[-0.5em]
+      5
+      \end{array}</formula></orig><reg><formula>{10 \choose 5}</formula></reg></choice><supplied>,</supplied> puisqu'il ne reste plus que dix especes parmi lesquelles
     <lb/>on puisse prendre les 5 doubles et que ces doubles peuvent etre pris dans ces
     <lb/>10 especes en autant de facons que <add>c</add>inq choses peuvent etre prises dans 10
     <lb/>et ainsi de suitte<supplied>;</supplied> car il est evident que ce raisonnement peut s<supplied>'</supplied>appliquer

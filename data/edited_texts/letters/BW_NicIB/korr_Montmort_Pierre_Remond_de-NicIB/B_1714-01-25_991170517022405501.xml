@@ -177,8 +177,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-04-08" who="SG FN">Kollationieren abgeschlossen</change>
       <change when="2024-10-29" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
       <change when="2024-09-20" who="RG">pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
@@ -187,12 +188,7 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
+
 <!--pers_DE-588-118587544 Newton, Isaac 〈1643-1727〉 -->
 <!--pers_DE-588-117689548 Pitcairne, Archibald 〈1652-1713〉 -->
 <!--
@@ -223,7 +219,6 @@
             de l'Hopital -> L'Hôpital, Guillaume François Antoine de pers_DE-588-100814891
 
          -->
-<!--_____________-->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1361755/manifest"/>
@@ -233,95 +228,94 @@
    <pb facs="1361756" n="1"/>
 <opener>
    <dateline>
-      <lb/>A <rs key="place_GEO-2988507" type="place">Paris</rs> ce <date when="1714-01-25">25 <abbr>Janv.</abbr> 1714</date>
+     <lb/><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs> ce <date when="1714-01-25">25 <abbr>Janv.</abbr> 1714</date>
    </dateline>
 </opener>
 <p>
-  <lb/><abbr>M<hi rend="sup">r</hi>.</abbr> <rs type="person">Koenig</rs><!-- persontag --> aura pu vous mander, Monsieur,
+  <lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person">Koenig</rs> aura pu vous mander<supplied>,</supplied> Monsieur<supplied>,</supplied>
   <lb/>que je luy ay remis deux exemplaires de mon
-  <lb/>livre<!-- werktag -->. Je vous en aurois envoyé davantage,
-  <lb/>si j'eusse cru que cela pust vous estre utile.
-  <lb/>Je suis en peine de sçavoir, si vous avez reçu
-  <lb/>une grande lettre<!-- brieftag --> que je vous ai écritte au
-  <lb/>commencement de l'année ou à la fin de la
-  <lb/>precedente, où j'avois mis les deux dernieres
-  <lb/>feuilles de mon livre<!-- werktag -->, pour lesquelles je jugeois
+  <lb/><rs type="biblio">livre</rs>. <choice><orig>je</orig><reg>Je</reg></choice> <del/><add>vo</add>us en aurois envoyé davantage<supplied>,</supplied>
+  <lb/>si j<supplied>'</supplied>eusse cru que cela pust vous estre utile.
+  <lb/><choice><orig>je</orig><reg>Je</reg></choice> suis en peine de scavoir<supplied>,</supplied> si vous avez recu
+  <lb/>une grande <rs type="letter">lettre</rs> que je vous ai écritte au
+  <lb/>commencement de l<supplied>'</supplied>année ou <choice><orig>a</orig><reg>à</reg></choice> la fin de la
+  <lb/>precedente<supplied>,</supplied> <choice><orig>ou</orig><reg>où</reg></choice> j<supplied>'</supplied>avois mis les deux dernieres
+  <lb/>feuilles de mon <rs type="biblio">livre</rs> pour lesquelles je jugeois
   <lb/>que vous pouviez avoir de la curiosité.
-  <lb/>J'ai envoyé un exemplaire de mon livre<!-- werktag --> à
-  <lb/><abbr>M<hi rend="sup">rs</hi></abbr><!-- persontag --> de la Societé Royalle<!-- korporationtag --> d'<rs key="place_VER-englan" type="place">Angleterre</rs> avec une
-  <lb/>lettre latine<!-- brieftag -->, dans laquelle je les remercie du livre<!-- werktag -->
-  <lb/>commercium epistolicum<abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr>, qu'ils ont eu la bonté de
-  <lb/>m'envoyer. J'ay suivi vostre avis en ne portant
-  <lb/>point de jugement; voicy les termes, dont je
-  <lb/>me sers ...... <foreign xml:lang="lat">de qua controversia ne judicium
-  <lb/>nullum meum extet facit et <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tas et pudor
-  <lb/>meus. Tantis viris Academiae<!-- korporationtag --> omnis <rs key="place_KON-europa" type="place">Europa</rs> ipsa
-  <lb/>Judex esto</foreign> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> On m'a mandé que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117689548" type="person">Pitcarnius</rs>,
-  <lb/>habile medecin et Geometre Ecossois, est mort
+  <lb/>J<supplied>'</supplied>ai <choice><orig>envoye</orig><reg>envoyé</reg></choice> un exemplaire de mon <rs type="biblio">livre</rs> <choice><orig>a</orig><reg>à</reg></choice>
+  <lb/><rs type="persons"><abbr>M<supplied>.</supplied><hi rend="sup">rs</hi></abbr> de la <rs type="organisation"><choice><orig>societé</orig><reg>Societé</reg></choice> Royalle</rs></rs> d'<rs key="place_VER-englan" type="place">Angleterre</rs> avec une
+  <lb/><rs type="letter">lettre latine</rs><supplied>,</supplied> dans laquelle je les remercie du <rs type="biblio">livre</rs>
+  <lb/><choice><orig>commercium</orig><reg>Commercium</reg></choice> epistolicum <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr><supplied>,</supplied> qu<supplied>'</supplied>ils ont eu la bonté de
+  <lb/>m<supplied>'</supplied>envoyer. J<supplied>'</supplied>ay suivi vostre avis en ne portant
+  <lb/>point de jugement<supplied>;</supplied> voicy les termes dont je
+  <lb/>me sers ..... <cit><quote><foreign xml:lang="lat">de qua controversia ne judiciu<del/><add>m</add>
+  <lb/><del>n</del>ullum meum extet facit et <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tas et pudor
+  <lb/>meus. <choice><orig>tantis</orig><reg>Tantis</reg></choice> viris <rs type="organisation">Academi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> omnis <rs key="place_KON-europa" type="place">Europa</rs> ipsa
+  <lb/>Judex esto<choice><orig>.</orig><reg>,</reg></choice> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></foreign></quote></cit> On m<supplied>'</supplied>a mandé que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117689548" type="person">Pitcarnius</rs><supplied>,</supplied>
+  <lb/>habile medecin <del/><add>e</add>t Geometre Ecossois<supplied>,</supplied> est mort
   <pb facs="1361757" n="2"/>
-  <lb/>depuis peu, mais qu'il a fait imprimer
-  <lb/>avant sa mort un recueil de dissertations<!-- werktag -->,
-  <lb/>qui sont tres belles. J'attend ce livre<!-- werktag --> incessament,
-  <lb/>et je vous en rendrai compte. La bulle<!-- werktag -->
-  <lb/>continue à faire grand bruit; deux archevesques<!-- persontag -->
-  <lb/>et six Evesques<!-- persontag --> ont demandé au <rs key="pers_DE-588-118816829" type="person">Roy</rs> la
-  <lb/>permission de se retirer de l'assemblée<!-- korporationtag --> et de
-  <lb/>faire leurs protestations. Si quelque jour
-  <lb/>vous trouvez à <rs key="place_GEO-2661604" type="place">Basle</rs> le traitté<!-- werktag --> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> de
-  <lb/><rs key="pers_DE-588-118571249" type="person">Leibnits</rs> de combinationibus, Animadversiones
-  <lb/>in Cartesii Geometriam<!-- werktag --> de feu <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509950" type="person">oncle</rs>,
-  <lb/>les theses<!-- werktag --> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>J.</abbr> Bernoulli</rs> de nutritione <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr>,
+  <lb/>depuis peu<supplied>,</supplied> mais qu<supplied>'</supplied>il a fait <choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>mprimer
+  <lb/>avant sa mort un <rs type="biblio">recueil de dissertations</rs>
+  <lb/>qui sont tres belles<supplied>.</supplied> J'attend ce <rs type="biblio">livre</rs> incessament
+  <lb/>et je vous en rendrai compte. <choice><orig>la</orig><reg>La</reg></choice> <rs type="biblio">bulle</rs>
+  <lb/>continue <choice><orig>a</orig><reg>à</reg></choice> faire grand bruit<supplied>;</supplied> <rs type="persons">deux archevesques</rs>
+  <lb/>et <rs type="persons">six Evesques</rs> ont demandé au <rs key="pers_DE-588-118816829" type="person">Roy</rs> la
+  <lb/>permission de se retirer de l<supplied>'</supplied><rs type="organisation">assemblée</rs> et de
+  <lb/>faire leurs protestations. <choice><orig>si</orig><reg>Si</reg></choice> quelque jour
+  <lb/>vous trouvez <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> le <rs type="biblio"><choice><orig>traitté</orig><reg>traitté</reg></choice></rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> de
+  <lb/><rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> <rs type="biblio"><choice><orig>de</orig><reg>De</reg></choice> combinationibus</rs><supplied>,</supplied> <rs type="biblio"><choice><orig>animadversiones</orig><reg>Animadversiones</reg></choice>
+  <lb/>in Cartesii Geometriam</rs> de feu <abbr>M.<hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509950" type="person">Oncle</rs><supplied>,</supplied>
+  <lb/>les <rs type="biblio">theses</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>J.</abbr> Bernoulli</rs> <rs type="biblio"><choice><orig>de</orig><reg>De</reg></choice> nutritione</rs> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
   <lb/>vous me ferez plaisir de les prendre pour moy.
-  <lb/>Je voudrois bien voir le morceau<!-- werktag --> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
-  <lb/>vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> sur la resistance des fluides.
-  <lb/>Je me persuade que cela doit estre bien beau.
-  <lb/>Mais à cause de la contagion qui a eté
-  <lb/>en <rs key="place_VER-heilig" type="place">Allemagne</rs>, tous les balots sont arretés au
-  <lb/>fort de Keil<!-- orttag, vermutlich handelt es sich um Kéel -> dt. Kehl. Festung bei Strassburg. 2891951 -->. Croiriez vous que c'est justement
-  <lb/>à <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118645595" type="person">Arbutnot</rs> que j'adresse les livres<!-- werktag --> que
-  <lb/>j'envoye en <rs key="place_VER-englan" type="place">Angleterre</rs>. J'ay trouvé une occasion
-  <lb/>favorable d'un de ses amis<!-- persontag --> et j'ay cru ne devoir
+  <lb/>Je voudrois bien voir le <rs type="biblio">morceau</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
+  <lb/>vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> sur la resistance des fluides<supplied>.</supplied>
+  <lb/>Je me persuade que <choice><orig>cela</orig><reg>celà</reg></choice> doit estre bien beau.
+  <lb/><choice><orig>mais</orig><reg>Mais</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> cause de la contagion qui a <choice><orig>ete</orig><reg>été</reg></choice>
+  <lb/>en <rs key="place_VER-heilig" type="place">Allemagne</rs> tous les balots sont <choice><orig>arretes</orig><reg>arretés</reg></choice> au
+  <lb/>fort de <rs type="place" key="place_2891951">Keil</rs>.<note type="comment">Kehl, Festung auf der deutschen Rheinseite bei Strassburg.</note> <choice><orig>croiriez</orig><reg>Croiriez</reg></choice><supplied>-</supplied>vous que c<supplied>'</supplied>est justement
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118645595" type="person">Arbutnot</rs><choice><orig>.</orig><reg>,</reg></choice> que j<supplied>'</supplied>adresse les livres que
+  <lb/>J<supplied>'</supplied>envoye en <rs key="place_VER-englan" type="place">Angleterre</rs>. J<supplied>'</supplied>ay trouvé une occasion
+  <lb/>favorable d<supplied>'</supplied><rs type="person">un de ses amis</rs> et j<supplied>'</supplied>ay cru ne devoir
   <pb facs="1361759" n="3"/>
-  <lb/>point la manquer quoyqu'il soit refuté dans
-  <lb/>une de vos lettres<!-- brieftag -->. Je suis icy depuis 3 mois et
-  <lb/>j'attends ces jours cy <abbr>Mad<hi rend="sup">e</hi>.</abbr> de <rs key="pers_DE-588-1155965140" type="person">Monmort</rs> avec
-  <lb/>notre marmot<!--MS: Le Marmot=der Knirps-->, vostre petit ami<!-- persontag -->. Nous y serons
-  <lb/>jusqu'à la St Jean et nous allons prendre une
-  <lb/>maison pour faire à <rs key="place_GEO-2988507" type="place">Paris</rs> nostre principale
-  <lb/>demeure. Ma santé enfin et graces à Dieu est
-  <lb/>entierement retablie; j'ay été encore longtemps
+  <lb/>point la manquer quoyqu'il soit <choice><orig>refute</orig><reg>refuté</reg></choice> dans
+  <lb/><rs type="letter">une de vos lettres</rs>. Je suis icy depuis 3 mois et
+  <lb/>j<supplied>'</supplied>attends ces jours cy <abbr>Mad<supplied>.</supplied><hi rend="sup">e</hi></abbr> de <rs key="pers_DE-588-1155965140" type="person">Monmort</rs> avec
+  <lb/>notre marmot<!--MS: Le Marmot=der Knirps--><supplied>,</supplied> vostre petit <rs type="person">ami</rs>. <choice><orig>nous</orig><reg>Nous</reg></choice> y serons
+  <lb/>jusqu<supplied>'</supplied><choice><orig>a</orig><reg>à</reg></choice> la <date><choice><orig>st</orig><reg>St.</reg></choice> Jean</date> et nous allons prendre une
+  <lb/>maison pour faire <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs> nostre principale
+  <lb/>demeure. <choice><orig>ma</orig><reg>Ma</reg></choice> santé enfin et graces <choice><orig>a</orig><reg>à</reg></choice> dieu est
+  <lb/>entierement retablie<supplied>.</supplied> J<supplied>'</supplied>ay été encore longtemps
   <lb/>incommodé de foiblesses de tete depuis que vous
-  <lb/>estes parti; cette maladie me donnoit une
-  <lb/>melancolie extreme. A present, je me divertis
-  <lb/>à merveilles, <add>et</add> je suis de tous les plaisirs. Je n'ai
-  <lb/>pas renoncé à celuy de l'etude. J'ay lu depuis
-  <lb/>peu et avec soin la theodicée<!-- werktag --> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>:
-  <lb/>c'est en verité un excellent ouvrage<!-- werktag -->. Je lis aussi
-  <lb/>la nouvelle edition<!-- werktag --> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. Il se donne bien de
-  <lb/>la peine à prouver par les experiences que les pesanteurs
-  <lb/>à egales distances sont proportionelles aux quantités de
-  <lb/>matiere et la resistance à la densité de <add>la</add> matiere du fluide.
-  <lb/>Il etoit facile, ce me semble, independamment des
-  <lb/>experiences d'assurer que cela devoit estre ainsi. Un <rs type="person">libraire</rs><!-- persontag -->
-  <lb/>que je connois se propose de rimprimer le livre<!-- werktag --> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
-  <lb/>le <abbr>M.</abbr> de <rs key="pers_DE-588-100814891" type="person">l'Hopital</rs>, qui est devenu fort rare. Il souhaitteroit
+  <lb/>estes parti<choice><orig>,</orig><reg>;</reg></choice> cette maladie me donnoit une
+  <lb/>melancolie extreme. <choice><orig>a</orig><reg>A</reg></choice> present je me divertis
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> merveilles <add>et</add> je suis de tous les plaisirs. Je n<supplied>'</supplied>ai
+  <lb/>pas renoncé<del/> <choice><orig>a</orig><reg>à</reg></choice> celuy de l<supplied>'</supplied>etude. J<supplied>'</supplied>ay lu depuis
+  <lb/>peu et avec soin la <rs type="biblio"><choice><orig>theodicée</orig><reg>Theodicée</reg></choice></rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs><supplied>;</supplied>
+  <lb/>c'est en verité un excellent ouvrage. Je lis aussi
+  <lb/>la <rs type="biblio">nouvelle edition</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. <choice><orig>il</orig><reg>Il</reg></choice> se donne bien de
+  <lb/>la peine <choice><orig>a</orig><reg>à</reg></choice> prouver par les experiences<supplied>,</supplied> que les pesanteurs
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> egales distances sont <choice><orig><g ref="#pro">p̄</g></orig><reg>pro</reg></choice>portionelles aux <choice><orig>quantites</orig><reg>quantités</reg></choice> de
+  <lb/>matiere et la resistance <choice><orig>a</orig><reg>à</reg></choice> la <choice><orig>densite</orig><reg>densité</reg></choice><!-- ToDo: hier ist eine Korrektur --> de <add>la</add> matiere du fluid<unclear reason="lost">e.</unclear>
+  <lb/>Il etoit facile<supplied>,</supplied> ce me semble<supplied>,</supplied> independamment des
+  <lb/>experiences d'assurer que cela devoit estre ainsi. <choice><orig>un</orig><reg>Un</reg></choice> <rs type="person">libraire</rs>
+  <lb/>que je connois se propose de rimprimer le <rs type="biblio">livre</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
+  <lb/><add>l</add>e <choice><abbr>M<supplied>.</supplied></abbr><expan>Marquis</expan></choice> de <rs key="pers_DE-588-100814891" type="person">l'Hopital</rs> qui est devenu fort rare. <choice><orig>il</orig><reg>Il</reg></choice> souhaitteroit
   <lb/>fort que quelque personne habile et de reputation voulust
-  <lb/>luy fournir quelque nouveauté de ce genre à y joindre, et il
-  <lb/>donneroit bien pour cela 500 ou 200 écus. Je luy ai promis
-  <lb/>que je vous demanderois si vous ne pouviez pas faire l'<pc type="hyphenation"></pc>
+  <lb/>luy fournir <choice><sic>quelle</sic><corr>quelque</corr></choice> <choice><orig>nouveaute</orig><reg>nouveauté</reg></choice> de ce genre <choice><orig>a</orig><reg>à</reg></choice> y joindre<supplied>,</supplied> et il
+  <lb/>donneroit bien pour cela 500 ou 200 écus. <choice><orig>je</orig><reg>Je</reg></choice> luy ai promis
+  <lb/>que je vous demanderois si vous ne pouviez pas fai<unclear reason="lost">re l'</unclear>
   <lb break="no"/>affaire.
 </p>
 <closer>
-  <salute>Adieu, je vous embrasse de tout mon coeur
+  Adieu<supplied>,</supplied> <choice><orig>Je</orig><reg>je</reg></choice> vous embrasse de tout mon co<unclear reason="lost">eur</unclear>
     <pb facs="1361757" n="2"/>
-    <lb/>et salue tres humblement <abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>.</salute>
-  <signed><abbr><rs key="pers_DE-588-117601020" type="person">R. d. M.</rs></abbr></signed>
+    <lb/><add>et salue tres humblement <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs><supplied>.</supplied> <abbr><rs key="pers_DE-588-117601020" type="person">R<supplied>.</supplied> d<supplied>.</supplied> M<supplied>.</supplied></rs></abbr></add><note type="editorial">Die eingefügte Zeile befindet sich am unteren Rand der zweiten Seite.</note>
 </closer>
   <pb facs="1361756" n="1"/>
 <postscript>
   <p>
-    <lb/>Mon adresse la plus courte à present est <rs key="place_STR-bernardinsparis" type="place">Rue des Bernardins</rs>
-    <lb/>à l'hotel de Brac.
+    <lb/>Mon adresse la plus courte <choice><orig>a</orig><reg>à</reg></choice> present est <rs key="place_STR-bernardinsparis" type="place">rue des <choice><orig>bernardins</orig><reg>Bernardins</reg></choice></rs>
+    <lb/><choice><orig>a</orig><reg>à</reg></choice> l'hotel de Brac.
   </p>
 </postscript>
 <pb facs="1361760" n="4"/>
@@ -330,7 +324,7 @@
     <addrLine>A Monsieur</addrLine>
     <addrLine>Monsieur <rs key="pers_DE-588-119166895" type="person"><abbr>N.<hi rend="sup">as</hi></abbr> Bernoulli</rs></addrLine>
     <addrLine>licentié en droit</addrLine>
-    <addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
   </address>
 </closer>
 </div>

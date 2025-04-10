@@ -195,6 +195,7 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
+      <change when="2025-02-20" who="SG">Formeln mit Binomialkoeffizienten bearbeitet.</change>
       <change when="2024-11-26" who="RG">Ab Seite 23 wurden die mathematischen Formeln angepasst.</change>
       <change when="2024-11-26" who="RG">Lb/ eingefügt sowie grössere Anpassungen</change>
       <change when="2024-11-25" who="RG">pb eingefügt</change>
@@ -1453,8 +1454,59 @@
   <lb/>les 36 cartes restantes il y a 6 cartes quadruples et 4 cartes
   <lb/>triples. Je cherche donc, comme dans le <abbr>cor.</abbr> 3, <rs type="biblio">page 31</rs>,
   <lb/>combien Jacque a de hazards pour tirer 4 cartes simples
-  <lb/>dans ces 36 cartes, et je trouve
-  <lb/><formula>4^{4}\times{6 \choose 4}+4^{3}\times{6 \choose 3}\times3^{1}\times{4 \choose 1}+4^{2}\times{6 \choose 2}\times3^{2}\times{4 \choose 2}+4^{1}\times{6 \choose 1}\times3^{3}\times{4 \choose 3}+3^{4}\times{4 \choose 4}</formula>.
+  <lb/>dans ces 36 cartes, et je trouve<!-- ToDo: Die folgende Formel sollte noch auf der Webseite überprüft werden. -->
+  <lb/><choice><orig><formula>4^{4} \times
+    \begin{array}{c}
+    6 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    4
+    \end{array}
+    +
+    4^{3} \times
+    \begin{array}{c}
+    6 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    3
+    \end{array}
+    \times 3^{1} \times
+    \begin{array}{c}
+    4 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    1
+    \end{array}
+    +
+    4^{2} \times
+    \begin{array}{c}
+    6 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    2
+    \end{array}
+    \times 3^{2} \times
+    \begin{array}{c}
+    4 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    2
+    \end{array}
+    +
+    4^{1} \times
+    \begin{array}{c}
+    6 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    1
+    \end{array}
+    \times 3^{3} \times
+    \begin{array}{c}
+    4 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    3
+    \end{array}
+    +
+    3^{4} \times
+    \begin{array}{c}
+    4 \\[-0.5em]
+    \text{▭} \\[-0.5em]
+    4
+    \end{array}</formula></orig><reg><formula>4^{4}\times{6 \choose 4}+4^{3}\times{6 \choose 3}\times3^{1}\times{4 \choose 1}+4^{2}\times{6 \choose 2}\times3^{2}\times{4 \choose 2}+4^{1}\times{6 \choose 1}\times3^{3}\times{4 \choose 3}+3^{4}\times{4 \choose 4}</formula></reg></choice>.
   <lb/>On a donc <formula>3840+15360+12960+2592+81</formula> pour le nombre
   <lb/>des hazards qu'il y a pour que Jacques tire 4 cartes simples,
   <lb/>et par consequent cette fraction <formula>\frac{2972416}{8544965}</formula> exprime le sort
