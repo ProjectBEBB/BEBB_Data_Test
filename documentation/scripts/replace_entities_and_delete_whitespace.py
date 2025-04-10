@@ -8,16 +8,24 @@ import os
 import re
 
 # Korrigierter Pfad zur entities.txt-Datei
-entities_file_path = '/Users/l-gehsul00/Documents/GitHub_Sulamith/Python-Scripts/_000_BEBB-Data_entities_whitespace/entities.txt'
-entities_dict = {}
+import urllib.request
+import ssl
 
-# Lädt die Entitäten aus der Datei entities.txt
-with open(entities_file_path, encoding='utf-8', mode='r') as entities_file:
-    for line in entities_file:
-        line = line.strip()
+# Unsichere SSL-Verbindung erlauben (Umgehung für Zertifikatsfehler)
+ssl._create_default_https_context = ssl._create_unverified_context
+
+entities_dict = {}
+url = 'https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt'
+
+# Entitäten-Datei direkt von GitHub laden
+response = urllib.request.urlopen(url)
+lines = [line.decode('utf-8').strip() for line in response.readlines()]
+
+for line in lines:
+    if line.startswith('<!ENTITY') and '<choice>' in line:
         line = line.replace('<!ENTITY ', '')
         choice_start_index = line.index('<choice>')
-        entity_str = line[:choice_start_index-2]
+        entity_str = line[:choice_start_index - 2]
         entity_str = '&' + entity_str + ';'
         choice_str = line[choice_start_index:-3]
         entities_dict[entity_str] = choice_str
@@ -50,7 +58,7 @@ def process_files_in_folder(folder):
 
 def main():
     # Angepasster Pfad zum Ordner mit den XML-Dateien
-    folder_path = '/Users/l-gehsul00/Documents/BEBB-Github/BEBB_Data_Test/data/Edited_text/Letters'
+    folder_path = '/Users/l-gehsul00/Documents/BEBB-Github/BEBB_Data_Test/data/edited_texts'
 
     # Erster Teil des Skripts
     files = []
