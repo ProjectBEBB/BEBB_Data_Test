@@ -88,7 +88,7 @@
         </physDesc>
         <history>
           <origin>
-            <origPlace>Pad.a</origPlace>
+            <origPlace><abbr>Pad.<hi rend="sup">a</hi></abbr></origPlace>
             <date when="1719-10-21">21. 8bre 1719</date>
           </origin>
         </history>
@@ -107,12 +107,14 @@
   <profileDesc>
     <correspDesc>
       <correspAction type="sent">
-        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
-        <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4044295-0">Padua</placeName>
+        <persName key="pers_DE-588-11887733X">Poleni, Giovanni</persName>
+        <placeName key="place_GEO-3171728" ref="https://d-nb.info/gnd/4044295-0">Padua</placeName>
         <date when="1719-10-21">pythonPlaceholderContent</date>
       </correspAction>
       <correspAction type="received">
-        <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
+        <persName key="pers_DE-588-119166895">Bernoulli, Nicolaus</persName>
+        <placeName key="place_GEO-2661604" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
+        <date when="1719-10-31"/>
       </correspAction>
       <correspContext>
         <ptr target="B_991170516902305501" type="prev"/>
@@ -136,6 +138,7 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2024" who="SG">erneut kollationiert</change>
       <change when="2005-12-12" who="FN SG">transkribiert und kollationiert</change>
       <change when="2022-11-09" who="EK">transformation xml</change>
     </listChange>
@@ -145,22 +148,26 @@
 <body>
 <div type="letter">
 <pb facs="1362107" n="1"/>
-<opener>Ill.mo S.re S.re Prone Colmo
-                        <lb/><rs key="place_GEO-3171728" type="place">Pad.a</rs> 21 8.e 1719</opener>
-<p>Questa piciola lettera non serve ad’
-                        <lb break="no"/>altro che ad avvisare V. S. Ill.ma, come
-                        <lb/>io hò oggi pure spedita un’altra
-                        <lb/>mia à V. S. Ill.ma con entro la cambiale,
-                        <lb/>conforme al concertato. Se V. S. Ill.ma
-                        <lb/>per caso fosse gia arivata alla Patria
+<opener><abbr>Ill.<hi rend="sup">mo</hi></abbr> <choice><abbr>S.<hi rend="sup">re</hi></abbr><expan>Signore</expan></choice> <choice><abbr>S.<hi rend="sup">re</hi></abbr><expan>Signore</expan></choice> <choice><abbr>P<supplied>.</supplied>rone</abbr><expan>Patrone</expan></choice> <choice><abbr>Col<supplied>.</supplied>mo</abbr><expan>Colendissimo</expan></choice>
+  
+                        <lb/><dateline><rs key="place_GEO-3171728" type="place"><abbr>Pad.<hi rend="sup">a</hi></abbr></rs> <date when="1719-10-21">21. <choice><abbr>8.<hi rend="sup">e</hi></abbr><expan>ottobre</expan></choice> 1719</date></dateline></opener>
+  
+  <note hand="pers_DE-588-119166895"><foreign xml:lang="ger"><abbr>Empf.</abbr> den <date when="1719-10-31">31<hi rend="sup">ten</hi></date>.</foreign></note>
+  
+<p>Questa piciola lettera non serve ad'
+                        <lb break="no"/>altro che ad avvisare VS$; come
+                        <lb/>io hò oggi pure spedita un'<rs type="letter">altra</rs>
+                        <lb/>mia à VS$ con entro la cambiale,
+                        <lb/>conforme al concertato. Se VS$
+  <lb/><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice> caso fosse gia arivata alla <rs type="place" key="place_GEO-2661604">Patria</rs>
                         <lb/>non hò voluto mancare di darle
-                        <lb/>questa notitia. Per tutt’altro mi
-                        <lb/>rimetto alla lettera spedita à
-                        <lb/>Zurigo. E con tutto l’ossequio, e
-                        <lb/>tutta la sincerità mi soffermo</p>
-<closer>Di V. S. Ill.ma
-                        <lb/>Di.mo Obb.mo serv.e et Am.o
-                        <lb/><rs key="pers_DE-588-11887733X" type="person">Giovanni Poleni</rs></closer>
+                        <lb/>questa notitia. Per tutt'altro mi
+  <lb/>rimetto alla <rs type="letter" key="B_991170516902105501">lettera</rs> spedita à
+  <lb/><rs type="place" key="place_GEO-2657896">Zurigo</rs>. E con tutto l'ossequio, e
+                        <lb/><add>tutta</add> la sincerità mi soffermo</p>
+<closer>Di VS$
+                        <lb/><choice><abbr>Di.<hi rend="sup">mo</hi></abbr><expan>Divotissimo</expan></choice> <choice><abbr>Obbl.<hi rend="sup">mo</hi></abbr><expan>Obbligatissimo</expan></choice> <choice><abbr>serv.<hi rend="sup">e</hi></abbr><expan>servitore</expan></choice> et <choice><abbr>Am.<hi rend="sup">o</hi></abbr><expan>Amico</expan></choice>
+  <lb/><rs key="pers_DE-588-11887733X" type="person">Giovanni Poleni</rs></closer>
 <pb facs="1362109" n="2" type="empty"/>
 </div>
 </body>

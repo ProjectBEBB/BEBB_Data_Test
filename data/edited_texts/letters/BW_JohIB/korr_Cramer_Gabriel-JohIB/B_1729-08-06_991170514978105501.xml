@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514978105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -159,6 +159,9 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-04-14" who="MK RG">kollationiert</change>
+      <change when="2025-04-12" who="MK">codiert, durchgesehen</change>
+      <change when="2025-04-11" who="RG">Textstellen auscodiert und z. T. korrigiert (bis Seite 2)</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-05-04" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-11-24" who="CG">Personen und Orte</change>
@@ -174,105 +177,104 @@
 <pb facs="1073811" n="1"/>
 <note type="editorial">Fragment eines Briefes</note>
 <p><lb/>qui en place de terre glaise avoit pris du suif selon
-               <lb/>le recit, qu'il en fait dans son traité <hi rend="u">de Castellis</hi>, mais
-               <lb/>les Anglois, dont il paroit que vous <del>ep </del>avez epousé les sen<pc type="hyphenation">-</pc><lb break="no"/>timens et pris parti sous leur drappeau, au moins en fait
-               <lb/>de physique, les Anglois, dis-je que diront-ils, quand ils
-               <lb/>vous verront tomber dans une des heresies de Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>,
-               <lb/>car chez eux c'est heresie tout ce qui vient originairement
-               <lb/>de ce grand homme, c'est dommage pour eux que la
-               <lb/>premiere decouverte de la veritable estimation des
-               <lb/>forces n'ait pas eté faite par Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, ils n'auroient
-               <lb/>pas manqué d'en tirer matiere d'exalter la clairvoyance
-               <lb/>de leur nation, et sujet de triompher de l'aveuglement
-               <lb/>des autres, au lieu que presentement c'est une
-               <lb/>erreur, c'est une reverie, c'est une absurdité puerile,
-               <lb/>que de penser avec Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> que la force des
+               <lb/>le recit, qu’il en fait dans son traité <rs type="biblio"><hi rend="u">de Castellis</hi></rs>, mais
+               <lb/>les Anglois, dont il paroit que vous <del>ep </del>avez epousé le<subst><del/><add>s</add></subst> sen<pc type="hyphenation">-</pc><lb break="no"/>timens et pris parti sous leur drapeau, au moins en fait
+               <lb/>de physique, les Anglois, dis-je, que diront-ils, quand ils
+               <lb/>vous verront tomber dans une des heresies de <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>,
+               <lb/>car chez eux c’est heresie tout ce qui vient originairement
+               <lb/>de ce grand homme, c’est dommage pour eux que la
+               <lb/>premiere decouverte de l<subst><del>e</del><add>a</add></subst> veritable estimation des
+               <lb/>forces n’ait pas eté faite par <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, ils n’auroient
+               <lb/>pas manqué d’en tirer matiere d’exalter la clairvoyance
+               <lb/>de Leur <rs type="place">nation</rs>, et sujet de triompher de l’aveuglement
+               <lb/>des autres, au lieu que presentement c’est une
+               <lb/>erreur, c’est une reverie, c’est une absurdité puerile,
+               <lb/>que de penser avec <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> que la force des
                <lb/>corps soit proportionelle aux masses et aux quarrés
-               <lb/>des vitesses et qu'ainsi les quantités des forces soit<note type="editorial">sic!</note>
-<lb/>bien differente de ce qu'on appelle co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unement 
+               <lb/>des vitesses et qu’ainsi les quantités des forces <choice><sic>soit</sic><corr>soient</corr></choice>
+<lb/>bien <choice><sic>differente</sic><corr>differentes</corr></choice> de ce qu’on appelle co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unement
                <lb/><hi rend="u">quantité de mouvement</hi>. Je ne dis rien, qui
-               <lb/>ne soit vraj au pied de la lettre, regardez s'il vous
-               <lb/>plait l'exemple de Mr. <rs type="person">Clarke</rs>, avec quelle hauteur,
-               <lb/>avec quelle fierté ne traite-t-il pas Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>
+               <lb/>ne soit vra<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> au pied de la <rs type="letter">lettre</rs>, regardez s’il Vous
+  <lb/>plait l’exemple de <abbr>Mr.</abbr> <rs key="pers_DE-588-118669478" type="person">Clarke</rs>, avec quelle hauteur,
+               <lb/>avec quelle fierté ne traite-t-il pas <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>
 <lb/>et sa nouvelle doctrine touchant la force
-               <lb/>des corps? en voici un echantillon: Mr. <rs key="pers_DE-588-118669478" type="person">Clarke</rs>
-<lb/>dans ses notes à la 5.<hi rend="sup">me</hi> replique à Mr.
+               <lb/>des corps? en voici un echantillon; <abbr>Mr.</abbr> <rs key="pers_DE-588-118669478" type="person">Clarke</rs>
+<lb/>dans ses notes à la 5.<hi rend="sup">me</hi> <rs type="biblio">replique</rs> à <abbr>Mr.</abbr>
             <pb facs="1073812" n="2"/>
-<lb/><rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, laquelle ne fut ecrite, je crois, qu'aprez
-               <lb/>la mort de celuici, à la page 328 de la premiere
-               <lb/>edition, se sert de ces termes qui sentent un
-               <lb/>souverain mepris pour Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> "ce qui a
-               <lb/>donné (dit-il) occasion à Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> de se
-               <lb/>contredire sur cette matiere, c'est qu'il a supputé
-               <lb/>par une meprise tout à fait indigne d'un
-               <lb/>philosophe, la quantité de la force impulsive dans
-               <lb/>un corps qui monte <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. . . . . mais Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>
+<lb/><rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, laquelle ne fut ecrite, je crois, qu’aprez
+               <lb/>la mort de celuici, à la page 328<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de la premiere
+               <lb/><rs type="biblio">edition</rs>, se sert de ces termes qui sentent un
+               <lb/>souverain mepris pour <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> <choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><hi rend="u">ce qui a
+               <lb/>donné</hi> (dit-il) <hi rend="u">occasion à <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> de se
+               <lb/>contredire sur cette matiere, c’est qu’il a supputé
+               <lb/>par une meprise tout à fait indigne d’un
+               <lb/>philosophe, la quantité de la <rs type="keyword">force impulsive</rs> dans
+               <lb/>un corps qui monte <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></hi>:... <hi rend="u">mais <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>
 <lb/>se trompe fort en faisant cette supposition,
-               <lb/>p. 332. Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> confond les cas où les tems sont egaux
-               <lb/>avec les cas où les tems sont inegaux. Il confond parti<pc type="hyphenation">-</pc><lb break="no"/>culierement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c ce qui est une contradiction manifeste.
-               <lb/>La contradiction est la meme <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. p. 338. tant il est
-               <lb/>vraj, que le sentiment de Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> sur ce sujet
-               <lb/>est rempli d'absurdités, p. 326; tout ce que Mr. <rs key="pers_DE-588-118571249" type="person">Leib<pc type="hyphenation">-</pc><lb break="no"/>nits</rs> dit sur cette matiere paroit rempli de confusion
-               <lb/>et de contradictions p. 340. Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a recours à
+               <lb/><abbr>p.</abbr> 332<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> confond les cas où les tems sont egaux
+               <lb/>avec les cas où les tems sont inegaux. Il confond parti<pc type="hyphenation">-</pc><lb break="no"/>culierement <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> ce qui est une contradiction manifeste.
+  <lb/>La contradiction est la meme</hi> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> <abbr>p.</abbr> 338<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <hi rend="u">tant il est
+               <lb/>vra<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>, que le sentiment de <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> sur ce sujet
+    <lb/>est rempli d’absurdités,</hi> <abbr>p.</abbr> 326<supplied>,</supplied> <hi rend="u">tout ce que <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leib<pc type="hyphenation">-</pc><lb break="no"/>nits</rs> dit sur cette matiere paroit rempli de confusion
+               <lb/>et de contradictions <abbr>p.</abbr> 340<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a recours à
                <lb/>un autre subterfuge, en disant que le mouvement et
-               <lb/>la force ne sont pas toujours les memes en quantité,
-               <lb/>mais ceci est aussi contraire à l'experience." Aprez
-               <lb/>ces reproches d'<hi rend="u">erreurs</hi> et de <hi rend="u">meprises indignes d'un Phi<pc type="hyphenation">-</pc><lb break="no"/>losophe</hi>, de <hi rend="u">confusion</hi>, de <hi rend="u">contradiction</hi>, d'<hi rend="u">absurdités</hi>,
-               <lb/>de <hi rend="u">subterfuges</hi>, et telles autres duretés, qu'on ne diroit
+               <lb/>la force ne sont pas toujours les memes en quantité
+               <lb/>mais ceci est aussi contraire à l’experience<unclear>;</unclear></hi> Aprez
+               <lb/>ces reproches d’<hi rend="u">erreurs</hi> et de <hi rend="u">meprises indignes d’un Phi<pc type="hyphenation">-</pc><lb break="no"/>losophe</hi>, de <hi rend="u">confusion</hi>, de <hi rend="u">contradiction</hi>, d’<hi rend="u">absurdités</hi>,
+               <lb/>de <hi rend="u">subterfuges</hi>, et telles autres duretés, qu’on ne diroit
                <lb/>pas au plus vil des hommes sans se departir de toute
-               <lb/>civilité, Mr. <rs key="pers_DE-588-118669478" type="person">Clarke</rs> se donnant un air de maitre
+               <lb/>civilité, <abbr>Mr.</abbr> <rs key="pers_DE-588-118669478" type="person">Clarke</rs> se donnant un air de maitre
             <pb facs="1073813" n="3"/>
-<lb/>conclut enfin avec une autorité imperieuse et deci<pc type="hyphenation">-</pc><lb break="no"/>sive contre Mr. <rs key="pers_DE-588-118571249" type="person">Leibniz</rs> en ces termes (p. 342) "la force
-               <lb/>(dit-il) dont nous parlons ici, est la force active, im<pc type="hyphenation">-</pc><lb break="no"/>pulsive et relative, qui est toujours proportionée
-               <lb/>à la quantité du mouvement relatif". Et de peur
-               <lb/>qu'on ne sente pas assez que c'est le nouveau dogme
-               <lb/>de Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> qu'il veut terrasser co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un autre
-               <lb/>Hercule, il ajoute dans ses notes de la meme page
-               <lb/>ces mots, <hi rend="u">"c'est à dire proportionée à la quantité de la
-               <lb/>matiere et à la vitesse, et non (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> l'asseure
-               <lb/>Act. Erud. ad Ann. 1695, p. 156) à la quantité de la matiere
-               <lb/>et au quarré de la vitesse"</hi>.</p>
+<lb/>conclut enfin avec une autorité imperieuse et deci<pc type="hyphenation">-</pc><lb break="no"/>sive contre <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibniz</rs> en ces termes (<abbr>p.</abbr> 342<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>) <hi rend="u">la force</hi>
+  <lb/>(dit-il) <hi rend="u">dont nous parlons ici, est la force active, im<pc type="hyphenation">-</pc><lb break="no"/>pulsive et relative, qui est toujours proportionée
+               <lb/>à la quantité du mouvement relatif</hi>. Et de peur
+               <lb/>qu’on ne sente pas assez que c’est le nouveau dogme
+               <lb/>de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> qu’il veut terrasser co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un autre
+               <lb/><rs type="person">Hercule</rs>, il ajoute dans ses notes de la meme page
+               <lb/>ces mots, <hi rend="u">c’est à dire proportionée à la quantité de la
+               <lb/>matiere et à la vitesse, et non (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> l’asseure
+               <lb/><rs type="biblio"><abbr>Act.</abbr> <abbr>Erud.</abbr></rs> ad <abbr>Ann.</abbr> 1695, <abbr>p.</abbr> 156) <choice><orig>a</orig><reg>à</reg></choice> la quantité de la matiere
+               <lb/>et au quarré de la vitesse"</hi>.</p><!-- Zitat Ende MK -->
 <p><lb/>Hé bien, Monsieur, est il possible que la verité,
-               <lb/>toute verité qu'elle est, soit le sujet de moquerie en
-               <lb/><rs key="place_VER-englan" type="place">Angleterre</rs>, par cela seul, que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> n'a
+               <lb/>toute verité qu’elle est, soit le sujet de moquerie en
+               <lb/><rs key="place_VER-englan" type="place">Angleterre</rs>, par cela seul, que <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> n’<subst><del>à</del><add>a</add></subst>
                <lb/>pas encore trouvé à propos de la reconnoitre
-               <lb/>et qu'apparement il ne reconnoitra jamais, parce que
-               <lb/>c'est Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> qui l'a decouverte le premier, cela
+               <lb/>et qu’apparement il ne reconnoitra jamais, parceque
+               <lb/>c’est <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> qui l’a decouverte le premier, cela
                <lb/>suffit deja, car en <rs key="place_VER-englan" type="place">Angleterre</rs> on ne veut rien lui
-               <lb/>accorder en fait d'invention. Mais vous qui avez
-               <lb/>enfin embrassé cette verité et qui avez co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il pa<pc type="hyphenation">-</pc><lb break="no"/>roit un assez grand ascendant sur les Anglois, n'avez
+               <lb/>accorder en fait d’invention. Mais vous qui avez
+               <lb/>enfin embrassé cette verité et qui avez co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il pa<pc type="hyphenation">-</pc><lb break="no"/>roit un assez grand ascendant sur les Anglois, n’avez
                <lb/>vous pas encore trouvé le moyen de les convertir
                <lb/>aussi et de leur faire gouter cette proposition, que
-               <lb/>la force active est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le produit de la masse par le
-               <lb/>quarré de la velocité, dont vous avez meme donné
+               <lb/>la <rs type="keyword">force active</rs> est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le produit de la masse par le
+               <lb/>quarré de la velocité, dont vous avez meme donn<subst><del/><add>é</add></subst>
             <pb facs="1073814" n="4"/>
-<lb/>une demonstration à la page 26 de votre essay. Cette
-               <lb/>demonstration est à la verité bonne et celle si on la lit a<pc type="hyphenation">-</pc><lb break="no"/>vec attention; cependant un homme prevenu de pre<pc type="hyphenation">-</pc><lb break="no"/>jugé pour l'opinion vulgaire y trouvera je ne sçaj
-               <lb/>quoy d'obscur dans la maniere d'expliquer l'action
+<lb/>une demonstration à la page 26<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de votre <rs type="biblio">essay</rs>. Cette
+               <lb/>demonstration est à la verité bonne et celle si on la lit a<pc type="hyphenation">-</pc><lb break="no"/>vec attention; cependant un homme prevenu de pre<pc type="hyphenation">-</pc><lb break="no"/>jugé pour l’opinion vulgaire y trouvera je ne sça<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>
+               <lb/>quoy d’obscur dans la maniere d’expliquer l’action
                <lb/>des petits ressorts pliés, qui en se debandant
                <lb/>doivent co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer successivement au corps <formula>P</formula> une
                <lb/>certaine vitesse; sur tout il ne verra pas clair ce que
                <lb/>vous dites que pour ajouter toujours un nouveau petit
-               <lb/>degré de vitesse, il faut qu'autant de petits ressorts
-               <lb/>se debandent à la fois, qu'il y a de petits degrés deja
-               <lb/>acquis de vitesse au corps <formula>P</formula>. Il pourra croire, que tous
-               <lb/>les ressorts <formula>e</formula>. <formula>e</formula>. <formula>e</formula>. <formula>e</formula>. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encent à se debander
+               <lb/>degré de vitesse, il faut qu’autant de petits ressorts
+               <lb/>se debandent à la fois, qu’il y a de petits degrés dej<unclear>a</unclear>
+  <lb/>acquis de vitesse au corps <formula>P</formula>. Il pour<subst><del/><add>ra</add></subst> croire, que tous
+  <lb/>les ressorts <formula>e</formula>.<formula>e\cdote\cdote\cdote</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encent à se debander
                <lb/>tous à la fois et non pas successivement selon
                <lb/>vôtre hypothese, ensorte que le ressort <formula>C</formula>, qui est le
                <lb/>plus proche et contigu au corps <formula>P</formula>, ne sçauroit se
-               <lb/>debander qu'en meme instant le plus eloigné
-               <lb/><formula>e</formula> ne se debande aussi, quoique moins amplement
-               <lb/>que le premier, c'est à dire que la quantité du de<pc type="hyphenation">-</pc><lb break="no"/>bandement de chaque ressort <formula>e</formula> ou la perte de sa
-               <lb/>pression, qui se fait dans le meme tems <add>pendant</add> qu'il se debande
-               <lb/>est proportionelle au nombre des ressorts, qui le sui<pc type="hyphenation">-</pc><lb break="no"/>vent, y etant compris lui meme. Quant au reste
-               <lb/>vôtre demonstration me plait tres bien, quoique je dou<pc type="hyphenation">-</pc><lb break="no"/>te, que les opiniatres s'y rendront. Je ne sçai si vous
-               <lb/>avez jamais vu celle que j'ai trouvée, il y a pres
-               <lb/>de 30 ans, et dont Mr. <rs key="pers_DE-588-11887733X" type="person">Poleni</rs> fait mention, je l'aj com<pc type="hyphenation">-</pc><lb break="no"/>muniquée à Mr. <rs key="pers_DE-588-118634771" type="person">Wolffius</rs>, qui l'a depuis publiée 
-               <lb/>dans . . . . . </p>
+               <lb/>debander qu’en meme instant le plus eloigné
+  <lb/><formula>\underline{e}</formula> ne se debande aussi, quoique moins amplement
+               <lb/>que le premier, c’est à dire que la quantité du de<pc type="hyphenation">-</pc><lb break="no"/>bandement de chaque ressort <formula>\underline{e}</formula> ou la perte de sa
+               <lb/>pression, qui se fait dans le meme tems, <add>pendant</add> qu’il se debande
+               <lb/>est proportionelle au nombre des ressorts, qui le sui<pc type="hyphenation">-</pc><lb break="no"/>vent, y etant compris Lui meme. Quant au reste
+               <lb/>vôtre demonstration me plait tres bien, quoique je dou<pc type="hyphenation">-</pc><lb break="no"/>te, que les opiniatres s<subst><del/><add>'y</add></subst> rendront; Je ne sçai si vous
+               <lb/>avez jamais vu celle que j’ai trouvée, il y a près
+               <lb/>de 30<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans, et dont <abbr>Mr.</abbr> <rs key="pers_DE-588-11887733X" type="person">Poleni</rs> fait mention, je l’a<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> com<pc type="hyphenation">-</pc><lb break="no"/>muniquée à <abbr>Mr.</abbr> <rs key="pers_DE-588-118634771" type="person">Wolffius</rs>, qui l’a depuis publiée 
+               <lb/>dans</p><note type="editorial">Fragment des Briefes endet hier.</note>
 <pb facs="1073815" n="5"/>
 <!-- hier folgt der Text der Beilage -->
 <pb facs="1073816" n="6" type="empty"/>
-<!-- Rückseite der Beilage -->
 </div>
 </body>
 </text></TEI>

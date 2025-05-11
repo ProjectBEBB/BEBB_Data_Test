@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514978905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -158,7 +158,7 @@
           <note type="lebensdaten">(1684-1750)</note>
         </person>
         <person>
-          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d'Allonville de</persName>
+          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d’Allonville de</persName>
           <note type="lebensdaten">(1671-1732)</note>
         </person>
         <person>
@@ -178,7 +178,7 @@
           <note type="lebensdaten">(1643-1727)</note>
         </person>
         <person>
-          <persName key="pers_DE-588-117679879">Pajot d'Onsenbray, Louis Léon</persName>
+          <persName key="pers_DE-588-117679879">Pajot d’Onsenbray, Louis Léon</persName>
           <note type="lebensdaten">(1678-1753)</note>
         </person>
         <person>
@@ -199,6 +199,9 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-02-24" who="MK">Code ergänzt, korrigiert</change>
+      <change when="2025-02-21" who="MK RG">kollationiert</change>
+      <change when="2025-02-19" who="MK">Code ergänzt, korrigiert bis S.4</change>
       <change when="2023-03-10" who="RG">Zeilabstände eingefügt</change>
       <change when="2022-11-24" who="CG">Personen und Orte</change>
       <change when="2022-09-30" who="CG">Header, Seitenzahlen, Briefstruktur</change>
@@ -211,490 +214,491 @@
 <body>
 <div type="letter">
 <pb facs="1073717" n="1"/>
-<opener><dateline><date when="1728-09-04">4. Sept. 1728</date>.</dateline>
+<opener><dateline><date when="1728-09-04">4. <abbr>Sept.</abbr> 1728</date>.</dateline>
 <lb/><salute>Monsieur</salute></opener>
-<p><lb/><rs key="B_991170430094805501" type="letter">Votre agreable derniere</rs> du 13 Aoust m'apprend
-               <lb/>votre heureuse arrivé en <rs key="place_VER-hollan" type="place">Hollande</rs>. Je suis
-               <lb/>bien aise que vous ayez enfin reçu ma <rs key="B_991170514979305501" type="letter">gran<pc type="hyphenation">-</pc><lb break="no"/>de lettre du 13 May</rs>; je l'avois adressée à Mr.
-               <lb/><rs key="pers_DE-588-117679879" type="person">le Comte d'Onsembray</rs>, qui est Intendant General
-               <lb/>des Postes de France, dans l'esperance qu'elle
+  <p><lb/>Vôtre agreable <rs key="B_991170430094805501" type="letter">derniere</rs> du 13 Aoust m’apprend
+               <lb/>votre heureuse arrivée en <rs key="place_VER-hollan" type="place">Hollande</rs>. Je suis
+               <lb/>bien aise que vous ayez enfin reçu ma gran<pc type="hyphenation">-</pc><lb break="no"/>de <rs key="B_991170514979305501" type="letter">lettre</rs> du 13 May; je l’avois adressée à <abbr>Mr.</abbr>
+               <lb/>le Comte<rs key="pers_DE-588-117679879" type="person">d’Onsembray</rs> qui est Intendant General
+               <lb/>des <rs type="organisation">Postes de france</rs>, dans l’esperance qu’elle
                <lb/>iroit par ce Canal le plus surement et le plus
-               <lb/>promtement, mais il faut, qu'elle se soit arretée
-               <lb/>dans son Bureau par oubli de ses commis,
-               <lb/>où elle seroit peutétre encore, si je n'avois
-               <lb/>pas prié Mr. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> de s'en informer
-               <lb/>à Mr. <rs key="pers_DE-588-117679879" type="person">d'Onsembrai</rs>. Cependant j'aurois
-               <lb/>bien souhaité, que vous l'eussiez encore
-               <lb/>reçuë en <rs key="place_VER-englan" type="place">Angleterre</rs>, parcequ'elle contenoit
+               <lb/>promtement, mais il faut, qu’elle se soit arretée
+               <lb/>dans son Bureau par oubli de ses Commis,
+               <lb/>où elle seroit peutétre encore, si je n’avois
+               <lb/>pas prié <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> de s’en informer
+               <lb/>à <abbr>Mr.</abbr> <rs key="pers_DE-588-117679879" type="person">d’Onsembrai</rs>. Cependant j’aurois
+               <lb/>bien souhaité, que vous l’eussiez encore
+               <lb/>reçuë en <rs key="place_VER-englan" type="place">Angleterre</rs>, parcequ’elle contenoit
                <lb/>bien des Choses propres à repondre aux
-               <lb/>Objections et Experiences des Anglois. Depuis
-               <lb/><rs key="B_991170514979105501" type="letter">ma seconde lettre</rs> du 22 Juillet vous devés
-               <lb/>avoir maintenant reçu <rs key="B_991170514979005501" type="letter">une troisième du 27 Juill</rs>.
-               <lb/>Sous couvert à un Marchand, par laquelle je
-               <lb/>vous donnois Avis des deux premières.
+               <lb/>Objections et Experiences des <rs type="person">Anglois</rs>. Depuis
+               <lb/>ma seconde <rs key="B_991170514979105501" type="letter">lettre</rs> du 22 Juillet vous devés
+    <lb/>avoir maintenant reçu une <rs key="B_991170514979005501" type="letter">troisième</rs> du 27 <abbr>Juill</abbr>.
+               <lb/>Sous couvert à un <rs type="person">Marchand</rs>, par laquelle je
+               <lb/>vous donnois Avis des deux <rs type="letter">premières</rs>.
             <pb facs="1073718" n="2"/>
-<lb/>Mr. <rs key="pers_DE-588-119507978" type="person">Jurin</rs> à qui vous avez confié mon
+<lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-119507978" type="person">Jurin</rs> à qui vous avez confié mon
                <lb/>Intention touchant la Declaration à faire de
-               <lb/>ma part sur l'ecrit de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs> est trop
-               <lb/><del>peu </del>peu porté pour mes interets, pour
-               <lb/>esperer qu'il executera la Commission que
+               <lb/>ma part sur l’<rs type="biblio">ecrit</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> est trop
+               <lb/><del>peu </del>peu porté pour mes interêts, pour
+               <lb/>esperer qu’il executera la Commission que
                <lb/>vous lui avez donnée. Il seroit pourtant
-               <lb/>bon, que vous fissiez inserer ma Declaration
-               <lb/>dans quelque Journal de Hollande, quand
+               <lb/>bon, que vous fissiez inserer ma <rs type="biblio">Declaration</rs> <!-- publiziert? -->
+               <lb/>dans quelque <rs type="biblio">Journal</rs> de <rs type="place">Hollande</rs>, quand
                <lb/>ce ne seroit que pour avertir le Public pour<pc type="hyphenation">-</pc><lb break="no"/>quoi je ne daignerai pas repondr<del>ai</del><add>e</add> aux
-               <lb/>miserables Objections de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs>, à moins
-               <lb/>que <rs type="organisation">la Société</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs> ne les approuve.
+               <lb/>miserables Objections de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs>, à moins
+               <lb/>que la <rs type="organisation">Société</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs> ne les approuve.
                <lb/>Car autrement il seroit à craindre, que nos
                <lb/>rigides Adversaires ne profitassent de
                <lb/>mon Silence pour chanter victoire selon
-               <lb/>leur belle<del>s</del> Coutume<del>s</del>, d'autant plus, qu'ils
+               <lb/>leur belle<del>s</del> Coutume<del>s</del>, d’autant plus, qu’ils
                <lb/>avoient pris tant de Soin de proner et de
                <lb/>faire sonner haut la refutation qui devoit
                <lb/>paroitre, comme un coup mortel, qui me
             <pb facs="1073719" n="3"/>
-<lb/>terrasseroit et m'imposeroit le Silence pour
+<lb/>terrasseroit et m’imposeroit le Silence pour
                <lb/>toujours; Il est bien vrai que toute
                <lb/>personne desinteressée sentira le foible, en
                <lb/>la lisant, mais elle ne le sentira à moins
-               <lb/>qu'elle n'ait aussi lû ma pièce: Or mon
-               <lb/>Refutateur combien d'absurditez ne me
-               <lb/>prétet-il pas par malice pour les refuter
-               <lb/>qu'on pourroit croire, que je les ai avancées
-               <lb/>effectivement, si on n'a pas lû mon Discours?
-               <lb/>Par ex: ce qu'il dit sur ma Demonstration
-               <lb/>prise<del>s</del> des 4 ressorts, qu'un Corps avec deux
+               <lb/>qu’elle n’ait aussi lû ma <rs type="biblio">pièce</rs>: Or mon
+               <lb/><rs type="person">Refutateur</rs> combien d’absurditez ne me
+               <lb/>prétet-il pas par malice, pour les refuter
+               <lb/>qu’on pourroit croire, que je les ai avancées
+               <lb/>effectivement, si on n’a pas lû mon <rs type="biblio">Discour<unclear>s</unclear></rs>?
+    <lb/>Par <abbr>ex</abbr>:<!-- : gelesen als Satzzeichen und nicht als Abkürzungszeichen, MK --> ce qu’il dit sur ma Demonstration
+               <lb/>prise<del>s</del> des 4 ressorts, qu’un Corps avec deux
                <lb/>degrez de vitesse peut flechir en y heurtant
-               <lb/>obliquement, n'est ce pas une invention 
-               <lb/>diabolique, que d'en faire consister <hi rend="u">l'essentiel</hi>
+               <lb/>obliquement, n’est ce pas une invention 
+               <lb/>Diabolique, que d’en faire consister <hi rend="u">l’essentiel</hi><!-- Vermutlich nachträglich unterstrichen. Wird noch abgeklärt. -->
 <lb/>dans la decomposition du mouvement, comme
-               <lb/>si les 4 ressorts n'y entroient pour rien? Et
-               <lb/>quand j'ai fait voir que si un Corps elastique
+               <lb/>si les 4 ressorts n’y entroient pour rien? Et
+               <lb/>quand j’ai fait voir que si un Corps elastique
                <lb/>choque un autre Corps egal aussi elastique et
                <lb/>en repos, sous un Angle demidroit, il co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique
-               <lb/>à celui ci une Vitesse egale à celle qu'il conserve
-               <lb/>lui-méme, et que cette vitesse sera à celle, que le
-            <pb facs="1073720" n="4"/>
-<lb/>choquant avaoit avant le Choc en raison de 1 à <formula>\sqrt{2}</formula> et
+               <lb/>à celui ci une Vitesse egale à celle qu’il conserve
+               <lb/>lui méme, et que cette vitesse sera à celle, que le
+            <pb facs="1073720" n="4"/>  
+<lb/>choquant avoit avant le Choc en raison de 1 à <formula>\sqrt{2}</formula> et
                <lb/>non point comme 1 à 2, comme il devroit étre
                <lb/>selon nos Adversaires; Or quand <rs key="pers_DE-588-100252419" type="person">Robins</rs> vient
                <lb/>me dire presentement que cette determination
-               <lb/>du mouvement après le choc pour ce cas, a
-               <lb/>deja été trouvée par Mr. <rs key="pers_DE-588-118639749" type="person">Huguens</rs> longtems
-               <lb/>avant moi, je vous demande n'est-ce pas un
-               <lb/>detestable artifice, qu'il veut faire à croire au
+               <lb/>du mouvement après le choc pour ce Cas, a
+               <lb/>deja eté trouvée par <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Huguens</rs> longtems
+               <lb/>avant moi, je vous demande n’est-ce pas un
+               <lb/>detestable artifice, qu’il veut faire à croire au
                <lb/>lecteur, comme si mon dessein étoit de me parer
-               <lb/>de la gloire d'une invention d'autrui, et qu'il
+               <lb/>de la gloire d’une invention d’autrui, et qu’il
                <lb/>dissimule malicieusement mon principal but,
-               <lb/>qui est d'en tirer la Consequence, pour etablir
-               <lb/>l'estimation des forces vives du Corps choquant?
+               <lb/>qui est d’en tirer la Consequence, pour etablir
+               <lb/>l’estimation des <rs type="keyword">forces vives</rs> du Corps choquant?
                <lb/><rs key="pers_DE-588-100252419" type="person">Robins</rs> et ses autres Sectateurs ne devroient
                <lb/>ils pas plutôt étre honteux de leur <del/>
-<lb/>aveuglement, en ce qu'ils ont sû le Theorème de
-               <lb/>Mr. <rs key="pers_DE-588-118639749" type="person">Huguens</rs> sans appercevoir la Conclusion
-               <lb/>qui s'en tire si aisément pour les forces vives?
-               <lb/>N'est ce pas aussi par une effronterie insupportable,
-               <lb/>qu'il ose avancer hardiment que dans mon addition
+<lb/>aveuglement, en ce qu’ils ont su le Theorème de
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Huguens</rs> sans appercevoir la Conclusion
+               <lb/>qui s’en tire si aisément pour les <rs type="keyword">forces vives</rs>?
+               <lb/>n’est ce pas aussi par une effronterie insupportable,
+               <lb/>qu’il ose avancer hardiment que dans mon addition
                <lb/>sur la Cause du ressort, je suppose une elasticité
             <pb facs="1073721" n="5"/>
-<lb/>primitive, c. a. d. , que je co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ets une petition de
-               <lb/>principe, moi qui me suis le plus recrié contre
+<lb/>primitive, <abbr>c. a. d.</abbr> que je co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ets une petition de
+               <lb/>principe, moi qui me suis le plus <unclear>recrié</unclear> contre
                <lb/>ceux qui le font? Je vous laisse à penser si ces
                <lb/>sortes de finesses ne sont pas capables de faire
-               <lb/>impression sur l'esprit de ceux qui, n'ayant
-               <lb/>pas lû mon discours, ou qui ne l'ayant lû
-               <lb/>que legérement donneront dans le panneau
-               <lb/>et ne douteront pas un moment de la bonne foi 
+               <lb/>impression sur l’esprit de ceux qui n’ayant
+               <lb/>pas lû mon Discours, ou qui ne l’ayant lû
+               <lb/>que legerement donneront dans le panneau
+               <lb/>et ne douteront pas un moment de la bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e foi 
                <lb/>de <rs key="pers_DE-588-100252419" type="person">Robins</rs>.</p>
-<p><lb/>Ce que vous me dites Mr., que méme parmi
-               <lb/>les Membres de <rs type="organisation">la Société</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs>, il y en a
-               <lb/>qui ne sont plus opposez au Sistéme des forces
-               <lb/>vives, me confirme dans l'esperance que j'ai
+<p><lb/>Ce que vous me dites <abbr>Mr.</abbr> que méme parmi
+               <lb/>les <rs type="person">Membres</rs> de la <rs type="organisation">Société</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs>, il y en a
+               <lb/>qui ne sont plus opposez au Sistème des <rs type="keyword">forces
+               <lb/>vives</rs>, me confirme dans l’esperance que j’ai
                <lb/>toujours eue, que la bonne Cause triomphera
-               <lb/>tôt ou tard en <rs key="place_VER-englan" type="place">Angleterre</rs> aussi bien qu'en
+               <lb/>tôt ou tard en <rs key="place_VER-englan" type="place">Angleterre</rs> aussi bien qu’en
                <lb/><rs key="place_VER-frankr" type="place">France</rs> malgré les efforts de nos Envieux
                <lb/>qui seront couverts de honte et de confusion. En attendant
                <lb/>laissons les detonner leur feu, quand ils auront
-               <lb/>tiré toute leur poudre ils cesseront d'eux-
-               <lb/>mesmes et seront obligez de ceder à nos armes.
-            <pb facs="1073722" n="6"/>
+  <lb/>tiré toute leur poudre ils cesseront d’eux-
+  <lb break="no"/>mesmes et seront obligez de ceder à nos armes.
+            <pb facs="1073722" n="6"/><!-- bis hier kollationiert 21.02.2025 MK -->
 <lb/>Je ne sai si je dois rire de ceux, que vous dites
                <lb/>qui font semblant de regarder cette question
                <lb/>comme peu importante, ou si je dois avoir
-               <lb/>Compassion d'eux, quand ils n'osent pas décou<pc type="hyphenation">-</pc><lb break="no"/>vrir leur Secret panchant vers la Verité, saisis
-               <lb/>de crainte de deplaire à la multitude. Car enfin
-               <lb/>c'est un pretexte ridicule de dire que la question
-               <lb/>n'est pas importante, tout le monde voyant,
-               <lb/>que dans la physique il n'y a rien de plus
-               <lb/>important, que de connoitre la nature du mouvement,
+               <lb/>Compassion d’eux, quand ils n’osent pas décou<pc type="hyphenation">-</pc><lb break="no"/>vrir leur Secret panchant<note type="editorial">alte Schreibweise für "penchant"</note> vers la Verité saisis
+               <lb/>de Crainte de deplaire à la multitude. Car enfin
+               <lb/>c’est un pretexte ridicule de dire, que la question
+               <lb/>n’est pas importante, tout le monde voyant,
+               <lb/>que dans la physique il n’y a rien de plus
+               <lb/>important, que de connoitre la nature du <abbr>mouvemt.</abbr>
                <lb/>qui est le premier fondement de toute cette science.
-               <lb/>Si Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit connu la Verité que nous
-               <lb/>defendons il n'auroit pas raisonné si mal dans
+               <lb/>Si <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit connu la Verité que nous
+               <lb/>defendons il n’auroit pas raisonné si mal dans
                <lb/>la 4<hi rend="sup">me</hi> partie de ses principes et quelque part
-               <lb/>dans son Optique, où de ce que la quantité du
+               <lb/>dans Son <rs type="biblio">Optique</rs>, où de ce que la quantité du
                <lb/>mouvement peut diminuer dans le monde, il
-               <lb/>tire cette fausse conséquence, qu'il peut arriver
-               <lb/>et qu'il arrivera actuellement, que tout le
-               <lb/>mouvement de l'univers perira, à moins qu'il ne soit
+               <lb/>tire cette fausse Consequence, qu’il peut arriver
+               <lb/>et qu’il arrivera actuellement, que tout le
+               <lb/>mouvement de l’univers perira, à moins qu’il ne soit
                <lb/>reparé de tems en tems comme par un miracle;
-            <pb facs="1073723" n="7"/>
-<lb/>Car s'il avoit eu l'idée des forces vives, il auroit
+            <pb facs="1073723" n="7"/><!-- bis hier kollationiert 21.02.2025 -->
+<lb/>Car s’il avoit eu l’idée des <rs type="keyword">forces vives</rs>, il auroit
                <lb/>vû, que leur quantité demeurant la méme dans le
-               <lb/>monde, il est absolument impossible, que le mouvement
+               <lb/>monde, il est absolument impossible, que le <abbr>mouvemt.</abbr>
                <lb/>(nonobstant que sa quantité change tantôt en aug<pc type="hyphenation">-</pc><lb break="no"/>mentant tantôt en diminuant) puisse perir
-               <lb/>entièrement, parceque la quantité des forces vives
-               <lb/>perirait aussi, ce qui est contre l'idée qu'on en <del>peut</del> <add>doit</add>
+  <lb/>entièrement, parceque la quantité des <rs type="keyword">forces vives</rs>
+               <lb/>periroit aussi, ce qui est contre l’idée qu’on en <del>peut </del> <add>doit</add>
 <lb/>avoir, cette quantité ne pouvant ni augmenter
-               <lb/>ni diminuer, vû que si d'un coté une partie se
-               <lb/>detruit, il faut qu'elle ait fait son effet, en
-               <lb/>produisant d'un autre coté tout autant de
-               <lb/>force qu'il y en avoit de perdu.</p>
-<p><lb/>Mais quant à la Crainte que ces Mess. ont de
-               <lb/>deplaire à la Multitude, on cachant ou deguisant
-               <lb/>la Verité dont ils sont convaincus, on doit assuré<pc type="hyphenation">-</pc><lb break="no"/>ment avoir pitié de leur foiblesse quoique indigne.
-               <lb/>d'un Philosophe, qui ne doit jamais <del/>
-<lb/>perdre le courage de dire librement ses pensées, en
+               <lb/>ni diminuer, vû que si d’un coté une partie se
+               <lb/>detruit, il faut qu’elle ait fait son effet, en
+               <lb/>produisant d’un autre coté tout autant de
+               <lb/>force, qu’il y en avoit de perdu.</p>
+  <p><lb/>Mais quan<subst><del/><add>t</add></subst> à la Crainte que ces <abbr>Mess.</abbr> ont de
+               <lb/>deplaire à la Multitude, en cachant ou deguisant
+               <lb/>la Verité dont ils sont convaincus, on doit assuré<pc type="hyphenation">-</pc><lb break="no"/>ment avoir pitié de leur foiblesse quoique indigne
+               <lb/>d’un Philosophe, qui ne doit jamais <del/>
+<lb/>perdre le Courage de dire librement ses pensées, en
                <lb/>fait de philosophie, ni se mettre en peine, si
             <pb facs="1073724" n="8"/>
 <lb/>elles plairont ou deplairont à la multitude.</p>
-<p><lb/>C'est aussi quelque chose de fort plaisant que l'histoire
+<p><lb/>C’est aussi quelque chose de fort plaisant que l’histoire
                <lb/>que votre <rs type="person">Ami</rs><!-- identifizieren --> a reçue de <rs key="place_VER-frankr" type="place">France</rs> sur la divison dans
-               <lb/><rs type="organisaton">l'Acad. des Sciences</rs>, au sujet de la mesure des forces;
-               <lb/>On n'en voit que trop, que le parti dominant est
-               <lb/>celui, qui a fait la Cabale, dont vous a parlé
-               <lb/>Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs>, pour condamner ma piece et lui
-               <lb/>préferer de miserables Rhabsodies d'Ecolier; On
+               <lb/>l’<rs type="organisation"><abbr>Acad.</abbr> des Sciences</rs>, au sujét de la mesure des forces;
+               <lb/>On n’en voit que trop, que le parti dominant est
+               <lb/>celui, qui <choice><orig>à</orig><reg>a</reg></choice> fait la Cabale, dont vous a parlé
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs>, pour condamner ma <rs type="biblio">piéce</rs> et lui
+  <lb/>préferer de miserables <rs type="biblio">Rhabsodies</rs><note type="editorial">Es handelt sich um das Werk "Demonstration des Loix du Choc des Corps" von Colin MacLaurin, der den Prix Paris 1724 gewonnen hatte und "Les Loix du choc des corps à ressort parfait ou imparfait" von Jean Simon Mazière, der den Prix Paris von 1726 gewonnen hatte.</note> d’Ecolier; On
                <lb/>voit pourtant aussi que malgré la multitude
-               <lb/>des Antagonistes, mon Sentiment n'a pas
+               <lb/>des Antagonistes, mon Sentiment n’a pas
                <lb/>laissé de faire quelques Proselytes, mais que
-               <lb/>l'on veut contraindre par force, ou de se ranger
+               <lb/>l’on veut contraindre par force, ou de se ranger
                <lb/>sous le Pavillon du gros Parti, ou de se taire, quelle
-               <lb/>honte! quelle fletrissure! pour une Académie.
-               <lb/>Est ce là le moyen de faire fleurir les Sciences?
-               <lb/>il me semble que voilà une Chambre d'Inquisition
-               <lb/>pire que celle d'<rs key="place_VER-spanie" type="place">Espagne</rs>, au lieu <add>d'une</add> <del>d'</del><rs type="organisation">Académie</rs>; je
-               <lb/>plains surtout le pauvre <rs key="pers_DE-588-117672025" type="person">Abbé le Camus</rs>
+               <lb/>honte<unclear>!</unclear> quelle fletrissure! pour une <rs type="organisation">Academie</rs>.
+               <lb/>est ce là le moyen de faire fleurir les Sciences?
+               <lb/>il me semble que voilà une Chambre d’Inquisition
+  <lb/>pire que celle d’<rs key="place_VER-spanie" type="place">Espagne</rs>, au lieu <del>d’</del> <add>d’une </add> <rs type="organisation">Academie</rs><unclear>;</unclear> je
+               <lb/>plains surtout le pauvre Abbé le <rs key="pers_DE-588-117672025" type="person">Camus</rs>,
 <pb facs="1073725" n="9"/>
-<lb/>contre lequel il s'eleva un murmure de ce qu'il
-               <lb/>attaquoit une Opinion approuvée par <rs type="organisation">l'Académie</rs>;
+<lb/>contre lequel il s’eleva un murmure de ce qu’il
+               <lb/>attaquoit une Opinion approuvée par <rs type="organisation">l’Academie</rs>
                <lb/>le pauvre homme souffrira bien des persecutions
                <lb/>et payera cher son audace, il meriteroit que je
-               <lb/>lui dressasse la Couronne de martyr: Pour Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs>
-<lb/>dont l'histoire dit qu'il prend aussi mon parti,
-               <lb/>je n'ai pas trop bonne opinion de sa bonne
+               <lb/>lui dressasse la Couronne de martyr: Pour <abbr>Mr.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs>
+<lb/>dont l’histoire dit qu’il prend aussi mon parti,
+               <lb/>je n’ai pas trop bonne opinion de sa bonne
                <lb/>foi, par des raisons qui vous sont connuës,
-               <lb/>il est de ceux qui clochent des deux cotés.
-               <lb/>L'Auteur de l'histoire marque que le P. <rs key="pers_DE-588-1089421028" type="person">Mazière</rs>
-<lb/>a soutenu l'opinion commune dans sa
-               <lb/>Dissertation qui lui a procuré le prix.</p>
+               <lb/>il est de ceux qui clochent des deux cotez<note type="editorial">alte Schreibweise für "côtés"</note>.
+               <lb/>L’<rs type="person">Auteur</rs> de l’histoire marque que le <abbr>P.</abbr> <rs key="pers_DE-588-1089421028" type="person">Maziere</rs>
+<lb/>a soutenu l’opinion commune dans sa
+               <lb/><rs type="biblio">Dissertation</rs> qui lui <choice><orig>à</orig><reg>a</reg></choice> procuré le prix.</p>
 <p><lb/>Mais si pour soutenir une Opinion il suffit de
                <lb/>la prononcer simplement sans aucune preuve
-               <lb/>et de dire ensuite comme un Dictateur qu'elle
-               <lb/>est vraye, on pourra soutenir de cette manière
-               <lb/>toute opinion quelque monstrueuse qu'elle soit.
-               <lb/>Je ne sai si vous avez lû la Dissertation du
-               <lb/>P. <rs key="pers_DE-588-1089421028" type="person">Mazière</rs>; quoiqu'il en soit, voici tout ce
-               <lb/>qu'il dit sur les forces des Corps et ce qu'il
+               <lb/>et de dire en suite comme un Dictateur qu’elle
+               <lb/>est vraye on pourra soutenir de cette maniere
+               <lb/>toute opinion quelque monstrueuse qu’elle soit.
+               <lb/>Je ne sai si vous avez lû la <rs type="biblio">Dissertation</rs> du
+               <lb/><abbr>P.</abbr> <rs key="pers_DE-588-1089421028" type="person">Mazière</rs>; quoiqu’il en soit, voici tout ce
+               <lb/>qu’il dit sur les forces des Corps et ce qu’il
                <lb/>prend pour un principe <hi rend="u">"Les forces
             <pb facs="1073726" n="10"/>
-<lb/>des Corps</hi> (dit il) <hi rend="u">ou leurs mouvements sont en
-               <lb/>raison composée de leurs masses et des
-               <lb/>vitesses qu'ils ont dans l'instant qu'on les considère</hi>.
-               <lb/>C'est la son ennoncé, mais en voulez vous voir aussi sa
-               <lb/>preuve, la voici. C'est en vain (ajoute ce Docteur grave)
-               <lb/>que des Auteurs Celebres ont essayé de donner atteinte
-               <lb/>à ce principe, et de lui en substituer un autre.
-               <lb/>On les a refutez avec tant de solidité (scilicet!)
-               <lb/>qu'il n'y a pas lieu de craindre, que desormais l'on
-               <lb/>s'avise de soutenir après eux, <hi rend="u">que les forces sont en
-               <lb/>raison composée des masses et des quarrez des vitesses</hi>."
+<lb/>"des Corps</hi> (dit il) <hi rend="u">ou leurs mouvements sont en
+               <lb/>"raison composée de leurs masses et des
+               <lb/>vitesses qu’ils ont dans l’instant qu’on les considére"</hi>.
+               <lb/>C’est <choice><orig>la</orig><reg>là</reg></choice> son enoncé, mais en voulez vous voir aussi sa
+               <lb/>preuve, la voici. "C’est en vain (ajoute ce <rs type="person">Docteur</rs> grave)
+               <lb/>"que des <rs type="person">Auteurs</rs> Celebres ont essayé de donner atteinte
+               <lb/>"à ce prïncipe, et de lui en substituer un autre.
+               <lb/>"On les a refutez avec tant de solidité (<foreign xml:lang="lat">scilicet</foreign>!)
+               <lb/>"qu’il n’y a pas lieu de craindre, que desormais l’on
+               <lb/>"s’avise de soutenir aprés eux, <hi rend="u">que les forces sont en
+               <lb/>"raison composée des masses et des quarrez des vitesses</hi><supplied>.</supplied>"
                <lb/>De son principe ainsi solidement établi il deduit trois
-               <lb/>Corollaires pour tout potage, et aprés cela il n'y a
-               <lb/>plus un seul mot sur les forces vives dans tout son discours;
-               <lb/>Voila de quelle manière notre bon Pere a soutenu son
-               <lb/>opinion contre la notre, qu'en dites vous? Cependant là<pc type="hyphenation">-</pc><lb break="no"/>dessus on lui ajuge le prix, <hi rend="u">Mopso Nisa datur</hi> se,
-               <lb/>Si j'avois sû qu'en disant des niaiseries on peut devenir
-               <lb/>victorieux, j'en aurois donné à mes Juges tout leur saoul.
-               <lb/>Je m'aperçois bien qu'il faut les repaitre de foin et
-               <lb/>que les mets exquis ne sont pas pour Eux. C'est beaucoup
-               <lb/>d'honneur que je leur fais en disant cela, car c'est dans la supposition
-               <lb/>qu'ils ont agi de bonne foi sans savoir mieux et qu'ils ont
+               <lb/>Corollaires pour tout potage, et aprés cela il n’y a
+               <lb/>plus un seul mot sur les <rs type="keyword">forces vives</rs> dans tout son <rs type="biblio">discours</rs>;
+               <lb/>Voila de quelle manière notre bon <rs type="person">Pere</rs> a soutenu son
+               <lb/>opinion contre la notre, qu’en dites vous? Cependant là<pc type="hyphenation"><supplied>-</supplied></pc>
+<lb break="no"/>dessus on lui ajuge le prix, <hi rend="u"><foreign xml:lang="lat">Mopso Nisa datur</foreign></hi> <note type="editorial">Unklares Zeichen, evtl. Abkürzung für "etc."</note>,
+               <lb/>Si j’avois sû qu’en disant des niaiseries on peut devenir
+               <lb/>victorieux, j’en aurois donné à mes Juges tout leur saoul.
+               <lb/>Je m’aperçois bien qu’il faut les repaitre de foin et
+               <lb/>que les mets exquis ne sont pas pour Eux. C’est beaucoup
+               <lb/>d’honneur que je leur fais en disant cela, car c’est dans la supposition
+               <lb/>qu’ils ont agi de bonne foi sans savoir mieux et qu’ils ont
             <pb facs="1073727" n="11"/>
-<lb/>sentencié selon la portée de leurs lumières.
-               <lb/>Je retourne en <rs key="place_VER-englan" type="place">Angleterre</rs>: Est ce que ce Mr. <rs key="pers_DE-588-118669478" type="person">Clarcke</rs> parle
+  <lb/>sentencié selon la portée de leurs lumières.</p>
+               <p><lb/>Je retourne en <rs key="place_VER-englan" type="place">Angleterre</rs>: Est ce que ce <abbr>Mr.</abbr> <rs key="pers_DE-588-118669478" type="person">Clarcke</rs> parle
                <lb/>tout de bon, ou se moque-t-il, en nous debitant pour une
-               <lb/>preuve de l'opinion commune son beau raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement, quand il dit:
-               <lb/><hi rend="u">Que la force d'un Corps nait de deux choses, de la masse et
+               <lb/>preuve de l’opinion commune son beau raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement, quand il dit.
+               <lb/><hi rend="u">Que la force d’un Corps nait de deux choses, de la masse et
                <lb/>de la vitesse, que la partie qui nait de la masse étant
                <lb/>proportionelle à la masse, la partie qui nait de la
                <lb/>vitesse doit étre proportionelle à la vitesse</hi>. Pour toute
-               <lb/>reponse je veux imiter ce grand Docteur, en lui retorquant
+               <lb/>reponse je veux imiter ce grand <rs type="person">Docteur</rs>, en lui retorquant
                <lb/>un raisonnement tout à fait semblable, pour lui
-               <lb/>prouver que la solidité d'un Cylindre est en raison com<pc type="hyphenation">-</pc><lb break="no"/>posée de sa hauteur et de son Diamètre. Je dis donc
-               <lb/>comme lui: <hi rend="u">La Solidité <add>d'un cylindre</add> nait de deux Choses, de sa
+               <lb/>prouver que la solidité d’un Cylindre est en raison com<pc type="hyphenation">-</pc><lb break="no"/>posée de sa hauteur et de son Diamètre. Je dis donc
+               <lb/>comme lui. <hi rend="u">La Solidite <add>d’un cylindre</add> nait de deux Choses, de sa
                <lb/>hauteur et de son Diamètre. La partie qui nait de la
-               <lb/>hauteur <del>etat </del>étant proportionelle à la hauteur,
+               <lb/>hauteur <del>etat </del>etant proportionelle à la hauteur;
                <lb/>la partie qui nait du diamètre, doit étre proportionelle
-               <lb/>au diamètre</hi>: Ainsi il est faux que la solidité d'un
+               <lb/>au Diamètre</hi>: Ainsi il est faux que la solidité d’un
                <lb/>Cylindre soit en raison composée de la hauteur et
-               <lb/>du quarré de son diamètre. <hi rend="u">Risum teneatis amici!</hi>
-<lb/>En verité si Mr. <rs key="pers_DE-588-118669478" type="person">Clarke</rs> n'est pas meilleur Théologien que
-               <lb/>Mathématicien et philosophe, sa Théologie doit étre sur
+               <lb/>du quarré de son Diamètre. <hi rend="u"><foreign xml:lang="lat">Risum teneatis amici</foreign>!</hi>
+<lb/>En verité si <abbr>Mr.</abbr> <rs key="pers_DE-588-118669478" type="person">Clarke</rs> n’est pas meilleur Theologien que
+               <lb/>Mathematicien et philosophe, sa Theologie doit étre sur
                <lb/>un miserable pied.</p>
-<p><lb/>Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> que vous dites étre cet Ami dont parle <rs key="pers_DE-588-143687417" type="person">Pem<pc type="hyphenation">-</pc><lb break="no"/>berton</rs> dans le Postcripte de sa lettre, qui a imaginé ce bel
+<p><lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> que vous dites étre cet Ami dont parle <rs key="pers_DE-588-143687417" type="person">Pem<pc type="hyphenation">-</pc><lb break="no"/>berton</rs> dans le Postcripte<note type="editorial">Seltene ältere Form von "postscriptum". Vermutlich bezieht sich der Briefautor auf die ebenfalls ältere englische Form "postcript"</note> de sa <rs type="letter">lettre</rs>, qui a imaginé ce bel
                <lb/>argument tiré de la comparaison de la resistance du suif
             <pb facs="1073728" n="12"/>
 <lb/>avec celles que feroient des feuilles de papier ou des pièces
                <lb/>de Soye, a bien fait de quitter ce monde, car il auroit eu
                <lb/>le deboire de voir la defaite de son armée mise en
-               <lb/>Campagne contre les forces vives, et de sentir ses propres
-               <lb/>armes tournées contre lui-même.</p>
+               <lb/>Campagne contre les <rs type="keyword">forces vives</rs>, et de sentir ses propres
+               <lb/>armes tournées contre lui meme.</p>
 <p><lb/>Je suis bien aise que vous ayez compris ma reponse à
-               <lb/>l'experience faite avec la plaque de Cuivre et le plomb
-               <lb/>qu'on y a laissé tomber perpendiculairement, et que
+               <lb/>l’experience faite avec la plaque de Cuivre et le plomb
+               <lb/>qu’on y a laissé tomber perpendiculairement, et que
                <lb/>cette reponse ait diminué votre difficulté, de laquelle
-               <lb/>s'il vous reste encore une partie c'est que vous ne
+               <lb/>s’il vous reste encore une partie c’est que vous ne
                <lb/>comprenez pas encore dans toute sa perfection la
-               <lb/>Théorie que je me suis formée sur la Commu<pc type="hyphenation">-</pc><lb break="no"/>nication du mouvement, qui se fait lorsqu'un corps
+               <lb/>Theorie que je me suis formée sur la Commu<pc type="hyphenation">-</pc><lb break="no"/>nication du mouvement, qui se fait lorsqu’un corps
                <lb/>en mouvement se joint sans choquer à un autre
-               <lb/>corps en repos, qui est obligé par là de le suivre, par
-               <lb/>le moyen des liens auxquels ils s'accrochent mutuelle<pc type="hyphenation">-</pc><lb break="no"/>ment dans le moment que les deux Corps s'unissent
+               <lb/>corps en repos, qui est obligé par là de le suïvre, par
+               <lb/>le moyen des liens auxquels ils s’accrochent mutuelle<pc type="hyphenation">-</pc><lb break="no"/>ment dans le moment que les deux Corps s’unissent
                <lb/>ensemble; car je puis demontrer fort clairement,
-               <lb/>que supposé même, que les deux corps soient parfaite<pc type="hyphenation">-</pc><lb break="no"/>ment elastiques, en sorte que rien ne se puisse perdre
-               <lb/>de la quantité de la force vive, que, dis-je, toute la masse
+               <lb/>que supposé méme, que les deux Corps soient parfaite<pc type="hyphenation">-</pc><lb break="no"/>ment elastiques, en sorte que rien ne se puisse perdre
+               <lb/>de la quantité de la <rs type="keyword">force vive</rs>, que, dis<supplied>-</supplied>je, toute la masse
                <lb/>combinée paroitra continuer le mouvement avec la
-               <lb/>moitié seulement de la vitesse qu'avoit le premier
+               <lb/>moitié seulement de la vitesse qu’avoit le premier
             <pb facs="1073729" n="13"/>
 <lb/>corps avant la Conjonction et que nonobstant cela la
-               <lb/>quantité de la force vive sera conservée en son
+               <lb/>quantite de la <rs type="keyword">force vive</rs> sera conservée en son
                <lb/>entier: Ceci vous paroitra sans doute une contradiction,
-               <lb/>cependant il n'y a rien de si vrai, voici mon idée, Concevez
-               <lb/>deux Corps egaux et parfaitement elastiques
-               <lb/><formula>A</formula> et <formula>B</formula>, liés ensemble par un fil <formula>c</formula>, qui soit
+               <lb/>cependant il n’y a rien de si vrai, voici mon idée, concevez
+               <lb/>deux Corps egaux<figure></figure> et parfaitement elastiques
+               <lb/><formula>A</formula> et <formula>B</formula>, liés ensemble par un fil <formula>C</formula>, qui soit
                <lb/>aussi elastique, <formula>c</formula>, <formula>a</formula>, <formula>d</formula>, qui ayant souffert une
-               <lb/>extension ait la vertu de se remettre en sa premiére
-               <lb/>longueur naturelle; Supposez d'abord que le fil entre
+               <lb/>extension ait la vertu de se remettre en sa première
+               <lb/>longueur naturelle; Supposez d’abord que le fil entre
                <lb/>les deux corps soit lache ou dans un intervalle plus
-               <lb/>court que toute sa longueur: Figure: vous que le
+               <lb/>court que toute sa longueur: Figurez Vous que le
                <lb/>corps <formula>A</formula> est en repos, et que <formula>B</formula> seul commence à se
-               <lb/>mouvoir de gauche à droite avec une vitesse <formula>=v</formula> en s'eloignant
-               <lb/>ainsi du Corps <formula>A</formula>, il est visible que des que le fil <formula>C</formula> sera
+               <lb/>mouvoir de gauche à <choice><orig>droit</orig><reg>droite</reg></choice> avec une vitesse <formula>=v</formula> en s’eloignant
+               <lb/>ainsi du Corps <formula>A</formula>, il est visible que dès que le fil <formula>C</formula> sera
                <lb/>étendu en ligne droite, le Corps <formula>B</formula>, ne pouvant plus
                <lb/>continuer librement dans son Chemin fera sur le corps
-               <lb/><formula>A</formula> par l'attraction du fil precisement le même
-               <lb/>effet pour le faire avancer vers le même coté, que si
-               <lb/>le corps <formula>A</formula> en repos avoit été poussé par derriére par
-               <lb/>un autre corps egal avec la vitesse <formula>v</formula>: donc le Corps
+               <lb/><formula>A</formula> par l’attraction du fil precisément le meme
+               <lb/>effet pour le faire avancer vers le méme coté, que si
+               <lb/>le Corps <formula>A</formula> en repos avoit été poussé par derriére par
+               <lb/>un autre Corps egal avec la vitesse <formula>v</formula>: donc le corps
                <lb/><formula>A</formula> recevra toute la vitesse du Corps <formula>B</formula> et celuici
-               <lb/>restera en repos jusqu'à ce que <formula>A</formula> heurtant contre
+               <lb/>restera en repos jusqu’a ce que <formula>A</formula> heurtant contre
                <lb/>lui il lui redonne toute la premiére vitesse et que
             <pb facs="1073730" n="14"/>
-<lb/><formula>A</formula> lui même soit remis derechef en repos; après cela
+<lb/><formula>A</formula> lui méme soit remis derechef en repos; après cela
                <lb/>quand le fil <formula>C</formula> sera revenu une seconde fois en
                <lb/>ligne droite, le Corps <formula>B</formula> communiquera de nouveau
                <lb/>toute sa vitesse au Corps <formula>A</formula> et celuici la rendra à
                <lb/><formula>B</formula>, ensuite <formula>B</formula> à <formula>A</formula>, puis <formula>A</formula> à <formula>B</formula>; et ainsi ces deux
-               <lb/>Corps se mouvront alternativement, et la quan<pc type="hyphenation">-</pc><lb break="no"/>tité de la force vive sera toujours la même, savoir
+               <lb/>Corps se mouvront alternativement, et la quan<pc type="hyphenation">-</pc><lb break="no"/>tité de la <rs type="keyword">force vive</rs> sera toujours la méme, savoir
                <lb/><formula>Avv</formula> ou <formula>Bvv</formula>; Mais voyons ce que cela sert pour
-               <lb/>notre Sujet: Supposons la longueur du fil <formula>c</formula> trés
-               <lb/>petite, d'où il arrivera que ces alternations
+               <lb/>notre Sujet: Supposons la longueur du fil <formula>C</formula> trés
+               <lb/>petite, d’où il arrivera que ces alternations
                <lb/>de mouvement et de repos des deux corps seront
                <lb/>si frequentes et suivies de si prés <del>de si pris </del>les unes
                <lb/>après les autres, que les Sens ne pourront pas distin<pc type="hyphenation">-</pc><lb break="no"/>guer les petits tems de repos et de mouvement,
                <lb/>et comme la somme des petits <add>tems</add> en repos est
-               <lb/>égale à la somme des petits tems en mouvement,
+               <lb/>égale à la somme des petits tems de <abbr>mouvemt.</abbr>,
                <lb/>les deux Corps <formula>A</formula> et <formula>B</formula> paroitront se mouvoir
                <lb/>conjointement chacun avec la vitesse <formula>=\frac{1}{2}v</formula>, en sorte
-               <lb/>que l'on croiroit (mais faussement) que toute la
-               <lb/>force vive seroit seulement <formula>\frac{1}{4}Avv+\frac{1}{4}Bvv=\frac{1}{2}Avv</formula>
-<lb/>ou <formula>=\frac{1}{2}Bvv</formula>, quoique effectivement elle subsistat
+               <lb/>que l’on croiroît (mais faussement) que toute la
+               <lb/><rs type="keyword">force vive</rs> seroit seulement <formula>\frac{1}{4}Avv+\frac{1}{4}Bvv=\frac{1}{2}Avv</formula>
+<lb/>ou <formula>=\frac{1}{2}Bvv</formula>, quoique effectivement elle <foreign xml:lang="lat">subsistat</foreign>
             <pb facs="1073731" n="15"/>
-<lb/>toujours <formula>=Avv</formula> ou <formula>Bvv</formula>, parcequ'elle se trouve toujours entie<pc type="hyphenation">-</pc><lb break="no"/>rement dans l'un des deux corps, passant tour à tour
-               <lb/>de l'un à l'autre. L'application est aisée à faire à l'expérience
-               <lb/>du cuivre Dés que le plomb est tombé sur le cuivre (d'une
+<lb/>toujours <formula>=Avv</formula> ou <formula>Bvv</formula>, parcequ’elle se trouve toujours entie<pc type="hyphenation">-</pc><lb break="no"/>rement dans l’un des deux corps, passant tour à tour
+               <lb/>de l’un à l’autre. L’application est aisée à faire à l’expérience
+               <lb/>du cuivre: Dés que le plomb est tombé sur le cuivre (d’une
                <lb/>hauteur perpendiculaire quelconque, car cela ne fait rien)
-               <lb/>les fibres de l'un et de l'autre qui s'entrelassent d'abord par
+               <lb/>les fibres de l’un et de l’autre qui s’entrelassent d’abord par
                <lb/>le contact, tiennent lieu du fil ou du lien <formula>C</formula> ce qui produira
-               <lb/>l'effet, que l'expérience fait paroitre, comme <del/><add>si</add> la masse
-               <lb/>combinée du cuivre et du plomb alloit conjointement
-               <lb/>avec la moitié de la vitesse qu'avoit le cuivre seul avant
-               <lb/>la combinaison, au lieu que chacun <del/><add>va</add> separément avec la
-               <lb/>vitesse entiere, mais alternativement, c'est en quoi consiste le
-               <lb/>tremoussement des parties dont j'ai parlé dans une de mes
-               <lb/>précedentes lettres. Voilà donc la force vive conservée et
-               <lb/>la contradiction apparente sauvée. Remarqués que je
-               <lb/>considere ici les choses en Théorie, sachant fort bien que les
-               <lb/>fibres de ces deux métaux ne seront pas parfaitement
-               <lb/>élastiques, et qu'ainsi une partie de la force vive peut se
-               <lb/>perdre (ou plutôt, car il ne <del>s'en </del><add>se</add> perd rien) se communiquer
+               <lb/>l’effét, que l’experience fait paroitre, comme <del/><add>si</add> la masse
+               <lb/>combinée du Cuivre et du plomb alloit conjointement
+               <lb/>avec la moitié de la vitesse qu’avoit le cuivre seul avant
+               <lb/>la Combinaison, au lieu que chacun <del/><add>va</add> separément avec la
+               <lb/>vitesse entiere, mais alternativement, c’est en quoi consiste le
+               <lb/>tremoussement des parties dont j’ai parlé dans une de mes
+               <lb/>précedentes <rs type="letter">lettres</rs>. Voilà donc la <rs type="keyword">force vive</rs> conservée et
+               <lb/>la Contradiction apparente sauvée. Remarqués que je
+               <lb/>considère ici les choses en Theorie, sachant fort bien que les
+               <lb/>fibres de ces deux metaux ne seront pas parfaitement
+               <lb/>elastiques, et qu’ainsi une partie de la <rs type="keyword">force vive</rs> peut se
+               <lb/>perdre (ou plutôt, car il ne <del>s’en </del><add>se</add> perd rien) se communiquer
                <lb/>à une matiére étrangére ou étre employée à faire tremousser
                <lb/>davantage les petites particules du Cuivre et du plomb, mais
                <lb/>tout cela ne fait rien contre moi non plus que la perte
-               <lb/>de la force vive qui semble se faire dans le choc des <del/>
-<pb facs="1073732" n="16"/>
-<lb/>corps non elastiques Il me suffit d'avoir demontré
-               <lb/>comment il est possible, que la force vive se conserve
-               <lb/>dans la masse reunie, quoiqu'elle paroisse par l'experience
-               <lb/>n'avoir de vitesse que <formula>\frac{1}{2}v</formula> au lieu qu'il semble qu'elle
+               <lb/>de la <rs type="keyword">force vive</rs> qui semble se faire dans le choc des <del/>
+<pb facs="1073732" n="16"/><!-- bis hier code ergänzt, korrigiert 21.02.2025 -->
+<lb/>corps non elastiques: Il me suffit d’avoir demontré
+               <lb/>comment il est possible, que la <rs type="keyword">force vive</rs> se conserve
+               <lb/>dans la masse reunie, quoiqu’elle paroisse par l’experience
+               <lb/>n’avoir de vitesse que <formula>\frac{1}{2}v</formula>, au lieu qu’il semble qu’elle
                <lb/>devroit avoir une vitesse commune <formula>=v\sqrt{\frac{1}{2}}</formula>. Je me flatte
-               <lb/>que mon explication achevera de lever entierement
+               <lb/>que mon explication achevera de lever entiérement
                <lb/>votre scrupule.
                <lb/>Je sai fort bien ce que repondroient les Anglois à
-               <lb/>l'expérience, que je voudrois leur opposer, mais je leur
-               <lb/>ferois voir l'impertinence de leur reponse, quand
-               <lb/>ils pretendent, que si le gros poids acquiert plus de mou<pc type="hyphenation">-</pc><lb break="no"/>vement, c'est que le ressort agit plus longtems sur lui; car
-               <lb/>je prendrois les choses à rebours, en leur demandant, quand
+               <lb/>l’expérience, que je voudrois leur opposer, mais je leur
+               <lb/>ferois voir l’impertinence de leur reponse, quand
+               <lb/>ils pretendent, que si le gros poids acquiert plus de mou<pc type="hyphenation">-</pc><lb break="no"/>vement, c’est que le ressort agit plus longtems sur lui; car
+               <lb/>je prendrois les Choses à rebours, en leur demandant, quand
                <lb/>quelcun leur présenteroit deux ressorts parfaitement
-               <lb/>egaux, lesquels à leur insçu eussent été bandés egalement,
-               <lb/>p. ex. chacun de <del/>60 à 40 degrés; mais par le mouvement
-               <lb/>de deux Corps de differente grosseur et de differente vitesse;
+               <lb/>egaux, lesquels à leur insçu eussent été bandés egalement<supplied>,</supplied>
+               <lb/><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> chacun de <del/>60 à 40 degrés; mais par le mouvement
+               <lb/>de deux Corps de différente grosseur et de différente vitesse;
                <lb/>je leur demanderois, dis-je, si ces deux ressorts en tout
                <lb/>egaux et egalement bandez ne possedent pas une egale quantité
-               <lb/>de force chacun? à moins qu'ils ne soient fous, ils ne pourront
-               <lb/>me le nier, car qu'elle raison de préferer l'un à l'autre, puisque
-               <lb/>tout y est identique, dans l'état<del/> où ils sont presentement?
-            <pb facs="1073733" n="17"/>
-<lb/>S'ils me l'accordent donc, je continuerois à leur demander,
-               <lb/>s'il ne falloit pas des forces égales de part et d'autre,
+               <lb/>de force chacun? à moins qu’ils ne soient fous, ils ne pourront
+               <lb/>me le nier, car quelle raison de préferer l’un à l’autre, puisque
+               <lb/>tout y est identique, dans l’etàt<note>alte Schreibweise</note><del/> où ils sont presentement?
+            <pb facs="1073733" n="17"/><!-- bis hier kollationiert -->
+<lb/>S’ils me l’accordent donc, je continuerois à leur demander,
+               <lb/>s’il ne falloit pas des forces egales de part et d’autre,
                <lb/>pour reduire ces deux ressorts egaux dans une parfaite
                <lb/>égalité de compression; car quelle raison auroit on encore de
-               <lb/>dire, que l'un demanderoit plus de force que l'autre? Ils me
-               <lb/>diront peutétre, que suivant la grosseur du corps qui comprime
+               <lb/>dire, que l’un demanderoit plus de force que l’autre? Ils me
+               <lb/>diront peutètre, que suivant la grosseur du Corps qui comprime
                <lb/>le ressort par son mouvement, il faut tantôt plus tantôt
-               <lb/>moins de force; donc, leur dirois-je, plusieurs differentes
-               <lb/>causes inegales peuvent se consumer pleinement, et ce<pc type="hyphenation">-</pc><lb break="no"/>pendant ne produire qu'un même effet, qui consiste uniquement
+               <lb/>moins de force; donc, leur dirois je, plusieurs differentes
+               <lb/>causes inegales peuvent se consumer pleinement, et ce<pc type="hyphenation">-</pc><lb break="no"/>pendant ne produire qu’un mème effèt, qui consiste uniquement,
                <lb/>dans la quantité de Compression, qui est la seule chose qui
-               <lb/>subsiste et qu'on voit devant les yeux, la durée pendant la<pc type="hyphenation">-</pc><lb break="no"/>quelle la compression s'est faite n'étant qu'une simple
-               <lb/>modalité de l'action, n'ayant plus aucune réalité après l'action
-               <lb/>finie. Ainsi ces Messieurs seroient obligés de reconnoitre que
+               <lb/>subsiste et qu’on voit devant les yeux, la durée pendant la<pc type="hyphenation">-</pc><lb break="no"/>quelle la Compression s’est faite n’etant qu’une simple
+               <lb/>modalité de l’action, n’ayant plus aucune realité, apres l’action
+               <lb/>finie. Ainsi ces <rs type="person"><abbr>Mess.</abbr><hi rend="sup">rs</hi></rs> seroient obligés de reconnoitre que
                <lb/>selon leur sentiment on ne pourroit jamais dire, que
                <lb/>la cause est egale à son effet; que seroit il donc necessaire
                <lb/>de chercher les causes efficientes de ce qui arrive dans la
-               <lb/>nature des Choses, puisqu'il n'y en auroit aucune de deter<pc type="hyphenation">-</pc><lb break="no"/>minée. En un mot je leur ferois comprendre le ridicule qu'il
-               <lb/>y auroit de vouloir mesurer la grandeur d'une cause positive
-               <lb/>par autres Choses que par des effets homogénes et réels pro<pc type="hyphenation">-</pc><lb break="no"/>duits par l'entière Consumtion ou extinction de la cause, <del/>
-<lb/>j'appelle un effet réel ce qui subsite après l'action finie, qui
+               <lb/>nature des Choses, puisqu’il n’y en auroit aucune de déter<pc type="hyphenation">-</pc><lb break="no"/>minée. En un mot je leur ferois comprendre le ridicule qu’il
+               <lb/>y auroit de vouloir mesurer la grandeur d’une cause positive
+               <lb/>par autres Choses que par des effèts homogènes et réels pro<pc type="hyphenation">-</pc><lb break="no"/>duits par l’entière Consumtion ou extinction de la cause, <del/>
+<lb/>j’appelle un effèt réel ce qui subsiste après l’action finie, qui
             <pb facs="1073734" n="18"/>
-<lb/>est permanent, qui possède l'équivalent de sa cause,
+<lb/>est permanent, qui possède l’equivalent de sa Cause,
                <lb/>et qui peut la restituer quand on voudra. Ainsi un
-               <lb/>ressort bandé à un certain degré de compression,
-               <lb/>qui a absorbé toute la force d'un corps en mouvement,
+               <lb/>ressort bandé à un certain degré de Compression,
+               <lb/>qui a absorbé toute la force d’un Corps en mouvement,
                <lb/>sans faire attention au temps pendant lequel
-               <lb/>l'action de compression a durée, doit étre
-               <lb/>pris pour l'effet réel de la force du
-               <lb/>corps parcequ'après l'épuisement de
-               <lb/>cette force vous ne voyez rien qu'un
+               <lb/>l’action de compression a durée, doit étre
+               <lb/>pris pour l’effet réel de la force du
+               <lb/>corps parcequ’aprés l’epuisement de
+               <lb/>cette force vous ne voyés rien qu’un
                <lb/>ressort dans un état de compression,
-               <lb/>qui seul subsiste, qui seul est perma<pc type="hyphenation">-</pc><lb break="no"/>nent dans cet état où il est présen<pc type="hyphenation">-</pc><lb break="no"/>tement, jusqu'à ce qu'on le relache;
-               <lb/>mais vous n'y voyés pas des traces de
-               <lb/>durée, qui puissant vous apprendre,
-               <lb/>combien de temps <del>a </del>le corps a emplo<pc type="hyphenation">-</pc><lb break="no"/>yé pour comprimer ce ressort, aussi
-               <lb/>n'y feroit on point d'attention quand
-               <lb/>il s'agiroit de juger de la force <del/>
-<lb/><del/>
-<lb/>qui réside dans notre ressort bandé, on
-               <lb/>ne regarderoit qu'à son état pré<pc type="hyphenation">-</pc><lb break="no"/>sent et point de tout à la maniere dont
-               <lb/>il est parvenu à cet état de compression, 
-               <lb/><hi rend="u">unde habeat quaerat nemo sed oportet
-               <lb/>habere;</hi> c'est ici où on peut faire valoir
+               <lb/>qui seul subsiste, qui seul est p<subst><del>a</del><add>e</add></subst>rma<pc type="hyphenation">-</pc><lb break="no"/>nent dans cet état où il est presen<pc type="hyphenation">-</pc><lb break="no"/>tement, jusqu’à ce qu’on le relache;
+               <lb/>mais vous <subst><del><gap/></del><add>n</add></subst>’y voyés pas des traces de
+               <lb/>durée, qui puissent vous apprendre,
+               <lb/>com<del>p</del><add>b</add>ien de temps <del>a </del>le corps a emplo<pc type="hyphenation">-</pc><lb break="no"/>yé pour comprimer ce ressort, aussi
+               <lb/>n’y feroit on point d’attention quand
+               <lb/>il s’agiroit de juger de la force <del/>
+<lb/><del/><note type="editorial">Eine ganze Zeile durchgestrichen sowie auf der vorderen Zeile das letzte Wort.</note>
+<lb/>qui reside dans notre ressort bandé, on
+               <lb/>ne regarderoit qu’à son état pré<pc type="hyphenation">-</pc><lb break="no"/>sent et point de tout à la maniere dont
+               <lb/>il est parvenu à cet état de compression<unclear>,</unclear> 
+               <lb/><hi rend="u"><foreign xml:lang="lat">unde habeat <choice><sic>quarat</sic><corr>quaerat</corr></choice> nemo sed oportet
+               <lb/>habere</foreign></hi><note type="editorial">Die Sentenz kann wie folgt übersetzt werden:"Woher er es hat, fragt niemand, aber haben muss er es."</note>; c’est ici où on peut faire valoir
             <pb facs="1073735" n="19"/>
 <lb/>votre comparaison du fossé dont on veut
-               <lb/>estimer le prix qu'il a couté à creuser, on
-               <lb/>ne considère que la grandeur de l'ouvrage,
-               <lb/>sans s'informer s'il a été creusé en 20 jours
+               <lb/>estimer le prix qu’il a couté à creuser, on
+               <lb/>ne considere que la grandeur de l’ouvrage,
+               <lb/>sans s’informer s’il a été creusé en 20 jours
                <lb/>par 10 ouvriers, ou en 10 jours par 20 ouvriers,
-               <lb/>ou en 5 jours par 40 ouvriers, ou <del/><add>etc.</add>, car c'est
+               <lb/>ou en 5 jours par 40 ouvriers, ou <del/><add><del/></add>, car c’est
                <lb/>toujours le meme ouvrage; aussi ma
-               <lb/>comparaison peut quadrer, s'il s'agit
-               <lb/>de mesurer la quantité d'eau ecoulée
-               <lb/>d'un vase, je la mesure par ex. par pintes
-               <lb/>sans me mettre en p<del>a</del><add>e</add>ine combien il
-               <lb/>lui a fallu de temps pour s'ecouler.
-               <lb/>Si le raisonnement que je viens de faire
-               <lb/>étoit proposé avec plus d'éloquence et
-               <lb/>de force, <del>peut étre </del>peut étre que nos
-               <lb/>Adversaires Anglois s'y rendroient,
-               <lb/>mais si après tout cela ils ne veulent
-               <lb/>pas se ranger, c'est une marque,
-               <lb/>qu'ils ne sont pas disposés à écouter
-               <lb/>la raison, et qu'il <del>sont </del><add>faut</add> les abandon<pc type="hyphenation">-</pc><lb break="no"/>ner co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des Gens avec lesquels il n'y
-               <lb/>a pas moyen de disputer, laiss<del>e</del><add>a</add>nt à en
+               <lb/>comparaison peut quadrer, s’il s’agit
+               <lb/>de mesurer la quantité d’eau ecoulée
+               <lb/>d’un vase, je la mesure par <abbr>ex.</abbr> par pinte<unclear>s</unclear><note type="editorial">Die Masseinheit "pinte" kann ins Deutsche übersetzt werden als Pinte, Quart. Eine Pinte entspricht im vorliegenden Zusammenhang einem ungefähren Volumen von 0,93-0,95 Liter.</note>
+               <lb/>sans me mettre en p<del>a</del><add>e</add>ine <choice><sic>combient</sic><corr>combien</corr></choice> il
+               <lb/>lui a fallu de temps pour s’ecouler.
+               <lb/>Si le raisonement que je viens de faire
+               <lb/>étoit proposé avec plus deloquence et
+               <lb/>de force, <del>peut étre </del>peutétre que nos
+               <lb/>Adversaires Anglois s’y rendro<unclear>ien</unclear>t,
+               <lb/>mais si aprés tout cela ils ne veulent
+               <lb/>pas se ranger, c’est une marque,
+               <lb/>qu’ils ne sont pas disposés à écouter
+               <lb/>la raison, et qu’il <del>sont </del><add>faut</add> les <del>ap</del> abandon<pc type="hyphenation">-</pc><lb break="no"/>ner co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des Gens avec lesquels il n’y
+               <lb/>a pas moyen de disputer, laiss<del>e</del><add>a</add>nt <choice><orig>a</orig><reg>à</reg></choice> en
                <lb/>juger ceux des autres pays qui sont
-               <lb/>raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ables et exemts de préjugés.
+               <lb/>raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ables et exemts de prejugés.
                <lb/>Pour ce qui est des François, qui ne
                <lb/>sont pas encore venu à ce point de delicatesse
-               <lb/>que de faire entrer dans l'estimation des forces vives la
+               <lb/>que de faire entrer dans l’estimation des <rs type="keyword">forces vives</rs> la
             <pb facs="1073736" n="20"/>
-<lb/>Considération du tems, je crois qu'on viendra plus facile<pc type="hyphenation">-</pc><lb break="no"/>ment à bout de les convaincre par mon argument, car
-               <lb/>chez quelques unsil n'y a que de l'aveuglement et
-               <lb/>chez quelques autres qui se sont précipités à se déclarer
-               <lb/>contre nous (comme Mrs. <rs key="pers_DE-588-117683280" type="person">de Louville</rs>, <rs key="pers_DE-588-117622974" type="person">Bouguer</rs>,
-               <lb/><rs key="pers_DE-588-1089421028" type="person">Mazière</rs> et <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>, mon Correspondant lui-méme) ce n'est
-               <lb/>je crois que le point d'honneur qui les empêche de
-               <lb/>reconnoitre la verité. Mais passons enfin à d'autres
+<lb/>Considération du tems, je crois qu’on viendra plus facile<pc type="hyphenation">-</pc><lb break="no"/>ment à bout de les convaincre par mon argument, car
+               <lb/>chez quelques uns il n’y a que de l’aveuglement et
+               <lb/>chès<note type="editorial">Alte Form von "chez".</note> quelques autres qui se sont précipités à se declarer
+               <lb/>contre nous (comme <abbr>Mrs.</abbr> De <rs key="pers_DE-588-117683280" type="person">Louville</rs>, <rs key="pers_DE-588-117622974" type="person">Bouguer</rs>,
+               <lb/><rs key="pers_DE-588-1089421028" type="person">Mazière</rs> et de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, mon Correspondant lui mème) ce n’est
+               <lb/>je crois que le point d’honneur qui les empêche de
+               <lb/>reconnoitre la Verité. Mais passons enfin à d’autres
                <lb/>Choses.</p>
-<p><lb/>Ne soyés pas faché, Mr. que j'aye ecrit à Mr.
-               <lb/><rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> ce que vous m'aviez communiqué touchant
-               <lb/>Mr. Saurin: Car celuici ayant tenu le même
-               <lb/>discours, qu'à vous, à plusieurs autres Personnes ne
-               <lb/>pourra pas vous reconnoitre, comme je l'ai apris dernièrement<!-- Verschiebungen der einzelnen Wörter "d'un homme dernierement, RG 10.03.2023" -->
-<lb/>d'un homme arrivé de <rs key="place_GEO-2988507" type="place">Paris</rs> <add>qui alloit en <rs key="place_KON-deutsch" type="place">Allemagne</rs></add>. Ainsi vous n'
-               <lb/>aurez qu'à lui nier quand il voudra vous quest<pc type="hyphenation">-</pc><lb break="no"/>ionner là dessus; Mais je ne manquerai pas d'insi<pc type="hyphenation">-</pc><lb break="no"/>nuer cela à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> dès que je lui ecrirai
-               <lb/>de nouveau, pour écarter le soupçon qu'on pourroit
-               <lb/>avoir que ce soit Vous. Vous pourés même lui dire, si
-               <lb/>vous le trouvez bon, que tant s'en faut que vous
-               <lb/>m'ayez fait ce raport, qu'au contraire c'est de moi
+<p><lb/>Ne soyés pas faché, <abbr>Mr.</abbr> que j’aye ecrit à <abbr>Mr.</abbr>
+               <lb/>De <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> ce que vous m’aviez communiquè touchant
+  <lb/><abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-117619515">Saurin</rs>: Car celuici ayant tenu le meme
+               <lb/><rs type="biblio">Discours</rs>, qu’<choice><orig>a</orig><reg>à</reg></choice> vous, à plusieurs autres <rs type="person">Personnes</rs> ne
+               <lb/>pourra pas vous reconnoitre, comme je l’ai apris dernierement<note type="editorial">Wortfolge aufgrund hochgestellter Zahlen umgestellt.</note><!-- ToDo: allfällige Codierung -->
+  d’un <lb/> <rs type="person">homme</rs> arrivé de <rs key="place_GEO-2988507" type="place">Paris</rs> <add>qui alloit en <rs key="place_KON-deutsch" type="place">Allemagne</rs></add>. Ainsi vous n’
+               <lb break="no"/>aurez qu’a lui nier quand il voudra vous quest<pc type="hyphenation">-</pc><lb break="no"/>ionner la dessus; Mais je ne manquerai pas d’insi<pc type="hyphenation">-</pc><lb break="no"/>nuer cela à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> dès que je lui ecrirai
+               <lb/>de nouveau, pour écarter le soubçon<note type="editorial">veraltete Schreibweise, verwendet u.a. im 17. und 18. Jahrhundert.</note>, qu’on pourroit
+               <lb/>avoir que ce soit Vous. Vous pourez mème lui dire, si
+               <lb/>vous le trouvez bon, que tant s’en faut que vous
+               <lb/>m’ayez fait ce raport, qu’au contraire c’est de moi
             <pb facs="1073737" n="21"/>
-<lb/>que vous l'avez apris avec toutes les Circonstances
-               <lb/>que Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> vous l'avoit raconté auparavant.
-               <lb/>De ce que Mr. <rs key="pers_DE-588-117586765" type="person">Moivre</rs> m'a fait la justice de trouver
+<lb/>que vous l’avez apris avec toutes les Circonstances
+               <lb/>que <abbr>Mr.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> vous l’avoit raconté auparavant.
+               <lb/>De ce que <abbr>Mr.</abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs> m’a fait la justice de trouver
                <lb/>mauvais, que <rs key="pers_DE-588-100252419" type="person">Robins</rs>, comme un jeune homme et sans
-               <lb/>Reputation ait eu l'audace de m'attaquer et
-               <lb/>de me menager si peu, je voi qu'il a conservé pour
-               <lb/>moi quelque reste d'amitié et d'éstime, dont il
-               <lb/>me paroissoit m'avoir entierement privé depuis
-               <lb/>qu'il a rompu la Correspondance avec moi et
-               <lb/>que <del>c</del><add>l</add>es rigoureux Newtoniens m'ont declaré la
+               <lb/>Reputation ait eu l’audace de m’attaquer et
+               <lb/>de me menager si peu, je voi qu’il <choice><orig>à</orig><reg>a</reg></choice> conservé pour
+               <lb/>moi quelque reste d’amitié et d’éstime, dont il
+               <lb/>me paroissoit m’avoir entièrement privé depuis
+               <lb/>qu’il <choice><orig>à</orig><reg>a</reg></choice> rompu la Correspondance avec moi et
+               <lb/>que <subst><del>c</del><add>l</add></subst>es rigoureux Newtoniens m’ont declaré la
                <lb/>guerre: Je serois cependant curieux de savoir le
-               <lb/>sentiment de Mr. <rs key="pers_DE-588-117586765" type="person">Moivre</rs> sur les forces vives.
-               <lb/>Savez vous ce qu'on a publié il y a environ
-               <lb/>5 semaines dans nos Gazettes, qu'un Astronome
-               <lb/>Danois nommé Horre<del>tor</del><add>bow</add> a communiqué à <rs type="organisation">l'Acad.</rs>
-<lb/>de <rs key="place_GEO-498817" type="place">Petersb.</rs> des Observations sur la parallaxe
-               <lb/>annuelle<del>r</del> des Etoiles fixes, par laquelle le Système
-               <lb/>de Copernic sera desormais constitué hors de Contro<pc type="hyphenation">-</pc><lb break="no"/>verse, le mouvement de la terre étant par là entiè<pc type="hyphenation">-</pc><lb break="no"/>rement assuré. Or je viens d'aprendre maintenant
-               <lb/>que c'est <rs key="pers_DE-588-118656503" type="person">mon fils</rs> qui a inventé la methode de
+               <lb/>sentiment de <abbr>Mr.</abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs> sur les <rs type="keyword">forces vives</rs><supplied>.</supplied>
+               <lb/>Savez Vous ce qu’on a publié il y a environ
+               <lb/>5 semaines dans nos <rs type="biblio">Gazettes</rs>, qu’un Astronome
+  <lb/>Danois nommè <rs type="person" key="pers_DE-588-129767441">Horretor</rs><note type="editorial">Mit Bleistift oberhalb des Names hinzugefügt "bow". Korrekter Name: "Horrebow".</note> a communiqué à l’<rs type="organisation"><abbr>acad.</abbr></rs>
+<lb/>de <rs key="place_GEO-498817" type="place"><abbr>Petersb.</abbr></rs> des Observations sur la parallaxe
+               <lb/>annuelle<del>r</del> des Etoiles fixes, par laquelle le Systeme
+  <lb/>de <rs type="person" key="pers_DE-588-118565273">Copernic</rs> sera desormais constitué hors de Contro<pc type="hyphenation">-</pc><lb break="no"/>verse, le mouvement de la terre étant par là entie<pc type="hyphenation">-</pc><lb break="no"/>rement assûré. Or je viens d’aprendre maintenant
+               <lb/>que c’est mon <rs key="pers_DE-588-118656503" type="person">fils</rs> qui a inventé la methode de
                <lb/>rendre sensible la dite parallaxe et que suivant
-               <lb/>cette methode Mr.<rs key="pers_DE-588-129767441" type="person">Horrebow</rs> a fait ses observations
-               <lb/>dont il a rendu compte à <rs type="organisation">l'Acad.</rs>. <rs key="pers_DE-588-118656503" type="person">Mon fils</rs> m'ecrit
-               <lb/>que sa methode et les Observations du Danois
+               <lb/>cette methode <abbr>Mr.</abbr> <rs key="pers_DE-588-129767441" type="person">Horretor</rs> a fait ses observations
+               <lb/>dont il a rendu compte à l’<rs type="organisation"><abbr>acad.</abbr></rs>. mon <rs key="pers_DE-588-118656503" type="person">fils</rs> m’ecrit
+               <lb/>que sa methode et les observations du <rs type="person">danois</rs>
             <pb facs="1073738" n="22"/>
-<lb/>seront publiées dans les Memoires de l'Acad.,
+<lb/>seront publiées dans les <rs type="biblio">Memoires</rs> de l’<rs type="organisation"><abbr>acad.</abbr></rs>,
                <lb/>dont le premier Tome va paroitre au premier Jour.</p>
-<p><lb/>Vous verrez sans doute Mr. <rs key="pers_DE-588-118939297" type="person">S'Gravesande</rs>
+<p><lb/>Vous verrez sans doute <abbr>Mr.</abbr> <rs key="pers_DE-588-118939297" type="person">s’Gravesande</rs>
 <lb/>à <rs key="place_GEO-2751773" type="place">Leyde</rs>, auquel je vous prie de faire bien mes
-               <lb/>Compliments, en lui demandant s'il a reçû un exem<pc type="hyphenation">-</pc><lb break="no"/>plaire de mon discours sur le mouvement, comme
-               <lb/>j'en avois donné la Commission à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>:
-               <lb/>Mais en cas qu'il n'en ait point reçû, vous vous souvien<pc type="hyphenation">-</pc><lb break="no"/>drez de ce que je vous ai prié de lui donner le votre, et
+               <lb/>Compliments, en lui demandant s’il a reçû un exem<pc type="hyphenation">-</pc><lb break="no"/>plaire de mon <rs type="biblio">discours</rs> sur le mouvement, comme
+               <lb/>j’en avois donné la Commission à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>:
+               <lb/>Mais en Cas qu’il n’en ait point reçù, vous vous souvien<pc type="hyphenation">-</pc><lb break="no"/>drez de ce que je vous ai prié de lui donner le votre, et
                <lb/>que je ferai en sorte que Vous en aurez un autre à
-               <lb/><rs key="place_GEO-2988507" type="place">Paris</rs>. Puisque Mr. <rs key="pers_DE-588-118939297" type="person">s'Gravesande</rs> est du nombre de
-               <lb/>ceux, qui reconnoissent les forces vives, en faveur des
-               <lb/>quelles il a ecrit un petit livre, il aprouvera
+               <lb/><rs key="place_GEO-2988507" type="place">Paris</rs>. Puisque <abbr>Mr.</abbr> <rs key="pers_DE-588-118939297" type="person">s’Gravesande</rs> est du nombre de
+               <lb/>ceux, qui reconnoissent les <rs type="keyword">forces vives</rs>, en faveur des
+               <lb/>quelles il <choice><orig>à</orig><reg>a</reg></choice> ecrit un petit <rs type="biblio">livre</rs>, il aprouvera
                <lb/>sans doute mes nouvelles Demonstrations.</p> <closer><salute>Je suis
-               <lb/>avec toute sorte d'Estime et de Consideration
-               <lb/>Monsieur
-               <lb/>votre etc.</salute>
-<lb/><signed>J. <rs type="person">Bernoulli</rs></signed>
-<dateline>Bâle ce <date when="1728-07-04">4 7.<hi rend="sup">bre</hi>
+               <lb/>avec toute sorte d’Estime et de Consideration
+               <lb/><abbr>Monsr</abbr>
+               <lb/><abbr>V.</abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></salute>
+<lb/><signed><abbr>J.</abbr> <rs type="person">Bernoulli</rs></signed>
+                 <lb/><dateline><rs type="place" key="place_GEO-2661604">Bàle</rs> ce <date when="1728-07-04">4 7.<hi rend="sup">bre</hi>
 <lb/>1728</date></dateline></closer>
 <pb facs="1073739" n="23"/>
-<postscript><p><lb/>P. S. J'ai enfin reçû le Livre de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
-               <lb/>assez bien conditionné que vous avez eu la bonté
-               <lb/>de m'envoyer; Je vous prie de me dire, ce qu'il vous
+<postscript><p><lb/><abbr>P. S.</abbr> J’ai enfin reçû le <rs type="biblio">Livre</rs> de <abbr>Mr</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
+               <lb/>assez bien conditionné, que vous avez eu la bonté
+               <lb/>de m’envoyer; Je vous prie de me dire, ce qu’il vous
                <lb/>a couté, et à qui vous voulez que je remette
-               <lb/>l'argent; Messieurs les Anglois croyent ils main<pc type="hyphenation">-</pc><lb break="no"/>tenant que cette troisième Edition est dans toute
-               <lb/>sa perfection? Quant à moi j'y ai trouvé
-               <lb/>deja bien des choses à critiquer, quoique je
-               <lb/>l'aye parcouru très legerement.</p></postscript>
+               <lb/>l’argent; <abbr>Mrs.</abbr> les Anglois croyent ils main<pc type="hyphenation">-</pc><lb break="no"/>tenant que cette <rs type="biblio">troisième Edition</rs> est dans toute
+               <lb/>sa perfection? quant à moi j’y ai trouvé
+               <lb/>deja bien des Choses à critiquer, quoique je
+               <lb/>l’aye parcouru trés legerement.</p></postscript>
 <pb facs="1073740" n="24" type="empty"/>
 </div>
 </body>

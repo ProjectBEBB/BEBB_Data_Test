@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -161,8 +161,13 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-03-31" who="MK">Code angepasst</change>
+      <change when="2025-03-07" who="RG">Mathematikformel angepasst</change>
+      <change when="2025-02-19" who="MK RG">kollationiert und Code ergänzt, angepasst (MK)</change>
+      <change when="2025-02-17" who="MK">Code ergänzt, angepasst</change>
+      <change when="2025-02-14" who="MK RG">kollationiert</change>
       <change when="2023-02-17" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2022-11-23" who="CG">Personen und Orte</change>
       <change when="2022-09-19" who="CG">Header angepasst, Seitenzahlen eingefügt, Briefstruktur ausgezeichnet</change>
@@ -177,233 +182,235 @@
 <pb facs="1073702" n="1"/>
 <opener><dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1728-07-22">22 Juillet 1728</date></dateline>
 <lb/><salute>Monsieur</salute></opener>
-<p><lb/><rs key="B_991170514979305501" type="letter">La dernìere Lettre</rs> que je me suis donné l'honneur
+<p><lb/><rs key="B_991170514979305501" type="letter">La dernière Lettre</rs> que je me suis donné l’honneur
                <lb/>de vous ecrire etoit du 13 Mai qui servoit de reponse à
-               <lb/>vos deux anterieures du <rs key="B_991170514979505501" type="letter">10 Mars</rs> et <rs key="B_991170514979405501" type="letter">15 Avril</rs>.<del/>
-<lb/>elle contenoit une ample solution de toutes vos difficultez
-               <lb/>sur les forces vives avec plusieurs autres Choses; Tout
-               <lb/>cela formoit une tres grande Lettre; Mais du de<pc type="hyphenation">-</pc><lb break="no"/>puis j'ai reçu votre derniere du <rs key="B_991170514979205501" type="letter">22 Juin</rs> dans laquelle
-               <lb/>vous ne faites pas mention de la mienne du <rs key="B_991170514979305501" type="letter">13 Mai</rs>
-<lb/>quoique l'intervalle entre le 13 Mai et le 22 Juin soit assez
-               <lb/><del>long </del>long et même plus qu'il ne faut pour aller
-               <lb/>d'ici à <rs key="place_GEO-2643743" type="place">Londres</rs>; Ainsi je suis en peine de ma <rs type="letter">lettre</rs>, que
-               <lb/>je ne voudrois pas pour beaucoup qu'elle fut <del>per-</del>
+               <lb/>vos deux anterieures du <rs key="B_991170514979505501" type="letter">10 Mars</rs> et <rs key="B_991170514979405501" type="letter">15 Avril</rs><supplied>.</supplied><del/>
+<lb/><choice><orig>elle</orig><reg>Elle</reg></choice> contenoit une ample Solution de toutes vos difficultez
+               <lb/>sur les <rs type="keyword">forces vives</rs> avec plusieurs autres Choses; Tout
+               <lb/>cela formoit une trés grande <rs type="letter">Lettre</rs>; Mais du de<pc type="hyphenation">-</pc><lb break="no"/>puis j’ai reçû votre derniere du <rs key="B_991170514979205501" type="letter">22 Juin</rs> dans laquelle
+               <lb/>vous ne faites pas mention de la mienne du <rs key="B_991170514979305501" type="letter">13 Mai</rs>,
+<lb/>quoiq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> l’intervalle entre le 13 Mai et le 22 Juin soit assez
+               <lb/><del>long </del>long et même plus qu’il ne faut pour aller
+               <lb/>d’ici à <rs key="place_GEO-2643743" type="place">Londres</rs>; Ainsi je suis en peine de ma <rs type="letter">Lettre</rs> que
+               <lb/>je ne voudrois pas pour beaucoup qu’elle fut <del>per-</del>
 <lb/>perdue. Je vous prie de me tirer de cette peine
-               <lb/>la premiere fois que vous m'écrivez.</p>
-<p><lb/>J'ai lu la fameuse refutation de mon discours, que
-               <lb/>vous avez pris la peine de traduire; si on l'a fait
+               <lb/>la premiere fois que vous m’ecrirez.</p>
+<p><lb/>J’ai lu la fameuse <rs type="biblio">refutation</rs> de mon <rs type="biblio">discours</rs>, que
+               <lb/>vous avez pris la peine de traduire; si on l’a fait
                <lb/>sonner si haut avant meme <add>que</add> de paroitre on peut
                <lb/>veritablement dire comme vous remarquez fort
-               <lb/>bien <hi rend="u">Parturiunt montes</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je suis tout à fait de votre
-               <lb/>Avis, qu'on a senti la foiblesse de cette pièce et que
-               <lb/>c'est pour cela qu'on n'a pas osé l'ecrire en
-               <lb/>latin ni la do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er dans les Transactions de peur
-               <lb/>qu'elle ne parvint à ma connoissance,
+               <lb/>bien <foreign xml:lang="lat"><hi rend="u">Parturiunt montes</hi></foreign><note type="editorial">Die Redewendung "Parturiunt montes, nascetur ridiculus mus." stammt aus der Ars Poetica (Vers 139) von Horaz. Wörtlich übersetzt:"Die Berge kreissen, geboren wird eine lächerliche Maus." Hier wird es im Sinne verwendet, dass grosse Erwartungen geweckt werden (in der "refutation", die nicht eingehalten resp. erfüllt werden.</note> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je suis tout à fait de votre
+               <lb/>Avis, qu’on a senti la foiblesse de cette <choice><orig>piece</orig><reg>pièce</reg></choice> et que
+               <lb/>c’est pour cela qu’on n’a pas osé l’ecrire en
+               <lb/>latin ni la do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er dans les <rs type="biblio">Transactions</rs> de peur
+               <lb/>qu’elle ne parvint à ma connoissance,
             <pb facs="1073704" n="2"/>
-<lb/>et que je ne relevasse l'effronterie avec la quelle
-               <lb/>l'auteur entreprend de jouer le public et de lui jetter
-               <lb/>de la poussière aux yeux; En effet on voit que tout le
-               <lb/>dessein de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs> étoit de corrompre le veritable
+<lb/>et que je ne relevasse l’effronterie avec la quelle
+               <lb/>l’auteur entreprend de jouer le public et de lui jetter
+               <lb/>de la poussiere aux yeux; En Effet on voit que tout le
+               <lb/>dessein de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> étoit de corrompre le veritable
                <lb/>Sens de mes pensées, de rendre ridicules mes expressions,
                <lb/>de me préter des opinions grotesques et de refuter ainsi
-               <lb/>des absurdités qu'on m'attribue malicieusement. Jamais
-               <lb/>de ma vie je n'ai vû une refutation de cette nature.
-               <lb/>Ce n'est qu'un fatras de Chicanes étudiées avec malice
-               <lb/>pour noircir et supprimer, si faire se peut, l'eclat
-               <lb/>de la Verité que nos Envieux sentent bien qu'elle
-               <lb/>dissipera enfin les nuages de l'ignorance et des pre<pc type="hyphenation">-</pc><lb break="no"/>jugez; Je trouve que Msrs, les Anglois ont bien
-               <lb/>fait d'employer à cette belle Expedition un jeune
+               <lb/>des absurdités qu’on m’attribue malicieusement. Jamais
+               <lb/>de ma vie je n’ai vû une refutation de cette nature<supplied>.</supplied>
+               <lb/>Ce n’est qu’un fatras de Chicanes étudiées avec malice
+               <lb/>pour noircir et supprimer, si faire se peut, l’eclat
+               <lb/>de la Verité que nos Envieux sentent bien qu’elle
+               <lb/>dissipera enfin les nuages de l’ignorance et des pre<pc type="hyphenation">-</pc><lb break="no"/>jugez; Je trouve que <abbr>Msrs.</abbr>, les anglois ont bien
+               <lb/>fait d’employer à cette belle Expedition un jeune
                <lb/>Quakre, car il faut avoir le Diable au Corps
-               <lb/>qui inspire des traits si malins contre les raisonne<pc type="hyphenation">-</pc><lb break="no"/>ments les plus solides et les demonstrations aussi
-               <lb/>Claires que la plus Claire <rs key="pers_DE-588-118638955" type="person">d'Euclide</rs>. Il semble
-               <lb/>qu'on ait voulu hazarder et ce Quakre pour voir
-               <lb/>l'effet que son attaque aura, afin qu'on puisse
-               <lb/>la desavouer en cas de mauvais Succés, c'est pour<pc type="hyphenation">-</pc><lb break="no"/>quoi je ne trouve pas encore à propos de lui repondre,
-               <lb/>Sa personne me paroissant indigne de m'engager dans
-               <lb/>une dispute contre lui Seul, mais voici ce que je
+               <lb/>qui inspire des traits si malins contre les Raisonne<pc type="hyphenation">-</pc><lb break="no"/>ments les plus solides et les demonstrations aussi
+               <lb/>Claires que la plus Claire d’<rs key="pers_DE-588-118638955" type="person">Euclide</rs>. Il semble
+               <lb/>qu’on ait voulu hazarder ce Quakre pour voir
+               <lb/>l’effet que son attaque aura, afin qu’on puisse
+               <lb/>la desavouer en cas de mauvais Succés; c’est pour<pc type="hyphenation">-</pc><lb break="no"/>quoi je ne trouve pas encor à propos de lui repondre,
+               <lb/>Sa personne me paroissant indigne de m’engager dans
+               <lb/>une Dispute contre lui Seul, mais voici ce que je
                <lb/>souhaiterois que vous fassiez. Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e toute la nation
             <pb facs="1073705" n="3"/>
-<lb/>angloise ou au moins la plus part des Philo<pc type="hyphenation">-</pc><lb break="no"/>sophes Anglois s'interesse contre les forces vives, et
-               <lb/>qu'il paroit même que la piece de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs>
-<lb/>a été composée et donnée au jour au nom
+<lb/>angloise ou au moins la plus part des <rs type="person">Philo<pc type="hyphenation">-</pc><!-- bis hier kollationiert -->
+<lb break="no"/>sophes Anglois</rs> s’interesse contre les forces vives, et
+               <lb/>qu’il paroit même que la piece de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs>
+<lb/>a été Composée et donnée au jour au nom
                <lb/>de tous nos Antagonistes, je vous prie de faire
-               <lb/>inserer dans le même Journal ou a paru la piece
-               <lb/>de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs> un petit avis au Lecteur por<pc type="hyphenation">-</pc><lb break="no"/>tant en Substance que je souhaite que "<rs type="organisation">la
-               <lb/>Société R.</rs> à <rs key="place_GEO-2643743" type="place">Londres</rs> fasse une Declaration
-               <lb/>(comme elle à fait autrefois dans la dispute
-               <lb/>entre Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> et <del/><rs key="pers_DE-588-124275087" type="person">Keill</rs>) si la dite pie<pc type="hyphenation">-</pc><lb break="no"/>ce est avouée par la Société et si elle a été
-               <lb/>publiée avec son Consentement et approbation
-               <lb/>auquel cas je regarderai notre controverse co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-               <lb/>nationale du Coté des Anglois et j'honore<pc type="hyphenation">-</pc><lb break="no"/>rai Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e leur Advocat d'une
-               <lb/>Reponse, laquelle je me flatte do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>era
-               <lb/>Satisfaction à tous ceux qui voudront ecou<pc type="hyphenation">-</pc><lb break="no"/>ter sans prevention la raison et la verité;
-               <lb/>ajoutant qu'au defaut d'une telle declara<pc type="hyphenation">-</pc><lb break="no"/>tion je considererai l'écrit de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-               <lb/>une piece desavouée par consequent indigne de réponse."</p>
-<p><lb/>Voila Mr. ce que j'ai eu à dire sur cette belle
-               <lb/>refutation, quand j'aurai l'honneur de vous
-               <lb/>revoir, je vous en dirai en détail mon Sentiment
-               <lb/>sur chaque article qu'elle contient; vous serés
+               <lb/>inserer dans le meme journal <choice><orig>ou</orig><reg>où</reg></choice> a paru la <rs type="biblio">piece</rs>
+               <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> un petit <rs type="biblio">Avis au Lecteur</rs> por<pc type="hyphenation">-</pc><lb break="no"/>tant en Substance <cit type="long"><quote><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>que je souhaite que <rs type="organisation">la
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Société <abbr>R.</abbr></rs> à <rs key="place_GEO-2643743" type="place">Londres</rs> fasse<del/> une Declaration
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>(comme elle a faît autrefois dans la dispute
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>entre <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> et <del/><rs key="pers_DE-588-124275087" type="person">Keill</rs>) si la dite pie<pc type="hyphenation">-</pc><lb break="no"/>ce est avouée par la Société et si elle a été
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>publiée avec Son Consentement et approbation
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>auquel cas je regarderai notre Controverse co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>nationale du <choice><orig>Coté</orig><reg>Côté</reg></choice><!-- SG: Normalisierung nicht unbedingt nötig: https://books.google.ch/books?id=TgJZAAAAcAAJ&pg=PA223&dq=%22cot%C3%A9%22&hl=de&newbks=1&newbks_redir=0&sa=X&ved=2ahUKEwjCmZ_8kNOLAxXQ0wIHHXL6IpQQ6AF6BAgFEAM#v=onepage&q=%22cot%C3%A9%22&f=false --> des Anglois et j’honore<pc type="hyphenation">-</pc><lb break="no"/>rai <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e leur Advocat d’une
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Reponse, laquelle je me flatte do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>era
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Satisfaction à tous ceux qui voudront ecou<pc type="hyphenation">-</pc><lb break="no"/>ter sans prevention la raison et la verité
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ajoutant qu’au defaut d’une telle declara<pc type="hyphenation">-</pc><lb break="no"/>tion je considererai l’<rs type="biblio">écrit</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>une piece desavouée <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <choice><abbr>conseq.</abbr><expan>consequent</expan></choice> indigne de reponse."</quote></cit></p>
+<p><lb/>Voila <abbr>Mr.</abbr> ce que j’ai eu à dire sur cette belle
+               <lb/>refutation, quand j’aurai l’honneur de vous
+               <lb/>revoir, je vous en dirai en detail mon Sentiment
+               <lb/>sur chaque article qu’elle contient; vous serés<!-- bis hier kollationiert 14.2.2025 -->
             <pb facs="1073706" n="4"/>
-<lb/>surpris d'y voir tant de malice, de fraude, et de ruse
-               <lb/>dont l'Autheur a taché de rendre odieux mon discours,
-               <lb/>et que vous n'avez peutétre pas si bien remarqué que
-               <lb/>moi, parcequ'il y a des faits qui me sont mieux connus
-               <lb/>qu'à vous.</p>
-<p><lb/>Quant à l'experience faite sur une plaque de cuivre
-               <lb/>sur laquelle on laisse tomber doucement (lorsqu'elle
-               <lb/>est au bas de son Oscillation) un poids egal de plomb;
-               <lb/>je vous dirai Mr. que j'ai eu la même vuë il y a
+<lb/>surpris d’y voir tant de malice, de fraude, et de ruse,
+               <lb/>dont l’Autheur <choice><orig>à</orig><reg>a</reg></choice> taché de rendre odieux mon discours,
+               <lb/>et que vous n’avez peutétre pas si bien remarqué que
+  <lb/>moi, parcequ’il y <choice><orig>à</orig><reg>a</reg></choice> des faits qui me sont mieux connus
+               <lb/>qu’<choice><orig>a</orig><reg>à</reg></choice> vous.</p>
+<p><lb/>Quant à l’experience faite sur une plaque de cuivre
+               <lb/>sur laquelle on laisse tomber doucement (lorsqu’elle
+               <lb/>est au bas de son Oscillation)<note type="editorial">Schlussklammer wurde mit Bleistift hinzugefügt.<!--  --></note> un poids egal de plomb;
+  <lb/>je vous dirai <abbr>Mr.</abbr> que j’ai eu la meme vuë il y <choice><orig>à</orig><reg>a</reg></choice>
                <lb/>plus de deux ans pour faire une semblable
-               <lb/>experience; Mr. <rs key="pers_DE-588-118531379" type="person">Euler</rs> presentement à <rs key="place_GEO-498817" type="place">Petersbourg</rs>
-<lb/>à qui j'en ai fait part pourroit me rendre
-               <lb/>temoignage, mais avant que de mettre cette
+               <lb/>experience; <abbr>Mr.</abbr> <rs key="pers_DE-588-118531379" type="person">Euler</rs> presentement à <rs key="place_GEO-498817" type="place"><abbr>Petersb.</abbr></rs>
+<lb/>à qui j’en ai fait part pourroit me rendre
+               <lb/>temoignage; mais avant que de mettre cette
                <lb/>experience en Execution, je ne fus pas longtems
-               <lb/>sans m'a percevoir qu'elle n'etoit nullement propre
-               <lb/>à decider la Controverse, ainsi je l'ai negligée,
-               <lb/>prevoyant bien qu'elle devoit montrer ce que vous
-               <lb/>dites qu'elle a montré en effet. Sans pourtant
-               <lb/>étre en droit d'en inferer quele Système des
-               <lb/>forces vives <del>est </del><add>soit</add> faux; Je m'etonne que cette af<pc type="hyphenation">-</pc><lb break="no"/>faire vous ait tellement embarassé, que
-               <lb/>malgré votre Sagacité vous n'avez pas trouvé
+               <lb/>sans m’appercevoir qu’elle n’<subst><del><gap/></del><add>et</add></subst>oit nullement propre
+               <lb/>à decider la Controverse, ainsi je l’ai negligé<add>e</add>,
+               <lb/>prevoyant bien qu’elle devoit montrer ce que vous
+               <lb/>dites qu’elle a montré en effêt sans pourtant
+               <lb/>etre en Droit d’en inferer que le Système des
+               <lb/><rs type="keyword">forces vives</rs> <del>est </del><add>soit</add> faux; Je m’etonne que cette af<pc type="hyphenation">-</pc><lb break="no"/>faire vous ait tellement embarassé, que
+               <lb/>malgré votre Sagacité vous n’avez pas trouvé
                <lb/>sur le Champ la reponse convenable à y donner:
-               <lb/>La voici donc. Je dis que <del>cette </del>l'objection prise de
+               <lb/>La voici donc<supplied>,</supplied> je dis que <del>cette </del>l’objection prise de
                <lb/>cette experience est tout à fait semblable à
-               <lb/>cette autre que <del>l'</del><add>quelque </add>adversaire pourroit faire à
+               <lb/>cette autre que <del>l’</del><add>quelque</add>adversaire pourroit faire à
             <pb facs="1073707" n="5"/>
-<lb/>l'occasion du Choc de deux Corps sans ressort, soit,
-               <lb/>diroit-il, deux Corps <add>egaux</add> <formula>A</formula> et <formula>B</formula> sans ressorts, chacun
-               <lb/>de 4 livres, que <formula>A</formula> se meuve avec 24 degrez de vitesse
-               <lb/>contre <formula>B</formula> en repos; il est evident qu'après le choc le
-               <lb/>Corps <formula>A</formula> <del/><add>joint au</add> Corps <formula>B</formula> ira de Compagnie avec lui,
-               <lb/>et qu'il semble que selon le Système des forces vives
-               <lb/>la vitesse co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>une devroit être <formula>\sqrt{\frac{24\cdot24}{2}}=\sqrt{288}=17</formula>;
-               <lb/>mais suivant nos Antagonistes elle doit étre seu<pc type="hyphenation">-</pc><lb break="no"/>lement de <formula>\frac{24}{2}=12</formula>; Or l'experience seroit entière<pc type="hyphenation">-</pc><lb break="no"/>ment pour eux. Que repondriez vous Mr.
-               <lb/>à cette Objection? Vous diriez sans doute que si l'ex<pc type="hyphenation">-</pc><lb break="no"/>perience est pour eux, elle n'est pas contre nous,
+<lb/>l’occasion du Choc de deux Corps sans ressort, soit<supplied>,</supplied>
+               <lb/>diroit il, deux Corps <add>egaux</add> <formula>A</formula> et <formula>B</formula> sans ressort, chacun
+               <lb/>de 4 Livres, que <formula>A</formula> se meuve avec 24 Degrez de vitesse
+               <lb/>contre <formula>B</formula> en repos; il est evident qu’après le Choc le
+               <lb/>Corps <formula>A</formula> <del>avec le</del><add>joint au</add> Corps <formula>B</formula> ira de Compagnie avec lui,
+               <lb/>et qu’il semble que selon le Systeme des <rs type="keyword">forces vives</rs>
+  <lb/>la vitesse co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>une devroit être <choice rend="regFormula"><orig><formula>\sqrt{\frac{24\times{24}}{2}}=\sqrt{288}=17</formula></orig><reg><formula>\sqrt{\frac{24\cdot24}{2}}=\sqrt{288}=17</formula></reg></choice><!-- -->;
+               <lb/>mais suivant nos Antagonistes elle doit étre seu<pc type="hyphenation">-</pc><lb break="no"/>lement de <formula>\frac{24}{2}=12</formula>; Or l’experience seroit entiere<pc type="hyphenation">-</pc><lb break="no"/>ment pour eux. Que repondriez vous <abbr>Mr.</abbr>
+               <lb/>à cette Objection? Vous diriez sans doute que si l’ex<pc type="hyphenation">-</pc><lb break="no"/>perience est pour Eux, elle n’est pas contre nous,
                <lb/>car il est visible que dans ce cas la moitié de
-               <lb/>la force vive est consumée à faire la compres<pc type="hyphenation">-</pc><lb break="no"/>sion sans se restituer parceque elle se co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique
-               <lb/>ou à la matière ambiante ou au parties inter<pc type="hyphenation">-</pc><lb break="no"/>nes des deux Corps pour les faire tremousser.
-               <lb/>Je donne la meme <del>Obje</del> reponse à l'Objection
-               <lb/>tirée de l'experience de vos Msrs; Car lorsque
+               <lb/>la <rs type="keyword">force vive</rs> est consumée à faire la compres<pc type="hyphenation">-</pc><lb break="no"/>sion sans se restituer parcequ’elle se co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique
+               <lb/>ou à la matière ambiante ou <choice><sic>au</sic><corr>aux</corr></choice> parties inter<pc type="hyphenation">-</pc><lb break="no"/>nes des deux Corps pour les faire tremousser.
+               <lb/>Je donne la meme <del>Obje </del> reponse <choice><orig>a</orig><reg>à</reg></choice> l’Objection
+               <lb/>tirée de l’experience de vos <abbr>Msrs</abbr>; car lorsq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice>
                <lb/>le poids de plomb joint subitement la plaque
-               <lb/>de Cuivre, ses deux corps ne se separent plus,
-               <lb/>mais ils sont obligez d'aller conjointement; ils
+               <lb/>de Cuivre, ses deux Corps ne se separent plus
+               <lb/>mais ils sont obligez d’aller conjointement; ils
                <lb/>font donc un tout semblable aux deux Corps
                <lb/><formula>A</formula> et <formula>B</formula> non elastiques, se confondant par le
-               <lb/>choc en un Corps; n'y ayant d'autre dif<pc type="hyphenation">-</pc>
+               <lb/>Choc en un Corps; n’y ayant d’autre dif<pc type="hyphenation">-</pc>
 <pb facs="1073708" n="6"/>
-<lb break="no"/>ference que celle ci, qu'au lieu que le Corps cho<pc type="hyphenation">-</pc><lb break="no"/>quant <formula>A</formula> et s'unissant au Corps <formula>B</formula> le pousse
+<lb break="no"/>ference que celle ci, qu’au lieu que le Corps ch<del/>o<pc type="hyphenation">-</pc><lb break="no"/>quant <formula>A</formula> et s’unissant au Corps <formula>B</formula> le pousse
                <lb/>devant lui; ici la plaque de cuivre recevant sur
-               <lb/>elle le poids de plomb l'entraine avec elle, et co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+               <lb/>elle le poids de plomb l’entraîne avec elle, et co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
                <lb/>le Corps <formula>A</formula> rencontre le Corps <formula>B</formula> en repos, celui
-               <lb/>ci <del>commence</del> dans le moment qu'il est atteint
+               <lb/>ci <del>commence </del> dans le moment qu’il est atteint
                <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ence à gagner graduellement la moitié de
                <lb/>la Vitesse du Corps <formula>A</formula>, laquelle au méme moment
                <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ence à perdre graduellement aussi la moitié
                <lb/>de sa vitesse pour ne conserver ensemble que la
-               <lb/><del/>moitié de la force vive qu'avoit le Corps <formula>A</formula>,
-               <lb/>l'autre moitié etant employée comme j'ai dit à fai<pc type="hyphenation">-</pc>
+               <lb/><del/>moitié de la <rs type="keyword">force vive</rs> qu’avoit le Corps <formula>A</formula>,
+               <lb/>l’autre moitié etant employée comme j’ai dit à fai<pc type="hyphenation">-</pc>
 <lb/><lb break="no"/>re la Compression qui ne se restitue plus, mais qui
-               <lb/>communiq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> la partie absorbée de la force vive
+  <lb/>communiq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> la partie absorbée de la <rs type="keyword">force vive</rs>
                <lb/>ou à la matière qui environne les Corps, ou aux
-               <lb/>petites parties des Corps memes que la compressi<pc type="hyphenation">-</pc><lb break="no"/>on met en branlement; ainsi aussi la plaque
-               <lb/>de cuivre des le moment que le poids de plomb s'y
-               <lb/>joint, ne perd pas tout d'un coup la moitié de
-               <lb/>sa vitesse, et le plomb non plus ne l'acquiert
-               <lb/>pas tout d'un coup, mais cela se fait par degrés,
-               <lb/>et les deux poids s'accomodent ainsi graduel<pc type="hyphenation">-</pc><lb break="no"/>lement à la commune vitesse, qui sera la moi<pc type="hyphenation">-</pc><lb break="no"/>tié de celle qu'avoit la plaque de cuivre avant
+               <lb/>petites parties des Corps mèmes que la Compressi<pc type="hyphenation">-</pc><lb break="no"/>on met en branlement; ainsi aussi la plaque
+               <lb/>de Cuivre <choice><orig>dés</orig><reg>dès</reg></choice> le moment que le poids de plomb s’y
+               <lb/>joint, ne perd pas tout d’un Coup la moitié de
+               <lb/>sa vitesse, et le plomb non plus ne l’acquiert
+               <lb/>pas tout d’un coup, mais cela se fait par degrés,
+               <lb/>et les deux poids s’accomodent ainsi graduel<pc type="hyphenation">-</pc><lb break="no"/>lement à la commune vitesse, qui sera la moi<pc type="hyphenation">-</pc><lb break="no"/>tié de celle qu’avoit la plaque de cuivre avant
             <pb facs="1073709" n="7"/>
-<lb/>la jonction du plomb; il est vrai que le tems depuis
-               <lb/>le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement que le plomb se met à gagner par
-               <lb/>degrés de la vitesse jusqu'à avoir acquis la vitesse
-               <lb/>commune est insensible, de méme que le tems entre
-               <lb/>le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement et la fin de la compression des
-               <lb/>deux Corps <formula>A</formula> et <formula>B</formula> est aussi imperceptible: Mais
-               <lb/>vous me direz peutétre, qu'entre <del/>la plaque
-               <lb/>et le plomb il n'y a point de compression à s'i<pc type="hyphenation">-</pc><lb break="no"/>maginer, qui puisse leur donner le tems pour
-               <lb/>s'accomoder graduellement à la commune vites<pc type="hyphenation">-</pc><lb break="no"/>se, mais je reponds que les fibres des deu<del/><add>x</add> sur<pc type="hyphenation">-</pc><lb break="no"/>faces s'entrelassant par le contact mutuel ou
-               <lb/>avec les fibres du cuir mis entre deux pouvant
-               <lb/>préter et s'etendre <del/>un peu tiennent lieu
+<lb/>la jonction du plomb; il est vrai que le tems depuis<!-- bis hier teiCode ergänzt, durchgesehen; MK 14.2.2025 -->
+               <lb/>le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement que le plomb se met à gagner <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
+               <lb/>degrés de la vitesse jusqu’<choice><orig>a</orig><reg>à</reg></choice> avoir acquis la vitesse
+               <lb/>commune est insensible, de mème que le tems entre
+               <lb/>le <abbr>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encemt.</abbr> et la fin de la compression des
+               <lb/>deux corps <formula>A</formula> et <formula>B</formula> est aussi imperceptible: Mais
+               <lb/>vous me direz peutètre, qu’entre <del/>la plaque
+  <lb/>et le plomb il n’y <choice><orig>à</orig><reg>a</reg></choice> point de compression à s’i<pc type="hyphenation">-</pc><lb break="no"/>maginer, qui puisse leur donner le tems pour
+               <lb/>s’accomoder graduellement à la commune vites<pc type="hyphenation">-</pc><lb break="no"/>se, mais je reponds que les fibres des deu<del/><add>x</add> sur<pc type="hyphenation">-</pc><lb break="no"/>faces s’entrelassant par le contact mutuel ou
+               <lb/>avec les fibres de cuir mis entre deux pouvant
+               <lb/>prèter et s’etendre <del/>un peu tiennent lieu
                <lb/>de ce qui se fait dans la Compression des
-               <lb/>Corps <formula>A</formula> et <formula>B</formula>; d'où il suit que la moitié de
-               <lb/>la force vive de la plaque est employée à
-               <lb/>étendre ces fibres et causer par là un trem<add>o</add>us<pc type="hyphenation">-</pc><lb break="no"/>sement dans les petites parties du cuivre et
-               <lb/>du plomb, et que l'autre moitié se conserve
+               <lb/>Corps <formula>A</formula> et <formula>B</formula>; D’où il suit que la moitié de
+               <lb/>la <rs type="keyword">force vive</rs> de la plaque est employée à
+               <lb/>étendre ces fibres et causer par <choice><orig>la</orig><reg>là</reg></choice> un <abbr>trem<add>o</add>us<pc type="hyphenation">-</pc><lb break="no"/>semt.</abbr> dans les petites parties du cuivre et
+               <lb/>du plomb, et que l’autre moitié se conserve
                <lb/>dans le mouvement commun de la mass<del/><add>e</add> totale,
-               <lb/>en un mot il n'y a pas plus de validité <del/>
-<lb/>dans l'objection prise de l'experience en question,
-               <lb/>qu'il y en auroit dans celle qu'on voudroit tirer
+               <lb/>en un mot il n’y a pas plus de validité <del/>
+<lb/>dans l’objection prise de l’experience en question,
+               <lb/>qu’il y en auroit dans celle qu’on voudroit tirer
                <lb/>du choc des deux Corps <formula>A</formula> et <formula>B</formula> sans ressort,
             <pb facs="1073710" n="8"/>
-<lb/>laquelle cependant perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e ne s'est avisé de
+<lb/>laquelle cependant perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e ne s’est avisé de
                <lb/>nous faire. Vous voilà donc en etat de tenir
-               <lb/>téte à ces Msrs. les faiseurs d'experience: j'ai
-               <lb/><del/>fait bien d'autres reflexions assez curi<pc type="hyphenation">-</pc><lb break="no"/>euses à l'occasion de cela, que je vous com<pc type="hyphenation">-</pc><lb break="no"/>muniquerai une autre fois. Je vais presentement
-               <lb/>proposer à mon tour une experience, laquel<pc type="hyphenation">-</pc><lb break="no"/>le vous ferez voir à ces Msrs. pour les con<pc type="hyphenation">-</pc><lb break="no"/>vaincre de la Verité du Système des forces
-               <lb/>vives: Soit <formula>ABC</formula> un ressort fait <del/>de bon acier
-               <lb/>en forme de ceux que j'employe ou que je
+               <lb/>tète à ces <abbr>Msrs.</abbr> les faiseurs d’experience: j’ai
+               <lb/><del/>fait bien d’autres reflexions assez curi<pc type="hyphenation">-</pc><lb break="no"/>euses à l’occasion de cela, que je vous com<pc type="hyphenation">-</pc><lb break="no"/>muniquerai une autre fois. Je vais <abbr>presentemt.</abbr>
+               <lb/>proposer à mon tour une experience, laquel<pc type="hyphenation">-</pc><lb break="no"/>le vous ferez voir à ces <abbr>Msrs.</abbr> pour les con<pc type="hyphenation">-</pc><lb break="no"/>vaincre de la Verité du Systeme des <rs type="keyword">forces
+               <lb/>vives</rs>: Soit <formula>ABC</formula> un ressort fait <del/>de bon acier
+               <lb/>en forme de ceux que j’employe ou que je
                <lb/>suppose dans mon discours; Que ce ressort soit
-               <lb/>comprimé à un angle donné (p. ex. à 30 degrés
-               <lb/>supposé qu'étant debandé il fasse un angle
-               <lb/>de 40 degrés) et qu'on lie les deux bouts <formula>A</formula> et
+               <lb/>comprimé à un angle donné (<abbr><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice></abbr> <abbr>ex.</abbr> à 30 <abbr>degr.</abbr>,
+               <lb/>supposé qu’étant debandé il fasse un angle
+               <lb/>de 40 <abbr>degr<supplied>.</supplied></abbr>) et qu’on lie les deux bouts <formula>A</formula> et
                <lb/><formula>C</formula> avec une ficelle <formula>AC</formula> pour le tenir bandé.
-               <lb/>Qu'on suspende un poids <formula>D</formula> p. ex. de 4 livres au
-               <lb/>cordon <formula>ED</formula> long p. ex. de 6 pieds ou davantage en forme de pendule; que l'extremité du ressort
-               <lb/><formula>A</formula> soit appuyé contre un point fixe et immo<pc type="hyphenation">-</pc><lb break="no"/>bile, pendant que l'autre extremité <formula>C</formula> touche
-               <lb/>le poids <formula>D</formula>, cela étant ainsi preparé, on cou<pc type="hyphenation">-</pc><lb break="no"/>pera avec des Sisaux la ficelle <formula>AC</formula>, d'où il
+               <lb/>Qu’on suspende un poids <formula>D</formula> <abbr><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice></abbr> <abbr>ex.</abbr> de 4 livres au
+               <lb/>cordon <formula>ED</formula> long <abbr><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice></abbr> <abbr>ex.</abbr> de 6 pieds ou davantage en
+  <lb/>forme de pendule; que l’extremité du ressort
+               <lb/><formula>A</formula> soit appuyé contre un point fixe et immo<pc type="hyphenation">-</pc><lb break="no"/>bile, pendant que l’autre extremité <formula>C</formula> touche
+               <lb/>le poids <formula>D</formula>, cela etant ainsi preparé on cou<pc type="hyphenation">-</pc><lb break="no"/>pera avec des <choice><orig>Sisaux</orig><reg>Ciseaux</reg></choice> la ficelle <formula>AC</formula>, d’où il
                <lb/>arrivera que le ressort se <del/>debandant
                <lb/>brusquement poussera le poids <formula>D</formula> et lui
-            <pb facs="1073711" n="9"/>
+            <pb facs="1073711" n="9"/><!-- bis hier kollationiert 19.02.2025 -->
 <lb/>imprimera une Vitesse qui lui fera decrire un arc. Il faut
-               <lb/>donc observer soigneusement le point <formula>G</formula> jusqu'où le bord
+               <lb/>donc observer soigneusement le point <formula>G</formula> jusqu’où le bord
                <lb/>du poids opposé à <formula>C</formula> peut monter; Il faut aussi observer
-               <lb/>le point <formula>F</formula>, où <del>se </del>ce même bord se trouve, quand le
-               <lb/>Ressort debandé est mis entre <formula>A</formula> et <formula>C</formula>, c. à. d. quand l'angle
-               <lb/><formula>ABC</formula> est de 40 degrés: ou dans la plus grande dilatation;
-               <lb/>car c'est dans ce point <formula>F</formula>, que le <del>point </del><add>poids</add> aura acquis par
+               <lb/>le point <formula>F</formula>, où <del>se </del>ce meme bord se trouve, quand le
+               <lb/>Ressort debandé est mis entre <formula>A</formula> et <formula>C</formula>, <choice><abbr>c. a. d.</abbr><expan>c’est-à-dire</expan></choice> quand l’angle
+               <lb/><formula>ABC</formula> est de 40 <abbr>Degr.</abbr> ou dans <unclear>s</unclear>a plus grande Dilatation;
+               <lb/>car c’est dans ce point <formula>F</formula>, que le <del>point </del><add>poids</add> aura acquis par
                <lb/>la pression du ressort sa plus grande vitesse. Je suppose
                <lb/>que le ressort est fort et vif, mais assez petit par rap<pc type="hyphenation">-</pc><lb break="no"/>port à la <del>grandeur </del>longueur <formula>ED</formula>, pour que le petit
-               <lb/>arc <formula>DF</formula>, puisse passer sensiblement pour une ligne droite
-               <lb/>horizontale n'étant p. ex. que de 2 degrés ou encore
-               <lb/>moindre. Ainsi ayant observé l'arc <formula>FG</formula> qui soit p. ex. de
-               <lb/>24 degrés j'attache au cordon <formula>ED</formula> un autre poids <formula>D</formula>,
-               <lb/>qui soit p. ex. de 8 livres, je rebande mon ressort au
-               <lb/>même angle de Compression <formula>ABC</formula>, de 30 degrés; en<pc type="hyphenation">-</pc><lb break="no"/>suite je fais la même operation, pour observer le
-               <lb/>point <formula>H</formula>, jusqu'où monte le <del/><add>bord</add> oriental du poids
+               <lb/>arc <formula>DF</formula>, puisse passer <abbr>sensiblemt.</abbr> pour une ligne droite
+               <lb/>horizontale, n’étant <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> que de 2 <abbr>degr.<hi rend="sup">s</hi></abbr> ou encore
+  <lb/>moindre. Ainsi ayant observé l’arc <formula>FG</formula> qui soit <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> de
+  <lb/>24 <abbr>degr.<hi rend="sup">s</hi></abbr> j’attache au cordon <formula>ED</formula> un autre poids <formula>D</formula>,
+  <lb/>qui soit <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> de 8 livres, je rebande mon ressort au
+  <lb/>méme angle de Compression <formula>ABC</formula>, de <del>30</del> 30 <abbr>Degr.<hi rend="sup">s</hi></abbr>; en<pc type="hyphenation">-</pc><lb break="no"/>suite je fais la meme operation, pour observer le
+               <lb/>point <formula>H</formula>, jusqu’où monte le <del>point</del><add>bord</add> oriental du poids
                <lb/>de 8 livres; Or les arcs <formula>FG</formula>, <formula>FH</formula>, étant sensiblement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-               <lb/>les vitesses au point <formula>F</formula> avec lesquelles les deux corps
-               <lb/>commencent de monter, il faudroit suivant
-               <lb/>l'opinion de nos Messieursles anta<pc type="hyphenation">-</pc><lb break="no"/>gonistes que l'arc <formula>FH</formula> fut la moitié de l'arc
-               <lb/><formula>FG</formula>, c. à. d. de 12 degrés; mais suivant le Système
-               <lb/>des forces vives, je prétends qu'on le trouvera
+               <lb/>les Vitesses au point <formula>F</formula> avec lesquelles les deux corps
+               <lb/>commencent de monter il faudroit suivant
+               <lb/>l’opinion de Nos <rs type="person">Messieurs</rs> les anta<pc type="hyphenation">-</pc><lb break="no"/>gonistes que l’arc <formula>FH</formula>, fut la moitié de l’arc
+  <lb/><formula>FG</formula>, <choice><abbr>c. a. d.</abbr><expan>c’est-à-dire</expan></choice> de 12 <abbr>degr.<hi rend="sup">s</hi></abbr>; mais suivant le Système
+               <lb/>des <rs type="keyword">forces vives</rs>, je prétends qu’on le trouvera
             <pb facs="1073712" n="10"/>
-<lb/>de 17 degrés. On n'a qu'à en faire l'experience, mais
-               <lb/>avec toute l'exactitude possible, je suis assuré que
-               <lb/>le succés sera entièrement pour nous.</p>
-<p><lb/>Dans<note type="editorial">Dieser Absatz eigenhändig von Joh I B</note> cette experience je ne fai point
-               <lb/>d'attention à la quantité de matiere, qui
-               <lb/>est dans le ressort lui-même <formula>ABC</formula>, mais je la
-               <lb/>suppose co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peu de chose par rapport à la
-               <lb/>quantité de matiere du corps M.</p>
+<lb/>de 17 <abbr>Degr</abbr>. On n’a qu’à en faire l’experience, mais
+               <lb/>avec toute l’exactitude possible, je suis assuré que
+               <lb/>le Succès sera entièrement pour nous.</p>
+<p><lb/>Dans<note type="editorial">Dieser Absatz eigenhändig von Johann I Bernoulli</note> cette experience je ne fai point
+               <lb/>d’attention à la quantité de matiere, qui
+               <lb/>est dans le ressort lui-meme <formula>ABC</formula>, mais je la
+               <lb/>suppose co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peu de chose, par rapport à la
+               <lb/>quantité de matiere du corps <formula>D</formula>.</p>
 <closer><salute><lb/>Je suis avec
-               <lb/>un parfait attachement
+               <lb/>un parfait <abbr>attachemt.</abbr>
                <lb/>Monsieur
-               <lb/>Votre très humble et trés obeissant
+               <lb/>Votre tres humble et trés obeissant
                <lb/>Serviteur</salute>
-<lb/><signed>Jean <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs></signed></closer>
-<postscript><p><lb/>1. P. S. Ce Mr. <rs key="pers_DE-588-118663208" type="person">Bulffinger</rs> qui a remporté le prix
-               <lb/>est justement celui à qui <rs key="pers_DE-588-118656503" type="person">mon fils</rs> avoit prété le
-               <lb/>Manuscrit de sa piece dont il soupçonnoit que Mr.
-               <lb/><rs key="pers_DE-588-118663208" type="person">Bulff.</rs> peut avoir emprunté ses idées sur la pesanteur.
-               <lb/>Mais le discours de Mr. <rs key="pers_DE-588-118663208" type="person">Bulffinger</rs> quand il sera
-               <lb/>imprimé montrera si le soupçon de <rs key="pers_DE-588-118656503" type="person">mon fils</rs> etoit
+<lb/><signed>Jean <rs key="pers_DE-588-118509969" type="person">Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></signed></closer>
+<postscript><p><lb/>1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>P.</abbr> <abbr>S.</abbr> Ce <abbr>Mr.</abbr> <rs key="pers_DE-588-118663208" type="person">Bulffinger</rs> qui a remporté le prix
+               <lb/>est justement celui à qui mon <rs key="pers_DE-588-118656503" type="person">fils</rs> avoit prèté le
+               <lb/><abbr>MSCrit</abbr> de sa <rs type="biblio">piece</rs> dont il soupçonnoit que <abbr>Mr.</abbr>
+               <lb/><rs key="pers_DE-588-118663208" type="person"><abbr>Bulff.</abbr></rs> peut avoir empr<subst><add><del>a</del></add></subst>nté ses idées sur la pesanteur
+               <lb/>mais le Discours de <abbr>Mr.</abbr> <rs key="pers_DE-588-118663208" type="person">Bulffinguer</rs> quand il sera
+               <lb/>imprimé montrera si le soupçon de mon <rs key="pers_DE-588-118656503" type="person">fils</rs> etoit
                <lb/>fondé.</p>
 <pb facs="1073713" n="11"/>
-<p><lb/>2. P. S.<note type="editorial">Ebenfalls eigenhändig</note> Marqués moi s.v.p. le Titre et l'endroit du Journal où l'ecrit de
-               <lb/>Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs> a paru, je pourai en avoir besoin. Je voudrois aussi savoir
-               <lb/>si l'experience avec la plaque de cuivre a été rendue publique, et qui
-               <lb/>en est l'Auteur.</p></postscript>
+<p><lb/>2<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>P.</abbr> <abbr>S.</abbr> <note type="editorial">Ebenfalls eigenhändig von Johann I Bernoulli</note> Marqués moi <choice><abbr>s.v.p.</abbr><expan>s’il vous plaît</expan></choice> le Titre et l’endroit du <rs type="biblio">Journal</rs> où l’<rs type="biblio">ecrit</rs> de
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> a paru, je pourai en avoir besoin. Je voudrois aussi savoir,
+               <lb/>si l’experience avec la plaque de cuivre a été rendue publique, et qui
+               <lb/>en est l’<rs type="person">Auteur</rs>.</p></postscript>
 <!-- Im Manuskript steht hier noch weiterer Text  -->
-<!-- Offensichtlich handelt es sich um den Brief 000055735, RG 17.02.2023 -->
+<!-- Offensichtlich handelt es sich um den Brief 000055735 RG 17.02.2023; siehe auch note generalRemark im Header MK 2.4.2025 -->
 </div>
 </body>
 </text></TEI>

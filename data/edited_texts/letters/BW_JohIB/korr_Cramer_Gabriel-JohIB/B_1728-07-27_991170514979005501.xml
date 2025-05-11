@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -47,7 +47,7 @@
     <notesStmt>
       <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
       <note type="generalRemark">
-        <p>Auf der Rückseite der beiden Blätter der Fotografie dieser eigenhändigen Abfertigung des Briefes (Masse des Originals 17,5 x 11,5 cm) ein Stempel "Autogr.-Sammlg Geigy-Hagenbach" und der Bleistiftvermerk "Kat. 755". Dann von der Hand Otto Spiess': "Johann Bernoulli an G. Cramer Basel 27 Juillet 1728" (Der Adressat ist auf der Abfertigung nicht genannt). Das Original aus der Sammlung Geigy-Hagenbach wurde von der UB Basel nicht erworben. Sein gegenwärtiger Standort ist unbekannt. Eine weitere Fotografie dieser Abfertigung befindet sich seit 2009 im Archiv der Bernoulli-Briefwechseledition des BEZ. Das Original weist Siegelspuren auf.</p>
+        <p>Auf der Rückseite der beiden Blätter der Fotografie dieser eigenhändigen Abfertigung des Briefes (Masse des Originals 17,5 x 11,5 cm) ein Stempel "Autogr.-Sammlg Geigy-Hagenbach" und der Bleistiftvermerk "Kat. 755". Dann von der Hand Otto Spiess’: "Johann Bernoulli an G. Cramer Basel 27 Juillet 1728" (Der Adressat ist auf der Abfertigung nicht genannt). Das Original aus der Sammlung Geigy-Hagenbach wurde von der UB Basel nicht erworben. Sein gegenwärtiger Standort ist unbekannt. Eine weitere Fotografie dieser Abfertigung befindet sich seit 2009 im Archiv der Basler Edition der Bernoulli-Briefwechsel (BEBB) des BEZ. Das Original weist Siegelspuren auf.</p>
       </note>
       <note type="print">pythonPlaceholderContent</note>
       <note type="erschliessbarkeit">Erhalten</note>
@@ -155,6 +155,7 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
   <listChange>
+    <change when="2025-02-19" who="MK">tei Code ergänzt, korrigiert</change>
     <change when="2022-11-23" who="CG">Personen, Orte</change>
   </listChange>
   </revisionDesc>
@@ -175,10 +176,27 @@
 <div type="letter">
 <pb/>
 <opener><salute>Monsieur</salute></opener>
-<p>Ce mot de Lettre n'est que pour Vous donner avis que je Vous ecrivis jeudi passé une reponse à <rs key="B_991170514979205501" type="letter">la Votre du 22. Juin</rs>, que j'ai adressée à Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> à <rs key="place_GEO-2988507" type="place">Paris</rs>. Elle contient quelques reflexions generales sur la piece de Mr. <rs key="pers_DE-588-100252419" type="person">Robins</rs>, et une Reponse à l'objection tirée de l'experience avec la plaque de cuivre sur laquelle étant en oscillation on laisse tomber un poids de plomb. J'ai fait voir que cette experience ne prouve rien contre la Theorie des forces vives, et qu'elle est semblable à celle qu'on feroit avec deux corps sans ressort, dont l'un en mouvement choqueroit directement l'autre en repos, auquel si le choquant étoit egal, ne lui communi queroit que la moitié de sa vitesse et iroit avec lui aprés le choc de compagnie, ensorte que la moitié de la force vive paroi tra étre perdue. Je Vous avois aussi ecrit <rs type="letter">une tres grande lettre</rs><!-- dieser Brief scheint nicht erhalten zu sein --> datée du 23. Mai, en reponse à Vos deux precedentes du <rs key="B_991170514979505501" type="letter">10. Mars</rs> et <rs key="B_991170514979405501" type="letter">15 Avril</rs>, mais de laquelle Vous ne faites pas mention dans <rs key="B_991170514979205501" type="letter">Votre derniere du 22 Juin</rs>, auquel temps Vous pouviés déja avoir reçû la mienne; ce silence me mettant en peine, je Vous prie de m'en tirer au plutot pour savoir si enfin elle Vous a été rendue. </p>
-<p>Vous y aurés trouvé bien des choses pour la confirmation de la Theorie des forces vives et une ample solution de Votre difficulté, qui consistoit à me demander <hi rend="u">d'où vient que c'est l'increment de la vitesse, et non pas celui de la force vive qui dans un temps infiniment petit est proportionel à ce temps et à la pression</hi>: c'est à dire, pourquoi il faut faire <formula>dv=\frac{pdx}{v}</formula> et non pas <formula>df=\frac{pdx}{v}</formula>?</p> <closer><salute>Je finis en Vous temoignant que je suis toujours avec la plus parfaite consideration Monsieur Votre tres humble et tres obeissant serviteur</salute> J. <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs>
+  <p><lb/>Ce mot de Lettre n’est que pour Vous do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er avis que je Vous ecrivis jeudi passé une Reponse 
+  <lb/>à <rs key="B_991170514979205501" type="letter">la Vòtre du 22 Juin</rs>, que j’ai adressée à <abbr>Mr.</abbr>
+  <lb/>de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> à <rs key="place_GEO-2988507" type="place">Paris</rs>. Elle contient quelques         
+  <lb/>Reflexions generales sur la piece de <abbr>Mr.</abbr> 
+  <lb/><rs key="pers_DE-588-100252419" type="person">Robins</rs>, et une Reponse à l’Objection tirée 
+  <lb/>de l’experience avec la plaq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> de cuivre sur laquelle etant en oscillation on laisse 
+  <lb/>tomber un poids de plomb. J’ai fait voir que
+  <lb/>cette Experience ne prouve rien contre la 
+  <lb/>Theorie des <rs type="keyword">forces vives</rs>, <del>es</del> et qu’elle
+  <lb/>est semblable à celle qu’on feroit avec
+  <lb/>deux corps sans ressort, dont l’un en
+  <lb/>mouvement choqueroit directement, <del>auq</del> l’autre en repos, auquel si le choquant
+  <lb/><subst><del>est</del><add>étoit</add></subst> egal, ne lui co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqueroit que la moitié
+  <lb/>de sa vitesse et iroit avec lui après le choc
+  <lb/>de compagnie, en sorte que la moitié de
+  <lb/>la <rs type="keyword">force vive</rs> paroitra étre perdue. Je Vous
+  <lb/>avois aussi ecrit une trés grande <rs type="letter" key="B_991170514979305501">Lettre</rs><!-- dieser Brief scheint nicht erhalten zu sein --> 
+  <lb/>datée du 23. Mai<note type="editorial">Sehr wahrscheinlich hat sich hier der Briefautor verschrieben, denn es gibt einen sehr langen Brief von 36 Seiten vom 13. Mai 1728, auf den er sich wohl bezieht.</note>, en reponse à Vos deux precedentes du <rs key="B_991170514979505501" type="letter">10. Mars</rs> et <rs key="B_991170514979405501" type="letter">15 Avril</rs>, mais de laquelle Vous ne faites pas mention dans <rs key="B_991170514979205501" type="letter">Votre derniere du 22 Juin</rs>, auquel temps Vous pouviés déja avoir reçû la mienne; ce silence me mettant en peine, je Vous prie de m’en tirer au plutot pour savoir si enfin elle Vous a été rendue. </p>
+<p>Vous y aurés trouvé bien des choses pour la confirmation de la Theorie des <rs type="keyword">forces vives</rs> et une ample solution de Votre difficulté, qui consistoit à me demander <hi rend="u">d’où vient que c’est l’increment de la vitesse, et non pas celui de la <rs type="keyword">force vive</rs> qui dans un temps infiniment petit est proportionel à ce temps et à la pression</hi>: c’est à dire, pourquoi il faut faire <formula>dv=\frac{pdx}{v}</formula> et non pas <formula>df=\frac{pdx}{v}</formula>?</p> <closer><salute>Je finis en Vous temoignant que je suis toujours avec la plus parfaite consideration<supplied>,</supplied> Monsieur Votre tres humble et tres obeissant serviteur</salute> <abbr>J.</abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs>
 <dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1728-07-27">7 Juillet 1728</date></dateline></closer>
-<postscript><p>P.S. <rs key="pers_DE-588-119166895" type="person">Mon neveu</rs> Vous fait ses compliments; il y a quelques semaines qu' il Vous a ecrit une lettre sous l'adresse de <rs type="person">Mr.Caille</rs>: dont je me sers aussi toujours en Vous ecrivant. </p></postscript>
+  <postscript><p><abbr>P.S.</abbr> Mon <rs key="pers_DE-588-119166895" type="person">neveu</rs> Vous fait ses compliments; il y a quelques semaines qu’ il Vous a ecrit une <rs type="letter">lettre</rs> sous l’adresse de <abbr>Mr.</abbr> <rs type="person">Caille</rs>: dont je me sers aussi toujours en Vous ecrivant. </p></postscript>
 <closer><address>
 <addrLine>Adresse:</addrLine>
 <addrLine>A Monsieur</addrLine>

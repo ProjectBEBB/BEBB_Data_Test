@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514978505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -173,8 +173,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-04-04" who="MK RG">kollationiert</change>
+      <change when="2025-03-21" who="RG">Anpassungen gemacht</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-04-13" who="RG">Zeilenabstände eingefügt, Adresse transkripiert, kleine Änderung</change>
       <change when="2022-10-03" who="CG">Header, Seitenzahlen Briefstruktur, Personen und Orte</change>
@@ -187,76 +189,76 @@
 <body>
 <div type="letter">
 <pb facs="1073769" n="1"/>
-<opener><dateline><rs key="place_GEO-2988507" type="place">Paris</rs>, ce <date when="1729-05-06">6 mai 1729</date></dateline>
+<opener>
 <salute>Monsieur,</salute></opener>
-<p><lb/>Votre chère lettre m'a causé un sensible plaisir, voyant l'intérêt que vous
-               <lb/>prenez à ma santé. Je vous écris fort à la hâte, étant sur le point de mon
-               <lb/>départ pour <rs key="place_GEO-2660646" type="place">Genève</rs>, qui sera après demain. Mr. <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> m'a fort chargé,
-               <lb/>toutes les fois que je l'ai vû, de vous faire bien ses complimens. Je ne sçai 
-               <lb/>si Mr. de <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs> réussira mieux que moi à le convertir sur l'article des
-               <lb/>forces vives. C'est ce que je ne crois pas facile, puisqu'il ne paroit pas vouloir
-               <lb/>entrer <del>dans </del><add>en conversation sur</add> le fonds de la matière. Je vous suis obligé de la connoissance
-               <lb/>que vous m'avez procurée de Mr. <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs>. Je souscris volontiers aux éloges
-               <lb/>que vous lui donnés. Sa présence <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les progrès qu'il a fait sous vous, me font
-               <lb/>bien vivement sentir tout le bonheur qu'il y auroit pour moi de pouvoir profiter
-               <lb/>des offres gracieuses <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> obligeantes que vous me faites de votre maison. Je
-               <lb/>suis très mortifié de ne pouvoir les accepter à présent, où ma présence est
-               <lb/>absolument requise à <rs key="place_GEO-2660646" type="place">Genève</rs>. Mais je vous supplie de vouloir bien conserver
-               <lb/>cette bonne volonté pour un autre tems, <del>que </del><add>où</add> je pourrai trouver peut étre
-               <lb/>quelques semaines de loisir, que je ne manquerai pas d'employer à visiter une
+<p><lb/>Votre chere Lettre m<supplied>,</supplied>a causé un sensible plaisir, voyant l’interêt que vous
+               <lb/>prenés à ma santé. Je vous ecris fort à la hate etant sur le point de mon
+               <lb/>depart pour <rs key="place_GEO-2660646" type="place">Geneve</rs> qui sera après demain. <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> m’a fort chargé
+               <lb/>touttes les fois que je l’a<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> vû de vous faire bien ses complimens. Je ne sça<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> 
+               <lb/>si <abbr>M.</abbr> de <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs> réussira mieux que mo<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> à le convertir sur l’article des
+               <lb/><rs type="keyword">forces vives</rs>. C’est ce que je ne crois pas facile, puisqu’il ne paroit pas vouloir
+               <lb/>entrer <del>dans </del><add>en conversation sur</add> le fonds de la matiére. Je vous suis bien obligé de la connoissance
+               <lb/>que vous m’avés procurée de <abbr>M.</abbr> <rs key="pers_DE-588-130429856" type="person">Klinguestiern</rs>. Je souscris volontiers aux éloges
+               <lb/>que vous lui donnés. Sa presence <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les progrès qu’il a fait sous vous, me font
+               <lb/>bien vivement sentir tout le bonheur qu’il y auroit pour mo<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> de pouvoir profiter
+               <lb/>des offres gracieuses <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> obligeantes que vous me faites de vôtre maison. Je
+               <lb/>suis très mortifié de ne pouvoir les accepter à present, où ma présence est
+               <lb/>absolument requise <choice><reg>a</reg><reg>à</reg></choice> <rs key="place_GEO-2660646" type="place">Geneve</rs>. Mais je vous supplie de vouloir bien conserver
+               <lb/>cette bonne volonté pour un autre tems, <del>que </del><add>où</add> je pourrai trouver peut etre
+               <lb/>quelques semaines de loisir, que je ne manquerois pas d’employer <choice><orig>a</orig><reg>à</reg></choice> visiter une
             <pb facs="1073770" n="2"/>
-<lb/>personne pour qui je conserve tant de respect, d'estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'attachement.
-               <lb/>Je n'ai point manqué de m'aquiter, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je l'ose dire avec zèle <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> autant de
-               <lb/>prudence, de la commission dont Mr. de <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs> m'a chargé de votre part.
-               <lb/>Je suis bien fâché que mes soins n'ayent pas réussi. Je crois, quoique je n'en
-               <lb/>aye pas <add>de</add> certitude, que nous nous y sommes pris trop tard, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que le prix
-               <lb/>étoit déjà adjugé du moins tacitement. Je n'ai pourtant perdu aucun tems <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j'ai
-               <lb/>parlé dès que j'ai reçu vos ordres, aux Académiciens à qui j'ai cru
-               <lb/>pouvoir <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> devoir le faire. Vous avez du moins la consolation de voir qu'on
-               <lb/>a rendu justice en partie au discours N.<hi rend="sup">o</hi> 8, qui a été déclaré le proximé
-               <lb/>accessit. Le N.<hi rend="sup">o</hi> 9, qui a remporté le prix est de M. <rs type="person">Bouguer</rs>.</p>
-<p><lb/>M. <rs key="pers_DE-588-117260266" type="person">Stirling</rs> me marque dans une lettre que j'ai reçuê depuis peu, que
-               <lb/>le livre de M. <rs key="pers_DE-588-117517747" type="person">MacLaurin</rs> sera retardé par une autre affaire mathématique,
-               <lb/>qui lui donne de l'embaras, mais il ne m'informe point qu<del>'</del>elle elle est.</p>
-<p><lb/>Ainsi vous aurez du tems pour vous reposer, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lui pour mieux penser
-               <lb/>à cette matière, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peut étre changer de sentiment. Peut étre ma
-               <lb/>proposition sur les forces vives mieux éclaircie seroit elle aprouvée de vous.
-               <lb/>Je vous l'avais écrit fort à la hâte, cette idée m'étant venuë dans le tems
-               <lb/>que j'écrivois la lettre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la précipitation de mon départ m'empêche de
-               <lb/>pouvoir la coucher sur le papier comme je le souhaittrois. J'ai vû avec plaisir
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> étonnement votre Démonstration du Théorème de Mr. <rs key="pers_DE-588-121009645" type="person">Cotes</rs>. On est surpris,
-               <lb/>quand on la compare avec celle de Mr. <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> on voit avec plaisir la diffé<pc type="hyphenation">-</pc><lb break="no"/>rence de vos idées simples et nettes d'avec les idées <del/>embrouillées
+<lb/>personne pour qui je conserve tant de respect, d’estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’attachement.
+               <lb/>Je n’ai point manqué de m’aquiter, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je l’ose dire avec zele <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> autant de
+               <lb/>prudence de la commission dont <abbr>M.</abbr> de <rs key="pers_DE-588-130429856" type="person">Klinguestiern</rs> m’a chargé de votre part<supplied>.</supplied>
+               <lb/>Je suis bien faché que mes soins n’ayent pas réussi. Je crois, quoique je n’en
+               <lb/>aye pas <add>de</add> certitude, que nous nous y sommes pris trop tard <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que le prix
+               <lb/>étoit déja adjugé tacitement. Je n’ai pourtant perdu aucun tems, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ai
+               <lb/>parlé, dès que j’ai reçû vos ordres, aux Academiciens à qui j’ai cru
+               <lb/>pouvoir <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> devoir le faire. Vous avés du moins la consolation de voir qu’on
+               <lb/>a rendu justice en partie au <rs type="biblio">discours</rs> <abbr>N.<hi rend="sup">o</hi></abbr> 8, qui a été declaré le proximé
+               <lb/>accessit. Le <abbr>N.<hi rend="sup">o</hi></abbr> 9 qui a remporté le prix est encore de <abbr>M.</abbr> <rs type="person">Bouguer</rs>.</p>
+<p><lb/><abbr>M.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> me marque dans une <rs type="letter">Lettre</rs> que j’ai reçue depuis peu, que
+               <lb/>le <rs type="biblio">Livre</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-117517747" type="person">MacLaurin</rs> sera retardé par une autre affaire mathematique
+               <lb/>qui lui donne de l’embaras, mais il ne m’informe point qu<del>’</del>elle elle est.
+<lb/>Ainsi vous aurés du tems pour vous reposer, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lui pour mieux penser
+               <lb/>à cette matiére, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peut étre changér de sentiment. Peut étre ma
+               <lb/>proposition sur les <rs type="keyword">forces vives</rs> mieux eclaircie seroit elle aprouvée de vous.
+               <lb/>Je vous l’avois ecrit fort à la hâte, cette idée m’etant venuë dans le tems
+               <lb/>que j’ecrivois la <rs type="letter">Lettre</rs>; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la precipitation de mon depart m’empeche de
+               <lb/>pouvoir la coucher sur le papier, comme je le souhaiterois. J’ai vû avec plaisir
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> etonnement votre Demonstration du Theorème de <abbr>M.</abbr> <rs key="pers_DE-588-121009645" type="person">Cotes</rs>. On est surpris,
+               <lb/>quand on la compare avec celle de <abbr>M<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> on voit avec plaisir la diffe<pc type="hyphenation">-</pc><lb break="no"/>rence de vos idées simples <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nettes d’avec les idées <del/>embrouillées
             <pb facs="1073771" n="3"/>
-<lb/>de ce mathématicien. Vous savez par plus d'une expérience que les Anglois
+<lb/>de ce mathematicien. Vous savés par plus d’une experience que les Anglois
                <lb/>sont en possession depuis longtems de ne point citer ceux dont ils ont pris
-               <lb/>le fonds de leurs découvertes. Vous étonnez-vous que Côtes ait suivi la
-               <lb/>même route. Il ne laisse pas d'avoir poussé cette science bien loin, pour
-               <lb/>une vie d'une trentaine d'années.</p>
-<p><lb/>Mr.<rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs> m'a dit qu'il vous <del>ecri</del><add>envoi</add>roit par ce même courrier la réponse
-               <lb/>qu'il a fait faire par Mr. <rs key="pers_DE-588-117623776" type="person">l'Abbé de Braguelogne</rs>  aux Remarques de Mr. votre
-               <lb/><rs type="person">fils</rs> sur la Géométrie de l'infini. Cet <rs key="pers_DE-588-117623776" type="person">Abbé</rs>, dit-on, sait mieux son Fontenelle
-               <lb/>que Mr. <rs key="pers_DE-588-118639056" type="person">de Fontenelle</rs> lui-même. Au reste, j'espère que je pourrai voir une
-               <lb/>copie de ces remarques de M. votre <rs type="person">fils</rs> à <rs key="place_GEO-2660646" type="place">Genève</rs>, où je me flatte que
-               <lb/>vous continuerés de daigner m'honorer de vos lettres. Je me propose
-               <lb/>d'y continuer le dessein, que la vie inquiète <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ambulante d'un voyageur
-               <lb/>a interrompus de travailler sur les mouvemens reptoires. Je vous prie
-               <lb/>quand vous aurez occasion d'écrire à <rs key="place_GEO-498817" type="place">Pétersbourg</rs>, d'assurer bien de
-               <lb/>mes respects <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de mon estime, Mr. votre <rs key="pers_DE-588-117589144" type="person">fils</rs>.</p> <closer><salute>Faites moi la justice
-               <lb/>de croire, qu'on ne sauroit être avec plus de respect <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'attachement
+  <lb/>le fonds de leurs Découvertes. Vous etonnés-vous que <rs key="pers_DE-588-121009645" type="person">Côtes</rs> ait suivi la
+               <lb/>même route. Il ne laisse pas d’avoir poussé cette science bien loin, pour
+               <lb/>une vie d’une <subst><del/><add>tr</add></subst>entaine d’années.</p>
+<p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> m’a dit qu’il vous <del>ecrir</del><add>envoi</add>oit par ce même courrier la reponse
+               <lb/>qu’il a fait faire par <abbr>M.<hi rend="sup">r</hi></abbr> l’Abbé de <rs key="pers_DE-588-117623776" type="person">Bragelogne</rs> aux Remarques de <abbr>M.</abbr> vôtre
+  <lb/><rs type="person">fils</rs> sur la Geometrie de l’Infini. Cet <rs key="pers_DE-588-117623776" type="person">Abbé</rs>, dit-on, sait mieux son <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> <note type="editorial">Hier wird Bezug genommen auf Fontenelle, allerdings auf dessen naturphilosophisches Werk und nicht seine Person.</note>
+               <lb/>que <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> lui même. Au reste j’espere que je pourrai voir une
+               <lb/>copie de ces remarques de <abbr>M.</abbr> votre <rs type="person">fils</rs> <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2660646" type="place">Geneve</rs>, où je me flatte que
+               <lb/>vous continuerés de daigner m’honorer de vos Lettres. Je me propose
+               <lb/>d’y continuer le dessein, que la vie inquiete <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ambulante d’un voyageur
+  <lb/>a <choice><sic>interrompus</sic><corr>interrompu</corr></choice> de travailler sur les mouvemens<!-- ? --> reptoires. Je vous prie
+               <lb/>quand vous aurés occasion d’ecrire <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-498817" type="place">Petersbourg</rs>, d’assurer bien de
+               <lb/>mes respects <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de mon estime Monsieur votre <rs key="pers_DE-588-117589144" type="person">fils</rs>.</p> <closer><salute>Faites mo<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> la justice
+               <lb/>de croire qu’on ne sauroit étre avec plus de respect <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’attachement
                <lb/>que je le suis 
                <lb/>Monsieur
-               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-               <lb/>très obéissant serviteur</salute>
-<lb/><signed>G. Cramer</signed>
-<lb/><dateline><rs key="place_GEO-2988507" type="place">Paris</rs> le <date when="1729-05-06">6.<hi>e</hi> Maj. 1729</date>.</dateline>
+               <lb/>Vôtre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>très obeissant Serviteur</salute>
+<lb/><signed>G<supplied>.</supplied> Cramer</signed>
+<lb/><dateline><rs key="place_GEO-2988507" type="place">Paris</rs> ce <date when="1729-05-06">6.<hi rend="sup">e</hi> Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>. 1729.</date></dateline>
 <pb facs="1073772" n="4"/>
 <address>
 <addrLine>Monsieur</addrLine>
 <addrLine>Monsieur Bernoulli Docteur en</addrLine>
-<addrLine>Medicine, Professeur en Mathematique,</addrLine>
-<addrLine>membre des Societés Royales de <rs key="place_GEO-2988507" type="place">Paris</rs>, <rs key="place_GEO-2643743" type="place">Londres</rs></addrLine>
-<addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="place_GEO-2950159" type="place">Berlin</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</addrLine>
-<addrLine>a <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
+<addrLine>Medicine, Professeur en Mathematiques,</addrLine>
+<addrLine>membre des <rs type="organisation">Societés Royales</rs> de <rs key="place_GEO-2988507" type="place">Paris</rs>, <rs key="place_GEO-2643743" type="place">Londres</rs></addrLine>
+<addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="place_GEO-2950159" type="place">Berlin</rs>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr></addrLine>
+<addrLine><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
 </address>
 </closer>
 </div>

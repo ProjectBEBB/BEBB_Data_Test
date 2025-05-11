@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -154,7 +154,7 @@
           <note type="lebensdaten">(1646-1716)</note>
         </person>
         <person>
-          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d'Allonville de</persName>
+          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d’Allonville de</persName>
           <note type="lebensdaten">(1671-1732)</note>
         </person>
         <person>
@@ -197,9 +197,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiCodiert">
+  <revisionDesc status="teiKodiert">
     <listChange>
       <!-- Nur Entwurf besteht, vielleicht in Genf nochmals nachfragen, RG 14.09.2023; in BGE Genf nachgefragt: Antwort von Fr. Hochuli-Dubuis, Konservatorin MS BGE: keine Abfertigung vorhanden, MK 29.11.2024 -->
+      <change when="2025-03-07" who="RG">Mathematikformel angepasst</change>
       <change when="2025-01-31" who="MK RG">Kollationiert</change>
       <change when="2025-01-29" who="MK">Code durchgesehen und ergänzt</change>
       <change when="2025-01-29" who="MK RG">Kollationiert</change>
@@ -215,14 +216,6 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- Nur Entwurf besteht, vielleicht in Genf nochmals nachfragen, RG 14.09.2023 -->
-<!--_____________-->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073649/manifest"/>
@@ -233,316 +226,316 @@
   <note hand="pers_DE-588-118509969">à <abbr>Mr.</abbr> le <abbr>Prof.</abbr> Cramer </note>
 <opener><dateline>à <rs key="place_GEO-2661604" type="place">Bâle</rs> ce <date when="1728-05-13">13. Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> 1728</date>.</dateline>
 <lb/><salute>Monsieur</salute></opener>
-  <p><lb/>J'ai reçu Vos <rs key="B_991170514979505501 B_991170514979405501" type="letters">deux dernieres Lettres</rs>, l'une du 10. Mars et l'autre
-               <lb/>du 15 Avril, il y a bien des Choses qui meriteroient une ample
+  <p><lb/>J’ai reçu Vos <rs key="B_991170514979505501 B_991170514979405501" type="letter">deux dernieres Lettres</rs>, l’une du <date>10. Mars</date> et l’autre
+               <lb/>du <date>15 Avril</date>, il y a bien des Choses qui meriteroient une ample
                <lb/>reponse, mais ne Sachant Si cette lettre vous trouvera encore en
                <lb/><rs key="place_VER-englan" type="place">Angleterre</rs> je serai court autant que je pourrai, me reservant
                <lb/>de Vous expliquer plus amplement mes Pensées sur les Objections
-               <lb/>des Anglois quand j'aurai l'honneur de vous revoir ici,
+               <lb/>des Anglois quand j’aurai l’honneur de vous revoir ici,
                <lb/>puisque vous nous faites Esperance que vous repasserez
   <lb/>peutétre par notre <rs key="place_GEO-2661604" type="place">Ville</rs>.</p>
-<p><lb/>Il me semble qu'il est inutile de continuer la <rs type="keyword">Dispute
-               <lb/>avec les Anglois</rs> sur les <rs type="keyword">forces vives</rs>, car de la maniere qu'ils
-               <lb/>raisonnent on voit clairement que leur but n'est pas de
-               <lb/>reconnoitre la verite, mais plutot de l'etouffer et d'en
-               <lb/>derober la Clarté aux yeux de ceux qui n'examinent les
-               <lb/>Choses que Superficiellement, ou qui n'ont pas assez de Capa<pc type="hyphenation">-</pc><lb break="no"/>cité de penetrer par eux mémes dans le fond du vray
-               <lb/>pour pouvoir le discerner d'une fausse apparence.
+<p><lb/>Il me semble qu’il est inutile de continuer la <rs type="keyword">Dispute
+               <lb/>avec les Anglois</rs> sur les <rs type="keyword">forces vives</rs>, car de la maniere qu’ils
+               <lb/>raisonnent on <del/><add>v</add>oit clairement que leur but n’est pas de
+               <lb/>reconnoitre la <choice><orig>verite</orig><reg>verité</reg></choice>, <del/>mais plutot de l’etouffer et d’en
+               <lb/>derober la Clarté aux yeux de ceux qui n’examinent les
+               <lb/>Choses que Superficiellement, ou qui n’ont pas assez de Capa<pc type="hyphenation">-</pc><lb break="no"/>cité de penetrer par eux mémes dans le fond du vray
+               <lb/>pour pouvoir le discerner d’une fausse apparence.
                <lb/>Les Anglois affectent une Superiorité et par cela méme
                <lb/>ils ne veulent pas ceder à une verité decouverte et
                <lb/>demontrée par un Etranger: par un Esprit de
-               <lb/>Chicanne ils pretendent, qu'il n'y a rien de bon ni
+               <lb/>Chicanne ils pretendent, qu’il n’y a rien de bon ni
                <lb/>de vrai que ce qui à pris naissance chés eux; <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>
 <lb/>est le premier Inventeur de la veritable estimation
                <lb/>des <rs type="keyword">forces vives</rs>. <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> est un Etranger. <abbr>Mons.<hi rend="sup">r</hi></abbr>
             <pb facs="1073651" n="2"/>
 <lb/><rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> etoit leur grand Antagoniste, il faut
                <lb/>donc la rejetter, il faut soutenir le contraire, il faut
-               <lb/>supprimer cette decouverte, par ce qu'elle n'est pas du
+               <lb/>supprimer cette decouverte, par ce qu’elle n’est pas du
                <lb/>crû de leur paÿs, semblables en cela aux Hollandois, qui
-               <lb/>detruisent aux <rs key="GeoNamesID" type="place">Indes</rs> toutes les Plantations d'Epiceries
-               <lb/>qu'ils trouvent sur des terres qui ne sont pas de leur
-               <lb/>dependance, de peur que d'autres Nations n'en profi<pc type="hyphenation">-</pc><lb break="no"/>tent à leur prejudice. <hi rend="u">Si la Theorie des <rs type="keyword">forces vives</rs>
+               <lb/>detruisent aux <rs key="GeoNamesID" type="place">Indes</rs> toutes les Plantations d’Epiceries
+               <lb/>qu’ils trouvent sur des terres qui ne sont pas de leur
+               <lb/>dependance, de peur que d’autres Nations n’en profi<pc type="hyphenation">-</pc><lb break="no"/>tent à leur prejudice. <hi rend="u">Si la Theorie des <rs type="keyword">forces vives</rs>
                <lb/>prend le dessus</hi>, se dira peutétre un <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> ou un
-               <lb/>autre bon Patriote Anglois, <hi rend="u">quélle honte pour nous,
+               <lb/>autre bon Patriote Anglois, <hi rend="u">quélle<!-- SG: ich sehe hier und auch an anderen Stellen eher "qu'elle", was falsch ist, aber der Schreiber ist vermutlich der 18. Jährige Daniel und er schreib nach Diktat, quelle und qu'elle tönt genau gleich.  --> honte pour nous,
                <lb/>quélle fletrissure pour la gloire de la Nation
-               <lb/>Angloise! que des Etrangers ayent été plus clair<pc type="hyphenation">-</pc><lb break="no"/>voyants que Nous, que Nous soyons obliges d'a<pc type="hyphenation">-</pc><lb break="no"/>vouer notre Aveuglement et d'emprunter
+               <lb/>Angloise! que des Etrangers ayent été plus clair<pc type="hyphenation">-</pc><lb break="no"/>voyants que Nous, que Nous soyons obligés<!-- SG: Ich sehe hier ein angedeutetes é. Würde nichts dastehen, müsste man es mit orig/reg normalisieren. --> d’a<pc type="hyphenation">-</pc><lb break="no"/>vouer notre Aveuglement et d’emprunter
                <lb/>des Lumieres de ceux que nous avons regardés
-               <lb/>jusqu'ici comme des Taupes</hi>. Avoués, <abbr>Mr.</abbr> que c'est
-               <lb/>la le langage des Anglois prevenus de leur suffisance;
-               <lb/>S'ils ne le tiennent ouvertement au moins ils le pensent;
-               <lb/>La hauteur et la fierte avec laquélle ils traitent les Sa<pc type="hyphenation">-</pc><lb break="no"/>vans du dehors, ne leur permettra jamais de re<pc type="hyphenation">-</pc><lb break="no"/>connoitre leur Erreur et la verité decouverte par
+               <lb/>jusqu’ici comme des Taupes</hi>. Avoués, <abbr>Mr.</abbr> que c’est
+               <lb/><choice><orig>la</orig><reg>là</reg></choice> le langage des Anglois prevenus de leur suffisance;
+               <lb/>S’ils ne le tiennent ouvertement au moins ils le pensent;
+  <lb/>La hauteur et la <choice><orig>fierte</orig><reg>fierté</reg></choice> avec laqu<choice><orig>’</orig><reg type="deleted"/></choice>elle ils traitent les Sa<pc type="hyphenation">-</pc><lb break="no"/>vans du dehors, ne leur permettra jamais de re<pc type="hyphenation">-</pc><lb break="no"/>connoitre leur Erreur et la verité dec<del/>ouverte par
                <lb/>nous. Si <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit été le premier Inventeur des
-               <lb/><rs type="keyword">forces vives</rs>, on n'auroit pas balancé un moment de
+               <lb/><rs type="keyword">forces vives</rs>, on n’auroit pas balancé un moment de
                <lb/>recevoir cette Doctrine en <rs key="place_VER-englan" type="place">Angleterre</rs> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un article de
-               <lb/>foy, et méme ils l'auroient reçue sans l'examiner, c'auroit
+               <lb/>foy, et méme ils l’auroient reçüe sans l’examiner, ç’auroit
                <lb/>été un <foreign xml:lang="grc">αὐτὸς ἔφα</foreign> <note type="editorial">Die griechische Redewendung bedeutet: "Er selbst hat es gesagt." Sie wurde in der Antike häufig verwendet, um auf die Autorität eines bedeutenden Lehrers zu verweisen, insbesondere auch Pythagoras.</note>, enfin un Oracle; Après tout cela seroit-il
             <pb facs="1073652" n="3"/>
 <lb/>possible de gagner quelque Chose sur des Esprits de
-               <lb/>cette nature? Seroit il convenable d'entrer avec eux dans
+               <lb/>cette nature? Seroit il convenable d’entrer avec eux dans
                <lb/>une dispute formelle? Si <abbr>Mrs.</abbr> les françois ne se fussent pas trop
-               <lb/>precipités, à se declarer d'abord contre les <rs type="keyword">forces vives</rs>, avant
-               <lb/>que d'avoir lû ma piece, il y auroit lieu de les convertir
+               <lb/>precipités, à se declarer d’abord contre les <rs type="keyword">forces vives</rs>, avant
+               <lb/>que d’avoir lû ma <rs type="biblio">piece</rs>, il y auroit lieu de les convertir
                <lb/>car ils sont assez raisonables pour embrasser la verité
-               <lb/>de quelque part qu'elle Leur soit montrée: mais ayant
-               <lb/>pris parti, j'aurai bien de la peine à leur faire avouer
-               <lb/>qu'ils ont eu tort, car c'est un pas scabreux d'en venir
-               <lb/>à se donner le dementi et à se dedire de ce qu'on a <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>vancé avec un si pompeux Eclat. J'espere neant<pc type="hyphenation">-</pc><lb break="no"/>moins de les ramener peu à peu de leur egarement.
-  <lb/>On m'envoya <abbr>dernieremt.</abbr> de <rs key="place_GEO-2988507" type="place">Paris</rs> une <rs key="biblio_GHA63GU2" type="biblio">pîece</rs> en ma<pc type="hyphenation">-</pc><lb break="no"/>nuscript que <abbr>Mr.</abbr> le <abbr>Ch.</abbr> <rs key="pers_DE-588-117683280" type="person">de Louville</rs> a composée et
-               <lb/>luë à l'Assemblée de l'<rs type="organisation"><abbr>Acad.</abbr></rs>, c'est une refutation
-  <lb/>des forces vives faite contre mon <rs key="biblio_QYV8YG25" type="biblio">Discours</rs>, on me l'a
-               <lb/>envoyée, je crois, pour voir ce que j'y repondrois, avant
-               <lb/>que de l'imprimer dans les Memoires. mais je
-               <lb/>n'y ai repondu qu'en termes generaux, savoir
-               <lb/>que cette piece est remplie de faux raisonne<pc type="hyphenation">-</pc><lb break="no"/>ments, que <abbr>Mr.</abbr> <rs key="pers_DE-588-117683280" type="person">de Louville</rs> n'a point d'idée
-               <lb/>de la force vive, qu'il la confond avec la
+               <lb/>de quelque part qu’elle Leur soit montrée: mais ayant
+               <lb/>pris parti, j’aurai bien de la peine à leur faire avouer
+               <lb/>qu’ils ont eu tort, car c’est un pas scabreux d’en venir
+               <lb/>à se donner le dementi et à se dedire de ce qu’on a <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>vancé avec un si pompeux Eclat. J’espere neant<pc type="hyphenation">-</pc><lb break="no"/>moins de les ramener peu à peu de leur egarement.
+  <lb/>On m’envoya <abbr>dernieremt.</abbr> de <rs key="place_GEO-2988507" type="place">Paris</rs> une <rs key="biblio_GHA63GU2" type="biblio">piece</rs> en ma<pc type="hyphenation">-</pc><lb break="no"/>nuscript que <abbr>Mr.</abbr> le <abbr>Ch.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> a composée et
+               <lb/>luë à l’Assemblée de l’<rs type="organisation"><abbr>Acad.</abbr></rs>, c’est une refutation
+  <lb/>des forces vives faite contre mon <rs key="biblio_QYV8YG25" type="biblio">Discours</rs>, on me l’a
+               <lb/>envoyée, je crois, pour voir ce que j’y repondrois, avant
+               <lb/>que de l’imprimer dans les Memoires. mais je
+               <lb/>n’y ai repondu qu’en termes generaux, savoir
+               <lb/>que cette piece est remplie de faux raisonne<pc type="hyphenation">-</pc><lb break="no"/>ments, que <abbr>Mr.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> n’a point d’idée
+               <lb/>de la force vive, qu’il la confond avec la
                <lb/><rs type="keyword">force morte</rs>, comme font les Anglois, et
             <pb facs="1073653" n="4"/>
-<lb/>que je m'engage de le convaincre d'erreur
-               <lb/>devant des Juges eclairés et impartiaux, mais <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice> con<pc type="hyphenation">-</pc><lb break="no"/>dition qu'il mette entre leurs mains en depot, une
-               <lb/>Somme d'argent equivalente au prix, que j'aurois
-               <lb/>du remporter, si la Cabale dont <abbr>Mr.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> vous <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice>
-               <lb/>parlé ne l'avoit pas traversé. J'ai dit cela, parceque
-               <lb/>je suis comme assuré que <abbr>Mr.</abbr> <rs key="pers_DE-588-117683280" type="person">de Louville</rs> <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice> été le
-               <lb/>premier autheur de cette Cabale, puisque c'est
+<lb/>que je m’engage de le convaincre d’erreur
+               <lb/>devant des Juges eclairés et impartiaux, mais à con<pc type="hyphenation">-</pc><lb break="no"/>dition qu’il mette entre leurs mains en depot, une
+               <lb/>Somme d’argent equivalente au prix, que j’aurois
+               <lb/>du remporter, si la Cabale dont <abbr>Mr.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> vous <choice><orig>à</orig><reg>a</reg></choice>
+               <lb/>parlé ne l’avoit pas traversé. J’ai dit cela, parceque
+  <lb/>je suis comme assuré que <abbr>Mr.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> <choice><orig>à</orig><reg>a</reg></choice> été le
+               <lb/>premier autheur de cette Cabale, puisque c’est
                <lb/>lui qui le premier a publié dans les <rs type="biblio">Memoires</rs>
-               <lb/>un ecrit contre <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> pour le combattre<del>,</del>
+               <lb/>un <rs type="biblio">ecrit</rs> contre <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> pour le combattre<del/>
 <lb/>sur les forces vives, justement dans le temps,
-  <lb/>que j'allois envoyer mon <rs key="biblio_QYV8YG25" type="biblio">Discours</rs> à <rs key="place_GEO-2988507" type="place">Paris</rs>, ce qu'il
+  <lb/>que j’allois envoyer mon <rs key="biblio_QYV8YG25" type="biblio">Discours</rs> à <rs key="place_GEO-2988507" type="place">Paris</rs>, ce qu’il
                <lb/>aura regardé sans doute comme une Refutation
                <lb/>du Sien, raison suffisante pour machiner que le prix
-               <lb/>ne me fut donné de peur que l'<rs type="organisation">Academie</rs> ne parut
+               <lb/>ne me fut donné de peur que l’<rs type="organisation">Academie</rs> ne parut
                <lb/>le condamner et aprouver la Theorie des forces
                <lb/>vives; Ainsi il falloit que la verité fut la
-               <lb/>Victime de l'ambitiôn, et la Justice celle de
-               <lb/>l'Iniquité et de la mauvaise foi. Voyès donc si
-               <lb/>je n'ai pas eu grande raison de demander satisfaction
-               <lb/>en exigeant de <abbr>Mr.</abbr> <rs key="pers_DE-588-117683280" type="person">de Louville</rs> l'equivalent du
-               <lb/>prix à mettre en depot, pour qu'il me soit donné en
-               <lb/>cas que je le convainque d'erreurs et de paralogismes,<!-- Bis hier kollationiert -->
+               <lb/><del/><add>V</add>ictime de l’ambition,<!-- Hier wurde ein nach hinten verschobener i-Punkt als circonflexe gelesen. --> et la Justice celle de
+               <lb/>l’Iniquité et de la mauvaise foi. Voyés<!-- Hier stand Voyès, wenn das accent senkrecht ist, kann man es so interpretieren, wie es am besten passt (vergleichbar zur intermediären Form bei den Buchstaben) --> donc si
+               <lb/>je n’ai pas eu grande raison de demander satisfaction
+               <lb/>en exigeant de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> l’equivalent du
+               <lb/>prix à mettre en depot, pour qu’il me soit donné en
+               <lb/>cas que je le convainque d’erreurs et de paralogismes,<!-- Bis hier kollationiert --><!-- SG: Ging das vergessen? -->
             <pb facs="1073654" n="5"/>
 <lb/>dont il y a un grand nombre de fort grossiers et de bien
-               <lb/>miserables; En attendant qu'il voulut se declarer s'il voudra
+               <lb/>miserables; En attendant qu’il voulut se declarer s’il voudra
                <lb/>accepter le defi, je lui ai fait proposer le probléme de
-               <lb/>determiner la Vitesse et le <rs type="keyword">tems</rs> de l<unclear>a</unclear> descente d'une
+               <lb/>determiner la Vitesse et le <rs type="keyword">tems</rs> de l<unclear>a</unclear> descente d’une
                <lb/>boule qui roule en faisant detortiller le fil autour
                <lb/>de son axe, comme le moyen le plus assuré pour
-               <lb/>faire voir par l'Experience que le Principe des
+               <lb/>faire voir par l’Experience que le Principe des
                <lb/><rs type="keyword">forces vives</rs> est conforme <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice> la Nature, et que
                <lb/>celui de la Conservation de la Quantité de
                <lb/>mouvement donnera une Solution fausse et
-               <lb/>contraire au Succés de l'Experience. Si <abbr>Mr</abbr>
-               <lb/><rs key="pers_DE-588-117683280" type="person">de Louville</rs> ne veut pas accepter le defi je ne le
-               <lb/>daignerai pas d'une reponse formelle jusqu'a ce
-  <lb/>que sa piece<note type="editorial">Hier wird auf das 1731 erschienene <rs key="biblio_BUZVH2D3" type="biblio">Werk</rs> von Jacques-Eugène d'Allonville de Louville Bezug genommen.</note> soit imprimée et alors je manifeste<pc type="hyphenation">-</pc><lb break="no"/>rai toutes ses Absurditez, et je ferai <add>voir</add> qu'il n'en<pc type="hyphenation">-</pc><lb break="no"/>tend pas les premiers principes de <rs type="keyword">Mechanique</rs>,
-               <lb/>au lieu qu'il ose avancer avec une hardiesse in<pc type="hyphenation">-</pc><lb break="no"/>concevable, que moi et tous ceux qui admettent
+               <lb/>contraire au Succés de l’Experience. Si <abbr>Mr</abbr>
+               <lb/>de <rs key="pers_DE-588-117683280" type="person">Louville</rs> ne veut pas accepter le defi je ne le
+               <lb/>daignerai pas d’une reponse formelle jusqu’a ce
+  <lb/>que sa piece<note type="editorial">Hier wird auf das 1731 erschienene <rs key="biblio_BUZVH2D3" type="biblio">Werk</rs> von Jacques-Eugène d’Allonville de Louville Bezug genommen.</note> soit imprimée et alors je manifeste<pc type="hyphenation">-</pc><lb break="no"/>rai toutes ses Absurditez, et je ferai <add>voir</add> qu’il n’en<pc type="hyphenation">-</pc><lb break="no"/>tend pas les premiers principes de <rs type="keyword">Mechanique</rs>,
+               <lb/>au lieu qu’il ose avancer avec une hardiesse in<pc type="hyphenation">-</pc><lb break="no"/>concevable, que moi et tous ceux qui admettent
                <lb/>les <rs type="keyword">forces vives</rs>, renvers<unclear>e</unclear>n<del>t</del><add>s</add> de fond en comble les
                <lb/>Loïx reçues de <add>la</add> <rs type="keyword">Statique</rs> et de la Saine mechanique<supplied>.</supplied>
                <lb/>Mais il est tems que je revienne sur le Chapitre de nos
-               <lb/>Antagonistes Anglois. J'ai l<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> et relû le raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement
-               <lb/>de <abbr>mr</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, il faut que j'avoue qu'il me paroit
-               <lb/>irrefutable, mais pourquoi? Parceque je ne l'entends
-               <lb/>pas; Je suis bien aise que d'autres gens aussi et méme
+               <lb/>Antagonistes Anglois. J’ai l<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> et relû le raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement
+               <lb/>de <abbr>mr</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, il faut que j’avoue qu’il me paroit
+               <lb/>irrefutable, mais pourquoi? Parceque je ne l’entends
+               <lb/>pas; Je suis bien aise que d’autres gens aussi et méme
                <lb/>ses Compatriotes blament son obscurité, le comparant
-               <lb/>à <rs key="pers_DE-588-118801481" type="person">Taylor</rs>, qu'ils apellent, dites vous, <foreign xml:lang="lat"><hi rend="u">Crypticum Scriptorem</hi></foreign>.
+               <lb/>à <rs key="pers_DE-588-118801481" type="person">Taylor</rs>, qu’ils apellent, dites vous, <foreign xml:lang="lat"><hi rend="u">Crypticum Scriptorem</hi></foreign>.
             <pb facs="1073655" n="6"/>
-<lb/>L'Obscurité est ordinairement la marque de la
-               <lb/>foiblesse et fausseté du Raisonnement; En effet il n'y à rien
+<lb/>L’Obscurité est ordinairement la marque de la
+               <lb/>foiblesse et fausseté du Raisonnement; En effet il n’y à rien
                <lb/>de si ridicule que de faire intervenir la Consideration
-               <lb/>du <rs type="keyword">tems</rs> pour mesurer la quantité d'une <rs type="keyword">force
-               <lb/>reelle</rs> qui s'epuise en produisant un effét, qui
+               <lb/>du <rs type="keyword">tems</rs> pour mesurer la quantité d’une <rs type="keyword">force
+               <lb/>reelle</rs> qui s’epuise en produisant un effét, qui
                <lb/>lui doit étre egal. Peut on concevoir que quelque
                <lb/>Chose de subsistant par lui méme et independant de
                <lb/>toute autre Chose puisse étre alteré, augmenté ou diminué.
                <lb/>sans avoir produit quelque Effet precisement egal
-               <lb/>à la Cause du Changement. Tel est la Force d'un
+               <lb/>à la Cause du Changement. Tel est la Force d’un
                <lb/>Corps en mouvement, car si je prouve que cette force
                <lb/>se consume en bandant <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> 4 Ressorts, en tout uniformes,
                <lb/>sans me mettre en peine, en combien de tems cela se
                <lb/>fait, je dois conclure que cette force est 4 fois plus
-               <lb/>grande, que celle d'un autre corps en mouvement
+               <lb/>grande, que celle d’un autre corps en mouvement
                <lb/>laquelle se consume en bandant un seul Ressort;
-               <lb/>Autrement il faudroit nier l'axiome de <rs type="keyword">metaphy<pc type="hyphenation">-</pc><lb break="no"/>sique</rs>, que la cause efficiente est toujours égale à son
-               <lb/>Effèt total. Mais si quelqu'un vouloit douter de la
-               <lb/>verité de cet axiome il do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eroit à co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre qu'il n'a
-               <lb/>point d'idée de ce qu'on no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <rs type="keyword">Cause Efficiente</rs>,
-               <lb/>car une Cause n'est telle ou telle, qu'en tant qu'elle
+               <lb/>Autrement il faudroit nier l’axiome de <rs type="keyword">metaphy<pc type="hyphenation">-</pc><lb break="no"/>sique</rs>, que la cause efficiente est toujours égale à son
+               <lb/>Effèt total. Mais si quelqu’un vouloit douter de la
+               <lb/>verité de cet axiome il do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eroit à co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre qu’il n’a
+               <lb/>point d’idée de ce qu’on no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <rs type="keyword">Cause Efficiente</rs>,
+               <lb/>car une Cause n’est telle ou telle, qu’en tant qu’elle
                <lb/><add>produit ou</add> peut produire un tel ou tel Effet, ainsi ces deux
-               <lb/>termes de cause et d'effét sont deux termes relatifs
+               <lb/>termes de cause et d’effét sont deux termes relatifs
                <lb/>qui signifient la méme Chose en deux differents suje<supplied>ts</supplied>,
                <lb/>en sorte que si je vois que toute la cause est eteinte ou
-            <pb facs="1073656" n="7"/>
-<lb/>consumée dans l'un de ces Sujets, il faut conclure, que
-               <lb/>son equivalent, c'est à dire son effet se trouve dans l'au<pc type="hyphenation">-</pc><lb break="no"/>tre, qui peut comme cause reproduire dans le premier
-               <lb/>ce qu'il en avoit reç<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> ni plus ni moins; de cette maniere
-               <lb/>le premier sujet sera retabli dans son premier état; d'ou
+  <pb facs="1073656" n="7"/><!-- SG: ab hier probeweise kontrolliert -->
+<lb/>consumée dans l’un de ces Sujets, il faut conclure, que
+               <lb/>son equivalent, c’est à dire son effet se trouve dans l’au<pc type="hyphenation">-</pc><lb break="no"/>tre, qui peut comme cause reproduire dans le premier
+               <lb/>ce qu’il en avoit reçû<del/> ni plus ni moins; de cette maniere
+               <lb/>le premier sujet sera retabli dans son premier état; d’ou
                <lb/>il suit co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un Corollaire, que si le premier Sujet, do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
-               <lb/>tout ce qu'il à, a un Second Sujet, et le second do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
-               <lb/>tout ce qu'il à reç<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> du premier à un troisième, ce troi<pc type="hyphenation">-</pc><lb break="no"/>sieme à un quatrième et ainsi de suite, si enfin le der<pc type="hyphenation">-</pc><lb break="no"/>nier communique tout ce qu'il à reç<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> au premier,
-               <lb/>ce premier reprendra precisément ce qu'il avoit
-               <lb/>perdu en le communiquant au Second Sujet. C'est
+               <lb/>tout ce qu’il à, a un Second Sujet, et le second do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
+               <lb/>tout ce qu’il à reç<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> du premier à un troisième, ce troi<pc type="hyphenation">-</pc><lb break="no"/>sieme à un quatrième et ainsi de suite, si enfin le der<pc type="hyphenation">-</pc><lb break="no"/>nier communique tout ce qu’il à reç<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice> au premier,
+               <lb/>ce premier reprendra precisément ce qu’il avoit
+               <lb/>perdu en le communiquant au Second Sujet. C’est
                <lb/>comme cela que la quantité de <rs type="keyword">force vive</rs> ou la
                <lb/>quantité de <hi rend="u">pouvoir faire</hi> qui reside dans
                <lb/>le Corps en mouvement doit se conserver, par<pc type="hyphenation">-</pc><lb break="no"/>ceque cette quantité étant quelque chose de
                <lb/>complet, de réel et de subsistant par <add>lui</add> méme
                <lb/>dans chaque corps qui est en mouvement, il est
-               <lb/>clair, qu'elle ne peut étre diminuée sans que la
+               <lb/>clair, qu’elle ne peut étre diminuée sans que la
                <lb/>diminution soit precisément transportèe et repa<pc type="hyphenation">-</pc><lb break="no"/>s<unclear>s</unclear>ée dans un autre corps, soit que ce transport
-  <lb/>se fasse promtement, ou qu'il se fasse <abbr>lentemt.</abbr>
+  <lb/>se fasse promtement, ou qu’il se fasse <abbr>lentemt.</abbr>
   <lb/><figure hand="pers_DE-588-118509969"><p></p><figDesc></figDesc><note type="editorial">Figur</note></figure>Ainsi <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> <figure hand="pers_DE-588-118509969"><p></p><figDesc></figDesc><note type="editorial">Figur</note></figure> Si je prends deux ressorts <abbr>egalemt.</abbr>
-               <lb/>bandez <formula>A</formula> et <formula>B</formula> et que je les pose d'abord l'un de<pc type="hyphenation">-</pc><lb break="no"/>vant l'autre (<abbr>Fig.</abbr> 1.) dont l'une des extremités soit
-               <lb/>appliquée contre le plan i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>obile <hi rend="u"><formula>mn</formula></hi> et l'autre                
+               <lb/>bandez <formula>A</formula> et <formula>B</formula> et que je les pose d’abord l’un de<pc type="hyphenation">-</pc><lb break="no"/>vant l’autre (<abbr>Fig.</abbr> 1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>) dont l’une des extremités soit
+  <lb/>appliquée contre le plan i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>obile <formula>\underline{mn}</formula> et l’autre                
             <pb facs="1073657" n="8"/>
-<lb/>extremité contre le Corps <formula>C</formula>; concevez <abbr>presentemt.</abbr>
-               <lb/>que ces deux Ressorts se debandent, ils impri<pc type="hyphenation">-</pc><lb break="no"/>meront sans doute au Corps <formula>C</formula> une vitesse accelerée
-               <lb/>jusqu'a l'entiere detente, je no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e donc <formula>v</formula> la plus
-               <lb/>grande ou la derniere vitesse que le Corps <formula>C</formula> aura a<pc type="hyphenation">-</pc><lb break="no"/>quise. Mais après cela rebandez ces mémes Ressorts
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e auparavant, et au lieu de les disposer l'un
-               <lb/>devant l'autre, mettez les l'un à coté de l'autre
-               <lb/>(Fig. II) en sorte que s'appuyant d'une part contre
-               <lb/>le plan inebranlable <hi rend="u"><formula>mn</formula></hi> ils <unclear>s</unclear>'appliquent de l'au<pc type="hyphenation">-</pc><lb break="no"/>tre conjoinctement au méme Corps <formula>C</formula> il est manifeste
-               <lb/>par notre Theorie que les deux Ressorts dans cette si<pc type="hyphenation">-</pc><lb break="no"/>tuation s'etant debandez totalement, ils auront
-               <lb/>imprimé au Corps <formula>C</formula> la méme vitesse <formula>v</formula>. parceque
+<lb/>extremité <choice><orig>Contre</orig><reg>contre</reg></choice> le Corps <formula>C</formula>; concevez <abbr>presentemt.</abbr>
+               <lb/>que ces deux Ressorts se debandent, ils impri<pc type="hyphenation">-</pc><lb break="no"/>meront sans doute au Corps <formula>C</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> une vitesse accelerée
+               <lb/>jusqu’<choice><orig>a</orig><reg>à</reg></choice> l’entiere de<del/>tente; je no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e donc <formula>v</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> la plus
+               <lb/>grande ou la derniere vitesse que le Corps <formula>C</formula> aura <choice><sic>ca</sic><corr>ac</corr></choice><pc type="hyphenation">-</pc><lb break="no"/>quise. Mais après cela rebandez ces mémes Ressorts
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e auparavant, et au lieu de les disposer l’un
+               <lb/>devant l’autre, mettez les l’un à coté de l’autre
+               <lb/>(<abbr>Fig.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>) en sorte que s’appuyant d’une part contre
+  <lb/>le plan inebranlable <hi rend="u"><formula>mn</formula></hi> ils <unclear>s</unclear>’appliquent de l’au<pc type="hyphenation">-</pc><lb break="no"/>tre conjoinctement au méme Corps <formula>C</formula>. Il est manifeste
+               <lb/>par notre Theorie que les deux Ressorts dans cette si<pc type="hyphenation">-</pc><lb break="no"/>tuation s’etant debandez totalement, ils auront
+               <lb/>imprimé au Corps <formula>C</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> la méme vitesse <formula>v</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> parceque
                <lb/>de cette maniere aussi bien que de la premiere la
-               <lb/><rs type="keyword">force vive</rs> que le Corps <formula>C</formula> reçoit est l'effet <add>complét</add> de
-               <lb/>la pression epuisé de deux ressorts egaux; C'est
-               <lb/>aussi ce que le Calcul enseigné fondé sur <add>la</add> <rs type="biblio"><abbr>Prop.</abbr>
-               <lb/>39.</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. Cependant le tems que les
+               <lb/><rs type="keyword">force vive</rs> que le Corps <formula>C</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> reçoit est l’effét <add>complét</add> de
+               <lb/>la pression <choice><sic>epuisé</sic><corr>epuisée</corr></choice> de deux ressorts egaux; C’est
+               <lb/>aussi ce que le Calcul <choice><sic>enseigné</sic><corr>enseigne</corr></choice><supplied>,</supplied> fondé sur <add>la</add> <rs type="biblio"><abbr>Prop.</abbr>
+               <lb/>39<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. Cependant le tems que les
                <lb/>Ressorts employent dans le premier cas pour se
-               <lb/>debander est double du tems employé dans le
-               <lb/>second pour produire le méme effet. D'où il est
+               <lb/>debander est double du tems employé da<subst><del/><add>ns</add></subst> le
+               <lb/>second pour produire le méme effét. D’où il est
                <lb/>clair que la Consideration du tems est inutile
-               <lb/>là où il s'agit de mesurer simplement la quan<pc type="hyphenation">-</pc><lb break="no"/>tité d'une <rs type="keyword">cause efficiente</rs> par son <abbr>epuisemt.</abbr>
-               <lb/>Soit qu'il se fasse lentement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e dans le premier 
-            <pb facs="1073658" n="9"/>
+               <lb/>là où il s’agit de mesurer simplement la quan<pc type="hyphenation">-</pc><lb break="no"/>tité d’une <rs type="keyword">cause efficiente</rs> par son <abbr>epuisemt.</abbr>
+               <lb/>Soit qu’il se fasse lentement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e dans le premier
+            <pb facs="1073658" n="9"/><!-- SG: bis hier probeweise kontrolliert -->
 <lb/>cas, ou promtement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e dans le 2.<hi rend="sup">d</hi> cas. Une bourse
-               <lb/>qui contient 100 Ecus (c'est la Comparaison que je vous ai
+               <lb/>qui contient 100 Ecus (c’est la Comparaison que je vous ai
                <lb/>donnée dans ma premiere <rs type="letter">Lettre</rs>) ne peut pas fournir
-               <lb/>plus qu'elle ne contient, Si vous en depensez un Ecu
+               <lb/>plus qu’elle ne contient, Si vous en depensez un Ecû
                <lb/>par Jour, elle sera epuisée en 100 Jours. Si vous en
-               <lb/>depensez 2 Ec<choice><orig><g ref="#uacut">ú</g></orig><reg>u</reg></choice>s journellement elle sera vuide
-               <lb/>en 50 jours; mais c'est toujours la méme Somme de
-               <lb/>100 Ecus qu'elle aura fournie à vos depenses. Votre
-               <lb/>Comparaison d'un fossé à creuser par 20 Ouvriers en
+               <lb/>depensez 2 Ecûs journellement elle sera vuide
+               <lb/>en 50 jours; mais c’est toujours la méme Somme de
+               <lb/>100 Ecus qu’elle aura fournie à vos depenses. Votre
+               <lb/>Comparaison d’un fossé à creuser par 20 Ouvriers en
                <lb/>10 Jours ou par 10 ouvriers en 20 jours est aussi
-               <lb/>très juste, c'est toujours le méme ouvrage et les memes
-               <lb/><unclear>d</unclear>epenses, que l'on fait d'une manière plus tôt et de
-               <lb/>l'autre plus tard. Voici encor une autre Compar<unclear>a</unclear>ison;
-               <lb/>Lorsque je vois un certain Vaisseau rempli d'eau<unclear>,</unclear> <!-- Bis hier kollationiert 24.1.2025 -->
-               <lb/>laquelle s'ecoule entierement, que je recueillis et trouve
-               <lb/>en la mesurant qu'elle fait 20 pintes, je juge que
-  <lb/>le vaisseau contenoit 20 pintes d'eau sans m'<pc type="hyphenation"></pc>
+               <lb/>très juste, c’est toujours le méme ouvrage et les memes
+               <lb/><unclear>d</unclear>epenses, que l’on fait d’une manière plus tôt et de
+               <lb/>l’autre plus tard. Voici encor une autre Compar<unclear>a</unclear>ison;
+               <lb/>Lorsque je vois un certain Vaisseau rempli d’eau<unclear>,</unclear> <!-- Bis hier kollationiert 24.1.2025 -->
+               <lb/>laquelle s’ecoule entierement, que je recueillis et trouve
+               <lb/>en la mesurant qu’elle fait 20 pintes, je juge que
+  <lb/>le vaisseau contenoit 20 pintes d’eau sans m’<pc type="hyphenation"></pc>
   <lb break="no"/>
-               <lb/>informer si l'ouverture par ou l'eau s'est e<pc type="hyphenation">-</pc><lb break="no"/>coulée ètoit étroite ou large, ni par consequent
-               <lb/>combien de tems il à fallu à l'eau pour <del/>
+               <lb/>informer si l’ouverture par ou l’eau s’est e<pc type="hyphenation">-</pc><lb break="no"/>coulée ètoit étroite ou large, ni par consequent
+               <lb/>combien de tems il à fallu à l’eau pour <del/>
 <lb/>sortir du Vaisseau.
-               <lb/>L'experience de <abbr>Mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> faite sur le
-               <lb/>miserable raisonnement de <abbr>Mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> est sem<pc type="hyphenation">-</pc><lb break="no"/>blable à celle de <rs key="pers_DE-588-11887733X" type="person">Poleni</rs>, et l'une et l'autre confirme
+               <lb/>L’experience de <abbr>Mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desaguilliers</rs> faite sur le
+               <lb/>miserable raisonnement de <abbr>Mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> est sem<pc type="hyphenation">-</pc><lb break="no"/>blable à celle de <rs key="pers_DE-588-11887733X" type="person">Poleni</rs>, et l’une et l’autre confirme
                <lb/>visiblement la Doctrine des <rs type="keyword">forces vives</rs>; mais de vouloir
             <pb facs="1073659" n="10"/>
 <lb/>recourir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e fait <abbr>Mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> au tems pendant
                <lb/>lequel chaque piece de Soye ou de papier resiste,
                <lb/>pour <del>en </del>en determiner la force de la resistance,
-               <lb/>cela est aussi puerile que seroit l'estimation des
+               <lb/>cela est aussi puerile que seroit l’estimation des
                <lb/>depenses à creuser votre fossé par la durée du
                <lb/>creusement, ou aussi ridicule que le seroit la maniere de
-               <lb/>mesurer la quantité d'eau toute ramassée pa<unclear>r</unclear> le
-               <lb/>tems qu'elle a employé pour se ramasser. Mais ces
+               <lb/>mesurer la quantité d’eau toute ramassée pa<unclear>r</unclear> le
+               <lb/>tems qu’elle a employé pour se ramasser. Mais ces
                <lb/><abbr>Mrs.</abbr> qui veulent à toute force et en toute occasion
                <lb/>employer la Consideration du tems, que diront ils, quand
-               <lb/>on peut modifier cette experience d'une maniere
+               <lb/>on peut modifier cette experience d’une maniere
                <lb/>que visiblement le tems à rompre chaque feuille est
                <lb/>nul. Au lieu des feuilles de Soye ou de papier qui
-               <lb/>prétent avant que de se rompre, que l'on <del/>pre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
+               <lb/>prétent avant que de se rompre, que l’on <del/>pre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
                <lb/>des glaces de verre qui se cassent brusquement et
                <lb/>quasi dans un instant indivisible. Ainsi chaque
                <lb/>glace selon aux mémes resistera egalement,
                <lb/>avec quelque vitesse que <add>la</add> bale tombe dessus,
                <lb/>par ce que chacune resiste pendant un méme
                <lb/>tems, qui est nul; ils diront peutetre que ce tems
-               <lb/>n'est pas absolument nul, mais soit; qu'est ce
-               <lb/>qui n'empéche au moins de supposer une
+               <lb/>n’est pas absolument nul, mais soit; qu’est ce
+               <lb/>qui n’empéche au moins de supposer une
                <lb/>rupture instantanée? Avoueront<supplied>-</supplied>ils alors que le
                <lb/>nombre des glaces rompuës doit mesurer la force
                <lb/>de la bale? il me semble pour bien faire c<unclear>e</unclear>t<unclear>t</unclear>e
             <pb facs="1073660" n="11"/>
-<lb/>experience, qu'il ne faudroit pas eriger per<pc type="hyphenation">-</pc><lb break="no"/>pendiculairement la machine de <abbr>Mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desa<pc type="hyphenation">-</pc><lb break="no"/>guilliers</rs>, parceque la bale aprés avoir rompu
+<lb/>experience, qu’il ne faudroit pas eriger per<pc type="hyphenation">-</pc><lb break="no"/>pendiculairement la machine de <abbr>Mr.</abbr> <rs key="pers_DE-588-117632686" type="person">Desa<pc type="hyphenation">-</pc><lb break="no"/>guilliers</rs>, parceque la bale aprés avoir rompu
                <lb/>une des feuilles ou des glaces prend un nouveau
                <lb/>degré de force par sa pesanteur avant que
-               <lb/>d'arriver à la Suivante; il vaudroit donc mieux
+               <lb/>d’arriver à la Suivante; il vaudroit donc mieux
                <lb/>à mon avis de poser la machine <abbr>horizontalemt.</abbr>
-               <lb/>et de faire en sorte que la bale après étre descen<pc type="hyphenation">-</pc><lb break="no"/>duë d'une hauteur donnée heurte contre les
-               <lb/>feuilles <add>suivant</add> <del>d'</del>une direction horizontale, ce qui se
+               <lb/>et de faire en sorte que la bale après étre descen<pc type="hyphenation">-</pc><lb break="no"/>duë d’une hauteur donnée heurte contre les
+               <lb/>feuilles <add>suivant</add> <del>d’</del>une direction horizontale, ce qui se
                <lb/>peut executer en serrant de bien près les feuilles
                <lb/>en laissant entre elles un intervalle par <abbr>ex.</abbr> de 6
-               <lb/>lignes ou d'un demi pouce et en attachant la
-               <lb/>bale à l'extremité d'un long fil en forme de
+               <lb/>lignes ou d’un demi pouce et en attachant la
+               <lb/>bale à l’extremité d’un long fil en forme de
                <lb/>pendule, qui decrivoit un arc de Cercle, à peu
-               <lb/>près comme <abbr>Mr.</abbr> <rs key="pers_DE-588-117551988" type="person">Mariotte</rs> l'a pratiqué pour
-               <lb/>montrer par l'experience les régles de la
+               <lb/>près comme <abbr>Mr.</abbr> <rs key="pers_DE-588-117551988" type="person">Mariotte</rs> l’a pratiqué pour
+               <lb/>montrer par l’experience les régles de la
                <lb/>Communication du mouvement.
-               <lb/>Vous <choice><sic>auez</sic><corr>aurez</corr></choice> raison de dire qu'en general la Conside<pc type="hyphenation">-</pc><lb break="no"/>ration du tems ne peut entrer <add>en ligne</add> de compte, que
-               <lb/>lorsqu'il s'agit <del>f </del>des <rs type="keyword">forces mortes</rs>, parce<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>Vous <choice><sic>auez</sic><corr>aurez</corr></choice> raison de dire qu’en general la Conside<pc type="hyphenation">-</pc><lb break="no"/>ration du tems ne peut entrer <add>en ligne</add> de compte, que
+               <lb/>lorsqu’il s’agit <del>f </del>des <rs type="keyword">forces mortes</rs>, parce<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
                <lb/>une force morte ou une pression
                <lb/>perit et renait tous les momens, tout
-  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je l'ai dejà expliqué dans <rs key="biblio_QYV8YG25" type="biblio">mon
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je l’ai dejà expliqué dans <rs key="biblio_QYV8YG25" type="biblio">mon
                <lb/>Discours</rs> <abbr>Chap.</abbr> 5. §. 2. Ainsi la
             <pb facs="1073661" n="12"/>
 <lb/>pression consiste dans une reiteration plus ou
-               <lb/>moins frequente <del>d'une</del><add>de petites</add> <rs type="keyword">Impulsions</rs>, dans un petit
+               <lb/>moins frequente <del>d’une</del><add>de petites</add> <rs type="keyword">Impulsions</rs>, dans un petit
                <lb/>tems donné, donc toutes ces petites impulsion<supplied>s</supplied> prises
                <lb/>ensemble font un effet proportionel au petit tems.
                <lb/><abbr>c. a. d.</abbr> poussent ou plutot entrainent par un
                <lb/>petit Chemin dont la longueur est en raison de
                <lb/>la durée de toute cette action continuée. Par
-               <lb/>consequent ici le mobile ne fait point d'autre
-               <lb/>resistance que passiv<unclear>e</unclear> qui provient de son <rs type="keyword">iner<pc type="hyphenation">-</pc><lb break="no"/>tie</rs>, au lieu que la force d'un Corps qui est
+               <lb/>consequent ici le mobile ne fait point d’autre
+               <lb/>resistance que passiv<unclear>e</unclear> qui provient de son <rs type="keyword">iner<pc type="hyphenation">-</pc><lb break="no"/>tie</rs>, au lieu que la force d’un Corps qui est
                <lb/>dejà en mouvement, se consume, comme
                <lb/>vous dites fort bien, en agissant sans se
-               <lb/>retablir; et son Effèt n'est pas ce qu'il produit
-               <lb/>dans un moment, mais ce qu'il à produit pen<pc type="hyphenation">-</pc><lb break="no"/>dant toute la durée de son action, depuis le
-               <lb/>commencement, jusqu'a l'entière extinction
+               <lb/>retablir; et son Effèt n’est pas ce qu’il produit
+               <lb/>dans un moment, mais ce qu’il à produit pen<pc type="hyphenation">-</pc><lb break="no"/>dant toute la durée de son action, depuis le
+               <lb/>commencement, jusqu’a l’entière extinction
                <lb/>de son mouvement; outre cela il faut faire
                <lb/>comprendre à nos Adversaires que le Pouvoir
-               <lb/>d'agir des Corps ou leur <rs type="keyword">force vive</rs> existe actu<pc type="hyphenation">-</pc><lb break="no"/>ellement, quand méme ils ne trouvent point
+               <lb/>d’agir des Corps ou leur <rs type="keyword">force vive</rs> existe actu<pc type="hyphenation">-</pc><lb break="no"/>ellement, quand méme ils ne trouvent point
                <lb/>de resistance, dans leur chemin, sur
                <lb/>la quelle ils puissent deployer
                <lb/>leurs forces, car pouvoir agir
                <lb/>et agir actuellement sont
                <lb/>des Choses differentes.
             <pb facs="1073662" n="13"/>
-<lb/>L'aimant à la vertu ou le Pouvoir d'attirer le fer,
-               <lb/>quoiqu'il ne l'attire pas, s'il n'y en à point dans sa
-               <lb/>sphere d'activité. Un Roi est dit avoir un grand
-               <lb/>Pouvoir, mais il ne l'excerce pas toujours, sur<pc type="hyphenation"><supplied>-</supplied></pc>
+<lb/>L’aimant à la vertu ou le Pouvoir d’attirer le fer,
+               <lb/>quoiqu’il ne l’attire pas, s’il n’y en à point dans sa
+               <lb/>sphere d’activité. Un Roi est dit avoir un grand
+               <lb/>Pouvoir, mais il ne l’excerce pas toujours, sur<pc type="hyphenation"><supplied>-</supplied></pc>
 <lb break="no"/>tout quand il dort; ainsi donc un Corps en
                <lb/>mouvement possede un certain Pouvoir, quand
                <lb/>ce <del>qu </del>Corps seroit tout seul dans le monde,
-               <lb/>et pendant qu'il est dans son <rs type="keyword">Mouvement
-               <lb/>uniforme</rs>, on ne peut pas dire qu'il est
-               <lb/>en action, car il n'agit sur rien, il ne fait que
-               <lb/>perseverer dans son etat ou dans sa ma<pc type="hyphenation">-</pc><lb break="no"/>niere d'étre; mais voici ce que c'est que la
-               <lb/><rs type="keyword">force morte</rs> ou la simple pression, c'est un
-               <lb/>effort qui s'applique sur quelque chose, qui
+               <lb/>et pendant qu’il est dans son <rs type="keyword">Mouvement
+               <lb/>uniforme</rs>, on ne peut pas dire qu’il est
+               <lb/>en action, car il n’agit sur rien, il ne fait que
+               <lb/>perseverer dans son etat ou dans sa ma<pc type="hyphenation">-</pc><lb break="no"/>niere d’étre; mais voici ce que c’est que la
+               <lb/><rs type="keyword">force morte</rs> ou la simple pression, c’est un
+               <lb/>effort qui s’applique sur quelque chose, qui
                <lb/>fait une Resistance soit active soit passive,
-               <lb/>donc un effort trouve toujours son contre<pc type="hyphenation">-</pc><lb break="no"/>effort, il n'existe jamais seul sans l'oppositi<pc type="hyphenation">-</pc><lb break="no"/>on d'une resistance; ainsi la force morte
-               <lb/>ou la pression n'est telle qu'<del>en tants</del><add>entent</add> qu'il
+               <lb/>donc un effort trouve toujours son contre<pc type="hyphenation">-</pc><lb break="no"/>effort, il n’existe jamais seul sans l’oppositi<pc type="hyphenation">-</pc><lb break="no"/>on d’une resistance; ainsi la force morte
+               <lb/>ou la pression n’est telle qu’<del>en tants</del><add>entent</add> qu’il
                <lb/>y ait un Obstacle, qui dans le moment du
-               <lb/>conflict fait autant de pression en sens con<pc type="hyphenation">-</pc><lb break="no"/>traire, qu'il en reçoit de celui qui le presse
+               <lb/>conflict fait autant de pression en sens con<pc type="hyphenation">-</pc><lb break="no"/>traire, qu’il en reçoit de celui qui le presse
                <lb/>si bien que la force morte est mutuelle et
-               <lb/>suppose toujours deux Sujets, dont l'un est
+               <lb/>suppose toujours deux Sujets, dont l’un est
             <pb facs="1073663" n="14"/>
-<lb/>consideré co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <rs type="keyword">agent</rs> et l'autre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <unclear>r</unclear>eagent.
-               <lb/>il n'en est pas de méme de la <rs type="keyword">force vive</rs> ou du Pou<pc type="hyphenation">-</pc><lb break="no"/>voir d'un Corps, car ce pouvoir est absolu, seul et
-               <lb/>independant de tout autre Sujet hors de lui; puis<pc type="hyphenation">-</pc><lb break="no"/>qu'il subsisteroit quand il n'y auroit point d'au<pc type="hyphenation">-</pc><lb break="no"/>tre Corps <del/><add>dans le</add> monde, mais quand un Corps en
+<lb/>consideré co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <rs type="keyword">agent</rs> et l’autre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <unclear>r</unclear>eagent.
+               <lb/>il n’en est pas de méme de la <rs type="keyword">force vive</rs> ou du Pou<pc type="hyphenation">-</pc><lb break="no"/>voir d’un Corps, car ce pouvoir est absolu, seul et
+               <lb/>independant de tout autre Sujet hors de lui; puis<pc type="hyphenation">-</pc><lb break="no"/>qu’il subsisteroit quand il n’y auroit point d’au<pc type="hyphenation">-</pc><lb break="no"/>tre Corps <del/><add>dans le</add> monde, mais quand un Corps en
                <lb/>mouvement rencontre un autre Corps, ou un
-               <lb/>ressort à bander ou un autre obstacle, c'est
-               <lb/>alors qu'il fait usage de son pouvoir, <del>qu'</del>il
-               <lb/>l'exerce, il <add>le</add> deploye sur ce qui lui est opposé,
+               <lb/>ressort à bander ou un autre obstacle, c’est
+               <lb/>alors qu’il fait usage de son pouvoir, <del>qu’</del>il
+               <lb/>l’exerce, il <add>le</add> deploye sur ce qui lui est opposé,
                <lb/>et cela par une pression continuée depuis
-               <lb/>le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement de la Rencontre, jusqu'a la
-               <lb/>fin ou à la Separation, en sorte que l'on peut
-  <lb/>dire que la <rs type="keyword">force morte</rs> est l'exercice ou l'<pc type="hyphenation"></pc>
+               <lb/>le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement de la Rencontre, jusqu’a la
+               <lb/>fin ou à la Separation, en sorte que l’on peut
+  <lb/>dire que la <rs type="keyword">force morte</rs> est l’exercice ou l’<pc type="hyphenation"></pc>
   <lb break="no"/>
                <lb/>acte de la force vive. Voilà distinctement
                <lb/>la difference entre ces deux genres de forces.
@@ -550,49 +543,49 @@
                <lb/>Raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement assez semblable au mien, et de
                <lb/>laquelle vous me demandez ma solution, ne
                <lb/>vous doit point faire de peine pour repondre
-               <lb/>à nos Antagonistes, car ils sont d'accord avec
-               <lb/>nous dans ce point, Savoir qu'<hi rend="u">une <rs type="keyword">force morte</rs>
+               <lb/>à nos Antagonistes, car ils sont d’accord avec
+               <lb/>nous dans ce point, Savoir qu’<hi rend="u">une <rs type="keyword">force morte</rs>
                <lb/>ou une pression agissant pendant un certain
                <lb/>tems sur un corps</hi>, (supposé la <rs type="keyword">pression uniforme</rs>)
             <pb facs="1073664" n="15"/>
 <lb/><hi rend="u">co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique à ce corps une vitesse proportio<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée
                <lb/>à ce tems et a la quantité de cette pression, ou
                <lb/>à son intensité et au tems pendant lequel
-               <lb/>elle agit</hi>, ainsi ils n'auront garde de nous
+               <lb/>elle agit</hi>, ainsi ils n’auront garde de nous
                <lb/>nier ce principe, sur lequel ils se fondent le 
                <lb/>plus, pour nous refuter mal à propos, en
-               <lb/>confondant l'effet i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ediat de l'action instan<pc type="hyphenation">-</pc><lb break="no"/>tanée avec l'effet total produit par la
-               <lb/>continuation de l'action. Mais je veux bien
+               <lb/>confondant l’effet i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ediat de l’action instan<pc type="hyphenation">-</pc><lb break="no"/>tanée avec l’effet total produit par la
+               <lb/>continuation de l’action. Mais je veux bien
                <lb/>vous resoudre votre Difficulté pour votre propre
-               <lb/>Satisfaction. Vous me demandez <hi rend="u">d'ou vient,
-               <lb/>que c'est l'increment de la vitesse, et non
+               <lb/>Satisfaction. Vous me demandez <hi rend="u">d’ou vient,
+               <lb/>que c’est l’increment de la vitesse, et non
                <lb/>pas celui de la <rs type="keyword"><hi rend="uu">force</hi> (vive)</rs> <hi rend="u"></hi>qui dans un tems
                <lb/>infiniment petit est proportionel à ce tems
-               <lb/>et à la pression;</hi> Pour y repondre, je dis qu'
+               <lb/>et à la pression;</hi> Pour y repondre, je dis qu’
                <lb/>une pression appliquée sur un Corps, lui
                <lb/>doit imprimer dans un petit tems donné un
                <lb/>méme petit degré de vitesse, soit que ce
-               <lb/>Corps <add>soit</add> d'abord en repos, ou qu'il ait deja une
+               <lb/>Corps <add>soit</add> d’abord en repos, ou qu’il ait deja une
                <lb/>vitesse acquise, car dés que la cause, qui
                <lb/>presse, agit sur le corps, elle accompagne le
-               <lb/>corps, elle le poursuit, elle <del>fluis l'un</del>
-<lb/>s'unit avec lui, et ainsi le corps
-               <lb/>quoiqu'en mouvement, doit être
+               <lb/>corps, elle le poursuit, elle <del>fluis l’un</del>
+<lb/>s’unit avec lui, et ainsi le corps
+               <lb/>quoiqu’en mouvement, doit être
             <pb facs="1073665" n="16"/>
 <lb/>censé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en repos, par rapport à la cause
                <lb/>qui le presse et qui marche avec lui; aussi
                <lb/>la force du Choc, de deux Corps qui se choquent
                <lb/>depend uniquement de leur <rs type="keyword">vitesse relative</rs>,
-               <lb/>quelle qu<del>'</del>e<del>n</del> soit leurs <rs type="keyword">vitesses absolues</rs>; Si
+               <lb/>quelle qu<del>’</del>e<del>n</del> soit leurs <rs type="keyword">vitesses absolues</rs>; Si
                <lb/>vous étes dans un vaisseau et que vous
                <lb/>fassiez un effort pour pousser une boule vers
                <lb/>la proue, je croi<supplied>s</supplied> que vous concevés aisément
                <lb/>que vous imprimerez à la boule le méme
                <lb/>petit degré de vitesse dans le premier
                <lb/>petit tems do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é, soit que le vaisseau soit
-               <lb/>en repos ou qu'il soit en mouvement et
+               <lb/>en repos ou qu’il soit en mouvement et
                <lb/>que vous <del>et que vous </del>et la boule soyez
-               <lb/>transporté avec lui d'un mouvement
+               <lb/>transporté avec lui d’un mouvement
                <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un; la boule acquerera toujours par votre
                <lb/>effort le mème petit degré de vitesse avec
                <lb/>cette difference seulement, que si le vaisseau
@@ -603,34 +596,34 @@
                <lb/>de vitesse imprimé sera un incre<pc type="hyphenation">-</pc><lb break="no"/>ment de la vitesse, qui est dejà <!-- Bis hier kollationiert, 24.1.2025 -->
             <pb facs="1073666" n="17"/>
 <lb/>dans la boule par le mouvement commun du vaisseau
-               <lb/>et de tout ce qui s'y trouve; Ainsi aussi par <abbr>ex.</abbr> la cause
-               <lb/>de la pesanteur doit produire au Corps qu'elle presse
+               <lb/>et de tout ce qui s’y trouve; Ainsi aussi par <abbr>ex.</abbr> la cause
+               <lb/>de la pesanteur doit produire au Corps qu’elle presse
                <lb/>des degrez de vitesse toujours égaux en tems egaux, par
                <lb/>ce que la pesanteur accompagnant sans cesse le corps
                <lb/>est avec lui comme dans un Vaisseau et partant
-               <lb/>en repos relativement l'un avec l'autre, c'est à dire,
+               <lb/>en repos relativement l’un avec l’autre, c’est à dire,
                <lb/>que le corps pesant doit acquerir toujours un nou<pc type="hyphenation">-</pc><lb break="no"/>veau petit degré de vitesse egal dans un petit tems
-               <lb/>donné, soit qu'il ait deja une vitesse acquise grande
-               <lb/>ou petite, ou qu'il n'en ait encore point du tout.
-               <lb/>Si la force motrice n'est pas uniforme, pendant
-               <lb/>tout le tems de son action, elle l'est <del>du </del><add>au</add> moins pen<pc type="hyphenation">-</pc><lb break="no"/>dant un tems infiniment petit; de sorte qu'elle
+               <lb/>donné, soit qu’il ait deja une vitesse acquise grande
+               <lb/>ou petite, ou qu’il n’en ait encore point du tout.
+               <lb/>Si la force motrice n’est pas uniforme, pendant
+               <lb/>tout le tems de son action, elle l’est <del>du </del><add>au</add> moins pen<pc type="hyphenation">-</pc><lb break="no"/>dant un tems infiniment petit; de sorte qu’elle
                <lb/>donnera toujours au Corps un <add>tel</add> petit degré de
-               <lb/>vitesse, pardessus <del>celle </del><add>celui</add> qu'il a deja, qu'elle lui don<pc type="hyphenation">-</pc><lb break="no"/>neroit si le corps entièrement en repos étoit pressé
+               <lb/>vitesse, pardessus <del>celle </del><add>celui</add> qu’il a deja, qu’elle lui don<pc type="hyphenation">-</pc><lb break="no"/>neroit si le corps entièrement en repos étoit pressé
                <lb/>pendant le méme petit tems par la force motrice
                <lb/>supposée de la meme intensité. Tout cela bien
                <lb/>consideré fait <del>donc </del>deja connoitre la raison<unclear>,</unclear> pour<pc type="hyphenation">-</pc><lb break="no"/>quoi, si la pression ou la force motrice etoit tou<pc type="hyphenation">-</pc><lb break="no"/>jours uniforme, comme la pesanteur, il faudroit
-               <lb/>poser <formula>dv=\frac{dx}{v}</formula>, c'est à dire les Increments de vitesse
-               <lb/><hi rend="u"><formula>dv</formula></hi> proportionels au petits tems exprimés par <formula>\frac{dx}{v}</formula>, par<pc type="hyphenation">-</pc><lb break="no"/>ceque ces petits tems sont en raison directe des petits es<pc type="hyphenation">-</pc><lb break="no"/>pace<unclear>s</unclear> <hi rend="u"><formula>dx</formula></hi>, et inverse des vitesses.</p>
+               <lb/>poser <formula>dv=\frac{dx}{v}</formula>, c’est à dire les Increments de vitesse
+  <lb/><formula>\underline{dv}</formula> proportionels au petits tems exprimés par <formula>\frac{dx}{v}</formula>, par<pc type="hyphenation">-</pc><lb break="no"/>ceque ces petits tems sont en raison directe des petits es<pc type="hyphenation">-</pc><lb break="no"/>pace<unclear>s</unclear> <formula>\underline{dx}</formula>, et inverse des vitesses.</p>
 <pb facs="1073667" n="18"/>
 <p><lb/>Voila votre Difficulté en partie levée, mais elle en <del/><add>a</add> encore
-               <lb/>une autre. C'est à savoir, pourquoi l'increment de la
-               <lb/>vitesse est aussi proportionel, à la quantité ou à l'in<pc type="hyphenation">-</pc><lb break="no"/>tensité de la pression, c'est à dire, pourquoi en petits
+               <lb/>une autre. C’est à savoir, pourquoi l’increment de la
+               <lb/>vitesse est aussi proportionel, à la quantité ou à l’in<pc type="hyphenation">-</pc><lb break="no"/>tensité de la pression, c’est à dire, pourquoi en petits
                <lb/>tems egaux une pression double, triple <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. produit des
                <lb/>increments de vitesse doubles, triples <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. pour en concevoir
                <lb/>distinctement la raison, <hi rend="u">je croi que le meilleur</hi> expedient est
                <lb/>de recourir à la nature de la composition de<add>s</add> <del>la </del><rs type="keyword">forces
                <lb/>mortes</rs>, ou des pressions, dont je vous ai donné autrefois
-               <lb/>ici une demonstration qui m'est particuliere. Soit le
+               <lb/>ici une demonstration qui m’est particuliere. Soit le
                <lb/>point <formula>A</formula> pressé par deux forces en differentes directi<pc type="hyphenation">-</pc><lb break="no"/>ons <formula>AB</formula> et <formula>AC</formula> dont les intensités soient comme les <add>lignes</add>
 <lb/><formula>AB</formula> et <formula>AC</formula>. Il en resulte une troisième suivant
                <lb/><formula>AD</formula> la diagonale du parallelogramme <formula>BC</formula>, en sorte
@@ -642,40 +635,40 @@
                <lb/>clair, que le Corps <formula>A</formula> commencera à se mouvoir
                <lb/>suivant <formula>AD</formula> et decrira dans le premier <del>commen-</del>
 <lb/>moment la petite ligne <formula>Aa</formula>; Etant donc parvenu
-               <lb/>en <hi rend="u"><formula>a</formula></hi>, il sera rapproché de <formula>B</formula> et de <formula>C</formula>, des intervalles
-               <lb/><formula>Am</formula>, <formula>An</formula>, qui se font en decrivant de petits arcs, <hi rend="u"><formula>am</formula></hi>, <hi rend="u"><formula>an</formula></hi>
+  <lb/>en <formula>\underline{a}</formula>, il sera rapproché de <formula>B</formula> et de <formula>C</formula>, des intervalles
+  <lb/><formula>Am</formula>, <formula>An</formula>, qui se font en decrivant de petits arcs, <formula>\underline{am}</formula>, <formula>\underline{an}</formula>
 <lb/>des centres <formula>B</formula><unclear>;</unclear> <formula>C</formula><unclear>;</unclear> ces <formula>Am</formula>, <formula>An</formula>, marquent donc le
             <pb facs="1073668" n="19"/>
 <lb/>rapport des <del/> vitesses avec lesquelles le
                <lb/>corps <formula>A</formula> commencera à se mouvoir, suivant les
                <lb/>Directions des forces <formula>AB</formula>, <formula>AC</formula>; Mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e ces forces
-               <lb/>s'entreaident ou s'empechent en partie mutuelle<pc type="hyphenation">-</pc><lb break="no"/>ment, selon que l'angle <formula>BAC</formula> est aigu ou obtus, on
+               <lb/>s’entreaident ou s’empechent en partie mutuelle<pc type="hyphenation">-</pc><lb break="no"/>ment, selon que l’angle <formula>BAC</formula> est aigu ou obtus, on
                <lb/>ne peut prendre les vitesses <formula>Am</formula>, <formula>An</formula>, pour les purs
                <lb/>effèts, ou pour les pures impressions des deux
-               <lb/>forces, à moins qu'on ne suppose leurs directions per<pc type="hyphenation">-</pc><lb break="no"/>pendiculaires l'une à l'autre <formula>c</formula>, <formula>a</formula>, <formula>d</formula>, 1'Angle <formula>BAC</formula> droit,
-               <lb/>auquel cas les deux forces ne se favorisent ni s'em<pc type="hyphenation">-</pc><lb break="no"/>pechent en aucune maniere, et par consequent
+               <lb/>forces, à moins qu’on ne suppose leurs directions per<pc type="hyphenation">-</pc><lb break="no"/>pendiculaires l’une à l’autre <formula>c</formula>, <formula>a</formula>, <formula>d</formula>, 1’Angle <formula>BAC</formula> droit,
+               <lb/>auquel cas les deux forces ne se favorisent ni s’em<pc type="hyphenation">-</pc><lb break="no"/>pechent en aucune maniere, et par consequent
                <lb/>les deux intervalles <formula>Am</formula>, <formula>An</formula>, marqueront au juste
                <lb/>les pures impressions des deux forces, <formula>c</formula>, <formula>a</formula>, <formula>d</formula>, mar<pc type="hyphenation">-</pc><lb break="no"/>queront ce que chacune pourroit produire separément,
-               <lb/>dans un mème petit temps. Or l'angle <formula>BAC</formula> etant
+               <lb/>dans un mème petit temps. Or l’angle <formula>BAC</formula> etant
                <lb/>droit, les triangles <formula>Ama</formula>, <formula>ABD</formula>, comme aussi <formula>Ana</formula> et
-               <lb/><formula>ACD</formula> seront semblables, et partant <formula>Am.An::AB.AC</formula>
-<lb/>d'ou il paroit que les increments de vitesse <formula>Am</formula> et <formula>An</formula>
+  <lb/><formula>ACD</formula> seront semblables, et partant <choice rend="regFormula"><orig><formula>Am.An::AB.AC</formula></orig><reg><formula>Am:An=AB:AC</formula></reg></choice>
+<lb/>d’ou il paroit que les increments de vitesse <formula>Am</formula> et <formula>An</formula>
 <lb/>produits en petits tems egaux sont comme les intensitez
-               <lb/>des forces, <formula>AB</formula> et <formula>AC</formula>, qui les ont produits; <expan><abbr>c. q. f. d.</abbr>ce qu'il fallait démontrer</expan>-
-               <lb/>Vous <add>voyez</add> donc, pourquoi il faut poser (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je l'ai fait) <formula>dv=</formula>
-<lb/><formula>\frac{pdx}{v}</formula>, c'est à dire les increments de vitesse du en raison
+               <lb/>des forces, <formula>AB</formula> et <formula>AC</formula>, qui les ont produits; <expan><abbr>c. q. f. d.</abbr>ce qu’il fallait démontrer</expan>-
+               <lb/>Vous <add>voyez</add> donc, pourquoi il faut poser (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je l’ai fait) <formula>dv=</formula>
+<lb/><formula>\frac{pdx}{v}</formula>, c’est à dire les increments de vitesse du en raison
                <lb/>composée des petits <add>temps</add> <formula>\frac{dx}{v}</formula> et des pressions <formula>p</formula>.
 <pb facs="1073669" n="20"/>
-<lb/>De tout ce que j'ai dit jusqu'ici on void encore
-               <lb/>la grande difference qu'il y a entre la <rs type="keyword">force vive</rs>
-               <lb/>et la force morte, la premiere depend unique<pc type="hyphenation">-</pc><lb break="no"/>ment de la vitesse absoluë, mais l'autre depend
+<lb/>De tout ce que j’ai dit jusqu’ici on void encore
+               <lb/>la grande difference qu’il y a entre la <rs type="keyword">force vive</rs>
+               <lb/>et la force morte, la premiere depend unique<pc type="hyphenation">-</pc><lb break="no"/>ment de la vitesse absoluë, mais l’autre depend
                <lb/>de la vitesse relative, en sorte que le Corps
                <lb/>pressé etant toujours joint à ce qui le presse,
                <lb/>doit étre consideré co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en repos par raport
-               <lb/>à celui<supplied>-</supplied>ci, non obstant qu'il soit en <abbr>mouvemt.</abbr>
+               <lb/>à celui<supplied>-</supplied>ci, non obstant qu’il soit en <abbr>mouvemt.</abbr>
                <lb/>On se tromperoit donc fort, si on vou<pc type="hyphenation">-</pc><lb break="no"/>loit faire <formula>df=\frac{pdx}{v}</formula> au lieu de <formula>dv=\frac{pdx}{v}</formula>.
                <lb/>En reflechissant sur les raisons que vo<add>u</add>s me
-               <lb/>do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ez de ne point publier d'extrait de ma
+               <lb/>do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ez de ne point publier d’extrait de ma
                <lb/>premiere <rs key="B_991170514979605501" type="letter">Lettre</rs> je suis de votre Avis; nous
                <lb/>attendrons donc que nos Refutateurs ayent
                <lb/>decoché toutes leurs fleches, et alors nous
@@ -687,15 +680,15 @@
                <lb/>fait impossibles de resoudre par une autre voye;
             <pb facs="1073670" n="21"/>
 <lb/>Les bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es Solutions pouvant étre examinées et
-               <lb/>verifiées par l'experience, on confondroit les
-               <lb/>Adversaires, s'ils en donnoient de fausses: Entre
-               <lb/>autres le probléme de la descente d'une boule
+               <lb/>verifiées par l’experience, on confondroit les
+               <lb/>Adversaires, s’ils en donnoient de fausses: Entre
+               <lb/>autres le probléme de la descente d’une boule
                <lb/>qui est obligée de rouler en descendant me
                <lb/>paroit trés propre à cela; En voici un autre,
-               <lb/>que j'ai dernierement proposé à quelqu'un en
-               <lb/>latin: <foreign xml:lang="lat"><cit><quote type="long">Elastr<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>D</formula> <note type="editorial">Figur</note> i<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ixum una sui extremitate obici
+               <lb/>que j’ai dernierement proposé à quelqu’un en
+               <lb/>latin: <foreign xml:lang="lat"><cit type="long"><quote>Elastr<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>D</formula> <note type="editorial">Figur</note> i<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ixum una sui extremitate obici
                <lb/>firmo <formula>F</formula>, altera vero extremitate sese dilatens pro<pc type="hyphenation">-</pc><lb break="no"/>pellit corpus datum <formula>A</formula>, ei<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> per omnimodam
-               <lb/>sui dilatationem imprimit datam ve<pc type="hyphenation">-</pc><lb break="no"/>locitatem <rs rend="u"><formula>v</formula></rs></quote></cit>.</foreign> <foreign xml:lang="lat"><cit><quote type="long">Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur si idem elastrum
+               <lb/>sui dilatationem imprimit datam ve<pc type="hyphenation">-</pc><lb break="no"/>locitatem <formula>\underline{v}</formula></quote></cit>.</foreign> <foreign xml:lang="lat"><cit type="long"><quote>Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur si idem elastrum
                <lb/><formula>E</formula> eodem modo compressum interponitur
                <lb/>inter duas virgas inflexiles (nullius ponderis)
                <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> in una extremitate habeant affixa duo
@@ -705,47 +698,47 @@
                    <lb/><choice><sic>corporibas</sic><corr>corporibus</corr></choice> <formula>B</formula> et <formula>C</formula>.</quote></cit></foreign></p>
 <p><lb/><foreign xml:lang="lat"><cit><quote><choice><orig><g ref="#NB">NB</g></orig><reg>NB</reg></choice>. Suppono motus illos fieri in plano horizontali, at<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
   <lb/>datas e<choice><orig><g ref="#sse">[sse]</g></orig><reg>sse</reg></choice> rationes tum ipsius <formula>BG</formula> ad <formula>LG</formula> tum ipsius <formula>CH</formula> ad <formula>MH</formula>.</quote></cit>"</foreign></p>
-<p><lb/>Il ne seroit pas bien difficile d'examiner par l'experience
-               <lb/>la solution que l'on en do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eroit: cependant je ne sai si les
-               <lb/>frondeurs Anglois seront en etat d'en do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er la veritable
+<p><lb/>Il ne seroit pas bien difficile d’examiner par l’experience
+               <lb/>la solution que l’on en do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eroit: cependant je ne sai si les
+               <lb/>frondeurs Anglois seront en etat d’en do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er la veritable
                <lb/>Solution, laquelle pourtant se trouve sans peine par<!-- Bis hier kollationiert -->
             <pb facs="1073671" n="22"/>
-<lb/>la doctrine des forces vives, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j'ai eu l'ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur
-               <lb/>de vous le faire voir ici, si je m'en souviens bien.
+<lb/>la doctrine des forces vives, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’ai eu l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur
+               <lb/>de vous le faire voir ici, si je m’en souviens bien.
                <lb/>Votre maniere de determiner la tension du fil, qui
                <lb/>soutient un corps qui descend en roulant, est juste, mais
                <lb/>indirecte, et suppose deja connuë la vitesse du corps
                <lb/>roulant: je do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e une determination tirée <abbr>directemt.</abbr>
                <lb/>de la nature du probleme.</p>
                <p><lb/>Non <abbr>mr.</abbr> je ne puis pas croire que ce mème <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>,
-               <lb/>qui par l'obscurité de son Style et la foiblesse de ses
-                 <lb/>Raisonnements sur les forces du Corps a montré qu'<pc type="hyphenation">-</pc><lb break="no"/>
-               <lb/>il n'y <add>a</add> que confusion dans ses Idées, puisse avoir
-               <lb/>entrepris d'expliquer la Philosophie de <abbr>Mr.</abbr>
-               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>; cependant il l'a fait dites vous et cela lui à
+               <lb/>qui par l’obscurité de son Style et la foiblesse de ses
+                 <lb/>Raisonnements sur les forces du Corps a montré qu’<pc type="hyphenation">-</pc><lb break="no"/>
+               <lb/>il n’y <add>a</add> que confusion dans ses Idées, puisse avoir
+               <lb/>entrepris d’expliquer la Philosophie de <abbr>Mr.</abbr>
+               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>; cependant il l’a fait dites vous et cela lui à
                <lb/>valu un profit de 8 à 9000 guinées, dont il est re<pc type="hyphenation">-</pc><lb break="no"/>devable à la Reco<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endation de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
                <lb/>Que ne suis je né Anglois! pour faire une fortune
                <lb/>semblable; je croupis ici dans un coin du Monde,
                <lb/>ou avec toute ma Science on me laisseroit crever
-               <lb/>de faim, si je n'avois pas ma petite Subsistance de
+               <lb/>de faim, si je n’avois pas ma petite Subsistance de
                <lb/>mon Patrimoine; Ne voit-on pas en <abbr>Mr.</abbr> <rs key="pers_DE-588-143687417" type="person">Pember<pc type="hyphenation">-</pc><lb break="no"/>ton</rs> verifié le Proverbe. <foreign xml:lang="lat"><hi rend="u">Fortuna favet fatuis</hi></foreign><note type="editorial">Das Sprichwort bedeutet in deutscher Übersetzung: Das Glück begünstigt die Dummen. cf. Oxford Dictionary of Proverbs, hg. J. Speake, 6th ed.</note>.
                <lb/>Il <del>y a </del>est vrai, que les Anglois sont sages mais il
-               <lb/>n'y à nation au monde, qui soit <del/>plus opini<pc type="hyphenation">-</pc><lb break="no"/>atre en fait de prejugés, cette opiniatreté etouffe
+               <lb/>n’y à nation au monde, qui soit <del/>plus opini<pc type="hyphenation">-</pc><lb break="no"/>atre en fait de prejugés, cette opiniatreté etouffe
             <pb facs="1073672" n="23"/>
 <lb/>souvent la Sagesse; il semble que les anglois
-               <lb/>aiment à ètre trompez <foreign xml:lang="lat"><hi rend="u">Mundus vult decipi</hi></foreign><note type="editorial">Die Redewendung bedeutet ins Deutsche übersetzt: "Die Welt will getäuscht werden." Üblicherweise wird noch ergänzt: "decipiatur ergo", was heisst: "also soll sie getäuscht werden".</note>: qu'ils
-               <lb/>le soyent donc. Quand j'aurai la nouvelle Edition
+               <lb/>aiment à ètre trompez <foreign xml:lang="lat"><hi rend="u">Mundus vult decipi</hi></foreign><note type="editorial">Die Redewendung bedeutet ins Deutsche übersetzt: "Die Welt will getäuscht werden." Üblicherweise wird noch ergänzt: "decipiatur ergo", was heisst: "also soll sie getäuscht werden".</note>: qu’ils
+               <lb/>le soyent donc. Quand j’aurai la nouvelle Edition
                  <lb/>des <rs key="biblio_73DJ8AIG" type="biblio">principes</rs> de <rs key="pers_DE-588-118587544" type="person">Newton</rs> procurée par <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>,
-               <lb/>je verrai si l'Editeur à corrigé le grand nombre
-               <lb/>d'erreurs et de paralogismes que j'ai remar<pc type="hyphenation">-</pc><lb break="no"/>qués dans les deux premieres <rs key="biblio_73DJ8AIG biblio_6CP8LL78" type="biblios">Editions</rs>, outre
-               <lb/>ceux que j'ai deja publiés autrefois.</p>
+               <lb/>je verrai si l’Editeur à corrigé le grand nombre
+               <lb/>d’erreurs et de paralogismes que j’ai remar<pc type="hyphenation">-</pc><lb break="no"/>qués dans les deux premieres <rs key="biblio_73DJ8AIG biblio_6CP8LL78" type="biblio">Editions</rs>, outre
+               <lb/>ceux que j’ai deja publiés autrefois.</p>
 <p><lb/>Je ne suis pas en peine de ce que <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>
 <lb/>à taché de refuter mon Système sur le <abbr>mouvemt.</abbr>
-  <lb/>des muscles<note type="editorial">Die Stelle bezieht sich auf des Briefautors Werk "<rs type="biblio">De motu musculorum</rs>", 1694, worin die Muskelbewegung resp. -kontraktion mittels Prinzipien der Hydrodynamik und Elastizitätstheorie erklärt wird, unter neuer Anwendung der Infinitesimalrechnung. s. die neuere Arbeit von Sibylle Ohly, "Johann Bernoullis mechanische Arbeiten 1690-1713", 2004.</note>, j'y ai répondu dans une <rs  key="B_991170515148705501" type="letter">Lettre</rs> à <abbr>mr.</abbr> <rs key="pers_DE-588-102552517" type="person">Miche<pc type="hyphenation">-</pc><lb break="no"/>lotti</rs>, qu'il aura publiée ou qu'il publiera, ou
-               <lb/>j'ai montré que <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> lui meme commet
-               <lb/>des paralogismes en voulant determiner la figu<pc type="hyphenation">-</pc><lb break="no"/>re des vesicules musculaires et qu'il ne com<pc type="hyphenation">-</pc><lb break="no"/>prend pas en quoi consiste <del>leur </del><add>leur</add> structure verita<pc type="hyphenation">-</pc><lb break="no"/>ble qui fait qu'elles se courbent necessairement
+  <lb/>des muscles<note type="editorial">Die Stelle bezieht sich auf des Briefautors Werk "<rs type="biblio">De motu musculorum</rs>", 1694, worin die Muskelbewegung resp. -kontraktion mittels Prinzipien der Hydrodynamik und Elastizitätstheorie erklärt wird, unter neuer Anwendung der Infinitesimalrechnung. s. die neuere Arbeit von Sibylle Ohly, "Johann Bernoullis mechanische Arbeiten 1690-1713", 2004.</note>, j’y ai répondu dans une <rs  key="B_991170515148705501" type="letter">Lettre</rs> à <abbr>mr.</abbr> <rs key="pers_DE-588-102552517" type="person">Miche<pc type="hyphenation">-</pc><lb break="no"/>lotti</rs>, qu’il aura publiée ou qu’il publiera, ou
+               <lb/>j’ai montré que <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> lui meme commet
+               <lb/>des paralogismes en voulant determiner la figu<pc type="hyphenation">-</pc><lb break="no"/>re des vesicules musculaires et qu’il ne com<pc type="hyphenation">-</pc><lb break="no"/>prend pas en quoi consiste <del>leur </del><add>leur</add> structure verita<pc type="hyphenation">-</pc><lb break="no"/>ble qui fait qu’elles se courbent necessairement
                <lb/>en portion de sphere, ou plutôt en une fi<pc type="hyphenation">-</pc><lb break="no"/>gure, qui se decrit par la revolution
-               <lb/>d'un petit Segment de cercle au<pc type="hyphenation">-</pc><lb break="no"/>tour de sa corde, c'est que je
+               <lb/>d’un petit Segment de cercle au<pc type="hyphenation">-</pc><lb break="no"/>tour de sa corde, c’est que je
                <lb/>conçois la vesicule qui <choice><orig><g ref="#aacut">á</g></orig><reg>a</reg></choice>
                <lb/>cette figure, non pas co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
                <lb/>une peau continue, car
@@ -753,101 +746,101 @@
             <pb facs="1073673" n="24"/>
 <lb/><del>la </del>pas laisser echaper la matiére elastique a<pc type="hyphenation">-</pc><lb break="no"/>prés le premier gonflement, pour ceder à la nou<pc type="hyphenation">-</pc><lb break="no"/>velle qui succede à tout moment, mais je regarde
                <lb/>chaque vesicule, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e percée à jour et composée
-               <lb/>d'un grand nombre de filamens disposés en forme
-               <lb/>de meridiens, à peu près co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les fils de fer d'une
+               <lb/>d’un grand nombre de filamens disposés en forme
+               <lb/>de meridiens, à peu près co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les fils de fer d’une
                <lb/>cage; or il est clair, que chaque filament doit
                <lb/>se courber en arc de cercle, et que tous ces arcs
                <lb/>disposez en rond doivent representer la figure de
                <lb/>la vesicule dont je viens de parler. Quant au reste,
                <lb/>je ne suis pas surpris que <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> affecte de
                <lb/>ne pas employer ma methode pour les figures
-               <lb/>isoperimètres, pendant qu'il tache de la deguiser
+               <lb/>isoperimètres, pendant qu’il tache de la deguiser
                <lb/>pour <del>les </del>faire croire que ce soit une nouvelle
                <lb/>et de son invention, il suit en cela la mode du
                <lb/>Pays; <rs key="pers_DE-588-124275087" type="person">K<del>a</del>eyl</rs>, <rs key="pers_DE-588-117659606" type="person"><del>S</del>Chey<del>m</del>nes</rs>, <rs key="pers_DE-588-118801481" type="person">Taylor</rs>, et plusieurs autres
                <lb/>anglois ingrats ont pratiqué la méme chose par
-               <lb/>rapport à moi; ils m'ont volé, pillè et ravi tout ce
-  <lb/>qui leur plaisoit, et pour cacher le larcin, ils l'<pc type="hyphenation"></pc>
+               <lb/>rapport à moi; ils m’ont volé, pillè et ravi tout ce
+  <lb/>qui leur plaisoit, et pour cacher le larcin, ils l’<pc type="hyphenation"></pc>
   <lb break="no"/>
-               <lb/>ont couvert sous le voile de l'obscurité
-               <lb/>et prolixité et pour comble d'ingra<pc type="hyphenation">-</pc><lb break="no"/>titude ils m'ont accablé d'injures,
-               <lb/>croyant que c'étoit le moyen
-               <lb/>de persuader, qu'ils ne m'a<pc type="hyphenation">-</pc><lb break="no"/>voient rien volé. ce que
+               <lb/>ont couvert sous le voile de l’obscurité
+               <lb/>et prolixité et pour comble d’ingra<pc type="hyphenation">-</pc><lb break="no"/>titude ils m’ont accablé d’injures,
+               <lb/>croyant que c’étoit le moyen
+               <lb/>de persuader, qu’ils ne m’a<pc type="hyphenation">-</pc><lb break="no"/>voient rien volé. ce que
                <lb/>vous ajoutés, touchant
             <pb facs="1073674" n="25"/>
 <lb/>la perplexité des figures, dont se sert <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, où il
-               <lb/>y en a dites<supplied>-</supplied>vous de si chargées de Lettres, qu'elles employ<pc type="hyphenation">-</pc><lb break="no"/>ent les 2 alphabets latins et un grec, ceci, dis<supplied>-</supplied>je acheve
-               <lb/>de me convaincre, que c'est le meme <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, qui
+               <lb/>y en a dites<supplied>-</supplied>vous de si chargées de Lettres, qu’elles employ<pc type="hyphenation">-</pc><lb break="no"/>ent les 2 alphabets latins et un grec, ceci, dis<supplied>-</supplied>je acheve
+               <lb/>de me convaincre, que c’est le meme <rs key="pers_DE-588-143687417" type="person">Pemberton</rs>, qui
                <lb/>à été mon Antagoniste anonyme sur les Traje<pc type="hyphenation">-</pc><lb break="no"/>ctoires, car vous trouverez aussi dans ses pieces sur
                <lb/>cette matiere quelques douzaines de petites figures sur
                <lb/>une seule page in 4<hi rend="sup">to</hi>, dont chacune de ces figures
-               <lb/>fourmille de lettres tant grecques que latines, qu'il
+               <lb/>fourmille de lettres tant grecques que latines, qu’il
                <lb/>faut un microscope pour les discerner, encore
                <lb/>ne voit on pas à quels points on les doit rapporter,
-               <lb/>c'est ce que je lui ai reproché publiquement; Je
-               <lb/>croi que ces <abbr>Mrs.</abbr> affectent à dessein cette façon d'ec<unclear>rire</unclear>
-               <lb/>obscure et perplexe pour n'etre pas entend<add>us</add>,
-               <lb/>sachant qu'un Lecteur tant soit peu paroisseux
+               <lb/>c’est ce que je lui ai reproché publiquement; Je
+               <lb/>croi que ces <abbr>Mrs.</abbr> affectent à dessein cette façon d’ec<unclear>rire</unclear>
+               <lb/>obscure et perplexe pour n’etre pas entend<add>us</add>,
+               <lb/>sachant qu’un Lecteur tant soit peu paroisseux
                <lb/>aime mieux les en croire sur leur parole, que de
-               <lb/>se casser la téte à dechiffrer un long tissu d'enigmes.</p>
+               <lb/>se casser la téte à dechiffrer un long tissu d’enigmes.</p>
   <p><lb/>Voila une longue <rs key="B_991170514979305501" type="letter">lettre</rs>, et <del>q </del>bien plus longue
                <lb/>que je ne me proposois en la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ençant; il faut pour<pc type="hyphenation">-</pc><lb break="no"/>tant aussi vous repondre sur <rs key="B_991170514979405501" type="letter">votre derniere du 15
-  <lb/>Avril</rs> ecrite de <rs key="place_GEO-2643743" type="place">Londres</rs>, ce que je ferai le plus succincte<pc type="hyphenation">-</pc><lb break="no"/>ment que je pourrai: Vous dites, <cit><quote type="paraphrase"><hi rend="u">qu'on à tenu des
-               <lb/>conseils de guerre dont le resultat a eté, qu'on pouvoit
-               <lb/>encore se defendre, et que la place n'etoit pas si fort
-  <lb/>pressèe, qu'elle ne put encore tenir bon quelque tems</hi></quote></cit>.
+  <lb/>Avril</rs> ecrite de <rs key="place_GEO-2643743" type="place">Londres</rs>, ce que je ferai le plus succincte<pc type="hyphenation">-</pc><lb break="no"/>ment que je pourrai: Vous dites, <cit><quote type="paraphrase"><hi rend="u">qu’on à tenu des
+               <lb/>conseils de guerre dont le resultat a eté, qu’on pouvoit
+               <lb/>encore se defendre, et que la place n’etoit pas si fort
+  <lb/>pressèe, qu’elle ne put encore tenir bon quelque tems</hi></quote></cit>.
                <lb/><choice><orig><g ref="#Agrav">À</g></orig><reg>A</reg></choice> vous entendre parler de la sorte, on croiroit que
-               <lb/>la place est sur le point de capituler puis<pc type="hyphenation">-</pc><lb break="no"/>qu'elle compte ne tenir bon que quel<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> tems encore.
+               <lb/>la place est sur le point de capituler puis<pc type="hyphenation">-</pc><lb break="no"/>qu’elle compte ne tenir bon que quel<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> tems encore.
             <pb facs="1073675" n="26"/>
 <lb/>En effet ses tergiversations sont si miserables,
-               <lb/>que je m'etonne qu'elle puisse vous ebranler un seul
-               <lb/>moment; Qu'y a-t-il de plus faux que de dire qu'un
+               <lb/>que je m’etonne qu’elle puisse vous ebranler un seul
+               <lb/>moment; Qu’y a-t-il de plus faux que de dire qu’un
                <lb/>grand nombre de ressorts egaux mis en ligne droite
-               <lb/>l'un devant l'autre ne co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique pas plus de
-               <lb/>forces, qu'un petit nombre de ces mémes ressorts
-               <lb/>et par consequent n'imprimera pas à un corps
-               <lb/>qu'ils poussent <add>u</add>ne plus grande vitesse, savoir
-               <lb/>si c'est le méme corps qui est poussé tantôt par le grand
+               <lb/>l’un devant l’autre ne co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique pas plus de
+               <lb/>forces, qu’un petit nombre de ces mémes ressorts
+               <lb/>et par consequent n’imprimera pas à un corps
+               <lb/>qu’ils poussent <add>u</add>ne plus grande vitesse, savoir
+               <lb/>si c’est le méme corps qui est poussé tantôt par le grand
                <lb/>rang tantôt par le petit rang de ressorts. Cette
-               <lb/>objection m'a été faite aussi par <abbr>Mr</abbr> <rs key="pers_DE-588-117683280" type="person">Delouville</rs>, mais
-               <lb/>elle est si foible que je n'aurois pas cru que les
+               <lb/>objection m’a été faite aussi par <abbr>Mr</abbr> <rs key="pers_DE-588-117683280" type="person">Delouville</rs>, mais
+               <lb/>elle est si foible que je n’aurois pas cru que les
                <lb/>anglois, qui pretendent primer sur tous les autres
-               <lb/>en fait de clairvoyance voulussent s'en servir;
-               <lb/>si ce qu'ils disent étoit vrai, ne voyés vous pas
-               <lb/>qu'il faudroit, qu'une grande charge de poudre
+               <lb/>en fait de clairvoyance voulussent s’en servir;
+               <lb/>si ce qu’ils disent étoit vrai, ne voyés vous pas
+               <lb/>qu’il faudroit, qu’une grande charge de poudre
                <lb/>mise dans un <choice><sic>musquet</sic><corr
                  >mousquet</corr></choice> ne porteroit la bale pas
-               <lb/>plus loin, qu'une petite charge de la mème poudre,
-               <lb/>mais qu'elle absurdité! La comparaison est fort juste
-               <lb/>car chaque grain de poudre dès qu'il prend
+               <lb/>plus loin, qu’une petite charge de la mème poudre,
+               <lb/>mais qu’elle absurdité! La comparaison est fort juste
+               <lb/>car chaque grain de poudre dès qu’il prend
                <lb/>feu est un ressort qui se debande: Relisez ce que
-               <lb/>j'ai dit cy dessus sur les ressorts (<abbr>Fig.</abbr> 1. 2.) mis tantot
-               <lb/>l'un devant l'autre, tant<choice><orig><g ref="#oacut">ó</g></orig><reg>o</reg></choice>t l'un à coté de l'autre,
-               <lb/>qui imprimeront de l'une et de l'autre maniere
+               <lb/>j’ai dit cy dessus sur les ressorts (<abbr>Fig.</abbr> 1. 2.) mis tantot
+               <lb/>l’un devant l’autre, tant<choice><orig><g ref="#oacut">ó</g></orig><reg>o</reg></choice>t l’un à coté de l’autre,
+               <lb/>qui imprimeront de l’une et de l’autre maniere
                <lb/>un méme degré de vitesse à un méme corps.
             <pb facs="1073676" n="27"/>
 <lb/>Ainsi un Rang de 18 ressorts co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquera au
-               <lb/>corps qu'il pousse precisement la meme vitesse,
+               <lb/>corps qu’il pousse precisement la meme vitesse,
                <lb/>que feroient 3 rangs de 6 ressorts chacun, posé
-               <lb/>l'un à coté de l'autre; Je demanderois donc à vos an<pc type="hyphenation">-</pc><lb break="no"/>glois si ces 3 rangs l'un auprés de l'autre ne fe<pc type="hyphenation">-</pc><lb break="no"/>ront pas plus d'effet qu'un seul rang? Supposé
+               <lb/>l’un à coté de l’autre; Je demanderois donc à vos an<pc type="hyphenation">-</pc><lb break="no"/>glois si ces 3 rangs l’un auprés de l’autre ne fe<pc type="hyphenation">-</pc><lb break="no"/>ront pas plus d’effet qu’un seul rang? Supposé
                <lb/>chacun de 6 ressorts.</p><!-- Bis hier kollationiert -->
 <p><lb/>La Comparaison des ressorts à une corde de musique
-               <lb/>cloche extremement. L'action des ressorts consiste à
+               <lb/>cloche extremement. L’action des ressorts consiste à
                <lb/>produire une certaine Vitesse dans un corps donné,
-               <lb/>mais dans l'extension de la corde on ne regarde que
-               <lb/>l'augmentation de sa longueur sans faire attention
+               <lb/>mais dans l’extension de la corde on ne regarde que
+               <lb/>l’augmentation de sa longueur sans faire attention
                <lb/>à <unclear>l</unclear>a vitesse, avec laquelle cette augmentation se
                <lb/>fait. La demonstration que les anglois en tirent contre
-               <lb/>moi n'est qu'un pur Sophisme, car cet enoncé, que
+               <lb/>moi n’est qu’un pur Sophisme, car cet enoncé, que
                 <lb/><hi rend="u">deux forces mortes ou pressions egales agissant
                <lb/>pendant des temps egaux produisent des forces vi<pc type="hyphenation">-</pc><lb break="no"/>ves egales</hi>, ce que vous aviez, dites vous, regardé
-               <lb/>comme un axiome, n'est <del>vous </del><add>vrai</add> que lorsque les
-               <lb/>Circonstances sont aussi egales, <choice><abbr>c. a. d.</abbr><expan>c'est-à-dire</expan></choice>
+               <lb/>comme un axiome, n’est <del>vous </del><add>vrai</add> que lorsque les
+               <lb/>Circonstances sont aussi egales, <choice><abbr>c. a. d.</abbr><expan>c’est-à-dire</expan></choice>
                <lb/>lorsque les corps sur lesquels les pres<pc type="hyphenation">-</pc><lb break="no"/>sions egales agissent sont aussi egaux,
-               <lb/>et qu'outre cela les pressions quand elles sont
+               <lb/>et qu’outre cela les pressions quand elles sont
                <lb/>variables elles observent, une méme loi de variabilité
             <pb facs="1073677" n="28"/>
-<lb/>de part et d'autre dans toutes les parties du tems, que
+<lb/>de part et d’autre dans toutes les parties du tems, que
                <lb/>dure leur action, car autrement <del/><add>ce</add> canon seroit faux.
                <lb/>Imaginez <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> un ressort appuyé sur un point fixe, qui
                <lb/>en se debandant pousse un grand corps <formula>A</formula> et lui imprime
@@ -855,61 +848,61 @@
                <lb/>autre ressort egal au premier et egalement bandé,
                <lb/>lequel insistant pareillement contre un point immobi<pc type="hyphenation">-</pc><lb break="no"/>le chasse par sa detente un petit corps <formula>B</formula> dont la derni<pc type="hyphenation">-</pc><lb break="no"/>ere vitesse soit <formula>b</formula>, il est certain et on le peut aisément demon<pc type="hyphenation">-</pc><lb break="no"/>trer que <formula>aaA</formula> sera <formula>=bbB</formula>; Mais le tems pendant lequel le
                <lb/>premier ressort produit tout son<del>t<del/></del> effet est au tems
-               <lb/>qu'il faut au second ressort pour achever toute
+               <lb/>qu’il faut au second ressort pour achever toute
                <lb/>son action co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>A</formula> est à <formula>B</formula>, ou comme <formula>bb</formula> est à <formula>aa</formula>;
                <lb/>Supposons maintenant que <formula>A</formula> soit infiniment plus grand
                <lb/>que <formula>B</formula>; il faut donc que si le second ressort requiert par <abbr>ex.</abbr>
                <lb/><del>une second </del>une seconde pour se debander il faut dis-je
                <lb/>une infinité de secondes, ou une éternité au premier <choice><abbr>p. <hi rend="sup">r</hi></abbr><expan>pour</expan></choice>
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer toute sa force au corps <formula>A</formula>; d'ou il suivroit
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer toute sa force au corps <formula>A</formula>; d’ou il suivroit
                <lb/>selon ce bel axiome que le corps <formula>A</formula> qui seroit comme
-               <lb/>sans mouvement, parceque <hi rend="u"><formula>a</formula></hi> seroit infiniment plus petit
-               <lb/>que <hi rend="u"><formula>b</formula></hi> <del>eut </del>eut pourtant reçu du premier ressort une
+  <lb/>sans mouvement, parceque <formula>\underline{a}</formula> seroit infiniment plus petit
+  <lb/>que <formula>\underline{b}</formula> <del>eut </del>eut pourtant reçu du premier ressort une
                <lb/>force infiniment plus grande, que celle
                <lb/>que recevroit le Corps <formula>B</formula> du second ressort,
                <lb/>puisque <formula>A</formula> auroit souffert une egale pres<pc type="hyphenation">-</pc><lb break="no"/>sion, pendant un tems infini, et <formula>B</formula> la
-               <lb/>méme pression (supposé qu'elle fut uniforme) pendant
+               <lb/>méme pression (supposé qu’elle fut uniforme) pendant
             <pb facs="1073678" n="29"/>
 <lb/>une seconde seulement. Et ce qui est plus ridicule, il
                <lb/>faudroit que le Corps <formula>A</formula> dans la premiere seconde, quoique
                <lb/>encore visiblement immobile eut deja acquis une force egale
-               <lb/>à celle qu'eut acquise le Corps <formula>B</formula> avec la plus grande vitesse
-               <lb/>quelque rapide qu'elle fut; en un mot tout Corps i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>obile
+               <lb/>à celle qu’eut acquise le Corps <formula>B</formula> avec la plus grande vitesse
+               <lb/>quelque rapide qu’elle fut; en un mot tout Corps i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>obile
                <lb/>pressé par quelque effort, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e par <abbr>ex</abbr>: les parois de
-               <lb/>l'espace ou est renfermé l'air condensé dans l'<choice><orig>harquebuse</orig><reg>arquebuse</reg></choice>
+               <lb/>l’espace ou est renfermé l’air condensé dans l’<choice><orig>harquebuse</orig><reg>arquebuse</reg></choice>
                <lb/>à Vent, devroient étre censé avoir acquis de cette pression
                <lb/>(qui a duré si vous voulés 24 heures) une force in<pc type="hyphenation">-</pc><lb break="no"/>comparablement plus grande que la bale elle méme, chassée
                <lb/>avec la plus grande rapidité par la Dilatation subite de
-               <lb/>cet air condense au lieu qu'on dit ordinairement que le
+               <lb/>cet air condense au lieu qu’on dit ordinairement que le
                <lb/>moindre <hi rend="u">impetus</hi> est plus fort que la pesanteur du plus
                <lb/>grand poids en repos: voila à quelles Extravagances nos
                <lb/>Adversaires sont reduits en soutenant cette maxime que
                <lb/><hi rend="u">deux forces egales agissant pendant le méme tems pro<pc type="hyphenation">-</pc><lb break="no"/>duisent des efféts egaux</hi>.</p>
 <p><lb/>Il est vrai, ce que vous dites, <cit><quote type="paraphrase">que tout cela revient à faire
-               <lb/>voir la raison pourquoi c'est l'element de la vitesse et
+               <lb/>voir la raison pourquoi c’est l’element de la vitesse et
                <lb/>n<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice> celui de la <rs type="keyword">force vive</rs>, qui est proportionel à la pression <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
   <lb/>le tems infiniment Petit.</quote></cit> Ainsi la reponse que je vous ai
                <lb/>donnée ci dessus pourra seule resoudre toute la difficulté;
-               <lb/>Et co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e nos Anglois admettent le <formula>dv=\frac{pdx}{v}</formula> il s'ensuit ne<pc type="hyphenation">-</pc><lb break="no"/>cessairement, que <formula>df=pdx</formula> <choice><abbr>c. a. d.</abbr><expan>c'est-à-dire</expan></choice> que l'element de la <rs type="keyword">force
-               <lb/>vive</rs> est proportionel à la pression par l'espace infinimen<unclear>t</unclear>
-               <lb/>petit, en sorte que c'est l'element de l'espace et non celui
+               <lb/>Et co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e nos Anglois admettent le <formula>dv=\frac{pdx}{v}</formula> il s’ensuit ne<pc type="hyphenation">-</pc><lb break="no"/>cessairement, que <formula>df=pdx</formula> <choice><abbr>c. a. d.</abbr><expan>c’est-à-dire</expan></choice> que l’element de la <rs type="keyword">force
+               <lb/>vive</rs> est proportionel à la pression par l’espace infinimen<unclear>t</unclear>
+               <lb/>petit, en sorte que c’est l’element de l’espace et non celui
             <pb facs="1073679" n="30"/><!-- Bis hier Code durchgesehen u. korrigiert/ergänzt. MK -->
 <lb/>du tems, qui avec la pression doit produire les accrois<pc type="hyphenation">-</pc><lb break="no"/>sements de la force vive.</p>
-<p><lb/>C'est deja un grand pas que les Anglois ont fait en avou<pc type="hyphenation">-</pc><lb break="no"/>ant que malgré toute leur opiniatreté il n'ont rien à re<pc type="hyphenation">-</pc><lb break="no"/>pliquer touchant mes arguments des <abbr>Chap.</abbr> 5 et 9
+<p><lb/>C’est deja un grand pas que les Anglois ont fait en avou<pc type="hyphenation">-</pc><lb break="no"/>ant que malgré toute leur opiniatreté il n’ont rien à re<pc type="hyphenation">-</pc><lb break="no"/>pliquer touchant mes arguments des <abbr>Chap.</abbr> 5 et 9
                <lb/>et en reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissant que les objections de <abbr>mr.</abbr> <rs type="person">Eames</rs> ne sont
-               <lb/>que de miserables Sophismes. Mais de vouloir poin<pc type="hyphenation">-</pc><lb break="no"/>tiller sur l'obliquité du Choc et chercher je ne sai quoi
-               <lb/>de difficile et d'embarassant dans la decomposition de
-               <lb/>la direction, c'est une pauvre defaite, c'est <foreign xml:lang="lat"><hi rend="u">nodum in scirpo
+               <lb/>que de miserables Sophismes. Mais de vouloir poin<pc type="hyphenation">-</pc><lb break="no"/>tiller sur l’obliquité du Choc et chercher je ne sai quoi
+               <lb/>de difficile et d’embarassant dans la decomposition de
+               <lb/>la direction, c’est une pauvre defaite, c’est <foreign xml:lang="lat"><hi rend="u">nodum in scirpo
                <lb/>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>rere</hi></foreign><note type="editorial">Die Redewendung kann wörtlich übersetzt werden wie folgt:"Stengelknoten (auch) an der Binse suchen." D.h. im vorliegenden Zusammenhang, dass die von den Engländern ins Spiel gebrachte Schrägheit des Aufpralls ("obliquité du choc") keine neuen Erkenntnisse bringt - oder anders gesagt eine Binsenwahrheit darstellt.</note>. De cette maniére je pourrois chicaner sur la
-               <lb/>meilleure Demonstration de Geometre, quand elle ne m'ac<pc type="hyphenation">-</pc><lb break="no"/>comoderoit pas; je pourrois objecter par <abbr>ex.</abbr> que dans la
-               <lb/>Demonstration de <rs key="pers_DE-588-118597248" type="person">Pythagore</rs> de l'egalité d<del>es</del><add>u</add> quarré<del>s</del>
-<lb/>de l'hypothenuse aux deux quarrez des cotés, on
+               <lb/>meilleure Demonstration de Geometre, quand elle ne m’ac<pc type="hyphenation">-</pc><lb break="no"/>comoderoit pas; je pourrois objecter par <abbr>ex.</abbr> que dans la
+               <lb/>Demonstration de <rs key="pers_DE-588-118597248" type="person">Pythagore</rs> de l’egalité d<del>es</del><add>u</add> quarré<del>s</del>
+<lb/>de l’hypothenuse aux deux quarrez des cotés, on
                <lb/>fait une preparation dans la figure en <del>y </del><add>y</add> tirant
                <lb/>de certaines lignes, ou il y a quelque chose de difficile et
-               <lb/>d'embarassant; Ces <abbr>Mrs.</abbr> devroient montrer <abbr>clairemt.</abbr>
-               <lb/>pourquoi il ne me seroit pas permis de diriger le mou<pc type="hyphenation">-</pc><lb break="no"/>vement de la boule d'une maniére convenable pour faire
-               <lb/>voir l'effet qu'elle peut faire en consumant toute la force
-               <lb/>de son mouvement, aussi bien qu'il étoit permis à <rs key="pers_DE-588-118597248" type="person">Py<pc type="hyphenation">-</pc><lb break="no"/>thagore</rs> de tirer telles et telles lignes pour demon<pc type="hyphenation">-</pc><lb break="no"/>trer son Theoréme; Si ces <abbr>Mrs.</abbr> pouvoient me montrer
+               <lb/>d’embarassant; Ces <abbr>Mrs.</abbr> devroient montrer <abbr>clairemt.</abbr>
+               <lb/>pourquoi il ne me seroit pas permis de diriger le mou<pc type="hyphenation">-</pc><lb break="no"/>vement de la boule d’une maniére convenable pour faire
+               <lb/>voir l’effet qu’elle peut faire en consumant toute la force
+               <lb/>de son mouvement, aussi bien qu’il étoit permis à <rs key="pers_DE-588-118597248" type="person">Py<pc type="hyphenation">-</pc><lb break="no"/>thagore</rs> de tirer telles et telles lignes pour demon<pc type="hyphenation">-</pc><lb break="no"/>trer son Theoréme; Si ces <abbr>Mrs.</abbr> pouvoient me montrer
                <lb/>que par une autre Direction du mouvement la méme<!-- Bis hier kollationiert -->
             <pb facs="1073680" n="31"/>
 <lb/>boule pourroit produire tantôt un plus grand tantôt
@@ -917,15 +910,15 @@
                <lb/>plus grand tantôt un moindre nombre de ressorts egaux, ou
                <lb/>en mettant en mouvement egal tantot un plus grand
                <lb/>tantôt un moin<del>d</del>s grand nombre de boules egales elastiques,
-               <lb/>alors j'avouerois ingenuement que j'aurois tort et
+               <lb/>alors j’avouerois ingenuement que j’aurois tort et
                <lb/>que notre Theorie des <rs type="keyword">forces vives</rs> seroit entierement
                <lb/>fausse; Mais je suis assuré que de quelque<del>s</del> manière
-               <lb/>qu'ils modifient la direction d<unclear>e</unclear> mouvement, ils ne
-               <lb/>trouveront jamais ni plus ni moins d'effét homogéne
+               <lb/>qu’ils modifient la direction d<unclear>e</unclear> mouvement, ils ne
+               <lb/>trouveront jamais ni plus ni moins d’effét homogéne
                <lb/>que la boule aura <choice><sic>produits</sic><corr>produit</corr></choice> en consumant son <abbr>mouvemt.</abbr>
-               <lb/>J'ai pou<unclear>rt</unclear>ant trouvé le moyen de faire en sorte que
-               <lb/>par le Choc direct et central une grande boule trans<pc type="hyphenation">-</pc><lb break="no"/>porte tout ce qu'elle a de force à une petite boule qui é<pc type="hyphenation">-</pc><lb break="no"/>toit en repos avant le Choc, et que cette petite boule
-               <lb/>aura ensuite une vitesse dont le quarré sera au quar<pc type="hyphenation">-</pc><lb break="no"/>ré de la vitesse qu'avoit la grande boule avant le
+               <lb/>J’ai pou<unclear>rt</unclear>ant trouvé le moyen de faire en sorte que
+               <lb/>par le Choc direct et central une grande boule trans<pc type="hyphenation">-</pc><lb break="no"/>porte tout ce qu’elle a de force à une petite boule qui é<pc type="hyphenation">-</pc><lb break="no"/>toit en repos avant le Choc, et que cette petite boule
+               <lb/>aura ensuite une vitesse dont le quarré sera au quar<pc type="hyphenation">-</pc><lb break="no"/>ré de la vitesse qu’avoit la grande boule avant le
                <lb/>choc, reciproquement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e la masse de la grande sera
                <lb/>à la masse de la petite boule: Je suppose les boules
                <lb/>parfaitement elastiques, soit la masse de la grande
@@ -933,111 +926,111 @@
 <lb/>la vitesse de la premiere soit <formula>=v</formula> et la
                <lb/>seconde soit en repos avant le Choc;
             <pb facs="1073681" n="32"/>
-<lb/>on trouvera par les regles de la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unication du mou<pc type="hyphenation">-</pc><lb break="no"/>vement que j'ai do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ées et que nos Antagonistes admettent,
-               <lb/>qu'aprés le choc la grande boule gardera une vi<pc type="hyphenation">-</pc><lb break="no"/>tesse de méme sens qui sera <formula>=</formula><del/> <formula>v\cdot\sqrt{\frac{1}{2}}</formula> et la vitesse de
-               <lb/>la petite boule se<add>ra</add> <formula>=v+v\cdot\sqrt{\frac{1}{2}}</formula>; Supposons maintenant
+<lb/>on trouvera par les regles de la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unication du mou<pc type="hyphenation">-</pc><lb break="no"/>vement que j’ai do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ées et que nos Antagonistes admettent,
+               <lb/>qu’aprés le choc la grande boule gardera une vi<pc type="hyphenation">-</pc><lb break="no"/>tesse de méme sens qui sera <formula>=</formula><del/> <choice rend="regFormula"><orig><formula>v\sqrt{\frac{1}{2}}</formula></orig><reg><formula>v\cdot\sqrt{\frac{1}{2}}</formula></reg></choice> et la vitesse de
+  <lb/>la petite boule se<add>ra</add> <choice rend="regFormula"><orig><formula>=v+v\sqrt{\frac{1}{2}}</formula></orig><reg><formula>=v+v\cdot\sqrt{\frac{1}{2}}</formula></reg></choice><!-- Hier wie auch oben bei der Formel wurde noch ein Malzeichen ergänzt, resp. orig wurde entsprechend angepasst, weiter unten 2 ähnliche Fälle, RG 07.03.2025  -->; Supposons maintenant
                <lb/>que la petite boule retourne en arriére, avec toute sa
                <lb/>vitesse acquise, ce qui se peut pratiquer en lui
                <lb/>opposant un ressort parfait qui ne fera autre
                <lb/>chose, que le repousser avec la méme <add>vitesse</add> acquise et
-               <lb/>lui laissera par <abbr>conseq.</abbr> toute la force, qu'elle avoit gagné<supplied>e</supplied>
+               <lb/>lui laissera par <abbr>conseq.</abbr> toute la force, qu’elle avoit gagné<supplied>e</supplied>
                <lb/>par le premier choc; voyons donc ce qui arrivera quand
-               <lb/>ces deux boules allant à l'encontre l'une de l'autre se
+               <lb/>ces deux boules allant à l’encontre l’une de l’autre se
                <lb/>choquent une seconde fois; nous trouverons par les mémes
-               <lb/>regles en faisant le calcul, qu'aprés ce second choc la
-               <lb/>vitesse de la grande boule sera nulle, <abbr>c. a. d.</abbr> qu'elle
+               <lb/>regles en faisant le calcul, qu’aprés ce second choc la
+               <lb/>vitesse de la grande boule sera nulle, <abbr>c. a. d.</abbr> qu’elle
                <lb/>aura perdu tout son mouvement, et que la vitesse
-               <lb/>de la petite boule en avant sera <formula>=v+v\cdot\sqrt{2}</formula>. Or la grande
-               <lb/>boule ayant perdu toute sa force, qu'est ce qu'elle
+  <lb/>de la petite boule en avant sera <choice rend="regFormula"><orig><formula>=v+v\sqrt{2}</formula></orig><reg><formula>=v+v\cdot\sqrt{2}</formula></reg></choice>. Or la grande
+               <lb/>boule ayant perdu toute sa force, qu’est ce qu’elle
                <lb/>est devenuë? Sans doute elle se retrouve dans la
                <lb/>petite boule, car tout ce que celle<supplied>-</supplied>ci a de force elle
-               <lb/>l'a reçu, <del>elle </del>de la grande, le ressort n'ayant rien contribué
+               <lb/>l’a reçu, <del>elle </del>de la grande, le ressort n’ayant rien contribué
                <lb/>ni fait autre chose que changer la determination:
                <lb/>don<del>t</del><add>c</add> la force de la petite boule qui a la masse
-               <lb/><formula>=-1+\sqrt{2}</formula> et la vitesse <formula>=v+v\cdot\sqrt{2}</formula> est egale à
+  <lb/><formula>=-1+\sqrt{2}</formula> et la vitesse <choice rend="regFormula"><orig><formula>=v+v\sqrt{2}</formula></orig><reg><formula>=v+v\cdot\sqrt{2}</formula></reg></choice> est egale à
                <lb/>la force de la grande boule dont la masse
                <lb/><formula>=1+\sqrt{2}</formula> et la vitesse <formula>=v</formula>. Il reste à voir si le
             <pb facs="1073682" n="33"/>
-<lb/>quarré de <formula>v+v\sqrt{2}</formula> multiplié par <formula>-1+\sqrt{2}</formula> est egal au produit
-               <lb/>du quarré de <formula>v</formula> par <formula>1+\sqrt{2}</formula>, ou si c'est le produit du simple <formula>v+</formula>
-<lb/><formula>v\sqrt{2}</formula> par <formula>-1+\sqrt{2}</formula> qui est egal au produit simple <formula>v</formula> par <formula>1+\sqrt{2}</formula>,
-<lb/>or ce sont les deux premiers produits qui sont egaux, cha<pc type="hyphenation">-</pc><lb break="no"/>cun étant egal <formula>vv+vv\sqrt{2}</formula> et les deux autres produits
-               <lb/>sont inegaux, l'un etant <formula>v</formula> et l'autre <formula>v+v\sqrt{2}</formula>. Donc la
+  <lb/>quarré de <choice rend="regFormula"><orig><formula>v+v\sqrt{2}</formula></orig><reg><formula>v+v\cdot\sqrt{2}</formula></reg></choice> multiplié par <formula>-1+\sqrt{2}</formula> est egal au produit
+               <lb/>du quarré de <formula>v</formula> par <formula>1+\sqrt{2}</formula>, ou si c’est le produit du simple <formula>v+</formula>
+  <lb/><choice rend="regFormula"><orig><formula>v\sqrt{2}</formula></orig><reg><formula>v\cdot\sqrt{2}</formula></reg></choice> par <formula>-1+\sqrt{2}</formula> qui est egal au produit simple <formula>v</formula> par <formula>1+\sqrt{2}</formula>,
+<lb/>or ce sont les deux premiers produits qui sont egaux, cha<pc type="hyphenation">-</pc><lb break="no"/>cun étant egal <choice rend="regFormula"><orig><formula>vv+vv\sqrt{2}</formula></orig><reg><formula>vv+vv\cdot\sqrt{2}</formula></reg></choice> et les deux autres produits
+  <lb/>sont inegaux, l’un etant <formula>v</formula> et l’autre <choice rend="regFormula"><orig><formula>v+v\sqrt{2}</formula></orig><reg><formula>v+v\cdot\sqrt{2}</formula></reg></choice>. Donc la
                <lb/>verité est que ces deux boules qui ont successivement des
                <lb/>forces egales, ont leurs masses en raison reciproque des
-               <lb/>quarrés de leurs vitesses, <abbr>c. a. d.</abbr> <formula>-1+\sqrt{2}\cdot1+\sqrt{2}::vv\cdot(v+v\sqrt{2})^{2}</formula> <choice><abbr>C. Q. F. D.</abbr><expan>ce qu'il fallait démontrer</expan></choice></p>
-<p><lb/><hi rend="u"><choice><abbr>Cor.</abbr><expan>Corollaire</expan></choice> 1.</hi> Si au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement la petite boule à la vitesse <hi rend="u"><formula>v</formula></hi> et que
+  <lb/>quarrés de leurs vitesses, <abbr>c. a. d.</abbr> <choice rend="regFormula"><orig><formula>-1+\sqrt{2}\cdot1+\sqrt{2}::vv\cdot(v+v\sqrt{2})^{2}</formula></orig><reg><formula>-1+\sqrt{2}\cdot1+\sqrt{2}=vv\cdot(v+v\cdot\sqrt{2})^{2}</formula></reg></choice> <choice><abbr>C. Q. F. D.</abbr><expan>ce qu’il fallait démontrer</expan></choice></p>
+  <p><lb/><hi rend="u"><choice><abbr>Cor.</abbr><expan>Corollaire</expan></choice> 1.</hi> Si au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement la petite boule à la vitesse <formula>\underline{v}</formula> et que
                <lb/>la grande soit en repos, la petite rebroussera aprés le premier
-               <lb/>choc avec une vitesse <del>egale</del><formula>=v\cdot\sqrt{\frac{1}{2}}</formula>, et la grande aura acquis
-               <lb/>une vitesse en avant <formula>=v-v\sqrt{\frac{1}{2}}</formula>. Faisant retourner en avant la
-               <lb/>petite boule par le moyen d'un ressort, en sorte qu'elle
+    <lb/>choc avec une vitesse <del>egale</del><choice rend="regFormula"><orig><formula>=v\sqrt{\frac{1}{2}}</formula></orig><reg><formula>=v\cdot\sqrt{\frac{1}{2}}</formula></reg></choice>, et la grande aura acquis
+    <lb/>une vitesse en avant <choice rend="regFormula"><orig><formula>=v-v\sqrt{\frac{1}{2}}</formula></orig><reg><formula>=v-v\cdot\sqrt{\frac{1}{2}}</formula></reg></choice>. Faisant retourner en avant la
+               <lb/>petite boule par le moyen d’un ressort, en sorte qu’elle
                <lb/>vienne heurter une seconde fois contre la grande boule;
-               <lb/>on verra qu'aprés le second <choice><sic>choq</sic><corr>choc</corr></choice> la petite boule s'arrétera,
+               <lb/>on verra qu’aprés le second <choice><sic>choq</sic><corr>choc</corr></choice> la petite boule s’arrétera,
                <lb/>et que la grande aura une vitesse dont le quarré multiplié
-               <lb/>par sa masse sera <formula>=-vv+vv\sqrt{2}</formula> <abbr>c. a. d.</abbr> <formula>=</formula> au produit du quarré de
-  <lb/>la vitesse qu'avoit la petite boule avant le premier <choice><sic>choq</sic><corr>choc</corr></choice> <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> sa masse.</p>
+    <lb/>par sa masse sera <choice rend="regFormula"><orig><formula>=-vv+vv\sqrt{2}</formula></orig><reg><formula>=-vv+vv\cdot\sqrt{2}</formula></reg></choice> <abbr>c. a. d.</abbr> <formula>=</formula> au produit du quarré de
+  <lb/>la vitesse qu’avoit la petite boule avant le premier <choice><sic>choq</sic><corr>choc</corr></choice> <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> sa masse.</p>
 <p><lb/><hi rend="u"><abbr>Coroll.</abbr>2.</hi> Si je suppose les masses des deux boules co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
                <lb/><formula>2+\sqrt{3}</formula> et <formula>2-\sqrt{3}</formula> dont une se meuve avec la vitesse <formula>v</formula> contre
-               <lb/>l'autre en repos, je dis que cette autre aprés le troisieme
+               <lb/>l’autre en repos, je dis que cette autre aprés le troisieme
                <lb/>choc fera arreter la première et par consequent recevra
                <lb/>seule toute la force que la premiere avoit avant le
   <lb/>premier <choice><sic>choq</sic><corr>choc</corr></choice> et que le <add>produit du</add> quarré de sa vitesse multiplié
                <lb/>par sa masse sera egal au premier produit du quarré de
-               <lb/>la vitesse <formula>(vv)</formula> multiplié par la masse. Il n'y a qu'à en faite le cal<pc type="hyphenation">-</pc><lb break="no"/>cul; on le trouvera ainsi que je le dis. Je pour<supplied>r</supplied>ois trouver la raison des
-               <lb/>masses pour <del>quel </del><add>tel</add> nombre de chocs que l'on voudroit; mais c'en est
+               <lb/>la vitesse <formula>(vv)</formula> multiplié par la masse. Il n’y a qu’à en faite le cal<pc type="hyphenation">-</pc><lb break="no"/>cul; on le trouvera ainsi que je le dis. Je pour<supplied>r</supplied>ois trouver la raison des
+               <lb/>masses pour <del>quel </del><add>tel</add> nombre de chocs que l’on voudroit; mais c’en est
                <lb/>enfin assez sur cette matière.</p>
 <pb facs="1073683" n="34"/>
 <p><lb/>Avant que de finir cette longue lettre il faut
-               <lb/>que je vous mande ce que je viens d'apprendre
-               <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> à qui je m'etois plaint de
+               <lb/>que je vous mande ce que je viens d’apprendre
+               <lb/>de <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> à qui je m’etois plaint de
                <lb/>la Cabale concertée pour faire rejetter ma
-               <lb/><rs type="biblio">piece</rs> et pour adjuger le prix à d'autres qui
+               <lb/><rs type="biblio">piece</rs> et pour adjuger le prix à d’autres qui
                <lb/>ne le meritoient pas, selon que <abbr>Mr.</abbr> <rs key="pers_DE-588-118801481" type="person">Saurin</rs>
 <lb/>lui méme vous a rapporté dans votre entretien
-               <lb/>avec lui. Je fis part à <abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> d'un Ex<pc type="hyphenation">-</pc><lb break="no"/>trait de votre <rs type="letter">Lettre</rs> sans cependant vous no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er;
-               <lb/>la dessus il me repond qu'il en a fait un reproche
+               <lb/>avec lui. Je fis part à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> d’un Ex<pc type="hyphenation">-</pc><lb break="no"/>trait de votre <rs type="letter">Lettre</rs> sans cependant vous no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er;
+               <lb/>la dessus il me repond qu’il en a fait un reproche
                <lb/>à <abbr>mr</abbr> <rs key="pers_DE-588-118801481" type="person">S.</rs> en lui lisant cet extrait, mais que <abbr>Mr.</abbr> 
-               <lb/><rs key="pers_DE-588-118801481" type="person">S.</rs> repondit en niant formellement qu'il eut parlé
-               <lb/>de la sorte, et en assurant qu'il n'y avoit rien
+               <lb/><rs key="pers_DE-588-118801481" type="person">S.</rs> repondit en niant formellement qu’il eut parlé
+               <lb/>de la sorte, et en assurant qu’il n’y avoit rien
                <lb/>de plus faux. <hi rend="u">Car</hi> (ce sont les termes de <abbr>Mr.</abbr> <rs key="pers_DE-588-118801481" type="person">S.</rs> que
-               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> <choice><sic>raporte</sic><corr>rapporte</corr></choice>) <hi rend="u">Car 1.<hi rend="sup">o</hi> à l'egard de la Cabale
-               <lb/>nous savons bien, ajoutat-il, qu'il n'y en a eu aucune.
-               <lb/>2.<supplied><hi rend="sup">o</hi></supplied> Sur la preference qu'on a donné <del/><add>aux</add> autres pieces
-               <lb/>sur la votre; il dit qu'il est vrai qu'il a toujours re<pc type="hyphenation">-</pc><lb break="no"/>co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>u dans la votre une Superiorité d<del>u</del><add>e</add> Savoir et la
-               <lb/>main du maitre; mais qu'à d'autres egards il
-               <lb/>croyoit que l'<rs type="organisation">Academie</rs> avoit jugé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e elle devoit,
-               <lb/>qu'il ne l'avoit jamais blamée en cela et qu'il ne la
+               <lb/><abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> <choice><sic>raporte</sic><corr>rapporte</corr></choice>) <hi rend="u">Car 1.<hi rend="sup">o</hi> à l’egard de la Cabale
+               <lb/>nous savons bien, ajoutat-il, qu’il n’y en a eu aucune.
+               <lb/>2.<supplied><hi rend="sup">o</hi></supplied> Sur la preference qu’on a donné <del/><add>aux</add> autres pieces
+               <lb/>sur la votre; il dit qu’il est vrai qu’il a toujours re<pc type="hyphenation">-</pc><lb break="no"/>co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>u dans la votre une Superiorité d<del>u</del><add>e</add> Savoir et la
+               <lb/>main du maitre; mais qu’à d’autres egards il
+               <lb/>croyoit que l’<rs type="organisation">Academie</rs> avoit jugé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e elle devoit,
+               <lb/>qu’il ne l’avoit jamais blamée en cela et qu’il ne la
                <lb/>blamoit point. 3.<hi rend="sup">o</hi> Quant à son opinion sur les <rs type="keyword">forces
-               <lb/>vives</rs>, on vous a encore mal dit, car quoiqu'il les reçoive
-               <lb/>et qu'il croye qu'elles ont lieu, c'est cependant d'une ma<pc type="hyphenation">-</pc><lb break="no"/>nière très differente de celle que vous entendez dans
+               <lb/>vives</rs>, on vous a encore mal dit, car quoiqu’il les reçoive
+               <lb/>et qu’il croye qu’elles ont lieu, c’est cependant d’une ma<pc type="hyphenation">-</pc><lb break="no"/>nière très differente de celle que vous entendez dans
                  <lb/>votre <rs type="biblio">Memoire</rs></hi>. vous voyés <abbr>Mr.</abbr> que <rs key="pers_DE-588-118801481" type="person">S.</rs> nie
             <pb facs="1073684" n="35"/>
-<lb/><abbr>absolumt.</abbr> ce qu'il a dit de plus odieux <del>f </del>touchant la
+<lb/><abbr>absolumt.</abbr> ce qu’il a dit de plus odieux <del>f </del>touchant la
                <lb/>Cabale formée contre moi, et touchant le jugement
-               <lb/>partial des co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>issaires et qu'il tache de plâtrer
+               <lb/>partial des co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>issaires et qu’il tache de plâtrer
                <lb/>son sentiment sur les forces vives pour le faire paroitre
                <lb/>different du mien. Voila un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e suspect de fort
                <lb/>mauvaise foi surtout si on reflechit sur ses an<pc type="hyphenation">-</pc><lb break="no"/>ciennes actions; il seroit capable de vous donner en
-               <lb/>face le dementi et de nier ce qu'il vous auroit <del>sa</del>
-<lb/>soutenu en jurant; j'ai cru necessaire de vous en
+               <lb/>face le dementi et de nier ce qu’il vous auroit <del>sa</del>
+<lb/>soutenu en jurant; j’ai cru necessaire de vous en
                <lb/>donner avis, afin que si vous retournez à <rs key="place_GEO-2988507" type="place">Paris</rs>
 <lb/>vous puissiez prendre vos mesures par rapport
-               <lb/>à lui. Quand je repondrai à <abbr>Mr.</abbr> <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>, je lui
-               <lb/>donnerai bien à co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre que la Conduite qu'a tenu
-               <lb/>autrefois <abbr>Mr.</abbr> <rs key="pers_DE-588-118801481" type="person">S.</rs> est telle qu'<subst><del>elle</del><add>il</add></subst> merite <abbr>infinimt.</abbr>
-               <lb/>moins de croyance que vous, parceque je vous con<pc type="hyphenation">-</pc><lb break="no"/>nois comme un trés ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>éte homme, incapa<pc type="hyphenation">-</pc><lb break="no"/>ble d'avancer la moindre fausseté; mais je
+               <lb/>à lui. Quand je repondrai à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, je lui
+               <lb/>donnerai bien à co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre que la Conduite qu’a tenu
+               <lb/>autrefois <abbr>Mr.</abbr> <rs key="pers_DE-588-118801481" type="person">S.</rs> est telle qu’<subst><del>elle</del><add>il</add></subst> merite <abbr>infinimt.</abbr>
+               <lb/>moins de croyance que vous, parceque je vous con<pc type="hyphenation">-</pc><lb break="no"/>nois comme un trés ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>éte homme, incapa<pc type="hyphenation">-</pc><lb break="no"/>ble d’avancer la moindre fausseté; mais je
                <lb/>ne decouvrirai pas votre nom, vous laissant
                <lb/>la liberté de vous decouvrir vous meme à <abbr>Mr.</abbr>
-               <lb/><rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> si vous le jugez à propos.
+               <lb/>de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> si vous le jugez à propos.
             <pb facs="1073685" n="36"/>
 <lb/>Si vous restés encore quelque tems en
-               <lb/><rs key="place_VER-englan" type="place">Angleterre</rs> et que vous veuillez m'honorer
+               <lb/><rs key="place_VER-englan" type="place">Angleterre</rs> et que vous veuillez m’honorer
                <lb/>de vos Lettres, je vous prie de me les envoyer
                <lb/>par la <rs key="place_VER-frankr" type="place">France</rs> plutôt que par les <rs key="place_VER-hollan" type="place">Paysbas</rs>,
                <lb/>si cela vous <del/>est indifferent, car outre
                <lb/>que la Route est plus courte, aussi les
                <lb/>ports ne sont pas si chers.</p> <closer><salute>Je suis
-               <lb/>au Reste avec bien de l'estime
+               <lb/>au Reste avec bien de l’estime
                <lb/>Monsieur
                <lb/>Votre tres humble et
                <lb/>tres obeissant <abbr>Servit.</abbr></salute>

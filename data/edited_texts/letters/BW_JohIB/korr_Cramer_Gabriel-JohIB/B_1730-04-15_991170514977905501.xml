@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -183,6 +183,10 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-04-28" who="MK RG">kollationiert</change>
+      <change when="2025-04-22" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-04-22" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-04-17" who="MK">Code durchgeschaut, ergänzt, korr.</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-05-09" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-11-24" who="CG">Personen und Orte</change>
@@ -196,159 +200,162 @@
 <body>
 <div type="letter">
 <pb facs="1073830" n="1"/>
-<!-- im Manuskript steht hier noch: à Mr.Cramer Prof. de Mathem. -->
-<dateline><date when="1730-04-15">15 avril 1730</date></dateline>
-<opener><salute>Monsieur</salute>,</opener>
-<p><lb/>Peu de jour après la Reception de <rs key="B_991170514978005501" type="letter">votre penultième du 14e</rs>,
-               <lb/>fevrier la goute me mit au lit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> m'y retint assés longtems, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-               <lb/>je n'en suis delivré que depuis environ 15 jours, voilà une
-               <lb/>assés forte raison de mon silence quand même je n'en
-               <lb/>aurois point d'autres: Cependant mes Occupations ne sont
+<!-- im Manuskript steht hier noch: à Mr. (de Mairan=durchgestrichen) Cramer Prof. de Mathem. -->
+  <opener>
+<dateline><date when="1730-04-15">15 avril 1730</date></dateline><!-- Datum von Schreiberhand? -->
+<salute>Monsieur</salute></opener>
+<p><lb/>Peu de jour après la Reception de <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>vôtre</expan></choice> <rs key="B_991170514978005501" type="letter">penultiéme</rs> du 14.<hi rend="sup">e</hi>
+               <lb/><choice><abbr>fevr.</abbr><expan>fevrier</expan></choice> la goute me mit au lit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> m’y retint assés longtems, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>je n’en suis delivré que depuis environ 15 jours; voilà une
+               <lb/>assés forte raison de mon Silence quand méme je n’en
+               <lb/>aurois point d’autres: Cependant mes Occupations ne sont
                <lb/>pas moins grandes que les vôtres, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> partant aussi valables
-               <lb/>pour m'excuser que le sont celles que vous allegués, sur<pc type="hyphenation">-</pc><lb break="no"/>tout pendant la présence de Mr. <rs key="pers_DE-588-118731998" type="person">de Maupertuis</rs> à qui je
-               <lb/>dois consacrer une partie <add>bonne</add> de mon tems, personne n'etant ni
-               <lb/>plus avide ni plus insatiable pour les nouveautés des
-               <lb/>Mathematiques, sans pourtant que je puisse <add>me plaindre</add> ni de sa
-               <lb/>discretion ni de sa genérosité.</p>
-<p><lb/>Je commence par vous repondre à <rs key="B_991170430088905501" type="letter">votre dernière Lettre</rs> du 7.
-               <lb/>de ce mois; C'est bien moi qui ai remporté le prix <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> non pas
-               <lb/><rs key="pers_DE-588-118656503" type="person">mon fils</rs>, qui n'a point fait de piéce pour le sujet d'aprésent,
-               <lb/>car s'il en avoit fait une, je n'aurois eu garde de travailler
-               <lb/>aussi <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'étre ainsi le Concourant de <rs key="pers_DE-588-118656503" type="person">mon fils</rs>. Je vous suis bien
-               <lb/>obligé de votre feliciation, mais je suis faché d'étre la cause
-               <lb/>innocente que vous n'ayés triomphé, puisqu'on vous a
+               <lb/><choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> m’excuser que le sont celles que vous allegués, sur<pc type="hyphenation"><supplied>-</supplied></pc>
+<lb break="no"/>tout pendant la présence de <abbr>Mr.</abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs> à qui je
+               <lb/>dois consacrer une partie <add>bonne</add> de mon tems, personne n’etant ni
+               <lb/>plus avide ni plus insatiable <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> les nouveautés des
+               <lb/>mathematiques, sans pourtant que je puisse <add>me plaindre</add> ni de sa
+               <lb/><unclear>D</unclear>iscretion ni de sa genérosité.</p>
+<p><lb/>Je commence par Vous repondre à <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>vôtre</expan></choice> derniére <rs key="B_991170430088905501" type="letter">lettre</rs> du 7<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+               <lb/>de ce mois; C’est bien moi qui ai remporté le prix <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> non pas
+               <lb/>mon <rs key="pers_DE-588-118656503" type="person">fils</rs>, qui n’a point fait de piéce <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> le sujét d’aprésent,
+               <lb/>car s’il en avoit fait une, je n’aurois eu garde de travailler
+               <lb/>aussi <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’ètre ainsi le Concourant de mon <rs key="pers_DE-588-118656503" type="person">fils</rs>. Je vous suis bien
+               <lb/>obligé de <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> felicitation, mais je suis faché d’étre la cause
+               <lb/>innocente que vous n’ayés triomphé, puisqu’on vous a
             <pb facs="1073831" n="2"/>
-<lb/>écrit que vous avés été le <hi rend="u">proxime accedens</hi>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'ainsi
+<lb/>écrit que vous avés été le <foreign xml:lang="lat"><hi rend="u">proxime accedens</hi></foreign><note type="editorial">Kann übersetzt werden wie folgt: der Wahrheit "am nächsten kommend".</note>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’ainsi
                <lb/>sans moi vous auriés été le vainqueur, ce que je vous
-               <lb/>aurois souhaité de tout mon coeur: Vous n'avés qu'à
-               <lb/>travailler hardiment pour l'a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée suivante, vous n'avés rien
+               <lb/>aurois souhaité de tout mon coeur: vous n’avés qu’à
+               <lb/>travailler hardiment <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> l’a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée suivante, vous n’avés rien
                <lb/>à craindre de ma part, car je ne serai pas sur les rangs des
-               <lb/>Prétendants. Quand j'eus composé ma piéce, j'en étois si
-               <lb/>peu content, que je n'eusse jamais crû qu'elle réussiroit, vû
-               <lb/>que je la juge moi même infiniment inferieure à celle <del>que</del>
+               <lb/>Prétendants. Quand j’eus composé ma <rs type="biblio">piéce</rs>, j’en étois si
+               <lb/>peu content, que je n’eusse jamais crû qu’elle reussiroit, vû
+               <lb/>que je la juge moi méme infiniment inferieure à <rs type="biblio">celle</rs> <del>que</del>
 <lb/>que je fis autrefois sur le mouvement, étudiée <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> limée avec
-               <lb/>la derniére exactitude, quoique rejettée par Mrs. <del/>
-<lb/><del/>de l'Académie, au lieu que j'ai fabriqué celleci assés
+               <lb/>la derniére exactitude, quoique rejettée par <abbr>Mrs<unclear>.</unclear></abbr> <del/>
+<lb/><del/>de l’<rs type="organisation"><abbr>Acad.</abbr></rs> au lieu que j’ai fabriqué celleci assés
                <lb/>cavalliérement, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encé <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> fini en moins de 15 jours.
-               <lb/>J'ai vû que la grande question quoique tacite dans
-               <lb/>toutes les Propositions que l'Académie fait, consiste
+               <lb/>J’ai vû que la grande question quoique tacite dans
+               <lb/>toutes les Propositions que l’<rs type="organisation">academie</rs> fait, consiste
                <lb/>non point à faire le plus excellent ouvrage, mais à
-               <lb/>attraper le mieux le gout de Mrs, les Juges; c'est pour<pc type="hyphenation">-</pc><lb break="no"/>quoi je me suis <add>bien</add> gardé de traiter mon sujet des orbites
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> apsides mobiles des Planètes suivant l'idée de Mr.
+               <lb/>attraper le mieux le gout de <abbr>Mrs.</abbr> les Juges; c’est <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice><pc type="hyphenation">-</pc><lb break="no"/>quoi je me suis <add>bien</add> <choice><sic>gardér</sic><corr>gardé</corr></choice> de traiter mon Sujét des orbites
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> apsides mobiles des Planétes suivant l’idée de <abbr>Mr.</abbr>
                <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>, prevoyant bien que ses Attractions <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> son
-               <lb/>vuide seroient en horreur chés Mrs. les François.
-            <pb facs="1073832" n="3"/>
-<lb/>Cela soit dit entre nous, car si Messieurs les Juges le venoient à
-               <lb/>savoir, ils auroient raison de s'en offenser. Je leur ai donc
-               <lb/>donné de la viande rechauffée avec <del>de la </del><add>une</add> sausse nouvelle,
+               <lb/>vuide seroient en horreur chés <abbr>Mrs.</abbr> les François.
+  <pb facs="1073832" n="3"/>
+<lb/>Cela soit dit entre nous car si <abbr>Mrs.</abbr> les Juges le venoient à
+               <lb/>savoir, ils auroient raison de S’en offenser. Je leur ai donc
+               <lb/>donné de la viande rechauffée avec <del>de la </del><add>une</add> sausse nouvelle
                <lb/>en un mot un Chapon en Capilotade, je veux dire que je
                <lb/>leur ai<del>dit</del> reproduit adroitement les Tourbillons de
-               <lb/><rs key="pers_DE-588-118524844" type="person">Descartes</rs>, un peu modifiés <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> embellis d'un nouveau
-               <lb/>lustre. Le meilleur morceau dans mon discours c'est la refutation
-               <lb/>que j'y ai inserée des 2 Propositions de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
-               <lb/>ce sont la 51.<hi rend="sup">e</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 52.<hi rend="sup">e</hi> du second Livre des<del>ses</del> Principes, par
-               <lb/>lesquelles il a prétendu prouver l'impossibilité des
+               <lb/><rs key="pers_DE-588-118524844" type="person">Descartes</rs>, un peu modifiés <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> embellis d’un nouveau
+               <lb/>lustre. Le meilleur morceau dans mon <rs type="biblio">Discours</rs> c’est la refutation
+               <lb/>que j’y ai inserée<del>s</del> des 2 Propositions de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
+               <lb/>ce sont la 51 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 52<hi rend="sup">e</hi> du second Livre des<del>ses</del> <rs type="biblio">Principes</rs>, par
+               <lb/>lesquelles il a prétendu prouver l’impossibilité des
                <lb/>Tourbillons, mais que je démontre étre de<del>s</del> purs Paralogismes,
                <lb/>faisant voir que les tems periodiques des Tourbillons sont
-               <lb/>beaucoup plus approchants de la raison ses quipliquée
-               <lb/>des Distances, que n'a crû Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> par ses
+               <lb/>beaucoup plus approchants de la raison sesquipliquée
+               <lb/>des distances, que n’a crû <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> par ses
                <lb/>Demonstrations erronées: Vous en jugerés quand
-               <lb/>vous aurés lû ma pièce; Je serois curieux de lire aussi
-               <lb/>la votre; vous me feriés un plaisir, si vous me
+               <lb/>Vous aurés lû ma <rs type="biblio">piéce</rs>; Je serois curieux de lire aussi
+               <lb/>la <rs type="biblio">vôtre</rs>; vous me feriés un plaisir, si vous me
                <lb/>vouliés communiquer par Occasion le manuscript.</p>
-<p><lb/>Pour repondre presentement <rs key="B_991170514978005501" type="letter">à votre Lettre précedente</rs>
+<p><lb/>Pour repondre presentement à <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> <rs key="B_991170514978005501" type="letter">Lettre</rs> précedente
 <pb facs="1073833" n="4"/>
-<lb/>il n'y a rien de si facile que de déduire de la propriété sous
-               <lb/>laquelle vous m'aviés proposé votre Courbe, cette autre
-               <lb/>propriété, que les angles autour d'un foyer doivent étre
-               <lb/>proportionels aux aires autour de l'autre foyer; je n'ai
-               <lb/>pas besoin pour cela de chercher votre longue Equation
-               <lb/>entre les Coordonnées <formula>y^{3}dx-xyydy+</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. puisque par la
-               <lb/>simple attention à l'une de ces propriétés, on decouvre
-               <lb/>d'abord l'autre sans beaucoup de raisonnement.
-               <lb/>Quant à l'autre problème<del>s</del> que je vous
-               <lb/>avois proposé à l'occasion du votre, où <del/>il
-               <lb/>s'agit de construire la Courbe, où <formula>AD.BE::ACP.</formula>
+<lb/>il n’y a rien de si facile que de déduire de la propriété sous
+               <lb/>laquelle vous m’aviés proposé <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> Courbe, cette autre
+               <lb/>proprieté, que les angles autour d’un foyer doivent étre
+               <lb/>proportionels aux aires autour de l’autre foyer; je n’ai
+               <lb/>pas besoin <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> cela de chercher <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> longue Equation
+               <lb/>entre les Coordonnées <formula>y^{3}dx-xyydy+</formula><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> puisque par la
+               <lb/>simple attention à l’une de ces proprietés, on decouvre
+               <lb/>d’abord l’autre sans beaucoup de raisonnement.
+               <lb/>Quant à l’autre Problème<del>s</del> que je Vous
+               <lb/>avois proposé à l’occasion du votre, où <del/>il
+  <lb/>s’agit de construire la Courbe<!-- Figur noch hier figure facs einfügen MK 17.4.2025 -->, où <choice rend="regFormula"><orig><formula>AD.BE::ACP.</formula></orig><reg><formula>AD:BE=ACP:</formula></reg></choice>
 <lb/><formula>nBCP</formula>. Il est vrai que la Separation des indeterminées
-               <lb/>seroit difficile, si on vouloit l'entreprendre dans l'Equation
-               <lb/>entre<del>s</del> les coordonnées <formula>AF</formula> et <formula>FC</formula> à la manière ordinaire.
-               <lb/>Mais il ne faut <del/>pas s'assujettir trop servilement à
-               <lb/>cette manière d'exprimer la nature de la Courbe; Il faut
-               <lb/>se servir de sa liberté en choisisant deux autres indetermi<pc type="hyphenation">-</pc><lb break="no"/>nées dont la relation détermine egalement chaque
-               <lb/>point <formula>C</formula>, pourvû qu'il m'en vienne une Equation
+               <lb/>seroit difficile, si on vouloit l’entreprendre dans l’Equation
+               <lb/>entre<del>s</del> les coordonnées <formula>AF</formula> et <formula>FC</formula> à la maniére ordinaire.
+               <lb/>Mais il ne faut <del/>pas s’assujettir trop servilement à
+               <lb/>cette manière d’exprimer la nature de la Courbe; Il faut
+               <lb/>se servir de sa liberté en choisissant deux autres indetermi<pc type="hyphenation">-</pc><lb break="no"/>nées dont la relation détermine egalement chaque
+               <lb/>point <formula>C</formula>, pourvû qu’il m’en vienne une Equation
             <pb facs="1073834" n="5"/>
 <lb/>traittable. Or co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je vois dans cet Exemple que les
                <lb/>points <formula>A</formula> et <formula>B</formula> ont entre eux une prerogative
-               <lb/>commune, <del>de </del><add>en</add> sorte qu'il n'y a point de raison pour<pc type="hyphenation">-</pc><lb break="no"/>quoi prendre les Abscisses plutôt depuis <del/><formula>A</formula> que
-               <lb/>depuis <formula>B</formula>, je prends donc deux autres indeterminées,
-               <lb/>qui n'attribuent pas plus à l'un qu'a l'autre, ainsi
-               <lb/>un peu d'adresse m'enseigne qu'en prenant <formula>AB=a</formula> pour
-               <lb/>le rayon ou sinus total, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ant la tangente de
-               <lb/>l'angle <formula>ABC=x</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la tangente de l'angle <formula>BAC=y</formula>, j'<pc type="hyphenation">-</pc><lb break="no"/>arriverai à une equation entre <formula>a</formula>, <formula>x</formula>, <formula>y</formula>, ou les indeterminées
-               <lb/>se separeront d'elles mêmes sans autre artifice; en
-               <lb/>effet si vous vous y prenés bien, vous trouverés
+               <lb/>commune, <del>de </del><add>en</add> sorte qu’il n’y a point de raison pour<pc type="hyphenation">-</pc><lb break="no"/>quoi prendre les Abscisses plutôt depuis <del>que </del><formula>A</formula> que
+               <lb/>depuis <formula>B</formula>; je prends donc deux autres indeterminées,
+               <lb/>qui n’attribuent pas plus à l’un qu’à l’autre; ainsi
+               <lb/>un peu d’adresse m’enseigne qu’en prenant <formula>AB=a</formula> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>
+               <lb/>le Rayon ou sinus total, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ant la tangente de
+               <lb/>l’angle <formula>ABC=x</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la tangente de l’angle <formula>BAC=y</formula>, j’<pc type="hyphenation"></pc>
+<lb break="no"/>arriverai à une equation entre <formula>a</formula>, <formula>x</formula>, <formula>y</formula>, <choice><orig>ou</orig><reg>où</reg></choice> les indeterminées
+               <lb/>se separeront d’elles mémes sans autre artifice; en
+               <lb/>effét si vous vous y prenés bien, vous trouverés
                <lb/>cette Equation differentielle toute separée <formula>\frac{x^{p-2}dx}{(aa+xx)^{\frac{1}{2}p}}=</formula>
-<lb/><formula>\frac{ny^{p-2}dy}{(aa+yy)^{\frac{1}{2}p}}</formula>. Il faut un peu de calcul, mais patience!</p>
-<p><lb/>Il y a une infinité de cas ou la Courbe devient algebrique,
+<lb/><formula>\frac{ny^{p-2}dy}{(aa+yy)^{\frac{1}{2}p}}</formula>. Il faut un peu de Calcul, mais patience!</p>
+  <p><lb/>Il y a une infinité de cas <choice><orig>ou</orig><reg>où</reg></choice> la Courbe devient algebrique,
                <lb/>en voici un des plus faciles, si <formula>p=3</formula>, vous aurés <formula>\frac{1}{b}=</formula>
 <lb/><formula>\frac{1}{\sqrt{aa+xx}}-\frac{n}{\sqrt{aa+yy}}</formula>, ou <formula>b</formula> est une arbitraire constante.</p>
 <pb facs="1073835" n="6"/>
-   <p><lb/>Mr. <rs type="person" key="pers_DE-588-118731998">de Maupertuis</rs> qui est encore ici vous fait bien ses Compliments
-               <lb/>reciproques; il a été du sentiment des forces <add>vives</add> avant son arrivée, mais
-               <lb/>je l'y ai fortifié de telle manière qu'il en deviendroit le martyre en
-               <lb/>cas de necessité. Non, je n'ai pas encore vû le discours de Mr.
-               <lb/><rs key="pers_DE-588-11931035X" type="person">de Mairan</rs>; il sera dans le Tome des Mem. de 1728, que je
-               <lb/>n'ai pas encore reçû. Mr. <rs key="pers_DE-588-118939297" type="person">'s Gravesande</rs> a beaucoup fait, s'il a
-               <lb/>bien fait sentir la difference entre les forces vives <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les
-               <lb/>pressions, c'est le point capital, que les antagonistes les
-               <lb/>confondent toujours. Si la raison que vous soupçonnés
-               <lb/>pourquoi Mr. <rs key="pers_DE-588-117517747" type="person">MacLaurin</rs> a renvoyé son Livre contre
-               <lb/>nous, étoit la veritable parcequ'il est revenu de son
-               <lb/>préjugé à force de méditer, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'il reconnoit son erreur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <p><lb/><abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-118731998">Maupertuis</rs> qui est encore <rs key="place_GEO-2661604" type="place">ici</rs> Vous fait bien ses Compliments
+               <lb/>reciproques; il a été du sentiment des <rs type="keyword">forces <add>vives</add></rs> avant son arrivée, mais
+               <lb/>je l’y ai fortifié de telle maniére qu’il en deviendroit le martyre en
+               <lb/>cas de necessité. Non, je n’ai pas encore vù le <rs type="biblio">Discours</rs> de <abbr>Mr.</abbr>
+               <lb/>de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>; il sera dans le <rs type="biblio">Tome</rs> des <abbr>Mem.</abbr> de 1728<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>, que je
+               <lb/>n’ai pas encore réçù<unclear>.</unclear> <abbr>Mr.</abbr> <rs key="pers_DE-588-118939297" type="person">s’Gravesande</rs> a beaucoup fait, s’il a
+               <lb/>bien fait sentir la difference entre les <rs type="keyword">forces vives</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les
+               <lb/>pressions, c’est le point capital, que les Antagonistes les
+               <lb/>confondent toujours. Si la raison que Vous soupçonnés
+               <lb/>pourquoi <abbr>Mr.</abbr> <rs key="pers_DE-588-117517747" type="person">Mac-Laurin</rs> a renvoyé son <rs type="biblio">Livre</rs> contre
+               <lb/>nous, étoit la veritable parcequ’il est revenu de son
+               <lb/>préjugé à force de méditer, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il reconnoit son erreur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/>son tort, il en devroit faire un aveu public <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> confesser en
-               <lb/>galant homme, que le prix de l'Académie ne lui étoit pas dû.
-               <lb/>Cette ingenuité lui feroit plus de gloire que l'affectation de
-               <lb/>dissimuler la verité; il rendroit par là honteux les adversaires
-               <lb/>opiniatres. Ma Demonstration<del>s</del> pour les forces vives
-               <lb/>inserée dans la Mechanique de Mr. <rs key="pers_DE-588-118634771" type="person">Wolf</rs>, tirée de la
-               <lb/><del>Demonstr </del>Decomposition du Mouvement, a été inventée,
-               <lb/><del/>si je m'en souviens, deja dès l'a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée 1697; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je l'ai
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée la premiére fois à Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à Mr. de
+               <lb/>galant homme, que le prix de l’<rs type="organisation"><abbr>Acad.</abbr></rs> ne lui étoit pas dù.
+               <lb/>Cette ingenuité Lui feroit plus de gloire que l’affectation de
+               <lb/>dissimuler la verité; il rendroit par là honteux les Adversaires
+               <lb/>opiniatres. Ma Demonstration<del>s</del> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> les <rs type="keyword">forces vives</rs>
+               <lb/>inserée dans la <rs type="biblio">mechanique</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-118634771" type="person">Wolf</rs>, tirée de la
+               <lb/><del>Demonstr </del>Decomposition du mouvement, a été inventée
+               <lb/><del/>si je m’en souviens deja dès l’a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée 1697; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je l’ai
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée la premiére fois à <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à <abbr>Mr.</abbr> de
             <pb facs="1073836" n="7"/>
-<lb/><rs key="pers_DE-588-120665182" type="person">Volde<del/><add>r</add></rs> alors Prof. de Mathématiques à <rs key="place_GEO-2751773" type="place">Leyden</rs>, qui étoit en longue
-               <lb/>dispute avec Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> sur les forces vives, sans que celuici
-               <lb/>l'ait pû convaincre, jusqù'à ce qu'il a vû ma dite Demonstration,
-               <lb/>qui l'a entièremènt converti, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c'est justement ce Mr. <rs key="pers_DE-588-120665182" type="person">de
-               <lb/>Volder</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moi, dont Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> parle en 1698 Act. Lips. p. 429.,
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c'est lui (Mr. <rs key="pers_DE-588-120665182" type="person">Volder</rs>) <hi rend="u">qui publice contulit</hi> avec Mr. <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>.
-               <lb/>Je me <del/>souviens que vous m'avés dit, que le P. <rs key="pers_DE-588-119382156" type="person">Castel</rs> avoit
-               <lb/>embrassé les forces vives, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'il en parleroit avantageusement
-               <lb/>dans sa <hi rend="u">Mathematique Universelle</hi>; cependant j'ai reçû
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> parcourû ce Livre, sans y avoir rien trouvé en faveur des
-               <lb/>forces vives, mais bien quantité d'absurdités <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de faussetés
+<lb/><rs key="pers_DE-588-120665182" type="person">Volde<del/><add>r</add></rs> alors <abbr>Prof.</abbr> des <choice><abbr>mathem.</abbr><expan>mathématiques</expan></choice> à <rs key="place_GEO-2751773" type="place">Leyden</rs>, qui étoit en longue
+               <lb/>dispute avec <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> sur les <rs type="keyword">forces vives</rs>, sans que celuici
+               <lb/>l’ait pû convaincre, jusqu’à ce qu’il a vù ma dite Demonstration<!-- biblio... -->,
+               <lb/>qui l’a entièrement converti, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c’est justement ce <abbr>Mr.</abbr> de
+               <lb/><rs key="pers_DE-588-120665182" type="person">Volder</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moi, dont <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> parle en 1698<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <rs type="biblio"><abbr>Act.</abbr> <abbr>Lips.</abbr></rs> <abbr>p.</abbr> 429<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c’est lui (<abbr>Mr.</abbr> <rs key="pers_DE-588-120665182" type="person">Volder</rs>) <hi rend="u">qui<foreign xml:lang="lat">publice contulit</foreign></hi> avec <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs><supplied>.</supplied>
+               <lb/>Je me <del/>souviens que vous m’avés dit que le <abbr>P.</abbr> <rs key="pers_DE-588-119382156" type="person">Castel</rs> avoit
+    <lb/>embrassé les <rs type="keyword">forces vives</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il en parleroit <choice><abbr>avantageusem<hi rend="sup">t</hi>.</abbr><expan>avantageusement</expan></choice>
+               <lb/>dans sa <rs type="biblio"><hi rend="u">Mathematique Universelle</hi></rs>; cependant j’ai reçù
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> parcourù ce <rs type="biblio">Livre</rs>, sans y avoir rien trouvé en faveur des
+               <lb/><rs type="keyword">forces vives</rs>, mais bien quantité d’absurdités <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de faussetés
                <lb/>qui diminuent beaucoup la bonne opinion que je pouvois
-               <lb/>avoir <add>eu</add> de lui; je vois au contraire qu'il doit étre un homme
-               <lb/>bizarre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> capricieux pour ne pas dire quelque chose de pis:
-               <lb/>il n'y a aucun fond solide des Mathematiques, ce que je
-               <lb/>reconnois par les plaisantes manières de s'exprimer
-               <lb/>sur plusieurs choses de fait, dont on voit bien qu'il n'a point
-               <lb/>d'idées claires. On l'a oté dernièrement du Journal de Trevoux,
-               <lb/>pour lequel il fournissoit les Extraits des Livres de
-               <lb/>Mathematiques: C'est parcequ'en faisant l'extrait
+               <lb/>avoir <add>eu</add> de Lui; je vois au contraire qu’il doit étre un homme
+               <lb/>bizarre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> capricieux <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> ne pas dire quelque chose de pis:
+               <lb/>il n’a aucun fond solide des mathematiques, ce que je
+               <lb/>reconnois par les plaisantes maniéres de s’exprimer
+               <lb/>sur plusieurs choses de fait, dont on voit bien qu’il n’a point
+               <lb/>d’idées claires. On l’a oté derniérement du <rs type="biblio">Journal de Trevoux</rs>,
+               <lb/><choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> lequel il fournissoit les Extraits des Livres de
+               <lb/>mathematiques: C’est parcequ’en faisant l’extrait
             <pb facs="1073837" n="8"/>
-<lb/>des Memoires de l'Académie des Sciences de 1725 il a satyrisé les
-               <lb/>principaux Membres de <del>l'</del><add>cette </add>Académie d'une manière
+<lb/>des <rs type="biblio"><abbr>mem.</abbr></rs> de l’<rs type="organisation"><abbr>Acad.</abbr> des <abbr>Sc.</abbr></rs> de 1725<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> il a satyrisé les
+               <lb/>principaux Membres de <del>l’</del><add>cette </add><rs type="organisation">academie</rs> d’une maniére
                <lb/>trés sceptique, ce qui pourra bien lui attirer une punition
                <lb/>plus rigoureuse.</p>
-<p><lb/>Je n'ai pas encore retrouvé les Remarques de
-               <lb/>mon fils sur le livre de Monsieur de Fontenelle;
+<p><lb/>Je n’ai pas encore retrouvé les <rs type="biblio">Remarques</rs><!-- biblio? key? MK  --> de
+  <lb/>mon <rs key="pers_DE-588-118656503" type="person">fils</rs> sur le <rs  type="biblio">livre</rs> de <abbr>Mr.</abbr> de <rs type="person">Fontenelle</rs>;
                <lb/>je les ai peutétre prétées à quelcun sans savoir
                <lb/>à qui.</p>
 <closer><salute>Je suis au reste avec une estime parfaite
-                  <lb/>Monsieur etc. etc. etc. etc.</salute>
-<lb/><signed>J. Bernoulli</signed>
-<dateline><lb/>Bâle 
-                     <lb/>ce <date when="1730-04-15">15 avril 1730</date>.</dateline></closer>
+  <lb/>Monsieur <unclear><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></unclear> <unclear><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></unclear> <unclear><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></unclear> <lb/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></salute>
+<lb/><signed><abbr>J<supplied>.</supplied></abbr> Bernoulli</signed>
+<dateline><lb/>Bàle 
+                     <lb/>ce <date when="1730-04-15">15. avril 1730</date></dateline></closer>
 </div>
 </body>
 </text></TEI>

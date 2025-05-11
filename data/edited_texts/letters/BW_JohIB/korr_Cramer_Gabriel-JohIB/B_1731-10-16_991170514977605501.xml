@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -167,6 +167,9 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-05-02" who="MK RG">kollationiert</change>
+      <change when="2025-04-30" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-04-30" who="RG">Matheformeln normalisiert</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-06-02" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-11-03" who="CG">Header,Seitenzahlen, Briefstruktur</change>
@@ -179,172 +182,173 @@
 <body>
 <div type="letter">
 <pb facs="1073861" n="1"/>
-<opener><salute>Monsieur,</salute></opener>
+<opener><salute>Monsieur</salute></opener>
 <p><lb/>Vous me prêtés des sentimens bien eloignez de ma pensée, lorsque vous
-               <lb/>paroissez soupçonner que j'ose me plaindre du retardement de vos Lettres. Je sens
-               <lb/>trop bien la grace que me fait une personne de vôtre Mérite <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>g; de vôtre réputation,
-               <lb/>quand elle a la bonté de penser quelquefois à moi, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de m'honorer de ses Lettres, pour
-               <lb/>lui faire des reproches, si ce bonheur n'arrive pas aussi souvent que je le souhaiterois.
+               <lb/>paroissez soupçonner que j’ose me plaindre du retardement de vos Lettres. Je sens
+               <lb/>trop bien la grace que me fait une personne de vôtre mérite <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vôtre réputation,
+               <lb/>quand elle a la bonté de penser quelquefois à moi, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de m’honorer de ses Lettres, pour
+               <lb/>lui faire des reproches, si ce bonheur n’arrive pas aussi souvent que je le souhaiterois.
                <lb/>Encore moins, lorsque ces reproches pourroient retomber sur moi avec beaucoup plus de
-               <lb/>justice. Non, Monsieur, en vous alléguant mes occupations, mon dessein n'a point été
-               <lb/>celui que vous dites. J'ai seulement voulu m'excuser d'un silence si long que j'en avois
-               <lb/>honte, puisqu'il sembloit par là que j'eusse négligé les instructions que je recueille de
-               <lb/>toutes vos lettres, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la satisfaction vive <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sensible que je ressens en lisant les temoigna<pc type="hyphenation">-</pc><lb break="no"/>ges de vôtre affection. Négligence, je vous proteste, uniquement apparente <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> simplement
-               <lb/>occasionée par une multitude d'affaires, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peutétre par cette reflexion, que votre loisir
-               <lb/>est si précieux au public, que ce seroit empiêter en quelque manière sur ces droits que de le
-               <lb/>troubler trop souvent. <hi rend="u">In publica commoda peccem, si multo sermone morer tua tempora</hi>.</p>
-<p><lb/>J'ai envoié à Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> une copie de cette partie de vôtre Lettre qui le regarde.
-               <lb/>Il sera fort satisfait de vôtre aprobation. Car il m'a paru très sensible à l'honneur de
+               <lb/>justice. Non, Monsieur, en vous alléguant mes occupations, mon dessein n’a point été
+               <lb/>celui que vous dites. J’ai seulement voulu m’excuser d’un silence si long que j’en avois
+               <lb/>honte, puisqu’il sembloit par là que j’eusse négligé les instructions que je recueille de
+               <lb/>toutes vos Lettres, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la satisfaction vive <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sensible que je ressens en lisant les temoigna<pc type="hyphenation">-</pc><lb break="no"/>ges de vôtre affection. Négligence, je vous proteste, uniquement apparente <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> simplement
+               <lb/>occasionée par une multitude d’affaires, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peutétre par cette reflexion, que votre loisir
+               <lb/>est si précieux au public, que ce seroit empiêter en quelque manière sur ses droits que de le
+  <lb/>troubler trop souvent. <foreign xml:lang="lat"><hi rend="u">In publica commoda peccem, si multo sermone morer tua tempora</hi></foreign>.</p>
+<p><lb/>J’ai envoié à <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> une copie de cette partie de vôtre <rs type="letter">Lettre</rs> qui le regarde.
+               <lb/>Il sera fort satisfait de vôtre aprobation. Car il m’a paru très sensible à l’honneur de
                <lb/>votre estime. Et assurément il en mérite beaucoup.</p>
 <p><lb/>Je vous supplie de me permettre de conserver encor quelque tems vos papiers sur
-               <lb/>les Courbes reptoires. Je vous avoue que je n'y ai pas beaucoup travaillé depuis mon
-               <lb/>retour en cette ville, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mes maudites occupations en sont encor la cause. Cependant
+               <lb/>les Courbes reptoires. Je vous avoue que je n’y ai pas beaucoup travaillé depuis mon
+               <lb/>retour en cette <rs type="place">ville</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mes maudites occupations en sont encor la cause. Cependant
             <pb facs="1073862" n="2"/>
 <lb/>la chose est passablement avancée, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si je puis lui donner quelque tems cet hyver,
-               <lb/>j'espere de l'avoir au net au Printems. Je me flatte que vous voudrés bien me
-               <lb/>laisser vos Papiers jusqu'alors. Si non vous n'avez qu'à dire, je vous les ferai tenir
-               <lb/>surement dès que vous le voudrez. C'est la raison qui m'a empêché de suivre vos ordres,
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de les remettre à Mr. votre <rs type="person">fils</rs> lors de son départ. J'espère que vous ne le trouverés pas
+               <lb/>j’espere de l’avoir au net au Printems. Je me flatte que vous voudrès bien me
+               <lb/>laisser vos Papiers jusqu’alors. Si non vous n’avez qu’à dire, je vous les ferai tenir
+               <lb/>surement dès que vous le voudrez. C’est la raison qui m’a empêché de suivre vos ordres,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de les remettre à <abbr>M.<hi rend="sup">r</hi></abbr> votre <rs type="person">fils</rs> lors de son départ. J’espère que vous ne le trouverès pas
                <lb/>mauvais.</p>
-<p><lb/>A cette occasion vous voulés bien que je vous félicite d'avoir près de vous un fils
-               <lb/>si aimable. J'aurois fort souhaité qu'il m'eut fourni quelques occasions de lui
-               <lb/>temoigner l'attachement que j'aurai toujours pour tout ce qui vous apartient. </p>
-<p><lb/>Il vous aura remis une These du jeune <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>. Vous connoissiez, je crois,
-               <lb/>le Père <del/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous ne serés pas faché de voir le Progrés qu'a fait le fils.
-               <lb/>Quoiqu'il ny ait pas grande apparence que nôtre hypothese pour expliquer la
-               <lb/>Pesanteur universelle soit celle qui a véritablement lieu dans la nature, j'ai cru
-               <lb/>pourtant qu'on pouvoit la defendre <hi rend="u">ex cathedra</hi>.</p>
-<p><lb/>Vous me parlez de Mr. <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs>. Faites moi la grace de m'aprendre,
-               <lb/>si vous avez quelquefois de ses Nouvelles. Je n'en ai point reçeu depuis son depart
-               <lb/>de <rs key="place_GEO-2988507" type="place">Paris</rs>, quoiqu'il m'eut fort promis de m'écrire.</p>
-<p><lb/>Il est bien vrai que la plupart des Anglois regardent Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> comme
-               <lb/>un Oracle infaillible. Mais ce Soleil a eu ses taches, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c'est à vous, Monsieur,
-               <lb/>à qui l'on doit la découverte de plusieurs de ses <del/>méprises.</p>
-<p><lb/>Quand j'ai remarqué une erreur dans ce qu'il dit du mouvement de l'air qui
-               <lb/>fait le son, ce n'est pas dans la Proposition elle même, que je crois vraie, quoique je 
-               <lb/>souhaiterois fort d'en voir une preuve exacte; C'est dans la Demonstration, qui
-               <lb/>me paroit un Sophisme. Je n'ai garde d'attribuer aux particules de l'air un mou<pc type="hyphenation">-</pc><lb break="no"/>vement uniformement acceleré <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> retardé. On pourroit refuter en cent manières
-               <lb/>cette Supposition. J'ai voulu dire seulement, que si quelcun s'avisoit d'attribuer
-               <lb/>aux particules de l'air un tel mouvement, ou tel autre mouvement qu'on voudra
-               <lb/>imaginer, quelque absurde que fut cette supposition, il la prouveroit par la même
+<p><lb/>A cette occasion vous voulez bien que je vous felicite d’avoir près de vous un fils
+               <lb/>si aimable. J’aurois fort souhaité qu’il m’eut fourni quelques occasions de lui
+               <lb/>temoigner l’attachement que j’aurai toujours pour tout ce qui vous apartient.</p>
+<p><lb/>Il vous aura remis une <rs type="biblio">These</rs> du jeune <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>. Vous connoissiez, je crois,
+               <lb/>le <rs type="person">Pere</rs>, <del/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous ne serés pas faché de voir le Progrés qu’<subst><del>à</del><add>a</add></subst> fait le fils.
+  <lb/>Quoiqu’il n’y ait pas grande apparence que nôtre hypothese pour expliquer la
+               <lb/>Pesanteur universelle soit celle qui a veritablement lieu dans la nature, j’ai cru
+               <lb/>pourtant qu’on pouvoit la defendre <foreign xml:lang="lat"><hi rend="u">ex cathedra</hi></foreign>.</p>
+<p><lb/>Vous me parlez de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs>. Faites moi la grace de m’aprendre,
+               <lb/>si vous avez quelquefois de ses Nouvelles. Je n’en ai point reçeu depuis son depart
+               <lb/>de <rs key="place_GEO-2988507" type="place">Paris</rs>, quoiqu’il m’eut fort promis de m’écrire.</p>
+<p><lb/>Il est bien vrai que la plupart des Anglois regardent <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> comme
+               <lb/>un Oracle infaillible; Mais ce Soleil a eu ses taches, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c’est à vous, Monsieur,
+               <lb/><choice><orig>a</orig><reg>à</reg></choice> qui l’on doit la découverte de plusieurs de ses <del>erreurs</del>méprises.</p>
+<p><lb/>Quand j’ai remarqué une erreur dans ce qu’il dit du mouvement de l’air qui
+               <lb/>fait le Son, ce n’est pas dans la Proposition elle même, que je crois vraie, quoique je 
+               <lb/>souhaiterois fort d’en voir une preuve éxacte; C’est dans la Demonstration, qui
+               <lb/>me paroit un Sophisme. Je n’ai garde d’attribuer aux particules de l’air un mou<pc type="hyphenation">-</pc><lb break="no"/>vement uniformément acceleré <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> retardé. On pourroit refuter en cent manières
+               <lb/>cette supposition. J’ai voulu dire seulement, que si quelcun s’avisoit d’attribuer
+               <lb/>aux particules de l’air un tel mouvement, ou tel autre mouvement qu’on voudra
+               <lb/>imaginer, quelque absurde que fut cette Supposition, il la prouveroit par la même
             <pb facs="1073862" n="3"/>
-<lb/>sorte de Demonstration que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> prouve la sienne. Donc puisque la
-               <lb/>Demonstration de ce quelcun ne vaudroit rien, puisqu'elle conclud à faux, aussi
-               <lb/>la Demonstration de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> qui est toute semblable ne vaut rien non
-               <lb/>plus, quoiqu'elle puisse conclure au vray. C'est une façon de démontrer <hi rend="u">à posteriori</hi>
-<lb/>l'absurdité d'une preuve, que de faire voir qu'apliquée semblablement à d'autres cas,
-               <lb/>elle mêne à l'absurdité ou à telle conclusion qu'ont veut. Votre refutation en la
+<lb/>sorte de Demonstration que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> prouve la sienne. Donc puisque la
+               <lb/>Demonstration de ce quelcun ne vaudroit rien, puisqu’elle conclud à faux. Aussi
+               <lb/>la Demonstration de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> qui est toute semblable ne vaut rien non
+               <lb/>plus, quoiqu’elle puisse conclure au vra<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>. C’est une façon de démontrer <hi rend="u">à <foreign xml:lang="lat">posteriori</foreign></hi>
+<lb/>l’absurdité d’une preuve, que de faire voir qu’apliquée semblablement à d’autres cas,
+               <lb/>elle mêne à l’absurde ou à telle ai<!-- hier noch einige Dinge unklar, RG 28.04.2025 --> conclusion qu’on veut. Vôtre refutation en la
                <lb/>comparant à un raisonement qui prouveroit que <formula>3\times5=12</formula>, est bien plus simple.
-               <lb/>Mais ceux qui ne pourront pas pénetrer l'obscurité profonde de la Demonstration
-               <lb/>Newtoniène, ne sentiront pas l'idendité de son raisonement avec celui auquel 
+               <lb/>Mais ceux qui ne pourront pas pénetrer l’obscurité profonde de la Demonstration
+               <lb/>Newtoniène, ne sentiront pas l’identité de son raisonement avec celui auquel
                <lb/>vous le comparez.</p>
-<p><lb/>Ce qui m'a paru singulier, c'est que la supposition que je faisois menoit, par
-               <lb/>le même raisonement que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, à trouver pour le Son la même vitesse
-               <lb/>que lui, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je crois que toute supposition donneroit la même conclusion. Mais
-               <lb/>cette vitesse se peut bien plus aisément calculer d'une autre manière.</p>
-<p><lb/>Enfin j'ai lû le Memoire de Mr. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je lui ai adressé ces jours passez
-               <lb/>une longue lettre là dessus. Je suis convaincu de sa bonne foy, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne saurois croire
-               <lb/>qu'il y ait de la malice dans son fait, quoique je ne puisse comprendre ce qui l'empêche
-               <lb/>de penser comme vous sur cette matière. J'ai donc crû devoir lui rendre justice partout
-               <lb/>où il la mérite, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour celà j'ai taché de donner à ses expressions le sens le plus rai<pc type="hyphenation">-</pc><lb break="no"/>sonable. J'ai admis celles de ses propositions qui sont vraies en prenant le mot
-               <lb/>de force dans le sens de force morte: mais j'ai essaié de lui faire comprendre qu'il ne
-               <lb/>suffisoit pas d'établir son Systeme pour décider la Question, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'il auroit dû détruire
-               <lb/>celui des forces vives, puisque le dessein de ceux qui l'admettent n'est pas de <del/><add>renverser</add> la
-               <lb/>Théorie ancienne, qu'ils emploient en mille occasions, mais de la perfectioner en
-               <lb/>levant l'équivoque du mot de force, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> introduisant l'idée nouvelle des forces vives, idée
+<p><lb/>Ce qui m’a paru singulier, c’est que la supposition que je faisois menoit, par
+               <lb/>le même raisonement que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, à trouver pour le Son la même vitesse
+               <lb/>que lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je crois que toute Supposition donneroit la même conclusion. Mais
+               <lb/>cette Vitesse se peut bien plus aisément calculer d’une autre manière.</p>
+<p><lb/>Enfin j’ai lû le <rs type="biblio">Memoire</rs> de <abbr>M.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je lui ai adressé ces jours passez
+               <lb/>une longue <rs type="letter">lettre</rs> là dessus. Je suis convaincu de sa bonne foy, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne saurois croire
+               <lb/>qu’il y ait de la malice dans son fait, quoique je ne puisse comprendre ce qui l’empêche
+               <lb/>de penser comme vous sur cette Matière. J’ai donc crû devoir lui rendre justice partout
+               <lb/>où il la mérite, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour celà j’ai taché de donner à ses expressions le sens le plus rai<pc type="hyphenation">-</pc><lb break="no"/>sonable. J’ai admis celles de ses propositions qui sont vraies en prenant le mot
+               <lb/>de force dans le sens de <rs type="keyword">force morte</rs>: mais j’ai essaié de lui faire comprendre qu’il ne
+               <lb/>suffisoit pas d’établir son Systeme pour décider la Question, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il auroit dû détruire
+               <lb/>celui des <rs type="keyword">forces vives</rs>, puisque le dessein de ceux qui l’admettent n’est pas de <del/><add>renverser</add> la
+               <lb/>Théorie ancienne, qu’ils emploient en mille occasions, mais de la perfectioner en
+               <lb/>levant l’equivoque du mot de force, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> introduisant l’idée nouvelle des <rs type="keyword">forces vives</rs>, idée
                <lb/>claire, simple, naturelle, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> admirable pour démontrer en peu de mots, ce qui seroit long,
-               <lb/>difficile <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peut étre impossible à prouver par l'idée seule de la force morte.
+               <lb/>difficile, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peut étre impossible à prouver par l’idée seule de la <rs type="keyword">force morte</rs>.
             <pb facs="1073864" n="4"/>
-<lb/>J'ai fait voir que la Théorie des forces vives se pouvoit déduire du Principe même
-               <lb/>des Forces mortes, c'est à dire des Propositions demontrées <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reçues par tout le monde
-               <lb/>touchant les pressions, à peu près comme vous le faites dans vôtre Discours sur le
-               <lb/>mouvement, pag, 44. Seulement j'ai emploié la resistance où vous employés la
-               <lb/>pression, considérant la destruction de la force au lieu que vous en considerés la
-               <lb/>production, ce qui revient au même. Voici par exemple un de mes raisonemens.</p>
-<p><lb/>"La resistance qu'opposent des obstacles à un corps en mouvement, est, selon vous,
-               <lb/>en raison composée 1.<hi rend="sup">o</hi> de la force de chaque obstacle, 2.<hi rend="sup">o</hi> du nombre des Obstacles
-               <lb/>à surmonter, 3.<hi rend="sup">o</hi> du tems que le corps insiste sur chacun d'eux. C'est là votre Théorie
-               <lb/>du N.<hi rend="sup">o</hi> 22. Soit <formula>CAD</formula> la coupe d'un corps qui fait un enfoncement dans la terre
-               <lb/>glaise, ou la coupe de cet enfoncement même. Soit <formula>AP=x</formula>, <formula>PM=y</formula>, <formula>v=</formula> la vitesse
-               <lb/>du corps en chaque instant, <formula>m=</formula> sa masse. La résistance que
-               <lb/>ce corps trouve quand il s'enfonce de la quantité <formula>Pp</formula> ou <formula>dx</formula>, etant
-               <lb/>proportionelle à la force de chaque obstacle (que nous supposerons
-               <lb/>ici constante <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>=a</formula>), à leur nombre <formula>Pp\times\overline{PM}^{2}=yydx</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> au tems 
-               <lb/><formula>\frac{1}{v}</formula> qu'il insiste sur chacun d'eux, cette resistance sera proportionelle
-               <lb/>à <formula>\frac{ayydx}{v}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la diminution de mouvement qui en resulte dans le Corps étant <formula>mdv</formula>
-<lb/>on aura<formula>\frac{ayydx}{v}=mdv</formula>, ou <formula>mvdv=ayydx</formula>.
-               <lb/>Vous admettez cette Conséquence. Elle suit de vos principes, Elle est confirmée par
-               <lb/>toutes les Expériences. Or cette équation étant integrée donne <formula>mvv=2a\int\overline{yydx}</formula>.
-               <lb/>Mais <formula>\int\overline{yydx}</formula> est la cavité ou l'effet produit. Donc il est généralement vray que quelque
-               <lb/>corps qu'on laisse tomber, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> quelque tems qu'il employe à faire sa cavité, à produire son
-               <lb/>effet, cet effet sera toujours proportionel au produit de la masse par le quarré de la Vitesse.
-               <lb/>Ainsi nommant force, ce qui produit cet effet, la force sera proportionelle au même
-               <lb/>produit, c'est là tout ce que veulent les Defenseurs du Système des forces vives.</p>
-<p><lb/>Il en est de même pour tout autre effet. Mr. <rs type="person">Bernoulli</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> après lui Mr. l'Abbé 
-               <lb/><rs key="pers_DE-588-117672025" type="person">Camus</rs> l'ont demontré, quand il s'agit de bander des ressorts. On le prouve dans le choc des
-               <lb/>Corps Elastiques, par la 11.<hi rend="sup">e</hi> Proposition du Traitté de <hi rend="u">Motu corporum ex percussione</hi> de Mr. <rs key="pers_DE-588-118639749" type="person">Huygens</rs>,
-               <lb/>et il n'est pas difficile de le faire voir dans le choc des corps mous.</p>
+  <lb/>J’ai fait voir que la Théorie des <rs type="keyword">forces vives</rs> se pouvoit déduire du Principe même
+               <lb/>des <rs type="keyword">Forces mortes</rs>, c’est à dire, des Propositions demontrées <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reçues par tout le monde
+               <lb/>touchant les pressions, à peu près comme vous le faites dans vôtre <rs type="biblio">Discours</rs> sur le
+               <lb/>Mouvement, <abbr>pag.</abbr> 44. Seulement j’ai emploié la resistance où vous employès la
+               <lb/>pression, considerant la destruction de la force au lieu que vous en considerés la
+               <lb/>production, ce qui revient au même. Voici, par <choice><abbr>ex.</abbr><expan>exemple</expan></choice> un de mes raisonemens.</p>
+<cit type="long"><quote><p><lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>La resistance qu’opposent des obstacles à un corps en mouvement, est, selon vous,
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>en raison composée 1.<hi rend="sup">o</hi> de la force de chaque obstacle, 2.<hi rend="sup">o</hi> du nombre des Obstacles
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>à surmonter, 3.<hi rend="sup">o</hi> du tems que le Corps insiste sur chacun d’eux. C’est là votre Théorie
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>du n.<hi rend="sup">o</hi> 22.<!-- figure facs ergänzen MK 2.5.2025 --> Soit <formula>CAD</formula> la coupe d’un corps qui fait un enfoncement dans la terre
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>glaise, ou la coupe de cet enfoncement même. Soit <formula>AP=x</formula>, <formula>PM=y</formula>, <formula>v=</formula> la vitesse
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>du corps en chaque instant, <formula>m=</formula> sa masse. La résistance que
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ce Corps trouve quand il s’enfonce de la quantité <formula>Pp</formula> ou <formula>dx</formula>, etant
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>proportionelle à la force de chaque obstacle (que nous supposerons
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ici constante <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>=a</formula>), à leur nombre <choice rend="regFormula"><orig><formula>Pp\times\overline{PM}^{2}=yydx</formula></orig><reg><formula>Pp\times(PM)^{2}=yydx</formula></reg></choice>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> au tems 
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><formula>\frac{1}{v}</formula> qu’il insiste sur chacun d’eux, Cette resistance sera proportionelle
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>à <formula>\frac{ayydx}{v}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la diminution de mouvement qui en resulte dans le Corps étant <formula>mdv</formula>
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>on aura <formula>\frac{ayydx}{v}=mdv</formula>, ou <formula>mvdv=ayydx</formula>.</p>
+  <p><lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Vous admettez cette Conséquence. Elle suit de vos principes, Elle est confirmée par
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>toutes les Experiences. Or cette équation étant integrée donne <choice rend="regFormula"><orig><formula>mvv=2a\int\overline{yydx}</formula></orig><reg><formula>mvv=2a\int(yydx)</formula></reg></choice>.
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Mais <choice rend="regFormula"><orig><formula>\int\overline{yydx}</formula></orig><reg><formula>\int(yydx)</formula></reg></choice> est la cavité ou l’effet produit. Donc il est généralement vray que quelque
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>corps qu’on laisse tomber, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> quelque tems qu’il employe à faire sa cavité, à produire son
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>effet, cet effet sera toujours proportionel au produit de la masse par le quarré de la
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Vitesse. Ainsi nommant force, ce qui produit cet effet, la force sera proportionelle au mème
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>produit, c’est là tout ce que veulent les Defenseurs du Systéme des <rs type="keyword">forces vives</rs>.</p>
+  <p><lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Il en est de même pour tout autre effet. <abbr>M.</abbr> <rs type="person">Bernoulli</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> après lui <abbr>M.<hi rend="sup">r</hi></abbr> l’Abbé 
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><rs key="pers_DE-588-117672025" type="person">Camus</rs> l’ont démontré, quand il s’agit de bander des ressorts. On le prouve dans le Choc des
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Corps Elastiques, par la <subst><del/><add>1</add></subst>1.<hi rend="sup">e</hi> <choice><abbr>Prop.</abbr><expan>Proposition</expan></choice> du <rs type="biblio">Traitté</rs> <hi rend="u"><foreign xml:lang="lat">de Motu corporum ex percussione</foreign></hi> de <abbr>M<unclear>.</unclear></abbr> <rs key="pers_DE-588-118639749" type="person">Huygens</rs>
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>et il n’est pas difficile de le faire voir dans le choc des Corps mous.</p></quote></cit>
 <pb facs="1073865" n="5"/>
-<p><lb/>Je tache ensuite de lui faire sentir que dans la Théorie des forces mortes, il reste quelque
-               <lb/>inexactitude d'expressions qui ne peuvent étre corrigées qu'en admettant la distinction
-               <lb/>des forces mortes et des forces vives. Voici par exemple, ce que je lui oppose.</p>
-<p><lb/>Quand deux Cylindres égaux tombent dans la Glaise depuis des hauteurs 4 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1
-               <lb/>ce qui leur donne des vitesses comme 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1: les espaces qu'ils parcourent dans cette glaise
-               <lb/>dans le premier instant, sont aussi comme 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par la résistance qu'ils y rencontrent
-               <lb/>ils perdent une égale partie de leurs vitesses. Direz-vous, que les effets ont été égaux. Mais
-               <lb/>à ce compte vous devez dire que les effets totaux sont comme les tems, c.a.d., co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1: au
-               <lb/>lieu que partout vous admettez <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> posés qu'ils sont comme les enfoncemens 4 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1. Direz-vous
-               <lb/>donc que les effets dans le premier instant sont comme 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1. Mais alors vous n'estimés
-               <lb/>plus la force perduë par l'effet produit, puisque selon vous, ils ont perdu la même force,
-               <lb/>en produisant des effets différents. Et cependant, comme vous dites, très bien N.<hi rend="sup">o</hi> 3, <hi rend="u">Par où
-               <lb/>mesurer une force si ce n'est par ses effets?</hi>"</p>
-<p><lb/>Voila, Monsieur, un assés long extrait d'une longue Lettre. Je crains fort qu'il ne
-               <lb/>vous ait ennuié. Mais j'espère que vous me la pardonnerez. Je vous demande en grace
-               <lb/>de me marquer, si vous aprouvés les efforts que j'ai fait pour tacher à concilier les deux
-               <lb/>Systèmes. J'ai cru devoir, pour reconcilier Mr. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> avec les forces vives, reconcilier
-               <lb/>ce Système même avec le sien. Je crois qu'il ne se fera pas de peine d'admettre le vôtre,
-               <lb/>s'il peut le faire sans renoncer à l'ancien, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je me persuade que c'est cette répugnance
-               <lb/>à abandonner un Système, admis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reconnu pour vrai dans ses premiéres études,
-               <lb/>qui l'empêche, plus que toute autre chose, de se faire une idée nette des forces vives.
-               <lb/>Car je suis assuré, que toute personne qui les conçevra bien, ne pourra s'empêcher de
-               <lb/>les admettre. Ainsi j'ai crû que le meilleur parti étoit celui de la conciliation, du moins,
-               <lb/>autant qu'elle est possible. Car l'idée de force, prise dans le sens que nous lui donnons
-               <lb/>de pouvoir d'agir, est tellement naturelle, qu'il échape à ces Messieurs 
-               <lb/>d'emploier ce mot dans ce sens là, quoiqu'ils prétendent ne parler que des forces mortes.
+<p><lb/>Je tache ensuite de lui faire sentir que dans la Thèorie des <rs type="keyword">forces mortes</rs>, il reste quelques
+               <lb/>inéxactitudes d’expressions qui ne peuvent étre corrigées qu’en admettant la distinction
+               <lb/>des <rs type="keyword">forces<add><del/></add> mortes</rs> et des <rs type="keyword">forces vives</rs>. Voici, par exemple, ce que je lui oppose.</p>
+  <p><cit type="long"><quote><lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Quand deux Cylindres égaux tombent dans la Glaise depuis des hauteurs 4 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ce qui leur donne des vitesses comme 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1: les espaces qu’ils parcourent dans cette Glaise
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>dans le premier instant, sont aussi comme 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par la resistance qu’ils y rencontrent
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ils perdent une ègale partie de leurs vitesses. Direz-vous, que les effets ont été égaux. Mais
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>à ce compte vous devez dire que les effets totaux sont comme les tems, <abbr>c. <choice><orig>a</orig><reg>à</reg></choice>. d. </abbr> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1: au
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>lieu que partout vous admettez <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> posès qu’ils sont comme les enfoncemens 4 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1. Direz-vous
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>donc que les effets dans le premier instant sont comme 2 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1. Mais alors vous n’estimés
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>plus la force perduë par l’effet produit, puisque, selon vous, ils ont perdu la même force,
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>en produisant des effets differents. Et cependant, comme vous dites, très bien <abbr>N.<hi rend="sup">o</hi></abbr> 3, <hi rend="u">Par où
+      <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>mesurer une force si ce n’est par ses effets?</hi></quote></cit></p>
+<p><lb/>Voila, Monsieur, un assés long extrait d’une longue <rs type="letter">Lettre</rs>. Je crains fort qu’il ne
+               <lb/>vous ait ennuié. Mais j’espére que vous me la pardonnerez. Je vous demande en grace
+               <lb/>De me marquer, si vous aprouvés les efforts que j’ai fait pour tacher à concilier les deux
+               <lb/>Systèmes. J’ai cru devoir, pour reconcilier <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> avec les <rs type="keyword">forces vives</rs>, reconcilier
+               <lb/>ce Système même avec le sien. Je crois qu’il ne se fera pas de peine d’admettre le vôtre,
+               <lb/>s’il peut le faire sans renoncer à l’ancien, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je me persuade que c’est cette répugnance
+               <lb/>à abandonner un Systeme, admis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reconnu pour vrai dans ses prémiéres études,
+               <lb/>qui l’empêche, plus que toute autre chose, de se faire une idée nette des <rs type="keyword">Forces vives</rs>.
+               <lb/>Car je suis assuré, que toute personne qui les conçevra bien, ne pourra s’empêcher de
+               <lb/>les admettre. Ainsi j’ai crû que le meilleur parti étoit celui de la conciliation, du moins,
+               <lb/>autant qu’elle est possible. Car l’idée de force, prise dans le sens que nous lui donnons
+               <lb/>de pouvoir d’agir, est tellement naturelle, qu’il échape souvent à ces Messieurs
+               <lb/>d’emploier ce mot dans ce sens là, quoiqu’ils prétendent ne parler que des <rs type="keyword">forces mortes</rs>.
                <lb/>Après quoi lui apliquant les propositions demontrées touchant les pressions, il en
                <lb/>resulte quelquefois des erreurs <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des équivoques fort singulières.</p>
 <pb facs="1073866" n="6"/>
-<p><lb/>J'ai renvoié à un autre tems quelques reflexions sur la fin du Discours de Mr. de
-               <lb/><rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, où il s'agit de la décomposition du mouvement. La veritable raison en est
-               <lb/>que je trouve beaucoup plus d'embaras à reconcilier avec les forces vives ce qu'il dit sur
+<p><lb/>J’ai renvoié à un autre tems quelques reflexions sur la fin du <rs type="biblio">Discours</rs> de <abbr>M.</abbr> de
+               <lb/><rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, où il s’agit de la décomposition du mouvement. La veritable raison en est
+               <lb/>que je trouve beaucoup plus d’embaras à reconcilier avec les <rs type="keyword">forces vives</rs> ce qu’il dit sur
                <lb/>cet article. Je ne vois pas trop comment on peut apliquer à ces sortes de cas la Théorie
-               <lb/>des forces mortes. Cependant j'entrevois une manière de le faire. Mais peutétre que
-               <lb/>cette manière de considérer le Choc oblique rendroit cette Théorie très difficile. Et ce seroit
-               <lb/>là un nouvel avantage considérable de la Théorie des forces vives.</p>
-<p><lb/>On m'écrit de <rs key="place_GEO-2988507" type="place">Paris</rs> qu'on a lû à l'Académie un Mémoire de vôtre façon sur la
-               <lb/>Tautochrone dans un milieu resistant. On m'en parle comme d'une piéce très savante,
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'une excellence rare. J'espère que vous l'aurez aussi envoiée aux <rs type="biblio">Journaux de
-               <lb/>Leipsik</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu'elle y paroitra cette même année. Autrement, je prendrois la liberté
-               <lb/>de vous supplier de me communiquer du moins le fondement de vôtre Théorie. Car nous
-               <lb/>ne voions gueres ici les Mémoires de l'Académie que 3 ou 4 années après qu'ils ont
-               <lb/>paru. J'ai lû ce que dit sur cette matière, Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> Liv. 11 Sect. 6. qui m'a paru
-               <lb/>très difficile <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très peu instructif. Ce qui enflamme d'autant plus ma curiosité, pour
-               <lb/>voir vos pensées sur une matière de cette importance.</p> <closer><salute>J'ai l'honneur d'étre
-               <lb/>avec une estime sincère et un respect infini,
+               <lb/>des <rs type="keyword">forces mortes</rs>. Cependant j’entrevois une manière de le faire. Mais peutétre que
+               <lb/>cette manière de considerer le Choc oblique rendroit cette Théorie très difficile. Et ce seroit
+               <lb/>là un nouvel avantage considerable de la Théorie des <rs type="keyword">forces vives</rs>.</p>
+<p><lb/>On m’écrit de <rs key="place_GEO-2988507" type="place">Paris</rs> qu’on a lû à l’<rs type="organisation">Academie</rs> un <rs type="biblio">Mémoire</rs> de vôtre façon sur la
+               <lb/>Tautochrone dans un milieu resistant. On m’en parle comme d’une pièce tres savante,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’une excellence rare. J’espère que vous l’aurez aussi envoiée aux <rs type="biblio">Journaux de
+               <lb/>Leipsik</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’elle y paroitra cette même année. Autrement, je prendrois la liberté
+               <lb/>de vous supplier de me communiquer du moins les fondemens de vôtre Théorie. Car nous
+               <lb/>ne voions gueres ici les <rs type="biblio">Mémoires</rs> de l’<rs type="organisation">Academie</rs> que 3 ou 4 années après qu’ils ont
+               <lb/>paru. J’ai lû ce que dit sur cette Matiere, <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <rs type="biblio"><abbr>Liv.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> <abbr>Sect.</abbr> 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qui m’a paru
+               <lb/>très difficile <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très peu instructif. Ce qui enflamme d’autant plus ma curiosité, pour
+               <lb/>voir vos pensées sur une Matiére de cette importance.</p> <closer><salute>J’ai l’honneur d’etre
+               <lb/>avec une estime sincère <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un respect infini,
                <lb/>Monsieur,
-               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
-               <lb/>Serviteur</salute>
-<lb/><signed>G. Cramer</signed>.
-                  <dateline><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1731-10-16">16. 8.<hi rend="sup">bre</hi>1731</date>.</dateline>
+               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très
+               <lb/>obeissant Serviteur</salute>
+<lb/><signed>G<supplied>.</supplied> Cramer</signed>
+                  <dateline><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1731-10-16">16. 8.<hi rend="sup">bre</hi> 1731</date></dateline>
 <pb facs="1073867" n="7" type="empty"/>
 <pb facs="1073868" n="8"/>
 <note type="editorial">Rückseite: {[mit Siegel] }</note>
 <address>
 <addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Jean Bernoulli, Docteur en Medecine, Professeur</addrLine>
-<addrLine>en Mathematiques, membre des Academies Royales</addrLine>
-<addrLine>de Paris, de Londres et de Berlin, etc. etc.</addrLine>
-<addrLine>à Basle.</addrLine>
+<addrLine>Monsieur Jean Bernoulli, Docteur</addrLine>
+<addrLine>en Medecine, Professeur en Mathematiques,</addrLine>
+<addrLine>membre des Academies Royales de Paris, de</addrLine>
+<addrLine>Londres <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de Berlin, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+<addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
 </address>
 </closer>
 </div>

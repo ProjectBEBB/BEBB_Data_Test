@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514978705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -174,7 +174,7 @@
           <note type="lebensdaten">(1643-1727)</note>
         </person>
         <person>
-          <persName key="pers_DE-588-117679879">Pajot d'Onsenbray, Louis Léon</persName>
+          <persName key="pers_DE-588-117679879">Pajot d’Onsenbray, Louis Léon</persName>
           <note type="lebensdaten">(1678-1753)</note>
         </person>
         <person>
@@ -195,6 +195,12 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
+      <change when="2025-04-22" who="RG">Mathematikformel angepasst</change>
+      <change when="2025-03-28" who="MK RG">kollationiert</change>
+      <change when="2025-03-27" who="MK RG">kollationiert</change>
+      <change when="2025-03-14" who="RG">Diverse Stellen angepasst und entities eingefügt.</change>
+      <change when="2025-03-14" who="RG">Erste Auszeichnungen (Personen, Orte, etc.) gemacht.</change>
+      <change when="2025-03-14" who="RG">Transkription in XML übertragen, pb und lb angepasst</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -204,8 +210,367 @@
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1371427" n="1"/> <pb facs="1371428" n="2"/> <pb facs="1371429" n="3"/> <pb facs="1371430" n="4"/> <pb facs="1371431" n="5"/> <pb facs="1371432" n="6"/> <pb facs="1371433" n="7"/> <pb facs="1371434" n="8"/><!-- Text fehlt noch, RG 13.03.2023 -->
-<p> </p>
+<pb facs="1371427" n="1"/>
+  <opener>
+    <dateline><lb/>à <rs type="place" key="place_GEO-2661604">Bale</rs> ce <date when="1729-02-06">6. Fevrier 1729</date>.</dateline>
+    <salute><lb/>Monsieur</salute>
+  </opener>
+  <p>
+    <lb/>Votre agreable <rs type="letter" key="B_991170514978805501">lettre</rs> du 8. Janvier m’est parvenue aprés 15 jours 
+    <lb/>de voyage; j’ai vû par icelle avec plaisir votre heureuse arrivée
+    <lb/>à <rs type="place" key="place_GEO-2988507">Paris</rs> et votre retablissement d’une longue maladie, quoique legere.
+    <lb/>Ce que vous ajoutés à ce que j’ai remarqué touchant la Dispute avec
+    <lb/>les Anglois sur l’article des <rs type="keyword">forces vives</rs>, est trés juste. Vous convenés
+    <lb/>donc avec moi qu’il est inutile de perdre le temps à chamailler avec
+    <lb/>des Gens de la trempe de nos Antagonistes Anglois; qui sont plus endurcis
+    <lb/>que les Pharisiens, et que <rs type="person">J. Christ</rs> lui meme ne convertiroit pas. Cepen<pc type="hyphenation">-</pc><lb break="no"/>dant pour leur fermer la bouche, il seroit bon de leur faire voir la raison
+    <lb/>pourquoi nous ne daignons pas repondre aux objections frivoles qu’ils ont
+    <lb/>publiées par <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-100252419">Robins</rs>; ce que j’avois voulu faire par la Declaration
+    <lb/>que je vous priois de faire inserer dans quelque <rs type="biblio">journal</rs> de <rs type="place" key="place_VER-hollan">Hollande</rs>,
+    <lb/>mais ne sachant si vous avés executé ma co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission, puisque vous ne m’<pc type="hyphenation"></pc>
+    <lb break="no"/>en dites rien dans votre derniere, je vous prie encore une fois, en cas
+    <lb/>que ma declaration n’ait pas encore vû le jour, de la rendre publique
+    <lb/>dans le <rs type="biblio">journal des Savants</rs> à <rs type="place" key="place_GEO-2988507">Paris</rs>; car il me seroit honteux que les
+    <lb/>Anglois prissent occasion de mon silence de me mener en triomphe
+    <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vaincu par un miserable <rs type="person" key="pers_DE-588-100252419">Robins</rs>. 
+  </p>  
+  <p>
+    <lb/>Je n’ai rien à dire contre votre raisonnement sur les forces de deux boulets
+    <lb/>égaux, dont l’un pressé avec 1. degré de vitesse s’enfonce d’une toise dans la
+    <lb/>terre glaise, et l’autre avec 2. degrés de vitesse, s’y enfoncera de 4. toises,
+    <lb/>d’où on doit inferer à juste titre que le second boulet a 4 fois plus de force
+    <lb/>que le premier. Mais les Chicaneurs Anglois toujours prets à trouver des
+    <lb/>echapatoires, vous nieront vôtre supposition, quelque evidente qu’elle soit
+    <lb/>lorsque vous dites, que la force du second boulet étoit plus que double, puis<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+    <lb/>dans le meme temps que le premier il s’est enfoncé de 3 toises, car, diront-<pc type="hyphenation"></pc>
+    <lb break="no"/>ils, la terre glaise n’oppose pas tant de resistance au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement de l’enfon<pc type="hyphenation">-</pc><lb break="no"/>cement, où le boulet a une grande vitesse, que sur la fin de l’enfoncement
+    <lb/>où la vitesse du boulet est affoiblie, en sorte que la derniere toise seule
+    <lb/>oppose autant de resistance que toutes les trois toises precedentes prises
+    <lb/>ensemble. Ainsi il <del>leur </del>faudra leur prouver auparavant, qu’une meme
+    <lb/>quantité d’enfoncement ne fait ni plus ni moins de resistance soit que
+    <lb/>le boulet se meuve avec peu ou beaucoup de vitesse; de cette maniere
+    <lb/>on demontrera, que les longueurs des enfoncements sont les justes mesures
+    <lb/>des forces des boulets. Mais vous aurés beau faire, ils ne laisseron pas de chicane<unclear>r</unclear>.
+  </p>
+<pb facs="1371428" n="2"/>
+  <p>
+    <lb/>L’exemple ou plutot la comparaison de vos 3 Ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es, dont le premier peut par<pc type="hyphenation">-</pc><lb break="no"/>courir une lieue dans une heure, le Second 4 lieuës en 2 heures et le troisieme
+    <lb/>2 lieuës en 2 heures, est bien choisie, mais ces sortes de comparaisons servent
+    <lb/>plutot d’eclarcissement que de demonstration, et les Anglois ne s’y rendront
+    <lb/>jamais sous prétexte qu’il y a grandissime diversité entre les forces des 
+    <lb/>corps en mouvement et celles des Ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es à marcher qui consistent dans
+    <lb/>une habitude de supporter les fatigues. Je me souviens que feu <abbr>Mr.</abbr> <rs type="person">Leib<pc type="hyphenation">-</pc><lb break="no"/>nits</rs> s’est servi du meme raisonnement, dans une de ses <rs type="letter">lettres</rs> qu’il m’a
+    <lb/>ecrites; son enoncé étoit plus general et metaphysique, voici à peu prés
+    <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent il raisonnoit: Trois Agents <formula>A</formula>, <formula>B</formula>, et <formula>C</formula> épuisent leur forces en
+    <lb/>produisant 3 differents effets; <formula>A</formula> employe le temps <formula>T</formula> pour consumer
+    <lb/>sa force à produire l’effet <formula>E</formula>; <formula>B</formula> agit pendant <formula>2T</formula> et produit en se con<pc type="hyphenation">-</pc><lb break="no"/>sumant <formula>4E</formula>; Enfin <formula>C</formula> dans le meme temps <formula>2T</formula> exerce toute sa force et la
+    <lb/>consume en produisant un effet <formula>2E</formula>. Or il est visible, disoit il, que la
+    <lb/>force de <formula>C</formula> doit avoir été double de celle de <formula>A</formula>, puisqu’il a pû endurer
+    <lb/>2 fois plus longtemps et produire deux fois plus d’effet; il est aussi visi<pc type="hyphenation">-</pc><lb break="no"/>ble, que la force de <formula>B</formula> étoit double de celle de <formula>C</formula>, parce que dans le meme
+    <lb/>temps il a produit 2 fois autant d’effet que <choice><orig>celuci</orig><reg>celui-ci</reg></choice>; donc la force de <formula>B</formula> doit
+    <lb/>avoir été quadruple de la force de <formula>A</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>.
+  </p>
+  <p>
+    <lb/><abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-143687417">Pemberton</rs> doit avoir une étrange idée de la force des corps en mouve<pc type="hyphenation">-</pc><lb break="no"/>ment, puisqu’il a osé vous nier qu’il y eut un pouvoir d’agir dans un corps
+    <lb/>qui est en mouvement, qui ne fut aussi dans un corps qui est en repos; vous
+    <lb/>Lui avés fort bien repliqué, pourquoi donc il soutenoit que la force du corps
+    <lb/>qui se meut est proportionelle à sa vitesse, par consequent nulle quand la
+    <lb/>vitesse est nulle; mais vous ne m’avés pas dit quelle instance il a donnée
+    <lb/>à votre replique. Je crois que <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-143687417">Pemberton</rs> s’imagine ou fait sem<pc type="hyphenation">-</pc><lb break="no"/>blant de s’imaginer, que par le pouvoir d’agir qui reside dans le corps
+    <lb/>en mouvement nous entendons une qualité innée ou essentielle aux
+    <lb/>corps, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e par <abbr>ex.</abbr> l’impenetrabilité, la mobilité, l’inertie <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> si bien
+    <lb/>que le corps ne peut pas exister sans le pouvoir d’agir, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il ne peut pas
+    <lb/>exister sans étre impenetrable <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> de cette maniere le corps soit en
+    <lb/>repos soit en mouvement auroit toujours le pouvoir d’agir, ce qui revien<pc type="hyphenation">-</pc><lb break="no"/>droit à peu prés à l’actualité ou entelechie que <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-118571249">Leibnits</rs> a crû
+    <lb/>étre essentielle aux corps ou créée avec eux. Mais il auroit fallu faire
+    <lb/>comprendre à <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-143687417">Pemberton</rs>, que nous so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es bien eloignés de cette ex<pc type="hyphenation">-</pc><lb break="no"/>plication du pouvoir d’agir, que nous considerons ce pouvoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e une
+    <lb/>faculté qui survient au corps dés qu’il est mis en mouvement, et que
+    <lb/>cette faculté ou ce pouvoir doit etre estimé par l’effet total que le
+    <lb/>corps peut produire et produit actuellement par la consumtion de tout
+    <lb/>son mouvement, sans faire attention ni au temps ni <choice><orig/><reg>à</reg></choice> aucune autre cir<pc type="hyphenation">-</pc>
+  </p>
+<pb facs="1371429" n="3"/>
+  <p>
+    <lb break="no"/>constance, qui ne regarde que la maniere d’agir et non l’effet lui meme
+    <lb/>qui seul etant reel et permanent aprés l’action achevée doit étre la me<pc type="hyphenation">-</pc><lb break="no"/>sure de sa cause, <abbr>c. a. d.</abbr> de l’intensité du pouvoir qui a été consumé par
+    <lb/><unclear>l</unclear>a production de son effet. Ainsi un corps sans mouvement n’a point
+    <lb/>de <rs type="keyword">force vive</rs>, mais il faut de la matiere et du mouvement, et co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e la
+    <lb/>matiere sans mouvement est privée de cette force, ainsi aussi le mouve<pc type="hyphenation">-</pc><lb break="no"/>ment d’un volume vuide ou sans matiere, s’il y en avoit de tel, seroit
+    <lb/>entierement destitué de force et ne seroit pas capable débranler le
+    <lb/>moindre corpuscule contre lequel il heurteroit avec la plus grande vitesse.
+    <lb/>Je crois que tout ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui n’est pas prevenu de prejugé ni porté pour
+    <lb/>soutenir l’erreur nationale goutera ces remontrances et concevra
+    <lb/>une idée juste des <rs type="keyword">forces vives</rs>; Mais pour <rs type="person" key="pers_DE-588-143687417">Pemberton</rs> et les autres An<pc type="hyphenation">-</pc><lb break="no"/>glois qui rejettent tout ce qui vient des pays etrangers, admettront plu<pc type="hyphenation">-</pc><lb break="no"/>tot que le Soleil n’existe plus quand il luit en plein midi, que de se rendre
+    <lb/>à nos demonstrations les plus solides et les plus claires.
+  </p>
+  <p>
+    <lb/>Je suis bien aise que vous soyés enfin convaincu par mes demonstrations
+    <lb/>que c’est l’increment de la vitesse et non de la force qui est proportionel
+    <lb/>à la pression multipliée par le Temps. Quant à la 2.<hi rend="sup">de</hi> qui prouve que la
+    <lb/>vitesse est proportionelle à la pression, vous avoués bien qu’elle est
+    <lb/>tres simple et tres convainquante, mais vous souhaiteriés qu’elle fut
+    <lb/>plus directe; Qu’importe qu’elle soit directe ou indirecte, pourvu qu’<pc type="hyphenation"></pc>
+    <lb break="no"/>elle convain<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>, cela suffit pour obvier aux Adversaires. Voyons cepen<pc type="hyphenation">-</pc><lb break="no"/>dant, si je ne puis pas vous donner pour votre propre satisfaction une
+    <lb/>demonstration directe; Je me servirai pour cela du meme fondament
+    <lb/>que j’ai employé pour prouver que l’increment de la vitesse doit etre
+    <lb/>proportionel à la pression multiplié par temps, ce fondement<!-- qu'en supposant la pression constante l'increment de la vitesse doit etre proportionel au temps elementaire ce fondement--> con<pc type="hyphenation">-</pc><lb break="no"/>siste <!--[comme nous avons prouvé][Fußnote: fehlt im Original]--> en ce qu’une force qui presse continuellement un corps, agit de la
+    <lb/><add>meme</add> maniere sur ce corps, soit qu’il soit en repos ou qu’il ait déja une vitesse
+    <lb/>acquise, parce que la force pressante et le corps pressé allant de com<pc type="hyphenation">-</pc><lb break="no"/>pagnie, n’ont point de vitesse relative, par consequent ils sont co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+    <lb/>en repos l’un par rapport à l’autre; ainsi le meme increment de
+    <lb/>vitesse, que la force<del> lui</del> donne au corps dans un petit temps <formula>dt</formula>, lui doit
+    <lb/>etre imprimé de nouveau dans chaque autre petit temps égal au pre<pc type="hyphenation">-</pc><lb break="no"/>mier <formula>dt</formula>. Concevés donc maintenant une force <formula>A</formula> dont la pression <formula>p</formula>
+    <lb/>produise dans le corps <formula>C</formula> un increment de vitesse <formula>dv</formula> dans le temps <formula>dt</formula>, et
+    <lb/>supposés qu’il survienne une autre force <formula>B</formula> egale à <formula>A</formula>, qui co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ence aussi
+    <lb/>à presser dans le meme sens le corps <formula>C</formula>; n’est il pas clair que dès que
+    <lb/>cette nouvelle force <formula>B</formula> agit sur ce corps, c’est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e si elle le trouvoit en
+    <lb/>repos, elle fera donc sur lui le meme effet qu’elle feroit si le corps <formula>C</formula>
+    <lb/>etoit veritablement en repos, selon le fondement que vous m’avés
+    <lb/>accordé; donc chacune des forces <formula>A</formula> et <formula>B</formula> doit avoir independe<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent l’une
+  </p>
+<pb facs="1371430" n="4"/>
+  <p>
+    <lb/>de l’autre son plein effet qu’elle auroit si elle agissoit toute seule, donc
+    <lb/>chacune imprimera au corps <formula>C</formula> (dont la vitesse acquise soit <formula>=v</formula>) un incre<pc type="hyphenation">-</pc><lb break="no"/>ment de vitesse <formula>=dv</formula>; ainsi il gagnera un increment de vitesse <formula>=2dv</formula>.
+    <lb/>Ou bien, on peut concevoir la chose de cette maniere: Quand le corps <formula>C</formula>
+    <lb/>ayant une vitesse acquise <formula>=v</formula>, est pressé par la seule force <formula>A</formula>, qui lui
+    <lb/>imprime dans le temps <formula>dt</formula> un increment de vitesse <formula>=dv</formula>, supposés que
+    <lb/>la force <formula>A</formula> n’agisse pas sur le corps <formula>C</formula>, <add>mais</add> que celuici se meuve avec une
+    <lb/>vitesse acquise <formula>=v+dv</formula> au lieu de <formula>v</formula> seulement; n’est il pas evident se<pc type="hyphenation">-</pc><lb break="no"/>lon mon le<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e fondamental, que quand la force <formula>B</formula> vient à agir sur le 
+    <lb/>corps <formula>C</formula> qui a une vitesse acquise <formula>=v+dv</formula>, c’est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <note type="editorial">An dieser Stelle befindet sich eine Textpassage in der Spiess-Transkription, die im Manuskript nicht vorkommt: "et que la force B survienne c’est comme"</note> si elle seule agissoit
+    <lb/>sur le corps <formula>C</formula>, elle lui imprimera donc en vertu du lemme un nouvel
+    <lb/>increment de vitesse, en sorte qu’il aura une vitesse totale <formula>=v+2dv</formula>.
+    <lb/>Donc si une pression <formula>p</formula> dans un temps <formula>dt</formula> peut produire un increment de
+    <lb/>vitesse <formula>=dv</formula>, il faut qu’une pression double ou <formula>2p</formula> dans le meme temps <formula>dt</formula>
+    <lb/>produise un increment de vitesse <formula>=2dv</formula>; donc en general une pression <formula>np</formula>
+    <lb/>doit produire un increment de vitesse <formula>=ndv</formula> dans le meme temps <formula>dt</formula>. <choice><abbr>c. q. f. d.</abbr><expan>ce qu’il fallait démontrer</expan></choice>
+    <lb/>D’où vous voyés que tout revient à ceci; Qu’une force qui presse peut etre
+    <lb/>considerée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e composée de plusieurs forces particulieres égales, dont
+    <lb/>chacune agit independa<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent de l’autre sur le corps <formula>C</formula> de la meme maniere
+    <lb/>que si elle étoit seule qui agit, le corps étant toujours co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en repos par
+    <lb/>rapport à elle qui l’accompagne, et partant l’effet d’une seule force par<pc type="hyphenation">-</pc><lb break="no"/>ticuliere, doit étre multiplié par le nombre <formula>n</formula> des forces particulieres, pour
+    <lb/>avoir <del>le nombre</del> l’effet total, <abbr>c. a. d.</abbr> si l’increment de vitesse d’une seule
+    <lb/>force dans le petit temps <formula>dt</formula> est <formula>dv</formula>, il faut que l’increment de vitesse que
+    <lb/>toutes les forces particulieres jointes ensemble peuvent produire <add>dans le meme <formula>dt</formula></add> soit
+    <lb/><formula>=ndv</formula>. Voila l’unique demonstration directe de cette verité, car je
+    <lb/>ne crois pas qu’on en puisse donner d’autres: Un esprit raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>able eloigné
+    <lb/>de l’art de chicaner s’en contentera. <!-- bis hier kollationiert 17.03.2025 -->
+  </p>
+  <p>
+    <lb/>Vous me demandés ma methode pour determiner la tension du fil, qui
+    <lb/>soutient un corps qui descend en roulant; La voici sur ce papier ci joint
+    <lb/>ecrite par <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-130429856">Klingenstierna</rs> Professeur des mathematiques designé à
+    <lb/><rs type="place" key="place_GEO-2666199">Upsal</rs> en <rs type="place" key="place_VER-schwede">Suede</rs>, Ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e d’une grande co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissance dans ces Sciences, qui se
+    <lb/>trouve ici depuis quelques mois pour le meme dessein que Vous aviés lors<pc type="hyphenation"><unclear>-</unclear></pc>
+    <lb break="no"/>que Vous faisiés votre sejour à <rs type="place" key="place_GEO-2661604">Bale</rs>. Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il a parfaitement bien com<pc type="hyphenation">-</pc><lb break="no"/>pris ma dite methode, j’ai crû que je ne pourrois mieux faire que de
+    <lb/>vous la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer selon sa composition, qui est fort claire, succincte
+    <lb/>et generalement applicable à toute sorte de problemes de cette nature.
+    <lb/>Vous verrés par là, que votre solution indirecte du probleme en question
+    <lb/>ne quadre pas selon l’application que vous en avés faite; Car<del> suivant</del>
+    <lb/>suivant le raisonnement que vous faites pour determiner la tension d’un
+    <lb/>fil qui passant sur une poulie soutient par ses deux bouts deux poids
+    <lb/>inegaux, dont le grand prevalant descend et fait monter le petit, on ne
+    <lb/>trouve pas cette tension, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e elle est effectivement, puisque par
+<pb facs="1371431" n="5"/>
+    <lb/>ma methode (en no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ant le grand poids <formula>=A</formula>, le petit poids <formula>=B</formula>, et la tension
+    <lb/>du fil <formula>=T</formula>) on trouve sans peine <choice rend="regFormula"><orig><formula>T=\frac{2A\times B}{A+B}</formula></orig><reg><formula>T=\frac{2AB}{A+B}</formula></reg></choice>; au lieu que vous avés
+    <lb/>trouvé, si je m’en souviens, tout autre chose, et que selon Vous la ten<pc type="hyphenation">-</pc><lb break="no"/>sion du fil du coté du petit poids (si je ne me trompe, car je n’ai pas
+    <lb/>votre <rs type="letter">Lettre</rs> devant moi) ne seroit pas egale à la tension du coté du
+    <lb/>grand poids, ce qui seroit contre le bon sens, qui dicte pour peu qu’<pc type="hyphenation"></pc>
+    <lb break="no"/>on soit attentif, que la meme force de tension doit regner dans tou<pc type="hyphenation">-</pc><lb break="no"/>tes les parties du fil de coté et d’autre, quelque inegalité que se trou<pc type="hyphenation">-</pc><lb break="no"/>ve entre les deux poids.
+  </p>
+  <p>
+    <lb/>Je ne suis pas surpris de voir que les Anglois passent legerement sur
+    <lb/>les demonstrations que je donne dans mon <rs type="biblio">Discours</rs> <abbr>Chap.</abbr> 8 et 9. Car co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+    <lb/>ce n’est que l’entetement et l’envie de supprimer l’eclat de la verité
+    <lb/>qui les animent, que peuvent ils faire autre chose, que dire des niai<pc type="hyphenation">-</pc><lb break="no"/>series et corrompre le sens de mes demonstrations, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e a fait leur
+    <lb/>miserable Champion <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-100252419">Robins</rs>. Mais j’ai toujours dit et je le dis
+    <lb/>encore que la verité triomphera à la fin, malgré touts leurs efforts.
+    <lb/>Mon nouvel argument, où je fai passer tout le mouvement d’une boule à
+    <lb/>une autre, est sans doute tres solide et ne souffre aucune replique; Mais
+    <lb/>les Adversaires Anglois, qui n’ecoutent pas la raison, y trouveront à re<pc type="hyphenation">-</pc><lb break="no"/>dire, que ce passage du mouvement d’une boule à l’autre, ne se fait pas
+    <lb/>d’un seul choc, et qu’aprés le premier choc on fait retourner l’une
+    <lb/>des deux boules contre sa direction qu’elle avoit acquise par le choc;
+    <lb/>peutetre que cet argument auroit lieu chés les Antagonistes François
+    <lb/>raisonnables, au moins chés ceux qui ne se sont pas encore declaré pub<pc type="hyphenation">-</pc><lb break="no"/>liquement contre les <rs type="keyword">Forces vives</rs>; car pour les autres co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <abbr>Mr.</abbr> de 
+    <lb/><rs type="person" key="pers_DE-588-117683280">Louville</rs>, qui ont déja ecrit en public contre notre Doctrine, je crains
+    <lb/>beaucoup, que le point d’honneur ne les oblige à ne pas demordre
+    <lb/>de leur erreur. Voici cependant une maniere pour faire passer d’un
+    <lb/>seul choc toute la force d’une grande boule à une plus petite: Soit
+    <lb/>une boule <formula>A</formula> attachée au bout d’une ligne <formula>CA</formula>, que je sup<pc type="hyphenation">-</pc><lb break="no"/>pose roide et parfaitement inflexible, et mobile autour
+    <lb/>du point fixe <formula>C</formula>; Soit une autre boule <formula>B</formula>, 4 fois plus gran<pc type="hyphenation">-</pc><lb break="no"/>de que <formula>A</formula>, laquelle étant parfaitement elastique se meu<pc type="hyphenation">-</pc><lb break="no"/>ve avec un degré de vitesse dans la direction <formula>BD</formula>, qui par<pc type="hyphenation">-</pc><lb break="no"/>tage la ligne mobile <formula>CA</formula> en deux egalement au point <formula>D</formula>;
+    <lb/>Je dis et on peut le demontrer par les principes memes que nos
+    <lb/>Adversaires accordent, qu’aprés le choc donné sur le point
+    <lb/><formula>D</formula>, la boule <formula>B</formula> <add>perdra</add> tout son mouvement, et la boule <formula>A</formula> qui étoit
+    <lb/>en repos avant le choc, acquerera 2 degrés de vitesse. Donc toute la force
+    <lb/>de la boule <formula>B</formula> etant transportée dans la boule <formula>A</formula>, il faut dire qu’une boule
+    <lb/>avec 2 degrés de vitesse a autant de force, qu’une autre boule 4 fois plus
+<pb facs="1371432" n="6"/>    
+    <lb/>grande avec un degré de vitesse, <abbr>c. a. d.</abbr><del> c’est à dire</del>, que les forces des corps en
+    <lb/>mouvement sont en raison composée des masses et des quarrés des vitesses: 
+    <lb/>En general soit <formula>B=nnA</formula>, <choice rend="regFormula"><orig><formula>CD.CA::l.n</formula></orig><reg><formula>CD:CA=l:n</formula></reg></choice>, la vitesse de la boule <formula>B=v</formula>, je dis
+    <lb/>qu’aprés le choc, la boule <formula>B</formula> restera en repos, et la boule <formula>A</formula> recevra une
+    <lb/>vitesse <formula>=nv</formula>; donc <choice rend="regFormula"><orig><formula>vv\times B=nnvv\times A</formula></orig><reg><formula>vvB=nnvvA</formula></reg></choice>. On me dira peutetre qu’une partie
+    <lb/>de la force de la boule <formula>A</formula> se perd en agissant sur le point <formula>C</formula>; mais ce point <formula>C</formula>
+    <lb/>étant fixe et inebranlable, il est visible qu’il ne reçoit rien de cette for<pc type="hyphenation">-</pc><lb break="no"/>ce, non plus qu’un obstacle i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>obile contre lequel s’appuye un ressort
+    <lb/>qui en se debandant co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unique toute sa force au seul corps qu’il chasse,
+    <lb/>car si le point fixe <formula>C</formula> en recevoit la moindre partie de force, il faudroit
+    <lb/>qu’il pût la rendre, sans cela il en periroit quelque chose inutilement;
+    <lb/>or nulle cause ni une partie ne sauroit perir sans faire son effet; on
+    <lb/>voit ici la difference, entre la <rs type="keyword">force morte</rs> ou la pression et la <rs type="keyword">force vi<pc type="hyphenation">-</pc><lb break="no"/>ve</rs>: car le point <formula>C</formula> est bien pressé durant la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unication du mouve<pc type="hyphenation">-</pc><lb break="no"/>ment, mais par sa resistance invincible il fait que toute la force du
+    <lb/>corps <formula>B</formula> se transporte dans le corps <formula>A</formula>, qui seul est susceptible de mou<pc type="hyphenation">-</pc><lb break="no"/>vement.   
+  </p>
+  <p>
+    <lb/>Lorsque je Vous ai marqué dans ma derniere <rs type="letter">lettre</rs> touchant l’usage de la
+    <lb/>Doctrine des <rs type="keyword">Forces vives</rs>, que si <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-118587544">Newton</rs> l’avoit sçue, il n’auroit pas cru
+    <lb/>que le mouvement augmentant ou diminuant dans le monde, il en suivra qu’<pc type="hyphenation"></pc>
+    <lb break="no"/>enfin tout ce mouvement perira, j’avois justement pensé à sa proposition
+    <lb/>qui vous est aussi <choice><orig>venu</orig><reg>venue</reg></choice> dans l’esprit fort à propos, touchant les 2 corps égaux
+    <lb/>qui tournent autour de leur centre de gravité, pendant que ce centre se
+    <lb/>meut en ligne droite, où <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-118587544">Newton</rs> fait remarquer que ces 2 corps ont
+    <lb/>plus de mouvement dans une situation que dans une autre, dont il a tiré 
+    <lb/>cette fausse consequence que le mouvement general des parties du monde
+    <lb/>peut enfin perir entierement. Cette proposition se trouve vers la fin
+    <lb/>de son optique. Mais le bon Philosophe (qui selon le sentiment de ses Com<pc type="hyphenation">-</pc><lb break="no"/>patriotes n’a jamais eu de ses semblables et n’en aura jamais jusqu’à la fin
+    <lb/>du Monde) devoit savoir, que si la quantité du mouvement de ces 2 Corps va<pc type="hyphenation">-</pc><lb break="no"/>rie tantot en augmentant tantot en diminuant, la So<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de leurs masses
+    <lb/>multipliées chacune par le quarré de sa vitesse demeure consta<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent la me<pc type="hyphenation">-</pc><lb break="no"/>me en toute situation, en quoi consiste la quantité de leurs forces; s’il avoit
+    <lb/>sû cela, il auroit quitté la crainte, dont il étoit saisi, que le Monde ne perdit
+    <lb/>enfin tout son mouvement et ne devint par là une masse dure co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un
+    <lb/>diamant. J’ai trouvé à cette occasion un Theoreme tres beau et tres utile;
+    <lb/>le voici: Soit un Systeme de corps en tel nombre que l’on voudra,<del> d</del> que je no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+    <lb/><formula>A</formula>, <formula>B</formula>, <formula>C</formula>, <formula>D</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> qui se meuvent chacun separément et en sa propre direction
+    <lb/>avec les vitesses, que je no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>m</formula>, <formula>n</formula>, <formula>p</formula>, <formula>q</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> ensorte pourtant que leur com<pc type="hyphenation">-</pc><lb break="no"/>mun centre de gravité soit en repos. Que si ensuite il survient à tout le 
+    <lb/>Systeme un mouvement transportatif, d’où le centre de gravité lui meme ac<pc type="hyphenation">-</pc><lb break="no"/>quiert une vitesse que je no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>v</formula>, pendant que les corps particuliers continuent
+    <lb/>à se mouvoir autour de ce centre, je dis que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des <rs type="keyword">forces vives</rs> que les
+    <lb/>corps ont tant par leur propre mouvement que par le mouvement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un du centre
+<pb facs="1371433" n="7"/>
+    <lb/>ou du systeme est egale à la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des forces vives des memes corps autour du
+    <lb/>centre de gravité consideré co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en repos plus la force vive de toute la masse
+    <lb/>du systeme considerée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en mouvement parallele avec la vitesse du centre,
+    <lb/><abbr>c. a. d.</abbr> que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des forces est <formula>ed=mmA+nnB+ppC+qqD+\mbox{etc.}+vv\times\mbox{...}</formula>
+    <lb/><formula>A+B+C+D+\mbox{etc}</formula>. De ce theoreme on peut tirer ce corollaire; Soit un vase
+    <lb/>rempli de quelque fluide, si d’abord le vase est en repos mais que le fluide
+    <lb/>soit en agitation ou que ses parties insensibles ayent un mouvement intestin
+    <lb/>dont chacune multipliée par<del/> le quarré de sa vitesse, la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de touts
+    <lb/>ces produits soit <formula>=F</formula>; ensuite si je conçois que le vase lui meme avec
+    <lb/>le fluide contenu se meuve avec une vitesse <formula>=v</formula>, et que la masse du fluide
+    <lb/>soit <choice><orig>no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ee</orig><reg>no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ée</reg></choice> <formula>=M</formula>; il est clair que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e totale des <rs type="keyword">forces vives</rs> qui resident
+    <lb/>dans tout le fluide <add>et</add> qui proviennent tant du mouvement agitatif des par<pc type="hyphenation">-</pc><lb break="no"/>ties que du mouvement transportatif du vase sera <formula>=F+vvM</formula>. Ce theo<pc type="hyphenation">-</pc><lb break="no"/>reme est encore fort co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ode pour calculer la quantité de <rs type="keyword">force vive</rs>
+    <lb/>qui est dans les corps solides qui roulent, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e par <abbr>ex.</abbr> le cas de <abbr>Mr.</abbr>
+    <lb/><rs type="person" key="pers_DE-588-118587544">Newton</rs>, ou celui des corps pesants qui descendent en roulant; car il
+    <lb/>n’y a qu’à calculer separement la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des <rs type="keyword">forces vives</rs> de ces corps en les
+    <lb/>considerant co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e tournant autour de leur centre de gravité i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>obile,
+    <lb/>et y ajouter ensuite le produit de toute la masse par le quarré de la vi<pc type="hyphenation">-</pc><lb break="no"/>tesse du centre de gravité descendant.
+  </p>
+  <p>
+    <lb/>Je ne doute nullement que cet Horlogeur no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>é <rs type="person" key="pers_DE-588-117553239">Graham</rs> n’ait fait de<pc type="hyphenation">-</pc><lb break="no"/>puis votre depart d’<rs type="place" key="place_VER-englan">Angleterre</rs> son experience devant la <rs type="organisation">Societé</rs> de <rs type="place" key="place_GEO-2643743">Londres</rs>
+    <lb/>et qu’il n’ait trouvé un applaudissement universel auprés des Anglois si dispo<pc type="hyphenation">-</pc><lb break="no"/>sés déja à rejetter les <rs type="keyword">forces vives</rs>. Ainsi il est fort necessaire, que vous leur
+    <lb/>proposiés au plus vite ma reponse à cette experience, afin de moderer un
+    <lb/>peu leur envie de triompher; sans doute ils ne s’attendront pas à une telle
+    <lb/>reponse que je leur donne.
+  </p>
+  <p>
+    <lb/>Je suis tout à fait de votre sentiment, que <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-117586765">Moivre</rs> n’ose pas se decla<pc type="hyphenation">-</pc><lb break="no"/>rer sur les <rs type="keyword">forces vives</rs>, de peur d’irriter les Anglois, parmi lesquels il est ob<pc type="hyphenation">-</pc><lb break="no"/>ligé<del/> de vivre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Lot parmi les Sodomites. C’est peutetre encore la rai<pc type="hyphenation">-</pc><lb break="no"/>son pourquoi il a rompu le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>erce de lettre avec moi, c’est beaucoup qu’on
+    <lb/>ne l’ait contraint de me declarer ouvertement la guerre. Pourquoi <rs type="person" key="pers_DE-588-143687417">Pem<pc type="hyphenation">-</pc><lb break="no"/>berton</rs> hait il <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-117586765">Moivre</rs>? sans doute parce que celuici est Etranger et
+    <lb/>que celui-la est du nombre de ces Anglois fiers, hautains et meprisants touts
+    <lb/>ceux qui n’appartiennent pas à leur <rs type="place" key="place_WEI-britin">Isle</rs>, croyant que c’est chés Eux seuls
+    <lb/>que les sciences ont pris leur domicile.
+  </p>
+  <p>
+    <lb/>Les experiences de <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-118939297">s’Gravesande</rs> sur les<del> ceux</del> vitesses avec lesquelles les
+    <lb/>eaux sortent<del> des</del> <add>par les</add> ouvertures des vases paroissent assés semblables à celles
+    <lb/>que mon <rs type="person">fils</rs> a faites à <rs type="place" key="place_GEO-498817">Petersbourg</rs> et qu’il a expliquées par les <rs type="keyword">forces vives</rs>;
+    <lb/>mais il faut differer la decision jusqu’à ce que nous ayons les <rs type="biblio">Memoires</rs>
+    <lb/>de <rs type="place" key="place_GEO-498817">Petersbourg</rs>, qui doivent étre en chemin pour venir ici selon sa der<pc type="hyphenation">-</pc><lb break="no"/>niere <rs type="letter">lettre</rs>. La construction geometrique du probleme du choc de 2 corps
+    <lb/>que <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-118939297">’sGravesande</rs> <subst><del>à</del><add>a</add></subst> inventée me plait aussi beaucoup, quoique l’in<pc type="hyphenation">-</pc><lb break="no"/>vention n’en soit pas difficile par la maniere dont se fait le choc et que
+    <lb/>j’ai expliquée amplement dans mon <rs type="biblio">Discours</rs>.
+  </p>
+  <p>
+    <lb/>Je suis bien aise que <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-11931035X">Mairan</rs> vous ait donné des marques d’amitié
+<pb facs="1371434" n="8"/>    
+    <lb/>quoique ce ne soit pas tant pour l’amour de moi, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous pensés, qu’en
+    <lb/>consideration de vos propres merites. Car y ayant plus de six mois que
+    <lb/>je Lui<del/> ai ecrit ma derniere <rs type="letter">lettre</rs>, sans avoir encore reçû de
+    <lb/>reponse, je co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ence à soupço<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er quelque refroidissement d’amitié en<pc type="hyphenation">-</pc><lb break="no"/>vers moi, d’autant plus qu’il a laissé passer l’occasion du nouvel an, à la<pc type="hyphenation"><supplied>-</supplied></pc>
+    <lb break="no"/>quelle il avoit la coutume depuis plusieurs années de m’envoyer la Co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ois<pc type="hyphenation">-</pc><lb break="no"/>sance des temps et un nouveau <rs type="biblio">Tome</rs> des Memoires de l’<rs type="organisation">Academie</rs> des Sciences
+    <lb/>qui sont les présents ordinaires que la dite <rs type="organisation">Academie</rs> fait annuellement
+    <lb/>à ses Academiciens et dont <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-11931035X">Mairan</rs> se chargeoit de me les en<pc type="hyphenation">-</pc><lb break="no"/>voyer par le Canal de <abbr>Mr.</abbr> le Comte d’<rs type="person" key="pers_DE-588-117679879">Onsembray</rs> Intendant General des
+    <lb/>postes de <rs type="place" key="place_VER-frankr">France</rs>. Je vous prie de sonder la dessus <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-11931035X">Mairan</rs> pour
+    <lb/>savoir la cause de son long silence, et de m’en donner des nouvelles au plu<pc type="hyphenation">-</pc><lb break="no"/>tot; vous Lui ferés <abbr>s. v. p.</abbr> mes compliments co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi à <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-118639056">Fontenelle</rs>
+    <lb/>en Lui demandant s’il a reçû ma <rs type="letter">lettre</rs> que je lui ecrivis dernierement
+    <lb/>sous la date du 13 Janvier, pour accompagner une incluse de mon <rs type="person">fils</rs> à Lui
+    <lb/>contenant d<del>es</del><add>’</add>amples remarques sur son <rs type="biblio">ouvrage</rs> des Infinis, dont quelques
+    <lb/>unes sont fort curieuses et dignes de son attention, s’il vouloit vous la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uni<pc type="hyphenation">-</pc><lb break="no"/>quer à lire, vous y trouveriés de quoi repondre à sa grande question sur la
+    <lb/>suite des nombres naturels 1, 2, 3, 4, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Cette question ne me paroit gueres
+    <lb/>plus raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>able, que celle de <rs type="person" key="pers_DE-588-118772562">Zenon</rs> prise du vaillant <rs type="person">Achille</rs><!-- Achilles als Person auszeichnen? RG 14.03.2025 --> et de la Tortue
+    <lb/>qu’il poursuit pour prouver qu’il n’y a point de mouvement. J’ai prié
+    <lb/><abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-118639056">Fontenelle</rs> dans ma <rs type="letter">lettre</rs>, de m’envoyer la Co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissance des Temps
+    <lb/>et le nouveau <rs type="biblio">Tome</rs> des memoires s’il est imprimé <add>(le <rs type="biblio">Tome</rs> des Memoires pour 1726 me manque encore)</add> avec quelques autres <!-- bis hier kollationiert MK 27.03.2025 -->
+    <lb/>pieces, en cas que <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-11931035X">Mairan</rs> ne voulut plus s’en charger, vous aurés
+    <lb/>la bonté de l’en faire ressouvenir en ce cas. Si <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-11931035X">Mairan</rs> a pris le 
+    <lb/>parti de rompre entierement avec moi, il n’en peut avoir d’autre raison
+    <lb/>que la discrepance de nos sentiments sur les <rs type="keyword">forces vives</rs>: Cependant il me
+    <lb/>feroit grand tort aprés les assurances reiterées qu’il m’a données que cette
+    <lb/>dissension n’altereroit jamais son amitié envers moi. Si je pouvois m’entre<pc type="hyphenation">-</pc><lb break="no"/>tenir avec lui dans un tete à tete, je me ferois fort de le ranger de notre coté en moins
+    <lb/>de 2 heures, je l’ai invité pour cela de venir ici à <rs type="place" key="place_GEO-2661604">Bale</rs> en lui offrant ma maison et
+    <lb/>ma table, promettant par dessus de Lui restituer les frais du voyage en cas que je
+    <lb/>ne reussisse pas à le convaincre qu’il est dans l’erreur. Tachés donc vous meme qui
+    <lb/>Lui étes present de l’en convaincre, et tachés avant toute chose de Lui faire naitre
+    <lb/>une idée claire et distincte de ce qu’on doit entendre par la <rs type="keyword">force vive</rs>, car cette
+    <lb/>idée manque encore aux Antagonistes François, c’est pourquoi ils raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ent si pi<pc type="hyphenation">-</pc><lb break="no"/>toyablement sur les <rs type="keyword">forces vives</rs> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les Aveugles sur les couleurs. Il est <sic>faché</sic>
+    <lb/>que <abbr>Mr.</abbr> de <rs type="person" key="pers_DE-588-11931035X">Mairan</rs> soit aussi du nombre de ceux, qui se sont declarés publiquement
+    <lb/>contre les <rs type="keyword">forces vives</rs>, avant que d’avoir vû mon <rs type="biblio">Discours</rs>; le moyen donc de lui ar<pc type="hyphenation">-</pc><lb break="no"/>racher l’aveu du <foreign xml:lang="lat"><hi rend="u">peccavi</hi></foreign>? Il y a longtemps qu’il m’a mandé qu’il travailloit à un <rs type="biblio">Me<pc type="hyphenation">-</pc><lb break="no"/>moire</rs> sur ce sujet, mais que pourra t il dire que des choses qui feront comprendre qu’il
+    <lb/>n’a point d’idée juste de la nature des <rs type="keyword">forces vives</rs>? 
+  </p>
+  <p>
+    <lb/>J’ai bien peur que la demonstration de <abbr>Mr.</abbr> <rs type="person" key="pers_DE-588-118939297">’sGravesande</rs>, par laquelle il veut prouver que
+    <lb/>les Conoides paraboliques employent le meme temps à s’enfoncer peu ou beaucoup dans le suif,
+    <lb/>ne soit fondée sur une supposition precaire de la Loi des resistances du suif, que les Anglois
+    <lb/>ne Lui accorderont pas.</p> 
+  <closer>Mon <rs type="person" key="pers_DE-588-119166895">Neveu</rs> vous reciproque ses compliments.
+    <salute>Je suis de tout mon
+      <lb/>coeur et avec une affection sincere
+      <lb/>Monsieur
+      <lb/>Votre <abbr>tr.</abbr> <abbr>humb.</abbr> et <abbr>tr.</abbr> <abbr>ob.</abbr> <abbr>serv.<hi rend="sup">tr</hi></abbr>
+    </salute>
+  <signed>
+    <lb/><abbr>J.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>
+  </signed>
+  </closer>
+<!-- Bei der Maschinentranskription taucht eine Beilage von Klingenstiern auf, diese ist aber nicht in dieser Form bei E-Manuscripta, resp. nicht beim Original? RG 14.03.2025
+    
+[[seite]] [Fußnote: Beilage von Klingenstiern.]
+
+Theorema. 
+
+Si pondus A è filo BA suspensum motu utcunque accelerato vel retardato descendat, et Incrementum Velocitatis, quod pondus A dato tempusculo quam minimo acquirit, dicatur dv, an Incrementum 
+Velocitatis naturale (quod si idem pondus libere cadens eodem tempusculo acquirere posset) dV; dico tensionem fili AB esse ad pondus absolutum corporis A ut dV-dv ad dV; adeoque si Corpus 
+ponderis A dicatur P, et tensio fili T, esse T=\frac{dV-dv}{dV}\times P
+
+Demonstratio. 
+
+Fingamus enim filum AB, ubi Corpus A pervenit in situm quemcunque A, subito rumpi, manifestum est corpus A jam nulla ex parte filo AB sustentatum sed integro suo pondere ad descensum animatum, 
+momento proximo acquisiturum incrementum velocitatis dV. sed filo non rupto eodem momento acquiritur tantum incrementum velocitatis dv; ergo reliquum dV dv ab actione fili impeditur; adeoque eodem 
+tempore quo pondus P generare potest incrementum velocitatis dV, actio seu tensio fili generat decrementum velocitatis dV-dv, jam vero Jncrementa et decrementa velocitatum in eodem corpore et 
+eodem tempusculo producta sunt ut vires, quae ea producunt, ergo tensio fili T est ad Corporis A pondus absolutum P, ut  dV-dv ad dV adeoque T=\frac{dV-dv}{dV}\times P - Q. E. D. 
+
+Coroll. 
+
+Si descensus Corporis A e filo AB suspensi sit uniformiter acceleratus (quemadmodum corporibus rotando descendentibus accidit velocitate qui per spatium quodcunque descendendo 
+acquisita existente ad velocitatem per idem spatium libere cadendo acquisitam in Ratione constante ut \sqrt{a} ad \sqrt{b}, seu quod eodem tendit, si corpus A rotando descendens per 
+altitudinem x eam acquirat velocitatem, quam libere cadendo per altitudinem \frac{ax}{b} acquirere potest, erit dV ad dv ut b ad a; adeoque T=\frac{b-a}{b}\times P. Determinata itaque per 
+principium virium vivarem vel per alias Methodos ratione a ad b, invenitur tensio fili Corpus rotando descendens sustinentis.) 
+
+[Fußnote: Es folgt nun ein Nachwort von Bernoulli, das er auf den leer gebliebenen Raum der Beilage geschrieben hatte. (siehe Seite 82.)]
+
+P. S. J'employe ce vuide pour vous dire qu'apres ma lettre deja écrite je viens de recevoir une lettre fort honnéte de Mr. de Mairan par laquelle il me donne avis qu'il m'envoyoit par la voye 
+de Mr. d'Onsembray la Connoissance des Tems, et les pièces que j'avois demandées à Mr. de Fontenelle. On me remet en effet dans ce moment le paquet de Mr. d'Onsembrai qui contient tout cela: 
+Par où je vois avec plaisir que je me suis trompé en soubçonnant quelque alteration en Mr. de Mairan à mon égard. Vous ferés donc seulement à Mr. de Mairan comme aussi à Mr. de Fontenelle mes 
+remercimens du soin et de l'exactitude avec laquelle ils ont bien voulu satisfaire à mes souhaits, jusqu'à ce que j'aye l'honneur moimême de m'en acquitter par lettre. Selon le même avis de Mr. 
+de Mairan je dois recevoir bientôt et peutétre par l'ordinaire d'aujourdhui les Memoires de 1726. Mais du reste il ne fait pas mention d'un seul mot de notre dispute sur les forces vives, ce 
+qui me fait croire qu'il veut la laisser tomber, sans étre converti, se contentant peutétre d'écrire ses pensées sur ce sujet dans le Memoire que vous dites qui paroitra bientôt dans 
+l'Histoire de l'académie. Marqués moi dans votre reponse si vous resterés à Paris jusqu'après Paques, lorsqu'on jugera quelle des pieces aura merité le prix, peutétre que je vous donnerai là 
+dessus une petite Commission, que vous pourrés executer sans aucune peine. Mais n'en dites rien à personne. Je serois curieux de savoir le nombre de toutes les piéces qui ont été livrées sur 
+le sujet en question. -->
 </div>
 </body>
 </text></TEI>

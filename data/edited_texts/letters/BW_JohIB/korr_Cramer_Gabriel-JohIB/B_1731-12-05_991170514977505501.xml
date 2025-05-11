@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -47,7 +47,7 @@
     <notesStmt>
       <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
       <note type="generalRemark">
-        <p>Am Briefkopf der Abschrift eigenhändig "à Mr. le Prof. Cramer. 5 Dec. 1731. 11". Signatur ebenfalls eigenhändig Die letzte Seite des Originals enthält ein Schreiben von Jacob Bernoulli (1712-1769), dem Sohn Joh. I B.s, an Gabriel Cramer. Dieses findet sich heute unter den Abschriften von Cramer vom 16. Nov. 1731 und 10. April 1732 (BPU Genève Ms.fr.656, erworben ca. 1948). Das Blatt, das noch die Adresse Cramers von der Hand Joh. I B.s trägt, ist vom Originalbrief Joh. I B.s abgerissen. Das Siegel fehlt</p>
+        <p>Am Briefkopf der Abschrift eigenhändig "à Mr. le Prof. Cramer. 5 Dec. 1731. 11". Signatur ebenfalls eigenhändig. Die letzte Seite des Originals enthält ein Schreiben von Jacob Bernoulli (1712-1769), dem Sohn Joh. I B.s, an Gabriel Cramer. Dieses findet sich heute unter den Abschriften von Cramer vom 16. Nov. 1731 und 10. April 1732 (BPU Genève Ms.fr.656, erworben ca. 1948). Das Blatt, das noch die Adresse Cramers von der Hand Joh. I B.s trägt, ist vom Originalbrief Joh. I B.s abgerissen. Das Siegel fehlt.</p>
       </note>
       <note type="print">pythonPlaceholderContent</note>
       <note type="erschliessbarkeit">Erhalten</note>
@@ -154,7 +154,7 @@
           <note type="lebensdaten">(1646-1716)</note>
         </person>
         <person>
-          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d'Allonville de</persName>
+          <persName key="pers_DE-588-117683280">Louville, Jacques Eugène d’Allonville de</persName>
           <note type="lebensdaten">(1671-1732)</note>
         </person>
         <person>
@@ -184,6 +184,10 @@
   <revisionDesc status="teiKodiert">
     <listChange>
       <!-- Die Abschrift wurde verwendet, Original British Library (London) -->
+      <change when="2025-05-08" who="MK RG">kollationiert</change>
+      <change when="2025-05-05" who="MK RG">kollationiert Teil 1</change>
+      <change when="2025-05-05" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-05-05" who="RG">Code durchgeschaut, ergänzt, korr.</change>
       <change when="2023-06-08" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-11-03" who="CG">Header, Seitenzahlen, Briefstruktur</change>
     </listChange>
@@ -204,265 +208,265 @@
 <body>
 <div type="letter">
 <pb facs="1073873" n="1"/>
-<opener><dateline><date when="1731-12-05">5 Dec. 1731</date>.</dateline>
-<salute>Monsieur,</salute></opener>
-<p><lb/>Je sai fort bien que les Occupations que vous donne votre
-               <lb/>charge, vous empechent d'etre aussi exact que vous voudriés
-               <lb/>à repondre aux Lettres qu'on vous adresse; Tout ce que j'ai
-               <lb/>voulu insinuer là dessus dans ma dernière ne tendoit qu'à
-               <lb/>vous faire comprendre, que comme je porte une meme
-               <lb/>charge, aussi le retard de mes reponses pourroit mériter la
-               <lb/>meme indulgence, que vous pretendés avec toute la justice,
-               <lb/>que je vous accorde très volontiers. Ainsi usons de part et d'autre
-               <lb/>de notre liberté. Je serai curieux d'apprendre si Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs>
+<opener><dateline><date when="1731-12-05">5 <abbr>Dec.</abbr> 1731</date>.</dateline>
+<salute>Monsieur</salute></opener>
+<p><lb/>Je sai fort bien que les Occupations, que Vous donne Votre
+               <lb/>charge, Vous empechent d’etre aussi exact que vous voudriés
+  <lb/>à repondre aux Lettres qu’on Vous adresse; Tout ce que j’ai
+  <lb/>voulu insinuer là dessus dans ma dernière ne tendoit qu’à
+               <lb/>Vous faire comprendre, que comme je porte une meme
+               <lb/>charge, aussi le retard de mes reponces pourroit meriter la
+               <lb/>meme indulgence, que Vous pretendés avec toute la justice,
+               <lb/>que je Vous accorde tres volontiers, ainsi usons de part et d’autre
+               <lb/>de notre liberté. Je serai curieux d’apprendre, si <abbr>Mr.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs>
 <lb/>aura resolu le probleme de determiner sur une surface courbe
                <lb/>donnée une courbe à double courbure dont chaque arc ait la
                <lb/>moindre longueur possible entre ses deux extremités: Si la
-               <lb/>surface courbe donnée est celle d'un conoide droit circulaire,
-               <lb/>qui se décrit lorsqu'on fait tourner une courbe plane sur son axe, 
-               <lb/>le problème n'est pas à beaucoup près si difficile que pour
-               <lb/>la Supposition genèrale d'une surface courbe quelconque.
+               <lb/>surface courbe donnée est celle d’un conoide droit circulaire,
+               <lb/>qui se décrit lorsqu’on fait tourner une courbe plane sur son axe,
+               <lb/>le probleme n’est pas à beaucoup près si difficile, que pour
+               <lb/>la Supposition generale d’une surface courbe quelconque.
             <pb facs="1073874" n="2"/>
-<lb/>Je l'ai pourtant reduit generalement à une equation differentielle
+<lb/>Je l’ai pourtant reduit generalement à une equation differentielle
                <lb/>du second degré, qui se peut reduire aux differences premieres dans
-               <lb/>plusieurs cas particuliers. Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> pourroit aussi éprouver
+               <lb/>plusieurs cas particuliers. <abbr>Mr.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> pourroit aussi éprouver
                <lb/>ses forces en tachant de resoudre le probleme des epicycloides
-               <lb/>spheriques, dont parle Mr. <rs key="pers_DE-588-119112450" type="person">Herman</rs> dans le premier Volume
-               <lb/>des Commentaires de <rs key="place_GEO-498817" type="place">Petersbourg</rs> page 210, où par Epicycloide
-               <lb/>spherique il entend la courbe à double courbure qui se décrit
-               <lb/>sur la surface d'une sphère, lorsqu'on conçoit sur cette
+               <lb/>spheriques, dont parle <abbr>Mr.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> dans le premier Volume
+               <lb/>des <rs type="biblio">Commentaires</rs> de <rs key="place_GEO-498817" type="place">Petersbourg</rs> page 210<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> où par Epicycloide
+               <lb/>spherique il entend la courbe à double courbure qui se decrit
+               <lb/>sur la surface d’une sphére, lorsqu’on conçoit sur cette
                <lb/>surface deux circonferences de Cercles qui se touchent, pendant
-               <lb/>que l'une mobile roule sur l'autre immobile, et qu'un point
-               <lb/>pris sur la mobile trace sur la surface de la sphère la courbe
-               <lb/>que Mr. <rs key="pers_DE-588-119112450" type="person">Hermann</rs> nomme Epicycloide; il s'agit donc de determiner
-               <lb/>la nature de cette courbe, et principalement d'en trouver la
-               <lb/>rectification: Mr. <rs key="pers_DE-588-119112450" type="person">Hermann</rs> pretend qu'elle est toujours rectifiable
-               <lb/>algebriquement, comme les epicycloides planes, mais j'ai remarqué
-               <lb/>que son raisonnement n'est qu'un paralogisme tout pur,
-               <lb/>et que les epicycloides sphèriques ne peuvent etre rectifiées
+               <lb/>que l’une mobile roule sur l’autre immobile, et qu’un point
+               <lb/>pris sur la mobile trace sur la surface de la sphére la courbe
+               <lb/>que <abbr>Mr.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> nomme Epicycloide; il s’agit donc de déterminer
+               <lb/>la nature de cette Courbe, et principalement d’en trouver la
+               <lb/>rectification: <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> pretend qu’elle est toujours rectifiable
+               <lb/>algebriquement, comme les epicycloides planes, mais j’ai remarqué
+               <lb/>que son raisonnement n’est qu’un paralogisme tout pur,
+               <lb/>et que les epicycloides spheriques ne peuvent etre rectifiées
             <pb facs="1073875" n="3"/>
-<lb/>que dans un cas particulier; Ainsi la solution qu'il en tire du
-               <lb/>problème d'un certain nommé Offenbourg est tout à fait
-               <lb/>fausse. Vous avés sans doute chés vous ces Commentaires de
-               <lb/>Petersbourg, je vous prie d'examiner cette pièce et de m'en dire
-               <lb/>votre sentiment. Lorsque je redemandois mes papiers sur les courbes
-               <lb/>reptoires, ç'a eté parceque je craignois qu'ils ne se perdissent,
+<lb/>que dans un cas particulier; Ainsi la solution qu’il en tire du
+               <lb/>probleme d’un certain nommé <rs type="person">Offenbourg</rs><!-- Person oder Stadt? RG 02.05.2025 -->, est tout à fait
+  <lb/>fausse. Vous avés sans doute chés vous ces <rs type="biblio">Commentaires</rs> de
+  <lb/><rs key="place_GEO-498817" type="place">Petersbourg</rs>, je vous prie d’examiner cette piece, et de m’en dire
+               <lb/>Votre sentiment. Lorsque je redemandois mes papiers sur les courbes
+               <lb/>reptoires, ç’a eté parceque je craignois qu’ils ne se perdissent,
                <lb/>mais voyant que vous en avés soin, je puis fort bien souffrir, que
-               <lb/>vous en fassiés usage, pourvû que je les aye un jour quand
-               <lb/>vous n'en saurés plus que faire. Je vous suis obligé, Monsieur,
-               <lb/>des Civilités que vous avés faittes à mon <rs type="person">fils</rs> pendant son
-               <lb/>séjour à <rs key="place_GEO-2660646" type="place">Geneve</rs>; mais au lieu de me feliciter de l'avoir prés
-               <lb/>de moi, j'aurois souhaitté que vous eussiés pû persuader
-               <lb/>Mr. <rs type="person">Malvesin</rs> de le garder plus longtems chés lui, afin de le
-               <lb/>perfectionner d'avantage dans le Negoce; car depuis son
-               <lb/>retour de <rs key="place_GEO-2660646" type="place">Geneve</rs> il est ici sans occupation, et comme je n'ai
-               <lb/>point de connoissance avec des Marchands, je ne sai où
-               <lb/>donner de la tête, pour le placer en bonne condition. Il m'a
+               <lb/>Vous en fassiés usage, pourvû que je les aye un jour quand
+               <lb/>Vous n’en saurés plus que faire. Je Vous suis obligé, Monsieur<supplied>,</supplied>
+               <lb/>des Civilités que Vous avés faittes à mon <rs type="person">fils</rs> pendant son
+               <lb/>séjour à <rs key="place_GEO-2660646" type="place">Geneve</rs>; mais au lieu de me feliciter de l’avoir prés
+               <lb/>de moi, j’aurois souhaitté que vous eussiès pû persuader
+               <lb/><abbr>Mr.</abbr> <rs type="person">Malvesin</rs> de le garder plus longtems chés lui, afin de le
+               <lb/>perfectionner d’avantage dans le Negoce; car depuis son
+               <lb/>retour de <rs key="place_GEO-2660646" type="place">Geneve</rs> il est ici sans Occupation, et comme je n’ai
+               <lb/>point de Connoissance avec des Marchands, je ne sai où
+               <lb/>donner de la tête, pour le placer en bonne Condition. Il m’a
             <pb facs="1073876" n="4"/>
 <lb/>causé deja bien des depenses, sans encore le voir en etat de faire
-               <lb/>par lui meme sa fortune. J'avois prié Mr. <rs type="person">Malvesin</rs>
-<lb/>de lui procurer chés quelcun de ses correspondants une
-               <lb/>condition convenable, mais il n'en a rien fait, quoiqu'il
-               <lb/>dut savoir qu'il fut capable de bien servir un Negociant,
-               <lb/>puisqu'il lui a donné un bon témoignage en forme.</p>
-<p><lb/>Mon dit fils m'a remis de votre part la These de
-               <lb/>Mr. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>, dont je vous remercie; je l'ai luë avec bien
+               <lb/>par lui meme sa fortune. J’avois prié <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person">Malvesin</rs>
+<lb/>de lui procurer chés quelcun de ses Correspondants une
+               <lb/>Condition convenable, mais il n’en a rien fait; quoiqu’il
+               <lb/>dut savoir qu’il fut capable de bien servir un Negociant,
+               <lb/>puisqu’il lui a donné un bon temoignage en forme.</p>
+<p><lb/>Mon dit <rs type="person">fils</rs> m’a remis de Votre part la <rs type="biblio">These</rs> de
+               <lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>, dont je Vous remercie; je l’ai luë avec bien
                <lb/>du plaisir; Son hypothese pour expliquer la pesanteur
-               <lb/>universelle est assés bien imaginée, mais une difficulté qu'on
-               <lb/>ne sauroit lever la gâte entièrement: voici en quoi elle consiste:
-               <lb/>Il suppose une matière très subtile, dont les petites particules
-               <lb/>qui remplissent tout l'Univers se meuvent en tout sens, à peu
-               <lb/>près comme Mr. <rs type="person">Huguens</rs> a conçû que sa matière gravifique
+               <lb/>universelle est assés bien imaginée, mais une difficulté qu’on
+               <lb/>ne sauroit lever la gâte entierement; voici en quoi elle consiste:
+               <lb/>Il suppose une matiere tres subtile, dont les petites particules
+               <lb/>qui remplissent tout l’Univers se meuvent en tout sens, à peu
+               <lb/>près comme <abbr>Mr.</abbr> <rs type="person">Huguens</rs> <choice><orig>à</orig><reg>a</reg></choice> conçû que sa matiere gravifique
                <lb/>autour de la Terre a un tel mouvement intestin, avec cette
-               <lb/>difference, que Mr. <rs type="person">Huguens</rs> suppose que sa matière s'agite en
+               <lb/>difference, que <abbr>Mr.</abbr> <rs type="person">Huguens</rs> suppose que sa matiere s’agite en
                <lb/>tout sens sur des surfaces de spheres concentriques, au lieu que
-               <lb/>Mr. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> fait mouvoir chaque particule en ligne droite,
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> fait mouvoir chaque particule en ligne droite,
             <pb facs="1073877" n="5"/>
-<lb/>en sorte que de chaque point de l'Univers il y a une infinité de
+<lb/>en sorte que de chaque point de l’univers il y a une infinité de
                <lb/>directions differentes, suivant chacune desquelles il y aura une
                <lb/>particule en mouvement qui tendra vers un autre point, et par
                <lb/>consequent de cet autre point aussi vers le premier; donc si ces
                <lb/>deux points sont occupés par deux petits corpuscules, ceux ci sont
-               <lb/>pousés l'un vers l'autre; c'est je crois ce que Mr. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
+               <lb/>poussés l’un vers l’autre; c’est je crois ce que <abbr>Mr.</abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
 <lb/>veut dire; mais il devrait expliquer la cause qui entretient ce
                <lb/>mouvement intestin et confus. Car comme il arrivera à tout
                <lb/>moment que deux ou plusieurs particules se rencontreront en leur
-               <lb/>chemin, je demanderois si après le choc elles se separeront ou
-               <lb/>si elles demeureront collées ensemble? S'il dit le dernier, voilà
-               <lb/>bientôt detruit toute cette agitation et la matiere de l'univers
-               <lb/>reduite en une masse continue et immobile; si c'est le premier
-               <lb/>qu'il voudra soutenir, il faut que les particules de sa matière en
-               <lb/>agitation soient élastiques, il faut donc supposer une elasticité
+               <lb/>chemin, je demanderois si après le choc elles se separeront, ou
+               <lb/>si elles demeureront collèes ensemble? S’il dit le dernier, voilà
+               <lb/>bientot detruit toute cette agitation et la matiere de l’univers
+               <lb/>reduite en une masse continue et immobile; si c’est le premier
+               <lb/>qu’il voudra soutenir, il faut que les particules de sa matiere en
+               <lb/>agitation soient elastiques, il faut donc supposer une elasticité
                <lb/>naturelle ou innée, plus difficile à expliquer que la cause de
                <lb/>la pesanteur elle meme: veut il que cette elasticité leur vienne
-               <lb/>d'une cause externe, il faudra indiquer cette cause; mais d'ou
+               <lb/>d’une cause externe, il faudra indiquer cette cause; mais d’<choice><orig>ou</orig><reg>où</reg></choice>
             <pb facs="1073878" n="6"/>
-<lb/>la prendrat-il? Depuis que Mr. <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs> est parti d'icy, il
-               <lb/>ne ma jamais ecrit non plus qu'à vous, cependant il doit se
-               <lb/>trouver présentement en <rs key="place_VER-schwede" type="place">Suède</rs> suivant certains avis; il se chargea
-               <lb/>en partant d'un paquet de livres pour mon <rs type="person">fils</rs>, qu'il me
-               <lb/>promit de les lui faire tenir surement, dès qu'il seroit arrivé
-               <lb/>en <rs key="place_VER-schwede" type="place">Suède</rs>, ce qu'il pouvoit faire, comme il me disoit, tres commodement;
-               <lb/>cependant mon <rs type="person">fils</rs> n'a pas receu le paquet et sur plusieurs lettres
-               <lb/>qu'il ecrivoit pour cela à Mr. <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, celuici ne l'a jamais
-               <lb/>daigné d'aucune reponse. En verité je ne sai que penser de cette
-               <lb/>manière d'agir de Mr. <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, après les insignes obligations
-               <lb/>qu'il reconnoissoit de m'avoir; sil n'a pas voulu se donner la
-               <lb/>peine d'executer ma petite commission, il devoit au moins ne me
-               <lb/>pas priver de mes livres, qui m'ont couté de l'argent: En un
-               <lb/>mot si c'est par sa faute (comme je le soupçonne) que mon <rs type="person">fils</rs>
-<lb/>n'a pas receu le paquet; ce sera une des plus noires ingratitudes
-               <lb/>de la part de <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, que je n'oublierai jamais, venir de
-               <lb/><rs key="place_VER-schwede" type="place">Suède</rs> pour me jouer ce tour, c'est affreux! Les Adorateurs
-               <lb/>Anglois de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> ont bien eu la mortification de voir
-               <lb/>que leur Idole n'etoit rien moins qu'un Oracle infaillible,
+<lb/>la prendrat-il? Depuis que <abbr>Mr.</abbr> <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs> est parti d’icy, il
+               <lb/>ne m'a jamais ecrit non plus qu’<choice><orig>a</orig><reg>à</reg></choice> vous; cependant il doit se
+               <lb/>trouver presentement en <rs key="place_VER-schwede" type="place">suede</rs> suivant certains avis; il se chargea
+               <lb/>en partant d’un paquet de livres pour mon <rs type="person">fils</rs>, qu’il me
+               <lb/>promit de les lui faire tenir seurement<unclear>,</unclear> dès qu’il seroit arrivé
+               <lb/>en <rs key="place_VER-schwede" type="place">suede</rs>, ce qu’il pouvoit faire, comme il me disoit, tres <abbr>commodem<supplied>.</supplied><hi rend="sup">t</hi></abbr>;
+               <lb/>cependant mon <rs type="person">fils</rs> n’a pas receu le paquet et sur plusieurs lettres
+               <lb/>qu’il ecrivoit pour cela à <abbr>Mr.</abbr> <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, celuici ne l’a jamais
+               <lb/>daigné d’aucune reponse. En verité je ne sai que penser de cette
+               <lb/>manière d’agir de <abbr>Mr.</abbr> <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, après les insignes obligations
+               <lb/>qu’il reconnoissoit de m’avoir; S'il n’a pas voulu se donner la
+               <lb/>peine d’executer ma petite commission, il devoit au moins ne me
+               <lb/>pas priver de mes livres, qui m’ont couté de l’argent: En un
+               <lb/>mot si c’est par sa faute (comme je le soupçonne) que mon <rs type="person">fils</rs>
+<lb/>n’a pas receu le paquet; ce sera une des plus noires ingratitudes,
+               <lb/>de la part de <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, que je n’oublierai jamais; venir de
+               <lb/><rs key="place_VER-schwede" type="place">suede</rs> pour me jouer ce tour, c’est affreux! Les Adorateurs
+               <lb/>Anglois de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> ont bien eu la mortification de voir
+               <lb/>que leur Idole n’etoit rien moins qu’un Oracle infaillible,
             <pb facs="1073879" n="7"/>
-<lb/>cependant un de mes neveux arrivé tout fraichement d'<rs key="place_VER-englan" type="place">Angleterre</rs>
-<lb/>me dit y avoir vû un magnifique Mausolée dressé aux Manes de
-               <lb/>Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> au depens du Roy que doit avoir couté je ne sai plus
-               <lb/>combien de mille livres Sterling, ici il seroit mort <hi rend="u">sine lux et sine crux</hi>
+<lb/>cependant <rs type="person">un</rs> de mes Neveux arrivé tout fraichement d’<rs key="place_VER-englan" type="place">Angleterre</rs>
+<lb/>me dit y avoir vû un magnifique Mausolée dressé aux manes de
+               <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> au depens du <rs type="person">Roy</rs><unclear>,</unclear> que doit avoir couté je ne sai plus
+               <lb/>combien de mille livres <choice><abbr>Sterl.</abbr><expan>Sterling</expan></choice>; ici il seroit mort <foreign xml:lang="lat"><hi rend="u">sine lux et sine crux</hi></foreign>
 <lb/>comme dit le proverbe, bienheureux de trouver un petit tombeau
-               <lb/>comme le reste des Bourgeois. Quant à la manière de Mr.
+               <lb/>comme le reste des Bourgeois. Quant à la maniere de <abbr>M.<hi rend="sup">r</hi></abbr>
                <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> de demontrer la propagation du son, il faut que je vous
-               <lb/>avoue que vous étes plus clairvoyant que moi, si vous pouvés
-               <lb/>entendre entièrement toute sa demonstration, pour pouvoir
-               <lb/>dire précisement en quel endroit se trouve son erreur: pour moi
-               <lb/>je confesse nettement, que je ne l'entends pas: tout ce qui m'y
-               <lb/>a paru de clair, c'est qu'il me semble qu'au commencement de
+               <lb/>avoue que Vous etes plus clairvoyant que moi, si vous pouvés
+               <lb/>entendre entierement toute sa demonstration, pour pouvoir
+               <lb/>dire précisement en quel endroit se trouve son erreur; pour moi
+               <lb/>je confesse nettement, que je ne l’entends pas: tout ce qui m’y
+               <lb/>a paru de clair, c’est qu’il me semble qu’au commencement de
                <lb/>sa demonstration il commet une petition de principe en supposant
-               <lb/>comme vrai ce qu'il entreprend de demontrer. Vous souhaitteriés,
-               <lb/>dites vous, d'en voir une preuve exacte, je croyois que vous en aviés
-               <lb/>une. La théorie que je me suis formée pour en deduire la vitesse
+               <lb/>comme vrai ce qu’il entreprend de demontrer; Vous souhaitteries,
+               <lb/>dites vous, d’en voir une preuve exacte, je croyois que vous en aviés
+               <lb/>une. La Theorie que je me suis formée pour en deduire la vitesse
                <lb/>du son est certaine et sans exception; elle est trop longue pour
-               <lb/>en donner icy toute l'explication, en voici seulement le résultat:
-               <lb/>soit la longueur d'un pendule donné <formula>=D</formula>, le diametre d'un cercle à
+               <lb/>en donner icy toute l’explication, en voici seulement le resultat:
+               <lb/>soit la longueur d’un pendule donné <formula>=D</formula>, Le diametre d’un cercle à
             <pb facs="1073880" n="8"/>
-<lb/>la Circonference <formula>::1.p</formula>, la hauteur du mercure dans le Barometre
+  <lb/>la Circonference <choice rend="regFormula"><orig><formula>::1.p</formula></orig><reg><formula>=1:p</formula></reg></choice>, la hauteur du mercure dans le Barometre
                <lb/>prise autant de fois que le mercure est specifiquement plus
-               <lb/>pesant que l'air, <formula>=A</formula>: Je dis que <formula>p\cdot\sqrt{D\times A}</formula> donnera la distance que
-               <lb/>parcourt le son dans le tems d'une oscillation du pendule <formula>D</formula>. Cette
-               <lb/>expression generale toute simple qu'elle est, ne laisse pas de donner
-               <lb/>exactement ce qu'a trouvé Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> par son raisonnement
-               <lb/>inintelligible pour moi, car prenant avec lui (v. pag. 343 Princip.
-               <lb/>Phil. Edit. 2.) la longueur <formula>D</formula> d'un pendule à secondes <formula>=39\frac{1}{5}</formula> pouces,
-               <lb/>la raison de la pesanteur specifique du mercure à celle de l'air
-               <lb/>inferieur comme 11890 à 1. Par conséquent <formula>A=11890\times30=356700</formula>
-<lb/>pouces; De plus <formula>p.1::93384.29725</formula>. On trouvera <formula>p\sqrt{D\times A}=93384</formula>
-<lb/><formula>\sqrt{\frac{39\frac{1}{5}\times356700}{29725}}</formula> pouces <formula>=11747\frac{1}{2}</formula> pouces <formula>=979</formula> pieds, ce qui est justement
-               <lb/>le nombre que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> donne pour la longueur du chemin que
+  <lb/>pesant que l’air, <formula>=A</formula>: Je dis que <choice rend="regFormula"><orig><formula>p\sqrt{}(D\times A)</formula></orig><reg><formula>p\times\sqrt{(D\times A)}</formula></reg></choice> donnera la distance que
+               <lb/>parcourt le son dans le tems d’une oscillation du pendule <formula>D</formula>. Cette
+               <lb/>expression generale toute simple qu’elle est, ne laisser pas de donner
+               <lb/>exactement ce qu’a trouvé <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> par son raisonnement
+               <lb/>inintelligible pour moi, car prennant avec lui (<abbr>v.</abbr> <abbr>pag.</abbr> 343<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <rs type="biblio"><abbr>Princip.
+               <lb/>Phil.</abbr></rs> <abbr>Edit.</abbr> 2.) la longueur <formula>D</formula> d’un pendule à secondes <formula>=39\frac{1}{5}</formula> pouces,
+               <lb/>la raison de la pesanteur specifique du mercure à celle de l’air
+               <lb/>inferieur comme 11890 à 1, par consequent <formula>A=11890\times30=356700</formula>
+  <lb/>pouces; De plus <choice rend="regFormula"><orig><formula>p.1::93384.29725</formula></orig><reg><formula>p:1=93384:29725</formula></reg></choice>. On trouvera <choice><orig><formula>p\sqrt{(D\times A)}=\frac{93384\sqrt{}}{}</formula></orig><reg><formula>p\sqrt{(D\times A)}=\frac{93384}{}</formula></reg></choice>
+  <lb/><choice rend="regFormula"><orig><formula>\frac{(39\frac{1}{5}\times356700)}{29725}</formula></orig><reg><formula>\frac{\sqrt{(39\frac{1}{5}\times356700)}}{29725}</formula></reg></choice> pouces <formula>=11747\frac{1}{2}</formula> pouces <formula>=979</formula> pieds, ce qui est justement
+               <lb/>le nombre que <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> donne pour la longueur du chemin que
                <lb/>le son parcourt dans une seconde. Vous dites que cette vitesse se peut 
-               <lb/>bien plus aisément calculer d'une autre manière, voyés donc si
-               <lb/>cette autre maniere vous donne aussi ma formule <formula>p\sqrt{D\times A}</formula>
-<lb/>J'approuve, Monsieur, tout ce que vous avés ecrit à Mr. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>
-<lb/>pour combattre son memoire sur les forces vives, mais vous
+               <lb/>bien plus aisément calculer d’une autre manière, voyés donc si
+  <lb/>cette autre maniere Vous donne aussi ma formule <choice rend="regFormula"><orig><formula>p\sqrt{}(D\times A)</formula></orig><reg><formula>p\sqrt{(D\times A)}</formula></reg></choice>.
+<lb/>J’approuve, Monsieur, tout ce que Vous avés ecrit à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>
+<lb/>pour combattre son <rs type="biblio">memoire</rs> sur les <rs type="keyword">forces vives</rs>, mais vous
                <lb/>ne dites rien que je ne lui aye dit cent fois et bien plus, quoique
             <pb facs="1073881" n="9"/>
-<lb/>en differentes façons; ainsi vous ne gagnerés rien sur lui, car
-               <lb/>il s'est mis une bonne fois en tête, de ne point ceder, pour celà
-               <lb/>il ne daignera seulement pas faire attention à ce que vous lui dites
-               <lb/>ni peser vos raisons, ce que j'ai eprouvé souvent, ayant remarqué
-               <lb/>par ses reponses, qu'il n'avoit ni lû ni examiné mes raisonnements;
-               <lb/>quel moyen donc de disputer avec de telles gens! Si depuis votre
-               <lb/>dernière lettre vous avés veu les Memoires de 1729, vous y aurés
-               <lb/>trouvés une autre pièce contre les forces vives; elle est de Mr. le
-               <lb/><rs key="pers_DE-588-117683280" type="person">Chev. de Louville</rs>, ecrite directement contre Mr. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> et moi; il
-               <lb/>n'y a rien de si plaisant que les tours, que l'auteur prend
-               <lb/>pour eluder les argumens les plus forts qui demontrent la
-               <lb/>validité de la Theorie des forces vives; Entre autres pour detruire
-               <lb/>ma demonstration generale contenue au Chap. 7 du Discours sur le
-               <lb/>mouvement il me nie le principe <formula>pdt=\frac{pdx}{v}=dv</formula>, quoiqu'il soit receu
+<lb/>en differentes façons; Ainsi Vous ne gagnerés rien sur lui, car
+               <lb/>il s’est mis une bonne fois en tete, de ne point ceder, pour cela
+               <lb/>il ne daignera seulement pas faire attention à ce que Vous lui dites
+               <lb/>ni peser Vos raisons, ce que j’ai eprouvé souvent, ayant remarqué
+               <lb/>par ses reponses, qu’il n’avoit ni lû ni examiné mes raisonnements;
+               <lb/>quel moyen donc de disputer avec de telles Gens! Si depuis Votre
+               <lb/>dernière <rs type="letter">lettre</rs> Vous avès veu les <rs type="biblio">memoires</rs> de 1729, Vous y aurés
+               <lb/>trouvés une autre <rs type="biblio">piece</rs> contre les <rs type="keyword">forces vives</rs>; elle est de <abbr>Mr.</abbr> le
+  <lb/><abbr>Chev.</abbr> de<rs key="pers_DE-588-117683280" type="person">Louville</rs>, ecrite directement contre <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> et moi; Il
+               <lb/>n’y a rien de si plaisant que les tours, que l’Auteur prend
+               <lb/>pour eluder les arguments les plus forts qui demontrent la
+               <lb/>validité de la Theorie des <rs type="keyword">forces vives</rs>; Entre autres pour detruire
+               <lb/>ma demonstration generale contenue au <abbr>Chap.</abbr> 7<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> du <rs type="biblio">Discours</rs> sur le
+               <lb/><abbr>mouv.</abbr> il me nie le principe <formula>pdt=\frac{pdx}{v}=dv</formula>, quoiqu’il soit receu
                <lb/>de tout le monde et meme des Anglois qui sont Antagonistes
-               <lb/>des forces vives, et pour faire valoir sa negation il se jette sur la
-               <lb/>manière d'agir de la matière subtile qui fait jouer les ressorts
-               <lb/>(comme si les ressorts que j'employe dans ma demonstration
+               <lb/>des <rs type="keyword">forces vives</rs>, et pour faire valoir sa negation il se jette sur la
+               <lb/>manière d’agir de la matière subtile qui fait jouer les ressorts
+               <lb/>(comme si les ressorts que j’employe dans ma demonstration
                <lb/>en faisoient une partie essentielle) disant que cette matière agit
             <pb facs="1073882" n="10"/>
 <lb/>bien continuellement, mais non pas continuement, faisant ainsi
-               <lb/>une difference entre la pression <hi rend="u">continuelle</hi> et <hi rend="u">continue:</hi> selon cette
-               <lb/>heureuse invention les impulsions de la matière subtile ne sont
+               <lb/>une difference entre la pression <hi rend="u">continuelle</hi> et <hi rend="u">continue</hi>; selon cette
+               <lb/>heureuse invention <subst><del><unclear>cette</unclear></del><add>les</add></subst> impulsions de la matière subtile ne sont
                <lb/>pas continues mais entrecoupées par de petits intervalles de
-               <lb/>durée ou par de petites morules, lesquelles selon la creuse imagination
-               <lb/>de Mr. de <rs key="pers_DE-588-117683280" type="person">Louville</rs>, sont plus longues lorsque la matière subtile
-               <lb/>agit sur une suite de ressorts d'un plus grand nombre, et que les
+               <lb/>durée ou par de petites morules, lesquelles selon la creuse <abbr>imaginat<supplied>.</supplied></abbr>
+               <lb/>de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs>, sont plus longues lorsque la matière subtile
+               <lb/>agit sur une suite de ressorts d’un plus grand nombre, et que les
                <lb/>memes morules sont plus courtes lorsque les ressorts sont en plus
                <lb/>petit nombre; En un mot que la frequence des impulsions de la
                <lb/>matière subtile se regle sur la multitude des ressorts qui composent
                <lb/>une suitte; ainsi il faudra donner à la matière subtile un
-               <lb/>entendement et l'art de conter les ressorts, afin que suivant
-               <lb/>l'exigence du cas elle dispense ses impulsions tantot, plus
-               <lb/>tantot moins frequemment; Il conclut enfin par soutenir d'une
-               <lb/>manière aussi fausse que ridicule qu'une suite composée par exemple
+               <lb/>entendement et l’art de conter les ressorts, afin que suivant
+               <lb/>l’exigence du cas elle dispense ses impulsions tantot, plus
+               <lb/>tantot moins frequemment; Il conclut enfin par soutenir d’une
+               <lb/>manière aussi fausse que ridicule qu’une suite composée <abbr>p.</abbr> <abbr>ex.</abbr>
                <lb/>de 12 ressorts imprime par son debandement entier une vitesse
                <lb/>non point plus grande mais egale à la vitesse que pourroit
                <lb/>imprimer au meme corps une suite de 3 ressorts egaux chacun
-               <lb/>à chacun des 12. y a-t-il rien, je vous prie, de plus absurd
+               <lb/>à chacun des 12, y a<supplied>-</supplied>t-il rien, je vous prie, de plus absurd
             <pb facs="1073884" n="11"/>
 <lb/>que cette conclusion, qui est dementie touts les jours par une infinité
-               <lb/>d'experiences: Car ne voit on pas qu'un mousquet chargé d'une plus
+               <lb/>d’experiences: Car ne voit on pas qu’un mousquet chargé d’une plus
                <lb/>grande quantité de poudre porte la bale plus loin, que par une
-               <lb/>moindre charge de la meme poudre; Or la poudre allumée qu'est
-               <lb/>ce qu'elle est autre chose que des ressorts qui se débandent? les grains
-               <lb/>donc qui sont couchés les uns sur les autres en lignes droites,
+               <lb/>moindre charge de la meme poudre; Or la poudre allumée qu’est
+               <lb/>ce qu’elle est autre chose que des ressorts qui se debandent? les grains
+               <lb/>donc qui sont couchès les uns sur les autres en lignes droites,
                <lb/>representent fort bien des suites de ressorts egaux mais plus longues
-               <lb/>dans sa plus grande charge et moins longues dans la petite, quoique
-               <lb/>le nombre des suites soit le meme dans l'une et l'autre charge,
-               <lb/>puisque ce nombre repond à la largeur de l'ame du mousquet, que
-               <lb/>je suppose etre le meme dans les deux experiences. C'est dommage
-               <lb/>que cette folle pensée de Mr. de <rs key="pers_DE-588-117683280" type="person">Louville</rs> ne soit vraye en effet,
+               <lb/>dans <subst><del/><add>sa</add></subst> plus grande charge et moins longues dans la petite, quoi<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+               <lb/>le nombre des suites soit le meme dans l’une et l’autre charge,
+               <lb/>puisque ce nombre repond à la largeur de l’ame<note type="editorial">frühneuzeitliche Form von "la lame"</note> du mousquet, que
+               <lb/>je suppose etre le meme dans les deux experiences. C’est dommage
+               <lb/>que cette folle pensèe de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> ne soit vraye en effet
                <lb/>car on pourroit epargner beaucoup de poudre, si par une petite
                <lb/>quantité de poudre on pourroit chasser les bales et les boulets aussi
-               <lb/>loin et par conséquent avec autant de force que par une
+               <lb/>loin et par consequent avec autant de force que par une
                <lb/>quantité de poudre beaucoup plus grande: Mais quittons la
-               <lb/>pièce de Mr. de <rs key="pers_DE-588-117683280" type="person">Louville</rs>, dont j'ai montré le ridicule tout
-               <lb/>au long dans une lettre que j'ai écrite ces jours passés à
+               <lb/>piece de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs>, dont j’ai montré le ridicule tout
+  <lb/>au long dans une <rs key="B_991170514889305501" type="letter">lettre</rs> que j’ai écrite ces jours passés à
             <pb facs="1073885" n="12"/>
-<lb/>Mr. de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>, qui est tout à fait de notre sentiment sur le
-               <lb/>Chapitre des forces vives et meme en état de les defendre et de
-               <lb/>faire de nouveaux Prosélytes chés lui. Il est vrai que j'ai
-               <lb/>envoyé à l'Académie un Memoire sur la tautochrone dans un
-               <lb/>milieu resistant en raison doublée des vitesses, qui est celle qù'on
+<lb/><abbr>Mr.</abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>, qui est tout <choice><orig>a</orig><reg>à</reg></choice> fait de notre sentiment sur le
+               <lb/><rs type="biblio">Chapitre</rs> des <rs type="keyword">forces vives</rs> et meme en etat de les defendre et de
+               <lb/>faire de nouveaux Proselytes chès Lui. Il est vrai que j’ai
+               <lb/>envoyè à l’<rs type="organisation">Academie</rs> un <rs type="biblio">Memoire</rs> sur la tautochrone dans un
+               <lb/>milieu resistant en raison doublée des vitesses, qui est celle qu’on
                <lb/>croit la veritable dans la nature et qui convient aux fluides
-               <lb/>resistants sans tenacité. Cette pièce paroitra dans les memoires de 1730,
-               <lb/>que l'on distribuera sur la fin de cette année: Ainsi vous la verrés
-               <lb/>peutétre bientot. Mais je ne l'ai pas aussi envoyée aux <rs type="biblio">Journaux
-               <lb/>de Leipzic</rs>, parceque Messieurs de l'<rs type="organisation">Académie de Paris</rs> ne seroient gueres
+               <lb/>resistants sans tenacité. Cette pièce paroitra dans les <rs type="biblio">memoires</rs> de 1730,
+               <lb/>que l’on distribuera sur la fin de cette année: Ainsi Vous la verrés
+  <lb/>peutetre bientot. Mais je ne l’ai pas aussi envoyée aux <rs type="biblio">Journaux</rs>
+               <lb/>de <rs type="place">Leipzic</rs>, parceque <abbr>Mr.<hi rend="sup">s</hi></abbr> de l’<rs type="organisation">Academie de Paris</rs> ne seroient gueres
                <lb/>contents, quand ils verroient paroitre ailleurs plutot que chés Eux,
-               <lb/>ce qu'on leur avoit communiqué pour leurs Memoires, comme
-               <lb/>leur appartenant en propre. Les articles qui composent mon ecrit
-               <lb/>envoyé à <rs key="place_GEO-2988507" type="place">Paris</rs> sont si liés ensemble, que je ne saurois vous en
-               <lb/>faire un extrait sans lui oter l'intelligibilité et la clarté; il
-               <lb/>faudroit donc le copier mot pour mot, mais étant assés long
-               <lb/>j'espere que vous me dispenserés de cette ennuyante peine,
-               <lb/>d'autant plus que la charge de Doyen augmente infiniment
-               <lb/>mes occupations. Il n'y a qu'à suspendre votre curiosité
+               <lb/>ce qu’on leur avoit communiqué pour leurs Memoires, comme
+               <lb/>leur <subst><del>/a</del></subst>ppartenant en propre. Les articles qui composent mon ecrit
+               <lb/>envoyé à <rs key="place_GEO-2988507" type="place">Paris</rs> sont si liés ensemble, que je ne saurois Vous en
+               <lb/>faire un Extrait sans lui oter l’intelligibilité et la clarté; il
+               <lb/>faudroit donc le copier mot pour mot, mais etant assés long
+               <lb/>j’espere que Vous me dispenserés de cette ennuyante peine
+               <lb/>d’autant plus que la charge de Doyen augmente <abbr>infinim.<hi rend="sup">t</hi></abbr>
+               <lb/>mes occupations. Il n’y a qu’<choice><orig>a</orig><reg>à</reg></choice> suspendre Votre curiosité,
             <pb facs="1073886" n="13"/>
-<lb/>peutétre pour peu de tems. Je me souviens à cette occasion, que je
-               <lb/>vous avois prié de me faire part de votre pièce sur les Orbites
+<lb/>peutetre pour peu de tems. Je me souviens à cette occasion, que je
+               <lb/>Vous avois prié de me faire part de Votre <rs type="biblio">piece</rs> sur les Orbites
                <lb/>elliptiques et la mobilité des apsides des Planetes, qui ayant
-               <lb/>concouru avec la mienne remporta les louanges de l'Academie,
-               <lb/>mais vous ne m'avés rien repondu là dessus: vous en aurés gardé
-               <lb/>sans doute un double ou au moins la minute, en ce cas vous
-               <lb/>me feriés bien du plaisir de me l'envoyer à lire; je vous
-               <lb/>donne ma parole de vous la renvoyer au plutot, par la première
-               <lb/>occasion qui se presentera: vous savés qu'il s'en presente fort souvent.</p>
-<p><lb/>Ce que dit Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> sur la matière des tautochrones dans les
-               <lb/>milieux resistants à l'endroit que vous cités Liv. 11. Sect. 6 est à son
-               <lb/>ordinaire comme vous dites fort bien, tres difficile, et très peu
-               <lb/>instructif: Encore n'y trouve-t-on rien pour la determination de
-               <lb/>la courbe tautochrone dans l'hypothese des resistances proportionelles
-               <lb/>au quarré de la vitesse; s'il en avoit eu la solution, il n'auroit pas
-               <lb/>manqué de l'étaler avec pompe. Il montre bien que la
-               <lb/>cycloide satisfait pour l'hypothese des resistances qui sont en
-               <lb/>raison simple des vitesses, mais ce cas est si facile, qu'il ne
-               <lb/>merite pas beaucoup d'attention, outre que cette hypothese
+               <lb/>concouru avec la mienne remporta les louanges de l’<rs type="organisation">Academie</rs>,
+               <lb/>mais Vous ne m’avés rien repondu là dessus: Vous en aurés gardé
+               <lb/>sans doute un double ou au moins la minute, en ce cas Vous
+               <lb/>me feriés bien du plaisir de me l’envoyer à lire; je Vous
+               <lb/>donne ma parole de Vous la renvoyer au plutot, par la premiere
+               <lb/>occasion qui se presentera: vous savès qu’il s’en presente fort souvent.</p>
+<p><lb/>Ce que dit <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> sur la matiere des tautochrones dans les
+               <lb/>milieux resistants à l’endroit que Vous cités <rs type="biblio"><abbr>Liv.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> <abbr>Sect.</abbr> 6 est à son
+               <lb/>ordinaire<unclear>,</unclear> comme Vous dites fort bien<unclear>,</unclear> tres difficile, et tres peu
+               <lb/>instructif: Encore n’y trouve<supplied>-</supplied>t-on rien pour la determination de
+               <lb/>la courbe tautochrone dans l’hypothese des resistances proportionelles
+               <lb/>au quarré de la vitesse, s’il en avoit eu la solution, il n’auroit pas
+               <lb/>manquè de l’etaler avec pompe. Il montre bien que la
+               <lb/>cycloide satisfait pour l’hypothese des resistances qui sont en
+               <lb/>raison simple des vitesses, mais ce cas est si facile, qu’il ne
+               <lb/>merite pas beaucoup d’attention, outre que cette hypothese
             <pb facs="1073887" n="14"/>
-<lb/>n'est pas celle qui a lieu dans la nature des choses.</p> <closer><salute>Quant
+<lb/>n’est pas celle qui a lieu dans la nature des choses.</p> <closer><salute>Quant
                <lb/>au reste je suis toujours avec une estime veritable
                <lb/>Monsieur
-               <lb/>votre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</salute>
-<lb/><signed>J. Bernoulli</signed>.
-               <dateline><lb/>Bale ce 5.<hi rend="sup">me</hi> X.<hi rend="sup">bre</hi> 1731</dateline></closer>
-<note type="editorial">zu Seite 145 des Briefwechsels Joh.I Bernoulli/G.Cramer. Die letzte Seite des seit etwa 1948 in Genf befindlichen Originals von Nr.23 (Bernoulli an Cramer, 5. Dez. 1731) enthält ein Schreiben von Johanns Sohn Jakob an Cramer, in welchem er diesem für alle ihm während seines Genfer Aufenthalts erwiesene Freundlichkeit dankt und ihn bittet, ihm zur Erlangung einer Stelle in Marseille behilflich zu sein. Der Brief Jakobs ist in A kopiert. </note>
+               <lb/>Votre <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></salute>
+<lb/><signed><abbr>J<supplied>.</supplied></abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></signed>
+               <dateline><lb/>Bale ce 5.<hi rend="sup">me</hi> <abbr>X.<hi rend="sup">bre</hi></abbr> 1731</dateline>.</closer>
+  <note type="editorial">zu Seite 145 des Briefwechsels Joh. I Bernoulli/G. Cramer. Die letzte Seite des seit etwa 1948 in Genf befindlichen Originals von Nr.23 (Bernoulli an Cramer, 5. Dez. 1731) enthält ein Schreiben von Johanns Sohn <rs key="pers_DE-588-1089913311" type="person">Jakob</rs> an Cramer, in welchem er diesem für alle ihm während seines Genfer Aufenthalts erwiesene Freundlichkeit dankt und ihn bittet, ihm zur Erlangung einer Stelle in Marseille behilflich zu sein. Der Brief Jakobs ist in A kopiert.</note>
 </div>
 </body>
 </text></TEI>

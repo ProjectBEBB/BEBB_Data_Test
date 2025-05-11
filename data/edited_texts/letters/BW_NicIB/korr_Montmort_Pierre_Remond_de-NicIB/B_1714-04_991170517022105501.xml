@@ -146,8 +146,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-04-28" who="SG FN">Kollationieren abgeschlossen</change>
+      <change when="2025-04-25" who="SG FN">Kollationieren begonnen</change>
       <change when="2024-11-07" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
       <change when="2024-09-20" who="RG">pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
@@ -156,13 +158,8 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- MS: Die Reihenfolge der Aleph-Systemnummer wurde hier übernommen. Muss evtl. angepasst werden. -->
+  
+  <!-- MS: Die Reihenfolge der Aleph-Systemnummer wurde hier übernommen. Muss evtl. angepasst werden. -->
 <!--pers_DE-588-117586765 Moivre, Abraham de 〈1667-1754〉 -->
 <!--  Bernoulli -> Nic. I Bernoulli wurde 1714 in die Royal Society aufgenommen. Bernoulli, Nicolaus (1687-1759) pers_DE-588-119166895
             
@@ -171,7 +168,6 @@
             Oncle -> Bernoulli, Johann pers_DE-588-118509969
 
          -->
-<!--_____________-->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1361771/manifest"/>
@@ -180,112 +176,114 @@
 <div type="letter">
 <pb facs="1361772" n="1"/>
 <p>
-  <lb/>Je viens de recevoir une lettre<!-- brieftag --> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs>
-  <lb/>infiniment polie et honeste au sujet de mon livre<!-- werktag --> que
-  <lb/>je luy ai envoyé. Il me parle entre autres choses du
-  <lb/>probleme sur la durée des parties et me marque qu'il en
-  <lb/>a une nouvelle solution<!-- werktag --> qu'il destine pour une 2<hi rend="sup">e</hi>
-  <lb/>edition<!-- werktag -->, qu'elle ne contient qu'une seule suitte infinie
+  <lb/>Je viens de recevoir une <rs type="letter">lettre</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs>
+  <lb/>infiniment polie et honeste au sujet de mon <rs type="biblio">livre</rs> que
+  <lb/><choice><orig>Je</orig><reg>je</reg></choice> luy ai envoyé. <choice><orig>il</orig><reg>Il</reg></choice> me parle entre autres choses du
+  <lb/>probleme sur la durée des parties et me marque qu<supplied>’</supplied>il en
+  <lb/>a une nouvelle <rs type="biblio">solution</rs> qu<supplied>’</supplied>il destine pour une 2<hi rend="sup">e</hi>
+  <lb/><rs type="biblio">edition</rs><choice><orig>.</orig><reg>,</reg></choice> qu<supplied>’</supplied>elle <unclear reason="illegible">ne</unclear> contient qu<supplied>’</supplied>une seule suitte infinie
   <lb/>pour le cas des jettons égaux et que deux suittes pour
-  <lb/>le cas des jettons inegaux. <hi rend="sup">Voicy ce</hi> qui vous regarde
-  <lb/>particulierement. Monsieur <rs key="pers_DE-588-119166895" type="person">Bernoulli</rs> fust reçu
-  <lb/>membre de la Societé Royalle<!-- korporationtag --> la semaine derniere;
-  <lb/>il avoit eté ordonné quelque temps auparavant
-  <lb/>que la solution<!-- werktag --> generalle du probleme de la Poulle,
-  <lb/>qu'il m'a voit envoyée il y a deux mois, seroit imprimée
-  <lb/>dans les transactions philosophiques<!-- werktag --> et que la solution<!-- werktag -->
-  <lb/>que je trouvai de ce probleme il y a environ 15 mois
-  <lb/>seroit imprimée avec la sienne.
+  <lb/>le cas des jettons inegaux. <hi rend="u"><choice><reg>Voicy</reg><reg>voicy</reg></choice> ce</hi> qui vous regarde
+  <lb/>particulierement. <cit type="long"><quote>Monsieur <rs key="pers_DE-588-119166895" type="person">Bernoulli</rs> fust reçu
+  <lb/>membre de la <rs type="organisation">Societé Royalle</rs> la semaine derniere<supplied>;</supplied>
+  <lb/>il avoit <choice><orig>ete</orig><reg>été</reg></choice> ordonné quelque temps auparavant
+  <lb/>que la <rs type="biblio">solution</rs> generalle du probleme de la Poulle<supplied>,</supplied>
+  <lb/>qu’il m<supplied>’</supplied>avoit envoyée il y a deux mois<supplied>,</supplied> seroit imprimée
+  <lb/>dans les <rs type="biblio">transactions philosophiques</rs> et que la <rs type="biblio">solution</rs><supplied>,</supplied>
+  <lb/>que je trouvai de ce <rs type="biblio">probleme</rs> il y a environ 15 mois<supplied>,</supplied>
+  <lb/>seroit imprimée avec la sienne<supplied>.</supplied></quote></cit><note type="editorial"><!-- Das Zitat wird im Original mit kurzen Unterstreichungen am Beginn der Zeilen angezeigt, die erste Unterstreichung bei "voicy" scheint fälschlicherweise erstellt worden zu sein.  --></note>
 </p>
 <p>
-  <lb/>Je serois fort curieux de voir la solution<!-- werktag -->.
-  <lb/>J'ay eu tort de Vous dire trop absolument dans
-  <lb/>ma derniere<!-- brieftag --> que je n'etois pas content de vostre
-  <lb/>decision de <formula>\frac{4}{5}</formula>. Cela se tire de la formule generalle
-  <lb/><formula>\frac{Aac+Bbd}{a+b\times c+d}</formula>, en supposant<del> que</del> <formula>a</formula> et <formula>b</formula> jettons blancs
-  <lb/>et noirs pour se determiner à nommer pair ou impair,
-  <lb/><formula>c</formula> et <formula>d</formula>, pour se determiner à mettre pair ou impair;
-  <lb/><formula>A</formula> ce que le fils gagne, lorsqu'il rencontre bien en nommant
-  <lb/>pair, et <formula>B</formula> ce qu'il gagne, lorsqu'il rencontre bien en
+  <lb/>Je serois fort curieux de voir sa <rs type="biblio">solution</rs>.
+  <lb/>J<supplied>’</supplied>ay eu tort de vous dire trop absolument dans
+  <lb/>ma <rs type="letter">derniere</rs> que je n<supplied>’</supplied>etois pas content de vostre
+  <lb/>decision de <formula>\frac{4}{5}</formula><supplied>;</supplied><note type="comment">Montmort bezieht sich auf die Stelle im Brief von B_991170517022205501</note> cela se tire de la formule generalle
+  <lb/><choice><orig><formula>\frac{Aac+Bbd}{a+b\times c+d}</formula></orig><reg><formula>\frac{Aac+Bbd}{(a+b)\times (c+d)}</formula></reg></choice> en supposant <del/><formula>a</formula> et <formula>b</formula> jettons blancs
+  <lb/>et noirs pour se determiner <choice><orig>a</orig><reg>à</reg></choice> nommer pair ou impair<supplied>,</supplied>
+  <lb/><formula>c</formula> et <formula>d</formula> pour se determiner <choice><orig>a</orig><reg>à</reg></choice> mettre <choice><sic>pour</sic><corr>pair</corr></choice> ou impair<choice><orig>.</orig><reg>,</reg></choice>
+  <lb/><formula>A</formula> ce que le fils gagne lorsqu’il rencontre bien en <choice><sic>nomman</sic><corr>nommant</corr></choice>
+  <lb/>pair<supplied>,</supplied> et <formula>B</formula> ce qu<supplied>’</supplied>il gagne lorsqu’il rencontre bien en
 <pb facs="1361773" n="2"/>
-  <lb/>nommant impair. La raison reciproque de <formula>a.b</formula>
-  <lb/><formula>::B.A</formula> rend indifferent le rapport de <formula>c</formula> et de <formula>d</formula>, ce qui dans
-  <lb/>nostre cas de <formula>A=4</formula> et <formula>B=1</formula> donne <formula>\frac{bB}{a+b}=\frac{A}{5}</formula>; tout cela
-  <lb/>revient à nostre cas du her. Et quoyqu'il me soit
-  <lb/>impossible de dire que cette decision me contente
-  <lb/>entierement, je ne puis dire non plus qu'elle me
-  <lb/>paroisse evidemment fausse, ensorte que, si jamais
-  <lb/>on a pu dire à deux personnes qui soutiennent deux
-  <lb/>choses contradictoires, qu'ils ont tous deux raison,
-  <lb/>c'est assurément dans cette occasion et par rapport
-  <lb/>à nostre dispute. Voicy cependant deux nouvelles
-  <lb/>difficultés, la 1<hi rend="sup">ere</hi> sur nostre her, la voicy.
+  <lb/>nommant impair. <choice><orig>la</orig><reg>La</reg></choice> raison reciproque de <formula>a.b</formula>
+  <lb break="no"/><formula>::B.A</formula><note type="editorial">Korrektur im Original der Formel</note> rend indifferent le rapport de <formula>c</formula> et de <formula>d</formula><supplied>,</supplied> ce qui dans
+  <lb/>nostre cas de <formula>A=4</formula> et <formula>B=1</formula> donne <formula>\frac{bB}{a+b}=\frac{A}{5}</formula><supplied>;</supplied> tout cela
+  <lb/>revient <choice><orig>a</orig><reg>à</reg></choice> nostre cas du her. <choice><orig>et</orig><reg>Et</reg></choice> quoyqu<supplied>’</supplied>il me soit
+  <lb/>impossible de <add>d</add>ire que cette decision me contente
+  <lb/>entierement<supplied>,</supplied> je ne puis dire non plus qu<supplied>’</supplied>elle me
+  <lb/>paroisse evidemment fau<add>sse</add><choice><orig>.</orig><reg>,</reg></choice> ensorte que<supplied>,</supplied> si jamais
+  <lb/>on a pu dire <choice><orig>a</orig><reg>à</reg></choice> deux personnes qui soutiennent deux
+  <lb/>choses contradictoires<supplied>,</supplied> qu<supplied>’</supplied>ils ont tous deux raison<supplied>,</supplied>
+  <lb/>c<supplied>’</supplied>est assurément dans cette occasion et par rapport
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> nostre dispute. <choice><orig>voicy</orig><reg>Voicy</reg></choice> cependant deux nouvelles
+  <lb/><choice><orig>difficultes</orig><reg>difficultés</reg></choice><supplied>,</supplied> la 1<hi rend="sup">ere</hi> sur nostre her la voicy.
 </p>
 <p>
-  <lb/>Le conseil de Pierre qui sçait que le conseil de Paul
-  <lb/>luy a donné la maxime de <formula>a=3</formula> et <formula>b=5</formula>, dira à Pierre
-  <lb/>de faire ce qu'il voudra au cas qu'il ait un 8 de changer
-  <lb/><!--ou {*}{*}-->a de s'y tenir à croix pile ou en faisant <formula>c</formula> et <formula>d</formula> tels qu'il
-  <lb/>voudra; et la maxime de Paul supposée, il est demontré
-  <lb/>que celle cy n'est point mauvais<choice><sic/><corr>e</corr></choice>, puisqu'il est indifferent
-  <lb/>à Pierre de prendre tel parti qu'il voudra. Cependant
-  <lb/>le conseil de Paul, qui outre qu'il est fort habile, est
-  <lb/>encore subtil et fin, soupçonnant que Pierre, connoissant
-  <lb/>cette indifference <del/><add>aura</add> negligé la raison et de 5 et 3, donnera
-  <lb/>à Paul la maxime de changer au 7, et ainsi le conseil
-  <lb/>de Pierre n'aura rien vallu contre ce qui est demontré.
-  <lb/>Autre sur le probleme des etrennes.
+  <lb/><choice><orig>le</orig><reg>Le</reg></choice> conseil de Pierre qui scait que le conseil de Paul
+  <lb/>luy a donné la maxime de <formula>a=3</formula> et <formula>b=5</formula><supplied>,</supplied> dira <choice><orig>a</orig><reg>à</reg></choice> Pierre
+  <lb/>de faire ce qu’il voudra au cas qu’il ait un 8<supplied>,</supplied> de changer
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> de <del/><add>s</add><supplied>’</supplied>y tenir <choice><orig>a</orig><reg>à</reg></choice> croix pyle ou en faisant <formula>c</formula> et <formula>d</formula> tels qu’il
+  <lb/>voudra<supplied>;</supplied> et la maxime de Paul supposée<supplied>,</supplied> il est demontré
+  <lb/>que celle<supplied>-</supplied>cy n<supplied>’</supplied>est point <choice><sic>mauvais</sic><corr>mauvaise</corr></choice> puisqu’il est indifferent
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> Pierre de prendre tel parti qu’il voudra. Cependant
+  <lb/>le conseil de Paul<supplied>,</supplied> qui outre qu’il est fort habile<supplied>,</supplied> est
+  <lb/>encore subtil et fin<supplied>,</supplied> soupconnant que Pierre<supplied>,</supplied> connoissant
+  <lb/>cette indifference<supplied>,</supplied> <del/><add>aura</add> negligé la raison et de 5 et 3<supplied>,</supplied> donnera
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> Paul la maxime de changer au 7<choice><orig>.</orig><reg>,</reg></choice> et ainsi le conseil
+  <lb/>de Pierre n<supplied>’</supplied>aura rien vallu contre ce qui est demontré.
 </p>
+  <p>
+    <lb/>Autre sur le probleme des etrennes.
+  </p>
 <p>
-  <lb/>Si <formula>A</formula> est et <formula>B=1</formula>, selon Vous l'avantage du fils
-  <lb/>est <formula>\frac{\infty}{\infty+1}=1</formula>; cependant il est evident qu'en ce cas
+  <lb/>Si <formula>A</formula> et <formula>\infty</formula> et <formula>B=1</formula><supplied>,</supplied> selon vous l<supplied>’</supplied>avantage du fils
+  <lb/>est <formula>\frac{\infty}{\infty+1}=1</formula><supplied>;</supplied> cependant il est evident qu<supplied>’</supplied>en ce cas
 <pb facs="1361775" n="3"/>
-  <lb/>le Pere peut certainement sauver son écu
-  <lb/>et sans aucun risque en mettant pair dans la
-  <lb/>main. Je dis sans aucun risque, puis que c'est la
-  <lb/>meme chose pour le fils d'estre resolu à nommer
-  <lb/>certainement un pair ou amettre une infructo de
-  <lb/>jettons blancs pour nommer impair ou un seul
-  <lb/>jetton noir pour nommer pair. Je sçai qu'il y a
-  <lb/>replique et meme bonne replique à l'une et l'autre,
-  <lb/>de ces difficultés; aussi je ne compte pas qu'elles vous
-  <lb/>convertissent; peut-estre feriez vous mal, car je ne
-  <lb/>sçai en verité qui a raison. Je crois vous avoir
-  <lb/>mandé par ma derniere<!-- brieftag --> que j'avois icy deux
-  <lb/>exemplaires du commercium Epistolicum<!-- werktag -->, qui
-  <lb/>m'ont été adressés pour vous et que je vous les
-  <lb/>ferois tenir incessament par la voye de nos
-  <lb/>plenipotentiaires<!-- persontag --> qui vont à <rs key="place_GEO-2661646" type="place">Baden</rs>.
+  <lb/>le Pere peut certainement sauver son ecû
+  <lb/>et sans aucun risque en mettant pair dans sa
+  <lb/>main. Je dis <choice><orig>sans aucun risque</orig><reg><hi rend="u">sans aucun risque</hi></reg></choice> puisque c<supplied>’</supplied>est la
+  <lb/>meme chose pour le fils d<supplied>’</supplied>estre resolu <choice><orig>a</orig><reg>à</reg></choice> nommer
+  <lb/>certainement un pair ou <choice><sic>amettre</sic><corr>ammettre</corr></choice> une infinité de
+  <lb/><choice><orig>Jettons</orig><reg>jettons</reg></choice> blancs pour nommer impair <del/><add><unclear reason="illegible">et</unclear> un</add> seul
+  <lb/><choice><orig>Jettons</orig><reg>jettons</reg></choice> noir pour nommer pair. Je scai qu<supplied>’</supplied>il y a
+  <lb/>replique<supplied>,</supplied> et meme bonne replique<supplied>,</supplied> <choice><orig>a</orig><reg>à</reg></choice> l<supplied>’</supplied>une et l<supplied>’</supplied>autre
+  <lb/>de ces <choice><orig>difficultes</orig><reg>difficultés</reg></choice><supplied>;</supplied> aussi je ne compte pas qu<supplied>’</supplied>elles vous
+  <lb/>convertissent<choice><orig>.</orig><reg>;</reg></choice> peut-estre feriez<supplied>-</supplied>vous mal<supplied>,</supplied> car je ne
+  <lb/>scai en verité qui a raison. Je crois vous avoir
+  <lb/>mandé par ma <rs type="letter">derniere</rs> que j<supplied>’</supplied>avois icy deux
+  <lb/>exemplaires du <rs type="biblio"><choice><orig>commercium</orig><reg>Commercium</reg></choice> Epistolicum</rs>> qui
+  <lb/>m<supplied>’</supplied>ont <choice><orig>ete</orig><reg>été</reg></choice> <choice><orig>adresses</orig><reg>adressés</reg></choice> pour vous et que je vous les
+  <lb/>ferois tenir incessament par la voye de <del/><add>no</add>s
+  <lb/><rs type="person">plenipotentiaires</rs> qui vont <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661646" type="place">Baden</rs><supplied>.</supplied>
 </p>
 <p>
-  <lb/>J'ay commencé à lire quelque chose de
-  <lb/>l'admirable morceau<!-- werktag --> que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a
-  <lb/>donné dans les journaux<!-- werktag --> de <rs key="place_GEO-2879139" type="place">Leipsic</rs> de l'année derniere.
-  <lb/>Quand es<choice><sic/><corr>t</corr></choice>ce que paroistra sa theorie de la
-  <lb/>manoeuvre des vaisseaux<!-- werktag -->?
+  <lb/>J<supplied>’</supplied>ay commencé <choice><orig>a</orig><reg>à</reg></choice> lire quelque chose de
+  <lb/>l<supplied>’</supplied>admirable <rs type="biblio">morceau</rs> que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a
+  <lb/><choice><orig>donne</orig><reg>donné</reg></choice> dans les <rs type="biblio">journaux de <rs key="place_GEO-2879139" type="place">Leipsic</rs></rs> de l<supplied>’</supplied><choice><orig>annee</orig><reg>année</reg></choice> derniere<supplied>.</supplied>
+  <lb/><choice><orig>quand</orig><reg>Quand</reg></choice> <choice><sic>es</sic><corr>est</corr></choice><supplied>-</supplied>ce que paroistra sa <rs type="biblio"><choice><orig>theorie</orig><reg>Théorie</reg></choice> de la
+  <lb/>manoeuvre des vaisseaux</rs><supplied>?</supplied>
 </p>
 <p>
-  <lb/>Il y a faute à la page 254<!-- werktag -->, il faut 3823 et non
-  <lb/>2833; c'est une faute d'impression, car les nombres 5 4 <formula>\frac{16}{49}d</formula>
-  <lb/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> sont justes. Le rapport que vous marqués 34277 et
-  <lb/>31873 n'est pas juste, il faut 34407 et 31743. Je vous
-  <lb/>remercie de la peine que vous avez prise.
+  <lb/><choice><orig>il</orig><reg>Il</reg></choice> y a faute <choice><orig>a</orig><reg>à</reg></choice> la <rs type="biblio">page 254</rs><supplied>,</supplied> il faut 3823 et non
+  <lb/>28<del/><add>3</add>3<supplied>;</supplied> c<supplied>’</supplied>est une faute d’<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>mpression<supplied>,</supplied> car les nombres 5<choice><orig><hi rend="sup">lb</hi></orig><reg> <!-- Zeichen für livre eingügen --></reg></choice><!-- Währungszeichen --> <add>et</add> 4 s<!-- Währungszeichen für sou umsetzen. Im Ms. hochgestellt --> <formula>\frac{16}{49}</formula> d<!-- Währungszeichen umsetzen, d = denier, im Ms. hochgestellt -->
+  <lb/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> sont justes. <choice><orig>le</orig><reg>Le</reg></choice> rapport que vous <choice><orig>marques</orig><reg>marqués</reg></choice> 34277 et
+  <lb/>31873 n<supplied>’</supplied>est pas juste<supplied>,</supplied> il faut 34407 et 31743<supplied>.</supplied> Je vous
+  <lb/>remercie de la peine que vous avez prise. 
 </p>
 <closer>
-  <salute>Adieu, mon
-    <lb/>cher Monsieur, mil complimens à <abbr>M.<hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>.
-    <lb/>Je vous ecrirai un de ces jours plus amplement.
-  </salute>
-  <signed><rs key="pers_DE-588-117601020" type="person"><abbr>R. d. M.</abbr></rs></signed>
+  <salute>Adieu<supplied>,</supplied> mon
+    <lb/>cher Monsieur<supplied>,</supplied> mil complimens <choice><orig>a</orig><reg>à</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs><supplied>.</supplied></salute>
+  <signed><rs key="pers_DE-588-117601020" type="person"><abbr>R d M</abbr></rs></signed>
+
 </closer>
+  <postscript><p><lb/>Je vous ecrirai un de ces jours plus amplement.</p></postscript>
 <pb facs="1361776" n="4"/>
 <closer>
 <address>
   <addrLine><rs key="place_VER-eidgen" type="place">Suisse</rs></addrLine>
   <addrLine>A Monsieur</addrLine>
-  <addrLine>Monsieur <rs key="pers_DE-588-119166895" type="person"><abbr>N<hi rend="sup">as</hi></abbr> Bernoulli</rs></addrLine>
+  <addrLine>Monsieur <rs key="pers_DE-588-119166895" type="person"><abbr>N<supplied>.</supplied><hi rend="sup">as</hi></abbr> Bernoulli</rs></addrLine>
   <addrLine>licentié en droit</addrLine>
-  <addrLine>à <rs key="place_GEO-2661604" type="place">Basle</rs>.</addrLine>
+  <addrLine>A <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
 </address>
 </closer>
 </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -171,6 +171,10 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-05-02" who="MK RG">kollationiert</change>
+      <change when="2025-04-25" who="MK RG">kollationiert</change>
+      <change when="2025-04-25" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-04-25" who="RG">Matheformeln normalisiert</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-05-30" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
       <change when="2022-10-28" who="CG">Header, Seitenzahlen, Briefstruktur</change>
@@ -184,232 +188,232 @@
 <div type="letter">
 <pb facs="1073849" n="1"/>
 <opener>
-<dateline><date when="1731-09-01">1. Sept. 1731</date>.</dateline>
+<dateline><date when="1731-09-01">1 <abbr>Sept.</abbr> 1731.</date></dateline>
 <salute>Monsieur</salute></opener>
-<p><lb/>Si j'ai laissé passer quelques mois avant que de repondre à
-               <lb/>votre dernière Lettre du 1. Mai de cette année, ne croyés pas que
-               <lb/>j'aye voulu user de Repressailles, pour punir votre long silence,
-               <lb/>car il s'en faut beaucoup que le mien ne soit aussi
-               <lb/>long qu'étoit le votre. En allegant la multitude de vos
+<p><lb/>Si j’ai laissé passer quelques mois avant que de repondre à
+  <lb/><choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> <choice><abbr>dern.<hi rend="sup">e</hi></abbr><expan>dernière</expan></choice> <rs key="B_991170514977805501" type="letter">Lettre</rs> du 1. Mai de cette a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée, ne croyés pas que
+               <lb/>j’aye voulu user de Repressailles <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> punir <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> long silence,
+               <lb/>car il s’en faut beaucoup que le mien ne soit aussi
+               <lb/>long qu’étoit le votre. En allegant la multitude de vos
                <lb/>occupations il semble que vous veuillés me reprocher
-               <lb/>tacitement que je suis un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e desoeuvré, pour ne pas dire un faineant;
-               <lb/>mais vous deviés bien savoir qu'un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e moi chargé
+  <lb/><choice><abbr>tacitem.<hi rend="sup">t</hi></abbr><expan>tacitement</expan></choice> que je suis un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e desoeuvré, <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> ne pas dire un faineant,
+               <lb/>mais Vous deviés bien savoir qu’un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e moi chargé
                <lb/>de famille, mis dans un poste public qui est ici plus
-               <lb/>pénible <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moins lucratif qu'ailleurs, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> surtout à présent
-               <lb/>que je suis dárechef Doyen de notre Faculté, charge
-               <lb/>très onéreuse, sans rien dire de la Correspondance <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'autres
+               <lb/>penible <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moins lucratif qu’ailleurs, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> surtout à présent
+               <lb/>que je suis dérechef doyen de notre faculté, charge
+               <lb/>très onereuse, sans rien dire de la Correspondance <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’autres
                <lb/>affaires du dehors, auxquelles il doit vaquer, un tel ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-               <lb/>dis-je n'a pas le tems de demeurer les bras croisés.
-               <lb/>Cependant n'en parlons plus <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> laissons l'un à l'autre sa pleine
+               <lb/>dis-je n’a pas le tems de demeurer les bras croisés.
+               <lb/>Cependant n’en parlons plus <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> laissons l’un à l’autre sa pleine
                <lb/>liberté.</p>
-<p><lb/>Je vous suis obligé de la peine que vous avés prise
-               <lb/>de m'envoyer l'ouvrage de Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs>. Il m'a fait l'
-               <lb/>honneur de m'en écrire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je lui fis repondre par mon
-               <lb/>fils pour le remercier, ne l'ayant pû faire moi même
-               <lb/>à cause de la gout<del>te</del><add>t</add> qui me tenoit alors au lit. Quand
-               <lb/>vous lui écrirés, je vous prie de lui reiterer mes
+<p><lb/>Je vous suis obligé de la peine que Vous avés prise
+  <lb/>de m’envoyer l’<rs key="biblio_GUFERCEN" type="biblio">ouvrage</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs>; Il m’a fait l’<pc type="hyphenation"></pc>
+  <lb break="no"/>honneur de m’en écrire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je lui fis repondre par mon
+               <lb/><rs type="person">fils</rs> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> le remercier, ne l’ayant pû faire moi méme
+               <lb/>à cause de la gout<del>te</del><add>t</add><note type="editorial">frühneuzeitliche Schreibweise von "la goutte"= die Gicht.</note> qui me tenoit alors au lit. Quand
+               <lb/>vous lui écrirés, je Vous prie de lui reiterer mes
             <pb facs="1073850" n="2"/>
-<lb/>Remerciments <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de lui dire que j'ai lû son Ouvrage avec
-               <lb/>beaucoup de Satisfaction; On a lieu d'attendre de sa
+  <lb/>Remerciments <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de lui dire que j’ai lû son <rs key="biblio_GUFERCEN" type="biblio">Ouvrage</rs> avec
+               <lb/>beaucoup de Satisfaction; On a lieu d’attendre de sa
                <lb/>capacité des choses de plus grande importance, quand il sera
-               <lb/>parvenu à un age plus meur, aprés ce bel echantillon qu'il vient
+  <lb/>parvenu <choice><orig>a</orig><reg>à</reg></choice> un age plus meur<note type="editorial">bei "meur" handelt es sich um eine frühneuzeitliche Form von "mûr".</note>, aprés ce bel echantillon qu’il vient
                <lb/>de donner au public dans un age si tendre. Il est peutétre le
                <lb/>premier qui ait remarqué que la courbe de projection de la
-               <lb/>courbe à double courbure, dont il parle sur la fin de la page 
-               <lb/>107 est une Cyssoide; par conséquent aussi l'Epicycloide qui
-               <lb/>se decrit par le so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>et <del/><add>de la</add> parabole, roulant dans un
-               <lb/>même plan sur la convexité d'une autre parabole egale,
-               <lb/>sera la Cyssoide; ce qui est une propriété d'autant plus
-               <lb/>utile et plus curieuse, qu'on peut décrire maintenant cette
-               <lb/>courbe par un mouvement continu <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour le moins aussi simple que
-               <lb/>celui que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> a inventé par le moyen d'une Equerre,
-               <lb/>voyés son Algeb. prem. Edit. p. 143 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 144. Dont Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+               <lb/>Courbe à double courbure, dont il parle sur la fin de la <choice><abbr>p.</abbr><expan>page</expan></choice> 
+  <lb/>107 est une Cyssoide, <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <choice><abbr>conseq.</abbr><expan>conséquent</expan></choice> aussi l’Epicycloide qui
+               <lb/>se decrit par le so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>et <del/><add>de la</add> parabole, roulant dans un<del>e</del>
+               <lb/>même plan sur la convexité d’une autre <choice><abbr>parab.</abbr><expan>parabole</expan></choice> egale,
+               <lb/>sera la Cyssoide; Ce qui est une proprieté d’autant plus
+               <lb/>utile et plus curieuse, qu’on peut décrire maintenant cette
+  <lb/>courbe <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> un <choice><abbr>mouvemt.</abbr><expan>mouvement</expan></choice> continu <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> le moins aussi simple que
+               <lb/>celui que <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> a inventé <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> le moyen d’une Equerre,
+               <lb/><choice><abbr>voy.</abbr><expan>voyés</expan></choice> son <abbr>algeb.</abbr> <rs type="biblio"><abbr>prem.</abbr> <abbr>Edit.</abbr></rs> <abbr>p.</abbr> 143 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 144. Dont <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>
 <lb/>se fit sans doute quelque gloire. Je remarque outre cela,
-               <lb/>qu'en genéral les courbes de projection dont Mr.
-               <lb/><rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> parle dans l'endroit cité ne sont autre chose
-               <lb/>que ce que j'apelle Courbes terminatrices en matière de
+               <lb/>qu’en genéral les courbes de projection dont <abbr>M.<hi rend="sup">r</hi></abbr>
+               <lb/><rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> parle dans l’endroit cité ne sont autre chose
+               <lb/>que ce que j’apelle Courbes terminatrices en matière de
                <lb/>mes Reptoires, et que partant ces terminatrices se
-               <lb/>decrivent aussi par un mouvement continu en faisant rouler
-               <lb/>la courbe à laquelle on veut faire un arc de cercle egal
-               <lb/>sur la convexité d'une autre courbe égale, car l'Epicycloide
-               <lb/>qui se décrit par le point d'intersection des deux normales extrèmes
+  <lb/>decrivent aussi par un <choice><abbr>mouvemt.</abbr><expan>mouvement</expan></choice> continu en faisant rouler
+               <lb/>la courbe à la quelle on veut faire un arc de cercle egal
+               <lb/>sur la convexité d’une autre courbe egale, car l’Epicycloide
+               <lb/>qui se dècrit par le point d’intersection des deux normales extremes
                <lb/>sera semblable <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> double de la terminatrice dont je vous ai donné
             <pb facs="1073851" n="3"/>
-<lb/>une autre construction, lorsque vous étiés ici. A propos des Courbes
-               <lb/>Reptoires, vous avés encore tous mes papiers sur cette matière, je vous
-               <lb/>prie de mes les renvoyer si vous n'en avés plus besoin. Quant au
-               <lb/>reste Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> feroit bien de pousser plus loin ses Recherches
-               <lb/>sur les Courbes à double Courbure, car il n'a fait encore
-               <lb/>qu'effleurer cette matière, quoique ce soit beaucoup pour son
-               <lb/>bas age; le plus difficile seroit de determiner des Courbes
-               <lb/>sans une surface courbe donnée, qui fissent la fonction de
-               <lb/>quelque <hi rend="u">maximum</hi> ou <hi rend="u">minimum</hi>, p. ex. la courbe à double
-               <lb/>courbure de la plus vite descente, ou simplement celle qui
+<lb/>une autre Construction, lorsque vous étiés ici. A propos des Courbes
+               <lb/>Reptoires, vous avés encore tous mes papiers sur cette matiére, je Vous
+               <lb/>prie de mes les renvoyer si vous n’en avés plus besoin. Quant au
+               <lb/>Reste <abbr>M.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> feroit bien de pousser plus loin ses Recherches
+               <lb/>sur les Courbes à double Courb<del/><add>u</add>re, car il n’a fait encore
+               <lb/>qu’effleurer cette matière, quoique ce soit beaucoup <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> son
+               <lb/>bas age<unclear>;</unclear> le plus difficile seroit de determiner des Courbes
+               <lb/>sans une Surface courbe donnée, qui fissent la fonction de
+               <lb/>quelque <hi rend="u">maximum</hi> ou <hi rend="u">minimum</hi>, <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> <abbr>ex.</abbr> la courbe à double
+               <lb/>courbure de la plus vite descente, ou <choice><abbr>simplemt.</abbr><expan>simplement</expan></choice> celle qui
                <lb/>soit la plus courte entre deux points sur une surface
-               <lb/>courbe do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée, ce que j'ai proposé il y a deja longues années,
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont j'ai do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é des Solutions générales à Mr. de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>
-<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, quoique Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> dise dans sa
-               <lb/>préface étre le premier qui ait médité <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> traité
+               <lb/>courbe do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée, ce que j’ai proposé il y a deja longues années,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont j’ai do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é des Solutions genérales à <abbr>M.<hi rend="sup">rs</hi></abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-130429856" type="person">Klingenstiern</rs>, quoique <abbr>M.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> dise dans sa
+               <lb/>préface ètre le premier qui ait medité <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> traité
                <lb/>cette matière. Nous avons apris ces jours passés que ce jeune
-               <lb/>Auteur est entré dans l'Académie des Sciences à la place de
-               <lb/>Mr. de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs> qui a succedé à Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> en
-               <lb/>qualité de Pensionaire, aprés que celuici a été declaré 
-               <lb/>Veteran, de sorte que Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> ne fut pas encore
-               <lb/>choisi par le Roi, lorsqu'il lui fut presenté avec Mr.
-               <lb/><rs key="pers_DE-588-117619515" type="person">Saurin</rs> le fils. Je crois qu'on etoit convenu de cette
-               <lb/>Condition, que Mr. <rs key="pers_DE-588-117619515" type="person">Saurin</rs> le Père se feroit
-               <lb/>faire Veteran quand son fils seroit fait
-               <lb/>Académicien.
+               <lb/>Auteur est entré dans l’<rs type="organisation"><choice><abbr>acad.</abbr><expan>Académie</expan></choice> des <choice><abbr>Sc.</abbr><expan>Sciences</expan></choice></rs> à la place de
+               <lb/><abbr>M.</abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs> qui a succedé à <abbr>M.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> en
+               <lb/>qualité de <choice><orig>Pensionaire</orig><reg>Pensionnaire</reg></choice>, aprés que celuici a été declaré
+               <lb/>Veteran, de sorte que <abbr>M.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> ne fut pas encore
+  <lb/>choisi par le <rs key="pers_DE-588-118729438" type="person">Roi</rs>, lorsqu’il lui fut presenté avec <abbr>M.<hi rend="sup">r</hi></abbr>
+  <lb/><rs key="pers_DE-588-104166215" type="person">Saurin</rs> le fils. Je crois qu’on ètoit convenu de cette
+  <lb/>Condition, que <abbr>M.</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs> le Père se feroit
+  <lb/>faire Veteran quand son <rs key="pers_DE-588-104166215" type="person">fils</rs> seroit fait
+               <lb/>academicien.
             <pb facs="1073852" n="4"/>
-<lb/>Je me félicite de ce que mon Discours sur le Mou<pc type="hyphenation">-</pc><lb break="no"/>vement des Planètes a merité votre aprobation. Le
-               <lb/>meilleur de cette pièce consiste sans doute dans la
-               <lb/>decouverte que j'ai faite des paralogismes de Mr.
-               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>, la plupart du reste qui regarde la
-               <lb/>Constitution des Tourbillons n'ayant été inventé que
-               <lb/>pour m'accomoder au gout de Messieurs les Juges. Il est
-               <lb/>vrai que les plus zelés Newtoniens Anglois n'auront
+<lb/>Je me felicite de ce que mon <rs type="biblio">Discours</rs> sur le mou<pc type="hyphenation">-</pc><lb break="no"/>vement des Planètes a merité <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> aprobation. Le
+               <lb/>meilleur de cette <rs type="biblio">Pièce</rs> consiste sans doute dans la
+               <lb/>découverte que j’ai faite des Paralogismes de <abbr>M.<hi rend="sup">r</hi></abbr>
+               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> la pluspart du Reste qui regarde la
+               <lb/>Constitution des Tourbillons n’ayant été inventé que
+               <lb/><choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> m’accomoder au gout de <abbr>M<supplied>.</supplied><hi rend="sup">rs</hi></abbr> les Juges. Il est
+               <lb/>vrai que les plus zelés Newtoniens Anglois n’auront
                <lb/>rien de solide à oposer contre mes preuves des erreurs de
-               <lb/>leur Maitre, cependant je m'etonne de ce qu'ils n'ayent
-               <lb/>pas encore entrepris de me refuter, accoutumés
-               <lb/>d'ailleurs dans leur aveuglement de soutenir les
-               <lb/>plus manifestes absurdités, que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> a
-               <lb/>avancées. J'ai été tenté plus d'une fois de faire une
-               <lb/>Recueil en forme de toutes les fautes, que j'ai trouvées
-               <lb/>dans ses Ouvrages, mais j'ai laissé tomber ce dessein, de peur
-               <lb/>de m'attirer le reproche que c'est manque de propres
+  <lb/>leur <rs key="persons/pers_DE-588-118587544" type="person">Maitre</rs>, cependant je m’etonne de ce qu’ils n’ayent
+               <lb/>pas encor<unclear>e</unclear> entrepris de me refuter, accoutumés
+  <lb/>d’ailleurs dans leur <choice><abbr>aveuglemt<supplied>.</supplied></abbr><expan>aveuglement</expan></choice> de soutenir les
+               <lb/>plus manifestes absurdités, que <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> a
+               <lb/>avancées; J’ai été tenté plus d’une fois de faire un
+               <lb/>Recueil en forme de toutes les fautes que j’ai trouvées
+               <lb/>dans ses Ouvrages, mais j’ai laissé tomber ce dessein, de peur
+               <lb/>de m’attirer le reproche que c’est manque de propres
                <lb/>Inventions que je passois mon tems à critiquer celles
-               <lb/>d'autrui, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e si je voulois batir ma Reputation
-               <lb/>sur la Ruine de la sienne, ce qui n'est pas le caractère
-               <lb/>d'un ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ête ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e. J'ai donc crû qu'il valoit mieux
-               <lb/>de montrer en tems <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lieu quand l'occasion s'en
-               <lb/>présenteroit que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> n'étoit pas un Oracle
-               <lb/>infaillible, mais qu'il avoit ses defauts <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ses
-               <lb/>faiblesses co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le Reste des mortels.</p>
-<p><lb/>Pour ce qui est du mouvement tremule des
-            <pb facs="1073853" n="5"/>
-<lb/>particules de l'air en quoi consiste le son, Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>
-<lb/>a Raison de dire que ce mouvement augmente <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> diminue
-               <lb/>selon la même loi <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> analogie, que le mouvement
-               <lb/>d'oscillation d'un pendule, mais pour le prouver, c'est sans
+               <lb/>d’autrui, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e si je voulois batir ma Reputation
+               <lb/>sur la Ruine de la sienne, ce qui n’est pas le caractère
+               <lb/>d’un ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ête ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e; J’ai donc crû qu’il valoit mieux
+               <lb/>de montrer en tems <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lieu quand l’occasion s’en
+               <lb/>présenteroit que <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> n’étoit pas un oracle
+               <lb/>infaillible, mais qu’il avoit ses defauts <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ses
+               <lb/>foiblesses co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le Reste des mortels.</p>
+  <p><lb/>Pour ce qui est du <choice><abbr>mouvemt.</abbr><expan>mouvement</expan></choice> tremule des
+            <pb facs="1073853" n="5"/><!-- bis hier kollationiert MK 30.4.2025 -->
+<lb/>particules de l’air en quoi consiste le son, <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+    <lb/>a Raison de dire que ce <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice> augmente <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> diminue
+    <lb/>selon la méme loi <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> analogie, que <del>p</del> le <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice>
+               <lb/>d’oscillation d’un Pendule; mais <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> le prouver, c’est sans
                <lb/>doute un paralogisme insuportable de suposer
-               <lb/>d'abord que le mouvement des particules est reellement tel
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de calculer ensuite la loi de la force accéleratrice
-               <lb/>qu'il trouve justement telle qu'il la faut pour donner
-               <lb/>aux particules le mouvement analogue à celui de
-               <lb/>vibration d'un pendule; Car faut il s'etonner que
-               <lb/>remontant de la Consequence qu'il tire de sa suposition il
+    <lb/>d’abord que le <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice> des particules est <choice><abbr>reellemt<supplied>.</supplied></abbr><expan>reellement</expan></choice> tel
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de calculer ensuite la loi de la <rs type="keyword">force acceleratrice</rs>
+    <lb/>qu’il trouve <choice><abbr>justemt.</abbr><expan>justement</expan></choice> telle qu’il la faut <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> donner
+    <lb/>aux particules le <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice> analogue à celui de
+               <lb/>vibration d’un Pendule; Car faut il s’etonner que
+               <lb/>remontant de la Consequence qu’il tire de sa suposition il
                <lb/>revienne à la même Suposition? Je demontrerois de cette manière
-               <lb/>que 3 fois 5 font douze. Pour le demontrer suposons d'abord
-               <lb/><formula>3\times5=12</formula>, donc <formula>\frac{12}{5}=3=\frac{3}{1}</formula>, multiplié en croix vous aurés <formula>1\times12</formula> ou
-               <lb/>simplement <formula>12=3\times5</formula>. C. O. F. D. Cependant il semble que
-               <lb/>Vous ne compreniés pas bien <add>la raison</add> pourquoi Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> donne
-               <lb/>au <add>mouvement des</add> particules de l'air une loi analogue au mouvement
-               <lb/>d'oscillation d'un pendule, quand vous dites que <hi rend="u">si l'on
-               <lb/>veut suposer qu'elles se meuvent d'un mouvement d'abord
-               <lb/>retardé puis accéleré analogue au mouvement d'un
-               <lb/>corps jetté en l'air puis redescendant librement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-               <lb/>calculant de la même manière que Mr. Newton
-               <lb/>la difference d'élasticité ou la force motrice, on la
-               <lb/>trouve constante c.a.d., telle qu'il la faut pour produire
-               <lb/>ce mouvement suposé</hi>. Car Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> a eu en vue de
-               <lb/>demontrer que les trémulations des particules de l'air
-               <lb/>c. à. d., leurs <add>allées</add> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> revenues (itus <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reditus) sont isochrones,
+               <lb/>que <del/><add>3</add> fois 5 font douze. Pour le demontrer suposons d’abord
+               <lb/><formula>3\times5=12</formula> donc <formula>\frac{12}{5}=3=\frac{3}{1}</formula>, multiplié en croix vous aurés <formula>1\times12</formula> ou
+    <lb/><choice><abbr>simplemt.</abbr><expan>simplement</expan></choice> <formula>12=3\times5</formula><unclear>,</unclear> <choice><abbr>C. Q. F. D.</abbr><expan>Ce qu'il fallait démontrer.</expan></choice> Cependant il semble que
+               <lb/>Vous ne compre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>iés pas bien <add>la raison</add> pourquoi <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> donne
+    <lb/>au<del>x</del> <add><choice><abbr>mouvemt.</abbr><expan>mouvement</expan></choice> des</add> particules de l’air une loi analogue au <choice><abbr>mouvemt.</abbr><expan>mouvement</expan></choice>
+               <lb/>d’oscillation<!-- Wort genauer ansehen, RG 25.04.2024 SG fragen, ob Entity für spez. Zeichen. 2.5.2025--> d’un pendule, quand vous dites que <hi rend="u">si l’on
+               <lb/>veut suposer qu’elles se meuvent d’un <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice> d’abord
+               <lb/>retardé puis accéleré analogue au <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice> d’un
+               <lb/>corps jetté en l’air puis redescendant librement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>calculant de la même manière que <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+               <lb/>la difference d’élasticité ou la <rs type="keyword">force motrice</rs>, on la
+               <lb/>trouve constante <abbr>c. à. d.</abbr>, telle qu’il la faut <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> produire
+               <lb/>ce <abbr>mouvemt.</abbr><!-- Nicht ausgeschrieben wie bei den anderen noch nachsehen, wie es in der Endversion aussieht, RG 25.04.2025 --> suposé</hi>. Car <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> a eu en vue de
+    <lb/>demontrer que les tremulations<!-- Wort genauer ansehen, RG 25.04.2024 --> des particules de l’air,
+               <lb/><abbr>c. <choice><orig>a</orig><reg>à</reg></choice>. d.</abbr>, leurs <add>allées</add> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> revenues (<foreign xml:lang="lat">itus <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reditus</foreign>) sont isochrones,
                <lb/>soit que les vibrations soient longues ou petites, selon que
             <pb facs="1073854" n="6"/>
-<lb/>l'intensité de la force motrice est plus ou moins grande, à la manière des
-               <lb/>oscillations d'un Pendule qui sont toujours isochrones, pourvû
-               <lb/>qu'elles soient très petites, quoique leurs excursions soient tantôt
-               <lb/>plus longues, tantôt plus courtes; Or pour procurer un tel
-               <lb/>isochronisme il faut que la force motrice ne soit pas constante
-               <lb/>ou invariable co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e celle de la pesanteur, mais elles doivent
-               <lb/>étre variables et proportionelles aux longueurs du chemin
-               <lb/>à faire jusqu'au centre du repos c. à. d. jusqu'au point où
+<lb/>l’intensité de la <rs type="keyword">force motrice</rs> est plus ou moins grande, à la maniere des
+               <lb/>Oscillations d’un Pendule, qui sont toujours isochrones, pourvû
+               <lb/>qu’elles soient très petites, quoique leurs excursions soient tantôt
+               <lb/>plus longues tantot plus courtes; or <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> procurer un tel
+               <lb/>isochronisme il faut que la <rs type="keyword">force motrice</rs> ne soit pas constante
+               <lb/>ou invariable co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e celle de la pésanteur, mais elles doivent
+               <lb/>étre variables <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> proportionelles aux longueurs du Chemin
+               <lb/>à faire jusqu’au Centre du repos <abbr>c. à. d.</abbr> jusqu’au point où
                <lb/>le mobile se repose enfin après un grand nombre de
-               <lb/>vibrations affoiblies peu à peu jusqu'à l'entière extinction.
-               <lb/>Il falloit donc demontrer cela pour faire voir que la propagation
-               <lb/>d'un son violent ne se fait pas plus vite ou en moins de tems
-               <lb/>que celle d'un son faible ou languissant. D'où vous voyés que
-               <lb/>votre manière de concevoir la tremulation des particules de l'air
-               <lb/>semblable au mouvement reciproque d'un corps pesant
-               <lb/>qui monteroit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> redescendroit alternativement suivant la
-               <lb/>hauteur verticale, ne seroit pas propre pour expliquer
-               <lb/>l'égalité de la propagation du son, puisqu'il est visible
+               <lb/>vibrations affoiblies peu à peu jusqu’à l’entière extinction.
+               <lb/>Il falloit donc demontrer cela <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> faire voir que la propagation<!-- spez. Zeichen für ti MK 2.5.2025 -->
+               <lb/>d’un son violent ne se fait pas plus vite ou en moins de tems
+               <lb/>que celle d’un son foible ou languissant; D’où vous voyés que
+               <lb/><choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> manière de concevoir la tremulation<!-- spez. Zeichen für ti -->, des particules de l’air
+    <lb/>semblable au <choice><abbr>mouvemt<supplied>.</supplied></abbr><expan>mouvement</expan></choice> reciproque d’un Corps pesant
+    <lb/>qui monteroit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> redescendroit <choice><abbr>alternativemt.</abbr><expan>alternativement</expan></choice> suivant la
+               <lb/>hauteur verticale, ne seroit pas propre <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> expliquer
+               <lb/>l’égalité de la propagation<!-- spez. Zeichen MK 2.5.2025 --> du son, puisqu’il est visible
                <lb/>que les plus hautes ascensions <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> descentes demanderoient plus de tems que
-               <lb/>les moins hautes. Ainsi il falloit prouver <hi rend="u">à priori</hi>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nonpas suposer
-               <lb/>que la force acceleratrice qui cause la trémulation d'une particule 
-               <lb/>d'air est proportionelle aux éloignemens du Centre du repos; C'est ce que
-               <lb/>M. <rs key="pers_DE-588-118587544" type="person">Newton</rs> n'a pas fait par sa longue Demonstration qui me paroit un
-               <lb/>Galimatias inintelligible <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par cela même supect de paralogisme selon
-               <lb/>sa belle coutume de cacher souvent ses Erreurs sous le voile de l'
-               <lb/>obscurité; quant à moi, j'ai une demonstration claire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> facile de ce que les
-               <lb/>forces motrices des particules d'air ont effectivement cette proportion, mais
-               <lb/>elle n'a lieu qu'en suposant que les trémulations entières sont d'une
-               <lb/>longueur très petite par raport à l'interstice entre deux particules
-               <lb/>voisines, tout co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e deux oscillations circulaires d'un pendule ne sont
-               <lb/>isochrones que lorsqu'elles sont très petites. La methode que je vous
-               <lb/>ai indiquée pour venir à une Equation de la Courbe où <formula>AD.BE::ACP.nBCP</formula>
+               <lb/>les moins hautes. Ainsi il falloit prouver à <foreign xml:lang="lat"><hi rend="u">priori</hi></foreign>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>n'</orig><reg>non</reg></choice> <!-- Wort ansehen, RG 25.04.2025 --> pas suposer
+               <lb/>que la <rs type="keyword">force acceleratrice</rs> qui cause la tremulation<!-- spez. Zeichen für ti MK 2.5.2025 --> <del>des </del>d’une particule
+               <lb/>d’air est proportionelle aux eloignemens du Centre du repos; C’est ce que
+               <lb/><abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> n’a pas fait par sa longue Demonstration<!-- spez. Zeichen für ti MK 2.5.2025 --> qui me paroit un
+               <lb/>Galimatias inintelligible <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> cela méme suspect de paralogisme selon
+    <lb/>sa belle coutume de cacher souvent ses Erreurs sous le voile de l’<pc type="hyphenation"></pc>
+    <lb break="no"/>Obscurité, quant à moi, j’ai une demonstration<!-- spez. Zeichen für ti MK 2.5.2025 --> claire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> facile de ce que les
+    <lb/><rs type="keyword">forces motrices</rs> des particules d’air ont <choice><abbr>effectivemt.</abbr><expan>effectivement</expan></choice> cette proportion, mais
+               <lb/>elle n’a lieu qu’en suposant que les tremulations entiéres sont d’une
+    <lb/>longueur très petite <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> raport <choice><orig>a</orig><reg>à</reg></choice><del>ux</del> l’interstice<del>s</del> entre deux particules
+               <lb/>voisines, tout co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e deux oscillations circulaires d’un pendule ne sont
+               <lb/>isochrones que lorsqu’elles sont très petites. La methode que je vous
+    <lb/>ai indiquée <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> venir à une Equation de la Courbe où <choice rend="regFormula"><orig><formula>AD.BE::AC^{P}.nBC^{P}</formula></orig><reg><formula>AD:BE=AC^{P}:nBC^{P}</formula></reg></choice>
 <pb facs="1073855" n="7"/>
-<lb/>est sans doute applicable à plusieurs <add>cas</add> particuliers, surtout à ceux
-               <lb/>où les courbes doivent étre determinées par le rapport des angles
+<lb/>est sans doute applicable <choice><orig>a</orig><reg>à</reg></choice> plusieurs <add>cas</add> particuliers, surtout à ceux
+               <lb/>où les Courbes doivent ètre déterminèes par le rapport des angles
                <lb/>dont les lignes concourrent dans certains points donnés co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e dans les
-               <lb/>Trajectoires de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans les courbes qui ont la forme de Spirales,
-               <lb/>J'ai bien lû le mémoire de M. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> sur les forces vives, mon
-               <lb/>sentiment sur cette pièce est celui que j'aurois sur un ouvrage qu'un
-               <lb/>aveugle auroit fait sur les Couleurs. M. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> fait voir
-               <lb/>clairement dans toute sa pièce qu'il n'a aucune <del>de </del>idée de la nature
-               <lb/>des forces vives, il prend ce mot de <hi rend="u">force vive</hi> toujours de travers
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e jamais le sens que nous lui attachons. Il ne
-               <lb/>reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oit point d'autre force que la <hi rend="u">morte</hi> ou la pression, cependant
-               <lb/>il en parle co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e si c'étoit elle que nous entendons aussi quand
-               <lb/>nous disons qu'elle est proportionelle au quarré de la 
-               <lb/>vitesse; je ne sai si dans la manière d'agir de M. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> il
-               <lb/>n'entre pas un peu de malice pour jetter de la poudre aux yeux des 
+               <lb/><rs type="keyword">Trajectoires</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans les Courbes qui ont la forme de Spirales<supplied>.</supplied>
+               <lb/>J’ai bien lu le <rs type="biblio">memoire</rs> de <abbr>M.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> sur les <rs type="keyword">forces vives</rs>, mon
+    <lb/><choice><abbr>sentimt.</abbr><expan>sentiment</expan></choice> sur cette piéce est celui que j’aurois sur un <rs type="biblio">ouvrage</rs> qu’un
+               <lb/>aveugle auroit fait sur les Couleurs. <abbr>M.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> fait voir
+    <lb/><choice><abbr>clairemt.</abbr><expan>clairement</expan></choice> dans toute sa piéce, qu’il n’a aucune <del>de </del>idée de la nature
+               <lb/>des <rs type="keyword">forces vives</rs>, il prend ce mot de <hi rend="u"><rs type="keyword">force vive</rs></hi> toujours de travers
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e jamais le sens que nous lui attachons; Il ne
+    <lb/>reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oit point d’autre force que la <hi rend="u">morte</hi> ou la <rs type="keyword">pression</rs>, <choice><abbr>cepend.<hi rend="sup">t</hi></abbr><expan>cependant</expan></choice>
+               <lb/>il en parle co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e si c’étoit elle que nous entendons aussi quand
+               <lb/>nous disons qu’elle est proportionelle au quarré de la
+               <lb/>vitesse, je ne sai si dans la manière d’agir de <abbr>M.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> il
+               <lb/>n’entre pas un peu de malice <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> jetter de la poudre aux yeux des
                <lb/>ignorans, car après le grand nombre de Lettres que je lui ai
-               <lb/>écrites plusieurs années pour lui developper notre Théorie
-               <lb/>le plus clairement qu'il étoit possible, il auroit dû étre
-               <lb/>convaincû de son Erreur, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en effet j'ai converti plusieurs
-               <lb/>autres, auxquels je n'ai pas fait la moitié autant de
-               <lb/>Remontrances qu'à lui: Aussi n'attaque-t-il (<add>quoique</add> sans me
-               <lb/>no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er) que ce qui est imprimé dans mon Discours sur
-               <lb/>le mouvement, mais il dissimule les plus fortes preuves
-               <lb/>que je lui ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquées dans mes lettres particulières,
-               <lb/>au contraire il semble qu'il affecte d'avoir soin que le Public
-               <lb/>n'en sache rien, de peur que la Verité n'éclate, à l'imitation
-               <lb/>de ceux qui ne pouvant plus colorer leur méchante cause,
-               <lb/>tachent de la couvrir, pour la rendre méconnoissable. Vous
-               <lb/>voyés jusqu'où va l'opiniatreté de ceux qui s'étant
-               <lb/>declaré une fois <add>ouvertement</add> pour une opinion erronée, croyent
-               <lb/>qu'il y va de leur Reputation d'en demordre, aimant [mieux]
+               <lb/>écrites plusieurs années <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> lui developper notre Theorie
+    <lb/>le plus <choice><abbr>clairemt.</abbr><expan>clairement</expan></choice> qu’il étoit possible, il auroit <choice><orig>du</orig><reg>dû</reg></choice> étre
+               <lb/>convaincû de son Erreur, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e en effet j’ai converti plusieurs
+               <lb/>autres, auxquels je n’ai pas fait la moitié autant de
+               <lb/>Remontrances qu’à lui: Aussi n’attaque-t-il (<add>quoique</add> sans me
+               <lb/>no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er) que ce qui est imprimé dans mon <rs type="biblio">Discours</rs> sur
+    <lb/>le <choice><abbr>mouvemt.</abbr><expan>mouvement</expan></choice>, mais il dissimule les plus fortes preuves
+               <lb/>que je lui ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquées dans mes lettres particuliéres,
+               <lb/>au contraire il semble qu’il affecte d’avoir soin que le Public
+               <lb/>n’en sache rien, de peur que la Verité n’éclate, à l’imitation
+               <lb/>de ceux qui ne pouvant plus colorer leur méchante cause
+               <lb/>tachent de la couvrir <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> la rendre méconnoissable. Vous
+               <lb/>voyés jusqu’où va l’opiniatreté de ceux qui s’étant
+    <lb/>declaré une fois <add><choice><abbr>ouvertemt.</abbr><expan>ouvertement</expan></choice></add> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> une opinion erronée, croyent
+               <lb/>qu’il y va de leur Reputation d’en demordre, aimant <supplied>mieux</supplied><!-- Keine Ahnung wo dieses Wort stehen soll, fehlt auf dem Original, RG 25.04.2025; mieux weglassen, da nicht unbedingt nötig MK  -->
             <pb facs="1073856" n="8"/>
 <lb/>defendre la fausseté quoique reconnue que de chanter
-               <lb/>le <hi rend="u">peccavi</hi>. Depuis le tems de votre Lettre vous aurés
-               <lb/>vu peutétre le memoire de M. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>; Ainsi je serai
-               <lb/>curieux <del>de savoir </del><add>d'aprendre</add> de vous, ce que vous pensés de ses beaux
-               <lb/>raisonnements. En verité je suis les de lui en écrire d'avantage,
-               <lb/>car il y a longtems que je m'aperçois qu'il est incorrigible,
-               <lb/>ce seroit <hi rend="u">oleum <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> operam perdere</hi>. Cependant si vous
-               <lb/>jugés qu'il est utile pour l'édification Public de repondre au
-               <lb/>Memoire de M<hi>r</hi>. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, afin qu'il ne chante pas
-               <lb/>triomphe, je vous en cederai l'honneur, vous serés plus
+               <lb/><del/>le <foreign xml:lang="lat"><hi rend="u">peccavi</hi></foreign>. Depuis le tems de <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> <rs type="letter">Lett re</rs> vous aurés
+               <lb/>vu peutétre le <rs type="biblio">memoire</rs> de <abbr>M.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>; Ainsi je serai
+               <lb/>curieux <del>de savoir </del><add>d’aprendre</add> de vous, ce que vous pensés de ses beaux
+               <lb/>Raisonnements: En verité je suis les de lui en écrire d’avantage,
+               <lb/>car il y a longtems que je m’aperçois qu’il est incorrigible,
+               <lb/>ce seroit <hi rend="u"><foreign xml:lang="lat">oleum <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> operam perdere</foreign></hi>. Cependant si vous
+               <lb/>jugés qu’il est utile <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> l’édification du Public de repondre au
+               <lb/><rs type="biblio">Memoire</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, afin qu’il ne chante pas
+               <lb/>triomphe, je vous en cederai l’honneur, vous serés plus
                <lb/>capable que toute autre personne de Vous en acquiter
-               <lb/>dignement, car 1.<hi rend="sup">o</hi> Vous avés une pleine connoissance de
-               <lb/>cause et 2.<hi rend="sup">o</hi> Vous avés à écrire dans votre langue maternelle.
-               <lb/>Il est vrai que Mr. de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs> pourroit aussi
-               <lb/>le <del/>faire mais étant son Compatriote <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> son 
-               <lb/>Collegue <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> présentement tous deux dans la classe
-               <lb/>des Pensionaires, il aura des raisons politiques
-               <lb/>de ne pas se mettre en lice contre Mr. de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>.</p>
+    <lb/><choice><abbr>dignemt.</abbr><expan>dignement</expan></choice> car 1.<hi rend="sup">o</hi> Vous avés une pleine connoissance de
+    <lb/>cause et 2.<hi rend="sup">o</hi> Vous avés à écrire dans <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> langue maternelle.
+               <lb/>Il est vrai que <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs> pourroit aussi
+               <lb/>le <del/>faire, mais étant son Compatriote <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> son 
+    <lb/>Collegue <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><abbr>présentemt<supplied>.</supplied></abbr><expan>présentement</expan></choice> tous deux dans la Classe
+               <lb/>des Pensionaires, il aura des Raisons <del/>politiques
+               <lb/>de ne pas se mettre en lice contre <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>.</p>
 <closer><salute><lb/>Je suis au Reste avec une veritable Estime
                <lb/>Monsieur
-               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-               <lb/>très obeissant Serviteur</salute>
-<lb/><signed>J. Bernoulli</signed>.
-                  <dateline>Bâle 
-                     <lb/>ce <date when="1731-09-01">1. Sept. 1731</date>.</dateline></closer> <note type="editorial">{[Eigenhändiges Postscriptum Bernoullis:] }</note>
-<postscript><p><lb/>P. S. Mon <rs type="person">fils</rs> qui est chés Mr. <rs type="person">Malvesin</rs>
-<lb/>en partira peutétre bientôt pours'en
+               <lb/>Vôtre trés humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>trés obeissant Serviteur</salute>
+<lb/><signed>J<supplied>.</supplied> Bernoulli</signed>.
+  <dateline><lb/>Bâle 
+                     <lb/>ce <date when="1731-09-01">1. <abbr>Sept.</abbr> 1731</date>.</dateline></closer> 
+<postscript><p><note type="editorial">{[Eigenhändiges Postscriptum Bernoullis:] }<!-- Klammern weglassen MK 2.5.2025 --></note><lb/><abbr>P. S.</abbr> Mon <rs type="person">fils</rs> qui est chés <abbr>Mr.</abbr> <rs type="person">Malvesin</rs>
+<lb/>en partira peutetre bientot pour s’en
                <lb/>retourner chés nous, vous pourriés le charger
-               <lb/>des papiers concernant les courbes
+               <lb/>des papiers <del>sur</del>concernant les courbes
                <lb/>Reptoires.</p>
 </postscript>
 </div>

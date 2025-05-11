@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,14 +147,16 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-04-02" who="MK">Code durchgeschaut, korrigiert</change>
+      <change when="2025-02-17" who="MK">Code durchgeschaut, korrigiert</change>
       <change when="2025-01-23" who="MK RG">kollationiert</change>
       <change when="2025-01-10" who="RG">Kleinere Anpassungen/Korrekturen</change>
       <change when="2024-11-28" who="MK">GND-Verknüpfung MS gemeldet, Grundkommentierung begonnen</change>
       <change when="2024-11-22" who="MK">tagging angepasst, ergänzt, grundkommentiert</change>
       <change when="2024-11-21" who="MK">tagging angepasst, ergänzt</change>
-      <change when="2023-01-16" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
+      <change when="2023-01-16" who="RG">Zeilenabstände eingefügt und &amp; ergänzt</change>
       <change when="2022-11-11" who="CG">Brief und bibliotags</change>
-      <change when="2022-09-14" who="CG">Header angepasst, Seitezahlen eingefügt</change>
+      <change when="2022-09-14" who="CG">Header angepasst, Seitenzahlen eingefügt</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -175,84 +177,84 @@
 <div type="letter">
 <pb facs="1073642" n="1"/>
 <opener><salute>Monsieur,</salute></opener>
-  <p><lb/>Quoi qu'il n'y ait pas longtems que je vous ai importuné d'<rs key="B_991170514979505501" type="letter">une de mes lettres</rs>,
+  <p><lb/>Quoi qu’il n’y ait pas longtems que je vous ai importuné d’<rs type="letter" key="B_991170514979505501" >une de mes lettres</rs>,
 <lb/>je prens encore la Liberté de vous adresser celle-ci: Puisque vous avez la bonté de vouloir
                <lb/>bien me faire part de vos Lumières, je profiterai de vos instructions, desquelles <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de
                <lb/>toutes vos faveurs, je conserve un souvenir éternel <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> une reconoissance parfaite.</p>
-  <p><lb/>Votre <rs key="biblio_5MVQ5CQI" type="biblio">Livre</rs> a fait du bruit en <rs key="place_VER-englan" type="place">Angleterre</rs>. Les Sectateurs de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> se sont allarmez
-               <lb/>voiant vôtre Nom à la Tête d'un Ouvrage qui attaque une opinion qu'ils prétendent ètre
-  <lb/>celle de leur <rs key="pers_DE-588-118587544" type="person">Maitre</rs>. On a, je crois tenu des <hi rend="u">Conseils de</hi> Guerre, dont le résultat a été qu'on
-               <lb/>pouvoit encore se defendre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que la place n'étoit pas si fort pressée qu'elle ne pût encore tenir
-               <lb/>bon. Voici ce qu'on a imaginé pour opposer à vos Démonstrations<supplied>.</supplied></p><!-- bis hier kollationiert -->
-<p><lb/><hi rend="u">Au premier Argument</hi> (<abbr>pag.</abbr>21, 22, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>) On repond que le nombre des ressorts
-               <lb/><formula>CA</formula>, <formula>CB</formula> qui produisent les forces des Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> n<add>'</add>e<add>st</add> <del>sont</del> point à considerer: puisque la <rs type="keyword">pression</rs>
-               <lb/>n'est pas plus grande, soit qu'il n'y ait qu'un ressort, soit qu'il y en ait plusieurs. Qu'ainsi quoique
+  <p><lb/>Votre <rs key="biblio_5MVQ5CQI" type="biblio">Livre</rs> a fait du bruït en <rs key="place_VER-englan" type="place">Angleterre</rs>. Les Sectateurs de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> se sont allarmez
+               <lb/>voiant vòtre Nom à la Tête d’un Ouvrage qui attaque une opinion qu’ils prétendent ètre
+  <lb/>celle de leur <rs key="pers_DE-588-118587544" type="person">Maitre</rs>. On a, je crois tenu des <note type="editorial">Alle Unterstreichungen vorkommend auf den drei Seiten des Briefes wohl nicht vom Autor sondern vom Empfänger hinzugefügt.</note> Conseils de Guerre, dont le résultat a été qu’on
+               <lb/>pouvoit encore se defendre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que la place n’étoit pas si fort pressée qu’elle ne pût encore tenir
+               <lb/>bon. Voici ce qu’on a imaginé pour opposer à vos Démonstrations<supplied>.</supplied></p>
+<p><lb/>Au premier Argument (<abbr>pag.</abbr>21, 22, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>) <choice><orig>On</orig><reg>on</reg></choice> repond que le nombre des ressorts
+               <lb/><formula>CA</formula>, <formula>CB</formula> qui produisent les forces des Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> n<add>’</add>e<add>st</add> <del>sont</del> point à considerer: puisque la pression
+               <lb/>n’est pas plus grande, soit qu’il n’y ait qu’un ressort, soit qu’il y en ait plusieurs. Qu’ainsi quoique
                <lb/>le nombre des ressorts <formula>CA</formula> soit moindre que le nombre des ressorts <formula>CB</formula>, la force co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée
-               <lb/>au Corps <formula>A</formula> n'est pas moins égale à la force communiquée au Corps <formula>B</formula>. On a comparé ces
-               <lb/>Ressorts à une <rs type="keyword">Corde de Musique</rs> qu'il s'agiroit d'etendre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l'on a dit que puisque la
+               <lb/>au Corps <formula>A</formula> n’est pas moins égale à la force communiquée au Corps <formula>B</formula>. On a comparé ces
+               <lb/>Ressorts à une Corde de Musique qu’il s’agiroit d’etendre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’on a dit que puisque la
                <lb/>même force suffit pour alonger de 10 lignes une Corde de 10 pieds, que pour alonger
-               <lb/>de 1 ligne une Corde de 1 pied, il n'etoit pas surprenant que 18 ressorts en <formula>CB</formula> s'ouvrant
+               <lb/>de 1 ligne une Corde de 1 pied, il n’etoit pas surprenant que 18 ressorts en <formula>CB</formula> s’ouvrant
                <lb/>chacun de 1 pouce, en tout de 18 pouces, ne produisent pas plus de force que 6 ressorts en
-               <lb/><formula>CA</formula>, qui s'ouvrent en tout de 6 pouces.</p>
+               <lb/><formula>CA</formula>, qui s’ouvrent en tout de 6 pouces.</p>
 <p><lb/>On est allé plus loin, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de ce même argument on a prétendu en tirer une
-               <lb/>Demonstration contre vous. Car on a raisonné ainsi. La <rs type="keyword">pression</rs> qui agit sur le
+               <lb/>Demonstration contre vous. Car on a raisonné ainsi. La pression qui agit sur le
             <pb facs="1073643" n="2"/>
-<lb/>Corps <formula>A</formula> est ègale à la <rs type="keyword">pression</rs> qui agit sur le Corps <formula>B</formula>. De plus ces deux
+<lb/>Corps <formula>A</formula> est ègale à la pression qui agit sur le Corps <formula>B</formula>. De plus ces deux
                <lb/>pressions agissent pendant le même tems. Or deux pressions ègales
-               <lb/>agissant <hi rend="u">pendant</hi> le même tems, ou pendant des tems ègaux produisent
-               <lb/>des effets êgaux. Et ces effets sont les <rs type="keyword">forces vives</rs> <add>des Corps</add> qu'elles mettent en
+               <lb/>agissant pendant le même tems, ou pendant des tems ègaux produisent
+               <lb/>des effets ègaux. Et ces effets sont les <rs type="keyword">forces vives</rs> <add>des Corps</add> qu’elles mettent en
                <lb/>mouvement. Donc les <rs type="keyword">forces vives</rs> des Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> sont ègales. Donc la
                <lb/>force se doit estimer par le produit de la Masse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de la Vitesse. La même
-               <lb/>reponse sert, dit on, à l'Argument du <rs type="biblio"><abbr>Chap.</abbr> septième</rs>.</p>
-<p><lb/>J'avoue, Monsieur, que la difficulté m'a paru considerable <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je
-               <lb/>suis embarassé à y répondre. Il faut <hi rend="u">nier</hi> que deux <rs type="keyword">forces mortes</rs> ou pressions
+               <lb/>reponse sert, dit on, à l’Argument du <rs type="biblio"><abbr>Chap.</abbr> septième</rs>.</p>
+<p><lb/>J’avoue, Monsieur, que la difficulté m’a paru considerable <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je
+               <lb/>suis embarassé à y répondre. Il faut nier que deux <rs type="keyword">forces mortes</rs> ou pressions
                <lb/>ègales agissant pendant des Tems ègaux produisent des <rs type="keyword">forces vives</rs> égales.
-               <lb/>Or jusqu'a present j'avois regardé cela comme un <hi rend="u">Axiome</hi>, ou comme une suite
+               <lb/>Or jusqu’a present j’avois regardé cela comme un Axiome, ou comme une suite
                <lb/>de la production de la force par le moien de la pression (<abbr>Art.</abbr> 3, 4, 5 <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> du <abbr>Ch.</abbr> V.)
-               <lb/>Vous m'obligerez de m'en expliquer la raison. Elle revient, je pense à peu près
-  <lb/>à la question que je vous faisois dans ma <rs key="B_991170514979505501" type="letter">lettre</rs> précedente, d'ou vient que c'est
-               <lb/>l'Element de la Vitesse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> non celui de la Force qui est proportionel à la pression
+               <lb/>Vous m’obligerez de m’en expliquer la raison. Elle revient, je pense à peu près
+  <lb/>à la question que je vous faisois dans ma <rs key="B_991170514979505501" type="letter">lettre</rs> précedente, d’<choice><orig>ou</orig><reg>où</reg></choice> vient que c’est
+               <lb/>l’Element de la Vitesse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> non celui de la Force qui est proportionel à la pression
                <lb/>multipliée par le tems infiniment petit. Ainsi je pense que la réponse à cette
                <lb/>question sera la Solution de la Difficulté.</p>
-<p><lb/>Je vous exposerai les idées qui me sont venuës dans l'Esprit pour la résoudre,
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que j'ai developées à ces <rs type="persons">Messieurs</rs>. J'ai dit premiérement que l'on supposoit
-               <lb/><hi rend="u">gratis</hi> que des pressions <hi rend="u">ègales</hi> agissant pendant des tems <hi rend="u">ègaux</hi> produisent des
-               <lb/>forces ègales: que l'on peut aussi bien dire que c'est en agissant par des espaces
+<p><lb/>Je vous exposerai les idées qui me sont venües dans l’Esprit pour la résoudre,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que j’ai developées à ces <rs type="person">Messieurs</rs>. J’ai dit premiérement que l’on supposoit
+               <lb/>gratis que des pressions ègales agissant pendant des tems ègaux produisent des
+               <lb/>forces ègales: que l’on peut aussi bien dire que c’est en agissant par des espaces
                <lb/>ègaux que deux pressions ègales produisent des forces ègales. Que cela même
-               <lb/>paroitroit plus naturel, si l'on vouloit considerer les Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> comme se mouvant
-               <lb/>d'<formula>A</formula> en <formula>C</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de <formula>B</formula> en <formula>C</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> bandant ainsi les ressorts. Qu'alors il étoit manifeste que <formula>B</formula>
-<lb/>qui en bandoit 18 avoit 3 fois plus de force que <formula>A</formula> qui n'en bandoit que 6.</p>
+               <lb/>paroitroit plus naturel, si l’on vouloit considerer les Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> comme se mouvant
+               <lb/>d’<formula>A</formula> en <formula>C</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de <formula>B</formula> en <formula>C</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> bandant ainsi les ressorts. Qu’alors il étoit manifeste que <formula>B</formula>
+<lb/>qui en bandoit 18 avoit 3 fois plus de force que <formula>A</formula> qui n’en bandoit que 6.</p>
 <pb facs="1073644" n="3"/>
-<p><lb/>Ma 2.<hi rend="sup">e</hi> reponse a été celleci: qu'une pression agit selon qu'on lui resiste. Que
-               <lb/>si la resistance est plus grande, la pression s'aplique plus entièrement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moins
-               <lb/>entièrement si la rèsistance est plus pétite: Qu'ainsi pour produire des pressions
-               <lb/>ègales dans deux Corps d'ont l'un est en mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l'autre en repos, ou dont
-               <lb/>l'un a une grande vitesse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l'autre une petite, il faut des forces inégales, plus
+<p><lb/>Ma <abbr>2.<hi rend="sup">e</hi></abbr> reponse a été celleci: qu’une pression agit selon qu’on lui resiste. Que
+               <lb/>si la resistance est plus grande, la pression s’aplique plus entièrement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moins
+               <lb/>entièrement si la rèsistance est plus pétite: Qu’ainsi pour produire des pressions
+               <lb/>ègales dans deux Corps d’ont l’un est en mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre en repos, ou dont
+               <lb/>l’un a une grande vitesse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre une petite, il faut des forces inégales, plus
                <lb/>grande dans le premier cas, plus petite dans le second: Que, par exemple<supplied>,</supplied>
                <lb/>pour presser également un Corps qui a un degré de mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un Corps
                <lb/>en repos, il faut que le ressort qui presse le premier soit transporté lui même
-               <lb/>avec un degré de vitesse, ce qui éxige la force d'un autre ressort; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ainsi que
-               <lb/>plus un Corps a de vitesse plus il faut de force pour augmenter sa vitesse d'une
-               <lb/>quantité donnée. Et apliquant ceci à nôtre cas, j'ai fait remarquer que le Corps
+               <lb/>avec un degré de vitesse, ce qui éxige la force d’un autre ressort; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ainsi que
+               <lb/>plus un Corps a de vitesse plus il faut de force pour augmenter sa vitesse d’une
+               <lb/>quantité donnée. Et apliquant ceci à nôtre cas, j’ai fait remarquer que le Corps
                <lb/><formula>A</formula> se mouvant moins vite que <formula>B</formula>, requeroit moins de ressorts, ou moins de force
                <lb/>pour souffrir une pression ègale.</p>
-<p><lb/>Mais ces <rs type="persons">Messieurs</rs> n'ont pas été satisfaits entiérement de ma reponse, par ce
+<p><lb/>Mais ces <rs type="person">Messieurs</rs> n’ont pas été satisfaits entiérement de ma reponse, par ce
                <lb/><del>que</del>, ont-ils dit, que la force que les ressorts suivants emploient à transporter
-               <lb/>les précedens n'est pas transferée au Corps <formula>A</formula> ou <formula>B</formula>, puisqu'elle se depense à transporter
+               <lb/>les précedens n’est pas transferée au Corps <formula>A</formula> ou <formula>B</formula>, puisqu’elle se depense à transporter
                <lb/>les autres ressorts.</p>
-<p><lb/>Touchant les Arguments des <abbr>Chap.</abbr> 8. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 9, je n'ai pas vû qu'on m'ait <hi rend="u">repliqué</hi>
-  <lb/>grand chose. J'ai fait sentir que les objections de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-1325550264" type="person">Eames</rs> n'étoient que des petitions
-               <lb/>de principe, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l'on en <hi rend="u">est assez convenu</hi>. On a seulement dit qu'il y avoit à la vérité
-               <lb/>quelque chose de difficile <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d'embarassant dans la décomposition de la Direction.</p>
-<p><lb/>Enfin, Monsieur, on m'a apris qu'on alloit vous répondre <hi rend="u">pleinement</hi>. J'ignore
-               <lb/>encore qui sera l'<rs type="person">Autheur</rs> de cette réponse. Mais quand elle paroitra, je vous en
-               <lb/>donnerai avis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même <rs type="biblio">copie</rs>, si je crois qu'elle en vaille la peine. Ce sera alors le
+<p><lb/>Touchant les Arguments des <abbr>Chap.</abbr> 8<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 9, je n’ai pas vû qu’on m’ait repliqué
+  <lb/>grand chose. J’ai fait sentir que les objections de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-1325550264" type="person">Eames</rs> n’étoient que des petitions
+               <lb/>de principe, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’on en est assez convenu. On a seulement dit qu’il y avoit à la vérité
+               <lb/>quelque chose de difficile <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’embarassant dans la décomposition de la Direction.</p>
+<p><lb/>Enfin, Monsieur, on m’a apris qu’on alloit vous répondre pleinement. J’ignore
+               <lb/>encore qui sera l’<rs type="person">Autheur</rs> de cette réponse. Mais quand elle paroitra, je vous en
+               <lb/>donnerai avis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même <rs type="biblio">copie</rs>, si je crois qu’elle en vaille la peine. Ce sera alors le
                <lb/>tems de refuter aussi pleinement cette Replique, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de faire inserer vôtre refutation
-               <lb/>dans les <rs type="biblio"><abbr>Transact.</abbr><abbr>Philosoph.</abbr></rs> Je ne crois pas qu'on puisse vous le refuser, puisque
+               <lb/>dans les <rs type="biblio"><abbr>Transact.</abbr><abbr>Philosoph.</abbr></rs> Je ne crois pas qu’on puisse vous le refuser, puisque
                <lb/>vous aurez été ataqué en personne.</p>
 <closer><salute>
-<lb/>Je vous prie de croire qu'on ne peut étre avec plus d'attachement que je le suis
-               <lb/>Monsieur
+<lb/>Je vous prie de croire qu’on ne peut étre avec plus d’attachement que je le suis<supplied>,</supplied>
+               <lb/>Monsieur<supplied>,</supplied>
                <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant Serviteur</salute>
 <signed><lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
   <dateline><rs key="place_GEO-2643743" type="place">Londres</rs> ce <date when="1728-04-15"><formula>\frac{4}{15}</formula> avril 1728</date></dateline>
@@ -261,7 +263,7 @@
 <addrLine>A Monsieur</addrLine>
 <addrLine>Monsieur <abbr>J.</abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> Docteur</addrLine>
 <addrLine>en Medecine, Professeur en Mathe-</addrLine>
-<addrLine>matiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></addrLine>
+<addrLine>matiques, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>.</supplied>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>.</supplied> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>.</supplied></addrLine>
 <addrLine><rs key="place_GEO-2661604" type="place">Basle</rs></addrLine></address>
 </closer>
 </div>
