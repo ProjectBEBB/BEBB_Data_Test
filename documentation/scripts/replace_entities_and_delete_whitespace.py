@@ -38,8 +38,13 @@ def process_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
+    # Entfernt Whitespace zwischen <pc>-Trennstrich und <lb break="no"/>
     pattern = r'<pc type="hyphenation">-</pc>\s+<lb break="no"/>'
     modified_content = re.sub(pattern, r'<pc type="hyphenation">-</pc><lb break="no"/>', content)
+
+    # NEU: Entfernt Leerzeichen direkt vor <lb break="no"/> auch ohne <pc>
+    pattern2 = r'(\S)\s+<lb break="no"/>'
+    modified_content = re.sub(pattern2, r'\1<lb break="no"/>', modified_content)
 
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(modified_content)
