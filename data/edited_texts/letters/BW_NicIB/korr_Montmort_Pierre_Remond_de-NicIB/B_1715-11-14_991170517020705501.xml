@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517020705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -187,8 +187,13 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-04" who="FN SG">Kollationieren abgeschlossen</change>
+      <change when="2025-09-04" who="FN SG">Kollationieren fortgeführt</change>
+      <change when="2025-09-01" who="FN SG">Kollationieren fortgeführt</change>
+      <change when="2025-08-26" who="FN SG">Kollationieren fortgeführt</change>
+      <change when="2025-06-03" who="SG">Tagging</change>
       <change when="2025-04-11" who="FN SG">Kollationieren begonnen</change>
       <change when="2025-04-11" who="SG">Formeln bearbeitet, fehlerhafte Formeln korrigiert</change>
       <change when="2024-12-17" who="RG">Kommentare durch "rs type=" ersetzt, sowie weitere wenige Auszeichnungen.</change>
@@ -201,7 +206,7 @@
   </revisionDesc>
 </teiHeader>
 
-<!--Comments that were in the teiHeader element-->
+
 <!--pers_DE-588-117536148 Geoffroy, Etienne-François 〈1672-1731〉 -->
 <!--pers_DE-588-118576682 Malebranche, Nicolas 〈1638-1715〉 -->
 <!--pers_DE-588-117586765 Moivre, Abraham de 〈1667-1754〉 -->
@@ -246,10 +251,10 @@
 </opener>
 <p>
   <lb/>Vous ne pouvez pas douter<supplied>,</supplied> Monsieur<supplied>,</supplied> qu’apres
-  <lb/>avoir si longtemps attendu de vos nouvelles<supplied>,</supplied> <choice><orig>Je</orig><reg>je</reg></choice> n<supplied>’</supplied>aie reçu avec
+  <lb/>avoir si longtemps attendu de vos nouvelles<supplied>.</supplied> <choice><orig>Je</orig><reg>je</reg></choice> n<supplied>’</supplied>aie reçu avec
   <lb/>un extreme plaisir la <rs type="letter">lettre</rs> que vous m<supplied>’</supplied>avez fait l’honneur de m<supplied>’</supplied>écrire
   <lb/>dattée du <date>26 7<hi rend="sup">bre</hi> 1715</date>. Je vous suis fort obligé des remarques que
-  <lb/>vous avez bien voulu<del/> communiquer touchant les 10 theoremes
+  <lb/>vous avez bien voulu <del/><add>me</add> communiquer touchant les 10 theoremes
   <lb/>que je vous ai <rs type="letter">envoyé</rs>. J<supplied>’</supplied>y ay remarqué vostre exactitude et<supplied>,</supplied> si j’ose
   <lb/>le dire<supplied>,</supplied> vostre severité ou sincerité ordinaire. <choice><orig>pour</orig><reg>Pour</reg></choice> user de <del/><add>ce</add>tte
   <lb/>meme liberté philosophique<supplied>,</supplied> je vous dirai ingenuement ce que je
@@ -258,286 +263,281 @@
 <p>
   <lb/>La solution de mon 1<hi rend="sup">er</hi> <abbr>prob.</abbr> me paroist preferable à celle que vous
   <lb/>me <choice><orig>proposes</orig><reg>proposés</reg></choice>. <choice><orig>c</orig><reg>C</reg></choice>’est bien la meme chose<supplied>,</supplied> mais outre que la mienne
-  <lb/>apprend qu’il faut employer autant de termes de la bande <abbr><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>pendicul<unclear>aire</unclear></abbr>
+  <lb/>apprend qu<supplied>’</supplied>il faut employer autant de termes de la bande <abbr><choice><orig><g ref="#per">&#42833;</g></orig><reg>per</reg></choice>pendicul<unclear>aire</unclear></abbr>
   <lb/><formula>p+q-1</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qu’il y a d’<choice><orig>unites</orig><reg>unités</reg></choice> dans <formula>p</formula>, divisé par le dernier de ces termes<choice><orig>.</orig><reg>;</reg></choice>
   <lb/>elle apprend encore la maniere de trouver cette somme et c’est
   <lb/>ce dont il s’agit.
 </p>
 <p>
-  <lb/>A l<supplied>’</supplied>egard du 2<hi rend="sup">e</hi><choice><orig>.</orig><reg>:</reg></choice> Je ne pouvois pas douter que tous les facteurs du Numerateur
+  <lb/>A l<supplied>’</supplied>egard du 2<hi rend="sup">er</hi><choice><orig>.</orig><reg>:</reg></choice> Je ne pouvois pas douter que tous les facteurs du Numerateur
   <lb/>et du <choice><sic>denoateur</sic><corr>denominateur</corr></choice> ne se detruisissent à l’exception du dernier. <choice><orig>cela</orig><reg>Celà</reg></choice> est evident par
   <lb/>la regle et évident par cet exemple <formula>\frac{7\cdot8\cdot9\cdot10\cdot11\cdot12\cdot13}{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7}</formula> <abbr>Num.</abbr><supplied>,</supplied> <choice><sic><formula>\frac{7\cdot8\cdot9\cdot10\cdot11\cdot12\cdot13\cdot14}{1\cdot2\cdot3\cdot4\cdot7\cdot6\cdot7\cdot8}</formula></sic><corr><formula>\frac{7\cdot8\cdot9\cdot10\cdot11\cdot12\cdot13\cdot14}{1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot8}</formula></corr></choice>
   <lb/><add><abbr>Den.</abbr></add><supplied>;</supplied> ainsi j<supplied>’</supplied>ay cru qu’il n<supplied>’</supplied>etoit pas besoin de le dire et j’avois envie de faire voir<supplied>,</supplied>
-  <lb/>comme je le marque<supplied>,</supplied> que la bande horizontale dont le quantiesme est <formula>p</formula>
+  <lb/>comme je le marque<supplied>,</supplied> que la bande horizontale<supplied>,</supplied> dont le quantiesme est <formula>p</formula><supplied>,</supplied>
   <lb/>fournissoit tous les nombres <choice><orig>cherches</orig><reg>cherchés</reg></choice>. On n<supplied>’</supplied>auroit pas si bien vû cette
   <lb/><abbr><choice><orig><g ref="#pro">p̄</g></orig><reg>pro</reg></choice>prieté</abbr>, <choice><orig>Assez</orig><reg>assez</reg></choice> curieuse ce me semble, la demonstration n<supplied>’</supplied>y etant pas,
-  <lb/>si au lieu de ces nombres <formula>\frac{924}{1716}, \frac{462}{924}, \frac{210}{462}, \frac{84}{210}</formula><choice><sic>+</sic><corr type="deleted"/></choice> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> j<supplied>’</supplied>avois mis ceux-<lb break="no"/>cy <formula>\frac{8}{14}, \frac{7}{13}, \frac{6}{12}, \frac{5}{11}, \frac{4}{10}, \frac{3}{9}, \frac{2}{8}, \frac{1}{7}, \frac{0}{6}</formula><supplied>.</supplied><note type="editorial">Korrekturen im zweiten und dritten Bruch.</note>
+  <lb/>si au lieu de ces nombres <formula>\frac{924}{1716}</formula>, <formula>\frac{462}{924}</formula>, <formula>\frac{210}{462}</formula>, <formula>\frac{84}{210}</formula><choice><sic>+</sic><corr type="deleted"/></choice> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> j<supplied>’</supplied>avois mis ceux-<lb break="no"/>cy <formula>\frac{8}{14}</formula>, <choice><sic><formula>\frac{13}{7}</formula></sic><corr><formula>\frac{7}{13}</formula></corr></choice>, <choice><sic><formula>\frac{12}{6}</formula></sic><corr><formula>\frac{6}{12}</formula></corr></choice><del/><add>,</add> <formula>\frac{5}{11}</formula>, <formula>\frac{4}{10}</formula>, <formula>\frac{3}{9}</formula>, <formula>\frac{2}{8}</formula>, <formula>\frac{1}{7}</formula>, <formula>\frac{0}{6}</formula><supplied>.</supplied><note type="editorial">Korrekturen im zweiten und dritten Bruch.</note>
 </p>
 <pb facs="1361868" n="2"/> 
 <p>
-  <lb/>Cette formule <formula>\frac{n}{p-1}+1</formula> est aussi simple que celle<supplied>-</supplied>cy <formula>\frac{d-1}{d-n-1}</formula>, que
+  <lb/>Cette formule <formula>\frac{n}{p-1}+1</formula> est aussi simple que celle<supplied>-</supplied>cy <formula>\frac{d-1}{d-n-1}</formula><supplied>,</supplied> que
   <lb/>l<supplied>’</supplied>on trouve en substituant <formula>p</formula> <choice><orig>a</orig><reg>à</reg></choice> la place de <formula>d-n</formula> dans ma formule
   <lb/><formula>\frac{n}{p-1}+1</formula><supplied>;</supplied> <choice><orig>cela</orig><reg>celà</reg></choice> n<supplied>’</supplied>avoit pas besoin de reforme<supplied>.</supplied>
 </p>
 <p>
   <lb/>Il en est <choice><orig>a</orig><reg>à</reg></choice> peu pres de meme des deux formules du <abbr>prob.</abbr> 4. Il semble
   <lb/>au contraire que ces deux formules
-  <lb/><choice><orig><formula>\frac{n+p-1}{p-1}-\times \frac{n\cdot n+1 \cdot n+2 \ldots\ldots n+p-1}{\overline{p-1}\times n+q \cdot n + q+1 \ldots\ldots n+p+q-2}</formula></orig><reg><formula>\frac{n+p-1}{p-1} \cdot -\frac{n(n+1)(n+2)\ldots(n+p-1)}{(p-1)\cdot(n+q)(n+q+1)\ldots(n+p+q-2)}</formula></reg></choice>
-  <lb/><choice><orig><formula>-\times\frac{n-p-1}{p+1}+\frac{q+n-1\cdot q+n-2 \ldots\ldots q+n-p-1}{\overline{p+1}\times n-1 \cdot n-2 \ldots\ldots n-p}.</formula></orig><reg><formula>\cdot - \frac{n-p-1}{p+1}+\frac{(q+n-1)(q+n-2)\ldots(q+n-p-1)}{(p+1)(n-1)(n-2) \ldots (n-p)}.</formula></reg></choice><!-- ToDo: Formel (speziell c dots zu ldot anpassen) -->
+  <lb/><choice><orig><formula>\frac{n+p-1}{p-1}-\times \frac{n\cdot n+1 \cdot n+2 \ldots\ldots\ldots n+p-1}{\overline{p-1}\times n+q \cdot n + q+1 \ldots\ldots n+p+q-2}</formula></orig><reg><formula>\frac{n+p-1}{p-1} \cdot \left(-\frac{n(n+1)(n+2)\ldots(n+p-1)}{(p-1)(n+q)(n+q+1)\ldots(n+p+q-2)}\right)</formula></reg></choice>
+  <lb/><choice><orig><formula>-\times\frac{n-p-1}{p+1}+\frac{q+n-1\cdot q+n-2 \ldots\ldots q+n-p-1}{\overline{p+1}\times n-1 \cdot n-2 \ldots\ldots\ldots n-p}</formula></orig><reg><formula>- \frac{n-p-1}{p+1}+\frac{(q+n-1)(q+n-2)\ldots(q+n-p-1)}{(p+1)(n-1)(n-2) \ldots (n-p)}</formula></reg></choice><supplied>.</supplied>
   <lb/>soient plus simples que la vostre en ce qu’il y a beaucoup moins de
-  <lb/>facteurs qui se detruisent ainsi qu’il paroist par cet exemple. Soit <choice><orig>a</orig><reg>à</reg></choice> trouver
-  <lb/>la somme des 20 1<hi rend="sup">ers</hi> termes de cette suitte<supplied>:</supplied>
-  <lb/><formula>\frac{1}{1}+\frac{7}{4}+\frac{28}{10}+\frac{84}{20}+\frac{210}{35}+\frac{462}{56}+\mbox{etc.}</formula><supplied>,</supplied> dans laquelle <formula>n=7</formula>, <formula>p=3</formula>, <formula>q=20</formula><supplied>,</supplied> <formula>d=4</formula><supplied>;</supplied>
-  <lb/>ma formule donne <formula>-\frac{3}{4}+\frac{26\cdot25\cdot24\cdot23}{4\times 4\cdot5\cdot6}=-\frac{3}{4}+\frac{130\times 23}{4}=747\frac{1}{4}</formula><supplied>;</supplied>
-  <lb/>la vostre donne <formula>-\frac{3}{4}+\frac{7\cdot8\cdot9\cdot10\cdot11\cdot12\cdot13\cdot14\cdot \ldots \cdot 26}{4\times 4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10 \cdot \ldots \cdot 22}</formula><supplied>;</supplied> mais <choice><orig>a</orig><reg>à</reg></choice> dire
+  <lb/>facteurs qui se detruisent ainsi qu’il paroist par cet exemple. <choice><orig>soit</orig><reg>S</reg></choice>oit <choice><orig>a</orig><reg>à</reg></choice> trouver
+  <lb/>la somme des 20 1<hi rend="sup">ers</hi> termes de cette suitte
+  <lb/><choice><orig><formula>\frac{1}{1}+\frac{7}{4}+\frac{28}{10}+\frac{84}{20}+\frac{210}{35}+\frac{462}{56}+\text{\&amp;c}</formula></orig><reg><formula>\frac{1}{1}+\frac{7}{4}+\frac{28}{10}+\frac{84}{20}+\frac{210}{35}+\frac{462}{56}+\text{etc.}</formula></reg></choice><supplied>,</supplied><note type="editorial">Handschriftliche Korrekturen in der Formel.</note> dans laquelle <formula>n=7</formula>, <formula>p=3</formula>, <formula>q=20</formula><supplied>,</supplied> <formula>d=4</formula><supplied>,</supplied>
+  <lb/>ma formule donne <choice><orig><formula>-\frac{3}{4}+\frac{26\cdot25\cdot24\cdot23}{4\times4\cdot5\cdot6}=-\frac{3}{4}+\frac{130\times 23}{4}=747\frac{1}{4}</formula></orig><reg><formula>-\frac{3}{4}+\frac{26\cdot25\cdot24\cdot23}{4\cdot4\cdot5\cdot6}=-\frac{3}{4}+\frac{130\cdot23}{4}=747\frac{1}{4}</formula></reg></choice><supplied>;</supplied>
+  <lb/>la vostre donne <choice><orig><formula>-\frac{3}{4}+\frac{7\cdot8\cdot9\cdot10\cdot11\cdot12\cdot13\cdot14 \; . \ldots 26}{4\times 4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10 \; .\ldots 22}</formula></orig><reg><formula>-\frac{3}{4}+\frac{7\cdot8\cdot9\cdot10\cdot11\cdot12\cdot13\cdot14\cdot\ldots\cdot 26}{4\cdot 4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10\cdot\ldots\cdot 22}</formula></reg></choice><supplied>,</supplied> mais <choice><orig>a</orig><reg>à</reg></choice> dire
   <lb/>le vray<supplied>,</supplied> la difference est petitte et <del/><add>on</add> peut employer les unes ou les
   <lb/>autres presque <choice><orig>a</orig><reg>à</reg></choice> croix pile<supplied>,</supplied> toutte la difference consiste <choice><orig>a</orig><reg>à</reg></choice> employer
-  <lb/><formula>\mp n \pm d</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> pour <formula>p</formula>.
-</p><!-- bis hier kollationiert -->
+  <lb/><formula>\mp n \pm d</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><note type="editorial">Korrektur im <formula>\mp</formula> und <formula>d</formula>.</note> pour <formula>p</formula>.
+</p>
 <p>
-  <lb/>Vous avez parfaittement bien remarqué que <formula>(g+(n-1).h)f-\frac{fp}{2}-fh</formula>
-  <lb/>se detruisent. Cela est evident en mettant pour <formula>p</formula> sa valeur <formula>29+2nh-4h</formula>.
-  <lb/>Vostre formule n’est differente de la mienne qu’en ce que vous ne vous
-  <lb/>estes pas servi de cette substitution. Au reste cette formule <formula>fp-fh(n-m-2)</formula>
-  <lb/><formula>\cdot2^{n-m-1}+p-nh+2h.2^{n-3}a+\mbox{etc.}</formula> est du moins aussi simple que celle
-  <lb/>cy <formula>f\times2^{n-m-1}.29+(n+m-2)h+(29+nh-2h)2^{n-3}a+\mbox{etc.}</formula>
+  <lb/>Vous avez parfaittement bien remarqué que <choice><orig><formula>\overline{g+\overline{n-1}\times h}f-\frac{fp}{2}-fh</formula></orig><reg><formula>(g+(n-1)h)f-\frac{fp}{2}-fh</formula></reg></choice>
+  <lb/>se detruisent. <choice><orig>cela</orig><reg>Cela</reg></choice> est evident en mettant pour <formula>p</formula> sa valeur <formula>29+2nh-4h</formula><supplied>.</supplied>
+  <lb/>Vostre formule n<supplied>’</supplied>est differente de la mienne qu<supplied>’</supplied>en ce que vous ne vous
+  <lb/>estes pas servi de cette substitution<supplied>.</supplied> Au reste cette formule <choice><orig><formula>fp-fh\times\overline{n-m-2}</formula></orig><reg><formula>fp-fh(n-m-2)</formula></reg></choice>
+  <lb/><choice><orig><formula>2^{n-m-1}+p-nh+2h\times 2^{n-3}a+\text{\&amp;c.}</formula></orig><reg><formula>2^{n-m-1}+p-nh+2h2^{n-3}a+\text{etc.}</formula></reg></choice> est du moins aussi simple que celle<supplied>-</supplied><lb break="no"/>cy <choice><orig><formula>f\times2^{n-m-1}\times 2g+\overline{n+m-2}h+\overline{2g+nh-2h}\times 2^{n-3}a+\text{\&amp;c}</formula></orig><reg><formula>f\cdot2^{n-m-1}\cdot2g+(n+m-2)h+(2g+nh-2h)2^{n-3}a+\text{etc.}</formula></reg></choice><supplied>.</supplied>
   <lb/>Vostre formule pour le theoreme 7 est tres juste et estimable
-  <lb/>en ce qu’avec de legers changemens elle donne la solution du theoreme
-  <lb/>8. Au reste, il me semble que la mienne l’emporte pour la simplicité.
-  <lb/>Il est vray, Monsieur, que les deux exemples que je donne pour mon
-  <lb/><abbr>prob.</abbr> 9 n’ont point de rapport <choice><orig>a</orig><reg>à</reg></choice> l’énoncé. Vous avez raison de dire que le
+  <lb/>en ce qu<supplied>’</supplied>avec de legers changemens elle donne la solution du theoreme
+  <lb/>8. Au reste il me semble que la mienne l<supplied>’</supplied>emporte pour la simplicité<supplied>.</supplied>
+  <lb/>Il est vray<supplied>,</supplied> Monsieur<supplied>,</supplied> que les deux exemples que je donne pour mon
+  <lb/><abbr>prob.</abbr> 9 n<supplied>’</supplied>ont point de rapport <choice><orig>a</orig><reg>à</reg></choice> l<supplied>’</supplied>enoncé. <choice><orig>vous</orig><reg>Vous</reg></choice> avez raison de dire que le
 <pb facs="1361869" n="3"/> 
-  <lb/>quantiesme terme de cette suitte <formula>4+23+102+\mbox{etc.}</formula> est <formula>a+pb+\frac{p(p-1)}{1\cdot2}\cdot c</formula>
-  <lb/><formula>+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot d+</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>\frac{f}{q^{s}} \cdot \left[ 
-    (1+q)^{p} 
-    - 1 
-    - pq 
-    - \frac{p(p-1)}{1 \cdot 2} \cdot q^{2} 
-    - \frac{p(p-1)(p-2)}{1 \cdot 2 \cdot 3} \cdot q^{3} 
-    - \ldots\ldots \text{ jusqu'à } 
-    \frac{p(p-1)(p-2)\ldots(p-s+2)}{1 \cdot 2 \cdot 3 \ldots (s-1)} \cdot q^{s-1}
-    \right]</formula>
-  <lb/>Cette formule est précisément la meme que celle du theor. 8
+  <lb/>quantiesme terme de cette suitte <choice><orig><formula>4+23+102+\text{\&amp;c}</formula></orig><reg><formula>4+23+102+\text{etc.}</formula></reg></choice> est <choice><orig><formula>a+pb+\frac{p\cdot p-1}{1\cdot2} c</formula></orig><reg><formula>a+pb+\frac{p(p-1)}{1\cdot2} c</formula></reg></choice><note type="editorial">Diese Formel wurde wegen einem unklaren Pluszeichen mit der ursprünglichen, von Nic. I B. auf dem Brief von Montmort von 23.03.1715 notierten Formel (siehe am unteren Rand der Seite 26) verglichen.</note>
+  <lb/><choice><orig><formula>+\frac{p\cdot p-1\cdot p-2}{1\cdot2\cdot3} d+\text{\&amp;c}</formula></orig><reg><formula>+\frac{p\cdot (p-1)\cdot (p-2)}{1\cdot2\cdot3} d+\text{etc.}</formula></reg></choice> <choice><orig><formula>+\frac{f}{q^{s}} \times \overline{ 
+        \overline{1+q}^{p} - 1 - p\cdot q - \frac{p\cdot p-1}{1 \cdot 2} q^{2} - \frac{p\cdot p-1\cdot p-2}{1 \cdot 2 \cdot 3} q^{3}}</formula></orig><reg><formula>+\frac{f}{q^{s}} \cdot \bigl((1+q)^{p} - 1 - p\cdot q - \frac{p\cdot p-1}{1 \cdot 2} q^{2} - \frac{p\cdot p-1\cdot p-2}{1 \cdot 2 \cdot 3} q^{3}\phantom{\bigr)}</formula></reg></choice>
+  <lb/><choice><orig><formula>\overline{\ldots\ldots \text{ jusqua } - \frac{p\cdot p-1\cdot p-2\, \ldots\ldots\, p-s+2}{1 \cdot 2 \cdot 3\; .\ldots \, s-1} q^{s-1}}</formula></orig>
+    <reg><formula>\phantom{\bigl(}\ldots \text{ jusqu'à } - \frac{p\cdot (p-1)\cdot (p-2)\cdot \ldots \cdot (p-s+2)}{1 \cdot 2 \cdot 3\cdot \ldots \cdot (s-1)} q^{s-1}\bigr)</formula></reg></choice><supplied>.</supplied>
+  <lb/><choice><orig>cette</orig><reg>Cette</reg></choice> formule est precisement la meme que celle du <abbr>theor.</abbr> 8
   <lb/>et quadre fort bien avec ma solution des deux exemples.
 </p>
 <p>
-  <lb/>Je remarque seulement qu’il faut <formula>f=r</formula> et non <formula>fq=r</formula>, comme j’avois
+  <lb/>Je remarque seulement qu<supplied>’</supplied>il faut <formula>f=r</formula> et non <formula>fq=r</formula> comme j<supplied>’</supplied>avois
   <lb/>mis apparemment dans ma <rs type="biblio">copie</rs>. J’avois trouvé ces deux problemes
-  <lb/><hi rend="u">trouver le quantiesme et trouver la somme</hi>. J’ay sans doutte brouillé
-  <lb/>en copiant, car celuy qui a un de ces deux problemes, a l’autre.
-  <lb/>Ils dependent tous deux de la meme methode, c’est <choice><orig>a</orig><reg>à</reg></choice> dire de la methode
-  <lb/>que j’ay employé, pour le <abbr>prob.</abbr> 8, qui consiste 1° <choice><orig>a</orig><reg>à</reg></choice> considerer que la somme
-  <lb/>de ces suittes est composée de termes, dont les coefficients sont ceux de la
-  <lb/>formation des puissances d’un binome, et dont les exposants sont en
-  <lb/>progression geometrique. 2°. <choice><orig>a</orig><reg>à</reg></choice> y faire par addition, soustraction,
+  <lb/><cit><quote><hi rend="u">trouver le quantiesme et trouver la somme</hi></quote></cit>. J<supplied>’</supplied>ay sans doutte brouillé
+  <lb/>en copiant<supplied>,</supplied> <del/><add>c</add>ar celuy qui <choice><orig>à</orig><reg>a</reg></choice> un de ces deux problemes, a l<supplied>’</supplied>autre<supplied>.</supplied>
+  <lb/>Ils dependent tous deux de la meme methode<supplied>,</supplied> c<supplied>’</supplied>est <choice><orig>a</orig><reg>à</reg></choice> dire de la methode
+  <lb/>que j<supplied>’</supplied>ay employé pour le <abbr>prob.</abbr> 8<choice><orig>.</orig><reg>,</reg></choice> qui consiste 1.<hi rend="sup">o</hi> <choice><orig>a</orig><reg>à</reg></choice> considerer que la somme
+  <lb/>de ces suittes est composée de termes<supplied>,</supplied> dont les coefficients sont ceux de la
+  <lb/>formation des puissances d<supplied>’</supplied>un binome et dont les exposants sont en
+  <lb/>progression geometrique. 2.<hi rend="sup">o</hi> <choice><orig>a</orig><reg>à</reg></choice> y faire par addition, soustraction,
   <lb/>multiplication et division ce qui convient pour reduire la somme
-  <lb/>cherchée <choice><orig>a</orig><reg>à</reg></choice> la formule du binome, enfin pour vous oster tout
-  <lb/>soupçon que je n’usse point la formule du <abbr>prob.</abbr> 9. J’adjouterai
-  <lb/>que ce <abbr>prob.</abbr> n’est qu’un cas particulier du theor. 10. Sçavoir lorsque <formula>m=n</formula>,
-  <lb/>vous ne parlez point de ce <abbr>prob.</abbr>, c’est pourtant un des plus fins
-  <lb/>et peut-estre celuy qui meriteroit le mieux d’estre perfectionné.
-  <lb/>J’ay mis depuis la solution sous une autre forme que voicy. Soit
-  <lb/><formula>a</formula> le l<hi rend="sup">er</hi> terme de la suitte, <formula>b</formula> la l<hi rend="sup">ere</hi> difference, <formula>na</formula> la <add>2<hi rend="sup">e</hi></add>, <formula>mb</formula> la 3<hi rend="sup">eme</hi>,
-  <lb/><formula>a\times n^{2}</formula> la 4<hi rend="sup">eme</hi>, <formula>b\times m^{2}</formula> la 5<hi rend="sup">eme</hi> <formula>a\times n^{3}</formula> la 6<hi rend="sup">eme</hi>, <formula>b\times m^{3}</formula> la 7<hi rend="sup">eme</hi> <formula>a\times n^{4}</formula> la
-  <lb/>8<hi rend="sup">eme</hi> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> La <hi rend="u">somme du nombre des termes</hi> <formula>p</formula> <hi rend="sup">est exprimé par cette</hi>
-  <lb/>formule <choice><orig><formula>\frac{a\cdot\overline{\overline{1+\sqrt{n}}^{p}-\overline{1-\sqrt{n}}^{p}}}{2\sqrt{n}}+\frac{b\cdot\overline{\overline{1+\sqrt{m}}^{p}+\overline{1-\sqrt{m}}^{p}-2}}{2m}</formula></orig><reg><formula>\frac{a\cdot\left((1+\sqrt{n})^{p}-(1-\sqrt{n})^{p}\right)}{2\sqrt{n}}+\frac{b\cdot\left((1+\sqrt{m})^{p}+(1-\sqrt{m})^{p}-2\right)}{2m}</formula></reg></choice>.
-  <lb/>Etant donnée cette suitte <formula>f^{r}+p\cdot f^{r-m}+\frac{p(p-1)}{1\cdot2}\cdot f^{r-2m}</formula>
-  <lb/><formula>+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot f^{r-3m}++\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot f^{r-4m}+\mbox{etc.}</formula>
-<pb facs="1361870" n="4"/>   
-  <lb/>dont la somme <choice><orig><formula>= \overline{f^{m}+1}^{p}\times f^{r-pm}</formula></orig><reg><formula>= (f^{m}+1)^{p}\times f^{r-pm}</formula></reg></choice>. J’ay trouvé que la
-  <lb/>somme du 1<hi rend="sup">er</hi>, 3<hi rend="sup">eme</hi>, 5<hi rend="sup">eme</hi>, 7<hi rend="sup">eme</hi> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> terme étoit <choice><orig><formula>\frac{\overline{f^{m}+1}^{p}+\overline{f^{m}-1}^{p}}{2\cdot f^{pm-r}}</formula></orig><reg><formula>\frac{(f^{m}+1)^{p}+(f^{m}-1)^{p}}{2\cdot f^{pm-r}}</formula></reg></choice>.
+  <lb/><choice><orig>cherchee</orig><reg>cherchée</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> la formule du binome. <choice><orig>en fin</orig><reg>Enfin</reg></choice> pour vous oster tout
+  <lb/>soupçon que je n<supplied>’</supplied>usse point la formule du <abbr>prob.</abbr> 9<supplied>.</supplied> J’adjouterai
+  <lb/>que ce <abbr>prob.</abbr> n’est qu<supplied>’</supplied>un cas particulier du <abbr>theor.</abbr> 10<supplied>,</supplied> <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> lorsque <formula>m=n</formula><supplied>,</supplied>
+  <lb/>vous ne parlez point de ce <abbr>prob.</abbr><supplied>,</supplied> c<supplied>’</supplied>est pourtant un des plus fins
+  <lb/>et p<del/><add>e</add>ut-estre celuy qui meriteroit le mieux d<supplied>’</supplied>estre perfectionné.
+  <lb/>J<supplied>’</supplied>ay mis depuis la solution sous une autre forme que voicy<supplied>.</supplied> Soit
+  <lb/><formula>a</formula> le 1<hi rend="sup">er</hi> terme de la suitte<supplied>,</supplied> <formula>b</formula> la 1<hi rend="sup">ere</hi> difference, <formula>na</formula> la <add>2<hi rend="sup">e</hi></add>, <formula>mb</formula> la 3<hi rend="sup">eme</hi>,
+  <lb/><choice><orig><formula>a\times n^{2}</formula></orig><reg><formula>a\cdot n^{2}</formula></reg></choice> la 4<hi rend="sup">eme</hi>, <choice><orig><formula>b\times m^{2}</formula></orig><reg><formula>b\cdot m^{2}</formula></reg></choice> la 5<hi rend="sup">eme</hi>, <choice><orig><formula>a\times n^{3}</formula></orig><reg><formula>a\cdot n^{3}</formula></reg></choice> la 6<hi rend="sup">eme</hi>, <choice><orig><formula>b\times m^{3}</formula></orig><reg><formula>b\cdot m^{3}</formula></reg></choice> la 7<hi rend="sup">eme</hi>, <choice><orig><formula>a\times n^{4}</formula></orig><reg><formula>a\cdot n^{4}</formula></reg></choice> la
+  <lb/>8<hi rend="sup">eme</hi><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr><supplied>,</supplied> la <hi rend="u">somme du nombre de termes</hi> <formula>p</formula> <hi rend="sup">est exprimé par cette</hi>
+  <lb/>formule <choice><orig><formula>\frac{a\times\overline{\overline{1+\sqrt{}n}^{p}- \times \overline{1-\sqrt{}n}^{p}}}{2\sqrt{}n}+\frac{b\times\overline{\overline{1+\sqrt{}m}^{p}+\overline{1-\sqrt{}m}^{p}-2}}{2m}</formula></orig><reg><formula>\frac{a \left((1+\sqrt{n})^{p}-(1-\sqrt{n})^{p}\right)}{2\sqrt{n}}+\frac{b \left((1+\sqrt{m})^{p}+(1-\sqrt{m})^{p}-2\right)}{2m}</formula></reg></choice>.<note type="editorial">Ein überflüssiges Malzeichen wurde in der normalisierten Fassung weggelassen. Beim zweiten Bruch ist der Bruchstrich im Original zu kurz.</note>
+  <lb/><choice><orig>etant</orig><reg>Etant</reg></choice> donnée cette suitte <choice><orig><formula>f^{r}+p\times f^{r-m}+\frac{p\cdot p-1}{1\cdot2}\times f^{r-2m}</formula></orig><reg><formula>f^{r}+p\cdot f^{r-m}+\frac{p(p-1)}{1\cdot2}\cdot f^{r-2m}</formula></reg></choice>
+  <lb/><choice><orig><formula>+\frac{p\cdot p-1\cdot p-2}{1\cdot2\cdot3}\times f^{r-3m}+\frac{p\cdot p-1\cdot p-2\cdot p-3}{1\cdot2\cdot3\cdot4} f^{r-4m}+\text{ \&amp;c}</formula></orig><reg><formula>+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot f^{r-3m}+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot f^{r-4m}+ \text{etc.}</formula></reg></choice>
+<pb facs="1361870" n="4"/> 
+  <lb/>dont la somme <choice><orig><formula>= \overline{f^{m}+1}^{p}\times f^{r-pm}</formula></orig><reg><formula>= (f^{m}+1)^{p}\cdot f^{r-pm}</formula></reg></choice> <choice><orig>J</orig><reg>j</reg></choice><supplied>’</supplied>ay trouvé que la
+  <lb/>somme du 1<hi rend="sup">er</hi>, 3<hi rend="sup">eme</hi>, 5<hi rend="sup">eme</hi>, <del/><add>7</add><hi rend="sup">eme</hi> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> terme etoit <choice><orig><formula>\frac{\overline{f^{m}+1}^{p}+\overline{f^{m}-1}^{p}}{2\times f^{pm-r}}</formula></orig><reg><formula>\frac{(f^{m}+1)^{p}+(f^{m}-1)^{p}}{2\cdot f^{pm-r}}</formula></reg></choice><supplied>.</supplied>
 </p>
 <p>
-  <lb/>Quand j’ay dit, Monsieur, que je croiois estre le
-  <lb/>l<hi>er</hi> qui eust donné la solution de ce probleme <hi rend="u">etant donnée une
-  <lb/>suitte de termes qui aient une derniere difference constante,
-  <lb/>trouver la somme</hi>. Je n’ignorois pas que feu <abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509950" type="person">Oncle</rs>
-  <lb/>l’eust resolu avant moy. J’en etois instruit par les <rs type="biblio">eloges</rs> que j’ay vu
-  <lb/>de luy dans les <rs type="biblio">journaux</rs> de <rs key="place_VER-frankr" type="place">France</rs>, dans les <rs type="biblio">memoires</rs> de l’<rs type="organisation">academie</rs>
-  <lb/>et aussi par une <rs type="letter">lettre</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs>, où il me parloit de ce probleme
-  <lb/>comme d’un probleme nouveau et fort beau qui se devoit trouver
-  <lb/>dans l’ouvrage posthume de <rs type="biblio">Arte conjectandi</rs>. Ce que j’ay dit
-  <lb/>dans ma <rs type="letter">lettre</rs> n’a rien de contraire <choice><orig>a</orig><reg>à</reg></choice> cela. J’ignorois <choice><orig>a</orig><reg>à</reg></choice> la verité
-  <lb/>qu’un <rs key="pers_DE-588-126788103" type="person">Auteur allemand</rs> en eust donné la solution, et sans vous, je
-  <lb/>l’aurois apparemment ignoré toutte ma vie, ainsi que tous les
-  <lb/>autres Geometres qui ne sçavent point l’allemand. Je n’entend point
-  <lb/>ce que vous voulez dire par cet autre probleme <hi rend="u">trouver les sommes
-  <lb/>quelconque de cette progression geo metrique <formula>1, 3, 9, 27</formula></hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>., car je
-  <lb/>crois que depuis <rs key="pers_DE-588-118503863" type="person">Archimede</rs> on sçait trouver les sommes des progressions
-  <lb/>Geometriques.
+  <lb/>Quand j<supplied>’</supplied>ay dit<supplied>,</supplied> Monsieur<supplied>,</supplied> que je croiois estre le
+  <lb/>1<hi>er</hi> qui eust donné la solution de ce probleme<choice><orig>.</orig><reg>:</reg></choice> <hi rend="u">etant donnée une
+  <lb/>suitte de termes qui aient une derniere difference constante<supplied>,</supplied>
+  <lb/>trouver la somme</hi>. Je n<supplied>’</supplied>ignorois pas que feu <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509950" type="person">Oncle</rs>
+  <lb/>l<supplied>’</supplied>eust resolu avant moy. J<supplied>’</supplied>en etois instruit par les <rs type="biblio">eloges</rs> que j<supplied>’</supplied>ay vu
+  <lb/>de luy dans les journaux de <rs key="place_VER-frankr" type="place"><choice><orig>france</orig><reg>France</reg></choice></rs>, dans les <rs type="biblio"><choice><orig>memoires</orig><reg>Memoires</reg></choice></rs> de l<supplied>’</supplied><rs type="organisation">academie</rs>
+  <lb/>et aussi par une <rs type="letter">lettre</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs><reg>,</reg> <choice><orig>ou</orig><reg>où</reg></choice> il me parloit de ce probleme
+  <lb/>comme d<supplied>’</supplied>un probleme nouveau et fort beau<supplied>,</supplied> qui se devoit trouver
+  <lb/>dans l<supplied>’</supplied>ouvrage posthume <rs type="biblio">de Arte conjectandi</rs>. <choice><orig>ce</orig><reg>Ce</reg></choice> que j<supplied>’</supplied>ay dit
+  <lb/>dans ma <rs type="letter">lettre</rs> n<supplied>’</supplied>a rien de contraire <choice><orig>a</orig><reg>à</reg></choice> cela. J’ignorois <choice><orig>a</orig><reg>à</reg></choice> la verité
+  <lb/>qu<supplied>’</supplied>un <rs key="pers_DE-588-126788103" type="person">auteur Allemand</rs> en eust donné la solution<supplied>,</supplied> et sans vous je
+  <lb/>l<supplied>’</supplied>aurois apparemment ignoré toutte ma vie<choice><orig>.</orig><reg>,</reg></choice> ainsi que tous les
+  <lb/>autres Geometres qui ne <choice><orig>scavent</orig><reg>sçavent</reg></choice> point l’allemand. Je n<supplied>’</supplied>entend point
+  <lb/>ce que vous voulez dire par cet autre probleme <cit><quote><hi rend="u">trouver les sommes
+        <lb/><choice><sic>quelconque</sic><corr>quelconques</corr></choice> de cette progression geometrique 1, 3, 9, 27,<space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></hi></quote></cit><supplied>,</supplied> car je
+  <lb/>crois que depuis <rs key="pers_DE-588-118503863" type="person">Archimede</rs> on <choice><orig>scait</orig><reg>sçait</reg></choice> trouver les sommes des progression<unclear>s</unclear>
+  <lb/>geometriques<supplied>.</supplied>
 </p>
 <p>
-  <lb/>Il est vray, Monsieur, que j’ay eu tort de faire la remarque
-  <lb/>suivante, sçavoir qu’on peut sans beaucoup de peine appliquer des
-  <lb/>nombres figurés d’un triangle Arithmetique quelconque les solutions
-  <lb/>que j’ay données, ce que j’ay avancé est vray <choice><orig>a</orig><reg>à</reg></choice> l’égard de quelqu’uns,
-  <lb/>mais ne l’est pas generallement et en particulier dans cette suitte
-  <lb/><formula>\frac{1}{1}+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+</formula><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> et une infinité d’autres pareilles, dont
-  <lb/>je ne voudrois pas m’engager <choice><orig>a</orig><reg>à</reg></choice> trouver les sommes.
+  <lb/>Il est vray<supplied>,</supplied> Monsieur<supplied>,</supplied> que j<supplied>’</supplied>ay eu tort de faire la remarque
+  <lb/>suivante, <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> qu’on peut sans beaucoup de peine appliquer <choice><orig>a</orig><reg>à</reg></choice> des
+  <lb/>nombres <choice><orig>figures</orig><reg>figurés</reg></choice> d<supplied>’</supplied>un triangle Arithmetique quelconque les solutions
+  <lb/>que j<supplied>’</supplied>ay données, ce que j<supplied>’</supplied>ay avancé est vray <choice><orig>a</orig><reg>à</reg></choice> l<supplied>’</supplied>egard de quelqu<supplied>’</supplied>uns<supplied>,</supplied>
+  <lb/>mais ne l<supplied>’</supplied>est pas generallement et en particulier dans cette suitte
+  <lb/><choice><orig><formula>\frac{1}{1}+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+ \text{ \&amp;c}</formula></orig><reg><formula>\frac{1}{1}+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+ \text{etc.}</formula></reg></choice> et une <choice><orig>infinite</orig><reg>infinité</reg></choice> d<supplied>’</supplied>autres pareilles<choice><orig>.</orig><reg>,</reg></choice> dont
+  <lb/>je ne voudrois pas m<supplied>’</supplied>engager <choice><orig>a</orig><reg>à</reg></choice> trouver les sommes.
 </p>
 <p>
-  <lb/>Je n’ai pas encore eu le temps d’examiner vos solutions des
+  <lb/>Je n<supplied>’</supplied>ai pas encore eu le temps d<supplied>’</supplied>examiner vos solutions des
   <lb/>nouveaux problemes sur la Poulle.
 </p>
 <pb facs="1361871" n="5"/>
 <p>
-  <lb/>J’ay ry de l’endroit de vostre <rs type="letter">lettre</rs> où sur la foy de la
-  <lb/><rs type="biblio">Gazette</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs> vous croyez que j’ay fait avec <abbr>M<hi rend="sup">rs</hi>.</abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> et
+  <lb/>J<supplied>’</supplied>ay ry de l’endroit de vostre <rs type="letter">lettre</rs> <choice><orig>ou</orig><reg>où</reg></choice> sur la foy de la
+  <lb/><rs type="biblio">Gazette</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs><supplied>,</supplied> vous croyez que j’ay fait avec <abbr>M<supplied>.</supplied><hi rend="sup">rs</hi></abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> et
   <lb/><rs key="pers_DE-588-117536148" type="person">Geoffroy</rs> des <rs type="biblio">decouvertes</rs> sur le grand probleme des Longitudes. Je ne tente
-  <lb/>gueres les choses difficiles et point du tout celles qui passent pour impossibles.
-  <lb/>Quand j’ay eu l’honneur de vous dire qu’on se plaignoit un peu
-  <lb/>en <rs key="place_VER-englan" type="place">Angleterre</rs> de vous et de <abbr>Mr.</abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, j’ay seulement voulu
-  <lb/>parler de quelques <rs type="person">amis</rs> de <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, qui croyent que vous avez
-  <lb/>pris parti pour <abbr>M<hi rend="sup">r</hi>.</abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> contre <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> et trouvent <choice><orig>a</orig><reg>à</reg></choice>
-  <lb/>redire que vous aiez tous deux relevé, quoyqu’avec beaucoup d’honesteté
-  <lb/>et de consideration, quelques fautes que vous avez cru remarquer dans
-  <lb/>le <rs type="biblio">livre</rs> de <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <abbr>Philos.</abbr> <abbr>nat.</abbr> <abbr>ppia.</abbr> <abbr>Math.</abbr>
+  <lb/>gueres les choses difficiles et point du tout celles qui passent pour impossibles<supplied>.</supplied>
+  <lb/>Quand j<supplied>’</supplied>ay eu l’honneur de vous dire qu’on se plaignoit un peu
+  <lb/>en <rs key="place_VER-englan" type="place">Angleterre</rs> de vous et de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. J<supplied>’</supplied>ay seulement voulu
+  <lb/>parler de quelques <rs type="person">amis</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs><choice><orig>.</orig><reg>,</reg></choice> qui croyent que vous avez
+  <lb/>pris parti pour <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> contre <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> et trouvent <choice><orig>a</orig><reg>à</reg></choice>
+  <lb/>redire que vous aiez tous deux relevé<supplied>,</supplied> quoyqu<supplied>’</supplied>avec beaucoup d<supplied>’</supplied><choice><orig>honestete</orig><reg>honesteté</reg></choice>
+  <lb/>et de consideration<supplied>,</supplied> quelques fautes que vous avez cru remarquer dans
+  <lb/>le <rs type="biblio">livre</rs> de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <rs type="biblio"><abbr>Philos.</abbr> <abbr>nat.</abbr> <choice><abbr>ppia</abbr><expan>principia</expan></choice> <abbr>Math.</abbr></rs>
 </p>
 <p>
-  <lb/><abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs> donna l’année passée au mois de <abbr>7<hi rend="sup">bre</hi></abbr> dans les <rs type="biblio">transactions
-  <lb/>philosophiques</rs> un <rs type="biblio">morceau</rs> dont voicy le tittre:
+  <lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs> donna l<supplied>’</supplied>année passée au mois de <date>7<hi rend="sup">bre</hi></date> dans les <choice><orig>transactions</orig><reg>Transactions</reg></choice>
+  <lb/>philosophiques un <rs type="biblio">morceau</rs> dont voicy le tittre<choice><orig>.</orig><reg>:</reg></choice>
 </p>
 <p>
-  <lb/><!--MS: In den folgenden lateinischen Passagen habe ich nicht umfassend tagen können.-->"<rs key="pers_DE-588-124275087" type="person"><abbr>Joh.</abbr> Keil</rs> <abbr>etc.</abbr> observationes in ea qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> edidit celeberrimus
-  <lb/>Geometra <rs key="pers_DE-588-118509969" type="person"><abbr>Joh.</abbr> Bernoulli</rs> in <rs type="biblio">commentariis</rs> physico mathematicis
-  <lb/>Parisiensibus Anno 1712 de imverso <abbr>prob.</abbr> virium centripetarum
-  <lb/>et <abbr>ejusd.</abbr> <abbr>probl.</abbr> Solutio nova."
+  <lb/><hi rend="u"><rs key="pers_DE-588-124275087" type="person"><abbr>Joh.</abbr> Keil</rs> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <rs type="biblio" key="biblio_8NRVNSGH">observationes in ea qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> edidit celeberrimus
+  <lb/>Geometra <rs key="pers_DE-588-118509969" type="person"><abbr>Joh.</abbr> Bernoulli</rs> in <rs type="biblio"><choice><sic>comentariis</sic><corr>Commentariis</corr></choice></rs> physico mathematicis
+  <lb/>parisiensibus Anno 1712 de inverso <abbr>prob.</abbr> virium centripetarum
+      <lb/>et <abbr>ejusd.</abbr> <abbr>probl.</abbr> Solutio nova</rs></hi>.<note type="editorial">Der Titel ist in der Handschrift lediglich am Anfang und am Ende unterstrichen.</note>
 </p>
 <p>
-  <lb/>Il prentend 1°. que la <rs type="biblio">demonstration</rs> que <abbr>M<hi rend="sup">r</hi>.</abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a donné
-  <lb/>de ce lemme qui est de <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>: si corpus cogente vi quacunque
+  <lb/><choice><orig>il</orig><reg>Il</reg></choice> prentend 1.<hi rend="sup">o</hi> que <del/><add>la</add> <rs type="biblio">demonstration</rs> qu<unclear reason="illegible">e</unclear> <abbr>M.<hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> a donné
+  <lb/>de ce Lemme qui est de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs><choice><orig>.</orig><reg>:</reg></choice> <cit><quote><foreign xml:lang="lat"><hi rend="u">Si corpus cogente vi quacunque
   <lb/>centripeta moveatur utcunque et corpus illud recta ascendat vel
-  <lb/>descendat, sintque eorum velocita tes in aliquo <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualium altitudinum
-  <lb/>casu <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales velocita tes eorum <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualibus altitudinibus
-  <lb/>essent <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales ne vaut pas celle de <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. 2°. que vostre formule
-  <lb/><formula>z=\frac{a^{2}c\cdot x}{\sqrt{abx^{4}-x^{4}\int\varphi\cdot x-a^{2}c^{2}x^{2}}}</formula> non magis a Newtoniana discrepari quam
-  <lb/>verba latinis litteris expressa differunt ab iisd. verbis scriptis in gr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cis
-  <lb/>caracteribus.
+  <lb/>descendat<supplied>,</supplied> sintque eorum velocitates in aliquo <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualium altitudinum
+  <lb/>casu <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales velocitates eorum in <choice><abbr>oibus</abbr><expan>omnibus</expan></choice> <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualibus altitudinibus
+          <lb/>essent <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quales</hi></foreign></quote></cit><note type="editorial">Keill, Observationes, 1714, p. 91.<!--  --> In der Handschrift ist das Zitat einzig durch die Unterstreichung der letzten Zeile gekennzeichnet.</note> ne vaut pas <del/><add>ce</add>lle de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. 2.<hi rend="sup">o</hi> que vostre formule
+  <lb/><cit><quote><formula>z=\frac{a^{2}c \dot{x}}{\sqrt{abx^{4}-x^{4}\int\varphi \dot{x}-a^{2}c^{2}x^{2}}}</formula><del/> <foreign xml:lang="lat">non magis a Newtoniana discrepari quam
+  <lb/>verba latinis <del/><add>lit</add>teris expressa differunt ab <choice><abbr>iisd.</abbr><expan>iisdem</expan></choice> verbis scriptis in gr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cis
+  <lb/>caracteribus.</foreign></quote></cit><note type="comment">Ibid. p. 94.</note>
 </p>
 <pb facs="1361872" n="6"/>
 <p>
-  <lb/>3°. que <del/><add><abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">oncle</rs> a</add> eu tort de dire <choice><expan>Doum</expan><expan>Dominum</expan></choice> <rs key="pers_DE-588-118587544" type="person">Newtonum</rs> supponere sine
-  <lb/>demonstratione curvas a tali vi de scriptas esse sectiones conicas et apres
-  <lb/>avoir essayé de le prouver assez superficiellement, il adjoute interim in
-  <lb/>nova <choice><abbr>ppiorum</abbr><expan>principiorum</expan></choice> editione facilior multo et magis clara licet tribus verbis
-  <lb/>extat hujus rei demonstratio quam est Bernoulliana.
+  <lb/>3.<hi rend="sup">o</hi> que <del/><add><abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">oncle</rs> a</add> eu tort de dire <cit><quote><foreign xml:lang="lat"><choice><expan>Do.um</expan><expan>Dominum</expan></choice> <rs key="pers_DE-588-118587544" type="person">Newtonum</rs> supponere sine
+  <lb/>demonstratione curvas a tali vi descriptas esse sectiones conicas</foreign></quote></cit> et apres
+  <lb/>avoir <choice><orig>essaye</orig><reg>essayé</reg></choice> de le prouver <del/><add>assez</add> superficiellement il adjoute <cit><quote><foreign xml:lang="lat">interim in
+        <lb/>nova <choice><abbr>p̄piorum</abbr><expan>Principiorum</expan></choice> editione facilior multo et magis clara licet tribus verbis
+  <lb/>extat hujus rei demonstratio quam est Bernoulliana</foreign></quote></cit>.
 </p>
 <p>
-  <lb/>Voicy ce qu’il dit de plus fort pour <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
+  <lb/>Voicy ce qu<supplied>’</supplied>il dit de plus fort pour <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
 </p>
 <p>
-  <lb/>Ex inde concludit <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> sectiones <add>tantum</add> coni cas necessario describi debere
+  <lb/><cit><quote><foreign xml:lang="lat">Exinde concludit <rs key="pers_DE-588-118587544" type="person">Newtonus</rs> sectiones <add>tantum</add> conicas necessario describi debere
   <lb/>per vim centripetam quadrato distanti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> reciproce proportionalem: nempe
   <lb/>quod curvarum orbit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> cujus<add>cun</add>que ex datis velocitate, vi centripeta et positione
   <lb/>tangentis datur; datis autem umbilico, puncto contactus et positione tangentis
-  <lb/>semper describi possit sectio conica, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> curvaturam illam datam habeat
-  <lb/>et il adjoute: hoc a me ostensum est in <rs type="biblio">actis philosophicis</rs> <rs key="place_GEO-2643743" type="place">Londinensibus</rs>
+  <lb/>semper describi possit sectio conica qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> curvaturam illam datam habeat</foreign></quote></cit>
+  <lb/>et il adjoute<choice><orig>.</orig><reg>:</reg></choice> <cit><quote><foreign xml:lang="lat">hoc a me ostensum est in <rs type="biblio"><choice><orig>actis</orig><reg>Actis</reg></choice> philosophicis</rs> <rs key="place_GEO-2643743" type="place">Londinensibus</rs>
   <lb/>Anno 1708. In <del/><add>hac</add> igitur sectione urgente vi illa movebitur corpus
   <lb/>et in nulla alia; cum corpus de eodem loco, secundum eandem directionem
-  <lb/>eadem cum velocitate et urgente eadem vi centripeta exiens, non
-  <lb/>possit diversas semitas describere. Il donne ensuitte une <rs type="biblio">solution</rs> qui
-  <lb/>paroist elegante du probleme inverse; ce qui est polemique et regarde
-  <lb/><abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, ne contient que 5 pages. Je les aurois copié, si j’avois été
-  <lb/>sûr de luy faire plaisir.
+  <lb/>eadem cum velocitate, et urgente eadem vi centripeta exiens, non
+  <lb/>possit diversas semitas describere</foreign></quote></cit>. <choice><orig>il</orig><reg>Il</reg></choice> donne ensuitte une <rs type="biblio">solution</rs> qui
+  <lb/>paroist elegante du probleme inverse<choice><orig>.</orig><reg>,</reg></choice> ce qui est polemique et regarde
+  <lb/><abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs><supplied>,</supplied> ne contient que 5 pages. Je les aurois copié si j<supplied>’</supplied>avois été
+  <lb/><choice><orig>sur</orig><reg>sûr</reg></choice> de luy faire plaisir.
 </p>
 <p>
-  <lb/>J’ay reçu d’<rs key="place_VER-englan" type="place">Angleterre</rs> depuis quelques jours un long <rs type="biblio">memoire</rs> inseré
-  <lb/>dans les <rs type="biblio">transactions philosophiques</rs> dont voicy le tiltre:
+  <lb/>J<supplied>’</supplied>ay <choice><orig>recu</orig><reg>reçu</reg></choice> d’<rs key="place_VER-englan" type="place">Angleterre</rs> depuis quelques jours un long <rs type="biblio">memoire</rs> inseré
+  <lb/>dans les <rs type="biblio"><choice><orig>transactions</orig><reg>Transactions</reg></choice> philosophiques</rs> dont voicy le ti<unclear>t</unclear>tre:
 </p>
 <p>
-  <lb/>An account of the <rs type="biblio">book</rs> entituled Commercium <abbr>Epist</abbr> <abbr>coll.</abbr> et alio de <abbr>anal.</abbr>
-  <lb/><abbr>prom.</abbr> published by order of the <rs type="organisation"><abbr>R. S.</abbr></rs> in relation to the dispute betwen
-  <lb/><abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> and <abbr>Dr.</abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs> about the Right of invention of the Method.
-  <lb/>of fluxions, by some call’d the differential Method.
+  <lb/>An account of the <rs type="biblio">book</rs> entituled <choice><orig>commercium</orig><reg>Commercium</reg></choice> <abbr>Epist.</abbr> <abbr>Coll.</abbr> et <choice><abbr>alio.</abbr><expan>aliorum</expan></choice> De <abbr>anal<supplied>.</supplied></abbr>
+  <lb/><choice><abbr>prom.</abbr><expan>promota</expan></choice> published by order of the <rs type="organisation"><abbr>R. S.</abbr></rs> in relation to the dispute betwen
+  <lb/><abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> and <abbr>D.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs> about the Right of invention of the Method<choice><orig>.</orig><reg type="deleted"/></choice>
+  <lb/>of fluxions, by some call’d the differential Method.<note type="comment">[Newton, Isaac], An Account of the Book entituled Commercium epistolicum Collinii <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> aliorum, De Analysi promota; published by order of the Royal Society in relation to the Dispute between Mr. Leibnitz and D. Keill, about the Right of Invention of the Method of Fluxions, by some call'd the Differential Method: Phil. Trans., 29, \no 342 (January and February 1714/5), London, 1717, pp. 173--224.</note>
 </p>
 <p>
-  <lb/>Ce <rs type="biblio">morceau</rs> contient 51 pages et est tres fort. Il s’en manque pourtant
+  <lb/>Ce <rs type="biblio">morceau</rs> contient 51 pages<choice><orig>.</orig><reg type="deleted"/></choice> et est tres fort. Il s<supplied>’</supplied>en manque pourtant
   <lb/>beaucoup que je ne l’approuve en tout: On y compare <choice><orig>a</orig><reg>à</reg></choice> la fin la maniere
-  <lb/>de philosopher de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> avec celle de <abbr>Mr.</abbr><hi rend="sup">de</hi> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>. Je ne sçai
-  <lb/>point l’<rs type="person">auteur</rs> de cette <rs type="biblio">dissertation</rs>. Je me souviens seulement que <abbr>M.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs>
-  <lb/>m’en parla, lorsque j’etois <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs>. Je soupçonne que l’auteur est <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs>
-  <lb/>et que cette <rs type="biblio">piece</rs> a eté revue par <abbr>M.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs>.
+  <lb/>de philosopher de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> avec celle de <abbr>M.</abbr><hi rend="sup">de</hi> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>. Je ne <choice><orig>scai</orig><reg>sçai</reg></choice>
+  <lb/>point l<supplied>’</supplied><rs type="person">auteur</rs> de cette <rs type="biblio">dissertation</rs>. Je me souviens seulement que <abbr>M.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs>
+  <lb/>m<supplied>’</supplied>en parla lorsque j<supplied>’</supplied>etois <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs>. Je <choice><orig>soupconne</orig><reg>soupçonne</reg></choice> que l’auteur est <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs>
+  <lb/>et que cette <rs type="biblio">piece</rs> a <choice><orig>ete</orig><reg>été</reg></choice> revüe par <abbr>M.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs>.
 </p>
 <p>
-  <lb/>Ce <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs> est un ardent champion; on m’avertit en confidence lorsque
+  <lb/><del/><add>Ce</add> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs> est un ardent champion<supplied>,</supplied> on m<supplied>’</supplied>avertit en confidence<supplied>,</supplied> lorsque
 <pb facs="1361873" n="7"/>
-  <lb/>j’etois <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs> qu’il avoit <rs type="biblio">écrit</rs> contre ce que j’ay dit en peu de mots
-  <lb/>de la philosophie de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <choice><orig>a</orig><reg>à</reg></choice> la page 397 de mon <rs type="biblio">livre</rs>, mais que <abbr>M<hi rend="sup">r</hi>.</abbr>
-  <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> l’avoit empesché d’imprimer la <rs type="biblio">critique</rs>.
+  <lb/>j<supplied>’</supplied>etois <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs><supplied>,</supplied> qu<supplied>’</supplied>il avoit <rs type="biblio">écrit</rs> contre ce que j<supplied>’</supplied>ay dit en peu de mots
+  <lb/>de la philosophie de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <choice><orig>a</orig><reg>à</reg></choice> la page 397 de mon <rs type="biblio">livre</rs><supplied>,</supplied> mais que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
+  <lb/><add><rs key="pers_DE-588-118587544" type="person">Newton</rs> l<supplied>’</supplied>avoit empesché d<supplied>’</supplied>imprimer la <rs type="biblio">critique</rs>.</add>
 </p>
 <p>
-  <lb/>M<hi rend="sup">r</hi>. <rs key="pers_DE-588-117586765" type="person">Moivre</rs> a reçu la <rs type="letter">lettre</rs> dont vous me parlez, qui contient entre
-  <lb/>autres choses deux solutions du probleme qu’il vous avoit proposé.
-  <lb/>C’est <choice><orig>a</orig><reg>à</reg></choice> la l<hi rend="sup">ere</hi> qu’il trouve <choice><orig>a</orig><reg>à</reg></choice> redire, il y soupçonne un parallogisme
-  <lb/>que je n’y ay point vu.
+  <lb/>M.<hi rend="sup">r</hi> <rs key="pers_DE-588-117586765" type="person">Moivre</rs> a reçu la <rs type="letter">lettre</rs> dont vous me parlez<supplied>,</supplied> qui contient entre
+  <lb/>autres choses deux solutions du probleme qu<supplied>’</supplied>il vous avoit proposé<supplied>;</supplied>
+  <lb/>c’est à la 1<hi rend="sup">ere</hi> qu<supplied>’</supplied>il trouve <choice><orig>a</orig><reg>à</reg></choice> redire<supplied>,</supplied> il y <choice><orig>soupconne</orig><reg>soupçonne</reg></choice> un parallogisme
+  <lb/>que <del/><add>j</add>e n<supplied>’</supplied>y ay point vu.
 </p>
 <p>
-  <lb/>Je serai dans un mois et demi <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs>. <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs> m’a envoyé
+  <lb/>Je serai dans un mois et demi <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs><supplied>.</supplied> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs> m’a envoyé
   <lb/>4 exemplaires de son <rs type="biblio">livre</rs>. Je vous en envoirai un et un pour <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
-  <lb/>vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, si vous m’apprenez, <choice><orig>a</orig><reg>à</reg></choice> qui je dois m’adresser. C’est un <rs type="biblio">livre</rs>
-  <lb/>excellent, mais trop court. Il est renforcé de choses nouvelles et tres
-  <lb/>difficiles. Il m’a envoyé depuis peu un nouveau <rs type="biblio">theoreme</rs>,
-  <lb/>dont je vais vous faire part, parce qu’il est fort beau:
-  <lb/><formula>\frac{a}{b-c}=\frac{a}{b}+\frac{a\cdot c}{b\cdot(b+d)}+\frac{a\cdot c\cdot(c+d)}{b(b+d)(b+2d)}+\frac{a\cdot c\cdot(c+d)(c+2d)}{b(b+d)(b+2d)(b+3d)}+</formula><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c ubi potest
+  <lb/>vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs><supplied>,</supplied> si vous m<supplied>’</supplied>apprenez <choice><orig>a</orig><reg>à</reg></choice> qui je dois m<supplied>’</supplied>adresser. <choice><orig>c</orig><reg>C</reg></choice><supplied>’</supplied>est un <rs type="biblio">livre</rs>
+  <lb/>excellent<supplied>,</supplied> mais trop court<supplied>;</supplied> il est renforcé de choses nouvelles et tres
+  <lb/>difficiles. Il m<supplied>’</supplied>a envoyé depuis peu un nouveau <rs type="biblio">theoreme</rs><supplied>,</supplied>
+  <lb/>dont je vais vous faire part, parce qu<supplied>’</supplied>il est fort beau<supplied>:</supplied>
+  <lb/><cit><quote><choice><orig><formula>\frac{a}{b-c}=\frac{a}{b}+\frac{a\cdot c}{b\cdot b+d}+\frac{a\cdot c\cdot c+d}{b\cdot  b+d\cdot b+2d}+\frac{a\cdot c\cdot c+d\cdot c+2d}{b\cdot b+d\cdot b+2d\cdot b+3d}+\text{ \&amp;c.}</formula></orig><reg><formula>\frac{a}{b-c}=\frac{a}{b}+\frac{ac}{b(b+d)}+\frac{ac(c+d)}{b(b+d)(b+2d)}+\frac{ac(c+d)(c+2d)}{b(b+d)(b+2d)(b+3d)}+\text{ etc.}</formula></reg></choice><supplied>,</supplied><note type="editorial">Handschriftliche Korrektur in der Formel.</note> <foreign xml:lang="lat">ubi potest
   <lb/><formula>d</formula> ad libitum sumi. Invenitur per divisionem algebraicam adeoque
-  <lb/>post quemlibet terminum residuo compleri potest, nam
-  <lb/><formula>\frac{1}{b-c}=\frac{1}{b}+\frac{c}{b(b-c)}=\frac{1}{b+d}+\frac{c+d}{(b+d)(b-c)}=\frac{1}{b+2d}+\frac{c+2d}{(b+2d)(b-c)}</formula>.
+  <lb/>post quemlibet terminum residuo compleri potest<supplied>,</supplied> nam
+</foreign>
+      <lb/><choice><orig><formula>\frac{1}{b-c}=\frac{1}{b}+\frac{c}{b\cdot  b-c}=\frac{1}{b+d}+\frac{c+d}{b+d\cdot b-c}=\frac{1}{b+2d}+\frac{c+2d}{b+2d\cdot b-c}</formula></orig><reg><formula>\frac{1}{b-c}=\frac{1}{b}+\frac{c}{b(b-c)}=\frac{1}{b+d}+\frac{c+d}{(b+d)(b-c)}=\frac{1}{b+2d}+\frac{c+2d}{(b+2d)(b-c)}</formula></reg></choice><supplied>.</supplied></quote></cit>
 </p>
 <p>
-  <lb/>Ce <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs> est un tres galand homme et jeune, qui soutiendra avec
+  <lb/><choice><orig>ce</orig><reg>Ce</reg></choice> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs> est un tres galand homme et jeune<choice><orig>.</orig><reg>,</reg></choice> qui soutiendra avec
   <lb/>éclat la reputation que les <rs type="person">Anglois</rs> se sont acquis par leur grande
   <lb/>connoissance de la profonde Geometrie.
 </p>
 <p>
   <lb/>Il est comme tous les autres <rs type="person">Anglois</rs> terriblement prevenu
-  <lb/>en faveur de la philosophie de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. J’ay eu la hardiesse
-  <lb/>de bien disputer icy contre luy et, qui pis est <add>et</add> va en moy presque jusqu’<choice><orig>a</orig><reg>à</reg></choice>
-  <lb/>l’insolence, j’ay osé disputer <add><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs></add> contre <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, qui pour cela ne
-  <lb/>m’a pas moins honoré de ses bontés. C’est en verité un <rs type="person">homme</rs>
-  <lb/>respectable et tres aimable. J’etois bien faché quand j’etois aupres
-  <lb/>de luy de ne sçavoir parler ni Anglois ni latin et d’estre obligé de
-  <lb/>me servir de truchement. <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs> m’a envoyé un grand <rs type="biblio">memoire</rs>
-<pb facs="1361874" n="8"/>    
-  <lb/>pour combattre la <rs type="biblio">physique</rs> du <abbr>P.</abbr> <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs>. Je luy
-  <lb/>prépare un long <rs type="biblio">memoire</rs> pour la soutenir et combattre celle qui
-  <lb/>regne en <rs key="place_VER-englan" type="place">Angleterre</rs>. Il, y a tres long temps que je n’ai eu de
-  <lb/>nouvelles de <abbr>M<hi rend="sup">r</hi>.</abbr> le <abbr>ch.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Je l’ai vu beaucoup cet été,
+  <lb/>en faveur de la philosophie de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. J<supplied>’</supplied>ay eu la hardiesse
+  <lb/>de bien disputer icy contre luy et<supplied>,</supplied> qui pis est <add>et</add> va en moy presque jusqu<supplied>’</supplied><choice><orig>a</orig><reg>à</reg></choice>
+  <lb/>l<supplied>’</supplied>insolence<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>J</orig><reg>j</reg></choice><supplied>’</supplied>ay osé disputer <add><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs></add> contre <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs><choice><orig>.</orig><reg>,</reg></choice> qui pour cela ne
+  <lb/>m<supplied>’</supplied>a pas moins honoré de ses <choice><orig>bontes</orig><reg>bontés</reg></choice>. <choice><orig>c</orig><reg>C</reg></choice><supplied>’</supplied>est en verité un <rs type="person">homme</rs>
+  <lb/>respectable et tres aimable. J<supplied>’</supplied>etois bien faché quand j<supplied>’</supplied>etois aupres
+  <lb/>de luy de ne <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> parler ni Anglois ni latin et d<supplied>’</supplied>estre <choice><orig>oblige</orig><reg>obligé</reg></choice> de
+  <lb/>me servir de truchement. <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs><choice><orig>.</orig><reg type="deleted"/></choice> m<supplied>’</supplied>a envoyé un grand <rs type="biblio">memoire</rs>
+<pb facs="1361874" n="8"/> 
+  <lb/>pour combattre la <rs type="biblio">phy<del/><add>si</add>que</rs><!-- Vermutlich La recherche de la verité, aber kontrollieren, ob es ein Titel ist --> du <abbr>P.</abbr> <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs>. Je luy
+  <lb/><choice><orig>preparé</orig><reg>prépare</reg></choice> un long <rs type="biblio">memoire</rs> pour la soutenir et combattre celle qui
+  <lb/><choice><orig><del/><add>R</add>egne</orig><reg>regne</reg></choice> en <rs key="place_VER-englan" type="place">Angleterre</rs>. Il y a tres long temps que je n<supplied>’</supplied>ai eu de
+  <lb/>nouvelles de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le <abbr>ch.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Je l<supplied>’</supplied>ai vu beaucoup cet été,
   <lb/>mais nous avons peu parlé Geometrie. Vous me promettez
-  <lb/>dans vostre <rs type="letter">lettre</rs>, Monsieur, que vous me ferez le plaisir de
-  <lb/>m’écrire plus souvent; rien ne me peut faire plus de plaisir
-  <lb/>que d’apprendre de vos nouvelles et des nouvelles de <abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>.
-  <lb/>Il est impossible que vous ne fassiez l’un et l’autre de frequentes
-  <lb/>decouvertes. Je vous prie de m’en faire part. Quoyque je sois fort
-  <lb/>discipé et que ma santé ne me permette pas de m’appliquer aux
-  <lb/>sciences autant qu’il soit necessaire pour n’estre pas ignorant
-  <lb/>et faire des progres. Le goust que j’ay pour ces sortes de verités et de
-  <lb/>recherches est toujours tres ardent. On m’a mandé que le <rs type="biblio">livre</rs>
-  <lb/>de <abbr>M.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> se vendoit <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs>. Qu’esce que fait <abbr>M<hi rend="sup">r</hi>.</abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>,
-  <lb/>ne veut il donc point repondre aux <rs type="person">Anglois</rs>? Je crois qu’il
-  <lb/>le doit et que <abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> qui est de ses <rs type="person">amis</rs> le luy doit conseiller.
-  <lb/>Je vous avois prié de me mander, s’il avoit reçu mon <rs type="biblio">livre</rs>. Je n’en ai
-  <lb/>point eu de nouvelles. Pour remplir cette page, parlons
+  <lb/>dans vostre <rs type="letter">lettre</rs><supplied>,</supplied> Monsieur<supplied>,</supplied> que vous me ferez le plaisir de
+  <lb/>m<supplied>’</supplied>écrire plus souvent<choice><orig>.</orig><reg>;</reg></choice> rien ne me peut faire plus de plaisir
+  <lb/>que d<supplied>’</supplied>apprendre de vos nouvelles et des nouvelles de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>.
+  <lb/>Il est impossible que vous n<unclear reason="illegible">e</unclear> fassiez l<supplied>’</supplied>un et l<supplied>’</supplied>autre de frequentes
+  <lb/>decouvertes. Je vous prie de m<supplied>’</supplied>en faire part. <choice><orig>quoyque</orig><reg>Quoyque</reg></choice> je sois fort
+  <lb/>dis<unclear reason="illegible">s</unclear>ipé et que ma santé ne me permette pas de m’appliquer aux
+  <lb/>sciences autant qu<supplied>’</supplied>il seroit necessaire pour n<supplied>’</supplied>estre pas ignorant
+  <lb/>et faire des progres. <choice><orig><del/><add>l</add>e</orig><reg>Le</reg></choice> goust que j<supplied>’</supplied>ay pour ces sortes de <choice><orig>ve<del/><add>ri</add>tes</orig><reg>verités</reg></choice> et de
+  <lb/>recherches est toujours tres ardent. On m<supplied>’</supplied>a mandé que le <rs type="biblio">livre</rs>
+  <lb/>de <abbr>M.</abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> se vendoit <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs>. <choice><orig>qu</orig><reg>Qu</reg></choice>’<choice><sic>esce</sic><corr>est-ce</corr></choice> que fait <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs><supplied>,</supplied>
+  <lb/>ne veut-il donc point repondre aux <rs type="person">Anglois</rs><supplied>?</supplied> Je crois qu<supplied>’</supplied>il
+  <lb/>le doit et que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs><supplied>,</supplied> qui est de ses amis<supplied>,</supplied> le luy doit conseiller.
+  <lb/>Je vous avois prié de me mander<supplied>,</supplied> s<supplied>’</supplied>il avoit <choice><orig>recu</orig><reg>reçu</reg></choice> mon <rs type="biblio">livre</rs><supplied>.</supplied> Je n<supplied>’</supplied>en ai
+  <lb/>point eu de nouvelles. Pour remplir cette page<choice><orig>.</orig><reg>,</reg></choice> parlons
   <lb/>encore Algebre.
 </p>
 <p>
-  <lb/>Voicy un beau probleme <choice><orig>a</orig><reg>à</reg></choice> resoudre etant donnée une
-  <lb/>suitte de termes, dont les Num. soient des nombres figurés quelconque
-  <lb/>et les <choice><abbr>denoateurs</abbr><expan>denominateurs</expan></choice> soient formés d’un nombre égal de facteurs, qui soient
-  <lb/>en progression Arithmetique <corr>de</corr> trouver la somme. Par <abbr>ex.</abbr> cette suitte
-  <lb/><formula>\frac{1}{1\cdot2\cdot3\cdot4\cdot5}+\frac{14}{5\cdot6\cdot7\cdot8\cdot9}+\frac{55}{9\cdot10\cdot11\cdot12\cdot13}+\frac{140}{13\cdot14\cdot15\cdot16\cdot17}\frac{285}{17\cdot18\cdot19\cdot20\cdot21}+\mbox{etc.}</formula>
-  <lb/><formula>=\frac{1}{96}</formula>. ou celle cy <formula>\frac{1}{1\cdot2\cdot3\cdot4\cdot5}+\frac{4}{4\cdot5\cdot6\cdot7\cdot8}+\frac{9}{7\cdot8\cdot9\cdot10\cdot11}+\frac{16}{10\cdot11\cdot12\cdot13\cdot14}++\frac{25}{13\cdot14\cdot15\cdot16\cdot17}</formula>
-  <lb/><formula>+</formula><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>, dont la somme <formula>= \frac{1}{108}</formula>. J’ay un assez beau theoreme sur ces suittes, mais
-  <lb/>je n’ai pas encore tout ce que j’espere trouver, quand j’aurai du loisir.
+  <lb/>Voicy un beau Probleme <choice><orig>a</orig><reg>à</reg></choice> resoudre etant donnée une
+  <lb/>suitte de termes, dont les <abbr>Num.</abbr> soient des nombres <choice><orig>figures</orig><reg>figurés</reg></choice> <choice><sic>quelconque</sic><corr>quelconques</corr></choice>
+  <lb/>et les <choice><abbr>deno.ateurs</abbr><expan>denominateurs</expan></choice> soient <choice><orig>formes</orig><reg>formés</reg></choice> d<supplied>’</supplied>un nombre egal de facteurs<supplied>,</supplied> qui soient
+  <lb/>en progression Arithmetique<supplied>,</supplied> trouver la somme<supplied>.</supplied> <choice><orig>par</orig><reg>Par</reg></choice> <abbr><del/><add>E</add>x.</abbr> ce<del/><add>tte</add> suitt<del/><add>e</add>
+  <lb/><formula>\frac{1}{1\cdot2\cdot3\cdot4\cdot5}+\frac{14}{5\cdot6\cdot7\cdot8\cdot9}+\frac{55}{9\cdot10\cdot11\cdot12\cdot13}+\frac{140}{13\cdot14\cdot15\cdot16\cdot17}+\frac{285}{17\cdot18\cdot19\cdot20\cdot21}+\mbox{ \&amp;c.}</formula><del/>
+  <lb/><formula>=\frac{1}{96}</formula> ou celle<supplied>-</supplied>cy <formula>\frac{1}{1\cdot2\cdot3\cdot4\cdot5}+\frac{4}{4\cdot5\cdot6\cdot7\cdot8}+\frac{9}{7\cdot8\cdot9\cdot10\cdot11}+\frac{16}{10\cdot11\cdot12\cdot13\cdot14}+\frac{25}{13\cdot14\cdot15\cdot16\cdot17}</formula><note type="editorial">Mehrere handschriftliche Korrekturen in der Formel.</note>
+  <lb/><choice><orig><formula>+\text{\&amp;c}</formula></orig><reg><formula>+\text{ etc.}</formula></reg></choice><supplied>,</supplied> dont la somme <formula>= \frac{1}{108}</formula><supplied>.</supplied> J’ay un assez beau theoreme sur ces suittes<supplied>,</supplied> mais
+  <lb/>je n<supplied>’</supplied>ai pas encore tout ce que j<supplied>’</supplied>espere trouver<supplied>,</supplied> quand j<supplied>’</supplied>aurai du loisir.
 </p>
 <closer>
   <salute>
-    <lb/>A Dieu mon cher Monsieur, je vous embrasse de tout mon coeur.
+    <lb/>A Dieu<supplied>,</supplied> Mon cher Monsieur<supplied>,</supplied> je vous embrasse de tout mon coeur
   </salute>
   <signed><rs key="pers_DE-588-117601020" type="person">Remond de Monmort</rs></signed>.
 </closer>
 <postscript>
   <p>
-    <lb/>Mes tres humbles complimens, s’il vous plaist, <choice><orig>a</orig><reg>à</reg></choice> <abbr>M<hi rend="sup">r</hi>.</abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>.
+    <lb/><choice><orig>mes</orig><reg>Mes</reg></choice> tres humbles complimens<supplied>,</supplied> s<supplied>’</supplied>il vous plaist<supplied>,</supplied> <choice><orig>a</orig><reg>à</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>.
   </p>
 </postscript>
 </div>

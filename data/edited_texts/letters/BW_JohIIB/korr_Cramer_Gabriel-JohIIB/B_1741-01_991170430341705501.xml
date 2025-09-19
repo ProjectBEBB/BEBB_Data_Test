@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430341705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -153,26 +153,98 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-21" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert fertig</change>
+      <change when="2025-07-31" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-31" who="RG">Zeilenabstände eingefügt, sowie Anpassungen</change>
+      <change when="2025-07-31" who="RG">referenziert</change>
+      <change when="2025-07-31" who="RG">Seitenzahlen, Briefstruktur</change><!-- "facs" müssen noch ergänzt werden. RG 30.07.2025 -->
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!--URL BGE, MK 21.08.2025: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F15 -->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> 1740. Dec. {*} </p>
-<p> Je pourrois, si je voulois, me servir d’un Stratagème sem blable au vôtre, mon cher Monsieur, en vous disant que je vous tiens quite des excuses que vous croyés me devoir, pour me dispenser de vous en faire à mon tour, cependant j’en ai de trop bonnes pour chercher un echappatoire. </p>
-<p> Si j’avois parlé à qui que ce fut de la vocation dont S. M. Pr. nous a honorés je ne me pardonnerois pas de vous l’avoir laissé ignorer, mais je regarde une pareille vocation, comme la re cherche qu’on feroit d’une fille en mariage et je crois que toute fille recherchée a tort de le divulguer avant que d’avoir agréé la recherche, or comme je n’ai point donné encore de re ponse positive, je n’ai pas cru devoir parler de cette affaire avant que d’être tout à fait resolu; il est vrai au reste que cette vocation est si glorieuse et si avantageuse qu’il est im possible de n’en être pas tenté. </p>
-<p> Si d’un cotê l’apprehension que vous faites paroitre que je m’éloigne de vous a quelque chose de flatteur pour moi, je la trouve d’un autre côté bien offensante; l’amitié ne rend elle pas tout le monde voisins? </p>
-<p> Nous venons de conclure avec le Sr. <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> une convention dans laquelle il y a un article qui porte qu’il se laissera entièrement diriger par vous, Monsieur, dans l’impression de l’ouvrage dont vous avés bien voulu entreprendre l’édition. </p>
-<p> puisque vous voulés absolument que la thèse de propositioni bus soit imprimée vous en êtes le maitre. </p>
-<p> La pièce Spinosismi depuls. Echo est de mon père il dit qu’elle est un peu burlesque et que c’est pour cela qu’il ne s’étoit pas soucié qu’elle fut imprimée; il n’en a qu’un exem plaire, si vous voulés il vous l’enverras et quand vous l’au rés lu vous en ferés ce que vous voudrés. </p>
-<p> Tous les autres articles de votre lettre sont sans difficul té et ne demandent point de réponse; J’en suis bien aise, car je suis si pressé que je ne sai ce que j’ecris: A Dieu mon cher Monsieur portés vous bien Bernoulli. [P. S.] </p>
-<p>Avés vous vu à Genève M. Algarotti: qui a passé par ici cette semaine; si par hazard il y est encore ayés la bonté de lui faire mes complimens et de lui dire, que j’ai fait sa commis sion à son gré et que j’aurai l’honneur de lui en rendre compte incessamment. </p>
+<pb facs="-" n="1"/><!-- "facs" noch referenzieren, RG 31.07.2025 -->  
+<opener>
+  <dateline>
+    <lb/><date when="1740-12">1740. <abbr>Dec<supplied>.</supplied></abbr></date>
+  </dateline>
+</opener>
+<p>
+  <lb/>Je pourrois, si je voulois, me servir d’un Stratagème semblable
+  <lb/>au vôtre, mon cher Monsieur, en vous disant que je vous tiens
+  <lb/>quite des excuses que vous croyés me devoir, pour me dispenser
+  <lb/>de vous en faire à mon tour, cependant j’en ai de trop bonnes
+  <lb/>pour chercher un echappatoire.
+</p>
+<p>
+  <lb/>Si j’avois parlé à qui que ce fut de la vocation dont
+  <lb/><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice> <rs key="pers_DE-588-118535749" type="person"><abbr>Pr.</abbr></rs> nous a honorés je ne me pardonnerois pas de
+  <lb/>vous l’avoir laissé ignorer, mais je regarde une
+  <lb/>pareille vocation, comme la recherche qu’on feroit d’une
+  <lb/>fille en mariage et je crois que toute fille recherchée a tort
+  <lb/>de le divulguer avant que d’avoir agréé la recherche,
+  <lb/>or comme je n’ai point donné encore de réponse
+  <lb/>positive, je n’ai pas crû devoir parler de cette affaire
+  <lb/>avant que d’étre tout à fait resolu; il est vrai au reste
+  <lb/>que cette vocation est si glorieuse et si avantageuse
+  <lb/>qu’il est impossible de n’en étre pas tenté.
+</p>
+<p>
+  <lb/>Si d’un coté l’apprehension que vous faites paroitre
+  <lb/>que je m’éloigne de vous a quelque chose de flatteur
+  <lb/>pour moi, je la trouve d’un autre côté bien offensante;
+  <lb/>l’amitié ne rend<supplied>-</supplied> elle pas tout le monde voisins?
+</p>
+<p>
+  <lb/>Nous venons de conclure avec le <abbr>S<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> une
+  <lb/>convention<del/> dans laquelle il y a un
+  <lb/>article qui porte qu’il se laissera entièrement
+  <lb/>diriger par vous, Monsieur, dans l’impression de
+  <lb/>l’<rs type="biblio">ouvrage</rs> dont vous avés bien voulu entreprendre
+  <lb/>l’édition.
+</p>
+<pb facs="-" n="2"/> 
+<p>
+  <lb/><choice><orig>puisque</orig><reg>Puisque</reg></choice> vous voulés absolument que la thèse <rs type="biblio"><foreign xml:lang="lat">de
+  <lb/>propositionibus</foreign></rs> soit imprimée<supplied>,</supplied> vous en êtes le
+  <lb/>maitre.
+</p>
+<p>
+  <lb/>La pièce <rs key="biblio_MELCB7I5" type="biblio"><foreign xml:lang="lat">Spinosismi <abbr>depuls.</abbr> Echo</foreign></rs> est de mon <rs key="pers_DE-588-118509969" type="person">père</rs>
+  <lb/><del>mon père </del><add>il</add> dit qu’elle est un peu burlesque et que c’est pour
+  <lb/>cela qu’il ne s’étoit pas soucié qu’elle fut imprimée;
+  <lb/>il n’en a qu’un exemplaire, si vous voulés<supplied>,</supplied> il vous
+  <lb/>l’enverras et quand vous l’aurés lu vous en ferés
+  <lb/>ce que vous voudrés.
+</p>
+<p>
+  <lb/>Tous les autres articles de votre <rs key="B_991170516487605501" type="letter">lettre</rs> sont sans
+  <lb/>difficulté et ne demandent point de réponse; J’en
+  <lb/>suis bien aise, car je suis si pressé que je ne
+  <lb/>sai ce que j’écris:
+</p>
+<closer>
+  <salute>A Dieu mon cher Monsieur
+    <lb/>portés vous bien
+  </salute>
+  <signed>Bernoulli</signed>
+</closer>
+<postscript>
+  <p>
+    <lb/>Avés<supplied>-</supplied> vous vu à <rs key="place_GEO-2660646" type="place">Genève</rs> <abbr>M.</abbr> <rs key="pers_DE-588-119086395"  type="person">Algarotti</rs>, qui
+    <lb/>a passé par ici <date>cette semaine</date>; si par hazard
+    <lb/>il y est encore<supplied>,</supplied> ayés la bonté de lui faire mes
+    <lb/>complimens et de lui dire, que j’ai fait sa
+    <lb/>commission à son gré et que j’aurai l’honneur
+    <lb/>de lui en rendre compte incessamment.
+  </p>
+</postscript>
 </div>
 </body>
 </text></TEI>

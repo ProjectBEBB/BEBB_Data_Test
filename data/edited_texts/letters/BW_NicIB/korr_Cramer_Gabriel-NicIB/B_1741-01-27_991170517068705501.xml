@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517068705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,6 +147,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-21" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-21" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-11" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-11" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -159,42 +161,56 @@
 <body>
 <div type="letter">
 <pb facs="1063393" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>Je vous rends graces du paquet que vous avez eu la bonte
-                           <lb/>de m’adresser, &amp; je vous fais aussi les remercimens de Messieurs
-                           <lb/><rs type="person">Cramer</rs> &amp; <rs type="person">Philibert</rs>. Ces Messieurs vous prient encore de
-                           <lb/>temoigner à Monsieur <rs type="person">Roques</rs> leur reconnoissance, &amp; ils me
-                           <lb/>chargent de vous marquer, que, n’osant lui offrir de l’argent,
-                           <lb/>pour la peine qu’il a pris de copier les deux Theses de feu Mons.
-                           <lb/><rs type="person">Bernoulli</rs>, ils vous seroient obligez, si vous croiez que ce jeune
-                           <lb/>Monsieur voulut accepter quelque petit present en Livres,
-                           <lb/>de le leur faire savoir, &amp; de leur indiquer en même tems ce qui
-                           <lb/>pourroit lui faire plaisir. Nous vous serions très particulierement
-                           <lb/>obligé de la peine que vous daignez prendre pour augmenter les <hi>Varia</hi>
-<lb/><hi>Posthuma</hi> cela ne peut que faire plaisir au public, &amp; honneur
-                           <lb/>au defunt. Je vous promets, Monsieur, de donner toute l’attention
-                           <lb/>dont je serai capable pour que l’Edition soit belle &amp; correcte. Nous
-                           <lb/>supprimerons aussi ce qui pourroit faire de la peine, autant que
-                           <lb/>cela se pourra sans préjudice de l’instruction des Lecteurs. La
-                           <lb/>poste qui va partir ne me laisse que le loisir nécessaire pour
-                           <lb/>vous assurer du zéle ardent &amp; sincére, avec lequel j’ai l’honneur
-                           <lb/>d’etre, Monsieur</p>
-<closer><salute><lb/>Votre très humble &amp;
-                           <lb/>très obeissant Serviteur</salute>
-<signed><lb/>G. Cramer</signed>
-<dateline><lb/>Geneve, ce <date when="1741-01-27">27. Janv. 1741</date></dateline></closer>
-<pb facs="1063394" n="2"/>
-<pb facs="1063395" n="3"/>
-<pb facs="1063396" n="3"/>
+<opener><!-- Noch ein Datum mit Bleistift, im nachhinenin notiert, RG 21.07.2025 -->
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Je vous rends graces du paquet que vous avez eu la bonté
+  <lb/>de m’adresser, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je vous fais aussi les remercimens de Messieurs
+  <lb/><rs type="person">Cramer</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs type="person">Philibert</rs>. Ces Messieurs vous prient encore de
+  <lb/>temoigner à Monsieur <rs type="person">Roques</rs> leur reconnoissance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ils me
+  <lb/>chargent de vous marquer, que, n’osant lui offrir de l’argent,
+  <lb/>pour la peine qu’il a pris de copier les de<subst><del/><add>ux</add></subst> Theses de feu <abbr>Mons.</abbr>
+  <lb/><rs type="person">Bernoulli</rs><!-- Person noch referenzieren, RG 21.07.2025 -->, ils vous seroient obligez, si vous croiez que ce jeune
+  <lb/>Monsieur voulut accepter quelque petit present en Livres,
+  <lb/>de le leur faire savoir, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de leur indiquer en même tems ce qui
+  <lb/>pourroit lui faire plaisir. Nous vous serons très particulierement
+  <lb/>obligé de la peine que vous daignez p<subst><del>e</del><add>r</add></subst>endre pour augmenter les <hi rend="u">Varia
+  <lb/>Posthuma</hi>;<!-- "," vlt. nur ein Komma? RG 21.07.2025 --> Cela ne peut que faire plaisir au public, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> honneur
+  <lb/>au defunt. Je vous promets, Monsieur<supplied>,</supplied> de donner toute l’attention
+  <lb/>dont je serai capable pour que l’Edition soit belle <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> correcte. Nous
+  <lb/>supprimerons aussi ce qui pourroit faire de la peine, autant que
+  <lb/>cela se pourra sans préjudice de l’instruction des Lecteurs. La
+  <lb/>poste qui va partir ne me laisse que le Loisir nécessaire pour
+  <lb/>vous assurer du zéle ardent <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sincére, avec lequel j’ai l’honneur
+  <lb/>d’etre, Monsieur
+</p>
 <closer>
-<address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit</addrLine>
-<addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</addrLine>
-<addrLine>a Basle</addrLine>
-</address>
+  <salute>
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+    <lb/>très obeissant Serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>Geneve, ce <date when="1741-01-27">27. <abbr>Janv.</abbr> 1741</date>
+  </dateline>
 </closer>
+<pb facs="1063394" n="2" type="empty"/>
+<pb facs="1063395" n="3" type="empty"/>
+<pb facs="1063396" n="3"/>
+  <closer>
+    <address>
+      <addrLine>Monsieur</addrLine>
+      <addrLine>Monsieur Nicolas Bernoulli</addrLine>
+      <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit</addrLine>
+      <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+      <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+    </address>
+  </closer><!-- Bis hier den Code angesehen, RG 21.07.2025 -->
 </div>
 </body>
 </text></TEI>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -204,8 +204,13 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-29" who="SG SW">Kollationieren abgeschlossen</change>
+      <change when="2025-08-26" who="SG SW">Kollationieren fortgesetzt</change>
+      <change when="2025-08-21" who="SG SW">Kollationieren fortgesetzt</change>
+      <change when="2025-08-18" who="SG SW">Kollationieren fortgesetzt</change>
+      <change when="2025-08-15" who="SG SW">Kollationieren begonnen</change>
       <change when="2022-12-15" who="RG">Erste Personen und Orte ausgezeichnet, aber nicht fertig</change>
       <change when="2022-11-24" who="RG">Zeilabstände eingefügt, Seite angepasst, und kleinere Anpassungen</change>
       <change when="2022-10-14" who="RG">Header angepasst</change>
@@ -219,65 +224,65 @@
 <body>
 <div type="letter">
 <pb facs="1080220" n="1"/>
-<opener><dateline>à <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1708-07-06">6<hi rend="sup">e</hi> juillet 1708</date></dateline>
+<opener><lb/><dateline><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1708-07-06">6<hi rend="sup">e</hi> juillet 1708</date></dateline>
 <lb/><salute>Monsieur</salute></opener>
 <p><lb/>Il y a quelque temps que je me donnay l’honneur de vous ecrire
                <lb/>pour vous remercier de la bonté avec laqelle vous vous interessez
                <lb/>dans ce qui me regarde. Monsieur <rs type="person">de Magneville</rs> me mande
-               <lb/>que vous avez encore tout nouvellement recommadé mon affaire
+               <lb/>que vous avez encore tout nouvellement recommandé mon affaire
                <lb/>à Monsieur <rs key="pers_DE-588-130109363" type="person">Braunius</rs>, je ne doute point qu’une recommandation
                <lb/>aussy puissante que la votre ne produise tout le bon effet
                <lb/>possible, quand on aura levé les difficultez qui regardent
                <lb/>l’Installation du <rs type="person">Prince de Frise</rs> au gouvernement de la
-               <lb/>province de <rs key="place_GEO-2755251" type="place">Groningue</rs>, &amp; que Messieurs les curateurs pourront
-               <lb/>penser tranquilement a remplir les places vacantes, je vous
-               <lb/>supplie tres humblement de vouloir continuer vos bontéz pour
-               <lb/>moy. Je serois ravy que vous fussiez appellé a <rs key="place_GEO-2745912" type="place">Utrecht</rs> selon
-               <lb/>que Monsieur <rs type="person">de Magneville</rs> me mande l’avoir ouy dire
-               <lb/>je ne desespere rois pas alors de voir un jour la personne
+  <lb/><rs type="place">province de Groningue</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que Messieurs les <rs type="person">curateurs</rs> pourront
+               <lb/>penser tranquilement <choice><orig>a</orig><reg>à</reg></choice> remplir les places vacantes<choice><orig>,</orig><reg>;</reg></choice> je vous
+               <lb/>supplie tres humblement de vouloir continuer vos bontez pour
+  <lb/>moy<choice><orig>,</orig><reg>;</reg></choice> je serois ravy que vous fussiez appellé <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2745912" type="place">Utrecht</rs> selon
+               <lb/>que Monsieur <rs type="person">de Magneville</rs> me mande l’avoir <choice><orig>ouy</orig><reg>ouï</reg></choice> dire
+               <lb/>je ne desespererois pas <unclear reason="lost">a</unclear>lors de voir un jour la personne
                <lb/>du monde que je revere le plus tant pour son merite distingué
-               <lb/>que pour la bienveillance dont elle m’honore, mais Monsieur
-               <lb/>quand la fortune ne m’etabliroit jamais a <rs key="place_GEO-2755251" type="place">Groningue</rs> il me
+               <lb/>que pour la bienveillance dont elle m’honore, mais<supplied>,</supplied> Monsieur<supplied>,</supplied>
+  <lb/>quand la fortune ne m’etabliroit jamais <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2755251" type="place">Groningue</rs> il me
                <lb/>semble que j’aurois une joye toute singuliere de vous
-               <lb/>sentir plus pres de moy et d’etre plus a portée de
+  <lb/>sentir plus pres de moy et d’etre plus <choice><orig>a</orig><reg>à</reg></choice> portée de
             <pb facs="1080221" n="2"/>
 <lb/>profiter de vos excellentes Instructions.</p>
-<p><lb/>J’aurois essayé plusieurs fois de trouver la loy de votre
+<p><lb/><choice><orig>j</orig><reg>J</reg></choice>’aurois essayé plusieurs fois de trouver la loy de votre
                <lb/>admirable Theoreme tiré de la consideration du mouvement reptoir
                <lb/>mais mon peu de loisir ne m’a pas permis de calculer les limites
                <lb/>cependant je me suis formé une espece de regle qui y pourra
                <lb/>servir quelque jour quand j’auray eu le loisir de la
                <lb/>perfectionner. Voicy ce que c’est.</p>
-<p><lb/>en attendant que je pusse trouver un nombre de limites suffisant
+<p><lb/><choice><orig>en</orig><reg>En</reg></choice> attendant que je pusse trouver un nombre de limites suffisant
                <lb/>il me vint en pensée d’examiner s’il n’y auroit pas moyen
                <lb/>de trouver une regle sure pour decouvrir de la regularité
                <lb/>dans une suite quelconque qu’on a moyen de continuer
                <lb/>aussi loin qu’on voudra, pour cela je prenois des suites
-               <lb/>fort simples par Exemple une suite de quarrez, de
-               <lb/>nombres en progression arithmetique, une suite de Cubes
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. et en examinant les differences de ces puissances &amp;
-               <lb/>les differences des differences, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. je vins a decouvrir
+               <lb/>fort simples<supplied>,</supplied> par Exemple une suite de quarrez, de
+               <lb/>nombres en progression Arithmetique, une suite de Cubes
+               <lb/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> et en examinant les differences de ces puissances <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <lb/>les differences des differences, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> je vins <choice><orig>a</orig><reg>à</reg></choice> decouvrir
                <lb/>que dans toutes les puissances de nombres en progression
                <lb/>Arithmetique certaines differences deviennent toujours
-               <lb/>egales à Zero, comme dans les quarrez, les secondes
-               <lb/>differences, dans les Cubes les troisiemes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. et la
-               <lb/>méme proprieté par consequent dans les numbres composez
-               <lb/>comme on voudra de sommes ou de differences quelconques.
-               <lb/>De ces puissances multipliées par des quantitez constantes
-               <lb/>et quoy que cela eut eté remarqué longtemps avant moy
+               <lb/>egales à Zero, comme dans les quarrez les secondes
+               <lb/>differences, dans les Cubes les troisiemes <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> et la
+               <lb/>méme proprieté par consequent dans les nombres composez
+               <lb/>comme on voudra de sommes ou de differences quelconques
+               <lb/>de ces puissances multipliées par des quantitez constantes
+               <lb/>et quoyque cela eut eté remarqué long temps avant moy<supplied>,</supplied>
                <lb/>il faut que je vous avoue que je n’en avois jamais
                <lb/>entendu parler, et je pris cela pour une decouverte
-               <lb/>mais Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> a qui j’en parlay d’abord
+  <lb/>mais Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> <choice><orig>a</orig><reg>à</reg></choice> qui j’en parl<del/><add>ay</add> d’abord
             <pb facs="1080222" n="3"/>
-<lb/>me dit qu’il y avoit longtemps qu’il connoissoit cette proprieté.
-               <lb/>Cependant je passay outre, &amp; j’en recherchay la demonstration
-               <lb/>que je trouvay tres facilement. Ensuite je me suis mis a considerer
+<lb/>me dit qu’il y avoit long temps qu’il connoissoit cette proprieté.
+               <lb/><choice><orig>cependant</orig><reg>Cependant</reg></choice> je passay outre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’en recherchay la demonstration
+  <lb/>que je trouvay tres facilement. Ensuite je me <supplied>suis</supplied> mis <choice><orig>a</orig><reg>à</reg></choice> considerer
                <lb/>si je ne pourrois point trouver la loy de la formation
-               <lb/>des nombres dont certaines differences deviennent
-               <lb/>egales a Zero. Pour cela je disposay les lettres, <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <formula>e</formula>
-<lb/><formula>f</formula>, <formula>g</formula>, <formula>h</formula>, <formula>i</formula>, <formula>k</formula>, <formula>l</formula>, <formula>m</formula>, <formula>n</formula> &amp;c. dans les cellules de cette
-               <lb/>maniere.</p>
-<p><table>
+  <lb/>des nombres dont certaines differences deviennent egales
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> Zero. <choice><orig>pour</orig><reg>Pour</reg></choice> cela je disposay les lettres, <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <formula>e</formula><supplied>,</supplied>
+  <lb/><formula>f</formula>, <formula>g</formula>, <formula>h</formula>, <formula>i</formula>, <formula>k</formula>, <formula>l</formula>, <formula>m</formula>, <formula>n</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> dans des cellules de cette
+               <lb/>maniere.
+<lb/><table>
 <row>
 <cell><formula>a</formula></cell>
 <cell/>
@@ -341,60 +346,60 @@
 <cell/>
 <cell/>
 </row>
-</table></p>
+</table>
 <pb facs="1080223" n="4"/>
-<p><lb/><formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <formula>e</formula>, &amp;c. sont des quantitez composées comme on voudra
-               <lb/>de sommes ou des differences de nombres en progression arithmetique
-               <lb/>dont chaque terme composant peut etre multiplié par une quantité constante.
-               <lb/><formula>f</formula> est la difference de <formula>a</formula>, &amp; <formula>b</formula>, <formula>g</formula> la difference de <formula>b</formula> &amp; <formula>c</formula>, <formula>h</formula> la
-               <lb/>difference de <formula>c</formula> &amp; <formula>d</formula>, <formula>k</formula> la difference de <formula>f</formula> &amp; <formula>g</formula> <add>&amp;c.</add> ou je suppose
-               <lb/>que <formula>p</formula> est la derniere differen ce qui precede Zero, ensuite en
+ <lb/><formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <formula>e</formula>,<space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> sont des quantitez composées comme on voudra
+               <lb/>de sommes ou des differences de nombres en progression Arithmetique
+               <lb/>dont chaque terme composant peut etre multiplié par une quantité constante<supplied>;</supplied>
+               <lb/><formula>f</formula> est la difference de <formula>a</formula><choice><orig>,</orig><reg type="deleted"/></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>b</formula>, <formula>g</formula> la difference de <formula>b</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>c</formula>, <formula>h</formula> la
+    <lb/>difference de <formula>c</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>d</formula>, <formula>k</formula> la difference de <formula>f</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>g</formula>,<space unit="nbsp"/><add><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></add> <choice><orig>ou</orig><reg>où</reg></choice> je suppose
+               <lb/>que <formula>p</formula> est la derniere difference qui precede Zero, en suite en
                <lb/>retrogradant de la derniere difference aux quantitez primitives
-               <lb/><formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <formula>e</formula> &amp;c. je trouvay <formula>0=n+p</formula>, et le reste des
+    <lb/><formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <formula>e</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> je trouvay <formula>0=n+p</formula>, et le reste des
                <lb/>Equations qui sont ecrites dans chaque cellule. Vous pouvez
-               <lb/>bien juger Monsieur qu’il me fut facile de remarquer que les
-               <lb/>coefficients dont les termes de <add>la</add> premiere <del>rang </del><add>bande</add> perpendiculaire
+               <lb/>bien juger<supplied>,</supplied> Monsieur<supplied>,</supplied> qu’il me fut facile de remarquer que les
+  <lb/>coefficients dont les termes d<del/><add>e la</add> premiere <del/><add>bande</add> perpendiculaire
                <lb/>sont affectez sont les mémes que ceux qui appartiennent à un
                <lb/>binome elevé à une puissance designée par le rang qu’occupe
-               <lb/>chaque terme apres le premier. Que <formula>x</formula> marque donc le rang
+               <lb/>chaque terme apres le premier. <choice><orig>que</orig><reg>Que</reg></choice> <formula>x</formula> marque donc le rang<supplied>,</supplied>
                <lb/>chaque terme de la premiere bande perpendiculaire sera
                <lb/>donc exprimé generalement par cette suite.</p>
-<p><lb/><formula>a+xf+\frac{x}{1}\times\frac{x-1}{2}k+\frac{x}{1}\times\frac{x-1}{2}\times\frac{x-2}{3}n+\mbox{&amp;c.}</formula> ou plustost afin,
-               <lb/>d’aider un peu l’imagination, appellant la premiere difference <formula>d'</formula>, la
-               <lb/>premiere des secondes differences <formula>d''</formula>, la premiere des troisiemes <formula>d'''</formula> &amp;c.
+  <p><lb/><formula>a+xf+\frac{x}{1}\times\frac{x-1}{2}k+\frac{x}{1}\times\frac{x-1}{2}\times\frac{x-2}{3}n</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr><!-- ToDo Nachrechnen oder mit Fritz kontrollieren, ob die +-Zeichen korrekt sind, in der Spiesstranskription waren einige als Malkreuze transkribiert. --> ou plustost afin
+    <lb/>d’aider un peu l’imagination, appellant la premiere difference <formula>d^{\prime}</formula>, la
+    <lb/>premiere des secondes differences <formula>d^{\prime\prime}</formula>, la premiere des troisiemes <formula>d^{\prime\prime\prime}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
                <lb/>on aura
-               <lb/><formula>a+xd'+\frac{x}{1}\times\frac{x-1}{2}d''+\frac{x}{1}\times\frac{x-1}{2}\times\frac{x-2}{3}d'''+\mbox{&amp;c.}</formula>
+    <lb/><formula>a+xd^{\prime}+\frac{x}{1}\times\frac{x-1}{2}d^{\prime\prime}+\frac{x}{1}\times\frac{x-1}{2}\times\frac{x-2}{3}d^{\prime\prime\prime}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
 </p>
 <p><lb/>Or comme tous les termes de la premiere bande perpendiculaire
-               <lb/>comme il a eté dejà dit sont formez de la méme maniere
-               <lb/>de sommes ou de differences quelconques de puissences
+               <lb/>comme il a eté deja dit sont formez de la méme maniere
+               <lb/>de sommes ou de differences quelconques de puissances
                <lb/><del/>de nombres qui sont en progression
-               <lb/>arithmetique lesquelles puissances peuvent etre multipliées
+               <lb/>Arithmetique lesquelles puissances peuvent etre multipliées
                <lb/>par des quantitez constantes, il s’ensuit que si <formula>p</formula> est le
-               <lb/>nombre formateur de <formula>a</formula> &amp; <formula>q</formula> la difference de la progression
-               <lb/>arithmetique, <formula>p+qx</formula> sera le nombre formateur de
-               <lb/><formula>a+xd'+\frac{x}{1}\times\frac{x-1}{2}d''+\frac{x}{1}\times\frac{x-1}{2}\times\frac{x-2}{3}d'''+\mbox{&amp;c.}</formula></p>
+               <lb/>nombre formateur de <formula>a</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>q</formula> la difference de la progression
+               <lb/>Arithmetique<choice><orig>,</orig><reg type="deleted"/></choice> <formula>p+qx</formula> sera le nombre formateur de
+  <lb/><formula>a+xd^{\prime}+\frac{x}{1}\times\frac{x-1}{2}d^{\prime\prime}+\frac{x}{1}\times\frac{x-1}{2}\times\frac{x-2}{3}d^{\prime\prime\prime}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></p>
 <pb facs="1080224" n="5"/>
-<p><lb/>Application</p>
-<p><lb/>Qu’il faille trouver la Somme des Cubes des nombres naturels</p>
+<p><lb/><hi rend="c"><choice><orig>application</orig><reg>Application</reg></choice></hi></p>
+<p><lb/>Q<choice><orig>'</orig><reg type="deleted"/></choice>u<supplied>’</supplied>il faille trouver la Somme des Cubes des nombres naturels</p>
 <p><table>
 <row><!--[Matrix mit Schrift vertikal von oben nach unten]-->
 <cell>nombres formateurs</cell>
-<cell>cubes</cell>
-<cell>sommes des cubes</cell>
-<cell>premiers differences</cell>
+<cell>Cubes</cell>
+<cell>sommes des Cubes</cell>
+<cell>premieres differences</cell>
 <cell>secondes differences</cell>
 <cell>troisiemes differences</cell>
 <cell>quatriemes differences</cell>
 </row>
 <row>
-<cell><formula>1</formula></cell>
-<cell><formula>1</formula></cell>
+<cell>1</cell>
+<cell>1</cell>
 <cell><formula>1^{a}</formula></cell>
-<cell>d′</cell>
-<cell>d″</cell>
-<cell>d‴</cell>
-<cell>d⁗</cell>
+  <cell><formula>d^{\prime}</formula></cell><!-- ToDo: Bepsrechen: In dieser Tabelle und auch weiter unten wurden die Ableitungen ursprünglich nicht mit Formula ausgezeichnet sondern mit Sonderzeichen (′, ″, ‴, ⁗) -->
+  <cell><formula>d^{\prime\prime}</formula></cell>
+  <cell><formula>d^{\prime\prime\prime}</formula></cell>
+  <cell><formula>d^{\prime\prime\prime\prime}</formula></cell>
 </row>
 <row>
 <cell>2</cell>
@@ -441,37 +446,36 @@
 <cell/>
 <cell/>
 </row>
-</table>
+</table><note type="editorial">Im Manuskript sind die Wörter in der obersten Tabellenzeile senkrecht von oben nach unten ausgerichtet.</note>
 </p>
-<p><lb/>Soit <formula>n</formula> le nombre des Cubes donc <formula>1+x=n</formula> &amp; <formula>x=n-1</formula>.</p>
-<p><lb/>Donc la somme des Cubes sera</p>
-<p>
-<lb/><formula>1+\overline{n-1}\times8'+\frac{n-1}{1}\times\frac{n-2}{2}\times19''+\frac{n-1}{1}\times\frac{n-2}{2}\times\frac{n-3}{3}\times18'''</formula>
-<lb/><formula>+\frac{n-1}{1}\times\frac{n-2}{2}\times\frac{n-3}{3}\times\frac{n-4}{4}\times6''''</formula>, qui se reduit à <formula>\frac{1}{4}n^{4}+\frac{1}{2}n^{3}+\frac{1}{4}nn</formula>
-<lb/><formula>=\overline{n\times\frac{n+1}{2}}^{2}</formula> Donc la somme des Cubes des nombres naturels
-               <lb/>est le quarré du nombre triangulaire dont le coté exprime le
+<p><lb/>Soit <formula>n</formula> le nombre des Cubes donc <formula>1+x=n</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>x=n-1</formula></p>
+<p><lb/>donc la somme des Cubes sera
+  <!-- ToDo: formel freistehend auszeichnen --><lb/><formula>1+\overline{n-1}\times8^{\prime}+\frac{n-1}{1}\times\frac{n-2}{2}\times19^{\prime\prime}+\frac{n-1}{1}\times\frac{n-2}{2}\times\frac{n-3}{3}\times18^{\prime\prime\prime}</formula>
+  <lb/><formula>+\frac{n-1}{1}\times\frac{n-2}{2}\times\frac{n-3}{3}\times\frac{n-4}{4}\times6^{\prime\prime\prime\prime}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qui se reduit à <formula>\frac{1}{4}n^{4}+\frac{1}{2}n^{3}+\frac{1}{4}nn</formula>
+<lb/><!-- ToDo: Normalisieren --><formula>=\overline{n\times\frac{n+1}{2}}^{2}</formula> donc la somme des Cubes <del/><add>des</add> nombres naturels
+               <lb/>est le quarré du nombre Triangulaire dont le coté exprime le
                <lb/>nombre des Cubes.</p>
 <p><lb/>On parviendra plus facilement à cette expression si on suppose le
                <lb/>premier nombre formateur egal à Zero.</p>
 <pb facs="1080225" n="6"/>
 <p><table>
 <row><!--[Matrix mit Schrift vertikal von oben nach unten]-->
-<cell>nombres form.</cell>
-<cell>cubes</cell>
-<cell>sommes des cub.</cell>
-<cell>1<hi rend="sup">ere</hi> diff.</cell>
-<cell>2<hi rend="sup">des</hi> diff.</cell>
-<cell>3<hi rend="sup">mes</hi> diff.</cell>
-<cell>4<hi rend="sup">e</hi> diff.</cell>
+<cell>nombres <abbr>form.</abbr></cell>
+<cell>Cubes</cell>
+<cell>sommes des <abbr>Cub.</abbr></cell>
+<cell>1<hi rend="sup">ere</hi> <abbr>diff.</abbr></cell>
+<cell>2<hi rend="sup">des</hi> <abbr>diff.</abbr></cell>
+<cell>3<hi rend="sup">es</hi> <abbr>diff.</abbr></cell>
+<cell>4<hi rend="sup">es</hi> <abbr>diff.</abbr></cell>
 </row>
 <row>
-<cell><formula>0</formula></cell>
-<cell><formula>0</formula></cell>
+<cell>0</cell>
+<cell>0</cell>
 <cell><formula>0^{a}</formula></cell>
-<cell>d′</cell>
-<cell>d″</cell>
-<cell>d‴</cell>
-<cell>d⁗</cell>
+  <cell><formula>d^{\prime}</formula></cell>
+  <cell><formula>d^{\prime\prime}</formula></cell>
+  <cell><formula>d^{\prime\prime\prime}</formula></cell>
+  <cell><formula>d^{\prime\prime\prime\prime}</formula></cell>
 </row>
 <row>
 <cell>1</cell>
@@ -529,15 +533,15 @@
 </row>
 </table>
 </p>
-<p><lb/>icy <formula>n=x</formula>; donc la somme des Cubes sera
-               <lb/><formula>n+n\times\frac{n-1}{2}\times7''+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times12'''+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times6''''</formula>
-<lb/><formula>=\overline{n\times\frac{n+1}{2}}^{2}</formula> comme auparavant. &amp; par la méme methode on peut
-               <lb/>trouver les sommes de quelles puissances on voudra, &amp; les sommes 
-               <lb/>des sommes de ces puissances à l’Infiny. Mais voicy un Exemple assez
+<p><lb/>icy <formula>n=x</formula><choice><orig>.</orig><reg>;</reg></choice> donc la somme des Cubes sera
+  <lb/><formula>n+n\times\frac{n-1}{2}\times7^{\prime\prime}+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times12^{\prime\prime\prime}+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times6^{\prime\prime\prime\prime}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><note type="editorial">Im Manuskript findet sich ein "x", das zu einem "n" korrigiert wurde.</note>
+<lb/><!-- Todo: Normalisieren --><formula>=\overline{n\times\frac{n+1}{2}}^{2}</formula> comme auparavant. <choice><orig><g ref="#Etlig">&amp;</g></orig><reg>Et</reg></choice> par la méme methode on peut
+  <lb/>trouver l<del/><add>es</add> sommes de quelles puissances on voudra, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l<del/><add>es</add> sommes
+               <lb/>des sommes de ces puissances à l’Infiny. <choice><orig>mais</orig><reg>Mais</reg></choice> voicy un Exemple assez
                <lb/>remarquable qui peut faire voir comment on peut trouver la loy de la
                <lb/>continuation de certaines suites. Soit <formula>t</formula> la tangente d’un arc de cercle
-               <lb/>1 le rayon, on scait que la tangente du double est</p>
-<p><lb/><formula>\frac{21}{1-tt}</formula>
+               <lb/>1 le rayon, on <choice><orig>scait</orig><reg>sçait</reg></choice> que la tangente du double est</p><!-- ToDo: Formel abgesetzt, evtl. ohne p umsezten -->
+<p><lb/><formula>\frac{2t}{1-tt}</formula>
 </p>
 <p><lb/>tangente du triple <formula>\frac{3t-t^{3}}{1-3tt}</formula>
 </p>
@@ -547,425 +551,440 @@
 </p>
 <pb facs="1080226" n="7"/>
 <p><lb/>qu’il faille donc exprimer d’une maniere generale la tangente d’un arc
-               <lb/>qui soit au premier dans la raison de <formula>n</formula> à <formula>l</formula>.
-               <lb/>Je vois d’abord que le l<hi rend="sup">er</hi> terme de chaque numerateur est <formula>nt</formula>
-<lb/>ensuite pour trouver le coefficiant <add>general</add> qui convient à <del/><add>tous les</add> seconds termes
-               <lb/>je dispose vis à vis de chaque second terme le coefficiant particulier
-               <lb/>qui luy convient, &amp; je prens les differences, &amp; les differences des
-               <lb/>differences jusqu’a ce qu’elles parviennent à l’egalité, &amp; comme
+               <lb/>qui soit au premier dans la raison de <formula>n</formula> à <formula>1</formula>.</p>
+               <p><lb/><choice><orig>je</orig><reg>Je</reg></choice> vois d<supplied>’</supplied>abord que le 1<hi rend="sup">er</hi> terme de chaque numerateur est <formula>nt</formula><supplied>,</supplied>
+<lb/>ensuite pour trouver le coefficient <add>general</add> qui convient à <del/><add>tous les</add> seconds termes
+               <lb/>je dispose vis à vis de chaque second terme le coefficient particulier
+               <lb/>qui luy convient, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je prens les differences, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les differences des
+               <lb/>differences jusqu’<choice><orig>a</orig><reg>à</reg></choice> ce qu’elles parviennent à l’egalité, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> comme
                <lb/>il m’est libre de commencer par quel nombre je voudray, je
                <lb/>commence par Zero, ce qui est toujours plus simple</p>
 <p>
-<formula>\begin{array}{ccccc} &amp; a\\ 0 &amp; 0 &amp; d'\\ 1 &amp; 0 &amp; 0 &amp; d''\\ 2 &amp; 0 &amp; 0 &amp; 1 &amp; d'''\\ 3 &amp; 1 &amp; 1 &amp; 2 &amp; 1\\ 4 &amp; 4 &amp; 3 &amp; 2 &amp; 1\\ 5 &amp; 10 &amp; 6 &amp; 3 &amp; 1 \end{array}</formula>
+<!-- ToDo: Formel mit Fritz kontrollieren, ob es korrekt dargestellt ist, mit Fritz kollationieren. --><formula>\begin{array}{ccccc} &amp; a\\ 0 &amp; 0 &amp; d'\\ 1 &amp; 0 &amp; 0 &amp; d''\\ 2 &amp; 0 &amp; 0 &amp; 1 &amp; d'''\\ 3 &amp; 1 &amp; 1 &amp; 2 &amp; 1\\ 4 &amp; 4 &amp; 3 &amp; 2 &amp; 1\\ 5 &amp; 10 &amp; 6 &amp; 3 &amp; 1 \end{array}</formula>
 </p>
-<p><lb/>J’ay donc <formula>a=0</formula>, <formula>d'=0</formula>, <formula>d''=0</formula>, <formula>d'''=1</formula>, &amp; <formula>x=n</formula>.
-               <lb/>Le coefficiant general qui convient à tous les seconds termes sera
-               <lb/>donc <formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}</formula> &amp; de la méme maniere je trouve que le
-               <lb/>coefficiant general qui convient à chaque troisieme terme sera
-               <lb/><formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times\frac{n-4}{5}</formula>. &amp;c. et continuant à examiner les
+  <p><lb/><choice><orig>j</orig><reg>J</reg></choice>’ay donc <formula>a=0</formula>, <formula>d^{\prime}=0</formula>, <formula>d^{\prime\prime}=0</formula>, <formula>d^{\prime\prime\prime}=1</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>x=n</formula>.
+               <lb/>Le coefficient general qui convient à tous les seconds termes sera
+               <lb/>donc <formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de la méme maniere je trouve que le
+               <lb/>coefficient general qui convient à chaque troisieme terme sera
+    <lb/><choice><orig><formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times\frac{n-4}{5}.\text{\&amp;c.}</formula></orig><reg><formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times\frac{n-4}{5}\text{ etc.}</formula></reg></choice> et continuant à examiner les
                <lb/>denominateurs je trouve que le 1<hi rend="sup">er</hi> terme est toujours l’unité.
-               <lb/>Que le coefficient general qui convient a tous les seconds termes est
-               <lb/><formula>n\times\frac{n-1}{2}</formula>. que le coefficient general qui convient à tous les troisiemes
-               <lb/>termes est <formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}</formula> &amp; ainsy des autres. La tangente cherchée
-               <lb/>sera donc               <lb/><formula>\frac{nt-n\times\frac{n-1}{2}\times\frac{n-2}{3}t^{3}+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times\frac{n-4}{5}t^{5}\mbox{&amp;c.}}{1-n\times\frac{n-1}{2}tt+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}t^{4}\mbox{\mbox{&amp;c}.}}</formula>.</p>
+               <lb/><choice><orig>que</orig><reg>Que</reg></choice> le coefficient general qui convient <choice><orig>a</orig><reg>à</reg></choice> tous les seconds termes est
+               <lb/><formula>n\times\frac{n-1}{2}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> que le coefficient general qui convient à tous les troisiemes
+               <lb/>termes est <formula>n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ainsy des autres. <choice><orig>la</orig><reg>La</reg></choice> tangente <choice><orig>cherchee</orig><reg>cherchée</reg></choice>
+               <lb/>sera donc              <lb/><!-- ToDo: Formel freistellen. Und etc. normalisieren. --><formula>\frac{nt-n\times\frac{n-1}{2}\times\frac{n-2}{3}t^{3}+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}\times\frac{n-4}{5}t^{5}\text{ etc.}}{1-n\times\frac{n-1}{2}tt+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}t^{4}\mbox{ etc.}}</formula>.</p>
 <pb facs="1080227" n="8"/>
-<p><lb/>Voila Monsieur une idée qui pourra s’etendre plus loin. <lb/>Au reste il faut que je vous dise que le jeune Gentilhomme <lb/>Anglois autheur de la double suite pour la rectificatione du <lb/>cercle avoit trouvé ce rapport des tangentes avant que de <lb/>rechercher cette rectification &amp; qu’il s’en servoit comme de Lemme <lb/>pour cela, mais a propos de cette double suite, je fe licite Monsieur <lb/>Votre <rs key="pers_DE-588-119166895" type="person">neveu</rs> de l’avoir trouvée, je suis ravy qu’il commence a <lb/>donner de si belles esperances de ce qu’il sera un jour. Monsieur <lb/><rs key="pers_DE-588-119112450" type="person">Herman</rs> l’a aussy fort bien demontrée. Je ne scaurois aussy <lb/>m’empecher de vous dire que j’ay recherché ce rapport de tangentes <lb/>d’une maniere assez particuliere. Soit <formula>t</formula> la tangente d’un arc <lb/>&amp; <formula>T</formula> la tangente d’un arc qui soit au premier comme <formula>n</formula> à <formula>l</formula>. <lb/>La difference des arcs sera donc <formula>\frac{\dot{t}}{1+tt}\&amp;\frac{\dot{T}}{1+TT}</formula> donc <formula>\frac{n\dot{t}}{1+tt}=</formula>
-<lb/><formula>\frac{\dot{T}}{1+TT}</formula> soit <formula>t=x\sqrt{-1}</formula> &amp; <formula>T=y\sqrt{-1}</formula> donc <formula>\frac{n\dot{x}}{1-xx}=\frac{y}{1-yy}</formula>. <lb/>ou <formula>\frac{2n\dot{x}}{1-xx}=\frac{2y}{1-yy}</formula>, mais <formula>\frac{2\dot{x}}{1-xx}</formula> est la difference du <lb/>logarithme de <formula>\frac{1+x}{1-x}</formula> &amp; <formula>\frac{2\dot{y}}{1-yy}</formula> est la difference du logarithme <lb/>de <formula>\frac{1+y}{1-y}</formula> donc <formula>\frac{1+x^{n}}{1-x^{n}}=\frac{1+x}{1-y}</formula> donc <formula>y=T\sqrt{-1}=</formula>
-<lb/>
-<formula>\frac{1+x^{n}-1-x^{n}}{1+x^{n}+1-x^{n}}=\frac{nx+n\times\frac{n-1}{2}\times\frac{n-2}{3}x^{3}\mbox{&amp;c.}}{1+n\times\frac{n-1}{2}xx+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}}\mbox{ &amp;c.}</formula>
-<lb/>
-<formula>\frac{\stackrel{=}{=}\frac{nt}{V(??\sqrt{)}{-1}}+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{t^{3}}{-1V(??\sqrt{)}}-1\mbox{etc.}}{1-n\times\frac{n-1}{2}tt+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}tt\mbox{&amp;c.}}</formula>
-<!--Formeln überprüfen-->
-<lb/>&amp; multipliant le tout par <formula>V-1</formula> on aura <formula>T=</formula>
+<p><lb/><choice><orig>Voila</orig><reg>Voilà</reg></choice><supplied>,</supplied> Monsieur<supplied>,</supplied> une idée qui pourra s’etendre plus loin.
+  <lb/>Au reste il faut que je vous dise que le jeune <rs type="person">Gentilhomme</rs>
+  <lb/>Anglois autheur de la double suite pour la rectificatione du
+  <lb/>cercle avoit trouvé ce rapport des tangentes avant que de
+  <lb/>rechercher cette rectification <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il s’en servoit comme de Lemme
+  <lb/>pour cela, mais <choice><orig>a</orig><reg>à</reg></choice> propos de cette double suite, je felicite Monsieur
+  <lb/>Votre <rs key="pers_DE-588-119166895" type="person">neveu</rs> de l’avoir trouvée, je suis ravy qu’il commence <choice><orig>a</orig><reg>à</reg></choice>
+  <lb/>donner de si belles esperances de ce qu’il sera un jour. Monsieur
+  <lb/><rs key="pers_DE-588-119112450" type="person">Herman</rs> l’a aussy fort bien demontrée. <choice><orig>je</orig><reg>Je</reg></choice> ne <choice><orig>scaurois</orig><reg>sçaurois</reg></choice> aussy
+  <lb/>m’empecher de vous dire que j’ay recherché ce rapport de tangentes
+  <lb/>d’une maniere assez particuliere. Soit <formula>t</formula> la tangente d’un arc
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>T</formula> la tangente d’un arc qui soit au premier comme <formula>n</formula> à <formula>1</formula>.
+  <lb/><choice><orig>la</orig><reg>La</reg></choice> difference des arcs sera donc <formula>\frac{\dot{t}}{1+tt}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> \frac{\dot{T}}{1+TT} donc <formula>\frac{n\dot{t}}{1+tt}=</formula>
+  <lb/><formula>\frac{\dot{T}}{1+TT}</formula>, soit <formula>t=x\sqrt{-1}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>T=y\sqrt{-1}</formula> donc <formula>\frac{n\dot{x}}{1-xx}=\frac{\dot{y}}{1-yy}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+  <lb/>ou <formula>\frac{2n\dot{x}}{1-xx}=\frac{2\dot{y}}{1-yy}</formula>, mais <formula>\frac{2\dot{x}}{1-xx}</formula> est la difference du
+  <lb/>logarithme de <formula>\frac{1+x}{1-x}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\frac{2\dot{y}}{1-yy}</formula> est la difference du logarithme <lb/>de <formula>\frac{1+y}{1-y}</formula> donc <formula>\frac{\overline{1+x}^{n}}{\overline{1-x}^{n}}=\frac{1+y}{1-y}</formula> donc <formula>y=T\sqrt{-1}=</formula>
+  <lb/><formula>\frac{\overline{1+x}^{n}-\overline{1-x}^{n}}{\overline{1+x}^{n}+\overline{1-x}^{n}}=\frac{nx+n\times\frac{n-1}{2}\times\frac{n-2}{3}x^{3} \text{ etc.}}{1+n\times\frac{n-1}{2}xx+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4} \text{ etc.}}</formula> <lb/><formula>=\frac{\frac{nt}{\sqrt{-1}}+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{t^{3}}{-1\sqrt{-1}}\text{ etc.}}{1-n\times\frac{n-1}{2}tt+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}t^4\, \text{ etc.}}</formula><!-- ToDo: Normalisieren, mit etc. und das vor dem letzten Term im Zähler eingefügte Malkreuz nur in <reg> ergänzen.-->
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> multipliant le tout par <choice><orig><formula>\sqrt{}-1</formula></orig><reg><formula>\sqrt{-1}</formula></reg></choice> on aura <formula>T=</formula>
 <pb facs="1080228" n="9"/>
-<lb/><formula>=\frac{nt-n\times\frac{n-1}{2}\times\frac{n-2}{3}t^{3}\mbox{&amp;c.}}{1-n+\frac{n-1}{2}tt+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}t^{4}\mbox{&amp;c.}}</formula>.</p>
-<p><lb/>Je ne scais si Monsieur <rs type="person">de Magneville</rs> vous aura envoyé selon que je
-               <lb/>l’en avois prié les solutions de certaines Equations qui ont la forme de
-               <lb/>celles qui resultent de la triplication, quintuplication <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. des arcs circulaires,
-               <lb/>ou des aires Hyperboliques, ces expressions etoient semblables a celles de
-               <lb/>Cardan pour les Equation Cubiques, Si vous les avez veues il vous aura
-               <lb/>été facile de juger que je les avois deduites de cette maniere cy
+<lb/><formula>\frac{nt-n\times\frac{n-1}{2}\times\frac{n-2}{3}t^{3}\, \text{ etc.}}{1-n+\frac{n-1}{2}tt+n\times\frac{n-1}{2}\times\frac{n-2}{3}\times\frac{n-3}{4}t^{4} \text{ etc.}}</formula>.</p>
+<p><lb/><choice><orig>je</orig><reg>Je</reg></choice> ne <choice><orig>scais</orig><reg>sçais</reg></choice> si Monsieur <rs type="person">de Magneville</rs> vous aura envoyé selon que je
+               <lb/>l’en avois prié l<del/><add>es</add> solutions de certaines Equations qui ont la forme de
+               <lb/>celles qui resultent de la triplication, quintuplication <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> des arcs circulaires,
+               <lb/>ou des Aires Hyperboliques, ces expressions etoient semblables <choice><orig>a</orig><reg>à</reg></choice> celles de
+               <lb/><rs type="person">Cardan</rs> pour les Equations Cubiques, si vous les avez veues il vous aura
+               <lb/><choice><orig>eté</orig><reg>été</reg></choice> facile de juger que je les avois deduites de cette maniere cy
                <lb/>du calcul differentiel, mais je croy qu’il y aura eu peu de personnes
-               <lb/>qui en ayant decouvert le principe quoyque d’ailleurs la demonstration
-               <lb/>en soit assez facile. Dans le temps que je recherchois cecy, il me
-               <lb/>souvint confusement qu’un jour en feuillettant des <rs type="biblio">Actes de Leipsick</rs>
-<lb/>il se trouva sous ma main quel que chose qui regardoit les logatithmiques
-               <lb/>imaginaires, je croy Monsieur que c’etoit de vous, mais je n’eux pas
+               <lb/>qui en ayant decouvert le principe<supplied>,</supplied> quoyque d<supplied>’</supplied>ailleurs la demonstration
+               <lb/>en soit assez facile. <choice><orig>dans</orig><reg>Dans</reg></choice> le temps que je recherchois cecy, il me
+               <lb/>souvint confusement qu’un jour en feuilletant des <rs type="biblio">Actes de Leipsick</rs>
+<lb/>il se trouva sous ma main quelque chose qui regardoit les logarithmiques
+               <lb/>imaginaires, je croy<supplied>,</supplied> Monsieur<supplied>,</supplied> que c’etoit de vous, mais je n’eux pas
                <lb/>le loisir d’y faire attention, <add>alors</add> etant fort pressé, cependant cela me repassa
                <lb/>plusieurs fois dans l’esprit, mais je ne pus jamais deviner ce que cela
-               <lb/>pouvoit signifier jusqu’a ce que m’etant mis a cette recherche
-               <lb/>je pensay que j’avois eu le bonheur d’entrer dans votre idée &amp;
-               <lb/>que vos logarithmiques imaginaires etoient derivée d’une supposition
+  <lb/>pouvoit signifier jusqu’<choice><orig>a</orig><reg>à</reg></choice> ce que m’etant mis <choice><orig>a</orig><reg>à</reg></choice> cette recherche<supplied>;</supplied>
+               <lb/>je pensay que j’avois eu le bonheur d’entrer dans votre idée <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <lb/>que vos logarithmiques imaginaires etoient <choice><sic>derivée</sic><corr>derivées</corr></choice> d’une supposition
   <lb/>d’une grandeur <choice><sic>reele</sic><corr>réelle</corr></choice> egale à une imaginaire.</p>
 <p><lb/>Mais pour revenir à mon premier Theoreme, j’en tiray facilement cette
-               <lb/>conclusion, c’est que en commencant les nombres formateurs par <formula>0</formula>,
-               <lb/>&amp; faisant <formula>q=1</formula>. <formula>x</formula> pouvoit etre regardé comme l’abcisse d’une
-               <lb/>Courbe, &amp; <formula>a+xd'+x\times\frac{x-1}{2}d''\mbox{&amp;c.}</formula> comme son ordonnée, de la
-               <lb/>ce Probleme de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> se trouva resolu, scavoir de
+               <lb/>conclusion, c’est que en commençant les nombres formateurs par <formula>0</formula>,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> faisant <formula>q=1</formula><choice><orig>.</orig><reg>,</reg></choice> <formula>x</formula> pouvoit etre regardé comme l’abcisse d’une
+  <lb/>Courbe, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>a+xd^{\prime}+x\times\frac{x-1}{2}d^{\prime\prime}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> comme son ordonnée, de <choice><orig>la</orig><reg>là</reg></choice>
+               <lb/>ce Probleme de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> se trouva resolu, <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> de
                <lb/>decrire une Courbe qui passe par tant de points donnez qu’on
-               <lb/>voudra, il est vray qu’il n’y a proprement icy que la premiere
-               <lb/>partie du probleme de resolu, scavoir le cas ou les intervalles
-               <lb/>des ordonnées dont les points donnez sont les extremitez sont egaux,
+               <lb/>voudra<choice><orig>,</orig><reg>;</reg></choice> il est vray qu’il n’y a proprement icy que la premiere
+  <lb/>partie du probleme de resolu, <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> le cas <choice><orig>ou</orig><reg>où</reg></choice> les intervalles
+               <lb/>des ordonnées dont les points donnez sont les extremitez sont egaux<supplied>,</supplied>
             <pb facs="1080229" n="10"/>
-<lb/>mais apres avoir eté si avant je n’eux pas de peine a le
+<lb/>mais apres avoir <choice><orig>eté</orig><reg>été</reg></choice> si avant je n’eus pas de peine <choice><orig>a</orig><reg>à</reg></choice> le
                <lb/>resoudre dans toute son etendue, mais pour ne parler que du premier
-               <lb/>cas, je pris la quadrature de la Courbe dont l’abcisse est <formula>x</formula>,
-               <lb/>l’ordonnée <formula>a+xd'+x\times\frac{x-1}{2}d''</formula> &amp;c. Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit fait
-               <lb/>cela autrefois, &amp; je me souvient que dans le temps qu’il imprimoit
-               <lb/>son traitté de la quadrature des courbes, il me demanda si je croyois
-               <lb/>qu’il fut a propos d’imprimer ce qu’il avoit fait la dessus, je
+               <lb/>cas, je pris la quadrature de la Courbe dont l’Abcisse est <formula>x</formula><supplied>,</supplied>
+  <lb/>l’ordonnée <formula>a+xd^{\prime}+x\times\frac{x-1}{2}d^{\prime\prime}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> avoit fait
+               <lb/>cela autrefois, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je me souviens que dans le temps qu’il imprimoit
+               <lb/>son <rs type="biblio">traitté de la <del/><add>q</add>uadrature des courbes</rs>, il me demanda si je croyois
+  <lb/>qu’il fut <choice><orig>a</orig><reg>à</reg></choice> propos d’imprimer ce qu’il avoit fait <choice><orig>la</orig><reg>là</reg></choice> dessus, je
                <lb/>luy fis entendre que le Public recevroit avec plaisir tout ce
-               <lb/>qui viendroit de luy, cependant il ne trouva pa a propos
-               <lb/>de l’imprimer, il est vray comme il me l’a avoué depuis qu’il
+  <lb/>qui viendroit de luy<supplied>,</supplied> cependant il ne trouva pas <choice><orig>a</orig><reg>à</reg></choice> propos
+               <lb/>de l’imprimer<choice><orig>,</orig><reg>;</reg></choice> il est vray comme il me l’a avoué depuis qu’il
                <lb/>ne s’etoit pas donné la peine de retablir les ordonnées au
-               <lb/>lieu des differences &amp; des differences des differences, ce qui
+               <lb/>lieu des differences <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des differences des differences, ce qui
                <lb/>fait que les Theoremes qu’il avoit formez ne pouvoient
-               <lb/>pas avoir la beauté et la simplicité de ceux cy, soit
+               <lb/>pas avoir la beauté <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la simplicité de ceux<supplied>-</supplied>cy<choice><orig>,</orig><reg>;</reg></choice> soit
                <lb/>donc trois ordonnées <formula>A</formula>, <formula>B</formula>, <formula>C</formula>, que <formula>A</formula> soit l’ordonnée
-               <lb/>quand <formula>A=0</formula>. <formula>B</formula> quand <formula>x=l</formula>, <formula>C</formula> quand <formula>x=2</formula>.
-               <lb/>la quadrature de la Courbe est <formula>\frac{\overline{A+C}+4B}{3}</formula>
-<lb/>Soit <formula>A</formula>, <formula>B</formula>, <formula>C</formula>, <formula>D</formula> quatre ordonnées, la quadrature de la
-               <lb/>Courbe est <formula>\frac{3+\overline{A+D}+9\overline{B+C}}{8}</formula>
+               <lb/>quand <formula>A=0</formula><choice><orig>.</orig><reg>,</reg></choice> <formula>B</formula> quand <formula>x=l</formula>, <formula>C</formula> quand <formula>x=2</formula><choice><orig>.</orig><reg>,</reg></choice>
+  <lb/>la quadrature de la Courbe est <choice><orig><formula>\frac{\overline{A+C}+4B}{3}</formula></orig><reg><formula>\frac{(A+C)+4B}{3}</formula></reg></choice><supplied>;</supplied>
+<lb/>soit <formula>A</formula>, <formula>B</formula>, <formula>C</formula><supplied>,</supplied> <formula>D</formula> quatre ordonnées, la quadrature de la
+               <lb/>Courbe est <formula>\frac{3\times\overline{A+D}+9\overline{B+C}}{8}</formula>
 <lb/>pour cinq ordonnées la quadrature est
                <lb/><formula>\frac{112\overline{A+E}-408\overline{B+D}+652C}{15}</formula>
-<lb/>pour 6 ordonnées la quadrature est
-            <pb facs="1080230" n="11"/>
-<lb/><formula>\frac{95\times\overline{A+F}+375\overline{B+E}+250\overline{D+C}}{288}</formula>
+<lb/>pour 6 <choice><orig>ordonnees</orig><reg>ordonnées</reg></choice> la quadrature est
+            <pb facs="1080230" n="11"/> <lb/><choice><orig><formula>\frac{95\times\overline{A+F}+375\overline{B+E}+250\overline{D+C}}{288}</formula></orig><reg><formula>\frac{95\cdot(A+F)+375(B+E)+250(D+C)}{288}</formula></reg></choice>
 <lb/>pour 7 ordonnées la quadrature est
-               <lb/><formula>\frac{41\overline{A+G}+216\overline{B+F}+27\overline{C+E}+272D}{140}</formula>
-<lb/>j’en ay cherché un de plus scavoir pour onze ordonnées
-               <lb/>a cause que l’abcisse devenant 10, toutes les puissances de <formula>x</formula>
-<lb/>se touvoient toutes formées, &amp; j’ay trouvé que la quadrature
-               <lb/>etois
-               <lb/><formula>3213,4\overline{A+L}+21260\overline{B+K}-9705\overline{C+J}+54480\overline{D+H}</formula>
-<lb/><formula>-52110\overline{E+G}+85473,6F</formula>
+  <lb/><choice><orig><formula>\frac{41\overline{A+G}+216\overline{B+F}+27\overline{C+E}+272D}{140}</formula></orig><reg><formula>\frac{41(A+G)+216(B+F)+27(C+E)+272D}{140}</formula></reg></choice><note type="editorial">Korrektur in der Formel.</note>
+<lb/>j’en ay cherché un de plus <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> pour onze ordonnées
+               <lb/><choice><orig>a</orig><reg>à</reg></choice> cause que l’abcisse devenant 10, <del/><add>to</add>utes les <choice><sic>puissance</sic><corr>puissances</corr></choice> de <formula>x</formula>
+<lb/>se trouvoient toutes formées, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ay trouvé que la quadrature
+               <lb/>etoit
+  <lb/><choice><orig><formula>321314\overline{A+L}+21260\overline{B+K}-9705\overline{C+J}+54480\overline{D+H}</formula></orig><reg><formula>321314(A+L)+21260(B+K)-9705(C+J)+54480(D+H)</formula></reg></choice><note type="editorial">Ein kleines 
+    "j" wurde in der Formel zu "J" korrigiert.</note>
+  <lb/><choice><orig><formula>-52110\overline{E+G}+8547316F</formula></orig><reg><formula>-52110(E+G)+8547316F</formula></reg></choice>
 <lb/>Il est visible que si <del/>l’intervalle des ordonnées au lieu d’etre
                <lb/>l’unité etoit quelqu’autre nombre, l’aire trouvée devroit etre
-               <lb/>changée dans la raison de l’unité à cet autre nombre. J’ay essayé
+               <lb/>changée dans la raison de l’unité à cet autre nombre<supplied>;</supplied> j’ay essayé
                <lb/>quelques uns de ces Theoremes pour la quadrature et pour la
-               <lb/>rectification des Courbes, &amp; je trouve qu’ils peuvent etre de tres
+               <lb/>rectification des Courbes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je trouve qu’ils peuvent etre de tres
                <lb/>bon usage dans la pratique, je me suis servi du dernier pour
-               <lb/>chercher le logarithme Hyperbolique de 2. &amp; je l’ay trouvé
-               <lb/>juste jusqu’a 9 figures. Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> a essayé celuy
+               <lb/>chercher le logarithme Hyperbolique de 2<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je l’ay trouvé
+  <lb/>juste jusqu’<choice><orig>a</orig><reg>à</reg></choice> 9 figures. Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> a essayé celuy
                <lb/>de 7 ordonnées sur la rectification de l’ellipse dont les
-               <lb/>diametres sont dans la raison de 4 à 5. mais à deux fois
+               <lb/>diametres sont dans la raison de 4 à 5. <choice><orig>mais</orig><reg>Mais</reg></choice> à deux fois
                <lb/>ayant divisé le quart de la circonference elliptique en deux
-               <lb/>fois 7 parties, &amp; ayant pris les raisons des <del/>perpendiculaires
+               <lb/>fois 7 parties, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ayant pris les raisons des <del/>perpendiculaires
                <lb/>aux ordonnées, il a prix la quadrature de la Courbe dont les
             <pb facs="1080231" n="12"/>
-<lb/>ordonnées pouvoient etre considerées comme les esposants de
-               <lb/>ces raisons, &amp; il a trouvé une approximation qui est la méme
-               <lb/>que la seconde des votres. Mais il faut avouer Monsieur que cecy
+<lb/>ordonnées pouvoient etre considerées comme les exposants de
+               <lb/>ces raisons, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il a trouvé une approximation qui est la méme
+               <lb/>que la seconde des votres. Mais il faut avouer<supplied>,</supplied> Monsieur<supplied>,</supplied> que cecy
                <lb/>est infiniment inferieur à votre beau Theoreme tant pour la facilité
                <lb/>avec laquelle il se met en pratique, que pour la profondeur de
-               <lb/>Geometrie &amp; d’invention qu’il a fallu pour le trouver. Je croy
-               <lb/>vous avoir deja dit que Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> en est charmé, Monsieur
+               <lb/>Geometrie <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’invention qu’il a fallu pour le trouver. <choice><orig>je</orig><reg>Je</reg></choice> croy
+               <lb/>Vous avoir deja dit que Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> en est charmé, Monsieu<unclear reason="lost">r</unclear>
                <lb/><rs key="pers_DE-588-118720066" type="person">Halley</rs>, le jeune Mathematicien dont le nom est <rs key="pers_DE-588-11751733X" type="person">Machin</rs>, Monsieur
-               <lb/><rs key="pers_DE-588-102440751" type="person">Colson</rs> celuy qui a inseré quelque chose dans mon livre contre <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>
-<lb/>&amp; moy ne cessons de l’admirer. Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> est ravy que ce
+               <lb/><rs key="pers_DE-588-102440751" type="person">Colson</rs> celuy qui a inseré quelque chose dans mon <rs type="biblio">livre</rs> contre <rs key="pers_DE-588-117659606" type="person">Cheyn<unclear reason="lost">es</unclear></rs>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moy ne cessons de l’admirer<choice><orig>,</orig><reg>.</reg></choice> Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> est ravy que ce
                <lb/>Probleme qu’il avoit toujours regardé comme extraordinairement
-               <lb/>difficile scavoir trouver l’axe conjugé d’une ellipse dont le
-               <lb/>grand axe est donné &amp; la circonference triple du grand axe
+               <lb/>difficile <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> trouver l’axe conjugé d’une Ellipse dont le
+               <lb/>Grand Axe est donné <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la circonference triple du grand Axe
                <lb/>soit un corollaire si aisé de votre Theoreme et donne une
-               <lb/>approximation si exacte, La maniere dont vous appliquez cecy
+               <lb/>approximation si exacte<choice><orig>,</orig><reg>.</reg></choice> La maniere dont vous appliquez cecy
                <lb/>aux autres Courbes est extremement ingenieuse; avant que j’eusse montré
-               <lb/>votre <rs type="letter">lettre</rs> à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, je luy dis que croyez vous Monsieur
+               <lb/>votre <rs type="letter">lettre</rs> à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, je luy dis que<supplied>:</supplied> croyez<supplied>-</supplied>vous<supplied>,</supplied> Monsieur<supplied>,</supplied>
                <lb/>d’une methode de reduire toutes les rectifications des courbes à la
-               <lb/>rectification du cercle, il crut que je riois, mais il <del/>vit bien
-               <lb/>que je parlois serieusement quand il eut eu le loisir de lire votre <rs type="letter">lettre</rs>.
+               <lb/>rectification du cercle<choice><orig>,</orig><reg>?</reg></choice> il crut que je riois, mais il <del/>vit bien
+               <lb/>que je parlois serieusement quand il eut eu le loisir de lire votre <rs type="letter">lettre</rs><unclear reason="lost">.</unclear>
                <lb/>J’ay oublié en vous parlant de mes Theoremes mecaniques
                <lb/>pour la quadrature des Courbes une chose qui m’a fait
-               <lb/>beaucoup de plaisir. Reprenons l’ordonnée <formula>a+xd'+</formula>
-<lb/><formula>x\times\frac{x-1}{2}d''+x\times\frac{x-1}{2}\times\frac{x-2}{3}d'''</formula>. Supposez que <formula>x</formula> contienne
+  <lb/>beaucoup de plaisir. <choice><orig>reprenons</orig><reg>Reprenons</reg></choice> l’ordonnée <choice><orig><formula>a+x\times d^{\prime}+</formula></orig><reg><formula>a+x\cdot d^{\prime}+</formula></reg></choice>
+  <lb/><choice><orig><formula>x\times\frac{x-1}{2}d^{\prime\prime}+x\times\frac{x-1}{2}\times\frac{x-2}{3}d^{\prime\prime\prime}</formula></orig><reg><formula>x\cdot\frac{x-1}{2}d^{\prime\prime}+x\cdot\frac{x-1}{2}\cdot\frac{x-2}{3}d^{\prime\prime\prime}</formula></reg></choice>. Supposez que <formula>x</formula> contienne
                <lb/>un nombre infiny d’unitez, l’ordonnée devient
-               <lb/><formula>a+xd'+\frac{1}{2}xxd''+\frac{1}{6}x^{3}d''\mbox{&amp;c.}</formula> par consequent
+  <lb/><choice><orig><formula>a+x\times d^{\prime}+\frac{1}{2}xxd^{\prime\prime}+\frac{1}{6}x^{3}d^{\prime\prime\prime}</formula></orig><reg><formula>a+x\cdot d^{\prime}+\frac{1}{2}xxd^{\prime\prime}+\frac{1}{6}x^{3}d^{\prime\prime\prime}</formula></reg></choice><note type="editorial">Korrektur in der Formel</note> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> parconsequent
             <pb facs="1080232" n="13"/>
-<lb/>l’aire de la Courbe est <formula>ax+\frac{1}{2}xxd'+\frac{1}{6}x^{3}d''+\frac{1}{24}x^{4}d'''\mbox{&amp;c.}</formula>
-<lb/>ce qui revient à votre Theoreme pour trouver l’integrale de <formula>yx</formula>.
+  <lb/>l’aire de la Courbe est <choice><orig><formula>ax+\frac{1}{2}xxd^{\prime}+\frac{1}{6}x^{3}d^{\prime\prime}+\frac{1}{24}x^{4}d^{\prime\prime\prime} \text{\&amp;c.}</formula></orig><reg><formula>ax+\frac{1}{2}xxd^{\prime}+\frac{1}{6}x^{3}d^{\prime\prime}+\frac{1}{24}x^{4}d^{\prime\prime\prime} \text{\etc.}</formula></reg></choice>
+<lb/>ce qui revient <choice><orig>a</orig><reg>à</reg></choice> votre Theoreme pour trouver l’integrale de <formula>y\dot{x}</formula>.
                <lb/>Il a quelque temps que Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> me proposa deux problemes
-               <lb/>astronomiques; je resolus le premier d’une maniere tres simple, &amp; pour
-               <lb/>le sacond je ne l’ay resolu qu’en partie; Le premier est cecy.
-               <lb/>La latitude d’un lieu etant donnée &amp; la declinaison du soleil
-               <lb/>trouver le vertical d’ou le soleil part &amp; celuy ou il arrive
+               <lb/>Astronomiques<choice><orig>,</orig><reg>;</reg></choice> je resolus le premier d’une maniere tres simple, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour
+  <lb/>le second je ne l’ay resolu qu’en partie<choice><orig>,</orig><reg>.</reg></choice> Le premier est cecy<supplied>:</supplied>
+               <lb/>La Latitude d’un lieu etant donnée <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la declinaison du soleil<supplied>,</supplied>
+  <lb/>trouver le vertical d’<choice><orig>ou</orig><reg>où</reg></choice> le soleil part <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celuy <choice><orig>ou</orig><reg>où</reg></choice> il arrive
                <lb/>quand dans un temps donné il descend le plus vite qu’il
-               <lb/>est possible, ou ce qui est la méme chose quand la difference
-               <lb/>des arcs verticaux prix depuis le Zenith est la plus grande
-               <lb/>qu’il est possible, je vous supplie d’en vouloir examiner la resolution</p>
-<p><!--[Figur]--></p>
+               <lb/>est possible, ou ce qui est la méme chose<supplied>,</supplied> quand la difference
+               <lb/>des arcs verticaux pris depuis le Zenith est la plus grande
+               <lb/>qu’il est possible, je vous supplie d’en vouloir examiner la resolution.</p>
+  <p><figure facs="1080232_01.png"/></p>
 <p><lb/>Soit <formula>ADBE</formula> l’horizon, <formula>Z</formula> le Zenith, <formula>mQS</formula> le parallele que le
-               <lb/>soleil decrit, <formula>p</formula> le pole, <formula>ZQ</formula> le vertical d’ou le soleil part, <formula>ZS</formula> celuy
-               <lb/>ou il arrive dans un temps donné, <formula>ZS-ZQ</formula> est donc un <hi rend="u">Maximum</hi>, par consequent
+  <lb/>soleil decrit, <formula>p</formula> le pole, <formula>ZQ</formula> le vertical d’<choice><orig>ou</orig><reg>où</reg></choice> le soleil part, <formula>ZS</formula> celuy
+  <lb/><choice><orig>ou</orig><reg>où</reg></choice> il arrive dans un temps donné, <formula>ZS-ZQ</formula> est donc un <hi rend="u">Maximum</hi>, parconsequent
                <lb/><formula>qT=sx</formula>, <del/>mais les arcs <formula>Qq</formula>, <formula>Ss</formula> decrits dans des temps egaux
                <lb/>sont egaux, donc les Triangles <formula>QqT</formula>, <formula>Ssx</formula> sont egaux. Soit la Sphere
-               <lb/>prejettée choreographiquement sue le plan de l’Horizon, par la nature de
-               <lb/>cette projection, les Triangles <formula>QqT</formula>, <formula>Ssx</formula> qui etoient egaux et semblables
+               <lb/>projettée <del/><add>ch</add>oreographiquement sue le plan de l’horizon, par la nature de
+  <lb/>cette projection, les Triangles <formula>QqT</formula>,<note type="editorial">Im Manuskript steht "<formula>Qqt</formula>".</note> <formula>Ssx</formula> qui etoient egaux et semblables
                <lb/>sur la sphere demeureront semblables dans la projection. Soit <formula>C</formula> le centre
-               <lb/>du parallele projetté, soient tirées <formula>QC</formula>, <formula>SC</formula>. Soient tirées aussy <formula>QZ</formula>, <formula>SZ</formula>
-<lb/>&amp; <formula>CR</formula>, <formula>CL</formula> perpendiculaires sur <formula>QZ</formula>, <formula>SZ</formula>. Les Triangles <formula>QCR</formula>, <formula>SCL</formula>
+               <lb/>du parallele projetté, soient tirées <formula>QC</formula>, <formula>SC</formula><choice><orig>,</orig><reg>.</reg></choice> Soient tirées aussy <formula>QZ</formula>, <formula>SZ</formula>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>CR</formula>, <formula>CL</formula> perpendiculaires sur <formula>QZ</formula>, <formula>SZ</formula>. Les Triangles <formula>QCR</formula>, <formula>SCL</formula>
 <pb facs="1080233" n="14"/>
 <lb/>seront donc semblables, puisqu’ils sont semblables aux petits Triangles
-               <lb/><formula>Qqt</formula>, <formula>Ssx</formula>, mais ils seront aussy egaux puisque les cotez <formula>CQ</formula>, <formula>CS</formula>
-<lb/>sont egaux. Donc <formula>QR=SL</formula>. Soit <formula>QZ=Z</formula>, <formula>CQ=a</formula>, <formula>CZ=</formula>
-<lb/><formula>f</formula>, <formula>ZS=y</formula>. On trouvera donc que <formula>QR=\frac{aa-ff+zz}{zz}</formula> &amp; <formula>SL</formula>
-<lb/><formula>=\frac{aa-ff+yy}{2z}</formula>, ou supposant <formula>aa-ff=bb-ZGq</formula> on aura
-               <lb/><formula>\frac{bb+zz}{2z}=\frac{bb+yy}{2y}</formula> donc <formula>bby+zzy=bbz+zyy</formula> ou <formula>bby-bbz</formula>
-<lb/><formula>=zyy-zzy</formula>. ou <formula>bb+\overline{y-z}\quad=\quad yz+\overline{y-z}</formula> ou <formula>yz=bb</formula>.
-               <lb/>Donc <formula>z,b::b,y</formula>.</p>
-<p><lb/>Donc la Tangente de la moitié de la distance du Zenith au soleil
+  <lb/><formula>QqT</formula>,<note type="editorial">Im Manuskript steht "<formula>Qqt</formula>".</note> <formula>Ssx</formula>, mais ils seront aussy egaux puisque les cotez <formula>CQ</formula>, <formula>CS</formula>
+<lb/>sont egaux. <choice><orig>donc</orig><reg>Donc</reg></choice> <formula>QR=SL</formula>. Soit <formula>QZ=z</formula>, <formula>CQ=a</formula>, <formula>CZ=</formula>
+<lb/><formula>f</formula>, <formula>ZS=y</formula>. <choice><orig>on</orig><reg>On</reg></choice> trouvera donc que <formula>QR=\frac{aa-ff+zz}{2z}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>SL</formula>
+<lb/><formula>=\frac{aa-ff+yy}{2y}</formula>, ou supposant <formula>aa-ff=bb=zGq</formula> on aura
+  <lb/><formula>\frac{bb+zz}{\cancel{2}z}=\frac{bb+yy}{\cancel{2}y}</formula><!-- ToDo: Formelkodierung prüfen --> donc <formula>bby+zzy=bbz+zyy</formula> ou <formula>bby-bbz</formula>
+  <lb/><formula>=zyy-zzy</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ou <choice><orig><formula>bb+\overline{y-z}= yz+\overline{y-z}</formula></orig><reg><formula>bb+(y-z)=yz+(y-z)</formula></reg></choice> ou <formula>yz=bb</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+  <lb/>donc <choice><orig><formula>z,b::b,y</formula></orig><reg><formula>z:b=b:y</formula></reg></choice>.</p>
+<p><lb/><choice><orig>donc</orig><reg>Donc</reg></choice> la Tangente de la moitié de la distance du Zenith au solei<unclear reason="lost">l</unclear>
                <lb/>dans le moment de son depart, est à la tangente de la moitié de
-               <lb/>la distance sous le vertical d’est &amp; d’ouest, comme la Tangente
-               <lb/>de la moitié de cette distance, est à la tangente de la moitié de
-               <lb/>la distance dans le vertical ou il arrive.</p>
-<p><lb/>De plus puisque <formula>QZ,ZG::ZG,ZS</formula>, les Angles <formula>QZG</formula>,
-               <lb/><formula>GZS</formula> sont egaux par la proprieté du cercle, donc ces angles
+  <lb/>la distance sous le vertical <choice><orig>D</orig><reg>d</reg></choice>’est <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>D</orig><reg>d</reg></choice>’ouest, comme la Tangente
+               <lb/>de la moitié de cette distance, est à la Tangente de la moitié de
+               <lb/>sa distance dans le vertical <choice><orig>ou</orig><reg>où</reg></choice> il arrive.</p>
+  <p><lb/>D<unclear reason="lost">e</unclear> plus puisque <choice><orig><formula>QZ,ZG::ZG,ZS</formula></orig><reg><formula>QZ:ZG=ZG:ZS</formula></reg></choice>,<note type="editorial">Korrekturen in der Formel.</note> les Angles <formula>QZG</formula><supplied>,</supplied>
+               <lb/><formula>GZS</formula> sont egaux par la proprieté du cercle, donc ces Angles
                <lb/>sont encore egaux sur le Globe, donc le soleil est egalement
-               <lb/><add>eloigne</add> du point d’est <del/>ou d’ouest avant &amp; apres son depart. Presentement
-               <lb/>qu’il faille trouver la distance du point d’Est ou d’ouest
+    <lb/><add>eloigné</add> du point d’est <del/>ou <choice><orig>D</orig><reg>d</reg></choice>’ouest avant <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> apres son depart. <choice><orig>presentem</orig><reg>Presentem</reg></choice><unclear reason="lost">ent</unclear>
+               <lb/>qu’il faille trouver sa distance du point d’Est ou d’ouest
                <lb/>avant son depart, etant donné le temps pendant lequel il se
                <lb/>meut.</p>
-<p><!--[Figur]--></p>
+  <p><figure facs="1080233_01.png"/></p>
 <pb facs="1080234" n="15"/>
 <p><lb/>Soit <formula>Z</formula> le Zenith, <formula>P</formula> le pole du monde <formula>ZrN</formula>, <formula>ZRL</formula> deux verticaux
-               <lb/>egalement eloignez de l’Est ou de l’Ouest, <formula>Rrv</formula> le parallele du
-               <lb/>soleil, l’angle <formula>RPr</formula> denote donc le temps que le soleil employer à se
-               <lb/>mouvoir. Soit pris l’arc <formula>Pm</formula> egal à <formula>PZ</formula>, Les Triangles <formula>ZPv</formula>, <formula>ZPr</formula> sont
-               <lb/>egaux, les Triangles <formula>PZR</formula>, <formula>mPv</formula> sont aussy egaux, donc l’angle <formula>ZPm</formula>
-<lb/>est egal à <formula>RPr</formula>. Soit divisé l’angle <formula>ZPm</formula> en deux egalement par un
-               <lb/>arc <formula>PK</formula> perpendiculaire sur <formula>Zm</formula>, &amp; soit consideré le Triangle <formula>ZPK</formula>
-<lb/>on aura cette proportion. Cosinus de <formula>ZP</formula>, est au Rayon :: Cotang. <formula>PZK</formula>. Cot. <formula>ZPK</formula>.
-               <lb/>ou Sinus de la Latitude, Rayon :: Tangent. <formula>NZn</formula>, Tang. <formula>\frac{1}{2}</formula> Temp.
-               <lb/><formula>R</formula>, <formula>S</formula> Lat. :: T <formula>\frac{1}{2}</formula> Temp. T.<formula>NZn</formula>.</p>
-<p><lb/>&amp; le probleme est resoly, et aussy simplement qu’il le puisse etre. Apres
-               <lb/>avoir montré cette conclusion à Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs>, il la trouva fort à son
+  <lb/>egalement e<del/><add>l</add>oignez de <choice><orig>L</orig><reg>l</reg></choice>’Est ou de <choice><orig>L</orig><reg>l</reg></choice>’Ouest, <formula>Rrv</formula> le parallele du
+  <lb/>soleil, <choice><orig>L</orig><reg>l</reg></choice>’Angle <formula>RPr</formula> denote donc le temps que le soleil employe à se
+  <lb/>mouvoir. Soit pris <choice><orig>L</orig><reg>l</reg></choice>’arc <formula>Pm</formula> egal à <formula>PZ</formula>, <choice><orig>Les</orig><reg>les</reg></choice> Triangles <formula>ZPv</formula>, <formula>ZPr</formula> sont
+  <lb/>egaux, les Triangles <formula>PZR</formula>,<note type="editorial">Das "Z" ist wegen einem darübergeklebten Papierfragment schwer leserlich.</note> <formula>mPv</formula> sont aussy egaux, donc <choice><orig>L</orig><reg>l</reg></choice>’Angle <formula>ZPm</formula><note type="editorial">Das "m" in der Formel ist sehr gross geschrieben, wegen der Buchstabenform ist aber anzunehmen, dass ein kleines intendiert ist.</note>
+  <lb/>est egal à <formula>RPr</formula>. Soit divisé <choice><orig>L</orig><reg>l</reg></choice>’Angle <formula>ZPm</formula> en deux egalement par un
+               <lb/>arc <formula>PK</formula> perpendiculaire sur <formula>Zm</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soit consideré le Triangle <formula>ZPK</formula>
+  <lb/>on aura cette proportion<choice><orig>.</orig><reg>:</reg></choice> <choice><orig><formula>\text{Cosinus de}\; ZP,\; \text{est au Rayon} \;::\; \text{Cotang.}\; PZK\;,\; \text{Cot.}\; ZPK</formula></orig><reg><formula>\cos(ZP) \;:\; R \;=\; \cot(PZK) \;:\; \cot(ZPK)</formula></reg></choice><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+  <lb/>ou <choice>
+    <orig><formula>\text{Sinus\; de\; la\; Latitude\;,\; Rayon} \;::\; \text{Tangent.}\; NZn\;,\; \text{Tang.}\; \tfrac12\; \text{Temp.}</formula></orig>
+    <reg><formula>\sin\left(\text{Lat.}\right) \;:\; R \;=\; \tan\left(NZn\right) \;:\; \tan\left(\tfrac12 \text{Temp.}\right)</formula></reg>
+  </choice><note type="editorial">Korrektur in der Formel.</note>
+  <lb/><choice>
+    <orig><formula>\text{R}\;,\; \text{s}\; \text{Lat.} \;::\; \text{T}\; \tfrac12\; \text{Temp.}\;,\; \text{T.}\; NZn.</formula></orig>
+    <reg><formula>R \;:\; \sin\left(\text{Lat.}\right) \;=\; \tan\left(\tfrac12\text{Temp.}\right) \;:\; \tan(NZn)</formula></reg></choice><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><note type="editorial">Das zweite Kommazeichen im Verhältnis wurde in der textnahen Fassung ergäntz.</note></p>
+<p><lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le probleme est <choice><sic>resoly</sic><corr>resolu</corr></choice>, et aussy simplement qu’il le puisse etre<choice><orig>,</orig><reg>.</reg></choice> Apres
+               <lb/>avoir montré cette conclusion <unclear reason="lost">à</unclear> Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs>, il la trouva fort à son
                <lb/>gré, mais se souvenant tout d’un coup, que la declinaison du soleil
                <lb/>qui etoit une des choses données n’y entroit point, il la revoqua
-               <lb/>en doute, &amp; moy méme j’apprehenday de m’etre trompé, mais apres
-               <lb/>avoir reveu mon Probleme avec assez de soin, je <del/><add>tiray</add> de l’objection
+               <lb/>en doute, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moy méme j’apprehenday de m<supplied>’</supplied>etre trompé, mais apres
+  <lb/>avoir reveu mon Probleme avec assez de soin, je <del/><add>tiray</add> de <choice><orig>L</orig><reg>l</reg></choice>’objection
                <lb/>de Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> un corollaire de ma resolution, c’est que
                <lb/><del/>quelle que soit la declinaison du soleil, le soleil
-               <lb/>parcourt toujours le meme azimuth coupé en deux parties
-               <lb/>egales par le vertical d’Est &amp; d’Oest, dans un temps donné.
-               <lb/>L’autre Probleme etoit cecy. La Latitude etant donné &amp;
-               <lb/>la Declinaison du soleil, trouver le vertical d’ou le soleil part
-               <lb/>&amp; celuy ou il arrive quand dans un Temps donné il change
-               <lb/>D’azimuth le <del>ple </del>moins qu’il est possible. Soit comme
-               <lb/>auparavant y la Tangente de la moitié de la distance du
-               <lb/>soleil au Zenith, dans le temps de son depart, <formula>Z</formula> la tang. de
-               <lb/>la moitié de la distance dans le vertical ou il arrive, <formula>b</formula> la
-               <lb/>tangente de la moitié de la distance sous le vertical d’Est &amp; d’Ouest,
+               <lb/>parcourt toujours le meme Azimuth coupé en deux parties
+               <lb/>egales par le vertical d’Est <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’Ouest, dans un temps donné.
+               <lb/>L’autre Probleme etoit cecy<choice><orig>,</orig><reg>:</reg></choice> la Latitude etant donnée <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>la Declinaison du soleil, trouver le vertical d’<choice><orig>ou</orig><reg>où</reg></choice> le soleil part
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celuy <choice><orig>ou</orig><reg>où</reg></choice> il arrive quand dans un Temps donné il change
+               <lb/><choice><orig>D</orig><reg>d</reg></choice>’Azimuth le <del/>moins qu’il est possible. Soit comme
+               <lb/>auparavant <formula>y</formula> la Tangente de la moitié de la distance du
+               <lb/>soleil au Zenith, dans le temps de son depart, <formula>z</formula> la <abbr>tang.</abbr> de
+  <lb/>la moitié de sa distance dans le vertical <choice><orig>ou</orig><reg>où</reg></choice> il arrive, <formula>b</formula> la
+  <lb/>tangente de la moitié de sa distance sous le vertical d’Est <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>D</orig><reg>d</reg></choice>’ouest<supplied>,</supplied>
             <pb facs="1080235" n="16"/>
-<lb/><formula>r</formula> le rayon. J’ay trouvé que</p>
+<lb/><formula>r</formula>, le rayon. J’ay trouvé que</p>
 <p>
-<lb/><formula>y,b::r,z</formula>.</p>
-<p><lb/>Voila pour ce qui regarde le Minimum.</p>
+  <lb/><choice><orig><formula>y,b::r,z</formula></orig><reg><formula>y:b=r:z</formula></reg></choice>.</p>
+<p><lb/><choice><orig>Voila</orig><reg>Voilà</reg></choice> pour ce qui regarde le Minimum.</p>
 <p><lb/>Mais comme j’ay eté obligé d’employer un calcul long et
-               <lb/>embarrassé pour le reste du probleme, je ne puis pas regarder
+               <lb/>embarassé pour <del/><add>l</add>e reste du probleme, je ne puis pas regarder
                <lb/>cela comme une solution, etant persuadé qu’il a quelque chose
-               <lb/>de plus simple dans la nature que ce à quoy j’etois parvenu.
-               <lb/>Hier etant avec Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> et Monsieur <rs key="pers_DE-588-11751733X" type="person">Machin</rs> on nous
-               <lb/>vint apprendre la nouvelle de la signalée victoire qui vient
-               <lb/>d’etre remportée sur les Francois. La dessus nous allames <del/><add>nous rejouir</add>
-<lb/><del/><add>&amp; celebrer un si heureux succez,</add> mais apres avoir parlé
+               <lb/>de plus simple dans la nature que ce à quoy j’etois parvenu;
+               <lb/>hier<supplied>,</supplied> etant avec Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> et Monsieur <rs key="pers_DE-588-11751733X" type="person">Machin</rs><supplied>,</supplied> on nous
+               <lb/>vint apprendre la <choice><sic>nouvelles</sic><corr>nouvelle</corr></choice> de la signalée victoire qui vient
+               <lb/>d’etre remportée sur les François, <choice><orig>la</orig><reg>là</reg></choice> dessus nous allames <del/><add>nous rejouir</add>
+<lb/><del/><add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celebrer un si heureux succez</add> mais apres avoir parlé
                <lb/>un peu de temps de Politique, nous tombames insensiblement
-               <lb/>sur les Mathematiques, &amp; Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> m’apprit qu’il
-               <lb/>venoit <add>de</add> lire quelque chose de <rs key="pers_DE-588-124465641" type="person">Graig</rs> dans les Transactions
+               <lb/>sur les Mathematiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> m’apprit qu’il
+               <lb/>venoit <add>de</add> lire quelque chose de <rs key="pers_DE-588-124465641" type="person">Craig</rs> dans les <rs type="biblio">Transactions</rs>
                <lb/>nouvellement imprimées, il me dit que c’etoit un Probleme
-               <lb/>que vous aviez proposé scavoir de trouver tant de Courbes
-               <lb/>qu’on voudra dont la longeur soit egale à la longeur d’une
-               <lb/>courbe donnée. Je fus surpris de cela, &amp; je fis souvenir
-               <lb/>Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> que <rs key="pers_DE-588-124465641" type="person">Graig</rs> en avoit deja donné une
+               <lb/>que vous aviez <del/><add>P</add>roposé <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> de trouver tant de Courbes
+  <lb/>qu’on voudra dont la longeur soit egale <choice><orig>a</orig><reg>à</reg></choice> la longeur d’une
+  <lb/>courbe donnée<choice><orig>,</orig><reg>;</reg></choice> je fus surpris de cela, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je fis souvenir
+               <lb/>Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> que <rs key="pers_DE-588-124465641" type="person">Craig</rs> en avoit deja donné une
                <lb/>pretendue solution il y a environ quatre ans, mais apparemment
-               <lb/>luy dis je il a cette fois cy resolu le Probleme d’une maniere
-               <lb/>qui n’est sujette à aucune objection, &amp; je luy demanday s’il
+               <lb/>luy dis<supplied>-</supplied>je il a cette fois<supplied>-</supplied>cy resolu le Probleme d’une maniere
+               <lb/>qui n’est sujette <choice><orig>a</orig><reg>à</reg></choice> aucune objection, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je luy demanday s’il
                <lb/>avoit fait attention au principe qu’il employoit pour cela,
-               <lb/>c’est me dit <add>il</add> de diviser deux quarrez <add>en deux autres</add> dont la somme soit egale
-               <lb/>aux deux premiers; puisque cela est ainsy, luy dis je, <rs key="pers_DE-588-124465641" type="person">Graig</rs>
-<lb/>ne s’est point dementy il sera toujours luy méme &amp; digne
+               <lb/>c’est me dit<supplied>-</supplied><add>il</add> de diviser deux quarrez <add>en deux autres</add> dont la somme soit egale
+               <lb/>aux deux premiers<choice><orig>,</orig><reg>;</reg></choice> puisque cela est ainsy, luy dis<supplied>-</supplied>je, <rs key="pers_DE-588-124465641" type="person">Craig</rs>
+<lb/>ne s’est point dementy<supplied>,</supplied> il sera toujours luy méme <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> digne
             <pb facs="1080236" n="17"/>
-<lb/>d’avoir un admirateur tel que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, la dessus je luy appris
-               <lb/>que la pensée de diviser la somme de deux quarrez en deux
+<lb/>d’avoir un Admirateur tel que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, <choice><orig>la</orig><reg>là</reg></choice> dessus je luy appris
+               <lb/>que la pensée de diviser la somme de<del/> deux quarrez en deux
                <lb/>autres quarrez venoit si naturellement dans l’esprit que j’avois
-               <lb/>donné dans ce piege la moy méme, cependant que je m’etois
-               <lb/>deffié de moy méme &amp; que je m’etois bien imaginé qu’un
-               <lb/>Probleme proposé par vous n’etoit point si facile a resoudre, surtout
-               <lb/>si vous faisiez cas de la resolution que vous en aviez trouvée,
-               <lb/>j’ajoutay que vous aviez eu la bonté de me rectifier, &amp; que
+  <lb/>donné dans ce piege <choice><orig>la</orig><reg>là</reg></choice> moy méme, cependant que je m’etois
+               <lb/>deffié de moy méme <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je m’etois bien imaginé qu’un
+  <lb/>Probleme proposé par Vous n’etoit point si facile <choice><orig>a</orig><reg>à</reg></choice> resoudre, surtout
+               <lb/>si vous faisiez cas de la resolution que vous en aviez trouvée<choice><orig>,</orig><reg>;</reg></choice>
+               <lb/>j’ajoutay que vous aviez eu la bonté de me rectifier, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que
                <lb/>vous m’aviez fait voir que la resolution que tout le monde peut
-               <lb/>trouver si aisement donne <add>bien</add> la méme courbe, mais dont le commencem[ent]
-               <lb/>est dans un autre endroit, la dessus nous envoyames chercher les
-               <lb/>Transaction et nous trouvames que c’etoit precisement ce que
+               <lb/>trouver si aisement<supplied>,</supplied> donne <add>bien</add> la méme courbe, mais dont le <choice><abbr>commencem.</abbr><expan>commencement</expan></choice>
+  <lb/>est dans un autre endroit, <choice><orig>la</orig><reg>là</reg></choice> dessus nous envoyames chercher les
+  <lb/><rs type="biblio">Transactions</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous trouvames que c’etoit precisement ce que
                <lb/>j’avois dit, mais nous fumes fort surpris de voir l’insolence avec
                <lb/>laquelle il parle de votre mouvement reptoire que je suis tres
                <lb/>persuadé qu’il n’entend point, et du mouvement de Traction
                <lb/>de Monsieur <rs key="pers_DE-588-118571249" type="person">Leibnitzs</rs>, et l’affectation qu’il a de les comparer
-               <lb/>avec le Probleme de l’Evolution des courbes de Monsieur
-               <lb/><rs key="pers_DE-588-118639749" type="person">Huygens</rs>, toute la terre scait, a l’exception d’un ignorant tel que
-               <lb/>luy que Monsieur <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> &amp; vous avez poussé les Mathematiques
-               <lb/>infiniment plus haut que Monsieur <rs key="pers_DE-588-118639749" type="person">Huygens</rs>, &amp; que si cet
+  <lb/>avec le Probleme de <choice><orig>L</orig><reg>l</reg></choice>’Evolution des courbes de Monsieur
+  <lb/><rs key="pers_DE-588-118639749" type="person">Huygens</rs>, toute la terre <choice><orig>scait</orig><reg>sçait</reg></choice>, <choice><orig>a</orig><reg>à</reg></choice> l’exception d’un ignorant tel que
+               <lb/>luy que Monsieur <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous avez poussé les Mathematiques
+               <lb/>infiniment plus haut que Monsieur <rs key="pers_DE-588-118639749" type="person">Huygens</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que si cet
                <lb/>excellent Mathematicien vivoit encore, il ne se feroit pas de
-               <lb/>peine de vous rendre luy méme cette justice là, mais
-               <lb/>Monsieur comme je croy que vous recevréz ma <rs type="letter">lettre</rs> plutost
-               <lb/>que vous ne pourrez recevoir les Transactions, peut etre serez
-               <lb/>vous bien aise de voir mot a mot ce qu’il ecrit. Ces
-               <lb/>Transactions sont pour les mois de Mars &amp; d’avril 1708.</p>
+               <lb/>peine de vous rendre luy méme cette justice là, mais<supplied>,</supplied>
+               <lb/>Monsieur<supplied>,</supplied> comme je croy que vous recevrez ma <rs type="letter">lettre</rs> plustost
+               <lb/>que vous ne pourrez recevoir les <rs type="biblio">Transactions</rs>, peut etre serez
+  <lb/>vous bien aise de voir mot <choice><orig>a</orig><reg>à</reg></choice> mot ce qu’il ecrit. Ces
+               <lb/><rs type="biblio">Transactions</rs> sont pour les mois de Mars <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’avril 1708.</p>
 <pb facs="1080237" n="18"/>
 <p>
-<lb/><hi rend="u"><rs type="biblio">De Linearum Curvarum Longitudine</rs></hi>
-<lb/><hi rend="u">Authore</hi> <rs key="pers_DE-588-124465641" type="person">Jo. Graig.</rs>
-<lb/>Lemma</p>
+<foreign xml:lang="lat"><lb/><hi rend="u c"><rs type="biblio">De Linearum Curvarum Longitudine</rs></hi>
+<lb/><hi rend="c"><hi rend="u">Authore</hi> <rs key="pers_DE-588-124465641" type="person">Jo. Craig.</rs></hi>
+<lb/><hi rend="c">Lemma</hi></foreign></p>
 <p>
-<lb/><hi rend="u">Duorum Quadratorum summam in alia duo quadrata dividere</hi>
+<foreign xml:lang="lat"><lb/><hi rend="u">Duorum Quadratorum summam in alia duo quadrata dividere</hi></foreign>
 </p>
-<p><lb/>Sint <formula>dz^{2}</formula>, <formula>ds^{2}</formula> duo quadrata data, quorum summa <formula>dz^{2}+ds^{2}</formula>
-<lb/>dividenda est in alia duo quadrata <formula>dx^{2}</formula>, <formula>ds^{2}</formula>. Sintque <formula>m</formula> &amp; <formula>n</formula>
-<lb/>duo quilibet numeri ad arbitrium summendi. Jam en conditione
-               <lb/>Problematis est <formula>dx^{2}+dy^{2}=dz^{2}+ds^{2}</formula>, unde (ut ex Diophanto
-               <lb/>constat) erit <formula>dx=\frac{\overline{mm-nn}\times dz+2mnds}{mm+nn}</formula> &amp; <formula>dy=</formula>
-<lb/><formula>\frac{\overline{nn-mm}\times ds+2mndz}{mm+nn}</formula> . . . . Q. E. J.</p>
-<p><lb/>Problema</p>
-<p><lb/><hi rend="u">Curvas innumeras invenire qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sint ejusdem Longitudinis
-               <lb/>cum Curva quavis proposita, sive Algebraica sive Transcendente</hi>.</p>
-<p><lb/>Designent <formula>z</formula>, <formula>s</formula>, Coordinatas Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> proposit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; &amp; <formula>x</formula>, <formula>y</formula>
-<lb/>Coordinatas Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quaesit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ejusdem sit longitudinis cum proposita
-               <lb/>unde ex Curvarum elementis <formula>dx^{2}+dy^{2}=dz^{2}+ds^{2}</formula>, ideoque par
-               <lb/>Lemma pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cedens</p>
+  <p><foreign xml:lang="lat"><lb/>Sint <formula>dz^{2}</formula>, <formula>ds^{2}</formula> duo quadrata data, quorum summa <formula>dz^{2}+ds^{2}</formula>
+<lb/>dividenda est in alia duo quadrata <formula>dx^{2}</formula>, <formula>dy^{2}</formula>. Sintque <formula>m</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>n</formula>
+<lb/>duo quilibet numeri ad arbitrium sumendi. <choice><orig>jam</orig><reg>Jam</reg></choice> en conditione
+               <lb/>Problematis est <formula>dx^{2}+dy^{2}=dz^{2}+ds^{2}</formula>, unde (ut ex <rs type="biblio">Diophanto</rs>
+  <lb/>constat) erit <choice><orig><formula>dx=\frac{\overline{mm-nn}\times dz+2mnds}{mm+nn}</formula></orig><reg><formula>dx=\frac{(mm-nn)\cdot dz+2mnds}{mm+nn}</formula></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>dy=</formula>
+  <lb/><choice><orig><formula>\frac{\overline{nn-mm}\times ds+2mndz}{mm+nn}\ldots ..</formula></orig><reg><formula>\frac{(nn-mm)\cdot ds+2mndz}{mm+nn}\ldots</formula></reg></choice> <abbr>Q. E. I.</abbr></foreign></p>
+  <p><foreign xml:lang="lat"><lb/><hi rend="c">Problema</hi></foreign></p>
+  <p><foreign xml:lang="lat"><lb/><hi rend="u">Curvas innumeras invenire qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> sint ejusdem Longitudinis
+        <lb/>cum Curva quavis proposita, sive Algebraica sive Transcendente</hi><supplied>.</supplied></foreign></p>
+  <p><foreign xml:lang="lat"><lb/>Designent <formula>z</formula>, <formula>s</formula>, Coordinatas Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> proposit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>x</formula>, <formula>y</formula>
+<lb/>Coordinatas Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ejusdem sit longitudinis cum proposita
+               <lb/>unde ex Curvarum elementis <formula>dx^{2}+dy^{2}=dz^{2}+ds^{2}</formula>, ideoque per
+               <lb/>Lemma pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cedens</foreign></p>
 <p>
-<lb/><formula>\begin{array}{cc} dx &amp; =\frac{\overline{mm-nn}\times dz+2mnds}{mm+nn} \end{array}</formula>
-<lb/><formula>\begin{array}{cc}dy &amp; =\frac{\overline{nn-mm}\times ds+2mndz}{mm+nn} \end{array}</formula>
+  <foreign xml:lang="lat"><lb/><choice><orig><formula>\begin{array}{cc} dx &amp; =\frac{\overline{mm-nn}\times dz+2mnds}{mm+nn} \end{array}</formula></orig><reg><formula>\begin{array}{cc} dx &amp; =\frac{(mm-nn)\cdot dz+2mnds}{mm+nn} \end{array}</formula></reg></choice>
+  <lb/><choice><orig><formula>\begin{array}{cc}dy &amp; =\frac{\overline{nn-mm}\times ds+2mndz}{mm+nn} \end{array}</formula></orig><reg><formula>\begin{array}{cc}dy &amp; =\frac{(nn-mm)\cdot ds+2mndz}{mm+nn} \end{array}</formula></reg></choice></foreign><note type="editorial">Korrektur in der Formel: "<formula>dz</formula>" zu "<formula>ds</formula>".</note>
 </p>
-<p><lb/>quarum integrales sunt</p>
+  <p><foreign xml:lang="lat"><lb/>quarum integrales sunt</foreign></p>
 <pb facs="1080238" n="19"/>
 <p>
-<lb/><formula>\begin{array}{cc} x &amp; =\frac{\overline{mm-nn}\times z+2mns}{mm+nn} \end{array}</formula>
-<lb/><formula>\begin{array}{cc} y &amp; =\frac{\overline{nn-mm}\times s+2mnz}{mm+nn} \end{array}</formula>
+  <foreign xml:lang="lat"><lb/><choice><orig><formula>\begin{array}{cc} x &amp; =\frac{\overline{mm-nn}\times z+2mns}{mm+nn} \end{array}</formula></orig><reg><formula>\begin{array}{cc} x &amp; =\frac{(mm-nn)\cdot z+2mns}{mm+nn} \end{array}</formula></reg></choice>
+  <lb/><choice><orig><formula>\begin{array}{cc} y &amp; =\frac{\overline{nn-mm}\times s+2mnz}{mm+nn} \end{array}</formula></orig><reg><formula>\begin{array}{cc} y &amp; =\frac{(nn-mm)\cdot s+2mnz}{mm+nn} \end{array}</formula></reg></choice></foreign>
 </p>
-<p><lb/>&amp; sic innotescunt coordinate <formula>x</formula>, <formula>y</formula> unius ex Curvis quaesitis, simpliciter
-               <lb/>ex hac una inveniatur secunda, ex secunda tertia, &amp; sic porro innumer<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
-               <lb/>invenientur. Q. E. I. </p>
-<p><lb/>Exempla jam non addo, nam postea (Deo volente) opportunior dabitur locus,
-               <lb/>in quo methodus h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c ad plura hujusmodi oblemata extendetur, &amp;
-               <lb/>Solutio Problematis hujus per Exempla ilustrabitur. Et quidem hanc
-               <lb/>Solutionem, semel iterumque, tam aperte indicavi, ut facillime a quovis
-               <lb/>in his versato deduci possit ex iis, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> subjunguntur solutioni casus
-               <lb/>specialis hujus Problematis, in quo scil. Curva proposita est
-               <lb/>Algebraica quamque exhibui in <rs type="biblio">Actis Philo R.S. jan. 1704</rs>
-<lb/>ut Clarissimo Problematis propositori D. <rs type="person">Jo. Bernoulli</rs> constaret
+  <p><foreign xml:lang="lat"><lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sic <choice><orig>Innotescent</orig><reg>innotescent</reg></choice> coordinat<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> <formula>x</formula>, <formula>y</formula> unius ex Curvis qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sitis, similiter
+               <lb/>ex hac una invenietur secunda, ex secunda tertia, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sic porro innumer<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+               <lb/>invenientur. <abbr>Q. E. I.</abbr></foreign></p>
+  <p><foreign xml:lang="lat"><lb/>Exempla jam non addo, nam postea (Deo volente) opportunior dabitur <choice><orig>Locus</orig><reg>locus</reg></choice><supplied>,</supplied>
+               <lb/>in quo Methodus h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c ad plura hujusmodi Problemata extendetur, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>solutio Problematis hujus per Exempla illustrabitur. Et quidem hanc
+               <lb/>solutionem<supplied>,</supplied> semel iterumque<supplied>,</supplied> tam aperte indicavi<supplied>,</supplied> ut facillime a quovis
+               <lb/>in his versato deduci possit ex iis<supplied>,</supplied> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> subjunguntur solutioni casus
+               <lb/>specialis hujus Problematis, in quo <abbr>scil.</abbr> Curva proposita est
+               <lb/>Algebraica quamque exhibui in <rs type="biblio">Actis Philo<supplied>.</supplied> <abbr>R. S.</abbr> <abbr>jan.</abbr> 1704</rs>
+<lb/>ut Clarissimo Problematis propositori <abbr>D.</abbr> <rs type="person">Jo. Bernoulli</rs> constaret
                <lb/>illius solutionem e methodis calculi differentialis inversis maxime
-               <lb/>tritis posse obtineri, ut pote qui in privatis suis a <rs type="person">D. Cheynaeum</rs>
-<lb/>literis significabat eandem non posse obtineri per Theoremata
-               <lb/>nostra in <rs type="biblio">Actis Phil. R, S. Mart. 1703</rs> publicata. Et quoniam
-               <lb/>ex actis Erud. Aug. 1705 percipio solutionem illam (qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> scopo
-               <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dicto satis superque faciebat) Doctissimo viro non arridere
-               <lb/>ideo modo pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>missam solutionem nulli Objectioni obnosiam publici
-               <lb/>juris facio. Necesse itaque est ut Clariss. Bernoulli agnoscat
-               <lb/>vix ullum dari Problema cujus solutio facilius ex calculo
-               <lb/>integrali deducitur, quam sui de Transformatione Curvarum.</p>
-<p><lb/>Quo vero in ipsius <rs type="person">Bernoulli</rs> solutione displicent paucis
+               <lb/>tritis posse obtineri, utpote qui in privatis suis a <rs type="person">D. Cheyn<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>um</rs>
+<lb/><rs type="letter">literis</rs> significabat eandem non posse obtineri per Theoremata
+               <lb/>nostra in <rs type="biblio">Actis Phil. R<choice><orig>,</orig><reg>.</reg></choice> S.<supplied>,</supplied> <abbr>Mart.</abbr> 1703</rs> publicata. Et quoniam
+               <lb/>ex <rs type="biblio">actis <abbr>Erud.</abbr> <abbr>Aug.</abbr> 1705</rs> percipio solutionem illam (qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> scopo
+               <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dicto satis superque faciebat) Doctissimo viro non <choice><orig>Arridere</orig><reg>arridere</reg></choice>
+               <lb/>ideo modo pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>missam solutionem nulli Objectioni obnoxiam publici
+               <lb/>juris facio. Necesse itaque est ut <abbr>Clariss.</abbr> <rs type="person">Bernoulli</rs> <choice><orig>Agnoscat</orig><reg>agnoscat</reg></choice>
+               <lb/>vix ullum dari Problema cujus solutio facili<del/><add>us</add> ex calculo
+               <lb/>integrali deducitur, quam sui de Transformatione Curvarum.
+               <lb/>Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vero in ipsius <rs type="person">Bernoulli</rs> <rs type="biblio">Solutione</rs> displicent paucis
                <lb/>enarrabo. Ex primo. Quod ad Curvas tantum Algebraicas eandem
-               <lb/>extenderit. Secundo. Quod mechanica tantum sit, a motu (urvocat)
-            <pb facs="1080239" n="20"/>
-<lb/>Reptorio tota dependens. Immoritale quidem honore dignus est
-               <lb/><rs type="person">Hugenius</rs> ob inventionem Evolutionis motum, quia &amp; ipse &amp;
-               <lb/>post ipsum alii plurima egregia Theoremata Geometrice es inde
-               <lb/>deduxerunt. Sed nec Motus Leibnitii Tractionis, nec <rs type="person">Bernoulli</rs>
+               <lb/>extenderit. Secundo. Quod mechanica tantum sit, a motu (ut vocat)</foreign>
+            <pb facs="1080239" n="20"/> 
+<foreign xml:lang="lat"><lb/>Reptorio tota dependens. Immortali quidem honore dignus est
+               <lb/><rs type="person">Hugenius</rs> ob inventionem Evolutionis motum, quia <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ipse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>post ipsum alii plurima egregia Theoremata Geometrice exin<unclear reason="lost">de</unclear>
+               <lb/>deduxerunt. Sed nec Motus <rs type="person">Leibnitii</rs> Tractionis, nec <rs type="person">Bernoulli</rs>
 <lb/>Motus reptorius cum <rs type="person">Hugenii</rs> Motu evolutionis comparabuntur,
                <lb/>donec cum <rs type="person">Hugenio</rs> celeberrimi viri Curvas per Motus suos
                <lb/>genitas ad leges Geometricas revocaverint, quod cum neuter
-               <lb/>eorum praestiterit, ideo Problematum solutiones dependentes a
-               <lb/>Curvis par motus suos gentis inter Mechanicas solum annumerari
-               <lb/>possunt.</p>
+               <lb/>eorum pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stiterit, ideo Problematum solutiones dependentes a
+               <lb/>Curvis per motus suos gentis<!-- ToDo: kontrollieren. --> inter Mechanicas solum annumerari
+               <lb/>possunt.</foreign></p>
 <p><lb/>Si vous faites imprimer une reponse à cecy dans les <rs type="biblio">Actes de
                <lb/>Leipsic</rs>, ayez la bonté de donner ordre qu’on m’envoye la feuille
-               <lb/>dans laquelle elle sera contenue, je la feray voir a nos
-               <lb/>Amis, &amp; je feray en sorte qu’il la voye luy méme.</p>
+               <lb/>dans laquelle elle sera contenue, je la feray voir <choice><orig>a</orig><reg>à</reg></choice> nos
+               <lb/><rs type="person">Amis</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je feray en sorte qu’il la voye luy méme.</p>
 <p><lb/>Vous serez peut etre surpris que je n’aye pas publié ma reponse
                <lb/>au dernier <rs type="biblio">livre</rs> de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, mais voicy les raisons qui m’en
-               <lb/>ont empeché jusqu’a present. Je suis persuadé que les veritables
-               <lb/>habiles gens me rendent deja justice &amp; pour les au tres qui
+  <lb/>ont empeché jusqu’<choice><orig>a</orig><reg>à</reg></choice> present<choice><orig>,</orig><reg>;</reg></choice> je suis persuadé que les veritables
+               <lb/>habiles gens me rendent deja justice <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour les autres qui
                <lb/>ne sont pas juges competents, je puis vous assurer que par
                <lb/>un effet d’un prejugé qui m’est avantageux, ils regardent
-               <lb/><rs key="pers_DE-588-117659606" type="person">Cheynes</rs> avec le dernier mepris. D’ailleurs <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>
-<lb/>repondroit jusqu’au jour du jugement. <choice><sic>un</sic><corr>Un</corr></choice> autre raison est
-               <lb/>celle cy j’ay eu la pensée de faire un petit receuil
-               <lb/>de Problemes qui meritassent d’etre rendus publics, &amp;
+               <lb/><rs key="pers_DE-588-117659606" type="person">Cheynes</rs> avec le dernier mepris<choice><orig>,</orig><reg>.</reg></choice> D’ailleurs <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>
+<lb/>repondroit jusqu’au jour du jugement. <choice><sic>un</sic><corr>Une</corr></choice> autre raison est
+               <lb/>celle<supplied>-</supplied>cy j’ay eu la pensée de faire un petit receuil
+               <lb/>de Problemes qui meritassent d’etre rendus publics, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/>d’y inserer comme par occasion mes remarques sur le
                <lb/><rs type="biblio">livre</rs> de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, par exemple à l’occasion de
             <pb facs="1080240" n="21"/>
 <lb/>remarques assez curieuses sur le commencement des aires refuter
                <lb/>cet abominable fatras de raisonnements absurdes que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>
-<lb/>fait sur ce sujet la, mais pour vous dire la verité je suis
-               <lb/>tellement occupé a marcher depuis le matin jusqu’au soir
-               <lb/>dans cette grande ville et a enseigner que je n’ay presque
-               <lb/>pas le temps de m’appliquer à le moindre chose, &amp; quand
-               <lb/>j’ay fini mes lecons, je suis obligé de me dissiper un peu
+  <lb/>fait sur ce sujet <choice><orig>la</orig><reg>là</reg></choice>, mais pour vous dire la verité je suis
+  <lb/>tellement occupé <choice><orig>a</orig><reg>à</reg></choice> marcher depuis le matin jusqu’au soir
+  <lb/>dans cette grande ville et <choice><orig>a</orig><reg>à</reg></choice> enseigner que je n’ay presque
+               <lb/>pas le temps de m’appliquer à la moindre chose, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> quand
+               <lb/>j’ay fini mes <choice><orig>lecons</orig><reg>leçons</reg></choice>, je suis obligé de me dissiper un peu
                <lb/>le reste du temps pour prendre haleine, je n’oserois
-               <lb/>presque dans les circonstances ou je me trouve hazarder la
-               <lb/>lecture des <rs type="biblio">Actes de Leipsick</rs> ou des memoires de l’<rs type="organisation">academie
-               <lb/>des Sciences</rs>. de peur d’y trouver des sujets d’application
-               <lb/>&amp; de m’engager comme malgré moy a employer plus de
-               <lb/>temps à l’etude que l’etat de mes affaires ne scauraoit me le
-               <lb/>permettre. Cependant Monsieur je vous remercie tres humblement
+  <lb/>presque dans les circonstances <choice><orig>ou</orig><reg>où</reg></choice> je me trouve hazarder la
+               <lb/>lecture des <rs type="biblio">Actes de Leipsick</rs> ou des <choice><orig>memoires</orig><reg>Memoires</reg></choice> de l’<rs type="organisation">academie
+               <lb/>des Sciences</rs>, de peur d’y trouver des sujets d’application
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de m’engager comme malgré moy <choice><orig>a</orig><reg>à</reg></choice> employer plus de
+               <lb/>temps à l’etude que l’etat de mes affaires ne <choice><orig>scauroit</orig><reg>sçauroit</reg></choice> me le
+               <lb/>permettre. <choice><orig>cependant</orig><reg>Cependant</reg></choice><supplied>,</supplied> Monsieur<supplied>,</supplied> je vous remercie tres humblement
                <lb/>de l’offre que vous me faites de m’envoyer vos remarques sur
-               <lb/>le dernier livre de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, je l’accepte avec plaisir, elles
-               <lb/>ne scauroient qu’etres tres instructives pour moy, et quand
+               <lb/>le dernier <rs type="biblio">livre</rs> de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, je l’accepte avec plaisir, elles
+               <lb/>ne <choice><orig>scauroient</orig><reg>sçauroient</reg></choice> qu’<choice><sic>etres</sic><corr>etre</corr></choice> tres instructives pour moy, et quand
                <lb/>j’auray eu le loisir d’executer ce que je medite, je feray
-               <lb/>gloire de reconnoitre que vous me les avez cummuniquées
-               <lb/>&amp; de publier en méme temps les obligations que je
+               <lb/>gloire de reconnoitre que vous me les avez communiquées
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de publier en méme temps les obligations que je
                <lb/>vous ay.</p>
 <p><lb/>Monsieur <rs type="person">de Magneville</rs> m’avoit conseillé de faire imprimer
-               <lb/>quelque Probleme dans les <rs type="biblio">Actes de Leipsic</rs>, mais Monsieur
+               <lb/>quelque Probleme dans les <rs type="biblio">Actes de Leipsic</rs>, mais<supplied>,</supplied> Monsieur<supplied>,</supplied>
                <lb/>je vous supplie de vouloir bien me donner votre avis
-               <lb/>la dessus. Si vous croyiez que le Probleme da la plus vite
+  <lb/><choice><orig>la</orig><reg>là</reg></choice> dessus<choice><orig>,</orig><reg>;</reg></choice> si vous croyiez que le Probleme de la plus vite
                <lb/>descente du soleil dans un temps donné meritat d’y paroitre
             <pb facs="1080241" n="22"/>
-<lb/>je le ferois avec plaisir, &amp; je tacherois d’y joindre celuy
-               <lb/>qui regarde le changement D’azimuth.</p>
-<p><lb/>Je fis souvenir dernierement Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> que les figures
-               <lb/>qui regardent la quadrature des courbes &amp; celles qui regardent
+<lb/>je le ferois avec plaisir, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je tacherois d’y joindre celuy
+               <lb/>qui regarde le changement <choice><orig>D</orig><reg>d</reg></choice>’Azimuth.</p>
+<p><lb/><choice><orig>je</orig><reg>Je</reg></choice> fis souvenir dernierement Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> que les figures
+               <lb/>qui regardent la quadrature des courbes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celles qui regardent
                <lb/>les courbes du second genre ont eté oubliées dans l’envoy qu’il
                <lb/>vous avoit fait, il ne manquera pas de vous les faire tenir
                <lb/>quand il se trouvera une commodité pour cela.</p>
 <p><lb/>Si vous vous etes donné la peine de pousser la rectification
-               <lb/>de l’ellipse jusqu’aux cinquiemes limites vous me ferez un
+               <lb/>de l’ellipse jusqu’aux cinquiemes limites<supplied>,</supplied> vous me ferez un
                <lb/>sensible plaisir de me les envoyer, je m’imagine que si la
                <lb/>regle de la continuation des limites se peut trouver, cela
-               <lb/>pourra suffire.</p>
-<p><lb/>Avant que de finir cette longue lettre, il faut que je vous dise
+               <lb/>pourra suffire<choice><orig>,</orig><reg>.</reg></choice></p>
+<p><lb/>Avant que de finir cette longue lettre, i<del/><add>l</add> faut que je vous dise
                <lb/>que j’ay veu une experience assez curieuse à la <rs type="organisation">Societé Royale</rs>
-<lb/>il y a environs 6 mois, On prend une boule de verre creuse
+<lb/>il y a environs 6 mois<choice><orig>,</orig><reg>:</reg></choice> On prend une boule de verre creuse
                <lb/>d’environ 9 pouces de diametre, on la tourne assez rapidement
-               <lb/>sur son axe dans un lieu obscur, pendant qu’elle tourne
+               <lb/>sur son axe dans un lieu obscur, pendant qu<supplied>’</supplied>elle tourne
                <lb/>on la frotte doucement avec la main, il en sort des eclats de
-               <lb/>lumiere à l’aide desquels on peut lire des lettres capitales.
-               <lb/>Deplus on la met dans le centre d’un cerceau <add>autour de</add> <del/>la circonference
-               <lb/><add>interieure</add> duquel on attache des fils, &amp; on remarque que tous les fils
+               <lb/>lumiere à l’aide desquel<del/><add>s</add> on peut lire des lettres capitales.
+               <lb/>Deplus on la met dans le centre d’un cerceau <del/><add>autour de</add> la circonference
+               <lb/><add>interieure</add> duquel on attache des fils, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> on remarque que tous les fils
                <lb/>generalement se dirigent vers la surface de la boule pendant
-               <lb/>qu’elle tourne &amp; qu’on la frotte. Outre cela on met dans le
+               <lb/>qu’elle tourne <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’on la frotte<choice><orig>,</orig><reg>.</reg></choice> <del/><add>Ou</add>tre cela on met dans le
                <lb/>centre de cette boule un morceau de liege auquel on attache
-               <lb/>des fils, on tourne la boule comme à l’ordinaire, &amp; tous les
-               <lb/>fils se dirigent de toutes parts vers la surface, &amp; sont comme
+               <lb/>des fils, on tourne la boule comme à l’ordinaire, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tous les
+               <lb/>fils se dirigent de toutes parts vers la surface, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sont comme
                <lb/>les rayons de la sphere.</p>
 <pb facs="1080242" n="23"/>
-<p><lb/>Le livre de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, <rs type="biblio">Philosophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Naturalis
-               <lb/>Principia Mathematica</rs> se réimprime a <rs key="GeoNamesID" type="place">Cambridge</rs>
-<lb/>il y aura beaucoup de changements, les temmes du commencement
-               <lb/>sont changez pour les mieux, je parle seulement des Lemmes
-               <lb/>parce qu’il n’y a que cela que J’aye veu, Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+<p><lb/>Le livre de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, <rs type="biblio">Philosophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> naturalis
+    <lb/>Principia Mathematica</rs> se r'imprime <choice><orig>a</orig><reg>à</reg></choice> <rs key="GeoNamesID" type="place">Cambridge</rs><supplied>,</supplied>
+<lb/>il y aura beaucoup de changements, les Lemmes du commencement
+               <lb/>sont changez pour le mieux, je parle seulement des Lemmes
+               <lb/>parce qu’il n’y a que cela que j’aye veu, Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>
 <lb/>m’ayant seulement montré le commencement des corrections qu’il
                <lb/>a faites.</p>
-<p><lb/>L’<rs key="pers_DE-588-11864548X" type="person">Apollonius</rs> de Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> est fort avancé, il est
-               <lb/>bien aise que la traduction de Sectione rationis vous ait plu
-               <lb/>&amp; se conjecture touchant le mouvement du centre de Gravité.
-               <lb/>Il m’a chargé de vous faire ses compliments.</p>
-<closer>Je suis
-               <lb/>Monsieur
-               <lb/>Votre tres humble &amp; tres obeissant
+<p><lb/>L’<rs type="biblio">Apollonius</rs> de Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> est fort avancé, il est
+               <lb/>bien aise que sa traduction <foreign>de Sectione rationis</foreign> vous ait plu
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sa conjecture touchant l<del/><add>e</add> mouvement du centre de Gravité<supplied>;</supplied>
+               <lb/>il m’a chargé de vous faire ses compliments.</p>
+<closer><choice><orig>je</orig><reg>Je</reg></choice> suis<supplied>,</supplied>
+               <lb/>Monsieur<supplied>,</supplied>
+               <lb/>Votre tres humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tres obeissant
                <lb/>Serviteur <signed><rs key="pers_DE-588-117586765" type="person">A. De Moivre</rs></signed>.</closer>
 <postscript>
-<p><lb/>Je suis ravy que Monsieur <rs key="pers_DE-588-119112450" type="person">Herman</rs> ait la chaise de
-               <lb/>Professeur de Mathematique à <rs key="place_GEO-3171728" type="place">Padoue</rs>.</p>
+<p><lb/><choice><orig>je</orig><reg>Je</reg></choice> suis ravy que Monsieur <rs key="pers_DE-588-119112450" type="person">Herman</rs> ait la chaire de
+  <lb/>Professeur de Mathematique <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-3171728" type="place">Padoue</rs><choice><orig>,</orig><reg>.</reg></choice></p>
 </postscript>
-<pb facs="1080243" n="24"/>
+<pb facs="1080243" n="24" type="empty"/>
 </div>
 </body>
 </text></TEI>

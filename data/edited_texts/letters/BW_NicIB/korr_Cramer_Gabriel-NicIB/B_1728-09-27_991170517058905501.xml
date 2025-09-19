@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517058905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -151,8 +151,11 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-06-27" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-06-27" who="RG">Mathematische Formeln angepasst.</change>
+      <change when="2025-06-20" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-26" who="RG">Personen und Orte ausgezeichnet</change>
-      <change when="2023-07-26" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
+      <change when="2023-07-26" who="RG">Zeilabstände eingefügt, und <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ergänzt</change>
       <!-- Formeln noch nachbessern und z. T. die LB, RG 21.07.2023. -->
       <change when="2023-07-26" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -172,120 +175,230 @@
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1063308/manifest"/>
 </facsimile><text>
 <body>
-<div type="letter">
+<div type="letter"><!-- ldots statt mbox, mal-Punkt ergänzen, array, RG 20.06.2025 -->
 <pb facs="1063309" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>Je serois sans doute inexcusable d’avoir tardé si longtems à repondre à votre chére
-               <lb/>lettre du 3<hi>e</hi>. Juillet, si les Embaras d’un Voyage, &amp; surtout d’un Voyage en <rs key="place_VER-hollan" type="place">hollande</rs>
-<lb/>où l’on ne fait gueres que voltiger de branche en branche sans reprendre haleine, ne plaidoient
-               <lb/>ma cause auprés de vous, en vous representant que cet état ambulant n’est guéres propre
-               <lb/>a des Meditations Mathematiques &amp; profondes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e sont celles qu’occasionent ou que devroient
-               <lb/>occasioner vôtre belle et obligeante Lettre.</p>
-<p><lb/>Je la reçu le jour même de mon depart d’<rs key="place_VER-englan" type="place">Angleterre</rs>, ce qui m’a empeché de m’acquiter de
-               <lb/>la commission que vous m’aviés donné de saluer de vôtre part Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, mais je le ferai
-               <lb/>au premier jour dans une Lettre que je me prepare à lui ecrire.</p>
-<p><lb/>Il semble que vous avés compris ce que je vous ai ecrit de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> touchant
-               <lb/>les suites recurrentes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e s’il n’avoit trouvé sa methode d’exprimer un terme donné de
-               <lb/>cette suite, qu’aprés que je lui ai eu fait part de la vôtre. Non, Monsieur, il faut lui rendre
-               <lb/>justice, il n’a point vû vôtre Methode. Je lui ai seulement dit que vous m’aviés fait part
-               <lb/>d’une maniére fort simple &amp; trés generale de les exprimer. Sur quoi il me dit qu’il y avoit
-               <lb/>longtems qu’il en avoit trouvé une, qu’il ne me communiqua pourtant pas, car ce n’est
-               <lb/>qu’une conjecture, que sa Methode consiste à exprimer un terme quelconque generalement,
-               <lb/>ainsi <formula>az<hi rend="sup">l</hi> + by<hi rend="sup">l</hi> + cx<hi rend="sup">l</hi> + dv<hi rend="sup">l</hi> + &amp;c.</formula>, mais une conjecture très fondée &amp; que je regarde co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e presque
-               <lb/>certaine. Je n’ai rien à souhaiter après l’explication entiere que vous en donnés, &amp; je suis
-               <lb/>sur que le Livre de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, dans un grand espace, ne donnera rien de plus sur cette
-               <lb/>Maniére que ce qui est contenû dans deux pages de votre Lettre.</p>
-<p><lb/>Je suis depuis quelque tems occupé d’un Probléme dont je ne puis venir about, &amp; pour lequel
-               <lb/>J’implore vôtre secours. Il a du raport a cette matiére co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous allés voir. L’Equation
-               <lb/><formula>a<hi rend="sup">x</hi> = b.</formula> se resout aisement par le moyen des Logarithmes. Je trouve la solution <formula>x=\frac{Lb}{La}</formula> aussi
-               <lb/>parfaite en son genre, qu’on pourroit le souhaiter. Mais poussons la chose tant soit peu
-               <lb/>plus loin, &amp; nous voila arretés. Comment resoudre aussi bien <formula>a<hi rend="sup">x</hi> +- b<hi rend="sup">x</hi> = c</formula>, ou <formula>a<hi rend="sup">x</hi> +- b<hi rend="sup">x</hi> +- c<hi rend="sup">x</hi> = d</formula>,
-               <lb/>&amp;c., ou en general, Comment trouver le terme <formula>x</formula> d’une suite recurrente donnée, qui soit
-               <lb/>egal à une grandeur donnée. J’ai crû deux ou trois fois en tenir la Clef &amp; toujours, je me
-               <lb/>suis trouvé hors du chemin. Cette proprieté dont vous faites mention dans votre lettre
-            <pb facs="1063310" n="2"/>
-<lb/>que les Cordes ou les sinus des arcs multiples, s’expriment par les termes d’une suite recurrente
-               <lb/>multipliés par la Corde ou le sinus du simple, m’a fait croire que l’on pourroit peut étre
-               <lb/>par les Tables des sinus trouver une solution du second cas <formula>(a<hi rend="sup">x</hi> +- b<hi rend="sup">x</hi> = c)</formula> analogue a celle du
-               <lb/>premier <formula>(a<hi rend="sup">x</hi> = b)</formula> par les tables des Logarithmes. Mais en vain, l’Indice de la suite est <formula>x-1</formula>
-<lb/>au lieu qu’il faudroit qu’il fut <formula>x-y</formula>. Ne pourroit on point remedier à cet inconvenient.
-               <lb/>Le probléme en vaut assurement la peine et n’a pas été tenté jusqu’ici.</p>
-<p><lb/>Oserai-je vous faire part d’une petite decouverte. C’est assurement fort peu de chose, mais voici
-               <lb/>ce qui en fait le prix. C’est que Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> la regarde comme très precieuse &amp; ne la veut
-               <lb/>point communiquer. Vous vous souvenés peut etre du premier Lemme de sa <hi>Doctrine of Chances</hi>
-<lb/>pour trouver le nombre des hazards pour jetter un point donné<add>(<formula>p+1</formula>)</add> avec un nombre donné de dés(n)
-               <lb/>chacun d’un nombre donné de faces(f). Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> demontre dans la 2de Edition de
-               <lb/>son livre, d’une maniére à la verité assés alambiquée, et qui n’est pas la <hi>plus simple</hi> ni
-               <lb/>investigative. Cependant sa demonstration est bonne et ne merite pas les mépris de Mr. <rs key="pers_DE-588-117586765" type="person">de
-               <lb/>Moivre</rs>, qui pretend prouver par la que Mr. <rs key="pers_DE-588-117601020" type="person">de <hi>Montmort</hi></rs> a eu le Lemme <hi>de lui</hi>, disant
-               <lb/>qu’il est impossible de le trouver de la maniere dont Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> la demontré. Il vante
-               <lb/>beaucoup sa Demonstration propre, qu’il dit etre une Investigation, &amp; qu’il ne communique
-               <lb/>point. Je lai beaucoup prié de me la laisser voir, il n’y a pas eu moyen de l’obtenir. Enfin
-               <lb/>lassé de cet air mysterieux, j’ai cherché de mon côté, et en ai trouvé une si simple que
-               <lb/>je ne la crois point inferieure à celle de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>. La voici. Le Lemme en tel.
-               <lb/>Soit <formula>p-f=q,q-f=r,r-f=s</formula>, &amp;c. Le nombre des hazards requis s’exprime par la suite               <lb/><formula>\frac{p(p-1)(p-2)\cdots(p-n+2)}{1\cdot2\cdot3\cdots(n-1)}-\frac{n}{1}\times\frac{q(q-1)(q-2)\cdots(q-n+2)}{1\cdot2\cdot3\cdots(n-1)}+\frac{n(n-1)}{1\cdot2}\times\frac{r(r-1)(r-2)\cdots(r-n+2)}{1\cdot2\cdot3\cdots(n-1)}-\frac{n(n-1)(n-2)}{1\cdot2\cdot3}\times\frac{s(s-1)\cdots(s-n+2)}{1\cdot2\cdots(n-1)}</formula>
-<lb/>laquelle suite se termine deslorsque quelque terme a un facteur negatif ou zero.</p>
-<p><lb/>Le principe dont je me sers pour la demontrer est que le nombre des hazards pour jetter
-               <lb/><formula>p+1</formula> points avec <formula>n</formula> dez de <formula>f</formula> faces est egal aux nombres des differens hazards pour jetter <add>soit</add> p, soit p-1,
-               <lb/>soit p-2, &amp;c.... jusqu’a <formula>p-f+1=q+1</formula> points avec <formula>n-1</formula> dés de f faces.</p>
-<p><lb/>Cela est evident, &amp; etant une fois posé, je considére que le nombre des hazards pour jetter p
-               <lb/>points est l’unité tant que <formula>p</formula> est egal ou moindre que <formula>f</formula>, &amp; zero des que <formula>p</formula> surpasse <formula>f</formula>, ou 
-               <lb/>que <formula>p-f=q</formula> devient positif. Donc le nombre des hazards se peut exprimer par <formula>p<hi rend="sup">o</hi>-q<hi rend="sup">o</hi></formula>, le
-               <lb/>dernier terme etant supposer[sic!] s’evanouir des que <formula>q</formula> est zero ou negatif.</p>
+<opener>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Je serois sans doute inexcusable d’avoir tardé si longtems <choice><orig>a</orig><orig>à</orig></choice> repondre à votre chére
+  <lb/><rs key="B_991170517059005501" type="letter">lettre</rs> du 3.<hi rend="sup">e</hi> Juillet, si les Embaras d’un Voyage, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> surtout d’un Voyage en <rs key="place_VER-hollan" type="place">hollande</rs>
+  <lb/>où l’on ne fait gueres que voltiger de branche en branche sans reprendre haleine, ne plaidoient
+  <lb/>ma cause auprés de vous, en vous representant que cet état ambulant n’est guéres propre<del>s</del>
+  <lb/><choice><orig>a</orig><orig>à</orig></choice> des Meditations Mathematiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> profondes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e sont celles qu’occasionent ou que devroient
+  <lb/>occasioner vôtre belle <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> obligeante Lettre.
+</p>
+<p>
+  <lb/>Je la reçu le jour même de mon depart d’<rs key="place_VER-englan" type="place">Angleterre</rs>, ce qui m<subst><del/><add>’a</add></subst> empeché de m’acquiter de
+  <lb/>la commission que vous m’aviés donné de saluer de vôtre part <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, mais je le ferai
+  <lb/>au premier jour dans une Lettre que je me prepare à lui ecrire.
+</p>
+<p>
+  <lb/>Il semble que vous avés compris ce que je vous ai ecrit de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs> touchant
+  <lb/>les suites recurrentes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e s’il n’avoit trouvé sa methode d’exprimer un terme donné de
+  <lb/>cette suite, qu’aprés que je lui ai eu fait part de la vôtre. Non, Monsieur, il faut lui rendre
+  <lb/>justice, il n’a point vû vôtre Methode. Je lui ai seulement dit que vous m’aviés fait part
+  <lb/>d’une maniére<!-- vlt. auch "è", RG 20.06.2025 --> fort simple <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> trés generale de les exprimer. Sur quoi il me dit qu’il y avoit
+  <lb/>longtems qu’il en avoit trouvé une, qu’il ne me communiqua pourtant pas, car ce n’est
+  <lb/>qu’une conjecture, que sa Methode consiste <subst><del/><add>à ex</add></subst>primer un terme quelcon<subst><del>g</del><add>q</add></subst>ue <abbr>generalem.<hi rend="sup">t</hi></abbr>
+  <lb/>ainsi <choice rend="regFormula"><orig><formula>az^{l}+by^{l}+cx^{l}+dv^{l}+\mbox{\&amp;c}</formula></orig><reg><formula>az^{l}+by^{l}+cx^{l}+dv^{l}+\mbox{etc.}</formula></reg></choice>, mais une conjecture très fondée <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je regarde co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice><subst><del/><add>e</add></subst> presque
+  <lb/>certaine. Je n’ai rien à souhaiter après l’explication entiere que vous en donnés, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je suis
+  <lb/>sur que le <rs type="biblio">Livre</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, dans un grand espace, ne donnera rien de plus sur cette
+  <lb/>Maniére que ce qui est contenû dans deux pages de vôtre <rs type="letter">Lettre</rs>.
+</p>
+<p>
+  <lb/>Je suis depuis quelque tems occupé d’un Probléme dont je ne puis venir about, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour lequel
+  <lb/>J’implore vôtre secours. Il a du raport <choice><orig>a</orig><orig>à</orig></choice> cette matière co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous allés voir. L’Equation
+  <lb/><formula>a^{x}=b</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> se resout aisement par le moyen des Logarithmes. Je trouve la solution <formula>x=\frac{Lb}{La}</formula> aussi
+  <lb/>parfaite en son genre, qu’on pourroit le souhaiter. Mais <subst><del/><add>poussons</add></subst> la chose tant soit peu
+  <lb/>plus loin, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous voila arretés. Comment resoudre aussi bien <formula>a^{x}\pm b^{x}=c</formula>, ou <formula>a^{x}\pm b^{x}\pm c^{x}=d</formula>,
+  <lb/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice><supplied>c.</supplied></abbr>, ou en general, Comment trouver le terme <formula>x</formula> d’une suite recurrente donnée, qui soit
+  <lb/>egal à une grandeur donnée. J’ai crû deux ou trois fois en tenir la Clef <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> toujours, je me
+  <lb/>suis trouvé hors du chemin. Cette proprieté dont vous faites mention dans votre <rs type="letter">lettre</rs>
+<pb facs="1063310" n="2"/>
+  <lb/>que les Cordes ou les sinus des arcs multiples, s’expriment par les termes d’une suite recurrente
+  <lb/>multiplié<subst><del>es</del><add>s</add></subst> par la Corde ou le sinus du simple, m’a fait croire que l’on pourroit peut étre
+  <lb/>par les Tables des sinus trouver une solution du second cas <formula>(a^{x}\pm b^{x}=c)</formula> analogue a celle du
+  <lb/>premier <formula>(a^{x}=b)</formula> par les tables des Logarithmes. Mais en vain, l’Indice de la suite est <formula>x-1</formula>
+  <lb/>au lieu qu’il faudroit qu’il fut <formula>x-y</formula>. <subst><del/><add>Ne</add></subst> pourroit on point remedier à cet inconvenient.
+  <lb/>Le probléme en vaut assurement la peine, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> n’a pas été tenté jusqu’ici.
+</p>
+<p>
+  <lb/>Oserai-je vous faire part d’une petite decouverte. C’est assurement fort peu de chose, mais voici
+  <lb/>ce qui en fait le prix. C’est que <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs> la regarde comme très precieuse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne la veut
+  <lb/>point communiquer. Vous vous souvenés peut etre du premier Lemme de sa <hi rend="u">Doctrine of Chances</hi>
+  <lb/>pour trouver le nombre des hazards pour jetter un point donné<add>(<formula>p+1</formula>)</add> avec un nombre donné de dés (<formula>n</formula>)
+  <lb/>chacun d’un nombre donné de faces (<formula>f</formula>). <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> demontre dans la 2.<hi rend="sup">e</hi> <rs type="biblio">Edition</rs> de
+  <lb/>son livre, d’une maniére à la verité assés alambiquée, et qui n’est pas la <hi rend="u">plus simple</hi> ni
+  <lb/><hi rend="u">investigative</hi>. Cependant sa Demonstration est bonne et ne merite pas les mépris de <abbr>M.<hi rend="sup">r</hi></abbr> de
+  <lb/><rs key="pers_DE-588-117586765" type="person">Moivre</rs>, qui pretend prouver par la que <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117601020" type="person"><hi rend="u">Montmort</hi></rs> a eu le Lemme <hi rend="u">de lui</hi>, disant
+  <lb/>qu’il est impossible de le trouver de la maniere dont <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> la demontré. Il vante
+  <lb/>beaucoup sa Demonstration propre, qu’il dit etre une Investigation, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il ne communique
+  <lb/>point. Je l<supplied>'</supplied>ai beaucoup prié de me la laisser voir, il n’y a pas eu moyen de l’obtenir. Enfin
+  <lb/>lassé de cet air mysterieux, j’ai cherché de mon côté, et en ai trouvé une si simple que
+  <lb/>je ne la crois point inferieure à celle de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>. La voici. Le Lemme en tel.
+  <lb/>Soit <formula>p-f=q</formula>, <formula>q-f=r</formula>, <formula>r-f=s</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Le nombre des hazards requis s’exprime par la suite
+  <lb/><choice rend="regFormula"><orig><formula>\frac{p\cdot\overline{p-1}\cdot\overline{p-2}\cdot\ldots \overline{p-n+2}}{1\cdot2\cdot3\cdot\ldots n-1}-\frac{n}{1}\times\frac{q\cdot\overline{q-1}\cdot\overline{q-2}\cdot\ldots \overline{q-n+2}}{1\cdot2\cdot3\cdot\ldots n-1}+\frac{n\cdot\overline{n-1}}{1\cdot2}\times\frac{r\cdot\overline{r-1}\cdot\overline{r-2}\cdot\ldots \overline{r-n+2}}{1\cdot2\cdot3\cdot\ldots n-1}-\frac{n\overline{n-1}\cdot n-2}{1\cdot2\cdot3}\times\frac{s\cdot\overline{s-1}\cdot\ldots s-n+2}{1\cdot2\cdot\ldots n-1}</formula></orig><reg><formula>\frac{p\cdot(p-1)\cdot(p-2)\cdot\ldots (p-n+2)}{1\cdot2\cdot3\cdot\ldots (n-1)}-\frac{n}{1}\times\frac{q\cdot(q-1)\cdot(q-2)\cdot\ldots (q-n+2)}{1\cdot2\cdot3\cdot\ldots (n-1)}+\frac{n\cdot(n-1)}{1\cdot2}\times\frac{r\cdot(r-1)\cdot(r-2)\cdot\ldots (r-n+2)}{1\cdot2\cdot3\cdot\ldots (n-1)}-\frac{n(n-1)\cdot(n-2)}{1\cdot2\cdot3}\times\frac{s\cdot(s-1)\cdot\ldots (s-n+2)}{1\cdot2\cdot\ldots (n-1)}</formula></reg></choice>
+  <lb/>laquelle suite se termine des lorsque quelque terme a un facteur negatif ou zero.
+</p>
+<p>
+  <lb/>Le principe dont je me <subst><del/><add>sers</add></subst> pour la demontrer est que le nombre des hazards pour jetter
+  <lb/><formula>p+1</formula> points avec <formula>n</formula> dez de <formula>f</formula> faces est egal aux nombres des differens hazards pour jetter <add>soit </add><formula>p</formula>, soit <formula>p-1</formula>,
+  <lb/>soit <formula>p-2</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>..jusqu’<choice><orig>a</orig><orig>à</orig></choice> <formula>p-f+1=q+1</formula> points avec <formula>n-1</formula> dés de <formula>f</formula> faces.
+</p>
+<p>
+  <lb/>Cela est evident, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> etant une fois posé, je considére que le nombre des hazards pour jetter <formula>p</formula>
+  <lb/>points est l’unité tant que <formula>p</formula> est egal ou moindre que <formula>f</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> zero des que <formula>p</formula> surpasse <formula>f</formula>, ou
+  <lb/>que <formula>p-f=q</formula> devient positif. Donc le nombre des hazards se peut exprimer par <formula>p^{o}-q^{o}</formula>, le
+  <lb/>dernier terme etant supposer<!--"[sic!]"?, RG 20.06.2025 --> s’evanouir des que <formula>q</formula> est zero ou negatif.
+</p>
 <pb facs="1063311" n="3"/>
-<p><lb/>Je puis presentement passer a 2 dés, &amp; le nombre des hazards pour jetter <formula>p+1</formula> points<!-- Nachfolgende Formeln müssen noch angepasst werden, RG 21.07.2023. -->
-               [] avec 1 dez <formula>=p^{0}-q^{0}</formula> plus au nombre des hazards pour jetter <formula>p-1</formula> points avec 1 dez &amp;c. &amp;c. &amp;c. &amp;c. jusques au nombre des hazards pour jetter <formula>p-f+1=q+1</formula> points <formula>=(q+1)^{0}-(q-f+1)^{0}=(r+1)^{0}</formula> Somme de la premiere Colomne <formula>p-q</formula> Somme de la seconden Colomne <formula>-q+r</formula> Somme totale <formula>p-2q+r</formula>
+<p>
+  <lb/>Je puis presentement passer <choice><orig>a</orig><orig>à</orig></choice> 2 dés, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le nombre des hazards pour jetter <choice rend="regFormula"><orig><formula>\overline{p+1}</formula></orig><reg><formula>(p+1)</formula></reg></choice> points
+  <lb/>
+  <lb/><choice rend="regFormula"><!-- Nachkommende Stelle kontrollieren, RG 24.06.2025 -->
+      <orig>
+        <formula>\begin{array}{l l l l}
+          \mbox{ est egal au nombre des hazards pour jetter p points avec 1 dez } &amp; = &amp; p^{0} &amp; -q^{0}\\
+          \mbox{ plus au nombre des hazards pour jetter p-1 points avec 1 dez } &amp; = &amp; \overline{p-1}^{0} &amp; -\overline{q-1}^{0} \\
+          \mbox{ \&amp;c \&amp;c \&amp;c } &amp; \mbox{ \&amp;c } &amp; \mbox{ \&amp;c } &amp; \\
+          \mbox{ jusques au nombre des hazards pour jetter p-f+1=q+1 points } &amp; = &amp; \overline{q+1}^{0} &amp; -\overline{q-f+1}^{0}=\overline{r+1}^{0} \\
+          \hline
+          \mbox{ Som̄ede la premiére Colomme } &amp; &amp; p &amp; -q\\
+          \mbox{ Som̄ede la seconde Colomme } &amp; &amp; &amp; -q+r\\
+          \hline
+          \mbox{ Som̄ede totale } &amp; &amp; p &amp; -2q+r.\\
+        \end{array}</formula>
+      </orig>      
+      <reg>
+        <formula>\begin{array}{l l l l}
+          \mbox{ est egal au nombre des hazards pour jetter p points avec 1 dez } &amp; = &amp; p^{0} &amp; -q^{0}\\
+          \mbox{ plus au nombre des hazards pour jetter p-1 points avec 1 dez } &amp; = &amp; (p-1)^{0} &amp; -(q-1)^{0}\\
+          \mbox{ etc. etc. etc. } &amp; \mbox{ etc. } &amp; \mbox{ etc.} &amp;\\
+          \mbox{ jusques au nombre des hazards pour jetter p-f+1=q+1 points } &amp; = &amp; (q+1)^{0} &amp; -(q-f+1)^{0}=(r+1)^{0}\\
+          \hline
+          \mbox{ Somme de la premiére Colomme } &amp; &amp; p &amp; -q\\
+          \mbox{ Somme de la seconde Colomme } &amp;  &amp;  &amp; -q+r\\
+          \hline
+          \mbox{ Somme totale } &amp; &amp; p &amp; -2q+r\\
+        \end{array}</formula>
+      </reg>
+    </choice>
 </p>
-<p><lb/>Par la même Methode je passe a 3 dés, puis a dés, &amp;c. &amp;c. en general de <formula>n-1</formula> dés à
-               <lb/><formula>n</formula> dés. Car le nombre des hazards pour jetter <formula>p+1</formula> points avec <formula>n</formula> dez est egal
-               <lb/>au nombre des hazards pour jetter <formula>p</formula> points avec <formula>n-1</formula> dés =<!-- Nachfolgende Formeln müssen noch angepasst werden, RG 21.07.2023. -->
-<lb/><formula>\frac{(p-1)(p-2)\dots(p-n+2)}{1\cdot2\dots(n-2)}-\frac{n-1}{1}\times\frac{(q-1)(q-2)\cdots(q-n+2)}{1\cdot2\cdots(n-2)}+\frac{(n-1)(n-2)}{1\cdot2}\times\frac{(n-1)(n-2)\cdots(n-p+2)}{1\cdot2\cdots(n-2)}=\frac{(p-2)(p-3)\cdots(p-n+1)}{1\cdot2\cdot(n-2)}-\frac{n-1}{1}\times\frac{(q-2)(q-3)\cdots(q-n+1)}{1\cdot2\cdots(n-2)}-\frac{(n-1)(n-2)}{1\cdot2}\times\frac{(n-2)(n-3)\cdots(n-p+1)}{1\cdot2\cdots(n-2)}</formula>
-<formula>\frac{p(p-1)\cdots(p-n+2)}{1\cdot2\cdots(n-1)}-\frac{n}{1}\times\frac{q(q-1)\cdots(q-n+2)}{1\cdot2\cdots(n-1)}+\frac{n(n-1)}{1\cdot2}\times\frac{r(r-1)\cdots(r-n+2)}{1\cdot2\cdots(n-1)}</formula>
+<p>
+  <lb/>Par la même Methode je passe <choice><orig>a</orig><orig>à</orig></choice> 3 dés, puis <choice><orig>a</orig><orig>à</orig></choice> <formula>q</formula> dés, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>  <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> en general de <choice rend="regFormula"><orig><formula>\overline{n-1}</formula></orig><reg><formula>(n-1)</formula></reg></choice> dés à
+  <lb/><formula>n</formula> déz. Car le nombre des hazards pour jetter <choice rend="regFormula"><orig><formula>\overline{p+1}</formula></orig><reg><formula>(p+1)</formula></reg></choice> points avec <formula>n</formula> dez est egal
+  <lb/>au nombre des hazards pour jetter <formula>p</formula> points avec <choice rend="regFormula"><orig><formula>\overline{n-1}</formula></orig><reg><formula>(n-1)</formula></reg></choice> dés <formula>=</formula>
+  <lb/><choice rend="regFormula">
+    <orig>
+      <formula>
+        \begin{array}{l l l l}
+        &amp; \frac{\overline{p-1}\cdot\overline{p-2}\cdot\ldots \overline{p-n+2}}{1\cdot2\cdot\ldots n-2} &amp; -\frac{n-1}{1}\times\frac{\overline{q-1}\cdot\overline{q-2}\cdot\ldots \overline{q-n+2}}{1\cdot2\cdot\ldots \overline{n-2}} &amp; +\frac{\overline{n-1}\cdot\overline{n-2}}{1\cdot2}\times\frac{\overline{n-1}\cdot\overline{n-2}\cdot\ldots \overline{r-n+2}}{1\cdot2\cdot\ldots n-2}\\
+        \mbox{ plus au nombre des hazards pour } &amp;  &amp;  &amp;\\
+        \mbox{ jetter } \overline{p-1} \mbox{ points avec } \overline{n-1} \mbox{ dès } = &amp; \frac{\overline{p-2}\cdot\overline{p-3}\cdot\ldots \overline{p-n+1}}{1\cdot2\cdot\ldots n-2} &amp; -\frac{n-1}{1}\times\frac{\overline{q-2}\cdot\overline{q-3}\cdot\ldots \overline{q-n+1}}{1\cdot2\cdot\ldots \overline{n-2}} &amp; +\frac{\overline{n-1}\cdot\overline{n-2}}{1\cdot2}\times\frac{\overline{n-2}\cdot\overline{n-3}\cdot\ldots \overline{r-n+1}}{1\cdot2\cdot\ldots n-2}\\
+        \mbox{ \&amp;c } &amp; \mbox{ \&amp;c } &amp; \mbox{ \&amp;c } &amp; \mbox{ \&amp;c }\\
+        \mbox{ jusqu'au nombre des hazards pour } &amp;  &amp;  &amp;\\
+        \mbox{ jetter } p-f+1=\overline{q-1} \mbox{ points...} = &amp; \frac{q \overline{q-1}\cdot\ldots \overline{-q-n+3}}{1\cdot2\cdot\ldots \overline{n-2}} &amp; -\frac{\overline{n-1}}{1}\times\frac{r\cdot\overline{r-1}\cdot\ldots \overline{r-n+3}}{1\cdot2\cdot\ldots n-2} &amp; +\frac{\overline{n-1}\cdot\overline{n-2}}{1\cdot2}\times\frac{S\cdot\overline{S-1}\cdot\ldots \overline{S-n+3}}{1\cdot2\cdot\ldots \overline{n-2}}\\
+        \hline
+        \mbox{ Som̄e de la } 1.^{er} \mbox{ Colomne } &amp; \frac{p\cdot\overline{p-1}\cdot\ldots \overline{p-n+2}}{1\cdot2\cdot\ldots n-1} &amp; -\frac{q\cdot\overline{q-1}\cdot\ldots \overline{q-n+2}}{1\cdot2\cdot\ldots -n-1} &amp;\\
+        \mbox{ Som̄e de la } 2.^{e} \mbox{ Colomne } = &amp; \ldots &amp; -\frac{n-1}{1}\times\frac{q\cdot\overline{q-1}\cdot\ldots \overline{q-n+2}}{1\cdot2\cdot\ldots \overline{n-1}} &amp; +\frac{\overline{n-1}}{1}\times\frac{r\cdot\overline{r-1}\cdot\ldots \overline{r-n+2}}{1\cdot2\cdot\ldots n-1}\\
+        \mbox{ Som̄e de la } 3.^{e} \mbox{ Colomne } = &amp; &amp; &amp; +\frac{\overline{n-1}\cdot\overline{n-2}}{1\cdot2}\times\frac{r\cdot\overline{r-1}\cdot\ldots \overline{r-n+2}}{1\cdot2\cdot\ldots n-1}\mbox{ \&amp;c }\\
+        \hline
+        \mbox{ Somme totale du nombre des } &amp;  &amp;  &amp;\\
+        \mbox{ hazards } p.^{r} \mbox{ jetter } \overline{p+1} \mbox{ points avec } &amp; \frac{p\cdot\overline{p-1}\cdot\ldots \overline{p-n+2}}{1\cdot2\cdot\ldots \overline{n-1}} &amp; -\frac{n}{1}\times\frac{q\cdot\overline{q-1}\cdot\ldots \overline{q-n+2}}{1\cdot2\cdot\ldots n-1} &amp; +\frac{n\cdot\overline{n-1}}{1\cdot2}\times\frac{r\cdot\overline{r-1}\cdot\ldots \overline{r-n+2}}{1\cdot2\cdot\ldots n-1}\\
+        n \mbox{ des } &amp; &amp; &amp;\\
+        \end{array}
+      </formula>
+    </orig>
+    <reg>
+      <formula>
+        \begin{array}{l l l l}
+        &amp; \frac{(p-1)\cdot(p-2)\cdot\ldots (p-n+2)}{1\cdot2\cdot\ldots (n-2)} &amp; -\frac{n-1}{1}\times\frac{(q-1)\cdot(q-2)\cdot\ldots (q-n+2)}{1\cdot2\cdot\ldots (n-2)} &amp; +\frac{(n-1)\cdot(n-2)}{1\cdot2}\times\frac{(n-1)\cdot(n-2)\cdot\ldots (r-n+2)}{1\cdot2\cdot\ldots (n-2)}\\
+        \mbox{ plus au nombre des hazards pour } &amp;  &amp;  &amp;\\
+        \mbox{ jetter (p-1) points avec (n-1) dès} = &amp; \frac{(p-2)\cdot(p-3)\cdot\ldots (p-n+1)}{1\cdot2\cdot\ldots (n-2)} &amp; -\frac{n-1}{1}\times\frac{(q-2)\cdot(q-3)\cdot\ldots (q-n+1)}{1\cdot2\cdot\ldots (n-2)} &amp; +\frac{(n-1)\cdot(n-2)}{1\cdot2}\times\frac{(n-2)\cdot(n-3)\cdot\ldots (r-n+1)}{1\cdot2\cdot\ldots (n-2)}\\
+        \mbox{ etc. }&amp; \mbox{ etc. } &amp; \mbox{ etc. } &amp; \mbox{ etc. }\\
+        \mbox{ jusqu'au nombre des hazards pour } &amp;  &amp;  &amp;\\
+        \mbox{ jetter p-f+1=(q+1) points...} = &amp; \frac{q(q-1)\cdot\ldots (p-n+3)}{1\cdot2\cdot\ldots (n-2)} &amp; -\frac{(n-1)}{1}\times\frac{r\cdot(r-1)\cdot\ldots (r-n+3)}{1\cdot2\cdot\ldots (n-2)} &amp; +\frac{(n-1)\cdot(n-2)}{1\cdot2}\times\frac{S\cdot(S-1)\cdot\ldots (S-n+3)}{1\cdot2\cdot\ldots (n-2)}\\
+        \hline
+        \mbox{ Somme de la } 1.^{er} \mbox{ Colomne } &amp; \frac{p\cdot(p-1)\cdot\ldots (p-n+2)}{1\cdot2\cdot\ldots (n-1)} &amp; -\frac{q\cdot(q-1)\cdot\ldots (q-n+2)}{1\cdot2\cdot\ldots (-n-1}) &amp;\\
+        \mbox{ Somme de la } 2.^{e} \mbox{ Colomne } = &amp; \ldots &amp; -\frac{n-1}{1}\times\frac{q\cdot(q-1)\cdot\ldots (q-n+2)}{1\cdot2\cdot\ldots (n-1)} &amp;+\frac{(n-1)}{1}\times\frac{r\cdot(r-1)\cdot\ldots (r-n+2)}{1\cdot2\cdot\ldots (n-1)}\\
+        \mbox{ Somme de la } 3.^{e} \mbox{ Colomne } = &amp; &amp; &amp; +\frac{(n-1)\cdot(n-2)}{1\cdot2}\times\frac{r\cdot(r-1)\cdot\ldots (r-n+2)}{1\cdot2\cdot\ldots (n-1)} \mbox{ etc. }\\
+        \hline
+        \mbox{ Somme totale du nombre des } &amp;  &amp;  &amp;\\
+        \mbox{ hazards pour jetter (p+1) points avec } &amp; \frac{p\cdot(p-1)\cdot\ldots (p-n+2)}{1\cdot2\cdot\ldots (n-1)} &amp; -\frac{n}{1}\times\frac{q\cdot(q-1)\cdot\ldots (q-n+2)}{1\cdot2\cdot\ldots (n-1)} &amp; +\frac{n\cdot(n-1)}{1\cdot2}\times\frac{r\cdot(r-1)\cdot\ldots (r-n+2)}{1\cdot2\cdot\ldots (n-1)}\\
+        n \mbox{ des } &amp;  &amp;  &amp;\\
+        \end{array}
+      </formula>
+    </reg>
+  </choice>
 </p>
-<p><lb/>Dans ma Solution du Cas Singulier proposé a Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> pag. 402 je n’ai
-               <lb/>pas pretendu deviner quelle est la raison qui pousse un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e a ne vouloir pas accorder
-               <lb/>un Equivalent infini. J’ai seulement voulu chercher une raison pour me persuader que je
-               <lb/>ne dois pas donner un Equivalent infini. Or je crois que celle que j’en donne doit faire impression
-               <lb/>sur un homme sensé, même quand il regarderoit une Esperance très petite co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e quelque chose
-               <lb/>ce qu’il doit faire, quoi qu’au reste il soit très vray que la plus part ne le font pas.
-               <lb/>J’ai d’ailleurs l’avantage que dans ma Solution, si le cas m’est offert, je puis savoir jusqu’où
-               <lb/>je puis pousser l’equivalent, n’ayant pour cela qu’à me consulter pour savoir jusque quel
-               <lb/>degré de richesses je serois bien aise de parvenir, au lieu que je pourrai jamais fixer à quel
-               <lb/>point une probabilité devient zero, ou certitude.</p>
+<p>
+  <lb/>Dans ma Solution du Cas Singulier proposé <choice><orig>a</orig><orig>à</orig></choice> <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> <abbr>pag.</abbr><!-- noch als Buch referenzieren? RG 20.06.2025 --> 402. Je n’ai
+  <lb/>pas pretendu deviner quelle est la raison qui pousse un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <choice><orig>a</orig><orig>à</orig></choice> ne vouloir pas accorder
+  <lb/>un Equivalent infini. J’ai seulement voulu chercher une raison pour me persuader que je
+  <lb/>ne dois pas donner un Equivalent infini. Or je crois que celle que j’en donne doit faire impression
+  <lb/>sur un homme sensé, même quand il regarderoit une Esperance très petite co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e quelque chose
+  <lb/>ce qu’il doit faire, quoi qu’au reste il soit très vray que la plus part ne le font pas.
+  <lb/>J’ai d’ailleurs l’avantage que dans ma Solution, <subst><del/><add>si</add></subst> le cas m’est offert, je puis savoir jusqu’<choice><orig>ou</orig><reg>où</reg></choice>
+  <lb/>je puis pousser l’equivalent, n’ayant pour cela qu’<choice><orig>a</orig><orig>à</orig></choice> me consulter pour savoir jusque quel
+  <lb/>degré de richesses je serois bien aise de parvenir, au lieu que je pourrai jamais fixer <subst><del/><add><choice><orig>a</orig><orig>à</orig></choice></add></subst> quel
+  <lb/>point une probabilité devient zero, ou certitude.</p>
 <pb facs="1063312" n="4"/>
-<p><lb/>J’ai assés bien compris vôtre trés ingenieuse Solution du Probléme de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>.
-               <lb/>Mais je n’ai pû reussir dans l’application aux autres Cas.</p>
-<p><lb/>Pour ce qui est de celui de trouver le produit des Differences des racines d’une Equation
-               <lb/>donnée, en connoissant une racine, je l’avois demontré avant la reception de vôtre Lettre
-               <lb/>de la maniére suivante. Soit une Equation par ex. du 3<hi>e</hi> degré dont les racines soient
-               <lb/><formula>a,b,c,x\parbox{.7cm}{\ensuremath{{}-a}}x\parbox{.9cm}{\ensuremath{{}+ab}}x-abc=0</formula> <del/>Je l’exprime ainsi
-               <lb/><formula>(x-a)(x-b)(x-c)=0</formula>. Et la difference sera <formula>dx(x-b)(x-c)+dx(x-a)(x-c)+dx(x-a)(x-b)</formula>.
-               <lb/>Substituant pour <formula>x</formula> sa valeur connuë, a les deux derniers termes s’evanouissent, &amp; le premier
-               <lb/>restant etant divisé par <formula>dx</formula>, donne <formula>(x-b)(x-c)</formula>, ou <formula>(a-b)(a-c)</formula> qui est le produit des differences, &amp;c.
-               <lb/>La même methode s’aplique à des equations plus composées.</p>
-<closer><lb/><salute>J’ai l’honneur d’etre avec un profond respect
-               <lb/>Monsieur
-               <lb/>Votre très humble
-               <lb/>et très obeissant
-               <lb/>Serviteur</salute>
-<lb/><signed>G. Cramer</signed>
-<dateline><lb/>Leyden ce <date>27e7bre 1728</date></dateline>
-<lb/>NB. Extrait d’une lettre de Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> à Mr. J. Bern.<note>Auszug aus einem Brief von Montmort an Johann I Bernoulli vom 15. November 1710 von Nikolaus I Bernoulli dem an ihn selbst gerichteten Schreiben von G. Cramer vom 27. September 1728 beigefügt. [Basel Un. Bibl. Mscr. L Ia 22, 53v.)] </note>
-<lb/>du 15e. Nov. 1710. 
-               <lb/>Je voudrois bien savoir s’il (Nic. B.) s’est donné la peine d’exprimer
-               <lb/>la proposition 31. Je n’ay point donné ma methode. Voicy la formule: 
-               <lb/>Soit <formula>p</formula> le nombre des dez, (q) le nombre figuré de l’ordre p qui repond
-               <lb/>au quantiemme du point proposé à co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encer depuis le plus petit qu’on
-               <lb/>puisse amener; <formula>(q-6)</formula> le nombre figuré de l’ordre <formula>p</formula> qui repond au
-               <lb/>quantiesme moins six à co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encer depuis le plus petit qu’on puisse
-               <lb/>amener; <formula>(q-12)</formula> le nombre figuré de l’ordre <formula>p</formula> qui repond au quantiéme
-               <lb/>moins douze du nombre proposé à co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encer depuis le plus petit qu’on
-               <lb/>puisse amener, &amp;c. La formule <formula>(q)-p\times(q-6)+\frac{p\cdot(p-1)}{1\cdot2}\times(q-12)\frac{p\cdot(p-1)\cdot(p-2)}{1\cdot2\cdot3}\times(q-18)+\frac{p\cdot(p-1)\cdot(p-2)\cdot(p-3)}{1\cdot2\cdot3\cdot4}\times(q-24)-\mbox{\&amp;c.}</formula>
-<lb/>donnera le nombre cherché. 
-               <lb/>Pour resoudre l’équation <formula>a<hi rend="sup">x</hi> +- b<hi rend="sup">x</hi> +- c<hi rend="sup">x</hi> = d</formula>, je mets <formula>a<hi rend="sup">x</hi>=z, b<hi rend="sup">x</hi>=y</formula>, <formula>c^{x}=v</formula>, ce qui donne <formula>xLa=Lz,xLb=Ly,xLc=Lv</formula>.
-               <lb/>en comparant les deux lres. de ces 3 égalités on trouve <formula>Ly=\frac{Lb\cdot Lz}{La}</formula>, ou bien en pre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ant les nombres des Logarith<pc type="hyphenation">-</pc><lb break="no"/>mes <formula>y=z^{Ib\;:\;La}</formula>; par la même maniere en comparant l’equation <formula>xLa=Lz</formula> avec la troisiéme <formula>xLc=Lv</formula>, on
-               <lb/>trouve <formula>v=z^{Lc\;:\;La}</formula>; par consequent <formula>a^{x}\pm b^{x}\pm c^{x}=z\pm y\pm v=z\pm z^{Lb\;:\;La}\pm z^{Lc\;:\;La}=d</formula>. Ayant donc trouvé
-               <lb/>la racine <formula>z</formula> de cette derniere equation, et le logarithme de cette racine on aura <formula>x=\frac{Lz}{La}</formula>.</closer>
+<p>
+  <lb/>J’ai assés bien compris vôtre trés ingenieuse Solution du Problème de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs><supplied>.</supplied>
+  <lb/>Mais je n’ai pû reussir dans l’application aux autres Cas.
+</p>
+<p>
+  <lb/>Pour ce qui est de celui de trouver le produit des Differences des racines d’une Equation
+  <lb/>donnée, en connoissant une racine, je l’avois demontré avant la reception de vôtre <rs type="letter">Lettre</rs>
+  <lb/>de la maniére suivante. Soit une Equation par <abbr>ex.</abbr> du 3.<hi rend="sup">e</hi> degré dont les racines soient
+  <lb/><formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>\begin{array}{l l l l} x^{3} &amp; -ax^{2} &amp; +abx &amp; -abc=0\\ &amp; -b &amp; +ac &amp;\\ &amp; -c &amp; +bc &amp;\\\end{array}</formula> <del/>Je l’exprime ainsi
+  <lb/><choice rend="regFormula"><orig><formula>\overline{x-a}\cdot\overline{x-b}\cdot\overline{x-c}=0</formula></orig><reg><formula>(x-a)\cdot(x-b)\cdot(x-c)=0</formula></reg></choice>. Et la difference sera <choice><orig><formula rend="regFormula">dx\cdot\overline{x-b}\cdot\overline{x-c}+dx\cdot\overline{x-a}\cdot\overline{x-c}+dx\cdot\overline{x-a}\cdot\overline{x-b}</formula></orig><reg><formula>dx(x-b)\cdot(x-c)+dx\cdot(x-a)\cdot(x-c)+dx\cdot(x-a)\cdot(x-b)</formula></reg></choice>.
+  <lb/>Substituant pour <formula>x</formula> sa valeur connuë <formula>a</formula>, les deux derniers termes s’evanouissent, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le premier
+  <lb/>restant etant divisé par <formula>dx</formula>, donne <choice rend="regFormula"><orig><formula>\overline{x-b}\cdot\overline{x-c}</formula></orig><reg><formula>(x-b)\cdot(x-c)</formula></reg></choice>, ou <choice rend="regFormula"><orig><formula>\overline{a-b}\cdot\overline{a-c}</formula></orig><reg><formula>(a-b)\cdot(a-c)</formula></reg></choice> qui est le produit des differences, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+  <lb/>La même methode s’aplique à des equations plus composées.
+</p>
+<closer>
+  <salute>
+    <lb/>J’ai l’honneur d’etre avec un profond respect
+    <lb/>Monsieur
+    <lb/>Votre très humble
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
+    <lb/>Serviteur
+  </salute>
+  <signed>
+    <lb/><rs type="person" key="pers_DE-588-11670912X"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>Leyden ce <date when="1728-09-27">27.<hi rend="sup">e</hi> 7<hi rend="sup">bre</hi> 1728</date>.
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/><abbr>NB.</abbr> Extrait d’une <rs key="B_991170514996905501" type="letter">lettre</rs> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> à <abbr>Mr.</abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>J.</abbr> <abbr>Bern.</abbr></rs><note>Auszug aus einem Brief von Montmort an Johann I Bernoulli vom 15. November 1710 von Nikolaus I Bernoulli dem an ihn selbst gerichteten Schreiben von G. Cramer vom 27. September 1728 beigefügt. [Basel Un. Bibl. Mscr. L Ia 22, 53v.)]</note><!-- Bemerkung notwendig, da die Briefe referenziert werden?, RG 27.06.2025 -->
+    <lb/>du 15.<hi rend="sup">e</hi> <abbr>Nov.</abbr> 1710.
+  </p>
+  <p>
+    <lb/>Je voudrois bien savoir s’il (<rs type="person" key="pers_DE-588-119166895"><abbr>Nic.</abbr> <abbr>B.</abbr></rs>) s’est donné la peine d’examiner
+    <lb/>la proposition 31. Je n’ay point donné ma methode. Voicy la formule:
+    <lb/>Soit <formula>p</formula> le nombre des dez, <formula>\fbox{q}</formula><!-- nicht sicher, ob man die Umkreisung so darstellen kann? RG 27.06.2025 --> le nombre figuré de l’ordre <formula>p</formula> qui repond
+    <lb/>au quantiesme du point proposé à co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encer depuis le plus petit qu’on
+    <lb/>puisse amener; <formula>\fbox{q-6}</formula> le nombre figuré de l’ordre <formula>p</formula> qui repond au
+    <lb/>quantiesme moins six à co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encer depuis le plus petit qu’on puisse
+    <lb/>amener; <formula>\fbox{q-12}</formula> le nombre figuré de l’ordre <formula>p</formula> qui repond au quantiéme
+    <lb/>moins douze du nombre proposé à co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encer depuis le plus petit qu’on
+    <lb/>puisse amener, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. La formule <choice rend="regFormula"><orig><formula>\fbox{q}-p\times\fbox{q-6}+\frac{p\cdot p-1}{1\cdot2}\times\fbox{q-12}\frac{p\cdot p-1\cdot p-2}{1\cdot2\cdot3}\times\fbox{q-18}+\frac{p\cdot p-1\cdot p-2\cdot p-3}{1\cdot2\cdot3\cdot4}\times\fbox{q-24}-\mbox{\&amp;c.}</formula></orig><reg><formula>(q)-p\times(q-6)+\frac{p\cdot(p-1)}{1\cdot2}\times(q-12)\frac{p\cdot(p-1)\cdot(p-2)}{1\cdot2\cdot3}\times(q-18)+\frac{p\cdot(p-1)\cdot(p-2)\cdot(p-3)}{1\cdot2\cdot3\cdot4}\times(q-24)-\mbox{etc.}</formula></reg></choice>
+    <lb/>donnera le nombre cherché.
+  </p>
+  <p>
+    <lb/>Pour resoudre l’équation <formula>a^{x}\pm b^{x}\pm c^{x}=d</formula>, je mets <formula>a^{x}=z</formula>, <formula>b^{x}=y</formula>, <formula>c^{x}=v</formula>, ce qui donne <formula>xLa=Lz</formula>, <formula>xLb=Ly</formula>, <formula>xLc=Lv</formula>
+    <lb/>en comparant les deux l.<hi rend="sup">res</hi> de ces 3 égalités on trouve <formula>Ly=\frac{Lb\cdot Lz}{La}</formula>, ou bien en pre<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ant les nombres des Logarith<pc type="hyphenation">-</pc><lb break="no"/>mes <formula>y=z^{Lb\;:\;La}</formula>; par la même maniere en comparant l’equation <formula>xLa=Lz</formula> avec la troisiéme <formula>xLc=Lv</formula>, on
+    <lb/>trouve <formula>v=z^{Lc\;:\;La}</formula>; par consequent <formula>a^{x}\pm b^{x}\pm c^{x}=z\pm y\pm v=z\pm z^{Lb\;:\;La}\pm z^{Lc\;:\;La}=d</formula>. Ayant donc trouvé
+    <lb/>la racine <formula>z</formula> de cette derniere equation, et le logarithme de cette racine on aura <formula>x=\frac{Lz}{La}</formula>.
+  </p>
+</postscript><!-- Bis hier den Code, angesehen, RG 27.06.2025 -->
 </div>
 </body>
 </text></TEI>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517020605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -191,6 +191,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-18" who="SG FN">Kollationieren weitergeführt</change>
+      <change when="2025-09-17" who="SG FN">Kollationieren begonnen</change>
       <change when="2025-01-07" who="RG">Kommentare durch "rs type=" ersetzt, sowie weitere wenige Auszeichnungen.</change>
       <change when="2025-01-07" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
       <change when="2025-01-07" who="RG">pb eingefügt</change>
@@ -201,11 +203,7 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
+
 <!--Comments that were in the teiHeader element-->
 <!--pers_DE-588-118939297 Gravesande, Willem Jacob 〈1688-1742〉 -->
 <!--pers_DE-588-118820214 Philipp, Frankreich, Regent 〈1674-1723〉 -->
@@ -239,7 +237,7 @@
             Herman -> Hermann, Jacob pers_DE-588-119112450
 
             -->
-<!--_____________-->
+
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1038808/manifest"/>
@@ -248,174 +246,174 @@
 <div type="letter">
 <pb facs="1038809" n="1"/>
 <opener>
-  <lb/>A Monsieur de <rs key="pers_DE-588-117601020" type="person">Monmort</rs>.
+  <lb/><note hand="pers_DE-588-119166895">À Mr. de <rs key="pers_DE-588-117601020" type="person">Monmort</rs>.</note>
   <salute><lb/>Monsieur</salute>
 </opener>
 <p>
-  <lb/>Je dois craindre avec raison,<del> que</del> <add>de ne point obtenir</add> pour cette fois<del/>
-  <lb/><del/><add>le</add> pardon de mon long silence; mais sçachez s’il vous plait, qu’<pc type="hyphenation"></pc><lb break="no"/>aprés avoir été longtemps à me resoudre de répondre à Vôtre <rs key="B_991170517020705501" type="letter">lettre</rs>
-  <lb/>du <date>14. Novembre 1715</date>,<del/> ce n’est pas sans repugnance
-  <lb/>que je vous écris celle <rs type="letter">ci</rs>, ne pouvant pas le faire sans me plain<pc type="hyphenation">-</pc><lb break="no"/>dre de la maniere, <del/><add>en</add> laquelle Vous avés <del/><add>critiqué</add> mes remar<pc type="hyphenation">-</pc><lb break="no"/>ques sur vos 10 theorémes. Vous loués <del/>mon exactitude et
+  <lb/>Je dois craindre avec raison, <del/><add>de ne point obtenir</add> pour cette fois<del/>
+  <lb/><del/><add>le</add> pardon de mon long silence; mais <choice><orig>scachés</orig><reg>sçachés</reg></choice> s’il vous plait, qu’<pc type="hyphenation"></pc><lb break="no"/>aprés avoir été long temps à me resoudre de répondre à Vôtre <rs key="B_991170517020705501" type="letter">Lettre</rs>
+  <lb/>du <date>14. Novembre 1715</date>.<del/> <choice><orig>ce</orig><reg>Ce</reg></choice> n’est pas sans repugnance
+  <lb/>que je Vous écris celle<supplied>-</supplied><rs type="letter">ci</rs>, ne pouvant pas le faire sans me plain<pc type="hyphenation">-</pc><lb break="no"/>dre de la maniere <del/><add>en</add> laquelle Vous avés <del/><add>critiqué</add> mes remar<pc type="hyphenation">-</pc><lb break="no"/>ques sur Vos 10<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> theorémes. Vous loués <del/>mon exactitude et
   <lb/>ma sincerité, mais Vous leur donnés en même temps les noms odieux
   <lb/>de severité, de critiques et de reformes, par lesquels il <del/><add>me</add> semble que
   <lb/>Vous voulés insinuer que je me plais à rafiner sur Vos decouvertes,
   <lb/>et que je m’efforce <del/><add>ordinairement à y</add> trouver quelque chose à corriger. Je Vous proteste,
-  <lb/>Monsieur, qu’en Vous envoyant mes remarques, je n’ai pas eu le dessein
-<pb facs="1038810" n="2"/>
+  <lb/>Monsieur, qu’en Vous envoyant mes remarques<del/> je n’ai pas eu le dessein
+<pb facs="1038810" n="2"/> 
   <lb/>de critiquer Vos solutions, mais seulement de Vous donner des marques
-  <lb/>claires, par lesquelles Vous puissiés co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre que j’avois aussi trouvé les
+  <lb/>claires par lesquelles Vous <choice><sic>pussiés</sic><corr>puissiés</corr></choice> co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre que j’avois aussi trouvé les
   <lb/>mêmes solutions. Il auroit été trop long de Vous envoyer mes methodes,
   <lb/>c’est pourquoi je me suis contenté<del/> de Vous<del/>
   <lb/><del/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer les formules
-  <lb/>que mes methodes m’ont fournies, et que je n’ai pas tirées, <add>comme Vous le pensés peutetre,</add> de<del>s</del> Vos
-  <lb/><add>formules, </add>en les tournant de façon ou d’autre jusqu’à ce qu’elles se soient
-  <lb/>presentées sous une expression plus courte.<del/>
-  <lb/><del/>
+  <lb/>que mes methodes m’ont fournies, et que je n’ai pas tirées, <add>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peutetre Vous le pensés,<!-- Wortumstellung --></add> de<del/> Vo<del/>s
+  <lb/><add>formules,</add> en les tournant de façon ou d’autre jusqu’à ce qu’elles se soient
+  <lb/>presentées sous une expression plus courte<choice><orig>,</orig><reg>.</reg></choice><del/>
+  <lb type="deleted"/><del/>
   <lb/><del/>Je
-  <lb/>ne sçai pas si, en ce faisant, j’ai merité l’eloge d’un critique severe,
-  <lb/>mais<add> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</add> il Vous plait de rectifier le mot de severité par celui de sin<pc type="hyphenation">-</pc><lb break="no"/>cerité, je croi que ce dernier terme conviendroit mieux à ma ma<pc type="hyphenation">-</pc><lb break="no"/>niere d’agir, que le premier; je Vous avoue, Monsieur ma
+  <lb/>ne sçai pas si en ce faisant j’ai merité l’e<del/><add>loge</add> d’un critique severe,
+  <lb/>mais <add>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</add> il Vous plait de rectifier le mot de severité par celui de sin<pc type="hyphenation">-</pc><lb break="no"/>cerité, je croi que ce dernier terme conviendroit mieux à ma ma<pc type="hyphenation">-</pc><lb break="no"/>niere d’agir, que le premier; je Vous avoue, Monsieur, ma
   <lb/>faute, je ne suis que trop sincere, et je le suis meme tant
   <lb/>jusqu’à souhaiter que Vous le fussiés autant que moi.
 </p>
 <p>
-  <lb/>Car à Vous parler franchement, j’ai de la peine à croire que Vous
-  <lb/>ayéz voulu m’objecter<add> sincerement et</add> tout de bon des choses qui sentent si fort la
-  <lb/>chicane;<del/> pardonnés ce terme grossier, c’est
+  <lb/>Car à Vous parler franchement, j’ai de la peine à croire, que Vous
+  <lb/>ayés voulu m’objecter <add>sincerement et</add> tout de bon des choses qui sentent si fort la
+  <lb/>chicane; <del/>pardonnés ce terme grossier, c’est
   <lb/>mon foible d’appeller les choses par leur nom. Je vais pour justi<pc type="hyphenation">-</pc><lb break="no"/>fier ce que je viens d’avancer Vous montrer le tort de Vos objections.
-  <lb/>Vous dites que<del/> <add>Vôtre</add> solution du l<hi rend="sup">er</hi>. Probl. Vous paroit preferable à celle
-  <lb/>que je Vous ai proposée. Pour moi, je croi qu’aucune ne peut étre pré<pc type="hyphenation">-</pc><lb break="no"/>férée à l’autre, la mienne n’<del>est </del><add>étant</add> autre chose que la Vôtre concue
+  <lb/>Vous dites que <del/><add>Vôtre</add> solution du 1.<hi rend="sup">er</hi> <abbr>Probl.</abbr> Vous paroit préferable à celle
+  <lb/>que je Vous ai proposée. Pour moi<supplied>,</supplied> je croi qu’aucune ne peut étre pré<pc type="hyphenation">-</pc><lb break="no"/>ferée à l’autre, la mienne n’<del/><add>étant</add> autre chose que la Vôtre concuë
   <lb/>en moins de paroles; Vous convenés aussi que c’est la même chose, mais
-  <lb/>Vous ajoutés, que<del/> la Vôtre apprend non seulement, qu’il faut
+  <lb/>Vous ajoutés, que <del/>la Vôtre apprend non seulement, qu’il faut
   <lb/>employer autant de termes de la bande perpendiculaire <formula>p+q-1</formula>,
   <lb/>qu’il y a d’unités dans <formula>p</formula>, divisés par le dernier de ces termes, mais
   <lb/>qu’elle apprend encore la maniere de trouver cette somme; et
 <pb facs="1038811" n="3"/>
-  <lb/>Vous ajoutés que c’est justement ce dont il s’agit: si cela est <add>ainsi</add>, j’ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>is une
+  <lb/>Vous ajoutés, que c’est justement ce dont il s’agit; si cela est <add>ainsi</add> j’ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>is une
   <lb/>petition de principe et je n’ai point resolu le Probleme. Mais voyons par
-  <lb/>un seul exemple, si c’est avec raison que Vous prétendés cet avantage sur moi.
-  <lb/>Soit à trouver la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de cette suitte <formula>\frac{1}{1}+\frac{5}{9}+\frac{10}{45}+\frac{10}{165}+\frac{5}{495}+\frac{1}{1287}</formula>, ou
-  <lb/><formula>p=6</formula>, et <formula>q=9</formula>; je dis <del>qu’</del><add>que pour avoir cette somme, </add>il faut<del> prendre</del><add> diviser</add> la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des 6 premiers termes
-  <lb/>de la 14<hi rend="sup">e</hi>. bande perpendiculaire par 1287, qui est le dernier de ces 6 termes.
-  <lb/>Selon Vous, il faut prendre la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des 8 premiers termes de la même ban<pc type="hyphenation">-</pc><lb break="no"/>de perpendiculaire et l’ôter de la 13<hi rend="sup">e</hi> puissance de 2, et multiplier
-  <lb/>le reste par <formula>\frac{1\cdot2\cdot3\cdot4\cdots8}{6\cdot7\cdot8\cdot9\cdots13}</formula>; faites en à cette heure Vous mêmes les conclu<pc type="hyphenation">-</pc><lb break="no"/>sions necessaires. En un mot, il est aussi facile d’ajouter autant de termes
+  <lb/>un seul exemple, si c’est avec raison que Vous pretendés cet avantage sur moi.
+  <lb/>Soit à trouver la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de cette suitte <formula>\frac{1}{1}+\frac{5}{9}+\frac{10}{45}+\frac{10}{165}+\frac{5}{495}+\frac{1}{1287}</formula>, où
+  <lb/><formula>p=6</formula>, et <formula>q=9</formula>; je dis <del/><add>que pour avoir cette so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</add> il faut <del/><add>diviser</add> la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des 6 premiers termes
+  <lb/>de la 14.<hi rend="sup">e</hi> bande perpendiculaire par 1287<supplied>,</supplied> qui est le dernier de ces 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> termes.
+  <lb/><note type="editorial">Im Manuskript steht hier ein Pluszeichen, das nicht transkribiert wurde.</note>Selon Vous il faut prendre la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des 8<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> premiers termes de la même ban<pc type="hyphenation">-</pc><lb break="no"/>de perpendiculaire et l’ôter de la 13.<hi rend="sup">e</hi> puissance de 2, et multiplier
+  <lb/>le reste par <choice><orig><formula>\frac{1\cdot2\cdot3\cdot4\ldots8}{6\cdot7\cdot8\cdot9\ldots.13}</formula></orig><reg><formula>\frac{1\cdot2\cdot3\cdot4\cdot\ldots\cdot8}{6\cdot7\cdot8\cdot9\cdot\ldots\cdot13}</formula></reg></choice>; faites en à cette heure Vous même les conclu<pc type="hyphenation">-</pc><lb break="no"/>sions necessaires. En un mot<supplied>,</supplied> il est aussi facile d’ajouter autant de termes
   <lb/>de la bande <formula>p+q-1</formula> qu’il y a d’unités dans <formula>p</formula>, que d’en ajouter autant qu’il
-  <lb/>y a d’unités dans <formula>q-1</formula>; car <formula>p</formula> et <formula>q</formula> étant deux nombres arbitraires,<del/> <formula>p</formula>
-  <lb/>peut<del/> étre<del/> plus petit que <formula>q-1</formula> aussi
-  <lb/>bien que plus grand. Mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent trouverai<del>s</del> je la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de ces 6 premiers
-  <lb/>termes, c’est ce dont il s’agit? Voici Vôtre regle qui me l’apprend:
-  <lb/>Et quand même <formula>p</formula> est plus grand que <formula>q-1</formula>,<del> si</del> <add>il y a des cas, sçavoir quand</add> l’excés n’est pas fort considera<pc type="hyphenation">-</pc><lb break="no"/>ble, où j’aimerois mieux ajouter autant de termes qu’il y a d’unités
-  <lb/>dans <formula>p</formula>, que d’en ajouter autant qu’il y a d’unités dans <formula>q-1</formula>, et de retran<pc type="hyphenation">-</pc><lb break="no"/>cher cette so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de la somme de toute la bande ou de <formula>2^{p+q-2}</formula>, parce que
+  <lb/>y a d’unités dans <formula>q-1</formula>, car <formula>p</formula> et <formula>q</formula> étant deux nombres arbitraires<supplied>,</supplied> <del/><formula>p</formula>
+  <lb/>peut <del/>étre <del/>plus petit que <formula>q-1</formula> aussi
+  <lb/>bien que plus grand.<note type="editorial">Im Manuskript steht hier ein Sonderzeichen, das nicht transkribiert wurde. Es könnte ein Absatzzeichen sein.</note> Mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent trouverai<del/>-je la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de ces 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> premiers
+  <lb/>termes, c’est ce dont il s’agit? Voici Vôtre Regle qui me l’apprend:<note type="editorial">Im Manuskript steht hier dasselbe Sonderzeichen wie zu Beginn des Satzes, das nicht transkribiert wurde.</note>
+  <lb/>Et quand même <formula>p</formula> est plus grand que <formula>q-1</formula>, <del/><add>il y a des cas<supplied>,</supplied> <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> quand</add> l’excés n’est pas fort considera<pc type="hyphenation">-</pc><lb break="no"/>ble, où j’aimerois mieux ajouter autant de termes qu’il y a d’unités
+  <lb/>dans <formula>p</formula>, que d’en ajouter autant qu’il y a d’unités dans <formula>q-1</formula>, et de retran<pc type="hyphenation">-</pc><lb break="no"/>cher cette so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de toute la bande ou de <formula>2^{p+q-2}</formula>, parceque
   <lb/>l’elevation du nombre 2 à la puissance <formula>p+q-2</formula> pourroit demander un
-  <lb/>plus grand travail que <add>ne demanderoit</add> l’addition de quelques termes de plus. Je pourrois
-  <lb/>donc<del> dire</del><add> soutenir</add> - si je voulois chicaner - que ma solution est preférable à
-  <lb/>la Vôtre, mais je m’en garde bien,<del/> car la vôtre et la mienne
-  <lb/>ayant toutes deux le même sens, il seroit ridicule, si nous nous vou<pc type="hyphenation">-</pc><lb break="no"/>lions quereller sur la maniere d’ajouter un certain nombre de
+  <lb/>plus grand travail que <add><del/>ne demanderoit</add> l’addition de quelques termes de plus. Je pourrois
+  <lb/>donc <del/><add>soutenir</add> <choice><orig><g ref="#klammerauf">|:</g></orig><reg>(</reg></choice>si je voulois chicaner<choice><orig><g ref="#klammerzu">:|</g></orig><reg>)</reg></choice> que ma solution est preferable à
+  <lb/>la Vôtre, mais je m’en garde bien, <del/>car la Vôtre et la mienne
+  <lb/>ayant toutes deux le même sens<supplied>,</supplied> il seroit ridicule<supplied>,</supplied> si nous nous vou<pc type="hyphenation">-</pc><lb break="no"/>lions quereller sur la maniere d’ajouter un certain <del/><add>n</add>ombre de
   <lb/>termes d’une bande perpendiculaire,<add><del/></add> laquelle nous sçavons tous
-  <lb/>deux de puis longtemps.
+  <lb/>deux depuis long temps.
 </p>
 <p>
-  <lb/>A l’égard du 2<hi rend="sup">d</hi>. <abbr>Probl.</abbr>, mon intention n’a pas été de dire que Vous n’aviés
+  <lb/>À l’égard du 2.<hi rend="sup">d</hi> <abbr>Probl.</abbr> mon intention n’a pas été de dire, que Vous n’aviés
   <lb/>pas remarqué que tous les facteurs du numerateur sont detruits par ceux
-  <lb/>du denominateur, mais seulement de dire, que je ne pouvois pas com<pc type="hyphenation">-</pc>
-<pb facs="1038812" n="4"/><lb break="no"/>prendre la raison, pourquoi Vous avés voulu énoncer Vôtre regle<del/>
-  <lb/>de cette maniere <add>plutôt</add> que d’une autre plus simple; il est vrai que la propriété
-  <lb/>que Vous avés remarquée est curieuse, mais un petit mot d’avertissement
-  <lb/>auroit <add>été</add> suffisant pour me la faire voir, sans qu’il eût été necessaire<del> de</del>
+  <lb/>du denominateur, mais seulement<del/> d<del/><add>e</add> dire, que je ne pouvois pas com<pc type="hyphenation">-</pc>
+<pb facs="1038812" n="4"/><lb break="no"/>prendre la raison<supplied>,</supplied> pourquoi Vous avés voulu énoncer Vôtre regle<del/>
+  <lb/>de cette maniere <add>plutôt</add> que d’une autre plus simple; Il est vrai que la proprieté
+  <lb/>que Vous avés remarquée est curieuse, mais un petit mot d’avertissem.<hi rend="sup">t</hi>
+  <lb/>auroit <add>été</add> suffisant pour me la faire voir, sans qu’il eut été necessaire<del/>
   <lb/><del/>d’énoncer la solution du Probleme<del/>
-  <lb/>d’une maniere <add>qui</add> me <add>pourroit</add> d’abord embarasser; Vous auriés pû
-  <lb/><del/><add>remarquer</add> une proprieté semblable pour le <abbr>Probl.</abbr> 3.<hi rend="sup">e</hi>, sçavoir
-  <lb/>que la bande horizontale du quantieme <formula>n+1</formula> fournit toutes les solu<pc type="hyphenation">-</pc><lb break="no"/>tions pour toutes les differentes valeurs de <formula>p</formula>, <add>et Vous auriés pû dire co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e au <abbr>Probl.</abbr> second que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e cherchée</add> est <formula>g=a</formula>, une
-  <lb/>fraction dont le numerateur est le produit d’autant de ces quantités
-  <lb/><formula>\frac{n+1}{1}\cdot\frac{n+2}{2}\cdot\frac{n+3}{3}\cdot{n+4}{4}</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> qu’il y a d’unités dans <formula>p-1</formula>, et le denominateur
-  <lb/>le produit d’autant de ces mêmes quantités qu’il y a d’unités dans <del/><formula>p-2</formula>;
-  <lb/><del/>par <abbr>ex.</abbr> <formula>\frac{1}{1}+\frac{3}{4}+\frac{6}{10}+\frac{10}{20}+\frac{15}{35}etc.=\frac{1}{0}\frac{1}{1}+\frac{3}{5}+\frac{6}{15}+\frac{10}{35}</formula><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-  <lb/><formula>=\frac{1}{4}</formula>; <formula>\frac{1}{1}+\frac{3}{6}+\frac{6}{21}+\frac{10}{56}etc.=\frac{10}{4}</formula>: <formula>\frac{1}{1}+\frac{3}{7}+\frac{6}{28}+\frac{10}{84}+\frac{15}{210}\mbox{etc.}=\frac{20}{10}</formula>, et ainsi de suite.
-  <lb/>Mais puisque je parle du <abbr>probl.</abbr> 3<hi rend="sup">e</hi>., il faut que je me plaigne d’un en<pc type="hyphenation">-</pc><lb break="no"/>droit de vôtre <rs type="letter">lettre</rs> qui m’a fait beaucoup de mal. Vous dites que
-  <lb/>cette formule <formula>\frac{n}{p-1}+1</formula> est aussi simple que celle ci <formula>\frac{d-1}{d-n-1}</formula>, que l’on trouve
+  <lb/>d’une maniere <del/><add>qui</add> me <del/><add>pourroit</add> d’abord embarasse<del/><add>r</add>. Vous auriés pû
+  <lb/><del/><add>remarquer</add> une proprieté semblable<!-- Wortumstellung --> pour le <abbr>Probl.</abbr> 3.<hi rend="sup">e</hi><supplied>,</supplied> sçavoir
+  <lb/>que la bande horizontale du quantiéme <formula>n+1</formula> fournit toutes les solu<pc type="hyphenation">-</pc><lb break="no"/>tions pour toutes les differentes valeurs de <formula>p</formula>, <add>et vous auriés pû dire co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e au <abbr>Probl.</abbr> second que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e cherchée</add><del> Car <formula>\frac{n}{p-1}+1</formula> </del>est <del> <formula>g</formula></del><note type="editorial">Die Stelle weist zahlreiche Korrekturen auf, die nicht eindeutig nachvollzogen werden können.</note> = à une
+  <lb/>fraction<supplied>,</supplied> dont le numerateur est le produit d’autant de ces quantités
+  <lb/><formula>\frac{n+1}{1}</formula>, <formula>\frac{n+2}{2}</formula>, <formula>\frac{n+3}{3}</formula>, <formula>{n+4}{4}</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> qu’il y a d’unités dans <formula>p-1</formula>, et le denominateur
+  <lb/>le produit d’autant de ces mêmes quantités qu’il y a d’unités dans <del/><formula>p-2</formula>.
+  <lb/><del/>Par <abbr>Ex.</abbr> <choice><orig><formula>\frac{1}{1}+\frac{3}{4}+\frac{6}{10}+\frac{10}{20}+\frac{15}{35} \text{ \&amp;c} =\frac{1}{0}</formula></orig><reg><formula>\frac{1}{1}+\frac{3}{4}+\frac{6}{10}+\frac{10}{20}+\frac{15}{35} \text{ etc.} =\frac{1}{0}</formula></reg></choice>; <choice><orig><formula>\frac{1}{1}+\frac{3}{5}+\frac{6}{15}+\frac{10}{35}\text{\&amp;c}</formula></orig><reg><formula>\frac{1}{1}+\frac{3}{5}+\frac{6}{15}+\frac{10}{35}\text{ etc.}</formula></reg></choice>
+  
+  <lb/><formula>=\frac{4}{1}</formula>; <choice><orig><formula>\frac{1}{1}+\frac{3}{6}+\frac{6}{21}+\frac{10}{56}\text{ \&amp;c}=\frac{10}{4}</formula></orig><reg><formula>\frac{1}{1}+\frac{3}{6}+\frac{6}{21}+\frac{10}{56}\text{ \etc.}=\frac{10}{4}</formula></reg></choice>; <choice><orig><formula>\frac{1}{1}+\frac{3}{7}+\frac{6}{28}+\frac{10}{84}+\frac{15}{210}\text{ \&amp;c.}=\frac{20}{10}</formula></orig><reg><formula>\frac{1}{1}+\frac{3}{7}+\frac{6}{28}+\frac{10}{84}+\frac{15}{210}\text{ etc.}=\frac{20}{10}</formula></reg></choice> et ainsi de suite.
+  <lb/>Mais puisque je parle du <abbr>Probl.</abbr> 3.<hi rend="sup">e</hi><supplied>,</supplied> il faut que je me plaigne d’un en<pc type="hyphenation">-</pc><lb break="no"/>droit de Vôtre <rs type="letter">Lettre</rs> qui m’a fait beaucoup de mal. Vous dites que
+  <lb/>cette formule <formula>\frac{n}{p-1}+1</formula> e<del/><add>st</add> aussi simple que celle<supplied>-</supplied>ci <formula>\frac{d-1}{d-n-1}</formula> que l’on trouve
   <lb/>en substituant <formula>p</formula> à la place de <formula>d-n</formula> (<del/><add>il falloit</add> dire en substituant
-  <lb/><formula>d-n</formula> à la place de <formula>p</formula>) et que <hi rend="u">cela n’avoit pas besoin de reforme</hi>, ce trait
-  <lb/>me blesse terriblement; de grace, dites moi, si Vous pensés tout de bon
+  <lb/><formula>d-n</formula> à la place de <formula>p</formula>) et que <hi rend="u">cela n’avoit pas besoin de reforme</hi>, <choice><orig>Ce</orig><reg>ce</reg></choice> trait
+  <lb/>me blesse terriblement; De grace, dites moi, si Vous pensés tout de bon
   <lb/>que j’ai <del/><add>voulu</add> reformer cet article ou substituer cette formule <formula>\frac{d-1}{d-n-1}</formula>
-  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e une plus simple à la place de la vôtre <formula>\frac{n}{p-1}+1</formula>. Vous m’étes assurément
-  <lb/>peu favorable, puisque Vous voulés tirer <del/><add>une telle</add> conclusion de ce qu’en
-  <lb/>parlant du <abbr>Probl.</abbr> 4<hi rend="sup">e</hi>. j’ai dit, que le premier membre<del/>
-  <lb/>de ma formule donne justement la solution du <abbr>Probl.</abbr> 3.<hi rend="sup">e</hi>. Ne voyés
-  <lb/>Vous pas clairement que mon intention a été seulement de faire
-  <lb/>voir que le premier membre de cette formule <formula>\frac{d-1}{d-n-1}-\frac{n(n+1)(n+2)\cdots(n+q-1)}{(d-n-q)d(d+1)\cdots(d+q-2)}</formula>
-  <lb/>exprim<del>e</del><add>ant</add> la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de tous les termes de la suite en question<del>, et</del>
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e une plus simple à la place de la Vôtre <formula>\frac{n}{p-1}+1</formula>. Vous m’étes assurem.<hi rend="sup">t</hi>
+  <lb/>peu favorable, puisque Vous <choice><orig>Voulés</orig><reg>voulés</reg></choice> tirer <del/><add>une telle</add> conclusion de ce qu’en
+  <lb/>parlant du <abbr>Probl.</abbr> 4.<hi rend="sup">e</hi> j’ai dit, que le premier membre<del/>
+  <lb/>de ma formule donne justement la solution du <abbr>Probl.</abbr> 3.<hi rend="sup">e</hi><supplied>.</supplied> Ne voyés<supplied>-</supplied><lb break="no"/>Vous pas clairement que mon intention a été seulement de faire
+  <lb/>voir que le premier membre de cette formule <choice><orig><formula>\frac{d-1}{d-n-1}-\frac{n\cdot n+1\cdot n+2 \ldots n+q-1}{d-n-1 \cdot d\cdot d+1\ldots d+q-2}</formula></orig><reg><formula>\frac{d-1}{d-n-1}-\frac{n(n+1)(n+2)\ldots(n+q-1)}{(d-n-q)d(d+1)\ldots(d+q-2)}</formula></reg></choice>
+  <lb/>exprim<del/><add>ant</add> la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de tous les termes de la suite en question<del/><supplied>,</supplied>
   <lb/><del/>l’autre membre <add>doit exprimer</add> la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de toute la suite moins
-  <lb/>les <formula>q</formula> l<hi rend="sup">ers</hi>. termes, ou la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de tous les termes qui suivent aprés le
-<pb facs="1038813" n="5"/>  
+  <lb/>les <formula>q</formula> 1.<hi rend="sup">ers</hi> termes, ou la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de tous les termes qui suivent aprés le
+<pb facs="1038813" n="5"/> 
   <lb/>quantiéme <formula>q</formula>? Mais Vous me faites encore la même injustice au sujet
-  <lb/>du Probl. 4<hi rend="sup">me</hi>. en disant qu’il en est à peu prés de même des deux formules
-  <lb/>du <abbr>prob.</abbr> 4 (c’est à dire qu’elles n’avoient pas besoin de reforme) et qu’<pc type="hyphenation"></pc><lb break="no"/>il semble au contraire que ces deux formules <formula>\frac{n+p-1}{p-1}-\frac{n(n+1)(n+2)\cdots(n+p-1)}{(p-1)(n+q)(n+q+1)\cdots(n+p+q-2)}</formula>
-  <lb/>et <formula>-\frac{n-p-1}{p+1}+\frac{(q+n-1)(q+n-2)\cdots(q+n-p-1)}{(p+1)\cdot(n-1)(n-2)\cdots(n-p)}</formula> soient plus simples que la mienne
-  <lb/><formula>\frac{d-1}{d-n-1}-\frac{n(n+1)(n+2)\cdots(n+q-1)}{(d-n-1)d(d+1)\cdots(d+q-2)}</formula>. Par ces mots <hi rend="u">au contraire</hi> Vous voulés faire
+  <lb/>du <abbr>Probl.</abbr> 4.<hi rend="sup">me</hi> en disant, qu’il en est à peu prés de même des deux formules
+  <lb/>du <abbr>prob.</abbr> 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> (c’est à dire qu’elles n’avoient pas besoin de reforme) et qu’<lb break="no"/>il semble au contraire que ces deux formules <choice><orig><formula>\frac{n+p-1}{p-1}-\times \frac{n\cdot n+1\cdot n+2\ldots n+p-1}{\overline{p-1}\times n+q\cdot n+q+1 \ldots n+p+q-2}</formula></orig><reg><formula>\frac{n+p-1}{p-1}-\frac{n(n+1)(n+2)\ldots(n+p-1)}{(p-1)(n+q)(n+q+1)\ldots(n+p+q-2)}</formula></reg></choice>
+  <lb/>et <choice><orig><formula>-\times\frac{n-p-1}{p+1}+\frac{q+n-1\cdot q+n-2\ldots q+n-p-1}{\overline{p+1}\times n-1\cdot n-2\ldots n-p}</formula></orig><reg><formula>-\frac{n-p-1}{p+1}+\frac{(q+n-1)(q+n-2)\ldots(q+n-p-1)}{(p+1)(n-1)(n-2)\ldots(n-p)}</formula></reg></choice> soient plus simples que la mienne
+  <lb/><choice><orig><formula>\frac{d-1}{d-n-1}-\frac{n\cdot n+1\cdot n+2\ldots n+q-1}{d-n-1\cdot d\cdot d+1 \ldots d+q-2}</formula></orig><reg><formula>\frac{d-1}{d-n-1}-\frac{n(n+1)(n+2)\ldots(n+q-1)}{(d-n-1)d(d+1)\ldots(d+q-2)}</formula></reg></choice>. Par ces mots <cit><quote><hi rend="u">au contraire</hi></quote></cit> Vous <choice><orig>Voulés</orig><reg>voulés</reg></choice> faire
   <lb/>entendre que j’ai eu tort de corriger les dites deux formules et d’en
   <lb/>substituer une autre moins simple, quoique ce ne soient pas ces
-  <lb/>deux formules que Vous m’aviés envoyées, <hi rend="u">mais deux autres plus
-  <lb/>composées, sçavoir celles ci</hi> <formula>\frac{np}{p-1}\cdot\frac{n(n+1)(n+2)(n+3)}{1\cdot2\cdot3\cdot4\cdot\mbox{etc.}}\mbox{etc.}\cdot\left(\frac{1\cdot2\cdot3\cdot4\cdot\mbox{etc.}}{n(n+1)(n+2)\mbox{etc.}}-\frac{1\cdot2\cdot3\cdot4\cdot\mbox{etc.}}{(n+q)(n+q+1)\mbox{etc.}}\right)</formula>
-  <lb/>et <formula>\left(\frac{(q+n-1)(q+n)(q+n+1)\mbox{etc.}}{1\cdot2\cdot3\cdot\mbox{etc.}}-\frac{(n-1)n(n+1)(n+2)\mbox{etc.}}{1\cdot2\cdot3\cdot4\cdot\mbox{etc.}}\right)\cdot\frac{1\cdot2\cdot3\cdot4\cdot\mbox{etc.}}{n(n+1)(n+2)(n+3)\mbox{etc.}}</formula>, lesquelles
-  <lb/>avant que j’eusse trouvé la mienne me parurent inintelligibles à
-  <lb/>cause de quelques inexactitudes qui<del/> Vous <add>y</add> sont echappées. Car 1.<hi rend="sup">o</hi> vous
-  <lb/>dites que la 1.<hi rend="sup">re</hi> de ces deux dernieres formules est pour le cas, lorsque
-  <lb/>le numerateur est plus<del> petit</del> grand que le denominateur, et la se<pc type="hyphenation">-</pc><lb break="no"/>conde pour le cas lorsque le numerateur est plus petit que le denomi<pc type="hyphenation">-</pc><lb break="no"/>nateur; au lieu que la 1.<hi rend="sup">re</hi> doit étre employée, lorsque le nume<pc type="hyphenation">-</pc><lb break="no"/>rateur est plus petit que le denominateur, et la seconde lorsqu’il
-  <lb/>est plus grand. 2.<hi rend="sup">o</hi> Vous avés mis <formula>\frac{n}{p-1}\times</formula><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> dans la l<hi rend="sup">re</hi>. formule au
-  <lb/>lieu de <formula>\frac{p}{p-1}</formula>, ce qui avoit entierement troublé le sens de la formule.
-  <lb/>3.<hi rend="sup">o</hi> Dites Vous que <formula>n</formula> et <formula>p</formula> expriment ici les mêmes choses que dans
-  <lb/>le Probléme 3.<hi rend="sup">e</hi>, sçavoir <formula>n</formula> le quantiéme de la bande du nume<pc type="hyphenation">-</pc><lb break="no"/>rateur, et <formula>p</formula> la difference de l’ordre du numerateur à celui du dé<pc type="hyphenation">-</pc><lb break="no"/>nominateur: au lieu que dans la seconde formule Vous employés <formula>n</formula>
+  <lb/>deux formules que Vous m’aviés envoyées, mais deux autres plus
+  <lb/>composées, <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> celles<supplied>-</supplied>ci <choice><orig><formula>\frac{np}{p-1}\times \frac{n\cdot n+1\cdot n+2\cdot n+3 \text{ \&amp;c}}{1\cdot2\cdot3\cdot4 ..\text{ \&amp;c}}\times\overline{\frac{1\cdot2\cdot3\cdot4\cdot\text{ \&amp;c}}{n\cdot n+1\cdot n+2 \cdot \text{ \&amp;c}}-\frac{1\cdot2\cdot3\cdot4 \text{ \&amp;c}}{n+q\cdot n+q+1\cdot\text{ \&amp;c}}}</formula></orig><reg><formula>\frac{np}{p-1}\cdot\frac{n(n+1)(n+2)(n+3)}{1\cdot2\cdot3\cdot4\cdot\text{ etc.}}\text{ etc.}\cdot\left(\frac{1\cdot2\cdot3\cdot4\cdot\text{ etc.}}{n(n+1)(n+2)\cdot \text{ etc.}}-\frac{1\cdot2\cdot3\cdot4\cdot\text{ etc.}}{(n+q)(n+q+1)\cdot \text{ etc.}}\right)</formula></reg></choice>
+  <lb/>et <choice><orig><formula>\overline{\frac{q+n-1\cdot q+n\cdot q+n+1 \cdot \text{ \&amp;c}}{1\cdot2\cdot3.\cdot \text{ \&amp;c}}-\frac{n-1\cdot n\cdot n+1\cdot n+2 \text{ \&amp;c}}{1\cdot2\cdot3\cdot4\cdot \text{ \&amp;c}}}\times\frac{1\cdot2\cdot3\cdot4\cdot \text{ \&amp;c}}{n\cdot n+1\cdot n+2\cdot n+3 \text{ \&amp;c}}</formula></orig><reg><formula>\left(\frac{(q+n-1)(q+n)(q+n+1)\cdot \text{ etc.}}{1\cdot2\cdot3\cdot\text{ etc.}}-\frac{(n-1)n(n+1)(n+2)\cdot \text{ etc.}}{1\cdot2\cdot3\cdot4\cdot\text{ etc.}}\right)\cdot\frac{1\cdot2\cdot3\cdot4\cdot\text{ etc.}}{n(n+1)(n+2)(n+3)\cdot \text{ etc.}}</formula></reg></choice><supplied>,</supplied> lesquelles
+  <lb/>avant que j’eusse trouvé la mienne<supplied>,</supplied> me parurent inintellig<del/><add>ibl</add>es à
+  <lb/>cause de quelques inexactitudes qui<del/> Vous <add>y</add> sont echappées. Car 1.<hi rend="sup">o</hi> Vous
+  <lb/>dites<!-- Wortumstellung --> que la 1.<hi rend="sup">re</hi> de ces deux dernieres formules est pour le cas<supplied>,</supplied> lorsque
+  <lb/>le numerateur est plus <del/>grand que le denominateur, et la se<pc type="hyphenation">-</pc><lb break="no"/>conde pour le cas<supplied>,</supplied> lorsque le numerateur est plus petit que le denomi<pc type="hyphenation">-</pc><lb break="no"/>nateur; au lieu que la 1.<hi rend="sup">re</hi> doit étre employée lorsque le nume<pc type="hyphenation">-</pc><lb break="no"/>rateur est plus petit que le denominateur, et la seconde lorsqu’il
+  <lb/>est plus grand. 2.<hi rend="sup">o</hi> Vous <choice><orig>Avés</orig><reg>avés</reg></choice><!-- Wortumstellung --> mis <formula>\frac{n}{p-1}\times</formula><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> dans la 1.<hi rend="sup">re</hi> formule au
+  <lb/>lieu de <formula>\frac{p}{p-1}</formula>, ce qui avoit entierement troublé le sens de la formule
+  <lb/>3.<hi rend="sup">o</hi> Vous <choice><orig>Dites</orig><reg>dites</reg></choice><!-- Wortumstellung --> que <formula>n</formula> et <formula>p</formula> expriment ici les mêmes choses que dans
+  <lb/>le Probléme 3.<hi rend="sup">e</hi>, sçavoir <formula>n</formula> le quantiéme de la bande du nume<pc type="hyphenation">-</pc><lb break="no"/>rateur, et <formula>p</formula> la difference de l’ordre du numerateur à celui du dé<pc type="hyphenation">-</pc><lb break="no"/>nominateur; au lieu que dans la seconde formule Vous employés <formula>n</formula>
   <lb/>pour le quantiéme de la bande du denominateur. À cause donc de
-  <lb/>ces inexactitudes et pour eviter toute ambiguité, j’ai trouvé à propos
-  <lb/>de ne point distinguer les cas et de donner aux quantiémes de la bande du
+  <lb/>ces inexactitudes et pour eviter toute ambiguité j’ai trouvé à propos
+  <lb/>de ne point distinguer les cas et de donner aux quanti<del/><add>é</add>mes de la bande du
 <pb facs="1038814" n="6"/> 
-  <lb/>numerateur et de celle du denominateur à chacun un nom à part. Ma for<pc type="hyphenation">-</pc><lb break="no"/>mule <formula>\frac{d-1}{d-n-1}-\frac{n(n+1)(n+2)\cdots(n+q-1)}{(d-n-1)d(d+1)\cdots(d+q-2)}</formula> n’est pas differente de ces deux <formula>\frac{n+p-1}{p-1}-\frac{n(n+1)(n+2)\cdots(n+p-1)}{(p-1)(n+q)(n+q+1)\cdots(n+p+q)}</formula>
-  <lb/>et <formula>-\frac{n-p-1}{p+1}+\frac{(q+n-q)(q+n-2)\cdots(q+n-p-1)}{(p+1)(n-1)(n-2)\cdots(n-p)}</formula>. S’il y a des cas où<del/>
-  <lb/>plus de facteurs se detruisent<del> que</del> dans ma formule que dans les vôtres (ce
-  <lb/>qui pourtant n’ôte rien à sa simplicité) il y en a aussi où plusieurs fa<pc type="hyphenation">-</pc><lb break="no"/>cteurs sont detruits dans Vos formules que dans la mienne. Par <abbr>ex.</abbr> soit
-  <lb/>à trouver la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des 12 l<hi rend="sup">ers</hi> termes de cette suite <formula>\frac{1}{1}+\frac{4}{24}+\frac{10}{300}+\frac{20}{2600}+</formula>
-  <lb/><formula>\frac{35}{17550}+\frac{56}{98280}+\frac{84}{475020}+\mbox{etc.}</formula>, dans laquelle <formula>n=4,p=20,q=12,d=24</formula>,
-  <lb/>ma formule donne <formula>\frac{23}{19}-\frac{4\cdot5\cdot6\cdots15}{19\cdot24\cdot25\cdot26\cdots34}=\frac{77219}{366792}</formula>, mais la Vôtre donne <formula>\frac{23}{19}-</formula>
-  <lb/><formula>\frac{4\cdot5\cdot6\cdots23}{19\cdot16\cdot17\cdot18\cdot34}</formula>, ce qui fait voir que Vos formules n’ont aucun avanta<pc type="hyphenation">-</pc><lb break="no"/>ge sur la mienne par rapport à la simplicité. En un mot, si je dois dire
+  <lb/>numerateur et de celle du denominateur à chacun un nom à part. Ma for<pc type="hyphenation">-</pc><lb break="no"/>mule <choice><orig><formula>\frac{d-1}{d-n-1}-\frac{n\cdot n+1\cdot n+2\ldots n+q-1}{d-n-1\cdot d\cdot d+1\ldots  d+q-2}</formula></orig><reg><formula>\frac{d-1}{d-n-1}-\frac{n(n+1)(n+2)\ldots(n+q-1)}{(d-n-1)d(d+1)\ldots(d+q-2)}</formula></reg></choice> n’est pas differente de ces deux <choice><orig><formula>\frac{n+p-1}{p-1}-\frac{n\cdot n+1\cdot n+2\ldots n+p-1}{p-1\cdot n+q\cdot n+q+1.. n+p+q-2}</formula></orig><reg><formula>\frac{n+p-1}{p-1}-\frac{n(n+1)(n+2)\ldots(n+p-1)}{(p-1)(n+q)(n+q+1)\ldots(n+p+q-2)}</formula></reg></choice>
+  <lb/>et <choice><orig><formula>-\frac{n-p-1}{p+1}+\frac{q+n-1\cdot q+n-2\ldots q+n-p-1}{p+1\cdot n-1\cdot n-2\ldots n-p}</formula></orig><reg><formula>-\frac{n-p-1}{p+1}+\frac{(q+n-1)(q+n-2)\ldots(q+n-p-1)}{(p+1)(n-1)(n-2)\ldots(n-p)}</formula></reg></choice><choice><orig>,</orig><reg>;</reg></choice> s’il y a des cas où<del/>
+  <lb/>plus de facteurs se detruisent <del/>dans ma formule qu<del/><add>e</add> dans les vôtres <choice><orig><g ref="#klammerauf">|:</g></orig><reg>(</reg></choice>ce
+  <lb/>qui pourtant n’ôte rien à sa simplicité<choice><orig><g ref="#klammerzu">:|</g></orig><reg>)</reg></choice> il y en a aussi où plusieurs fa<pc type="hyphenation">-</pc><lb break="no"/>cteurs sont detruits dans Vos formules que dans la mienne. Par <abbr>Ex.</abbr> soit
+  <lb/>à trouver la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des 12<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 1.<hi rend="sup">ers</hi> termes de cette suite <formula>\frac{1}{1}+\frac{4}{24}+\frac{10}{300}+\frac{20}{2600}+</formula>
+  <lb/><choice><orig><formula>\frac{35}{17550}+\frac{56}{98280}+\frac{84}{475020}+\text{ \&amp;c.}</formula></orig><reg><formula>\frac{35}{17550}+\frac{56}{98280}+\frac{84}{475020}+\text{ etc.}</formula></reg></choice><supplied>,</supplied> dans laquelle <formula>n=4</formula>, <formula>p=20</formula>, <formula>q=12</formula>, <formula>d=24</formula><supplied>;</supplied>
+  <lb/>ma formule donne <choice><orig><formula>\frac{23}{19}-\frac{4\cdot5\cdot6\ldots15}{19\cdot24\cdot25\cdot26\ldots34}=\frac{77219}{366792}</formula></orig><reg><formula>\frac{23}{19}-\frac{4\cdot5\cdot6\cdot\ldots\cdot15}{19\cdot24\cdot25\cdot26\cdot\ldots\cdot34}=\frac{77219}{366792}</formula></reg></choice>,<note type="editorial">Handschriftliche Korrektur in der Formel. Der letzte Bruch wurde nachträglich eingefügt.</note> mais la vôtre donne <formula>\frac{23}{19}-</formula>
+  <lb/><choice><orig><formula>\frac{4\cdot5\cdot6\ldots23}{19\cdot16\cdot17\cdot18\ldots34}</formula></orig><reg><formula>\frac{4\cdot5\cdot6\ldots23}{19\cdot16\cdot17\cdot18\cdot\ldots\cdot34}</formula></reg></choice>, ce qui fait voir que Vos formules n’ont aucun avanta<pc type="hyphenation">-</pc><lb break="no"/>ge sur la mienne par rapport à la simplicité. En un mot<supplied>,</supplied> si je dois dire
   <lb/>ce que je pense, c’est une chose indigne de disputer la simplicité à une
-  <lb/>formule,<del> par cette raison,</del> par ce que le numerateur et le denominateur
-  <lb/>de la formule ont quelquefois des facteurs co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uns, qui se detruisent,
-  <lb/>car le calcul ne devient pas pour cela plus difficile, et on n’a qu’à effa<pc type="hyphenation">-</pc><lb break="no"/>cer les facteurs co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uns. De plus il me semble qu’il est mieux fait d’ex<pc type="hyphenation">-</pc><lb break="no"/>primer la solution de ce <abbr>Probl.</abbr> 4.<del> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</del> <add>de la maniere que</add> j’ai fait, que selon <add>la</add> vôtre<del/>
-  <lb/><add>par deux raisons 1<hi rend="sup">o</hi></add> parce que ma formule est plus uniforme que les vôtres, en ce que les
-  <lb/>facteurs du numerateur du second membre de <del/><add>ma</add> formule co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encent
+  <lb/>formule, <del/>par ce que <del/><add>l</add>e numerateur et le denominateur
+  <lb/>de la formule ont quelquefois des facteurs co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uns qui se détruisent,
+  <lb/>car le calcul ne devient pas pour cela plus difficile, et on n’a qu’à effa<pc type="hyphenation">-</pc><lb break="no"/>cer les facteurs co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uns. De plus il me semble qu’il est mieux fait d’ex<pc type="hyphenation">-</pc><lb break="no"/>primer la solution de ce <abbr>Probl.</abbr> 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <del/><add>de la maniere que</add> j’ai fait, que selon <add>la</add> vôtre<del/>
+  <lb/><add>par deux raisons. 1<hi rend="sup">o</hi></add> par<add>ce</add>que<!-- kontrollieren ob zusammenschreibung normalisiert werden soll.  --> ma formule est plus uniforme<del/> que les Vôtres, en ce que les
+  <lb/>facteurs du <del/><add>n</add>umerateur du second membre de <del/><add>ma</add> formule co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encent
   <lb/>par le quantiéme de la bande du numerateur, et les facteurs du denomi<pc type="hyphenation">-</pc><lb break="no"/>nateur par le quantiéme de la bande du denominateur, ce qui est un
-  <lb/>grand secours pour la memoire. 2<hi rend="sup">o</hi>. parce que je fai par une seule
-  <lb/>formule ce que Vous faites par deux; <hi rend="u">quod fieri potest per pauca,
-  <lb/>non debet fieri per plura</hi>.<del> A</del>
+  <lb/>grand secours pour la memoire. 2.<hi rend="sup">o</hi> parce que je fai par une seule
+  <lb/>formule ce que Vous faites par deux; <hi rend="u"><foreign xml:lang="lat">quod fieri potest per pauca,
+  <lb/>non debet fieri per plura</foreign></hi>.<del/>
 </p>
 <p>
-  <lb/>À l’égard du <abbr>Theor.</abbr> 6, je n’ai pas remarqué que <formula>(g+(n-1)hf)f-\frac{fp}{2}-fh</formula> de de<pc type="hyphenation">-</pc><lb break="no"/>truisent, mais j’ai remarqué qu’il n’est pas necessaire de supposer avec Vous
-  <lb/><formula>2g+2nh-4h=p</formula>, parce que j’ai d’abord trouvé cette formule <formula>f.2^{n-m-1}\times</formula>
-  <lb/><formula>(2g+(n+m-2)h)+(2g+nh-2h)2^{n-3}a+\mbox{etc.}</formula>, qui est beaucoup plus simple
-  <lb/>que celle ci <formula>(g+(n-1)h)f+\frac{fp}{2}.2^{n-m}-1-(h(n-m-1)2^{n-m-1}-2^{n-m-1}+1)</formula>
-<pb facs="1038815" n="7"/>    
-  <lb/><formula>(+p-nh+2h)2^{n-3}a+\mbox{etc.}</formula>, que Vous m’avés co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement,
-  <lb/>et dans laquel le il y a une faute, sçavoir <formula>-(h(n-m-1)2^{n-m-1}-2^{n-m-1}+1)</formula> à la
-  <lb/>place de <formula>-f(h(n-m-1)2^{n-m-1}-2^{n-m-1}+1)</formula>. Je Vous prie de remarquer ici
-  <lb/><del/>de ce que j’ai sçû corriger cette faute,<del/> <add>que je n’ai</add>
-  <lb/><del/><add>pas</add> tiré ma formule de la Vôtre en y substituant seulement
+  <lb/>À l’égard du <abbr>Theor.</abbr> 6<choice><orig>.</orig><reg>,</reg></choice> je n’ai pas remarqué que <choice><orig><formula>\overline{g+\overline{n-1}\times h}\cdot f-\frac{fp}{2}-fh</formula></orig><reg><formula>(g+(n-1)h)f-\frac{fp}{2}-fh</formula></reg></choice><!-- ToDo: äussere Klammern grösser. reg anpassen, da orig korrigiert wurde (f ausserhalb des vinculum). --> de de<pc type="hyphenation">-</pc><lb break="no"/>truisent, mais j’ai remarqué qu’il n’est pas necessaire de supposer avec Vous
+  <lb/><formula>2g+2nh-4h=p</formula>, parceque j’ai d’abord trouvé cette formule <choice><orig><formula>f\times 2^{n-m-1}\times</formula></orig><reg><formula>f\cdot 2^{n-m-1}\cdot</formula></reg></choice>
+  <lb/><choice><orig><formula>2g+\overline{n+m-2}\cdot h+\overline{2g+nh-2 h}\times 2^{n-3}a+\text{ \&amp;c.}</formula></orig><reg><formula>2g+(n+m-2)h+(2g+nh-2h)2^{n-3}a+\text{ etc.}</formula></reg></choice><supplied>,</supplied> qui est beaucoup plus simple
+  <lb/>que celle<supplied>-</supplied>ci <choice><orig><formula>\overline{g+\overline{n-1}\times h}\times f+\frac{fp}{2}\times 2^{n-m}-1-h\times \overline{\overline{n-m-1}\times 2^{n-m-1}-2^{n-m-1}+1}</formula></orig><reg><formula>(g+(n-1)h)f+\frac{fp}{2}.2^{n-m}-1-(h(n-m-1)2^{n-m-1}-2^{n-m-1}+1)</formula></reg></choice>
+<pb facs="1038815" n="7"/> <!-- bis hier Formeln mit Fritz kontrolliert. ToDo: bei &amp;c die Punkte kontrollieren und ergänzen. -->
+  <lb/><choice><orig><formula>+\overline{p-nh+2h}\times2^{n-3}a+\text{ \&amp;c.}</formula></orig><reg><formula>+(p-nh+2h)2^{n-3}a+\text{ etc.}</formula></reg></choice>, que Vous m’avés co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement,
+  <lb/>et dans laquelle il y a une faute, sçavoir <choice><orig><formula>-\overline{h\times \overline{n-m-1}\times 2^{n-m-1}-2^{n-m-1}+1}</formula></orig><reg><formula>-(h(n-m-1)2^{n-m-1}-2^{n-m-1}+1)</formula></reg></choice> à la
+  <lb/>place de <choice><orig><formula>-f\overline{h\times\overline{n-m-1}\times 2^{n-m-1}-2^{n-m-1}+1}</formula></orig><reg><formula>-f(h(n-m-1)2^{n-m-1}-2^{n-m-1}+1)</formula></reg></choice>. Je Vous prie de remarquer ici
+  <lb/><del/>de ce que j’ai sçû corriger cette faute, <del/><add>que je n’ai</add>
+  <lb/><del/><add>pas</add> tiré<del/> ma formule de la Vôtre en y substituant seulement
   <lb/>pour <formula>p</formula> sa valeur <formula>2g+2nh-4h</formula>, mais que je l’ai trouvée moi même en
-  <lb/>resolvant le Problême. Au reste j’avoue que cette formule <formula>fp-f(h(n-m-2))</formula>
-  <lb/><formula>(2^{n-m-1}+p-nh+4h2^{n-3}</formula> (il faut <formula>p-nh+2h(2^{n-3}a)+\mbox{etc.}</formula> est aussi
-  <lb/>simple que la mienne, je dis de plus qu’elle est la même que la mienne.
+  <lb/>resolvant le Problême. Au reste j’avoue que cette formule <choice><orig><formula>fp-fh\times\overline{n-m-2}\cdot</formula></orig><reg><formula>fp-fh\cdot(n-m-2)\cdot</formula></reg></choice>
+  <lb/><choice><orig><formula>2^{n-m-1}+p-nh+4h\times 2^{n-3}</formula></orig><reg><formula>(2^{n-m-1}+p-nh+4h)\cdot2^{n-3}</formula></reg></choice> (il faut <choice><orig><formula>p-nh+2h\times 2^{n-3}a</formula></orig><reg><formula>(p-nh+2h)\cdot2^{n-3}a</formula></reg></choice>) <choice><orig><formula>+\text{ \&amp;c.}</formula></orig><reg><formula>+\text{ etc.}</formula></reg></choice> est aussi
+  <lb/>simple que la mienne, je dis de plus qu’elle est la même que la mienne.<!-- bis hier kollationiert. -->
   <lb/>Je suis bien<del> que</del> <add>aise que Vous ayés approuvé</add> la formule que j’ai trouvée pour exprimer la somme
   <lb/>d’un nombre quelconque de<del> termes</del> fractions du <del>Theor. </del><add><abbr>probl.</abbr></add> 7; mais Vous n’avés
   <lb/>pas remarqué que cette formule donne plus que la solution du <abbr>Probl.</abbr> 7,
   <lb/>puisque Vous dites qu’il Vous semble que Vôtre formule l’emporte sur
   <lb/>la mienne pour la simplicité.<del/> Vôtre formule<del> ne donne que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</del>
-  <lb/><formula>\frac{a}{m-1}+\frac{b}{(m-1)^{2}}+\frac{c}{(m-1)^{3}}+\mbox{etc.}</formula> ne donne que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de toute la suite en question,
+  <lb/><choice><orig><formula>\frac{a}{m-1}+\frac{b}{\overline{m-1}^{2}}+\frac{c}{<formula>\frac{1}{1}+\frac{3}{6}+\frac{6}{21}+\frac{10}{56}\text{ \&amp;c.}=\frac{10}{4}</formula>m-1}^{3}}+\text{ etc.}</formula></orig><reg><formula>\frac{a}{m-1}+\frac{b}{(m-1)^{2}}+\frac{c}{(m-1)^{3}}+\text{ etc.}</formula></reg></choice> ne donne que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de toute la suite en question,
   <lb/>au lieu que la mienne donne la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e d’un nombre determiné <formula>n</formula> de
   <lb/>termes de cette suite. Or trouvés Vous étrange qu’une solution generale
   <lb/>soit moins simple que celle d’un cas particulier? Si <del/>dans ma
-  <lb/>formule <formula>\frac{m^{n}-1}{m-1}\cdot a+\frac{A-n}{m-1}\cdot b+\frac{B-\frac{n(n-1)}{1\cdot2}}{m-1}\cdot c+\frac{C-\frac{n(n-1)(n-2)}{1\cdot2\cdot3}}{m-1}\cdot d+\mbox{etc.}</formula> <add>divisé par <formula>m^{n}</formula></add>, Vous
-  <lb/>mettés <formula>n=$\infty$</formula>, ces quantités <formula>1,n,\frac{n(n-1)}{1\cdot2},\frac{n(n-1)(n-2)}{1\cdot2\cdot3},\mbox{etc.}</formula> s’évanouiront
-  <lb/>par rapport à <formula>m^{n}A,B,C,\mbox{etc.}</formula>, et la formule se changera en celle ci
-  <lb/><formula>\frac{m}{m-1}\cdot a+\frac{A}{m-1}\cdot b+\frac{B}{m-1}\cdot c+\frac{C}{m-1}\cdot d+\mbox{etc.}</formula>, le tout divisé par <formula>m^{n}</formula>, ce qui n’est
-  <lb/>autre chose que <formula>\frac{a}{m-1}+\frac{b}{(m-1)^{2}}+\frac{c}{(m-1)^{3}}+\frac{d}{(m-1)^{4}}+\mbox{etc.}</formula>
+  <lb/>formule <choice><orig><formula>\frac{m^{n}-1}{m-1}\cdot a+\frac{A-n}{m-1}\cdot b+\frac{B-\frac{n(n-1)}{1\cdot2}}{m-1}\cdot c+\frac{C-\frac{n(n-1)(n-2)}{1\cdot2\cdot3}}{m-1}\cdot d+\text{ etc.}</formula></orig><reg><formula>\frac{m^{n}-1}{m-1}\cdot a+\frac{A-n}{m-1}\cdot b+\frac{B-\frac{n(n-1)}{1\cdot2}}{m-1}\cdot c+\frac{C-\frac{n(n-1)(n-2)}{1\cdot2\cdot3}}{m-1}\cdot d+\text{ etc.}</formula></reg></choice> <add>divisé par <formula>m^{n}</formula></add>, Vous
+  <lb/>mettés <formula>n=$\infty$</formula>, ces quantités <formula>1,n,\frac{n(n-1)}{1\cdot2},\frac{n(n-1)(n-2)}{1\cdot2\cdot3},\text{ etc.}</formula> s’évanouiront
+  <lb/>par rapport à <formula>m^{n}A,B,C,\text{ etc.}</formula>, et la formule se changera en celle ci
+  <lb/><formula>\frac{m}{m-1}\cdot a+\frac{A}{m-1}\cdot b+\frac{B}{m-1}\cdot c+\frac{C}{m-1}\cdot d+\text{ etc.}</formula>, le tout divisé par <formula>m^{n}</formula>, ce qui n’est
+  <lb/>autre chose que <formula>\frac{a}{m-1}+\frac{b}{(m-1)^{2}}+\frac{c}{(m-1)^{3}}+\frac{d}{(m-1)^{4}}+\text{ etc.}</formula>
 </p>
 <p>
   <lb/>Je n’ai jamais eu le soupçon que Vous n’eussiés point la formule du
@@ -441,18 +439,18 @@
   <lb/>suite, dont le 1<hi rend="sup">er</hi> terme soit <formula>a</formula>, la l<hi rend="sup">re</hi>. difference <formula>b</formula>, la 2.<hi rend="sup">de</hi>
 <formula>c</formula>, la 3<hi rend="sup">me</hi> <formula>d</formula>, la 4<hi rend="sup">e</hi>. <formula>e</formula>
   <lb/>et ainsi de suite. La so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e d’un nombre donné <formula>p</formula> de termes de cette suite est
-  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous sçavés <formula>pa+\frac{p(p-1)}{1\cdot2}\cdot b+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot c+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot d+\mbox{etc.}</formula>
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous sçavés <formula>pa+\frac{p(p-1)}{1\cdot2}\cdot b+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot c+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot d+\text{ etc.}</formula>
   <lb/>ce qui dans le cas particulier du Probléme 10.<hi rend="sup">e</hi> en mettant pour <formula>a, b, c, d, e,</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>. les
   <lb/>grandeurs <formula>1</formula>, <formula>a</formula>, <formula>b</formula>, <formula>am^{2}</formula>, <formula>bn^{2}</formula>, <formula>am^{4}</formula>, <formula>bn^{4}</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e porte l’enoncé de ce Probleme
-  <lb/>donne <formula>p+\frac{p(p-1)}{1\cdot2}\cdot a+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot b+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot am^{2}++\frac{p(p-1)(p-2)(p-3)(p-4)}{1\cdot2\cdot3\cdot4\cdot5}\cdot bn^{2}+\mbox{etc.}</formula> Or la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des termes impairs de cette suite se trouve par le moyen des
+  <lb/>donne <formula>p+\frac{p(p-1)}{1\cdot2}\cdot a+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot b+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot am^{2}++\frac{p(p-1)(p-2)(p-3)(p-4)}{1\cdot2\cdot3\cdot4\cdot5}\cdot bn^{2}+\text{ etc.}</formula> Or la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des termes impairs de cette suite se trouve par le moyen des
   <lb/>termes paires <add>du binome <formula>(1+n)^{p}</formula></add>, et celle des termes <del>im</del>pairs se trouve par le moyen des termes im<pc type="hyphenation">-</pc><lb break="no"/>pairs du binome <formula>(1+m)^{p}</formula>;<del/> en cette maniere <formula>\frac{(1+m)^{p}+(1-m)^{p}}{2}</formula>
-  <lb/><formula>=1+\frac{p(p-1)}{1\cdot2}\cdot m^{2}+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot m^{4}++\frac{p(p-1)(p-2)(p-3)(p-4)(p-5)}{1\cdot2\cdot3\cdot4\cdot5\cdot6}\cdot m^{6}+\mbox{etc.}</formula> En ôtant de
+  <lb/><formula>=1+\frac{p(p-1)}{1\cdot2}\cdot m^{2}+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot m^{4}++\frac{p(p-1)(p-2)(p-3)(p-4)(p-5)}{1\cdot2\cdot3\cdot4\cdot5\cdot6}\cdot m^{6}+\text{ etc.}</formula> En ôtant de
   <lb/>part et d’autre<del/> et en multipliant par <formula>\frac{a}{m^{2}}</formula>, j’aurai <formula>\frac{a}{m^{2}}\cdot\left(\frac{(1+m)^{p}+(1-m)^{p}}{2}-1\right)</formula>
-  <lb/><formula>=\frac{p(p-1)\cdot a}{1\cdot2}+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot am^{2}++\frac{p(p-1)(p-2)(p-3)(p-4)(p-5)}{1\cdot2\cdot3\cdot4\cdot5\cdot6}+\mbox{etc.}</formula> Ainsi la
+  <lb/><formula>=\frac{p(p-1)\cdot a}{1\cdot2}+\frac{p(p-1)(p-2)(p-3)}{1\cdot2\cdot3\cdot4}\cdot am^{2}++\frac{p(p-1)(p-2)(p-3)(p-4)(p-5)}{1\cdot2\cdot3\cdot4\cdot5\cdot6}+\text{ etc.}</formula> Ainsi la
   <lb/>so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des termes pairs du binome <formula>(1+n)^{p}</formula>, c’est <del/><add>à dire</add> <formula>p\cdot n+\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot n^{3}+</formula>
 <pb facs="1038817" n="9"/>     
-  <lb/><formula>\frac{p(p-1)(p-2)(p-3)(p-4)}{1\cdot2\cdot3\cdot4\cdot5}\cdot n^{5}+\mbox{etc.}</formula> est <formula>=\frac{(1+n)^{p}-(1-n)^{p}}{2}</formula>; en ôtant <formula>pn</formula> de part et d’au<pc type="hyphenation">-</pc><lb break="no"/>tre et en multipliant par <formula>\frac{b}{n^{3}}</formula> j’aurai <formula>\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot b+\frac{p(p-1)(p-2)(p-3)(p-4)}{1\cdot2\cdot3\cdot4\cdot5}\cdot bn^{2}</formula>
-  <lb/><formula>+\mbox{etc.}=\frac{b}{n^{3}}\cdot\left(\frac{(1+n)^{p}-(1-n)^{p}}{2}-pn\right)</formula>, à quoi si on ajoute le premier terme <formula>p</formula>
+  <lb/><formula>\frac{p(p-1)(p-2)(p-3)(p-4)}{1\cdot2\cdot3\cdot4\cdot5}\cdot n^{5}+\text{ etc.}</formula> est <formula>=\frac{(1+n)^{p}-(1-n)^{p}}{2}</formula>; en ôtant <formula>pn</formula> de part et d’au<pc type="hyphenation">-</pc><lb break="no"/>tre et en multipliant par <formula>\frac{b}{n^{3}}</formula> j’aurai <formula>\frac{p(p-1)(p-2)}{1\cdot2\cdot3}\cdot b+\frac{p(p-1)(p-2)(p-3)(p-4)}{1\cdot2\cdot3\cdot4\cdot5}\cdot bn^{2}</formula>
+  <lb/><formula>+\text{ etc.}=\frac{b}{n^{3}}\cdot\left(\frac{(1+n)^{p}-(1-n)^{p}}{2}-pn\right)</formula>, à quoi si on ajoute le premier terme <formula>p</formula>
   <lb/>et encore <formula>\frac{a}{m^{2}}\cdot\left(\frac{(1+m)^{p}+(1-m)^{p}}{2}-1\right)</formula>, on aura <add>toute</add> la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de la suite proposée.
   <lb/>Je suis persuadé que c’est de la même maniere que Vous avés trouvé Vôtre so<pc type="hyphenation">-</pc><lb break="no"/>lution, laquelle n’est differente de la mienne qu’en ce que Vous avés mis
   <lb/><formula>\pm(m-1)^{p}</formula><del/> à la place de <formula>(1-m)^{p}</formula><del/> et <formula>\pm(n-1)^{p}</formula>
@@ -464,8 +462,8 @@
   <lb/>où la grandeur <formula>-np</formula> n’est pas divisée par 2, et où le signe d’en haut
   <lb/>doit étre employé, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e au l<hi rend="sup">er</hi>. membre de vôtre solution <formula>\frac{a}{m^{2}}\cdot\frac{(m+1)^{p}\mp(m-1)^{p}}{2}-1</formula>,
   <lb/><del/>lorsque <formula>p</formula> est un nombre pair et celui d’en bas, lorsque <formula>p</formula> est un
-  <lb/>nombre impair. Si<del> pour</del> l’on suppose les generateurs <formula>a,b,c,d,e,f,\mbox{etc.}</formula>
-  <lb/><formula>=a,b,an,bm,an^{2},bm^{2},an^{3},bm^{3},\mbox{etc.}</formula>, j’ai trouvé précisément co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous que la
+  <lb/>nombre impair. Si<del> pour</del> l’on suppose les generateurs <formula>a,b,c,d,e,f,\text{ etc.}</formula>
+  <lb/><formula>=a,b,an,bm,an^{2},bm^{2},an^{3},bm^{3},\text{ etc.}</formula>, j’ai trouvé précisément co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous que la
   <lb/>so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de la suite est <formula>a\times\frac{(1+\sqrt{n})^{p}-(1-\sqrt{n})^{p}}{2\sqrt{n}}+b\cdot\frac{(1+\sqrt{m})^{p}+(1-\sqrt{n})^{p}}{2m}-2</formula>. Mais si l’on
   <lb/>vouloit rendre ce Probleme plus general en supposant avec Vous dans vôtre
   <lb/>remarque sur ce <abbr>Probl.</abbr> 10<hi rend="sup">me</hi> les generateurs égaux à <formula>a, b, c, d, e,... bh, ck,</formula>
@@ -597,7 +595,7 @@
   <lb/>donc <formula>2yy\,dy-ax\,dy=-2xy\,dx</formula>, ce qui est une équation où les indetermi<pc type="hyphenation">-</pc><lb break="no"/>nées ne se laissent guere separer. Exempl. 9. Soit l’équation donnée
   <lb/><formula>x=y^{p}</formula>, laquelle est pour des paraboles de divers degrés, mais d’un
   <lb/>même parametre. On aura <formula>p=\frac{Lx}{Ly}</formula>, et <formula>dp=\frac{y\,dx\mathrm{L}y-x\,dy\mathrm{L}x}{xyx(\mathrm{L}y)^{2}}</formula>, par con<pc type="hyphenation">-</pc><lb break="no"/>sequent <formula>y\,dyLy=-x\,dxLx</formula>, dont l’integrale est <formula>yyLy-\frac{1}{2}yy=-xxLx</formula>
-  <lb/><formula>+\frac{1}{2}xx\pm\mbox{const.}</formula><del/> Vous pouvés voir par ces exemples
+  <lb/><formula>+\frac{1}{2}xx\pm\text{const.}</formula><del/> Vous pouvés voir par ces exemples
   <lb/>que cette regle ne sert que pour les cas où l’on peut trouver la valeur
   <lb/>de <formula>p</formula> en termes finis, et que pour ceux, où cela ne se peut pas faire, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
   <lb/>il arrive pour la pluspart dans les courbes transcendentes, il faut employer
@@ -673,9 +671,9 @@
   <lb/><formula>\frac{40,03}{9}</formula> ou 4,45, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <abbr>Mr.</abbr> <rs key="pers_DE-588-118939297" type="person">S’Gravesande</rs> a trouvé. J’ai co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué
   <lb/>ce Theoreme pour les Logarithmes à mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, qui en a trouvé la de<pc type="hyphenation">-</pc><lb break="no"/>monstration, mais s’étant fondé sur un principe trés different de celui
   <lb/>d’où je l’ai tiré. La suite de <abbr>Mr.</abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs> <formula>\frac{a}{b}+\frac{a\cdot c}{bb+d}+\frac{a\cdot c\cdot(c+d)}{b(b+d)(b+2d)}+\frac{a\cdot c\cdot(c+d)(c+2d)}{b(b+d)(b+2d)(b+3d)}</formula>
-  <lb/><formula>+\mbox{etc.}=\frac{a}{b-c}</formula> est trés curieuse,<del> et</del> il auroit été difficile d’en trouver la somme<del/>
+  <lb/><formula>+\text{ etc.}=\frac{a}{b-c}</formula> est trés curieuse,<del> et</del> il auroit été difficile d’en trouver la somme<del/>
   <lb/><del>cette suite </del><hi rend="u">à priori</hi>, mais il est facile de demontrer de Theoreme par la divi<pc type="hyphenation">-</pc><lb break="no"/>sion, pourveu qu’on prouve que le dernier terme<del/> est <formula>=0</formula>, ce qu’il n’est
-  <lb/>pas difficile de prouver. Il auroit pû rendre ce Theoreme plus general en di<pc type="hyphenation">-</pc><lb break="no"/>sant que <formula>\frac{1}{b-c}=\frac{1}{b}+\frac{c}{b(b+d)}+\frac{c\cdot(c+d)}{b(b+d)(b+e)}+\frac{c\cdot(c+d)\cdot(c+e)}{b(b+d)(b+e)(b+f)}++\frac{c(c+d)\cdot(c+e)\cdot(c+f)}{b(b+d)(b+e)(b+f)(b+g)}+\mbox{etc.}</formula>,
+  <lb/>pas difficile de prouver. Il auroit pû rendre ce Theoreme plus general en di<pc type="hyphenation">-</pc><lb break="no"/>sant que <formula>\frac{1}{b-c}=\frac{1}{b}+\frac{c}{b(b+d)}+\frac{c\cdot(c+d)}{b(b+d)(b+e)}+\frac{c\cdot(c+d)\cdot(c+e)}{b(b+d)(b+e)(b+f)}++\frac{c(c+d)\cdot(c+e)\cdot(c+f)}{b(b+d)(b+e)(b+f)(b+g)}+\text{ etc.}</formula>,
   <lb/>où les lettres <formula>d</formula>, <formula>e</formula>, <formula>f</formula>, <formula>g</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr> peuvent étre d’une valeur quelconque, mais les
   <lb/>dernieres d’une plus grande que les premieres. À cette occasion, je Vous pro<pc type="hyphenation">-</pc><lb break="no"/>pose un Probleme, qui Vous paroitra ridicule, mais qui pourroit emba<pc type="hyphenation">-</pc><lb break="no"/>rasser <del>quelqu’</del>un autre que Vous. Deux nombres étant donnés<del/> <formula>a</formula> et <formula>b</formula>,
   <lb/>dont l’un par <abbr>ex.</abbr> <add><formula>a</formula></add> soit plus grand que l’unité, et l’autre <formula>b</formula> plus petit

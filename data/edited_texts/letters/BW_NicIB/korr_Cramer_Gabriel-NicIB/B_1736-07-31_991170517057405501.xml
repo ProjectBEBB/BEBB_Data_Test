@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517057405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -155,8 +155,10 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-14" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-14" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-09-26" who="RG">Personen und Orte ausgezeichnet</change>
-      <change when="2023-08-28" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
+      <change when="2023-08-28" who="RG">Zeilabstände eingefügt, und <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ergänzt</change>
       <change when="2023-08-28" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
@@ -168,34 +170,59 @@
 <body>
 <div type="letter">
 <pb facs="1063345" n="1"/>
-<opener><lb/>Monsieur,</opener>
-<p><lb/>Je prens la Liberté de vous écrire pour vous faire une restitution.
-                           <lb/>Je viens de reçevoir l’Année 1732 de l’Histoire de l’Académie de Paris,
-                           <lb/>où l’on me fait l’Autheur d’un Probléme qui me vient de vous. Je n’ai
-                           <lb/>assurément donné aucun lieu à cette méprise. Il est vrai que Mr. <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs>,
-                           <lb/>avec qui je suis en commerce de Lettres, m’aiant demandé quelques
-                           <lb/>Problémes, je lui répondis que je venois de résoudre celui-là, que, si je ne
-                           <lb/>me trompe, vous aviés proposé à Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>: <del/>comme je ne lui
-                           <lb/>marquai point apparemment d’où il me venoit, cela lui aura, sans doute,
-                           <lb/>donné lieu de croire que j’en étois l’Autheur. Mais peu de tems après
-                           <lb/>Monsieur <rs key="pers_DE-588-11931035X" type="person">de Mairan</rs> m’aiant ecrit qu’on avoit lû à l’Academie diverses
-                           <lb/>Solutions de ce Probléme je lui repondis qu’il etoit de vous, &amp; peu après, j’ecrivis
-                           <lb/>encore la même chose à Monsr. <rs key="pers_DE-588-118517252" type="person">de Buffon</rs>, qui est aussi de l’Academie.
-                        <pb facs="1063346" n="2"/>
-<lb/>Ainsi, Monsieur, vous voiés qu’il n’a pas tenu à moi qu’on
-                           <lb/>ne vous rendit vôtre bien. Mais apparemment on vous a cru trop
-                           <lb/>riche pour étre sensible à uns si pétite perte. Quoiqu’il en soit, je vous
-                           <lb/>en fait une restitution entiére, &amp; je profite de l’Occasion pour vous
-                           <lb/>assurer de la parfaite reconnoissance que je conserve pour toutes les
-                           <lb/>amitiés que vous m’avés temoignées, &amp; du parfait attachement que
-                           <lb/>j’aurai toujours pour vôtre personne &amp; vôtre famille. Obligés moi,
-                           <lb/>Monsieur, d’assurer Monsieur Vôtre Oncle de mes respects les plus humbles
-                           <lb/>&amp; faites-moi la grace de croire que je suis, avec une veritable consideration
-                           <lb/>Monsieur</p>
-<closer><salute><lb/>Votre très humble &amp; très
-                           <lb/>obeissant Serviteur</salute>
-<signed><lb/>G. Cramer </signed>
-<dateline><lb/>Geneve ce <date when="1730-07-31">31 Juillet 1730</date></dateline></closer>
+<opener>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Je prens la Liberté de vous écrire pour vous faire une restitution.
+  <lb/>Je viens de reçevoir l’Année 1732 de l’Histoire de l’<rs type="organisation">Académie</rs> de Paris,
+  <lb/>où l’on me fait l’Autheur d’un Probléme qui me vient de vous. Je n’ai
+  <lb/>assurément donné aucun lieu à cette méprise. Il est vrai que <abbr>Mr<add>.</add></abbr><!-- noch ansehen, RG 14.07.2025 --> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs>,
+  <lb/>avec qui je suis en commerce de Lettres, m’aiant demandé quelques
+  <lb/>Problémes, je lui répondis que je venois de résoudre celui-là, que, si je ne
+  <lb/>me trompe, vous aviés proposé à Monsieur <rs key="pers_DE-588-117260266" type="person">Stirling</rs>: <del/>comme je ne lui
+  <lb/>marquai point apparemment d’où il me venoit, cela lui aura, sans doute,
+  <lb/>donné lieu de croire que<!-- ? --> j’en ètois l’Autheur. Mais peu de tems après
+  <lb/>Monsieur de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> m’aiant ecrit qu’on avoit lû à l’Academie diverses
+  <lb/>Solutions de ce Probléme je lui repondis qu’il etoit de vous, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peu après, j’ecrivis
+  <lb/>encore la même chose à <abbr>Mons.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118517252" type="person">Buffon</rs>, qui est aussi de l’<rs type="organisation">Academie</rs>.
+  <pb facs="1063346" n="2"/>
+  <lb/>Ainsi, Monsieur, vous voiés qu’il n’a pas tenu à moi qu’on
+  <lb/>ne vous rendit vôtre bien. Mais apparemment on vous a cru trop
+  <lb/>riche pour étre sensible à uns si pétite perte. Quoiqu’il en soit, je vous
+  <lb/>en fait une restitution entiére, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je profite de l’occasion pour vous
+  <lb/>assurer de la parfaite reconnoissance que je conserve pour toutes les
+  <lb/>amitiés que vous m’avés temoignées, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> du parfait attachement que
+  <lb/>j’aurai toujours pour vôtre personne <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vôtre famille. Obligès<!-- ?, wegen "è" --> moi,
+  <lb/>Monsieur, d’assurer Monsieur Vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> de mes respects les plus humbles
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> faites-moi la grace de croire que je suis, avec une veritable consideration
+</p>
+<closer>
+  <salute>
+    <lb/>Monsieur
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très
+    <lb/>obeissant Serviteur
+  </salute>
+  <signed>
+    <lb/><rs type="person" key="pers_DE-588-11670912X"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>Geneve ce <date when="1730-07-31">31. Juillet 1736</date>.
+  </dateline>
+</closer>
+  <pb facs="1063347" n="3" type="empty"/>
+  <pb facs="1063348" n="4"/>
+<closer>
+  <address>
+    <addrLine>Monsieur</addrLine>
+    <addrLine>Monsieur Nicolas Bernoull<subst><del>e</del><add>i</add></subst></addrLine>
+    <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit</addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

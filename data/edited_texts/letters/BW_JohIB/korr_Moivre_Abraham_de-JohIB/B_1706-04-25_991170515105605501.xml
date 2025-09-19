@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -164,8 +164,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-06-16" who="SG SW">Kollationieren abgeschlossen</change>
+      <change when="2025-06-16" who="SG SW">Kollationieren begonnen</change>
       <change when="2022-12-08" who="RG">Erste Personen und Orte ausgezeichnet, aber nicht fertig</change>
       <change when="2022-11-11" who="RG">Zeilabstände eingefügt, Seite angepasst, und kleinere Anpassungen</change>
       <change when="2022-10-14" who="RG">Header angepasst</change>
@@ -179,219 +181,223 @@
 <body>
 <div type="letter">
 <pb facs="1080180" n="1"/>
-<opener><dateline>à <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1706-04-25">25 Avril 1706</date></dateline>
+<opener><dateline><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1706-04-25">25<hi rend="sup">e</hi> Avril 1706</date></dateline>
 <lb/><salute>Monsieur</salute></opener>
-<p><lb/>J’ay reccu par la poste la derniere <rs key="B_991170515105705501" type="letter">lettre</rs> que vous m’avez fait l’honneur
-               <lb/>de m’ecrire &amp; dont vous etiez en peine, ainsy le Gentilhomme qui s’etoit
-               <lb/>engagé à me la la faire tenir s’est acquitté de sa promesse. La
-               <lb/>traduction latine de l’<rs type="biblio">Optique</rs> de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> vient enfin de
+<p><lb/>J’ay receu par la poste la derniere <rs key="B_991170515105705501" type="letter">lettre</rs> que vous m’avez fait l’honneur
+               <lb/>de m’ecrire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont vous etiez en peine, ainsy le <rs type="person">Gentilhomme</rs> qui s’etoit
+               <lb/>engagé à me la <choice><sic>la </sic><corr type="deleted"/></choice>faire tenir s’est acquitté de sa promesse<choice><orig>,</orig><reg>.</reg></choice> La
+               <lb/><rs type="biblio">traduction latine</rs> de l’<rs type="biblio">Optique</rs> de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> vient enfin de
                <lb/>paroitre, il m’en a donné un exemplaire pour vous que je vous envoyeray
-               <lb/>incessamment. Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> vient d’achever son <rs key="pers_DE-588-11864548X" type="person">Apollonius</rs>,
-               <lb/>il vous en destine un comme je croy vous l’avoir dejà mandé, &amp; je
-               <lb/>vous l’envoyeray avec le traitté de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, je joindray
-               <lb/>a cela les invectives que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> a ecrites contre moy et ausquelles
+  <lb/>incessamment<choice><orig>,</orig><reg>.</reg></choice> Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> <del/><add>vient</add> d’achever son <rs type="biblio">Apollonius</rs>,
+               <lb/>il vous en destine un comme je croy vous l’avoir dejà mandé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je
+               <lb/>vous l’envoyeray avec le <rs type="biblio">traitté</rs> de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, je joindray
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> cela les invectives que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> a ecrites contre moy et ausquelles
                <lb/>je n’ay pas encore repondu mais ausquelles je repondray au
-               <lb/>commencement de l’hyver prochain; j’avois eu quelque dessein de laisser
-               <lb/>tomber cette dispute, parceque je vois que le livre de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> ne me fait
-               <lb/>aucun tort dans l’esprit des habiles gens, mais comme les Ecossais en font
-               <lb/>une matiere de Triomphe, je suis bien aise de ne leur laisser pas ce
-               <lb/>plaisir trop longtemps, je commenceray par examiner son <hi rend="u">Postscriptum</hi>
-<lb/>&amp; je repondray ensuite à sa tres miserable defence; comme j’ay
-               <lb/>un soupcon legitime que <rs key="pers_DE-588-124465641" type="person">Graig</rs> y a cu beaucoup de part, je
-               <lb/>trouveray bien moyen de le faire entrer dans ma reponce, &amp; je ne
+               <lb/>commencement de l’Hyver prochain; j’avois eu quelque dessein de laisser
+               <lb/>tomber cette dispute, parceque je crois que le <rs type="biblio">livre</rs> de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> ne me fait
+               <lb/>aucun tort dans l’esprit des habiles gens, mais comme les Ecossois en font
+               <lb/>une matier<del/><add>e</add> de Triomphe, je suis bien aise de ne leur laisser pas ce
+               <lb/>plaisir trop long temps, je commenceray par examiner son <hi rend="u"><rs type="biblio">Postscriptum</rs></hi>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je repondray ensuite à sa tres miserable defence; comme j’ay
+  <lb/>un <choice><orig>soupcon</orig><reg>soupçon</reg></choice> legitime que <rs key="pers_DE-588-124465641" type="person">Craig</rs> y a eu beaucoup de part, je
+               <lb/>trouveray bien moyen de le faire entrer dans ma <rs type="biblio">reponce</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne
                <lb/>manqueray pas d’examiner sur quel fondement <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> l’appelle
-               <lb/>l’Excellent <rs key="pers_DE-588-124465641" type="person">Graig</rs>. Je scay bien que de s’attaquer à un Ecossais
-               <lb/>c’est s’attaquer a toute leur nation comme à un seul homme, mais
+  <lb/>l’Excellent <rs key="pers_DE-588-124465641" type="person">Craig</rs>. <choice><orig>je</orig><reg>Je</reg></choice> <choice><orig>scay</orig><reg>sçay</reg></choice> bien que de s’attaquer à un Ecossois
+  <lb/>c’est s<supplied>’</supplied>attaquer <choice><orig>a</orig><reg>à</reg></choice> toute leur nation comme à un seul homme, mais
                <lb/>sur ce pié là il vaut autant en attaquer deux qu’un. Je mettray
-               <lb/>aussy dans mon paquet un de mes livres pour Monsieur <rs key="pers_DE-588-119062372" type="person">Varignon</rs>.
+               <lb/>aussy dans mon paquet un de mes <rs type="biblio">livres</rs> pour Monsieur <rs key="pers_DE-588-119062372" type="person">Varignon</rs>.
                <lb/>Monsieur <rs type="person">de Magneville</rs> qui a passé par icy allant en <rs key="place_VER-irland" type="place">Irlande</rs> m’a dit
-               <lb/>que vous aviez enfin reccu vos Phosphores, j’apprehende que ce
-               <lb/>n’ait eté en moy un manque de precaution qui a fait que le premier
-               <lb/>a eté egaré si longtemps, aussy il me semble qu’il n’est pas juste
-               <lb/>que vous me le remboursiez, à l’egard du second je trouveray
+               <lb/>que vous aviez enfin receu vos Phosphores, j’apprehende que ce
+  <lb/>n’ait <choice><orig>eté</orig><reg>été</reg></choice> en moy un manque de precaution qui a fait que le premier
+  <lb/>a <choice><orig>eté</orig><reg>été</reg></choice> egaré si longtemps, aussy il me semble qu’il n’est pas juste
+               <lb/>que vous me le remboursiez, à l<supplied>’</supplied>egard du second je trouveray
                <lb/>quelque jour une occasion de vous demander un Equivalent. Je n’ay
-               <lb/>pas eté surpris de voir que vous ayez trouvé faute a ma resolution
-               <lb/>de la transformation des Courbes: quoyqu’elle me parut bonne
-               <lb/>d’une premiere veue et méme qu’elle eut paru telle a Monsieur
-               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>, cependant comme il m’arrive d’y faire reflexion apres
-               <lb/>vous l’avoir envoyeé il me vint un scrupule en penseé qui est que
-               <lb/>si la resolution de ce Probleme etoit aussy facile que je me l’etois figuré,
+  <lb/>pas <choice><orig>eté</orig><reg>été</reg></choice> surpris de voir que vous ayez trouvé faute <choice><orig>a</orig><reg>à</reg></choice> ma resolution
+               <lb/>de la transformation des Courbes: quoy qu’elle me parut bonne
+  <lb/>d’une premiere veue et méme qu’elle eut paru telle <choice><orig>a</orig><reg>à</reg></choice> Monsieur
+               <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>, cependant comme il m’arriva d’y faire reflexion apres
+               <lb/>vous l’avoir envoyée il me vint un scrupule en pensée qui est que
+               <lb/>si la resolution de ce Probleme etoit aussy facile que je me l’etois figuré<supplied>,</supplied>
             <pb facs="1080181" n="2"/>
-<lb/>vous n’auriez pas jugé qu’il meritat d’etre proposé, aussy je me deffiay
-               <lb/>que j’avois commis un paralogisme, &amp; c’est ce qui m’empecha de
-               <lb/>publier ma resolution. Il faut que je vous avoue que j’ay un peu de
+<lb/>vous n’auriez pas jugé qu’il meritat d’etre proposé, ainsy je me deffiay
+               <lb/>que j’avois commis un paralogisme, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> c’est ce qui m’empecha de
+               <lb/>publier ma resolution<choice><orig>,</orig><reg>;</reg></choice> il faut que je vous avoue que j’ay un peu de
                <lb/>regret non pas d’avoir donné dans un piege assez naturel, mais
-               <lb/>de ne m’en etre pas debarassé apres avoir soupconné que j’y etois,
-               <lb/>au reste Monsieur je vous remercie de m’en avoir tiré car je crois
-               <lb/>que sans vous j’y serois encore. <hi rend="u">J’ay veu dans les <rs type="biblio">Actes de Leipsick</rs></hi>
-<lb/><hi rend="u">ce que vous avez fait sur cette matiere, je le trouve entierement</hi>
-<lb/><hi rend="u">digne de vous.</hi> <hi rend="u">J’auraois eu beau rever et apporter a ce probleme</hi>
-<lb/><hi rend="u">toute l’attention dont je suis capable je n’aurois jamais rien trouvé</hi>
-<lb/><hi rend="u">qui approchat de la beauté de votre solution, mais je vous en</hi>
-<lb/><hi rend="u">entretiendray en detail la premiere fois que j’auray l’honneur de</hi>
-<lb/>vous ecrire. En attendant vous serez peutetre bien aise de voir <del/><add>la</add>
-<lb/>resolution <add>de</add> la difficulté que vous avez faite contre mon expression de la
-               <lb/>Courbe dont la tangente est à l’interceptée depuis l’origine jusqu’à
+  <lb/>de ne m’en etre pas debarassé apres avoir <choice><orig>soupconné</orig><reg>soupçonné</reg></choice> que j’y etois,
+               <lb/>au reste<supplied>,</supplied> Monsieur<supplied>,</supplied> je vous remercie de m’en avoir tiré car je crois
+               <lb/>que sans vous j’y serois encore. <choice><orig>j</orig><reg>J</reg></choice>’ay veu dans les <rs type="biblio">Actes de Leipsick</rs>
+<lb/>ce que vous avez fait sur cette matiere, je le trouve entierement
+  <lb/>digne de vous<choice><orig>,</orig><reg>;</reg></choice> j’aurois eu beau rever et apporter <choice><orig>a</orig><reg>à</reg></choice> ce probleme
+<lb/>toute l’attention dont je suis capable<supplied>,</supplied> je n’aurois jamais rien trouvé
+<lb/>qui approchat de la beauté de votre <rs type="biblio">solution</rs>, mais je vous en
+<lb/>entretiendray en detail la premiere fois que j’auray l’honneur de
+<lb/>vous ecrire. <choice><orig>en</orig><reg>En</reg></choice> attendant vous serez peutetre bien aise de voir <del/><add>la</add>
+<lb/>resolu<del></del><add>tion de</add> la difficulté que vous avez faite contre mon expression de la
+               <lb/>Courbe dont la tangente est à l’interceptée depuis l’Origine jusqu’à
                <lb/>la rencontre de la tangente, en une raison donnée.</p>
-<p><lb/>Faisant l’abcisse <formula>AB=x</formula> l’ordonnée <formula>DB=y</formula>. &amp; supposant
+  <p><figure facs="1080181_01.png"/></p>
+<p><lb/><choice><orig>faisant</orig><reg>Faisant</reg></choice> l’Abcisse <formula>AB=x</formula> l’Ordonnée <formula>DB=y</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> supposant
                <lb/><formula>z</formula> une quantité telle que <formula>zy-mx</formula> soit <formula>=\sqrt{mmyy-yy+mmxx}</formula>
 <lb/>je trouvois que l’Equation generale qui convenoit à ces courbes
-               <lb/>etoit <formula>\frac{y}{z^{m-1}}+\frac{m-1^{2}y}{z^{m+1}}=Q</formula>, où <formula>Q</formula> est une quantité donnée
-               <lb/>&amp; <formula>\frac{m}{1}</formula> marque la raison de la Tangente <formula>DC</formula> à <formula>AC</formula>, votre
-               <lb/>objection etoit que en interpretant <formula>m</formula> par l’unité, l’Equation
-               <lb/>devoit appartenir au cercle, mais que faisant <formula>m=1</formula>: le terme
-               <lb/><formula>\frac{m-1^{2}y}{z^{m+1}}</formula> etoit egal à 0. et que la courbe dans ce cas
-               <lb/>particulier devenait <formula>y=Q</formula>. <choice><sic>c</sic><corr>C</corr></choice>e qui est un lieu à la ligne
-               <lb/>droite &amp; non pas au cercle. Je vous repondis Monsieur que la
+  <lb/>etoit <choice><orig><formula>\frac{y}{z^{m-1}}+\frac{\overline{m-1}^{2}y}{z^{m+1}}=Q</formula></orig><reg><formula>\frac{y}{z^{m-1}}+\frac{(m-1)^{2}y}{z^{m+1}}=Q</formula></reg></choice><choice><orig>.</orig><reg>,</reg></choice> où <formula>Q</formula> est une quantité donnée
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\frac{m}{1}</formula> marque la raison de la Tangente <formula>DC</formula> à <formula>AC</formula>, votre
+               <lb/>Objection etoit que en interpretant <formula>m</formula> par l’unité, l’Equation
+               <lb/>devoit appartenir au cercle, mais que faisant <formula>m=1</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> le terme
+  <lb/><choice><orig><formula>\frac{\overline{m-1}^{2}y}{z^{m+1}}</formula></orig><reg><formula>\frac{(m-1)^{2}y}{z^{m+1}}</formula></reg></choice> etoit egal à 0<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> et que la courbe dans ce cas
+               <lb/>particulier devenoit <formula>y=Q</formula><choice><orig>.</orig><reg>,</reg></choice> ce qui est un lieu à la ligne
+               <lb/>droite <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> non pas au cercle<choice><orig>,</orig><reg>.</reg></choice> <choice><orig>je</orig><reg>Je</reg></choice> vous repondis<supplied>,</supplied> Monsieur<supplied>,</supplied> que la
                <lb/>difficulté que vous me faisiez avoit lieu dans les calculs de
                <lb/>l’Algebre vulgaire et je vous en citay un exemple, vous me fites
-               <lb/>voir le moyen de resoudre le cas que je tirois de
+               <lb/>voir l<del/><add>e</add> moyen de resoudre le cas que je tirois de
                <lb/>l’Algebre vulgaire, mais il ne vous parut pas qu’il y eut de
                <lb/>la parité dans cet exemple et dans le cas dont il s’agit.
-               <lb/>Je croy pouvoir lever le scrupule qui vous reste la dessus.
+               <lb/><choice><orig>je</orig><reg>Je</reg></choice> croy pouvoir lever le scrupule qui vous reste <choice><orig>la</orig><reg>là</reg></choice> dessus<supplied>.</supplied>
             <pb facs="1080182" n="3"/>
-<lb/>Je reprens l’Equation <formula>zy-mx=\sqrt{mmyy-yy+mmxx}</formula> &amp;
-               <lb/>j’interprete <formula>m</formula> par 1, alors <formula>zy-x=\sqrt{xx}</formula> mais <formula>\sqrt{xx}</formula> est ou
-               <lb/><formula>+x</formula> ou <formula>-x</formula>, soit pris <formula>-x</formula>, donc <formula>zy-x=-x</formula> donc <formula>zy=0</formula>,
-               <lb/>donc <formula>z=0</formula>. donc dans le terme <formula>\frac{m-1^{2}y}{z^{m+1}}</formula>, tant le numerateur
-               <lb/>que le Denominateur sont egaux à 0. Pour trouver la valeur
-               <lb/>de ce terme, je quasse chaque membre de l’Equation
-               <lb/><formula>zy-mx=\sqrt{mmyy-yy+mmxx}</formula> et j’ay <formula>zzyy-2mxyz+mmxx</formula>
-<lb/><formula>=mmyy-yy+mmxx</formula>, et rejettant le terme <formula>zzyy</formula> (à cause
-               <lb/>que <formula>z=0</formula>) et divisant le reste par <formula>y</formula>, j’ay <formula>\overline{mm-1}y=-2xmz</formula>.
-               <lb/>ou <formula>\overline{mm-1}y=-2xz</formula>. Donc <formula>\overline{m-1}y=\frac{-2xz}{m+1}=\frac{-2xz}{2}=-xz</formula>
-<lb/>donc <formula>\overline{m-1}^{2}yy=xxzz</formula>, &amp; <formula>\overline{m-1}^{2}y=\frac{xxzz}{y}</formula> donc
-               <lb/><formula>\frac{m-1^{2}y}{z^{m+1}}=\frac{xxzz}{yz^{1+1}}=\frac{xx}{y}</formula>. Donc l’Equation de la
-               <lb/>courbe devient dans ce cas particulier <formula>y=\frac{XX}{Y}=q</formula>
-<lb/>ou <formula>yy+xx=qy</formula>, ou <formula>qy-yy=xx</formula>. qui est l’Equation
+<lb/><choice><orig>je</orig><reg>Je</reg></choice> repr<del/><add>ens</add> l’Equation <formula>zy-mx=\sqrt{mmyy-yy+mmxx}</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>j’interpret<del/><add>e</add> <formula>m</formula> par 1, alors <formula>zy-x=\sqrt{xx}</formula>, mais <formula>\sqrt{xx}</formula> <del/><add>est</add> ou
+               <lb/><formula>+x</formula> ou <formula>-x</formula>, soit pris <formula>-x</formula>, donc <formula>zy-x=-x</formula> donc <formula>zy=0</formula><choice><orig>.</orig><reg>,</reg></choice>
+  <lb/>donc <formula>z=0</formula><choice><orig>.</orig><reg>,</reg></choice> donc dans le terme <choice><orig><formula>\frac{\overline{m-1}^{2}y}{z^{m+1}}</formula></orig><reg><formula>\frac{(m-1)^{2}y}{z^{m+1}}</formula></reg></choice>, tant le numerateur
+               <lb/>que le <del/><add>d</add>enominateur sont egaux à 0. <choice><orig>pour</orig><reg>Pour</reg></choice> trouver la valeur
+               <lb/>de ce terme, je quarre chaque membre de l’Equation
+  <lb/><formula>zy-mx=\sqrt{mmyy-yy+mmxx}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ay <formula>zzyy-2mxyz+\cancel{mmxx}</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note>
+  <lb/><formula>=mmyy-yy+\cancel{mmxx}</formula>, et rejettant le terme <formula>zzyy</formula> (<choice><orig>a</orig><reg>à</reg></choice> cause
+  <lb/>que <formula>z=0</formula>) et divisant le reste par <formula>y</formula>, j’ay <choice><orig><formula>\overline{mm-1}y=-2xmz</formula></orig><reg><formula>(mm-1)y=-2xmz</formula></reg></choice>
+  <lb/>ou <choice><orig><formula>\overline{mm-1}y=-2xz</formula></orig><reg><formula>(mm-1)y=-2xz</formula></reg></choice>. <choice><orig>donc</orig><reg>Donc</reg></choice> <choice><orig><formula>\overline{m-1}y=\frac{-2xz}{m+1}=\frac{-2xz}{2}=-xz</formula></orig><reg><formula>(m-1)y=\frac{-2xz}{m+1}=\frac{-2xz}{2}=-xz</formula></reg></choice>
+  <lb/>donc <choice><orig><formula>\overline{m-1}^{2}yy=xxzz</formula></orig><reg><formula>(m-1)^{2}yy=xxzz</formula></reg></choice>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig><formula>\overline{m-1}^{2}y=\frac{xxzz}{y}</formula></orig><reg><formula>(m-1)^{2}y=\frac{xxzz}{y}</formula></reg></choice>, donc
+  <lb/><choice><orig><formula>\frac{\overline{m-1}^{2}y}{z^{m+1}}=\frac{xxzz}{yz^{1+1}}=\frac{xx}{y}</formula></orig><reg><formula>\frac{(m-1)^{2}y}{z^{m+1}}=\frac{xxzz}{yz^{1+1}}=\frac{xx}{y}</formula></reg></choice><choice><orig>.</orig><reg>,</reg></choice> donc l’Equation de la
+               <lb/>courbe devient dans ce cas particulier <formula>y+\frac{xx}{y}=q</formula>
+  <lb/>ou <formula>yy+xx=qy</formula><choice><orig>.</orig><reg>,</reg></choice> ou <formula>qy-yy=xx</formula><choice><orig>.</orig><reg>,</reg></choice> qui est l’Equation
                <lb/>au Cercle.</p>
 <p><lb/>Votre maniere de demontrer mon Theoreme sur les forces centripetes
                <lb/>a beaucoup de simplicité, je croy que vous en trouverez aussy
                <lb/>dans ma demonstration, la voicy. Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> demontre que
-               <lb/>la force centripete est proportionelle à
-               <lb/><formula>\frac{DP}{\overline{AireSP}p^{2}}</formula> (<formula>S</formula> etant le centre des forces <formula>P</formula> &amp;
+               <lb/><figure facs="1080182_01.png"/> la force centripete est proportionelle à
+  <lb/><choice><orig><formula>\frac{Dp}{\overline{\text{Aire}\,SPp}^{2}}</formula></orig><reg><formula>\frac{Dp}{(\text{Aire}\,SPp)^{2}}</formula></reg></choice><note type="editorial">Handschriftliche Korrektur in der Formel.</note> (<formula>S</formula> etant le centre des forces <formula>P</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/><formula>p</formula> deux points dans la courbe infiniment proches)
-               <lb/>Donc elle est proportionelle à <formula>\frac{Dp}{PDq+SBq}</formula>, mais
-               <lb/>supposant <formula>PC</formula> le rayon de la concavité, &amp;
+               <lb/>donc elle est proportionelle à <formula>\frac{Dp}{PDq+SBq}</formula>, mais
+               <lb/>supposant <formula>PC</formula> le rayon de la concavité, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/><formula>PE</formula> une chorde inscrite dans le cercle dont
-               <lb/>le rayon est <formula>PC</formula> &amp; passant par <formula>S</formula>, <formula>PDq=</formula>
+               <lb/>le rayon est <formula>PC</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> passant par <formula>S</formula>, <formula>PDq=</formula>
 <lb/><formula>pD+PE</formula>, donc la force centripete est proportionelle
-               <lb/>à <formula>\frac{Dp}{Dp+PE+SBq}</formula> ou à <formula>\frac{1}{PA+SBq}</formula>, presentemnt pour <del/>
-<lb/>changer cette expression <del>dans</del> <add>en</add> une autre ou le rayon de la concavité soit
-               <lb/>compris, j’ay <formula>PA,PC::SB,SP</formula>, donc <formula>PA=\frac{PC+SB}{SP}</formula> donc
-               <lb/>la force centripete est proportionelle à <formula>\frac{1}{\frac{PC+SB}{SP}+SBq}</formula> ou <del/> <add>à</add>
-<lb/><formula>\frac{SP}{PC+SBcub}</formula>
+  <lb/>à <formula>\frac{Dp}{Dp+PE+SBq}</formula> ou à <formula>\frac{1}{PA+SBq}</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note>, presentemnt pour<del/>
+<lb/>changer cette expression  <del/><add>en</add> une autre <choice><orig>ou</orig><reg>où</reg></choice> le rayon de la concavité soit
+  <lb/>compris, j’ay <choice><orig><formula>PA,PC::SB,SP</formula></orig><reg><formula>PA:PC=SB:SP</formula></reg></choice><choice><orig>.</orig><reg>,</reg></choice> donc <formula>PA=\frac{PC+SB}{SP}</formula> donc
+               <lb/>la force centripete est proportionelle à <formula>\frac{1}{\frac{PC+SB}{SP}+SBq}</formula> ou <del/><add>à</add>
+  <lb/><choice><orig><formula>\frac{SP}{PC+SB\,\text{cub}}</formula></orig><reg><formula>\frac{SP}{PC+SB^3}</formula></reg></choice>
 <pb facs="1080183" n="4"/>
-<lb/>ce qui avoit eté cause que dans ma lettre precedente je vous avois
+<lb/>ce qui avoit <choice><orig>eté</orig><reg>été</reg></choice> cause que dans ma <rs type="letter">lettre</rs> precedente je vous avois
                <lb/>envoyé cette expression renverseé, c’est qu’en la copiant de mes cahiers
-               <lb/><add>ou elle etoit telle</add> j’oubliay le mot de reciproquement qui l’accompagnoit; Il me semble
-               <lb/>vous avoir dit dans ma derniere que la loy de la force Centripete pour
+               <lb/><add><choice><orig>ou</orig><reg>où</reg></choice> elle etoit telle</add> j’oubliay le mot de reciproquement qui l’accompagnoit; Il me semble
+               <lb/>vous avoir dit dans ma <rs type="letter">derniere</rs> que la loy de la force Centripete pour
                <lb/>un point d’une Courbe, etant donneé, on pouvoit facilement à l’aide de
                <lb/>ce Theoreme trouver la loy de la force centripete qui regarde un
-               <lb/>autre point de la Courbe, <del/> vous vous etes sans doute facilement
-               <lb/>apperccu de la raison de cela, qui est que la premiere loy <del/><add>epargne</add> la peine
-               <lb/>de calcules le rayon de la concavité, qu’il faudroit calculer pour la
+               <lb/>autre point de la Courbe, <del/>vous vous etes sans doute facilement
+               <lb/>apperceu de la raison de cela, qui est que la premiere loy <del/><add>epargne</add> la peine
+               <lb/>de calculer le rayon de la concavité, qu’il faudroit calculer pour la
                <lb/>seconde, en voicy un exemple sur lequel je me suis exercé. Supposé
-               <lb/>que je scache deja que la force centripete qui tend au centre d’une
-               <lb/>Eclipse soit proportionelle à la distance, &amp; que je veuille
+               <lb/>que je <choice><orig>scache</orig><reg>sçache</reg></choice> deja que la force centripete qui tend au centre d’une
+               <lb/>Ellipse soit proportionelle à la distance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je veuille
                <lb/>calculer la loy de la force centripete qui tend au foyer. Soit
-               <lb/><formula>C</formula> le centre de l’Ellipse, <formula>S</formula> le foyer <del/>
-<lb/>vers lequel tendent les forces, <formula>F</formula> l’autre foyer,
+               <lb/><figure facs="1080183_01.png"/> <formula>C</formula> le centre de l’Ellipse, <formula>S</formula> le foyer<del/>
+<lb/>vers lequel tendent les forces, <formula>F</formula> l’autre foyer<supplied>,</supplied>
                <lb/><formula>P</formula> un point de la courbe, <formula>BGD</formula> une
                <lb/>tangente au point <formula>P</formula>, <formula>SB</formula>, <formula>CG</formula>, <formula>FD</formula>
-<lb/>trois perpendiculaires à la tangente. La force centripete qui tend au centre
-               <lb/>est proportionelle à <formula>CP</formula>, donc par le Tehoreme precedent <formula>CP</formula> est
-               <lb/>proportionelle à <formula>\frac{CP}{R+CG^{3}}</formula> donc <formula>R</formula> qui est le rayon de la concavité
-               <lb/>est proportionel à <formula>\frac{1}{CG^{3}}</formula>, la force centripete qui tend vers S est
+<lb/>trois perpendiculaires à la tangente. <choice><orig>la</orig><reg>La</reg></choice> <del/><add>force</add> centripete qui tend au centre
+               <lb/>est proportionelle à <formula>CP</formula>, donc par le Theoreme precedent <formula>CP</formula> est
+               <lb/>proportionelle à <formula>\frac{CP}{R+CG^{3}}</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note> donc <formula>R</formula> qui est le rayon de la concavité
+               <lb/>est proportionel à <formula>\frac{1}{CG^{3}}</formula><choice><orig>.</orig><reg>,</reg></choice> la force centripete qui tend vers <formula>S</formula> est
                <lb/>proportionelle à <formula>\frac{SP}{R+SB^{3}}</formula>, donc elle est proportionelle à <formula>\frac{SP+CG^{3}}{SB^{3}}</formula>
-<lb/>mais <formula>SB,CG::PS,CL</formula>, (ce qui se deduit aisement de ce que
-               <lb/>les Triangles <formula>PSB</formula>, <formula>PFD</formula> sont semblables &amp; de ce qui <formula>CG</formula>
-<lb/>est <formula>=\frac{1}{2}DF=\frac{1}{2}BS</formula>) donc <formula>BS^{3}=\frac{CG^{3}+PS^{3}}{CL^{3}}</formula> donc la force
-               <lb/>Centripete qui tend au foyer est proportionelle à <formula>\frac{SP+CG^{3}}{1}</formula>
-<lb/>divisé par <formula>\frac{CG^{3}+PS^{3}}{CL^{3}}</formula> c’est à dire à <formula>\frac{CS^{3}}{SPq}</formula> ou à<formula>\frac{1}{SPq}</formula>.
+  <lb/>mais <choice><orig><formula>BS,CG::PS,CL</formula></orig><reg><formula>BS:CG=PS:CL</formula></reg></choice>, (ce qui se deduit aisement de ce que
+               <lb/>les Triangles <formula>PSB</formula>, <formula>PFD</formula> sont semblables <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de ce qui <formula>CG</formula>
+<lb/>est <formula>=\frac{1}{2}DF+\frac{1}{2}BS</formula>) donc <formula>BS^{3}=\frac{CG^{3}+PS^{3}}{CL^{3}}</formula> donc la force
+  <lb/>Centripete qui tend au foyer est proportionelle à <formula>\frac{SP+CG^{3}}{1}</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note>
+<lb/>divisé par <formula>\frac{CG^{3}+PS^{3}}{CL^{3}}</formula> c’est à dire à <formula>\frac{CL^{3}}{SPq}</formula> ou à <formula>\frac{1}{SPq}</formula>.
                <lb/>J’ay une double investigation du Theoreme dont je vous faisois mention
-               <lb/>dans ma derniere pour trouver les Tangentes des courbes qui se decrivent
-               <lb/>par le moyen de deux foyers. Soient <formula>S</formula>, <formula>F</formula> les foyers, <formula>P</formula> un point
-               <lb/>de la courbe, <formula>SP</formula>, <formula>FP</formula> deux lignes tirées
+               <lb/>dans ma <rs type="letter">derniere</rs> pour trouver les Tangentes des courbes qui se decrivent
+               <lb/>par le moyen de deux foyers. Soient <formula>S</formula>, <formula>F</formula> les foyers<supplied>,</supplied> <formula>P</formula> un point
+  <lb/><figure facs="1080183_02.png"/> de la courbe, <formula>SP</formula>, <formula>FP</formula> deux lignes tirées
                <lb/>des foyers au point <formula>P</formula>. Soit <formula>BD</formula> une
-               <lb/>Tangente au point <formula>P</formula>, <add>soient</add> <formula>SB</formula>, <formula>FD</formula>, <add><formula>PE</formula></add> perpendiculaires
-               <lb/>à la Tangente, &amp; <formula>PQ</formula> perpendiculaire à <formula>SF</formula>.
-               <lb/>Soit <formula>p</formula> un point infiniment proche de <formula>P</formula>, duquel
-               <lb/>soient tirées <formula>pR</formula>, <formula>pT</formula> perpendiculaires à <formula>FP</formula>, <formula>SP</formula>. la premiere investigation
+               <lb/>Tangente au point <formula>P</formula>, <add>soient</add> <formula>SB</formula>, <formula>FD</formula><supplied>,</supplied> <add><formula>PE</formula></add> perpendiculaire<unclear reason="lost">s</unclear>
+               <lb/>à la Tangente, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>PQ</formula> perpendiculaire à <formula>SF</formula><supplied>,</supplied>
+               <lb/>soit <formula>p</formula> un point infiniment proche de <formula>P</formula>, duquel
+               <lb/>soient tirées <formula>pR</formula>, <formula>pT</formula> perpendiculaires à <formula>FP</formula>, <formula>SP</formula>. <choice><orig>la</orig><reg>La</reg></choice> premiere investigation
             <pb facs="1080184" n="5"/>
-<lb/>est celle cy, ayant nommé <formula>SQ</formula>, <formula>x</formula>; <formula>QP</formula>, <formula>y</formula>; <formula>SF</formula>, <formula>a</formula>; <formula>SP</formula>, <formula>Z</formula>; <formula>FP</formula>, <formula>v</formula>;
-               <lb/>la ligne <formula>SE</formula> se trouve <formula>\frac{yy+xx}{x}</formula>, et à la place de <formula>y.y</formula>, <formula>x.x</formula>. mettent leurs
-               <lb/>valeurs exprimées par le moyen de <formula>a</formula>, <formula>z</formula>, <formula>z</formula>, <formula>v</formula>, <formula>v</formula> on aura <formula>\frac{azz}{zz-vv}</formula>, l’autre
-               <lb/>investigation est telle, acause des Triangles semblables, <formula>Pp,PT::PS,PB</formula>
-<lb/>&amp; <formula>Pp,PR::PF,PD</formula>, donc <formula>PB</formula>, <formula>PD</formula> ou <formula>SE,EF::PT+PS,PF+PR</formula>.
-               <lb/>Soit donc divisée <formula>SF</formula> <add>en <formula>E</formula></add> en deux parties proportionelles à <formula>zz</formula> et <formula>vv</formula>, &amp; <formula>PE</formula>
-<lb/>sera perpendiculaire à la Courbe, mais peutetre que l’idée la plus simple &amp; 
-               <lb/>la plus geometrique pour tirer ces tangentes est celle cy, soit pris un point
-               <lb/>quelconque <formula>X</formula> sur la tangente d’ou soient tirées <formula>xy</formula>, <formula>xz</formula> paralleles à
-               <lb/><formula>PT</formula>, <formula>PR</formula>, les lignes <formula>P</formula>{??}<formula>y</formula>, <formula>PZ</formula> sont proportionelles à <formula>PT</formula>, <formula>PR</formula>, donc
+<lb/>est celle<supplied>-</supplied>cy, ayant nommé <formula>SQ</formula>, <formula>x</formula>; <formula>QP</formula>, <formula>y</formula>; <formula>SF</formula>, <formula>a</formula>; <formula>SP</formula>, <formula>z</formula>; <formula>FP</formula>, <formula>v</formula>;
+  <lb/>la ligne <formula>SE</formula> se trouve <formula>\frac{y\dot{y}+x\dot{x}}{\dot{x}}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à la place de <formula>y</formula>, <formula>\dot{y}</formula>, <formula>x</formula>, <formula>\dot{x}</formula>, mettant leurs
+  <lb/>valeurs exprimées par le moyen de <formula>a</formula>, <formula>z</formula>, <formula>\dot{z}</formula>, <formula>v</formula>, <formula>\dot{v}</formula> on aura <formula>\frac{az\dot{z}}{z\dot{z}-v\dot{v}}</formula><choice><orig>,</orig><reg>.</reg></choice> <choice><orig>l</orig><reg>L</reg></choice>’autre
+  <lb/>investigation est telle, acause des Triangles semblables, <choice><orig><formula>Pp,PT::PS,PB</formula></orig><reg><formula>Pp:PT=PS:PB</formula></reg></choice>
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig><formula>Pp,PR::PF,PD</formula></orig><reg><formula>Pp:PR=PF:PD</formula></reg></choice><choice><orig>.</orig><reg>,</reg></choice> donc <formula>PB</formula>, <formula>PD</formula> ou<!-- Mit Fritz kontrollieren und entscheiden ob es auf ou ein grave braucht.  --> <choice><orig><formula>SE,EF::PT+PS,PF+PR</formula></orig><reg><formula>SE:EF=PT+PS:PF+PR</formula></reg></choice><supplied>.</supplied>
+  <lb/>Soit donc divisée <formula>SF</formula> <add>en <formula>E</formula></add> en deux parties proportionelles à <formula>-z\dot{z}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>v\dot{v}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>PE</formula>
+<lb/>sera perpendiculaire à la Courbe. <choice><orig>mais</orig><reg>Mais</reg></choice> peutetre que l’idée la plus simple <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 
+               <lb/>la plus geometrique pour tirer ces tangentes est celle<supplied>-</supplied>cy, soit pris un point
+               <lb/>quelconque <formula>x</formula> sur la tangente d’<choice><orig>ou</orig><reg>où</reg></choice> soient tirées <formula>xy</formula>, <formula>xz</formula> paralleles à
+  <lb/><formula>pT</formula>, <formula>pR</formula>, les lignes <formula>Py</formula>, <formula>Pz</formula> sont proportionelles à <formula>PT</formula>, <formula>PR</formula>,<note type="editorial">Sämtliche p in dieser Zeile wurden in der Handschrift korrigiert.</note> donc
                <lb/>ayant pris sur <formula>FP</formula>, <formula>SP</formula>, les lignes <formula>Pz</formula>, <formula>Py</formula> proportionelles aux
                <lb/>differences de <formula>FP</formula>, <formula>PS</formula> et tiré les perpendiculaires <formula>zx</formula>, <formula>yx</formula> le point
                <lb/>de rencontre <formula>x</formula> determine la tangente <formula>Px</formula>. J’ay dessein de corriger dans
-               <lb/>ma replique a <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, quelques Corollaires de mes Theoremes
-               <lb/>sur la comparaison des Courbes, c’est ceux ou je dis qu’un certain
-               <lb/>genre de courbes ne peut pas se comparer avec les sections coniques
+               <lb/>ma replique <choice><orig>a</orig><reg>à</reg></choice> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, <del/><add>q</add>uelques Corollaires de mes Theoremes
+               <lb/>sur la comparaison des Courbes, c’est ceux <choice><orig>ou</orig><reg>où</reg></choice> je dis qu’un certain
+               <lb/>genre de courbes ne peut<del/> pas se comparer avec les sections coniques
                <lb/>quoyque, comme vous m’en avez averty, il y en ait une infinité
                <lb/>de celles que j’avois exclues qui ne laissent pas d’y pouvoir etre
-               <lb/>comparées, la correction sera facile a faire, par Exemple au
-               <lb/>Corollaire 4<hi rend="sup">e</hi> de mon premier Theoreme, apres ces paroles, <hi rend="u">nec
-               <lb/>illa ab hyperbola aut hac a Circulo pendet</hi>, j’ajouteray ces
-               <lb/>paroles, <hi rend="u">saltem servata</hi> indeterminatarum forma, &amp; chaque 4<hi rend="sup">e</hi>
-<lb/>Corollaire sera corrigé de la méme maniere, j’en donneray un 
+               <lb/>comparées, la correction sera facile <choice><orig>a</orig><reg>à</reg></choice> faire, par Exemple au
+               <lb/><rs type="biblio">Corollaire<del/> 4<hi rend="sup">e</hi></rs> de mon premier Theoreme, apres ces paroles, <cit><quote><foreign xml:lang="lat"><hi rend="u">nec
+               <lb/>illa ab hyperbola aut h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c a Circulo pendet</hi></foreign></quote></cit>, j’ajouteray ces
+               <lb/>paroles, <foreign xml:lang="lat"><hi rend="u">saltem servata indeterminatarum forma</hi></foreign>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> chaque 4<hi rend="sup">e</hi>
+<lb/>Corollaire sera corrigé de la méme maniere, j’en donneray un
                <lb/>exemple tiré de la rectification de la ligne logarithmique que
-               <lb/>je vous supplie de vouloir bien examiner pour voir si cela suffira.</p>
-<p><lb/>Soit <formula>BD</formula> la ligne logarithmique, <formula>AB=1</formula>. <formula>AC=x</formula>; <formula>CD=y</formula>. <add>la soutangente <formula>=AB</formula></add>. Par la proprieté
-               <lb/>de cette courbe <formula>\dot{x}=\frac{-y}{y}</formula>, donc <formula>\sqrt{xx+yy}=\frac{-y}{y}\sqrt{1+yy}=\frac{-y}{y}\sqrt{1+yy}</formula> Soit fait <formula>\frac{1}{y}=z</formula>,
-               <lb/>&amp; <formula>\frac{-y}{y}\sqrt{1+yy}</formula> deviendra <formula>\frac{z}{zz}\sqrt{1+zz}</formula> Soit pris sur <formula>BA</formula> prolongé <formula>AG=z</formula>
-<lb/>&amp; soit tiré <formula>GH</formula> perpendiculaire à <formula>AG</formula> &amp; egale à <formula>\frac{1}{zz}\sqrt{1+zz}</formula> Soit <formula>RhH</formula>
+               <lb/>je vous supplie de vouloir bien <del/>examiner pour voir si cela suffira.</p>
+  <p><figure facs="1080184_01.png"/></p>
+  <p><lb/>Soit <formula>BD</formula> la ligne logarithmique, <add>la soutangente <formula>=AB</formula></add><supplied>,</supplied> <formula>AB=1</formula><choice><orig>.</orig><reg>,</reg></choice> <formula>AC=x</formula><choice><orig>;</orig><reg>,</reg></choice> <formula>CD=y</formula><choice><orig>.</orig><reg>,</reg></choice>. <choice><orig>par</orig><reg>Par</reg></choice> la proprieté
+    <lb/>de cette courbe <formula>\dot{x}=\frac{-\dot{y}}{y}</formula>, donc <formula>\sqrt{\dot{x}\dot{x}+\dot{y}\dot{y}}=\frac{-\dot{y}}{y}\sqrt{1+yy}</formula>.  Soit fait <formula>\frac{1}{y}=z</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\frac{\dot{-y}}{y}\sqrt{1+yy}</formula> deviendra <formula>\frac{\dot{z}}{zz}\sqrt{1+zz}</formula>. Soit pris sur <formula>BA</formula> prolongé <formula>AG=z</formula>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soit tiré <formula>GH</formula> perpendiculaire à <formula>AG</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> egale à <formula>\frac{1}{zz}\sqrt{1+zz}</formula>. Soit <formula>RhH</formula>
 <pb facs="1080185" n="6"/>
 <lb/>la Courbe formée par tous les points <formula>H</formula>, soit pris <formula>GL=\sqrt{1+zz}</formula>
-<lb/>&amp; soit <formula>IlL</formula> l’hyperbole formée par tous les points <formula>L</formula>
-<lb/>soit pris <formula>AE=AB=1</formula>, &amp; soit tiré par le point <formula>E</formula> la ligne <formula>hEl</formula>
-<lb/>perpendiculaire à <formula>AE</formula>, &amp; rencontrant la courbe <formula>h</formula>, <formula>H</formula> en <formula>h</formula> et
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soit <formula>jlL</formula> l’hyperbole formée par tous les points <formula>L</formula>.
+<lb/>Soit pris <formula>AE=AB=1</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soit tiré par le point <formula>E</formula> la ligne <formula>hEl</formula>
+<lb/>perpendiculaire à <formula>AE</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> rencontrant la courbe <formula>h</formula>, <formula>H</formula> en <formula>h</formula> et
                <lb/>l’hyperbole en <formula>l</formula>, l’espace <formula>EGHh</formula> divisé par <formula>AB=1</formula> sera
-               <lb/>donc egal<del>e</del> à la courbe <formula>BD</formula>, mais par le 3<hi rend="sup">e</hi> Theoreme l’Espace
-               <lb/><formula>AGHR=2AGLj-\frac{\frac{1}{3}GL^{3}}{AG}</formula> &amp; l’espace <formula>AEHR=2AElj</formula>
-<lb/><formula>-\frac{\frac{1}{3}EI^{3}}{AE}</formula>. Donc l’espace <formula>EGHh</formula> est egal à <formula>2EGLI-\frac{\frac{1}{3}GL^{3}}{AG}</formula>
-<lb/><formula>+\frac{\frac{1}{3}EI^{3}}{AE}</formula>. Il a <del>don</del> eté necessaire ce me semble pour parvenir
-               <lb/>à cette conclusion de changer l’indetermineé <formula>y</formula> en <formula>\frac{1}{2}</formula>. Vous
-               <lb/>m’obligerez Monsieur sensiblement de vouloir bien me dire votre sentiment
-               <lb/>la dessus. A l’egard de ce que je vous mandois dans ma derniere
+               <lb/>donc egal<del/> à la courbe <formula>BD</formula>, mais <del/><add>par</add> le 3<hi rend="sup">e</hi> Theoreme l’Espace
+               <lb/><formula>AGHR=2AGLj-\frac{\frac{1}{3}GL^{3}}{AG}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’espace <formula>AEHR=2AElj</formula>
+<lb/><formula>-\frac{\frac{1}{3}El^{3}}{AE}</formula><choice><orig>.</orig><reg>,</reg></choice> donc l’espace <formula>EGHh</formula> est egal à <formula>2EGLl-\frac{\frac{1}{3}GL^{3}}{AG}</formula>
+    <lb/><formula>+\frac{\frac{1}{3}El^{3}}{AE}</formula><choice><orig>,</orig><reg>.</reg></choice> <choice><orig>il</orig><reg>Il</reg></choice> a <del/><choice><orig>eté</orig><reg>été</reg></choice> necessaire<supplied>,</supplied> ce me semble<supplied>,</supplied> pour parvenir
+               <lb/>à cette conclusion de changer l’indeterminée <formula>y</formula> en <formula>\frac{1}{z}</formula>. Vous
+               <lb/>m’obligerez<supplied>,</supplied> Monsieur<supplied>,</supplied> sensiblement de vouloir bien me dire votre sentiment
+               <lb/><choice><orig>la</orig><reg>là</reg></choice> dessus. <choice><orig>à</orig><reg>À</reg></choice> l’egard de ce que je vous mandois dans ma <rs type="letter">derniere</rs>
                <lb/>que quoyque l’aire d’une Courbe dont l’ordonnée est <formula>\frac{1}{z+zz}</formula>
 <lb/>dependit de la quadrature de l’hyperbole, cependant je ne voyois
                <lb/>pas comment on la pouvoit comparer avec l’aire de la courbe
-               <lb/>dont l’ordonnée est <formula>\frac{1}{1+z}</formula> <del/><add>&amp; qui en depend aussy, je ne sçais si je me suis</add> trompé
-               <lb/><del/><add>car</add> l’air de la courbe dont <del/>
-<lb/>l’ordonnée est <formula>\frac{1}{z+zz}</formula> est infinie en prenent son commencement de
+               <lb/>dont l’ordonnée est <formula>\frac{1}{1+z}</formula> <del/><add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui en depend aussy, je ne sçais si je me suis</add> trompé
+               <lb/><del/><add>car</add> l’aire de la courbe dont<del/>
+<lb/>l’ordonnée est <formula>\frac{1}{z+zz}</formula> est infinie en prenant son commencement de
                <lb/>l’origine de <formula>z</formula>, au lieu que l’aire de la courbe dont l’ordonnée
                <lb/>est <formula>\frac{1}{1+z}</formula> est finie en prenant son commencement de l’origine de <formula>z</formula>.</p>
-<p><lb/>Soit <formula>BD=z</formula> &amp; <formula>DE=\frac{1}{1+z}</formula>, soit <formula>DH=\frac{1}{z+zz}</formula>, <formula>BR</formula> une assymptote
-               <lb/>de la courbe <formula>HL</formula> l’espace <formula>CBDE</formula> est le log. de <formula>1+z</formula>, l’espace
-               <lb/><formula>RBDH</formula> est infiny, mais <add>donc ils ne peuvent pas etre comparez,</add> mais si on commence a conter les aires d’un autre
-               <lb/>point que <formula>B</formula> j’avoue qu’elle sont comparables, car la difference
-               <lb/>de l’aire <formula>RBDH</formula> etant <formula>\frac{\dot{z}}{z+zz}=\frac{\dot{z}}{z}-\frac{\dot{z}}{1+z}</formula> l’aire <formula>RBDH</formula>
+  <p><figure facs="1080185_01.png"/></p>
+<p><lb/>Soit <formula>BD=z</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>DE=\frac{1}{1+z}</formula>, soit <formula>DH=\frac{1}{z+zz}</formula>, <formula>BR</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note> <del/><add>u</add>ne assymptote
+               <lb/>de la courbe <formula>HL</formula>, l’espace <formula>CBDE</formula> est le <abbr>log.</abbr> de <formula>1+z</formula>, l’espace
+               <lb/><formula>RBDH</formula> est infiny, <add>donc ils ne peuvent pas etre comparez</add><supplied>,</supplied> mais si on commence a conter les aires d’un autre
+               <lb/>point que <formula>B</formula><supplied>,</supplied> j’avoue qu’elles sont comparables, car la d<del/><add>diff</add>erence
+               <lb/>de l’aire <formula>RBDH</formula> etant <formula>\frac{\dot{z}}{z+zz}=\frac{\dot{z}}{z}-\frac{\dot{z}}{1+z}</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note><supplied>,</supplied> l’aire <formula>RBDH</formula>
 <pb facs="1080186" n="7"/>
-<lb/>est <formula>=(log z-log1+z)=log\frac{z}{1+zz}=logBD+DE+</formula> une quantité
+  <lb/>est <formula>=(\text{log}\,z-\,\text{log}\,1+z)=\text{log}\frac{z}{1+z}=\text{log}\,BD+DE+</formula> une quantité
                <lb/>infinie que j’appelle <formula>q</formula>,</p>
 <p>
-<formula>\mbox{Aire }RBDH=log.BD\times DE+q</formula>
+  <formula>\text{Aire}\,RBDH=\text{log.}\,BD+DE+q</formula>
 </p>
 <p>
-<formula>\mbox{Aire }RBGL=log.BG\times GR+q</formula>
+<formula>\text{Aire}\,RBGL=\text{log.}\,BG+GF+q</formula><note type="editorial">Handschriftliche Korrektur in der Formel.</note>
 </p>
-<p><lb/>donc Aire <formula>DHLG=log\frac{BD}{BG}+log\frac{DE}{GF}</formula>, mais <formula>Log.\frac{DE}{GF}=</formula>Espace <formula>EDGF</formula>
-<lb/>donc Aire \[ DHLG=EDGF+Log \] <formula>\cdot\frac{BD}{BG}</formula>, il en est de méme des autre
-               <lb/>courbes dont l’ordonnée est <formula>\frac{z^{-\infty}}{1+z}</formula> lorsque <formula>m</formula> est un nombre entier.</p>
-<closer><lb/>Je suis 
-               <lb/>Monsieur
-               <lb/>Votre tres humble &amp;
+  <p><lb/>-<!-- ToDo: Hier steht eine Waagrechte Linie, noch umsetzen. --></p>
+  <p><lb/>donc <formula>\text{Aire}\,DHLG=\text{log}\frac{BD}{BG}+\text{log}\frac{DE}{GF}</formula>, mais <formula>\text{Log}\frac{DE}{GF}=\text{Espace}\, EDGF</formula>
+<lb/>donc <formula>\text{Aire}\, DHLG=EDGF+\text{Log}\,\frac{BD}{BG}</formula>, il en est de méme des autres
+               <lb/>courbes dont l’ordonnée est <formula>\frac{z^{-m}}{1+z}</formula> lorsque <formula>m</formula> est un nombre entier.</p>
+<closer><lb/><choice><orig>je</orig><reg>Je</reg></choice> suis<supplied>,</supplied>
+               <lb/>Monsieur<supplied>,</supplied>
+               <lb/>Votre tres humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
                <lb/>tres obeissant serviteur
-               <lb/><signed><rs key="pers_DE-588-117586765" type="person">Ab. De Moivre</rs></signed></closer>
-<pb facs="1080187" n="8"/>
+               <lb/><signed><rs key="pers_DE-588-117586765" type="person">Ab<supplied>.</supplied> De Moivre</rs></signed></closer>
+<pb facs="1080187" n="8" type="empty"/>
 </div>
 </body>
 </text></TEI>

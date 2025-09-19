@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -199,6 +199,7 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-25" who="SG">Stichprobenweise Kontrolle. Die bereits angemerkten Probleme wurde nicht behoben.</change>
       <change when="2025-02-03" who="SG">Stichprobenweise Kontrolle, Korrektur und Kommentar zu Martins editorischen Eingriffen ab S. 6.</change>
       <change when="2025-01-23" who="MK RG">kollationiert</change>
       <change when="2025-01-17" who="MK RG">kollationiert</change>
@@ -414,7 +415,7 @@
                <lb/>des masses: C’est un Principe <del>be </del>de <rs type="keyword">Statique</rs>
                <lb/>que je pose pour fondement, pour prouver
                <lb/>dans l’Endroit cité <del>de </del><add><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice></add> la force vive du Corps
-               <lb/><formula>A</formula> est à la force vive du Corps <formula>B::a.b=::</formula> (par<pc type="hyphenation">-</pc><lb break="no"/>ceque <formula>aA=bB</formula>) <formula>a\times aA.b\times bB::aaA.bbB</formula>, et <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
+               <lb/><formula>A</formula> est à la force vive du Corps <formula>B::a.b=<!-- SG: Das Gleichheitszeichen scheint gestrichen zu sein und stattdessen wurde das Zeichen :: für die Proportion gesetzt, also Korrektur von = zu :: -->::</formula> (par<pc type="hyphenation">-</pc><lb break="no"/>ceque <formula>aA=bB</formula>) <formula>a\times aA.b\times bB::aaA.bbB</formula>,<!-- Veraltete Schreibweisen wie hier Proportionen sollten mit <choice><orig></orig><reg></reg></choice> normalisiert werden. --> et <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
                <lb/>tant en Raison composée de <formula>A</formula> à <formula>B</formula>, et de <formula>aa</formula> à
                <lb/><formula>bb</formula>; Cette <choice><sic>Demonstrative</sic><corr>Demonstration</corr></choice> quelque courte,
                <lb/>quelque <del>Der </del>facile et quelque imprevüe
@@ -451,7 +452,7 @@
                <lb/>pourra pas meme bander le seul premier ressort, lequel
                <lb/>pour étre bandé <del>eg </del>exige <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> hypothese un degré de vites<pc type="hyphenation">-</pc><lb break="no"/>se perpendiculaire, en sorte qu’un degré de vitesse oblique
                <lb/>ne seroit pas capable de le bander; que veut il donc,
-               <lb/>quand il dit, que le <hi rend="u">Corps mû<!-- SG: Falsch umgesetzt! mû wird auch heute noch mit Accent circonflexe geschrieben --> avec un degré de vitesse
+               <lb/>quand il dit, que le <hi rend="u">Corps mû avec un degré de vitesse
                <lb/>peut en decomposant son mouvement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e l’autre
                <lb/>bander 4 ressorts</hi>, n’étant pas capable d’en bander
                <lb/>un seul? S’il entend d’autres ressorts que ceux que
@@ -463,8 +464,8 @@
                <lb/>Ne <del>vous</del>voyes vous pas que la boule
                <lb/><formula>C</formula>. avec ses 2 degrés de vitesse mettra
   <pb facs="1073623" n="12"/>
-  <lb/>toutes les 4 Boules en mouvement et do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>era à<!-- SG: Falsch umgesetzt! à wird auch heute noch mit Accent aigu geschrieben --> chacune
-               <lb/>un degré de vitesse? Donc la boule <formula>C</formula> avec 2 degrés de vi<pc type="hyphenation">-</pc><lb break="no"/>tesse avoit autant de force vive, que toutes les 4 boules cha<pc type="hyphenation">-</pc><lb break="no"/>cune egale à elle ont ensemble etant mües<!-- SG: Fehllesung. Trema wird beibehalten --> avec un degré
+  <lb/>toutes les 4 Boules en mouvement et do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>era à chacune
+               <lb/>un degré de vitesse? Donc la boule <formula>C</formula> avec 2 degrés de vi<pc type="hyphenation">-</pc><lb break="no"/>tesse avoit autant de force vive, que toutes les 4 boules cha<pc type="hyphenation">-</pc><lb break="no"/>cune egale à elle ont ensemble etant muës<!-- SG: Trema nicht auf u sondern korrekt auf e --> avec un degré
                <lb/>de Vitesse; puisque c’est la seule boule <formula>C</formula>. qui les <choice><sic>à</sic><corr>a</corr></choice> toutes
                <lb/>mises en mouvement, ou veut il que l’effet ne soit
                <lb/>pas toujours egal à sa Cause? C’est une miserable
@@ -497,12 +498,12 @@
                <lb/>Theorème chez lui sans savoir que c’etoit en quoi con<pc type="hyphenation">-</pc><lb break="no"/>siste la quantité de la force vive.</p>
 <p><lb/>Voila ce que j’ai eu à repondre aux pretendus arguments des
                <lb/>Anglois contre les forces vives, il seroit peutétre à propos
-               <lb/>de faire un Extrait de cette <rs type="letter">Lettre</rs> que Vous feriés in<pc type="hyphenation"><supplied>-</supplied></pc><lb break="no"/>serer dans les Transactions ou (en cas qu’on le refus<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>t<!-- SG: Müsste refusât lauten --> quoique
+               <lb/>de faire un Extrait de cette <rs type="letter">Lettre</rs> que Vous feriés in<pc type="hyphenation"><supplied>-</supplied></pc><lb break="no"/>serer dans les Transactions ou (en cas qu’on le <choice><orig>refusàt</orig><reg>refusât</reg></choice><!-- SG: hier gab es ein Durcheinander: <choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>-Entity nur für lateinische Texte vorgesehen, ausserdem steht im Original nicht è sondern "à", was jedoch falsch ist, deshalb normalisierung zu "â".  --> quoique
                <lb/>je sois aussi de la <rs type="organisation">Societé</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs>) dans quelque <rs type="biblio">Jour<pc type="hyphenation">-</pc><lb break="no"/>nal litteraire</rs> de <rs key="place_VER-hollan" type="place">Hollande</rs>. Si aprés cela les Anglois
   <lb/>s’avisent de continuer leurs Criailleries, ils ne feront <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice>
-  <lb/><choice><orig>la</orig><reg>là</reg></choice><!-- SG: Akzent mit Unterscheidungsfunktion la/là normalisierend ergänzt --> qu’augmenter les Trophées de la Verité quand elle <del>vien</del><pc type="hyphenation">-</pc><lb break="no"/><del>dr</del> vaincra à la fin et leur Confusion deviendra d’au<pc type="hyphenation">-</pc><lb break="no"/>tant plus honteuse. Cependant Vous ne m’avez pas en<pc type="hyphenation">-</pc><lb break="no"/>core dit le Jugement que les Anglois font de mon <rs key="biblio_QYV8YG25" type="biblio">dis<pc type="hyphenation">-</pc><lb break="no"/>cours</rs> sur le Mouvement, car ce que Vous m’avez
-  <lb/><choice><orig>Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</orig><reg>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</reg></choice><!-- SG: Kleinschreibung nicht stillschweigend anpassen, entweder gross belassen oder mit orig/reg normalisieren. --> des <rs type="biblio"><abbr>Transact.</abbr></rs> <choice><orig>à</orig><reg>a</reg></choice><!-- SG: Falsche Akzentuierung im Original normalisierend korrigiert --> paru<!-- SG: parù kommt in der Literatur nur sehr selten vor, parû öfters. Entweder ist ein flüchtigers circonflexe gemeint, Cramer schreibt es manchmal so. Man könnte auch "parù" lesen und normalisierend zu "paru" modernisieren. Hier wäre  eine editorische Entscheidung zu treffen. --> longtems avant
-               <lb/>l’impression de mon dit discours; Ainsi je serois curieux
+  <lb/><choice><orig>la</orig><reg>là</reg></choice> qu’augmenter les Trophées de la Verité quand elle <del>vien</del><pc type="hyphenation">-</pc><lb break="no"/><del>dr</del> vaincra à la fin et leur Confusion deviendra d’au<pc type="hyphenation">-</pc><lb break="no"/>tant plus honteuse. Cependant Vous ne m’avez pas en<pc type="hyphenation">-</pc><lb break="no"/>core dit le Jugement que les Anglois font de mon <rs key="biblio_QYV8YG25" type="biblio">dis<pc type="hyphenation">-</pc><lb break="no"/>cours</rs> sur le Mouvement, car ce que Vous m’avez
+  <lb/><choice><orig>Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</orig><reg>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</reg></choice> des <rs type="biblio"><abbr>Transact.</abbr></rs> <choice><orig>à</orig><reg>a</reg></choice> paru<!-- SG: Die Normalisierung steht noch aus: entweder zu "paru" normalisieren (moder) oder zu "parû" (veraltet). Parù kommt in der Literatur nur sehr selten vor, parû öfters. Entweder ist ein flüchtigers circonflexe gemeint, Cramer schreibt es manchmal so. Man könnte auch "parù" lesen und normalisierend zu "paru" modernisieren. Hier wäre  eine editorische Entscheidung zu treffen. --> longtems avant
+               <lb/>l’impression de mon dit <rs type="biblio">discours</rs>; Ainsi je serois curieux
                <lb/>de savoir ce qu’ils repondront aux autres demonstra<pc type="hyphenation">-</pc><lb break="no"/>tions que j’y do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e qui toutes me paroissent ne sou<unclear>ff</unclear>rir
                <lb/>aucune replique, surtout celle dont j’ai parlé ci<supplied>-</supplied><lb break="no"/>dessus, <abbr>Chap.</abbr> 3. §. 6. Item celle <abbr>Chap.</abbr> 7 § 2. qui est
                <lb/>generale et tirée des principes mémes, que <abbr>mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>

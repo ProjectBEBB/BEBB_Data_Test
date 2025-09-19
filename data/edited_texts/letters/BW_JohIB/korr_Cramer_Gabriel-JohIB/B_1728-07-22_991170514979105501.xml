@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -163,6 +163,7 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-05-20" who="SG">2 Transkriptionsfehler (überflüssiges Komma in Zeile 221 gelöscht; fassiez zu fissiez in Z. 234), mehrere Akzentkorrekturen (z. B. lu zu lû in Z. 201), fehlerhafte Umsetzung der Entity <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> sowie unvollständige Auszeichnung von Entitäten, Datumsangaben usw. ergänzt; Grossschreibung von v angepasst.</change>
       <change when="2025-03-31" who="MK">Code angepasst</change>
       <change when="2025-03-07" who="RG">Mathematikformel angepasst</change>
       <change when="2025-02-19" who="MK RG">kollationiert und Code ergänzt, angepasst (MK)</change>
@@ -177,58 +178,59 @@
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073701/manifest"/>
 </facsimile><text>
+  <front><div type="editorialNote"><head>Bemerkungen zur Textvorlage</head><p><!-- ToDo: Editorische Notiz zum Umgang mit uneinheitlicher Gross- und Kleinschreibung einfügen – sofern die Schreiberhand nur einmal vorkommt, direkt an dieser Stelle; andernfalls in der globalen Notiz. Umsetzung gemäss getroffener Entscheidung einheitlich halten.  --></p></div></front>
 <body>
 <div type="letter">
 <pb facs="1073702" n="1"/>
 <opener><dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1728-07-22">22 Juillet 1728</date></dateline>
 <lb/><salute>Monsieur</salute></opener>
 <p><lb/><rs key="B_991170514979305501" type="letter">La dernière Lettre</rs> que je me suis donné l’honneur
-               <lb/>de vous ecrire etoit du 13 Mai qui servoit de reponse à
+  <lb/>de Vous ecrire etoit du <date when="1728-05-13">13 Mai</date> qui servoit de reponse à
                <lb/>vos deux anterieures du <rs key="B_991170514979505501" type="letter">10 Mars</rs> et <rs key="B_991170514979405501" type="letter">15 Avril</rs><supplied>.</supplied><del/>
 <lb/><choice><orig>elle</orig><reg>Elle</reg></choice> contenoit une ample Solution de toutes vos difficultez
                <lb/>sur les <rs type="keyword">forces vives</rs> avec plusieurs autres Choses; Tout
-               <lb/>cela formoit une trés grande <rs type="letter">Lettre</rs>; Mais du de<pc type="hyphenation">-</pc><lb break="no"/>puis j’ai reçû votre derniere du <rs key="B_991170514979205501" type="letter">22 Juin</rs> dans laquelle
-               <lb/>vous ne faites pas mention de la mienne du <rs key="B_991170514979305501" type="letter">13 Mai</rs>,
-<lb/>quoiq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> l’intervalle entre le 13 Mai et le 22 Juin soit assez
-               <lb/><del>long </del>long et même plus qu’il ne faut pour aller
+  <lb/>cela formoit une trés grande <rs type="letter" key="B_991170514979305501">Lettre</rs>; Mais du de<pc type="hyphenation">-</pc><lb break="no"/>puis j’ai reçû votre derniere du <rs key="B_991170514979205501" type="letter">22 Juin</rs> dans laquelle
+               <lb/>Vous ne faites pas mention de la mienne du <rs key="B_991170514979305501" type="letter">13 Mai</rs>,
+  <lb/>quoi<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> l’intervalle entre le <date when="1728-05-13">13 Mai</date> et le <date when="1728-06-22">22 Juin</date> soit assez
+               <lb/><del/>long et même plus qu’il ne faut pour aller
                <lb/>d’ici à <rs key="place_GEO-2643743" type="place">Londres</rs>; Ainsi je suis en peine de ma <rs type="letter">Lettre</rs> que
-               <lb/>je ne voudrois pas pour beaucoup qu’elle fut <del>per-</del>
-<lb/>perdue. Je vous prie de me tirer de cette peine
-               <lb/>la premiere fois que vous m’ecrirez.</p>
-<p><lb/>J’ai lu la fameuse <rs type="biblio">refutation</rs> de mon <rs type="biblio">discours</rs>, que
-               <lb/>vous avez pris la peine de traduire; si on l’a fait
-               <lb/>sonner si haut avant meme <add>que</add> de paroitre on peut
-               <lb/>veritablement dire comme vous remarquez fort
-               <lb/>bien <foreign xml:lang="lat"><hi rend="u">Parturiunt montes</hi></foreign><note type="editorial">Die Redewendung "Parturiunt montes, nascetur ridiculus mus." stammt aus der Ars Poetica (Vers 139) von Horaz. Wörtlich übersetzt:"Die Berge kreissen, geboren wird eine lächerliche Maus." Hier wird es im Sinne verwendet, dass grosse Erwartungen geweckt werden (in der "refutation", die nicht eingehalten resp. erfüllt werden.</note> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je suis tout à fait de votre
-               <lb/>Avis, qu’on a senti la foiblesse de cette <choice><orig>piece</orig><reg>pièce</reg></choice> et que
+               <lb/>je ne voudrois pas pour beaucoup qu’elle fut<del/>
+<lb/>perdue. Je Vous prie de me tirer de cette peine
+               <lb/>la premiere fois que Vous m’ecrirez.</p>
+<p><lb/>J’ai lû la fameuse <rs type="biblio">refutation</rs> de mon <rs type="biblio">Discours</rs>, que
+               <lb/>Vous avez pris la peine de traduire; si on l’a fait
+               <lb/>sonner si haut avant meme <add>que</add> de paroitre<supplied>,</supplied> on peut
+               <lb/>veritablement dire comme Vous remarquez fort
+  <lb/>bien <foreign xml:lang="lat"><hi rend="u">Parturiunt montes</hi></foreign><space unit="nbsp"></space><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr><note type="editorial">Die Redewendung "Parturiunt montes, nascetur ridiculus mus." stammt aus der Ars Poetica (Vers 139) von Horaz. Wörtlich übersetzt:"Die Berge kreissen, geboren wird eine lächerliche Maus." Hier wird es im Sinne verwendet, dass grosse Erwartungen geweckt werden (in der "refutation", die nicht eingehalten resp. erfüllt werden.</note> Je suis tout à fait de votre
+               <lb/>Avis, qu’on a senti<!-- s/S --> la foiblesse de cette <rs type="biblio"><choice><orig>piece</orig><reg>pièce</reg></choice></rs> et que
                <lb/>c’est pour cela qu’on n’a pas osé l’ecrire en
                <lb/>latin ni la do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er dans les <rs type="biblio">Transactions</rs> de peur
-               <lb/>qu’elle ne parvint à ma connoissance,
+               <lb/>qu’elle ne parvint à ma <choice><orig>Connoissance</orig><reg>connoissance</reg></choice>,
             <pb facs="1073704" n="2"/>
 <lb/>et que je ne relevasse l’effronterie avec la quelle
-               <lb/>l’auteur entreprend de jouer le public et de lui jetter
+               <lb/>l’<rs type="person">auteur</rs> entreprend de jouer le public et de lui jetter
                <lb/>de la poussiere aux yeux; En Effet on voit que tout le
                <lb/>dessein de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> étoit de corrompre le veritable
-               <lb/>Sens de mes pensées, de rendre ridicules mes expressions,
-               <lb/>de me préter des opinions grotesques et de refuter ainsi
+  <lb/>sens<!-- s/S --> de mes pensées, de rendre ridicules mes expressions,
+               <lb/>de me pr<unclear reason="illegible">ê</unclear>ter des opinions grotesques et de refuter ainsi
                <lb/>des absurdités qu’on m’attribue malicieusement. Jamais
                <lb/>de ma vie je n’ai vû une refutation de cette nature<supplied>.</supplied>
                <lb/>Ce n’est qu’un fatras de Chicanes étudiées avec malice
                <lb/>pour noircir et supprimer, si faire se peut, l’eclat
-               <lb/>de la Verité que nos Envieux sentent bien qu’elle
-               <lb/>dissipera enfin les nuages de l’ignorance et des pre<pc type="hyphenation">-</pc><lb break="no"/>jugez; Je trouve que <abbr>Msrs.</abbr>, les anglois ont bien
+               <lb/>de la Verité que nos <rs type="person">Envieux</rs> sentent bien qu’elle
+               <lb/>dissipera enfin les nuages de l’ignorance et des pre<pc type="hyphenation">-</pc><lb break="no"/>jugez; Je trouve que <abbr>Msrs.</abbr> les anglois ont bien
                <lb/>fait d’employer à cette belle Expedition un jeune
                <lb/>Quakre, car il faut avoir le Diable au Corps
-               <lb/>qui inspire des traits si malins contre les Raisonne<pc type="hyphenation">-</pc><lb break="no"/>ments les plus solides et les demonstrations aussi
+               <lb/>qui inspire des traits si malins contre les Raisonne<pc type="hyphenation">-</pc><lb break="no"/>mens les plus solides et les demonstrations aussi
                <lb/>Claires que la plus Claire d’<rs key="pers_DE-588-118638955" type="person">Euclide</rs>. Il semble
-               <lb/>qu’on ait voulu hazarder ce Quakre pour voir
-               <lb/>l’effet que son attaque aura, afin qu’on puisse
-               <lb/>la desavouer en cas de mauvais Succés; c’est pour<pc type="hyphenation">-</pc><lb break="no"/>quoi je ne trouve pas encor à propos de lui repondre,
-               <lb/>Sa personne me paroissant indigne de m’engager dans
-               <lb/>une Dispute contre lui Seul, mais voici ce que je
-               <lb/>souhaiterois que vous fassiez. Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e toute la nation
+               <lb/>qu’on ait voulu hazarder ce <rs type="person"><choice><orig>Quàkre</orig><reg>Quakre</reg></choice></rs> pour voir
+  <lb/>l’effet que Son<!-- s/S --> attaque aura, afin qu’on puisse
+  <lb/>la desavouer en cas de mauvais Succés<!-- s/S -->; c’est pour<pc type="hyphenation">-</pc><lb break="no"/>quoi je ne trouve pas encor à propos de lui repondre,
+  <lb/>Sa<!-- s/S --> personne me paroissant indigne de m’engager dans
+               <lb/>une Dispute contre lui seul, mais voici ce que je
+  <lb/>souhaiterois<!-- s/S --> que Vous fissiez<!-- 2. Person Plural Subjunktiv Imperfekt Aktiv des Verbs faire. -->. Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e toute la nation
             <pb facs="1073705" n="3"/>
-<lb/>angloise ou au moins la plus part des <rs type="person">Philo<pc type="hyphenation">-</pc><!-- bis hier kollationiert --><lb break="no"/>sophes Anglois</rs> s’interesse contre les forces vives, et
+<lb/>Angloise ou au moins la plus part des <rs type="person">Philo<pc type="hyphenation">-</pc><!-- bis hier kollationiert --><lb break="no"/>sophes Anglois</rs> s’interesse contre les forces vives, et
                <lb/>qu’il paroit même que la piece de <abbr>Mr.</abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs>
 <lb/>a été Composée et donnée au jour au nom
                <lb/>de tous nos Antagonistes, je vous prie de faire

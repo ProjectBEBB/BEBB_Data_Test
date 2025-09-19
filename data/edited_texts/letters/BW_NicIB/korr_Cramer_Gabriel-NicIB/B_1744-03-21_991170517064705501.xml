@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517064705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -170,8 +170,7 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
-      <change when="2023-09-21" who="RG">"prev" und "next" in correspContext
-                              eingefügt</change>
+      <change when="2023-09-21" who="RG">"prev" und "next" in correspContext eingefügt</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -180,9 +179,13 @@
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1037988/manifest"/>
 </facsimile><text>
 <body>
-<div type="letter">
+  <div type="letter"><!-- Abschrift existiert in Basel, der Originalbrief in Genf unsicher, es gibt nur eine Skizze "https://archives.bge-geneve.ch/ark:/17786/vta74f450a1db78600e/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvta74f450a1db78600e%2Fcanvas%2F0%2F1". RG 25.07.2025 -->
 <pb facs="1037989" n="1"/> <pb facs="1037990" n="2"/> <pb facs="1037991" n="3"/>
-<p> Monsieur, </p>
+<opener>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
 <p>Je ne puis pas trouver parmi mes papiers la Démonstration, dont Vous
                               parlés dans Vôtre derniere lettre, telle comme elle a été envoyée
                               autrefois par mon Oncle à Mr. Leibnits. Je l’ai changée un peu dans la
@@ -195,8 +198,7 @@
                               Castillion fait imprimer son commentaire sur l’Algébre de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>,
                               en cas qu’il y insére ma méthode, Vous n’aurés pas besoin de la faire
                               imprimer dans le Commerce Epistolaire. Dans l’écrit qui avoit été
-                              envoyé à Mr. Leibnits j’avois donné une regle generale pour dé
-                              -terminer les coefficiens p, q, r, s, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. des termes du divi -seur
+                              envoyé à Mr. Leibnits j’avois donné une regle generale pour déterminer les coefficiens p, q, r, s, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. des termes du divi -seur
                                     <formula>p+qx+rxx+sx^{3}+\mbox{\&amp;c.\ensuremath{}}</formula>
                               de la quantité algebraique donnée
                                     <formula>a+bx+cxx+dx^{3}+ex^{4}+\mbox{\&amp;c.}</formula> où a,

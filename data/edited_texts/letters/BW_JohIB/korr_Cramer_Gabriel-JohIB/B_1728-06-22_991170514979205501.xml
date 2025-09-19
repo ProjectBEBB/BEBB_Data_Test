@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -105,6 +105,12 @@
     </classDecl>
   </encodingDesc>
   <profileDesc>
+    <textClass>
+     <keywords>
+      <term>force vive</term>
+      <term>force morte</term>
+     </keywords>
+    </textClass>
     <correspDesc>
       <correspAction type="sent">
         <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
@@ -169,6 +175,11 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-17" who="MK">Code ergänzt, Keywords ergänzt in Header</change>
+      <change when="2025-06-25" who="MK">Code ergänzt, korr., kontrolliert</change>
+      <change when="2025-06-23" who="MK">Code ergänzt, korr., kontrolliert</change>
+      <change when="2025-06-20" who="MK">Code ergänzt, korr., kontrolliert</change>
+      <change when="2025-05-23" who="MK">Code ergänzt, korr., kontrolliert</change>
       <change when="2025-04-02" who="MK">Code ergänzt, korrigiert, durchgeschaut</change>
       <change when="2025-03-07" who="RG">Mathematikformel angepasst</change>
       <change when="2025-02-10" who="MK">Korrekturen</change>
@@ -189,26 +200,29 @@
   <div type="letter">
 <pb facs="1073690" n="1"/>
 <opener><lb/><salute>Monsieur,</salute></opener>
-    <p><lb/>Enfin elle a paru cette fameuse refutation de votre <rs key="biblio_5MVQ5CQI" type="biblio">Discours Sur les Loix du Mou<pc type="hyphenation">-</pc><lb break="no"/>vement</rs>, qu’on me faisoit attendre depuis longtems, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont on m’avoit parlé d’avance avec tant
-      <lb/>de confiance. A mon avis on peut dire. <foreign xml:lang="lat"><hi rend="u">Parturient montes, nascetur ridiculus mus</hi></foreign><note type="editorial">Die Redewendung "Parturiunt montes, nascetur ridiculus mus." stammt aus der Ars Poetica (Vers 139) von Horaz. Wörtlich übersetzt:"Die Berge kreissen, geboren wird eine lächerliche Maus." Hier wird es im Sinne verwendet, dass grosse Erwartungen geweckt werden. Siehe auch die Verwendung derselben Redewendung im <rs key="B_991170514979105501" type="letter">Brief</rs> vom 22. Juli 1728 von Johann I an G. Cramer.</note>. Car <del/>
+    <p><lb/>Enfin elle a paru cette fameuse <rs key="biblio_AT4A62U2" type="biblio">refutation</rs> de votre <rs key="biblio_5MVQ5CQI" type="biblio">Discours Sur les Loix du Mou<pc type="hyphenation">-</pc><lb break="no"/>vement</rs>, qu’on me faisoit attendre depuis longtems, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont on m’avoit parlé d’avance avec tant
+      <lb/>de confiance. A mon avis on peut dire. <foreign xml:lang="lat"><hi rend="u"><choice><orig>Parturient</orig><reg>Parturiunt</reg></choice> montes, nascetur ridiculus mus</hi></foreign><note type="editorial">Die Redewendung "Parturiunt montes, nascetur ridiculus mus." stammt aus der Ars Poetica (Vers 139) von Horaz. Wörtlich übersetzt:"Die Berge gebären, geboren wird eine lächerliche Maus." Hier wird es im Sinne verwendet, dass grosse Erwartungen geweckt werden und nur Unbedeutendes herauskommt. Siehe auch die Verwendung derselben Redewendung im <rs key="B_991170514979105501" type="letter">Brief</rs> vom <date when="1728-07-22">22. Juli 1728</date> von Johann I an Gabriel Cramer.</note>. Car <unclear>excepté</unclear>
 <lb/>quelques expressions peu polies, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> quelques reflexions injurieuses je ne vois pas qu’elle contienne
-               <lb/>des raisons capables de me faire changer d’avis. Tout l’artifice se reduit <choice><orig>a</orig><reg>à</reg></choice> prendre vos expressions
+               <lb/>des raisons capables de me faire changer d’avis. <subst><del>D</del><add>T</add></subst>out l’artifice se reduit <choice><orig>a</orig><reg>à</reg></choice> prendre vos expressions
                <lb/>dans un sens qu’elles n’ont point naturellement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> fort different de celui que vous avés voulu leur
-               <lb/>donner, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> puis <choice><orig>a</orig><reg>à</reg></choice> <subst><del>dire</del><add>crier</add></subst> que cette pensée (que vous n’avés pas eü) est absurde<del>)</del>. Il semble<del/><add> aussi</add> qu’on
+               <lb/>donner, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> puis <choice><orig>a</orig><reg>à</reg></choice> <subst><del>dire</del><add>crier</add></subst> que cette pensée (que vous n’avés pas <choice><orig>eü</orig><reg>eue</reg></choice>) est absurde<del>)</del>. Il semble<del/><add> aussi</add> qu’on
                <lb/>a <del>eu peur </del>senti sa foiblesse, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’on a eu peur que vous ne la relevassiés, puisque cette <rs type="biblio">Refutation</rs>
                <lb/>n’a paru ni en Latin, ni dans les <rs type="biblio">Transactions Philosophiques</rs>, mais en Anglois dans un <rs type="biblio">Journal</rs>
-      <lb/>qui se publie en ce <rs type="place" key="place_VER-britan">pays</rs>-cy. Cela n’empechera pas que vous n’ayés le plaisir de la lire (car je
+      <lb/>qui se publie en ce <rs type="place" key="place_VER-britan">pays</rs>-cy. Cela n’empechera pas que vous <choice><orig>n’ayés</orig><reg>ayez</reg></choice> le plaisir de la lire (car je
                <lb/>trouve que c’est une espèce de plaisir de se voir attaqué foiblement) dans la traduction que
-               <lb/>je vous <del>ex </del>envoye. La Voici. Sa longueur n’a pas été un motif capable de m’arreter dans
+               <lb/>je vous <del>ex </del>envoye. La Voici. Sa Longueur n’a pas èté un motif capable de m’arreter dans
                <lb/>une chose qui j’espere, ne vous sera pas désagréable.</p>
-  <p><lb/><hi rend="et">Remarques de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100252419" type="person"><abbr>Benj.</abbr> Robins</rs>, <abbr>R. S. S.</abbr> Sur un Traité imprimé depuis peu</hi>
+    <note type="editorial">Im Folgenden gibt Cramer eine nicht ganz wörtliche Übersetzung des englischen Originals der <rs  key="biblio_AT4A62U2" type="biblio">Publikation</rs> von Benjamin Robins, weiter oben im vorliegenden Brief bereits angesprochen.</note>
+    <cit>
+    <quote type="indirect">
+    <p><lb/><hi rend="et">Remarques de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100252419" type="person"><abbr>Benj.</abbr> Robins</rs>, <abbr>R. S. S.</abbr> Sur un Traité imprimé depuis peu</hi>
     <lb/><hi rend="et"><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> intitulé, <rs key="biblio_5MVQ5CQI" type="biblio">Discours sur les Loix de la communication du mouvement</rs>, par
-               <lb/><abbr>Monsr.</abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs>.</hi></p>
+               <lb/><abbr>Monsr.</abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs></hi>.</p>
                <p><lb/>L’<rs type="organisation">Academie Royale des Sciences</rs> de <rs key="place_GEO-2988507" type="place">Paris</rs>, ayant proposé en 1724, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 1726, deux Questions<supplied>,</supplied>
                <lb/>l’une sur les Loix du Mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de la Percussion, l’autre sur la Cause du Ressort; <abbr>Mons.</abbr>
 <lb/><rs key="pers_DE-588-118509969" type="person">Jean Bernoulli</rs> <abbr>Prof.</abbr> en <abbr>Math<supplied>.</supplied></abbr> <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs> leur envoya quelques Papiers, où il tachoit de prou<pc type="hyphenation">-</pc><lb break="no"/>ver l’Opinion de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, par raport aux Loix du mouvement. Ces Papiers ont été du depuis
                  <lb/><choice><sic>publié</sic><corr>publiés</corr></choice> <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs> et j’ai dessein icy de faire quelques remarques sur ce qui y est contenu.</p>
-  <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> <abbr>Chap.</abbr> I<choice><orig>.</orig><reg>,</reg></choice> § 5<choice><orig>.</orig><reg>,</reg></choice> pour prouver qu’il n’y a point de corps parfaitement durs ou <choice><sic>inflexible</sic><corr>inflexibles</corr></choice>
+  <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs><supplied>,</supplied> <abbr>Chap.</abbr> I<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> § 5<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> pour prouver qu’il n’y a point de corps parfaitement durs ou <choice><sic>inflexible</sic><corr>inflexibles</corr></choice><supplied>,</supplied>
                <lb/>pose comme une Loy immuable de la Nature, qu’un corps ne peut passer du mouvement au repos
                <lb/>en un instant, ou sans diminuer graduellement de vitesse. Que ceci est une Loy de la Nature c’est
                <lb/>ce que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> croit evident, en vertu du principe, <foreign xml:lang="lat">Non datur Saltus in rerum natura</foreign><note type="editorial">Übersetzung:"In der Natur gibt es keine Sprünge." - d.h. natürliche Prozesse verlaufen kontinuierlich und kennen keine abrupten Übergänge. Auch Leibniz und Newton berücksichtigten bei ihren Überlegungen diesen Grundsatz.</note>
@@ -218,22 +232,22 @@
                <lb/>un instant du mouvement au repos, parce que c’est une Loy immuable de la Nature, que tout
                <lb/>corps soit flexible<supplied>.</supplied></p>
 <pb facs="1073691" n="2"/>
-<p><lb/>Dans le §. <add>16</add><note type="editorial">Die ursprünglich im Manuskript stehende Zahl "18" wurde vermutlich vom Adressaten nachträglich mit Bleistift zu "16" korrigiert.</note> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> definit l’elasticité parfaite, Une puissance dans un Corps par laquelle
+<p><lb/>Dans le §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <add>16</add><note type="editorial">Die ursprünglich im Manuskript stehende Zahl "18" wurde vermutlich vom Adressaten nachträglich mit Bleistift zu "16" korrigiert. Allerdings steht in Robins Schrift "18".</note> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> definit l’elasticité parfaite, Une puissance dans un Corps par laquelle
                <lb/>il reprend de lui même sa première figure après la compression independemment de la
                <lb/>promptitude avec laquelle il se redresse, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un ressort ou un corps parfaitement Elastique
-               <lb/>en ce sens produira (dit-il <abbr>Ch.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. 2) la même vitesse dans un corps contigu, en se redressant,
+               <lb/>en ce sens produira (dit-il <abbr>Ch.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 2) la même vitesse dans un corps contigu, en se redressant,
                <lb/>qu’il a detruit en etant comprimé. Mais ceci est contraire à l’Experience, puisqu’il y a
                <lb/>plusieurs Corps parfaitement Elastiques selon cette Definition, qui se redressent parfaitement
                <lb/>mais on n’en connoit point qui communique par leur redressement la même vitesse, qu’ils
                <lb/>ont detruite par leur compression<supplied>.</supplied></p>
-<p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> affirme <abbr>Ch.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qu’un ressort doit communiquer la même vitesse à un
+<p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> affirme <abbr>Ch.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qu’un ressort doit communiquer la même vitesse à un
                <lb/>Corps contigu en se redressant qu’il <unclear>a</unclear> detruit en étant bandé, <unclear>c</unclear>ar c’est en cela, dit-il, que consiste
                <lb/>l’egalité d’action <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de réaction. Mais les Philosophes n’entendent par cette egalité autre chose
                <lb/>sinon que quand un Corps agit sur un autre, cet autre réagit autant sur le premier au
                <lb/>même instant: Cependant <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> affirme ici, que le ressort en se debandant, agira
                <lb/>autant sur le corps que le corps a agi sur le ressort auparavant pendant qu’il le bandoit
                <lb/>ce qui est une proposition très differente de la premiere.</p>
-<p><lb/><abbr>Chap.</abbr> III<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> remarque que si le ressort <formula>AB</formula> bandé entre les 2 Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula>
+<p><lb/><abbr>Chap.</abbr> III<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> remarque que si le ressort <formula>AB</formula> bandé entre les 2 Corps <formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula>
                <lb/>est divisé en <formula>C</formula> en proportion reciproque de ces Corps, alors le point <formula>C</formula> sera en repos, pendant
   <lb/>que tout le ressort en se debandant communique des vitesses <choice><orig>a</orig><reg>à</reg></choice> ces corps: d’<choice><sic>ou</sic><corr>où</corr></choice> il veut conclure
                <lb/>que les ressorts entre <formula>A</formula> et <formula>C</formula> seulement agissent sur le corps <formula>A</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ceux entre <formula>B</formula> et <formula>C</formula> sur le
@@ -248,14 +262,14 @@
                <lb/><choice><orig>a</orig><reg>à</reg></choice> leurs masses, comme il l’avoue<supplied>.</supplied></p>
 <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> dans son V <abbr>Chap.</abbr> prend bien de la peine pour montrer la difference
                <lb/>qu’il y a entre ce qu’il apelle <rs type="keyword">force morte</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs type="keyword">force vive</rs>, <choice><abbr>c. à. d.</abbr><expan>c’est-à-dire</expan></choice> entre <add>la</add> pression <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la force
-               <lb/>d’un Corps en mouvement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> entrautres distinctions, il dit §. 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> que l’action d’un ressort
+               <lb/>d’un Corps en mouvement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> entrautres distinctions, il dit §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> que l’action d’un ressort
             <pb facs="1073692" n="3"/>
 <lb/>ou sa pression sur un Corps supporté par un obstacle invincible ne diminuë point la force
                <lb/>de ce ressort ou de cette pression, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e la force de l’air condensé<del>e</del> dans un recipient n’est point dimi<pc type="hyphenation">-</pc><lb break="no"/>nuée par la force qu’il excerce sur les côtés du recipient, mais qu’une vitesse ou <rs type="keyword">force vive</rs> ne peut
                <lb/>étre communiquée à un Corps sans la perte d’autant de force dans la pression qui le produit
                <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le ressort de l’air condensé seroit diminué s’il agissoit contre quelque Corps placé à <del>la</del>
 <lb/>l’embouchure du recipient, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lui communiquoit quelque degré de vitesse.</p>
-<p><lb/>Mais c’est ici une meprise, puisque le ressort n’est point diminué à cause que l’aîr a
+<p><lb/>Mais c’est ici une meprise, puisque le ressort n’est point diminué à cause <supplied>de ce</supplied> que l’aîr a
                <lb/>employé une partie de sa force en agissant contre le Corps, mais parceque par là, il vient
                <lb/><choice><orig>a</orig><reg>à</reg></choice> occuper un espace plus grand qu’auparavant, par où sa force expansive diminuë. Car
                <lb/>s’il y avoit un fluide elastique qui garda la même force expansive à differens degrés de
@@ -263,7 +277,7 @@
                <lb/>point de sa force en mettant un Corps en mouvement.</p>
 <p><lb/>De plus <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">B.</rs> se contredit lui même en assurant, que la production d’un degré quelconque de
                <lb/><rs type="keyword">force vive</rs> requiert la perte d’un egal degré de force dans le ressort ou dans la pression qui le produit,
-               <lb/>après avoir prouvé dans ce qui precede de ce <abbr>Chap.</abbr> que la force d’un ressort ou d’une pression est <add>d’une nature</add> entiè<pc type="hyphenation">-</pc><lb break="no"/>rement differente de ce qu’il apelle <rs type="keyword">force vive</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par consequent parler de la force d’un ressort ou
+               <lb/>après avoir prouvé dans <subst><del/><add>ce</add></subst> qui precede de ce <abbr>Chap.</abbr> que la force d’un ressort ou d’une pression est <add>d’une nature</add> entié<pc type="hyphenation">-</pc><lb break="no"/>rement differente de <subst><del/><add>ce</add></subst> qu’il apelle <rs type="keyword">force vive</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par consequent parler de la force d’un ressort ou
   <lb/>d’une pression, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e egal <choice><orig>a</orig><reg>à</reg></choice> un degré de <rs type="keyword">force vive</rs>, c’est dans ses propres principes une absurdité,
                <lb/>qui se trouve également dans les § 7, et 8 de ce <abbr>Ch.</abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans le § 9 du <abbr>Chap.</abbr> VI.</p>
   <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">B.</rs> (<abbr>Chap.</abbr> V § <del>7</del><add>11</add>) dit, que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a été le 1.<hi rend="sup">er</hi> qui a découvert que la force d’un corps en
@@ -278,50 +292,24 @@
 <p><lb/>De plus <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> se contredit lui même en assurant, que la production d’un degré quelconque de
                <lb/><rs type="keyword">force vive</rs> requiert la perte d’un egal degré de force dans le ressort ou dans la pression qui le produit,
                <lb/>après avoir prouvé dans ce qui precede de ce <abbr>Chap.</abbr> que la force d’un ressort ou d’une pression est <add>d’une nature</add> entié<pc type="hyphenation">-</pc><lb break="no"/>rement differente de ce qu’il apelle <rs type="keyword">force vive</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par consequent parler de la force d’un ressort ou
-  <lb/>d’une pression, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e egal à un degré de <rs type="keyword">force vive</rs>, c’est dans ses propres principes une absurdité,
-               <lb/>qui se trouve également dans les §. 7, et 8 de ce <abbr>Ch.</abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans le § 9.<hi rend="sup">e</hi> du <abbr>Chap.</abbr> VI.</p>
-  <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> (<abbr>Chap.</abbr> V<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. <del>7</del><add>II</add>)<note type="editorial">Von anderer Hand wurde die Zahl 7 mit Bleistift gestrichen und darüber eine Zwei in arabischen Ziffern geschrieben. </note> dit, que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a été le 1.<hi rend="sup">er</hi> qui a découvert que la force d’un corps en
+  <lb/>d’une pression, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e egal <choice><orig>a</orig><reg>à</reg></choice> un degré de <rs type="keyword">force vive</rs>, c’est dans ses propres principes une absurdité,
+               <lb/>qui se trouve egalement dans les §. 7, et 8 de ce <abbr>Ch.</abbr> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans le § 9<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><hi rend="sup">e</hi> du <abbr>Chap.</abbr> VI.</p>
+  <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> (<abbr>Chap.</abbr> V<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. <del>7</del><add>II</add>)<note type="editorial">Von anderer Hand wurde die Zahl 7 mit Bleistift gestrichen und darüber eine Zwei in arabischen Ziffern geschrieben.</note> dit, que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a été le 1.<hi rend="sup">er</hi> qui a découvert que la force d’un corps en
                <lb/>mouvement est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le quarré de la vitesse.</p>
-<p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a été en effet le 1<hi rend="sup">er</hi> qui en ait fait mention, mais d’une maniere qui lui fait peu
-               <lb/>d’honneur, puisqu’il crut mal à propos, que c’etoit l’opinion commune; Car dans un <rs type="biblio">traitté</rs><note type="editorial">frühneuzeitliche Form von "traité"</note> dan<unclear>s</unclear>
-               <lb/>les <rs type="biblio">Acta <abbr>Erud.</abbr></rs> <abbr>A.</abbr> 1686<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> où il tache de prouver l’Erreur de <rs key="pers_DE-588-118524844" type="person">Descartes</rs> en assurant que la même quan<pc type="hyphenation"><unclear>-</unclear></pc><lb break="no"/>tité de mouvement se conserve dans le monde, dit, qu’il est reçu tant par les Cartesiens que par
+<p><lb/>M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> a èté en effet le 1<hi rend="sup">er</hi> qui en ait fait mention, mais d’une maniere qui lui fait peu
+               <lb/>d’honneur, puisqu’il crut mal à propos, que c’etoit l’opinion commune; Car dans un <choice><orig>traitté</orig><reg>traité</reg></choice> dan<unclear>s</unclear>
+               <lb/>les <rs type="biblio">Acta <abbr>Erud.</abbr></rs> <abbr>A.</abbr> 1686<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> où il tache de prouver l’Erreur de <rs key="pers_DE-588-118524844" type="person">Descartes</rs> en assurant que la même quan<pc type="hyphenation"><supplied>-</supplied></pc><lb break="no"/>tité de mouvement se conserve dans le monde, dit, qu’il est reçu tant par les <rs type="person">Cartesiens</rs> que par
                <lb/>tous les autres Mathematiciens <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Philosophes, que la même force est requise pour elever un
                <lb/>Corps d’une Livre à la hauteur de 4 pieds, ou un Corps de 4 livres à la hauteur d’un pied:
   <lb/>Mais quand on lui eut fait voir, combien il s’etoit trompé en prenant cette Opinion <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> la co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un<unclear>e</unclear><supplied>,</supplied>
                <lb/>puisqu’il s’ensuivroit que la force d’un Corps seroit co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le quarré de <subst><del>sa</del><add>la</add></subst> Vitesse: plutot
-               <lb/>que de s’avouer capable d’une telle méprise, il tacha de prouver qu’il etoit vray, puisque c’eto<unclear>it</unclear>
-               <lb/>une consequence necessaire de son assertion, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soûtint que la force d’un corps en mouvement
+               <lb/>que de s’avouer capable d’une telle méprise, il tacha de prouver qu’il etoit vray, puisque c’eto<supplied>it</supplied>
+               <lb/>une consequence necessaire de son assertion, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>soûtint</orig><reg>soutint</reg></choice> que la force d’un corps en mouvement
                <lb/>est proportionelle à la hauteur dont il doit tomber pour acquerir cette vitesse. Et cette assertion
-               <lb/>contient en effet tous les argumens <add>sur les</add>quels <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ses sectateurs <add>se</add> sont principalement fondés.</p>
-  <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> § 13<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> remarque que quand les adversaires de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> pretendent qu’il
+               <lb/>contient en effet tous les argumens <add>sur les</add>quels <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ses <rs type="person">sectateurs</rs> <add>se</add> sont principalement fondés.</p>
+  <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> § 13<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> remarque que quand les <rs type="person">adversaires</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> pretendent qu’il
                <lb/>faut avoir egard au tems de la chute ou de l’Elevation d’un corps, ils ne font pas attention
                <lb/>qu’un corps peut monter <choice><orig>a</orig><reg>à</reg></choice> differentes hauteurs dans le même tems par le moyen d’une Cycloide.
-            <pb facs="1073693" n="4"/>
-    <lb/>Mais icy <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> lui même ne prend pas garde, que ce n’est pas la méme force qui resiste aux
-               <lb/>Corps qui s’elevent <choice><orig>a</orig><reg>à</reg></choice> differentes hauteurs dans une Cycloide dans le même tems; car la force de
-               <lb/>gravité agit sur ces Corps avec une partie seulement de toute sa force, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’action sur chacun est
-               <lb/>proportionelle à l’Espace qu’il decrit. Ceci donc est un aussi grand paralogisme qu’il le seroit de
-               <lb/>mesurer les forces d’un corps mû avec differentes vitesses par les hauteurs dont il tombe pour acquerir
-               <lb/>ces vitesses, quoi qu’il tombe en un cas dans l’air, et en l’autre dans le vif argent.</p>
-<p><lb/>Pour considerer <del>le </del>le 6.<hi rend="sup">e</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 7.<hi rend="sup">e</hi> <abbr>Chap.</abbr> il est necessaire d’expliquer une de ses figures. <formula>AC</formula> est une rangée de
-               <lb/>ressorts dont une extremité est fixe en <formula>A</formula>, Chacun des ressorts est bandé à un certain angle par la
-               <lb/>puissance <formula>R</formula>, qui presse le corps <formula>L</formula> contre l’autre extremité <formula>C</formula>. <formula>BD</formula> est une autre rangée, contenant
-               <lb/>moins de ressorts, qui sont fixes en <formula>B</formula> et bandé au même angle par la force <formula>S</formula>, qui presse le corps
-  <lb/><formula>P</formula> contre <formula>D</formula>. Or <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> dit que supposant les ressorts <formula>AC</formula> de même force que les ressorts <formula>BD</formula>
-<lb/>quand ils sont bandés au même angle, <choice><orig>Ou</orig><reg>ou</reg></choice>, ce qui revient au même, que les puissances <formula>R</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>S</formula>,
-               <lb/>aussi bien que les corps <formula>L</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>P</formula> sont egaux, alors la vitesse communiquée à <formula>L</formula> par les ressorts <formula>AC</formula>
-<lb/>en se debandant jusqu’à un plus grand angle (la puissance <formula>R</formula> etant ôtée) sera à la vitesse
-               <lb/>communiquée <choice><orig>a</orig><reg>à</reg></choice> <formula>P</formula> par le debandement des ressorts <formula>BD</formula> jusqu’au même angle (<formula>S</formula> etant <choice><sic>ôté</sic><corr>ôtée</corr></choice>)
-               <lb/>en raison sousdoublée du nombre des ressorts <formula>AC</formula> au nombre des ressorts <formula>BD</formula>. C’est ce qu’il démontre
-               <lb/>en faisant voir que le Tems qu’<formula>AC</formula> agit contre <formula>L</formula> en une inflexion donnée, est en cette
-               <lb/>même proportion au tems que <formula>BD</formula> agit contre <formula>P</formula> dans la même inflexion, quand leurs forces
-               <lb/>sont egales. Voyés § 1 et 2 <abbr>Ch.</abbr> VII.</p>
-<p><lb/>Mais ayant avancé § 9<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr> VI que la force communiquée <choice><orig>a</orig><reg>à</reg></choice> <formula>L</formula> en ce cas, est <choice><orig>a</orig><reg>à</reg></choice> la force com<pc type="hyphenation">-</pc><lb break="no"/>muniquée <choice><orig>a</orig><reg>à</reg></choice> <formula>P</formula>, en la simple proportion du nombre de ressorts <formula>AC</formula> au nombre de ressorts <formula>BD</formula>,
-               <lb/>est proportionelle à la hauteur dont il doit tomber <choice><abbr>p.<hi>r</hi></abbr><expan>pour</expan></choice> acquerir cette vitesse. Et cette asser<unclear>tion</unclear>
-               <lb/>contient en effet tous les argumens <add>sur les</add>quels <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ses sectateurs <add>se</add> sont principalement fond<unclear>és</unclear><supplied>.</supplied></p>
-<p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> §. 13<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> remarque que quand les adversaires de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> pretendent qu’il
-               <lb/>faut avoir egard au tems de la chute ou de l’Elevation d’un corps, ils ne font pas attention
-               <lb/>qu’un corps peut monter <choice><orig>a</orig><reg>à</reg></choice> differentes hauteurs dans le même tems par le moyen d’une Cycloi<unclear>de</unclear><supplied>.</supplied>
             <pb facs="1073693" n="4"/>
 <lb/>Mais icy <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>Bern.</abbr></rs> lui même ne prend pas garde, que ce n’est pas la méme force qui resiste aux
                <lb/>Corps qui s’elevent <choice><orig>a</orig><reg>à</reg></choice> differentes hauteurs dans une Cycloide dans le méme tems; car la force de
@@ -329,8 +317,8 @@
                <lb/>proportionelle à l’Espace qu’il decrit. Ceci donc est un aussi grand paralogisme qu’il le seroit de
                <lb/>mesurer les forces d’un corps mû avec differentes vitesses par les hauteurs dont il tombe <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> acquerir
                <lb/>ces vitesses, quoi qu’il tombe en un cas dans l’air, et en l’autre dans le vif argent.</p>
-<p><lb/><choice><abbr>P.<hi>r</hi></abbr><expan>Pour</expan></choice> Consider<subst><del>le</del><add>er</add></subst> le 6.<hi rend="sup">e</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 7.<hi rend="sup">e</hi> <abbr>Chap.</abbr> il est necessaire d’expliquer une de ses figures. <formula>AC</formula> est une rangée de
-               <lb/>ressorts dont une extremité est fixe en <formula>A</formula>, Chacun des ressorts est bandé à un certain angle par la
+<p><lb/><choice><abbr>P.<hi>r</hi></abbr><expan>Pour</expan></choice> <choice><orig>Consider<subst><del>le</del><add>er</add></subst></orig><reg>considérer</reg></choice> le 6.<hi rend="sup">e</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 7.<hi rend="sup">e</hi> <abbr>Chap.</abbr> il est necessaire d’expliquer une de ses figures. <formula>AC</formula> est une rangée de
+               <lb/>ressorts dont une extremité est fixe en <formula>A</formula>. Chacun des ressorts est bandé à un certain angle par la
                <lb/>puissance <formula>R</formula>, qui presse le corps <formula>L</formula> contre l’autre extremité <formula>C</formula>. <formula>BD</formula> est une autre rangée, contenant
                <lb/>moins de ressorts, qui sont fixes en <formula>B</formula> et bandé<choice><sic/><corr>s</corr></choice> au même angle par la force <formula>S</formula>, qui presse le corps
                <lb/><formula>P</formula> contre <formula>D</formula>. Or <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> dit que supposant les ressorts <formula>AC</formula> de même force que les ressorts <formula>BD</formula>
@@ -357,9 +345,9 @@
 <p><lb/>Je passe ici cette egalité entre pression <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs type="keyword">force vive</rs> que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> semble insinuer en cette section
                <lb/>(<abbr>voy.</abbr> <abbr>remarq.</abbr> sur <abbr>Ch.</abbr> V) <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je fais seulement attention que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">B.</rs> assure que chaque ressort en chaque
                <lb/>rangée contribue egalement à la production de la force des Corps <formula>L</formula> et <formula>P</formula>.</p>
-<pb facs="1073695" n="5"/>
+<pb facs="1073694" n="5"/>
 <p><lb/>Mais comment ceci est-il prouvé? <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> a pris bien de la peine dans le même Chapitre à faire voir
-               <lb/>que la pression en chaque rangée est égale, quand tous les ressorts sont bandés à un même angle, comment
+               <lb/>que la pression en chaque rangée est egale, quand tous les ressorts sont bandés à un même angle, comment
                <lb/>paroit-il donc que les forces produites dans ces Corps seront differentes puisqu’elles sont produites par une
                <lb/>pression égale. <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> essaye de le resoudre en disant §. 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> que si le point <formula>E</formula> dans la plus <choice><sic>longe</sic><corr>longue</corr></choice> rangée etoit
                <lb/>fixe, de sorte que le nombre des ressorts entre <formula>E</formula> et <formula>C</formula> soit le même que le nombre des ressorts <formula>BD</formula>, alors les ressorts
@@ -398,14 +386,14 @@
                <lb/>sa vitesse formera une Cavité égale à ce<add>lle</add> qu’un corps irregulier mû avec la même vitesse formera
             <pb facs="1073695" n="6"/>
 <lb/>en perdant le même degré evanouissant de vitesse: Donc tous les deux, perdant <choice><orig>toutte</orig><reg>toute</reg></choice> leur vitesse
-               <lb/>formeront des cavités egales.</p><!-- Bis hier kollationiert. MK 6.2.2025 -->
-<p><lb/>Ce que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> dit §. 4. n’est qu’une Consequence de ce que <rs key="pers_DE-588-118639749" type="person">Huyghens</rs> <choice><orig>à</orig><reg>a</reg></choice> demontré par l’autre opinion,
-               <lb/>et sera consideré ailleurs. Voyés Remarques sur <abbr>Ch.</abbr> X. §.1.</p>
-<p><lb/><abbr>M.</abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> intitule son IX.<hi rend="sup">e</hi> <abbr>ch.</abbr> Demonstration Generale <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Geometrique que la force d’un Corps est proportionnelle à
-               <lb/>sa masse multipliée par le Quarré de sa vitesse, laquelle, dit-il, (sans insister d’avantage sur la Validité des
+               <lb/>formeront des cavités egales.</p>
+<p><lb/>Ce que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> dit §. 4<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> n’est qu’une Consequence de ce que <rs key="pers_DE-588-118639749" type="person">Huyghens</rs> <choice><orig>à</orig><reg>a</reg></choice> demontré par l’autre opinion,
+               <lb/>et sera consideré ailleurs. Voyés Remarques sur <abbr>Ch.</abbr> X<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §.1.</p>
+<p><lb/><abbr>M.</abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> intitule son IX<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><hi rend="sup">e</hi> <abbr>ch.</abbr> Demonstration Generale <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Geometrique que la force d’un Corps est proportionnelle à
+               <lb/>sa masse multipliée par le Quarré de sa vitesse, laquelle, <said>dit-il,</said> (sans insister d’avantage sur la Validité des
   <lb/>argumens qui précedent) et si generale, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si fort au dessus de <choice><orig>toutte</orig><reg>toute</reg></choice> exception, qu’il la croit capable de <choice><sic>convaince</sic><corr>convaincre</corr></choice>
-               <lb/>les partisans les plus obstinés de l’Opinion vulgaire.</p>
-<p><lb/>Cette <choice><abbr>Demonst.</abbr><expan>Demonstration</expan></choice>, <figure><note type="editorial">Figur</note></figure> depouillée de ce qui n’est pas essentiel est Celle Que le mouvement d’un
+               <lb/>les <rs type="person">partisans</rs> les plus obstinés de l’Opinion vulgaire.</p>
+    <p><lb/>Cette <choice><abbr>Demonst.</abbr><expan>Demonstration</expan></choice>, <figure facs="1073695_01.png"></figure> depouillée de ce qui n’est pas essentiel est Celle Que le mouvement d’un
                <lb/>Corps dans la Direction <formula>AB</formula> soit representé par <formula>CD</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soyent les triangles <formula>CED</formula>, <formula>EFD</formula>, <formula>FGD</formula>
   <lb/>rectangles en <formula>E</formula>, <formula>F</formula>, <formula>G</formula>, et les côtés <formula>EF</formula>, <formula>FG</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>GD</formula>, egaux entr’eux. La <choice><abbr>Soē</abbr><expan>Somme</expan></choice> de leurs quarrés
                <lb/>étant egale au quarré de <formula>CD</formula>, chacune de ces Lignes sera la moitié de <formula>CD</formula>. Or, par la
@@ -419,8 +407,8 @@
                <lb/>avec differentes vitesses, sont non <abbr>seulem.<hi rend="sup">t</hi></abbr> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les quarrés des vitesses, mais en quelque proportion
                <lb/>des vitesses qu’on voudra: Car cette proposition etant la même, soit que les angles <formula>CED</formula>, <formula>EFD</formula>, <formula>FGD</formula> soyent
                <lb/>droits ou non, on peut en variant ces angles trouver un nombre quelconque de lignes egales <formula>CE</formula>, <formula>EF</formula>, <formula>FG</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
-               <lb/><unclear>selon</unclear> lesquelles les mouvemens composeront le mouvement en <formula>CD</formula>, ligne d’une grandeur donnée.</p>
-               <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> en son X. <abbr>Ch.</abbr> §. 1. dit que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des forces de 2 Corps elastiques quelconques restent le même
+               <lb/><subst><del/><add><unclear>selon</unclear></add></subst> lesquelles les mouvemens composeront le mouvement en <formula>CD</formula>, ligne d’une grandeur donnée.</p>
+               <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> en son X<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr> §. 1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> dit que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e des forces de 2 Corps elastiques quelconques restent le même
                <lb/>après le choc, qu’auparavant. Ce qu’il tache de prouver en disant que l’augmentation de force de l’un
                <lb/>est toujours l’effet immediat de la diminution de force de l’autre: Mais ceci est manifestement faux.
 <lb/>Car, si 2 Corps elastiques se rencontrent avec des vitesses contraires, à la premiére compression, il est
@@ -433,64 +421,64 @@
                <lb/>diminution de force selon une direction est <choice><sic>egal</sic><corr>egale</corr></choice> à l’augmentation ou diminution de force de l’autre
                <lb/>Corps dans une direction contraire. Or estimant les forces ainsi perdues par la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e ou la diffe<pc type="hyphenation">-</pc><lb break="no"/>rence des vitesses des corps devant ou après le choc multipliée par les corps, on trouve que selon
 <lb/>ces principes la somme des quarrés des vitesses par les masses est la même devant <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> après le choc
-               <lb/>comme <rs key="pers_DE-588-118639749" type="person"><choice><orig>huygens</orig><reg>Huygens</reg></choice></rs> la demontré<supplied>.</supplied></p>
+               <lb/>comme <rs key="pers_DE-588-118639749" type="person"><choice><orig>huygens</orig><reg>Huygens</reg></choice></rs> <choice><orig>la</orig><reg>l'a</reg></choice> demontré<supplied>.</supplied></p>
 <p><lb/>De cette egalité des sommes des quarrés <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> <abbr>M.</abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> assure que le même degré de mouvement
 <lb/>est conservé dans le monde, sans faire attention que cette egalité n’a lieu que pour les Corps
             <pb facs="1073696" n="7"/>
 <lb/>parfaitement Elastiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il n’y en a point de tels dans la Nature. <abbr>Voy.</abbr> <abbr>Ch.</abbr> X<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. 5<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr> V<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §. 9<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 10<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></p>
 <p><lb/>Dans le XI<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr> <abbr>M.</abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> a resolu un Cas particulier du Problème general touchant le Choc de 3 Corps Elastiques
-               <lb/>qui est quand un Corps en <abbr>mouvem.<hi rend="sup">t</hi></abbr> en choque en même tems deux egaux en repos egalement
+  <lb/>qui est quand un Corps en <choice><abbr>mouvem.<hi rend="sup">t</hi></abbr><expan>mouvement</expan></choice> en choque en même tems deux egaux en repos egalement
                <lb/>eloignés de la ligne de direction du Centre de chaque côté <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <abbr>Ch.</abbr> XII<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> il étend ceci au choc d’un Corps en
                <lb/>même tems contre un nombre quelconque de paires de Corps en repos, chaque paire etant <choice><sic>supposés</sic><corr>supposée</corr></choice>
   <lb/><choice><sic>egaux</sic><corr>égale</corr></choice>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <abbr>egalem.<hi rend="sup">t</hi></abbr> eloigné de part <unclear><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice></unclear> d’autre de la Ligne de direction. La methode de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> est de resoudre
-               <lb/><abbr>1.<hi>eremt</hi></abbr> le probleme pour 2 pairs, et ainsi d’etendre la solution à un nombre quelconque. Dans le Cas de 2 paires
-               <lb/>il suppose le Corps divisé en 2 parts d’ont<note type="editorial">frühneuzeitliche Form von "dont"</note> l’une frape une paire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre l’autre paire. Or mesurant la
-               <lb/>vitesse de Chacune de ces parties après le choc et les egalant, il determine en qu’elle proportion le Corps doit etre
+               <lb/><abbr>1<hi>eremt.</hi></abbr> le probleme pour 2 pairs, et ainsi d’etendre la solution à un nombre quelconque. Dans le Cas de 2 paires
+               <lb/>il suppose le Corps divisé en 2 parts <choice><orig>d’ont</orig><reg>dont</reg></choice> l’une frape une paire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre l’autre paire. Or mesurant la
+               <lb/>vitesse de Chacune de ces parties après le choc et les egalant, il determine en quelle proportion le Corps doit etre
                <lb/>separé de sorte que chaque part après le Choc se meuve avec la même vitesse, laquelle vitesse commune il conclut
                <lb/>etre la même que celle du Corps entier. Mais ceci est vray seulement lorsque chaque partie prend le même
 <lb/>tems pour communiquer le mouvement aux Corps qu’elle frape, Car si une partie communique plutot
-               <lb/>que l’autre tout le <abbr>mouvem.<hi rend="sup">t</hi></abbr> aux Corps quelle frape, les 2 parties se separeroient, si le corps etoit réellement
+               <lb/>que l’autre tout le <abbr>mouvem.<hi rend="sup">t</hi></abbr> aux Corps <choice><orig>quelle</orig><reg>qu'elle</reg></choice> frape, les 2 parties se separeroient, si le corps etoit réellement
                <lb/>partagé <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par consequent la vitesse du Corps entier, seroit <choice><sic>different</sic><corr>differente</corr></choice> de la vitesse des parties.</p>
 <p><lb/>Or tous les Corps Elastiques que nous conoissons, prennent differens tems <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> se séparer, selon les vitesses
                <lb/>avec lesquelles ils se separent, puisque l’Experience fait voir que leur resistance à la compression est
-<lb/>uniforme. Cependant <del>pour </del><add>de</add> do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er <add><del>cela </del>pour</add> une Solution generale de ce <abbr>Probl.</abbr> une Solution qui peut etre fausse en
-               <lb/>une infinité de cas <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui ne peut étre vraye qu’en une, c’est un paralogisme manifeste, surtout ces
+<lb/>uniforme. Cependant <del>pour </del><add>de</add> do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er <add><del>cela </del>pour</add> une Solution generale de ce <choice><abbr>Probl.</abbr><expan>Problème</expan></choice> une Solution qui peut etre fausse en
+               <lb/>une infinité de cas <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui ne peut étre vraye qu’en <choice><sic>une</sic><corr>un</corr></choice>, c’est un paralogisme manifeste, surtout ces
                <lb/>Circonstances etant negligées <unclear>comme</unclear> parfaitement inutiles à la Solution.</p>
 <p><lb/>§. <del>2.</del><add>II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></add> du même <abbr>Chap.</abbr> il dit, que par <unclear>cette</unclear> Theorie, La resistance d’un Corps mû dans un fluide <choice><orig>compose</orig><reg>composé</reg></choice>
-               <lb/>de particules Elastiques sera <abbr>aisem.<hi rend="sup">t</hi></abbr> determinée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi la quantité de <choice><abbr>mouvem.<hi rend="sup">t</hi></abbr><expan>mouvement</expan></choice> qu’il perdra en par<pc type="hyphenation">-</pc><lb break="no"/>courant un Espace donné, Sujet, dit-il, pour de nouvelles recherches, aussi curieux qu’utile, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’autant plus digne
+               <lb/>de particules Elastiques sera <choice><abbr>aisem.<hi rend="sup">t</hi></abbr><expan>aisément</expan></choice> determinée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi la quantité de <choice><abbr>mouvem.<hi rend="sup">t</hi></abbr><expan>mouvement</expan></choice> qu’il perdra en par<pc type="hyphenation">-</pc><lb break="no"/>courant un Espace donné, Sujet, <said>dit-il,</said> pour de nouvelles recherches, aussi curieux qu’utile, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’autant plus digne
                <lb/>d’etre examiné que personne ne <choice><orig>la</orig><reg>l’a</reg></choice> <choice><sic>entrepris</sic><corr>entreprise</corr></choice>. Mais je suis surpris que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> mentionne ceci
                <lb/>comme une chose à faire, puisque <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> a si amplement traitté cette matiere <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> toute la doctrine de
-               <lb/>la resistance des fluides dans le 2.<hi rend="sup">d</hi> <rs type="biblio">Livre</rs> de ses Principes.</p>
+  <lb/>la resistance des fluides dans le 2.<hi rend="sup">d</hi> Livre de ses <rs type="biblio">Principes</rs>.</p>
 <p><lb/><abbr>M.</abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> XIV<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>ch.</abbr> essaye de <subst><del>pre</del><add>do</add></subst>nner la même regle <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> trouver le Centre d’Oscillation par sa Theorie des forces que
                <lb/><rs key="pers_DE-588-118639749" type="person"><choice><orig>huyghens</orig><reg>Huyghens</reg></choice></rs>, <abbr>D.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118801481" type="person">Taylor</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lui même ont <choice><sic>données</sic><corr>donnée</corr></choice> par l’opinion co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>une. <choice><abbr>P.<hi rend="sup">r</hi></abbr><expan>Par</expan></choice> cet effet il suppose §. 4 que la force d’un
                <lb/>Corps sera la même quand il tombe de la même hauteur soit qu’il tombe librement ou qu’un obstacle
                <lb/>le retarde. Si cela est vray le même corps peut avoir differentes forces avec differentes vitesses, puisqu’en aug<pc type="hyphenation">-</pc><lb break="no"/>mentant l’obstacle qui l’empeche de descendre on peut diminuer sa vitesse à quelque degré qu’on voudra
-<lb/>en conservant la hauteur de sa chutte. 
+<lb/>en conservant la hauteur de sa chutte.<!-- Kontrolle --> 
                <lb/>Son hypothese sur la Cause du Ressort est si pleine d’inconsistances <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’absurdités, que je suis detourné
-               <lb/>de faire aucune remarque sur elle, car il faudroit m’arrêter presque <choice><orig>a</orig><reg>à</reg></choice> chaque passage. Je ferai <abbr>seulem.<hi rend="sup">t</hi></abbr> menti<unclear>on</unclear>
-               <lb/>d’une chose, qui je pense servira d’excuse <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> une plus longue refutation, C’est que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> tache d’expliquer le
+               <lb/>de faire aucune remarque sur elle, car il faudroit m’arrêter presque <choice><orig>a</orig><reg>à</reg></choice> chaque passage. Je ferai <choice><abbr>seulem.<hi rend="sup">t</hi></abbr><expan>seulement</expan></choice> menti<unclear>on</unclear>
+               <lb/>d’une chose, qui<supplied>,</supplied> je pense<supplied>,</supplied> servira d’excuse <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> une plus longue refutation, C’est que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> tache d’expliquer le
                <lb/>ressort par le mouvement de certaines particules qui elles <choice><sic>même</sic><corr>mêmes</corr></choice> sont elastiques.
 </p>
 <p><lb/>J’espere d’avoir prouvé que rien de ce que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> a avancé en defense de l’opinion de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>
 <lb/>n’est conclusif, que plusieurs parties de son discours sont contradictoires, que toutes ses determinations des Loix
                <lb/>du mouvement sont fausses puisqu’il les applique <choice><orig>a</orig><reg>à</reg></choice><del>ux</del><add>tous les</add> Corps qui se redressent parfaitement, au lieu qu’elle<unclear>s</unclear>
-               <lb/>ne sont <choice><sic>vraye</sic><corr>vrayes</corr></choice> que de ceux qui se redressent dans le même tems qu’ils ont été comprimés. <abbr>Voy.</abbr> <abbr>Remarqu.</abbr> <abbr>Ch.</abbr> I<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §.
+               <lb/>ne sont <choice><sic>vraye</sic><corr>vrayes</corr></choice> que de ceux qui se redressent dans le même tems qu’ils ont été comprimés<!--  -->. <choice><abbr>Voy.</abbr><expan>Voyez</expan></choice> <choice><abbr>Remarqu.</abbr><expan>remarque</expan></choice> <abbr>Ch.</abbr> I<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> §.
             <pb facs="1073697" n="8"/>
-<lb/><choice><abbr>P.<hi rend="sup">r</hi></abbr><expan>Pour</expan></choice> Conclure, je prierai <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> de nous donner une Juste Solution du <choice><abbr>Probl.</abbr><expan>Problème</expan></choice> proposé dans son XII<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr>, Car cela
-  <lb/>surprendra beaucoup le monde, qu’un Geometre si éminent se trompe si fort (<choice><abbr>coē</abbr><expan>comme</expan></choice> je l’ai fait voir) dans la
-               <lb/>Solution d’un Problème, le seul important dans son <rs type="biblio">Livre</rs> qui n’eut pas été resolu auparavant.</p>
-    <p><lb/>Voila, Monsieur, toutte cette Belle refutation dont j’avouë que la <del>sol</del><choice><sic><add>trad</add>ution</sic><corr>traduction</corr></choice> m’a bien donné
+<lb/><choice><abbr>P.<hi rend="sup">r</hi></abbr><expan>Pour</expan></choice> <choice><orig>Conclure</orig><reg>conclure</reg></choice>, je prierai <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person"><abbr>B.</abbr></rs> de nous donner une Juste Solution du <choice><abbr>Probl.</abbr><expan>Problème</expan></choice> proposé dans son XII<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr>, Car cela
+  <lb/>surprendra beaucoup le monde, qu’un <rs type="person">Geometre</rs> si éminent se trompe si fort (c<choice><orig><g ref="#omm">ō</g></orig><reg>omm</reg></choice>e je l’ai fait voir) dans la
+  <lb/>Solution d’un Problème, le seul important dans son <rs type="biblio">Livre</rs> qui n’eut pas été resolu auparavant.</p></quote></cit>
+    <p><lb/>Voila, Monsieur, <choice><orig>toutte</orig><reg>toute</reg></choice> cette Belle <rs type="biblio">refutation</rs> dont j’avouë que la <del>sol</del><choice><sic><add>trad</add>ution</sic><corr>traduction</corr></choice> m’a bien donné
                <lb/>de l’ennuy tant à cause de sa Longueur, qu’<choice><orig>a</orig><reg>à</reg></choice> cause des grossieretés dont elle est pleine. Je ne sais
-               <lb/>si elle vaut la peine qué vous y repondiés. En tout Cas on pourroit la faire imprimer <add>votre Reponse</add> dans les
-               <lb/><rs type="biblio">Transactions</rs>. Ce <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> est un jeune homme, qui a été Quackre (<choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne sais, s’il ne l’est point encore)<supplied>.</supplied>
-               <lb/>Il enseigne les Mathematiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> passoit pour savant, mais je crois que ceci fera un
+               <lb/>si elle vaut<!--  --> la peine qué vous y <choice><orig>repondiés</orig><reg>répondiez</reg></choice>. En tout Cas on pourroit la faire imprimer<supplied>,</supplied> <add>votre Reponse</add><supplied>,</supplied> dans les
+               <lb/><rs type="biblio">Transactions</rs>. Ce <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100252419" type="person">Robins</rs> est un jeune homme, qui a été <choice><orig>Quackre</orig><reg>Quaker</reg></choice> (<choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne sais, s’il ne l’est point encore)<supplied>.</supplied>
+               <lb/>Il enseigne les Mathematiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> passoit pour <rs type="person">savant</rs>, mais je crois que ceci fera un
                <lb/>peu changer d’jdée au public. Je soupçonne, mais ce n’est qu’un Soupçon, que <add><abbr>M<hi rend="sup">r</hi></abbr></add> <rs key="pers_DE-588-143687417" type="person">Pemberton</rs> l<supplied>’</supplied>a
                <lb/>excité <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peut étre aidé <choice><orig>a</orig><reg>à</reg></choice> cela. Car ils sont fort Liés ensemble.</p>
 <p><lb/>Mais <figure facs="../images/figures/1073697_01.png"></figure> ce qui me paroit plus fort contre le Système, c’est une Experience qu’on <del/>m’a
                <lb/>fait voir dernierement. La voici. <formula>ABCD</formula> est une plaque de Cuivre garnie de plomb
                <lb/>pesant 4 Livres. Elle est suspendue par les 4 Cordons <formula>AE</formula>, <formula>BE</formula>, <formula>CF</formula>, <formula>DF</formula> aux deux points
                <lb/><formula>E</formula> et <formula>F</formula> de sorte qu’elle peut osciller co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e sur l’axe d’oscillation <formula>EF</formula>, et decrire par
-               <lb/>ses Oscillations un Arc <choice><sic>parallelle</sic><corr>parallèle</corr></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tout proche de l’arc materiel <formula>LM</formula> divisé en
+               <lb/>ses Oscillations un Arc <choice><orig>parallelle</orig><reg>parallèle</reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tout proche de l’arc materiel <formula>LM</formula> divisé en
                <lb/>degrés. Le poids <add>de plomb</add> <formula>P</formula> est aussi de 4 Livres, attaché a la Corde <formula>PGHI</formula> qui passe sur les
                <lb/>poulies <formula>G</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>H</formula>. Cela posé on <choice><orig>Eleve</orig><reg>élève</reg></choice> la plaque <formula>ABCD</formula> en <formula>M</formula> et la laissant
                <lb/>aller elle commence une Oscillation. Justement comme elle passe sous le poids <formula>P</formula>
@@ -498,12 +486,12 @@
                <lb/>le poids que la plaque entraine et avec lequel elle acheve son Oscillation.
                <lb/>Mais la <unclear>vitesse</unclear> avec laquelle elle l’acheve est bien differente selon les
                <lb/>2 Systemes. Selon le vôtre, supposé que l’arc <formula>PM</formula> fut de 24 degrés, la vitesse
-  <lb/>de la plaque jointe au Corps <formula>P</formula> devroit etre <choice rend="regFormula"><orig><formula>\sqrt{\frac{24\times{24}}{72}}=\sqrt{288}=17</formula></orig><reg><formula>\sqrt{\frac{24\cdot24}{72}}=\sqrt{288}=17</formula></reg></choice><!-- Nicht sicher, ob es mit Mal-Punkt reguliert werden soll anstatt x-Zeichen, RG 07.03.2025 -->. Suivant ces Messieurs elle doit etre
-               <lb/>seulement <formula>\frac{24}{2}=12</formula>. Or, l’experience est <abbr>entièrem.<hi rend="sup">t</hi></abbr> pour eux, avec une justesse qui me surprend<supplied>.</supplied>
+  <lb/>de la plaque jointe au Corps <formula>P</formula> devroit etre <choice rend="regFormula"><orig><formula>\sqrt{\frac{24\times{24}}{72}}=\sqrt{288}=17</formula></orig><reg><formula>\sqrt{\frac{24\cdot24}{2}}=\sqrt{288}=17</formula></reg></choice>. Suivant ces Messieurs elle doit etre
+               <lb/>seulement <formula>\frac{24}{2}=12</formula><!-- Formel noch kontrollieren resp. nachrechnen. MK, 25.6.2025 -->. Or, l’experience est <abbr>entièrem.<hi rend="sup">t</hi></abbr> pour eux, avec une justesse qui me surprend<supplied>.</supplied>
                <lb/>Car nous l’avons essayés de plusieurs hauteurs, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en changeant le poids <formula>P</formula> <add>en d’autres plus petits</add>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en couvrant la
                <lb/>plaque de cuivre d’un Cuir <add>doux</add> afin d’eviter le ressort <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>. Et toujours l’Experience a reussi selon
                <lb/>leur Système, ce qui, j’avoue, m<supplied>’</supplied>a rendu un peu confus, car je m’attendois entièrement au contraire.
-               <lb/>Je ne puis soupçonner <del/><add>aucune</add> inexactitude dans la machine, Car l’Experience reussisoit
+               <lb/>Je ne puis soupçonner <del/><add>aucune</add> inexactitude dans la machine, Car l’Experience <choice><orig>reussisoit</orig><reg>réussissait</reg></choice>
                <lb/>dans leur Systeme <choice><orig>a</orig><reg>à</reg></choice> <formula>\frac{1}{20}</formula> de degré prés, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les degrés etoient d’environ 1 pouce. Faites moi la grace<supplied>,</supplied>
                <lb/>Monsieur, de me marquer si vous croyés qu’il y ait quelque reponse à faire.</p>
 <p><lb/>Je suis bien mortifié que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118656503" type="person">vôtre fils</rs> n’ait pas reussi <choice><orig>a</orig><reg>à</reg></choice> l’<rs type="organisation">Academie</rs> de <rs key="place_GEO-2988507" type="place">Paris</rs>. Je suis dans

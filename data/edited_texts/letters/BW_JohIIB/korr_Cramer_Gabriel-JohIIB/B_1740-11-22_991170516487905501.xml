@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -139,9 +139,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
-      <change notAfter="2023-09-29" who="RG">Personen referenziert</change>
+      <change when="2025-08-18" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert fertig</change>
+      <change when="2025-07-30" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-30" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
+      <change when="2023-09-29" who="RG">Personen referenziert</change>
       <change when="2023-06-23" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-06-23" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -154,12 +157,36 @@
 <body>
 <div type="letter">
 <pb facs="3694315" n="1"/>
-<p><lb/>La présente est uniquement pour vous donner avis, mon cher <lb/>Monsieur, que je viens de reçevoir en ce moment par la Messagerie <lb/>les deux paquets que vous lui aviez confié, sous mon adresse.</p>
-<p><lb/>Ils m’ont paru bien conditionnés, les aiant ouverts pour voir si <lb/>je n’aurois point le bonheur d’y trouver une Lettre de votre main <lb/>comme je m’en flattois, aiant pris la liberté de vous demander <lb/>quelques éclaircissemens sur des Pièces que je soupçonne étre de <lb/>Monsieur vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>. C’est ce qui m’a arrêté de mettre au <lb/>net le Catalogue que j’ai dressé, mais j’aurai l’honneur <lb/>de vous l’envoier infailliblement par le premier ordinaire. <lb/>La poste qui me talonne, me donne a peine le loisir de <lb/>fermer cette Lettre en vous assurant de l’attachement <lb/>parfait avec lequel j’ai l’honneur d’etre</p>
-<closer><lb/><salute>Votre tres humble &amp; <lb/>obeissant serviteur</salute>
-<lb/><signed>G. Cramer</signed>
-<lb/><dateline>le <date>22 Nov. 1740</date></dateline></closer>
-<pb facs="3694316" n="2"/>
+<p>
+  <lb/>La présente est uniquement pour vous donner avis, mon cher
+  <lb/>Monsieur, que je viens de reçevoir en ce moment par la Messagerie
+  <lb/>les deux paquets que vous lui aviez confié, sous mon adresse.
+</p>
+<p>
+  <lb/>Ils m’ont paru bien conditionnés, les aiant ouverts pour voir si
+  <lb/>je n’aurois point le bonheur d’y trouver une <rs type="letter">Lettre</rs> de votre main
+  <lb/>comme je m’en flattois, aiant pris la liberté de vous demander
+  <lb/>quelques éclaircissemens sur des <rs type="biblio">Pièces</rs> que je soupçonne étre de
+  <lb/>Monsieur vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>. C’est ce qui m’a arrêté de mettre au
+  <lb/>au le<note type="editorial">Fehlerhafte Wortwiederholung resp. fehlende Streichung, d.h. zwei Mal "au". "au le" kann gestrichen werden.</note> <rs type="biblio">Catalogue</rs> <subst><del>d</del><add>q</add></subst>ue j’ai dressé, mais j’aurai l’honneur
+  <lb/>de vous l’envoier infailliblement par le premier ordinaire<supplied>.</supplied>
+  <lb/>La poste qui me talonne, me donne <choice><orig>a</orig><reg>à</reg></choice> peine le loisir de
+  <lb/>fermer cette Lettre en vous <subst><del><gap/></del><add>ass</add></subst>urant de l’attachement
+  <lb/>parfait avec lequel j’ai l’honneur d’etre
+</p>
+<closer>
+  <salute>
+    <lb/>Votre tres humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+    <lb/>obeissant Serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>ce <date when="1740-11-22">22 <abbr>Nov.</abbr> 1740</date>
+  </dateline>
+</closer>
+<pb facs="3694316" n="2" type="empty"/>
 </div>
 </body>
 </text></TEI>

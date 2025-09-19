@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430341305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -149,22 +149,81 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
+      <change when="2025-09-10" who="RG">Korrekturgelesen, und Code ergänzt</change>
+      <change when="2025-09-10" who="RG">Restliche Auszeichnungen</change>
+      <change when="2025-09-10" who="RG">Verbesserung Briefstruktur, facs, closer, Adresse, etc.</change>
+      <change when="2025-08-22" who="MK">Transkription kontr. anhand Abfertigung BGE, lb, person, place, keys, Teil 1</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- URL aus archives-BGE (MK, 22.8.2025): https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F25 -->
 </facsimile><text>
 <body>
+<pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 03.09.2025 -->
 <div type="letter">
-<p> Monsieur, </p>
-<p> Je n’aie que le tems de vous dire que mon Père se se sou vient plus de l’explication que vous me demandés de l’anagramme qui se trouve dans les Actes de Leipsic 1724 et que nous ne savons où nous pourrions la trouver, ainsi il faudra bien se contenter de mettre simplement l’anagramme, à moins que par ha zard vous ne la trouviés vous même dans quelqu’une des lettres de mon Père que vous avés. </p>
-<p> Au reste, mon Père est fort sensible à la part que vous avés prise à sa maladie et à son retablissement. toute la gent Ber noullienne vous fait des complimens et personne n’est avec plus d’estime et d’attachement que moi Monsieur votre très humble et très obéissant serviteur Bernoulli. </p>
-<p>Bâle ce 12. Mai 1742. </p>
-<p>[P. S.] </p>
-<p>mes obéissances à M. le Résident de france si vous le voyés de même qu’à ces autres Messieurs. </p>
-<p>Dites je vous prie à M. Bousquet que j’aurois déjà repondu à sa lettre de l’autre jour, si je n’avois voulu attendre les épreuves qu’il me promet, si tôt que je les aurai reçues je lui repondrai et peutêtre plutot. [Anschrift] Monsieur Monsieur le Professeur Cramer <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. à Genève. </p>
+<opener>
+  <salute>
+    <lb/>Monsieur
+  </salute>
+</opener>
+<p>
+  <lb/>Je n’ai que le tems de vous dire que mon
+  <lb/><rs key="pers_DE-588-118509969" type="person">Père</rs> ne se souvient plus de l’explication que
+  <lb/>vous me demandés de l’anagramme qui se trouve
+  <lb/>dans les <rs key="biblio_3H3CXVQL" type="biblio">Actes de Leipsic <date when="1724">1724</date></rs> et que nous ne
+  <lb/>savons où nous pourrions la<!-- Komma oder Sonderzeichen? RG 10.09.2025 --> trouver, ainsi il
+  <lb/>faudra bien se contenter de mettre simplement
+  <lb/>l’anagramme, à moins que par hazard vous
+  <lb/>ne la trouviés vous même dans quelqu’une des
+  <lb/><rs type="letter">lettres</rs> de mon <rs key="pers_DE-588-118509969" type="person">Père</rs> que vous avés.
+</p>
+<p>
+  <lb/>Au reste, mon <rs key="pers_DE-588-118509969" type="person">Père</rs> est fort sensible à la part que
+  <lb/>vous avés prise à sa maladie et à son <abbr>retablissem.<hi rend="sup">t</hi></abbr>
+</p>
+<closer>
+  <salute>
+    <lb/><choice><orig>toute</orig><reg>Toute</reg></choice> la gent Bernoullienne vous fait ses <!-- von "des" zu "ses" geändert, RG 10.09.2025 -->
+    <lb/>Complimens et personne n’est avec plus d’<pc type="hyphenation"></pc><lb break="no"/>estime et d<supplied>’</supplied>attachement que moi Monsieur
+    <lb/>votre très humble et très
+    <lb/>obeissant serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-117589136" type="person">Bernoulli</rs>
+  </signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2661604" type="place">Bâle</rs> ce <date when="1742-05-12">12. Mai 
+    <lb/>1742</date>
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/>mes obéissances à <abbr>M.</abbr> le
+    <lb/><rs key="pers_DE-588-1069193119" type="person">Résident de france</rs><!-- ?, RG 10.09.2025 --> si
+    <lb/>vous le voyés de même qu’à
+    <lb/>ces autres Messieurs<note type="editorial"></note><!-- ?, RG 10.09.2025 -->.
+  </p>
+  <p>
+    <lb/>Dites, je vous prie à <abbr>M.</abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> que j’aurois déjà<!-- ?, RG 10.09.2025 -->
+    <lb/>repondu à sa <rs type="letter">lettre</rs> de l’autre jour, si je n’avois voulu
+    <lb/>attendre les épreuves qu’il me promet, si tôt que je les
+    <lb/>aurai reçuës je lui repondrai et peutêtre plutot.
+  </p>
+</postscript>
+<pb facs="-" n="2" type="empty"/>
+<pb facs="-" n="3" type="empty"/>
+<pb facs="-" n="4"/>
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur le Professeur</addrLine>
+    <addrLine><rs key="pers_DE-588-11670912X" type="person">Cramer</rs> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></addrLine>
+    <addrLine>à</addrLine>
+    <addrLine><rs key="place_GEO-2660646" type="place">Genève</rs> </addrLine>
+  </address><!-- Eigentlich keine Auszeichnungen in den Addressen, RG 10.09.2025 -->
+</closer>
 </div>
 </body>
 </text></TEI>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -169,6 +169,9 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-07-25" who="MK">Code zusammen mit Manuskript durchgeschaut, kontrolliert, korrigiert, recherchiert</change>
+      <change when="2025-05-16" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-05-14" who="MK">Grundkomm., Teil 1</change>
       <change when="2025-05-08" who="MK RG">kollationiert, abgeschlossen</change>
       <change when="2025-05-08" who="MK RG">kollationiert Teil 1</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
@@ -185,7 +188,7 @@
 <!--Comments that were in TEI element but not further down in the xml tree-->
 <!--_____________-->
 <!--Comments that were in the teiHeader element-->
-<!-- Einige Personen darunter Condet wurden noch nicht referenziert. RG 29.09.2023 -->
+<!-- Einige Personen darunter Gondet wurden noch nicht referenziert. RG 29.09.2023; weitere noch nicht referenzierte und in BEBB noch nicht aufgenommene Personen: Gédéon Cramer (1709-1730), Jean-Isaac Cramer (1674-1751). MK 14.5.2025 -->
 <!--_____________-->
 
 <facsimile>
@@ -197,55 +200,55 @@
 <opener><salute>Monsieur,</salute></opener>
 <p><lb/>Je profite de l’occasion de <abbr>M.<hi rend="sup">r</hi></abbr> le Ministre <rs key="pers_DE-588-119259028" type="person">Vernet</rs> mon bon ami, que je
                <lb/>vous supplie d’avoir pour recommandé, pour repondre à vôtre chère <rs type="letter">Lettre</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-  <lb/>pour vous envoier la Copie <subst><del>D</del><add>d</add></subst>u <rs type="biblio">Discours</rs> que j’avois présenté à l'<rs type="organisation">Academie</rs> de
-               <lb/><rs type="place">Paris</rs>. Vous y trouverés mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille raisons pour justifier le Jugement de ces
-               <lb/>Messieurs, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la préférence qu’ils ont donnée à vôtre <rs type="biblio">pièce</rs>: mais d’ailleurs je ne
+  <lb/>pour vous envoier la Copie <subst><del>D</del><add>d</add></subst>u <rs type="biblio">Discours</rs><note type="editorial">"Quelle est la cause de la figure elliptique des planètes et de la mobilité de leur aphélies?", 1730</note> que j’avois présenté à l'<rs type="organisation">Academie</rs> de
+  <lb/><rs key="place_GEO-2988507" type="place">Paris</rs>. Vous y trouverés mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille raisons pour justifier le Jugement de ces
+  <lb/>Messieurs, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la préférence qu’ils ont donnée à vôtre <rs key="biblio_U2YJS9GU" type="biblio">pièce</rs>: mais d’ailleurs je ne
                <lb/>crois pas que vous y trouviéz rien qui puisse satisfaire votre curiosité. C’est ce qui
                <lb/>m’avoit fait differer de vous l’envoier, ne voiant pas ce qui pourroit vous y plaire.
-               <lb/>D’ailleurs c’est la seule copie qui m’en reste, encore n’est elle pas entiérement conforme
+               <lb/>D’ailleurs c’est la seule <rs type="biblio">copie</rs> qui m’en reste, encore n’est elle pas entiérement conforme
                <lb/>à ce que j’ai envoié à l’<rs type="organisation">Academie</rs>. Car étant très pressé, je fis diverses corrections à
                <lb/>mésure que je la recopiois, que je n’eus pas le loisir de marquer sur la minute. Je
                <lb/>vous prie donc quand vous l’aurez luë <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> éxaminée tout à votre Loisir, d’avoir la bonté
                <lb/>de me la renvoier par la Messagerie ou autrement.</p>
-<p><lb/>Je suis faché de ne pouvoir étre d’aucun usage à <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs type="person">fils</rs> auprès de 
-  <lb/><abbr>Mess.<hi rend="sup">rs</hi></abbr> <rs type="person">Gondet</rs> à <rs key="place_GEO-2995469" type="place">Marseille</rs>. Peu après la mort de mon <rs type="person">Frère</rs>, mon <rs type="person">Pere</rs> leur
+  <p><lb/>Je suis faché de ne pouvoir étre d’aucun usage à <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-117589136" type="person">fils</rs> auprès de 
+  <lb/><abbr>Mess.<hi rend="sup">rs</hi></abbr> <rs type="person">Gondet</rs><note type="editorial">Bedeutende Kaufmannsfamilie in Marseille</note> à <rs key="place_GEO-2995469" type="place">Marseille</rs>. Peu après la mort de mon <rs type="person">Frère</rs><note type="editorial">Es handelt sich um Gédéon Cramer, geb. 1709, gest. 1730. s. dazu Isaac Benguigui, Gabriel Cramer, Illustre Mathématicien 1704-1752, 1998, S. XI.</note>, mon <rs type="person">Pere</rs><note type="editorial">Jean-Isaac Cramer(-Mallet), 1674-1751, Arzt.</note> leur
                <lb/>écrivit pour les prier de prendre en sa place un jeune homme de nos proches
                <lb/>parents <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même des Leurs. Ces Messieurs repondirent, qu’ils n’en avoient
                <lb/>nul besoin. Cependant mon <rs type="person">Pere</rs> leur a écrit à l’occasion de Monsieur votre
-               <lb/><rs type="person">Fils</rs>, sans avoir pû reçevoir aucune réponse.</p>
+    <lb/><rs key="pers_DE-588-117589136" type="person">Fils</rs>, sans avoir pû reçevoir aucune réponse.</p>
 <pb facs="1073892" n="2"/>
 <p><lb/>Je ne sçais si Monsieur <rs type="person">Clairaut</rs> s’est exercé sur le Problème de la Ligne la plus
                <lb/>courte qui se puisse tracer entre deux points sur une surface courbe donnée. Ce
                <lb/>problème ne me paroit pas infiniment difficile, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’espererois d’y réussir, si j’avois
                <lb/>quelque loisir pour y travailler: mais je suis obligé de laisser un peu reposer les
-               <lb/>études Mathematiques, à cause de la maladie d’<rs type="person">un</rs> de nos Professeurs en Philosophie
-               <lb/>dont on nous a chargés mon <rs type="person">Collégue</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moi de remplir les fonctions, comme étant
+               <lb/>études Mathematiques, à cause de la maladie d’un de nos <rs type="person">Professeurs</rs> en Philosophie
+  <lb/>dont on nous a chargés mon <rs key="pers_DE-588-10427252X" type="person">Collégue</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moi de remplir les fonctions, comme étant
                <lb/>les plus jeunes. Ces Leçons qui sont au nombre de 5 par semaines ne laissent pas de
                <lb/>me prendre une bonne partie de mon tems, parceque ces matiéres ne me sont pas
                <lb/>si familières qu’il ne me faille préparer, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même les écrire. Joignés à cela nombre de
                <lb/>Leçons particulières, qui vont jusqu’<choice><orig>a</orig><reg>à</reg></choice> 7 ou 8 par jour.</p>
-<p><lb/>J’ai reçeu <foreign xml:lang="lat"><hi rend="u">novissime</hi></foreign> des <rs type="letters
+<p><lb/>J’ai reçeu <note type="editorial">Die Unterstreichungen im Brief könnten auch nicht vom Briefautor erfolgt sein.</note><foreign xml:lang="lat"><hi rend="u">novissime</hi></foreign> des <rs type="letter
   ">Lettres</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-11852092X" type="person">Clairaut</rs> qui ne me marque pas qu’il se
-               <lb/>soit attaché à ce Probléme, quoiqu’il ait reçeu la <rs type="letter">Lettre</rs> où je lui envoiois l’extrait de la
-               <lb/><rs type="letter">vôtre</rs> sur ce qui le concerne. Il est pourtant occupé sur les Surfaces Courbes, car il me
-               <lb/>marque qu’il a démontré à l’<rs type="organisation">Academie</rs> le §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> V<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> du Traitté de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <rs type="biblio"><hi rend="u">Enumeratio
-               <lb/>linearum</hi></rs> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> où il s’agit de <foreign xml:lang="lat"><hi rend="u">Genesi curvarum per umbras</hi></foreign>.</p>
-<p><lb/>Je n’ai pû lire que fort à la hâte les <rs type="biblio">Mémoires</rs> de l’<rs type="organisation">Academie de Petersbourg</rs>. Ainsi
-               <lb/>je n’ai pas fait assez d’attention au <rs type="biblio">Memoire</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> sur les Epicycloides Sphe<pc type="hyphenation">-</pc><lb break="no"/>riques. Je tacherai de l’avoir pour le relire avec plus de soin.</p>
-<p><lb/>Je reçus hier les <rs type="biblio">Mémoires</rs> de l’<rs type="organisation">Academie de Boulogne</rs>. En les <choice><orig>fueilletant</orig><reg>feuilletant</reg></choice> je m’aperçûs
-               <lb/>que vôtre <rs type="person">nom</rs> y étoit souvent cité avec de grands Eloges. Cela me faisoit esperer d’y voir
-               <lb/>quelque Mémoire de votre façon: mais je n’y ai rien trouvé.</p>
+               <lb/>soit attaché à ce Probléme, quoiqu’il ait reçeu la <rs type="letter">Lettre</rs> où je lui envoiois l’<rs type="letter">extrait</rs> de la
+               <lb/>vôtre sur ce qui le concerne. Il est pourtant occupé sur les Surfaces Courbes, car il me
+  <lb/>marque qu’il a démontré à l’<rs type="organisation">Academie</rs> le §<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> V<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> du Traitté de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> <rs key="biblio_RC92CU37" type="biblio"><hi rend="u">Enumeratio
+    <lb/>linearum</hi></rs> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>.</supplied> où il s’agit de <foreign xml:lang="lat"><hi rend="u">Genesi curvarum per umbras</hi></foreign>.</p>
+<p><lb/>Je n’ai pû lire que fort à la hâte les <rs type="biblio">Mémoires</rs> de l’<rs type="organisation">Academie de <rs type="place">Petersbourg</rs></rs>. Ainsi
+  <lb/>je n’ai pas fait assez d’attention au <rs key="biblio_DFK2969L" type="biblio">Memoire</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-119112450" type="person">Herman</rs> sur les Epicycloides Sphe<pc type="hyphenation">-</pc><lb break="no"/>riques. Je tacherai de l’avoir pour le relire avec plus de soin.</p>
+<p><lb/>Je reçus hier les <rs type="biblio">Mémoires</rs> de l’<rs type="organisation">Academie de <rs type="place">Boulogne</rs></rs>. En les <choice><orig>fueilletant</orig><reg>feuilletant</reg></choice> je m’aperçûs
+  <lb/>que vôtre nom y étoit souvent cité avec de grands Eloges. Cela me faisoit esperer d’y voir
+               <lb/>quelque <rs type="biblio">Mémoire</rs> de votre façon: mais je n’y ai rien trouvé.</p>
 <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> pourroit répondre <choice><orig>a</orig><reg>à</reg></choice> vôtre objection qu’il ne suppose pas elastiques
                <lb/>les particules de son fluide qui cause la pesanteur. Mais que ce fluide est si rare, que ces
                <lb/>particules ne se rencontreront que très rarement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’au surplus il ne se feroit pas
                <lb/>de peine d’acorder que le mouvement de ce fluide diminuë peu à peu <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> insensiblement<supplied>.</supplied>
                <lb/>Vous faites mention dans vos <rs type="biblio">Découvertes</rs> sur le <abbr>mouvem.<hi rend="sup">t</hi></abbr> des Planètes d’un Systeme
                <lb/>que vous vous étes formé sur la Pesanteur. Pourrois<supplied>-je</supplied> savoir en quoi il consiste?</p>
-<pb facs="1073893" n="3"/><!-- bis hier kollationiert MK 8.5.2025 -->
+<pb facs="1073893" n="3"/>
 <p><lb/>Je ne comprends pas le procédé de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-130429856" type="person">Klinguenstiern</rs> à vôtre égard. <del/>
 <lb/>J’ai peine à concevoir qu’il n’y ait pas de sa faute: Mais j’ai encore plus de peine à me persuader
                <lb/>qu’il soit dans le tort. Car il seroit entiérement inéxcusable.</p>
-  <p><lb/>Voici comment je conçois la Demonstration<note type="editorial">In den <rs key="biblio_73DJ8AIG" type="biblio">Principia Mathematica</rs>, Buch II, Propositio XLIX, Theorema XXXVIII, behandelt Newton die Ausbreitung des Schalls in einem Medium, vor allem in der Luft. MK 08.05.2025</note> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> sur la propagation du Son.
+  <p><lb/>Voici comment je conçois la Demonstration<note resp="MK" type="editorial">In den <rs key="biblio_73DJ8AIG" type="biblio">Principia Mathematica</rs>, Buch II, Propositio XLIX, Theorema XXXVIII, behandelt Newton die Ausbreitung des Schalls in einem Medium, vor allem in der Luft.</note> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> sur la propagation du Son.
                <lb/>Il pose d’abord que le mouvement des particules de l’air est tel qu’il le veut prou<subst><del/><add>v</add></subst>er, c’est
                <lb/>à dire, analogue aux Vibrations d’un Pendule. Il examine en conséquence qu’elle est la densité
                <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’élasticité de l’air à diverses distances du Centre de l’onde, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> trouvant que la difference
@@ -274,7 +277,7 @@
             <pb facs="1073894" n="4"/>
 <lb/>par une compression étrangère, cet èquilibre se restitue promptement après quelques
                <lb/>Vibrations. Soit donc <formula>L</formula> la largeur de l’Onde pr<subst><del/><add>o</add></subst>duite dans l’air par un corps Sonore:
-               <lb/><hi rend="u"><formula>p</formula></hi> son poids, <formula>P</formula> celui de l’atmosphère; on aura <formula>p:P::L:A</formula><!-- Formel normalisieren --> (<formula>A</formula> est comme dans votre <rs type="letter">lettre</rs>
+  <lb/><hi rend="u"><formula>p</formula></hi> son poids, <formula>P</formula> celui de l’atmosphère; on aura <choice rend="regFormula"><orig><formula>p:P::L:A</formula></orig><reg><formula>p:P=L:A</formula></reg></choice> (<formula>A</formula> est comme dans votre <rs type="letter">lettre</rs>
                <lb/>la hauteur du Mercure dans le Barometre prise autant de fois que la pesanteur specifique
                <lb/>du Mercure surpasse celle de l’air.) Ce qui étant substitué dans la formule cy-dessus,
                <lb/>on trouve que <add>dans</add> le tems que le Pendule <formula>D</formula> fait une vibration, l’onde de l’air en fera <formula>C\sqrt{\frac{DA}{LL}}</formula>
@@ -282,7 +285,7 @@
                <lb/>Donc dans le tems que le Pendule <formula>D</formula> fera une vibration, le son parcourra la longueur <formula>L</formula>
 <lb/>le nombre de fois <formula>\frac{C}{L}\sqrt{D\times A}</formula>, c’est à dire qu’il parcourra la longueur <formula>C\sqrt{D\times A}</formula>, ce qui convient
                <lb/>entièrement avec vôtre formule.</p>
-<p><lb/>Je n’ai point vû le <rs type="biblio">Mémoire</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> de l’année 1729. Ces Mémoires n’arrivent
+<p><lb/>Je n’ai point vû le <rs type="biblio">Mémoire</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> de l’année <date when="1729">1729</date>. Ces <rs type="biblio">Mémoires</rs> n’arrivent
                <lb/>ici que quelques années après qu’ils ont paru. Je ne conçois pas sur quels fondements, il
                <lb/>peut nier la verité du Theorème <formula>pdt=du</formula>, ni ce que fait à cela la distinction de l’action
                <lb/>continuë <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> continuelle de la matiére subtile. Les Mathématiciens se seroient à plaindre
@@ -296,7 +299,7 @@
                <lb/>Monsieur
                <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
                <lb/>Serviteur</salute>
-<signed><lb/><abbr>G<supplied>.</supplied></abbr> Cramer</signed>
+  <signed><lb/><abbr>G</abbr><supplied>.</supplied> Cramer</signed>
 <dateline><lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1732-04-10">10 avril 1732</date></dateline></closer>
 </div>
 </body>

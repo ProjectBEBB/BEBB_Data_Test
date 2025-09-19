@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430340805501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -148,7 +148,7 @@
           <note type="lebensdaten">(18. Jh.)</note>
         </person>
         <person>
-          <persName key="pers_no_GND_id">Jaquier, François</persName>
+          <persName key="pers_DE-588-117050164">Jaquier, François</persName>
           <note type="lebensdaten">(1711-1788)</note>
         </person>
         <person>
@@ -161,17 +161,82 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
+      <change when="2025-08-29" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-08-29" who="RG">Zeilenabstände eingefügt, sowie Anpassungen</change>
+      <change when="2025-08-29" who="RG">Personen, Orte referenziert</change><!-- Biblio und Letter noch offen, RG 29.08.2025 -->
+      <change when="2025-08-29" who="RG">Seitenzahlen, Briefstruktur</change><!-- "facs" müssen noch ergänzt werden. RG 29.08.2025 -->
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- MK 3.9.2025: Manifest lautet hier wohl so: https://archives.bge-geneve.ch/iiif/ark:/17786/vtaa186541f325fd105/manifest.json
+    Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F57&vx=973.912&vy=-1093.53&vr=0&vz=4.91324 RG 29.08.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> Je puis enfin vous feliciter, mon cher Monsieur, d’etre au bout de vos travaux; car les soins que vous avés donnés à l’Edition des ouvrages de mon Père sont de veritables travaux et M. Bousquet ne peut assés s’en louer; Je me fais un vray plaisir de prendre sur moi une partie des obligations qu’il doit vous avoin et de penser que votre amitié pour moi et l’attention que vous avés faites à mes prières ont eu quelque part à toutes vos complaisances. Soyés persuadé, Monsieur, de ma reconnoissance et de l’envie que j’ai de vous la témoigner réellement; Ce sont aussi les sentimens de mon Père qui m’a bien chargé de vous en assurer de même que de toute son amitié. Un ami m’a prié de vous demander, Monsieur, ce que c’etoit que les Princip. Phil. Nat. Newt. cum Comment P. P. Le Seur et Jaquier qui ont été imprimés à Genève et si ce livre valoit qu’on l’achetât. </p>
-<p> Quelles nouvelles me donnerés vous de notre ami Jallabert; est il toujours à Montpelier et continue-t-il de s’en bien trouver, Made. Jallabert n’a qu’à engager d’avance 2 ou 3 nour rices pour l’année prochaine. Si vous lui ecrivés je vous prie de lui bien faire mes amitiés; Adieu mon cher Monsieur portés vous bien. J’ai l’honneur d’être avec un attachement inviolable votre très humble et très obeissant serviteur Bâle ce 10. Avril 1743. J. Bernoulli. [Anschrift] Monsieur Monsieur le Professeur Cramer à Genève. </p>
+<pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 29.08.2025 -->
+<p>
+  <lb/>Je puis enfin vous feliciter, mon cher Monsieur,
+  <lb/>d’étre au bout de vos travaux; car les soins que
+  <lb/>vous avés donnés <choice><orig>a</orig><reg>à</reg></choice> l’<rs type="biblio">Edition</rs> des ouvrages de
+  <lb/>on <rs key="pers_DE-588-118509969" type="person">Père</rs> sont de véritables travaux et <abbr>M.</abbr>
+  <lb/><rs key="pers_DE-588-136952968" type="person">Bousquet</rs> ne peut assés s’en louer; Je me
+  <lb/>fais un vray plaisir de prendre sur moi
+  <lb/>une partie des obligations qu’il doit vous
+  <lb/>avoir et de penser que votre amitié pour
+  <lb/>moi et l’attention que vous avés faites à<!-- Umlaut nicht sicher, ob er existiert? RG 29.08.2025 -->
+  <lb/>mes prières ont eu quelque part à toutes
+  <lb/>vos complaisances. Soyés persuadé,
+  <lb/>Monsieur, de ma reconnoissance et de
+  <lb/>l’envie que j’ai de vous la témoigner
+  <lb/>réellement; Ce sont aussi les sentimens
+  <lb/>de mon <rs key="pers_DE-588-118509969" type="person">Père</rs> qui m’a bien chargé de
+  <lb/>vous en assurer de même que de toute son amitié.
+<pb facs="-" n="2"/>
+  <lb/>Un ami m’a prié de vous demander, Monsieur<supplied>,</supplied>
+  <lb/>ce que c’étoit que les <rs type="biblio"><abbr>Princip.</abbr> <abbr>Phil.</abbr> <abbr>Nat.</abbr> <abbr>Newt.</abbr></rs><!-- Noch referenzieren? RG 29.08.2025 -->
+  <lb/>cum Comment <abbr>P.P.</abbr> <rs key="pers_DE-588-100185258" type="person">Le Seur</rs> et <rs key="pers_DE-588-117050164" type="person">Jaquier</rs>,
+  <lb/>qui ont èté imprimés à <rs key="place_GEO-2660646" type="place">Geneve</rs> et si ce <rs type="biblio">livre</rs><!-- Noch referenzieren? RG 29.08.2025 -->
+  <lb/>valoit qu’on l’achetât.
+</p>
+<p>
+  <lb/>Quelles nouvelles me donnerés vous de notre
+  <lb/>ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>; est il toujours à <rs key="place_GEO-2992166" type="place">Montpelier</rs>
+  <lb/>et continue<supplied>-</supplied>t<supplied>-</supplied>il de s’en bien trouver, <abbr>Mad.<hi rend="sup">e</hi></abbr>
+  <lb/><rs key="pers_DE-588-1089923414" type="person">Jallabert</rs> n’a qu’à engager d’avance 2
+  <lb/>ou 3 nourrices pour l’année prochaine.
+  <lb/>Si vous lui écrivés je vous prie de lui bien
+  <lb/>faire mes amitiés;
+</p>
+<closer>
+  <salute>
+    <lb/>Adieu mon cher Monsieur
+    <lb/>portés vous bien. J’ai l’honneur d’étre
+    <lb/>avec un attachement inviolable
+    <lb/>vôtre très humble et
+    <lb/>très obeissant serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-117589136" type="person"><abbr>J<supplied>.</supplied></abbr> Bernoulli</rs>
+  </signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2661604" type="place">Bâle</rs>
+    <lb/>ce <date when="1743-04-10">10. Avril
+    <lb/>1743</date>
+  </dateline>
+</closer>
+<pb facs="-" n="3" type="empty"/>
+<pb facs="-" n="4"/>
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur le Professeur</addrLine>
+    <addrLine>Cramer <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine>à</addrLine>
+    <addrLine>Genève.</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

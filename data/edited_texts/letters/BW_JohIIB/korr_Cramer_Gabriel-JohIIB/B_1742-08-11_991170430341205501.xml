@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430341205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -149,20 +149,92 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
+      <change when="2025-09-10" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-10" who="RG">Zeilenabstände eingefügt, sowie Anpassungen</change>
+      <change when="2025-09-10" who="RG">Personen, Orte referenziert</change>
+      <change when="2025-09-10" who="RG">Seitenzahlen, Briefstruktur</change><!-- "facs" müssen noch ergänzt werden. RG 29.08.2025 -->
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F29&vx=1029.77&vy=-947.003&vr=0&vz=5.81859 RG 10.09.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> M. Bousquet me marque, mon cher Monsieur, que notre ouvrage va grand train et qu’il m’enverra incessamment le Alphabet du 3e. Tome; Il ne donnera à ce qu’il dit, que les 4 Tomes à la fois et cela l’engage à se depêcher pour être pret avant la foire de Paques. Il compte toujours sur la Table des Matières que je lui ai fait espérer de votre part et il se flatte de la recevoir assés tôt pour que l’ouvrage ne soit pas arrêté et qu’il ne manque pas la foire ce qui lui causeroit une perte considérable; </p>
-<p> Il n’ose trop vous en parler, Monsieur, de peur de paroitre importun, mais il me prie de vous en dire un mot; Je lui re ponds que je ne doute nullement que vous ne fassiés ce qu’il souhaite si fort et avec tant de raison; je pense aussi que vous voudrés bien faire reflexion qu’il y va un peu de mon honneur que vous vous acquittiés de votre promesse puisque c’est moi qui ai eu assés de credit auprès de vous pour vous faire entreprendre un travail aussi desagreable que celui de faire une table de matières et que c’est moi aussi qui ai pro mis à M. Bousquet de votre part que vous vous en chargeriés. Il sent parfaitement combien il a besoin de vous pour un ouv rage qui seroit infiniment au dessous de vous si tout autre que vous, Monsieur, étoit en état de s’en acquitter comme il faut; aussi suis je bien persuadé qu’il vous en tiendra tout le compte que votre complaisance mérite. Quant à moi je suis en tierement flatté et très reconnoissant d’avoir pu vous engager à une chose, qui me prouve bien les sentimens d’amitié dont vous m’honorés; J’en ferai toujours un cas infini et je serai toujours avec la plus parfaite consideration Monsieur Votre tres humble et tres obeissant serviter Jean Bernoulli fils </p>
-<p>Bâle ce 11. Aoust 1742. </p>
-<p>[P. S.] </p>
-<p>Mes Compl[imens] s. v. p. à notre Ami Jallabert. Si vous voyés M. le Résident je vous prie Monsieur, de lui faire aussi agréer mes obéissances. [Anschrift] Pour Monsieur le Prof. Cramer. </p>
+<pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 10.09.2025 -->  
+<p>
+  <lb/><abbr>M.</abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> me marque, mon cher Monsieur,
+  <lb/>que nôtre ouvrage va grand train et qu’il m’<pc type="hyphenation"></pc><lb break="no"/>enverra incessamment le <del/>alphabet du <rs type="biblio">3.<hi rend="sup">e</hi> 
+  <lb/>Tome</rs>; Il ne donnera à ce qu’il dit, que les <rs type="biblio">4
+  <lb/>Tomes</rs> à la fois et cela l’engage à se depêcher
+  <lb/>pour être pret avant la foire de Paques. Il
+  <lb/>compte toujours sur la Table des matières que
+  <lb/>je lui ai fait espérer de vôtre part et il se
+  <lb/>flatte de la recevoir assès tôt pour que l’ouvrage<!-- referenzieren? RG 10.09.2025 -->
+  <lb/>ne soit pas arrêté et qu’il ne manque pas la
+  <lb/>foire ce qui lui causeroit une perte considérable;
+</p>
+<p>
+  <lb/>Il n’ose trop vous en parler, Monsieur, de
+  <lb/>peur de paroitre importun<!-- ? RG 10.09.2025 -->, mais il me prie
+  <lb/>de vous en dire un mot; Je lui reponds que
+  <lb/>je ne doute nullement que vous ne fassiés ce
+  <lb/>qu’il souhaite si fort et avec tant de raison;
+<pb facs="-" n="2"/>
+  <lb/>je pense aussi que vous voudrés bien faire
+  <lb/>reflexion qu’il y va un peu de mon honneur
+  <lb/>que vous vous acquittiés de votre promesse
+  <lb/>puisque c’est moi qui ai eu assés de credit
+  <lb/>auprès de vous pour vous faire entreprendre
+  <lb/>un travail aussi desagreable que celui de
+  <lb/>faire une Table de matières et que c’est moi
+  <lb/>aussi qui ai promis à<!-- Umlaut? RG 10.09.2025 --> <abbr>M.</abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> de
+  <lb/>votre part que vous vous en chargeriés;<!-- ;? RG 10.09.2025 -->
+  <lb/>Il sent parfaitement combien il a besoin
+  <lb/>de vous pour un ouvrage<!-- referenzieren? RG 10.09.2025 --> qui seroit infiniment
+  <lb/>au dessous de vous si tout autre que vous,
+  <lb/>Monsieur, étoit<!-- Umlaut? RG 10.09.2025 --> en état<!-- Umlaut? RG 10.09.2025 --> de s’en acquitter
+  <lb/>comme il faut; aussi suis je bien persuadé
+  <lb/>qu’il vous en tiendra tout le compte que
+  <lb/>votre complaisance mérite. Quant à moi
+  <lb/>je suis entierement flatté et très
+  <lb/>reconnoissant d’avoir pu vous engager
+<pb facs="-" n="3"/>
+  <lb/>à une chose, qui me prouve bien les sentimens
+  <lb/>d’amitié dont vous m’honorés; J’en ferai
+  <lb/>toujours un cas infini et je serai toujours
+  <lb/>avec la plus parfaite consideration
+  <lb/>Monsieur
+</p>
+<closer>
+  <salute>
+    <lb/>Votre très humble
+    <lb/>et très obeissant serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-117589136" type="person">Jean Bernoulli</rs> fils
+  </signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2661604" type="place">Bâle</rs>
+    <lb/>ce <date when="1742-08-11">11. <hi rend="u">Aoust 1742</hi></date>
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/>Mes <choice><abbr>Compl.</abbr><expan>Complimens</expan></choice> <abbr>s. v. p.</abbr> à notre Ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>.
+    <lb/>Si vous voyés <abbr>M.</abbr> le <rs key="pers_DE-588-1069193119" type="person">Résident</rs> je vous prie
+    <lb/>Monsieur, de lui faire aussi agréer mes
+    <lb/>obéissances.
+  </p>
+</postscript>
+<pb facs="-" n="4"/>
+<closer>
+  <address>
+    <addrLine>Pour Monsieur</addrLine>
+    <addrLine>le <abbr>Prof.<hi rend="sup">r</hi></abbr> Cramer.</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

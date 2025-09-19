@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514979405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -107,6 +107,15 @@
     </classDecl>
   </encodingDesc>
   <profileDesc>
+    <abstract>
+      <p>Gabriel Cramer berichtet Bernoulli, dass dessen jüngstes Werk „Discours sur les loix de la communication du mouvement“ in England Aufsehen erregt habe und die Newtonianer in Verteidigungsstellung gegangen seien. Er referiert ausführlich die Argumente, mit denen englische Gelehrte Bernoullis Demonstrationen zur Definition der Kraft zu widerlegen versuchen: Die Zahl der Federn oder Elastizitätselemente sei irrelevant für die resultierende Kraft; gleiche Drücke über gleiche Zeiten erzeugten gleiche lebendige Kräfte (forces vives), woraus folge, dass Kraft als Produkt von Masse und Geschwindigkeit zu messen sei. Cramer gesteht, dass er diese Einwände zunächst schwer widerlegen könne, entwickelt aber eigene Gegenargumente, etwa dass gleiche Drücke nicht notwendig gleiche forces vives erzeugen und dass die Wirkung vom Widerstand abhänge. Er berichtet auch über weitere Diskussionen zu Bernoullis Kapiteln 7–9, insbesondere über Eames’ Einwände, die er als Zirkelschlüsse beurteilt. Schließlich kündigt Cramer an, dass eine ausführliche Gegenschrift in Vorbereitung sei, und verspricht Bernoulli, ihm Nachricht und eine Kopie zu schicken, damit dieser eine ebenso öffentliche Widerlegung veröffentlichen könne, etwa in den Philosophical Transactions.
+      </p></abstract>
+    <textClass>
+      <keywords>
+        <term>forces vives</term>
+        <term>forces mortes</term>
+      </keywords>
+    </textClass>
     <correspDesc>
       <correspAction type="sent">
         <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
@@ -147,6 +156,10 @@
   </profileDesc>
   <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-17" who="MK">Code durchgeschaut, Abstract und keywords ergänzt</change>
+      <change when="2025-07-07" who="MK">Code durchgeschaut, korrigiert</change>
+      <change when="2025-07-05" who="MK">Code durchgeschaut, korrigiert</change>
+      <change when="2025-05-23" who="MK">Code durchgeschaut, korrigiert</change>
       <change when="2025-04-02" who="MK">Code durchgeschaut, korrigiert</change>
       <change when="2025-02-17" who="MK">Code durchgeschaut, korrigiert</change>
       <change when="2025-01-23" who="MK RG">kollationiert</change>
@@ -180,10 +193,10 @@
   <p><lb/>Quoi qu’il n’y ait pas longtems que je vous ai importuné d’<rs type="letter" key="B_991170514979505501" >une de mes lettres</rs>,
 <lb/>je prens encore la Liberté de vous adresser celle-ci: Puisque vous avez la bonté de vouloir
                <lb/>bien me faire part de vos Lumières, je profiterai de vos instructions, desquelles <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de
-               <lb/>toutes vos faveurs, je conserve un souvenir éternel <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> une reconoissance parfaite.</p>
-  <p><lb/>Votre <rs key="biblio_5MVQ5CQI" type="biblio">Livre</rs> a fait du bruït en <rs key="place_VER-englan" type="place">Angleterre</rs>. Les Sectateurs de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> se sont allarmez
-               <lb/>voiant vòtre Nom à la Tête d’un Ouvrage qui attaque une opinion qu’ils prétendent ètre
-  <lb/>celle de leur <rs key="pers_DE-588-118587544" type="person">Maitre</rs>. On a, je crois tenu des <note type="editorial">Alle Unterstreichungen vorkommend auf den drei Seiten des Briefes wohl nicht vom Autor sondern vom Empfänger hinzugefügt.</note> Conseils de Guerre, dont le résultat a été qu’on
+               <lb/>toutes vos faveurs, je conserve un souvenir èternel <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> une reconoissance parfaite.</p>
+  <p><lb/>Votre <rs key="biblio_5MVQ5CQI" type="biblio">Livre</rs> a fait du bruït en <rs key="place_VER-englan" type="place">Angleterre</rs>. Les <rs type="person">Sectateurs</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> se sont <choice><orig>allarmez</orig><reg>allarmés</reg></choice>
+               <lb/>voiant vòtre <rs type="person">Nom</rs> à la Tête d’un <rs type="biblio">Ouvrage</rs> qui attaque une opinion qu’ils prétendent ètre
+  <lb/>celle de leu<subst><del/><add>r</add></subst> <rs key="pers_DE-588-118587544" type="person">Maitre</rs>. On a, je crois<supplied>,</supplied> tenu des <note type="editorial">Alle Unterstreichungen vorkommend auf den drei Seiten des Briefes wohl nicht vom Autor sondern vom Empfänger hinzugefügt.</note> Conseils de Guerre, dont le résultat a été qu’on
                <lb/>pouvoit encore se defendre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que la place n’étoit pas si fort pressée qu’elle ne pût encore tenir
                <lb/>bon. Voici ce qu’on a imaginé pour opposer à vos Démonstrations<supplied>.</supplied></p>
 <p><lb/>Au premier Argument (<abbr>pag.</abbr>21, 22, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>) <choice><orig>On</orig><reg>on</reg></choice> repond que le nombre des ressorts
@@ -209,15 +222,15 @@
 <p><lb/>J’avoue, Monsieur, que la difficulté m’a paru considerable <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je
                <lb/>suis embarassé à y répondre. Il faut nier que deux <rs type="keyword">forces mortes</rs> ou pressions
                <lb/>ègales agissant pendant des Tems ègaux produisent des <rs type="keyword">forces vives</rs> égales.
-               <lb/>Or jusqu’a present j’avois regardé cela comme un Axiome, ou comme une suite
-               <lb/>de la production de la force par le moien de la pression (<abbr>Art.</abbr> 3, 4, 5 <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> du <abbr>Ch.</abbr> V.)
+               <lb/>Or jusqu’<choice><orig>a</orig><reg>à</reg></choice> present j’avois regardé cela comme un Axiome, ou comme une suite
+               <lb/>de la production de la force par le moien de la pression (<rs type="biblio"><abbr>Art.</abbr> 3, 4, 5 <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> du <abbr>Ch.</abbr> V.</rs>)
                <lb/>Vous m’obligerez de m’en expliquer la raison. Elle revient, je pense à peu près
   <lb/>à la question que je vous faisois dans ma <rs key="B_991170514979505501" type="letter">lettre</rs> précedente, d’<choice><orig>ou</orig><reg>où</reg></choice> vient que c’est
                <lb/>l’Element de la Vitesse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> non celui de la Force qui est proportionel à la pression
                <lb/>multipliée par le tems infiniment petit. Ainsi je pense que la réponse à cette
                <lb/>question sera la Solution de la Difficulté.</p>
-<p><lb/>Je vous exposerai les idées qui me sont venües dans l’Esprit pour la résoudre,
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que j’ai developées à ces <rs type="person">Messieurs</rs>. J’ai dit premiérement que l’on supposoit
+<p><lb/>Je vous exposerai les idées qui me sont venuës dans l’Esprit pour la résoudre,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que j’ai developées à ces <rs type="person">Messieurs</rs>. J’ai dit premièrement que l’on supposoit
                <lb/>gratis que des pressions ègales agissant pendant des tems ègaux produisent des
                <lb/>forces ègales: que l’on peut aussi bien dire que c’est en agissant par des espaces
                <lb/>ègaux que deux pressions ègales produisent des forces ègales. Que cela même
@@ -225,31 +238,31 @@
                <lb/>d’<formula>A</formula> en <formula>C</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de <formula>B</formula> en <formula>C</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> bandant ainsi les ressorts. Qu’alors il étoit manifeste que <formula>B</formula>
 <lb/>qui en bandoit 18 avoit 3 fois plus de force que <formula>A</formula> qui n’en bandoit que 6.</p>
 <pb facs="1073644" n="3"/>
-<p><lb/>Ma <abbr>2.<hi rend="sup">e</hi></abbr> reponse a été celleci: qu’une pression agit selon qu’on lui resiste. Que
+<p><lb/>Ma <abbr>2.<hi rend="sup">e</hi></abbr> reponse a été celle ci: qu’une pression agit selon qu’on lui resiste. Que
                <lb/>si la resistance est plus grande, la pression s’aplique plus entièrement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moins
                <lb/>entièrement si la rèsistance est plus pétite: Qu’ainsi pour produire des pressions
                <lb/>ègales dans deux Corps d’ont l’un est en mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre en repos, ou dont
                <lb/>l’un a une grande vitesse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre une petite, il faut des forces inégales, plus
                <lb/>grande dans le premier cas, plus petite dans le second: Que, par exemple<supplied>,</supplied>
-               <lb/>pour presser également un Corps qui a un degré de mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un Corps
+               <lb/>pour presser ègalement un Corps qui a un degré de mouvement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un Corps
                <lb/>en repos, il faut que le ressort qui presse le premier soit transporté lui même
                <lb/>avec un degré de vitesse, ce qui éxige la force d’un autre ressort; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ainsi que
                <lb/>plus un Corps a de vitesse plus il faut de force pour augmenter sa vitesse d’une
                <lb/>quantité donnée. Et apliquant ceci à nôtre cas, j’ai fait remarquer que le Corps
                <lb/><formula>A</formula> se mouvant moins vite que <formula>B</formula>, requeroit moins de ressorts, ou moins de force
                <lb/>pour souffrir une pression ègale.</p>
-<p><lb/>Mais ces <rs type="person">Messieurs</rs> n’ont pas été satisfaits entiérement de ma reponse, par ce
+<p><lb/>Mais ces <rs type="person">Messieurs</rs> n’ont pas été satisfaits entiérement de ma <rs type="biblio">reponse</rs>, parce
                <lb/><del>que</del>, ont-ils dit, que la force que les ressorts suivants emploient à transporter
                <lb/>les précedens n’est pas transferée au Corps <formula>A</formula> ou <formula>B</formula>, puisqu’elle se depense à transporter
                <lb/>les autres ressorts.</p>
-<p><lb/>Touchant les Arguments des <abbr>Chap.</abbr> 8<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 9, je n’ai pas vû qu’on m’ait repliqué
+<p><lb/>Touchant les Arguments des <rs type="biblio"><abbr>Chap.</abbr> 8<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 9</rs>, je n’ai pas vû qu’on m’ait repliqué
   <lb/>grand chose. J’ai fait sentir que les objections de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-1325550264" type="person">Eames</rs> n’étoient que des petitions
                <lb/>de principe, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’on en est assez convenu. On a seulement dit qu’il y avoit à la vérité
                <lb/>quelque chose de difficile <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’embarassant dans la décomposition de la Direction.</p>
 <p><lb/>Enfin, Monsieur, on m’a apris qu’on alloit vous répondre pleinement. J’ignore
-               <lb/>encore qui sera l’<rs type="person">Autheur</rs> de cette réponse. Mais quand elle paroitra, je vous en
+               <lb/>encore qui sera l’<rs type="person">Autheur</rs> de cette <rs type="biblio">réponse</rs>. Mais quand elle paroitra, je vous en
                <lb/>donnerai avis <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même <rs type="biblio">copie</rs>, si je crois qu’elle en vaille la peine. Ce sera alors le
-               <lb/>tems de refuter aussi pleinement cette Replique, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de faire inserer vôtre refutation
+               <lb/>tems de refuter aussi pleinement cette <rs type="biblio">Replique</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de faire inserer vôtre <rs type="biblio">refutation</rs>
                <lb/>dans les <rs type="biblio"><abbr>Transact.</abbr><abbr>Philosoph.</abbr></rs> Je ne crois pas qu’on puisse vous le refuser, puisque
                <lb/>vous aurez été ataqué en personne.</p>
 <closer><salute>

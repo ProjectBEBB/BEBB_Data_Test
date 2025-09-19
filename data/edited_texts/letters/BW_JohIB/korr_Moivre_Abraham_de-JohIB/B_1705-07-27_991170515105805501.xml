@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105805501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105805501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -194,8 +194,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-05-19" who="SG SW">Kollationieren abgeschlossen</change>
+      <change when="2025-05-19" who="SG SW">Kollationieren weitergeführt</change>
+      <change when="2025-05-16" who="SG SW">Kollationieren weitergeführt</change>
+      <change when="2025-05-15" who="SG SW">Kollationieren begonnen</change>
       <change when="2022-12-08" who="RG">Erste Personen und Orte ausgezeichnet, aber nicht fertig</change>
       <change when="2022-10-19" who="RG">Zeilabstände eingefügt, Seite angepasst, und kleinere Anpassungen</change>
       <change when="2022-10-13" who="RG">Header angepasst</change>
@@ -209,365 +213,368 @@
 <body>
 <div type="letter">
 <pb facs="1080154" n="1"/>
-<opener><dateline>A <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1705-07-27">27 Juillet 1705</date></dateline>
+<opener><dateline>A <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1705-07-27">27 Juillet 1705.</date></dateline>
 <lb/><salute>Monsieur</salute></opener>
 <p><lb/>C’est avec un plaisir extreme que <choice><orig>J</orig><reg>j</reg></choice>’ay recu votre <rs key="B_991170515105905501" type="letter">derniere lettre</rs>, je vous en remercie
-               <lb/>de tout mon coeur, aussy bien que des papiers qui l’accompagnent, je voudrois qu’il fut
-               <lb/>en mon pouvoir de vous en marquer suffisamment ma reconnaissance, mais mon malheur
+               <lb/>de tout mon coeur, aussy bien que des <rs type="biblio">papiers</rs> qui l’accompagnent, je voudrois qu’il fut
+               <lb/>en mon pouvoir de vous en marquer suffisamment ma reconnoissance, mais mon malheur
                <lb/>a voulu que je n’aye pu reussir dans la seule chose en quoy je pouvois vous faire quelque
-               <lb/>plaisir, je veux dire<supplied>,</supplied> Monsieur<supplied>,</supplied> à vous faire tenir le Phosphore de <rs key="pers_DE-588-11872536X" type="person">Kunkelius</rs>, j<supplied>’</supplied>avois
-               <lb/>pris pour cela des precautions qui me paroisoient suffisantes, je l’avois remis entre
-               <lb/>les mains de Monsieur <rs type="person">Vaillant</rs> un libraire d’icy, c’est un homme qui a <choice><orig>eté</orig><reg>été</reg></choice> quelquefois
-               <lb/>chargé de commissions pour Monsieur <rs type="person">de Magneville</rs>, il l’avit donné à son
-               <lb/>beaufrere qui partoit pour la <rs key="place_VER-hollan" type="place">Hollande</rs> &amp; l’avoit adressé chez M<hi rend="sup">r</hi> <rs type="person">Roger</rs>
-<lb/>libraire à <rs key="place_GEO-2759794" type="place">Amsterdam</rs>, pour Monsieur <rs type="person">de Magneville</rs>, Je prendray d’autres
-               <lb/>mesures le plustost qu’il me sera possible, &amp; ne desespere pas que vous n’en puissiez
-               <lb/>recevoir d’autre avant que vous quittiez <rs key="place_GEO-2755251" type="place">Groningue</rs>. Je trouve Monsieur vos remarques
-               <lb/>sur mon petit <rs type="biblio">Traité</rs> extremement justes. Si j’eusse pris garde que dans la
-               <lb/>Courbe dont l’ordonnée est <formula>x^{m}lx</formula>, l’aire doit commencer par etre negative
+               <lb/>plaisir, je veux dire<supplied>,</supplied> Monsieur<supplied>,</supplied> à vous faire tenir le Phosphore de <rs key="pers_DE-588-11872536X" type="person">Kunkelius</rs>, j’avois
+               <lb/>pris pour cela des precautions qui me paroissoient suffisantes, je l’avois remis entre
+               <lb/>les mains de Monsieur <rs type="person">Vaillant</rs><supplied>,</supplied> un libraire d’icy, c’est un homme qui a <choice><orig>eté</orig><reg>été</reg></choice> quelquefois
+               <lb/>chargé de commissions pour Monsieur <rs type="person">de Magneville</rs>, il l’avoit donné à son
+               <lb/><rs type="person">beaufrere</rs> qui partoit pour la <rs key="place_VER-hollan" type="place">Hollande</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’avoit adressé chez M<supplied>.</supplied><hi rend="sup">r</hi> <rs type="person">Roger</rs>
+<lb/>libraire à <rs key="place_GEO-2759794" type="place">Amsterdam</rs>, pour Monsieur <rs type="person">de Magneville</rs>, je prendray d’autres
+               <lb/>mesures le plustost qu’il me sera possible, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne desespere pas que vous n’en puissiez
+               <lb/>recevoir d’autre avant que vous quittiez <rs key="place_GEO-2755251" type="place">Groningue</rs><choice><orig>,</orig><reg>;</reg></choice> je trouve<supplied>,</supplied> Monsieur<supplied>,</supplied> vos remarques
+  <lb/>sur mon petit <rs type="biblio">Traité</rs> extremement justes<choice><orig>,</orig><reg>;</reg></choice> si j’eusse pris garde que dans la
+               <lb/>Courbe dont l’Ordonnée est <formula>x^{m}lx</formula>, l’aire doit commencer par etre negative
                <lb/>je me serois epargné <add>dans ce cas</add> une critique mal fondée, mais il est arrivé une chose assez
-               <lb/>plaisante c’est que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> en voulant deffendre l’expression de cette aire a omis
-               <lb/>la seule bonne raison par laquelle elle pouvois etre deffendue &amp; a commis des
-               <lb/>paralogismes considerables, ce qui me conne une prise tres reelle sur luy. Je ne
-               <lb/>scay pas Monsieur comment <abbr>Mr</abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> s’y prendroit pour resoudre l’Equation
-               <lb/><formula>az+bzz+cz^{3}</formula> &amp;c. <formula>=g+hy+iyy</formula> &amp;c. dont une des suites commence par
+               <lb/>plaisante c’est que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> en voulant deffendre l’expression de cette Aire a omis
+               <lb/>la seule bonne raison par laquelle elle pouroit etre deffendue, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> a commis des
+               <lb/>paralogismes considerables, ce qui me donne une prise tres reelle sur luy. Je ne
+               <lb/><choice><orig>scay</orig><reg>sçay</reg></choice> pas<supplied>,</supplied> Monsieur<supplied>,</supplied> comment <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> s’y prendroit pour resoudre l’Equation
+  <lb/><formula>az+bzz+cz^{3}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>=g+hy+iyy</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> dont une des suites commence par
                <lb/>une quantité pure, pour moy je n’y serois nullement embarassé, je pensay à cette
-               <lb/>difficulté aussytost que j’eus trouvé le Theoreme qui regarde cette Equation, &amp;
-               <lb/>voicy ce qui me vint alors dans l’esprit, je consideray la seconde suite <formula>g+hy+iyy</formula>
-<lb/>sous cette forme <formula>\frac{q}{y}y+\frac{h}{y}yy+\frac{i}{y}y^{3}</formula> &amp;c. &amp; à la place de <formula>g</formula> ecrivant
-               <lb/><formula>\frac{g}{h}</formula>, dans le Theoreme, à la plade de <formula>h</formula> ecrivant <formula>\frac{h}{y}</formula>, &amp; <formula>\frac{i}{y}</formula> à la place de <formula>i</formula> &amp;c.
-               <lb/><choice><orig>j</orig><reg>J</reg></choice>e trouvay <formula>z</formula> exprimé par le moyen de <formula>y</formula> &amp; des quantités connues <formula>a</formula>, <formula>b</formula>, <formula>c</formula> &amp;c.
-               <lb/><formula>g</formula>, <formula>h</formula>, <formula>i</formula> &amp;c. de méme ayant <add>l’Equation</add> <formula>a+bz+czz</formula> &amp;c. <formula>=g+hy+iyy</formula> &amp;c. dont chaque
+               <lb/>difficulté aussytost que J’eus trouvé le Theoreme qui regarde cette Equation, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>voicy ce qui me vint alors dans l’esprit, je consideray la seconde suite <formula>g+hy+iyy</formula><add><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></add>
+  <lb/>sous cette forme <formula>\frac{g}{y}y+\frac{h}{y}yy+\frac{i}{y}y^{3}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à la place de <formula>g</formula> ecrivant
+  <lb/><formula>\frac{g}{y}</formula>, dans le Theoreme, à la place de <formula>h</formula> ecrivant <formula>\frac{h}{y}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\frac{i}{y}</formula> à la place de <formula>i</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
+  <lb/><choice><orig>je</orig><reg>Je</reg></choice> trouvay <formula>z</formula> exprimé par le moyen de <formula>y</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des <choice><orig>quantites</orig><reg>quantités</reg></choice> connues <formula>a</formula>, <formula>b</formula>, <formula>c</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+  <lb/><formula>g</formula>, <formula>h</formula>, <formula>i</formula>,<space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> de méme ayant <add>l’Equation</add> <formula>a+bz+czz</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>=g+hy+iyy</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> dont chaque
                <lb/>membre commence par une quantité pure, je transpose <formula>a</formula> de l’autre coté de
-               <lb/>l’Equation &amp; j’ay <formula>bz+czz</formula> &amp;c <formula>=g+a+hy+iyy</formula> &amp;c. soit fait <formula>g-a=</formula>
-<lb/><formula>p</formula>, &amp; j’ay <formula>bz+czz</formula> &amp;c. <formula>=p+hy+iyy</formula> &amp;c <formula>=\frac{p}{y}y+\frac{h}{y}yy+\frac{i}{y}y^{3}</formula> &amp;c
-               <lb/>ce qui revient au cas precedent. Quoique j’aye une deference infinie pour vos
-               <lb/>sentiment je ne scaurois<supplied>,</supplied> Monsieur<supplied>,</supplied> etre convaincu que l’Equation que j’ay trouvée
-               <lb/>pour la Courbe dont la Tangente est à une portion de l’Abcisse interceptée depuis
+  <lb/>l’Equation <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ay <formula>bz+czz</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>=g-a+hy+iyy</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> soit fait <formula>g-a=</formula>
+  <lb/><formula>p</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ay <formula>bz+czz</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>=p+hy+iyy</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>=\frac{p}{y}y+\frac{h}{y}yy+\frac{i}{y}y^{3}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
+               <lb/>ce qui revient au cas precedent. Quoique J’aye une deference infinie pour vos
+               <lb/>sentiments<supplied>,</supplied> Je ne <choice><orig>scaurois</orig><reg>sçaurois</reg></choice><supplied>,</supplied> Monsieur<supplied>,</supplied> etre convaincu que l’Equation que J’ay trouvée
+               <lb/>pour la Courbe dont la Tangente est à une portion de l’Abcisse interceptée depuis 
             <pb facs="1080155" n="2"/>
-<lb/>l’origine de la Courbe jusqu’à la Tangente, dans une raison donnée, ne sois
-               <lb/>pas veritable, J’avoue que j’ay moiméme donné lieu par ma negligeance au jugement
-               <lb/>que vous en aviez formé, mais il est facile de reparer la faute en mettant <formula>v</formula> au lieu
-               <lb/>de <formula>z</formula> dans le second endroit ou il est fait mention de <formula>z</formula>. Je vous supplie de vouloir
+<lb/>l’origine de la Courbe <choice><orig>Jusqu</orig><reg>jusqu</reg></choice>’à la Tangente, dans une raison donnée, ne soit
+               <lb/>pas veritable, J’avoue que J’ay moiméme donné lieu par ma negligence au Jugement
+               <lb/>que vous en avez formé, mais il est facile de reparer la faute en mettant <formula>v</formula> au lieu
+               <lb/>de <formula>z</formula> dans le second endroit <choice><orig>ou</orig><reg>où</reg></choice> il est fait mention de <formula>z</formula>; je vous supplie de vouloir
                <lb/>bien reprendre le calcul en gros. Soit <formula>AC</formula> la Courbe, <formula>CD</formula> la Tangente, <formula>AD</formula>
-<lb/>l’Interceptée depuis l’origine de la Courbe jusqu’à la Tangente.
-               <lb/>Soient <formula>AB</formula> &amp; <formula>BC</formula> les coordonnée scavoir <formula>AB=x</formula>. <formula>BC=y</formula>
-<lb/>Soit le raison de <formula>CD</formula> à <formula>AD</formula> comme de <hi rend="u"><formula>m</formula></hi> à <hi rend="u"><formula>l</formula></hi> &amp; parceque
-               <lb/><formula>y,x::y,BD</formula>, je cherche une Expression de <formula>BD</formula> par le
-               <lb/>moyen de <formula>x</formula>, <formula>y</formula> &amp; de données, afin d’avoir une Equation differentielle soit
-               <lb/>donc <formula>BD=z</formula>. Donc <formula>AD=x-z</formula>, &amp; <formula>CD=\sqrt{yy+zz}</formula> donc <formula>\sqrt{yy+zz}</formula>, <formula>x-z</formula>
-<lb/><formula>::m,l</formula>. &amp;c. <formula>\sqrt{yy+zz}=mz-mz</formula>. De cette Equation je tire une valeur de
-               <lb/><formula>z=\frac{\sqrt{mmyy-yy+mmxx}+mmx}{mm-1}</formula>. j’ay donc presentement <formula>y,x::y</formula>
-<lb/><formula>\frac{\sqrt{mmyy-yy+mmxx}+mmx}{mm-1}</formula> &amp; par consequent l’Equation differentielle 
-               <lb/><formula>yx=\frac{y\sqrt{mmyy-yy+mmxx}+mmxy}{mm-1}</formula> presentement je n’ay plus besoin
-               <lb/>de <formula>z</formula>, il ne me servoit qu’a parvenir facilement à une Equation differentielle
-               <lb/>que j’ay trouvée, Si donc il m’arrive pour trouver l’Integrale de cette differentielle
-               <lb/>d’introduire une indeterminée que j’appelle <formula>z</formula>. je ne pretens pas que ce soit le
+<lb/><figure facs="1080155_01.png"/> l’Interceptée depuis l’Origine de la Courbe jusqu’à la Tangente<supplied>,</supplied>
+               <lb/>soient <formula>AB</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>BC</formula> les coordonnées <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> <formula>AB=x</formula>. <formula>BC=y</formula>
+<lb/>soit le raison de <formula>CD</formula> à <formula>AD</formula> comme de <hi rend="u"><formula>m</formula></hi> à <hi rend="u"><formula>1</formula></hi><supplied>,</supplied> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> parceque
+  <lb/><choice><orig><formula>\dot{y},\dot{x}::y,BD</formula></orig><reg><formula>\dot{y}:\dot{x}=y:BD</formula></reg></choice>, je cherche une Expression de <formula>BD</formula> par le
+               <lb/>moyen de <formula>x</formula>, <formula>y</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de données, afin d’avoir une Equation differentielle<supplied>;</supplied> soit
+               <lb/>donc <formula>BD=z</formula><choice><orig>.</orig><reg>,</reg></choice> donc <formula>AD=x-z</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>CD=\sqrt{yy+zz}</formula>, donc <formula>\sqrt{yy+zz}</formula>, <formula>x-z</formula>
+  <lb/><choice><orig><formula>::m,1</formula></orig><reg><formula>=m:1</formula></reg></choice><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\sqrt{yy+zz}=mx-mz</formula>. <choice><orig>de</orig><reg>De</reg></choice> cette Equation je tire une valeur de
+  <lb/><formula>z=\frac{\sqrt{mmyy-yy+mmxx}+mmx}{mm-1}</formula>. <choice><orig>j</orig><reg>J</reg></choice>’ay donc presentement <choice><orig><formula>\dot{y},\dot{x}::y,</formula></orig><reg><formula>\dot{y}:\dot{x}=y:</formula></reg></choice>
+<lb/><formula>\frac{\sqrt{mmyy-yy+mmxx}+mmx}{mm-1}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par consequent l’Equation differentielle
+  <lb/><formula>y\dot{x}=\frac{\dot{y}\sqrt{mmyy-yy+mmxx}+mmx\dot{y}}{mm-1}</formula><choice><orig>.</orig><reg>,</reg></choice> presentement Je n’ay plus besoin
+               <lb/>de <formula>z</formula>, il ne me servoit qu’<choice><orig>a</orig><reg>à</reg></choice> parvenir facilement à une Equation differentielle
+               <lb/>que j’ay trouvée, si donc il m’arrive pour trouver l’Integrale de cette differentielle
+               <lb/>d’introduire une indeterminée que j’appelle <formula>z</formula>, je ne pretens pas que ce soit le
                <lb/>meme <formula>z</formula> dont je m’etois servy auparavant, à la verité il vaudroit beaucoup mieux
-               <lb/>l’eviter, soit donc <formula>\sqrt{mmyy-yy+mmxx}=vy-mx</formula> (ce qui est une
-               <lb/>supposition legitime) &amp; <formula>mmyy-yy+mxx=vvyy-vmvyx+mxx</formula>
-<lb/>de la j’ay <formula>x=\frac{vvy+y-mmy}{2mv}</formula>, je prens la valeur de <formula>x</formula> dans cette
-               <lb/>derniere Equation, &amp; à la place de <formula>x</formula> de <formula>x</formula> substituant leurs valeurs
-  <lb/>l’Equation differentielle se change en celle cy <choice><orig><formula>v^{2}vy-\frac{1}{m-1}v^{3}y+\overline{1-m}vy+</formula></orig><reg><formula>v^{2}vy-\frac{1}{m-1}v^{3}y+(1-m)vy+</formula></reg></choice>
-  <lb/><choice><orig><formula>\overline{mm-1}vy=0</formula></orig><reg><formula>(mm-1)vy=0</formula></reg></choice> dont l’Integrale est <formula>\frac{y}{v^{m-1}}+\frac{m-1^{2}y}{v^{m+1}}=Q</formula>. <choice><orig>v</orig><reg>V</reg></choice>ous
+               <lb/>l’eviter, soit donc <formula>\sqrt{mmyy-yy+mmxx}=vy-mx</formula><note type="editorial">Korrektur durch den Autor in Formel.</note> (ce qui est une
+  <lb/>supposition legitime) <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>mmyy-yy+m\cancel{m}xx=vvyy-vmvyx+m\cancel{m}xx</formula><note type="editorial">Streichung oder Kürzung durch den Autor in Formel.<!-- Mit Fritz kontrollieren, ob es richtig umgesetzt ist. --></note>
+<lb/>de <choice><orig>la</orig><reg>là</reg></choice> j’ay <formula>x=\frac{vvy+y-mmy}{2mv}</formula>, je prens la valeur de <formula>\dot{x}</formula> dans cette
+  <lb/>derniere Equation, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à la place de <formula>x</formula><!-- Mit Fritz besprechen: vor diesem "de" ist vermutlich "la valeur" gemeint. --> de <formula>\dot{x}</formula> substituant leurs valeurs
+  <lb/>l’Equation differentielle se change en celle<supplied>-</supplied>cy <choice><orig><formula>v^{2}\dot{v}y-\frac{1}{m-1}v^{3}\dot{y}+\overline{1-m}v\dot{y}+</formula></orig><reg><formula>v^{2}\dot{v}y-\frac{1}{m-1}v^{3}\dot{y}+(1-m)v\dot{y}+</formula></reg></choice>
+  <lb/><choice><orig><formula>\overline{mm-1}\dot{v}y=0</formula></orig><reg><formula>(mm-1)\dot{v}y=0</formula></reg></choice> dont l’Integrale est <choice><orig><formula>\frac{y}{v^{m-1}}+\frac{\overline{m-1}^{2}y}{v^{m+1}}=Q</formula></orig><reg><formula>\frac{y}{v^{m-1}}+\frac{(m-1)^{2}y}{v^{m+1}}=Q</formula></reg></choice>. <choice><orig>vous</orig><reg>Vous</reg></choice>
   <lb/>pouvez<supplied>,</supplied> Monsieur<supplied>,</supplied> vous reposer absolument sur la bonté du calcul,
-               <lb/>je peux presentement à la place de <formula>v</formula> dans cette Equation mettre la valeur
-               <lb/><formula>\frac{\sqrt{mmyy-yy+mmxx}+mx}{y}</formula> &amp; dans un cas particulier <choice><orig>ou</orig><reg>où</reg></choice> <formula>m</formula> sera interpreté
+               <lb/>je peux presentement à la place de <formula>v</formula> dans cette Equation mettre sa valeur
+               <lb/><formula>\frac{\sqrt{mmyy-yy+mmxx}+mx}{y}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans un cas particulier <choice><orig>ou</orig><reg>où</reg></choice> <hi rend="u"><formula>m</formula></hi> sera interpreté
                <lb/>comme on voudra soit par entiers ou par fractions, pourveu qu’elles ne soient
-               <lb/>point Irrationnelles, je pourray toujours avoir une Equation delivrée d’Irrationelles
-            <pb facs="1080156" n="3"/>
-<lb/>laquelle exprimera la nature de la Courbe cherchée par le moyen de <formula>x</formula>, <formula>y</formula> &amp;
-  <lb/>de quantitéz données. Il reste<supplied>,</supplied> Monsieur<supplied>,</supplied> contre mon Equation l’objection que
-               <lb/>vous avez faite &amp; qui est tres forte, c’est que si mon Equation etoit bonne
-               <lb/>elle devroit devenir l’Equation au Cercle quand <formula>m</formula> est interpretée par
-               <lb/>l’unité, à cela je repons que quand m est interpreté par l’unité, mon Equation
-               <lb/>comme vous l’observez devient un lieu à la ligne droite parallele à
-  <lb/>l’axe, or<supplied>,</supplied> Monsieur<supplied>,</supplied> cette ligne droite parallele à l’axe resout le Probleme
-               <lb/>dans ce cas cy
-               <!--[hier fehlt eine Figur]--></p>
-<p><lb/>car <formula>CD</formula> etant une ligne droite, la Tangente au point <formula>C</formula> se confond
-               <lb/>avec la ligne droite, &amp; peut etre supposée rencontrer l’axe à une
+               <lb/>point Irrationnelles, Je pourray toujours avoir une Equation delivrée d’Irrationelles
+            <pb facs="1080156" n="3"/> 
+<lb/>laquelle exprimera la nature de la Courbe cherchée par le moyen de <formula>x</formula>, <formula>y</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <lb/>de quantitez données. Il reste<supplied>,</supplied> Monsieur<supplied>,</supplied> contre mon Equation l’Objection que
+               <lb/>vous avez faite <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui est tres forte, c’est que si mon Equation etoit bonne
+               <lb/>elle devroit devenir l’Equation au Cercle quand <hi rend="u"><formula>m</formula></hi> est interpretée par
+               <lb/>l’unité, à cela je repons que quand <formula>m</formula> est interpreté par l’unité, mon Equation
+               <lb/>comme vous l’Observez devient un lieu à la ligne droite parallelle à
+  <lb/>l’Axe, or<supplied>,</supplied> Monsieur<supplied>,</supplied> cette ligne droite parallele à l’Axe resout le Probleme
+               <lb/>dans ce cas cy<supplied>:</supplied>
+  <lb/><figure facs="1080156_01.png"/>
+  <lb/>car <formula>CD</formula> etant une ligne droite, la Tangente au point <formula>C</formula> se confond
+               <lb/>avec la ligne droite, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> peut etre supposée rencontrer l’Axe à une
                <lb/>distance infinie au point <formula>D</formula>, donc <formula>CD</formula> est à <formula>AD</formula> dans une raison d’Egalité
-  <lb/>ce qu’il fallois trouver, mais<supplied>,</supplied> Monsieur<supplied>,</supplied> la méme difficulté que vous formez
-               <lb/>contre mon Equation se peut faire contre de simples expressions de quantitéz
-               <lb/>algebraiques qui ne sont point derivées du calcul differentiel, par Exemple</p>
-<p><lb/>Soit <formula>AE</formula> une ligne droite donnée de position, &amp;c. <formula>C</formula> un point hors de cette
-               <lb/>ligne aussi donné de position, et qu’il faille du point <formula>C</formula> mener <formula>CD</formula> qui soit
-               <lb/>à <formula>AD</formula> dans une raison donnée telle que de <formula>m</formula> à <formula>l</formula>, ayant tiré <formula>CB</formula>
-<lb/>perpendiculaire à <formula>AE</formula>, &amp; nommé <formula>AB</formula>, <formula>a</formula>; <formula>CB</formula>, <formula>b</formula>; L’inconnue <formula>BDz</formula>,
-               <lb/>on trouvera par le calcul <formula>z=\frac{\sqrt{mmbb-bb+mmaa+mma}}{mm-1}</formula> cette
-               <lb/>expression se trouve bonne pour toute autre cas que pour la raison de <formula>l</formula> à <formula>l</formula>
-<lb/>car <formula>z</formula> deviendroit icy <formula>\frac{a+a}{1-1}</formula> &amp; elle devroit etre <formula>z=\frac{aa-bb}{2a}</formula>, cependant
-               <lb/>cette Expression resout en quelque sorte le Probleme, <choice><sic>m</sic><corr>c</corr></choice>ar le point <formula>D</formula> se trouvant à
+  <lb/>ce qu’il falloit trouver, mais<supplied>,</supplied> Monsieur<supplied>,</supplied> la méme difficulté que vous formez
+               <lb/>contre mon Equation se peut faire contre de simples expressions de quantitez
+               <lb/>Algebraiques qui ne sont point derivées du calcul differentiel, par Exemple</p>
+  <lb/><figure facs="1080156_02.png"/>
+  <p><lb/>soit <formula>AE</formula> une ligne droite donnée de position, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>C</formula> un point hors de cette
+               <lb/>ligne aussy donné de position, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il faille du point <formula>C</formula> mener <formula>CD</formula> qui soit
+               <lb/>à <formula>AD</formula> dans une raison donnée telle que de <hi rend="u"><formula>m</formula></hi> à <formula>1</formula>, ayant tiré <formula>CB</formula>
+<lb/>perpendiculaire à <formula>AE</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nommé <formula>AB</formula>, <formula>a</formula>; <formula>CB</formula>, <formula>b</formula>; l’inconnue <formula>BDz</formula>,
+    <lb/>on trouvera par le calcul <formula>z=\frac{\sqrt{mmbb-bb+mmaa}+mma}{mm-1}</formula>, cette
+               <lb/>expression se trouve bonne pour toute autre cas que pour la raison de <formula>1</formula> à <formula>1</formula>
+<lb/>car <formula>z</formula> deviendrait icy <formula>\frac{a+a}{1-1}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> elle devroit etre <formula>z=\frac{aa-bb}{2a}</formula>, cependant
+               <lb/>cette Expression resout en quelque sorte le Probleme, <del/><add>c</add>ar le point <formula>D</formula> se trouvant à
                <lb/>une distance infinie, <formula>CD</formula> est à <formula>AD</formula> dans une raison d’egalité, Vous me ferez un plaisir tres
-  <lb/>sensible<supplied>,</supplied> Monsieur<supplied>,</supplied> de vouloir bien examiner tout cecy, <hi rend="u">je vous remercie tres humblement</hi>
-<lb/><hi rend="u">de la solution que vous m’avez envoyée de ce probleme, je la trouve extremement</hi>
-<lb/><hi rend="u">belle, &amp; digne d’un Maitre consommé dans l’Analyse des infinis. J’ay</hi>
+  <lb/>sensible<supplied>,</supplied> Monsieur<supplied>,</supplied> de vouloir bien examiner tout cecy,<note type="editorial">Die folgende Passage ist nachträglich mit Bleistift unterstrichen.</note> je vous remercie tres humblement
+<lb/>de la solution que vous m’avez envoyée de ce Probleme, je la trouve extremement
+<lb/>belle, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> digne d’un Maitre consommé dans l’Analyse des infinis. J’ay
 <lb/>trouvé la resolution de votre Probleme touchant la Transformation des Courbes
-               <lb/>&amp; je croy l’avoir resolu d’une maniere simple &amp; universelle, les signes
-               <lb/>radicaux ne me font aucune peine, mais ils rendent le calcul plus long. Je vous
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je croy l’avoir resolu d’une maniere simple <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> universelle, les signes
+               <lb/>radicaux ne me font aucune peine, mais ils rendent le calcul plus long<choice><orig>,</orig><reg>.</reg></choice> Je vous 
             <pb facs="1080157" n="4"/>
-  <lb/>supplie<supplied>,</supplied> Monsieur<supplied>,</supplied> d’en juger</p>
-<p><lb/>Soit <formula>AC</formula> une courbe quelconque Algebraique ou Transcendante dont les
-               <lb/>coordonnées sont <formula>x</formula> &amp; <formula>y</formula>, &amp; qu’il faille trouver une autre Courbe <formula>DF</formula> de meme
+  <lb/>supplie<supplied>,</supplied> Monsieur<supplied>,</supplied> d’en <choice><orig>Juger</orig><reg>juger</reg></choice><supplied>;</supplied></p>
+  <figure facs="1080157_01.png"/><note hand="unknown">La solution qui suit est un paralogisme</note>
+<p><lb/>soit <del/><formula>AC</formula> une Courbe quelconque Algebraique ou Transcendante dont les
+               <lb/>coordonnées <del/><add>sont</add> <formula>x</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>y</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il faille trouver une autre Courbe <formula>DF</formula> de méme
                <lb/>longeur que la precedente, pour cela il faut que la difference de <formula>DF</formula> soit egale
-               <lb/>à la difference de <formula>AC</formula> qui est <formula>\sqrt{\dot{x}\dot{x}+\dot{y}\dot{y}}</formula> soit donc l’abcisse <formula>DE</formula> de la 2.<hi rend="sup">e</hi>
-<lb/>Courbe <formula>=x+w</formula>, <del/>
-<lb/><del/> &amp; 
-               <lb/>son ordonnée <formula>cw-y</formula>; donc <formula>\dot{D}E=\dot{x}+\dot{w}</formula> &amp; <formula>\dot{F}E=c\dot{w}-\dot{y}</formula>, donc <del><formula>\dot{x}\dot{x}+\dot{y}\dot{y}</formula></del>
-<lb/><formula>\dot{x}\dot{x}=\dot{y}\dot{y}=\dot{x}\dot{x}+2\dot{w}\dot{x}+\dot{w}\dot{w}+cc\dot{w}\dot{w}-2c\dot{w}\dot{y}+\dot{y}\dot{y}</formula> &amp; <formula>2\dot{x}+\dot{w}+cc\dot{w}-2c\dot{y}=0</formula>
-<lb/>donc <formula>2x+w+ccw-wcy=0</formula> ou <formula>2x+w+ccw-2cy=Q</formula>, on aura
-               <lb/>donc <formula>w=\frac{Q+2cy-2x}{cc+1}</formula> &amp; par consequent <formula>DE=\frac{ccx-x+Q+2cy}{cc+1}</formula>
-<lb/>&amp; <formula>EF=\frac{cQ+ccy-y-2cx}{cc+1}</formula>. Soit pris pour <formula>C</formula> un nombre quelconque
-               <lb/>&amp; que <formula>Q</formula> soit une ligne constante quelconque, &amp; la longeur de la
+               <lb/>à la difference de <formula>AC</formula> qui est <formula>\sqrt{\dot{x}\dot{x}+\dot{y}\dot{y}}</formula> soit donc l’Abcisse <formula>DE</formula> de la 2<hi rend="sup">e</hi>
+<lb/>Courbe <formula>=x+w</formula>,<del/>
+<lb/><del/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>son Ordonnée <formula>cw-y</formula>; donc <formula>D\dot{E}=\dot{x}+\dot{w}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\dot{E}F=c\dot{w}-\dot{y}</formula>, donc <del/><formula>\cancel{\dot{x}\dot{x}}+\cancel{\dot{y}\dot{y}}</formula><note type="editorial">In der Formel finden sich Streichungen, die wie Kürzungen aussiehen und zur Formel gehören.<!-- Mit Fritz kontrollieren. --></note>
+  <lb/><formula>=\cancel{\dot{x}\dot{x}}+2\dot{w}\dot{x}+\dot{w}\dot{w}+cc\dot{w}\dot{w}-2c\dot{w}\dot{y}+\cancel{\dot{y}\dot{y}}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>2\dot{x}+\dot{w}+cc\dot{w}-2c\dot{y}=0</formula>
+<lb/>donc <formula>2x+w+ccw-2cy=0</formula> ou <formula>2x+w+ccw-2cy=Q</formula>, on aura
+               <lb/>donc <formula>w=\frac{Q+2cy-2x}{cc+1}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> parconsequent <formula>DE=\frac{ccx-x+Q+2cy}{cc+1}</formula>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>EF=\frac{cQ+ccy-y-2cx}{cc+1}</formula>. Soit pris pour <formula>c</formula> un nombre quelconque
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que <formula>Q</formula> soit une ligne constante quelconque, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la longeur de la
                <lb/>courbe dont les coordonnées sont telles que nous les avons determinées sera
-               <lb/>egale à la longeur de la Courbe <formula>AC</formula>. &amp; si <formula>AC</formula> est une courbe Algebraique
-               <lb/><formula>DF</formula> sera aussy une courbe Algebraique dont il sera facile de <del>de</del>trouver
-               <lb/>l’Equation. Soit par Exemple <formula>AC</formula> une parabole dont l’Equation est <formula>ax=yy</formula>
-<lb/>ou <formula>y=\sqrt{ax}</formula> dans l’<choice><orig>E</orig><reg>e</reg></choice>xpression de <formula>DE</formula> <add>&amp; de <formula>EF</formula></add> je fais <formula>c=2</formula>. <formula>Q</formula> (pour abreger) <formula>=0</formula><supplied>.</supplied>
-<lb/><choice><orig>j</orig><reg>J</reg></choice>’auray donc <formula>DE=\frac{3x+4y}{5}</formula> et <formula>EF=\frac{3y-4x}{5}</formula> ou <formula>DE=\frac{3x+4\sqrt{ax}}{5}</formula>
-<lb/>&amp; <formula>EF=\frac{2\sqrt{ax}-4x}{5}</formula> soit presentement <formula>\frac{3x+4\sqrt{ax}}{5}=z</formula>, &amp;
-               <lb/><formula>\frac{3\sqrt{ax}-4x}{5}=t</formula>, &amp; tirant de chaque Equation une valeur de <formula>\dot{x}</formula>, &amp; compar<pc type="hyphenation">-</pc><lb break="no"/>ant ensemble ces deux valeurs on aura une Equation entre <formula>z</formula> &amp; <formula>v</formula>, par la
-               <lb/>meme methode quand j’aurois l’Equation que vous proposez à M<hi rend="sup">r</hi> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>
-<lb/>scavoir <formula>\sqrt{aa+xy+yy}-\sqrt[3]{a^{3}-xxy-xyy}-\sqrt[4]{a^{4}-x^{3}y-y^{4}}=0</formula> je
+               <lb/>egale à la longeur de la Courbe <formula>AC</formula><choice><orig>.</orig><reg>,</reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si <formula>AC</formula> est une courbe Algebraique<supplied>,</supplied>
+               <lb/><formula>DF</formula> sera aussy une courbe Algebraique dont il sera facile de <del/><add>tro</add>uver
+               <lb/>l’Equation<choice><orig>,</orig><reg>;</reg></choice> soit par Exemple <formula>AC</formula> une parabole dont l’Equation est <formula>ax=yy</formula>
+<lb/>ou <formula>y=\sqrt{ax}</formula>, dans l’Expression de <formula>DE</formula> <add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de <formula>EF</formula></add> je fais <formula>c=2</formula>. <formula>Q</formula> (pour abreger) <formula>=0</formula><supplied>.</supplied>
+<lb/><choice><orig>j</orig><reg>J</reg></choice>’auray donc <formula>DE=\frac{3x+4y}{5}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>EF=\frac{3y-4x}{5}</formula> ou <formula>DE=\frac{3x+4\sqrt{ax}}{5}</formula>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>EF=\frac{3\sqrt{ax}-4x}{5}</formula> soit presentement <formula>\frac{3x+4\sqrt{ax}}{5}=z</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/><formula>\frac{3\sqrt{ax}-4x}{5}=t</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tirant de chaque Equation une valeur de <formula>x</formula><!-- Im Manuskript steht über dem x ein Punkt, es sieht aber eher nach einem Feheler im Papier aus, Kontrollieren! Laut chatgpt kein Newtonscher Punkt. -->, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> compar<pc type="hyphenation">-</pc><lb break="no"/>ant ensemble ces deux valeurs on aura une Equation entre <formula>z</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>v</formula>; par la
+               <lb/>meme methode quand j’aurois l’Equation que vous proposez <choice><orig>a</orig><reg>à</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>
+<lb/><choice><orig>scavoir</orig><reg>sçavoir</reg></choice> <formula>\sqrt{aa+xy+yy}-\sqrt[3]{a^{3}-xxy-xyy}-\sqrt[4]{a^{4}-x^{3}y-y^{4}}=0</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> je
                <lb/>pourrois trouver l’Equation d’une Courbe dont la longeur seroit egale à celle de la
-               <lb/>Courbe qui est representée par votre Equation, &amp; méme je pourois la delivrer
-  <lb/>des quantitez irrationelles, Vous m’obligerez beaucoup<supplied>,</supplied> Monsieur<supplied>,</supplied> de vouloir bien
-               <lb/>me communiquer ce que vous avez fait sur cette matiere cy, quelque bonne que
+               <lb/>Courbe qui est representée par votre Equation, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> méme je pourois la delivrer
+  <lb/>des quantitez irrationelles, vous m’obligerez beaucoup<supplied>,</supplied> Monsieur<supplied>,</supplied> de vouloir bien
+               <lb/>me communiquer ce que vous avez fait sur cette matierre<supplied>-</supplied>cy, quelque bonne que
                <lb/>me puisse paroitre une Methode que j’ay trouvée, je suis tres persuadé ou que
-               <lb/>vous en avez une meilleure, ou que le hazard m’a beaucoup favorisé<del>,</del><add>.</add> Je ne doutois
-  <lb/>nullement<supplied>,</supplied> Monsieur<supplied>,</supplied> qu’a la simple veue de mon Equation pour la Courbe
+               <lb/>vous en avez une meilleure, ou que le hazard m’<choice><orig>à</orig><reg>a</reg></choice> beaucoup favorisé<del/><add>.</add> Je ne doutois
+  <lb/>nullement<supplied>,</supplied> Monsieur<supplied>,</supplied> qu’<choice><orig>a</orig><reg>à</reg></choice> la simple veue de mon Equation pour la Courbe
             <pb facs="1080158" n="5"/>
-<lb/>dans laquelle il se decrit des aires egales autour d’un foyer &amp; des angles egaux
-               <lb/>autour de l’autre, vous n’eussiez aisement decouvert un moyen d’y parvenir. Il faut que je
-               <lb/>vous avoue que j’y avois employé un petit detour, m’etant servy du Calcul. Cependant je
+<lb/>dans laquelle il se decrit des Aires egales autour d’un foyer <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des angles egaux
+               <lb/>autour de l’autre, vous n’eussiez aisement decouvert un moyen d’y parvenir<choice><orig>,</orig><reg>.</reg></choice> Il faut que Je
+               <lb/>vous avoue que J’y avois employé un petit detour, m’etant servy du Calcul, cependant je
                <lb/>croy qu’il a fallu quelque sorte d’addresse pour reduire le calcul à une expression aussy
-  <lb/>simple que celle, que <choice><orig>J</orig><reg>j</reg></choice>’ay trouvée. Je vous ay deja dit<supplied>,</supplied> Monsieur<supplied>,</supplied> que j’avois fait voir mon calcul
-               <lb/>à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> &amp; l’expression que j’en avois tirée, &amp; qu’il avoit temogné en etre
-               <lb/>extremement satisfait. Quinze jour apres le luy avoir montré, il dit à un de mes Amis
-               <lb/>qu’il souhaittoit de me voir &amp; il le chargea da me dire qu’il avoit travaillé à mon
-               <lb/>Probleme depuis qu’il ne m’avoit veu, &amp; qu’il etoit arrivé <choice><orig>a</orig><reg>à</reg></choice> mon expression sans calcul.
-               <lb/>La dessus je repris mon Probleme tout de nouveau, &amp; revint à ma solution precisement
+  <lb/>simple que celle, que J’ay trouvée<choice><orig>,</orig><reg>.</reg></choice> Je vous ay deja dit<supplied>,</supplied> Monsieur<supplied>,</supplied> que J’avois fait voir mon calcul
+               <lb/>à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’Expression que j’en avois tirée, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il avoit temogné en etre
+  <lb/>extremement satisfait<choice><orig>,</orig><reg>;</reg></choice> quinze jours apres le luy avoir montré, il dit à un de mes Amis
+               <lb/>qu’il souhaittoit de me voir <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il le chargea da me dire qu’il avoit travaillé à mon
+  <lb/>Probleme depuis qu’il ne m’avoit veu, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il etoit arrivé <choice><orig>a</orig><reg>à</reg></choice> mon expression sans calcul<choice><orig>,</orig><reg>;</reg></choice>
+               <lb/><choice><orig>la</orig><reg>là</reg></choice> dessus je repris mon Probleme tout de nouveau, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> revins à ma <rs type="biblio">solution</rs> precisement
                <lb/>par la méme voye que vous avez tenue qui est aussy celle qu’a suivie Monsieur
-  <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>: la difference<supplied>,</supplied> Monsieur<supplied>,</supplied> qu’il y a <add>en cecy</add> entre Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> &amp; vous d’un coté,
-               <lb/>&amp; moy de l’autre, c’est que je suis tres assuré que si vous vous fussiez proposé ce
-               <lb/><choice><orig>P</orig><reg>p</reg></choice>robleme vous ou<supplied>,</supplied> Monsieur<supplied>,</supplied> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, vous l’auriez resolu tout d’un coup de la maniere
+  <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs>: la difference<supplied>,</supplied> Monsieur<supplied>,</supplied> qu’il y a <add>en cecy</add> entre Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous d’un coté,
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moy de l’autre, c’est que je suis tres assuré que si vous vous fussiez proposé ce
+               <lb/><rs type="biblio">Probleme</rs> vous ou Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, vous l’auriez resolu tout d’un coup de la maniere
                <lb/>la plus simple, mais mon investigation n’est devenue de cette extreme simplicité
-               <lb/>qu’apres une reflexion causée par ce que Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> m’avoit fait dire. Quoy
-               <lb/>que je n’aye pas encore trouvé le moyen d’exprimer la relation qu’il y a entre
-               <lb/>l’Abcisse &amp; l’Ordonnée de cette Courbe que par une suite infinie, cela me suffit
+  <lb/>qu’apres une reflexion causée par ce que Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> m’avoit fait d<unclear>ire</unclear><!-- Dieses Wort ist vermutlich anders zu transkribiere, ToDo: kontrollieren. --><del/><add>.</add> Quoy<pc type="hyphenation">-</pc><lb break="no"/>que Je n’aye pas encore trouvé le moyen d’exprimer la relation qu’il y a entre
+               <lb/>l’Abcisse <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’Ordonnée de cette Courbe que par une suite infinie, cela me suffit
                <lb/>pour faire voir qu’elle n’est pas la méme que celle de <rs key="pers_DE-588-119408007" type="person">Cassini</rs>, mais sans recourir
-               <lb/>à cette relation, les differente proprietez de leurs Tangentes le font assez voir à
-  <lb/>propos de proprieté de Tangente souffrez<supplied>,</supplied> Monsieur<supplied>,</supplied> que je vous rapporte
+               <lb/>à cette relation, les differentes proprietez de leurs Tangentes le font assez voir <choice><orig>a</orig><reg>à</reg></choice>
+  <lb/>propos de proprieté de Tangente souffrez<supplied>,</supplied> Monsieur<supplied>,</supplied> que Je vous rapporte
                <lb/>la methode dont je me sers pour determiner les Tangentes des Courbes qui se
-               <lb/>decrivent par le moyen de deux foyers.</p>
-<p><lb/>Soit <formula>ED</formula> une Courbe dont les deux foyers soient <formula>F</formula> &amp; <formula>A</formula>, soit <formula>P</formula> un point de la
+               <lb/>decrivent par le moyen de deux foyers.
+  <lb/><figure facs="1080158_01.png"/>
+  <lb/>Soit <formula>EP</formula> une Courbe dont les deux foyers soient <formula>F</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>A</formula>, soit <formula>P</formula> un point de la
                <lb/>Courbe. <formula>PD</formula> une perpendiculaire à cette Courbe rencontrant <formula>FA</formula> en <formula>D</formula>. Soit <formula>FP</formula> nommé
-               <lb/><formula>z</formula>, <formula>PA</formula>, <formula>v</formula>; &amp; <formula>FA</formula>, <formula>a</formula>; je dis que <formula>FD</formula> sera <formula>\frac{az\dot{z}}{z\dot{z}-\dot{v}\dot{v}}</formula>, cecy est deduit d’un
-               <lb/>calcul fait aisé &amp; qui n’emprunte rien da la doctrine du Centre de Gravité.
+               <lb/><formula>z</formula>, <formula>PA</formula>, <formula>v</formula>; <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>FA</formula>, <formula>a</formula>; Je dis que <formula>FD</formula> sera <formula>\frac{az\dot{z}}{z\dot{z}-v\dot{v}}</formula>, cecy est deduit d’un
+               <lb/>calcul fort aisé <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui n’emprunte rien de la doctrine du Centre de Gravité<supplied>.</supplied>
                <lb/>Je me laisse entrainer au plaisir de vous entretenir, Monsieur, mais je crains
-               <lb/>d’abuser de votre bonté, pardonnez encore à l’envie que j’ay de vous faire voir
-               <lb/>un Theoreme que j’ay sur les forces Centripetes</p>
-<p><lb/>Soit <formula>EP</formula> une Courbe quelconque, <formula>PA</formula> une Tangente au point <formula>P</formula>, <formula>S</formula> le centre des
+               <lb/>d’abuser de votre bonté, pardonnez encore à l’envie que J’ay de vous faire voir
+               <lb/>un Theoreme que j’ay sur les forces Centripetes<supplied>.</supplied>
+  <lb/><figure facs="1080158_02.png"/>
+  <lb/>Soit <formula>EP</formula> une Courbe quelconque, <formula>PA</formula> une Tangente au point <formula>P</formula>, <formula>S</formula> le centre des
                <lb/>forces, <formula>SA</formula> une perpendiculaire sur la Tangente, <formula>R</formula> le Rayon de la concavité.
-               <lb/>Je dis que la force Centripete est toujours proportionelle à <formula>\frac{R\times SAcub}{SP}</formula>.</p>
+  <lb/>Je dis que la force Centripete est toujours proportionelle à \frac{R\times SA\, \text{Cub.}}{SP}<!-- ToDo: Nachrechnen bzw. mit Fritz kontrollieren, ob es ein + oder Malkreuz ist. --><supplied>.</supplied></p>
 <pb facs="1080159" n="6"/>
-<p><lb/>Apres avoir trouvé ce Theoreme, je le montray à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> &amp; je
-               <lb/>me flattois qu’il luy paraissoit nouveau, mais Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> m’avoit prevenu<supplied>,</supplied>
-<lb/>il me les fit voir dans les papiers qu’il prepare pour une seconde edition de
-               <lb/>ces <hi rend="u">principia Mathematica</hi>, toute la difference qu’il y avoit c’est qu’au lieu
+<p><lb/><choice><orig>Apres</orig><reg>Aprés</reg></choice> avoir trouvé ce Theoreme, je le montray <choice><orig>a</orig><reg>à</reg></choice> Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je
+               <lb/>me flattois qu’il luy paroitroit nouveau, mais Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> m’avoit prevenu<supplied>,</supplied>
+<lb/>il me le fit voir dans les papiers qu’il prepare pour une <rs type="biblio">seconde edition</rs> de
+               <lb/>ces <rs type="biblio"><hi rend="u"><choice><orig>principia</orig><reg>Principia</reg></choice> Mathematica</hi></rs>, toute la difference qu’il y avoit c’est qu’au lieu
                <lb/>d’exprimer la loy de la force Centripete par le moyen du Rayon de la concavité
                <lb/>il l’exprimoit par le moyen <del/>d’une Chorde inscrite dans le
-               <lb/>Cercle de la Concavité mais il me dit qu’il valloit mieux l’exprimer par le moyen
-               <lb/>comme j’avois fait. J’espere dis je à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> en riant que vous ne m’aurez
-               <lb/>pas ravy le plaisir d’avoir tiré le premier un tres beau Corollairede ce Theoreme<supplied>.</supplied>
-<lb/><choice><orig>q</orig><reg>Q</reg></choice>uel est ce Corollaire dit il, c’est repondis je qu’il s’ensuit de la <add><del/></add><del/>que dans
+               <lb/>Cercle de la Concavité mais il me dit qu’il valloit mieux l’exprimer par le rayon
+               <lb/>comme j’avois fait<choice><orig>,</orig><reg>.</reg></choice> J’espere<supplied>,</supplied> dis<supplied>-</supplied>je à Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> en riant<supplied>,</supplied> que vous ne m’aurez
+               <lb/>pas ravy le plaisir d’avoir tiré le premier un tres beau Corollaire de ce Theoreme<supplied>.</supplied>
+  <lb/><choice><orig>quel</orig><reg>Quel</reg></choice> est ce Corollaire<supplied>,</supplied> dit<supplied>-</supplied>il<choice><orig>,</orig><reg>;</reg></choice> c’est<supplied>,</supplied> repondis<supplied>-</supplied>je<supplied>,</supplied> qu’il s’ensuit de <choice><orig>la</orig><reg>là</reg></choice> <del/>que dans
                <lb/>une Courbe la loy de la force Centripete qui tend à un point quelconque etant
-               <lb/>donnée, on en peut deriver <add>facilement</add> la loy de la force Centripete qui tend à un autre point, 
-               <lb/>cela dit il ne m’est point echappé, &amp; il me le montre encore. Si Monsieur <rs key="pers_DE-588-119062372" type="person">Varignon</rs>
-<lb/>eut scu ce Theoreme il ne se seroit pas si fort brouillé dans le calcul qu’il
-               <lb/>fait des force centripetes, &amp; surtout dans la Courbe de <rs key="pers_DE-588-119408007" type="person">Cassini</rs>. Je ne comprens
+               <lb/>donnée, on en peut deriver <add>facilement</add> la loy de la force Centripete qui tend à un autre point,
+               <lb/>cela<supplied>,</supplied> dit<supplied>-</supplied>il<supplied>,</supplied> ne m’est point echappé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> me le montre encore<choice><orig>,</orig><reg>.</reg></choice> Si Monsieur <rs key="pers_DE-588-119062372" type="person">Varignon</rs>
+<lb/>eut <choice><orig>scu</orig><reg>sçu</reg></choice> ce Theoreme il ne se seroit pas si fort brouillé dans le calcul qu’il
+  <lb/>fait des forces centripetes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sur tout dans la Courbe de <rs key="pers_DE-588-119408007" type="person">Cassini</rs><choice><orig>,</orig><reg>.</reg></choice> Je ne comprens
                <lb/>pas comment un homme tel que luy qui semble avoir quelque genie pour les
-               <lb/>Problemes de Phisique separe la description des aires egales d’avec la force
-               <lb/>Centripete, &amp; les regarde comme pouvant subsister l’un sans l’autre, mais il y a
-               <lb/>une chose ridicule dans son calcul, ce sont ses expressions qui etant ecrites
+               <lb/>Problemes de Phisique separe la description des Aires egales d’avec la force
+               <lb/>Centripete, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les regarde comme pouvant subsister l’un sans l’autre, mais il y a
+               <lb/>une chose ridicule dans son calcul,<note type="comment"><!-- Publikation nachweisen. --></note> ce sont ses expressions qui etant ecrites
                <lb/>au long sans la substitution d’une seule lettre à la place de plusieurs
-               <lb/>quantitez, contiendroient quelquefois plus d’une demi page, on n’a aucune idée
-               <lb/>d’une loy exprimée par tant de termes, <del/><add>quand</add> la nature devient si compliquée
-               <lb/>je croy qu’il vaut mieux ne la pas suivre, il n’y a que deux choses ce me semble
-               <lb/>qui meritent notre attention, ou la grande utilité d’un Probleme, ou la grande
-               <lb/>simplicité &amp; son Elegance.</p>
-  <p>Il faut bien<supplied>,</supplied> Monsieur<supplied>,</supplied> que je me soit male
+  <lb/>quantitez, contiendroient quelquefois plus d’une demi page<choice><orig>,</orig><reg>;</reg></choice> on n’a aucune idée
+               <lb/>d’une loy exprimée par tant de termes, <del/><add>quand</add> la nature devient si <choice><orig>compliquee</orig><reg>compliquée</reg></choice><supplied>.</supplied>
+               <lb/>Je croy qu’il vaut mieux ne la pas suivre, il n’y a que deux choses<supplied>,</supplied> ce me semble<supplied>,</supplied>
+               <lb/>qui meritent notre attention, ou la grande utilité d’un Probleme, ou sa grande
+               <lb/>simplicité <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> son Elegance. Il faut bien<supplied>,</supplied> Monsieur<supplied>,</supplied> que je me sois <choice><sic>male</sic><corr>mal</corr></choice>
                <lb/>expliqué dans mes Theoremes qui regardent les Courbes dont la quadrature
-               <lb/>depend de celle de l’Hyperbole considerée entre ses Assymptotes, puisque
+               <lb/>depend de celle de l’hyperbole considerée entre ses Assymptotes, puisque
                <lb/>vous y avez trouvé de la difficulté, je tacheray de rendre la chose un peu plus
-               <lb/>claire, soit donc <formula>A</formula> l’aire d’une Courbe dont l’Abcisse est <formula>x</formula>, &amp; l’ordonnée
-               <lb/><formula>\frac{x^{m}}{d-x}</formula>, &amp; soit <formula>B</formula> l’aire d’une Courbe dont l’abcisse est la meme que la
-               <lb/>precedente, mais l’ordonnée <formula>\frac{x^{m-n}}{d-x}</formula> (ou par <formula>n</formula> j’entens un nombre entier)<supplied>.</supplied>
-<lb/><choice><orig>j</orig><reg>J</reg></choice>e dis que <formula>A=d^{n}B-\frac{x^{m}}{m}-\frac{dx^{m-1}}{m-1}-\frac{ddx^{m-2}}{m-2}-\frac{d^{3}x^{m-3}}{m-3}</formula> &amp;c.
-               <lb/>ou il faut remarquer que je prens <add>seulement</add> autant de termes apres le premier <formula>d^{n}B</formula> qu’il
-               <lb/>y a d’unitez dans <formula>n</formula>, &amp; que je m’arrete là, supposez par Exemple que je
-               <lb/>voulusse <del/><add>comparer</add> l’<choice><orig>A</orig><reg>a</reg></choice>ire d’une Courbe dont l’ordonnée est <formula>\frac{x^{3}}{d-x}</formula>, avec l’<choice><orig>A</orig><reg>a</reg></choice>ire
-               <lb/>d’une Courbe dont l’ordonnée est <formula>\frac{1}{d-x}</formula> ou <formula>\frac{x^{0}}{d-x}</formula>, <formula>m</formula> est donc icy egal à 3, &amp;
-               <lb/><formula>m-n=0</formula>, donc <formula>n=m=3</formula>. Soit la premiere <choice><orig>A</orig><reg>a</reg></choice>ire appelée <formula>A</formula>, &amp; la
-               <lb/>seconde <formula>B</formula>, <choice><orig>J</orig><reg>j</reg></choice>’ay donc <formula>A=d^{3}B-\frac{1}{3}x^{3}-\frac{1}{2}dxx-dxx</formula>.
+               <lb/>claire, soit donc <formula>A</formula> l’Aire d’une Courbe dont l’Abcisse est <formula>x</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’ordonnée
+               <lb/><formula>\frac{x^{m}}{d-x}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soit <formula>B</formula> l’Aire d’une Courbe dont l’Abcisse est la meme que la
+               <lb/>precedente, mais l’ordonnée <formula>\frac{x^{m-n}}{d-x}</formula> (<choice><orig>ou</orig><reg>où</reg></choice> par <formula>n</formula> j’entens un nombre entier)<supplied>;</supplied>
+    <lb/>je dis que <formula>A=d^{n}B-\frac{x^{m}}{m}-\frac{dx^{m-1}}{m-1}-\frac{ddx^{m-2}}{m-2}-\frac{d^{3}x^{m-3}}{m-3}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr><supplied>,</supplied>
+  <lb/><choice><orig>ou</orig><reg>où</reg></choice> il faut remarquer que je prens <add>seulement</add> autant de termes <choice><orig>apres</orig><reg>aprés</reg></choice> le premier <formula>d^{n}B</formula> qu’il
+               <lb/>y a d’unitez dans <hi rend="u"><formula>n</formula></hi>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que Je m’arrete là, supposez par Exemple que je
+               <lb/>voulusse <del/><add>comparer</add> l’Aire d’une Courbe dont l’Ordonnée est <formula>\frac{x^{3}}{d-x}</formula>, avec l’Aire
+               <lb/>d’une Courbe dont l’Ordonnée est <formula>\frac{1}{d-x}</formula> ou <formula>\frac{x^{0}}{d-x}</formula>, <formula>m</formula> est donc icy egal à 3, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/><formula>m-n=0</formula><supplied>,</supplied> donc <formula>n=m=3</formula>. Soit la premiere Aire appellée <formula>A</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la
+               <lb/>seconde <formula>B</formula>, J’ay donc <formula>A=d^{3}B-\frac{1}{3}x^{3}-\frac{1}{2}dxx-ddx</formula>.
             <pb facs="1080160" n="7"/>
-<lb/>Soit <formula>EC</formula> une Hyperbole entre les <formula>A</formula> symptotes <formula>AG</formula>, <formula>AF</formula> que je suppose à angles
+  <lb/><figure facs="1080160_01.png"/>
+<lb/>Soit <formula>EC</formula> une hyperbole entre les A<del/><add>s</add>ymptotes <formula>AG</formula>, <formula>AF</formula> que je suppose à angles
                <lb/>droits, soit <formula>AB=BC=d</formula>. Soit <formula>BD=x</formula>, l’ordonnée <formula>DE</formula> sera donc <formula>\frac{dd}{d-x}</formula>,
-               <lb/>l’aire <formula>CBDE</formula>, sera donc à l’aire <formula>B</formula> dont l’ordonnée est <formula>\frac{1}{d-x}</formula>, comme
-               <lb/><formula>dd</formula> est à <formula>1</formula>, soit cette <choice><orig>A</orig><reg>a</reg></choice>ire <formula>DBCE</formula> appellée <formula>H</formula>, donc <formula>\frac{H}{dd}=B</formula>. <choice><orig>j</orig><reg>J</reg></choice>e peux donc
-               <lb/>dans l’expression precedente à la place de <formula>B</formula> ecrire <formula>\frac{H}{dd}</formula>, &amp; j’auray <formula>A=</formula>
-<lb/><formula>dH\frac{1}{3}x^{3}-\frac{1}{2}dxx-ddx</formula>; en prenant la precaution dont je vient de parler
-               <lb/>de ne prendre qu’un certain nombre de termes de ma suite, j’evite toutes les difficultez.
-               <lb/><choice><orig>m</orig><reg>M</reg></choice>a suite ne s’arrete point d’elle méme par des <hi rend="u">termini abrumpentes</hi>, mais je
-               <lb/>l’arrete, parce que je scais comme je l’ay formée, vous voyez donc<supplied>,</supplied> Monsieur, que
-               <lb/>la quadrature de l’<choice><orig>A</orig><reg>a</reg></choice>ire <formula>BCED</formula> etant donnée, j’ay en termes finis la quadrature
-               <lb/>de la courbe dont l’ordonnée est <formula>\frac{x^{m}}{d-x}</formula>, interpretant <formula>m</formula> par un terme quelconque
-               <lb/>de la suite, 0, 1, 2, 3, 4, 5 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. mais si par ce Theoreme je voulois comparer
-               <lb/>l’<choice><orig>A</orig><reg>a</reg></choice>ire de la Courbe dont l’ordonnée est <formula>\frac{1}{d-x}</formula>, ou <formula>\frac{x^{0}}{d-x}</formula>, avec l’aire d’une Courbe
-               <lb/>dont l’ordonnée est <formula>\frac{1}{dx-xx}</formula> ou <formula>\frac{x^{-1}}{d-x}</formula>, appellant <formula>A</formula> la premiere <choice><orig>A</orig><reg>a</reg></choice>ire &amp; <formula>B</formula> la seconde,
-               <lb/><choice><orig>J</orig><reg>j</reg></choice>’auray <formula>m=0</formula>, <formula>m-n=-1</formula> donc <formula>n=1</formula>. donc <formula>A=dB-\frac{x^{0}}{0}</formula>, ce qui marque
-               <lb/>que ces deux aires ne sont pas comparables, donc l’aire de la Courbe dont
-               <lb/>l’ordonnée est <formula>\frac{1}{dx-xx}</formula> ne depend point de l’<choice><orig>A</orig><reg>a</reg></choice>ire <formula>CBDE</formula>, cependant je vous avoue<supplied>,</supplied>
-               <lb/>Monsieur, que j’ay eu tort de dire qu’elle ne dependoit point de l’Hyperbole, car elle
-    <lb/>en depend d’une autre maniere, &amp; votre critique<supplied>,</supplied> Monsieur<supplied>,</supplied> sur ce Corollaire &amp; sur
+               <lb/>l’Aire <formula>CBDE</formula><choice><orig>,</orig><reg type="deleted"/></choice> sera donc à l’Aire <formula>B</formula> dont l’Ordonnée est <formula>\frac{1}{d-x}</formula>, comme
+               <lb/><formula>dd</formula> est à <formula>1</formula>, soit cette Aire <formula>DBCE</formula> appellée <formula>H</formula>, donc <formula>\frac{H}{dd}=B</formula>. <choice><orig>je</orig><reg>Je</reg></choice> peux donc
+               <lb/>dans l’expression precedente à la place de <formula>B</formula> ecrire <formula>\frac{H}{dd}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’auray <formula>A=</formula>
+<lb/><formula>dH-\frac{1}{3}x^{3}-\frac{1}{2}dxx-ddx</formula><note type="editorial">Korrektur durch den Autor in der Formel.</note>; en prenant la precaution dont je viens de parler
+               <lb/>de ne prendre qu’un certain nombre de termes de ma suite, j’evite toutes les difficultez<choice><orig>,</orig><reg>;</reg></choice>
+               <lb/>ma suite ne s’arrete point d’elle méme par des <foreign xml:lang="lat"><hi rend="u">termini Abrumpentes</hi></foreign>, mais je
+               <lb/>l’arrete, parce que je <choice><orig>scais</orig><reg>sçais</reg></choice> comme je l’ay formée, vous voyez donc<supplied>,</supplied> Monsieur<supplied>,</supplied> que
+               <lb/>la quadrature de l’Aire <formula>BCED</formula> etant donnée, j’ay en termes finis la quadrature
+               <lb/>de la courbe dont l’Ordonnée est <formula>\frac{x^{m}}{d-x}</formula>, interpretant <hi rend="u"><formula>m</formula></hi> par un terme quelconque
+    <lb/>de la suite<choice><orig>,</orig><reg type="deleted"/></choice> <formula>0, 1, 2, 3, 4, 5</formula><space unit="nbsp"/><del/><add><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></add>, mais si par ce Theoreme je voulois comparer
+               <lb/>l’Aire de la Courbe dont l’Ordonnée est <formula>\frac{1}{d-x}</formula>, ou <formula>\frac{x^{0}}{d-x}</formula>, avec l’aire d’une Courbe
+               <lb/>dont l’Ordonnée est <formula>\frac{1}{dx-xx}</formula> ou <formula>\frac{x^{-1}}{d-x}</formula>, appellant <formula>A</formula> la premiere Aire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> la seconde,
+               <lb/>J’auray <formula>m=0</formula>, <formula>m-n=-1</formula> donc <formula>n=1</formula><choice><orig>.</orig><reg>,</reg></choice> donc <formula>A=dB-\frac{x^{0}}{0}</formula>, ce qui marque
+               <lb/>que ces deux Aires ne sont pas comparables, donc l’Aire de la Courbe dont
+               <lb/>l’Ordonnée est <formula>\frac{1}{dx-xx}</formula> ne depend point de l’Aire <formula>CBDE</formula>, cependant je vous avoue<supplied>,</supplied>
+               <lb/>Monsieur<supplied>,</supplied> que j’ay eu tort de dire qu’elle ne dependoit point de l’hyperbole, car elle
+    <lb/>en depend d’une autre maniere, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> votre critique<supplied>,</supplied> Monsieur<supplied>,</supplied> sur ce Corollaire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sur
                <lb/>les autres que j’ay tirez de mes Theoremes sur la comparaison des courbes est fort
-               <lb/>juste, mais pour voir la relation qu’a cette aire avec l’aire Hyperbolique
-               <lb/>je fais <formula>x=\frac{1}{y}</formula>, &amp; alors l’aire de la Courbe dont l’ordonnée est <formula>\frac{1}{dx-xx}</formula>
-<lb/>devient l’aire d’une courbe dont l’ordonnée est <formula>\frac{1}{1-dy}</formula>, ce qui depend de la
-               <lb/>quadrature de l’Hyperbole. J’aurois donc pu dire que la <add>quadrature de la</add> Courbe dont
-               <lb/>l’ordonnée est <formula>\frac{1}{dx-xx}</formula>, ne depend point de la quadrature de celle dont
-               <lb/>l’ordonnée est <formula>\frac{1}{d-x}</formula>, de méme que la quadrature de la Courbe dont l’ordonnée
-               <lb/>est <formula>x-\frac{7}{2}\sqrt{dx+xx}</formula> ne depend point de la quadrature de la Courbe dont l’ordonnée
-               <lb/>est <formula>\sqrt{dx=xx}</formula>, quoyque la premiere en changeant <formula>x</formula> en <formula>\frac{1}{y}</formula> depende de la
-               <lb/>quadrature de l’Hyperbole comme vous l’avez observé, &amp; que la seconde soit
-               <lb/>elle méeme une Hyperbole. Je feray des changement à mes Corollaires à la
-    <lb/>premiere occasion, &amp; j’avoueray<supplied>,</supplied> Monsieur<supplied>,</supplied> que c’est à vous <choice><orig>a</orig><reg>à</reg></choice> qui j’en ay l’obligation.
-               <lb/>Il y a une chose <choice><orig>a</orig><reg>à</reg></choice> remarquer dans le Theoreme que suit celuy dont je vient
+               <lb/>juste, mais pour voir la relation qu’a cette Aire avec l’Aire Hyperbolique
+               <lb/>je fais <formula>x=\frac{1}{y}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> alors l’Aire de la Courbe dont l’Ordonnée est <formula>\frac{1}{dx-xx}</formula>
+<lb/>devient l’Aire d’une courbe dont l’Ordonnée est <formula>\frac{1}{1-dy}</formula>, ce qui depend de la
+               <lb/>quadrature de l’hyperbole<choice><orig>,</orig><reg>.</reg></choice> J’aurois donc pu dire que la <add>quadrature de la</add> Courbe dont
+               <lb/>l’Ordonnée est <formula>\frac{1}{dx-xx}</formula>, ne depend point de la quadrature de celle dont
+               <lb/>l’Ordonnée est <formula>\frac{1}{d-x}</formula>, de méme que la quadrature de la Courbe dont l’ordonnée
+               <lb/>est <formula>x^{-\frac{7}{2}}\sqrt{dx+xx}</formula> ne depend point de la quadrature de la Courbe dont l’Ordonnée
+               <lb/>est <formula>\sqrt{dx+xx}</formula>, quoy que la premiere en changeant <formula>x</formula> en <formula>\frac{1}{y}</formula> depende de la
+               <lb/>quadrature de l’hyperbole comme vous l’avez observé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que la seconde soit
+               <lb/>elle méme une Hyperbole<choice><orig>,</orig><reg>.</reg></choice> Je feray des changements à mes <del/><add>C</add>orollaires à la
+    <lb/>premiere occasion, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’avoueray<supplied>,</supplied> Monsieur<supplied>,</supplied> que c’est à vous <choice><orig>a</orig><reg>à</reg></choice> qui j’en ay l’Obligation<unclear reason="lost">.</unclear>
+               <lb/>Il y a une chose <choice><orig>a</orig><reg>à</reg></choice> remarquer dans le Theoreme qui suit celuy dont je viens
             <pb facs="1080161" n="8"/>
-<lb/>de faire mention, c’est dans celuy cy. Soit <formula>A</formula> l’aire d’une Courbe dont l’abscisse est
-               <lb/><formula>x</formula> &amp; l’ordonnée <formula>\frac{x^{m}}{d+x}</formula>, &amp; <formula>B</formula> l’aire d’une Courbe dont l’abscisse est la méme que
-               <lb/>la precedente, mais l’ordonnée <formula>\frac{x^{m-n}}{d+n}</formula>, alors <formula>A</formula> sera <formula>=\frac{x^{m}}{m}-\frac{dx^{m-1}}{m-1}+\frac{ddx^{m-2}}{m-2}</formula>
-<lb/><formula>-\frac{d^{3}x^{m-3}}{m-3}</formula>&amp;c. <formula>\pm d^{n}B</formula>. Il faut prendre autant de termes du commencement de
-               <lb/>cette suite qu’il y a d’unitez dans <formula>n</formula>, &amp; ensuite prendre <formula>d^{n}B</formula> avec le signe <formula>+</formula>
+<lb/>de faire mention, c’est dans celuy<supplied>-</supplied>cy<choice><orig>,</orig><reg>.</reg></choice> Soit <formula>A</formula> l’aire d’une Courbe dont l’abscisse est
+               <lb/><formula>x</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’ordonnée <formula>\frac{x^{m}}{d+x}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> l’Aire d’une Courbe dont l’Abcisse est la méme que
+               <lb/>la precedente, mais l’ordonnée <formula>\frac{x^{m-n}}{d+x}</formula> alors <formula>A</formula> sera <formula>=\frac{x^{m}}{m}-\frac{dx^{m-1}}{m-1}+\frac{ddx^{m-2}}{m-2}</formula>
+  <lb/><formula>-\frac{d^{3}x^{m-3}}{m-3}</formula><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <formula>\pm d^{n}B</formula><choice><orig>,</orig><reg>.</reg></choice> Il faut prendre autant de termes du commencement de
+               <lb/>cette suite qu’il y a d’unitez dans <formula>n</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ensuite prendre <formula>d^{n}B</formula> avec le signe <formula>+</formula>
 <lb/>si le signe precedent etoit <formula>-</formula>, ou avec le signe <formula>-</formula>, si le signe precedent etoit <formula>+</formula>.
-    <lb/>Vous m’avez beaucoup eclairey<supplied>,</supplied> Monsieur<supplied>,</supplied> les difficultez que j’avois sur la <del/>
+    <lb/>Vous m’avez beaucoup eclaircy<supplied>,</supplied> Monsieur<supplied>,</supplied> les difficultez que j’avois sur l<del/><add>a</add><del/>
 <lb/><del/>methode de prendre une suite infinie pour
-               <lb/>representer la racine d’une Equation differentielle, je commence à croire que si il se trouve
-               <lb/>une quantité qui ne se puisse comparer, cela proviant de l’indetermination du Probleme,
-               <lb/>il faut pourtant que je vous dise qu’il me reste encore quelque scrupule la dessus
-               <lb/>&amp; que je croy que la methode Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> pour resoudre la Equations differentielles
+  <lb/>representer la racine d’une Equation differentielle, je commence à croire que s’il se trouve
+               <lb/>une quantité qui ne se puisse comparer, cela provient de l’indetermination du Probleme,
+               <lb/>il faut pourtant que je vous dise qu’il me reste encore quelque scrupule <choice><orig>la</orig><reg>là</reg></choice> dessus
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je croy que la methode de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> pour resoudre les Equations differentielles
                <lb/>pour les suites infinies est <add>la</add> plus sure, mais j’examineray la chose avec tout le soin dont je
-               <lb/>suis capable, &amp; je prendray la liberté d’avoir recours à vous si mes scrupules continuent.
-               <lb/>Apres etre parvenu à cet endroit cy de ma lettre, j’ay <choice><orig>eté</orig><reg>été</reg></choice> voir Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> que j’ay
-    <lb/>trouvé apres l’avoir manqué trois ou quatre fois. Je luy ay fait vos compliments <supplied>,</supplied> Monsieur<supplied>,</supplied>
-               <lb/>&amp; il m’a chargé de vous faire les siens, &amp; de vous assurer qu’il se souvient de sa promesse
-               <lb/>&amp; qu’il vous envoyera son livre aussytost qu’il sera achevé d’imprimer ce qui sera
-               <lb/>dans peu de temps. Je luy ay montré ma solution de votre Probleme pour la transformation
-               <lb/>des Courbes, il l’a parcouru avec quelque attention &amp; <del/><add>elle</add> luy a paru bonne, il m’a
-               <lb/>exhorté de la publier dans les Transaction Philosophiques, mais je me suis deffendu de prendre
-               <lb/>aucun party la dessus jusqu’a ce que vous l’eussiez veue. Si vous vouliez m’envoyer la votre<supplied>,</supplied>
-               <lb/>Monsieur, je la ferois imprimer icy, &amp; si vous jugiez que la mienne fut digne
-               <lb/>de luy tenir compagnie, je les ferois imprimer ensemble. Je vous remercie encore une fois<supplied>,</supplied>
-    <lb/>Monsieur<supplied>,</supplied> des papiers que vous avez eu la bonté de me communiquer, car je ne 
-               <lb/>scaurois trop vous en remercier. <choice><orig>j</orig><reg>J</reg></choice>e vous rendray justice dans la reponse que je destine à
-               <lb/><rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, &amp; reconnoitray publiquement les obligations que je vous ay, je me serviray
-               <lb/>de votre nom pour justifier ma <choice><orig>C</orig><reg>c</reg></choice>ritique quand elle est raisonnable ou pour me
-               <lb/>condamner moy méme de bonne foy. Je n’ay point veu Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> depuis que
-               <lb/>j’ay rescu votre <rs type="letter">lettre</rs>, il a toujours <choice><orig>eté</orig><reg>été</reg></choice> à <rs key="place_GEO-2640729" type="place">Oxford</rs>, mais il me dit avant que de partir
-               <lb/>qu’il avoit dessein de joindre au <rs type="biblio">Traité d’Appolonius</rs> une feuille qu’il vient de
+               <lb/>suis capable, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je prendray la liberté d’avoir recours à vous si mes scrupules continuent.
+               <lb/>Apres etre parvenu à cet endroit cy de ma <rs type="letter">lettre</rs>, J'ay <choice><orig>eté</orig><reg>été</reg></choice> voir Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> que J’ay
+    <lb/>trouvé apres l’avoir manqué trois ou quatre fois<choice><orig>,</orig><reg>.</reg></choice> Je luy ay fait vos compliments <supplied>,</supplied> Monsieur<supplied>,</supplied>
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il m’a chargé de vous faire les siens, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous assurer qu’il se souvient de sa promesse
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il vous envoyera son <rs type="biblio">livre</rs> aussy tost qu’il sera achevé d’imprimer ce qui sera
+  <lb/>dans peu de temps<choice><orig>,</orig><reg>.</reg></choice> Je luy ay montré ma solution de votre Probleme pour la transformation
+               <lb/>des Courbes, il l<supplied>’</supplied>a parcouru avec quelque attention <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <del/><add>elle</add> luy a paru bonne, il m’a
+               <lb/>exhorté de la publier dans les <rs type="biblio">Transaction Philosophiques</rs>, mais je me suis deffendu de prendre
+  <lb/>aucun party <choice><orig>la</orig><reg>là</reg></choice> dessus jusqu’<choice><orig>a</orig><reg>à</reg></choice> ce que vous l’eussiez veue<choice><orig>,</orig><reg>.</reg></choice> Si vous vouliez m’envoyer la <choice><orig>vòtre</orig><reg>vôtre</reg></choice><supplied>,</supplied>
+               <lb/>Monsieur, je la ferois imprimer icy, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si vous <choice><orig>Jugiez</orig><reg>jugiez</reg></choice> que la mienne fut digne
+  <lb/>de luy tenir compagnie, je les ferois imprimer ensemble<choice><orig>,</orig><reg>.</reg></choice> Je vous remercie encore une fois<supplied>,</supplied>
+    <lb/>Monsieur<supplied>,</supplied> des <rs type="biblio">papiers</rs> que vous avez eu la bonté de me communiquer, car <del/><add>je ne</add>
+               <lb/><choice><orig>scaurois</orig><reg>sçaurois</reg></choice> trop vous en remercier, je vous rendray justice dans la <rs type="biblio">reponse</rs> que je destine à
+               <lb/><rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reconnoitray publiquement les Obligations que je vous ay, je me serviray
+               <lb/>de votre nom pour justifier ma <rs type="biblio">Critique</rs> quand elle est raisonnable ou pour me
+  <lb/>condamner moy méme de bonne foy<choice><orig>,</orig><reg>.</reg></choice> Je n’ay point veu Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> depuis que
+               <lb/>J’ay <choice><orig>recu</orig><reg>reçu</reg></choice> votre <rs type="letter">lettre</rs>, il <choice><orig>à</orig><reg>a</reg></choice> toujours <choice><orig>eté</orig><reg>été</reg></choice> à <rs key="place_GEO-2640729" type="place">Oxford</rs>, mais il me dit avant que de partir
+  <lb/>qu’il avoit dessein de joindre au <rs type="biblio">Traité</rs> d’<rs type="person">Appolonius</rs> une feuille qu’il vient de
                <lb/>faire imprimer sur le calcul du mouvement des cometes, pour vous les envoyer
-               <lb/>ensemble. Je n’ay pu m’empecher de rire de la furie de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, on enferme des gens
-               <lb/>qui ne sont pas si fous <add>que luy</add>; je serois au desespoir que sa colere put vous faire du mal,
-               <lb/>car ce seroit moy en quelque facon qui vous l’auroit attirée, mais la colere non plus que
-               <lb/>celle de ses Compatriotes qui s’avisent de faire les mechans, ne nous causera pas la
-               <lb/>moindre Egratignure. J’ay fort avancé la reponce que je fais à <del/>ce
-               <lb/>qu’il a ecrit contre moy. Je croy qu’on y verra quelque Theoremes qui ne deplairont pas.
-               <lb/>L’un regarde la quadrature de la Courbe dont l’ordonnée est <formula>v^{n}x^{m}</formula> quand <formula>\dot{v}=\frac{\frac{1}{2}d\dot{x}}{\sqrt{dx-xx}}</formula>
-<lb/>&amp; l’autre la quadrature de quelques Courbes irrationelles du second genre, comme j’avois
-               <lb/>donné une methode <add>fort</add> generale. Dans mon petit <rs type="biblio">traitté</rs> pour les quadratures des Courbes irrationelles
+  <lb/>ensemble<choice><orig>,</orig><reg>.</reg></choice> Je n’ay pu m’empecher de rire de la furie de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, on enferme des gens
+  <lb/>qui ne sont pas si fous <add>que luy</add><choice><orig>,</orig><reg>.</reg></choice> Je serois au desespoir que sa colere put vous faire du mal,
+               <lb/>car ce seroit moy en quelque <choice><orig>facon</orig><reg>façon</reg></choice> qui vous l’auroit attiré<add>e</add>, mais sa colere non plus que
+               <lb/>celle de ses Compatriotes qui s’avisent de faire les mechants, ne nous causera pas la
+  <lb/>moindre Egratignure<choice><orig>,</orig><reg>.</reg></choice> J’ay fort avancé la <rs type="biblio">reponce</rs> que je fais à <del/>ce
+  <lb/>qu’il a <rs type="biblio">ecrit</rs> contre moy<choice><orig>,</orig><reg>.</reg></choice> Je croy qu’on y verra quelques Theoremes qui ne deplairont pas.
+               <lb/>L’un regarde la quadrature de la Courbe dont l’Ordonnée est <formula>v^{n}x^{m}</formula> quand <formula>\dot{v}=\frac{\frac{1}{2}d\dot{x}}{\sqrt{dx-xx}}</formula>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre la quadrature de quelques Courbes irrationelles du second genre, comme j’avois
+               <lb/>donné une methode <add>fort</add> generale. <choice><orig>dans</orig><reg>Dans</reg></choice> mon petit <rs type="biblio">traitté</rs> pour les quadratures des Courbes irrationelles
                <lb/>du premier genre, je croyois pouvoir me dispenser de donner un Theoreme qui n’etoit qu’un
-               <lb/>cas particulier de cette methode, &amp; je m’etois contenté de dire que j’en avois un aussy bien
-               <lb/>que luy avec cette difference que le mien etoit infiniment plus court que le sien, &amp;
-               <lb/>deplus qu’il etois vray, mais <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> me deffie de le produire, il faudra le contenter.
+               <lb/>cas particulier de cette Methode, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je m’etois contenté de dire que j’en avois un aussy bien
+               <lb/>que luy avec cette difference que le mien etoit <del/>infiniment plus court que le sien, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>deplus qu’il etoit vray, mais <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> me deffie de le produire, il faudra le contenter.
             <pb facs="1080162" n="9"/>
-<lb/>A l’egard du second, comme je croyois voir qu’en ne pouvoit jamais exprimer la quadrature
-               <lb/>des Courbes irrationelles du second genre par des expressions finies, j’avois dit qu’il
+<lb/><choice><orig>à</orig><reg>À</reg></choice> l’egard du second, comme je croyois voir qu’en ne pouroit jamais exprimer la quadrature
+               <lb/>des Courbes irrationelles du second genre par des expressions finies, J’avois dit qu’il
                <lb/>valloit mieux <del/><add>exprimer</add> ces quadratures par une seule suite infinie composée d’une seule
-               <lb/>indeterminée, que de la exprimer par plusieurs suites infinies composées de plusieurs
-               <lb/>indeterminées, mais <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> m’accuse de suivre des voyes faciles &amp; vulgaires. J<supplied>’</supplied>avois
-               <lb/>pourtant fait voir que je pouvois traitter ces sortes de quadratures à la maniere, mais
-               <lb/>j’ay pris son Exemple méme, &amp; je forme un Theoreme plus court que le sien, plus
-               <lb/>elegant, dans lequel entrent toutes les Irrationelles proposées, &amp; cela par des suites
-               <lb/>non divergentes, mais convergentes. Je releveray bien mon homme sur ce qu’il dit que
-               <lb/>l’Equation <formula>v=\frac{x+x\dot{x}}{v}</formula> ne se peut construire &amp; est imaginaire, premierement
-               <lb/>imaginaire ou non, elle servoit à mon dessein, &amp; n’etoit apportée que pour un
-               <lb/>Exemple, <del/><add>car</add> je l’avois prise uniquement parce que <del/>ces indeterminées se
-               <lb/>trouvaient mélées; secondement elle n’est point imaginaire, car soit multiplié
-               <lb/>le tout par 2, &amp; on aura <formula>v\dot{v}=v\dot{x}+x\dot{x}</formula>, soit <formula>v=Ax</formula>, &amp; on aura <formula>AAx\dot{x}</formula>
-<lb/><formula>=Ax\dot{x}+x\dot{x}</formula><supplied>,</supplied> donc <formula>AA=A+1</formula> donc <formula>AA-A=1</formula>. &amp; <formula>A=\frac{1}{2}+\sqrt{\frac{5}{4}}</formula>
-    <lb/>ou <formula>A=\frac{1+\sqrt{5}}{2}</formula> donc <formula>v=\frac{1+\sqrt{5}}{2}x</formula>. Voila<supplied>,</supplied> Monsieur<supplied>,</supplied> cet homme qui ecrit sur la
-               <lb/>methode inverse des Fluxions, &amp; qui y est aidé par l’excellent Monsieur <rs key="pers_DE-588-124465641" type="person">Craig</rs>.
-               <lb/>J’ay presque finy ce que j’ay <choice><orig>a</orig><reg>à</reg></choice> dire sur le Centre d’oscillation, j’ay pris le principe de
-               <lb/>Monsieur <rs key="pers_DE-588-118639749" type="person">Huygens</rs>, &amp; j’ay comparé mes conclusions avec les siennes, elles se rapportent
-               <lb/>par tout. Je diray un mot de son dernier livre Anglois, intitulé <hi rend="u"><rs type="biblio">Philosophical principles
-               <lb/>of Christian Religion</rs></hi>, il y a un appendice d’environ 50 pages qui est fort curieux
-               <lb/>il traitte des infinis, &amp; il y a fait des decouvertes inconnues <choice><orig>a</orig><reg>à</reg></choice> vous &amp; <choice><orig>a</orig><reg>à</reg></choice> Monsieur 
+               <lb/>indeterminée, que de les exprimer par plusieurs suites infinies composées de plusieurs
+  <lb/>indeterminées, mais <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> m’accuse de suivre des voyes faciles <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vulgaires<choice><orig>,</orig><reg>.</reg></choice> J’avois
+               <lb/>pourtant fait voir que je pouvois traitter ces sortes de quadratures à sa maniere, mais
+               <lb/>j’ay pris son Exemple méme, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je forme un Theoreme plus court que le sien, plus
+               <lb/>elegant, dans lequel entrent toutes les Irrationelles proposées, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> cela par des suites
+  <lb/>non divergentes, mais convergentes<choice><orig>,</orig><reg>;</reg></choice> je releveray bien mon homme sur ce qu’il dit que
+  <lb/>l’Equation <formula>\dot{v}=\dot{x}+\frac{x\dot{x}}{v}</formula> ne se peut construire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> est imaginaire, premierement
+               <lb/>imaginaire ou non, elle servoit à mon dessein, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> n’etoit apportée que pour un
+               <lb/>Exemple, <del/><add>car</add> je l’avois prise uniquement parce qu<del/><add>e</add> <del/><add>ce</add>s indeterminées se
+               <lb/>trouvoient mélées, secondement elle n’est point imaginaire, car soit multiplié
+               <lb/>le tout par <formula>v</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> on aura <formula>v\dot{v}=v\dot{x}+x\dot{x}</formula>, soit <formula>v=Ax</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> on aura <formula>AAx\dot{x}</formula>
+<lb/><formula>=Ax\dot{x}+x\dot{x}</formula>, donc <formula>AA=A+1</formula> donc <formula>AA-A=1</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>A=\frac{1}{2}+\sqrt{\frac{5}{4}}</formula><note type="editorial">Korrektur in der Formel im Manuskript.</note>
+    <lb/>ou <formula>A=\frac{1+\sqrt{5}}{2}</formula> donc <formula>v=\frac{1+\sqrt{5}}{2}x</formula><choice><orig>,</orig><reg>.</reg></choice> <choice><orig>Voila</orig><reg>Voilà</reg></choice><supplied>,</supplied> Monsieur<supplied>,</supplied> cet <rs type="person">homme</rs> qui ecrit sur la
+               <lb/>methode inverse des Fluxions, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui y est aidé par l’excellent Monsieur <rs key="pers_DE-588-124465641" type="person">Craig</rs>.
+               <lb/>J’ay presque finy ce que J’ay <choice><orig>a</orig><reg>à</reg></choice> dire sur le Centre d’Oscillation, j’ay pris le principe de
+               <lb/>Monsieur <rs key="pers_DE-588-118639749" type="person">Huygens</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ay comparé mes conclusions avec les siennes, elles se rapportent
+  <lb/>par tout<choice><orig>,</orig><reg>.</reg></choice> Je diray un mot de son dernier <rs type="biblio">livre</rs> Anglois, intitulé <hi rend="u"><rs type="biblio">Philosophical principles
+               <lb/>of Christian Religion</rs></hi>, il y a un Appendix d’environ 50 pages qui est fort <choice><orig>Curieux</orig><reg>curieux</reg></choice><supplied>;</supplied>
+               <lb/>il traitte des infinis, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il y a fait des decouvertes inconnues <choice><orig>a</orig><reg>à</reg></choice> vous <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> Monsieur 
                <rs key="pers_DE-588-118587544" type="person">Newton</rs>, en voicy un Echantillon, il prend deux <del/>progressions
-               <lb/>Geometriques croissantes, &amp; commencant toutes deux par l’unité, les voicy.</p>
-<p><lb/><formula>\begin{array}{ccccccc} 1, &amp; 2, &amp; 4, &amp; 8, &amp; 16, &amp; 32 &amp; \mbox{etc.}\\ 1, &amp; \frac{3}{2} &amp; \frac{9}{4} &amp; \frac{27}{8} &amp; \frac{81}{16} &amp; \frac{243}{32} &amp; \mbox{etc.} \end{array}</formula>
+               <lb/>Geometriques croissantes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> commencant toutes deux par l’unité, les voicy.</p>
+<p><lb/><formula>\begin{array}{ccccccc} 1, &amp; 2, &amp; 4, &amp; 8, &amp; 16, &amp; 32 &amp; \mbox{etc.}\\ 1, &amp; \frac{3}{2}, &amp; \frac{9}{4}, &amp; \frac{27}{8}, &amp; \frac{81}{16}, &amp; \frac{243}{32} &amp; \mbox{etc.} \end{array}</formula>
 </p>
-<p><lb/>La somme infinie dit il de la <add>2.<hi rend="sup">e</hi></add> progression <del/>sera plus grande que la
+<p><lb/>La somme infinie dit<supplied>-</supplied>il de la <add>2<hi rend="sup">e</hi></add> progression <del/>sera plus grande que la
                <lb/>somme infinie de la premiere, vous allez croire<supplied>,</supplied> Monsieur<supplied>,</supplied> que c’est une faute
-               <lb/>d’impression, mais ayez s’il vous plait un peu de patience, la raison, poursuit il, qui
+               <lb/>d’impression, mais ayez<supplied>,</supplied> s’il vous plait<supplied>,</supplied> un peu de patience, sa raison<supplied>,</supplied> poursuit<supplied>-</supplied>il<supplied>,</supplied> qui
                <lb/>fait que la somme de la seconde progression est plus grande que la somme de la
-               <lb/>premiere, c’est que quoyque dans les commencements des progressions chaque terme
+               <lb/>premiere, c’est que <del/><add>q</add>uoyque dans les commencements des progressions chaque terme
                <lb/>de la seconde suite soit plus petit que chaque terme de la premiere, cependant
-               <lb/>il vient un temps ou les termes de la seconde suite egalent ceux de la premiere
-               <lb/>&amp; apres cela il les surpassent, de la il arrive que la somme infinie de la seconde
-               <lb/>suite est double de la somme infinie de la premiere. Il est necessaire ajoute t’il
-               <lb/>de demontrer cecy, pour epargner de la peine aux faiseurs D’animadversions,
-               <lb/>chaque terme de la seconde suite est une puissance de <formula>\frac{3}{2}</formula>, &amp; chaque terme
-               <lb/>correspondant de la premiere est une méme puissance de 2, cela va bien jusqu’icy.
+               <lb/>il vient un temps <choice><orig>ou</orig><reg>où</reg></choice> les termes de la seconde suite egalent ceux de la premiere
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>apres</orig><reg>aprés</reg></choice> cela<choice><orig>.</orig><reg>,</reg></choice> il les surpassent, de <choice><orig>la</orig><reg>là</reg></choice> il arrive que la somme infinie de la seconde
+  <lb/>suite est double de la somme infinie de la premiere<choice><orig>,</orig><reg>;</reg></choice> il est necessaire ajoute<supplied>-</supplied>t<choice><orig>’</orig><reg>-</reg></choice>il
+               <lb/>de demontrer cecy pour epargner de la peine aux faiseurs <choice><orig>D</orig><reg>d</reg></choice>’animadversions,
+               <lb/>chaque terme de la seconde suite est une puissance de <formula>\frac{3}{2}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> chaque terme
+               <lb/>correspondant de la premiere est une méme puissance de 2, cela va bien jusqu’icy<supplied>.</supplied>
             <pb facs="1080163" n="10"/>
 <lb/>Soit donc <formula>n</formula> la puissance d’un terme de la seconde suite, <add>qui</add> egale à la méme
-               <lb/>puissance d’un terme correspondant de la 1<hi rend="sup">ere</hi>, donc <formula>\frac{3^{n}}{2^{n}}=2^{n}</formula> &amp; <formula>3^{n}=</formula>
-<lb/><formula>2^{2n}</formula>, donc <formula>nlog3=2nlog2</formula>. Un <hi rend="u">Arithmeticaster</hi> comme il m’appelle
-               <lb/>diroit donc <formula>log3=2log2</formula>, <hi rend="u">quod est absurdum</hi>, mais comme il est bien plus
-               <lb/>habile que moy, il dit donc <formula>log3=nlog2</formula>, donc <formula>n=\frac{log3}{log2}</formula>. Toutes
-               <lb/>les autres decouvertes sont <choice><orig>a</orig><reg>à</reg></choice> peu pres de cette force là; ce qu’on peut conclure
+               <lb/>puissance d’un terme correspondant de la 1<hi rend="sup">ere</hi>, donc <formula>\frac{3^{n}}{2^{n}}=2^{n}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>3^{n}=</formula>
+<lb/><formula>2^{2n}</formula>, donc <formula>n \log3=2n \log2</formula>. <choice><orig>un</orig><reg>Un</reg></choice> <hi rend="u">Arithmeticaster</hi> comme il m’appelle
+               <lb/>diroit donc <formula>\log3=2\log2</formula>, <foreign xml:lang="lat"><hi rend="u">quod est <choice><orig>Absurdum</orig><reg>absurdum</reg></choice></hi></foreign>, mais comme il est bien plus
+               <lb/>habile que moy, il dit donc <formula>\log3=n\log2</formula>, donc <formula>n=\frac{\log3}{\log2}</formula>. Toutes
+               <lb/>les autres decouvertes sont <choice><orig>a</orig><reg>à</reg></choice> peu pres de cette force là, ce qu’on peut conclure
                <lb/>de cecy<supplied>,</supplied> Monsieur<supplied>,</supplied> est que <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> est un miserable compilateur incapable de rien
-               <lb/>produire de luy méme, &amp; qui n’a fait que gater les inventions des autres. Les plaisies
-               <lb/>qu’il fait que j’ay montré votre <rs type="letter">lettre</rs> à toutes sortes de parsonnes sont mal fondées.
-               <lb/>Il n’y a eu que trois ou quatre de mes amis, gens fort discrets, qui l’ayent vû, mais
+               <lb/>produire de luy méme, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui n’a fait que gater les inventions des autres<del/><add>.</add> Les plaintes
+               <lb/>qu’il fait que j’ay montré votre <rs type="letter">lettre</rs> à toutes sortes de personnes sont mal fondées<supplied>;</supplied>
+               <lb/>il n’y a eu que trois ou quatre de mes <rs type="person">Amis</rs>, gens fort discrets, qui l’ayent vû, mais
                <lb/><rs key="pers_DE-588-117659606" type="person">Cheynes</rs> est menteur aussy bien qu’Ignorant, à l’egard de ce qu’il vous mande de
-               <lb/>mon education &amp; que j’ay <choice><orig>eté</orig><reg>été</reg></choice> l’instrument de la malice de quelques personnes
-               <lb/>il repete cela en plusieurs endroits de la reponse qu’il m’a faite, <del>j’ay </del><add>j’auray</add> seulement
-               <lb/>cecy à dire, c’est que quoyque je ne soit né ni riche ni gentilhomme, j’ay <choice><orig>eté</orig><reg>été</reg></choice> elevé
-               <lb/>comme si j’eusse <choice><orig>eté</orig><reg>été</reg></choice> l’un et l’autre, &amp; que je me suis senty assez de courage
+               <lb/>mon education <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que j’ay <choice><orig>eté</orig><reg>été</reg></choice> l’instrument de la mal<unclear reason="lost">ic</unclear>e de quelques personnes
+               <lb/>il repete cela en plusieurs endroits de la <rs type="biblio">reponse</rs> qu’il m’a faite, <del/><add>j’auray</add> seulement
+               <lb/>cecy à dire, c’est que quoyque je ne sois né ni riche ni gentilhomme, j’ay <choice><orig>eté</orig><reg>été</reg></choice> elevé
+               <lb/>comme si j’eusse <choice><orig>eté</orig><reg>été</reg></choice> l’un <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que Je me suis senty assez de courage
                <lb/>pour attaquer <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> sur mon propre conte, sans qu’aucune personne m’y ait
                <lb/>excité. Je vous supplie<supplied>,</supplied> Monsieur<supplied>,</supplied> de vouloir bien faire mes compliments à
-               <lb/>Monsieur <rs type="person">de Magneville</rs>, tous les Amis luy baisent les mains. Je seray
-               <lb/>bien aise d’avoir une <rs type="letter">lettre</rs> de luy avant qu’il parte pour <rs key="place_GEO-2660646" type="place">Geneve</rs>, &amp; comme
-               <lb/>je luy en devray deux, je tacheray de le payer par une lettre qui soit de
-               <lb/>la longueur de deux autres. Je vous souhaitte<supplied>,</supplied> Monsieur<supplied>,</supplied> toutes sortes des
-               <lb/>prosperitez dans le nouvel etablissement que vous allez faire dans votre <rs key="place_VER-basela" type="place">patrie</rs>,
-               <lb/>je souhaitte que vous viviez longtemps &amp; tranquillement pour votre propre
-               <lb/>bonheur &amp; pour l’accroissement des Mathematiques. Je vous prie<supplied>,</supplied> Monsieur<supplied>,</supplied>
-               <lb/>de vouloir bien assurer<supplied>,</supplied> Monsieur<supplied>,</supplied> votre <rs key="pers_DE-588-118509950" type="person">frere</rs> de mes tres humbles respects &amp;c 
-               <lb/>de la haute estime que j’ay pour luy, &amp; de faire mes compliments à Monsieur
-               <lb/><rs key="pers_DE-588-119112450" type="person">Hermain</rs> que j’estime beaucoup, &amp; dont je me souviens toujours avec plaisir.</p>
+  <lb/>Monsieur <rs type="person">de Magneville</rs>, tous ses <rs type="person">Amis</rs> luy baisent les mains<choice><orig>,</orig><reg>.</reg></choice> Je seray
+               <lb/>bien aise d’avoir une <rs type="letter">lettre</rs> de luy avant qu’il parte pour <rs key="place_GEO-2660646" type="place">Geneve</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> comme
+               <lb/>je luy en devray deux, je tacheray de le payer par une <rs type="letter">lettre</rs> qui soit de
+  <lb/>la longueur de deux autres<choice><orig>,</orig><reg>.</reg></choice> Je vous souhaitte<supplied>,</supplied> Monsieur<supplied>,</supplied> toutes sortes des
+               <lb/>prosperitez dans le nouvel etablissement que vous allez faire dans votre <rs key="place_VER-basela" type="place">patrie</rs><supplied>,</supplied>
+               <lb/>je souhaitte que vous viviez longtemps <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tranquillement pour votre propre
+               <lb/>bonheur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour l’accroissement des Mathematiques. Je vous prie<supplied>,</supplied> Monsieur<supplied>,</supplied>
+               <lb/>de vouloir bien assurer Monsieur votre <rs key="pers_DE-588-118509950" type="person">frere</rs> de mes tres humbles respects <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>de la haute estime que j’ay pour luy, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de faire mes compliments à Monsieur
+               <lb/><rs key="pers_DE-588-119112450" type="person">Hermain</rs> que j’estime beaucoup, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont je me souviens toujours avec plaisir.</p>
 <closer><lb/>Je suis
                <lb/>Monsieur
-               <lb/>Votre tres humble &amp; tres
-               <lb/>obeissant serviteur 
-               <lb/><signed><rs key="pers_DE-588-117586765" type="person">Ab. De Moivre</rs>.</signed>
-<pb facs="1080164" n="11"/>
+               <lb/>Votre tres humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tres
+               <lb/>obeissant serviteur
+               <lb/><signed><rs key="pers_DE-588-117586765" type="person"><abbr>Ab.</abbr> De Moivre</rs>.</signed>
+<pb facs="1080164" n="11" type="empty"/>
 <pb facs="1080165" n="12"/>
 <address>
 <addrLine>A Monsieur</addrLine>
-<addrLine>Monsieur <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs></addrLine>
-<addrLine>A <rs key="place_GEO-2755251" type="place">Groningues</rs></addrLine>
+<addrLine>Monsieur <rs key="pers_DE-588-118509969" type="person">Bernoully</rs></addrLine>
+<addrLine><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2755251" type="place">Groningues</rs></addrLine>
 </address></closer>
 </div>
 </body>

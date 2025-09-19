@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487305501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -143,6 +143,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-02" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-02" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-07-07" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-07-07" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -155,25 +157,37 @@
 <body>
 <div type="letter">
 <pb facs="3694419" n="1"/>
+<opener>
+  <salute>
+    <lb/>Monsieur, mon très cher ami,
+  </salute>
+</opener>
 <p>
-<lb/>Vous aurez reçu la <rs type="letter">Lettre</rs> que je vous ecrivois l’ordinaire
-          <lb/>dernier, sur un scrupule qui m’arretoit dans une piéce de
-          <lb/>Mons. votre <rs key="pers_DE-588-118509969" type="person">Père</rs> intitulée Problema Newtonianum
-          <lb/>generaliter conceptum &amp; solutum. Je suis obligé presentement
-          <lb/>de vous importuner encore aujourdhui au même sujet, à cause
-          <lb/>de l’accident qui m’est arrivé d’en laisser tomber au feu
-          <lb/>la derniére fueille. [sic!] Je la repassois, quand tout à coup quelcun
-          <lb/>ouvrant ma porte a excité un petit vent qui a porté cette
-          <lb/>fueille[sic!] dans le feu, ce dont je ne me suis aperçu que trop tard
-          <lb/>parce que dans ce moment je me tournois pour voir qui
-          <lb/>entroit dans ma chambre. La fueille[sic!] que je vous redemande
-          <lb/>par le premier ordinaire, s’il vous plait &amp; s’il est possible, commence
-          <lb/>au Corollaire 5, dont j’ai encore une ou deux lignes dans ce
-          <lb/>qui a été arraché au feu. Ainsi vous aurés, mon cher Mons.,
-          <lb/>la bonté de faire recopier depuis ce 5 Coroll. inclusivemt.
-          <lb/>jusqu’à la fin, &amp; de me l’adresser incessamment.</p> <closer><salute>Je suis avec les
-          <lb/>sentimens les plus sincéres &amp; les plus tendres Tout a vous G. C.</salute></closer>
-<pb facs="3694420" n="2"/>
+  <lb/>Vous aurez reçu la <rs type="letter">Lettre</rs><!-- referenzieren, ist es dieser Brief "B_1742-12-21_991170516487405501"? RG 02.09.2025 --> que je vous ecrivois l’ordinaire
+  <lb/>dernier, sur un scrupule qui m’arretoit dans une piéce de
+  <lb/><abbr>Mons<supplied>.</supplied><hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118509969" type="person">Père</rs> intitulée <foreign xml:lang="lat">Problema Newtonianum
+  <lb/>generaliter conceptum <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> solutum</foreign>. Je suis obligé <choice><abbr>presentem.<hi rend="sup">t</hi></abbr><expan>presentement</expan></choice>
+  <lb/>de<!-- ? RG 02.09.2025 --> vous importuner encore aujourd<supplied>'</supplied>hui au même sujet, à cause
+  <lb/><subst><del/><add>de l’</add></subst>accident qui m’est arrivé d’en laisser tomber au feu
+  <lb/>la derniére <choice><sic>fueille</sic><corr>feuille</corr></choice>. Je la repassois, quand tout à coup quelcun
+  <lb/>ouvrant ma porte a excité un petit vent qui a porté cette
+  <lb/><choice><sic>fueille</sic><corr>feuille</corr></choice> dans le feu, ce dont je ne me suis aperçu que trop tard
+  <lb/>parce que dans ce moment je me tournois pour voir qui
+  <lb/>entroit dans ma chambre. La <choice><sic>fueille</sic><corr>feuille</corr></choice> que je vous redemande
+  <lb/>par le premier ordinaire, s’il vous plait<del>,</del> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> s’il est possible<unclear>,</unclear><!-- ? RG 02.09.2025 --> commence
+  <lb/>au Corollaire 5, dont j’ai encore une ou deux lignes dans ce
+  <lb/>qui a été arraché au feu. Ainsi vous aurés, mon cher <abbr>Mons<supplied>.</supplied></abbr>,
+  <lb/>la bonté de faire recopier depuis ce 5 <abbr>Coroll.</abbr> <abbr>inclusivem.<hi rend="sup">t</hi></abbr>
+  <lb/>jusqu’<choice><orig>a</orig><reg>à</reg></choice> la fin, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de me l’adresser incessamment.
+</p>
+<closer>
+  <salute>Je suis avec les
+    <lb/>sentimens les plus sincéres <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les plus tendres
+    <lb/>Tout a vous
+  </salute>
+  <signed><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> <abbr>C.</abbr></rs></signed>
+</closer>
+<pb facs="3694420" n="2" type="empty"/>
 </div>
 </body>
 </text></TEI>

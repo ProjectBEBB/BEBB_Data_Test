@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430341105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -151,23 +151,102 @@
   </profileDesc>
   <revisionDesc status="transkribiert">
     <listChange>
+      <change when="2025-09-03" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-03" who="RG">Mathematische Formeln (etc.) angepasst und ergänzt.</change>      
+      <change when="2023-09-03" who="RG">Seitenzahlen, Briefstruktur</change><!-- "facs" noch ergänzen -->
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F33&vx=854.995&vy=-550.961&vr=0&vz=6.14179 RG 02.09.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> Pour Mr. le Prof. Cramer </p>
-<p> Je suis bien aise de vous avertir, mon cher Monsieur, avant que le dernier Tome des ouvrages de mon Père s’imprime, que l’exemplaire de son Hydraulique, d’après lequel celui que j’ai envoyé à Lausanne fut copié, a été écrit par un de mes Neveux, un jeune garçon qui n’entendoit point du tout la matière, l’o riginal ayant été comme vous savés envoyé à Petersbourg; j’ex plique actuellement cette pièce dans une de mes leçons et j’en suis à la fin de la le. Partie, mais je trouve la copie de mon Neveu si mal écrite, que le second copiste aura eu bien de la peine de ne pas faire des fautes, qu’il m’aura été impossible d’appercevoir en collationnant simplement les deux copies, c’est pourquoi je vous prie de voir avec quelque attention s’il n’y aura point de fautes dans les expressions algebriques; j’ai trouvé, par exemple, le Lemme du Â§. IV (Part. 1.) si pein de fautes, qu’il est impossible qu’il ne soit tout defiguré dans l’exemplaire que vous avés, c’est pourquoi j’ai cru qu’il étoit necessaire d’en faire moi même une copie correcte, que je join dri ici à la suite de ma lettre. </p>
-<p> Quelles nouvelles avés vous de notre ami Jallabert l’air de Montpelier lui fait il autant de bien que je souhaite qu’il lui en fasse? faites lui s. v. p. mes Compl[imens] si vous lui écri vés; faites les aussi je vous prie à M. Cromlin et lui dites, que le jeune homme qu’il m’a recommandé m’a demandé une leçon toute particulière; je ne puis la lui accorder sans me deranger beaucoup parce que je suis fort occupé actuellement, cependant je ne puis pas la lui refuser non plus, parce que je vois qu’il faut absolument qu’il soit seul pour profiter quelque chose; il est trop distrait étant plusieurs, au lieu que quand il sera seul et que je lui adresserai directement la parole il ne pourra pas s’abandonner à ses distractions. je me suis donc rendu à ses instances et l’ai prié seulement d’avoir patience jusuq’à vers la fin de l’année. </p>
-<p>Adieu mon cher Monsieur portés vous bien et aimés moi toujours un peu. J. Bernoulli. ce 24 9bre. 1742. [Das Lemma ist auf dem nächsten Blatt: Seite 27.] [zu Brief No. 17. vom 24. November 1742.] Lemma </p>
-<p>Â§ XIV. Sit aequatio integranda (et quidem sine necessitate se parandi indeterminata) <formula>\alpha z\,dx+(\beta+\gamma x)\,dz=\varepsilon+\theta x)\,dx</formula> scribo y pro <formula>b+\gamma X</formula>, unde <formula>dx=\frac{dy}{\gamma}</formula> et aequatio mutatur in hanc <formula>\frac{\alpha}{\gamma}z\,dy+y\,dz=(\varepsilon+\theta x)\,dx</formula> qua multiplicata per <formula>y^{\frac{\alpha}{\gamma}-1}</formula> habebitur <formula>\frac{\alpha}{\gamma}zy^{\frac{\alpha}{\gamma}-1}\,dy+y^{\frac{\alpha}{\gamma}}\,dz=(\varepsilon+\theta x)\,dx\cdot y^{\frac{\alpha}{\gamma}-1}=(\varepsilon+\theta x)\cdot\frac{1}{\gamma}(\beta+\gamma x)^{\frac{\alpha}{\gamma}-1}\cdot\gamma\,dx:</formula> integrando prodibit <formula> </formula> Notetus hic duos postremos terminos datos adjectos esse more solito ad rectificandam aequationem, ut nimirum evanescente x etiam evanescat z dividatur nunc aequatio per <formula>y^{\frac{\alpha}{\gamma}}</formula>, hoc est, <formula>(\beta+\gamma x)^{\frac{\alpha}{\gamma}}</formula> et emerget valor ipsius z, nempe <formula>z=\frac{1}{\alpha}\cdot(\varepsilon+\theta x)-\frac{\theta}{\alpha\alpha+\gamma\alpha}(\beta+\gamma x)++\left(\frac{\theta}{\alpha\alpha+\gamma\alpha}\beta^{\frac{\alpha+\gamma}{\gamma}}-\frac{\varepsilon}{\alpha}\beta^{\frac{\alpha}{\gamma}}\right)\cdot\left(\beta+\gamma x\right)^{\frac{-\alpha}{\gamma}}</formula>
+<pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 02.09.2025 -->
+<opener>
+  <lb/>Pour <abbr>M.</abbr> le <abbr>Prof.</abbr> <rs key="pers_DE-588-11670912X" type="person">Cramer</rs>
+</opener>
+<p>
+  <lb/>Je suis bien aise de vous avertir, mon cher Monsieur, avant
+  <lb/>que le dernier <rs type="biblio">Tome</rs><!-- referenzieren, RG 02.09.2025 --> des ouvrages de mon <rs key="pers_DE-588-118509969" type="person">Père</rs> s’imprime, que
+  <lb/>l’exemplaire de son Hydraulique, d’aprés lequel celui que
+  <lb/>j’ai envoyé à <rs key="place_GEO-2659994" type="place">Lausanne</rs> fut copié, a été écrit par un
+  <lb/>de mes <rs type="person">Neveux</rs><!-- referenzieren?, RG 02.09.2025 -->, un jeune garçon qui n’entendoit point
+  <lb/>du tout la matière, l’original ayant été comme vous
+  <lb/>savés envoyé à <rs key="place_GEO-498817" type="place">Petersbourg</rs>; j’explique actuellement
+  <lb/>cette pièce dans une de mes leçons et j’en suis à la fin
+  <lb/>de la l.<hi rend="sup">e</hi> Partie, mais je trouve la copie de mon <rs type="person">Neveu</rs><!-- referenzieren, RG 02.09.2025 -->
+  <lb/>si mal écrite, que le second <rs type="person">copiste</rs><!-- referenzieren?, RG 02.09.2025 --> aura eu bien de
+  <lb/>la peine de ne pas faire des fautes, qu’il m’aura
+  <lb/>été impossible d<supplied>’</supplied>appercevoir en collationnant simple<pc type="hyphenation">-</pc><lb break="no"/>ment les deux copies, c’est pourquoi je vous prie de
+  <lb/>voir avec quelque attention s’il n’y aura point
+  <lb/>de fautes dans les expressions algebriques; j’ai
+  <lb/>trouvé, par exemple, le <rs type="biblio">Lemme du §. IV. (Part. 1.)</rs><!-- referenzieren, RG 02.09.2025 --> si
+  <lb/>plein de fautes, qu’il est impossible qu’il ne soit
+  <lb/>tout defiguré dans l’exemplaire que vous avés,
+  <lb/>c’est pourquoi j’ai cru qu’il étoit necessaire
+  <lb/>d’en<!-- ? RG 02.09.2025 --> faire moi même une copie correcte,
+  <lb/>que je joindrai ici à la suite de ma <rs type="letter">lettre</rs><!-- referenzieren, RG 02.09.2025 -->.
 </p>
-<p>Item Â§. XV. Coroll. 2 (1. Partie) erit <formula>z=\frac{hhax+\frac{1}{2}hmxx}{hma+hhx-hmx}</formula>, lisés erit <formula>z=\frac{hhax-\frac{1}{2}hmxx}{hma+hhx-hmx}</formula>
+<p>
+  <lb/>Quelles nouvelles avès vous de notre ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
+<pb facs="-" n="2"/>
+  <lb/>l’air de <rs key="place_GEO-2992166" type="place">Montpelier</rs> lui fait il autant de bien que
+  <lb/>je souhaite qu’il lui en fasse? faites lui <abbr>s. v. p.</abbr>
+  <lb/>mes <choice><abbr>Compl.</abbr><expan>Complimens</expan></choice> si vous lui ècrivés; faites les aussi
+  <lb/>je vous prie à <abbr>M.</abbr> <rs key="pers_DE-588-1089914156" type="person">Cromlin</rs> et lui dites, que
+  <lb/>le jeune homme qu’il m<supplied>’</supplied>a recommandé m’a
+  <lb/>demandé une leçon toute particulière; je ne
+  <lb/>puis la lui accorder sans me deranger
+  <lb/>beaucoup parce que je suis fort occupé
+  <lb/>actuellement, cependant je ne puis pas la
+  <lb/>lui refuser non plus, parce que je vois<!-- ? RG 02.09.2025 --> qu’il
+  <lb/>faut absolument qu’il soit seul pour
+  <lb/>profiter quelque chose; il est trop distrait
+  <lb/>ètant plusieurs, au lieu que quand il sera
+  <lb/>seul et que je lui adresserai directement
+  <lb/>la parole il ne pourra pas s’abandonner
+  <lb/>à ses distractions. Je me suis donc rendu
+  <lb/>à ses instances et l’ai prié seulement d’avoir
+  <lb/>patience jusuque vers la fin de l’année.
 </p>
+<closer>
+  <salute>
+    <lb/>Adieu mon Cher Monsieur portés vous bien
+    <lb/>et aimés moi toujours un peu
+  </salute>
+  <signed><rs key="pers_DE-588-117589136" type="person"><abbr>J.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></signed>
+  <dateline>
+    <lb/>ce <date when="1742-11-24">24 9<hi rend="sup">bre</hi> 1742</date>
+  </dateline>
+</closer>
+<pb facs="-" n="3"/>
+<postscript>
+  <p>
+    <lb/><hi rend="u">Lemma</hi>
+  </p>
+  <p>
+    <lb/><foreign xml:lang="lat">§. XIV. Sit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio integranda (et quidem sine necessitate
+    <lb/>se parandi indeterminata) <formula>\alpha z\,dx+(\beta+\gamma x)\,dz=\varepsilon+\theta x)\,dx</formula>; scribo
+    <lb/><formula>y</formula> pro <formula>\beta+\gamma x</formula>, unde <formula>dx=\frac{dy}{\gamma}</formula> et <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio mutatur in hanc <formula>\frac{\alpha}{\gamma}z\,dy</formula>
+    <lb/><formula>+y\,dz=(\varepsilon+\theta x)\,dx</formula> qua<!-- ? RG 02.09.2025 --> multiplicata per <formula>y^{\frac{\alpha}{\gamma}-1}</formula> habebitur
+    <lb/><choice rend="regFormula"><orig><formula>\frac{\alpha}{\gamma}zy^{\frac{\alpha}{\gamma}-1}\,dy+y^{\frac{\alpha}{\gamma}}\,dz=(\varepsilon+\theta x)\,dx\times y^{\frac{\alpha}{\gamma}-1}=(\varepsilon+\theta x)\times\frac{1}{\gamma}(\beta+\gamma x)^{\frac{\alpha}{\gamma}-1}\gamma\,dx</formula></orig><reg><formula>\frac{\alpha}{\gamma}zy^{\frac{\alpha}{\gamma}-1}\,dy+y^{\frac{\alpha}{\gamma}}\,dz=(\varepsilon+\theta x)\,dx y^{\frac{\alpha}{\gamma}-1}=(\varepsilon+\theta x)\times\frac{1}{\gamma}(\beta+\gamma x)^{\frac{\alpha}{\gamma}-1}\times\gamma\,dx</formula></reg></choice>:
+    <lb/>integrando prodibit <formula>\gamma^{\frac{\alpha}{\gamma}}z=\int{(\varepsilon+\theta x)}\times \frac{1}{\gamma}(\beta + \gamma x)^{\frac{\alpha}{\gamma}-1}\gamma\,dx=</formula>
+    <lb/><formula>\frac{1}{\alpha}(\beta+\gamma x)^{\frac{\alpha}{\gamma}}\times (\varepsilon+\theta x)-\int{\frac{\theta}{\gamma\alpha}}(\beta+\gamma\,x)^{\frac{\alpha}{\gamma}}\gamma\,dx=\frac{1}{\alpha}(\beta+\gamma x)^{\frac{\alpha}{\gamma}}\times(\varepsilon+\theta\,x)</formula>
+      <lb/><formula>-\frac{\theta}{\alpha\alpha+\gamma\alpha}(\beta+\gamma\,x)^{\frac{\alpha+\gamma}{\gamma}}-\frac{\varepsilon}{\alpha}\beta^{\frac{\alpha}{\gamma}}+\frac{\theta}{\alpha\alpha+\gamma\alpha}\beta^{\frac{\alpha+\gamma}{\gamma}}</formula>.
+    <lb/>Notetus hic duos postremos terminos datos adjectos
+    <lb/>esse more solito ad rectificandam <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quationem, ut
+    <lb/>nimirum evanescente <formula>x</formula> etiam evanescat <formula>z</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> dividatur
+    <lb/>nunc <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio per <formula>y^{\frac{\alpha}{\gamma}}</formula>, hoc est, <formula>(\beta+\gamma\,x)^{\frac{\alpha}{\gamma}}</formula> et emerget
+    <lb/>valor ipsius <formula>z</formula>, nempe <formula>z=\frac{1}{\alpha}(\varepsilon+\theta\,x)-\frac{\theta}{\alpha\alpha+\gamma\alpha}(\beta+\gamma\,x)+</formula>
+      <lb/><formula>\left(\frac{\theta}{\alpha\alpha+\gamma\alpha}\beta^{\frac{\alpha+\gamma}{\gamma}}-\frac{\varepsilon}{\alpha}\beta^{\frac{\alpha}{\gamma}}\right)\times\left(\beta+\gamma\,x\right)^{\frac{-\alpha}{\gamma}}</formula></foreign>.
+</p>
+<p>
+  <lb/>Item §. XV. <abbr>Coroll.</abbr> 2 (1. Partie) erit <formula>z=\frac{hhax+\frac{1}{2}hmxx}{hma+hhx-hmx}</formula>, lisés
+  <lb/>erit <formula>z=\frac{hhax-\frac{1}{2}hmxx}{hma+hhx-hmx}</formula>
+</p></postscript>
+<pb facs="-" n="4" type="empty"/>
 </div>
 </body>
 </text></TEI>

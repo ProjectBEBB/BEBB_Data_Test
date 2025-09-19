@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517020905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -182,8 +182,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-19" who="FN SG">Kollationieren abgeschlossen</change>
       <change when="2024-11-28" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
       <change when="2024-11-28" who="RG">pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
@@ -192,12 +193,7 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
+
 <!--pers_DE-588-118683969 Fleury, André Hercule de 〈1653-1743〉 -->
 <!--pers_DE-588-118576682 Malebranche, Nicolas 〈1638-1715〉 -->
 <!--pers_DE-588-118820214 Philipp, Frankreich, Regent 〈1674-1723〉 -->
@@ -236,7 +232,7 @@
             oncle -> Bernoulli, Johann 1667-1748 pers_DE-588-118509969
 
             -->
-<!--_____________-->
+
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1361857/manifest"/>
@@ -245,73 +241,73 @@
 <div type="letter">
 <pb facs="1361858" n="1"/> 
 <p>
-  <lb/>Quelle rigueur est la vostre, Monsieur,
+  <lb/><choice><orig>quelle</orig><reg>Quelle</reg></choice> rigueur est la vostre<supplied>,</supplied> Monsieur<supplied>,</supplied>
   <lb/>de me laisser si longtemps sans aucune de vos <rs type="letter">lettres</rs>.
-  <lb/>Es ce que vous n’auriez pas reçu mes <rs type="letter">lettres</rs> et en
-  <lb/>particulier <rs type="letter">celle</rs> que j’ay eu l’honneur de vous
-  <lb/>écrire apres mon arrivée d’<rs key="place_VER-englan" type="place">Angleterre</rs>. Si c’est oubli
-  <lb/>de vostre part, permettez moy de me plaindre.
-  <lb/>Quand vous n’auriez point de curiosité algebrique
-  <lb/>à mettre dans vos <rs type="letter">lettres</rs>, ce ne seroit pas une raison
-  <lb/>pour me priver du plaisir qu’elles me font
-  <lb/>independamment de cela. Vous sçavez sans doutte
-  <lb/>la mort du <rs key="pers_DE-588-118816829" type="person">Roy</rs>, il expira le dimanche à 8 heures et
-  <lb/>demi du matin. <abbr>Mr.</abbr> le <rs key="pers_DE-588-118820214" type="person">Duc d’<rs key="place_VER-orlean" type="place">Orleans</rs></rs>, que le <rs key="pers_DE-588-118816829" type="person"><add>feu</add> Roy</rs> a
-  <lb/>declaré Regent et qui l’etoit de droit, alla lundy au
-  <lb/><rs type="organisation">parlement</rs> accompagné des <rs type="person">Princes</rs> du sangs et des <rs type="person">ducs</rs>
-  <lb/>et <rs type="person">pairs</rs>. Le <rs key="pers_DE-588-118729438" type="person">Roy</rs> doit y aller aujourd’huy, le <rs type="biblio">testament</rs>
-  <lb/>fut ouvert lundy, je ne sçai encore ce qu’il contient.
-  <lb/>Le <rs key="pers_DE-588-118816829" type="person">feu Roy</rs> a nommé <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le Marechal de
-  <lb/><rs key="pers_DE-588-117427624" type="person">Villeroy</rs> gouverneur du <rs key="pers_DE-588-118729438" type="person">Jeune Roy</rs> et <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le Duc 
-  <lb/><rs key="pers_DE-588-116689412" type="person">Dumaine</rs> pour estre au dessus de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le <rs key="pers_DE-588-117427624" type="person">Marechal</rs>,
-  <lb/><abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118683969" type="person">Fleury</rs>, ancien Evesque de <rs key="place_VER-frejus" type="place">Fréjus</rs> pour precepteur,
-  <lb/><abbr>M<hi rend="sup">rs</hi></abbr> de <rs type="person">Saumery</rs> et de  pour sous gouverneurs.
+  <lb/><choice><sic>esce</sic><corr>Est-ce</corr></choice> que vous n<supplied>’</supplied>auriez pas <choice><orig>recu</orig><reg>reçu</reg></choice> mes <rs type="letter">lettres</rs> et en
+  <lb/>particulier <rs type="letter">celle</rs> que j<supplied>’</supplied>ay eu l’honneur de vous
+  <lb/>écrire apres mon arrivée d’<rs key="place_VER-englan" type="place">Angleterre</rs>. <del/><add><choice><orig>si</orig><reg>Si</reg></choice></add> c<supplied>’</supplied>e<del/><add>st oub</add>li
+  <lb/>de vostre part<supplied>,</supplied> permettez<supplied>-</supplied>moy de me plaindre.
+  <lb/><choice><orig>quand</orig><reg>Quand</reg></choice> vous n<supplied>’</supplied>auriez point de curiosité algebrique
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> mettre dans vos <rs type="letter">lettres</rs><supplied>,</supplied> ce ne seroit pas une raison
+  <lb/>pour me priver <del/><add>du</add> plaisir qu<supplied>’</supplied>elles me font
+  <lb/>independamment de cela. Vous <choice><orig>scavez</orig><reg>sçavez</reg></choice> sans doutte
+  <lb/>la mort du <rs key="pers_DE-588-118816829" type="person">Roy</rs><supplied>,</supplied> il expira l<add>e</add> dimanche <choice><orig>a</orig><reg>à</reg></choice> 8 heures et
+  <lb/>demi du matin<supplied>.</supplied> <abbr>M.<hi rend="sup">r</hi></abbr> le <rs key="pers_DE-588-118820214" type="person">Duc D<supplied>’</supplied><rs key="place_VER-orlean" type="place">Orleans</rs></rs> que le <rs key="pers_DE-588-118816829" type="person"><add>feu</add> Roy</rs> a
+  <lb/><choice><orig>declare</orig><reg>declaré</reg></choice> Regent et qui l<supplied>’</supplied>etoit de droit<supplied>,</supplied> alla <date>lundy</date> au
+  <lb/><rs type="organisation">parlement</rs> <choice><orig>accompagne</orig><reg>accompagné</reg></choice> des <rs type="person">Princes</rs> du sangs et des <rs type="person">ducs</rs>
+  <lb/>et <rs type="person">pairs</rs>. <choice><orig>le</orig><reg>Le</reg></choice> <rs key="pers_DE-588-118729438" type="person">Roy</rs> doit y aller aujourd<supplied>’</supplied>huy, le <rs type="biblio">testament</rs>
+  <lb/>fut ouvert <date>lundy</date><supplied>,</supplied> je ne <choice><orig>scai</orig><reg>sçai</reg></choice> encore ce qu<supplied>’</supplied>il contient.
+  <lb/><choice><orig>le</orig><reg>Le</reg></choice> <rs key="pers_DE-588-118816829" type="person">feu Roy</rs> a nommé <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le Marechal de
+  <lb/><rs key="pers_DE-588-117427624" type="person">Villeroy</rs> gouverneur du <rs key="pers_DE-588-118729438" type="person">Jeune Roy</rs> et <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le Duc
+  <lb/><rs key="pers_DE-588-116689412" type="person">Dumaine</rs> pour estre au dessus de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le <rs key="pers_DE-588-117427624" type="person">Marechal</rs>
+  <lb/><abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118683969" type="person">Fleury</rs><supplied>,</supplied> ancien Evesque de <rs key="place_VER-frejus" type="place">Frejus</rs><supplied>,</supplied> pour precepteur<supplied>,</supplied>
+  <lb/><abbr>M<supplied>.</supplied><hi rend="sup">rs</hi></abbr> de <rs type="person">Saumery</rs> et de <gap/><note type="editorial">Hier steht eine Lücke, offensichtlich wollte Montmort hier nachträglich einen Namen einsetzen.</note> pour sous gouverneurs.
 <pb facs="1361859" n="2"/> 
-  <lb/>Le <rs key="pers_DE-588-118816829" type="person">Roy</rs> a temoigné pendant sa maladie
-  <lb/>et jusqu’à sa mort un grand courage et beaucoup
-  <lb/>de fermeté. On commence à dire que le credit ou
-  <lb/>plustost l’autorité supreme des <rs type="person"><abbr>RRPP</abbr></rs> va bien
+  <lb/><choice><orig>le</orig><reg>Le</reg></choice> <rs key="pers_DE-588-118816829" type="person">Roy</rs> a temoigné pendant sa maladie
+  <lb/>et jusqu<supplied>’</supplied><choice><orig>a</orig><reg>à</reg></choice> sa mort un grand courage et beaucoup
+  <lb/>de fermeté. On commence <choice><orig>a</orig><reg>à</reg></choice> dire que le credit ou
+  <lb/>plustost l<supplied>’</supplied>autorité supreme des <rs type="person"><choice><abbr>RRPP.</abbr><expan>Reverends Pères</expan></choice></rs> va bien
   <lb/>tomber. Ils ont contre eux le <rs type="organisation">parlement</rs> et tous
-  <lb/>les peuples. Si le <rs key="pers_DE-588-118820214" type="person">regent</rs> ne les soutient, comme cela
-  <lb/>pourra arriver, ils seront bientost reduits à la
+  <lb/>les peuples. Si le <rs key="pers_DE-588-118820214" type="person">regent</rs> ne les soutient<supplied>,</supplied> comme cela
+  <lb/>pourra arriver<supplied>,</supplied> ils seront bientost reduits <choice><orig>a</orig><reg>à</reg></choice> la
   <lb/>classe de simples moines. On me mande
-  <lb/>de <rs key="place_GEO-2969679" type="place">Versailles</rs> que le Pere <rs key="pers_DE-588-139882383" type="person">Le Tellier</rs> accompagné
-  <lb/>du pere du <rs type="person">Trevoux</rs> s’etant presenté pour faire
-  <lb/>la reverence à son <rs type="person">Altesse Royalle</rs>, <abbr>Mr.</abbr> le Marquis
+  <lb/>de <rs key="place_GEO-2969679" type="place">Versailles</rs> que le Pere <rs key="pers_DE-588-139882383" type="person"><choice><orig>le</orig><reg>Le</reg></choice> Tellier</rs> accompagné
+  <lb/>du pere <rs type="person">du Trevoux</rs> s<supplied>’</supplied>etant presenté pour faire
+  <lb/>la reverence <choice><orig>a</orig><reg>à</reg></choice> son <rs type="person">altesse Royalle</rs>. <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> le Marquis
   <lb/>de <rs type="person">Simiane</rs> luy avoit dit par ordre du <rs type="person">Prince</rs> que son
-  <lb/><rs type="person">Altesse</rs> etoit occupée. Agreable spectacle pour tous
-  <lb/>les <rs type="person">assistans</rs> de voir sa reverence, qui dominoit
+  <lb/><rs type="person">Altesse</rs> etoit <choice><orig>occupee</orig><reg>occupée</reg></choice>. <choice><orig>agreable</orig><reg>Agreable</reg></choice> spectacle pour tous
+  <lb/>les <rs type="person">assistans</rs> de voir sa reverence<supplied>,</supplied> qui dominoit<supplied>,</supplied>
   <lb/>il y a un mois sur une bonne partie du
-  <lb/>clergé de <rs key="place_VER-frankr" type="place">France</rs>, de voir, dis je, cette reverence
-  <lb/>un peu humiliée. Le <rs key="pers_DE-588-118729438" type="person">Roy</rs> va au <rs key="place_WEI-chavin" type="place">Chateau de
-  <lb/>Vincennes</rs> pour 40 jours, on va travailler au
-  <lb/><rs key="place_WEI-louvre" type="place">Louvre</rs>; on assure qu’il demeurera à <rs key="place_GEO-2988507" type="place">Paris</rs>.
-  <lb/>Monsieur le <rs key="pers_DE-588-118820214" type="person">Duc d’<rs key="place_VER-orlean" type="place">Orleans</rs></rs> est un Prince aimable
-  <lb/>et qui a infiniment d’esprit et qui aime les sciences.
+  <lb/>clergé de <rs key="place_VER-frankr" type="place"><choice><orig>france</orig><reg>France</reg></choice></rs><supplied>,</supplied> de voir<supplied>,</supplied> dis<supplied>-</supplied>je<supplied>,</supplied> cette reverence
+  <lb/>un peu humiliée. <choice><orig>le</orig><reg>Le</reg></choice> <rs key="pers_DE-588-118729438" type="person">Roy</rs> va au <rs key="place_WEI-chavin" type="place">chateau de
+  <lb/>Vincennes</rs> pour 40 jours<supplied>,</supplied> on va travailler au
+  <lb/><rs key="place_WEI-louvre" type="place">Louvre</rs><supplied>,</supplied> on assure qu<supplied>’</supplied>il demeurera <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs>.
+  <lb/>Monsieur le <rs key="pers_DE-588-118820214" type="person">Duc D’<rs key="place_VER-orlean" type="place">Orleans</rs></rs> est un Prince aimable
+  <lb/><del/>qui a infiniment d<supplied>’</supplied>esprit et qui aime les sciences.
   <lb/>On espere un avenir plus heureux que le
-  <lb/>passé. Vous devriez bien, Monsieur, pendant
+  <lb/>passé. Vous devriez bien<supplied>,</supplied> Monsieur<supplied>,</supplied> pendant
 <pb facs="1361861" n="3"/>    
-  <lb/>que vous n’estes pas embarassé dans les liens du
-  <lb/>Mariage, venir nous voir encore une fois.
-  <lb/>Je reussirois peutestre mieux à vous faire
-  <lb/>connoite le parfait attachement, avec lequel
-  <lb/>j’ay l’honneur d’estre,
+  <lb/>que vous n<supplied>’</supplied>estes pas embarassé dans les liens du
+  <lb/>Mariage<supplied>,</supplied> venir nous voir encore une fois.
+  <lb/>Je reussirois peutestre mieux <choice><orig>a</orig><reg>à</reg></choice> vous faire
+  <lb/>connoitre le parfait attachement avec lequel
+  <lb/>j<supplied>’</supplied><del/><add>a</add>y l’honneur d<supplied>’</supplied>estre<supplied>,</supplied>
 </p>
 <closer>
-  <salute>Monsieur, Vostre tres
-    <lb/>humble et tres obeissant serviteur
+  <salute>Monsieur<supplied>,</supplied> Vostre tres
+    <lb/>humble et tresobeissant serviteur
   </salute>
-  <signed><rs key="pers_DE-588-117601020" type="person">Remond de Monmort</rs></signed>.
+  <signed><rs key="pers_DE-588-117601020" type="person">Remond de Monmor</rs></signed><supplied>.</supplied>
   <dateline>
-    <lb/>A <rs key="place_GEO-2992218" type="place">Monmort</rs> ce jeudy <date when="1715-09-06">6.<del> Aoust</del> 7bre</date>
+    <lb/>A <rs key="place_GEO-2992218" type="place">Monmort</rs> ce jeudy<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <date when="1715-09-06">6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <del>Aoust </del>7.<hi rend="sup">bre</hi></date>
   </dateline>.
 </closer>
 <postscript>
   <p>
-    <lb/>Mes tres humbles complimens, s’il vous plait, à <abbr>Mr.</abbr>
-    <lb/>Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. Le bon Pere <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs> est malade
-    <lb/>depuis plus de deux mois. Je ne crois pas qu’il puisse
-    <lb/>passer l’automne. Ce sera une grande perte pour les
+    <lb/>Mes treshumbles complimens<supplied>,</supplied> s<supplied>’</supplied>il vous plaist<supplied>,</supplied> <choice><orig>a</orig><reg>à</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
+    <lb/>Vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. <choice><orig>le</orig><reg>Le</reg></choice> bon Pere <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs> est malade
+    <lb/>depuis plus de deux mois<supplied>.</supplied> Je ne crois pas qu<supplied>’</supplied>il puisse
+    <lb/>passer l’automne. <choice><orig>ce</orig><reg>Ce</reg></choice> sera une grande perte pour les
     <lb/>sciences et pour ses <rs type="person">amis</rs>.
   </p>
 </postscript>

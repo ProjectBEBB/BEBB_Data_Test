@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517066705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,6 +147,9 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-23" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-23" who="RG">Mathematische Formeln (etc.) angepasst.</change>
+      <change when="2025-07-22" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-29" who="RG">Personen und Orte ausgezeichnet</change>
       <change when="2023-09-21" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <!-- Formeln noch nachprüfen, RG 21.09.2023 -->
@@ -171,103 +174,136 @@
 <body>
 <div type="letter">
 <pb facs="1063425" n="1"/>
-<p><lb/>Pardonnez-moi, Monsieur, ma lenteur à vous repondre. Elle
-                           <lb/>ne repond point à la vivacité de mon zele, ni à mon empressement à jouir
-                           <lb/>du bonheur que vous me permettez de m’entretenir avec vous. C’est une
-                           <lb/>suite des distractions continuelles que me causent des affaires peu importantes
-                           <lb/>mais indispensables.</p>
-<p><lb/>La manière dont je m’y prens dans le petit Traitté ebauché dont je vous
-                           <lb/>parlois, pour reduire l’equation generale <formula>ay^{3}+bxyy+cx^{2}y+dx^{3}+ey^{2}+fxy+gx^{2}</formula>
-<lb/><formula>+hy+ix+k=0</formula>, des Lignes du 3.<hi>e</hi> Ordre, aux 4 Classes de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, con<pc type="hyphenation">-</pc><lb break="no"/>siste en deux transformations successives, dont la premiére distingue la
-                           <lb/>2.<hi>e</hi> Classe des trois autres, &amp; la seconde donne les équations les plus simples
-                           <lb/>qui sont justement celles de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>.</p>
-<p><lb/>Soit <formula>AB=x, BC=y</formula>. Je change d’abord les ordonnées
-                           <lb/><formula>CB</formula> en d’autres <formula>CD(u)</formula>, faisant <formula>CD.DB.BC\;::\;1.p.q</formula><!-- Diese Formel nochmals prüfen und anpassen, RG 14.09.2023 -->,
-                           <lb/>ce qui donne <formula>AB(x)=AD(z)+DB(pu)&amp;BC(y)=qu</formula>.
-                           <lb/>Ces valeurs substituées dans l’equation generale, la changent
-                           <lb/>en une autre, où la plus haute puissance <del>de </del>(u<hi rend="sup">3</hi>) des ordonnées a pour coefficient
-                           <lb/><formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}</formula>. Si l’on veut que les or données <add><formula>CD</formula></add> soient paralleles à la derniere
-                           <lb/>direction de la Courbe, il faut que ce terme disparoisse. Qu’on fasse donc <formula>aq^{3}+bq^{2}p+cqp^{2}</formula>
-<lb/><formula>+dp^{3}=0</formula>, ce qui determinera le raport de <formula>p</formula> à <formula>q</formula>, &amp; la position de l’ordonnée principale <formula>AE</formula>. 
-                           <lb/>Si cette equation a 3 racines egales l’equation generale prend cette forme
-                           <lb/><formula>Bu^{2}+(Dz+E)u+Fz^{3}+Gz^{2}+Hz+1=0</formula> qui renferme les 3 dernières classes de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
-                           <lb/>Si elle a des racines inegales, (je comprens ici tant le cas où elles sont toutes trois
-                           <lb/>inégales, que celui ou deux sont égales, &amp; celui ou deux sont imaginaires) l’equat. gnale
-                           <lb/>prend cette forme <formula>(Az+B)u^{2}+(Czz+Dz+E)u+Fz^{3}+Gz^{2}+Hz+1=0</formula>, qui renferme
-                           <lb/>toutes les courbes de la première classe, comme on le va voir, en reduisant cette équa<pc type="hyphenation">-</pc>
-<pb facs="1063426" n="2"/><lb break="no"/>tion a sa forme la plus simple.<del/> Cela se fera en donnant une autre position
-                           <lb/>à la ligne des abscisses. Soit donc FG(t) l’abscisse, GC(v)l’ordonnée, &amp; soit
-                           <lb/><formula>FG.FH.HG\;::\;1.r.s</formula>. Donc <formula>AD(z)=AI(n)+ID</formula> ou <formula>FH(rt)</formula>
-<lb/>et <formula>DC(u)=DH</formula> ou <formula>FI(m)+HG(st)+GC(v)</formula>, ce qui
-                           <lb/>etant substitué dans l’equation <formula>(Az+B)u^{2}+\mbox{\&amp;c.}</formula> la change 
-                           <lb/>en celle ci: <formula>Artv^{2}+(2Ars+Crr)t^{2}v+(Ars^{2}+Cr^{2}s+Fr^{3})t^{3}</formula>
-<lb/><formula>(+An+B)v^{2}+(2Ans+2Amr+2Bs+2Cnr+Dr)tv+(2Amrs+</formula>
-<lb/><formula>Ans^{2}+Bs^{2}+2Cnrs+Cmr^{2}+Drs+3Fnr^{2}+Gr^{2})t^{2}+(2Amn+2Bm+</formula>
-<lb/><formula>Cn^{2}+Dn+E)v+(Am^{2}r+2Amns+2Bms+Cn^{2}s+2Cmnr+Dmr+Dns+Es+3Fn^{2}r+2Gnr+Hr)t</formula>
-<lb/><formula>+Am^{2}n+Bm^{2}+Cmn^{2}+Dmn+Em+Fn^{3}+Gn^{2}+Hn+1=0.</formula> Faites <formula>2Ars+Crr=0</formula>,
-                           <lb/>ou <formula>r.s\;::\;-2A.C</formula>, &amp; le second terme s’evanouira. Faites <formula>An+B=0</formula>, ou <formula>n\;::\;-B.A</formula>, &amp; le 4<hi>e</hi>
-<lb/>terme s’evanouira aussi, le 5.<hi>e</hi> etant réduite à <formula>(2Amr+2Cnr+Dr)v</formula>. Faites enfin
-                           <lb/><formula>2Am+2Cn+D=0</formula>, ou <formula>m=-(2Cn+D):2A</formula> et ce 5.<hi>e</hi> s’evanouissant, toute l’equation
-                           <lb/>sera reduite à <formula>Artv^{2}+(Ars^{2}+Cr^{2}s+Fr^{3})t^{3}+(2Cnrs+Drs+3Fnrr+Grr)tt+(Cnn+Dn+E)v</formula>
-<lb/><formula>+(Am^{2}r+Cn^{2}s+Dns+Es+3Fn^{2}r+2Gnr+Hr)t+Cmn^{2}+Dmn+Em+Fn^{3}+Gn^{2}+Hn+1=0</formula>
-<lb/>à laquelle on peut donner cette forme <formula>tv<hi rend="sup">2</hi>-t<hi rend="sup">3</hi>-t<hi rend="sup">2</hi>+v-t-=0</formula>, ou (mettant
-                           <lb/><formula>x</formula> pour <formula>t</formula>, &amp; <formula>y</formula> pour <formula>v)xyy+y=αx<hi rend="sup">3</hi>+βx<hi rend="sup">2</hi>+γx+δ</formula>, ce qui est la 1. Classe de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
-                           <lb/>Cet Auteur examine dans les 4 l<hi>ers</hi> Numeros de cette Classe les Courbes dont l’equation
-                           <lb/>generale donne à celleci <formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}=0</formula> trois racines réelles inégales.
-                           <lb/>Mais si cette <formula>eq.aq<hi rend="sup">3</hi> + &amp;c.</formula> a deux racines imaginaires, on determiner a la raison
-                           <lb/>de <formula>p</formula> à <formula>q</formula> par le moien de la racine réelle, &amp; alors les 2 racines imaginaires doivent
-                           <lb/>rester dans l’equation qui se fera des plus hauts termes <del>tv<hi rend="sup">2</hi> t<hi rend="sup">3</hi></del>. Donc l’equation
-                           <lb/><formula>v<hi rend="sup">2</hi>-αt<hi rend="sup">2</hi>=0</formula> a deux racines <formula>v=t\sqrt{\alpha}</formula>, &amp; <formula>v=-t\sqrt{\alpha}</formula> imaginaires, ce qui ne peut étre à moins
-                           <lb/>que <formula>{\alpha}</formula> ne soit négatif. C’est le cas que Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> examine dans les N<hi>os</hi>. 5 &amp; 6.</p>
-<p><lb/>Si cette equat. <formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}=0</formula> a deux racines égales, la raison de <formula>p</formula> à <formula>q</formula>
-<lb/>sera determinée par la 3<hi>e</hi>. racine inegale, &amp; dans l’eq. faite des plus hauts termes, <formula>v<hi rend="sup">2</hi>-t<hi rend="sup">2</hi>=0</formula>,
-                           <lb/>il doit rester les deux racines égales. Or ces racines sont <formula>v=t\sqrt{\alpha}</formula>, <formula>v=-t\sqrt{\alpha}</formula>, qui ne
-                           <lb/>peuvent étre égales, à moins que <formula>{\alpha}</formula> ne soit = 0. C’est ce que M. <rs key="pers_DE-588-118587544" type="person">Newton</rs> detaille
-                           <lb/>dans les Nos. 7, 8, 9, 10, 11.</p>
-<p><!--[Anmerkung des Empfängers: --><lb/>Si tres radices sint βp, γp, δp et pro q substituatur p, invenietur <formula>A=</formula>
-<lb/><formula>(\beta\delta\delta+\gamma\delta\delta\delta^{3}-\beta\gamma\delta)app</formula>, <formula>C=(\beta\delta\delta+\gamma\delta\delta-2\beta\gamma\delta)ap</formula>, <formula>F=-\alpha\beta\gamma\delta</formula>,
-                              <lb/>et = quadrato quantitatis <formula>\frac{apr\delta\delta\cdot(\beta-\gamma)}{2A}</formula>.]</p>
+<p>
+  <lb/>Pardonnez-moi, Monsieur, ma lenteur <choice><orig>a</orig><reg>à</reg></choice> vous repondre. Elle
+  <lb/>ne repond point à la vivacité de mon zele, ni à mon empressement à jouir
+  <lb/>du bonheur que vous me permettez de m’entretenir avec vous. C’est une
+  <lb/>Suite des distractions continuelles que me causent des affaires peu importantes
+  <lb/>mais indispensables.
+</p>
+<p>
+  <lb/>La manière dont je m’y prens dans le petit Traitté ebauché dont je vous
+  <lb/>parlois, pour reduire l’equation generale <formula>ay^{3}+bxyy+cx^{2}y+dx^{3}+ey^{2}+fxy+gx^{2}</formula>
+  <lb/><formula>+hy+ix+k=0</formula>, des Lignes du 3.<hi rend="sup">e</hi> Ordre, aux 4 Classes de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, con<pc type="hyphenation">-</pc><lb break="no"/>siste en deux transformations successives, dont la premiére distingue la
+  <lb/>2.<hi rend="sup">e</hi> Classe des trois autres, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la seconde donne les équations les plus simples
+  <lb/>qui sont justement celles de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
+</p>
+<p><!-- Grafik noch einfügen, RG 22.07.2025 -->
+  <lb/>Soit <formula>AB=x</formula>, <formula>BC=y</formula>. Je change d’abord les ordonnées
+  <lb/><formula>CB</formula> en d’autres <formula>CD(u)</formula>, faisant <formula>CD:DB:BC=1:p:q</formula>,
+  <lb/>ce qui donne <formula>AB(x)=AD(z)+DB(pu)\mbox{ \&amp; }BC(y)=qu</formula><!-- "&amp;" nicht normalisiert, da "et" in der Formel es eher nach Variablen aussieht, RG 23.07.2025 --><supplied>.</supplied>
+  <lb/>Ces valeurs substituées dans l’equation generale, la changent
+  <lb/>en une autre, où la plus haute puissance <del>de </del>(<formula>u^{3}</formula>) des ordonnées a pour coefficient
+  <lb/><formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}</formula>. Si l’on veut que les ordonnées <add><formula>CD</formula></add> soient paralleles à la derniere
+  <lb/>direction de la Courbe, il faut que ce terme disparoisse. Qu’on fasse donc <formula>aq^{3}+bq^{2}p+cqp^{2}</formula>
+  <lb/><formula>+dp^{3}=0</formula>, ce qui determinera le raport de <formula>p</formula> à <formula>q</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la position de l’ordonnée principale <formula>AE</formula>.
+  <lb/>Si cette equation a 3 racines egales l’equation generale prend cette forme
+  <lb/><formula>Bu^{2}+(Dz+E)u+Fz^{3}+Gz^{2}+Hz+1=0</formula> <subst><del/><add>q</add></subst>ui renferme les 3 dernières classes de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
+  <lb/>Si elle a <subst><del/><add>des</add></subst> racines inegales, (je comprens ici tant le cas où elles sont toutes trois
+  <lb/>inégales, que celui ou d<subst><del>é</del><add>e</add></subst>ux sont égales, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celui ou deux sont imaginaires) l’<abbr>equat.</abbr> <abbr>gnale<supplied>.</supplied></abbr>
+  <lb/>prend cette forme <formula>(Az+B)u^{2}+(Czz+Dz+E)u+Fz^{3}+Gz^{2}+Hz+1=0</formula>, qui renferme
+  <lb/>toutes les courbes de la première classe, comme on le va voir, en reduisant cette équa<pc type="hyphenation">-</pc>
+  <pb facs="1063426" n="2"/><lb break="no"/>tion <choice><orig>a</orig><reg>à</reg></choice> sa forme la plus simple.<del/> <subst><del>c</del><add>C</add></subst>ela se fera en donnant une autre position
+  <lb/>à la ligne des abscisses. Soit donc <formula>FG(t)</formula> l’abscisse, <formula>GC(v)</formula> l’ordonnée, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> soit<!-- Grafik noch einfügen, RG 23.07.2025 -->
+  <lb/><formula>FG:FH:HG=1:r:s</formula>. Donc <formula>AD(z)=AI(n)+ID</formula> ou <formula>FH(rt)</formula>
+  <lb/>et <formula>DC(u)=DH</formula> ou <formula>FI(m)+HG(st)+GC(v)</formula>, ce qui
+  <lb/>etant substitué dans l’equation <choice rend="regFormula"><orig><formula>(Az+B)u^{2}+\mbox{\&amp;c}</formula></orig><reg><formula>(Az+B)u^{2}+\mbox{etc.}</formula></reg></choice>, la change
+  <lb/>en celle ci<supplied>:</supplied><!-- ":" im Original sehr schwer erkennbar oder gar nicht, RG 23.07.2025 --> <formula>Artv^{2}+(2Ars+Crr)t^{2}v+(Ars^{2}+Cr^{2}s+Fr^{3})t^{3}</formula>
+  <lb/><formula>(+An+B)v^{2}+(2Ans+2Amr+2Bs+2Cnr+Dr)tv+(2Amrs+</formula>
+  <lb/><formula>Ans^{2}+Bs^{2}+2Cnrs+Cmr^{2}+Drs+3Fnr^{2}+Gr^{2})t^{2}+(2Amn+2Bm+</formula>
+  <lb/><formula>Cn^{2}+Dn+E)v+(Am^{2}r+2Amns+2Bms+Cn^{2}s+2Cmnr+Dmr+Dns+Es+3Fn^{2}r+2Gnr+Hr)t</formula>
+  <lb/><formula>+Am^{2}n+Bm^{2}+Cmn^{2}+Dmn+Em+Fn^{3}+Gn^{2}+Hn+1=0</formula>. Faites <formula>2Ars+Crr=0</formula>
+  <lb/>ou <formula>r:s=-2A:C</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le second terme s’evanouira. Faites <formula>An+B=0</formula>, ou <formula>n=-B:A</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le 4.<hi rend="sup">e</hi>
+  <lb/>terme s’evanouira aussi, le 5.<hi rend="sup">e</hi> etant rédui<subst><del/><add>te</add></subst> à <formula>(2Amr+2Cnr+Dr)v</formula>. Faites enfin
+  <lb/><formula>2Am+2Cn+D=0</formula>, ou <formula>m=-(2Cn+D):2A</formula> et ce 5.<hi rend="sup">e</hi> s’evanouissant, toute l’equation
+  <lb/>sera reduite à <formula>Artv^{2}+(Ars^{2}+Cr^{2}s+Fr^{3})t^{3}+(2Cnrs+Drs+3Fnrr+Grr)tt+(Cnn+Dn+E)v</formula>
+  <lb/><formula>+(Am^{2}r+Cn^{2}s+Dns+Es+3Fn^{2}r+2Gnr+Hr)t+Cmn^{2}+Dmn+Em+Fn^{3}+Gn^{2}+Hn+1=0</formula>
+  <lb/>à laquelle on peut donner cette forme <formula>tv^{2}-\alpha ^{3}-\beta t^{2}+\epsilon v-\gamma t-\delta=0</formula>, ou (mettant
+  <lb/><formula>x</formula> pour <formula>t</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>y</formula> pour <formula>v</formula>) <formula>xyy+\epsilon y=\alpha x^{3}+\beta x^{2}+\gamma x+\delta</formula>, ce qui est la 1.<hi rend="sup">e</hi> Classe de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
+</p>
+<p>
+  <lb/>Cet Auteur examine dans les 4 l.<hi rend="sup">ers</hi> Numeros de cette Classe les Courbes dont l’equation
+  <lb/>generale, donne à celleci <formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}=0</formula> trois racines réelles inégales.
+</p>
+<p>
+  <lb/>Mais si cette <choice rend="regFormula"><orig><formula>eq:aq^{3}+\mbox{\&amp;c}</formula></orig><reg><formula>eq:aq^{3}+\mbox{etc.}</formula></reg></choice> a deux racines imaginaires, on determiner a la raison
+  <lb/>de <formula>p</formula> à <formula>q</formula>, par le moien de la racine réelle, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> alors les 2 racines imaginaires doivent
+  <lb/>rester dans l’equation qui se fera des plus hauts termes <formula>tv^{2}=t^{3}</formula>. Donc l’equation
+  <lb/><formula>v^{2}-\alpha t^{2}=0</formula> a deux racines <formula>v=t\sqrt{\alpha}</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>v=-t\sqrt{\alpha}</formula>, imaginaires, ce qui ne peut ètre à moins
+  <lb/>que <formula>{\alpha}</formula> ne soit négatif. C’est le cas que <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> examine dans les <abbr>N.<hi rend="sup">os</hi></abbr> 5 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 6.
+</p>
+<p>
+  <lb/>Si cette <abbr>equat<supplied>.</supplied></abbr>: <formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}=0</formula> a deux racines égales, la raison de <formula>p</formula> à <formula>q</formula>
+  <lb/>sera determinée par la 3.<hi rend="sup">e</hi> racine inegale, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans l’<abbr>eq.</abbr> faite des plus hauts termes, <formula>v^{2}-\alpha t^{2}=0</formula>,
+  <lb/>il doit rester les deux racines ègales. Or ces racines sont <formula>v=t\sqrt{\alpha}</formula>, <formula>v=-t\sqrt{\alpha}</formula>, qui ne
+  <lb/>peuvent étre ègales, à moins que <formula>{\alpha}</formula> ne soit <formula>=0</formula>. C’est ce que <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> detaille
+  <lb/>dans les<abbr> N.<hi rend="sup">os</hi></abbr> 7, 8, 9, 10, 11.
+</p>
+<note hand="pers_DE-588-119166895"><!-- Nicht sicher, ob das Note in einer <p> umschlossen werden muss, RG 23.07.2025-->
+  <lb/>Si tres radices sint <formula>\beta p</formula>, <formula>\gamma p</formula>, <formula>\delta p</formula> et pro <formula>q</formula> substituatur <formula>\delta p</formula>, invenietur <formula>A=</formula>
+  <lb/><choice rend="regFormula"><orig><formula>\overline{\beta\delta\delta+\gamma\delta\delta-\delta^{3}-\beta\gamma\delta}\cdot app</formula></orig><reg><formula>(\beta\delta\delta+\gamma\delta\delta-\delta^{3}-\beta\gamma\delta)\cdot app</formula></reg></choice>, <choice rend="regFormula"><orig><formula>C=\overline{\beta\delta\delta+\gamma\delta\delta-2\beta\gamma\delta}\cdot ap</formula></orig><reg><formula>C=(\beta\delta\delta+\gamma\delta\delta-2\beta\gamma\delta)\cdot ap</formula></reg></choice>, <formula>F=-\alpha\beta\gamma\delta</formula>,
+  <lb/>et <formula>\alpha=</formula> quadrato quantitatis <choice rend="regFormula"><orig><formula>\frac{apr\delta\delta\cdot\beta-\gamma}{2A}</formula></orig><reg><formula>\frac{apr\delta\delta\cdot(\beta-\gamma)}{2A}</formula></reg></choice>.
+</note>
 <pb facs="1063427" n="3"/>
-<p><lb/>Enfin si l’eq. <formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}=0</formula> a trois racines égales, la raison de <formula>p</formula> à <formula>q</formula>
-<lb/>ne pouvant étre determinée que par cette racine triple, la transformée aura
-                           <lb/>cette forme <formula>Buu+(Dz+E)u+Fz^{3}+Gz^{2}+Hz+1=0</formula>. Qu’on fasse <formula>z=n+rt</formula>, &amp; <formula>u=st+r</formula>,
-                           <lb/>&amp; l’equation se reduira à <formula>Bvv+(2Bs+Dr)tv+(Dn+E)v+Fr^{3}t^{3}+(Bss+Drs+3Fnr^{2}+Gr^{2})t^{2}</formula>
-<lb/><formula>+(Dns+Es+3Fn^{2}r+Gnr+Hr)t+Fn^{3}+Gn^{2}+Hn+1=0</formula>. Faites <formula>2Bs+Dr=0</formula>, ou <formula>r.s\;::\;-2B.D</formula>
-<lb/>et <formula>Dn+E=0</formula>, ou <formula>n\;::\;-E.D</formula>, &amp; le 2d &amp; 3e terme s’evanouissant, l’eq. se reduira à
-                           <lb/><formula>Bvv+Fr^{3}t^{3}+(-Drs+3Fnr^{2}+Gr^{2})t^{2}+(3Fn^{2}r+Gnr+Hr)t+Fn^{3}+Gn^{2}+Hn+1=0</formula>, à laquelle
-                           <lb/>on peut donner cette forme <formula>vv-αt<hi rend="sup">3</hi>-βt<hi rend="sup">2</hi>-γt-δ=0</formula>. C’est la 3.<hi>e</hi> Classe de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>
-<lb/>qui lui donne cinq Courbes, N.<hi rend="sup">o</hi> 13.</p>
-<p><lb/>Mais si B se trouve égal<del>e</del> à zero, faites seulement <formula>z=n+t</formula>, &amp; l’eq. se reduira
-                           <lb/>à <formula>Dtv+(Dn+E)v+Ft^{3}+(3Fn+G)t^{2}+(3Fn^{2}+2Gn+H)t+Fn^{3}+Gn^{2}+Hn+1=0</formula>, ou
-                           <lb/>faisant <formula>Dn+E=0</formula>, c’est à dire <formula>n\;::\;-E.D</formula>, le second terme s’evanouira, et l’Eq. prendra
-                           <lb/>cette forme <formula>tv-αt<hi rend="sup">3</hi>-βt<hi rend="sup">2</hi>-γt-δ=0</formula>, qui est la 2<hi>e</hi>. Classe de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>. N<hi>o</hi>. 12.</p>
-<p><lb/>Enfin si B &amp; D sont = 0, l’equation <formula>Ev+Fz^{3}+Gz^{2}+Hz+1=0</formula>, represente la Courbe
-                           <lb/>unique de la 4<hi>e</hi>. Classe de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>. N<hi>o</hi>. 14.</p>
-<p><lb/>Il y a, comme vous le voiés, Monsieur, bien du raport entre cette maniére
-                           <lb/>&amp; celle que vous avez emploiée, &amp; j’ai peut étre eu tort de dire que la mienne etoit
-                           <lb/>un peu plus courte. Cependant comme elle méne bien directement aux quatre
-                           <lb/>Classes de <rs key="pers_DE-588-118587544" type="person">Newton</rs>, elle peut avoir son utilité.</p>
-<p><lb/>Je vous prie toujours de vouloir bien me communiquer, ce que vous trouverés
-                           <lb/>en éclaircissement sur la Methode de sommer la suite <formula>\frac{1}{1}+\frac{1}{4}+\frac{1}{9}\mbox{&amp;c.}</formula> Votre
-                           <lb/>Methode m’a été communiquée par M. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> quand il fut de retour de
-                           <lb/>ses voyages. Elle n’a point cet inconvenient. Elle renferme même une belle
-                           <lb/>methode pour la reduction des suites, dont on connoit le raport d’un Terme à ceux
-                           <lb/>qui le précedent, à l’integration d’une <del/>equation differentielle. Mais elle
-                           <lb/>est un peu longue. Si par malheur vous l’aviez égarée, je puis, quand il vous
-                           <lb/>plaira, vous en envoier une Copie.
-                           <lb/>J’ai l’honneur d’etre, avec un entier devouement
-                           <lb/>Monsieur</p>
-<closer><salute><lb/>Votre très humble &amp; très
-                                 <lb/>obeisst. Serviteur</salute> <signed>G. Cramer</signed>
-<dateline><lb/>Geneve ce <date when="1741-09-26">26 Sept. 1741</date></dateline></closer>
+<p>
+  <lb/>Enfin si l’<abbr>eq.</abbr> <formula>aq^{3}+bq^{2}p+cqp^{2}+dp^{3}=0</formula> a trois racines <subst><del/><add>é</add></subst>gales, la raison de <formula>p</formula> à <formula>q</formula>
+  <lb/>ne pouvant étre<!-- "è"? RG 23.07.2025 --> determinée que par cette racine triple, la transformée aura
+  <lb/>cette forme <formula>Buu+(Dz+E)u+Fz^{3}+Gz^{2}+Hz+1=0</formula>. Qu’on fasse <formula>z=n+rt</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>u=st+r</formula>,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’equation se reduira à <formula>Bvv+(2Bs+Dr)tv+(Dn+E)v+Fr^{3}t^{3}+(Bss+Drs+3Fnr^{2}+Gr^{2})t^{2}</formula>
+  <lb/><formula>+(Dns+Es+3Fn^{2}r+Gnr+Hr)t+Fn^{3}+Gn^{2}+Hn+1=0</formula>. Faites <formula>2Bs+Dr=0</formula>, ou <formula>r:s=-2B:D</formula>
+  <lb/>et <formula>Dn+E=0</formula>, ou <formula>n=-E:D</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le 2.<hi rend="sup">d</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 3.<hi rend="sup">e</hi> terme s’evanouissant, l’<abbr>eq.</abbr> se reduira à
+  <lb/><formula>Bvv+Fr^{3}t^{3}+(-Drs+3Fnr^{2}+Gr^{2})t^{2}+(3Fn^{2}r+Gnr+Hr)t+Fn^{3}+Gn^{2}+Hn+1=0</formula>, à laquelle
+  <lb/>on peut donner cette forme <formula>vv-\alpha t^{3}-\beta t^{2}-\gamma t-\delta=0</formula>. C’est la 3.<hi rend="sup">e</hi> Classe de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>
+  <lb/>qui lui donne cinq Courbes, <abbr>N.<hi rend="sup">o</hi></abbr> 13.
+</p>
+<p>
+  <lb/>Mais si <formula>B</formula> se trouve égal<del>e</del> à zero, faites seulement <formula>z=n+t</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’<abbr>eq.</abbr> se reduira
+  <lb/>à <formula>Dtv+(Dn+E)v+Ft^{3}+(3Fn+G)t^{2}+(3Fn^{2}+2Gn+H)t+Fn^{3}+Gn^{2}+Hn+1=0</formula>, ou
+  <lb/>faisant <formula>Dn+E=0</formula>, c’est à dire <formula>n=-E:D</formula>, le second terme s’evanouira, et l’<abbr>Eq.</abbr> prendra
+  <lb/>cette forme <formula>tv-\alpha t^{3}-\beta t^{2}-\gamma t-\delta=0</formula>, qui est la 2.<hi rend="sup">e</hi> Classe de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. <abbr>N.<hi rend="sup">o</hi></abbr> 12.
+</p>
+<p>
+  <lb/>Enfin si <formula>B</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>D</formula> sont <formula>=0</formula>, l’equation <formula>Ev+Fz^{3}+Gz^{2}+Hz+1=0</formula>, represente la Courbe
+  <lb/>unique de la 4.<hi rend="sup">e</hi> Classe de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>. <abbr>N.<hi rend="sup">o</hi></abbr> 14.
+</p>
+<p>
+  <lb/>Il y a, comme vous le voiés, Monsieur, bien du raport entre cette maniére
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celle que vous avez emploiée, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’ai peut étre eu tort de dire que la mienne etoit
+  <lb/>un peu plus courte. Cependant comme elle méne bien directement aux quatre
+  <lb/>Classes de <rs key="pers_DE-588-118587544" type="person">Newton</rs>, elle peut avoir son utilité.
+</p>
+<p>
+  <lb/>Je vous prie toujours de vouloir bien me communiquer, ce que vous trouverés
+  <lb/>en éclaircissement sur la Methode de sommer la suite <choice rend="regFormula"><orig><formula>\frac{1}{1}+\frac{1}{4}+\frac{1}{9}\mbox{\&amp;c}</formula></orig><reg><formula>\frac{1}{1}+\frac{1}{4}+\frac{1}{9}\mbox{etc}</formula></reg></choice>. Votre
+  <lb/>Methode m’a été communiquée par <abbr>M.</abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> quand il fut de retour de
+  <lb/>ses voyages. Elle n’a point cet inconvenient. Elle renferme même une belle
+  <lb/>methode pour la reduction des suites, dont on connoit le raport d’un Terme à ceux
+  <lb/>qui le précedent, <subst><del/><add>à l’</add></subst>integration d’une <del/>equation differentielle. Mais elle
+  <lb/>est un peu longue. Si par malheur vous l’aviez égarée, je puis, quand il vous
+  <lb/>plaira, vous en envoier une Copie.
+</p>
+<closer>
+  <salute>
+    <lb/>J’ai l’honneur d’etre, avec un entier devouement
+    <lb/>Monsieur
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très
+    <lb/><abbr>obeiss.<hi rend="sup">t</hi></abbr> Serviteur
+  </salute>
+  <signed><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline>
+    <lb/>Geneve ce <date when="1741-09-26">26 <abbr>Sept.</abbr> 1741</date>
+  </dateline>
+</closer>
 <pb facs="1063428" n="4"/>
-<closer><address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit,</addrLine>
-<addrLine>&amp;c, &amp;c, &amp;c</addrLine>
-<addrLine>a Basle</addrLine>
-</address></closer>
+<closer>
+  <address>
+    <addrLine>Monsieur</addrLine>
+    <addrLine>Monsieur Nicolas Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
+    <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit,</addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+  </address>
+</closer><!-- Bis hier den Code angesehen, RG 23.07.2025 -->
 </div>
 </body>
 </text></TEI>

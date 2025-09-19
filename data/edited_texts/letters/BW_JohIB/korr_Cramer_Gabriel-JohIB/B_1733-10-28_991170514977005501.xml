@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -141,8 +141,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-07-28" who="MK">Code und Transkription mit Manuskript durchgeschaut, kontrolliert, korrigiert</change>
+      <change when="2025-05-21" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-05-16" who="MK RG">kollationiert bis Schluss</change>
+      <change when="2025-05-16" who="MK">Code durchgeschaut, ergänzt, korr.</change>
       <change when="2025-03-13" who="RG">Kleine Änderungen</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
       <change when="2023-06-22" who="RG">Zeilenabstände eingefügt, sowie kleinere Anpassungen</change>
@@ -157,90 +161,84 @@
 <div type="letter">
 <pb facs="1073931" n="1"/>
 <opener><salute>Monsieur,</salute></opener>
-  <p><lb/>J’aprens dans cet instant que Monsieur vôtre <rs key="pers_DE-588-118656503" type="person"><subst><del>f</del><add>F</add></subst>ils</rs> vient d’etre élu Professeur en Anatomie
+  <p><lb/>J’aprens dans cet instant que Monsieur vôtre <rs key="pers_DE-588-118656503" type="person"><subst><del/><add>F</add></subst>ils</rs> vient d’etre élu Professeur en Anatomie
     <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en Botanique. Cela m’oblige <choice><orig>a</orig><reg>à</reg></choice> vous écrire quoique fort à la hâte, mais je croirois manquer
-    <lb/><choice><orig>a</orig><reg>à</reg></choice> mon devoir si je differois un seul moment à vous temoigner la joye que j’en ressens.
-               <lb/>Il vous doit etre bien doux, Monsieur, de rapeller auprès de vous un si digne Fils, qui
-               <lb/>en étoit si éloigné. Je vous félicite<!-- sehe hier nicht das felicite, RG 13.03.2025 --> du fonds de mon coeur, de la consolation que vous en reçevés.
-               <lb/>Mais je félicite<!-- siehe Bemerkung oben, RG 13.03.2025 --> encore plus votre Université, qui va briller d’un nouvel Ornement.
+    <lb/><choice><orig>a</orig><reg>à</reg></choice> mon devoir si je differois un seul moment à vous temoigner la Joye que j’en ressens.
+    <lb/>Il vous doit etre bien doux, Monsieur, de rapeller auprès de vous un si digne <rs key="pers_DE-588-118656503" type="person">Fils</rs>, qui
+               <lb/>en étoit si éloigné. Je vous felicite<note type="editorial">Unterstrichen mit Bleistift wohl vom Briefempfänger.</note> du fonds de mon coeur, de la consolation que vous en reçevés.
+               <lb/>Mais je felicite encore plus votre <rs type="organisation">Université</rs>, qui va briller d’un nouvel Ornement.
   </p>
   <p>
-    <lb/>Je suis contraint de vous avouer ma foiblesse par raport au Problème de la ligne <subst><del>de</del><add>la</add></subst>
+    <lb/>Je suis contraint de vous avouer ma foiblesse par raport au Probléme de la Ligne <subst><del/><add>la</add></subst>
                <lb/>plus courte tracée sur une surface donnée. Il est vray que je n’ai gueres eu le loisir d’y penser,
-               <lb/>mais je n’ai pu me satisfaire encore entièrement <choice><orig>la</orig><reg>là</reg></choice> dessus, même après les indications que
+               <lb/>mais je n’ai pu me satisfaire encore entiérement <choice><orig>la</orig><reg>là</reg></choice> dessus, même après les indications que
                <lb/>vous m’avés fait la grace de me fournir. Quand j’ai voulu emploier le Principe du Plan
                <lb/>Osculateur, perpendiculaire au Plan Tangent, ces differens plans se sont tellement brouillés
-               <lb/>dans ma Tête, pleine à present de tout autres idées, que je n’ai pu rien en tirer. J’ai bien
+               <lb/>dans ma Tête, pleine à present de <choice><orig>tout</orig><reg>toutes</reg></choice> autres idées, <choice><sic>que</sic><corr>dont</corr></choice> je<del/> n’ai pu rien en tirer. J’ai bien
                <lb/>deduit par une methode directe une equation qui ne descend pas audessous des secondes
-               <lb/>differences<!-- Kleine Änderung, vlt. noch ansehen, RG 13.03.2025 -->. Mais outre qu’elle est un peu longue, ayant au moins six Termes, je ne vois pas
-               <lb/>comment, dans le Cas des Conoides droits, on peut la reduire<!-- könnte auch "réduire" sein, RG 13.03.2025 --> <hi rend="u">generalement</hi> au 1.<hi rend="sup">er</hi> degré.
+               <lb/>differen<subst><del/><add>ces</add></subst>. Mais outre qu’elle est un peu longue, ayant au moins six Termes, je ne vois pas
+               <lb/>comment, dans le Cas des Conoides droits, on peut la réduire generalement<note resp="MK" type="editorial">Unterstreichung vermutlich vom Briefempfänger Johann I Bernoulli.</note> au 1.<hi rend="sup">r</hi> degré.
   </p>
-<p><lb/>La voici. L’Equation de la surface étant <formula>pdx+qdy+rdz=0</formula>, l’equation de la Courbe se trouvera
-               <lb/>en la combinant avec celle-ci <formula>pdzddy-pdyddz+qdzddx-qdxddz+rdyddx-rdxddy=0</formula><supplied>.</supplied>
-  <lb/>D’ailleurs la methode que j’ai <choice><orig>suivi</orig><reg>suivie</reg></choice><!-- Nicht sicher, ob es notwendig ist, RG 13.03.2025 -->, me paroit un peu douteuse, car il me semble que si je
+<p><lb/>La voici. L’Equation de la Surface étant <formula>pdx+qdy+rdz=0</formula>, l’equation de la Courbe se trouvera
+               <lb/>en la combinant avec celle ci <formula>pdzddy-pdyddz+qdzddx-qdxddz+rdyddx-rdxddy=0</formula><supplied>.</supplied>
+  <lb/>D’ailleurs la methode que j’ai <choice><orig>suivi</orig><reg>suivie</reg></choice>, me paroit un peu douteuse, car il me semble que si je
                <lb/>la voulois suivre jusqu’au bout, je trouverois que l’Element de la Courbe est proportionel à
                <lb/><formula>qdz-rdy</formula>, ou à <formula>pdz-rdx</formula>, ce que je soubçonne étre faux. Je serois cependant envieux de savoir
             <pb facs="1073932" n="2"/>
-<lb/>si l’equation cy<supplied>-</supplied>dessus s’acorde en quelque manière à ce que vous avés trouvé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans ce cas là,
+<lb/>si l’equation cy<supplied>-</supplied>dessus s’acorde<note type="editorial">Bleistiftunterstreichung von "s'acorde".</note> en quelque manière à ce que vous avés trouvé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dans ce cas là,
                <lb/>comment vous prouvés generalement qu’elle peut se reduire au premier degré dans le Cas
-               <lb/>des Conoides droits.</p>
-<p><lb/>Par raport au mouvement de l’Air dans le Son, j’ai peine à conçevoir comment vous<!-- Grafik noch einfügen, RG 14.03.2025 -->
-               <lb/>trouvés que la force qui meut les Globules aeriens est proportionelle à <formula>-ddy</formula>. Car soient
-               <!-- <lb/>Professeur en Anatomie et en Botanique. Cela m'oblige à vous écrire quoique fort à la hâte, mais je croirois manquer à mon devoir si je differois un seul moment à vous temoigner la joye que j'en ressens. Il vous doit etre bien doux, Monsieur, de rapeller auprès de vous un si digne Fils, qui en étoit si éloigné. Je vous félicite du fonds de mon coeur, de la consolation que vous en reçevés. Mais je félicite encore plus votre Université, qui va briller d'un nouvel Ornement. </p>
-            <p>Je suis contraint de vous avouer ma foiblesse par raport au Problème de la ligne la plus courte tracée sur une surface donnée. Il est vray que je n'ai gueres eu le loisir d'y penser, mais je n'ai pu me satisfaire encore entièrement là dessus, même après les indications que vous m'avés fait la grace de me fournir. Quand j'ai voulu emploier le Principe du Plan Osculateur, perpendiculaire au Plan Tangent, ces differens plans se sont tellement brouillés dans ma Tête, pleine à present de tout autres idées, que je n'ai pu rien en tirer. J'ai bien deduit par une methode directe une equation qui ne descend pas audessous des secondes differences. Mais outre qu'elle est un peu longue, ayant au moins six Termes, je ne vois pas comment dans le cas des Conoides droits, on peut la reduire generalement au 1er. degré. </p>
-            <p>La voici. L'equation de la surface étant <formula>pdx+qdy+rdz=0</formula>, l'equation de la courbe se trouvera, en la combinant avec elle-ci <formula>pdzddy-pdyddz+qdzddx-qdxddz+rdyddx-rdxddy=0</formula>. D'ailleurs la methode que j'ai suivi[e], me paroit un peu douteuse, car il me semble que si je la voulois suivre jusqu'au bout, je trouverois que l'Element de la Courbe est proportionel à <formula>qdz-rdy</formula>, ou à <formula>pdz-rdx</formula>, ce que je soubçonne étre faux. Je serois cependant envieux de savoir si l'equation cy-dessus s'acorde en quelque manière à ce que vous avés trouvé, et dans ce cas là, comment vous prouvés generalement qu'elle peut se reduire au premier degré dans le cas des Conoides droits. </p>
-            <p>Par raport au mouvement de l'Air dans le Son, j'ai peine à conçevoir comment vous trouvés que la force qui meut les Globules aeriens est proportionelle à <formula>-ddy</formula>. Car soient-->
-<lb/>trois particules <formula>A</formula>, <formula>B</formula>, <formula>C</formula> en repos, les Distances <formula>AB</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>BC</formula> soient nommées <formula>dx</formula>.
+               <lb/>des Conoides droits<note type="editorial">Bleistiftunterstreichnung wohl von Johann I B. des Begriffes "Conoides droits".</note>.</p>
+<p><lb/>Par raport au mouvement de l'Air dans le Son, j'ai peine à conçevoir comment vous trouvés que la force qui meut les Globules aeriens est proportionelle à <formula>-ddy</formula><note type="editorial">Zweiter Buchstaben in der Formel nicht ganz klar.</note>. Car soient
+<lb/>trois particules <formula>A</formula>, <formula>B</formula>, <formula>C</formula> en repos, les Distances <formula>AB</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>BC</formula> soient non moins  <formula>dx</formula>.
                <lb/>Quand par le tremoussement d’un corps sonore ces Particules viennent
                <lb/>à courir, que <formula>A</formula> se meuve par l’espace <formula>Aa</formula>, <formula>B</formula> par l’espace <formula>Bb</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>C</formula> par l’espace <formula>Cc</formula>. Soit <formula>Aa=y</formula>, <formula>Bb=</formula>
-  <lb/><formula>y-dy</formula>, <formula>Cc=y-zdy+ddy</formula><!-- "zdy" könnte auch "2dy" sein? RG 14.03.2025 -->. Donc <formula>ab=AB+Bb-Aa=dx+y-dy-y=dx-dy</formula>. <formula>bc=BC+Cc-Bb=</formula>
+  <lb/><formula>y-dy</formula>, <formula>Cc=y-zdy+ddy</formula>. Donc <formula>ab=AB+Bb-Aa=dx+y-dy-y=dx-dy</formula>. <formula>bc=BC+Cc-Bb=</formula>
   <lb/><formula>dx+y-zdy+ddy-y+dy=dx-dy+ddy</formula>. La force avec laquelle <formula>b</formula> tend <choice><orig>a</orig><reg>à</reg></choice> s’ecarter de <formula>c=\frac{1}{bc}=\frac{1}{dx-dy+ddy}</formula>
-<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celle avec laquelle elle tend à s’eloigner de <formula>a=\frac{1}{ab}=\frac{1}{dx-dy}</formula>. Donc l’excés<!-- excès? RG 14.03.2025 --> de l’une sur l’autre, qui
-  <lb/>est la force avec laquelle elle tend vers le Centre de l’onde <choice rend="regFormula"><orig><formula>=\frac{1}{dx-dy+ddy}-\frac{1}{dx-dy}=\frac{-ddy}{\overline{dx-dy}\cdot\overline{dx-dy+ddy}}</formula></orig><reg><formula>=\frac{1}{dx-dy+ddy}-\frac{1}{dx-dy}=\frac{-ddy}{(dx-dy)\cdot(dx-dy+ddy)}</formula></reg></choice> ou<!-- bis hier angesehen. RG 14.03.2025 -->
-               <lb/>si vous voulés <formula>\frac{-ddy}{(dx-dy)^{2}}</formula><!-- Formeln noch anpassen, RG 14.03.2025 -->. A moins que mettant <formula>dy</formula> infiniment petit par raport à <formula>dx</formula> vous ne
-               <lb/>le reduisiés à <formula>-ddy:dx^{2}</formula>. Ce qui peut étre, je pense, admis.</p>
-<p><lb/>Mais presentement par quel calcul ou principe prouverés vous que cette force ou <del/><formula>-ddy</formula> est
-               <lb/>proportionel à <formula>y</formula>. C’est ce que je ne saurois deviner.</p>
+<lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> celle avec laquelle elle tend à s’eloigner de <formula>a=\frac{1}{ab}=\frac{1}{dx-dy}</formula>. Donc l’excès de l’une sur l’autre, qui
+  <lb/>est la force avec laquelle elle tend vers le Centre de l’onde <choice rend="regFormula"><orig><formula>=\frac{1}{dx-dy+ddy}-\frac{1}{dx-dy}=\frac{-ddy}{\overline{dx-dy}\cdot\overline{dx-dy+ddy}}</formula></orig><reg><formula>=\frac{1}{dx-dy+ddy}-\frac{1}{dx-dy}=\frac{-ddy}{(dx-dy)\cdot(dx-dy+ddy)}</formula></reg></choice> ou
+  <lb/><unclear>si vous voulés</unclear><note resp="MK" type="editorial">Die letzten drei Worte sowie der Zähler in der folgenden Formel schwer leserlich, da überdeckt durch Klebestreifen im Manuskript. Ausserdem ganze Zeile durch Falz nicht gut leserlich.</note> <choice rend="regFormula"><orig><formula>\frac{-ddy}{\overline{dx-dy}^{2}}</formula></orig><reg><formula>\frac{-ddy}{(dx-dy)^{2}}</formula></reg></choice>. A moins que mettant <formula>dy</formula> infiniment petit par raport <choice><orig>a</orig><reg>à</reg></choice> <formula>dx</formula> vous ne
+               <lb/>la réduisiés <choice><orig>a</orig><reg>à</reg></choice> <formula>-ddy:dx^{2}</formula>. Ce qui peut etre, je pense, admis.</p>
+<p><lb/>Mais presentement par quel calcul ou principe prouverés vous que cette force <choice><orig>ou</orig><reg>où</reg></choice> <del/><formula>-ddy</formula> est
+               <lb/>proportionel à <formula>y</formula>. C’est <subst><del/><add>ce</add></subst> que je ne saurois deviner.</p>
 <p><lb/>Je souhaiterois aussi de scavoir, si vous avés quelque Analyse, pour conclure que <formula>\frac{-ddy}{y}=\frac{dx^{2}}{cc}</formula> est
                <lb/>l’Equation de la compagne de la Trochoide. Je vois bien par Synthese que cette Equation a pour
-               <lb/>integrale <formula>\frac{dx}{c}=\frac{dy}{\sqrt{aa-yy}}</formula>, qui est l’Equation de cette courbe. Mais je n’ai su le trouver par Analyse
+               <lb/>integrale <formula>\frac{dx}{c}=\frac{dy}{\sqrt{aa-yy}}</formula>, qui est l’Equation de cette Courbe. Mais je n’ai su le trouver par Analyse
                <lb/>quoique je l’aie cherché par tous les moyens qui me sont connus.</p>
 <pb facs="1073933" n="3"/>
-<p><lb/>Voilà, Monsieur, bien des Articles sur lesquels j’ai besoin de vos Lumières. Je suis dans
-               <lb/>une extrème impatience de pouvoir trouver quelques mois de loisir, pour me rendre auprès
+<p><lb/>Voila, Monsieur, bien des Articles sur lesquels j’ai besoin de vos Lumiéres. Je suis dans
+               <lb/>une extreme impatience de pouvoir trouver quelques mois de loisir<note type="editorial">"de loisir" mit Bleistift unterstrichen, wohl vom Briefempfänger.</note>, pour me rendre auprès
                <lb/>de vous, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous temoigner de bouche ma reconnoissance pour toutes vos bontés, mon
-               <lb/>attachement inviolable à vôtre service <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à celui de vôtre Famille, ma Veneration pour
-               <lb/>vôtre Personne. J’esperois de pouvoir jouir de cette Satisfaction pendant cet automne.
-               <lb/>Une circonstance imprevuë ne me l’a pas permis. Je suis présentement bien aise
-               <lb/>de ce renvoi, puisqu’il me procurera le bonheur de rencontrer Monsieur votre fils,
+  <lb/>attachement inviolable <choice><reg>a</reg><reg>à</reg></choice> vôtre Service <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><reg>a</reg><reg>à</reg></choice> celui de vôtre Famille, ma Veneration pour
+               <lb/>vôtre Personne. J’esperois de pouvoir jouir de cette Satisfaction pendant ce<unclear>tt</unclear>e<note type="editorial">"tt" wahrscheinlich mit einem t mit Oberstrich geschrieben.</note> Automne.
+               <lb/>Une circonstance imprevuë ne me l’a pas permis. Je suis presentement bien aise
+  <lb/>de ce renvoi, puisqu’il me procurera le bonheur de rencontrer Monsieur votre <rs key="pers_DE-588-118656503" type="person">fils</rs><note type="editorial">"votre fils" mit Bleistift unterstrichen, wohl vom Briefempfänger.</note>,
                <lb/>avec qui je serai ravi de faire connoissance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de cimenter une amitié qui <del/>me
-               <lb/>seroit bien chère.</p> <closer>En attendant cette entrevuë, qui me comblera de joye, soiés
-               <lb/>persuadé, Monsieur, que c’est avec une entière sincerité, que j’ai l’honneur
-               <lb/>de me dire
-               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant
-               <lb/>Serviteur G. Cramer.
+  <lb/>seroit bien chére.</p> <closer><salute>En attendant cette entrevuë, qui me comblera de joye, soiés
+               <lb/>persuadé, Monsieur, que c’est avec une entiere Sincerité, que j’ai l’honneur
+               <lb/>de me dire,
+               <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tres <unclear reason="lost">obéissant</unclear>
+    <lb/>Serviteur</salute> <signed><abbr>G</abbr><supplied>.</supplied> Cramer</signed>
      <dateline><lb/>Geneve ce <date when="1733-10-28">28. Octobre 1733</date>.</dateline></closer>
-<postscript><p><lb/>Oseroisje vous prier d’assurer Monsieur
-               <lb/>votre Neveu de mes Respects.</p>
-<note type="editorial">Einige Bleistiftnotizen lassen eine Bemerkung Bernoullis nach Durchsicht des Schreibens vermuten; sie sind nachstehend angeführt:</note>
+<postscript><p><lb/>Oserois-je vous prier d’assurer Monsieur
+  <lb/>votre <rs key="pers_DE-588-119166895" type="person">Neveu</rs> de mes Respects.</p>
+<note type="editorial">Einige Bleistiftnotizen lassen eine Anfügung Bernoullis nach Durchsicht des Schreibens vermuten; sie sind nachstehend angeführt:</note>
 <p><formula>-ccddy=ydx^{2}</formula></p>
 <p><formula>-ccdyddy=ydydx^{2}</formula></p>
-<p><formula>adx^{2}-ccdy^{2}=yydx^{2}</formula></p>
-<p><formula>\overline{aa-yy}dx^{2}=ccdy^{2}</formula></p>
+  <p><formula>adx^{2}-ccdy^{2}=yydx^{2}</formula><note type="editorial">Vor <formula>yydx^{2}</formula> wurde <formula>yydx^{2}</formula> leicht durchgestrichen.</note></p>
+  <p><choice rend="regFormula"><orig><formula>\overline{aa-yy}dx^{2}=ccdy^{2}</formula></orig><reg><formula>(aa-yy)dx^{2}=ccdy^{2}</formula></reg></choice></p>
 <p><formula>dx=\frac{cdy}{\sqrt{a^{2}-yy}}</formula></p>
 <p><lb/>C’est l’analyse pour integrer
-                  <lb/>l’equation <formula>\frac{-ddy}{y}=\frac{dx^{2}}{cc}</formula></p>
+                  <lb/>l’equation <formula>\frac{-ddy}{y}=\frac{dx^{2}}{cc}</formula><note>Nenner in der Formel im Manuskript kaum erkennbar, aber kann abgeleitet werden.</note></p>
 </postscript>
 <pb facs="1073934" n="4"/>
-<note type="editorial">Rückseite:</note><!-- Denke diese Bemerkung erscheint sehr obsolet, da wir den Scan haben, RG 13.03.2025 -->
 <closer>
 <address>
 <addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Jean Bernoulli M.D.</addrLine>
+<addrLine>Monsieur Jean Bernoulli <abbr>M. D.</abbr></addrLine>
 <addrLine>Professeur en Mathematiques, Membre des</addrLine>
-<addrLine>Académies Royales de Paris, de Londres et </addrLine>
-<addrLine>de Berlin, etc. etc.</addrLine>
-<addrLine>à Basle.</addrLine>
+<addrLine><rs type="organisation">Academies Royales</rs> de <rs type="place">Paris</rs>, de <rs type="place">Londres</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de</addrLine>
+<addrLine>Berlin, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>.</supplied> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>.</supplied></addrLine>
+<addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
 </address>
 </closer>
 </div>

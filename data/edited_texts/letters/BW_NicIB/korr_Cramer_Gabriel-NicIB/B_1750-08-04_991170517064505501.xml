@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517064505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,6 +147,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-23" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-24" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-09-29" who="RG">Personen und Orte ausgezeichnet</change>
       <change when="2023-09-22" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-22" who="RG">Seitenzahlen, Briefstruktur</change>
@@ -161,54 +163,68 @@
 <body>
 <div type="letter">
 <pb facs="1063473" n="1"/>
-<opener>Geneve, ce 4 e Aoust 1750</opener>
-<p><lb/>J’ai remis, Monsieur, à la Messagerie qui part aujourdhui 
-                              <lb/>un Paquet à vôtre adresse, qui contient un Exemplaire d’un 
-                              <lb/>Ouvrage sur les Courbes, que je vous prie d’agréer comme un Tribut 
-                              <lb/>que je paie &amp; au rang distingué que vous tenez parmi les Ma<pc type="hyphenation">-</pc><lb break="no"/>thématiciens, &amp; à l’amitié dont vous m’avez toujours honoré, 
-                              <lb/>&amp; que je regarde comme un des biens les plus précieux de ma vie. 
-                              <lb/>Ce n’est pas sans crainte que je présente cet Essai à un 
-                              <lb/>Connoisseur aussi éclairé que vous l’étes, &amp; si je ne connoissois 
-                              <lb/>vôtre indulgence pour vos amis, &amp; vos dispositions genereuses 
-                              <lb/>à encourager plûtôt qu’à rebuter ceux qui tâchent à étre 
-                              <lb/>de quelque utilité au Public, je serois tenté de souhaiter que 
-                              <lb/>vous ne jettassiez point les yeux sur mon Ouvrage. Il y a 
-                              <lb/>fort longtems qu’il devoit paroitre, sans divers contretems forcés, 
-                              <lb/>tantôt de ma part, tantôt de celle de divers Libraires, qui en ont 
-                              <lb/>retardé la publication jusqu’à aujourdhui. C’est ce qui l’em<pc type="hyphenation">-</pc><lb break="no"/>péchera de paroitre neuf sur divers articles, qui l’etoient 
-                              <lb/>quand je les écrivois. Je crois pourtant que vous le trouverez 
-                              <lb/>assez lié dans les Principes &amp; assez suivi dans les conséquences, 
-                              <lb/>pour connoitre qu’en suivant la route que j’ai prise, il etoit 
-                              <lb/>difficile qu’il m’echapât quelcune des Propositions, que 
-                           <pb facs="1063474" n="2"/>
-<lb/>j’ai deduites de ma Methode. Le jugement que vous en 
-                              <lb/>porterez me decidera sur ce que je dois en penser moi-même. 
-                              <lb/>Je l’attens avec la soumission <del/>et la déference qu’on doit 
-                              <lb/>avoir pour un Juge pour lequel on se sent autant de 
-                              <lb/>respect &amp; d’estime que ceux avec lesquels je suis 
-                              <lb/>Monsieur</p>
-<closer><salute><lb/>Votre très humble 
-                              <lb/>&amp; très obéissant serviteur</salute>
-<signed><lb/>G. Cramer</signed></closer>
+<opener>
+  <dateline>
+    <lb/>Geneve, ce <date when="1750-08-04">4.<hi rend="sup">e</hi> Aoust 1750</date>.
+  </dateline>
+</opener>
+<p>
+  <lb/>J’ai remis, Monsieur, à la Messagerie qui part aujourd<supplied>'</supplied>hui
+  <lb/>un Paquet à vôtre adresse, qui contient un Exemplaire d’un
+  <lb/>Ouvrage sur les Courbes, que je vous prie d’agréer comme un Tribut
+  <lb/>que je paie <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> au rang distingué que vous tenez parmi les Ma<pc type="hyphenation">-</pc><lb break="no"/>thématiciens, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à l’amitié dont vous m’avez toujours honoré,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je regarde comme un des biens les plus précieux de ma vie.
+  <lb/>Ce n’est pas sans crainte que je présente cet Essai à un
+  <lb/>Connoisseur aussi éclairé que vous l’étes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si je ne connoissois
+  <lb/>vôtre indulgence pour vos amis, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vos dispositions genereuses
+  <lb/>à encourager plûtôt qu’à rebuter ceux qui tâchent à ètre
+  <lb/>de quelque utilité au Public, je serois tenté de souhaiter que
+  <lb/>vous ne jettassiez point les yeux sur mon <rs type="biblio">Ouvrage</rs>. Il y a
+  <lb/>fort longtems qu’il devoit paroitre, sans divers contretems forcés,
+  <lb/>tantôt de ma part, tantôt de celle de divers Libraires, qui en ont
+  <lb/>retardé la publication jusqu’à aujourd<supplied>'</supplied>hui. C’est ce qui l’em<pc type="hyphenation"><supplied>-</supplied></pc><lb break="no"/>péchera de paroitre neuf sur divers articles, qui l’etoient
+  <lb/>quand je les écrivois. Je crois pourtant que vous le trouverez
+  <lb/>assez lié dans les Principes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> assez suivi dans les conséquences<!-- "è", RG 25.07.2025 -->,
+  <lb/>pour connoitre qu’en suivant la route que j’ai prise, il etoit
+  <lb/>difficile qu’il m’echapât quelcune des Propositions, que
+  <pb facs="1063474" n="2"/>
+  <lb/>j’ai deduites de ma Methode. Le jugement que vous en
+  <lb/>porterez me decidera sur ce que je dois en penser moi-même.
+</p>
+<closer><!-- closer vlt. paar Zeilen weiter unten machen?, RG 25.07.2025 -->
+  <salute>
+    <lb/>Je l’attens avec la soumission <subst><del/><add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice></add></subst> la déference qu’on doit
+    <lb/>avoir pour un Juge pour lequel on se sent autant de
+    <lb/>respect <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’estime que ceux avec lesquels je suis,
+    <lb/>Monsieur
+    <lb/>Votre très humble
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+</closer>
 <postscript>
-<p><lb/>P. S. J’ai remis aussi à la Messagerie deux semblables 
-                                    <lb/>Pacquets, un pour chacun de Mrs. vos Cousins, <rs key="pers_DE-588-118656503" type="person">Daniel</rs>
-<lb/>&amp; <rs key="pers_DE-588-117589136" type="person">Jean</rs>, a leurs adresses. Une multitude infinie d’affaires 
-                                    <lb/>ne me permettant pas de leur écrire à présent, oserois je 
-                                    <lb/>vous prier, en leur offrant mes très humbles respects, de les 
-                                    <lb/>faire avertir de le retirer du Bureau de la Messagerie.</p>
+    <p>
+      <lb/><abbr>P. S.</abbr> J’ai remis aussi à la Messagerie deux semblables
+      <lb/>Pacquets, un pour chacun de <abbr>Mrs<supplied>.</supplied></abbr> vos Cousins, <rs key="pers_DE-588-118656503" type="person">Daniel</rs>
+      <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-117589136" type="person">Jean</rs>, <choice><orig>a</orig><reg>à</reg></choice> leurs adresses. Une multitude infinie d’affaires
+      <lb/>ne me permettant pas de leur écrire à présent, oserois-je<!-- Bindestrich "-" nicht ganz sicher? RG 25.07.2025 -->
+      <lb/>vous prier, en leur offrant mes très humbles respects, de les
+      <lb/>faire avertir de le retirer du Bureau de la Messagerie.
+    </p>
 </postscript>
-<pb facs="1063475" n="3"/>
+<pb facs="1063475" n="3" type="empty"/>
 <pb facs="1063476" n="4"/>
 <closer>
-<address>
-<addrLine>A Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli,</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit</addrLine>
-<addrLine>&amp;c &amp;c</addrLine>
-<addrLine>a Bâle</addrLine>
-</address>
-</closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur Nicolas Bernoulli,</addrLine>
+    <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit,</addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Bâle</addrLine>
+  </address>
+</closer><!-- Bis hier den Code angesehen, RG 25.07.2025 -->
 </div>
 </body>
 </text></TEI>

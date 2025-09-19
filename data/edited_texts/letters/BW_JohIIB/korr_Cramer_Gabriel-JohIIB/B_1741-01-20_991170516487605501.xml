@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,8 +147,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-21" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert fertig</change>
+      <change when="2025-07-31" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-31" who="RG">Personen, Biblio, Orte referenziert</change>
+      <change when="2025-07-31" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-07-05" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-07-05" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -161,41 +165,53 @@
 <body>
 <div type="letter">
 <pb facs="3694239" n="1"/>
-<p><lb/>J’ai fait, mon cher Monsieur, votre commission auprès de
-          <lb/>Monsieur <rs key="pers_DE-588-119086395" type="person">Algarotti</rs>, qui a passé ici un couple de jours.
-          <lb/>C’est un bien aimable homme, &amp; qui a bien du merite, entr’au<pc type="hyphenation">-</pc><lb break="no"/>tres celui de vous estimer infiniment. Vous avez apparemment
-          <lb/>son adresse, &amp; je vous prierai de me la donner, parce qu’en quittant
-          <lb/>ce pays-ci, il m’a fait l’honneur d’y laisser une lettre pour moi
-          <lb/>toute obligeante &amp; flatteuse, à laquelle je crois devoir une réponse.
-          <lb/>J’aprouverois vôtre delicatesse virginale par raport à la recherche de
-          <lb/>S. M. Prussienne, si vous n’etiez pas comme la ville placée sur
-          <lb/>une haute montagne, qui ne peut étre cachée. Mais pouvez-vous
-          <lb/>vous flatter que vos moindres demarches soient ignorées. Surement les
-          <lb/>Journalistes ont des Espions à gage pour les informer de tout ce que
-          <lb/>vous faites. Vous auriez tort de vous offenser de ce que je parois
-          <lb/>craindre vôtre éloignement. Ce n’est qu’une erreur de calcul. Je
-          <lb/>sens que nous tirons tout nôtre lustre des raions de votre gloire
-          <lb/>qui rejaillissent un peu sur nous, vos bons voisins. Et je m’imaginois
-          <lb/>que l’intensité de cette lumiere decroissoit en raison doublée des
-          <lb/>distances. Vous voulez qu’elle subsiste en raison constante. Cela
-          <lb/>est bien flatteur pour nous, &amp; je n’y saurois répondre qu’en vous
-          <lb/>assurant d’une amitié tout aussi constante, &amp; parfai tement durable.
-         <pb facs="3694240" n="2"/>
-<lb/>Ne prenez pas ceci, je vous prie, pour une figure: Rien n’est
-          <lb/>plus réel, je vous jure. Je serai fort obligé à Monsieur
-          <lb/>votre Pére de la communication de la Piéce Spinosismi depulsionis
-          <lb/>Echo. Elle est, dites vous, plaisante. J’en conclus quasi surement
-          <lb/>qu’elle est bonne, car M. <rs type="person">Bernoulli</rs> <del/>a fort l’esprit de la
-          <lb/>bonne plaisantorie. Je la recevrai avec plaisir, &amp; après cela je
-          <lb/>vous dirai, avec ma franchise ordinaire, si je suis d’avis de l’inserer
-          <lb/>parmi tant de belles piéces serieuses. Enfin, vous vous determinerez
-          <lb/>&amp; nous suivrons vos ordres. Je ne crois pas avoir rien autre a vous
-          <lb/>marquer pour le present, que de vous assurer - - - - -
-          <lb/>J’allois dire de mon parfait attachement, mais ce seroit
-          <lb/>retomber dans ce que nous sommes convenus d’eviter.</p>
-<closer><salute><lb/>Adieu donc, mon très cher ami.</salute>
-<lb/><signed>G. Cramer</signed>
-<lb/><dateline>Geneve ce <date>20 Janv. 1741</date></dateline></closer>
+<p>
+  <lb/>J’ai fait, mon cher Monsieur, votre commission auprès de
+  <lb/>Monsieur <rs key="pers_DE-588-119086395" type="person">Algarotti</rs>, qui a passé ici <date notAfter="1741-01-17">un couple de jours</date>.
+  <lb/>C’est un bien aimable homme, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui a bien du merite, entr’au<pc type="hyphenation">-</pc><lb break="no"/>tres celui de vous estimer infiniment. Vous avez apparemment
+  <lb/>son adresse, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je vous prierai de me la donner, parce qu’en quittant
+  <lb/>ce <rs key="place_GEO-2660646" type="place">pays</rs>-ci, il m’a fait l’honneur d’y laisser une <rs type="letter">lettre</rs> pour moi
+  <lb/>toute obligeante <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> flatteuse, à laquelle je crois devoir une réponse.
+  <lb/>J’aprouverois vôtre delicatesse virginale par raport à la recherche de
+  <lb/><choice><abbr>S. M.</abbr><expan>Sa Majesté</expan></choice> <rs key="pers_DE-588-118535749" type="person">Prussienne</rs>, si vous n’etiez pas comme la ville placée sur
+  <lb/>une haute montagne, qui ne peut étre cachée. Mais pouvez-vous
+  <lb/>vous flatter que vos moindres demarches soient ignorées. Surement les
+  <lb/>Journalistes ont des Espions à gage pour les informer de tout ce que
+  <lb/>vous faites. Vous auriez tort de vous offenser de ce que je parois
+  <lb/>craindre vôtre éloignement. Ce n’est qu’une erreur de calcul. Je
+  <lb/><subst><del/><add>sens</add></subst> que nous tirons tout nôtre lustre des raions de votre gloire
+  <lb/>qui rejaillissent un peu sur nous, vos bons voisins. Et je m’imaginois
+  <lb/>que l’intensité de cette lumiere decroissoit en raison doublée des
+  <lb/>distances. Vous voulez qu’elle subsiste en raison constante. Cela
+  <lb/>est bien flatteur pour nous, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je n’y saurois répondre qu’en vous
+  <lb/>assurant d’une amitié tout aussi constante, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> parfaitement durable.
+  <pb facs="3694240" n="2"/>
+  <lb/>Ne prenez pas ceci, je vous prie, pour une figure: <subst><del>r</del><add>R</add></subst>ien n’est
+  <lb/>plus réel, je vous jure. Je serai fort obligé à Monsieur
+  <lb/>votre <rs key="pers_DE-588-118509969" type="person">Pére</rs> de la communication de la Piéce <rs key="biblio_MELCB7I5" type="biblio"><foreign xml:lang="lat">Spinosismi depulsionis
+  <lb/>Echo</foreign></rs>. Elle est, dites vous, plaisante. J’en conclus quasi surement
+  <lb/>qu’elle est bonne, car <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs> <del/>a fort l’esprit de la
+  <lb/>bonne plaisanterie. Je la recevrai avec plaisir, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> après cela je
+  <lb/>vous dirai, avec ma franchise ordinaire, si je suis d’avis de l’inserer
+  <lb/>parmi tant de belles piéces serieuses. Enfin, vous vous determinerez
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous suivrons vos ordres. Je ne crois pas avoir rien autre <choice><orig>a</orig><reg>à</reg></choice> vous
+  <lb/>marquer pour le present, que de vous assurer 
+</p>
+<p>
+  <lb/>J’allois dire de mon parfait attachement, mais ce seroit
+  <lb/>retomber dans ce que nous sommes convenus d’<subst><del><gap/></del><add>ev</add></subst>iter.
+</p>
+<closer>
+  <salute>
+    <lb/>Adieu donc, mon très cher ami.
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1741-01-20">20 <abbr>Janv.</abbr> 1741</date>
+  </dateline>
+</closer>
 </div>
 </body>
 </text></TEI>

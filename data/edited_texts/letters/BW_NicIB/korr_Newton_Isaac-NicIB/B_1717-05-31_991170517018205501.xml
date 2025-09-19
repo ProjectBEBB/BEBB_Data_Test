@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517018205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517018205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -49,7 +49,7 @@
         <p>fo.277v leer. Zahlreiche Korrekturen. 7 Zeilen nachträglich gestrichen</p>
       </note>
       <note type="print">
-        <p>Druck: The Correspondence of Isaac Newton, vol. VI (1713-1718), ed. by A.R. Hall and L. Tilling, Cambridge, London, New York, Melbourne (Cambridge Univesity Press) 1976, Nr.1240, pp.388-389</p>
+        <p>Druck: The Correspondence of Isaac Newton, vol. VI (1713-1718), ed. by A.R. Hall and L. Tilling, Cambridge, London, New York, Melbourne (Cambridge University Press) 1976, Nr. 1240, pp. 388-389</p>
       </note>
       <note type="erschliessbarkeit">Erhalten</note>
       <note type="dataGroup">Druck historisch</note>
@@ -142,21 +142,52 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-18" who="MK">kollationieren fertig</change>
+      <change when="2025-05-26" who="MK">kollationieren vorbereitet, Code ergänzt, korrigiert, grundkomm., recherchiert</change>
+      <change when="2025-05-20" who="RG">Brief strukturiert, Code angepasst und lb/ eingefügt</change>
+      <change when="2025-05-19" who="MK">Code ergänzt, überprüft</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1038968/manifest"/>
+<graphic url="https://www.e-manuscripta.ch/i3f/v20/1038968/manifest"/><!-- Scan von King's College Cambridge, Ms 92, wurde verwendet. MK -->
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1038969" n="1"/> <pb facs="1038970" n="2"/>
-<opener><salute>Viro Summo Isaaco Newtono Eq. Aur. S. P. D. Nic. Bern.</salute></opener>
-<p>Accepi ante aliquot menses nitidissimum exemplar Operis Tui nunquam satis laudati de Principiis Philosophiae Naturalis, quod cum salute plurima mihi dono misisti. Pro tanto munere quamvis dignas Tibi referre gratias nequeam, in id tamen omnibus modis quibus possum incumbam, ut Tibi con stet, Te tam insigne beneficium non in indignum aut ingratum collocasse. Summa enim cum delectatione, nec sine fructu, ut spero, lectioni Excellentissimi operis Tui nova ista editione insigniter aucti et emendati operam dabo, quoties Academici labores (sustineo enim hic Cathedram Mathematicam, ad quam superiore anno à Serenissima Republica Veneta vocatus fui) aliave negotia et studia non impedient. Caeterum ut benignum in me animum, cujus novum testem pretiosissimum Tuum donum esse voluisti, porro conserves enixe rogo. Vehementer etiam opto, ut Tibi persuadeas, me de observantia Tibi debita deque beneficiorum à Te praecipue et ab Insigni vestro Hallejo in Anglia acceptorum memoria nihil unquam remissurum.</p>
-<closer><salute>Vale.</salute> <dateline>Patavii d. <date when="1717-05-31">31. Maji 1717</date>.</dateline></closer>
+<pb facs="1038969" n="1"/>
+  <opener>
+    <salute>
+      <lb/>Viro Summo
+      <lb/><rs key="pers_DE-588-118587544" type="person">Isaaco Newtono</rs> <choice><abbr>Eq. Aur.</abbr><expan>Equiti Aurati</expan></choice>
+      <lb/><abbr>S. P. D.</abbr>
+      <lb/><rs key="pers_DE-588-119166895" type="person">Nicolaus Bernoulli</rs>
+    </salute>
+  </opener>
+  <p>
+    <lb/>Accepi ante aliquot <date>menses nitidiss<del/><add>imum</add></date> exemplar
+    <lb/>operis Tui nunquam satis laudati <rs key="biblio_6CP8LL78" type="biblio">de Principiis Philo<pc type="hyphenation">=</pc><lb break="no"/>sophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Naturalis</rs>, quod cum salute plurima mihi dono
+    <lb/>misisti. Pro tanto munere quamvis dignas Tibi referre gra<pc type="hyphenation">=</pc><lb break="no"/>tias nequeam, in id tamen omnibus quibus possum, modis
+    <lb/>incumbam, ut Tibi constet, Te tam insigne beneficium non 
+    <lb/>in indignum aut ingratum collocasse. Summa cum delecta<pc type="hyphenation">=</pc><lb break="no"/>tione nec sine fructu, ut spero, lectioni Excellentissimi
+    <lb/><rs key="biblio_6CP8LL78" type="biblio">operis</rs> Tui nova ista editione insigniter aucti et emendati
+    <lb/>operam dabo, quoties Academici labores (sustineo enim hic 
+    <lb/>Cathedram Mathematicam, ad quam <date notBefore="1716" notAfter="1717">superiore anno</date> à <choice><abbr>Seren.</abbr><expan>Serenissima</expan></choice> 
+    <lb/><abbr>Republ.</abbr> <rs key="place_VER-repven" type="place">Veneta</rs> vocatus fui) aliave negotia et studia non
+    <lb/>impedient. C<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terum ut benignum in me animum, cujus novum
+    <lb/>testem pretiosissimum Tuum donum esse voluisti, porro con<pc type="hyphenation">=</pc><lb break="no"/>serves, enixe rogo. Vehementer etiam opto, ut Tibi persua<pc type="hyphenation">=</pc><lb break="no"/>deas, me de observantia Tibi debita, deque beneficiorum
+    <lb/>à Te pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cipue et ab Insigni vestro <rs key="pers_DE-588-118720066" type="person">Hallejo</rs> in <rs key="place_VER-englan" type="place">Anglia</rs>
+    <lb/>acceptorum memoria nihil unquam remissurum.
+  </p>
+  <closer>
+    <salute>
+      <lb/>Vale.
+    </salute>
+    <dateline><rs key="place_GEO-3171728" type="place">Patavii</rs> <abbr>d.</abbr> <date when="1717-05-31">31. Maij 1717</date>.</dateline>
+  </closer>
+<pb facs="1038970" n="2" type="empty"/>
 </div>
 </body>
 </text></TEI>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517059005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -157,12 +157,12 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
-      <change when="2023-09-26" who="RG">Personen und Orte ausgezeichnet</change>
-      <!-- Biblio wurde noch nicht referenziert -->
-      <change when="2023-07-18" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
-      <!-- Formeln noch nachbessern und z. T. die LB, RG 21.07.2023. -->
-      <change when="2023-07-18" who="RG">Seitenzahlen, Briefstruktur</change>
-      <!-- Die Abschrift wurde verwendet, Original BPU Genf -->
+      <change when="2025-09-12" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-09-12" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-12" who="RG">Seitenzahlen, Briefstruktur nach dem Brief (Bibliothek in Genf)</change><!-- Seiten "facs" noch referenzieren, RG 18.09.2025 -->
+      <change when="2023-09-26" who="RG">Personen und Orte ausgezeichnet</change><!-- Biblio und Briefe wurden noch viele nicht referenziert -->
+      <change when="2023-07-18" who="RG">Zeilabstände eingefügt, und entitäten ergänzt</change>
+      <change when="2023-07-18" who="RG">Seitenzahlen, Briefstruktur (Abschrift)</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -179,179 +179,212 @@
 <!--_____________-->
 
 <facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1037872/manifest"/>
+  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvta4c6c492f3d363e5f%2Fcanvas%2F0%2F3&vx=944.048&vy=-941.87&vr=0&vz=5.50305 RG 05.09.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="-" n="1"/>
-<dateline>A Basle ce 3e. Juillet 1728.</dateline>
-<opener>À Mr. Cramer</opener>
-<p><lb/>Les deux lettres que vous m’avés fait l’honneur de m’ecrire m’ont donné <del/>
-<lb/><del/>bien du plaisir, mais en même tems aussi un peu de chagrin, car si d’un
-                           <lb/>coté j’ai été fort rejoui <del/><add>de recevoir</add> de vos nouvelles <del/><add>et d’apprendre</add> tant
-                           <lb/>de belles choses dont vos<del/> lettres sont remplies, de l’autre coté j’ai été faché en
-                           <lb/>voyant qu’un grand nombre de distractions, auxquelles j’ai été sujet depuis quel<pc type="hyphenation">-</pc><lb break="no"/>que tems, m’ont empeché de vous suivre dans vos profondes meditations et de vous
-                           <lb/>dire <add>en reponse</add> quelque chose de précis sur des matieres qui semblent <add>exiger</add> une application
-                           <lb/>longue et serieuse. Mais pour ne pas manquer tout à fait à mon devoir, je vais <del/>
-<lb/><del/>repondre à quelques articles de vos lettres. J’ai vu avec plaisir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent
-                           <lb/>vous avés étendu et generalisé <del>la </del><add>ma</add> methode <del>dont je </del>pour trouver l’expression d’un
-                           <lb/>terme quelconque d’une suite dont l’indice est <formula>m+n</formula>; je croi que vous avés fait part
-                           <lb/>de cette methode à Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, et que par là vous lui avés donné occasion de
-                           <lb/><del/><add>concevoir</add> un<del>e</del> terme quelconque d’une suite recurrente (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il l’appelle) <del>par </del><add>sous</add> cette
-                           <lb/>expression generale az<hi rend="sup">L</hi> + by<hi rend="sup">L</hi> + cx<hi rend="sup">L</hi> + dv<hi rend="sup">L</hi> + &amp;c. Il est fort facile de demontrer,
-                           <lb/>que cette expression en mettant pour L successivement 0, 1, 2, 3, &amp;c. <del>forme </del>donne
-                           <lb/>une suite recurrente, dont on trouve aussi facilement l<del>es</del>’indice<del>s</del>; soit par
-                           <lb/>ex. <del/> <formula>m+n+p+q</formula> l’indice cherché pour az<hi rend="sup">L</hi> + by<hi rend="sup">L</hi> + cx<hi rend="sup">L</hi> + dv<hi rend="sup">L</hi>, 
-                           <lb/>on aura donc <formula>az^{L}+by^{L}+cx^{L}+dv^{L}</formula> ou bien en divisant par az<hi rend="sup">L-4</hi> on aura <formula>z^{4}=mz^{3}+nz^{2}+pz+q;</formula>
-</p><!--Irgendetwas stimmt nicht mit den Formeln, RG 18.07.2023-->
-<p>de même en mettant by<hi rend="sup">L</hi> = à tout ce qui est multiplié par b de l’autre coté on trouvera <formula>y^{4}=my^{3}+ny^{2}+py+q</formula>, et en ega lant aussi les autres membres <formula>cx^{L}</formula> et <formula>dv^{L}</formula> à <formula>mcx^{L-1}+ncx^{L-2}+pcx^{L-3}+\mbox{\&amp;c.}mdv^{L-1}+ndv^{L-2}+\mbox{\&amp;c.}</formula>
+<pb facs="-" n="1"/><!-- Seiten noch referenzieren, RG 18.09.2025 -->
+<opener>
+  <dateline>
+    <lb/>À <rs key="place_GEO-2661604" type="place">Basle</rs> ce <date when="1728-07-03">3.<hi rend="sup">e</hi> Juillet 1728</date>.
+  </dateline>
+  <salute>
+    <lb/>Monsieur
+  </salute>
+</opener>
+<p>
+  <lb/>Les deux <rs type="letter">Lettres</rs><!-- noch referenzieren, RG 10.09.2025 --> que vous m’avés fait l’honneur de m’ecrire m’ont
+  <lb/>donné bien du plaisir, mais en même tems aussi un peu de chagrin, car si
+  <lb/>d’un coté j’ai été fort rejoui de recevoir de Vos nouvelles et d’apprendre
+  <lb/>tant de belles choses dont vos <rs type="letter">lettres</rs> sont remplies, de l’autre coté j’ai été
+  <lb/>faché en voyant qu’un grand nombre de distractions, auxquelles j’ai été
+  <lb/>sujet depuis quelque tems, m’ont empeché de vous suivre dans vos profon<pc type="hyphenation">-</pc><lb break="no"/>des meditations et de vous dire en reponse quelque chose de précis sur des
+  <lb/>matieres qui semblent exiger une application longue et serieuse. Mais
+  <lb/>pour ne pas manquer tout à fait à mon devoir, je vais repondre à quelques
+  <lb/>articles de vos <rs type="letter">lettres</rs>. J’ai vû avec plaisir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent vous avés étendu et
+  <lb/>generalisé ma methode pour trouver l’expression d’un terme quelconque
+  <lb/>d’une suite dont l’indice est <formula>m+n</formula>; je croi que Vous avés fait part de
+  <lb/>cette methode à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, et que par là vous lui avés donné
+  <lb/>occasion de concevoir un terme quelconque d’une suite recurrente
+  <lb/>(co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il l’appelle) sous cette expression generale <choice rend="regFormula"><orig><formula>az^{L}+by^{L}+cx^{L}+dv^{L}+\mbox{\&amp;c}</formula></orig><reg><formula>az^{L}+by^{L}+cx^{L}+dv^{L}+\mbox{etc}</formula></reg></choice>. 
+  <lb/>Il est fort facile de demontrer, que cette expression en mettant pour <formula>L</formula>
+  <lb/>successivement 0, 1, 2, 3, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> donne une suite recurrente, dont on trouve
+  <lb/>aussi facilement l’indice; soit par <abbr>ex.</abbr> <formula>m+n+p+q</formula> l’indice cherché pour
+  <lb/><formula>az^{L}+by^{L}+cx^{L}+dv^{L}</formula>, on aura donc <choice rend="regFormula"><orig><formula>{\begin{array}{l l} az^{L}+by^{L}+cx^{L}+dv^{L}= &amp;m\cdot\overline{az^{L-1}+by^{L-1}+cx^{L-1}+dv^{L-1}}\\ &amp;n\cdot\overline{az^{L-2}+by^{L-2}+cx^{L-2}+dv^{L-2}}\\ &amp;p\cdot\overline{az^{L-3}+by^{L-3}+cx^{L-3}+dv^{L-3}}\\ &amp;q\cdot\overline{az^{L-4}+by^{L-4}+cx^{L-4}+dv^{L-4}} \end{array}</formula></orig><reg><formula>{\begin{array}{l l} az^{L}+by^{L}+cx^{L}+dv^{L}= &amp;m\cdot(az^{L-1}+by^{L-1}+cx^{L-1}+dv^{L-1})\\ &amp;n\cdot(az^{L-2}+by^{L-2}+cx^{L-2}+dv^{L-2})\\ &amp;p\cdot(az^{L-3}+by^{L-3}+cx^{L-3}+dv^{L-3})\\ &amp;q\cdot(z^{L-4}+by^{L-4}+cx^{L-4}+dv^{L-4}) \end{array}</formula></reg></choice>
+  <lb/>en mettant <formula>az^{L}=</formula> à tout ce qui est multiplié
+  <lb/>par a dans l'autre membre de l'équation,
+  <lb/>on aura <formula>az^{L}=maz^{L-1}+naz^{L-2}+paz^{L-3}+qaz^{L-4}</formula>, ou bien en divisant par <formula>az^{L-4}</formula>
+  <lb/>on aura <formula>z^{4}=mz^{3}+nz^{2}+pz+q</formula>; de même en mettant <formula>by^{L}=</formula> à tout ce qui
+  <lb/>est multiplié par <formula>b</formula> de l’autre coté on trouvera <formula>y^{4}=my^{3}+ny^{2}+py+q</formula>, 
 <pb facs="-" n="2"/>
-<lb/><add>respectivement</add>, on trouvera de même <formula>x^{4}=mx^{3}+nx^{2}+px+q</formula>, et <formula>v^{4}=mv^{3}+nv^{2}+pv+q</formula>;
-                           <lb/>d’où il suit que <del/>ces 4 quantités <formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <formula>v</formula> <del/><add>sont les 4</add> racines de cette equation
-                           <lb/><formula>R^{4}=mR^{3}+nR^{2}+pR+q</formula>, dans laquelle <formula>R</formula> signifie une des racines; <del/>
-<lb/><del/>or les racines <del/><formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <formula>v</formula>, étant données on sait la maniere de trouver les coeffi<pc type="hyphenation">-</pc><lb break="no"/>ciens <formula>m</formula>, <formula>n</formula>, <formula>p</formula>, <formula>q</formula>, c’est à dire l’indice <formula>m+n+p+q</formula>; et vice versa, l’indice <formula>m+n+p+q</formula>,
-                           <lb/>c’est à dire les coefficiens <formula>m,n,p,q</formula>, étant donnés on <del/><add>suppose que chacune</add> des raci<pc type="hyphenation">-</pc><lb break="no"/>nes <formula>z, y, x, v,</formula> et par consequent<add><del/></add> l’expression generale d’un terme quelconque
-                           <lb/>formé sur cet indice <add>sera connue</add>, les autres quantités <formula>a, b, c, d,</formula> qui entrent dans l’expres<pc type="hyphenation">-</pc><lb break="no"/>sion generale etant determinés par les premiers termes de la suite
-                           <lb/>donnée. Cette methode d’exprimer un terme quelconque d’une suite recurren<pc type="hyphenation">-</pc><lb break="no"/>te <del/>par cette formule az<hi rend="sup">L</hi> + by<hi rend="sup">L</hi> + cx<hi rend="sup">L</hi> + <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. est très generale.
-                           <lb/>et se peut <add>aussi</add> appliquer, contre ce que vous pensés, à toutes les suites dont une
-                           <lb/>difference quelconque est constante, pourveu qu’on l’applique avec cir<pc type="hyphenation">-</pc><lb break="no"/>conspection <del/><add>en remediant à ce pretendu</add> inconvenient, <del/>dont vous par<pc type="hyphenation">-</pc><lb break="no"/>lés dans votre derniere lettre; <del/>
-<lb/><del/>
-<lb/><del/> ce qui se peut faire en substituant pour les quantités a, b, c, &amp;c,
-                           <lb/>leurs valeurs en z, y, x, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. <del>que </del><add>lesquels</add> on trouve en egalant les premiers termes de
-                           <lb/>la suite <del/>respectivement à <formula>a+b+c+\mbox{\&amp;c.}</formula>, <formula>az+by+cx+\mbox{\&amp;c.},</formula>
-<lb/><formula>az^{2}+by^{2}+cx^{2}+\mbox{\&amp;c.}</formula> Par ex. soit <formula>az^{L-1}+by^{L-1}</formula><del/><add>un</add> terme d’une suite dont l’indice
-                           <lb/>est <formula>m+n</formula>, et les deux premiers termes <formula>A</formula> et <formula>B</formula>, on aura en faisant <formula>L=1</formula> et = 2,
-                           <lb/><formula>A=a+b,B=az+by</formula>, d’où l’on tire <formula>\underline{a}=\frac{B-Ay}{z-y}</formula> et <formula>\underline{b}=\frac{Az-B}{z-y}</formula> et par con<pc type="hyphenation">-</pc><lb break="no"/>sequent <formula>az^{L-1}+by^{L-1}=\frac{(B-Ay)z^{L-1}+(Az-B)y^{L-1}}{z-y}=\frac{z^{L-1}-y^{L-1}}{z-y}\cdot B+\frac{z^{L-2}-y^{L-2}}{z-y}\cdot-yzA</formula>,
-                           <lb/>ce qui est conforme à ce que j’avois trouvé autrefois par ma methode,
-                           <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi à ce que vous avés trouvé dans votre premiere lettre.
-                           <lb/>Si l’on suppose <formula>A=1,Bm=z+y</formula>, l’expression susdite se change en <formula>\frac{z^{L}-y^{L}}{z-y}</formula>
+  <lb/>et en <subst><del><unclear/></del><add>égalant</add></subst> aussi les autres membres <formula>cx^{L}</formula> et <formula>dv^{L}</formula> à <choice rend="regFormula"><orig><formula>mcx^{L-1}+ncx^{L-2}+pcx^{L-3}+\mbox{\&amp;c.}</formula></orig><reg><formula>mcx^{L-1}+ncx^{L-2}+pcx^{L-3}+\mbox{etc.}</formula></reg></choice>
+  <lb/><choice rend="regFormula"><orig><formula>mdv^{L-1}+ndv^{L-2}+\mbox{\&amp;c.}</formula></orig><reg><formula>mdv^{L-1}+ndv^{L-2}+\mbox{etc.}</formula></reg></choice> respectivement, on trouvera de même <formula>x^{4}=mx^{3}+nx^{2}+px+q</formula>,
+  <lb/>et <formula>v^{4}=mv^{3}+nv^{2}+pv+q</formula>; d’où il suit que ces 4 quantités <formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <formula>v</formula> sont les 4
+  <lb/>racines de cette equation <formula>R^{4}=mR^{3}+nR^{2}+pR+q</formula>, dans laquelle <formula>R</formula> signifie
+  <lb/>une des racines; or les racines <formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <formula>v</formula>, étant données on sait la maniere 
+  <lb/>de trouver les coefficiens <formula>m</formula>, <formula>n</formula>, <formula>p</formula>, <formula>q</formula>, c’est à dire l’indice <formula>m+n+p+q</formula>; et vice
+  <lb/>versa, l’indice <formula>m+n+p+q</formula>, c’est à dire les coefficiens <formula>m</formula>, <formula>n</formula>, <formula>p</formula>, <formula>q</formula>, étant donnés,
+  <lb/>on suppose que chacune des racines <formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <formula>v</formula>, et par consequent l’expression
+  <lb/>generale d’un terme quelconque formé sur cet indice sera connue, les 
+  <lb/>autres quantités <formula>a</formula> , <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, qui entrent dans l’expression generale étant
+  <lb/>determinés par les premiers termes de la suite donnée. Cette methode 
+  <lb/>d’exprimer un terme quelconque d’une suite recurrente par cette formule
+  <lb/><choice rend="regFormula"><orig><formula>az^{L}+by^{L}+cx^{L}+\mbox{\&amp;c.}</formula></orig><reg><formula>az^{L}+by^{L}+cx^{L}+\mbox{\&amp;c.}</formula></reg></choice> est trés generale, et se peut aussi appliquer, contre 
+  <lb/>ce que vous pensés, à toutes les suites dont une difference quelconque
+  <lb/>est constante, pourveu qu’on l’applique avec circonspection en reme<pc type="hyphenation">-</pc><lb break="no"/>diant à ce pretendu inconvenient, dont vous parlés dans votre dernie<pc type="hyphenation">-</pc><lb break="no"/>re <rs type="letter">lettre</rs><!-- Brief noch referenzieren, RG 11.09.2025 -->; ce qui se peut faire en substituant pour les quantités <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr><unclear>,</unclear>
+  <lb/>leurs valeurs en <formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> lesquels on trouve en egalant les premiers
+  <lb/>termes de la suite respectivement à <choice rend="regFormula"><orig><formula>a+b+c+\mbox{\&amp;c}</formula></orig><reg><formula>a+b+c+\mbox{etc}</formula></reg></choice>, <choice rend="regFormula"><orig><formula>az+by+cx+\mbox{\&amp;c}</formula></orig><reg><formula>az+by+cx+\mbox{etc}</formula></reg></choice>,
+  <lb/><choice rend="regFormula"><orig><formula>az^{2}+by^{2}+cx^{2}+\mbox{\&amp;c}</formula></orig><reg><formula>az^{2}+by^{2}+cx^{2}+\mbox{etc}</formula></reg></choice>. Par <abbr>ex.</abbr> soit <formula>az^{L-1}+by^{L-1}</formula> un terme d’une suite dont
+  <lb/>l’indice est <formula>m+n</formula>, et les deux premiers termes <formula>A</formula> et <formula>B</formula>, on aura en
+  <lb/>faisant <formula>L=1</formula> et <formula>=2</formula>, <formula>A=a+b</formula>, <formula>B=az+by</formula>, d’où l’on tire <formula>a=\frac{B-Ay}{z-y}</formula>,
+  <lb/>et <formula>b=\frac{Az-B}{z-y}</formula> et par consequent <choice rend="regFormula"><orig><formula>az^{L-1}+by^{L-1}=\frac{\overline{B-Ay}\cdot z^{L-1}+\overline{Az-B}\cdot y^{L-1}}{z-y}=</formula></orig><reg><formula>az^{L-1}+by^{L-1}=\frac{(B-Ay)\cdot z^{L-1}+(Az-B)\cdot y^{L-1}}{z-y}=</formula></reg></choice>
+  <lb/><formula>\frac{z^{L-1}-y^{L-1}}{z-y}\times B+\frac{z^{L-2}-y^{L-2}}{z-y}\times-yzA</formula>, ce qui est conforme à ce que j’avois trou<pc type="hyphenation">-</pc><lb break="no"/>vé autrefois par ma methode, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi à ce que vous avés trouvé dans
+  <lb/>vôtre premiere <rs type="letter">Lettre</rs>.<!-- Brief noch referenzieren, RG 11.09.2025 --> Si l’on suppose <formula>A=1</formula>, <formula>B=m=z+y</formula>, l’expression
+  <lb/>susdite se change en <formula>\frac{z^{L}-y^{L}}{z-y}</formula>, dont on trouve la valeur pour le cas de <formula>z=y=1</formula>
 <pb facs="-" n="3"/>
-<lb/>dont on trouve la valeur pour le cas de <formula>z=y=1</formula> sans avoir recours à
-                           <lb/>l’art. 163 des Inf. petits, <del/>en observant seulement,
-                           <lb/>que <formula>z^{L}-y^{L}</formula> divisé par <formula>z-y</formula> donne une progression geometrique, dont tous les termes
-                           <lb/>devie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ent = 1 dans le cas de <formula>z=y=1</formula>. Remarqués donc ici, Monsieur, qu’il n’est
-                           <lb/>pas impossible, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous dites dans vôtre derniere lettre, que la progression
-                           <lb/>arithmetique <del/>1.2.3.4.&amp;c. dont l’indice est <formula>z-1</formula>, soit compo<pc type="hyphenation">-</pc><lb break="no"/>sée de ces suites geometriques <formula>a, az, az<hi rend="sup">2</hi>, az<hi rend="sup">3</hi></formula>, &amp;c. et <formula>b, by, by<hi rend="sup">2</hi>, by<hi rend="sup">3</hi>, &amp;c.</formula>
-<lb/>car quoique dans ce cas <add>il y ait</add> <formula>z=y=1</formula>, les quantités composées <formula>a+b,az+by,</formula>
-<lb/><formula>az^{2}+by^{2},\mbox{\&amp;c.}</formula> ne deviennent pas pour cela égales, puisque <formula>a</formula> et <formula>b</formula> ont <del/>
-<lb/><del/>une valeur infinie telle que <formula>a+b=A=1</formula> et <formula>az+by=B=2</formula>.<del/> Vous
-                           <lb/>decouvrirés aussi facilement, que <del/>les expressions <add>generales,</add> que
-                           <lb/>vous avés trouvées dans votre premiere lettre, se reduisent aisement à celle
-                           <lb/>de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, laquelle en substituant pour <formula>a, b, c, d,</formula> &amp;c. leurs valeurs
-                           <lb/>donne précisement ce que vous avés trouvé, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je viens de le demontrer
-                           <lb/>pour les suites dont l’indice est <formula>m+n</formula>. J’avoue avec vous que cette methode
-                           <lb/>de concevoir les termes d’une suite recurrente sous cette expression generale <formula>az<hi rend="sup">L</hi></formula>
-<lb/><formula>+ by<hi rend="sup">L</hi> + cx<hi rend="sup">L</hi> + &amp;c.</formula> est fort co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ode <add><del/></add>pour trouver les indices des suites composées par l’addition
-                           <lb/>ou la multiplication des termes correspondants de 2 (ou plusieurs) suites recurrentes;
-                           <lb/>mais elle <del/><add>a</add> toujours cet inconvenient, que l’indice et les premiers termes d’
-                           <lb/>une suite <add>étant</add> donnés on ne peut dans plusieurs cas particuliers exprimer un terme
-                           <lb/>d’un quantième donné autrement que par des quantités imaginaires, <del/>
-<lb/><del/>parce que les racines <formula>z, y, x, &amp;c</formula>, sont souvent ou
-                           <lb/>imaginaires ou du moins exprimées par des qualités imaginaires.</p>
-<p><lb/>La <del>sol</del>reponse que vous donnés pour la solution du <del/>cas singulier pro<pc type="hyphenation">-</pc><lb break="no"/>posé à Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> page 402. Probl. 5e. ne satisfait<del/> qu’en partie, <del/>
-<lb/><del/><add>elle suffit, comme vous dites,</add> pour faire voir que <del/>A ne doit
-                           <lb/>pas donner à <formula>B</formula> un Equivalent infini: mais elle ne demontre pas la veritable
-                        <pb facs="-" n="4"/>
-<lb/>raison de la difference, qu’il y a entre l’esperance mathematique et l’estime
-                           <lb/>vulgaire; Par ex. dans le cas de Croix <del>et </del><add>ou</add> Pile il n’y a personne de bon sens
-                           <lb/>qui voulut donner 20. Ecus, non par cette raison, que l’usage ou le plaisir
-                           <lb/>qu’on peut tirer d’une so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e infinie n’est guere plus grand que celui qu’
-                           <lb/>on peut tirer d’une so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de 10, ou 20, ou 100 Millions; mais parce qu’en
-                           <lb/>donnant <del/>20. Ecus on a une tres petite probalité de gagner quelque
-                           <lb/>chose, et que l’on croit la perte moralement certaine. Le vulgaire ne
-                           <lb/>met ici en ligne de <del/>comte ni des millions, ni des centaines d’Ecus,
-                           <lb/>ne faisant point attention à ce que les termes d<add>e</add><del>’une</del> <add>la</add> progression geometri<pc type="hyphenation">-</pc><lb break="no"/>que 1. 2. 4. 8. 16 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. devenus assés grands peuvent etre censés égaux,
-                           <lb/><del/>il n’est engagé <add>par là</add> ni à accepter ni à refuser le parti, il se deter<pc type="hyphenation">-</pc><lb break="no"/>mine seulement selon les degrés de probabilité qu’il a de gagner ou<lb break="no"/>de perdre, <add>chés lui</add> une <add>tres</add> petite probabilité de gagner une grande so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e ne contre<pc type="hyphenation">-</pc><lb break="no"/>balance pas une <add>tres</add> grande probabilité de <del/>perdre une petite so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e,
-                           <lb/>il regarde l’evenement du premier<del>s</del> cas comme impossible, et l’evene<pc type="hyphenation">-</pc><lb break="no"/>ment du second co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e certain. Il faut donc pour <del/>regler <del/><add>au juste</add>
-<lb/><del/>l’Equivalent, determiner jusqu’où la <del/><add>quantité</add> d’une pro<pc type="hyphenation">-</pc><lb break="no"/>babilité doit diminuer, afin qu’elle puisse etre censée nulle; mais
-                           <lb/>voila ce qui est impossible de determiner, quelque supposition que l’on
-                           <lb/>fasse on rencontre toujours des difficultés; <del/><add>les limites de ces petites</add>
-<lb/><del/>probabilités ne sont pas précises,<del/>
-<lb/><del/><add>mais elles ont</add> une certaine latitude que l’on ne peut pas fixer aisément;
-                           <lb/>une probabilité qui par ex. a <formula>\frac{1}{100}</formula> de certitude ne doit pas etre reputée
-                           <lb/>nulle plus tôt que celle qui a <formula>\frac{1}{99}</formula> de certitude. Il me semble pourtant
-                           <lb/>qu’en admettant cette supposition, qu’un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de bon sens ne veuille
-                           <lb/>pas donner 20. Ecus, par ce qu’il tient pour certain que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui
-                           <lb/>lui echerra sera moindre que 20. Ecus, on puisse trouver l’Equivalent
-                        <pb facs="1037877" n="5"/>
-<lb/>cherché par le raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement suivant: Par hypoth. il est moralement impossi<pc type="hyphenation">-</pc><lb break="no"/>ble qu’il obtienne 20. Ecus, il sera donc aussi moralement impossible qu’il
-                           <lb/>obtienne 32. Ecus ou quelque autre nombre d’Ecus dans cette progression
-                           <lb/>32.64.128.<choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. or la probabilité pour obtenir un nombre <del>dans </del><add>de</add> cette
-                           <lb/>progression est <formula>\frac{1}{64}+\frac{1}{128}+\frac{1}{256}+\mbox{\&amp;c.}=\frac{1}{32}</formula>; <add>donc</add> cet ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de bon sens donc repu<pc type="hyphenation">-</pc><lb break="no"/>te une probabilité qui ne surpasse pas <formula>\frac{1}{32}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e nulle, et une probabili<pc type="hyphenation">-</pc><lb break="no"/>té qui a <formula>\frac{31}{32}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e une certitude entiere, par consequent son esperance
-                           <lb/>vaudra par la regle <formula>\frac{1}{2}\cdot1+\frac{1}{4}\cdot2+\frac{1}{8}\cdot4+\frac{1}{16}\cdot8+0.16+0.32+\mbox{\&amp;c.}=2.</formula><del/>
-<lb/><del/>
-<lb/><del/>Mais
-                           <lb/><del/><add>je ne sai si</add> cet autre raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement seroit plus juste: Un
-                           <lb/>ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui ne veut pas donner 20 Ecus estime tous les cas, qui lui donnent
-                           <lb/>une moindre so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e que 20 Ecus, possibles, et <del>les </del><add>chacun des</add> autres, qui lui peuvent
-                           <lb/>donner une so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e plus grande, impossible<del>s</del>, il <del/>regarde donc <del/>
-<lb/>seulement les probabilités moindres que <formula>\frac{1}{32}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e nulles, par conse<pc type="hyphenation">-</pc><lb break="no"/>quent son esperance vaudra <formula>\frac{1}{2}\cdot1+\frac{1}{4}\cdot2+\frac{1}{8}\cdot4+\frac{1}{16}\cdot8+\frac{1}{32}\cdot16+0.32+\mbox{}=2\cdot\frac{1}{2}</formula>.
-                           <lb/>Il y auroit encore bien des choses à dire sur cette matiere, mais n’
-                           <lb/>ayant pas le loisir de ranger en ordre et de developper les idées qui se
-                           <lb/>sont presentées à mon esprit, je les passe sous silence.
-                           <lb/>Je n’ai pas <del/>vû les traité de Mr. <rs key="pers_DE-588-121009645" type="person">Cotes</rs> intitulé <hi>Logometria</hi>, j’en ai veu
-                           <lb/>seulement l’extrait <del/><add>qu’on<del/> a publié</add> dans les <rs type="biblio">Actes de Leipsic de 1723</rs>. et que je
-                           <lb/>n’ai pas encore examiné; mais pour ce qui est des Problemes, que vous cités
-                           <lb/>du Traité que Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> va faire imprimer, et qui doivent contenir, à ce que
-                           <lb/>vous dites, <del>les </del>le fondement des theorèmes de Mr. <rs key="pers_DE-588-121009645" type="person">Cotes</rs>, je me crois en état de
-                           <lb/>les pouvoir resoudre, et même de donner la rai son des solutions de Mr. de
-                        <pb facs="-" n="6"/>
-<lb/><rs key="pers_DE-588-117586765" type="person">Moivre</rs>. Par ex. pour trouver les facteurs qui composent cette quantité <formula>1 +- z<hi rend="sup">n</hi></formula>,
-                           <lb/>je suppose un des facteurs = <formula>1-xz+z^{2}</formula> et l’autre <add>=</add><formula>1+az+bz^{2}+cz^{3}+dz^{4}+\mbox{\&amp;c.}</formula> <add>jusqu’à <formula>\pm z^{n-2}</formula></add>.<del/> <add>J’ai trouvé</add>
-<lb/><add>que les quantités <formula>1, a, b, c, d, &amp;c.</formula> sont les termes</add> d’une suite recurrente, dont l’indice <del/><add><del/>est <formula>x-1</formula>, et</add>
-<lb/>les deux premiers termes<del/> 1 et x; <del/><add>Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e donc</add> le terme du quantième <formula>n-1</formula> de cette
-                           <lb/>suite doit être <add>= <formula>\pm1</formula>, et celui du quantième <formula>n=0</formula>,</add> on aura <formula>x^{n-1}-(n-2)x^{n-3}+\frac{(n-3)(n-4)}{2}\cdot x^{n-5}</formula>
-<lb/><formula>-\frac{(n-4)(n-5)(n-6)}{2\cdot3}\cdot x^{n-7}+\mbox{\&amp;c.}</formula> ou bien <formula>\frac{\left(\frac{1}{2}x+\sqrt{\frac{1}{4}xx-1}\right)^{n}}{\sqrt{xx-4}}-\frac{\left(\frac{1}{2}x-\sqrt{\frac{1}{4}xx-1}\right)^{n}}{\sqrt{xx-4}}=0</formula> (qui sont les
-                           <lb/>expressions generales du terme du quantième n) Or x etant la corde du complement
-                           <lb/><formula>AD</formula> d’un arc <formula>BD</formula>, dont le rayon <formula>AC=1</formula>, les cordes des
-                           <lb/>multiples du même arc <formula>BD</formula> s’expriment respectivement par les mêmes
-                           <lb/>termes <formula>1, a, b, c, d, &amp;c.</formula> de la dite suite recurrente multipliés par
-                           <lb/>la corde <formula>BD=\sqrt{4-xx}</formula> Voyés les Actes de Leipsic A. 1701. pag. 171. A. 1703. pag.
-                           <lb/><del/><add>345</add>. Si <del>donc</del> on divise la circonference entiere, <add>ou son multiple quel conque, dont la corde est toujours = 0,</add> en <formula>n</formula> parties égales, dont
-                           <lb/>une soit l’arc <formula>BD</formula>, on trouvera<del/> la corde <formula>AD=x</formula>, dont la moitié
-                           <lb/>est le cosinus de <formula>\frac{1}{2}DB</formula>,<del/> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> a trouvé. Je vous laisse
-                           <lb/>le plaisir de decouvrir par votre sagacité le reste de la solution de ce Problème,
-                           <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi la maniere de resoudre les autres Problemes semblables; <del/>
-<lb/><del/>pour ce qui
-                           <lb/>est de celui ci "Data una ex radicibus aequationis cujus cunque" (<del/><add>ex. gr.</add> <formula>x^{m}+</formula>
-<lb/><formula>px^{m-1}+qx^{m-2}+\mbox{\&amp;c.}=0</formula>) invenire productum differentiarum omnium radici
-                           <lb/>isti et radicibus interjacentium" il se resout facilement en divisant
-                           <lb/>l’equation donnée par <formula>x-a</formula>,<del/> supposant que a soit la racine
-                           <lb/>donnée. Je n’ai pas encore pris la peine d’examiner la solution du Problème
-                           <lb/><del/>penulte. de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> sur la duration des jeux,
-                           <lb/>et je ne puis pas m’y appliquer de peur de differer trop long tems
-                           <lb/>ma reponse. Je vous remercie de ce que vous avés bien voulu presenter
-                           <lb/>mes respects à Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, <del/><add>je</add> vous prie de les riterer, quand vous en
-                        <pb facs="-" n="7"/>
-<lb/>aurés l’occasion, en lui disant que c’est la lettre, dont il parle lui même dans
-                           <lb/>son livre <hi>Doctrine of Chances</hi> page 142. à laquelle j’attends une reponse
-                           <lb/>depuis 14. ans; je voudrois savoir s’il croit encore (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e feu Mr. de
-                           <lb/><rs key="pers_DE-588-117601020" type="person">Montmort</rs> m’a<del/> ecrit, <add>qu’il avoit crû autrefois)</add> que ma seconde solution de son
-                           <lb/>Probleme 43. soit paralogistique; est-ce que <add>vous</add> lui avés <del/><add>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué</add> ma
-                           <lb/>nouvelle solution très courte du même Probleme? Je ne me souviens pas
-                              <lb/>d’avoir fait des remarques sur son livre <rs type="biblio">de Mensura Sortis</rs>, dont il pût se plaindre
-                           <lb/>avec raison, je n’ai <del/>critiqué que le seul Coroll. S. Prop. 15.<del/> en disant, que
-                           <lb/>la voye synthetique des suites infinies, qu’il a employée pour le cas de 3. joueurs, ne
-                           <lb/>suffit pas seule pour resoudre le même Probleme pour le cas d’un plus grand nombre
-                           <lb/>de joueurs, mais qu’il faut necessairement se servir de l’Analyse, ce qu’il a pour<pc type="hyphenation">-</pc><lb break="no"/>tant lui même avoué dans la seconde Edition de son livre, voyés Doctr. of Chances
-                           <lb/>pag. 89. Si <add>Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> croit que</add> Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> se<del>st</del> <add>soit</add> trop plaint de <del/><add>lui ou qu’il l’ait critiqué à</add> tort,
-                           <lb/><del/>il ne doit pas pour cela ternir sa memoire et<del/> se saisir de toutes les occasions
-                           <lb/>pour le blamer, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je vois qu’il fait par ces paroles que vous cités de sa solution
-                           <lb/>du Probleme penult<hi>e</hi>. "Posito scil. pro Q unico termino, invenies (po<pc type="hyphenation">-</pc><lb break="no"/>sito n magno numero) <formula>x=0.756nn</formula> (in duobus lis. casibus) majorem quam <formula>\frac{3}{4}nn</formula>, con<pc type="hyphenation">-</pc><lb break="no"/>tra quam sentiebat <hi>Montmortius</hi> "je trouve qu’au lieu de no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er Mr. <rs key="pers_DE-588-117601020" type="person">de Mon<pc type="hyphenation">-</pc><lb break="no"/>mort</rs> il auroit pû se no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er soi même, ayant été lui même dans l’opinion, qu’<del/>
-<lb/><del/>on pouvoit mettre <del/><formula>\frac{3}{4}nn</formula> pour le nombre cherché,
-                           <lb/>voyés Doctr. of Ch[ances] pag. 149. D’ailleurs je verrai avec plaisir ses nouveaux <hi>Miscel<pc type="hyphenation">-</pc><lb break="no"/>lanea</hi>, sur tout quand j’y trouverai la solution d’un Probleme que je lui ai pro<pc type="hyphenation">-</pc><lb break="no"/>posé <add>à mon tour dans ma susdite lettre</add> en revanche de son Probl. 43. qu’il m’avoit proposé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e par defi; c’est le second Proble
-                           <lb/>entre ceux que j’avois proposé à Mr. de <rs key="pers_DE-588-117601020" type="person">Monmort</rs> Page 402.</p>
-<p>Je ne puis vous
-                           <lb/>rien dire de certain sur l’Experience qu’un horlogeur de <rs key="place_GEO-2643743" type="place">Londres</rs> prétend avoir
-                           <lb/>trouvé contre le Systeme des forces vives, ne sachant pas la construction de sa machine;
-                           <lb/>mais je puis vous assurer que nulle Experience detruira jamais notre Systeme;
-                           <lb/>il me semble que tous ces Messieurs qui combattent les forces vives co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ettent
-                        <pb facs="-" n="8"/>
-<lb/><hi>ignorationem elenchi</hi>, et qu’ils con fondent toujours <del/>les pressions
-                           <lb/>avec les forces vives. Je finis en vous souhaitant la continuation d’un heureux
-                           <lb/>voyage et en vous assurant que je suis avec un parfait attachement,</p>
-<closer><lb/>Monsieur, votre tres humble et tres obeissant serviteur D. Bernoulli. </closer>
-<closer>P. S. Je vous prie de faire mes complimens à Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, et de le faire souvenir de la promesse, qu’il me fit à Venise, de me faire tenir un Exemplaire de son livre de Lineis tertii or dinis. Mon Oncle m’a prié de vous faire les siens, il espere que vous avés reçu sa derniere lettre. [Anschrift] A Monsieur Monsieur Robert Caille Marchd. Banquier pour faire tenir à Monsieur G. Cramer à Londres. </closer>
+  <lb/>sans avoir recours à l’<abbr>art.</abbr> 163 des <abbr>Inf.</abbr> <abbr>pet.</abbr> en observant seulement, que
+  <lb/><formula>z^{L}-y^{L}</formula> divisé par <formula>z-y</formula> donne une progression geometrique, dont tous les
+  <lb/>termes deviennent <formula>=1</formula> dans le cas de <formula>z=y=1</formula>. Remarqués donc ici, Mon<pc type="hyphenation">-</pc><lb break="no"/>sieur, qu’il n’est pas impossible, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous dites dans vôtre derniere
+  <lb/><rs type="letter">lettre</rs><!-- Brief noch referenzieren, RG 11.09.2025 -->, que la progression arithmetique <del/>1. 2. 3. 4. <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> dont l’indice est
+  <lb/><formula>z-1</formula>, soit composée de ces suites geometriques <formula>a</formula>, <formula>az</formula>, <formula>az^{2}</formula>, <formula>az^{3}</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+  <lb/>et <formula>b</formula>, <formula>by</formula>, <formula>by^{2}</formula>, <formula>by^{3}</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> car quoique dans ce cas il y ait <formula>z=y=1</formula>, les quan<pc type="hyphenation">-</pc><lb break="no"/>tités composées <formula>a+b</formula>, <formula>az+by</formula>, <formula>az^{2}+by^{2}</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> ne deviennent pas pour celà
+  <lb/>égales, puisque <formula>a</formula> et <formula>b</formula> ont une valeur infinie telle que <formula>a+b=A=1</formula>
+  <lb/>et <formula>az+by=B=2</formula>.<del/> Vous decouvrirés aussi facilement, que les expres<pc type="hyphenation">-</pc><lb break="no"/>sions generales, que vous avés trouvées dans vôtre premiere <rs type="letter">lettre</rs><!-- Brief noch referenzieren, RG 11.09.2025 -->, se 
+  <lb/>reduisent aisement à celle de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, laquelle en substituant
+  <lb/>pour <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> leurs valeurs donne précis<subst><del>é</del><add>e</add></subst>ment ce que vous avés
+  <lb/>trouvé, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je viens de le demontrer pour les suites dont l’indice est
+  <lb/><formula>m+n</formula>. J’avoue avec Vous que cette methode de concevoir les termes d’une
+  <lb/>suite recurrente sous cette expression generale <choice rend="regFormula"><orig><formula>az^{L}+by^{L}+cx^{L}+\mbox{\&amp;c.}</formula></orig><reg><formula>az^{L}+by^{L}+cx^{L}+\mbox{etc.}</formula></reg></choice> est fort
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ode pour trouver les indices des suites composées par l’addition ou la
+  <lb/>multiplication des termes correspondants de 2 (ou plusieurs) suites recur<pc type="hyphenation">-</pc><lb break="no"/>rentes, mais elle a toujours cet inconvenient, que l’indice et les premiers
+  <lb/>termes d’une suite étant donnés on ne peut dans plusieurs cas particuliers
+  <lb/>exprimer un terme d’un quantiéme donné autrement que par des quan<pc type="hyphenation">-</pc><lb break="no"/>tités imaginaires, parce que les racines <formula>z</formula>, <formula>y</formula>, <formula>x</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> sont souvent ou ima<pc type="hyphenation">-</pc><lb break="no"/>ginaires ou du moins exprimées par des qualités imaginaires.
+</p>
+<p>
+  <lb/>La reponse que Vous donnés pour la solution du cas singulier proposé
+  <lb/>à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> <rs type="biblio">page 402. <abbr>Probl.</abbr> 5.<hi rend="sup">e</hi></rs><!-- Biblio noch referenzieren, RG 12.09.2025 --> ne satisfait qu’en partie, elle
+  <lb/>suffit, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous dites, pour faire voir que <formula>A</formula> ne doit pas donner à <formula>B</formula>
+  <lb/>un Equivalent infini; mais elle ne demontre pas la veritable raison
+<pb facs="-" n="4"/>
+  <lb/>de la difference, qu’il y a entre l’esperance mathematique et l’esti<pc type="hyphenation">-</pc><lb break="no"/>me vulgaire; Par <abbr>ex.</abbr> dans le cas de Croix ou Pile il n’y a personne de
+  <lb/>bon sens qui voulut donner 20. Ecus, non par cette raison, que l’usage
+  <lb/>ou le plaisir qu’on peut tirer d’une so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e infinie n’est guere plus
+  <lb/>grand que celui qu’on peut tirer d’une so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de 10, ou 20, ou 100 Millions;
+  <lb/>mais parce qu’en donnant 20. Ecus on a une trés petite probabilité de 
+  <lb/>gagner quelque chose, et que l’on croit la perte moralement certaine.
+  <lb/>Le vulgaire ne met ici en ligne de conte<!-- von "comte" zu "conte" gemacht, RG 12.09.2025 --> ni des millions, ni des cen<lb break="no"/>taines d’Ecus, ne faisant point attention à ce que les termes de la pro<pc type="hyphenation">-</pc><lb break="no"/>gression geometrique <formula>1</formula>. <formula>2</formula>. <formula>4</formula>. <formula>8</formula>. <formula>16</formula>. <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> devenus assés grands peuvent
+  <lb/>étre censés égaux, il n’est engagé par là ni à accepter ni à refuser
+  <lb/>le parti, il se determine seulement selon les degrés de probabilité qu’<pc type="hyphenation"></pc><lb break="no"/>il a de gagner ou de perdre, chés lui une trés<!-- mit Umlaut?, RG 12.09.2025 --> petite probabilité de
+  <lb/>gagner une grande so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e ne contrebalance pas une trés grande proba<pc type="hyphenation">-</pc><lb break="no"/>bilité de perdre une petite so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e, il regarde l’evenement du premier
+  <lb/>cas co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e impossible, et l’evenement du second co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e certain. Il faut
+  <lb/>donc, pour regler au juste l’Equivalent, determiner jusqu’où la quan<pc type="hyphenation">-</pc><lb break="no"/>tité d’une probabilité doit diminuer, afin qu’elle puisse étre censée
+  <lb/>nulle; mais voilà ce qui est impossible de determiner, quelque supposi<pc type="hyphenation">-</pc><lb break="no"/>tion que l’on fasse on rencontre toujours des difficultés; les limites
+  <lb/>de ces petites probabilités ne sont pas précises, mais elles ont une cer<pc type="hyphenation">-</pc><lb break="no"/>taine latitude que l’on ne peut pas fixer aisément; une probabilité
+  <lb/>qui par <abbr>ex.</abbr> a <formula>\frac{1}{100}</formula> de certitude ne doit pas étre reputée nulle plustôt
+  <lb/>que celle qui a <formula>\frac{1}{99}</formula> de certitude. Il me semble pourtant qu’en admettant
+  <lb/>cette supposition, qu’un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de bon sens ne veuille pas do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er 20. Ecus,
+  <lb/>parce qu’il tient pour certain que la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui lui echerra sera
+  <lb/>moindre que 20. Ecus, on puisse trouver l’Equivalent cherché par le
+<pb facs="1037877" n="5"/>
+  <lb/>raisonnement suivant: Par <abbr>hypoth.</abbr> il est moralement impossible qu’il ob
+  tienne 20 Ecus, il sera donc aussi moralement impossible qu’il obtienne
+  <lb/>32 Ecus ou quelque autre nombre d’Ecus dans cette progression 32. 64. 128. <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+  <lb/>or la probabilité pour obtenir un nombre de ette progression est <formula>\frac{1}{64}+</formula>
+  <lb/><choice rend="regFormula"><orig><formula>\frac{1}{128}+\frac{1}{256}+\mbox{\&amp;c.}=\frac{1}{32}</formula></orig><reg><formula>\frac{1}{128}+\frac{1}{256}+\mbox{etc.}=\frac{1}{32}</formula></reg></choice>; donc <subst><del/><add>cet</add></subst> homme de bon sens donc repute une probabilité
+  <lb/>qui ne surpasse pas <formula>\frac{1}{32}</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e nulle, et une probabilité qui a <formula>\frac{31}{32}</formula> comme
+  <lb/>une certitude entiere, par consequent son esperance vaudra par la regle
+  <lb/><choice rend="regFormula"><orig><formula>\frac{1}{2}\cdot1+\frac{1}{4}\cdot2+\frac{1}{8}\cdot4+\frac{1}{16}\cdot8+0.16+0.32+\mbox{\&amp;c.}=2</formula></orig><reg><formula>\frac{1}{2}\cdot1+\frac{1}{4}\cdot2+\frac{1}{8}\cdot4+\frac{1}{16}\cdot8+0.16+0.32+\mbox{etc.}=2</formula></reg></choice>. Mais je ne sai si cet autre
+  <lb/>raisonnement seroit plus juste: Un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui ne veut pas donner 20 Ecus
+  <lb/>estime tous les cas, qui lui donnent une moindre so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e que 20 Ecus, possibles,
+  <lb/>et chacun des autres, qui lui peuvent donner une so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e plus grande, impos<pc type="hyphenation">-</pc><lb break="no"/>sible, il regarde donc seulement les probabilités moindres que <formula>\frac{1}{32}</formula> comme
+  <lb/>nulles, par consequent son esperance vaudra <formula>\frac{1}{2}\cdot1+\frac{1}{4}\cdot2+\frac{1}{8}\cdot4+\frac{1}{16}\cdot8+\frac{1}{32}\cdot16+</formula>
+  <lb/><formula>0.32+\mbox{}=2\cdot\frac{1}{2}</formula>. Il y auroit encore bien des choses à dire sur cette
+  <lb/>matiere, mais n’ayant pas le loisir de ranger en ordre et de develop<pc type="hyphenation">-</pc><lb break="no"/>per les idées qui se sont presentées à mon esprit, je les passe sous silence.
+  <lb/>Je n’ai pas vû le traité de <abbr>Mr.</abbr> <rs key="pers_DE-588-121009645" type="person">Cotes</rs> intitulé <rs type="biblio"><hi rend="u">Logometria</hi></rs><!-- Biblio noch referenzieren, RG 12.09.2025 -->, j’en ai vû
+  <lb/>seulement l’extrait qu’on a publié dans les <rs type="biblio">Actes de Leipsic de 1723</rs><!-- Biblio noch referenzieren, RG 12.09.2025 -->. Et
+  <lb/>que je n’ai pas encore examiné; mais pour ce qui est des Problémes, que
+  <lb/>vous cités du <rs type="biblio">Traité</rs><!-- Biblio noch referenzieren, RG 12.09.2025 --> que <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs> va faire imprimer, et qui doi<pc type="hyphenation">-</pc><lb break="no"/>vent contenir, à ce que vous dites, le fondement des Theorémes de <abbr>Mr.</abbr> <rs key="pers_DE-588-121009645" type="person">Co<pc type="hyphenation">-</pc><lb break="no"/>tes</rs>, je me crois en état de les pouvoir resoudre, et même de donner la
+  <lb/>raison des solutions de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>. Par <abbr>Ex.</abbr> pour trouver les facteurs
+  <lb/>qui composent cette quantité <formula>1\pm z^{n}</formula>, je suppose un des facteurs <formula>=1-xz+z^{2}</formula>
+  <lb/>et l’autre <choice rend="regFormula"><orig><formula>=1+az+bz^{2}+cz^{3}+dz^{4}+\mbox{\&amp;c.}</formula></orig><reg><formula>=1+az+bz^{2}+cz^{3}+dz^{4}+\mbox{etc.}</formula></reg></choice> jusqu’à <formula>\pm z^{n-2}</formula>. J’ai trouvé que
+  <lb/>les quantités <formula>1</formula>, <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> sont les termes d’une suite recurrente, dont
+  <lb/>l’indice est <formula>x-1</formula>, et les deux premiers termes <formula>1</formula> et <formula>x</formula>; Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e donc le terme
+<pb facs="-" n="6"/>
+  <lb/>du quantiéme <formula>n-1</formula> de cette suite doit être <formula>=\pm 1</formula>, et celui du quantiéme <formula>n=0</formula>,
+  <lb/>on aura <choice rend="regFormula"><orig><formula>x^{n-1}-\overline{n-2}\cdot x^{n-3}+\frac{n-3\cdot n-4}{2}\cdot x^{n-5}-\frac{n-4\cdot n-5\cdot n-6}{2\cdot3}x^{n-7}+\mbox{\&amp;c.}</formula></orig><reg><formula>x^{n-1}-(n-2)\cdot x^{n-3}+\frac{(n-3)\cdot(n-4)}{2}\cdot x^{n-5}-\frac{(n-4)\cdot(n-5)\cdot(n-6)}{2\cdot3}\cdot x^{n-7}+\mbox{etc.}</formula></reg></choice> ou bien <choice rend="regFormula"><orig><formula>\frac{\overline{\frac{1}{2}x+\sqrt{\frac{1}{4}xx-1}}^{n}}{\sqrt{xx-4}}</formula></orig><reg><formula>\frac{\left(\frac{1}{2}x+\sqrt{\frac{1}{4}xx-1}\right)^{n}}{\sqrt{xx-4}}</formula></reg></choice>
+  <lb/><choice rend="regFormula"><orig><formula>-\frac{\overline{\frac{1}{2}x-\sqrt{\frac{1}{4}xx-1}}^{n}}{\sqrt{xx-4}}</formula></orig><reg><formula>-\frac{\left(\frac{1}{2}x-\sqrt{\frac{1}{4}xx-1}\right)^{n}}{\sqrt{xx-4}}</formula></reg></choice> (qui sont les expressions generales du terme du quantième <formula>n</formula>)
+  <lb/><formula>=0</formula>. Or <formula>x</formula> étant la corde du complement <formula>AD</formula> d’un arc <formula>BD</formula>, dont le rayon 
+  <lb/><!-- Hier noch Bild einfügen: Spezial_B_1728-07-03_991170517059005501_S06_01.png --><formula>AC=1</formula>, les cordes des multiples du même arc <formula>BD</formula> s’expriment
+  <lb/>respectivement par les mêmes termes <formula>1</formula>, <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> de la
+  <lb/>dite suite recurrente multipliés par la corde <formula>BD=\sqrt{4-xx}</formula>. Voyés les
+  <lb/><rs type="biblio">Actes de Leipsic <abbr>A.</abbr> 1701</rs><!-- Biblio noch referenzieren, RG 12.09.2025 -->. <abbr>pag.</abbr> 171. <rs type="biblio"><abbr>A.</abbr> 1703</rs><!-- Biblio noch referenzieren, RG 12.09.2025 -->. <abbr>pag.</abbr> 345. Si donc on divise
+  <lb/>la circonference entiere, ou son multiple quelconque, dont la corde
+  <lb/>est toujours <formula>=0</formula>, en <formula>n</formula> parties égales, dont une soit l’arc <formula>BD</formula>, on trouvera
+  <lb/>la corde <formula>AD=x</formula>, dont la moitié est le cosinus de <formula>\frac{1}{2}DB</formula>,<del/> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <abbr>Mr.</abbr> de
+  <lb/><rs key="pers_DE-588-117586765" type="person">Moivre</rs> a trouvé. Je vous laisse le plaisir de decouvrir par Vôtre
+  <lb/>sagacité le reste de la solution de ce Probleme, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi la maniere
+  <lb/>de resoudre les autres Problemes semblables; pour ce qui est de celuici
+  <lb/><foreign xml:lang="lat">&quot;Data una ex radicibus <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quationis cujus cunque&quot; (<abbr>ex.</abbr> <abbr>gr.</abbr> <formula>x^{m}+px^{m-1}+</formula>
+  <lb/><choice><orig><formula>qx^{m-2}+\mbox{\&amp;c.}=0</formula></orig><reg><formula>qx^{m-2}+\mbox{etc.}=0</formula></reg></choice>) &quot;invenire productum differentiarum omnium radici
+  <lb/>&quot;isti et radicibus reliquis interjacentium"</foreign> il se resout facilement en
+  <lb/>divisant l’équation donnée par <formula>x-a</formula>,<del/> supposant que <hi rend="u"><formula>a</formula></hi> soit la racine
+  <lb/>donnée. Je n’ai pas encore pris la peine d’examiner la solution
+  <lb/>du Probléme <abbr>penult.<hi rend="sup">e</hi></abbr> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs> sur la duration des jeux,
+  <lb/>et je ne puis pas m’y appliquer de peur de differer trop long tems
+  <lb/>ma reponse. Je vous remercie de ce que vous avés bien voulu pre<pc type="hyphenation">-</pc><lb break="no"/>senter mes respects à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, je vous prie de les riterer,
+  <lb/>quand vous en aurés l’occasion, en lui disant que c’est la <rs type="letter">lettre</rs><!-- Brief noch referenzieren, RG 12.09.2025 -->, dont
+  <lb/>il parle lui même dans son livre <hi rend="u"><rs type="biblio">Doctrine of Chances</rs><!-- Biblio noch referenzieren, RG 12.09.2025 --></hi> page 142<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> à
+  <lb/>laquelle j’attends une reponse depuis 14<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans; je voudrois savoir
+  <lb/>s’il croit encore (co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e feu <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> m’a écrit, qu’il avoit
+  <lb/>crû autrefois) que ma seconde solution de son Probleme 43. soit
+<pb facs="-" n="7"/>
+  <lb/>paralogistique; est<supplied>-</supplied>ce que vous lui avés co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué ma nouvelle solution
+  <lb/>trés courte du même Probléme? Je ne me souviens pas d’avoir fait des re<pc type="hyphenation">-</pc><lb break="no"/>marques sur son livre <hi rend="u"><rs type="biblio">de Mensura Sortis</rs><!-- Biblio noch referenzieren, RG 12.09.2025 --></hi>, dont il pût<!-- ?, RG 12.09.2025 --> se plaindre avec raison,
+  <lb/>je n’ai critiqué que le seul <rs type="biblio"><abbr>Coroll.</abbr> S. <abbr>Prop.</abbr> 15.</rs> en disant, que la voye syn<pc type="hyphenation">-</pc><lb break="no"/>thetique des suites infinies, qu’il a employée pour le cas de 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> joueurs, ne
+  <lb/>suffit pas seule pour resoudre le même Probleme pour le cas d’un plus grand
+  <lb/>nombre de joueurs, mais qu’il faut necessairement se servir de l’Analyse,
+  <lb/>ce qu’il a pourtant lui même avoué dans la seconde <rs type="biblio">Edition</rs> de son Livre,
+  <lb/>voyés <rs type="biblio"><abbr>Doctr.</abbr> of Chances</rs> <abbr>pag.</abbr> 89. Si <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs> croit que <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Mon<pc type="hyphenation">-</pc><lb break="no"/>mort</rs> se soit trop plaint de lui ou qu’il l’ait critiqué à tort, il ne doit
+  <lb/>pas pour celà ternir sa memoire et se saisir de toutes les occasions pour
+  <lb/>le blamer, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je vois qu’il fait par ces paroles que vous cités de sa
+  <lb/>solution du Probleme <abbr>penult.<hi rend="sup">e</hi></abbr> <foreign xml:lang="lat">&quot;Posito <abbr>scil.</abbr> pro <formula>Q</formula> unico termino, invenies
+  <lb/>(posito <formula>n</formula> magno numero) <formula>x=0.756nn</formula> (in duobus <abbr>l.<hi rend="sup">is</hi></abbr> casibus) majorem quam
+  <lb/><formula>\frac{3}{4}nn</formula>, contra quam sentiebat <hi rend="u">Montmortius</hi>&quot;</foreign> je trouve qu’au lieu d<unclear reason="lost">e</unclear>
+  <lb/>no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person"><unclear reason="lost">Mon</unclear>mort</rs> il auroit pû se no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er soi même, ayant été
+  <lb/>lui même dans l’opinion, qu’on pouvoit mettre <formula>\frac{3}{4}nn</formula> pour le nombre
+  <lb/>cherché, voyés <rs type="biblio"><abbr>Doctr.</abbr> of<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>Ch.</abbr></rs><!-- Biblio noch referenzieren, RG 12.09.2025 --> <abbr>pag.</abbr> 149. D’ailleurs je verrai avec plaisir ses
+  <lb/>nouveaux <hi rend="u">Miscellanea</hi><!-- noch als Foreign auszeichnen?, RG 12.09.2025 -->, sur tout quand j’y trouverai la solution d’un Pro<pc type="hyphenation">-</pc><lb break="no"/>bleme que je lui ai proposé à mon tour dans ma susdite <rs type="letter">Lettre</rs><!-- Brief noch referenzieren, RG 12.09.2025 --> en revanche
+  <lb/>de son <abbr>Probl.</abbr> 43. qu’il m’avoit proposé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e par defi; c’est le second Probleme
+  <lb/>entre ceux que j’avois proposé à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Monmort</rs> Page 402.
+</p>
+<p>
+  <lb/>Je ne puis vous rien dire de certain sur l’Experience qu’un <rs type="person">horlogeur</rs> de 
+  <lb/><rs key="place_GEO-2643743" type="place">Londres</rs> prétend avoir tr<unclear reason="lost">ouvé</unclear> contre le Systeme des forces vives, ne sachant pas
+  <lb/>la construction de sa machine, mais je puis vous assurer que nulle Experience
+  <lb/>detruira jamais nôtre Systeme; il me semble que tous ces Messieurs qui com<pc type="hyphenation">-</pc><lb break="no"/>battent les forces vives co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ettent <foreign xml:lang="lat"><hi rend="u">ignorationem elenchi</hi></foreign>, et qu’il confondent tou<pc type="hyphenation">-</pc><lb break="no"/>jours <del/>les pressions avec les forces vives. Je finis en vous souhaitant la
+  <lb/>continuation d’un heureux voyage et en vous assurant que je suis avec un parfait
+  <lb/>attachement,
+</p>
+<closer>
+  <salute>Monsieur, votre tres humble et tres obeissant Serviteur</salute>
+  <signed><rs key="pers_DE-588-119166895" type="person"><abbr>N.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.</signed>
+</closer>
+<pb facs="-" n="8"/>
+<postscript>
+  <p>
+    <lb/><abbr>P. S.</abbr> Je vous prie de faire mes complimens à <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, et de le faire souvenir de
+    <lb/>la promesse, qu’il me fit à <rs key="place_GEO-3164603" type="place">Venise</rs>, de me faire tenir un Exemplaire de son Livre
+    <lb/><rs key="biblio_HXRMGM5T" type="biblio">de Lineis tertii ordinis</rs>. Mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> m’a prié de Vous faire les siens, il espere
+    <lb/>que vous avés reçû sa derniere <rs key="B_991170514979205501" type="letter">Lettre</rs><!-- Der Brief von 22. Juni 1728 nehme ich an, RG 12.09.2025 -->.
+  </p>
+</postscript>   
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur Robert Caille <abbr>March.<hi rend="sup">d</hi></abbr></addrLine>
+    <addrLine>Banquier pour faire tenir à Mon-</addrLine>
+    <addrLine>sieur <abbr>G.</abbr> Cramer</addrLine>
+    <addrLine>à Londres.</addrLine></address></closer>
 </div>
 </body>
 </text></TEI>

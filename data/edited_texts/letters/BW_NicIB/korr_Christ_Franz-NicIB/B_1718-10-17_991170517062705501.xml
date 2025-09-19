@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517062705501" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517062705501" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -171,7 +171,7 @@
 <note type="lebensdaten">(1684-1750)</note>
 </person>
 <person>
-<persName key="pers_DE-588-118560107">Karl</persName>
+<persName key="pers_DE-588-118560107">Karl</persName><!-- König von Schweden? -->
 <note type="lebensdaten">(1685-1740)</note>
 </person>
 <person>
@@ -191,7 +191,7 @@
 <note type="lebensdaten">(1643-1727)</note>
 </person>
 <person>
-<persName key="pers_DE-588-118820214">Philipp</persName>
+<persName key="pers_DE-588-118820214">Philipp</persName><!-- ToDo -->
 <note type="lebensdaten">(1674-1723)</note>
 </person>
 <person>
@@ -223,11 +223,17 @@
 <note type="lebensdaten">(1667-1752)</note>
 </person>
 </listPerson>
+    <!-- Im BIBB ergänzen: 
+    - Mutter von F. Christ
+    -->
 </abstract>
 <textClass/>
 </profileDesc>
-<revisionDesc status="teiKodiert">
+<revisionDesc status="kollationiert">
 <listChange>
+    <change when="2025-09-05" who="SG">Erste Personen ausgezeichnet</change>
+    <change when="2025-09-05" who="CG SG">Tagging und Kollationieren abgeschlossen</change>
+    <change when="2025-08-22" who="CG SG">Tagging und Kollationieren begonnen</change>
 <change notAfter="1966-02-14">transkribiert</change>
 </listChange>
 </revisionDesc>
@@ -236,11 +242,214 @@
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1039729" n="1"/> <pb facs="1039730" n="2"/> <pb facs="1039731" n="3"/> <pb facs="1039732" n="4"/> <pb facs="1039733" n="5"/> <pb facs="1039734" n="6"/> <pb facs="1039735" n="7"/> <pb facs="1039736" n="8"/>
-<opener><dateline>Utrecht den <date when="1718-10-17">17. Octobris 1718</date></dateline> [Anm. d. Empf.: Empf. d. 7ten 9bris] <lb/><salute>Liebster Fründ</salute></opener>
-<p>Ich sollte mich billich bey Dir entschuldigen, dass meinem gethanen Versprechen so schlecht nachkommen bin und nicht besser unsrer fründschaft biss dato underhalten habe, ich hofe aber Du werdest diesen meinen unfleis denen vielerley unruhen, denen man auf der reis underworfen ist, zuschreiben und nicht glauben, dass meine liebe, fründ schaft und erkantlichkeit gegen Dir im geringsten durch die Zeit oder abwesenheit seye geringert worden. Ich erinner mich noch allezeit der zwischen uns mit freüden und vergnügen zugebrachten stunden und wünsche nicht selten bey mir selber, dermalen eines wider das glück zu haben, Dich zu sehen und mit Dir umzugehen. Ich kan aber bis dato keine hofnung darzu sehen, dan noch gantz ungewis, ob der <rs type="person">Juncker von Wildegg</rs> werde seinen Sohn in Italien reisen lassen und wan er schon sich da zu ent schliessen sollte, so weis ich nicht, ob ich wurde mich darzu brauchen lassen, indem mir seit kurtzem eine andere condition bey einem Ambassadeur zu Paris angetragen wor den, welche ich villeicht nach abgelegter reis mit meinen Eleves annemmen werde. Indessen mus mich schämen, dass Du mir wider mit einem brief vorkommen und dass Du Dich bemühet mir den 9ten Julii zimlich weitläufig zu schrei ben, es ist mir zugleich leyd, dass dieser brief so lang underweg zugebracht und mir erst vor etlich tagen zu= kommen. Ehe ich also darauf antworte, mus Dir kurtzlich er zehlen, wie bishero meine Zeit zugebracht: Als wir ohngefehr 9 monat zu Angers uns aufgehalten, sind wir anfangs Februarii von dorten naher Paris gereisset, und in dieser grossen stadt 3 monat geblieben, wir haben diese Zeit angewendet die raersten sachen, gebäü, Palläst, comedie, lusthäüser etc. zu besehen und haben uns hernach vorgesetzt, naher Holland zu gehen um dorten einen cursum Juris under einigen Professoribus anzuhören; haben desswegen unseren weg in der Landgutschen naher Brüssel zu genommen und von dannen über Mechelen, Antwerpen, Breda <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. naher Utrecht gekehret, in willens an diesem ort denen studiis abzuwarten; als wir aber anfangs Junii dort ankommen und nachgefragt, in was für einem stand die universitet stehe, haben wir vernemmen müssen, dass es an dem seye, dass die vacanzen anfangen werden und währen dieselben gemeiniglich 3 monat; ich wuste ohne lectiones nichts zu Utrecht zu thun und namme auf der stell den entschlus währender dieser Zeit die reis in Engelland zu verrichten, welche wir sonsten auf künftiges frühjahr aussgestellet hatten. Damit ich aber die beystim mung des <rs type="person">Junckeren von W.</rs> erwerben könte, gedachte ich under dessen Holland durchzuziehen; wir giengen also zuerst in den Hag, alwo wir den einzug <rs type="person">Milord Cadogans</rs> betrachtet, von dorten naher Amsterdam, und wider zuruck naher Leyden, Delft und Roterdam; in diesem letsten ort haben wir uns ein schifen lassen in einer Hoep um naher Londen zu fahren, wir waren aber etwas unglücklich und musten 5 gantze tag zu bringen, ehe wir zu Londen ankommen und hatten noch daselbst die gröste mühe unsere Hardes aus dem schif überzukommen. Wir sind zu London 2 monat geblieben, haben Richmond, Ken singthon, Hamtoncourt, Windsor, Oxford, Greenwich, Chatham &amp;c besehen und zugleich ein collegium Experimentale, mechanico optico-pneumatico-hydrostatico-physicum under direction <abbr>Mr.</abbr> Desagulieres aussgehalten, welches meinen Eleves und mir zimliche satisfaction gegeben. Gegen end Augusti sind wir von London naher Dovres abgereisset und von dorten naher Calais übergesetzt; wir blieben 12 gantze stunden underwegen und war ich, wie bey der vorigen überfahrt auch, ohnaufhörlich kranck, so dass niemand von der gantzen comgagnie stärcker angegriefen worden als ich. Von Calais sind wir über Gravelines, Dunkercke, Iperes, Lile, Tournai, Gand, Anvers und wider hier in Utrecht den 6. Septembr. an gelangt; meine Eleves hören nun insonderheit den jungen <abbr>H.</abbr> Vitriarium an, der den Grotium diesen winter über expli ciren wird und grosses lob verdienet; ich führe sie zu den übrig nöhtigen wissenschaften privatim an und bin willens den winter zu ihrem nutzen recht anzuwenden. Wir werden also aufs wenigst bis in monat May hier bleiben und dan den Rhein hinauf in das Vatterland zuruckkehren; was hernach weiters vorgehen wird, ob ich die Italienische reis werde antretten, oder naher Paris gehen, oder was andres thun, weist der liebe Gott, der uns zu unserem beyderseitigen nutzen bald wolle zusammen kommen lassen. Nun auf Deinen Brief zu kommen, siehest Du wohl, dass zu meinem grossen verdrus, Deine commission nicht aussrichten kan; wan ich je gedacht hätte, dass ich sobald in Engelland kommen wurde, hätte ich nicht gemanglet Dir darvon zu schreiben, um Deine commissiones anzuhören; ich mus Dir zwar frey bekennen, dass ich nicht gern die commission, die Dich am meisten zu drucken scheinet, hätte über mich genommem, um dem Keil hohn zu spre chen; es ist mit dergleichen leüten nicht viel anzufangen und hab ich mich nicht genug verwundern können, dass sie so entsetzlich über den <abbr>H.</abbr> Leibnitz und seine anhänger sich ergiften, sie suchen alles hervor, was sie können, versaumen keine gelegenheit und erdenkan was möglich um ihn zu schwärtzen; sie triumphieren insonderheit über das, so <abbr>H.</abbr> Leibnitz an den Abbé <rs type="person">Bignon</rs> soll geschrieben haben und in den Memoires de l’academie des sciences von 1711 begrifen ist: memlich <abbr>H.</abbr> <rs type="person">Leibnitz</rs> gebe vor ein neü principium aussge funden zu haben, die variationes des Barometri ausszulegen und setzt zu solchem end diese proposition zum fundament: Solidum in liquido contentum ponderare cum liquido et partem efficere totius ponderis, quamdiu à liquido sustineatur; sed si desinat sustineri et incipiat cadere, pondus solidi non amplius efficere partem ponderis liquoris, qui propterea incipiat minus habere pondus. Sie erzehlen in den memoires de 1711 dass <abbr>Mr.</abbr> Ramazzini und <abbr>Mr.</abbr> <rs type="person">Reaumur</rs> experien zen diese proposition zu beweisen, gemacht haben, es wird aber in den Transactions Philos. <abbr>Nr.</abbr> 351. <abbr>art.</abbr> 4. 1717. Jan. Febr. Mart. bewiesen, dass ein grober fehler in denen experienzen vorgangen und dass diese proposition daraus nicht zu be weisen, so dass sich zu verwundern, dass <abbr>H.</abbr> <rs type="person">Leibnitz</rs> und sein anhang, wie sie sagen, so wüst angeloffen. Ich zweifle nicht, Du wissest um diese sach und nimt mich wunder, was man ant worten kan, dan so viel ich begreife, ist die proposition falsch, aufs wenigst folgt dero wahrheit nicht aus den ge brauchten experienzen. Ich hab underdessen zimliche progres sus in mechanicis und hydrostaticis gemacht und manglete mir nichts mehr als den calculum differentialem und integralem besser zu wissen, um mit der Zeit auch als ein mathematicus erscheinen zu dörfen. Ich geniesse täglich den nut zen Deiner vormals gehabten mühe und sihe ich allezeit mehr wie viel ich Dir verpflichtet bin. Es dunckt mich es habe in den letsten Transact. Phil. n. 355. art. 3. de Motu aquarum fluentium, <abbr>H.</abbr> D. <rs type="person">Jurin</rs> eben das principium, über dessen erfind ung der <abbr>H.</abbr> Oncle und <abbr>H.</abbr> <rs type="person">Herman</rs> vor diesem gestritten, als ein neües von ihm selbs erfundenes angebracht; dan er fängt also an: <cit type="long"><quote><foreign xml:lang="lat">Aquae motum ex imi vasis foramine defluentis saepe videmus, tum in ipsa re hydraulica, tum in ejus principiis ad oeconomiam animalem applicandis, aliis cum potentiis comparari Cujus motus quantitate cum hactenus nemo quod sciam recte determinaverit, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. Poterit autem aquae defluentis motus facili opera definiri hunc in modum: Sit SHAHS aquae superficies infinita, <formula>CC</formula> foramen circulare in fundo factum, AB recta perpendicularis per foraminis centrum ducta, <formula>SGCCGS</formula> columna sive cataracta aquae per foramen <formula>CC</formula> decurrentis SGC curva, cujus rotatione circa axem AB generatur solidum sive cataracta <formula>SGCCGS</formula>. Aqua enim cum libere et motu accelerato descendat ad normam corporum omnium gravium, necessario in minorem amplitudinem contrahitur, prout majorem velocitatem acquirit inter cadendum et profluit ex foramine <formula>CC</formula> ea cum velocitate, quae cadendo ab altitudine AB comparatur. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</foreign></quote></cit> </p>
-<p>Villeicht ist Dir nicht viel daran gelegen, wan Du aber je weiteren bricht darvon willt, so wird ein andermal weitlaüfiger darüber schreiben. Ich bin ein einzig mahl in der versamlung of the Royal Society gewesen, und hab die gelegenheit gehabt <abbr>H.</abbr> Neuton zu sehen aber nicht zu sprechen, <abbr>H.</abbr> <rs type="person">Halley</rs>, <rs type="person">Whiston</rs>, <rs type="person">Moivre</rs> waren einmalen in der stadt, und sagte man mir, dass in denselben monaten jederman schier ausser der stadt sich aufhalte; mit <abbr>H.</abbr> <rs type="person">Halley</rs> hätte insonderheit gern geredt, weilen sehr viel von seinem lustigen humor gehört hatte. Ich hatte gehört, dass <abbr>H.</abbr> <rs type="person">Moivre</rs> neben dem was er in den Transact. Phil. über die materi de sorte aussgeben, einen eigenen tractat ge schrieben hätte, konte ihn aber nicht auftreiben, weilen nur eine kleine anzahl gedruckt worden für diejenigen die für eine guinée underschrieben. Joh. Keil hat eine Indroductionem ad Veram Astronomiam geschrieben, welches Lectiones in sich haltet, so er vorhin zu Oxford gehalten, es ist auf die manire, wie die Introd. ad v. Physicam und wird estimiret, man haltet dafür, er habe hierdurch dieses studium etwas leichter ge macht als es vorher gewesen, da man des <rs type="person">Gregori</rs> Astronomie gebrauchen muste. Ich habe es gekauft und ohngefehr halber aussgelesen, habe aber doch nichts sonderbares darin gefun den, welches nicht schon vorhero vielleicht auf gleiche weis wäre proponiret worden. Newtons Optic ist auf Englisch frisch heraus kommen und hat man die vorhin hinden ange henkte und nicht zur sach dienende stuck aussgelassen und hingegen in der haubtsach selbs etwas wenigs beigefügt. Von anderen neüen sachen aus Engelland weis ich nichts mehr dato zu besinnen und komme desswegen zu den übrigen Theilen Deines briefes. Es ist mir hertzlich leyd, dass Du so wenig vergnügen bey Deiner Profession findest, aber was willtu Dich doch so quelen und ist es nicht möglich, dass Du Dich in die Zeit schickest? betrachte, dass wir müssen geprüfet werden und dass wir debbelten schaden leyden, wan wir in ungelegenheiten murren; muntere Dich auf und suche etwan einen guten gespanen, in dessen gesellschaft Du einige linderung empfinden könnest; aufs wenigst wäre Dir nicht wohl zu rahten, ohne eine wichtige ursach weg zu ziehen, es könte Dir an Deinem guten nahmen schaden, indem Du ohne das, wie ich glaube, für eine gewisse Zeit angebunden bist. Du bist jetzund bey diesem volck, dessen manire mit Deinem humor nicht übereinkommt, must Dich also ein wenig biegen und in die Zeit schicken; vielleicht wäre es nicht übel gethan, wan Du an etwas artiges arbeitetest, um solches der welt mitzutheilen, Du köntest darmit die Zeit vertreiben und vielleicht dardurch gelegenheit haben desto besser abge löst zu werden. Wan Du aber je mit ehren Dich wider naher Basel begeben kanst, so wollte ich es nicht versaumen, son dern die gelegenheit ergreifen. Es nimt mich wunder, dass Du noch nichts von der bestellung der Profession zu Lau sanne weissest, es hat solche <abbr>H.</abbr> de Bochat darvongetragen und ist hingegen dem <abbr>H.</abbr> D. <rs type="person">Waldkirch</rs> die neü angestellte Professio Juris zu Bern mit 300 thaleren gage zukommen; ich hab mich nicht angegeben und kan Dich versicheren, dass wan gelegenheit finde, anderst mich durchzureissen, ich nicht nach Academischen ehrenstellen trachten werde, welche jetz bey uns noch weniger als vorhin zu hofen. Ich sehe zwar wohl, wan etwas bey uns ofen seyn sollte ich mit gewalt auch in die suppen wurde gezogen werden, und müste ich aufs wenigste meinen Eltern zugefallen mich nicht widerspenstig stellen. Gott gebe uns was uns nutzlich ist! Den <abbr>H.</abbr> <rs type="person">Schaub</rs> hab vor 8 monaten ohngefehr zu Paris angetrofen und mit ihm gesprochen, er hatte damals den projet der alliance, worüber er mit dem <rs type="person">Herzog von Orleans</rs> tractiren muste, und als die sachen abgethan ginge er damit naher Wien, um solches auch dem Keyser vorzutragen, von Wien kame er über Basel wider naher Paris und in diesem letsten durchgang hat er sich aufge führt, wie Du und ich gehört haben; er hatte zwey ring empfangen jeder von ohngefehr 15000 francken, wie mir gesagt worden. Von Paris ginge er nach London, muste aber gleich wider mit Milord <rs type="person">Stanhope</rs> zuruck in Frankreich, und von dannen naher Madrid, um zu sehen ob die Friedens puncten dem Cardinal Alberoni nicht beyzubringen wären; weilen aber <rs type="person">Milord Stanhope</rs> nichts aussgerichtet, ist er mit demselben wider naher Paris kommen und von dannen, wie erst kurtzlich vernommen, wider in Engelland gereiset, da er sich nun befinden soll. Ich hofte ihn in London zu sehen, muste aber vernemmen, dass er drey dag vor meiner ankunft mit M. <rs type="person">Stanhope</rs> abgereisst wäre, welches mich nicht wenig verdrossen, dan gehoft durch sein mittel eines und das andere besser in augenschein nemmen zu können. Er ist im übrigen bey dem König sehr wohl daran und ist ein grosser ruhm für ihn, dass ihme ein solch wichtiges werk zu negociren ist anvertraut worden, er ist die meiste Zeit gantz allein mit dem Regent in conferenz gewesen, der, wie ich gehört, ihne sonderbar solle caressiret haben. Als ihne zu Paris salutiret, hat er mir mit gröster fründlichkeit begegnet und weilen er keine Zeit als die frühen morgenstunden vor sich übrig hatte, hat er mich gebetten, so lang er sich zu Paris aufhalten wurde, als dann ihne kommen besuchen. Er hat gantz familiar und gleich in vorigen Zeiten mich aufgenommen und habe ich keinen hochmuht an ihme gespüret, wunderet mich desswegen, dass er hat mögen vor unseren landsleüten bravades machen, die wenig wissen zu underscheiden, was ein wahrer merite und falscher schein ist; Du weissest aber dass er allezeit auf die sauberkeit und köstlichkeit in Kleidern gesehen, so dass ihme einigermassen zu verzeihen, wan er jetzo, da er die mittel und gelegenheit darzu hat, seines hertzens lust erfüllet, weilen er ohne das als ein Hof man darauf zu sehen genöntiget ist. Du wirst indessen gehört haben, dass seit dem das Los eingeführt, unser fründ <abbr>H.</abbr> D. Raillard die Zunft zum Schlüssel angenommen, doch so dass er das recht auf eine etwan fehlstehende professionem Juris zu pretendiren nicht verlieret; ich hätte ihme gern oft gerahten er sollte lieber in politischen stand tretten als auf der universitet sich hervorzuthun suchen, Du kanst Dir aber leicht einbilden warum ich es nicht gethan; ich möchte von hertzen wünschen, dass er in das regiment mit ehren kommen möchte und wurde es nicht unglücklich gehen, wan viel von seiner natur dahin gelang ten. Ich höre im übrigen, dass zu Basel allerhand laster mehr als vorhin immer im schwang gehen und dass alle ehrliche leüt über den erbärmlichen Zustand seüfzen; das erbärmlichste ist, dass niemand da ist, der in den riss stehen und mit ernst an einer nutzlichen änderung arbeiten könte. Wan Du mir antworten willt, so mach nur, dass meine brief meinem bruder Johan Christ der bey <abbr>H.</abbr> <rs type="person">Joh. Georg Drücher</rs> in Basel ist zukommen, er wird mir sie gleich übersenden. Verharre indessen in der mir immerdar bezeigten gunst und liebe, und seye versichert dass Dich aufrichtig ehret und hertzlich liebet</p>
-<closer>Dein getreüber Diener <signed>F. Christ</signed></closer>
+    <pb facs="1039729" n="1"/>
+    <opener><dateline><rs type="place" key="place_GEO-2745912">Utrecht</rs> den <date when="1718-10-17">17 Octobris, 1718.</date></dateline> <note hand="pers_DE-588-119166895"><abbr>Empf.</abbr> den <date when="1718-11-07">7.<hi rend="sup">ten</hi> 9bris.</date></note>
+        <lb/><salute>Liebster Fründ</salute></opener>
+<p><lb/>Ich sollte mich billich be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> dir entschuldigen, daß meinem gethanen versprechen so
+    <lb/>schlecht nachko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en bin und nicht besser unsere fründschaft biß dato underhalten
+    <lb/>habe, ich hofe aber du werdest diesen meinen unfleis denen vielerle<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> unruhen, denen
+    <lb/>man auf der reis underworfen ist, zuschreiben und nicht glauben, daß meine liebe,
+    <lb/>fründschaft und erkantlichkeit gegen dir im geringsten durch die zeit o<choice><orig><g ref="#der">d̄</g></orig><reg>der</reg></choice> abwesen<pc type="hyphenation">=</pc><lb break="no"/>heit se<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>e geringeret worden. Ich eri<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ere mich noch allezeit der zwischen uns mit
+    <lb/>freüden und vergnügen zugebrachten stunden und wünsche nicht selten be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> mir
+    <lb/>selber, dermalen eins wider das glück zu haben, dich zu sehen und mit dir
+    <lb/>umzugehen. Ich kan aber bis dato keine hofnung darzu sehen, dan noch gantz
+    <lb/>ungewis, ob der <rs type="person">Juncker</rs> von <rs type="place">Wildegg</rs> werde seinen <rs type="person">Sohn</rs> in <rs type="place" key="place_KON-italie">Italien</rs> reisen lassen
+    <lb/>und wan er schon sich darzu entschliessen sollte, so weis ich nicht, ob ich wurde
+    <lb/>mich darzu brauchen lassen, indem mir seit kurtzem ein andere condition
+    <lb/>be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> einem <rs type="person">Ambassadeur</rs> zu <rs type="place" key="place_GEO-2988507">Paris</rs> angetragen worden, welche ich villeicht
+    <lb/>nach abgelegter reis mit meinen <rs type="person">Eleves</rs> a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en werde. Indessen mus mich
+    <lb/>schämen, daß du mir wider mit einem <rs type="letter">brief</rs> vorko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und daß du dich
+    <lb/>bemühet mir den <date>9<hi rend="sup">ten</hi> Julii</date> zimlich weitlaüfig zu schreiben, es ist mir zugleich
+    <lb/>le<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>d, daß dieser <rs type="letter">brief</rs> so lang underweg zugebracht und mir erst vor etlich
+    <lb/>tagen zuko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en. Ehe ich also darauf antworte, mus dir kurtzlich erzehlen,
+    <lb/>wie bishero meine zeit zugebracht: Als wir ohngefehr 9 monat zu <rs type="place" key="place_GEO-3037656">Angers</rs>
+    <lb/>uns aufgehalten, sind wir anfangs <date>februarii</date> von dorten naher <rs type="place" >Paris</rs> gereisset,
+    <lb/>und in dieser grossen stadt 3 monat geblieben, wir haben diese zeit angewendet
+    <lb/>die raresten sachen, gebäü, Palläst, comedie, lusthäüser <unclear><choice><orig><g ref="#pp">pp.</g></orig><reg>etc.</reg></choice></unclear> zu besehen und haben
+    <lb/>uns hernach vorgesetzt, naher <rs type="place" key="place_VER-hollan">Holland</rs> zu gehen um dorten einen cursum
+    <lb/>Juris under einigen <rs type="person">Professoribus</rs> anzuhören; haben deßwegen unseren weg<del/>
+    <lb/>in der Landgutschen naher <rs type="place" key="place_GEO-2800866">Brüssel</rs> zu geno<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und von da<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en über <rs type="place">Mechelen</rs>,
+    <lb/><rs type="place" key="place_GEO-2803138">Antwerpen</rs>, <rs type="place">Breda</rs> <choice><orig><g ref="#pp">pp.</g></orig><reg>etc.</reg></choice><!-- ToDo: kontrollieren, ob das Zeichen entspricht. --> naher <rs type="place" key="place_GEO-2745912">Utrecht</rs> gekehret, in willens an diesem ort
+    <lb/>denen studiis abzuwarten; als wir aber anfangs <date>Junii</date> dort anko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und nach<pc type="hyphenation">=</pc><lb break="no"/>gefragt, in was für einem stand die <rs type="organisation">universitet</rs> stehe, haben wir verne<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en
+    <pb facs="1039730" n="2"/> 
+    <lb/>müssen, daß es an dem se<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>e, daß die vacanzen anfangen werden und währen dieselbe
+    <lb/>gemeiniglich 3 monat; ich wuste ohne <foreign xml:lang="lat">lectiones</foreign> nichts zu <rs type="place" key="place_GEO-2745912">Utrecht</rs> zu thun und na<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+    <lb/>auf der stell den entschlus währender dieser zeit die reis in <rs type="place" key="place_VER-englan">Engelland</rs> zu ver<pc type="hyphenation">=</pc><lb break="no"/>richten, welche wir sonsten auf künftiges frühjahr außgestellet hatten. Damit
+    <lb/>ich aber die be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>sti<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ung des <rs type="person">Junckeren von W.</rs> erwarten könte, gedachte ich
+    <lb/>underdessen <rs type="place" key="place_VER-hollan">Holland</rs> durchzuziehen; wir gie<add>n</add>gen also zu erst in <rs type="place">den Hag</rs>, alwo
+    <lb/>wir den einzug Milord <rs type="person" key="pers_DE-588-129564621">Cadogans</rs> betrachtet, von dorten naher <rs type="place">Amsterdam</rs>,
+    <lb/>und wider zuruck naher <rs type="place" key="place_GEO-2751773">Le<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>den</rs>, <rs type="place">Delft</rs> und <rs type="place">Roterdam</rs>; in diesem letsten
+    <lb/>ort haben wir uns einschifen lassen in einer Hoep um naher <rs type="place" key="place_GEO-2643743">Londen</rs> zu
+    <lb/>fahren, wir waren aber etwas unglücklich und musten 5 gantze tag zu<pc type="hyphenation">=</pc><lb break="no"/>bringen, ehe wir zu <rs type="place" key="place_GEO-2643743">Londen</rs> anko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und hatten noch daselbst die gröste
+    <lb/>mühe unsere <foreign xml:lang="fre">Hardes</foreign> aus dem schif überzuko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en. Wir sind zu <rs type="place" key="place_GEO-2643743">Londen</rs>
+    <lb/>2 monat geblieben, haben <rs type="place">Richmond</rs>, <rs type="place">Kensingthon</rs>, <rs type="place">Hamtoncourt</rs>, <rs type="place">Windsor</rs>,
+    <lb/><rs type="place">Oxford</rs>, <rs type="place">Greenwich</rs>, <rs type="place">Chatham</rs> <choice><orig><g ref="#pp">pp.</g></orig><reg>etc.</reg></choice> besehen und zugleich ein <foreign xml:lang="lat">collegium
+    <lb/>Experimentale, mechanico-optico-pneumatico-hydrostatico-physicum</foreign>
+    <lb/>under direction <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person" key="pers_DE-588-117632686">Desagulieres</rs> außgehalten, welches meinen <rs type="person">Eleves</rs>
+    <lb/>und mir zimliche satisfaction gegeben. Gegen <date>end Augusti</date> sind wir von
+    <lb/><rs type="place" key="place_GEO-2643743">Londen</rs> naher <rs type="place">Dovres</rs> abgereisset und von dorten naher <rs type="place">Calais</rs> übergesetzt;
+    <lb/>wir blieben 12 gantze stunden underwegen und ware ich, wie be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> der vorigen
+    <lb/>überfahrt auch, ohnaufhörlich kranck, so daß niemand von der gantzen
+    <lb/>compagnie stärcker angegriefen worden als ich. Von <rs type="place">Calais</rs> sind wir
+    <lb/>über <rs type="place">Gravelines</rs>, <rs type="place">Dunkercke</rs>, <rs type="place">Iperes</rs>, <rs type="place">Lile</rs>, <rs type="place">Tournai</rs>, <rs type="place">Gand</rs>, <rs type="place">Anvers</rs> <choice><orig><g ref="#und">[und]</g></orig><reg>und</reg></choice> wider
+    <lb/>hier in <rs type="place" key="place_GEO-2745912">Utrecht</rs> den <date>6 Septembr.</date> angelangt; meine <rs type="person">Eleves</rs> hören nun inson<pc type="hyphenation">=</pc><lb break="no"/>derheit den jungen <abbr>H.</abbr> <rs type="person">Vitriarium</rs> an, der den <rs type="person" key="pers_DE-588-118542702">Grotium</rs> diesen winter
+    <lb/>über explicieren wird und grosses lob verdienet; ich führe sie zu den übrigen
+    <lb/>nöhtigen wissenschaften <foreign xml:lang="lat">privatim</foreign> an und bin willens den winter zu
+    <lb/>ihrem nutzen recht anzuwenden. Wir werden also aufs wenigst bis
+    <lb/>in monat <date>Ma<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice></date> hier bleiben und dan den <rs type="place" key="place_GEW-rheina">Rhein</rs> hinauf in das <rs type="place" key="place_VER-schweiz">Vatterland</rs>
+    <pb facs="1039731" n="3"/>
+    <lb/>zuruckkehren; was hernach weiters vorgehen wird, ob ich die <rs type="place" key="place_KON-italie">Italienische</rs> reis
+    <lb/>werde antretten, oder naher <rs type="place" key="place_GEO-2988507">Paris</rs> gehen, o<choice><orig><g ref="#der">d̄</g></orig><reg>der</reg></choice> was andres thun, weisst der
+    <lb/>liebe Gott, der uns zu unserem be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>derseitigen nutzen bald wolle zu<pc type="hyphenation">=</pc><lb break="no"/>sa<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en lassen. Nun auf deinen <rs type="letter">brief</rs> zu ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en, sihest du wohl, daß
+    <lb/>zu meinem grossen verdrus, deine co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission nicht außrichten kan; wan ich je
+    <lb/>gedacht hätte, daß ich sobald in <rs type="place" key="place_VER-englan">Engelland</rs> ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en wurde, hätte ich nicht gemanglet
+    <lb/>dir darvon zuschreiben, um deine co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>issionen anzuhören; ich mus dir zwar fre<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>
+    <lb/>beke<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en, daß ich nicht gern die co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission, die dich am meisten zu drucken
+    <lb/>scheinet, hätte über mich geno<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en, um dem <rs type="person" key="pers_DE-588-124275087">Keil</rs> hohn zu sprechen; es ist
+    <lb/>mit dergleichen leüten nicht viel anzufangen und hab ich mich nicht genug
+    <lb/>verwunderen <del/><add>kö<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en</add>, daß sie so entsetzlich über den <abbr>H.</abbr> <rs type="person" key="pers_DE-588-118571249">Leibnitz</rs> und seine
+    <lb/>anhänger sich ergiften, sie suchen alles hervor, was sie kö<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en, versaumen
+    <lb/>keine gelegenheit und erdencken was möglich um ihn zu schwärtzen; sie
+    <lb/>triumphieren insonderheit über das, so <abbr>H.</abbr> <rs type="person" key="pers_DE-588-118571249">Leibnitz</rs> an den Abbé <rs type="person" key="pers_DE-588-120052539">Bignon</rs>
+    <lb/>soll geschrieben haben und in den <rs type="biblio">Memoires de l’academie des sciences von
+        <lb/>1711<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> begrifen ist: nemlich <abbr>H.</abbr> <rs type="person" key="pers_DE-588-118571249">Leibnitz</rs> gebe vor ein neü principium außge<pc type="hyphenation">=</pc><lb break="no"/>funden zu haben, die variationes des Barometri außzulegen und setze
+    <lb/>zu solchem end diese proposition zum fundament: <cit><quote><foreign xml:lang="lat">Solidum in liquido content<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>
+    <lb/>ponderare cum liquido et partem efficere totius ponderis, quamdiu <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> liquido
+    <lb/>sustineatur; sed si desinat sustineri et incipiat cadere, pondus solidi non
+    <lb/>amplius efficere partem ponderis liquoris, qui propterea incipiat minus
+                <lb/>habere pondus</foreign></quote></cit>. Sie erzehlen in den <rs type="biblio">memoires de 1711<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> daß <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person" key="pers_DE-588-119392364">Ramazzini</rs>
+    <lb/>und <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person" key="pers_DE-588-118749420">Reaumur</rs> experienzen diese proposition zu beweisen, gemacht
+    <lb/>haben, es wird aber in den <rs type="biblio">Transactions Philos.</rs> <abbr>N.</abbr> 351<choice><orig>.</orig><reg>,</reg></choice> <abbr>art.</abbr> 4<choice><orig>.</orig><reg>,</reg></choice> 1717<choice><orig>.</orig><reg>,</reg></choice> <abbr>Jan.</abbr> <supplied>/</supplied> <abbr>Febr.</abbr> <supplied>/</supplied> <abbr>Mart.</abbr>
+    <lb/>bewiesen, daß ein grober fehler in denen experienzen vorgangen und daß
+    <lb/>diese proposition daraus nicht zu beweisen, so daß sich zu verwunderen, daß
+    <lb/><abbr>H.</abbr> <rs type="person" key="pers_DE-588-118571249">Leibnitz</rs> und sein <rs type="person">anhang</rs>, wie sie sagen, so wüst angeloffen. Ich zweifle
+    <pb facs="1039732" n="4"/>
+    <lb/>nicht, du wissest um diese sach und nimt mich wunder, was man antworten
+    <lb/>kan, dan so viel ich begreife, ist die proposition falsch, aufs wenigst folgt dero
+    <lb/>wahrheit nicht aus den gebrauchten experienzen. Ich hab underdessen zimliche
+    <lb/>progressus in mechanicis und hydrostaticis gemacht und manglete mir nichts
+    <lb/>mehr als den calculum differentialem und integralem besser zu wissen, um
+    <lb/>mit der zeit auch als ein mathematicus erscheinen zu dörfen. Ich geniesse täg<pc type="hyphenation">=</pc><lb break="no"/>lich den nutzen deiner vormals gehabten mühe und sihe ich allezeit mehr
+    <lb/>wie viel ich dir verpflichtet bin. Es dunckt mich es habe in den letsten
+    <lb/><abbr>Transact. Phil.</abbr> <abbr>n.</abbr> 355<choice><orig>.</orig><reg>,</reg></choice> <abbr>art.</abbr> 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <rs type="biblio">de Motu aquarum fluentium</rs>, <abbr>H.</abbr> <abbr>D.</abbr> <rs type="person" key="pers_DE-588-119507978">Jurin</rs>
+    <lb/>eben das principium, über dessen erfindung der <abbr>H.</abbr> <rs type="person" key="pers_DE-588-118509969">Oncle</rs> und <abbr>H.</abbr> <rs type="person" key="pers_DE-588-119112450">Herman</rs>
+    <lb/>vor diesem gestritten, als ein neües von ihm selbs erfundenes ange<pc type="hyphenation">=</pc><lb break="no"/>bracht; dan er fängt also an: <cit type="long"><quote><foreign xml:lang="lat">Aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> motum ex imi vasis foramine defluentis
+                <lb/>s<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>pe videmus, tum in ipsa re hydraulica, tum in ejus principiis ad <choice><orig><g ref="#oe">œ</g></orig><reg>oe</reg></choice>conomiam
+                <lb/>animalem applicandis, aliis cum potentiis comparari. Cujus motus quantitat<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice>
+                <lb/>cum hactenus nemo quod sciam rect<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> determinaverit <choice><orig><g ref="#pp">pp.</g></orig><reg>etc.</reg></choice> ... Poterit autem
+                <lb/>aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> defluentis motus facili opera definiri hunc in modum:
+                <figure facs="1039732_01.png"></figure>
+                <lb/>Sit <formula>SHAHS</formula> aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> superficies infinita, <formula>CC</formula>
+                <lb/>foramen circulare in fundo factum, <formula>AB</formula> recta
+                <lb/>perpendicularis per foraminis centrum ducta,
+                <lb/><formula>SGCCGS</formula> columna sive cataracta aqu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per
+                <lb/>foramen <formula>CC</formula> decurrentis <formula>SGC</formula> curva, cujus
+                <lb/>rotatione circa axem <formula>AB</formula> generatur solidum
+                <lb/>sive cataracta <formula>SGCCGS</formula>. Aqua enim cum
+                <lb/>liber<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> et motu accelerato descendat ad norm<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+                <lb/>corporum omnium gravium, necessario in minorem amplitudinem contrahitur,
+                <lb/>prout majorem velocitatem acquirit inter cadend<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> et profluit ex foramine
+                <lb/><formula>CC</formula> ea cum velocitate, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> cadendo ab altitudine <formula>AB</formula> comparatur. <abbr><choice><orig><g ref="#Etlig">&amp;</g></orig><reg>Et</reg></choice>c.</abbr></foreign></quote></cit></p>
+    <p><lb/>Villeicht ist dir nicht viel daran gelegen, wan du aber je weiteren ber<del/><add>ic</add>ht
+        <lb/>darvon willt, so wird ein ander mal weitlaüfiger darüber schreiben. Ich
+        <lb/>bin ein einzig mahl in der versamlung of the <rs type="organisation">Royal Society</rs> gewesen,
+        <pb facs="1039733" n="5"/>
+        <lb/>und hab die gelegenheit gehabt <abbr>H.</abbr> <rs type="person" key="pers_DE-588-118587544">Neuton</rs> zu sehen aber nicht zu sprechen,
+        <lb/><abbr>H.</abbr> <rs type="person" key="pers_DE-588-118720066">Halley</rs>, <rs type="person" key="pers_DE-588-117574678">Whiston</rs>, <rs type="person" key="pers_DE-588-117586765">Moivre</rs> waren einmalen in der <rs type="place">stadt</rs>, und sagte man
+        <lb/>mir, daß in denselben monaten jederman schier ausser der stadt sich auf<pc type="hyphenation">=</pc><lb break="no"/>halte; mit <abbr>H.</abbr> <rs type="person" key="pers_DE-588-118720066">Halley</rs> hätte insonderheit gern geredt, weilen sehr viel von
+        <lb/>seinem lustigen humor gehört hatte. Ich hatte gehört, daß <abbr>H.</abbr> <rs type="person" key="pers_DE-588-117586765">Moivre</rs> neben
+        <lb/>dem was er in den <abbr>Transact. Phil.</abbr> über die materi <rs type="biblio">de sorte</rs> außgeben, einen
+        <lb/>eigenen <rs type="biblio">tractat</rs> geschrieben hätte, konte ihn aber nicht auftreiben, weilen nur
+        <lb/>eine kleine anzahl gedruckt worden für diejenigen die für einen guinée
+        <lb/>underschrieben. <rs type="person">Joh. Keil</rs> hat eine <rs type="biblio">Indroductionem ad Veram Astronomiam</rs>
+        <lb/>geschrieben, welches <foreign xml:lang="lat">Lectiones</foreign> in sich haltet, so er vorhin zu <rs type="place">Oxford</rs> gehalten,
+        <lb/>es ist auf die manier, wie die <rs type="biblio">Introd. ad v. Physicam</rs> und wird estimiert,
+        <lb/>man haltet dafür, er habe hierdurch dieses studium etwas leichter gemacht
+        <lb/>als es vorher gewesen, da man des <rs type="person" key="pers_DE-588-129551651">Gregoris</rs> <rs type="biblio">Astronomie</rs> gebrauchen
+        <lb/>muste. Ich hab es gekauft und ohngefehr halber außgelesen, habe aber doch
+        <lb/>nichts sonderbares darin gefunden, welches nicht schon vorhero vielleicht
+        <lb/>auf gleiche weis wäre proponiert worden. <rs type="person" key="pers_DE-588-118587544">Newtons</rs> <rs type="biblio">Optic</rs> ist auf Englisch
+        <lb/>frisch heraus ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und hat man die vorhin hinden angehenckte und nicht
+        <lb/>zur sach dienende stuck außgelassen und hingegen in der haubtsach selbs
+        <lb/>etwas wenigs be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>gefügt. Von anderen neüen sachen aus <rs type="place" key="place_VER-englan">Engelland</rs>
+        <lb/>weis mich nichts mehr dato zu besi<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en und ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e deßwegen zu den
+        <lb/>übrigen theilen deines <rs type="letter">briefes</rs>; Es ist mir hertzlich le<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>d, daß du so
+        <lb/>wenig vergnügen be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> deiner Profession findest, aber was willtu dich
+        <lb/>doch so quelen und ist es nicht möglich, daß du dich in die zeit
+        <lb/>schickest? betrachte, daß wir müssen geprüfet werden und daß wir
+        <lb/>dobbelten schaden le<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>den, wan wir in ungelegenheiten murren;
+        <lb/>muntere dich auf und suche etwan einen guten gespanen in dessen
+        <pb facs="1039734" n="6"/> 
+        <lb/>gesellschaft du einige linderung empfinden kö<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>est; aufs wenigst wäre dir
+        <lb/>nicht wohl zu rahten, ohne eine wichtige ursach weg zu ziehen, es könte dir
+        <lb/>an deinem guten nahmen schaden, indeme du ohne das, wie ich glaube, für
+        <lb/>eine gewisse zeit angebunden bist. Du bist jetzund be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> diesem volck, dessen
+        <lb/>manier mit deinem humor nicht übereinkomt, must dich also ein wenig
+        <lb/>biegen und in die zeit schicken; vielleicht wäre es nicht übel gethan, wan
+        <lb/>du an etwas artiges arbeitetest, um solches der welt mitzutheilen, du
+        <lb/>köntest darmit die zeit vertreiben und vielleicht dardurch gelegenheit
+        <lb/>haben desto besser abgelöst zu werden. Wan du aber je mit ehren dich
+        <lb/>wider naher <rs type="place" key="place_GEO-2661604">Basel</rs> begeben kanst, so wollte ich es nicht versaumen,
+        <lb/>sonderen die gelegenheit ergreifen. Es nimt mich wunder, daß du noch
+        <lb/>nichts von der bestellung der <rs type="organisation">Profession</rs> zu <rs type="place">Lausanne</rs> weissest, es hat solche
+        <lb/><abbr>H.</abbr> de <rs type="person" key="pers_DE-588-133771261">Bochat</rs> darvongetragen und ist hingegen dem <abbr>H.</abbr> <abbr>D.</abbr> <rs type="person" key="pers_DE-588-128694416">Waldkirch</rs>
+        <lb/>die neü angestellte Professio Juris zu <rs type="place" key="place_GEO-2661552">Bern</rs> mit 300 thaleren gage zu<pc type="hyphenation">=</pc><lb break="no"/>ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en; ich hab mich nicht angegeben und kan dich versicheren, daß wan
+        <lb/>gelegenheit finde, anderst mich durchzureissen, ich nicht nach Academi<pc type="hyphenation">=</pc><lb break="no"/>schen ehrenstellen trachten werde, welche jetz be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> uns noch weniger
+        <lb/>als vorhin zu hofen; Ich sehe zwar wohl, wan etwas be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> uns ofen
+        <lb/>se<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>n sollte<supplied>,</supplied> ich mit gewalt auch in die suppen wurde gezogen
+        <lb/>werden, und müste ich aufs wenigste meinen <rs type="person" key="pers_DE-588-1037498860">Eltern</rs><!-- ToDo: Mutter fehlt noch --> zu gefallen<supplied>,</supplied> mich
+        <lb/>nicht widerspenstig stellen. Gott gebe uns was uns nutzlich ist!
+        <lb/>Den <abbr>H.</abbr> <rs type="person" key="pers_DE-588-104286881">Schaub</rs> hab <date>vor 8 monaten</date> ohngefehr zu <rs type="place" key="place_GEO-2988507">Paris</rs> angetrofen und
+        <lb/>mit ihme gesprochen, er hatte damals den <foreign xml:lang="fre">projet</foreign> der <foreign xml:lang="fre">alliance</foreign>, <choice><abbr>worüb.</abbr><expan>worüber</expan></choice>
+        <lb/>er mit dem <rs type="person">Herzog von Orleans</rs> tractieren muste, und al<del/><add>s</add> die sachen
+        <lb/>abgethan gienge er damit naher <rs type="place" key="place_GEO-2761369">Wien</rs>, um solches auch dem
+        <lb/><rs type="person">Ke<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>ser</rs> vorzutragen, von <rs type="place" key="place_GEO-2761369">Wien</rs> kame er über <rs type="place" key="place_GEO-2661604">Basel</rs> wider naher
+        <pb facs="1039735" n="7"/>
+        <lb/><rs type="place" key="place_GEO-2988507">Paris</rs> und in diesem letsten durchgang hat er sich aufgeführt, wie du
+        <lb/>und ich gehört haben; er hatte zwe<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> ring empfangen jeden von ohngefehr
+        <lb/>15000 francken, wie mir gesagt worden. Von <rs type="place" key="place_GEO-2988507">Paris</rs> gienge er nach <rs type="place" key="place_GEO-2643743">Londen</rs><supplied>,</supplied>
+        <lb/>muste aber gleich wider mit Milord <rs type="person" key="pers_DE-588-118675745">Stanhope</rs> zuruck in <rs type="place" key="place_VER-frankr">Frankreich</rs>,
+        <lb/>und von da<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en naher <rs type="place" key="place_GEO-3117735">Madrid</rs>, um zu sehen ob die Friedenspuncten
+        <lb/>dem Cardinal <rs type="person" key="pers_DE-588-118644262">Alberoni</rs> nicht be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>zubringen wären; weilen aber Milord
+        <lb/><rs type="person">Stanhope</rs> nichts außgerichtet, ist er mit demselben wider naher
+        <lb/><rs type="place" key="place_GEO-2988507">Paris</rs> ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und von da<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en, wie erst kurtzlich verno<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en, wider
+        <lb/>in <rs type="place" key="place_VER-englan">Engelland</rs> gereiset, da er sich nun befinden soll. Ich hofte ihn
+        <lb/>in <rs type="place" key="place_GEO-2643743">Londen</rs> zu sehen, muste aber verne<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en, daß er dre<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> dag vor meiner
+        <lb/>ankunft mit <abbr>M.</abbr> <rs type="person">Stanhope</rs> abgereisst wäre, welches mich nicht
+        <lb/>wenig verdrossen, dan gehofet durch sein mittel eines und das an<pc type="hyphenation">=</pc><lb break="no"/>dere besser in augenschein ne<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en zu kö<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>en. Er ist im übrigen be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>
+        <lb/>dem <rs type="person">König</rs> sehr wohl daran und ist ein grosser ruhm für ihn, daß
+        <lb/>ihme ein solch wichtiges werck zu negocieren ist anvertraut worden,
+        <lb/>er ist die meiste zeit gantz allein mit dem <rs type="person">Regent</rs> in conferenz
+        <lb/>gewesen, der, wie ich gehört, ihne sonderbar solle caressiert haben.
+        <lb/>Als ihne zu <rs type="place" key="place_GEO-2988507">Paris</rs> salutiert, hat er mir mit gröster fründlichkeit
+        <lb/>begegnet und weilen er keine zeit als die frühen morgenstunden
+        <lb/>vor sich überig hatte, hat er mich gebetten, so lang er sich zu <rs type="place" key="place_GEO-2988507">Paris</rs>
+        <lb/>aufhalten wurde, als dan ihne ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en besuchen. Er hat gantz familiar
+        <lb/>und gleich in vorigen zeiten mich aufgeno<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en und habe ich keinen hoch<pc type="hyphenation">=</pc><lb break="no"/>muht an ihme gespüret, wunderet mich deßwegen, daß er hat mögen
+        <lb/>vor unseren Landsleüten bravades machen, die wenig wissen zu under<pc type="hyphenation">=</pc><lb break="no"/>scheiden, was ein wahrer merite und falscher schein ist; du weissest aber
+        <lb/>daß er allezeit auf die sauberkeit und köstlichkeit in kleideren
+        <pb facs="1039736" n="8"/>
+        <lb/>gesehen, so daß ihme einiger massen zu verzeihen, wan er jetzo, da er die
+        <lb/>mittel und gelegenheit darzu hat, seines hertzens lust erfüllet, weilen
+        <lb/>er ohne das als ein Hofman darauf zu sehen genöhtiget ist. Du wirst
+        <lb/>indessen gehört haben, daß seit dem das Los eingeführt, unser fründ
+        <lb/><abbr>H.</abbr> <abbr>D.</abbr> <rs type="person" key="pers_DE-588-1132220874">Raillard</rs> die <rs type="organisation">zunft zum Schlüssel</rs> angeno<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en, doch so daß er
+        <lb/>das recht auf eine etwan fehlstehende professionem Juris zu preten<pc type="hyphenation">=</pc><lb break="no"/>dieren nicht verlieret; ich hätte ihme gern oft gerahten er sollte lieber
+        <lb/>in politischen stand tretten als auf der universitet sich hervorzuthun
+        <lb/>suchen, du kanst dir aber leicht einbilden warum ich es nicht gethan;
+        <lb/>ich möchte von hertzen wünschen, daß er in das regiment mit ehren
+        <lb/>ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en möchte und wurde es nicht unglücklich gehen, wan viel von
+        <lb/>seiner natur dahin gelangten. Ich höre im übrigen, daß zu <rs type="place" key="place_GEO-2661604">Basel</rs>
+        <lb/>allerhand laster mehr dato als vorhin i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er im schwang gehen und
+        <lb/>daß alle ehrliche leüt über den erbärmlichen zustand seüfzen;
+        <lb/>das erbärmlichste ist, daß niemand da ist, der in den riß stehen
+        <lb/>und mit ernst an einer nutzlichen änderung arbeiten könte.
+        <lb/>Wan du mir antworten willt, so mach nur, daß meine brief meinem
+        <lb/>bruder <rs type="person">Johan Christ</rs> der be<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice> <abbr>H.</abbr> <rs type="person">Joh. Georg Drücher</rs> <add>in <rs type="place" key="place_GEO-2661604">Basel</rs></add> ist zu ko<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>en, er
+        <lb/>wird mir sie gleich übersenden. Verharre indessen in der mir i<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>erdar
+        <lb/>bezeigten gunst und liebe, und se<choice><orig><g ref="#ydots">ÿ</g></orig><reg>y</reg></choice>e versicheret daß dich aufrichtig
+        <lb/>ehret und hertzlich liebet</p> <closer>Dein getreüer diener
+            <lb/><signed>F. Christ.</signed></closer>
 </div>
 </body>
 </text></TEI>

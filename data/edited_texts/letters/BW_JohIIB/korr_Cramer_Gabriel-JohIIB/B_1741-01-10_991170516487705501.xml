@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -177,8 +177,14 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-09" who="SG">XML-Kommentare zu Textkonstitution und Kodierung.</change>
+      <change when="2025-08-21" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert fertig</change>
+      <change when="2025-08-21" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert Teil 1</change>
+      <change when="2025-07-31" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-31" who="RG">Personen, Biblio, Orte referenziert</change>
+      <change when="2025-07-31" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-06-30" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-06-30" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -191,82 +197,105 @@
 <body>
 <div type="letter">
 <pb facs="3694401" n="1"/>
-<p><lb/>Depuis longtems je vous dois reponse, mon cher Monsieur, &amp; vous
-                           <lb/>auriez un juste sujet de m’en faire quelques reproches. Pour les prevenir,
-                           <lb/>je vais vous en faire moi même. Souvent ceux qui ont tort crient le
-                           <lb/>plus haut. Quoi donc, Monsieur, vous vous laissez appeler comme cela
-                           <lb/>auprès du Roy de Prusse, sans en rien dire à vos amis, qui ne l’aprennent
-                           <lb/>que par le Mercure. En vérité vous étes impardonnable, &amp; je ne sais si tout
-                           <lb/>l’honneur qui vous revient d’une pareille vocation est une excuse suffisante
-                           <lb/>pour n’en <add>pas</add> donner le moindre signe à une personne qui vous aime
-                           <lb/>&amp; vous cherit, <del/><add>tout</add> autant de Bernoullis que vous étes, aussi tendrement
-                           <lb/>que je le fais. Dites-moi donc, mais au plus vite, quel parti prenez vous. Car
-                           <lb/>je suis inquiet à votre occasion. D’un côté la fortune &amp; la gloire, de l’autre la
-                           <lb/>crainte de vous perdre, (car, si vous allés si loin, on vous compte perdus[sic!] pour nous,
-                           <lb/>qui n’avons d’autre mérite que celui d’etre vos voisins) cela je vous l’avouë, m’embarasse
-                           <lb/>&amp; me reduit à ne savoir que souhaiter. Mais je ferai les voeux que l’amitié me
-                           <lb/>conseille, c’est que quelque parti que vous preniez, quoique vous entrepreniés, tout
-                           <lb/>reussisse selon vos desirs, à votre plus grand contentement, pour votre plus grande
-                           <lb/>gloire &amp; votre plus grand bien. Assurez bien, mon cher Bernoulli, assurez bien
-                           <lb/>Monsieur votre illustre Pére, mon bon Patron, &amp; Monsieur vôtre cher Frére
-                           <lb/>l’aimable <rs key="pers_DE-588-118656503" type="person">Daniel</rs>, assurez les bien de tout mon devouement, &amp; des voeux les plus
-                           <lb/>ardens &amp; les plus sincéres que je fais pour eux. Prenez en aussi pour vous
-                           <lb/>la part que vous voudrés, ou si vous voulez prenés le tout, car mes voeux sont
-                           <lb/>tota in toto, &amp; tota in qualiber parte. Je reviens à nos affaires.</p>
-<p><lb/>J’ai suivi vos intentions dans la reforme du Catalo gue des Oeuvres de M.
-                           <lb/>vôtre Pere. De toutes les piéces de M. G××× , je n’ai laissé que la Demonstration
-                           <lb/>de la Courbe de M. de <rs key="pers_DE-588-128349794" type="person">Beaune</rs>, parce que M. <rs type="person">Bernoulli</rs> se l’attribue dans
-                           <lb/>les <rs type="biblio">Actes de Leipsick</rs>. Comme M. de <rs key="pers_DE-588-100814891" type="person">l’hopital</rs> se l’attribue aussi dans un Journal
-                        <pb facs="3694402" n="2"/>
-<lb/>de hollande, je crois qu’on pourra mettre en Notte que cette Piece
-                           <lb/>apartient en commun a ces deux Messieurs. Le Public sentira bien
-                           <lb/>que cela veut dire qu’elle est pour le fond de M. <rs type="person">Bernoulli</rs>. Et la piéce, vû celle
-                           <lb/>qui la suit dans les Actes, n’est pas de si grande consequence qu’elle demande de
-                           <lb/>plus longs eclaircissemens.</p>
-<p><lb/>Je donnerai tous mes soins pour l’exactitude de la correction. Il n’y a pas lieu
-                           <lb/>de douter qu’ils ne fussent beaucoup plus utiles si l’imprimeur de M. <rs key="pers_DE-588-136952968" type="person">Bousquet</rs>
-<lb/>etoit a <rs key="place_GEO-2660646" type="place">Geneve</rs>, ou que je fusse à <rs key="place_GEO-2659994" type="place">Lausanne</rs>: mais j’espére pourtant que nous
-                           <lb/>réussirons à donner une Edition correcte.</p>
-<p><lb/>Nous <del/>omettrons les piéces de <rs key="pers_DE-588-124275087" type="person">Keill</rs>, &amp; les réponses. La raison qui
-                           <lb/>m’auroit porté a les mettre c’est que M. <rs type="person">Bernoulli</rs> traitte assés rudement
-                           <lb/><rs key="pers_DE-588-124275087" type="person">Keill</rs> dans la Responsio ad nonneminis provocationem, &amp; j’aurois voulu
-                           <lb/>faire voir que <rs key="pers_DE-588-124275087" type="person">Keill</rs> merite bien ce traittement par ses mauvaises manieres.
-                           <lb/>Mais cette raison doit ceder à d’autres, qui vous ont paru meilleures, pour omettre
-                           <lb/>ces piéces là.</p>
-<p><lb/>Je crois qu’il faudra conserver la dissertation de M. votre frére <rs key="pers_DE-588-117589144" type="person">Nicolas</rs>
-<lb/>sur les Trajectoires, du moins la meilleure partie, qui est de M. vôtre <rs key="pers_DE-588-118509969" type="person">Pére</rs>. Et sans
-                           <lb/>cette Piéce le recueil de celles qui concernent ce fameux Probléme seroit incomplet.</p>
-<p><lb/>Pour la Piéce, Nic. Bernoulli Demonstr. Theorematum Patrui sui,
-                           <lb/>il est vrai qu’elle n’est pas nécessaire, mais elle feroit plaisir au lecteur qui
-                           <lb/>y verroit la Demonstration de ces beaux Théoremes. Ainsi je ferai à cet égard
-                           <lb/>ce que vous souhaiterés.</p>
-<p><lb/>Laissons là les Pièces de M. <rs key="pers_DE-588-118531379" type="person">Euler</rs> sur les Trajectoires reciproques. On pourra
-                           <lb/>mettre en notte, que ceux qui voudront voir tout ce qui a du raport à ce fameux
-                           <lb/>Problème pourront <del/>, après avoir lu ce qu’il y a dans notre recueil avoir recours sur ce
-                           <lb/>sujet avoit recours aux Actes de Leips. &amp; Memoires de Petersbou<add>r</add>g.</p>
-<p><lb/>Je vous demande grace pour la petite These de Propositionibus. Les Coroll.
-                           <lb/>surtout sont curieux. D’ailleurs, il faut avoir quelque égard pour l’interet
-                           <lb/>du Libraire, qui demande que son recueil soit complet. C’est ce qui me fait
-                        <pb facs="3694403" n="3"/>
-<lb/>encore vous faire une demande. Quest ce qu’une piéce, dont j’ai entrevu
-                           <lb/>le titre Spinosismi depulsionis Echo. Est elle de M. vôtre Père ou de
-                           <lb/>quelque autre Bernoulli, et si elle est de lui, pourquoi l’omettrions-nous.
-                           <lb/>Un mot, s’il vous plait d’eclaircissement là dessus.</p>
-<p><lb/>J’ai mis une notte à la piéce intitulée Solutio Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Caustic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per vulgarem
-                           <lb/>Geometriam, où j’ai exposé la solution erronée de Tschirnaus sans entrer
-                           <lb/>pourtant dans les causes de son Erreur, ce qui auroit mené plus loin que
-                           <lb/>je n’ai des sein d’aller.</p>
-<p><lb/>Je crois que voila tout ce que j’ai à vous dire présentement. Il ne
-                           <lb/>resteroit qu’a vous assurer que je suis très parfaitement Votre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.
-                           <lb/>mais vous ne voulez pas que nous soions sur les complimens &amp; vous
-                           <lb/>avez raison. Sans rien perdre des tendres sentimens que j’ai pour vous
-                           <lb/>je vais donc me contenter de signer tout simplement <rs key="pers_DE-588-11670912X" type="person">G. Cramer</rs></p>
-<closer><dateline><lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date>10 Janv. 1741</date></dateline>
+<p>
+  <lb/>Depuis longtems je vous dois reponse, mon cher Monsieur, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous
+  <lb/>auriez un juste Sujet de m’en faire quelques reproches. Pour les prevenir,
+  <lb/>je vais vous en faire moi même. Souvent ceux qui ont tort crient le
+  <lb/>plus haut. Quoi donc, Monsieur, vous vous laissez appeler comme cela
+  <lb/>auprès du <rs key="pers_DE-588-118535749" type="person">Roy de Prusse</rs>, sans en rien dire à vos amis, qui ne l’aprennent
+  <lb/>que par le <rs type="biblio">Mercure</rs>. En vérité vous étes impardonnable, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je ne sais si tout
+  <lb/>l’honneur qui vous revient d’une pareille vocation est une excuse suffisante
+  <lb/>pour n’en <del/><add>pas</add> donner le moindre signe à une personne qui vous aime
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous cherit, <del/><add>tout</add> autant de <rs type="person">Bernoullis</rs> que vous étes, aussi tend<subst><del/><add>re</add></subst>ment
+  <lb/>que je le fais. Dites-moi donc, mais au plus vite, quel par<subst><del/><add>ti</add></subst> prenez vous. Car
+  <lb/>je suis inquiet à votre occasion. D’un côté la fortune <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la gloire, de l’autre la
+  <lb/>crainte de vous perdre, (car, si <subst><del/><add>v</add></subst>ous allés si loin, <subst><del/><add>je vous</add></subst> compte <choice><sic>perdus</sic><corr>perdu</corr></choice> pour nous,
+  <lb/>qui n’avons d’autre mérite que celui d’etre vos voisins) cela je vous l’avouë, m’embarasse
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> me reduit à ne savoir que souhaiter. Mais je ferai les voeux que l’amitié me
+  <lb/>conseille, <choice><orig>C</orig><reg>c</reg></choice>’est que quelque parti que vous preniez, quoique vous entrepreniés, tout
+  <lb/>reussisse selon vos desirs, à votre plus grand contentement, pour votre plus grande
+  <lb/>gloire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> votre plus grand bien. Assurez bien, mo<subst><del><gap/></del><add>n</add></subst> cher Bernoulli, assurez bien
+  <lb/>Monsieur votre illustre <rs key="pers_DE-588-118509969" type="person">Pére</rs>, mon bon Patron, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Monsieur vôtre cher <rs type="person">Frére</rs><supplied>,</supplied>
+  <lb/>l’aimable <rs key="pers_DE-588-118656503" type="person">Daniel</rs>, assurez les bien de tout mon devouement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des voeux les plus
+  <lb/>ardens <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les plus sincères que je fais pour eux. Prenez en aussi pour vous
+  <lb/>la part que vous voudrés, ou si vous voulez<supplied>,</supplied> prenés le tout, car m<subst><del>on</del><add>es</add></subst> voeux sont
+  <lb/><foreign xml:lang="lat">tota in toto, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tota in qualiber<!-- SG: qualibet --> parte</foreign>. Je reviens à nos affaires.
+</p>
+<p>
+  <lb/>J’ai suivi vos intentions dans la reforme du <rs type="biblio">Catalogue des Oeuvres</rs> de <abbr>M.<hi rend="sup">r</hi></abbr>
+  <lb/>vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>. De toutes les piéces de <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person">G×××</rs>,<!-- SG: Gxxx = Pseudonym für l'Hôpital (Solution du Problême que M. de Beaune proposa autrefois à M. Descartes, & que l'on trouve dans la 79. de ses lettres, tome 3. Par Mr. G***, JS 1692 (1.Septembre), pp. 401-403 = Opera I, pp. 62-63) --> je n’ai laissé que la <rs type="biblio">Demonstration de la Courbe de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-128349794" type="person">Beaune</rs></rs>, parce que <abbr>M.<hi rend="sup">r</hi></abbr> <del/> <rs type="person">Be<subst><del><gap/></del><add>r</add></subst>noulli</rs> se l’attribue dans
+  <lb/>les <rs type="biblio">Actes de <rs type="place">Leipsick</rs></rs><!-- Die Verlinkung der AE ist überflüssig, da es hier zum bibliogr. Nachweis der obigen Schrift gehört. -->. Comme <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-100814891" type="person">l’hopital<!-- SG: <choice><orig>hopital</orig><reg>Hopital</reg></choice> --></rs> se l’attribue aussi dans <rs type="biblio">un Journal
+<pb facs="3694402" n="2"/>
+  <lb/>de hollande</rs><note type="editorial"></note>, je crois qu’on pourra mettre <subst><del/><add>en</add></subst> Notte, que cette Piece
+  <lb/>apartient en commun <choice><orig>a</orig><reg>à</reg></choice> ces deux Messieurs. Le Public <del/>sentira bien
+  <lb/>que cela veut dire qu’elle est pour le fond de <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person">Bernoulli</rs>. Et la <rs type="biblio">piéce</rs>, vû celle
+  <lb/>qui la suit dans les Actes, n’est pas de si grande consequence qu’elle demande de
+  <lb/>plus longs eclaircissemens.
+</p>
+<p>
+  <lb/>Je donnerai tous mes soins pour l’exactitude de la correction. Il n’y a pas lieu
+  <lb/>de douter qu’ils ne fussent beaucoup plus utiles si l’<rs type="person">imprimeur</rs> de <abbr>M<supplied>.</supplied></abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs>
+  <lb/>etoit <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2660646" type="place">Geneve</rs>, ou que je fusse à <rs key="place_GEO-2659994" type="place">Lausanne</rs>: mais j’espère pourtant que nous
+  <lb/>réussirons à donner une <subst><del><gap/></del><add>E</add></subst>dition correcte<supplied>.</supplied>
+</p>
+<p>
+  <lb/>Nous <del/>omettrons les <rs type="biblio">piéces</rs> de <rs key="pers_DE-588-124275087" type="person">Keill</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les <rs type="biblio">réponses</rs>. La raison qui
+  <lb/>m’auroit p<subst><del/><add>or</add></subst>té <choice><orig>a</orig><reg>à</reg></choice> les mettre c’est que <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person">Bernoulli</rs> traitte assés rudement
+  <lb/><rs key="pers_DE-588-124275087" type="person"><subst><del/><add>K</add></subst>eill</rs> dans la <rs key="biblio_WTKC39JU" type="biblio"><foreign xml:lang="lat">Responsio ad nonneminis provocationem</foreign></rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’aurois voulu
+  <lb/>faire voir que <rs key="pers_DE-588-124275087" type="person">Keill</rs> merite bien ce traittement par ses mauvaises manieres.
+  <lb/>Mais cette raison doit ceder à d’autres, qui vous ont paru meilleures, pour omettre
+  <lb/>ces <rs type="biblio">piéces</rs> là.
+</p>
+<p>
+  <lb/>Je crois qu’il faudra conserver la dissertation de <abbr>M.<hi rend="sup">r</hi></abbr> votre frére <rs key="pers_DE-588-117589144" type="person">Nicolas</rs>
+  <lb/>sur les <rs key="biblio_RCGN36NM" type="biblio">Trajectoires</rs>, du moins la meilleure partie, qui est de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Père</rs>. Et <subst><del><gap/></del><add>s</add></subst>ans
+  <lb/>cette <rs key="biblio_RCGN36NM" type="biblio">Piéce</rs> le <rs type="biblio">recueil</rs> de celles qui concernent ce fameux Probléme seroit incomplet.
+</p>
+<p>
+  <lb/>Pour la <rs type="biblio">Piéce</rs>, <rs key="pers_DE-588-117589144" type="person"><abbr>Nic.</abbr> Bernoulli</rs> <rs type="biblio"><abbr>Demonstr.</abbr> Theorematum Patrui sui</rs><!-- noch referenzieren. RG 31.07.2025 -->,
+  <lb/>il est vrai qu’elle n’est pas nécessaire, mais elle feroit plaisir au lecteur qui
+  <lb/>y verroit la Demonstration de ces beaux Théoremes. Ainsi je ferai à cet égard
+  <lb/>ce que vous souhaiterés.
+</p>
+<p>
+  <lb/>Laissons là les Pièces de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118531379" type="person">Euler</rs> sur les <rs type="biblio">Trajectoires reciproques</rs>. On pourra
+  <lb/>mettre en notte, que ceux qui voudront voir tout ce qui a du raport à ce fameux
+  <lb/>Problème, pourront <del/>, après avoir lu ce qu’il y <choice><sic/><corr>a</corr></choice> dans notre <rs type="biblio">recueil</rs> avoir recours sur ce
+  <lb/>sujet, avoir recours aux <rs type="biblio">actes de <abbr>leips.</abbr></rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs type="biblio">memoires de Petersbou<add>r</add>g</rs>.
+</p>
+<p>
+  <lb/>Je vous demande grace pour la petite These <rs type="biblio">de Propositionibus</rs>. Les <abbr>Coroll<supplied>.</supplied></abbr>
+  <lb/>surtout sont curieux. D’ailleurs, il faut avoir quelque égard pour l’interet
+  <lb/>du <rs type="person">Libraire</rs>, qui demande que son recueil soit complet. C’est ce qui me fait
+  <pb facs="3694403" n="3"/>
+  <lb/>encore vous faire une Demande. Quest<supplied>-</supplied><!-- SG: Die Bindestriche sollten hier und unten nicht ergänzend transkribiert werden, da sie sichtbar sind. Weiter oben gäbe es hingegen mehrere Bindestriche zu ergänzen, z.B. Prenez en, Assurez les -->ce<!-- SG: FEhlt ein Apostroph? --> qu’une piéce, dont j’ai entrevu
+  <lb/>le titre <rs key="biblio_MELCB7I5" type="biblio"><foreign xml:lang="lat"><!-- SG: Sprachwechsel im Titel. -->Spinosismi depulsionis Echo</foreign></rs>.<!-- SG: Fehlt ein Fragezeichen? --> Est<supplied>-</supplied>elle de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Père</rs> ou de
+  <lb/>quelque autre Bernoulli<choice><orig>,</orig><reg>?</reg></choice> Et si elle est de lui, pourquoi l’omettrions-nous<supplied>?</supplied>
+  <lb/>Un mot, s’il vous plait d’eclaircissement là dessus.
+</p>
+<p>
+  <lb/>J’ai mis une notte à la piéce intitulée <rs key="#biblio_KK9QK29R" type="biblio"><foreign xml:lang="lat">Solutio Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> Caustic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per vulgarem
+  <lb/>Geometriam</foreign></rs>, où j’ai exposé <subst><del/><add>la</add></subst> solution Erronée de <rs key="pers_DE-588-118624369" type="person">Tschirnaus</rs>. Sans entrer
+  <lb/>pourtant dans les Causes de son Erreur, ce qui auroit mené plus loin que
+  <lb/>je n’ai dessein d’aller.
+</p>
+<closer>
+  <salute><lb/>Je crois que voila tout ce que j’ai à vous dire présentement. Il ne
+  <lb/>resteroit qu’<choice><orig>a</orig><reg>à</reg></choice> vous assurer que je suis très parfaitement Votre <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
+  <lb/>mais vous ne voulez pas que nous soions sur les complimens <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vous
+  <lb/>avez raison, <choice><orig>Sans</orig><reg>sans</reg></choice> rien perdre des tendres sentimens que j’ai pour vous<supplied>,</supplied>
+  <lb/>je vais donc me contenter de signer tout simplement</salute> <signed><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline><lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1741-01-10">10 <abbr>Janv.</abbr> 1741</date></dateline>
+</closer>
 <pb facs="3694404" n="4"/>
-<lb/><address><addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Jean Bernoulli</addrLine>
-<addrLine>Docteur en Droit &amp;c &amp;c</addrLine>
-<addrLine>a Basle</addrLine></address></closer>
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur Jean Bernoulli</addrLine>
+    <addrLine>Docteur en Droit <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

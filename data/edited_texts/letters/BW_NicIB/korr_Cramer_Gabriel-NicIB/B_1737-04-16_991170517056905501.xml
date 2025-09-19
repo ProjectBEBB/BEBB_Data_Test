@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517056905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -151,6 +151,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-18" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-18" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-27" who="RG">Personen und Orte ausgezeichnet</change>
       <change when="2023-09-08" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-08" who="RG">Seitenzahlen, Briefstruktur</change>
@@ -164,24 +166,76 @@
 <body>
 <div type="letter">
 <pb facs="1063369" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>Je suis confus de n’avoir jamais à vous écrire, que pour vous demander <lb/>des Graces, sans pouvoir trouver l’Occasion du retour &amp; le moien de vous <lb/>rendre quel que petit Service. Je ne puis cependant me dispenser de vous <lb/>demander une nouvelle faveur &amp; une faveur particuliére pour un jeune <lb/>homme à qui je m’interesse <del/>vivement. C’est Monsieur <lb/><rs key="pers_DE-588-100289665" type="person">Jallabert</rs>, le fils du feu Professeur en Philosophie. Après s’étre distingué <lb/>dans ses etudes de Philosophie, de Mathematique, de Belles Lettres &amp; de <lb/>Théologie, il se livre à son inclination qui le porte à se perfectioner dans les <lb/>Mathématiques, &amp; sachant fort bien qu’il ne le peut faire nulle part aussi <lb/>bien que chés vous, il se propose d’y passer quelques mois ou même une année. <lb/>Il m’a donc prié, Monsieur, de vous solliciter, de vous presser, de vous conjurer <lb/>par toutes les prières possibles, &amp; d’emploier tout le credit que vôtre bonté <lb/>peut me donner sur vôtre esprit pour vous engager à le reçevoir chès vous. <lb/>Ses instances ont été si vives que je n’ai pû me defendre de lui promettre <lb/>que je le ferois. J’ose vous assurer, Monsieur, que son Caractére est bien eloigné <pb facs="1063370" n="2"/>
-<lb/>de vous pouvoir faire de la peine. Vous le trouverez apparemment <lb/>à <rs key="place_GEO-2661604" type="place">Basle</rs> comme nous le trouvons à <rs key="place_GEO-2660646" type="place">Genève</rs>, doux, poli, agréable. <lb/>Il a de l’esprit, des connoissances, des Talents. Son ardeur pour aprendre <lb/>est si vive qu’il est en état de faire beaucoup de chemin. Il a etudié <lb/>les Mathematiques sous moi &amp; nous les avions poussé assez loin. <lb/>Mais il les a laissées pendant 4 ou 5 ans qu’il s’est appliqué à la <lb/>Théologie. Quand à la Pension, Monsieur, vous serés le maitre <lb/>de la régler &amp; à moins que vous n’aiés quelque raison pour ne tenir <lb/>aucun Pensionaire, j’espére que celui-ci ne vous sera point incommode, <lb/>&amp; que nous reçevrons une Réponse favorable. Il l’atend avec beaucoup <lb/>d’impatience, résolu de partir au commençement de Maj. En mon <lb/>particulier, les obligations que j’ai à feu Mr. son <rs key="pers_DE-588-1069359920" type="person">Père</rs> &amp; l’amitié que <lb/>le Caractère du Fils m’a inspiré pour lui, me font souhaiter ardemment <lb/>qu’il puisse aller puisser[sic!] à la Source des belles connoissances, &amp; jouir <lb/>du bonheur, que je ne me rapelle jamais sans emotion, de vous voir, de <lb/>vous entretenir &amp; de vous entendre. Heureux! si mes affaires me permettoient <lb/>de le gouter une seconde fois. J’ai l’honneur d’étre avec l’attachement le <lb/>plus sincére &amp; l’estime la plus parfaite</p>
-<closer><salute><lb/>Monsieur <lb/>Vôtre très humble &amp; très obeissant <lb/>serviteur</salute>
-<signed>G. Cramer</signed>
-<dateline><lb/>ce <date when="1737-04-16">16 avril 1737</date></dateline></closer>
+<opener>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Je suis confus de n’avoir jamais à vous écrire, que pour vous demander
+  <lb/>des Graces, sans pouvoir trouver l’Occasion du retour<!-- ? --> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le moien de vous
+  <lb/>rendre quel que petit Service. Je ne puis cependant me dispenser de vous
+  <lb/>demander une nouvelle faveur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> une faveur particuliére pour un jeune
+  <lb/>homme à qui je m’interesse <del/>vivement. C’est Monsieur
+  <lb/><rs key="pers_DE-588-100289665" type="person">Jallabert</rs>, le fils du feu Professeur en Philosophie. Après s’étre<!-- ? --> distingué
+  <lb/>dans ses Etudes de Philosophie, de Mathematique, de Belles Lettres <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de
+  <lb/>Théologie, il se livre à son inclination qui le porte à se perfectioner dans les
+  <lb/>Mathématiques, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sachant fort bien qu’il ne le peut faire nulle part aussi
+  <lb/>bien que chés vous, il se propose d’y passer quelques mois ou même une année.
+  <lb/>Il m’a donc prié, Monsieur, de vous solliciter, de vous presser, de vous conjurer
+  <lb/>par toutes les prières possibles, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’emploier tout le credit que vôtre bonté
+  <lb/>peut me donner sur vôtre esprit pour vous engager à le reçevoir chès vous<supplied>.</supplied>
+  <lb/>Ses instances ont été si vives que je n’ai pû me defendre de lui promettre
+  <lb/>que je le ferois. J’ose vous assurer, Monsieur, que son Caractére est bien eloigné
+  <pb facs="1063370" n="2"/>
+  <lb/>de vous pouvoir faire de la peine. Vous le trouverez apparemment
+  <lb/>à <rs key="place_GEO-2661604" type="place">Basle</rs>, comme nous le trouvons à <rs key="place_GEO-2660646" type="place">Genéve</rs>, doux, poli, agréable.
+  <lb/>Il a de l’esprit, des connoissances, des Talents. Son ardeur pour aprendre
+  <lb/>est si vive qu’il est en état<!-- ? --> de faire beaucoup de chemin. Il a etudié
+  <lb/>les mathematiques sous moi <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous les avions poussé assez loin.
+  <lb/>Mais il les a laissées pendant<!-- ? --> <subst><del>3</del><add>4</add></subst> ou <subst><del>4</del><add>5</add></subst> ans qu’il s’est appliqué à la
+  <lb/>Théologie. Quand à la Pension; Monsieur, vous serés le maitre
+  <lb/>de la régler, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à moins que vous n’aiés quelque raison pour ne tenir
+  <lb/>aucun Pensionaire, j’espére que celui-ci ne vous sera point incommode,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que nous reçevrons une Réponse favorable. Il l’atend avec beaucoup
+  <lb/>d’impatience, résolu de partir au commençement de Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>. En mon
+  <lb/>particulier, les obligations que j’ai <choice><orig>a</orig><reg>à</reg></choice> feu <abbr>M.<hi rend="sup">r</hi></abbr> son <rs key="pers_DE-588-1069359920" type="person">Père</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’amitié que
+  <lb/>le Caractère du Fils m’a <choice><sic>inspiré</sic><corr>inspirée</corr></choice> pour lui, me font souhaiter ardemment
+  <lb/>qu’il puisse aller <choice><sic>puisser</sic><corr>puiser</corr></choice> à la Source des belles connoissances, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> jouir
+  <lb/>du bonheur, que je ne me rapelle jamais sans emotion, de vous voir, de
+  <lb/>vous entretenir <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous entendre. Heureux! si mes affaires me permettoient
+  <lb/>de le gouter une seconde fois.
+</p>
+<closer>J’ai l’honneur d’étre avec l’attachement le
+  <lb/>plus sincére, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’estime la plus parfaite
+  <salute>
+    <lb/>Monsieur
+    <lb/>Vôtre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
+    <lb/>serviteur 
+  </salute>
+  <signed><rs type="person" key="pers_DE-588-11670912X"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline>
+    <lb/>ce <date when="1737-04-16">16. avril 1737</date>.
+  </dateline>
+</closer>
 <pb facs="1063371" n="3"/>
 <postscript>
-<p><lb/>P. S. Je vous supplie d’offrir mes très humbles respects à Monsr. <lb/>Vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, dont les bontés ne sortiront jamais de ma Memoire. <lb/>Faites-moi la Grace de m’informer de l’Etat de sa santé.</p>
+  <p>
+    <lb/><abbr>P. S.</abbr> Je vous supplie d’offrir mes très humbles respects à <abbr>Mons.<hi rend="sup">r</hi></abbr>
+    <lb/>Vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, dont les bontés<!-- "è"? RG 18.07.2025 --> ne sortiront jamais de ma Memoire.
+    <lb/>Faites-moi la Grace de m’informer de l’Etat de sa santé.
+  </p>
 </postscript>
 <pb facs="1063372" n="4"/>
-<closer><address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli,</addrLine>
-<addrLine>trés celcbre Professeur en Droit, &amp;c</addrLine>
-<addrLine>&amp;c &amp;c</addrLine>
-<addrLine>a <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
-</address></closer>
+<closer>
+  <address>
+    <addrLine>Monsieur.</addrLine>
+    <addrLine>Monsieur Nicolas Bernoulli,</addrLine>
+    <addrLine>trés<!-- "è"? RG 18.07.2025 --> celebre Professeur en Droit, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
+  </address>
+</closer><!-- Bis hier den Code angesehen, RG 18.07.2025 -->
 </div>
 </body>
 </text></TEI>

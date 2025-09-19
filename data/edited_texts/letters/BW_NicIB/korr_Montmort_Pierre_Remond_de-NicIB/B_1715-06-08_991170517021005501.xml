@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517021005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -173,8 +173,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-19" who="FN SG">Kollationieren abgeschlossen</change>
+      <change when="2025-08-18" who="FN SG">Kollationieren begonnen</change>
       <change when="2024-11-28" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
       <change when="2024-11-28" who="RG">pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
@@ -183,12 +185,7 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
+
 <!--pers_DE-588-1017119872 Culpeper, Edmund 〈1670-1737〉 -->
 <!--pers_DE-588-117586765 Moivre, Abraham de 〈1667-1754〉 -->
 <!--pers_DE-588-118587544 Newton, Isaac 〈1643-1727〉 -->
@@ -208,7 +205,6 @@
             Mr. Parent -> Parent, Antoine 1666-1716 pers_DE-588-105511131X
 
          -->
-<!--_____________-->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1361849/manifest"/>
@@ -218,153 +214,153 @@
 <pb facs="1361851" n="1"/> 
 <opener>
   <dateline>
-    <lb/>ce <date when="1715-06-08">8 juin 1715</date>.
+    <lb/><choice><orig>ce</orig><reg>Ce</reg></choice> <date when="1715-06-08">8 juin<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 1715</date>.
   </dateline>
 </opener>
 <p>
-  <lb/>Vous serez bien etonné, Monsieur, quand je vous dirai
-  <lb/>que j’arrive d’<rs key="place_VER-englan" type="place">Angleterre</rs>. J’en suis parti avec douleur, mais il m’a
-  <lb/>fallu revenir. Ma permission n’etoit que pour un mois. J’ay mis
-  <lb/>ce temps bien à profit. J’ay vu pres que tous les <rs type="person">sçavants</rs> d’<rs key="place_VER-englan" type="place">Angleterre</rs>
-  <lb/>et j’ay trouvé tant d’agrémens dans leur commerce que je ne les ay quittés
-  <lb/>qu’avec beaucoup de regrets. J’aurois bien des nouvelles à vous apprendre,
-  <lb/>mais ce sera pour une autre fois. Je ne vous parlerai aujourd’huy
-  <lb/>que de ce qui vous regarde. Je ferai aussi reponse à quelques endroits
-  <lb/>de vostre <rs type="letter">lettre</rs> que l’on vient de me rendre.
+  <lb/>Vous serez bien etonné<supplied>,</supplied> Monsieur<supplied>,</supplied> quand je vous dirai
+  <lb/>que j’arrive <choice><orig>D</orig><reg>d</reg></choice>’<rs key="place_VER-englan" type="place">Angleterre</rs>. J<supplied>'</supplied>en suis parti avec douleur<supplied>,</supplied> mais il m<supplied>’</supplied>a
+  <lb/>fallu revenir. <choice><orig>ma</orig><reg>Ma</reg></choice> permission n<supplied>’</supplied>etoit que pour un mois. J<supplied>’</supplied>ay mis
+  <lb/>ce temps bien <choice><orig>a</orig><reg>à</reg></choice> profit. J<supplied>’</supplied>ay vu presque tous les <rs type="person"><choice><orig>scavants</orig><reg>sçavants</reg></choice></rs> d’<rs key="place_VER-englan" type="place">Angleterre</rs>
+  <lb/>et j<supplied>’</supplied>ay trouvé tant d’agremens dans leur commerce que je ne les ay <choice><orig>quittes</orig><reg>quittés</reg></choice>
+  <lb/>qu<supplied>’</supplied>avec beaucoup de regrets. J<supplied>’</supplied>aurois bien des nouvelles <choice><orig>a</orig><reg>à</reg></choice> vous apprendre<supplied>,</supplied>
+  <lb/>mais ce sera pour une autre fois<supplied>.</supplied> Je ne vous parlerai aujourd<supplied>’</supplied>huy
+  <lb/>que de ce qui vous regarde<supplied>.</supplied> Je ferai aussi reponse <choice><orig>a</orig><reg>à</reg></choice> quelques endroits
+  <lb/>de vostre <rs type="letter">lettre</rs> que l<supplied>’</supplied>on vient de me rendre.
 </p>
 <p>
-  <lb/>Je n’ai point achepté de Microscope pour vous, par ce qu’on m’a dit
-  <lb/>que <rs key="pers_DE-588-1017119872" type="person">Culpiper</rs> n’etoit pas le bon ouvrier. Le seul qui soit employé
-  <lb/>et estimé à <rs key="place_GEO-2643743" type="place">Londres</rs> pour ces petits microscopes est un nommé <rs type="person">Wilson</rs>,
-  <lb/>qui en est l’inventeur; il m’en a vendu un excellent 2 guinées
-  <lb/>et demi. <rs key="pers_DE-588-1017119872" type="person">Culpeper</rs> en fait à l’imitation de ceux de <rs type="person">Wilson</rs>, mais
-  <lb/>ils n’en approchent pas, à ce que l’on m’a assuré. J’attendrai
-  <lb/>donc encore vos ordres là dessus. Par les correspondances que j’ay
-  <lb/>etablies en <rs key="place_VER-englan" type="place">Angleterre</rs>, j’aurai à l’avenir tout ce que je voudrai
-  <lb/>commodément et promptement.
+  <lb/>Je n<supplied>’</supplied>ai point achepté de Microscope pour vous<supplied>,</supplied> par ce qu<supplied>’</supplied>on m<supplied>’</supplied>a dit
+  <lb/>que <rs key="pers_DE-588-1017119872" type="person">Culpiper</rs> n<supplied>’</supplied>etoit pas le bon ouvrier. <choice><orig>le</orig><reg>Le</reg></choice> seul qui soit employé
+  <lb/>et estimé <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs> pour ces petits microscopes est un <choice><orig>nomme</orig><reg>nommé</reg></choice> <rs type="person">Wilson</rs><supplied>,</supplied>
+  <lb/>qui en est l’inv<del/><add>en</add>teur<supplied>;</supplied> il m<supplied>’</supplied>en a vendu un excellent 2 <choice><orig>guinees</orig><reg>guinées</reg></choice>
+  <lb/>et demi. <rs key="pers_DE-588-1017119872" type="person"><choice><orig>culpeper</orig><reg>Culpeper</reg></choice></rs> en fait <choice><orig>a</orig><reg>à</reg></choice> l’imitation de ceux de <rs type="person">Wilson</rs><supplied>,</supplied> mais
+  <lb/>ils n<supplied>’</supplied>en approchent pas <choice><orig>a</orig><reg>à</reg></choice> ce que l<supplied>’</supplied>on m<supplied>’</supplied>a assuré. J<supplied>’</supplied>attendrai
+  <lb/>donc encore vos ordres <choice><orig>ladessus</orig><reg>làdessus</reg></choice>. <choice><orig>par</orig><reg>Par</reg></choice> les correspondances que j<supplied>’</supplied>ay
+  <lb/>etablies en <rs key="place_VER-englan" type="place">Angleterre</rs><supplied>,</supplied> j<supplied>’</supplied>aurai <choice><orig>a</orig><reg>à</reg></choice> l<supplied>’</supplied>avenir tout ce que je voudrai
+  <lb/>commodement et promptement.
 </p>
 <p>
-  <lb/>On se plaint un peu de vous et de <abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">oncle</rs> en <rs key="place_VER-englan" type="place">Angleterre</rs>,
-  <lb/>vous estes attaqués l’un et l’autre, luy surtout dans un <rs type="biblio">memoire</rs> de
-  <lb/><abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs>.<del/> <add>inseré dans</add> les <rs type="biblio">transactions philosophiques</rs> de
-  <lb/>l’année derniere. J’ay achepté tout le corps des <rs type="biblio">transactions</rs>, beaucoup de
+  <lb/>On se plaint un peu de vous et <del/><add>de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr></add> vostre <rs key="pers_DE-588-118509969" type="person">oncle</rs> en <rs key="place_VER-englan" type="place">Angleterre</rs><supplied>,</supplied>
+  <lb/>vous estes <choice><orig>attaques</orig><reg>attaqués</reg></choice> l<supplied>’</supplied>un et l<supplied>’</supplied>autre<supplied>,</supplied> luy surtout dans un <rs type="biblio">memoire</rs> de
+  <lb/><abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-124275087" type="person">Keil</rs><del/> <add>inseré dans</add> <del/><add>les</add> <rs type="biblio"><choice><orig>transactions</orig><reg>Transactions</reg></choice> philosophiques</rs> de
+  <lb/>l<supplied>’</supplied>année derniere. J<supplied>’</supplied>ay <choice><orig>achepte</orig><reg>achepté</reg></choice> tout <add>le</add> corps des <rs type="biblio"><choice><orig>transactions</orig><reg>Transactions</reg></choice></rs><supplied>,</supplied> beaucoup de
   <lb/><rs type="biblio">livres</rs> et de curiosités.
 </p>
 <p>
-  <lb/>Vostre <rs type="biblio">solution</rs> de la Poulle est imprimée dans le dernier
-  <lb/><rs type="biblio">Memoire des transactions</rs> avec celle de <abbr>M.</abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs>. Il etoit
-  <lb/>sous la presse, quand je suis arrivé à <rs key="place_GEO-2643743" type="place">Londres</rs>. Je l’ai apporté;
-  <lb/><abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs> croit, mais a tort, ce me semble, qu’il y a faute dans
-  <lb/>vostre 1<hi rend="sup">ere</hi> <rs type="biblio">solution</rs> de son probleme.
+  <lb/>Vostre <rs type="biblio">solution</rs> de la Poulle est <choice><orig>Jmprimée</orig><reg>imprimée</reg></choice> dans le dernier
+  <lb/><rs type="biblio">Memoire des <choice><orig>transactions</orig><reg>Transactions</reg></choice></rs> avec celle de <abbr>M.</abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs><supplied>.</supplied> Il etoit
+  <lb/>sous la presse quand je suis <choice><orig>arrive</orig><reg>arrivé</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2643743" type="place">Londres</rs>. Je l<supplied>’</supplied>ai apporté.
+  <lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117586765" type="person">Moivre</rs> croit<supplied>,</supplied> mais <choice><orig>a</orig><reg>à</reg></choice> tort<supplied>,</supplied> ce me semble<supplied>,</supplied> qu’il y a faute dans
+  <lb/><del/><add>vo</add>stre 1<hi rend="sup">ere</hi> <rs type="biblio">solution</rs> de son probleme<supplied>.</supplied>
 </p>
 <pb facs="1361852" n="2"/>
 <p>
-  <lb/>Je croiois, Monsieur, que ce que j’ay dit si au long sur le her
-  <lb/>dans ma derniere <rs type="letter">lettre</rs>, finiroit touttes nos disputes, mais je me
-  <lb/>suis bien trompé. Vois distes, <abbr>M<hi rend="sup">r</hi>.</abbr>, que vous avez été fort éloigné
-  <lb/>de croire que les sorts des joueurs fussent absolument <formula>= 2828</formula>
-  <lb/><formula>\cdot2697</formula>; mais seulement dans l’Hyppotese que le 1<hi rend="sup">er</hi> change au 7
-  <lb/>et Pierre au 8, ou bien que le l<hi rend="sup">er</hi> se tienne au 7 et le 2<hi rend="sup">e</hi> au 8.
-  <lb/>Permettez moy de vous representer que, quand on demande
-  <lb/>les sorts des joueurs, on les demande tels qu’on en puisse
-  <lb/>tirer l’avantage. Dire que dans la supposition que l’un suive
-  <lb/>telle maxime et l’autre telle autre maxime, les sorts et en
-  <lb/>consequence l’avantage et le desavantage seront dans tel rapport,
-  <lb/>cela n’apprend rien et visiblement n’est pas ce que l’on demande.
-  <lb/>On peut faire une infinité de ces differentes suppositions, qui
-  <lb/>touttes n’aboutissent à rien. Il n’y en a qu’une faisable et utile.
-  <lb/>Je l’avois dit, mais il n’etoit pas necessaire de le dire, et voit
-  <lb/>bien que c’est là toutte la difficulté, sçavoir que chacun
+  <lb/>Je croiois<supplied>,</supplied> Monsieur<supplied>,</supplied> que ce que j<supplied>’</supplied>ay dit si au long sur le her
+  <lb/>dans ma derniere <rs type="letter">lettre</rs><supplied>,</supplied> finiroit touttes nos disputes<supplied>,</supplied> mais je me
+  <lb/>suis bien trompé. Vous distes<supplied>,</supplied> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr><supplied>,</supplied> que vous avez été fort eloigné
+  <lb/>de croire<supplied>,</supplied> que les sorts des joueurs fussent absolument <choice><orig><formula>:: 2828</formula></orig><reg><formula>= 2828</formula></reg></choice>
+  <lb/><choice><orig><formula>\ldot 2697</formula></orig><reg><formula>: 2697</formula></reg></choice><supplied>,</supplied> mais seulement dans l’Hyppotese que le 1<hi rend="sup">er</hi> change au 7
+  <lb/>et Pierre au 8<choice><orig>.</orig><reg>,</reg></choice> ou bien que le 1<hi rend="sup">er</hi> se tienne au 7 et le 2<hi rend="sup">e</hi> au 8.
+  <lb/>Permettez<supplied>-</supplied>moy de vous representer que<supplied>,</supplied> quand on demande
+  <lb/>les sorts des joueurs<supplied>,</supplied> <choice><orig>On</orig><reg>on</reg></choice> les demande tels qu<supplied>’</supplied>on en puisse
+  <lb/>tirer l<supplied>’</supplied>avantage. <choice><orig>dire</orig><reg>Dire</reg></choice> que dans la supposition<supplied>,</supplied> que l<supplied>’</supplied>un suive
+  <lb/>telle maxime et l’autre telle autre maxime<supplied>,</supplied> les sorts et en
+  <lb/>consequence l<supplied>’</supplied>avantage et le desavantage seront dans tel rapport<supplied>,</supplied>
+  <lb/>cela n<supplied>’</supplied>apprend rien et visiblement n<supplied>’</supplied>est pas ce que l<supplied>’</supplied>on demande<supplied>;</supplied>
+  <lb/>on peut faire une infinité de ces differentes suppositions<supplied>,</supplied> qui
+  <lb/>touttes n<supplied>’</supplied>aboutissent <choice><orig>a</orig><reg>à</reg></choice> rien. Il n<supplied>’</supplied>y en a qu<supplied>’</supplied>une faisable et utile<supplied>.</supplied>
+  <lb/>Je l<supplied>’</supplied>avois dit<supplied>,</supplied> mais il n<supplied>’</supplied>etoit pas necessaire de le dire, et on voit
+  <lb/>bien que c<supplied>’</supplied>est <choice><orig>la</orig><reg>là</reg></choice> toutte la difficulté<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>scavoir</orig><reg>sçavoir</reg></choice> que chacun
   <lb/>des joueurs etant egalement habile tienne la conduitte qui luy
-  <lb/>est la plus avantageuse. Vous n’avez pu ignorer que c’étoit
-  <lb/>par rapport à cette supposition qu’il falloit determiner
-  <lb/>les sorts et l’avantage de la primauté. Il nous paroist donc
-  <lb/>que vous ne sçauriez vous dispenser de reconnoitre qu’en
-  <lb/>donnant le rapport de ces sorts <formula>2828\cdot2697</formula>, d’où s’en suit
-  <lb/>l’avantage de la primauté <formula>= \frac{731}{2\cdot5525}</formula>, ou vous avez mal resolu
-  <lb/>la question proposée ou que vous ne l’avez point resolu du tout.
-  <lb/>Enfin, <abbr>M<hi rend="sup">r</hi>.</abbr>, vous distes que, si vous conseillez Paul, son sort sera
-  <lb/><formula>\frac{2833}{5525}</formula>, et que, si vous conseillez Pierre, son sort sera <formula>\frac{2694}{5525}</formula>,
+  <lb/>est la plus avantageuse. <choice><orig>vous</orig><reg>Vous</reg></choice> n<supplied>’</supplied>avez pu ignorer que c<supplied>’</supplied>etoit
+  <lb/>par rapport <choice><orig>a</orig><reg>à</reg></choice> cette supposition<supplied>,</supplied> qu<supplied>’</supplied>il falloit determiner
+  <lb/>les sorts et l<supplied>’</supplied>avantage de la primauté. Il nous paroist donc
+  <lb/>que vous ne <choice><orig>scauriez</orig><reg>sçauriez</reg></choice> vous dispenser de reconnoitre qu<supplied>’</supplied>en
+  <lb/>donnant le rapport de ces sorts <choice><orig><formula>2828\ldot2697</formula></orig><reg><formula>2828 : 2697</formula></reg></choice>, <del/><add>d<supplied>’</supplied><choice><orig>ou</orig><reg>où</reg></choice></add> s<supplied>’</supplied>en suit
+  <lb/>l<supplied>’</supplied>avantage de la <choice><orig>primaute</orig><reg>primauté</reg></choice> <choice><orig><formula>= \frac{731}{2\times 5525}</formula></orig><reg><formula>= \frac{731}{2\cdot 5525}</formula></reg></choice><supplied>,</supplied> ou vous avez mal resolu
+  <lb/>la question proposée ou que vous ne l<supplied>’</supplied>avez point resolu du tout<supplied>.</supplied>
+  <lb/>Enfin<supplied>,</supplied> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr><supplied>,</supplied> vous distes que<supplied>,</supplied> si vous conseillez Paul<supplied>,</supplied> son sort sera
+  <lb/><formula>\frac{2833}{5525}</formula><supplied>,</supplied> et que<supplied>,</supplied> si vous conseillez Pierre<supplied>,</supplied> son sort sera <formula>\frac{2694}{5525}</formula><supplied>,</supplied>
   <lb/>et que je ne puis donner un meilleur conseil ou un autre
-  <lb/>conseil qui soit aussi bon. Vous avez prevu avec raison
-  <lb/>que cette decision me paroistroit etrange, car 1<hi rend="sup">o</hi>. <formula>2833+2694</formula>
-<pb facs="1361853" n="3"/>
-  <lb/>sont plus grand que le denominateur 5525. 2<hi rend="sup">o</hi>. Vous sçavez bien
-  <lb/>qu’il ne faut point que l’un ait un conseil sans que l’autre en ait
-  <lb/>un aussi bon. En sorte que, si vous conseillez Paul, il faut qu’un
-  <lb/>autre vous meme conseil le Pierre. Je le repete encore,
-  <lb/>mais pour la derniere fois. La question est et a toujours esté
-  <lb/>de sçavoir si l’on peut etablir les sorts et consequemment l’avantage
+  <lb/>conseil qui soit aussi bon. Vous avez prevu avec raison<supplied>,</supplied>
+  <lb/>que cette decision me paroistroit etrange<supplied>,</supplied> car 1.<hi rend="sup">o</hi> <formula>2833+2694</formula>
+<pb facs="1361853" n="3"/> 
+  <lb/>sont plus <choice><sic>grand</sic><corr>grands</corr></choice> que le denominateur 5525<supplied>.</supplied> 2.<hi rend="sup">o</hi> vous <choice><orig>scavez</orig><reg>sçavez</reg></choice> bien
+  <lb/>qu<supplied>’</supplied>il ne faut point que l<supplied>’</supplied>un ait un conseil sans que l<supplied>’</supplied>autre en ait
+  <lb/>un aussi bon. <choice><orig>ensorte</orig><reg>Ensorte</reg></choice> que<supplied>,</supplied> si vous conseillez <del/><add>P</add>aul<supplied>,</supplied> il faut qu<supplied>’</supplied>un
+  <lb/>autre vous meme conseille <del/><add>P</add>ierre. Je le repete encore<supplied>,</supplied>
+  <lb/>mais pour la derniere fois. <choice><orig>la</orig><reg>La</reg></choice> question est et a toujours esté
+  <lb/>de <choice><orig>scavoir</orig><reg>sçavoir</reg></choice><supplied>,</supplied> si l<supplied>’</supplied>on peut etablir les sorts et consequemment l<supplied>’</supplied>avantage
   <lb/>de la primauté dans la supposition non que Pierre et Paul
-  <lb/>suivent telle et telle maxime donnée (cela n’auroit nulle
-  <lb/>utilité, nulle difficulté), mais qu’etant l’un et l’autre egalement
-  <lb/>habile, chacun suive la conduitte qui luy est la plus avantageuse.
-  <lb/>J’aurois encore bien des choses à dire, mais cette dispute
-  <lb/>commence à m’ennuyer, surtout depuis que j’ay reçu vostre derniere
-  <lb/><rs type="letter">lettre</rs>; d’ailleurs, je suis persuadé qu’il n’est plus question de
-  <lb/>nous rien apprendre les uns aux autres sur cette matiere,
+  <lb/>suivent telle et telle maxime donnée (cela n<supplied>’</supplied>auroit nulle
+  <lb/><choice><orig>utilite</orig><reg>utilité</reg></choice><supplied>,</supplied> nulle difficulté)<supplied>,</supplied> mais qu<supplied>’</supplied>etant l<supplied>’</supplied>un et l<supplied>’</supplied>autre egalement
+  <lb/>habile<supplied>,</supplied> <del/><add>cha</add>cun suive la conduitte qui luy est la plus avantageuse<supplied>.</supplied>
+  <lb/>J<supplied>’</supplied>aurois encore bien des choses <choice><orig>a</orig><reg>à</reg></choice> dire<supplied>,</supplied> mais cette dispute
+  <lb/>commence <choice><orig>a</orig><reg>à</reg></choice> m’ennuyer<supplied>,</supplied> surtout depuis que j<supplied>’</supplied>ay <choice><orig>recu</orig><reg>reçu</reg></choice> vostre derniere
+  <lb/><rs type="letter">lettre</rs><supplied>;</supplied> d<supplied>’</supplied>ailleurs je suis persuadé qu<supplied>’</supplied>il n<supplied>’</supplied>est plus question de
+  <lb/>nous rien apprendre les uns aux autres sur cette matiere<supplied>,</supplied>
   <lb/>et que la fin de la dispute depend de quelque autre chose.
 </p>
 <p>
-  <lb/>Je suis bien faché, <abbr>M<hi rend="sup">r</hi>.</abbr>, de m’appercevoir que quelques endroits
-  <lb/>de ma derniere <rs type="letter">lettre</rs> ne vous aient pas plu, et que vous aiez pris
-  <lb/>tantost pour reproche, tantost pour ironie ce qui n’est assurément
-  <lb/>ni l’un ni l’autre.
+  <lb/>Je suis bien faché<supplied>,</supplied> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr><supplied>,</supplied> de m<supplied>’</supplied>appercevoir que quelques endroits
+  <lb/>de ma derniere <rs type="letter">lettre</rs> ne vous aient pas plu<choice><orig>.</orig><reg>,</reg></choice> et que vous aiez pris
+  <lb/>tantost pour reproche<supplied>,</supplied> tantost pour ironie<supplied>,</supplied> ce qui n<supplied>’</supplied>est assurement
+  <lb/>ni l<supplied>’</supplied>un ni l<supplied>’</supplied>autre.
 </p>
 <p>
-  <lb/>Es-ce donc vous faire un reproche que de vous feliciter sur
-  <lb/>l’exactitude que vous avez dans tout ce que vous faistes. Quand je vous
-  <lb/>ai<del/> <add>mandé</add> que je vous écrivois presque comme j’écrirois des lettres
-  <lb/>de compliment, je voulois seulement vous dire que je ne pouvois presque
-  <lb/>gagner sur moy d’y apporter toutte l’exactitude que demandent
-  <lb/>les matieres Geometriques, et en particulier les nombres ou le calcul
-  <lb/>d’algebre. Je suis bien faché de l’interpretation sinistre, que vous
-  <lb/>donnez à ce que je dis en cet endroit. Je puis assurément me justifier
-  <lb/>sur mes intentions et sur le vray sens de mes paroles que vous n’avez pas
-  <lb/>bien pris. Je vous jure que je ne pensois qu’à vous louer sur vostre
-  <lb/>exactitude et à vous demander un peu d’indulgences pour les fautes
-  <lb/>qui se peuvent trouver dans mes <rs type="letter">lettres</rs>, en vous avouant ingenuement
-  <lb/>et comme je le pense la pente que j’ay par paresse à manquer d’exactitude.
+  <lb/><choice><sic>es</sic><corr>Est</corr></choice><supplied>-</supplied>ce donc vous faire un reproche que de vous feliciter sur
+  <lb/>l<supplied>’</supplied>exactitude que vous avez dans tout ce que vous faistes. <choice><orig>quand</orig><reg>Quand</reg></choice> je vous
+  <lb/>ai <del/><add>mandé</add> que je vous écrivois presque comme j<supplied>’</supplied>ecrirois des lettres
+  <lb/>de compliment<supplied>,</supplied> je voulois seulement vous dire que je ne pouvois presque
+  <lb/>gagner sur moy d<supplied>’</supplied>y apporter toutte l<supplied>’</supplied>exactitude que demandent
+  <lb/>les matieres Geometriques<choice><orig>.</orig><reg>,</reg></choice> et en particulier les nombres ou le calcul
+  <lb/>d’algebre. Je suis bien faché de l’interpretation sinistre que vous
+  <lb/>donnez <choice><orig>a</orig><reg>à</reg></choice> ce que je dis en cet endroit. Je puis assurement me justifier
+  <lb/>sur mes intentions et sur le vray sens de mes paroles que vous n<supplied>’</supplied>avez pas
+  <lb/>bien <del/><add>pris</add>. Je vous jure<supplied>,</supplied> que je ne pensois qu<supplied>’</supplied><choice><orig>a</orig><reg>à</reg></choice> vous louer sur vostre
+  <lb/>exactitude et <choice><orig>a</orig><reg>à</reg></choice> vous <del/><add>dem</add>ander un peu d’indulgences pour les fautes
+  <lb/>qui se peuvent trouver dans mes <rs type="letter">lettres</rs><supplied>,</supplied> en <del/><add>v</add>ous avouant ingenuement
+  <lb/>et comme je le pense la pente que j<supplied>’</supplied>ay par paresse <choice><orig>a</orig><reg>à</reg></choice> manquer d’exactitude<supplied>.</supplied>
 <pb facs="1361854" n="4"/>
-  <lb/>Quand je dis que vous estes un grand Geometre, c’est que je le pense
-  <lb/>et que je le dis à qui veut l’entendre: tous ceux qui ont lu vos <rs type="letter">lettres</rs> en
-  <lb/><rs key="place_VER-englan" type="place">Angleterre</rs> et en <rs key="place_VER-frankr" type="place">France</rs> le pensent comme moy, et je trouve en mon
-  <lb/>particulier que vostre <rs type="letter">lettre</rs> du  est d’une force, à laquelle
-  <lb/>tres peu de personne pourroient atteindre. Si cela vous deplait,
+  <lb/><choice><orig>quand</orig><reg>Quand</reg></choice> je dis que vous estes un grand Geometre<supplied>,</supplied> c<supplied>’</supplied>est que je le pense
+  <lb/>et que je le dis <choice><orig>a</orig><reg>à</reg></choice> qui veut l<supplied>’</supplied>entendre. <choice><orig>tous</orig><reg>Tous</reg></choice> ceux qui ont lu vos <rs type="letter">lettres</rs> en
+  <lb/><rs key="place_VER-englan" type="place">Angleterre</rs> et en <rs key="place_VER-frankr" type="place"><choice><orig>france</orig><reg>France</reg></choice></rs> le pensent comme moy<supplied>,</supplied> et je trouve en mon
+  <lb/>particulier que vostre <rs type="letter">lettre</rs> du <gap/><note type="editorial">Hier wurde eine Lücke als Platzhalter für das Datum offen gelassen.</note> est d<supplied>’</supplied>une force <choice><orig>a</orig><reg>à</reg></choice> laquelle
+  <lb/>tres peu de personne pourroient atte<add>i</add>ndre. <choice><orig>si</orig><reg>Si</reg></choice> cela vous deplaist<supplied>,</supplied>
   <lb/>on ne le dira plus et on se contentera de le penser.
 </p>
 <p>
-  <lb/>Vous avez raison de dire que rien n’est si connu que mon <abbr>th.</abbr> 6:
-  <lb/>Je n’y ai pas pris garde. Je n’ai pas encore<del/> <add>examiné</add> ce que vous me mandez
-  <lb/>au sujet de la dispute entre <abbr>M.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> et <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>.
+  <lb/>Vous avez raison de dire que rien n<supplied>’</supplied>est si connu que mon <abbr>th.</abbr> 6.
+  <lb/>Je n<supplied>’</supplied>y ai pas pris garde. Je n<supplied>’</supplied>ai pas encore <del/><add>examiné</add> ce que vous me mandez
+  <lb/>au sujet de la dispute entre <abbr>M.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">oncle</rs> et <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>.
 </p>
 <p>
-  <lb/><abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-118801481" type="person">Brook Taylord</rs>, un des secretaires de la <rs type="organisation">societé Royalle</rs> est icy et
-  <lb/>je le vois souvent. Il m’a donné un <rs type="biblio">livre</rs> de sa façon imprimé depuis
-  <lb/>un mois, qui a pour titre Methodus incrementorum directa et inversa,
-  <lb/>c’est un <rs type="biblio">livre</rs> de la l<hi rend="sup">ere</hi> force et bon pour les plus habiles. Il n’est
-  <lb/>imprimé que depuis un mois. C’est un homme de 25 ans et d’un
+  <lb/><abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118801481" type="person">Brook Taylord</rs><supplied>,</supplied> un des secretaires de la <rs type="organisation"><choice><orig>societe</orig><reg>Societé</reg></choice> Royalle</rs> est icy et
+  <lb/>je le vois souvent. Il m<supplied>’</supplied>a <choice><orig>donne</orig><reg>donné</reg></choice> un <rs type="biblio">livre</rs> de sa <choice><orig>facon</orig><reg>façon</reg></choice> imprimé depuis
+  <lb/>un mois<supplied>,</supplied> qui a pour tittre <rs type="biblio">Methodus incrementorum directa et inversa</rs><supplied>;</supplied>
+  <lb/>c<supplied>’</supplied>est un <rs type="biblio">livre</rs> de la 1<hi rend="sup">ere</hi> force et bon pour les plus habiles. Il n<supplied>’</supplied>est
+  <lb/>imprimé que depuis un mois. <choice><orig>c</orig><reg>C</reg></choice><supplied>’</supplied>est un homme de 25 ans et <del/><add>d<supplied>’</supplied>un</add>
   <lb/>caractere tres aimable. Il vouloit intituler son <rs type="biblio">livre</rs> Methodus
-  <lb/>differentialis et ce titre eust eté fort bon, parce qu’il considere le
+  <lb/>differentialis et ce titre eust <choice><orig>ete</orig><reg>été</reg></choice> fort bon<choice><orig>.</orig><reg>,</reg></choice> parce qu<supplied>’</supplied>il considere le
   <lb/>changement des grandeurs par leurs differences ou finies ou infiniment
-  <lb/>petittes. Mais ce titre auroit deplu au <rs type="person">Anglois</rs>. Au reste il parle
-  <lb/>partout le langage de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> et employe ses figures,
-  <lb/>mais il en a aussi qui luy sont propres, car il traitte
-  <lb/>les matieres tres generallement. Je n’écris pas à monsieur
-  <lb/>vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>; les lignes qu’il a adjoutés a vostre <rs type="letter">lettre</rs>
-  <lb/>ne demandent point de reponse. Au reste, je suis de son avis
-  <lb/>en tout au sujet de <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-105511131X" type="person">Parent</rs>. Il me vint voir hyer, vous jugez
-  <lb/>bien que je ne luy lus pas ce que <abbr>M<hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> me mande sur
-  <lb/>son compte. Il me dit qu’il avoit ou qu’il alloit donner une
-  <lb/>Analyse de son <rs type="biblio">Livre</rs> sur la manoeuvre de vaisseaux. <abbr>M<hi rend="sup">r</hi>.</abbr> <rs key="pers_DE-588-105511131X" type="person">Parent</rs>
-  <lb/>est certainement et tel etre connu pour tel que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>
-  <lb/>le depeint. Il vaudroit mieux qu’il sçait moins et qu’il fust plus
-  <lb/>sûr dans ce qu’il sçait. Mon adresse est au <rs key="place_WEI-chamon" type="place">Chateau de Monmort</rs>
-  <lb/>par <rs key="place_GEO-3020062" type="place">Espernai</rs>.
+  <lb/>petittes. <choice><orig>mais</orig><reg>Mais</reg></choice> ce tittre auroit deplu au <rs type="person">Anglois</rs>. Au reste il parle
+  <lb/>partout le langage de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> et employe ses signes<supplied>,</supplied>
+  <lb/>mais il en a aussi qui luy sont propres<supplied>,</supplied> car il traitte
+  <lb/>les matieres tres generallement. Je n<supplied>’</supplied><choice><orig>ecris</orig><reg>écris</reg></choice> pas <choice><orig>a</orig><reg>à</reg></choice> Monsieur
+  <lb/>vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. <choice><orig>les</orig><reg>Les</reg></choice> lignes qu<supplied>’</supplied>il a <choice><orig>adjoutes</orig><reg>adjoutés</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> vostre <rs type="letter">lettre</rs>
+  <lb/>ne demandent point de reponse. Au reste je suis de son avis
+  <lb/>en tout au sujet de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-105511131X" type="person">Parent</rs>. Il me vint voir hyer<supplied>,</supplied> vous jugez
+  <lb/>bien que je ne luy lus pas ce qu<del/><add>e</add> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi>.</abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs> me mande sur
+  <lb/>son compte. Il me dit qu’il avoit ou qu<supplied>’</supplied>il alloit donner une
+  <lb/><rs type="biblio">Analyse</rs> de <del/><add>son</add> <rs type="biblio">livre</rs> sur la manœuvre des vaisseaux. <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-105511131X" type="person">Parent</rs>
+  <lb/>est certainement et tel et reconnu pour tel que <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> vostre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>
+  <lb/>le depeint. Il vaudroit mieux qu<supplied>’</supplied>il <choice><orig>scait</orig><reg>sçait</reg></choice> moins et qu<supplied>’</supplied>il fust plus
+  <lb/><choice><orig>sur</orig><reg>sûr</reg></choice> dans ce qu<supplied>’</supplied>il <choice><orig>scait</orig><reg>sçait</reg></choice>. <choice><orig>mon</orig><reg>Mon</reg></choice> adresse est a<del/><add>u</add> <rs key="place_WEI-chamon" type="place">chateau de Monmort</rs>
+  <lb/>par <rs key="place_GEO-3020062" type="place">Espernai</rs>. 
 </p> 
   <closer>
-    <salute>Portez vous bien et aimez moy toujours.</salute>
-    <signed><rs key="pers_DE-588-117601020" type="person"><abbr>R. d. M.</abbr></rs></signed>
+    <salute><choice><orig>portez</orig><reg>Portez</reg></choice><supplied>-</supplied>vous bien et aimez<supplied>-</supplied>moy toujours</salute>
+    <signed><rs key="pers_DE-588-117601020" type="person"><abbr>R<supplied>.</supplied> d<supplied>.</supplied> M<supplied>.</supplied></abbr></rs></signed>
   </closer>
 </div>
 </body>

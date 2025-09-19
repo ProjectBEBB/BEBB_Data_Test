@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514632605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -50,7 +50,7 @@
         <p>Das Blatt S.793/4 hat das Format 22 x 16,5 cm</p>
       </note>
       <note type="print">
-        <p>Siehe: Daniel Bernoulli (1700-1782) als Physiologe und Statistiker / Friedrich Huber. - Diss. Univ. Basel, 1958. - [S.] 61f.</p>
+        <p>Siehe: Daniel Bernoulli (1700-1782) als Physiologe und Statistiker / Friedrich Huber. - Diss. Univ. Basel, 1959. - [S.] 61-67</p>
       </note>
       <note type="erschliessbarkeit">Erhalten</note>
       <note type="dataGroup">Tei XML</note>
@@ -137,6 +137,16 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-06-18" who="RG">Matheformel normalisiert, Nachkontrolle</change>
+      <change when="2025-06-10" who="RG">Restliche ″ und ° ergänzt</change>
+      <change when="2025-06-05" who="MK">Code durchgesehen und ergänzt</change>
+      <change when="2025-06-05" who="MK RG">kollationiert mit Raphael</change>
+      <change when="2025-06-02" who="MK RG">kollationiert mit Raphael</change>
+      <change when="2025-06-02" who="RG">Code nochmals durchkorrigiert.</change>
+      <change when="2025-05-28" who="MK RG">kollationiert mit Raphael</change>
+      <change when="2025-05-27" who="RG">Teilweise den Code nochmals durchkorrigiert.</change>
+      <change when="2025-05-26" who="RG">Teilweise den Code nochmals durchkorrigiert.</change>
+      <change when="2025-05-26" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2024-02-23" who="RG">Lb, sowie erste rs Auszeichnungen eingefügt</change>
       <change when="2024-02-23" who="RG">Digitalisate eingebaut</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -150,216 +160,218 @@
 <div type="letter">
     <pb facs="3694226" n="1"/>
     <p>
-        <lb/>23. September 1738
+      <lb/>Voici, Monsieur, une <rs type="letter">Reponse</rs> bien tardive, puisque vôtre derniere <rs key="B_991170430083905501" type="letter">Lettre</rs>
+      <lb/>est du <date when="1738-05-14">14 Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></date>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que je datte celle-ci du <rs key="B_991170514632505501" type="letter"><date when="1738-09-23">23. Septembre 1738</date></rs>. Je vous prie cependant
+      <lb/>d’etre persuadé que dans le dessein ou j’etois de ne vous repondre qu’en vous mandant
+      <lb/>en même tems les Experiences que vous m’aviez proposé de faire sur la force des <rs type="person">Rameurs</rs>,
+      <lb/>il m’a été impossible de vous les envoier plûtôt. Quand il faut combiner tant de choses<supplied>,</supplied>
+      <lb/>la santé, le loisir, le beautems, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>, il est assès difficile de trouver un jour convenable. Enfin
+      <lb/>il est venu ce jour, après avoir èté marqué <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> contremandé trois ou quatre fois. Je voudrois avoir
+      <lb/>eu plus d’habileté <choice><orig>a</orig><reg>à</reg></choice> en profiter, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> èxécuter ce que j’avois projetté, de <choice><orig>manieré</orig><reg>manière</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> vous donner
+      <lb/>satisfaction. Quoique je n’ose me flatter d’y avoir réussi parfaitement, j’espère cependant
+      <lb/>que vous voudrés bien prendre en bonne part, l’essai dont je vais vous faire un fidèle, mais
+      <lb/>peut ètre ennuieux détail<supplied>.</supplied>
     </p>
     <p>
-        <lb/>Voici, Monsieur, une Reponse bien tardive, puisque vôtre derniere <rs key="B_991170430083905501" type="letter">Lettre</rs>
-        <lb/>est du 14 Maj, &amp; que je datte celle-ci du 23. Septembre 1738. Je vous prie cependant
-        <lb/>d’etre persuadé que dans le dessein ou j’etois de ne vous repondre qu’en vous mandant
-        <lb/>en même tems les Experiences que vous m’aviez proposé de faire sur la force des Rameurs,
-        <lb/>il m’a été impossible de vous les envoier plûtôt. Quand il faut combiner tant de choses,
-        <lb/>la santé, le loisir, le beautems, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c., il est assés difficile de trouver un jour convenable. Enfin
-        <lb/>il est venu ce jour, aprés avoir été marqué &amp; contremandé trois ou quatre fois. Je voudrois avoir
-        <lb/>eu plus d’habileté à en profiter, &amp; à éxécuter ce que j’avois projetté, de maniére à vous donner
-        <lb/>satisfaction. Quoique je n’ose me flatter d’y avoir réussi parfaitement, j’espère cependant
-        <lb/>que vous voudrés bien prendre en bonne part l’essai dont je vais vous faire un fidèle, mais
-        <lb/>peut étre ennuieux détail.
+      <lb/>Je me suis fais aider dans ces Experiences par <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-130558729" type="person">Martel</rs>, faiseur d’Instrumens de
+      <lb/>Mathematiques<note type="editorial">siehe zu Pierre-Guillaume Martel die ausführlichen Erörterungen von René Sigrist in dessen Buch "<rs type="biblio">Science et société à Genève</rs>", 2024, S. 311-322.</note><!-- noch aufnehmen in biblio MK 2.6.2025 -->, homme habile dans sa profession, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui joint à une pratique industrieuse
+      <lb/><del>quelque</del><add>la</add> connoissance de la Théorie. Nous sortimes de <rs key="place_GEO-2660646" type="place">Genève</rs> avec deux bateaux qu’on avoit
+      <lb/>jugé presque ègaux en pesanteur. Cependant l’Experience nous a fait <subst><del/><add>voir</add></subst> qu’il s’en falloit
+      <lb/>quelque chose qu<subst><del>'il</del><add>e</add></subst> cela ne fut ainsi.
     </p>
     <p>
-        <lb/>Je me suis fais aider dans ces Experiences par Mr. <rs key="pers_DE-588-130558729" type="person">Martel</rs>, faiseur d’Instrumens de
-        <lb/>Mathematiques, homme habile dans sa profession, &amp; qui joint à une pratique industrieuse
-        <lb/><del>quelque</del><add>la</add> connoissance de la Théorie. Nous sortimes de <rs key="place_GEO-2660646" type="place">Genéve</rs> avec deux bateaux qu’on avoit
-        <lb/>jugé presque égaux en pesanteur. Cependant l’Experience nous a fait voir qu’il s’en falloit
-        <lb/>quelque chose que cela ne fut ainsi.
+      <lb/>1. Je commence par une Experience que nous ne fîmes qu’au retour, parce que je voulois que
+      <lb/><supplied>les</supplied> <rs type="person">Rameurs</rs> eussent travaillé une heure ou deux, afin d’emousser cette première vigueur, sur laquelle
+      <lb/>on auroit tort de compter dans un travail de quelque durée. Ce fut d’examiner la vitesse
+      <lb/>moienne d’un bateau. Nous entrames <subst><del/><add>dans</add></subst> le plus pesant des deux, portant son mat <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sa voile ferlée,
+      <lb/>dans un tems parfaitement calme. Il n’etoit chargé que de 4 <rs type="person">ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es</rs>, dont deux ramoient, un
+      <lb/>3.<hi rend="sup">e</hi> tenoit le Gouvernail, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le 4.<hi rend="sup">e</hi> observoit. Nous remarquames d’abord que les <rs type="person">Rameurs</rs> ne
+      <lb/>donnoient que 24 ou 25 Coups de Rame par minute. Mais autant que nous en pûmes juger à l’oeil
+      <lb/>nous estimames que la Rame restoit aussi longtems plongée dans l’eau que dehors de l’eau,
+      <lb/>le mouvement de nos <rs type="person">Rameurs</rs> se faisant en deux tems ègaux, à la difference des <rs type="person">Forçats de
+      <lb/>Galére</rs>, qui rament en trois tems. J’ai observé d’autres fois que des Rameurs moins fatigué<subst><del>e,</del><add>s</add></subst>
+      <lb/>donnoient 28 ou 30 coups de Rame dans une minute.
     </p>
     <p>
-        <lb/>1. Je commence par une Experience que nous ne fimes qu’au retour, parce que je voulois que
-        <lb/>[les] Rameurs eussent travaillé une heure ou deux, afin d’emousser cette premiére vigueur, sur laquelle
-        <lb/>on auroit tort de compter dans un travail de quelque durée. Ce fut d’examiner la vitesse
-        <lb/>moienne d’un bateau. Nous entrames dans le plus pesant des deux, portant son mat &amp; sa voile ferlée,
-        <lb/>dans un tems parfaitement calme. Il n’etoit chargé que de 4 ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es, dont deux ramoient, un
-        <lb/>3<hi>e</hi>. tenoit le Gouvernail, &amp; le 4<hi>e</hi>. observoit. Nous remarquames d’abord que les Rameurs ne
-        <lb/>donnoient que 24 ou 25 Coups de Rame par minute. Mais autant que nous en pûmes juger à l’oeil
-        <lb/>nous estimames que la Rame restoit aussi longtems plongée dans l’eau que dehors de l’eau,
-        <lb/>le mouvement de nos Rameurs se faisant en deux tems égaux, à la difference des Forçats de
-        <lb/>Galére, qui rament en trois tems. J’ai observé d’autres fois que des Rameurs moins fatigués
-        <lb/>donnoient 28 ou 30 coups de Rame dans une minute.
+      <lb/>2. La Vitesse du bateau étoit dans l’Experience, dont je parle, d’environ 4 pieds <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> demi par seconde.
+      <lb/>Pour la mesurer, je me suis servi, suivant vôtre Conseil d’un quart de cercle, gradu<subst><del/><add>é</add></subst>, du Centre duquel
+      <lb/>pendoient deux poids. L’un de cuivre <add>qui</add> servoit <choice><orig>a</orig><reg>à</reg></choice> marquer la ligne verticale, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à tenir par ce moien
+      <lb/>le quart de Cercle dans la situation convenable. L’autre etoit une balle d’Yvoire<note type="editorial">frühneuzeitliche Schreibweise von "ivoire".</note> suspenduë <choice><orig>a</orig><reg>à</reg></choice> un
+      <lb/>long fil de Soye, qui plongée dans l’eau marquoit par l’inclinaison du fil la vitesse du bateau.
+      <lb/>Cette bale avoit <subst><del>son</del><add>un</add></subst> Diamètre de 18 lignes du pied de <rs key="place_GEO-2988507" type="place">Paris</rs>. Son poids dans l’air étoit de 65 deniers
+      <lb/>(dont 24 font l’Once poids de Marc) <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dan<subst><del/><add>s</add></subst> l’eau de 29 deniers. Ce qui doneroit une pesanteur
+      <lb/>specifique qui seroit à celle de l’eau comme 1.8055 à 1. Mais avant que de faire peser cette balle dans
+      <pb facs="3694227" n="2"/>
+      <lb/>l’eau, j’avois fait mes Calculs <subst><del/><add>dans</add></subst> la supposition que la pesanteur specifique de l’Yvoire
+      <lb/>étoit <choice><orig>a</orig><reg>à</reg></choice> celle de l’eau comme 1.826 <choice><orig>a</orig><reg>à</reg></choice> 1. J’avois trouvé cette Proportion dans les <rs type="biblio">Transactions
+      <lb/>Philosophiques</rs>. Je n’ai pas cru que ce fût la peine de rectifier le Calcul, à cause d’une si
+      <lb/>petite difference, qui s’evanouiroit si la bale eut pesé dans l’eau 29⅖ deniers au lieu de 29.
     </p>
     <p>
-        <lb/>2. La Vitesse du bateau étoit dans l’Experience, dont je parle, d’environ 4 pieds &amp; demi par seconde,
-        <lb/>Pour la mesurer, je me suis servi, suivant vôtre Conseil, d’un quart de cercle, gradué, du Centre duquel
-        <lb/>pendoient deux poids. L’un de cuivre <add>qui</add> servoit à marquer la ligne verticale, &amp; à tenir par ce moien
-        <lb/>le quart de cercle dans la situation convenable. L’autre etoit une balle d’Yvoire suspenduë à un
-        <lb/>long fil de Soye, qui plongée dans l’eau marquoit par l’inclinaison du fil la vitesse du bateau.
-        <lb/>Cette bale avoit un Diamétre de 18 lignes du pied de <rs key="place_GEO-2988507" type="place">Paris</rs>. Son poids dans l’air étoit de 65 deniers
-        <lb/>(dont 24 font l’Once poids de Marc) &amp; dans l’eau de 29 deniers. Ce qui doneroit une pesanteur
-        <lb/>specifique qui seroit à celle de l’eau comme 1,8055 à 1. Mais avant que de faire peser cette balle dans
-        <pb facs="3694227" n="2"/>
-        <lb/>l’eau, j’avois fait mes Calculs dans la supposition que la pesanteur specifique de l’Yvoire
-        <lb/>étoit à celle de l’eau comme 1,826 à l. J’avois trouvé cette Proportion dans les Transactions
-        <lb/>Philosophiques. Je n’ai pas cru que ce fût la peine de rectifier le Calcul, à cause d’une si
-        <lb/>petite difference, qui s’evanouiroit si la bale eut pesé dans l’eau <formula>29\frac{2}{5}</formula> deniers au lieu de 29.
-        <lb/>N’aiant point le Discours de M. Poleni dont vous parlez dans vôtre lettre, j’ai été obligé
-        <lb/>de batir mon Calcul sur le principe que vous établissez dans les Comm. de l’Acad. de Petersbourg
-        <lb/>T. II. p. 313, que la resistance d’un globe mû dans l’eau est = <formula>\frac{3nnaac}{16msb}</formula>. Car au moien de cette
-        <lb/>analogie, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le poids du Globe dans l’eau <formula>\left(\frac{b-c}{b}\right)</formula> est à sa resistance (<formula>\frac{3nnaac}{16msb}</formula>) de même le sinus
-        <lb/>Total(l) à la Tangente(T) de l’inclinaison du fil, J’ai eu cette Equation <formula>nnaa=\frac{(b-c)16ms}{3c}</formula> T
-        <lb/>où par les Logarithmes <formula>\mathrm{L}na=\frac{1}{2}\mathrm{L}\frac{b-c}{c}\cdot\frac{16ms}{3}+\frac{1}{2}\mathrm{L}T</formula>. Dans laquelle <del>substituant </del>faisant
-        <lb/><formula>\frac{b-c}{c}=0,826</formula>, <formula>m=\frac{18}{144}</formula> d’un pied, <formula>s=\frac{217.4}{144}=15</formula> pieds + 14 lignes, on aura <formula>Lna=0,4598928+\frac{1}{2}LT</formula>.
-        <lb/>Ainsi T etant connu, j’ai eu <hi>na</hi> qui est le nombre de pieds parcouru en une seconde.
+      <lb/>N’aiant point le <rs key="biblio_KGKQAP5S" type="biblio">Discours</rs> de <abbr>M<supplied>.</supplied></abbr> <rs key="pers_DE-588-11887733X" type="person">Poleni</rs> dont vous me parlez dans vôtre <rs key="B_991170514632505501" type="letter">lettre</rs>, j’ai été obligé
+      <lb/>de batir mon Calcul sur le principe que vous établissez dans les <rs type="biblio"><abbr>Comm.</abbr></rs> de l’<rs type="organisation"><abbr>Acad.</abbr></rs> de <rs type="place">Petersbourg</rs>
+      <lb/><abbr>T.</abbr> II<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>p.</abbr> 313, que la resistance d’un globe mû dans l’eau est <formula>=\frac{3nnaac}{16msb}</formula>. Car au moien de cette
+      <lb/>analogie<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</orig><reg>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</reg></choice> le poids du Globe dans l’eau <formula>\left(\frac{b-c}{b}\right)</formula> est <choice><orig>a</orig><reg>à</reg></choice> sa resistance <formula>\left(\frac{3nnaac}{16msb}\right)</formula> de même le sinus
+      <lb/>Total <formula>(1)</formula> à la Tangente <formula>(T)</formula> de l’inclinaison du fil<subst><del>,</del><add>.</add></subst> J’ai eu cette Equation <choice rend="regFormula"><orig><formula>nnaa=\frac{\overline{b-c}\cdot16ms}{3c}T</formula></orig><reg><formula>nnaa=\frac{(b-c)\cdot16ms}{3c}T</formula></reg></choice>
+      <lb/>ou par les Logarithmes <formula>\mathrm{L}na=\frac{1}{2}\mathrm{L}\frac{b-c}{c}\cdot\frac{16ms}{3}+\frac{1}{2}\mathrm{L}T</formula>. Dans laquelle <del>substituant </del>faisant
+      <lb/><formula>\frac{b-c}{c}=0.826</formula>, <formula>m=\frac{18}{144}</formula> d’un pied, <formula>s=\frac{2174}{144}=15</formula> pieds + 14 lignes<!--  -->, on aura <formula>\mathrm{L}na=0.4598928+\frac{1}{2}\mathrm{L}T</formula>.
+      <lb/>Ainsi <formula>T</formula> etant connu, j’ai eu <hi rend="u"><formula>na</formula></hi> qui est le nombre de pieds parcouru en une seconde<choice><orig>,</orig><reg>.</reg></choice>
+      <lb/>Je vous fais, Monsieur, tout ce detail, afin que s’il y a de l’erreur, vous aiés moins de peine
+      <lb/>à la découvrir <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à la corriger.
     </p>
     <p>
-        <lb/>Je vous fais, Monsieur, tout ce detail, afin que s’il y a de l’erreur, vous aiés moins de peine
-        <lb/>à la découvrir &amp; à la corriger.
+      <lb/>Dans la marche ordinaire de nôtre bateau, l’inclinaison du fil ètoit entre 67.° <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 68.°<supplied>.</supplied>
+      <lb/>D’<choice><orig>ou</orig><reg>où</reg></choice> j’ai conclu la vitesse de 4½ pieds par 1″. Au reste c’est ici une vitesse moienne, car vous
+      <lb/>ne sauriés croire combien les Rameurs tirent inégalement. L’inclinaison du fil alloit quelquefois,
+      <lb/><choice><orig>a</orig><reg>à</reg></choice> 70<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° <supplied>.</supplied> Mais elle descendoit aussi quelquefois à 65<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ou même 64<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° se tenant pourtant le plus
+      <lb/>souvent entre 67<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> 68<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>°<supplied>,</supplied> aprés que les <rs type="person">Rameurs</rs> eurent travaillé environ 2 heures.
     </p>
     <p>
-        <lb/>Dans la marche ordinaire de nôtre bateau, l’inclinaison du fil étoit entre 67<hi rend="sup">o</hi> et 68<hi rend="sup">o</hi>.
-        <lb/>D’où j’ai conclu la vitesse de <formula>4\frac{1}{2}</formula>pieds par 1". Au reste c’est ici une vitesse moienne, car vous
-        <lb/>ne sauriés croire combien le Rameurs tirent inégalement. L’inclinaison du fil alloit quelquefois
-        <lb/>à 70<hi rend="sup">o</hi>. Mais elle descendoit aussi quelquefois à 65<hi rend="sup">o</hi> ou même 64<hi rend="sup">o</hi> se tenant pourtant le plus
-        <lb/>souvent entre 67<hi rend="sup">o</hi> et 68<hi rend="sup">o</hi>, aprés que les Rameurs eurent travaillé environ 2 heures.
+      <lb/>3. Nous étant un peu eloignés de la <rs key="place_GEO-2660646" type="place">Ville</rs> afin que le Courant du <rs key="place_GEW-rhonefl" type="place">Rhone</rs> ne fut en aucune
+      <lb/>manière sensible, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il n’<choice><sic>empêcha</sic><corr>empêchat</corr></choice> point nôtre Expérience, nous attachâmes le plus leger des
+      <lb/>deux bateaux à la queue du plus pesant, par le moien d’une corde qui tenoit les deux bateaux
+      <lb/>eloignez l’un de l’autre d’environ 6 pieds. Elle étoit attachée par un clou au bateau qui précedoit
+      <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> venoit horizontalement passer sur 2 poulies fixées au mât du bateau qui suivoit. A ce bout
+      <lb/>de Chorde nous suspendimes un bassin du
+      <lb/>poids de 10 Onces, dans lequel nous jettions
+      <lb/>successivement differens poids. Quand ce poids 
+      <lb/>etoit trop foible, les deux <rs type="person">Rameurs</rs> du
+      <lb/>premier bateau le soulevoient d’un coup de Rame, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pendant l’intervalle que les Rames
+      <lb/>etoient en l’air, ou ce poids continuoit à monter, ou il restoit suspendu, ou du moins il ne
+      <lb/>descendoit pas autant qu’il etoit monté: ce qui marquoit que le premier bateau alloit plus vite
+      <lb/>que le second. Si, au contraire, l’on mettoit un poids trop fort, ou le coup de Rame ne le soulevoit
+      <lb/>pas, ou bien étant soulevé, il redescendoit, les Rames sortant de l’eau, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> redescendoit plus qu’il
+      <lb/>n’avoit monté, ce qui marquoit que le second bateau alloit plus vite que le 1.<hi rend="sup">er</hi> et s’en aprochoit.
+      <lb/>En augmentant et diminuant ce poids, jusqu’<choice><orig>a</orig><reg>à</reg></choice> ce qu’il nous parût qu’il montoit autant
+      <lb/>à chaque coup de Rame, qu’il <subst><del/><add>descendoit</add></subst> dans les Intervalles, ou bien jusqu’<choice><orig>a</orig><reg>à</reg></choice> ce qu’il restat en
+      <pb facs="3694230" n="3"/>
+      <lb/>repos, ce qui arrivoit aisement <del>par </del><add><choice><orig>a</orig><reg>à</reg></choice></add> la moindre augmentation de frotement causée par l’obliquité
+      <lb/>de la Corde entre les poulies, quand le second <subst><del/><add>bateau</add></subst> ne suivoit pas le premier précisement en ligne
+      <lb/>droite, nous trouvames <choice><reg>a</reg><orig>à</orig></choice> peu près la force avec laquelle le second bateau etoit tiré par le premier.
+      <lb/>Je dis <choice><reg>a</reg><orig>à</orig></choice> peu près, car il est difficile de trouver ici une sorte de précision, à cause de la grande
+      <lb/>variation de cette force,<del/> qui vient de ce que les <rs type="person">Rameurs</rs>, <subst><del/><add>quoiqu</add></subst>’avertis, ne peuvent s’empecher
+      <lb/>de tirer tantôt plus fort <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tantot plus foiblement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la vitesse du bateau, que nous observions
+      <lb/>par l’inclinaison de la balle d’Yvoire<!--  -->, varioit aussi en conséquence.
     </p>
     <p>
-        <lb/>3. Nous étant un peu eloignés de la Ville afin que le Courant du <rs key="place_GEW-rhonefl" type="place">Rhone</rs> ne fut en aucune
-        <lb/>maniére sensible &amp; qu’il n’empêcha[t] point nôtre Expérience, nous attachâmes le plus leger des
-        <lb/>deux bateaux à la queue du plus pesant, par le moien d’une corde qui tenoit les deux bateaux
-        <lb/>eloignez l’un de l’autre d’environ 6 pieds. Elle étoit attachée par un clou au bateau qui précedoit
-        <lb/>&amp; venoit horizontalement passer sur 2 poulies fixées au mât du bateau qui suivoit. A ce bout
-        <lb/>de chorde nous suspendimes un bassin du <lb/>poids de 10 Onces, dans lequel nous jettions
-        <lb/>successivement differens poids. Quand ce poids <lb/>etoit trop foible, les deux Rameurs du
-        <lb/>premier bateau le soulevoient d’un coup de Rame, &amp; pendant l’intervalle que les Rames
-        <lb/>etoient en l’air, ou ce poids continuoit à monter, ou il restoit suspendu, ou du moins il ne
-        <lb/>descendoit pas autant qu’il etoit monté: ce qui marquoit que le premier bateau alloit plus vite
-        <lb/>que le second. Si, au contraire, l’on mettoit un poids trop fort, ou le coup de Rame ne le soulevoit
-        <lb/>pas, ou bien étant soulevé, il redescendoit, les Rames sortant de l’eau, &amp; redescendoit plus qu’il
-        <lb/>n’avoit monté, ce qui marquoit que le second bateau alloit plus vite que le l<hi>er</hi>. et s’en aprochoit.
-        <lb/>En augmentant et diminuant ce poids, jusqu’à ce qu’il nous parût qu’il montoit autant
-        <lb/>à chaque coup de Rame, qu’il des cendoit dans les Intervalles, ou bien jusqu’àce qu’il restat en
-        <pb facs="3694230" n="3"/>
-        <lb/>repos, ce qui arrivoit aisement <del>pou </del><add>a</add> la moindre augmentation de frotement causée par l’obliquité
-        <lb/>de la corde entre les poulies, quand le second bateau ne suivoit pas le premier précisement en ligne
-        <lb/>droite, nous trouvames à peu près la force avec laquelle le second bateau etoit tiré par le premier.
-        <lb/>Je dis à peu près, car il est difficile de trouver ici une sorte de précision, à cause de la grande
-        <lb/>variation de cette force, qui vient de ce que les Rameurs, quoiqu’avertis, ne peuvent s’empecher
-        <lb/>de tirer tantôt plus fort &amp; tantôt plus foiblement, &amp; la vitesse du bateau, que nous observions
-        <lb/>par l’inclinaison de la balle d’Yvoire, varioit aussi en conséquence.
+      <lb/>Lorsque cette inclinaison du fil ètoit de 54° ou 55<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° qui repondent à 3 pieds <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> demi par 1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>″ le poids
+      <lb/>étoit d’environ 4<hi rend="sup">℔</hi><!-- unsicher mit dem Pfundzeichen, Sulamith fragen? RG 28.05.2025 --> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ½ (poids de 18 onces) auquel ajoutant le poids du bassin, cela fait environ 90 onces
+      <lb/>poids de Marc<note type="editorial">1 Marc (de Paris)=ca. 244,75 Gramm, 1 once poids de marc=1/16 eines Marc, also 90 onces poids de marc=ca. 1376,7 Gramm.</note>. Quand l’inclinaison alloit à 60<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ce qui fait une vitesse de 3,8 pieds par 1″, le poids
+      <lb/>total étoit d’environ 200 onces. Enfin quand les <rs type="person">Rameurs</rs> tiroient <subst><del/><add>vi</add></subst>goureusement, l’inclinaison
+      <lb/>du fil de 63<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ou environ, marquoit une vitesse de 4 pieds par 1″. Et alors le poids étoit de 6℔<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ou 6℔ ½
+      <lb/>ce qui avec le poids du bassin fait 118 ou 127 onces.
     </p>
     <p>
-        <lb/>Lorsque cette inclinaison du fil étoit de 54<hi rend="sup">o</hi> ou 55<hi rend="sup">o</hi> qui repondent à 3 pieds &amp; demi par 1". le poids
-        <lb/>étoit d’environ <formula>4\&amp;\frac{1}{2}</formula> (poids de 18 onces) auquel ajoutant le poids du bassin, cela fait environ 90 onces
-        <lb/>poids de Marc. Quand l’inclinaison alloit à 60<hi rend="sup">o</hi>, ce qui fait une vitesse de 3, 8 pieds par 1", le poids
-        <lb/>total étoit d’environ 200 onces. Enfin quand les Rameurs tiroient vigoureusement, l’inclinaison
-        <lb/>du fil de 63<hi rend="sup">o</hi> ou environ, marquoit une vitesse de 4 pieds par 1". Et alors le poids étoit de <formula>6</formula> ou <formula>6\frac{1}{2}</formula>
-        <lb/>ce qui avec le poids du bassin fait 118 ou 127 onces.
+      <lb/>Nous exhortames les <rs type="person">Rameurs</rs> à tirer avec force, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> alors la vitesse fut de 66<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ou 4,<subst><del/><add>3</add></subst> pieds, <choice><orig>et</orig><reg>et</reg></choice> le
+      <lb/>poids de 7<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>℔ <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même au dela, ce qui feroit avec le bassin 136 ou 140 onces. Mais les <rs type="person">Rameurs</rs> conve<pc type="hyphenation"><supplied>-</supplied></pc><lb break="no"/>noient qu’ils ne pourroient pas tenir une demie heure à cette manoeuvre forcée.
     </p>
     <p>
-        <lb/>Nous exgortames les Rameurs à tirer avec force, &amp; alors la vitesse fut de 66<hi rend="sup">o</hi> ou 4,3 pieds, et le
-        <lb/>poids de 7 ou &amp; même au delà, ce qui feroit avec le bassin 136 ou 140 onces. Mais les Rameurs conve<pc type="hyphenation"></pc><lb break="no"/>noient qu’ils ne pourroient pas tenir une demie heure à cette manoeuvre forcée.
+      <lb/>4. Pendant cette Experience, nous etions 3 <rs type="person"><subst><del/><add>per</add></subst>so<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es</rs> dans chaque bateau. Nous en fimes
+      <lb/>passer une du 2.<hi rend="sup">d</hi> dans le 1.<hi rend="sup">r</hi> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> aiant <subst><del/><add>fixé</add></subst> le Gouvern<subst><del/><add>a</add></subst>il avec des Cordes, nous ordonames aux 4
+      <lb/><rs type="person">Rameurs</rs> qui etoient dans le 1.<hi rend="sup">r</hi> bateau, de tirer. <unclear reason="illegible">Ils</unclear> le firent avec tant de violence qu’<unclear>un</unclear> poid<unclear reason="illegible">s</unclear>
+      <lb/>de 15℔ qui étoit dans le bassin fut enlevé soudain, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <add>que</add> la boucle du bassin<del/> se rompit dans la
+      <lb/>poulie, ou la Corde s’arreta. Mais bientôt le 2.<hi rend="sup">d</hi> bateau aiant acquis <subst><del>le</del><add>à</add></subst> peu près la même
+      <lb/>vitesse que le premier<unclear>,</unclear> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les <rs type="person">Rameurs</rs> tirant avec un effort plus moderé, nous racrochames
+      <lb/>le bassin, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous vimes même que le poids de 15℔<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> etoit trop considerable. Nous mimes
+      <lb/>un poids de 12℔<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qui se trouva bientôt trop pesant, de sorte que nous en retranchames successivement
+      <lb/>une demilivre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> puis une autre<unclear>;</unclear> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> encore une autre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> enfin une quatrième, <add>une cinquième <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> une 6<hi rend="sup">e</hi></add> ce qui reduisit
+      <lb/>le poids à 9 ℔. Quand le poids étoit de 11 ℔<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ce qui avec le bassin fait 208 onces, nous observames
+      <lb/>par le quart de Cercle, que l’inclinaison du fil étoit de 70<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>°<supplied>,</supplied> ce qui donne une vitesse de 4,78 pieds
+      <lb/>par 1″. Cette vitesse surpasse la vitesse ordinaire de nos bateaux. Aussi ne pouvoit<supplied>-</supplied>elle durer <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+      <lb/>au bout de un quart d’heure elle se rallentit, le fil ne s’inclina qu’<choice><orig>a</orig><reg>à</reg></choice> 68 <choice><abbr>d.</abbr><expan>degrés</expan></choice> (ce qui repond <choice><orig>a</orig><reg>à</reg></choice> 4,5 <add>pieds</add> par 1″)
+      <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> alors le poids n’etoit que de 9<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><hi rend="sup">℔</hi> ou<choice><orig>:</orig><reg>,</reg></choice><!--  --> compris le poids du bassin, de 172 onces. Cette vitesse est la
+      <lb/>vitesse commune, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il est effectivement naturel que 4 <rs type="person">Rameurs</rs> tirent deux bateaux avec la
+      <lb/>même vitesse que deux <rs type="person">Rameurs</rs> un seul bateau.
     </p>
     <p>
-        <lb/>4. Pendant cette Experience, nous etions 3 perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es dans chaque bateau. Nous en fimes
-        <lb/>passer une du 2d. dans le 1r. &amp; aiant fixé le Gouvernail avec des cordes, nous ordonames aux 4
-        <lb/>Rameurs qui etoient dans le 1r. bateau, de tirer. Ils le firent avec tant de violence qu’un poids
-        <lb/>de 15 qui etoit dans le bassin fut enlevé soudain, &amp; <add>que</add> la boucle du bassin se rompit dans la
-        <lb/>poulie, ou la corde s’arreta. Mais bientôt le 2d. bateau aiant acquis à peu prés la même
-        <lb/>vitesse que le premier &amp; les Rameurs tirant avec un effort plus moderé, nous racrochames
-        <lb/>le bassin, &amp; nous vimes même que le poids de 15 etoit trop considerable. Nous mimes donc
-        <lb/>un poids de 12 qui qui se trouva bientôt trop pesant, de sorte que nous en retranchames successivement
-        <lb/>une demilivre, &amp; puis une autre, &amp; encore une autre, &amp; enfin une quatriéme, <add>une cinquiéme &amp; une 6<hi rend="sup">e</hi></add> ce qui reduisit
-        <lb/>le poids à 9 . Quand le poids étoit de 11 ce qui avec le bassin fait 208 onces, nous observames
-        <lb/>par le quart de cercle, que l’inclinaison du fil étoit de 70<hi rend="sup">o</hi>, ce qui donne une vitesse de 4,78 pieds
-        <lb/>par 1". Cette vitesse surpasse la vitesse ordinaire de nos bateaux. Aussi ne pouvoit elle durer &amp;
-        <lb/>au bout de un quart d’heure elle se rallentit, le fil ne s’inclina qu’à 68 d. (ce qui repond a 4,5 pieds par 1")
-        <lb/>&amp; alors le poids n’etoit que de 9 ou, compris le poids du bassin, de 172 onces. Cette vitesse est la
-        <lb/>vitesse commune, &amp; il est effectivement naturel que 4 Rameurs tirent deux bateaux avec la
-        <lb/>même vitesse que deux Rameurs un seul bateau.
+      <lb/>5. Comme nous connûmes bientôt que les deux bateaux ètoient inegaux en pesanteur
+      <lb/>nous fumes <choice><sic>contraint</sic><corr>contraints</corr></choice> de les échanger, en attachant le plus pesant à la queuë du plus leger<supplied>.</supplied>
+      <lb/>Alors nous trouvames qu’avec deux <rs type="person">Rameurs</rs> l’inclinaison du fil ètant de 70<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ou 4,78 pieds par 1<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>″
+      <lb/>le poids entier etoit de 316 onces. Mais cette vitesse ne pouvoit durer. Elle retomba bientôt <choice><orig>a</orig><reg>à</reg></choice>
+      <pb facs="3694231" n="4"/>
+      <lb/>68<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ou 4,5 pieds par 1″, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> alors le poids etoit de 240 onces, ou meme de 65<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° = 4,22 pieds par 1″,
+      <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le poids n’etoit plus que de 160<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>°<supplied>.</supplied>
     </p>
     <p>
-        <lb/>5. Comme nous connûmes bientôt que les deux bateaux étoient inegaux en pesanteur
-        <lb/>nous fumes contraint les échanger, en attachant le plus pesant à la queuë du plus leger
-        <lb/>Alors nous trouvames qu’avec deux Rameurs l’inclinaison du fil étant de 70<hi rend="sup">o</hi> ou 4,78 pieds par 1",
-        <lb/>le poids entier etoit de 316 onces. Mais cette vitesse ne pouvoit durer. Elle retomba bientôt à
-        <pb facs="3694231" n="4"/>
-        <lb/>68<hi rend="sup">o</hi> ou 4,5 pieds par 1", &amp; alors le poids etoit de 240 onces, ou meme de 65<hi rend="sup">o</hi> = 4,22 pieds par 1",
-        <lb/>&amp; le poids n’etoit plus que de 160<hi rend="sup">o</hi>.
+      <lb/>6. Aiant mis les 4 <rs type="person">Rameurs</rs> dans le 1.<hi rend="sup">r</hi> bateau, ils tirérent avec vigueur, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le fil s’inclinoit
+      <lb/>de 70°, <subst><del/><add>ce</add></subst> qui donne une vitesse de 4,78 pieds par 1″, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le poids ètoit aussi de 316 ou 320 Onces<supplied>.</supplied>
+      <lb/>Mais cette vitesse n’auroit pas pu durer. Les <rs type="person">Rameurs</rs> donnoit 33 ou 34 coups de Rame
+      <lb/>par 1″, ce qui marque qu’ils s’efforçoient <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> se pressoient beaucoup. Bientôt nous pûmes enlever
+      <lb/>du bassin une <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> même deux livres, ou 40 onces. Mais nous oubliames de remarquer alors
+      <lb/>combien la vitesse ètoit diminuée.
     </p>
     <p>
-        <lb/>6. Aiant mis les 4 Rameurs dans le 1<hi rend="sup">r</hi>. bateau, ils tirérent avec vigueur, &amp; le fil s’inclinoit
-        <lb/>de 70<hi rend="sup">o</hi>, ce qui donne une vitesse de 4,78 pieds par 1", &amp; le poids étoit aussi de 316 ou 320 onces.
-        <lb/>Mais cette vitesse n’auroit pas pu durer. Les Rameurs donnoit 33 ou 34 coups de Rame
-        <lb/>par 1", ce qui marque qu’ils s’efforçoient &amp; se pressoient beaucoup. Bientôt nous pûmes enlever
-        <lb/>du bassin une &amp; même deux livres, ou 40 onces. Mais nous oubliames de remarquer alors
-        <lb/>combien la vitesse étoit diminuée.
+      <lb/>7. Pour varier l’experience <figure facs="3694231_01.png"></figure> nous attachames le bout de corde qui entrainoit le 2<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice><hi rend="sup">d</hi> bateau,
+      <lb/>(c’etoit toujours le plus pesant) à un peson à ressort, qui ètoit fixé au mat du 2.<hi rend="sup">e</hi> bateau
+      <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> nous remarquames qu’<choice><orig>a</orig><reg>à</reg></choice> chaque coup de Rame le ressort etoit bandé par la Corde avec une force
+      <lb/>de 15, 18, ou même 20℔, c’est <choice><orig>a</orig><reg>à</reg></choice> dire de 270, à 360 Onces. Mais dans
+      <lb/>l’intervalle, c’est <choice><orig>a</orig><reg>à</reg></choice> dire pendant que les Rames etoient en l’air,
+      <lb/>le ressort se debandoit presque entierement, ou du moins ne
+      <lb/>restoit bandé que par une force de 3 ou 4℔. Il nous parût que le Ressort mettoit assés
+      <lb/>exactement le même tems <choice><orig>a</orig><reg>à</reg></choice> se debander qu’à ètre bandé, ou un peu plus. La vitesse du bateau
+      <lb/>etoit de 4,5 pieds par 1″. Or il est constant que 2 <rs type="person">Rameurs</rs> ne pourroient pas tirer longtems
+      <lb/>deux bateaux avec cette vitesse.
     </p>
     <p>
-        <lb/>7. Pour varier l’experience nous attachames le bout de corde qui entrainoit le 2<hi rend="sup">d</hi>. bateau
-        <lb/>(c’etoit toujours le plus pesant) à un peson à ressort, qui étoit fixé au mat du 2<hi rend="sup">e</hi>. bateau,
-        <lb/>&amp; nous remarquames qu’a chaque coup de Rame le ressort etoit bandé par la Corde avec une force
-        <lb/>de 15,18 ou même 20, c’est a dire de 270, à 360 onces. Mais dans <lb/>l’intervalle, c’est a dire pendant que les Rames etoient en l’air,
-        <lb/>le ressort se de bandoit presque entierement, ou du moins ne
-        <lb/>restoit bandé que par une force de 3 ou 4. Il nous parût que le Ressort mettoit as sés
-        <lb/>exactement le même tems à se debander qu’à étre bandé, ou un peu plus. La vitesse du bateau
-        <lb/>etoit de 4,5 pieds par 1". Or il est constant que 2 Rameurs ne pourroient pas tirer longtems deux bateaux avec cette vitesse.
+      <lb/>8. Nous fimes enfin une autre experience <figure facs="3694231_02.png"></figure> à peu près dans l’endroit <choice><orig>ou</orig><reg>où</reg></choice> le <rs key="place_GEW-genfse" type="place">Lac</rs> finit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+      <lb/><choice><orig>ou</orig><reg>où</reg></choice> le <rs key="place_GEW-rhonefl" type="place">Rhone</rs> commence<unclear>.</unclear> Là il y a un courant, qui inclinoit le fil <choice><orig>ou</orig><reg>où</reg></choice> la bale d’Yvoire étoit suspendue
+      <lb/>sous un angle de 20<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ce qui nous fit juger que sa vitesse etoit de 1,74 pieds par 1″. <subst><del/><add>Nous</add></subst> commen<pc type="hyphenation">-</pc><lb break="no"/>cames par attacher notre bateau à un pilier<!-- nicht sicher, ob etwas überschrieben wurde. MK 5.6.2025 --> qui ètoit là avec une longue Corde. Pour donner
+      <lb/>plus de prise au Courant nous ajustames au
+      <lb/>derrière du bateau une large planche qui plon<pc type="hyphenation">-</pc><lb break="no"/><subst><del/><add>geoit</add></subst> de 2 pieds ou 2½ pieds dans l’eau, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> augment<unclear>oit</unclear>
+      <lb/>ainsi la surface sur laquelle le Courant faisoit
+      <lb/>impression. Au même pilier nous attachames une autre Corde plus courte qui passoit
+      <lb/>sur les deux poulies clouées au mat, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui portoit le bassin de 10 onces. Nous trouvames qu’en
+      <lb/>y mettant un poids moindre que 9℔ le Courant nous entrainoit, <choice><orig>Mais</orig><reg>mais</reg></choice> quand on y mettoit
+      <lb/>un poids de 13℔. Il nous remontoit contre le Courant, <choice><orig>Ce</orig><reg>ce</reg></choice>e qui nous fit connoitre que le frotement
+      <lb/>contre les Poulies etoit assés considerable, et environ ⅓ de la force. Mais prenant un milieu <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+      <lb/>ajoutant le poids du bassin, nous trouv<unclear>ames</unclear><!--  --> que le poids d’Equilibre etoit environ <subst><del/><add>12</add></subst>℔ <subst><del/><add>ou</add></subst> 20<subst><del/><add>8</add></subst> onces<supplied>.</supplied>
     </p>
     <p>
-        <lb/>8. Nous fimes enfin une autre experience à peu près dans l’endroit ou le Lac finit &amp;
-        <lb/>où le <rs key="place_GEW-rhonefl" type="place">Rhone</rs> commence. Là il y a un courant, qui inclinoit le fil où la bale d’Yvoire étoit suspendue
-        <lb/>sous un angle de 20<hi rend="sup">o</hi>, ce qui nous fit juger que sa vitesse etoit de 1,74 pieds par 1". Nous commen<pc type="hyphenation">-</pc><lb break="no"/>cames par attacher notre bateau à un pilier qui étoit là avec une longue Corde. Pour donner
-        <lb/>plus de prise au courant nous ajustames au
-        <lb/>derriére du bateau une large planche qui plon<pc type="hyphenation">-</pc><lb break="no"/>geoit de 2 pieds ou <formula>2\frac{1}{2}</formula> pieds dans l’eau &amp; augmenta
-        <lb/>ainsi la surface sur laquelle le courant faisoit
-        <lb/>impression. Au même pilier nous attachames une autre Corde plus courte qui passoit
-        <lb/>sur les deux poulies clouées au mat, &amp; quo portoit le bassin de 10 onces. Nous trouvames qu’en
-        <lb/>y mettant un poids moindre que 9 le courant nous entrainoit. Mais quand on y mettoit
-        <lb/>un poids de 13 , il nous remontoit contre le courant, ce qui nous fit connoitre que le frotement
-        <lb/>contre les Poulies etoit assés considerable, et environ <formula>\frac{1}{3}</formula> de la force. Mais prenant un milieu &amp;
-        <lb/>ajoutant le poids du bassin, nous trouvons que le poids d’Equilibre etoit environ 12 ou 208 onces.
-    </p>
-    <p>
-        <lb/>Dans cet Etat, nous otames les poids &amp; le bassin &amp; le courant nous entrainant, nous laissames
-        <lb/>filer 30 ou 40 pieds de la grande corde. Alors nous dimes à 2 Rameurs de nous remonter Ils le
-        <lb/>firent mais lentement, la bale d’Yvoire ne s’inclinant que de 42<hi rend="sup">o</hi>, ce qui repond à 2,67 pieds par 1",
-        <lb/>d’où ôtant 1,74 vitesse du courant, il reste 1,93 vitesse réelle avec laquelle nous remontions. Mais
-        <lb/>pour cela nos Rameurs avoient besoin d’emploier toutes leurs forces. Ils disoient même que <del>n</del>
-        <lb/>ni 6 homes ne suffiroient pas à ce travail pendant une heure ou deux. Nous crûmes observer
-        <lb/>qu’un poids de 21 nous faisoit remonter avec une vitesse tant soit peu moindre. Mais cela
-        <lb/><del>est </del><add>etoit</add> difficile à co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre, parce que le bateau derivoit facilement, &amp; prétoit le flanc au courant, ce qui changeoit
-        <lb/>d’abord la résistance.
+      <lb/>Dans cet Etat, nous otames les poids <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le bassin <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le courant nous entrainant, nous laissames
+      <lb/>filer 30 ou 40 pieds de la grande Corde. Alors nous dimes à 2 <rs type="person">Rameurs</rs> de nous remonter. Ils le
+      <lb/>firent mais lentement, la bale d’Yvoire ne s’inclinant que de 42<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>° ce qui repond <choice><orig>a</orig><corr>à</corr></choice> 2,67 pieds par 1″
+      <lb/>d’<choice><orig>ou</orig><reg>où</reg></choice> ôtant 1,74 vitesse du Courant, il reste 1,93 vitesse réelle avec laquelle nous remontions. Mais
+      <lb/>pour cela nos <rs type="person">Rameurs</rs> avoient besoin d’emploier toutes leurs forces. Ils disoient même que <del/>
+      <lb/>ni 6 <rs type="person">homes</rs> ne suffiroient pas à ce travail pendant une heure ou deux, nous crûmes observer
+      <lb/>qu’un poids de 21℔<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> nous faisoit remonter avec une vitesse tant soit peu moindre. Mais cela
+      <lb/><del>est </del><add>etoit</add> difficile à co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre, parce que le bateau derivoit facilement, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice><!-- ? --> prètoit le flanc au Courant, ce qui changeoit
+      <lb/>d’abord la résistance<supplied>.</supplied>
     </p>
     <pb facs="3694232" n="5"/>
     <p>
-        <lb/>J’avois dessein, Monsieur, de joindre à ces faits quelques Remarques,
-        <lb/>mais outre qu’elles seroient bien super flues écrivant à une personne
-        <lb/>a qui rien n’échappe, l’heure de la Poste qui sonne ne me
-        <lb/>permettroit pas de m’etendre là dessus, sans renvoier à un autre
-        <lb/>Courier, une Lettre qui n’a deja été que trop retardée. Je me contenterai
-        <lb/>de conclure, que la force moienne d’un Rameur est d’environ 112 onces
-        <lb/>ce qui feroit precisement 7 poids de 16 onces, lorsque le bateau
-        <lb/>a une vitesse d’environ <formula>4\frac{1}{2}</formula> pieds par 1". D’où je crois pouvoir
-        <lb/>deduire que si le bateau a plus de vitesse comme de 6 ou 8 pieds par 1"
-        <lb/>la force de chaque Rameur ne sera guère que 5 , ou moins. Or cela
-        <lb/>me paroit fort favorable à votre Nouvelle Maniére de naviger.
-        <lb/>Il est vrai que dans la Methode ordinaire un Rameur pourra dans
-        <lb/>l’occasion faire un effort considerable, comme de 12, ou 15 &amp; plus, ce
-        <lb/>qui est <del/>un avantage qui n’est pas à mépriser. Comme je me propose,
-        <lb/>si le tems me favorise, de reiterer ces Experiences dans une quinzaine
-        <lb/>de jours, avec plus de soin encore &amp; d’exactitude, je serois charmé de
-        <lb/>savoir là dessus vos idées et votre Jugement. C’est ce qui me fait
-        <lb/>envoier cette lettre toute imparfaite qu’elle est, vous priant de
-        <lb/>m’excuser sur le zele avec lequel je m’empresserai toujours à vous
-        <lb/>marquer l’attachement veritable &amp; sincere avec lequel
-        <lb/>j’ai l’honneur d’etre
-        <lb/>Monsieur
+      <lb/>J’avois dessein, Monsieur, de joindre à ces faits quelques Remarques<unclear>,</unclear>
+      <lb/>mais, outre qu’elles seroien<subst><del/><add>t</add></subst> bien superflues écrivant à une <rs type="person">personne</rs>
+      <lb/><choice><orig>a</orig><reg>à</reg></choice> qui rien n’échappe, l’heure de la Poste qui sonne ne me
+      <lb/>permettroit pas de m’etend<subst><del/><add>re</add></subst> là dessus, sans renvoier à un autre
+      <lb/><rs type="person">Courier</rs><!--  -->, une <rs type="letter">Lettre</rs> qui n’a deja été que trop retardée. Je me contenterai
+      <lb/>de conclure, que la force moienne d’un <rs type="person"><subst><del/><add>R</add></subst>ameur</rs><!--  --> est d’environ 1<subst><del/><add>1</add></subst>2 onces
+      <lb/>ce qui feroit precisement 7<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>℔ poids de <subst><del>2</del><add>1</add></subst>6 onces, lorsque le bateau
+      <lb/>a une vitesse d’environ 4½ pieds par 1″. D’<choice><orig>ou</orig><reg>où</reg></choice> je crois pouvoir
+      <lb/>deduire que si le bateau a plus de vitesse comme de 6 ou 8 pieds par 1″
+      <lb/>la force de cha<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <rs type="person">Rameur</rs> ne sera guère que 5℔, ou moins. Or cela
+      <lb/>me paroit fort favorable à votre Nouvelle Manière de naviger.
+      <lb/>Il est vrai que dans la Methode ordinaire un <rs type="person">Rameur</rs> pourra dans
+      <lb/>l’occasion faire un effort considerable, comme de 12, ou 15℔<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> plus, ce
+      <lb/>qui est <del/>un avantage qui n’est pas à mépriser. Comme je me propose
+      <lb/>si le tems me favorise, de reiterer ces Experiences dans <subst><del>qu</del><add>un</add></subst>e quinzaine
+      <lb/>de Jours, avec plus de soin encore <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’exactitude, je serois charmé de
+      <lb/>savoir là dessus vos idées et votre Jugement: C’est ce qui me fait
+      <lb/>envoier cette <rs type="letter">lettre</rs> toute imparfaite qu’elle est, vous priant de
+      <lb/>m’excuser sur le Zele avec lequel je m’empresserai toujours à vous
+      <lb/>marquer l’attachement <subst><del/><add>veritable</add></subst> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> sincere avec lequel
+      <lb/>j’ai l’honneur d’etre
+      <lb/>Monsieur
     </p> 
     <closer>
         <salute>
-            <lb/>Votre très humble &amp; très
+            <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très
             <lb/>obeissant serviteur
         </salute>
         <signed>
-            <lb/>G. Cramer
+            <lb/><abbr>G<supplied>.</supplied></abbr> Cramer
         </signed>
     </closer> 
+  <pb facs="3694233" n="6" type="empty"/>
 </div>
 </body>
 </text></TEI>

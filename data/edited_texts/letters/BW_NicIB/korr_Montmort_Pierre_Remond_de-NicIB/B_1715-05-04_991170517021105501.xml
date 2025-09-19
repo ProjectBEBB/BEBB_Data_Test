@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517021105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -191,8 +191,10 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-14" who="FN SG">Kollationieren abgeschlossen</change>
+      <change when="2025-08-12" who="FN SG">Kollationieren begonnen</change>
       <change when="2024-11-28" who="RG">Lb/ eingefügt sowie kleinere Anpassungen</change>
       <change when="2024-11-28" who="RG">pb eingefügt</change>
       <change when="2022-09-26" who="MS">correspContext</change>
@@ -201,12 +203,7 @@
     </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
+
 <!--pers_DE-588-118639749 Huygens, Christiaan 〈1629-1695〉 -->
 <!--pers_DE-588-118576682 Malebranche, Nicolas 〈1638-1715〉 -->
 <!--pers_DE-588-117586765 Moivre, Abraham de 〈1667-1754〉 -->
@@ -242,7 +239,6 @@
             Mr. Parent -> Parent, Antoine 1666-1716 pers_DE-588-105511131X
 
          -->
-<!--_____________-->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1038783/manifest"/>
@@ -256,190 +252,189 @@
   </salute>
 </opener>
 <p>
-  <lb/>Je Vous ai bien de l’obligation de la longue et belle <rs type="letter">lettre</rs> que vous avés
+  <lb/>Je Vous ai bien de l’obligation de la longue et belle <rs type="letter">Lettre</rs> que Vous avés
   <lb/>pris la peine de m’écrire et que Vous avés remplie de choses admirables
   <lb/>et tres belles, qui m’ont fait un trés grand plaisir. Je n’ai pas encor eu le
-  <lb/>temps de la lire avec loisir, et d’examiner les beaux Theorémes sur les nombres
-  <lb/>figurés qu’il Vous a plû de me co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer; je me suis contenté de lire
+  <lb/>tems de la lire avec loisir, et d’examiner les beaux Theorémes sur les nombres
+  <lb/>figurés qu’il Vous a plû de me co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer<choice><orig>,</orig><reg>;</reg></choice> je me suis contenté de lire
 <pb facs="1038785" n="2"/> 
-  <lb/>les énoncés de ces Theoremes, lesquels j’ai trouvés fort curieux tous excepté
-  <lb/>le Theorême 5<hi rend="sup">me</hi>., qui ne contient qu’une chose qu’on sçait deja depuis long<pc type="hyphenation"></pc><lb break="no"/>temps, sçavoir qu’un binome, par <abbr>ex.</abbr> <formula>a\pm{b}</formula> élevé à une puissance quelcon<pc type="hyphenation"></pc><lb break="no"/>que est égal à la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <add>des termes ou à la difference des termes pairs et impairs</add> d’une bande perpendiculaire du triangle arithmetique
-  <lb/>multipliés par<del> ceux d’une</del> <add>les termes d’une</add> progression geometrique. Je ne dis pas ceci pour diminuer
-  <lb/>le prix de Vos decouvertes, mais pour vous marquer que je suis dans la persuasion,
+  <lb/>les enoncés de ces Theoremes, lesquels j’ai trouvés fort curieux tous excepté
+  <lb/>le Theorême<del/> 5.<hi rend="sup">me</hi><supplied>,</supplied> qui ne contient qu’une chose qu’on <choice><orig>scait</orig><reg>sçait</reg></choice> deja depuis long
+  <lb/>temps, sçavoir qu’un binome<supplied>,</supplied> par <abbr>ex.</abbr> <formula>a\pm{b}</formula> elevé à une puissance quelcon<pc type="hyphenation"></pc><lb break="no"/>que<del/> est égal à la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <add>des termes ou à la difference des termes pairs et impairs</add> d’une bande perpendiculaire du triangle arithmetique
+  <lb/>multipliés par <del/><add>les termes d’une</add> progression geometrique. Je ne dis pas ceci pour diminuer
+  <lb/>le prix de Vos decouvertes, mais pour Vous marquer que je suis dans la persuasion,
   <lb/>que Vous avés trouvé la solution et la demonstration <add>de ce theoreme</add> par une voye plus courte et
-  <lb/>plus belle que celle, dont on <add>se</add> sert co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unément pour la demonstration de ce<del/> Theo<pc type="hyphenation">-</pc><lb break="no"/>reme. Pour ce qui est des autres Theoremes, je<del/> les examinerai avec soin et j’en
-  <lb/>chercherai les demonstrations, je ne manquerai pas de les communiquer aussi à
+  <lb/>plus belle que celle, dont on <add>se</add> sert co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>unément pour la demonstration de ce<del/> Theo<pc type="hyphenation">-</pc><lb break="no"/>reme<del/>. Pour ce qui est des autres Theoremes<supplied>,</supplied> je<del/> les examinerai avec soin et j’en
+  <lb/>chercherai les demonstrations, je ne manquerai pas de les co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer aussi à
   <lb/>mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous le souhaités, et je Vous donnerai part aux premiers
-  <lb/>jours de ce que j’aurai remarqué,<del/> <add>tant</add> à l’occasion<add><del/></add> de ces<del/> theoremes qu’<del>ant</del>
-  <lb/>à l’occasion de Vos autres decouvertes, qui se trouvent dans Vôtre belle <rs type="letter">lettre</rs>.
-  <lb/>Je me bornerai dans <rs type="letter">celle-ci</rs> à Vous dire quelques mots sur les deux fameuses disputes,
-  <lb/>sçavoir <add>sur</add> celle du her et<del> cell</del> sur celle de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Pour ce qui est de la premiére,
+  <lb/>jours de ce que j’aurai remarqué, <del/><add>tant</add> à l’occasion<add><del/></add> de ces<del/> theoremes, qu’<del/><lb break="no"/>à l’occasion de Vos autres decouvertes qui se trouvent dans Vôtre belle <rs type="letter">Lettre</rs>.
+  <lb/>Je me bornerai dan<add>s</add> <rs type="letter">celle<supplied>-</supplied>ci</rs> à Vous dire quelques mots sur les deux fameuses disputes,
+  <lb/>sçavoir <add>sur</add> celle du her et <del/>sur celle de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Pour ce qui est de la premiere<supplied>,</supplied>
   <lb/>elle me semble prendre un train plus serieux, voilà un vaillant <rs type="person">champion</rs> qui me
   <lb/>provoque d’entrer en lice contre lui et qui est soutenu par <rs type="person">deux braves seconds</rs>, il est fait
-  <lb/>de moi, je ne sçaurai resister tout seul à tant de combattans; permettés moy donc, Mon<pc type="hyphenation">-</pc><lb break="no"/>sieur, que j’aye aussi mes seconds, mais où les trouverai-je? Je ne co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ois personne ici
-  <lb/>qui pourra prendre ma defense, toutefois je tacherai d’en trouver quelqu’un, ou
-  <lb/><del/>en cas que je ne sois pas si heureux, je prendrai courage et je me battrai
-  <lb/>contre Vous tous,<del/> eussiés Vous même
-  <lb/>tous les <add><rs type="person">heros</rs> de l’</add>Amadis à Vôtre suite. Mais avant que cela se fasse, il faudra regler
-  <lb/>les points qui sont contestés de part et d’autre, car en verité, je suis forcé de Vous
-  <lb/>dire que je ne sçai pas pré<del>sent</del><add>cis</add>ément en quoy nous contredisons l’un à l’autre: il y
-  <lb/>a des choses,<del/> <add>où</add> nous so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es d’accord, il y a d’autres où Vous faites semblant de ne l’étre
-  <lb/>pas avec moi, quoique je n’aye jamais soutenu le contraire. Par <abbr>ex.</abbr> Vous<del/> <add>dites</add>
-  <lb/><hi rend="u">que l’avantage de la primauté est mal aprecié par ce rapport <formula>2828 : 2697</formula>, <add><hi rend="u">et qu’il faut necessairement passer condemnation sur cet article</hi></add>. La</hi>
-  <lb/>même chose dit <abbr>Mr.</abbr> de <rs key="pers_DE-588-115598157X" type="person">Waldegrave</rs> en ces termes: <hi rend="u">C’estoit lâ le sujet de la dispu<pc type="hyphenation">-</pc><lb break="no"/>te, qui sera finie si Vous convenés enfin que ce rapport <formula>2697 : 2828</formula> est mal établi</hi>.
-  <lb/>Et il Vous est fort co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un à tous deux d’appeller ce rapport <hi rend="u">le rapport de mes sorts</hi>, ou
-  <lb/><hi rend="u">mon rapport</hi>, c’est à dire <hi rend="u">le rapport qui a été établi par moy</hi>. Je dis que je n’ai
+  <lb/>de moi, je ne sçaurai resister tout seul à tant de combattans<choice><orig>,</orig><reg>;</reg></choice> permettés moy donc<supplied>,</supplied> Mon<pc type="hyphenation">-</pc><lb break="no"/>sieur, que j’aye aussi mes seconds, mais où les trouverai-je? je ne co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ois personne ici
+  <lb/>qui <del/><add>p</add>ou<del/><add>r</add>ra prendre ma defense, toute<del/>fois je tacherai d’en trouver quelqu’un, ou
+  <lb/><del/>en cas que je ne s<del/><add>ois</add> pas si heureux, je prendrai courage et je me battrai
+  <lb/>contre Vous tous, <del/>eussiés<supplied>-</supplied>Vous même
+  <lb/>tous les <add><rs type="person">heros</rs> de l’</add>Amadis<note type="comment">Amadis de Gaule<!-- ToDo: nachweisen. --></note> à Vôtre suite. Mais avant que cela se fasse<supplied>,</supplied> il faudra regler
+  <lb/>les points qui sont contestés de part et d’autre, car en verité je suis forcé de Vous
+  <lb/>dire que je ne sçai pas pré<del/><add>cis</add>ément en quoy nous contredisons l’un à l’autre; il y
+  <lb/>a des choses, <del/><add>où</add> nous so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es d’accord, il y a d’autres où Vous faites semblant de ne l’étre
+  <lb/>pas avec moi, quoique je n’aye jamais soutenu le contraire. Par <abbr>ex.</abbr> Vous <del/><add>dites</add>
+  <lb/><cit><quote><hi rend="u">que l’avantage de la primauté est mal aprecié par ce rapport <choice><orig><formula>2828 \ldot 2697</formula></orig><reg><formula>2828 : 2697</formula></reg></choice> <add>et qu’il faut necessairement passer condemnation sur cet article</add></hi></quote></cit>. La
+  <lb/>même chose dit <abbr>Mr.</abbr> de <rs key="pers_DE-588-115598157X" type="person">Waldegrave</rs> en ces termes: <cit><quote><hi rend="u">C’estoit là le sujet de la dispu<pc type="hyphenation">-</pc><lb break="no"/>te, qui sera finie<supplied>,</supplied> si Vous convenés enfin que ce rapport <choice><orig><formula> 2697 \ldot 2828</formula></orig><reg><formula> 2697 : 2828</formula></reg></choice><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> est mal établi</hi></quote></cit><supplied>.</supplied>
+  <lb/>Et il Vous est fort co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un à tous deux d’appeller ce rapport <cit><quote><hi rend="u">le rapport de mes sorts</hi></quote></cit> ou
+  <lb/><cit><quote><hi rend="u">mon rapport</hi></quote></cit>, c’est à dire <cit><quote><hi rend="u">le rapport qui a été établi par moy</hi></quote></cit><del/><add>.</add> Je dis que je n’ai
 <pb facs="1038786" n="3"/>   
   <lb/>jamais soutenu positivement que leurs sorts sont absolument co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 2828 et 2697, mais
-  <lb/>seulement dans l’hypothese <add>où l’on suppose</add> que le premier change au 7 et le second au 8, <add>ou bien que le premier s’en tienne au 7 et le second au 8;</add> Vous con<pc type="hyphenation">-</pc><lb break="no"/>viendrés avec moi que suivant cette hypothese ce rapport est trés juste. Ayés
-  <lb/>la bonté de lire l’endroit en question de ma <rs type="letter">lettre</rs> <rs type="biblio"><abbr>pag.</abbr>334</rs>, et l’<rs type="biblio">enigme</rs> que j’ai
+  <lb/>seulement dans l’hypothese <add>où l’on suppose</add> que le premier change au 7 et le second au 8, <metamark/><add>ou bien que le premier s’en tienne au 7 et le second au 8<supplied>.</supplied></add><note type="editorial">Die eingefügte Passage befindet sich eingeklammert auf Zeile 6 der Manuskriptseite. Die Klammern wurden dementsprechend weggelassen.</note> Vous con<pc type="hyphenation">-</pc><lb break="no"/>viendrés avec moi que suivant cette hypothese ce rapport est trés juste. Ayés
+  <lb/>la bonté de lire l’endroit en question de ma <rs type="letter">lettre</rs> <rs type="biblio"><abbr>pag.</abbr> 334</rs><choice><orig>.</orig><reg>,</reg></choice> et l’enigme que j’ai
   <lb/>ajouté à ma <rs type="biblio">solution</rs> Vous apprendra que j’ai été loin de croire que les sorts des
-  <lb/>joueurs fussent absolument co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 2828 et 2697.
-  <lb/><del/>
-  <lb/><del/>Si donc il ne tient qu’à ceci, voilà la dispute finie. Mais je croi
-  <lb/>plutôt que le sujet de la dispute est de sçavoir, s’il est indifferent à Paul de changer
+  <lb/>joueurs fussent absolument co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 2828 et 2697<supplied>.</supplied>
+  <lb type="deleted"/><del/>
+  <lb/><del/>Si donc il n<del/><add>e</add> tient qu’à ceci<supplied>,</supplied> voilà la dispute finie. Mais je croi
+  <lb/>plutôt que le sujet de la dispute est de <choice><orig>scavoir</orig><reg>sçavoir</reg></choice><supplied>,</supplied> s’il est indifferent à Paul de changer
   <lb/>ou de se tenir au 7, et à Pierre de changer ou de se tenir au 8. <abbr>Mr.</abbr> de <rs key="pers_DE-588-115598157X" type="person">Waldegrave</rs>
   <lb/>et <abbr>Mr.</abbr> l’Abbé de <rs key="pers_DE-588-1156687535" type="person">Monsoury</rs> ont soutenu l’affirmative de cette question<del/>
-  <lb/><del/>et moi la negative, voiés la <rs type="letter">lettre</rs>de <abbr>Mr.</abbr> de <rs key="pers_DE-588-115598157X" type="person">Waldegrave</rs> <rs type="biblio">page 339</rs>. Ibi: <hi rend="u">Nous pre<pc type="hyphenation">-</pc><lb break="no"/>tendons qu’il est indifferent <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr></hi> C’est sur cet <rs type="biblio">article</rs> qu’il faudra passer condemnation
-  <lb/>et la dispute sera finie, si Vous tous convenés enfin, <hi rend="u">qu’il n’est pas indifferent
-  <lb/>à Paul de changer ou de se tenir au 7, ni à Pierre de changer ou de se tenir au 8.</hi>
-  <lb/><del/><add>Aussi</add> me semble t-il que mes <rs type="person">Antagonistes</rs> m’ont deja accordé ceci, puisqu’ils se sont
+  <lb/><del/>et moi la negative, voiés la <rs type="letter">lettre</rs> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-115598157X" type="person">Waldegrave</rs> <rs type="biblio">page 339</rs>. Ibi. <cit><quote><hi rend="u">Nous pre<pc type="hyphenation">-</pc><lb break="no"/>tendons qu’il est indifferent <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></hi></quote></cit> C’est sur cet <rs type="biblio">article</rs> qu’il faudra passer condemnation,
+  <lb/>et la dispute sera finie, si Vous tous convenés enfin, <cit><quote><hi rend="u">qu’il n’est pas indifferent
+  <lb/>à Paul de changer ou de se tenir<del/> au 7, ni à Pierre de changer ou de se tenir au 8.</hi></quote></cit>
+  <lb/><del/><add>Aussi</add> me semble-t-il que mes <rs type="person">Antagonistes</rs> m’ont déja accordé ceci, puisqu’ils se sont
   <lb/>desistés de cette premiere dispute, et qu’ils sont tombés dans une autre, qui est de
-  <lb/>sçavoir quel est le meilleur conseil qu’on puisse donnerà l’un et à l’autre joueur,
-  <lb/>celui de changer au 7 et au 8 respectivement, ou celui de s’y tenir. Pour ce qui est
+  <lb/>sçavoir<supplied>,</supplied> quel est le meilleur conseil qu’on puisse donner à l’un et <add>à</add> l’autre joueur<supplied>,</supplied>
+  <lb/>celui de changer au 7 et au 8 respectivement, ou celui de s’y tenir; <del/><add>p</add>our ce qui est
   <lb/>de cette dispute je soutiens que le conseil de changer est meilleur que le conseil
-  <lb/>de s’y tenir. Pour m’expliquer plus clairement, je dis: Que si j’avois à conseiller Paul
-  <lb/>contre Pierre, je dois lui conseiller de changer au 7,<del/>
-  <lb/><del/>et en ce faisant, je ferai l’esperance de Paul valoir <formula>\frac{2833}{5525}</formula>; mais que si
-  <lb/>j’avois à conseiller Pierre <add>contre Paul</add>, je dois lui conseiller de changer au 8, et en ce faisant,
-  <lb/>je<del/> ferai son esperance valoir <formula>\frac{2694}{5525}</formula>; je dis en second lieu que Vous ne<del> leur</del>
-  <lb/>sçauriés leur donner un meilleur conseil, ou un autre qui soit aussi bon que le
-  <lb/>mien. Si Vous<del/> <add>ne comprenés</add> pas le sens de cette decision, montrés la à un qui n’a
-  <lb/>jamais entendu parler de cette<del/> dispute, il Vous l’expliquera sans se
-  <lb/>servir de ces finesses et de ces distinctions, que Vous avés introduites sans ne<pc type="hyphenation">-</pc><lb break="no"/>cessité en distinguant entre les <del/>conseils imprimés
+  <lb/>de s’y tenir. Pour m’expliquer plus clairement, je dis: <del/><add>Q</add>ue si j’avois à conseiller Paul
+  <lb/>contre Pierre, je dois lui conseiller de changer au 7<choice><orig>.</orig><reg>,</reg></choice><del/>
+  <lb/><del/>et en ce faisant je ferai l’esperance de Paul valoir <formula>\frac{2833}{5525}</formula>; mais que si
+  <lb/>j’avois à conseiller Pierre <add>contre Paul</add>, je dois lui conseiller de changer au 8, et en ce faisant
+  <lb/>je<del/> ferai son esperance valoir <formula>\frac{2694}{5525}</formula>; je dis en second lieu, que Vous ne<del/>
+  <lb/><choice><orig>scauriés</orig><reg>sçauriés</reg></choice> <del/><add>l</add>eur donner un meilleur conseil, ou un autre qui soit aussi bon que le
+  <lb/>mien. Si Vous <del/><add>ne comprenés</add> pas le sens de cette decision, montrés<supplied>-</supplied>la à un qui n’a
+  <lb/>jamais entendu parler de cette <del/>dispute, il Vous l’expliquera sans se
+  <lb/>servir de ces finesses et de ces distinctions que Vous avés introduites sans ne<pc type="hyphenation">-</pc><lb break="no"/>cessité en distinguant entre les <del/>conseils imprimés
   <lb/>et entre les conseils dits tout bas. Cette decision convient un peu avec la
 <pb facs="1038787" n="4"/> 
-  <lb/>cinquieme de vos positions, mais elle en est differente eu ceci, que<del> dans</del> je ne crois pas
-  <lb/>necessaire<del> que</del> de supposer<del/> que l’un des joueurs soit sans conseil, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-  <lb/>vous le supposés dans Vôtre cinquiéme position, il ne m’importe pas que<del/>
-  <lb/><del/>l’antagoniste du joueur, dont je suis le conseil, ait un conseil ou non. Voilà,
-  <lb/>Monsieur, ce que je pense et que j’ai toujours pensé sur ce sujet, je suis
+  <lb/>cinquieme de vos positions, mais elle en est differente en ceci, que <del/>je ne crois pas
+  <lb/>necessaire <del/>de supposer <del/>que l’un des joueurs soit sans conseil, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+  <lb/>Vous le supposés dans Votre cinquiéme position, il ne m’importe pas que<del/>
+  <lb/><del/>l’antagoniste du joueur<supplied>,</supplied> dont je suis le conseil<supplied>,</supplied> ait un conseil ou non. Voilà<supplied>,</supplied>
+  <lb/>Monsieur<supplied>,</supplied> ce que je pense et que j’ai toujours pensé sur ce sujet, je suis
   <lb/>content (et même je <del/><add>le</add> demande) qu’on interprete les equivoques de
-  <lb/>la maniere la plus favorable à celui, contre qui on dispute, <add>et</add> qu’on entende
-  <lb/>un endroit par un autre. Celui qui voudra examiner tout ce qui a été dit de
-  <lb/>part et d’autre <add>sur ce sujet de puis le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement jusqu’à present,</add> en suivant exactement ces regles, decouvrira aisément,<del> qui est</del>
-  <lb/><del/>si l’on peut avec ju<pc type="hyphenation">-</pc><lb break="no"/>stice reprocher à quelqu’un de nous la faute de l’inconstance. Vous avés <add>cependant</add> raison,
-  <lb/>Monsieur, de ne <add>pas</add> prendre pour un reproche serieux ce que j’ai dit touchant les varia<pc type="hyphenation">-</pc><lb break="no"/>tions<del/> dans cette dispute, (<del>que </del><add>laquelle</add> j’ai toujours regardée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peu serieuse)
-  <lb/>et<del/> dans celle de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>, et il <add>est</add> vrai
-  <lb/>qu’on ne peut pas comparer ensemble ces deux disputes. En revanche je ne regar<pc type="hyphenation">-</pc><lb break="no"/>de pas co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e<del> un reproche</del> serieux le reproche que Vous me faites de n’avoir
+  <lb/>la maniere la plus favorable à celui contre qui on dispute, <add>et</add> qu’on entende
+  <lb/>un endroit par un autre. <del/><add>C</add>elui qui voudra examiner tout ce qui a été dit de
+  <lb/>part et d’autre <metamark/><add>sur ce sujet depuis le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement jusqu’à present</add> en suivant exactement ces regles, decouvrira aisément,<del/>
+  <lb/><del/>si l’on peut avec ju<pc type="hyphenation">-</pc><lb break="no"/>stice reprocher à quelqu’un de nous la faute de l’inconstance. Vous avés <add>cependant</add> raison<supplied>,</supplied>
+  <lb/>Monsieur, de ne <add>pas</add> prendre pour un reproche serieux ce que j’ai dit touchant les varia<pc type="hyphenation">-</pc><lb break="no"/>tions<del/> dans cette dispute, (<del/><add>laquelle</add> j’ai toujours regardée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peu serieuse)
+  <lb/>et <del/>dans celle de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>, et il <add>est</add> vrai
+  <lb/>qu’on ne peut pas comparer ensemble ces deux disputes. En revanche je ne regar<pc type="hyphenation">-</pc><lb break="no"/>de pas co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e<del/> serieux le reproche que Vous me faites de n’avoir
   <lb/>pas assés medité les choses qui regardent nôtre dispute sur le her,<del/>
   <lb/><del/>qui dure deja si longtemps. J’avoue tres volontiers que
-  <lb/>ce reproche pourroit tomber avec plus de justice sur<del/> quelques
+  <lb/>ce reproche pourroit tomber avec plus de justice sur <del/>quelques
   <lb/>autres de mes productions, et je n’ai pas cette vaine présomption de croire
-  <lb/>que tout ce qui sort de mes mains, soit excellent et perfectum ingenio ela<pc type="hyphenation">-</pc><lb break="no"/>boratum<del/> industria; Vous me dites que Vous écrivés Vos <rs type="letter">lettres</rs>
-  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous écririés des lettres de compliment, aussi prends je pour compli<pc type="hyphenation">-</pc><lb break="no"/>ment ce que Vous me dites à cet egard, et je prendrai toujours pour tel tout ce
+  <lb/>que tout ce qui sort de mes mains soit excellent <foreign xml:lang="lat">et perfectum ingenio, ela<pc type="hyphenation">-</pc><lb break="no"/>boratum <del/>industria</foreign><del/><add>.</add> Vous me dites que Vous écrivés Vos <rs type="letter">Lettres</rs>
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous écririés des lettres de compliment, aussi prends<supplied>-</supplied>je pour compli<pc type="hyphenation">-</pc><lb break="no"/>ment ce que Vous me dites à cet egard, et je prendrai toujours pour tel tout ce
   <lb/>que Vous dirés sur ce ton là, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi le sobriquet de grand Geometre,
-  <lb/>qu’il Vous a plu de me donner. Je vois bien que Vous avés voulu vous
-  <lb/>divertir à vôtre tour mais Vous avés beau <hi rend="u">me railler sur ce que Vous
-  <lb/><del/>trouvés peu de ratures dans mes <rs type="letter">lettres</rs>, si Vous sçaviés que la difficulté
-  <lb/>que j’ai d’écrire dans une langue etrangere que je<del/> n’ai pas bien apprise m’<pc type="hyphenation"></pc><lb break="no"/>oblige toujours d’écrire premierement mes <rs type="letter">lettres</rs></hi> sur un <rs type="letter">brouillon</rs>, et à les
-  <lb/>copier ensuite, Vous me seriés plus favorable. <hi rend="u">Je sçai que Vous ecrivés vos
+  <lb/>qu’il Vous a plu de me donner. <del/><add>Je</add> vois bien que Vous avés voulu Vous
+  <lb/>divertir à Vôtre tour mais Vous avés beau me railler sur ce que Vous
+  <lb/><del/>trouvés peu de ratures dans mes <rs type="letter">lettres</rs>,<note type="editorial">Im Manuskript finden sich an dieser Stelle Unterstreichungen als Anweisung für Textumstellungen, die in der Edition sinngemäss ausgeführt wurden.</note> Je sçai que Vous ecrivés vos
 <pb facs="1038788" n="5"/>  
-  <lb/><rs type="letter">lettres</rs> avec une grande facilité. il n’en est pas ainsi de moi, et</hi><del/>
-  <lb/><del/>si je n’avois pas cette difficulté d’écrire en François, ou s’il m’étoit
-  <lb/>permis d’écrire en Allemand, je suivrois trés volontiers vôtre methode, et vous au<pc type="hyphenation">-</pc><lb break="no"/>riés aussi plus souvent de mes <rs type="letter">lettres</rs>. Mais je laisse les reproches, et je passe à la
-  <lb/>dispute de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Je suis extremement surpris <add>de ce</add> que ceux, à qui Vous avés lû chés
-  <lb/>le <abbr>R. P.</abbr> <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs> ma <rs type="biblio">démonstration</rs>, n’ont pas voulu la recevoir, et qu’ils ont nié
-  <lb/>ce<add>tte</add> proposition incontestable, <hi rend="u">que les forces, avec lesquelles une même puissance
-  <lb/>agit sur un corps obliquement, sont en raison des sinus des angles d’incidence,</hi>
-  <lb/>et je le suis encore plus de ce que Vous voulés croire qu’en cela ils ont raison.
-  <lb/>Il me semble que Vous tous co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ettés le sophisme qu’on appelle <hi rend="u">ignorationem elenchi</hi>.
-  <lb/>Moi, je n’ai pas parlé de la force d’une matiere fluide, par <abbr>ex.</abbr> du vent contre la
-  <lb/>voile, mais de la force de la voile contre le vaisseau, en considerant cette force co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
-  <lb/><hi rend="u">innée</hi> dans la voile et en faisant abstraction de la cause, qui produit cette force
-  <lb/>et qui est le vent. De plus, la proposition co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je l’ai enoncée est vraye à l’egard
-  <lb/>des fluides aussi bien qu’à l’égard des solides, et mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> même s’en est servi
-  <lb/>à l’endroit que Vous cités pour demontrer <hi rend="u">que les forces, avec lesquelles une matiere
-  <lb/>fluide frappe obliquement diverses superficies planes égales, sont en raison des quar<pc type="hyphenation">-</pc><lb break="no"/>rés des sinus des angles d’incidence</hi>. Je vois bien qu’<del/>au lieu de ces mots
-  <lb/><hi rend="u">une même puissance</hi>, qui se trouvent dans mon énoncé, Vous voulés substituer
-  <lb/>ceux-ci <hi rend="u">une matiere fluide</hi>, qui se trouvent dans l’enoncé de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs>;
-  <lb/>mais Vous Vous trompés, car la direction du vent étant changée,<del> il n’y</del> ce n’est
-  <lb/>plus <hi rend="u">la même puissance</hi>, qui agit contre la voile, parce que ce n’est plus la
-  <lb/><hi rend="u">même masse de matiere fluide</hi> qui donne contre la voile. Je me persuade
-  <lb/>qu’il n’y a que ce sophisme ignoratio elenchi, qui retient ces <rs type="person">Messieurs</rs> dans le
-  <lb/>parti de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. La question qui<del> est</del> <add>a été</add> agitée entre <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> d’un côté
-  <lb/>et entre <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Huyguens</rs> et mes <rs key="pers_DE-588-118509950 pers_DE-588-118509969" type="person">Oncles</rs> de l’autre côté, est de sçavoir le rapport
-  <lb/>des vitesses de deux vaisseaux, dont l’un va directement et l’autre oblique<pc type="hyphenation">-</pc><lb break="no"/>ment par rapport à un<del/> même vent. Or il y a ici quelque ambiguité, qui
+  <lb/><rs type="letter">Lettres</rs> avec une grande facilité, il n’en est pas ainsi <del/>de moi, et<del/> <add>si Vous sçaviés que la difficulté
+    <lb/>que j’ai d’écrire dans une langue etrangere que je <del/>n’ai pas bien apprise m’<pc type="hyphenation"></pc><lb break="no"/>oblige toujours d’écrire premierement mes <rs type="letter">lettres</rs> sur un <rs type="letter">brouill<del/><add>on</add></rs>, et <del/><add>à</add> les
+    <lb/>copier ensuite, Vous me seriés plus favorable.</add>
+  <lb/><del/>Si je n’avois pas cette difficulté d’écrire en François, ou s’il m’étoit
+  <lb/>permis d’écrire en Allemand, je suivrois trés volontiers vôtre methode, et <del/>Vous au<pc type="hyphenation">-</pc><lb break="no"/>riés aussi plus souvent de mes <rs type="letter">lettres</rs>. Mais je laisse les reproches, et je passe à la
+  <lb/>dispute de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. Je suis extremement surpris <add>de ce</add> que ceux à qui Vous avés lû chés
+  <lb/>le <abbr>R. P.</abbr> <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs> ma <rs type="biblio">démonstration</rs><supplied>,</supplied> n’ont pas voulu la recevoir, et qu’ils ont nié
+  <lb/>ce<add>tte</add> pr<del/><add>oposition</add> incontestable, <cit><quote><hi rend="u">que les forces<supplied>,</supplied> avec lesquelles une même puissance
+  <lb/>agit sur un corps obliquement<supplied>,</supplied> sont en raison des sinus des angles d’incidence</hi></quote></cit>,
+  <lb/>et je le suis encore plus de ce que Vous voul<del/><add>és</add> croire qu’en cela ils ont raison.
+  <lb/>Il me semble que Vous tous co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ettés le sophisme qu’on appelle <foreign xml:lang="lat"><hi rend="u">ignorationem elenchi</hi></foreign><supplied>.</supplied>
+  <lb/>Moi je n’ai pas parlé de la force d’une matiere fluide<supplied>,</supplied> par <abbr>ex.</abbr> du vent contre la
+  <lb/>voile, mais de la force de la voile contre le vaisseau<supplied>,</supplied> en considerant cette force co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+  <lb/><hi rend="u">innée</hi> dans l<del/><add>a</add> v<del/><add>o</add>ile et en fais<del/>ant abstraction de la cause<supplied>,</supplied> qui produit cette force
+  <lb/>et qui est le vent. De plus la proposition<supplied>,</supplied> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je l’ai enoncée<supplied>,</supplied> est vraye à l’égard
+  <lb/>des fluides aussi bien qu’à l’égard des solides, et mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> <del/><add>m</add>ême s’en est servi
+  <lb/>à l’endroit que Vous cités pour demontrer<supplied>,</supplied> <cit><quote><hi rend="u">que les forces avec lesquelles une matiere
+  <lb/>fluide frappe obliquement diverses superficies planes égales, sont en raison des quar<pc type="hyphenation">-</pc><lb break="no"/>rés des sinus des angles d’incidence</hi></quote></cit>. <del/><add>Je</add> vois bien qu’<del/>au lieu de ces mots
+  <lb/><hi rend="u"><add>une</add> même puissance</hi><supplied>,</supplied> <del/><add>qui se t</add>rouvent dans mon énoncé, Vous voulés substituer
+  <lb/>ceux<supplied>-</supplied>ci, <cit><quote><hi rend="u">une matiere fluide</hi></quote></cit><supplied>,</supplied> qui se trouvent dans l’<rs type="biblio">enoncé</rs> de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs><choice><orig>,</orig><reg>;</reg></choice>
+  <lb/>mais Vous Vous trompés, car la direction du vent étant changée, <del/>ce n’est
+  <lb/>plus <cit><quote><hi rend="u">la même puissance</hi></quote></cit> qui agit contre la voile, par ce que ce n’est plus la
+  <lb/><cit><quote><hi rend="u">même masse de matiere fluide</hi></quote></cit> qui donne contre la voile. Je me persuade
+  <lb/>qu’il n’y a que ce sophisme <foreign xml:lang="lat"><hi rend="u">ignoratio elenchi</hi></foreign>, qui retient ces <rs type="person">Messieurs</rs> dans le
+  <lb/>parti de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>. La question qui <del/><add>a été</add> agitée entre <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs> d’un côté
+  <lb/>et entre <abbr>Mr.</abbr> <rs key="pers_DE-588-118639749" type="person">Huyguens</rs> et mes <rs key="pers_DE-588-118509950 pers_DE-588-118509969" type="person">Oncles</rs> de l’autre <choice><orig>côte</orig><reg>côté</reg></choice>, est de sçavoir le rapport
+  <lb/>des vitesses de d<del/><add>e</add>ux vaisseaux, dont l’un va directement et l’autre oblique<pc type="hyphenation">-</pc><lb break="no"/>ment par rapport à <add>un</add> <del/>même vent. Or il y a ici quelque ambiguité, qui
   <lb/>pourroit aisément jetter dans l’erreur des gens qui ne considerent les choses
-  <lb/>que superficiellement, Pour Vous<del> montrer</del> expliquer ce que je veux dire
+  <lb/>que superficiellement. Pour Vous <del/>expliquer ce que je veux dire<supplied>:</supplied>
 <pb facs="1038789" n="6"/>
-  <lb/><figure></figure>soient trois vaisseaux marqués ici par
-  <lb/>les 3 points A, B, C, qui ayent tous des
-  <lb/>voiles égales DAE, <add>DBE, DCE,</add> la voile du vaisseau A
-  <lb/>soit poussée par un vent, dont la direction
-  <lb/>est selon la droite <formula>FA</formula> <add>perpendiculaire à la voie <formula>DAE</formula>,</add> celle du vaisseau B par un vent, dont la direction est
-  <lb/>selon la droite <formula>GB</formula> <add>oblique à la voile <formula>DBE</formula>,</add> mais <del/><add>dont</add> la vitesse<del/> <add>soit</add> la même que celle
-  <lb/>du premier vent, et la voile du troisieme vaisseau C soit poussée par<del> le</del>
-  <lb/><del>même </del><add>un</add> vent, dont la direction est selon la droite <formula>HC</formula>, et ce dernier vent soit le
-  <lb/>même que celui qui pousse la voile du vaisseau <formula>B</formula>, en sorte que l’angle <formula>HCE</formula> soit
+  <lb/><figure facs="1038789_01.png"/> Soient trois vaisseaux marqués ici par
+  <lb/>les 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> points <formula>A</formula>, <formula>B</formula>, <formula>C</formula>, qui ayent tous des
+  <lb/>voiles égales <formula>DAE</formula><note type="editorial">Korrektur von "DE" zu "DA"</note><supplied>,</supplied> <add><formula>DBE</formula>, <formula>DCE</formula></add><supplied>,</supplied> la voile du vaisseau <formula>A</formula>
+  <lb/>soit poussée par un vent dont la direction
+  <lb/>est selon la droite <formula>FA</formula> <add>perpendiculaire à la voile <formula>DAE</formula></add><supplied>,</supplied> celle d<del/><add>u</add> vaisseau <formula>B</formula> par un vent dont la direction est
+  <lb/>selon la droite <formula>GB</formula> <add>oblique sur<note type="editorial">Nic. I B. hat "à" nachträglich zu "sur" korrigiert.</note> la voile <formula>DBE</formula>,</add> mais <del/><add>dont</add> la vitesse <del/><add>soit</add> la même que celle
+  <lb/>du premier vent, et la voile <del/><add>du</add> troisieme vaisseau <formula>C</formula> soit poussée par<del/>
+  <lb/><del/><add>un</add> vent<unclear> <gap/></unclear><note type="editorial">Hier steht ein unleserliches Zeichen, das sich vermutlich auf "vent" bezieht und an einen griechischen Buchstaben Rho erinnert.</note> dont la direction est selon la droite <formula>HC</formula>, et ce dernier vent soit le
+  <lb/>même que celui qui pousse la voile du vaisseau <formula>B</formula>, en sorte que l’angle <formula>HCE</formula><note type="editorial">Korrektur im Mansukript.</note> soit
   <lb/>égal à l’angle <formula>GBE</formula>, et la vitesse du vent <add>encore</add> la même que celle du premier vent. Les
-  <lb/>routes des vaisseaux <formula>A</formula> et <formula>B</formula> soient selon les droites <formula>AJ</formula> et <formula>BK</formula>, toutes deux perpen<pc type="hyphenation">-</pc><lb break="no"/>diculaires aux voiles <formula>DAE</formula>, <add><formula>DBE</formula>,</add> mais la route du troisiéme vaisseau <formula>C</formula> soit selon
-  <lb/>la droite <formula>CL</formula> oblique sur la voile <formula>DCE</formula>. Maintenant on peut former 3 questions
-  <lb/>sur les vitesses respectives de ces 3 vaisseaux. 1<hi rend="sup">o</hi>. Quel est le rapport de la vi<pc type="hyphenation">-</pc><lb break="no"/>tesse du vaisseau <formula>A</formula> à celle du vaisseau <formula>B</formula>? 2<hi rend="sup">o</hi>. Quel est le rapport de la vitesse
-  <lb/>du vaisseau <formula>A</formula> à celle du vaisseau <formula>C</formula>? 3<hi rend="sup">o</hi>. Quel est le rapport de la vitesse du
+  <lb/>routes des vaisseaux <formula>A</formula> et <formula>B</formula> soient selon les droites <formula>AJ</formula> et <formula>BK</formula>, toutes deux perpen<pc type="hyphenation">-</pc><lb break="no"/>diculaires aux voiles <formula>DAE</formula><note type="editorial">Korrektur im Mansukript.</note><supplied>,</supplied> <add><formula>DBE</formula></add><supplied>,</supplied> mais la route du troisiéme vaisseau <formula>C</formula> soit selon
+  <lb/>la droite <formula>CL</formula> oblique <del/><add>sur</add> la voile <formula>DCE</formula><note type="editorial">Korrektur</note>. Maintenant on peut former 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> questions
+  <lb/>sur les vitesses respectives de ces 3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> vaisseaux. 1.<hi rend="sup">o</hi> Quel est le rapport de la vi<pc type="hyphenation">-</pc><lb break="no"/>tesse du vaisseau <formula>A</formula> à celle du vaisseau <formula>B</formula>? 2.<hi rend="sup">o</hi> Quel est le rapport de la vitesse
+  <lb/>du vaisseau <formula>A</formula> à celle du vaisseau <formula>C</formula>? 3.<hi rend="sup">o</hi> Quel est le rapport de la vitesse du
   <lb/>vaisseau <formula>B</formula> à celle du vaisseau <formula>C</formula>? C’est cette derniere <add>question</add> qui forme le sujet de
-  <lb/>la dispute de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>, et non <add>point</add> la premiere ou la seconde.<del> À la premiere</del>
-  <lb/>Il faut repondre à la 1<hi rend="sup">re</hi>. question que ce rapport est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e<del> le quarré de</del> <formula>AE</formula> ou
-  <lb/><del>de </del><formula>BE</formula>,<del/><add><del>est</del> à</add> <formula>EM</formula>; à la 3<hi rend="sup">me</hi>. qu’il est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>\sqrt{CN}</formula> à <formula>\sqrt{CL}</formula>, et à la secon<pc type="hyphenation">-</pc><lb break="no"/>de qu’il est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>AE</formula> ou <formula>CE\times\sqrt{CN}</formula> à <formula>EM\times\sqrt{CL}</formula> J’entends que <formula>NL</formula> soit per<pc type="hyphenation">-</pc><lb break="no"/>pendiculaire sur <formula>CL</formula>, et <formula>EM</formula> perpendiculaire sur <formula>GB</formula> et <formula>HC</formula>. Je crois que
-  <lb/>ceux, à qui Vous avés lû ma demonstration, sont dans la pensée que c’est la
+  <lb/>la dispute de <abbr>Mr.</abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs>, et non <add>point</add> la premiere ou la seconde.<del/>
+  <lb/>Il faut repondre à la 1.<hi rend="sup">re</hi> question que ce rapport est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e<del/> <formula>AE</formula> ou
+  <lb/><del/><formula>BE</formula> <del/><add><del>est</del> à</add> <formula>EM</formula>. À la 3.<hi rend="sup">me</hi><supplied>,</supplied> qu’il est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <choice><orig><formula>\sqrt{}CN</formula></orig><reg><formula>\sqrt{CN}</formula></reg></choice> à <choice><orig><formula>\sqrt{}CL</formula></orig><reg><formula>\sqrt{CL}</formula></reg></choice><supplied>,</supplied> et à la secon<pc type="hyphenation">-</pc><lb break="no"/>de qu’il est co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>AE</formula> ou <choice><orig><formula>CE\times\sqrt{}CN</formula></orig><reg><formula>CE\times\sqrt{CN}</formula></reg></choice> à <choice><orig><formula>EM\times\sqrt{}CL</formula></orig><reg><formula>EM\times\sqrt{CL}</formula></reg></choice> J’entends que <formula>NL</formula> soit per<pc type="hyphenation">-</pc><lb break="no"/>pendiculaire sur <formula>CL</formula>, et <formula>EM</formula> perpendiculaire sur <formula>GB</formula> et <formula>HC</formula>. Je crois que
+  <lb/>ceux<supplied>,</supplied> à qui Vous avés lû ma demonstration<supplied>,</supplied> sont dans la pensée, que c’est la
   <lb/>premiere question qui forme le sujet de la dispute, vû que les vitesses des vais<pc type="hyphenation">-</pc><lb break="no"/>seaux <formula>A</formula> et <formula>B</formula> sont effectivement co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les sinus des angles d’incidence du courant
-  <lb/>du vent sur les voiles <formula>DAE</formula><add> et <formula>DBE</formula></add>, et non co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les racines de ces sinus. Mais il faut sça<pc type="hyphenation">-</pc><lb break="no"/>voir que quand nous parlons de l’obliquité de la route d’un vaisseau, nous
+  <lb/>du vent sur les voiles <formula>DAE</formula> <add>et <formula>DBE</formula></add>, et non co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les racines de ces sinus. Mais il faut <choice><orig>sca<pc type="hyphenation">-</pc><lb break="no"/>voir</orig><reg>sçavoir</reg></choice> que quand nous parlons de l’obliquité de la route d’un vaisseau<supplied>,</supplied> nous
   <lb/>n’entendons pas cette obliquité par rapport à la direction du courant du vent,
-  <lb/>mais par rapport à la direction de la force mouvante du vent<del>, laquelle est</del>
-  <lb/><del/><add>ou</add> par rapport à la direction de la voile, laquelle
+  <lb/>mais par rapport à la direction de la force mouvante du vent<del/>
+  <lb/><del/><add>ou</add> par rapport à la direction de la voile<supplied>,</supplied> laquelle
   <lb/>est toujours perpendiculaire à celle de la force mouvante du vent; dans ce
 <pb facs="1038790" n="7"/>
-  <lb/>dernier sens, la route du vaisseau <formula>B</formula> n’est point oblique, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peut étre ces <rs type="person">Messieurs</rs>
-  <lb/>la prennent, mais <add>elle est</add> directe, quoique<del> la rais</del> ils auroient<del/> raison de dire que la force,
-  <lb/>avec laquelle le vaisseau <formula>B</formula> est poussé est à la force avec laquelle le vaisseau <formula>A</formula> est
-  <lb/>po<add>u</add>ssé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le quarré de <formula>EM</formula>, est au quarré de <formula>EB</formula>, car dans ce cas les vaisseaux <formula>A</formula> et <formula>B</formula>
+  <lb/>dernier sens la route du vaisseau <formula>B</formula> n’est point oblique, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e peut étre ces <rs type="person">Messieurs</rs>
+  <lb/>la prennent, mais <add>elle est</add> directe, quoique <del/>ils auroient <del/>raison de dire que la force<supplied>,</supplied>
+  <lb/>avec laquelle ce vaisseau <formula>B</formula> est poussé<supplied>,</supplied> est à la force avec laquelle le vaisseau <formula>A</formula> est
+  <lb/>po<add>u</add>ssé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e le quarré de <formula>EM</formula> est au quarré de <formula>EB</formula>, car dans ce cas les vaisseaux <formula>A</formula> et <formula>B</formula>
   <lb/>sont poussés par les mêmes forces qui poussent leurs voiles; il n’en est pas ainsi du cas
-  <lb/>de la 3<hi rend="sup">me</hi>. question, où les voiles de vaisseaux <formula>B</formula> et <formula>C</formula> sont<del/> <add>bien</add> poussés par une
-  <lb/>même force,<del> que</del> <add>laquelle</add> pour cela peut étre considerée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <hi rend="u">innée</hi> dans les voiles,
-  <lb/>car qu’importe-t-il qu’elle soit la cause de cette force, <add>si c’est</add> la matiere fluide du
-  <lb/>vent, ou un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui tire avec une même force les<del> vaisseaux</del> voiles suivant
-  <lb/>les directions <formula>BK</formula> et <formula>CN</formula>? Mais les effets de cette même force sur les vaisseaux
-  <lb/><formula>B</formula> et <formula>C</formula>,<del> sont</del> c’est à dire les forces, avec lesquelles les vaisseaux <add><formula>B</formula> et <formula>C</formula></add> sont poussés
-  <lb/><del>dans </del><add>selon</add> leurs propres directions <formula>BK</formula> et <formula>CL</formula>, sont bien differentes, ces forces sont
+  <lb/>de la 3.<hi rend="sup">me</hi> question, où les voiles des vaisseaux <formula>B</formula> et <formula>C</formula> sont <del/><add>bien</add> poussés par une
+  <lb/>même force, <del/><add>laquelle</add> pour cela peut étre considerée co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <hi rend="u">innée</hi> dans les voiles,
+  <lb/>car qu’importe-t-il qu<del/>elle soit la cause de cette force, <add>si c’est</add> la matiere fluide du
+  <lb/>vent, où un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e qui tire avec une même force les <del/>voiles suivant
+  <lb/>les directions <formula>BK</formula> et <formula>CN</formula>? mais les effets de cette même force sur les vaisseaux
+  <lb/><formula>B</formula> et <formula>C</formula>, <del/>c’est à dire<choice><orig>,</orig><reg type="deleted"/></choice> les forces<supplied>,</supplied> avec lesquelles les vaisseaux <add><formula>B</formula> et <formula>C</formula></add> sont poussés
+  <lb/><del/><add>selon</add> leurs propres directions <formula>BK</formula> et <formula>CL</formula><supplied>,</supplied> sont bien differentes, ces forces sont
   <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les droites <formula>CN</formula> et <formula>CL</formula>, puisque la force de la voile <formula>DBE</formula> est appliquée
-  <lb/>directement, et a par consequent<del> son</del> <add>un</add> effet entier, au lieu que la force de
-  <lb/>la voile <formula>DCE</formula> (<del>qui </del><add>laquelle</add> est la même que celle de la voile <formula>DBE</formula>) est appliquée
-  <lb/>obliquement, et n’a<del> son</del> <add>point d’</add>effet que suivant la direction <formula>CL</formula>. Voilà, Monsieur, l’<pc type="hyphenation"></pc><lb break="no"/>éclaircissement que j’ai crû necessaire pour la confirmation de ma <rs type="biblio">demon<pc type="hyphenation">-</pc><lb break="no"/>stration</rs>, je vous prie de le lire à ces <rs type="person">Messieurs</rs>, je suis persuadé que,
-  <lb/>s’il n’est pas capable de les faire changer de sentiment, rien ne pourra les rame<pc type="hyphenation">-</pc><lb break="no"/>ner de leur égarement. Nous venons de recevoir, mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> et moi, les <rs type="biblio">Livres</rs>
-  <lb/>dont Vous avés eu la bonté de nous faire present, je Vous en remercie infi<pc type="hyphenation">-</pc><lb break="no"/>niment tant de la part de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> que de la mienne. Aussitôt que nous
+  <lb/>directement, et a par consequent <del/><add>un</add> effet entier, au lieu que la force de
+  <lb/>la voile <formula>DCE</formula> (<del/><add>laquelle</add> est la même que celle de la voile <formula>DBE</formula>) est appliquée
+  <lb/>obliquement, et n’a <del/><add>point d’</add>effet que suivant la direction <formula>CL</formula>. Voilà<supplied>,</supplied> Monsieur<supplied>,</supplied> l’<pc type="hyphenation"></pc><lb break="no"/>éclaircissement que j’<del/><add>ai</add> crû necessaire pour la confirmation de ma <rs type="biblio">demon<pc type="hyphenation">-</pc><lb break="no"/>stration</rs>, je Vous prie de le lire à ces <rs type="person">Messieurs</rs>, je suis persuadé que<supplied>,</supplied>
+  <lb/>s’il n’est pas capable de les faire changer de sentiment, rien ne pourra les rame<pc type="hyphenation">-</pc><lb break="no"/>ner de leur égarement. Nous venons de recevoir, mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> et moi<supplied>,</supplied> les <rs type="biblio">Livres</rs>
+  <lb/>dont Vous <choice><orig>aves</orig><reg>avés</reg></choice> eu la bonté de nous faire présent, je Vous en remercie infi<pc type="hyphenation">-</pc><lb break="no"/>niment tant de la part de mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> que de la mienne. Aussi tôt que nous
   <lb/>aurons examiné la <rs type="biblio">feuille volante</rs> du <abbr>P.</abbr> <rs key="pers_DE-588-118576682" type="person">Mallebranche</rs>, et le <rs type="biblio">Supplement</rs> de
-  <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-105511131X" type="person">Parent</rs>, je vous marquerai ce que nous en pensons, auquel tems je me
-  <lb/>donnerai l’honneur de repondre aux autres articles de Vôtre <rs type="letter">lettre</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
+  <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-105511131X" type="person">Parent</rs>, je Vous marquerai ce que nous en pensons, auquel tems je me
+  <lb/>donnerai l’honneur de repondre aux autres articles de Vôtre <rs type="letter">Lettre</rs>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e
   <lb/>aussi à la <rs type="letter">lettre</rs>, dont <abbr>Mr.</abbr> de <rs key="pers_DE-588-115598157X" type="person">Waldegrave</rs> a bien voulu m’honorer et dont
-  <lb/>je le remercie tres humblement. Je n’ai point de nouvelles de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moi<pc type="hyphenation">-</pc><lb break="no"/>vre</rs> depuis<del> prés</del> un an, je ne sçai pas même, s’il a reçu ma derniere
-  <lb/><rs type="letter">lettre</rs>.<del/> Vous m’obligerés de m’expliquer par un
-  <lb/>exemple ce que vous sçavés de sa nouvelle methode pour arranger et
+  <lb/>je le remercie treshumblement. Je n’ai point de nouvelles de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moi<pc type="hyphenation">-</pc><lb break="no"/>vre</rs> depuis <del/>un an, je ne sçai pas meme s’il a reçû ma derniere
+  <lb/><rs type="letter">lettre</rs>,<del/> Vous m’obligerés de m’expliquer par un
+  <lb/>exemple ce que Vous sçavés de sa nouvelle methode pour arranger et
 <pb facs="1038791" n="8"/>
-  <lb/>mettre en calcul les raisonnemens que fournit la methode des combinaisons.
-  <lb/>Je suis de Vôtre avis que ces sortes d’abregés ne peuvent<del> qu’</del> étre que
+  <lb/>mettre en calcul les raisonnemens que fournit la methode des combinaisons<choice><orig>.</orig><reg>;</reg></choice>
+  <lb/>je suis de vôtre avis que ces sortes d’abregés ne peuvent <del/>étre que
   <lb/>trés utiles. Je serai ravi d’apprendre que <abbr>Mr.</abbr> <rs key="pers_DE-588-117584401" type="person">Nicole</rs> a reussi dans son
-  <lb/>dessein, c’est appare<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent un heureux mariage à quoi il bute; quoiqu’il en
-  <lb/>soit, je lui souhaite de tout mon coeur une bonne reussite. J’assure de
-  <lb/>mes tres humbles respects <abbr>Mad<hi rend="sup">e</hi>.</abbr> de <rs key="pers_DE-588-1155965140" type="person">Montmort</rs>, <abbr>Madlle</abbr> <rs type="person">Cognet</rs> et tous nos
-  <lb/><rs type="person">Messieurs</rs>, particulierement <abbr>Mr.</abbr> Vôtre <rs type="person">Frere</rs>; mandés moi, je Vous prie,
-  <lb/>si je dois continuer d’envoyer mes <rs type="letter">lettres</rs> à son adresse. J’ai bien de l’obli<pc type="hyphenation">-</pc><lb break="no"/>gation à mon petit <rs type="person">compagnon</rs> de l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de son souvenir, je l’ex<pc type="hyphenation">-</pc><lb break="no"/>horte à bien faire ses études, et à<del> venir</del> me venir voir un jour à <rs key="place_GEO-2661604" type="place">Bâle</rs>.
+  <lb/>dessein, c’est appare<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent un heureux mariage à quoi il bute, quoiqu’il en
+  <lb/>soit<supplied>,</supplied> je lui souhaite de tout mon coeur une bonne reussite. J’assure de
+  <lb/>mes treshumbles respects <abbr>Mad.<hi rend="sup">e</hi></abbr> de <rs key="pers_DE-588-1155965140" type="person">Montmort</rs>, <abbr>Mad.<hi rend="sup">lle</hi></abbr> <rs type="person">Cognet</rs> et tous nos
+  <lb/><rs type="person">Messieurs</rs>, particulierement <abbr>Mr.</abbr> Vôtre <rs type="person">Frere</rs>, mandés moi<supplied>,</supplied> je Vous prie<supplied>,</supplied>
+  <lb/>si je dois continuer d’envoyer mes <rs type="letter">lettres</rs> à son adresse. J’ai bien de l’obli<pc type="hyphenation">-</pc><lb break="no"/>gation à mon petit <rs type="person">compagnon</rs> de l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de son souvenir, je l’ex<pc type="hyphenation">-</pc><lb break="no"/>horte à bien faire ses études, et à <del/>me venir voir un jour à <rs key="place_GEO-2661604" type="place">Bâle</rs>.
 </p>
 <closer>
   <salute>
-    <lb/>A Dieu, Monsieur, soyés persuadé que je continue toujours d’étre avec
-    <lb/>un sincere et respectueux attachement Vôtre <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.</abbr>
-  </salute>
-  <dateline><date when="1715-05-04">4. Maji 1715</date>.</dateline>
+    <lb/>ADieu Monsieur, soyés persuadé que je continue toujours d’étre avec
+    <lb/>un sincere et respectueux attachement Vôtre <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+  </salute> <dateline><date when="1715-05-04">4. Maji 1715</date>.</dateline>
 </closer>
 </div>
 </body>

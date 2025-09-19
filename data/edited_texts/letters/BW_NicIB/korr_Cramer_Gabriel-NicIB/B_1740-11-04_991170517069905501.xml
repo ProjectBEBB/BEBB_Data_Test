@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517069905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -159,6 +159,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-21" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-18" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-08" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-08" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -171,78 +173,95 @@
 <body>
 <div type="letter">
 <pb facs="1063385" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>Je prens la Liberté de vous demander une grace pour Mrs. les heritiers
-                           <lb/><rs key="GND GND" type="person">Cramer</rs> &amp; Fréres <rs key="GND GND" type="person">Philibert</rs>, Libraires de nôtre Ville. A l’occasion de l’entreprise
-                           <lb/>de Mons. <rs type="person">Bousquet</rs>, qui se dispose à imprimer incessamment les Oeuvres
-                           <lb/>de Monsieur <rs key="pers_DE-588-118509969" type="person">Jean Bernoulli</rs>, ces Messieurs ont formé celle d’imprimer
-                           <lb/>aussi celles de feu Monsr. <rs key="pers_DE-588-118509950" type="person">Jaques Bernoullij</rs>, afin que le public puisse
-                           <lb/>avoir en même tems un recueil complet des Ouvrages de ces deux illustres
-                           <lb/>Mathematiciens, l’ornement de nôtre <rs key="place_VER-schweiz" type="place">Suisse</rs>. Comme ils se sont ouverts
-                           <lb/>à moi de ce dessein &amp; qu’ils m’ont même prié de les aider dans cette entreprise
-                           <lb/>j’ai cru devoir les y encourager, persuadé qu’en travaillant à rendre plus
-                           <lb/>communs les travaux de ces grands hommes, je contribuerois au bien public,
-                           <lb/>&amp; à répandre leur gloire. J’ajoutai, Monsieur, qu’officieux &amp; obligeant comme
-                           <lb/>vous étes, j’esperois que vous ne leur refuseriez pas vôtre assistance, &amp; que
-                           <lb/>vous consentiriez à les aider de vos bons conseils. C’est pour vous les demander
-                           <lb/>en leur nom que j’ai l’honneur de vous écrire la presente. Le plan de
-                           <lb/>ces Messieurs est de rimprimer toutes les Pieces de feu Monsieur <rs key="pers_DE-588-118509950" type="person">Jaques
-                           <lb/>Bernoulli</rs> qui sont dispersées çà &amp; la en differents Journaux. Ils se
-                           <lb/>proposent d’y joindre les Traittés de Gravitate Aetheris &amp; de Systemate
-                           <lb/>Cometarum, qui sont devenus rares. Pour ce qui est de l’Ars conjectandi,
-                           <lb/>comme cet excellent Ouvrage fait par lui même un Volume complet qui
-                        <pb facs="1063386" n="2"/>
-<lb/>peut encore se trouver, ils n’estiment pas qu’il doive entrer dans
-                           <lb/>leur recueil. Ce qu’ils vous demandent aujourd’huj, Monsieur,
-                           <lb/>&amp; je vous prie d’agréer que j’apuie auprès de vous leur priere, c’est
-                           <lb/>de vouloir bien leur indiquer ce que vous connoissez des Ouvrages
-                           <lb/>de feu Monsr. votre <rs type="person">Oncle</rs>, au delà du Catalogue que j’aurai l’honneur
-                           <lb/>de vous envoier au premier jour. Surtout vous les obligeriez beaucoup
-                           <lb/>si vous vouliez y joindre quelques piéces Manuscriptes. Vous m’avez
-                           <lb/>permis de prendre une Copie du Varia Posthuma, mais je ne
-                           <lb/>la leur communiquerai point, sans votre permission. Je me rapelle
-                           <lb/>aussi que vous m’avez fait voir un<del>e</del> assez gros cahier de la main
-                           <lb/>de Mr. votre <rs type="person">Oncle</rs>. Si dans ce Volume il se trouvoit quelque chose que
-                           <lb/>vous jugeassiez meriter l’impression, ce seroit véritablement l’occasion
-                           <lb/>de rendre ce bon office au public, &amp; à la mémoire du defunt.
-                           <lb/>J’ai quelques Thèses de sa Composition dont je fais cas. L’une est intitulée
-                           <lb/>Solutio Tergemini Problematis, defenduë pro vacante Sede Mathematica.
-                           <lb/>Une autre est De Conversione &amp; Oppositione Propositionum, tertii Speciminis
-                           <lb/>loco. Ce Tertium Specimen en suppose deux autres que je n’ai pas. Je vois que
-                           <lb/>l’un est intitulé Parallelismus <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. Je vous serois très obligé si vous
-                           <lb/>pouviez nous procurer ces piéces, fut ce en Manuscrit, &amp; tout ce que
-                           <lb/>vous connoitrés de piéces fugitives de feu Mons. vôtre <rs type="person">Oncle</rs>. Les
-                        <pb facs="1063387" n="3"/>
-<lb/>Remarques sur la Geometrie de <rs key="pers_DE-588-118524844" type="person">Descartes</rs>, dont il est parlé dans son
-                           <lb/>Eloge (histoire de l’Acd. 1706) sont apparemment celles qui se trouvent
-                           <lb/>dans l’Edition de Francfort 1697. Ne savez vous point de qui sont
-                           <lb/>les Remarques sur le reste des Oeuvres de <rs key="pers_DE-588-118524844" type="person">Descartes</rs> qu’on a joint à la
-                           <lb/>même Edition?</p>
+<opener>
+  <salute>
+    <lb/>Monsieur
+  </salute>
+</opener>
+<p>
+  <lb/>Je prens la Liberté de vous demander une grace pour <abbr>M.<hi rend="sup">rs</hi></abbr> les heritiers
+  <lb/><rs key="GND GND" type="person">Cramer</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Fréres <rs key="GND GND" type="person">Philibert</rs>, Libraires de nôtre Ville. A l’occasion de l’entreprise
+  <lb/>de <abbr>Mons.<hi rend="sup">r</hi></abbr> <rs type="person">Bousquet</rs>, qui se dispose à imprimer incessamment les oeuvres
+  <lb/>de Monsieur <rs key="pers_DE-588-118509969" type="person">Jean Bernoulli</rs>, ces Messieurs ont formé celle d’imprimer
+  <lb/>aussi celles de feu <abbr>Mons.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509950" type="person">Jaques Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>, afin que le public puisse
+  <lb/>avoir en même tems un recueil complet des ouvrages de ces deux illustres
+  <lb/>Mathematiciens, l’ornement de nôtre <rs key="place_VER-schweiz" type="place">Suisse</rs>. Comme ils se sont ouverts
+  <lb/>à moi de ce dessein <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’ils m’ont même prié de les aider dans cette entreprise
+  <lb/>j’ai cru devoir les y encourager, persuadé qu’en travaillant à rendre plus
+  <lb/>communs les travaux de ces grands hommes, je contribuerois au bien public,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à répandre leur gloire. J’ajoutai, Monsieur, qu’officieux <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> obligeant comme
+  <lb/>vous étes, j’esperois que vous ne leur refuseriez pas vôtre assistance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que
+  <lb/>vous consentiriez à les aider de vos bons conseils. C’est pour vous les demander
+  <lb/>en leur nom que j’ai l’honneur de vous écrire<!-- "è"? RG 18.07.2025 --> la presente. Le plan de
+  <lb/>ces Messieurs est de rimprimer toutes les Pieces de feu Monsieur <rs key="pers_DE-588-118509950" type="person">Jaques
+  <lb/>Bernoulli</rs> qui sont dispersées çà <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> là en differents Journaux. Ils se
+  <lb/>proposent d’y joindre les Traittés <rs type="biblio">de Gravitate Aetheris</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs type="biblio">de Systemate
+  <lb/>Cometarum</rs>, qui sont devenus rares. Pour ce qui est de l’<rs type="biblio">Ars conjectandi</rs>,
+  <lb/>comme cet excellent Ouvrage fait par lui même un Volume complet qui
+  <pb facs="1063386" n="2"/>
+  <lb/>peut encore se trouver, ils n’estiment pas qu’il doive entrer dans
+  <lb/>leur recueil. Ce qu’ils vous demandent aujourd’hu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>, Monsieur,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je vous prie d’agréer que j’apuie auprès de vous leur priere, c’est
+  <lb/>de vouloir bien leur indiquer ce que vous connoissez des Ouvrages
+  <lb/>de feu <abbr>Mons.<hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, au delà du Catalogue que j’aurai l’honneur
+  <lb/>de vous envoier au premier jour. Surtout vous les obligeriez beaucoup
+  <lb/>si vous vouliez y joindre quelques piéces Manuscriptes. Vous m’avez
+  <lb/><subst><del/><add>permis</add></subst> de<del/> prendre une Copie <rs type="biblio">du Varia Posthuma</rs>, mais je ne
+  <lb/>la leur communiquerai point, sans votre permission. Je me rapelle
+  <lb/>aussi que vous m’avez fait voir un<del>e</del> assez gros cahier de la main
+  <lb/>de <abbr>M.<hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. Si dans ce Volume il se trouvoit quelque chose que
+  <lb/>vous jugeassiez meriter l’impression, ce seroit véritablement l’occasion
+  <lb/>de rendre ce bon office au public, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à la mémoire du defunt.
+</p>
+<p>
+  <lb/>J’ai quelques Thèses de sa composition dont je fais cas. L’une est intitulée
+  <lb/><rs type="biblio">Solutio Tergemini Problematis</rs>, defenduë pro vacante Sede Mathematica.
+  <lb/>Une autre est <rs type="biblio">De Conversione <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Oppositione Propositionum, tertii Speciminis
+  <lb/>loco. Ce Tertium Specimen</rs> en suppose deux autres que je n’ai pas. Je vois que
+  <lb/>l’un est intitulé Parallelismus <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Je vous serois très obligé si vous
+  <lb/>pouviez nous procurer ces piéces<!-- "è"? RG 18.07.2025 -->, fut ce en Manuscrit, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tout ce que
+  <lb/>vous connoitrés de piéces<!-- "è"? RG 18.07.2025 --> fugitives de feu <abbr>Mons.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>. Les
+  <pb facs="1063387" n="3"/>
+  <lb/>Remarques sur la Geometrie de <rs key="pers_DE-588-118524844" type="person">Descartes</rs>, dont il est parlé dans son
+  <lb/>Eloge (<rs type="biblio">histoire de l’<abbr>acad.</abbr> 1706</rs>) sont apparemment celles qui se trouvent
+  <lb/>dans l’<rs type="biblio">Edition</rs> de Francfort 1697. Ne savez vous point de qui sont
+  <lb/>les Remarques sur le reste des Oeuvres de <rs key="pers_DE-588-118524844" type="person">Descartes</rs> qu’on a joint à la
+  <lb/>même Edition?
+</p>
 <p>Voila, Monsieur, le sujet de ma Lettre, que
-                           <lb/>je ne saurois finit sans prendre cette occasion de vous remercier
-                           <lb/>de la maniére du monde la plus forte, des honnetetés &amp; des politesses
-                           <lb/>dont vous nous avez comblé, lorsque nous eumes, Monsr. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
-<lb/>&amp; moi, l’honneur de vous visiter dernierement. Je n’aurois point
-                           <lb/>autant tardé à vous en marquer ma reconnoissance, si je n’eusse
-                           <lb/>craint de vous importuner par de simples lettres de compliment,
-                           <lb/>&amp; de vous faire perdre un tems qui est si précieux à votre Université
-                           <lb/>&amp; au Public. Je vous prie d’etre bien assuré qu’on ne sauroit
-                           <lb/>etre avec plus d’estime &amp; de consideration que je le suis
-                           <lb/>Monsieur</p>
-<closer><salute><lb/>Votre très humble &amp;
-                           <lb/>très obeissant Serviteur</salute>
-<signed><lb/>G. Cramer</signed>
-<dateline><lb/>à Mont ce <date when="1740-11-04">4 Novemb. 1740</date>.</dateline></closer>
-<pb facs="1063388" n="4"/>
+  <lb/>je ne saurois finir, sans prendre cette occasion de vous remercier
+  <lb/>de la maniére<!-- "è"? RG 18.07.2025 --> du monde la plus forte, des honnetetés <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des politesses
+  <lb/>dont vous nous avez comblé, lorsque nous eumes, <abbr>Mons.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> moi, l’honneur de vous visiter dernierement. Je n’aurois point
+  <lb/>autant tardé à vous en marquer ma reconnoissance, si je n’eusse
+  <lb/>craint de vous importuner par de simples lettres de compliment,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous faire perdre un tems qui est si précieux à votre Université
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> au Public<supplied>.</supplied>
+</p>
 <closer>
-<address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli,</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit</addrLine>
-<addrLine>&amp;c &amp;c</addrLine>
-<addrLine>a Basle</addrLine>
-</address>
+  <salute>Je vous prie d’etre bien assuré qu’on ne sauroit
+    <lb/>etre avec plus d’estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de consideration que je le suis
+    <lb/>Monsieur
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+    <lb/>très obeissant Serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>à Mont ce <date when="1740-11-04">4 <abbr>Novemb.</abbr> 1740</date>.
+  </dateline>
 </closer>
+<pb facs="1063388" n="4"/>
+  <closer>
+    <address>
+      <addrLine>Monsieur</addrLine>
+      <addrLine>Monsieur Nicolas Bernoulli,</addrLine>
+      <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit</addrLine>
+      <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+      <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+    </address>
+  </closer><!-- Bis hier den Code angesehen, RG 21.07.2025 -->
 </div>
 </body>
 </text></TEI>

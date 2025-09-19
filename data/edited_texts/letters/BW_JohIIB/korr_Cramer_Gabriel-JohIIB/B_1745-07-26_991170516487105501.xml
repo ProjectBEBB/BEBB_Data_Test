@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,8 +147,11 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-27" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert</change>
+      <change when="2025-07-29" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-08-27" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-07-07" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-07-07" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -161,27 +164,40 @@
 <body>
 <div type="letter">
 <pb facs="3694339" n="1"/>
-<p><lb/>26 Juill. 1745</p>
-<p><lb/>J’ai differé, mon cher Monsieur, à vous accuser
-                           <lb/>la réception de votre <rs type="letter">Lettre</rs>, &amp; à vous faire mes justes
-                           <lb/>remercimens jusqu’à ce que j’eusse des nouvelles que
-                           <lb/>Madame <rs key="pers_DE-588-118681028" type="person">du Chatelet</rs> avoit reçû le <rs key="pers_DE-588-118587544" type="person">Newton</rs>. Je <add>vous</add> prie
-                           <lb/>maintenant d’agréer les témoignages de ma reconnoissance,
-                           <lb/>&amp; de vouloir bien les faire agréer à M. Votre <rs key="pers_DE-588-118509969" type="person">Pere</rs>
-<lb/>que je vous prie d’assurer de la continuation de mes respects
-                           <lb/>&amp; de mon entier dévouément. Dès la reception de votre
-                           <lb/>Lettre, j’écrivis à <rs key="place_GEO-2643743" type="place">Londres</rs> pour avoir un autre Exemplaire,
-                           <lb/>relié des mieux. J’ai donné ordre qu’on l’envoie incessamment
-                           <lb/>a <rs key="place_GEO-2747891" type="place">Roterdam</rs>, pour le faire passer à <rs key="place_GEO-2925533" type="place">Francfort</rs>, d’ou il sera aisé
-                           <lb/>de le faire aller à <rs key="place_GEO-2661604" type="place">Basle</rs>. Quoiqeu je n’aie point de réponse, je
-                           <lb/>ne doute pas que mon ami n’ait deja éxécuté ma commission.
-                           <lb/>Je me trouverois heureux d’avoir quelque occasion de vous marquer
-                           <lb/>combien je suis sensible à vôtre amitié.</p> <closer><salute>Tenés vous bien assuré
-                           <lb/>de toute la miène &amp; des sentimens inviolables avec lesquels je suis
-                           <lb/>&amp; serai toujours
-                           <lb/>Tout a vous</salute> <signed>G. Cramer</signed>
-<dateline><lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date>26 Juill. 1745</date></dateline></closer>
-<pb facs="3694340" n="2"/>
+<opener>
+  <dateline>
+    <lb/><date when="1745-07-26">26 <abbr>Juill.</abbr> 1745</date>
+  </dateline>
+</opener>
+<p>
+  <lb/>J’ai differé, mon cher Monsieur, à vous accuser
+  <lb/>la réception de votre <rs type="letter">Lettre</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à vous faire mes justes
+  <lb/>remercimens jusqu’à ce que j’eusse des nouvelles que
+  <lb/>Madame <rs key="pers_DE-588-118681028" type="person">Du Chatelet</rs> avoit reçû le <rs type="biblio">Newton</rs>. Je <add>vous</add> <subst><del/><add>prie</add></subst>
+  <lb/>maintenant d’agréer les témoignages de ma reconnoissance,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vouloir bien les faire agréer à <abbr>M.<hi rend="sup">r</hi></abbr> Votre <rs key="pers_DE-588-118509969" type="person">Pere</rs>
+  <lb/>que je vous prie d’assurer de la continuation de mes respects
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de mon entier dévouément. Dès la reception de votre
+  <lb/><rs type="letter">Lettre</rs>, j’ecrivis à <rs key="place_GEO-2643743" type="place">Londres</rs> pour avoir un autre <rs type="biblio">Exemplaire</rs>,
+  <lb/>relié des mieux. J’ai donné ordre qu’on l’envoie incessamment
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2747891" type="place">Roterdam</rs>, pour le faire passer à <rs key="place_GEO-2925533" type="place">Francfort</rs>, d’où il sera aisé
+  <lb/>de le faire <subst><del/><add>aller</add></subst> à <rs key="place_GEO-2661604" type="place">Basle</rs>. Quoique je n’aie point de rèponse, je
+  <lb/>ne doute pas que mon ami n’ait deja èxécuté ma commission.
+  <lb/>Je me trouverois heureux d’avoir quelque occasion de vous marquer
+  <lb/>combien je suis sensible à vôtre amitié.
+</p>
+<closer>
+  <salute>Tenès vous bien assuré
+    <lb/>de toute la miè<unclear>nn</unclear>e <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> des Sentimens <subst><del/><add>inviolables</add></subst> avec lesquels je suis
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> serai toujours
+    <lb/>Tout <choice><orig>a</orig><reg>à</reg></choice> vous
+  </salute>
+  <signed><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1745-07-26">26 <abbr>Juill.</abbr> 1745</date>
+  </dateline>
+</closer>
+<pb facs="3694340" n="2" type="empty"/>
 </div>
 </body>
 </text></TEI>

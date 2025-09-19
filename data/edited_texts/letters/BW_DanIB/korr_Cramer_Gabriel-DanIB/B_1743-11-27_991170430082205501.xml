@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430082205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -151,21 +151,96 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="teiKodiert">
     <listChange>
-      <change notAfter="2024-02-23" who="RG">Kleinere Anpassungen und Referenzierungen (ohne Biblio)</change>
+      <change when="2025-08-25" who="MK">Transkr. kontr., TEIcode erg., korr., keys, rs</change>
+      <change when="2025-08-24" who="MK">TEIcode erg., korr.</change>
+      <change when="2025-08-22" who="MK">Transkription korrigiert mit Abfertigung BGE, TEIcode erg., korr.</change>
+      <change when="2025-06-13" who="RG">pb, lb, zusätzliche Anpassungen</change>
+      <change when="2024-02-23" who="RG">Kleinere Anpassungen und Referenzierungen (ohne Biblio)</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- MK 22.8.2025, URL/ark aus archives.BGE: https://archives.bge-geneve.ch/ark:/17786/vta25055345583f21a1/dao/0/1/idsearch:RECH_ee866cfa21a79dd0e8c32bfcc3a96e7f?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvta25055345583f21a1%2Fcanvas%2F0%2F11 -->
 </facsimile><text>
 <body>
 <div type="letter">
-    <p>Vous me faites un sensible plaisir, Monsieur, de m’employer toutes les fois que je puis vous etre utile, soit dans les petites affaires, soit dans d’autres de plus grande importance, si vous m’en jugez capable. Je n’ai pas manqué de prouver à Mr. <rs key="pers_DE-588-116745487" type="person">Herrenschwands</rs> toutes les facilités pour faire epreuve de son secret, mais il ne s’est trouvé ici qu’un seul malade pour son specifique. il a laissé à Mr. le Prof. <rs key="pers_DE-588-1017268398" type="person">Koenig</rs> une certaine quan tité de sa poudre; cependant personne n’en a encore demandé; j’ai donné aussi des adresses à Mr. <rs key="pers_DE-588-116745487" type="person">Herrenschwands</rs> pour <rs key="place_GEO-2973783" type="place">Strasbourg</rs> et lui ai promis de le faire connoitre à l’Academie des sciences de Paris, quand il y sera arrivé. Quant au sujet de votre seconde lettre, j’aurai l’honneur de vous dire, que les Chirurgiens d’ici, mais bon Dieu quels chirurgiens! font un corps à part entierement independant de la faculté de Medecine; Ces Chirurgiens font un corps de Maitrise, tel que le corps de cordonniers, tailleurs et autres Artisans; un homme qui veut etre recu dans ce corps fait une epreuve de son art, qui consiste à composer un emplatre en presence des Maitres, sur quoi ils sont reçus: je crois qu’il en est de meme dans toutes les villes imperiales ou qui l’ont eté anciennement; les corps de metier y ont leurs privileges et les chirurgiens y font un semblable corps. il faut pourtant dire aussi, que nous avons ici quelques fois des Chirurgiens plus habiles et ceux-ci ont cou tume de s’adresser à la faculté de Medecine, y subissent leurs examens et lorsqu’on les trouve le meriter, on les recoit Docteurs en chirurgie et on leur accorde tous les privileges qui y sont attachés. et nos status à cet egard sont à peu pres les memes que ceux qu’on observe pour recevoir les autres Docteurs. Voici, mon cher Monsieur, ce que je puis vous dire sur votre article et si cela n’est pas suffisant, je vous prie de detail ler d’avantage vos questions.</p>
-    <p>On m’a dit qu’on a inseré dans la nouvelle edition de <rs key="place_GEO-2660646" type="place">Geneve</rs> des principes de Newton les traités sur le flux et reflux qui ont emporté les prix; si cela est vrai j’aurois souhaité qu’on m’en eut averti, car j’aurois pu faire plusieurs additions à ma piece pour faire voir le merveilleux accord entre mes formules et les experiences ou observations, dont je n’etois pas informé auparavant. faites je vous prie mille complimens de ma part à Mr. <rs key="pers_DE-588-100289665" type="person">Jalabert</rs>, j’espere qu’il s’est entierement retabli. je suis toujours avec tous les sentimens d’amitié et d’estime possibles, Monsieur, votre tres humble et tres obeissant serviteur Daniel Bernoulli. Bale ce 27 9bre. 1743.</p>
-<postscript><p>P.S. J’ai oublié de vous dire, qu’il y a toujours un Docteur en Medecine constitué par notre Magistrat, qui preside aux examens des Chirurgiens.</p></postscript> <closer><address><addrLine>Monsieur Monsieur G Cramer Professeur en Mathematique à Geneve.<!-- "addrLine" Noch auseinandernehmen, sobald Original sichtbar ist, RG 23.02.2024 --></addrLine></address></closer> 
+  <pb n="1"/><!-- facs fehlen noch... -->
+    <p>
+      <lb/>Vous me faites un sensible plaisir, Monsieur, de m’employer toutes
+      <lb/>les fois que je puis vous etre utile, soit dans les petites affaires, soit dans d’autres
+      <lb/>de plus grande importance, si vous m’en jugez capable. Je n’a<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> pas
+      <lb/>manqué de prouver à <abbr>Mr.</abbr> <rs key="pers_DE-588-116745487" type="person">Herrenschwand</rs> toutes les facilités pour
+      <lb/>faire epreuve de son secret, mais il ne s’est trouvé ici qu’un seul
+      <lb/>malade pour son specifique. <choice><orig>il</orig><reg>Il</reg></choice> a laissé à <abbr>Mr.</abbr> le <abbr>Prof.</abbr> <rs key="pers_DE-588-1017268398" type="person">Koenig</rs> une
+      <lb/>certaine quantité de sa poudre; <subst><del/><add>ce</add></subst>pendant personne n’en a encore
+      <lb/>demandé; j’ai donné aussi des adresses à <abbr>Mr.</abbr> <rs key="pers_DE-588-116745487" type="person">Herrenschwand</rs> pour
+      <lb/><rs key="place_GEO-2973783" type="place">Strasbourg</rs> et lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> ai promis de le faire connoitre à l’<rs type="organisation">Academie des sciences</rs>
+      <lb/>de <rs key="place_GEO-2988507" type="place">Paris</rs>, quand il y sera arrivé. Quant au sujet de
+      <lb/>votre seconde <rs key="B_991170514632605501" type="letter">lettre</rs>, j’aura<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice> l’honneur de vous dire, que les Chi<pc type="hyphenation">-</pc><lb break="no"/>rurgiens d’ici, mais bon Dieu quels chirurgiens! font un corps à
+      <lb/>part entierement independant de la <rs type="organisation">faculté de Medecine</rs>; Ces
+      <lb/>Chirurgiens font un <rs type="organisation">corps de Maitrise</rs>, tel que le <rs type="organisation">corps de cordon<pc type="hyphenation">-</pc><lb break="no"/>niers</rs>, <rs type="organisation">[corps de] tailleurs</rs> et autres Artisans; un homme qui veut etre
+      <lb/>recu dans ce corps fait une epreuve de s<subst><del/><add>on</add></subst> art, qui consiste
+      <lb/>à composer un emplatre en presence des Maitres, sur quoi ils
+      <lb/>sont recus: je crois qu’il en est de mem<unclear>e</unclear> dans toutes les villes Im<pc type="hyphenation">-</pc><lb break="no"/>periales <choice><orig>ou</orig><reg>où</reg></choice> qui l’ont eté anciennement; les corps de metier y ont leurs
+      <lb/>privileges et les chirurgiens y font un semblable corps. Il faut pourtant
+      <lb/>dire aussi, que nous avons ici quelques fois des Chirurgiens plus habiles
+      <lb/>et ceux-ci ont coutume de s’adresser à la <rs type="organisation">faculté de Medecine</rs>, y subissant
+      <lb/>leurs examens et lorsqu’on les trouve le meriter, on les recoit Docteurs
+      <lb/>en chirurgie et on leur accorde tous les privileges qui y sont attachés.
+      <lb/><choice><orig>et</orig><reg>Et</reg></choice> nos status à cet egard sont à peu prés les memes que ceux qu’on observe
+      <lb/>pour recevoir les autres Docteurs. Voici, mon cher monsieur, ce que je
+   <pb n="2"/> 
+      <lb/>puis vous dire sur votre <rs type="biblio">article</rs> et si cela n’est pas suffisant, je vous
+      <lb/>prie de detailler d’avantage vos questions.
+    </p>
+    <p>
+      <lb/>On m’a dit qu’on a inseré dans la nouvelle edition de <rs key="place_GEO-2660646" type="place">Geneve</rs>
+      <lb/>des <rs type="biblio">principes</rs> de <rs key="pers_DE-588-118587544" type="person">Newton</rs> les <rs type="biblio">traités sur le flux et reflux</rs> qui ont
+      <lb/>emporté les prix; si cela est vrai j’aurois souhaité qu’on m’en eut
+      <lb/>averti, car j’aurois pû faire plusieurs additions à ma <rs key="biblio_JHW6KKGC" type="biblio">piece</rs> pour
+      <lb/>faire voir le merveilleux accord entre mes formules et les experiences
+      <lb/>ou observations, dont je n’etois pas informé auparavant. Faites<supplied>,</supplied> je
+      <lb/>vous prie<supplied>,</supplied> mille complimens de ma part à <abbr>Mr.</abbr> <rs key="pers_DE-588-100289665" type="person">Jalabert</rs>; j’espere
+      <lb/>qu’il s’est entierement retabli.
+    </p>
+  <closer>
+    <salute>Je suis toujours avec tous les
+    <lb/>sentimens d’amitié et d’estime possibles,
+    <lb/>Monsieur,
+    <lb/>votre tres humble et tres
+    <lb/>obeïssant Serviteur
+    </salute>  
+    <signed>
+      <lb/><rs key="pers_DE-588-118656503" type="person">Daniel Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.
+    </signed>    
+    <dateline>
+      <lb/><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1743-11-27">2<subst><del/><add>7</add></subst> 9<hi rend="sup">bre</hi>
+      <lb/>1743</date>
+    </dateline>
+  </closer>
+<postscript>
+  <p>
+    <lb/><abbr>P.S.</abbr> J’ai oublié de vous dire, qu’il
+    <lb/>y a toujours un Docteur en Medecine
+    <lb/>constitué par notre <rs type="organisation">Magistrat</rs>, qui preside
+    <lb/>aux examens des Chirurgiens.
+  </p>
+</postscript>
+  <pb n="3" type="empty"/> 
+  <pb n="4"/> 
+  <closer>
+    <note type="editorial">mit Siegel</note>
+    <address>
+      <addrLine>Monsieur</addrLine>
+      <addrLine>Monsieur <rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></addrLine>
+      <addrLine>Professeur en Mathematique</addrLine>
+      <addrLine>à</addrLine>
+      <addrLine><rs key="place_GEO-2660646" type="place">Geneve</rs></addrLine>
+    </address>
+  </closer> 
 </div>
 </body>
 </text></TEI>

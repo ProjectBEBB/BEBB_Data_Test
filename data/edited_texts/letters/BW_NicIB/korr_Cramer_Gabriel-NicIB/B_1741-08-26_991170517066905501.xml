@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517066905501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -149,7 +149,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
-      <!-- Die Abschrift wurde verwendet, Original BPU Genf, bisherige Arbeit abgebrochen, RG 14.09.2023 -->
+      <change when="2025-07-22" who="RG">Mathematische Formeln (etc.) angepasst.</change>
+      <change when="2025-07-22" who="RG">Code durchgeschaut, ergänzt, korr., zudem die Zeilenabstände des Genfer Exemplars angepasst</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -164,47 +165,92 @@
 <!--_____________-->
 
 <facsimile>
-<graphic url="https://www.e-manuscripta.ch/i3f/v20/1037969/manifest"/>
+  <graphic url="https://www.e-manuscripta.ch/i3f/v20/1037969/manifest"/><!-- Originalbrief vorhanden: https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvta4c6c492f3d363e5f%2Fcanvas%2F0%2F10 NICHT ABSCHRIFT NEHMEN, RG 13.06.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
 <pb facs="-" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>J’ai bien receu la vôtre du 15.<hi rend="sup">e</hi> de ce mois. Je suis entièrement
-                           <lb/>d’accord avec vous sur <add>tout</add> ce que vous dites à l’occasion de l’énumeration
-                           <lb/>des lignes du 3.<hi rend="sup">e</hi> ordre, <del>particulierement </del><add>et j’avoue que</add> l’Essai de feu mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs> n’est
-                           <lb/>pas à comparer à l’excellent traité de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, quoique peut-<lb break="no"/>etre dans celui-ci <del/><add>on trouvera</add> encore quelques omissions. Vous
-                           <lb/>me ferés du plaisir en m’indiquant <del/><add>en</add> peu de mots la maniere dont
-                           <lb/>vous vous etes servi pour réduire l’équation génerale aux 4
-                           <lb/>Classes de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, il me semble qu’on ne peut se dispenser de
-                           <lb/>faire, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’ai fait, <del/>une distinction de 8. Cas differents.</p>
-<p>Je suis 
-                           <lb/>bien aise de ce que vous voulés bien prendre la peine d’ajouter
-                           <lb/>de tems en tems quelques notes aux pièces de mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs>, ce
-                           <lb/>sera surtout nécessaire aux endroits que l’Auteur a corrigés
-                           <lb/>lui même dans des pièces posterieures; et je ne vous refuserai
-                        <pb facs="-" n="2"/>
-<lb/>point mon assistance <del>dans les occasions nécessaires </del><add>en cas de besoin.</add></p>
-<p>L’Objection
-                           <lb/>que vous <del/><add>venés de me</add> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer contre une des méthodes de Mr.
-                           <lb/><rs key="pers_DE-588-118531379" type="person">Euler</rs> (si je ne me trompe il en a trouvé plus <del/><add>d’une</add>) de so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er la
-                           <lb/>suite <formula>1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\mbox{\&amp;c.}</formula> m’a fort surpris, et je vous avoue que je
-                           <lb/>ne suis pas encore en état d’y répondre. Soi<del/><add>en</add>t a <del>et b </del>le demi-axe
-                           <lb/>majeur, <del>et </del>b le demiaxe mineur d’une Ellipse, <formula>x</formula> un arc pris du
-                           <lb/>so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>et du grand axe, <formula>y</formula> son sinus <del/><add>ou l’ordonnée sur cet axe.</add>
-<lb/>Il est vrai, qu’on trouve <formula>y=x-\frac{aa}{bb^{4}}x^{3}+\mbox{\&amp;c.}</formula> et si l’arc <add><formula>x</formula></add> est pris du
-                           <lb/>so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>et du petit axe, l’ordonnée <formula>y</formula> sur cet axe sera <formula>=x-\frac{bb}{ba^{4}}x^{3}+\mbox{\&amp;c.}</formula>
-<lb/><del/><add>ainsi</add> selon le raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement de Mr. <rs key="pers_DE-588-118531379" type="person">Euler</rs> <formula>{aa}{6b^{4}}</formula> ou <formula>\frac{bb}{6a^{4}}</formula> (ou
-                           <lb/>bien <formula>\frac{1}{6}</formula> ayant pris <formula>\frac{bb}{a}</formula> ou <formula>\frac{aa}{b}</formula> pour l’unité) devroit étre <del>le produit</del>
-<lb/><del>du que </del>égal à la suite <formula>1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\mbox{\&amp;c.\ensuremath{}}</formula> divisée par le quarré
-                           <lb/><add>(non de la circonference mais)</add> de la demi-circonference d’une Ellipse quelconque, et par conse<pc type="hyphenation">-</pc><lb break="no"/>quent aussi <formula>\frac{aa}{6b^{4}}=\frac{bb}{6a^{4}}</formula>, c’est à dire <formula>a=b</formula>, de sorte que par un
-                           <lb/>par hazard ce raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement ne convient qu’au seul cercle.
-                           <lb/>Je penserai à loisir à cette difficulté.</p>
-<p>Par quel hazard avés vous
-                           <lb/>veu ma methode? je ne me souviens pas de vous l’avoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée,
-                           <lb/>j’ai voulu la chercher parmi mes papiers, mais je ne l’ai point trouvée, je sai qu’il m’a fallu prendre de longs détours pour trouver la somme de tous les doubles rectangles de chaques deux termes de la suite <formula>1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\mbox{\&amp;c.}</formula> dont le quarré est égal à la dite somme plus la suite <formula>1+\frac{1}{9}+\frac{1}{25}+\frac{1}{49}+\mbox{\&amp;c.}</formula>
+<opener>
+  <salute>
+    <lb/>Monsieur
+  </salute>
+</opener>
+<p>
+  <lb/>J’ai bien receu la Vôtre du 15.<hi rend="sup">e</hi> de ce mois. Je suis entiére<pc type="hyphenation">-</pc><lb break="no"/>ment d’accord avec Vous sur tout ce que Vous dites à l’occa<pc type="hyphenation">-</pc><lb break="no"/>sion de l’énumération des lignes du 3.<hi rend="sup">me</hi> ordre, et j’avoue
+  <lb/>que l’Essai de feu mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs> n’est pas à comparer à l’excellent
+  <lb/>traité de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, quoique peut-étre dans celuici on
+  <lb/>trouvera encore quelques omissions. Vous me ferés du plaisir
+  <lb/>en m’indiquant en peu de mots la maniére dont vous Vous
+  <lb/>étes servi pour réduire l’équation génerale aux 4 Classes
+  <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, il me semble qu’on ne peut se dispenser de
+  <lb/>faire, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’ai fait, une distinction de 8 Cas differents.
 </p>
-<p> J’ai parlé à un de nos Imprimeurs touchant les Tables Gnomo niques, lequel veut les imprimer aux frais de Mrs. vos Libraires mais il lui faudra faire fondre un nombre suffisant de caractères de chifres. Les Tables feront un demi-alphabet, et l’explication contiendra environ 3 ou 4 feuilles. Si Mrs. Cramer et Philibert veulent supporter les frais de cette impression, je leur envoyerai à part (s’ils le souhaitent) l’explication, pour la faire imprimer chés vous. J’ai l’honneur d’etre avec beaucoup d’empressement Monsieur votre très humble et très obeissant serviteur à Bâle ce 26. Aout 1741. N. Bernoulli [Anschrift] A Monsieur Monsieur Cramer Professeur en Mathematiques <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. à Geneve. </p>
+<p>
+  <lb/>Je suis bien aise de ce que vous voulés bien prendre la peine
+  <lb/>d’ajouter de tems en tems quelques notes aux piéces de mon
+  <lb/><rs key="pers_DE-588-118509950" type="person">Oncle</rs>, ce sera surtout nécessaire aux endroits que l’Auteur
+  <lb/>à corrigés lui même dans des piéces posterieures; et je ne
+  <lb/>vous refuserai point mon assistance en cas de besoin.
+</p>
+<pb facs="-" n="2"/>
+<p>
+  <lb/>L’Objection que vous venés de me co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer contre une des
+  <lb/>méthodes de <abbr>Mr.</abbr> <rs key="pers_DE-588-118531379" type="person">Euler</rs> (<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice>si je ne me trompe il en a trouvé plus
+  <lb/>d’une<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice>) de so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>er la suite <choice rend="regFormula"><orig><formula>1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\mbox{\&amp;c.}</formula></orig><reg><formula>1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\mbox{etc.}</formula></reg></choice> m’a fort surpris, et je
+  <lb/>vous avoue que je ne suis pas encore en état d’y répondre.
+  <lb/>Soient <formula>a</formula> le demiaxe majeur, <formula>b</formula> le demiaxe mineur d’une Ellipse,
+  <lb/><formula>x</formula> un arc pris du so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>et du grand axe, <formula>y</formula> son sinus ou l’ordonnée sur
+  <lb/>cet axe. Il est vrai, qu’on trouve <choice rend="regFormula"><orig><formula>y=x-\frac{aa}{bb^{4}}x^{3}+\mbox{\&amp;c.}</formula></orig><reg><formula>y=x-\frac{aa}{bb^{4}}x^{3}+\mbox{etc.}</formula></reg></choice> et si l’arc <formula>x</formula>
+  <lb/>est pris du so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>et du petit axe, l’ordonnée <formula>y</formula> sur cet axe sera <formula>=</formula>
+  <lb/><choice rend="regFormula"><orig><formula>x-\frac{bb}{ba^{4}}x^{3}+\mbox{\&amp;c}</formula></orig><reg><formula>x-\frac{bb}{ba^{4}}x^{3}+\mbox{etc}</formula></reg></choice>. Ainsi selon le raiso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ement de <abbr>Mr.</abbr> <rs key="pers_DE-588-118531379" type="person">Euler</rs> <formula>{aa}{6b^{4}}</formula>
+  <lb/>ou <formula>\frac{bb}{6a^{4}}</formula> (ou bien <formula>\frac{1}{6}</formula> ayant pris <formula>\frac{bb}{a}</formula> ou <formula>\frac{aa}{b}</formula> pour l’unité) devroit étre
+  <lb/>égal à la suite <choice rend="regFormula"><orig><formula>1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\mbox{\&amp;c.}</formula></orig><reg><formula>1+\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+\mbox{etc.}</formula></reg></choice> divisée par le quarré (non de
+  <lb/>la circonference mais) de la demi-circonference d’une Ellipse
+  <lb/>quelconque, et par consequent aussi <formula>\frac{aa}{6b^{4}}=\frac{bb}{6a^{4}}</formula>, c’est à dire <formula>a=b</formula>,
+  <lb/>de sorte que par un par hazard ce raisonnement ne convient
+  <lb/>qu’au seul Cercle. Je penserai à loisir à cette difficulté.
+</p>
+<pb facs="-" n="3"/>
+<p>
+  <lb/>Par quel hazard avés vous veu ma méthode? je ne me souviens pas de
+  <lb/>vous l’avoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquée, j’ai voulu la chercher parmi mes papiers,
+  <lb/>mais je ne l’ai point trouvée, je sai qu’il m’a fallu prendre de longs
+  <lb/>détours pour trouver la so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e de tous les doubles rectangles de chaques
+  <lb/>deux termes de la suite <choice rend="regFormula"><orig><formula>1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\mbox{\&amp;c.}</formula></orig><reg><formula>1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\mbox{etc.}</formula></reg></choice> dont le quarré est égal à la dite
+  <lb/>so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e plus la suite <choice><orig><formula>1+\frac{1}{9}+\frac{1}{25}+\frac{1}{49}+\mbox{\&amp;c}</formula></orig><reg><formula>1+\frac{1}{9}+\frac{1}{25}+\frac{1}{49}+\mbox{etc}</formula></reg></choice>.
+</p>
+<p>
+  <lb/>J’ai parlé à un de nos Imprimeurs touchant les Tables Gnomoniques<!-- als Biblio/Keyword auszeichnen, RG 22.07.2025 -->,
+  <lb/>lequel veut les imprimer aux fraix de <abbr>Mrs.</abbr> vos <rs type="person">Libraires</rs>, mais il
+  <lb/>lui faudra faire fondre un nombre suffisant de caractéres de chifres.
+  <lb/>Les Tables<!-- als Biblio/Keyword auszeichnen, RG 22.07.2025 --> feront un demi-alphabet, et l’explication contiendra
+  <lb/>environ 3 ou 4 feuilles. Si <abbr>Mrs.</abbr> <rs type="person">Cramer</rs> et <rs type="person">Philibert</rs> veulent
+  <lb/>supporter les frais de cette impression, je leur envoyerai à part,
+  <lb/>(<choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice>s’ils le <subst><del/><add>souhaitent</add></subst><choice><orig><g ref="#nddot">:</g></orig><reg></reg></choice>) l’explication, pour la faire imprimer chés Vous.
+</p>
+  <closer>
+    <salute>
+      <lb/>J’ai l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur d’étre avec beaucoup d’empressement
+      <lb/>Monsieur
+      <lb/>Vôtre très humble et très
+      <lb/>obeissant Serviteur
+    </salute>
+    <signed>
+      <lb/><rs key="pers_DE-588-119166895" type="person"><abbr>N<supplied>.</supplied></abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.
+    </signed> 
+    <dateline>
+      <lb/>à Bâle ce <date when="1741-08-26">26. Aout<!-- "aout" vlt. kleingeschrieben? RG 22.07.2025 --> 1741</date>.
+    </dateline>
+  </closer>
+  <pb facs="-" n="4"/>
+  <closer>
+    <address>
+      <addrLine>A Monsieur</addrLine>
+      <addrLine>Monsieur Cramer Professeur</addrLine>
+      <addrLine>en Mathematiques <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></addrLine>
+      <addrLine>à Geneve.</addrLine>
+    </address>
+  </closer><!-- Bis hier den Code angesehen, RG 22.07.2025 -->
 </div>
 </body>
 </text></TEI>

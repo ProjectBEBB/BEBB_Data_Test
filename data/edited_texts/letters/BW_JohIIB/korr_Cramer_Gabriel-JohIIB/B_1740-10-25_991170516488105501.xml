@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516488105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -173,8 +173,16 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-03" who="MK RG">Code durchgeschaut und kollationiert fertig</change>
+      <change when="2025-08-15" who="MK">Code durchgeschaut und kollationiert</change>
+      <change when="2025-08-14" who="MK">Code durchgeschaut und kollationiert Teil 3</change>
+      <change when="2025-08-11" who="MK">Code durchgeschaut und kollationiert Teil 2</change>
+      <change when="2025-08-11" who="MK">Code durchgeschaut und kollationiert Teil 1</change>
+      <change when="2025-07-28" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-06-13" who="RG">Teilweise (die erste Seite), den Code angesehen, und entsprechende Stellen korrigiert</change>
+      <change when="2025-06-13" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-06-23" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-06-23" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -187,105 +195,127 @@
 <body>
 <div type="letter">
 <pb facs="3694443" n="1"/>
-<p><lb/>a <rs key="place_GEO-2659599" type="place">Mont sur Rolle</rs> ce 25. Octob. 1740</p>
-<p><lb/>Vôtre Lettre, mon cher Monsieur, m’a été rendue à la Campagne
-                           <lb/>quelques jours aprés l’arrivée du Courier; c’est ce qui retarde ma réponse. Je prens
-                           <lb/>bien de la part a vôtre maladie, &amp; fais mille voeux pour vôtre guerison, &amp; pour
-                           <lb/>celle de M. Vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, d’autant plus ardents qu’attaqué moi même d’un mal
-                           <lb/>qui sans étre dangereux ne laisse pas d’étre assez douloureux, j’eprouve tout ce qu’un
-                           <lb/>malade mérite de compassion. M. <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> s’est un peu pressé de vous écrire
-                           <lb/>que je me chargeois d’avoir soin de l’impression des oeuvres de M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>.
-                           <lb/>Je ne ms suis engagé à rien avec lui: mais c’est assés, Monsieur, que vous me
-                           <lb/>fassiez entendre que cela fera plaisir à M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, pour que je me prête avec
-                           <lb/>joie à tous les soins qu’exige une pareille entreprise. L’estime infinie que j’ai pour lui,
-                           <lb/>&amp; les obligations que je lui ai sont trop présentes à mon esprit pour ne pas rechercher
-                           <lb/>avec empressement les occasions de rendre tous les services dont je suis capable, &amp; à lui,
-                           <lb/>&amp; à toute sa famille. Je souhaiterois seulement que M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs> voulut faire entendre
-                           <lb/>au Sr. <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> qu’il me laisse absolument le maitre de diriger cette Edition. L’experience
-                           <lb/>m’a fait voir que les Libraires ceulent souvent, par une épargne mal entendue ou par
-                           <lb/>une ostentation puerile, faire ou ne pas faire ce qui conviendroit. Comme la gloire de
-                           <lb/>vôtre illustre <rs key="pers_DE-588-118509969" type="person">Pére</rs> m’est aussi chere qu’à lui même, vous ne devez pas douter, Monsieur,
-                           <lb/>que je ne fasse usage de ce pouvoir pour qu’il ait tout sujet de contentement de cette
-                           <lb/>edition, sur la quelle vous me permettrez, s’il vous plait, de vous consulter l’un &amp; l’autre
-                           <lb/>frequemment. Et d’abord, je vous prie de nous donner vôtre avis sur ce point prélimi<pc type="hyphenation">-</pc><lb break="no"/>naire &amp; interessant. C’est de savoir s’il ne faudra pas inserer parmi les Oeuvres de M.
-                           <lb/><rs type="person">Bernoulli</rs>, celles d’autrui qui sont nécessaires pour l’intelligence des Sciences, ainsi que
-                           <lb/>Mr. <rs key="pers_DE-588-118939297" type="person">’s Gravesande</rs> l’a pratiqué dans l’Edition qu’il a procurée des Oeuvres d’huygens. Voici
-                           <lb/>un Exemple. On trouve dans le <rs type="biblio">Journal de Leipsik</rs> Fevr. 1695 une Piéce de Mr. <rs type="person">Bernoulli</rs>
-<lb/>intitulée Animadversio in praecedentem solutionem Hl. March. Hospitalii <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. Cela ne
-                           <lb/>suppose-t-il pas nécessairement que le lecteur ait sous les yeux cette Solution de
-                           <lb/>Mr. <rs key="pers_DE-588-100814891" type="person">de l’Hospital</rs>. Là dessus un Editeur ne peut prendre que de deux partis l’une, ou
-                        <pb facs="3694444" n="2"/>
-<lb/>d’inserer cette Piece dans son Edition, en la faisant imprimer d’un autre caractere
-                           <lb/>soit plus petit, soit Italique: ou de renvoier simplement aux Endroits où ces piéces
-                           <lb/>peuvent se trouver, comme ici par ex. aux Acta Eruditorum. Je trouve de part &amp;
-                           <lb/>d’autre quelque inconvenient. Inserer ces Piéces étrangéres c’est grossit considerablement
-                           <lb/>le Volume: <del/><add>&amp;</add> s’exposer à mettre quelquefois des choses désagréables. D’un autre côté
-                           <lb/>les renvois sont ce qu’il y a au monde de plus incommode pour un lecteur; Ordinairement
-                           <lb/>il faudroit renvoier à des Livres assez rares, comme les Acta Eruditorum, &amp; quelquefois
-                           <lb/>a des livres qui ne se trouvent point. (Tel est par ex. le Mémoire de M. Renau <del/>
-<lb/>auquel M. votre <rs key="pers_DE-588-118509969" type="person">Père</rs> repond dans les Lettres qui sont à la fin de la Théorie <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.
-                           <lb/>Memoire qui n’a jamais été vendu) Et cepandant il arrivera souvent que sans ces
-                           <lb/>Pièces celles de l’Autheur ne sont point <del/><add>entendues</add>. Tout bien pesé, je pancherois
-                           <lb/>plus pour le premier parti, dont on pourroit sauver les inconveniens par un choix
-                           <lb/>bien entendu, &amp; en n’inserant pas toujours tout au long ces Piéces etrangéres,
-                           <lb/>mais souvent seulement par extrait. J’ai calculé de gros en gros, &amp; j’estime que cela
-                           <lb/>n’augmenteroit pas l’impression de plus d’un quart, &amp; que toutes les Oeuvres
-                           <lb/>imprimées de M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs><del/> jointes à celles là, pourroient faire deux
-                           <lb/>bons Volumes 4.<hi rend="sup">o</hi> Il rendroit un grand Service au Public <del/><add>&amp;</add> Sr. <add>Bousquet</add>
-<lb/>s’il vouloit se résoudre à fournir la matiere d’un 3<hi rend="sup">e</hi>. comme il le pourroit aisement
-                           <lb/>au moien de mille belles choses qu’il a dans son Cabinet, et je vous prie Monsieur,
-                           <lb/>de vouloir bien l’en solliciter fortement. S’il <choice><sic>goute</sic><corr>egoute</corr></choice>, comme je crois qu’il le fera
-                           <lb/>le Projet d’inserer ces Pieces étrangéres, j’aurai l’honneur de vous envoier un
-                           <lb/>Catalogue que j’ai dressé sur ce Plan là, où sans sortir que très peu de l’ordre du tems
-                           <lb/>les Matières sont pourtant liées de façon a présenter au Lecteur une agréable
-                           <lb/>variété sans confusion.</p>
-<p><lb/>Je viens au second article de votre lettre, qui concerne l’impression des Lettres
-                              <lb/>de M. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>. Il est vrai que j’ai conseillé à M. <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> de presser M. votre
-                           <lb/><rs key="pers_DE-588-118509969" type="person">Père</rs> de vouloir bien joindre ses Lettres à celles de M. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, convaincu que
-                           <lb/>s’il pouvoit le vaincre a cet égard, il feroit une chose honorable à M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>
+<opener>
+  <dateline>
+    <lb/><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2659599" type="place">Mont sur Rolle</rs> ce <date when="1740-10-25">25. <abbr>Octob.</abbr> 1740</date>.
+  </dateline>
+</opener>
+<p>  
+  <lb/>Vôtre <rs key="B_991170430342005501" type="letter">Lettre</rs>, mon cher Monsieur, m’a été rendue à la <rs type="place">Campagne</rs> <note type="editorial">Hier ist wohl <rs key="place_GEO-2659599" type="place">Mont-sur-Rolle</rs> gemeint, wo sich Cramer zu der Zeit aufhielt.</note>
+  <lb/>quelques jours après l’arrivée du Courier; c’est ce qui <subst><del/><add>r</add></subst>etarde ma réponse. Je prens
+  <lb/>bien de la part <choice><orig>a</orig><reg>à</reg></choice> vôtre maladie, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> fais mille voeux pour vôtre guerison, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour
+  <lb/>celle de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, d’autant plus ardents qu’attaqué moi même d’un mal
+  <lb/>qui sans étre dangereux ne laisse pas d’étre assez douloureux, j’eprouve tout ce qu’un
+  <lb/>malade mérite de compassion. <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> s’est un peu pressé de vous écrire
+  <lb/>que je me chargeois d’avoir soin de l’impression des <rs type="biblio">Oeuvres</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>.
+  <lb/>Je ne me suis engagé à rien avec lu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>: mais c’est assès, Monsieur, que vous me
+  <lb/>fassiez entendre que cela fera plaisir à <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, pour que je me prête avec
+  <lb/>joie à tous les soins qu’éxige une pareille entreprise. L’estime infinie que j’ai pour lui,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les obligations que je lui ai sont trop présentes à mon esprit pour ne pas rechercher
+  <lb/>avec empressement les occasions de rendre tous les services dont je suis capable, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> lui,
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à toute sa famille. Je souhaiterois seulement que <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs> voulut faire entendre
+  <lb/>au <abbr>S.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> qu’il me laisse absolument le maitre de diriger cette <rs type="biblio">Edition</rs>. L’experience
+  <lb/>m’a fait voir que les libraires veulent souvent, par une épargne mal entendue ou par
+  <lb/>une ostentation puerile, faire ou ne pas faire ce qui conviendroit. Comme la gloire de
+  <lb/>vôtre illustre <rs key="pers_DE-588-118509969" type="person">Père</rs> m’est aussi chere qu’à lui même, vous ne devez pas douter, Monsieur,
+  <lb/>que je ne fasse usage de ce pouvoir pour qu’il ait tout sujet de contentement <subst><del/><add>d</add></subst>e cette
+  <lb/><rs type="biblio">edition</rs>, sur la quelle vous me permettrez, s’il vous plait, de vous consulter l’un <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre
+  <lb/>frequemment. Et d’abord, je vous prie de nous donner vôtre avis sur ce point prélimi<pc type="hyphenation">-</pc><lb break="no"/>nair<subst><del/><add>e</add></subst> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> interessant. C’est de savoir s’il ne faudra pas inserer parmi les <rs type="biblio">Oeuvres</rs> de <abbr>M.<hi rend="sup">r</hi></abbr>
+  <lb/><rs type="person">Bernoulli</rs>, celles d’autrui qui sont nécessaires pour l’intelligence des siennes, ainsi que
+  <lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118939297" type="person">’sGravesande</rs> l’a pratiqué dans l’<rs type="biblio">Edition</rs> <note type="editorial">Es handelt sich um die 1728er Leiden-Ausgabe „Opera reliqua“ von Huygens, herausgegeben von ’s Gravesande</note> qu’il a procurée des <rs type="biblio">Oeuvres</rs> d’<rs type="person"><choice><orig>huygens</orig><reg>Huygens</reg></choice></rs>. Voici
+  <lb/>un Exemple. On trouve dans le <rs type="biblio">Journal de Leipsik<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> <date when="1695-02"><abbr>Fevr.</abbr> 1695</date> une <rs type="biblio">Pièce</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118509969" type="person">Bernoulli</rs>
+  <lb/>intitulée, <rs type="biblio">Animadversio in pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>cedentem solutionem <choice><abbr>Ill.</abbr><expan>Illustrissimi</expan></choice> <abbr>March.</abbr> Hospitalii</rs>,<note resp="MK" type="editorial">Dieses genannte Werk erschien in den Acta Eruditorum in Leipzig (s. oben "Journal de Leipsik") erschienen.</note> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Cela ne
+  <lb/>suppose-t-il pas nécessairement que le lecteur ait<!-- Ich lese "ait", "aix" ergibt wenig Sinn. "aix" ist eine sehr selten vorkommende Schreibweise in Drucken, wobei es sich wohl um Druckfehler handelt. MK 3.9.2025 --> sous les yeux cette Solution de
+  <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-100814891" type="person">de l’Hospital</rs>. Là dessus, un Editeur ne peut prendre que de deux partis, l’une.<!-- Kontrollieren, da der Satz wenig Sinn ergibt. Der Satz steht tatsächlich so im Manuskript und scheint mir nicht ganz vollständig zu sein resp. mehr oder weniger misslungen. --> Ou
+<pb facs="3694444" n="2"/>
+  <lb/>d’inserer cette <rs type="biblio">Piece</rs> dans son Edition, en la faisant imprimer d’un autre Caractere
+  <lb/>soit plus petit, soit Italique: Ou de renvoier simplement aux Endroits où ces piéces
+  <lb/>peuvent se trouver, comme ici par <abbr>ex.</abbr> aux <rs type="biblio">Acta Eruditorum</rs>. Je trouve de part <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <lb/>d’autre quelque inconvenient. Inserer ces Piéces étrangéres c’est grossir considerablement
+  <lb/>le Volume: <del/><add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice></add> s’exposer à mettre quelquefois des choses désagréables<subst><del/><add>.</add></subst> D’un autre côté
+  <lb/>les renvois sont ce qu’il y a au monde de plus incommode pour un Lecteur; <abbr><subst><del/><add>Or</add></subst>dinairem.<hi rend="sup">t</hi></abbr>
+  <lb/>il faudroit renvoier à des Livres assez rare<subst><del/><add>s,</add></subst> comme les <rs type="biblio">Acta Eruditorum</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> quelquefois
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> des livres qui ne se trouvent point<supplied>.</supplied> (Tel est par <abbr>ex.</abbr> le Mémoire de <abbr>M.<hi  rend="sup">r</hi></abbr> <rs key="pers_DE-588-102079056" type="person">Renau</rs><del/> 
+  <lb/>auquel <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118509969" type="person">Père</rs> repond dans les <rs type="letter">Lettres</rs> qui sont à la fin de la Théorie <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr><supplied>,</supplied>
+  <lb/><rs type="biblio">Memoire</rs> qui n’a jamais été vendu)<supplied>.</supplied> Et cepandant il arrivera souvent que sans ces 
+  <lb/>Pièces celles de l’Autheur ne sont point <del/><add>entendues</add>. Tout bien pesé, je pancherois
+  <lb/>plus pour le premier parti, <subst><del/><add>dont</add></subst> on pourroit sauver les inconveniens par un choix
+  <lb/>bien entendu, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en n’inserant pas toujours tout au long ces Piéces etrangéres,
+  <lb/>mais souvent seulement par extrait. J’ai calculé de gros en gros, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> j’estime que cela
+  <lb/>n’augmenteroit pas l’impression de plus d’un quart, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que toutes les <rs type="biblio">Oeuvres
+  <lb/>imprimées</rs> de <abbr>M.</abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs><del/> jointes à celles là, pourroient faire deux
+  <lb/>bons Volumes 4.<hi rend="sup">o</hi><supplied>.</supplied> Il rendroit un grand Service au Public, <del/><add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice></add> <abbr>S.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs>
+  <lb/>s’il vouloit se résoudre à fournir la matiere d’un 3.<hi rend="sup">e</hi> comme il le pourroit aisement
+  <lb/>au moien de mille belles choses qu’il a <subst><del/><add>dans</add></subst> son Cabinet, <choice><orig>Et</orig><reg>et</reg></choice> je vous prie, Monsieur,
+  <lb/>de vouloir bien l’en solliciter fortement. S’il <choice><orig>goute</orig><reg>écoute</reg></choice>, comme je crois qu’il le fera
+  <lb/>le Projet d’inserer ces Pieces ètrangères, j’aurai l’honneur de vous envoier un
+  <lb/>Catalogue que j’ai dressé sur ce Plan là, où sans sortir que très peu de l’ordre du tems<supplied>,</supplied>
+  <lb/>les Matières sont pourtant liées de façon <choice><orig>a</orig><reg>à</reg></choice> présenter au Lecteur une agréable
+  <lb/>variété sans confusion.
+</p>
+<p>
+  <lb/>Je viens au second article de votre <rs type="letter">lettre</rs>, qui concerne l’impression des <rs type="letter">Lettres</rs>
+  <lb/>de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>. Il est vrai que j’ai conseillé à <abbr>M.</abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> de presser <abbr>M.<hi rend="sup">r</hi></abbr> votre
+  <lb/><rs key="pers_DE-588-118509969" type="person">Père</rs> de vouloir bien joindre ses <rs type="letter">Lettres</rs> à celles de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, convaincu que
+  <lb/>s’il pouvoit le vaincre <choice><orig>a</orig><reg>à</reg></choice> cet égard, il feroit une chose honorable à <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>
 <pb facs="3694445" n="3"/>
-<lb/>&amp; trés utile au Public. Je le prie, Monsieur, de considerer qu’il y a beaucoup
-                           <lb/>de choses dans ces Lettres qu’on n’entendra point, si l’on n’a pas vu les endroits des
-                           <lb/>siennes auxquels M. de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> répond: que la Lecture des seules Lettres de Mr.
-                           <lb/><rs key="pers_DE-588-118571249" type="person">Leibnits</rs> semblera quelquefois lui donner toute la gloire de plusieurs découvertes
-                           <lb/>qu’il doit à M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, ou du moins, qui leur sont communes, &amp; où je m’assure
-                           <lb/>que M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs> a le plus contribué. En voici un exemple, qui me vient dans
-                           <lb/>l’esprit. On diroit à lire les Lettres de M. <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, qu’il a seul trouvé la Methode
-                           <lb/>de differentier <hi rend="u">de Curva in Curvam</hi>, dont je sais pourtant que M. <rs type="person">Bernoulli</rs> a au moins
-                           <lb/>la moitié du mérite de l’invention. qu’il ait encore la bonté de reflechir que quand
-                           <lb/>bien même il y auroit quelques vuides dans cette correspondance, elle ne laisseroit
-                           <lb/>pas de faire un Recueil admirable &amp; qui seroit très bien reçu. Je comprens
-                           <lb/>que parmi les Minutes que M. vôtre Pere a gardées, il peut y avoir des choses
-                           <lb/>qu’il ne se soucie pas de rendre publique, &amp; je pense bien qu’en cela on doit prendre
-                           <lb/>une en tiere liberté. On ecrit comme on veut à un ami, &amp; l’on donne aussi au Public
-                           <lb/>ce qu’on veut. Je vous avoue même qu’il y a bien quelques paragraphes dans les
-                           <lb/>Lettres de M. de <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> qui pourroient étre omis. Je ne crois pas qu’en cela une
-                           <lb/>fidelité scupuleuse à tout imprimer soit un cas de conscience. On ecrit souvent
-                           <lb/>à un Ami ce qu’on ne voudroit pas dire en public. Voila mes raisons. Après tout
-                           <lb/>M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs> en est le Maitre, comme il est bien juste, &amp; s’il ne veut pas se
-                           <lb/>laisser gagner, je tacherai d’engager M. <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> a se conformer en tout à ses
-                           <lb/>volontés, &amp; il le fera, je n’en doute point.</p>
-<p><lb/>Avant que de finit, je <del/>dois<del/> vous faire part, mon cher Monsieur, d’une
-                           <lb/>proposition qui m’a été faite par un autre Libraire à l’occasion de l’entreprise du Sr.
-                           <lb/><rs key="pers_DE-588-136952968" type="person">Bousquet</rs>. C’est d’imprimer les Opuscules de feu M. vôtre Oncle <rs key="pers_DE-588-118509950" type="person">Jaques Bernoulli</rs>.
-                           <lb/>Mais comme il ne voudroit pas le faire sans avoir le consentement de M. vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>
-<lb/>il m’a prié de le demander. Si cette proposition lui agrée, je prendrois la liberté
-                           <lb/>de m’adresser à Mr. vôtre Cousin le Recteur, que je vous supplie d’assurer de mes
-                           <lb/>très humbles respects, pour le prier de nous donner là dessus ses conseils &amp; ses secours.
-                           <lb/>J’atens votre reponse avant que d’avoir l’honneur de lui écrire. Faites moi la
-                        <pb facs="3694446" n="4"/>
-<lb/>grace, mon cher Monsieur, de faire agréer à M. votre Illustre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, les témoignages de mon entier
-                           <lb/>dévouement. Assurez, je vous prie, Mons. vôtre <rs key="pers_DE-588-118656503" type="person">Frere</rs> le Professeur de toute mon estime &amp; d’un
-                           <lb/>attachement inviolable.</p> <closer>Et soiez très assuré de la véritable consideration, &amp; de la parfaite
-                           <lb/>cordialité avec laquelle j’ai l’honneur d’etre Votre très humble &amp; très obeissant serviteur
-                           <lb/><signed>C. Cramer</signed></closer>
-<postscript><p><lb/>P. S. Aiez la bonté d’adresser vôtre Reponse à <rs key="place_GEO-2660646" type="place">Geneve</rs> comme si j’y étois.</p></postscript>
-<closer><address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Jean Bernoulli fils</addrLine>
-<addrLine>Docteur en Droit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</addrLine>
-<addrLine>a Basle</addrLine>
-</address></closer>
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> trés utile au Public. Je le prie, Monsieur, de considerer qu’il y a beaucoup
+  <lb/>de choses dans ces <rs type="letter">Lettres</rs> qu’on n’entendra point, si l’on n’a pas vu les endroits des
+  <lb/>siennes auxquels <abbr>M.</abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> répond: que la <rs type="biblio">Lecture</rs> des seules <rs type="letter">Lettres</rs> de <abbr>M.<hi rend="sup">r</hi></abbr>
+  <lb/><rs key="pers_DE-588-118571249" type="person">Leibnits</rs> semblera quelquefois lui donner toute la gloire de plusieurs découvertes
+  <lb/>qu’il doit à <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, ou du moins, qui leur sont communes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> où je m’assure
+  <lb/>que <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs> a le plus contribué. En voici un exemple, qui me vient dans
+  <lb/>l’esprit. On diroit à lire les <rs type="letter">Lettres</rs> de <abbr>M.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs>, qu’il a seul trouvé la Methode
+  <lb/>de differentier <foreign xml:lang="lat"><hi rend="u">de <subst><del/><add>Curva</add></subst> in Curvam</hi></foreign>, dont je sais pourtant que <abbr>M.</abbr> <rs type="person">Bernoulli</rs> a au moins
+  <lb/>la moitié du mérite de l’invention, qu’il ait encore la bonté de reflechir que quand
+  <lb/>bien même il y auroit quelques vuides dans cette <rs type="letter">correspondance</rs>, elle ne laisseroit
+  <lb/>pas de faire un Recueil admirable <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui seroit très bien reçu. Je comprens
+  <lb/>que parmi les Minutes<note type="editorial">Es handelt sich hier um Briefentwürfe.</note> que <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs> a gardées, il peut y avoir des choses
+  <lb/>qu’il ne se soucie pas de rendre publique, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je pense bien qu’en cela on doit prendre
+  <lb/>une entiere liberté. On ecrit comme on veut à un ami, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’on donne aussi au Public
+  <lb/>ce qu’on veut. Je vous avoue même qu’il y a bien quelques paragraphes dans les
+  <lb/><rs type="letter">Lettres</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> qui pourroient étre omis. Je ne crois pas qu’en cela, une
+  <lb/>fidelité <choice><orig>scupuleuse</orig><reg>scrupuleuse</reg></choice> à tout imprimer soit un Cas de Conscience. On ecrit souvent
+  <lb/>à un Ami ce qu’on ne voudroit pas dire en public. Voila mes raisons. Après tout
+  <lb/><abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, en est le Maitre, comme il est bien juste, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> s’il ne veut pas se
+  <lb/>laisser gagner, je tacherai d’engager <abbr>M.</abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> <choice><orig>a</orig><reg>à</reg></choice> se conformer en tout à ses
+  <lb/>volontés, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il le fera, je n’en doute point.
+</p>
+<p>
+  <lb/>Avant que de finir, je <del/><subst><del/><add>dois</add></subst><del/> vous faire part, mon cher Monsieur, d’une
+  <lb/>proposition qui m’a été faite par un autre <rs type="person">Libraire</rs> à l’occasion de l’entreprise du <abbr>S.<hi rend="sup">r</hi></abbr>
+  <lb/><rs key="pers_DE-588-136952968" type="person">Bousquet</rs>. C’est d’imprimer les <rs type="biblio">Opuscules</rs> de feu <abbr>M.<hi rend="sup">r</hi></abbr> vôtre Oncle, <rs key="pers_DE-588-118509950" type="person">Jaques Bernoulli</rs>.
+  <lb/>Mais comme il ne voudroit pas le faire sans avoir le consentement de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Pere</rs>,
+  <lb/>il m’a prié de le demander. Si cette proposition lui agrée, je prendrois la liberté
+  <lb/>de m’adresser à <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-119166895" type="person">Cousin</rs> le Recteur, que je vous supplie d’assurer de mes
+  <lb/>très humbles respects, pour le prier de nous donner là dessus ses conseils <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ses Secours<supplied>.</supplied>
+  <lb/>J’atens votre reponse avant que d’avoir l’honneur de lui écrire. Faites<supplied>-</supplied>moi la
+  <pb facs="3694446" n="4"/>
+  <lb/>grace, mon cher Monsieur, de faire agréer à <abbr>M.<hi rend="sup">r</hi></abbr> votre Illustre <rs key="pers_DE-588-118509969" type="person">Pere</rs>, les témoignages de mon entier
+  <lb/>dévouement. Assurez, je vous prie, <abbr>Mons.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118656503" type="person">Frere</rs> le Professeur de toute mon estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’un
+  <lb/>attachement inviolable.
+</p>
+<closer>
+  <salute>Et soiez <subst><del/><add>très</add></subst> assuré de la véritable consideration, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de la parfaite
+    <lb/>cordialité avec laquelle j’ai l’honneur d’etre Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant Serviteur<supplied>.</supplied>
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+</closer>
+<postscript>
+  <p>
+    <lb/><abbr>P. S.</abbr> Aiez la bonté d’adresser vôtre Reponse à <rs key="place_GEO-2660646" type="place">Geneve</rs>, comme si j’y étois<supplied>.</supplied>
+  </p>
+</postscript>
+<closer>
+  <address>
+    <addrLine>A<!-- Sollte überall in den Briefen noch angepasst werden. --> Monsieur</addrLine>
+    <addrLine>Monsieur <rs key="pers_DE-588-117589136" type="person">Jean Bernoulli fils</rs></addrLine>
+    <addrLine>Docteur en Droit <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

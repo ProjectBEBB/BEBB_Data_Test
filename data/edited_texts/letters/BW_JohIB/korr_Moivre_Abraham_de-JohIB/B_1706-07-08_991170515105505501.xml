@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -190,8 +190,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-06-17" who="SG SW">Kollationieren abgeschlossen</change>
       <change when="2022-12-08" who="RG">Erste Personen und Orte ausgezeichnet, aber nicht fertig</change>
       <change when="2022-11-14" who="RG">Zeilabstände eingefügt, Seite angepasst, und kleinere Anpassungen</change>
       <change when="2022-10-14" who="RG">Header angepasst</change>
@@ -205,79 +206,86 @@
 <body>
 <div type="letter">
 <pb facs="1080192" n="1"/>
-<opener><dateline>à <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1706-07-08">8.<hi rend="sup">e</hi> juillet 1706</date></dateline>
+<opener><dateline>à <rs key="place_GEO-2643743" type="place">Londres</rs> le <date when="1706-07-08">8<hi rend="sup">e</hi> juillet 170<unclear reason="illegible">6</unclear></date></dateline><note hand="unknown">1706</note>
 <lb/><salute>Monsieur</salute></opener>
-<p><lb/>J’ay fait un paquet du livre D’<rs type="biblio">optique</rs> de Monsieur
-          <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> dont il m’a chargé pour vous, de l’<rs key="pers_DE-588-11864548X" type="person">Apollonius</rs> de
+<p><lb/>j’ay fait un paquet du livre D’<rs type="biblio">optique</rs> de Monsieur
+          <lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> dont il m’a chargé pour vous, de l’<rs key="pers_DE-588-11864548X" type="biblio">Apollonius</rs> de
           <lb/>Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs> dont il m’a aussy chargé pour vous, du
-          <lb/><rs type="biblio">livre</rs> de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> contre moy &amp; de mon livre contre <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>.
-          <lb/>Vous m’obligerez de vouloir bien faire tenir ce dernier de ma
-          <lb/>part à Monsieur <rs key="pers_DE-588-119062372" type="person">Varignon</rs>, cela est accompagné de deux lettres
+          <lb/><rs type="biblio">livre</rs> de <rs key="pers_DE-588-117659606" type="person">Cheynes</rs> contre moy, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de mon <rs type="biblio">livre</rs> contre <rs key="pers_DE-588-117659606" type="person">Cheynes</rs><choice><orig>,</orig><reg>.</reg></choice>
+          <lb/>Vous m’obligerez de vouloir bien faire tenir ce <rs type="biblio">dernier</rs> de ma
+          <lb/>part à Monsieur <rs key="pers_DE-588-119062372" type="person">Varignon</rs>, cela est accompagné de deux <rs type="letter">lettres</rs>
           <lb/>l’une pour vous, et l’autre pour Monsieur <rs key="pers_DE-588-119112450" type="person">Herman</rs>, j’ay
-          <lb/>donné le paquet à Monsieur <rs type="person">Vaillant</rs> qui le doit faire
-          <lb/>tenir à Monsieur <rs type="person">Roger</rs> libraire d’<rs key="place_GEO-2759794" type="place">Amsterdam</rs> &amp; son 
-          <lb/>correspondant. <abbr>Mr.</abbr> <rs type="person">Vaillant</rs> m’a promis d’ecrire a M<hi rend="sup">r</hi>.
-          <lb/><rs type="person">Roger</rs> pour le prier d’en avoir soin. Vous aurez la bonté
+          <lb/>donné le paquet à Monsieur <rs type="person">V<unclear reason="illegible">a</unclear>illant</rs> qui le doit faire
+          <lb/>tenir à Monsieur <rs type="person"><del/><add>R</add>oger</rs> libraire d’<rs key="place_GEO-2759794" type="place">Amsterdam</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> son 
+  <lb/><rs type="person">correspondant</rs><choice><orig>,</orig><reg>.</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs type="person">Vaillant</rs> m’a promis d’ecrire <choice><orig>a</orig><reg>à</reg></choice> <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr>
+  <lb/><rs type="person">Roger</rs> pour le prier d’en avoir soin<choice><orig>,</orig><reg>.</reg></choice> Vous aurez la bonté
           <lb/>de le faire retirer. Il y a bien deux mois que le corps de
-          <lb/>l’<rs key="pers_DE-588-11864548X" type="person">Apollonius</rs> est imprimé, je l’envoyay des lors à Monsieur
-          <lb/><rs key="pers_DE-588-118571249" type="person">Leibnitzs</rs> avec le livre de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> par la commodité
-          <lb/>d’un Gentilhomme amy de Monsieur <rs key="pers_DE-588-118571249" type="person">Leibnitzs</rs> qui alloit à la
+          <lb/>l’<rs key="pers_DE-588-11864548X" type="biblio">Apollonius</rs> est imprimé, je l’envoyay <choice><orig>des</orig><reg>dés</reg></choice> lors à Monsieur
+          <lb/><rs key="pers_DE-588-118571249" type="person">Leibnitzs</rs> avec le <rs type="biblio">livre</rs> de Monsieur <rs key="pers_DE-588-118587544" type="person">Newton</rs> par la commodit<unclear reason="lost">é</unclear>
+          <lb/>d’un <rs type="person">Gentilhomme</rs> amy de Monsieur <rs key="pers_DE-588-118571249" type="person">Leibnitzs</rs> qui alloit à la
           <lb/>cour d’<rs key="place_GEO-2910831" type="place">Hanovre</rs> avec Mylord <rs type="person">Hallifax</rs>, mais il y manquoit
-          <lb/>la preface du <rs type="biblio">I<hi rend="sup">e</hi> livre de Pappus</rs> que Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs>
-<lb/>y a jugée necessaire &amp; qu’il a fait imprimer en grec &amp; en
-          <lb/>latin. Il y manquoit aussy la preface de Mr <rs key="pers_DE-588-118720066" type="person">Halley</rs>
-<lb/>&amp; autant qu’il peut m’en souvenir, la restitution que M<hi rend="sup">r</hi>
-<lb/><rs key="pers_DE-588-118720066" type="person">Halley</rs> a fait du traitté d’<rs key="pers_DE-588-11864548X" type="person">Apollonius</rs> <hi rend="u">de Sectione
-          <lb/>Spatii</hi> y manqoit aussy, cependant cela a pris plus de
+  <lb/>la preface du <rs type="biblio">7<hi rend="sup">e</hi> livre</rs> de <rs type="person">Pappus</rs> que Monsieur <rs key="pers_DE-588-118720066" type="person">Halley</rs>
+<lb/>y a jugée necessaire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il a fait imprimer en grec <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> en
+          <lb/>latin, il y manquoit aussy la preface de <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs>
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> autant qu’il peut m’en souvenir, la restitution que <abbr>M.<hi rend="sup">r</hi></abbr>
+<lb/><rs key="pers_DE-588-118720066" type="person">Halley</rs> a fait du <rs type="biblio">traitté</rs> d’<rs key="pers_DE-588-11864548X" type="person">Apollonius</rs> <hi rend="u"><choice><orig>de</orig><reg>De</reg></choice> sectione
+          <lb/>spatii</hi> y manquoit aussy, cependant cela a pris plus de
        <pb facs="1080193" n="2"/>
-<lb/>temps que je ne m’etois imaginé, Si j’eusse cru que cela
-          <lb/>eut tant tardé a etre pret, je me serois donné l’honneur de
-          <lb/>vous ecrire plustost pour vous en avertir, &amp; pour vous faire
-          <lb/>scavoir en méme temps que j’avois reccu la <rs type="letter">derniere lettre</rs>
-<lb/>dont vous etiez en peine. Le livre que j’envoye a Monsieur
-          <lb/><rs key="pers_DE-588-119062372" type="person">Varignon</rs> n’est pas neuf, mais M<hi rend="sup">r</hi> <rs type="person">Vaillant</rs> a si fort
+<lb/>temps que je ne m’etois imaginé, si j’eusse cru que cela
+          <lb/>eut tant tardé <choice><orig>a</orig><reg>à</reg></choice> etre pret, je me serois donné l’honneur de
+          <lb/>vous ecrire plustost pour vous en avertir, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour vous faire
+          <lb/><choice><orig>scavoir</orig><reg>sçavoir</reg></choice> en méme temps que j’avois receu la derniere <rs type="letter">lettre</rs>
+<lb/>dont vous etiez en peine. <choice><orig>le</orig><reg>Le</reg></choice> <rs type="biblio">Livre</rs> que j’envoye <choice><orig>a</orig><reg>à</reg></choice> Monsieur
+          <lb/><rs key="pers_DE-588-119062372" type="person">Varignon</rs> n’est pas neuf, mais <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs type="person">Vaillant</rs> a si fort
           <lb/>pressé mon paquet que je n’ay pas eu le loisir d’aller
           <lb/>chez mon <rs type="person">libraire</rs> qui demeure loin de chez moy, pour
-          <lb/>en avoir un autre. Je vous supplie tres humblement de luy
+  <lb/>en avoir un autre<choice><orig>,</orig><reg>.</reg></choice> <choice><orig>je</orig><reg>Je</reg></choice> vous supplie tres humblement de luy
           <lb/>en faire mes excuses quand vous luy ecrirez, je receus une
-          <lb/><rs type="letter">lettre</rs> de Monsieur <rs type="person">de Magneville</rs> il y a dix ou douze
-          <lb/>jours <del>par</del><add>dans</add> laquelle il me mande que vous luy avez
-          <lb/>ecrit, elle est datéé du <rs key="GeoNamesID" type="place">Dublin</rs> ou il alla incontinent apres
-          <lb/>son arrivée en <rs key="place_VER-englan" type="place">Angleterre</rs>, el me marque entre autres choses
-          <lb/>l’interest que vous prenez en ce qui me regarde, <hi rend="u">&amp; la crainte</hi>
-<lb/>que vous avez que je n’aye publié mon essay sur la
-          <lb/>transformation des Courbes. Je vous remercie de tout mon
+          <lb/><rs type="letter">lettre</rs> de Monsieur <rs type="person">de Magneville</rs> il y a <date>dix</date> ou douze
+          <lb/>jours <del/><add>dans</add> laquelle il me mande que vous luy avez
+          <lb/>ecrit, elle est datée du <rs key="GeoNamesID" type="place">Dublin</rs> <choice><orig>ou</orig><reg>où</reg></choice> il alla incontinent apres
+          <lb/>son arrivée en <rs key="place_VER-englan" type="place">Angleterre</rs>, il me marque entre autres choses
+          <lb/>l’interest que vous prenez en ce qui me regarde, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la crainte
+<lb/>que vous avez que je n’aye publié mon <rs type="biblio">essay</rs> sur la
+  <lb/>transformation des Courbes<choice><orig>,</orig><reg>.</reg></choice> <choice><orig>je</orig><reg>Je</reg></choice> vous remercie de tout mon
           <lb/>coeur de vos soins si obligeants, je vous diray que je n’ay
-          <lb/>rien publié sur ce sujet, et vous verrez par la lettre qui
-          <lb/>accompagne vos livres, quelle est la raison qui m’a retenu.
+          <lb/>rien publié sur ce sujet, et vous verrez par la <rs type="letter">lettre</rs> qui
+          <lb/>accompagne vos <rs type="biblio">livres</rs>, quelle est la raison qui m’a retenu<supplied>.</supplied>
           <lb/>Je vous prie, Monsieur, de vouloir bien faire mes compliments
-          <lb/>a Monsieur <rs key="pers_DE-588-119112450" type="person">Herman</rs>, &amp; de luy donner cette suite ou
-          <lb/>plustost cette double suite, trouvée par un jeune homme
-          <lb/>de mes amis. Soit le diametre d’un Cercle <formula>=1</formula>. la
+          <lb/><choice><orig>a</orig><reg>à</reg></choice> Monsieur <rs key="pers_DE-588-119112450" type="person">Herman</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de luy donner cette suite ou
+          <lb/>plustost cette double suite, trouvée par un <rs type="person">jeune homme</rs>
+  <lb/>de mes amis<choice><orig>,</orig><reg>.</reg></choice> Soit le diametre d’un Cercle <formula>=1</formula>© la
        <pb facs="1080194" n="3"/>
-<lb/>Circonferance sera
-          <lb/><formula>1\times\overline{\frac{16}{5}-\frac{4}{239}}-\frac{1}{3}\times\overline{\frac{16}{5^{3}}-\frac{4}{239^{3}}}+\frac{1}{5}\times\overline{\frac{16}{5^{5}}-\frac{4}{239^{5}}}</formula>
-<lb/><formula>-\frac{1}{7}\times\overline{\frac{16}{5^{7}}-\frac{4}{239}}</formula>, &amp;c. elle converge d’une extreme
+  <lb/>Circonferance sera <lb/><choice><orig><formula>1\times\overline{\frac{16}{5}-\frac{4}{239}}-\frac{1}{3}\times\overline{\frac{16}{5^{3}}-\frac{4}{\overline{239}^{3}}}+\frac{1}{5}\times\overline{\frac{16}{5^{5}}-\frac{4}{\overline{239}^{5}}}</formula></orig><reg><formula>
+    1 \times \left( \frac{16}{5} - \frac{4}{239} \right)
+    - \frac{1}{3} \times \left( \frac{16}{5^{3}} - \frac{4}{239^{3}} \right)
+    + \frac{1}{5} \times \left( \frac{16}{5^{5}} - \frac{4}{239^{5}} \right)
+  </formula>
+  </reg></choice>
+  <lb/><choice><orig><formula>
+    -\frac{1}{7} \times \overline{\frac{16}{5^{7}} - \frac{4}{\overline{239}^7}}
+  </formula></orig><reg><formula>
+    -\frac{1}{7} \times \left( \frac{16}{5^{7}} - \frac{4}{239^7} \right)
+  </formula></reg></choice><space unit="nbsp"/><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>, elle converge d’une extreme
           <lb/>vitesse, je luy en envoyeray la demonstration par la premiere
           <lb/><rs type="letter">lettre</rs> que je me donneray l’honneur de luy ecrire, elle est
           <lb/>si particuliere que je croy qu’il n’y a presque que le hazard
           <lb/>qui y puisse conduire, je supplie Monsieur <rs key="pers_DE-588-119112450" type="person">Herman</rs> de
           <lb/>m’envoyer parmy les autres choses que je m’attends qu’il
-          <lb/>me fera la grace de me communiquer votre solution du
-          <lb/>Probleme de la retrogradation des Planetes &amp; la sienne.
-          <lb/>Je lui en envoye une de ma facon dans la <rs type="letter">lettre</rs>
-<lb/>que je luy ecris.</p>
-<closer>Je suis
-          <lb/>Monsieur
-          <lb/>Votre tres humble &amp; tres 
+          <lb/>me fera la grace de me communiquer votre <rs type="biblio">solution</rs> du
+          <lb/><rs type="biblio">Probleme</rs> de la retrogradation des Planetes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la <rs type="biblio">sienne</rs><unclear reason="lost">.</unclear>
+          <lb/><choice><orig>je</orig><reg>Je</reg></choice> luy en envoye une de ma <choice><orig>facon</orig><reg>façon</reg></choice> dans la <rs type="letter">lettre</rs>
+  <lb/>que je luy ecris<choice><orig>,</orig><reg>.</reg></choice></p> <closer><choice><orig>je</orig><reg>Je</reg></choice> suis<supplied>,</supplied>
+          <lb/>Monsieur<supplied>,</supplied>
+          <lb/>Votre tres humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> tres
           <lb/>obeissant serviteur 
-          <lb/><signed><rs key="pers_DE-588-117586765" type="person">Ab. De Moivre</rs></signed></closer>
+          <lb/><signed><rs key="pers_DE-588-117586765" type="person"><abbr>Ab.</abbr> De Moivre</rs></signed></closer>
 <postscript>
-<p><lb/>Quand vous me ferez la grace de m’ecrire, vous aurez
+<p><lb/><choice><orig>quand</orig><reg>Quand</reg></choice> vous me ferez la grace de m’ecrire, vous aurez
             <lb/>la bonté de mettre une Envelope à la lettre avec cette
             <lb/>addresse,</p>
-<p>A Monsieur <rs type="person">Joshua Hyam</rs> chez Monsieur</p>
-<p><rs type="person">Jean des Ormeaux</rs> marchand à <rs key="place_GEO-2759794" type="place">Amsterdam</rs>.</p>
+<p>A Monsieur <rs type="person">Joshua <choice><orig>hyam</orig><reg>Hyam</reg></choice></rs> chez Monsieur</p>
+<p><rs type="person">Jean des Ormeaux</rs><supplied>,</supplied> marchand <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2759794" type="place">Amsterdam</rs><supplied>.</supplied></p>
 </postscript>
 <pb facs="1080195" n="4"/>
 <closer><address>

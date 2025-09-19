@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170515105105501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -196,6 +196,12 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-11" who="SG SW">Kollationieren fortgesetzt.</change>
+      <change when="2025-09-08" who="SG FN">Lateinische Passage kollationiert.</change>
+      <change when="2025-09-08" who="SG SW">Kollationieren fortgesetzt. Formeln bearbeitet</change>
+      <change when="2025-09-04" who="SG SW">Kollationieren fortgesetzt. Formeln bearbeitet</change>
+      <change when="2025-09-03" who="SG SW">Kollationieren fortgesetzt.</change>
+      <change when="2025-09-03" who="SG SW">Kollationieren begonnen.</change>
       <change when="2022-12-15" who="RG">Erste Personen und Orte ausgezeichnet, aber nicht fertig</change>
       <change when="2022-11-25" who="RG">Zeilabstände eingefügt, Seite angepasst, und kleinere Anpassungen</change>
       <change when="2022-10-14" who="RG">Header angepasst</change>
@@ -209,392 +215,410 @@
 <body>
 <div type="letter">
 <pb facs="1080248" n="1"/>
-<opener><dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1710-04-09">9 Avril 1710</date></dateline>
+  <note hand="pers_DE-588-118509969">à <abbr>Mr.</abbr> Moivre</note>
+<opener><dateline><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1710-04-09">9. A<del/><add>v</add>ril 1710.</date><note type="editorial">Datum von der Hand Joh. I B.s.</note></dateline>
 <lb/><salute>Monsieur</salute></opener>
-<p><lb/>Sans cette bonne occasion vous ne redevriez encore peutetre de long<pc type="hyphenation">-</pc><lb break="no"/>temps de mes lettres, quoique vous soyez, je vous proteste la person<pc type="hyphenation">-</pc><lb break="no"/>ne du monde que j’ayme le plus pour le commerce de lettre; Votre
-               <lb/>exactitude a repondre, votre maniere d’ecrire fort instructive;
-               <lb/>vos belles pensées, vos nettes expressions, la multitude de matiere
-               <lb/>dont vous enrichissez et diversisiez vos lettres fort agreablement
-               <lb/>enfin votre tres obligeante<del>s</del> conduite<del>s</del> et politesse d’esprit me
-               <lb/>charment jusqu’a tel point, que je ne me lasse jamais d’y pen<pc type="hyphenation">-</pc><lb break="no"/>ser ni de souhaiter d’etre auprés de vous, bien loin de permettre,
-               <lb/>que quelque refroisissement d’amitié envers vous puisse se glisser
-               <lb/>dans mon <del/>coeur; mais mon cher Monsieur, c’est le grand eloi<pc type="hyphenation">-</pc><lb break="no"/>gnement et la difficulté de vous envoyer mes lettres, qui retarde nos<pc type="hyphenation">-</pc><lb break="no"/>tre correspondance, car comme j’aurois bien envie de vous envoyer d’am<pc type="hyphenation">-</pc><lb break="no"/>ples reponses, mais d’<del>une</del>un autre cotté co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’apprehende beau<pc type="hyphenation">-</pc><lb break="no"/>coup qu’elles ne se perdent en chemin, j’ayme mieux attendre
-               <lb/>une bonne <del>ef </del>et sauve occasion, que d’exposer mes lettres au peril
-               <lb/>d’etre perdu, car<del>i</del> il est fachaux, de se fatiguer a ecrire
-               <lb/>une longue lettre qui me coute de la peine, et de la medi<pc type="hyphenation">-</pc><lb break="no"/>tation et de voir ensuite, que n’arrivant pas a son lieu,
+<p><lb/>Sans cette bonne occasion Vous ne recev<del/>riez encore peutetre de long<pc type="hyphenation">-</pc><lb break="no"/>temps de mes lettres, quoique vous soyez<supplied>,</supplied> je vous proteste<supplied>,</supplied> la person<pc type="hyphenation">-</pc><lb break="no"/>ne du monde que j’ayme le plus pour le commerce de lettre; Votre
+               <lb/>exactitude <choice><orig>a</orig><reg>à</reg></choice> repondre, vo<del/><add>t</add>re maniere d’ecrire fort instructive;
+               <lb/>Vos belles <choice><orig>pensees</orig><reg>pensées</reg></choice>, vos nettes expressions, la multitude de matiere
+               <lb/>dont Vous enrichissez et diversifie<del/><add>z</add> vos lettres fort agreablement
+               <lb/>enfin Votre tres obligeante<del/> conduite<del/> et politesse d’esprit me
+  <lb/>ch<del/><add>a</add>rment jusqu’<choice><orig>a</orig><reg>à</reg></choice> tel point, que je ne me lasse jammais d’y pen<pc type="hyphenation">-</pc><lb break="no"/>ser ni de souhaiter d’<del/><add>es</add>tre auprés de vous, bien loin de permettre,
+               <lb/>que quelque refroidissement d’amitié envers vous, puisse se glisser
+               <lb/>dans mon <del/>coeur; mais<supplied>,</supplied> mon cher Monsieur, c’est le grand el<del/><add>oi</add><pc type="hyphenation">-</pc><lb break="no"/>gnement et la difficulté de vous envoyer mes lettres, qui retarde nos<pc type="hyphenation">-</pc><lb break="no"/>tre correspondence, car comme j’a<del/><add>u</add>rois bien envie de vous envoyer d’am<pc type="hyphenation">-</pc><lb break="no"/>ples reponses, mais d’<del/>un autre cotté co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’apprehende beau<pc type="hyphenation">-</pc><lb break="no"/>coup qu’elles ne se perdent en chem<del/>in, j’ayme mieux attendre
+               <lb/>une bonne <del/>et s<del/><add>ure</add> occasion, que d’exposer mes lettres au peril
+  <lb/>d’etre perdu, car<del/> il est facheux, de se fatiguer <choice><orig>a</orig><reg>à</reg></choice> ecrire
+               <lb/>une longue lettre qui me coute de la peine, et de la medi<pc type="hyphenation">-</pc><lb break="no"/>tation et de voir ensuite, que n’arriv<del/><add>ant</add> pas <choice><orig>a</orig><reg>à</reg></choice> son lieu,
                <lb/>c’est en l’air que je me suis donné tant de mouvement, ce
-               <lb/>qui m’est arrivé bien des fois. Je vous envoye donc celle cy par
-               <lb/>le present porteur <abbr>Mr.</abbr> le Dr. <rs type="person">Scheuchzer</rs>, mon bon amy Frere de
+               <lb/><del/><add>qui</add> m’est arrivé bien des fois<del/><add>.</add> Je vous envoye donc celle<supplied>-</supplied>cy<choice><orig>,</orig><reg type="deleted"/></choice> par
+               <lb/>le present porteur<supplied>,</supplied> <abbr>Mr.</abbr> le <abbr>Dr.</abbr> <rs type="person">Scheuchzer</rs>, mon bon amy<supplied>,</supplied> Frere de
                <lb/>celuy qui porte le meme nom, <add>tous deux</add> assez connus dans le monde sçavant
-               <lb/><add>l’ainé</add> etant membre de votre societé de <rs key="place_GEO-2643743" type="place">Londres</rs>; il accompagne un
-               <lb/>de ses cousins du meme nom faisant ensemble un voyage
-               <lb/>litteraire, pour voir<del>e</del> principalement, ce qu’il y a de curieux
-               <lb/>et faire co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oiscence avec les personnes de merite<del>s</del> et de renom<pc type="hyphenation">-</pc><lb break="no"/>mez, ainsi tout <add>ce</add> que vous leur ferez de favorable, a cet egard, je le
-               <lb/>prendray sur mon conte et vous en seray redevalbe; je vous les recommende donc
-               <lb/>du mieux que je puis.</p>
+               <lb/><add>l’ainé</add> etant membre de votre <rs type="organisation">so<del/><add>c</add>ieté</rs> de <rs key="place_GEO-2643743" type="place">Londres</rs><choice><orig>,</orig><reg>;</reg></choice> il accompagne <rs type="person">un
+               <lb/>de ses cousins</rs> du meme nom faisant ensemble un voyage
+               <lb/>litteraire, pour voir<del/> principalement, ce qu’il y a de curieux
+               <lb/>et faire <choice><sic>co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice><del/><add>o</add>isc<del/><add>a</add>nce</sic><corr>connoissance</corr></choice> avec les personnes de merite<del/> et de renom<pc type="hyphenation">-</pc><lb break="no"/>mé<del/><add>e</add>, ainsi tou<del/><add>t ce</add> que vous leur ferez de favorable, <choice><orig>a</orig><reg>à</reg></choice> cet egard, je le
+               <lb/>prendray sur mon conte et vous en ser<del/><add>ay</add> redevable; je vous les recommende don<unclear >c</unclear>
+               <lb/><add>du mieux que je puis.</add></p>
 <pb facs="1080249" n="2"/>
 <p><lb/>Pour venir maintenant au contenu de votre <rs key="B_991170515105205501" type="letter">lettre du 6.<hi rend="sup">e</hi> Juillet 1708</rs>
-<lb/>qui etoit d’une vielle date, lors que je la reçus, en sorte qu’il faut qu’elle
-               <lb/>ait eté fort longtemps en chemin: Je suis bien aise que <abbr>Mr.</abbr> <rs type="person">de Mag<pc type="hyphenation">-</pc><lb break="no"/>neville</rs> m’ait rendu temoignage, de la bonne volonté que j’ay eue de vous
-               <lb/><del>trouver </del><add>procurer</add> quelque bon etablissement, et de toutes les demarches que
-               <lb/>j’ay faites pour cela; la chaire de Math<add>e</add>matique, que j’ay eue autre<pc type="hyphenation">-</pc><lb break="no"/>fois a <rs key="place_GEO-2755251" type="place">Gronigue</rs>, est encore vacante, depuis mon depart; il est bien
-               <lb/>a craindre, que la division qu’il y a encore entre les Etats de la
-               <lb/>Ville et ceux des Ommelandes ne les empeche pour longtemps de songer
-               <lb/>aux affaires de leur Ac<del>c</del>ademie, cependant le bon viellard <abbr>Mr.</abbr> <lb/><rs type="person">Braunius</rs> mon grand Frauteur est mort, il avoit un grand ascendant
-               <lb/>sur Messrs. les Curateurs <add>qui luy</add> ont deferé beaucoup quand il s’agissoit
+<lb/>qui etoit d’une <choice><sic>vieile</sic><corr>vieille</corr></choice> date, lors que je la re<del/><add>çus</add>, e<del/><add>n</add> sorte qu’il faut qu’elle
+               <lb/>ait <choice><orig>eté</orig><reg>été</reg></choice> fort longtemps en chemin: Je suis bien aise que <abbr>Mr.</abbr> <rs type="person">de Mag<pc type="hyphenation">-</pc><lb break="no"/>neville</rs><choice><orig>,</orig><reg type="deleted"/></choice> m’ait rendu temoignage<choice><orig>,</orig><reg type="deleted"/></choice> de la bonne volonté que j’ay eue de vous
+               <lb/><del/><add>procurer</add> quelque bon etablissement, et de toutes les demarches que
+               <lb/>j’ay faites pour cela<choice><orig>,</orig><reg>;</reg></choice> la chaire de Math<add>e</add>matiques, que j’ay eue autre<pc type="hyphenation">-</pc><lb break="no"/>fois <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2755251" type="place">Groningue</rs>, est encore vacante, depuis mon depart<choice><orig>,</orig><reg>;</reg></choice> il est bien
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> craindre, que la division qu’il y a encore entre les <rs type="place">Etats de la
+               <lb/>Ville</rs> et ceux des <rs type="place">Ommelandes</rs> ne les empeche pour longtemps de songer
+               <lb/>aux affaires de leur <rs type="organisation">Ac<del/>ademie</rs>, cependant le bon vieillard <abbr>Mr.</abbr> <lb/><rs type="person">Braunius</rs> mon grand Fauteur est mort, il avoit un grand ascendant
+               <lb/>sur <abbr>Messrs</abbr>. les <rs type="person">Curateurs</rs> <add>qui Luy</add> ont deferé beaucoup quand il s’agissoit
                <lb/>d’appeller des Professeurs, et moy je n’avois pas moins de credit
-               <lb/>au pres de luy pour luy faire gouter celuy que je luy aurois recommen<pc type="hyphenation">-</pc><lb break="no"/>dé<del>r</del> pour mon successeur; encore si <del>la ville </del>l’accademie ne
-               <lb/>de pendoit que du Magistrat de la ville j’aurois bonne esperance
-               <lb/>de reussir dans ma recommendation des à present, mais Messrs. des
-               <lb/><rs key="GND GND" type="person">Omlandes</rs> y ayant aussy a dire, et etant brouillés presentement avec
-               <lb/>les autres il faut attendre une occasion plus favorable. <del>il </del>Cependant
-               <lb/>il faut esperer que <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> a qui je recommande de temps en
-               <lb/>temps votre interest, ne manquera pas d’y veiller, et en cas qu’il se presen<pc type="hyphenation">-</pc><lb break="no"/>te quelque part une chaire vacante, de proposer votre Personne avec bon
-               <lb/>succes, car on fait beaucoup de reflexion sur sa recommendation; au moins
+               <lb/>aupre<del/><add>z</add> de luy pour luy faire gouter celuy que je luy aurois recommen<pc type="hyphenation">-</pc><lb break="no"/>dé<del/> pour mon successeur; encore<del/> si <del/>l’<rs type="organisation">accademie</rs> ne
+               <lb/>dependoit que du <del/><add>M</add>agistrat de la ville<supplied>,</supplied> j’aurois bonne esperance
+  <lb/>de reussir dans ma recommendation <choice><orig>des</orig><reg>dès</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> present; mais <abbr>Messrs.</abbr> des
+  <lb/><rs type="person">Omlandes</rs> y ayant aussy <choice><orig>a</orig><reg>à</reg></choice> dire, et etant brouillés presentement avec
+               <lb/>les autres<supplied>,</supplied> il faut attendre une occasion<del/> plus favorable. <del/>Cependant
+  <lb/>il faut esperer que <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs><supplied>,</supplied> <choice><orig>a</orig><reg>à</reg></choice> qui je recommende de temps en
+               <lb/>temps Votre interest, ne manquera pas d’y veiller, et en cas qu<supplied>’</supplied>il se presen<pc type="hyphenation">-</pc><lb break="no"/>te quelque part une chaire vacante, de propose<del/><add>r</add> votre Personne avec bon
+               <lb/>succés, car on fait beaucoup de reflexion sur sa recommendation; au moins
                <lb/>je souhaite de tout mon coeur, de vous voir etabli solidement, surtout
                <lb/>si cela vous rapprochoit de moy, pour avoir ensemble une liaison et correspondence
                <lb/>plus etroite.</p>
 <p><lb/>Depuis ma derniere <rs type="letter">lettre</rs> j’ay perfectionné beaucoup ma methode pour
                <lb/>reduire les courbes aux arcs des cercles tirée de la consideration du mouvement
-               <lb/>reptoir, car non seulement j’ay trouvé une formule fort aisée
+               <lb/>reptoir, <del/><add>car</add> non seulement j’ay trouvé une formule fort <choice><orig>aisee</orig><reg>aisée</reg></choice>
                <lb/>de continuer tant qu’on veut les limites pour les Ellipses
                <lb/>que je vous avois proposées, mais aussy j’ay inventé une
-               <lb/>construction Geometrique pour ce sujet, a sçavoir pour
+  <lb/>construction Geometrique pour ce sujet, <choice><orig>a</orig><reg>à</reg></choice> sçavoir pour
             <pb facs="1080250" n="3"/>
-<lb/>reduire quelque courbe que ce soit entre deux arcs de<del>s</del> cercles dont
-               <lb/>la difference fera si petite que l’on voudra, et cela par le moyen de deux
-               <lb/>theoremes admirables l’un particulier pour ellipses, et l’autre ge<pc type="hyphenation">-</pc><lb break="no"/>neral pour toutes les courbes. Je vous communique icy la formule pour
-               <lb/>le calcul des limites, et l’un des theoremes qui regarde des ellipses:
-               <lb/>Regardez la figure de ma <rs type="letter">lettre</rs> ecrite à <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> du 15 Janvier 1707, dont
-               <lb/>je vous ay envoyé un ample extrait; ou a est le grand demiaxe et <formula>b</formula>
-<lb/>le petit demiaxe de l’Ellipse, laquelle par une <hi rend="u">obreption subcontraire</hi>
+<lb/>reduire quelque courbe que ce soit entre deux arcs de<del/> cercles dont
+               <lb/>la difference sera si petite que l’on voudra, et <del/><add>c</add>ela par le moyen de deux
+               <lb/>T<del/><add>heor</add>emes admirables, l’un particulie<del/><add>r</add> pour les ellipses, et l’autre ge<pc type="hyphenation">-</pc><lb break="no"/>neral pour toute<add>s</add> les courbes. Je vous communique icy la formule pour
+               <lb/>le calcul des limites, et l’un des theoremes qui regarde les ellipses:
+               <lb/>Regarde<del/><add>z</add> la figure de <del/><add>m</add>a <rs type="letter">lettre</rs> ecrite <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnit<del/><add>z</add></rs> du <date>15 Janvier 1707</date>, dont
+               <lb/>je vous ay envoyé un ample <del/><add>e</add>xtrait; <choice><orig>ou</orig><reg>où</reg></choice> <formula>a</formula> est le grand demiaxe et <formula>b</formula>
+<lb/>le petit demiaxe de l’Elipse, laquelle par une <hi rend="u">obreption <del/><add>s</add>ubcontraire</hi>
 <lb/>engendre la courbe <hi rend="u">quadrigibbe</hi> et cellecy <del/>par un semblable mou<pc type="hyphenation">-</pc><lb break="no"/>vement produise la courbe <hi rend="u">octigibbe</hi>, et cellecy la <hi rend="u">sedecigibbe</hi>, et
-               <lb/>cellecy la <hi rend="u">32gibbe</hi> et ainsi de suite, je dis que les rayons des cercles
-               <lb/>circonscripts a ces courbes multigibbes seront exprimés comme il
-               <lb/>suit</p>
-<p><lb/>Radius Circuli Circumscripti cons. comm. Epill. ll{??}. 163 s. Ellipsi vel214. 219
+               <lb/>cellecy la <hi rend="u">32gibbe</hi> et ainsi de suite<choice><orig>,</orig><reg>;</reg></choice> je dis que les rayons des cercles
+  <lb/>circonscripts <choice><orig>a</orig><reg>à</reg></choice> ces courbes multigibbes seront exprimé<add>s</add> comme il
+               <lb/>suit<supplied>:</supplied></p>
+<p><lb/>Radius Circuli Circumscripti <note hand="unknown"><!-- Hand nachweisen, evtl. Joh. III B. -->cons. comm. Epi<unclear>st.</unclear> 11. 163 s. 214<choice><orig>.</orig><reg>,</reg></choice> 219.</note>
                <table>
 <row>
 <cell>Ellipsi vel
-                     <lb/>Bigibbae est .....</cell>
+Bigibbae est .....</cell><!-- ToDo: Geschweifte Klammer hinzufügen, Formel bearbeiten (Punkte durch Malpunkte ersetzen)-->
 <cell><formula>a</formula></cell>
 </row>
 <row>
-<cell>Quadrigib. .......</cell>
+<cell>Quadrigib. ....</cell>
 <cell><formula>\sqrt{2aa+2bb}</formula></cell>
 </row>
 <row>
-<cell>Octigibbae .......</cell>
-<cell><formula>\sqrt{aa.\overline{2+\sqrt{2}(??)}+bb.\overline{2-\sqrt{2}(??)}}+\sqrt{aa.\overline{2-\sqrt{2}}+bb.\overline{2+\sqrt{2}}}</formula></cell>
+<cell>Octigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ...</cell>
+<cell><formula>\sqrt{aa\cdot \overline{2+\sqrt{2}}+bb\cdot\overline{2-\sqrt{2}}}+\sqrt{aa\cdot\overline{2-\sqrt{2}}+bb\cdot\overline{2+\sqrt{2}}}</formula></cell>
 </row>
 <row>
-<cell>Sedecigibbae .....</cell>
-<cell><formula>\sqrt{aa.\overline{2+\sqrt{2+\sqrt{2}}}+bb.\overline{2-\sqrt{2+\sqrt{2}}}}+\sqrt{aa.\overline{2-\sqrt{2+\sqrt{2}}}+bb.\overline{2+\sqrt{2+\sqrt{2}}}}+</formula>
-<lb/><formula>\sqrt{aa.\overline{2.^{1}\sqrt{2-\sqrt{2}}}+bb.\overline{2-^{2}\sqrt{2}^{3}-\sqrt{2}}}+\sqrt{aa.\overline{2-\sqrt{2-\sqrt{2}}}+bb.\overline{2+\sqrt{2-\sqrt{2}}}}</formula></cell>
+<cell>Sedecigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ...</cell>
+<cell><formula>\sqrt{aa\cdot\overline{2+\sqrt{2+\sqrt{2}}}+bb.\overline{2-\sqrt{2+\sqrt{2}}}}+\sqrt{aa.\overline{2-\sqrt{2+\sqrt{2}}}+bb.\overline{2+\sqrt{2+\sqrt{2}}}}+</formula>
+<lb/><formula>\sqrt{aa.\overline{2+\sqrt{2-\sqrt{2}}}+bb.\overline{2-\sqrt{2-\sqrt{2}}}+\sqrt{aa.\overline{2-\sqrt{2-\sqrt{2}}}+bb.\overline{2+\sqrt{2-\sqrt{2}}}}</formula></cell>
 </row>
 <row>
-<cell>32gibbae .........</cell>
-<cell><formula>\sqrt{aa.2+\sqrt{2+\sqrt{2+\sqrt{2}}}+bb.2-\sqrt{2+\sqrt{2+\sqrt{2}}}}+\sqrt{aa.2-\sqrt{2+\sqrt{2+\sqrt{2}}}+bb.2+\sqrt{2+\sqrt{2+\sqrt{2}}}}</formula></cell>
+<cell>32gibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>...</cell>
+<cell><formula>\sqrt{aa.\overline{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}+bb.\overline{2-\sqrt{2+\sqrt{2+\sqrt{2}}}}}+\sqrt{aa.\overline{2-\sqrt{2+\sqrt{2+\sqrt{2}}}}+bb.\overline{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}+ \text{ /&amp;c.}</formula></cell>
 </row>
 </table>
 </p>
-<p><lb/>Or il est a remarquer que ces nombres <formula>2,\sqrt{2},2-\sqrt{2-\sqrt{2}},2-\sqrt{2+\sqrt{2}}</formula> &amp;c.
-               <lb/>ne sont autre chose que le quadruple des quarrés des sinus des parties de
-               <lb/>l’angle droit divisé en deux, et soudivisé continuellement prenant l’uni<pc type="hyphenation">-</pc><lb break="no"/>té pour le sinus total, et ainsi on exprimera en general le rayon du cer<pc type="hyphenation">-</pc><lb break="no"/>cle circonscript<del>s</del> a quelque multigibbe que <del>se </del><add>ce</add> soit, dont le nombre des
-               <lb/><hi rend="u">gibbes</hi> soit <formula>n</formula>; car soit divisé l’angle droit, en autant de parties
-               <lb/>egales, qu’il y a d’unites en <formula>\frac{1}{2}n</formula>, et que l’on consçoive de <hi rend="u"><del>ses </del><add>ces</add> parties suc<pc type="hyphenation">-</pc><lb break="no"/>cessivement</hi> 1, 3, 5, 7 &amp;. dont les sinus droits soient appellés <formula>r1</formula>, <del/><formula>r3</formula>,
-               <lb/><formula>r5</formula>, <formula>r7</formula>, &amp;. et le sinus de leur complemens soient nommés <formula>c1</formula>, <del/><formula>c3</formula>,
-               <lb/><formula>c5</formula>, <formula>c7</formula> &amp;. en sorte que si par exemple <formula>n</formula> étoit 16 ou <formula>\frac{1}{2}n=8i</formula> on auroit
-               <lb/><formula>r3</formula> pour le sinus droit des trois huitiemes d’un angle droit, et <formula>c3</formula>, <del/>
-<lb/>pour le sinus de son complement, c’est a dire pour le sinus droit des cinq<pc type="hyphenation">-</pc><lb break="no"/>huitiemes d’un angle droit: cela etant bien entendu, je dis que le rayon
+  <p><lb/>Or il est <choice><orig>a</orig><reg>à</reg></choice> remarquer que ces nombres <formula>2</formula>, <formula>2+ \sqrt{2}</formula>, <formula>2-\sqrt{2+\sqrt{2}}</formula>, <formula>2-\sqrt{2-\sqrt{2}}</formula><note type="editorial">In der letzten Wurzel wurde in der Handschrift korrigiert, die Stelle ist schwer leserlich.</note> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+               <lb/>ne sont autre chose que le quadruple des quarré<del/><add>s</add> des sinus des parties de
+               <lb/>l’angle droit divisé en deux, et soudivisé continuellement prenant l’uni<pc type="hyphenation">-</pc><lb break="no"/>té pour le sinus total; et ainsi on exprimera en general le rayon du cer<pc type="hyphenation">-</pc><lb break="no"/>cle circonscript<del/> <choice><orig>a</orig><reg>à</reg></choice> quelque multigibbe que <del/><add>ce</add> soit, dont le nombre des
+               <lb/><hi rend="u">gibbes</hi> soit <formula>n</formula>; car soit divisé l’<del/><add>a</add>ngle droit, en autant de parties
+               <lb/>egales, qu’il y a d’<choice><orig>unites</orig><reg>unités</reg></choice> en <formula>\frac{1}{2}n</formula>, et que l’on consçoive de <hi rend="u"><del/><add>ces</add> parties suc<pc type="hyphenation">-</pc><lb break="no"/>cessivement</hi> 1, 3, 5, 7 <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. dont les sinus droits soient appellé<add>s</add> <formula>r\require{enclose}\enclose{circle}{1}</formula><!-- ToDo: Die Zahlen sind im Original eingekreist. -->, <del/><formula>r\require{enclose}\enclose{circle}{3}</formula><supplied>,</supplied>
+    <lb/><formula>r\require{enclose}\enclose{circle}{5}</formula>, <formula>r\require{enclose}\enclose{circle}{7}</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> et les sinus de leur complemens soient nommés <formula>c\require{enclose}\enclose{circle}{1}</formula>, <del/><formula>c\require{enclose}\enclose{circle}{3}</formula>,
+    <lb/><formula>c\require{enclose}\enclose{circle}{5}</formula>, <formula>c\require{enclose}\enclose{circle}{7}</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> en sorte que si par exemple <formula>n</formula> étoit 16 ou <formula>\frac{1}{2}n=8</formula><choice><orig>;</orig><reg>,</reg></choice> on auroit
+    <lb/><formula>r3</formula> pour le sinus droit des trois huitiemes d’un angle droit, et <formula>c\require{enclose}\enclose{circle}{3}</formula>,<del/>
+    <lb/>pour le sinus de son complement, c’est <choice><orig>a</orig><reg>à</reg></choice> dire pour le sinus droit des cinq<pc type="hyphenation">-</pc><lb break="no"/>huitiemes d’un angle droit: cela etant bien entendu, je dis que le rayon
                <lb/>du cercle exterieur de la multigibbe, dont le nombre des gibbes est <formula>n</formula>
-<lb/>sera <formula>=a</formula> cette progression finie
+<lb/>sera <formula>=a</formula><supplied>,</supplied> cette progression finie
             <pb facs="1080251" n="4"/>
-<lb/><formula>2\sqrt{arr\mbox{1}+bbcc1}+2\sqrt{aarr3+bbcc3}+2\sqrt{aarr5+bbcc5}+</formula>....<formula>\dots2\sqrt{aarr\frac{1}{2}n-1+}</formula>
-<lb/><formula>\sqrt{bbcc\frac{1}{2}n-1}</formula> laquelle est composée<del>s</del> d’autant de termes qu’il y a d’unités en <formula>\frac{1}{4}n</formula>.
-               <lb/>Mais comme la multigibbe contient la circonference de l’Ellipse (a ce que
-               <lb/>vous aurez vû dans la lettre citée) autant de fois qu’il y a d’unité en
-               <lb/><formula>\frac{1}{2}n</formula> il faut diviser cette progression par <formula>\frac{1}{2}n</formula> <hi rend="u">pour avoir le rayon que
-               <lb/>l’on cherche pour la limite majeure</hi> <formula>\frac{4}{n}\times\sqrt{aarr1+bbcc1}+\sqrt{aarr3+}</formula>
-<lb/><formula>\sqrt{bbcc3}+\sqrt{aarr5+bbcc5}+\dots\dots</formula><formula>\sqrt{aarr\frac{1}{2}n-1+bbcc\frac{1}{2}n-1}</formula> or la li<pc type="hyphenation">-</pc><lb break="no"/>mite majeure etant connue, il est facile de trouver la mineure, car
-               <lb/>comme j’ay montré, la mineure est toujours la moyenne arithmeti<pc type="hyphenation">-</pc><lb break="no"/>que, entre les deux limites precedentes, ainsi, les rayons des cercles in<pc type="hyphenation">-</pc><lb break="no"/>scri<del>p</del>ts ou interieurs des memes courbes multigibbes seront comme il suit
+    <lb/><choice><orig><formula>2\sqrt{arr\,\,\require{enclose}\enclose{circle}{1}+bbcc\,\,\require{enclose}\enclose{circle}{1}}+2\sqrt{aarr\,\,\require{enclose}\enclose{circle}{3}+bbcc\,\,\require{enclose}\enclose{circle}{3}}+2\sqrt{aarr\,\,\require{enclose}\enclose{circle}{5}+bbcc\,\,\require{enclose}\enclose{circle}{5}}+ .... 2\sqrt{aarr\,\,\require{enclose}\enclose{circle}{\ \frac{1}{2}n-1\, }\,\,+}</formula>
+        <lb/><formula>\overline{bbcc\,\,\require{enclose}\enclose{circle}{\,\frac{1}{2}n-1\,}}</formula>  <lb/><formula>\overline{bbcc\,\,\require{enclose}\enclose{circle}{\,\frac{1}{2}n-1\,}}</formula></orig> <reg><formula>2\sqrt{arr\,\,\require{enclose}\enclose{circle}{1}+bbcc\,\,\require{enclose}\enclose{circle}{1}}+2\sqrt{aarr\,\,\require{enclose}\enclose{circle}{3}+bbcc\,\,\require{enclose}\enclose{circle}{3}}+2\sqrt{aarr\,\,\require{enclose}\enclose{circle}{5}+bbcc\,\,\require{enclose}\enclose{circle}{5}}+ .... 2\sqrt{aarr\,\,\require{enclose}\enclose{circle}{\ \frac{1}{2}n-1\, }\,\,+bbcc\,\,\require{enclose}\enclose{circle}{\,\frac{1}{2}n-1\,}}</formula></reg></choice><note type="editorial">Korrektur in der Handschrift: In der dritten Wurzel sind die zwei c nachträglich eingefügt.</note><!-- ToDo: Hier und auch an anderen Stellen: eingekreiste Bereiche evtl. in der normalisierten Fassung modernisieren. --> laquelle est composée<del/> d’<del/><add>au</add>tant de termes qu’il y a d’<choice><orig>unites</orig><reg>unités</reg></choice> en <formula>\frac{1}{4}n</formula>.
+               <lb/>Mais comme la multigibbe cont<add>i</add>ent la circonference de l’Elipse (<choice><orig>a</orig><reg>à</reg></choice> ce que
+               <lb/>vous aur<del/><add>ez</add> vû dans la <rs type="letter">lettre</rs> citée) autant de fois qu’il y a d’unité<del/><add>s</add> en
+    <lb/><formula>\frac{1}{2}n</formula> il faut diviser cette progression <hi rend="u">par <formula>\frac{1}{2}n</formula> pour avoir le rayon que
+      <lb/>l’on cherche pou<del/><add>r</add> la limite majeure</hi><!-- ToDo: Auf der Webseite kontrollieren, ob die Unterstreichung bei der Formel funktioniert hat. --> <formula>\frac{4}{n}\times\sqrt{aarr\,\,\require{enclose}\enclose{circle}{1}+bbcc\,\,\require{enclose}\enclose{circle}{1}}+\sqrt{aarr\,\,\require{enclose}\enclose{circle}{3}+}</formula>
+    <lb/><formula>\sqrt{bbcc\,\,\require{enclose}\enclose{circle}{3}}+\sqrt{aarr\,\,\require{enclose}\enclose{circle}{5}+bbcc\,\,\require{enclose}\enclose{circle}{5}}+.... \sqrt{aarr\,\,\require{enclose}\enclose{circle}{\frac{1}{2}n-1}+bbcc\,\,\require{enclose}\enclose{circle}{\frac{1}{2}n-1}}</formula>,<!-- ToDo: 1. Formeln in Mathjax kontrollieren, 2. wie oben wegen Zeilenumbruch und \times sowie Umkreisungen normalisieren --> or la li<pc type="hyphenation">-</pc><lb break="no"/>mite majeure etant connue, il est facile de trouver la mineure, c<del/><add>a</add>r
+               <lb/>comme j’ay montré, la mineure est toujours la moyenne arithmeti<pc type="hyphenation">-</pc><lb break="no"/>que, entre les deux limites precedentes, ainsi, les rayons des cercles in<pc type="hyphenation">-</pc><lb break="no"/>scri<del/>ts ou interieurs des memes courbes multigibbes seront comme il suit<supplied>:</supplied>
                <lb/>Radius circuli inscripti</p>
 <table>
-<row>
+<row><!-- ToDo: In der ersten Zelle geschweifte Klammer ergänzen -->
 <cell>Ellipsi vel 
-                  <lb/>Bigibbae est...</cell>
+                  <lb/>Bigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> est ... </cell>
 <cell><formula>b</formula></cell>
 </row>
 <row>
-<cell>Quadrigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>...</cell>
+<cell>Quadrigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ... </cell>
 <cell><formula>\frac{a+b}{2}</formula></cell>
 </row>
 <row>
-<cell>Octigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>...</cell>
+<cell>Octigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ... </cell>
 <cell><formula>\frac{a+b+2\sqrt{2aa+2bb}}{4}</formula></cell>
 </row>
 <row>
-<cell>Sedecigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>...</cell>
-<cell><formula>\frac{a+b+2\sqrt{2aa+2bb+4\sqrt{aa.\overline{2+\sqrt{2}}+bb.\overline{2-\sqrt{2}}}}+4\sqrt{aa.\overline{2-\sqrt{2}}+bb.\overline{2\sqrt{2}}}}{8}</formula></cell>
+<cell>Sedecigibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> .... </cell>
+  <cell><formula>\frac{a+b+2\sqrt{2aa+2bb}+4\sqrt{aa\cdot \overline{2+\sqrt{2}}+bb\cdot \overline{2-\sqrt{2}}}+4\sqrt{aa\cdot \overline{2-\sqrt{2}}+bb\cdot \overline{2+\sqrt{2}}}}{8}</formula></cell>
 </row>
 <row>
-<cell>32 gibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>...</cell>
-<cell><formula>\frac{a+b+2\sqrt{2aa+2bb}+\mbox{etc..}}{16}</formula></cell>
+<cell>32gibb<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> .... </cell>
+<cell><formula>\frac{a+b+2\sqrt{2aa+2bb}+\text{\&amp;c.}}{16}</formula></cell>
 </row>
 </table>
-<p><lb/>Voicy maintenant une maniere fort aisée de construire des limites
-               <lb/>geometriquement, et par consequant de reduire l’Ellipse dans un moment
-               <lb/>a la peripherie, d’un cercle qui en differe si peu qu’on voudra, par le
-               <lb/>moyen de ce Theoreme qui ne vous deplaira pas comme je me flatte.</p>
-<p><lb/>Theoreme</p>
-<p><lb/>Soit le demicercle <formula>A+B</formula> dont le dia<pc type="hyphenation">-</pc><lb break="no"/>metre <formula>AB</formula> est composé des deux demi<pc type="hyphenation">-</pc><lb break="no"/>axes de l’Ellipse <formula>AC</formula> et <formula>BC</formula>; Soit la
+<p><lb/>Voicy maintenant une maniere fort aisée de construire les limites
+               <lb/>geometriquement, et par consequant de reduire l’E<add>l</add>lipse dans un moment
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> la peripherie, d’un cercle qui en differe si peu qu’on voudra, par le
+               <lb/>moyen de ce Theoreme qui ne vous deplaira pas comme je me flatte<supplied>.</supplied></p>
+<p><lb/><hi rend="c">Theoreme</hi></p>
+  <figure facs="1080251_01.png"></figure>
+<p><lb/>Soit le demicercle <formula>A4B</formula> dont le dia<pc type="hyphenation">-</pc><lb break="no"/>metre <formula>AB</formula> est composé des deux demi<pc type="hyphenation">-</pc><lb break="no"/>axes de l’Ellipse <formula>AC</formula> et <formula>BC</formula>; Soit la
                <lb/>demi circumference divisé en deux, en
-               <lb/>quattre, et huit, en seize, ou en autant
-               <lb/>de parties egales dans cette progression
+               <lb/>quattre, et huit, en seise, ou en autant
+               <lb/>de parties egales dans cette progressi<choice><orig><g ref="#on">ō</g></orig><reg>on</reg></choice>
                <lb/>que l’on voudra du point <formula>C</formula> soient
-               <lb/>menées des lignes droites au points des diversions <formula>C1</formula> <formula>C2</formula> <formula>C3</formula> <formula>C4</formula> &amp;c. Soit de<pc type="hyphenation">-</pc><lb break="no"/>plus nommé <formula>M</formula>, la moyenne arithmetique<del>s</del> de toutes les lignes impaires
-               <lb/>c’est a dire soit <formula>M=\frac{C1+C3+C5+C7}{4}</formula> <del>cela etant je dis que M et </del>
+               <lb/>menées des lignes <choice><sic>droits</sic><corr>droites</corr></choice> <choice><sic>au</sic><corr>aux</corr></choice> point<add>s</add> de<add>s</add> div<del/><add>i</add>sion<add>s</add> <formula>C1</formula><supplied>,</supplied> <formula>C2</formula>, <formula>C3</formula><supplied>,</supplied> <formula>C4</formula><supplied>,</supplied><note type="editorial">Die Angaben zu den Punkten wurden in der Hanschrift korrigiert.</note> <del/><add><abbr>&amp;c.</abbr></add> Soit de<pc type="hyphenation">-</pc><lb break="no"/>plus nommé <formula>M</formula>, la moyenne arithmetique<del/> de toutes les lignes impaires<supplied>,</supplied>
+  <lb/>c’est <choice><orig>a</orig><reg>à</reg></choice> dire<supplied>,</supplied> soit <formula>M=\frac{C1+C3+C5+C7}{4}</formula><note type="editorial">Korrekturen in der Formel.</note><del/><!-- Weiser -->
 <pb facs="1080252" n="5"/>
 <lb/>et enfin soit <formula>N</formula> la moyenne arithmetique de toutes les lignes paires
-               <lb/>augmentées de rayon que j’ay nommé <formula>R</formula> c’est a dire <formula>N=\frac{C2+C4+C6+R}{4}</formula>
-<lb/>cela etant je dis que <formula>M</formula> et <formula>N</formula> seront les rayons des deux cercles dont celui
-               <lb/>la aura la circumference plus grande, et celuycy aura la circumfe<pc type="hyphenation">-</pc><lb break="no"/>rence plus petite que l’Elipse proposée, car ces deux cer cles seront
-               <lb/>l’exterieur et l’interieur d’une courbe multigibbe, egale a l’Elipse
-               <lb/>dont le nombre des gibbes est le double de celuy des parties <del/>
-<lb/><formula>A1</formula>, 1.2, 2.3 &amp;. Et partant si la demi circumference <formula>A4</formula><formula>B</formula> et
+  <lb/><del/><add>a</add>ugmenté<del/><add>es</add> du rayon que j’ay nommé <formula>R</formula> c’est <choice><orig>a</orig><reg>à</reg></choice> dire <formula>N=\frac{C2+C4+C6+R}{4}</formula>
+<lb/>cela etant<supplied>,</supplied> je dis<supplied>,</supplied> que <formula>M</formula> et <formula>N</formula> seront les rayons des deux cercles dont celuy
+  <lb/><choice><orig>la</orig><reg>là</reg></choice> aura la circumference plus grande, et celuycy aura la circumfe<pc type="hyphenation">-</pc><lb break="no"/>rence plus petite que l’Elipse <choice><sic>proposées</sic><corr>proposée</corr></choice>, car ces deux cercles seront
+  <lb/>l’exterieur et l’interieur d’une courbe multigibbe, egale <choice><orig>a</orig><reg>à</reg></choice> l’Elipse
+               <lb/>dont le nombre des gibbes est le double de celuy des parties<del/>
+<lb/><formula>A1</formula>, 1.2, 2.3 <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Et partant si la demi circumference <formula>A4B</formula> <choice><sic>et</sic><corr>est</corr></choice>
                <lb/>divisée par exemple en 8 parties egales, on aura <formula>M</formula> et <formula>N</formula> pour
-               <lb/>les deux rayons, des deux cercles circumscript<del>s</del> et inscript a la sedecigibbe
-               <lb/>egale a l’ellipse: or supposé que les axe de cett’Ellipse soient en raison
-               <lb/>de 5 a 4, j’ay trouvé <del/>par le calcul que la raison de <formula>M</formula> a <formula>N</formula> sera
-               <lb/>moindre que 6000001 a 60000000, en sorte que l’Ellipse sera reduite en<pc type="hyphenation">-</pc><lb break="no"/>tre deux circumferences circulaires, les quelles ne different pas entre
-               <lb/>elles de la six-millionieme partie de leur circumference: Que si on
+  <lb/>les deux rayons, des deux cercles circumscript<del/> et inscript <choice><orig>a</orig><reg>à</reg></choice> la <hi rend="u">sedecigibbe</hi>
+  <lb/>egale <choice><orig>a</orig><reg>à</reg></choice> l’ellipse: or supposé que les <choice><sic>axe</sic><corr>axes</corr></choice> de cett’ellipse soient en raison
+  <lb/>de 5 <choice><orig>a</orig><reg>à</reg></choice> 4, j<supplied>’</supplied>ay trouvé <del/>par le calcul que la raison de <formula>M</formula> <choice><orig>a</orig><reg>à</reg></choice> <formula>N</formula> sera
+  <lb/>moindre que 6000001 <choice><orig>a</orig><reg>à</reg></choice> 6000000, ensorte que l’ellipse sera reduite en<pc type="hyphenation">-</pc><lb break="no"/>tre deux circumferences circulaires, les quelles ne different pas entre
+               <lb/>elles de la six-millioniem<del/><add>e p</add>artie de leur circumference: Que si on
                <lb/>continuoit la bisection du demicercle <formula>A4B</formula> seulement en 16 parties, on
-               <lb/>trouveroit sur le champ des limites incomparablement plus approchan<pc type="hyphenation">-</pc><lb break="no"/>tes, car comme je l’ay dit elles sont fort convergentes. </p>
-<p><lb/>Mais en voila assez, pour ce qui est de mon theoreme gene<del>r</del><add>r</add>al pour re<pc type="hyphenation">-</pc><lb break="no"/>duire toute courbe do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée a un arc de cercle aussy pres qu’on voudra
-               <lb/>je le reserve à une autre occasion, ou je me propose de communiquer
-               <lb/>tout ce que j’ay trouvé au sujet du mouvement reptoir, ce qui
-               <lb/>vous fera co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre avec combien d’injustice <abbr>Mr.</abbr> <del>d </del><rs key="pers_DE-588-124465641" type="person">Craige</rs> en a parlé
-               <lb/>si indignement dans sa pretendue Transformation des lignes courbes
-               <lb/>publié dans les Transactions des mois de Mars et d’Avril 1708
-               <lb/>mais je vous parleray de cette transformation cy aprez plus
-               <lb/>amplement. Cett espece de regle que vous avez formée a l’occa<pc type="hyphenation">-</pc><lb break="no"/>sion des limites pour trouver une regulairté seroit ingenieu<pc type="hyphenation">-</pc><lb break="no"/>se si vous la <del/><add>pouviez</add> mettre en sa perfection, j’ay eu autre<pc type="hyphenation">-</pc><lb break="no"/>fois de semblables speculations et particulierement pour trouver
-               <lb/>les sommes des nombres entiers mis en progression quel<del>qu</del><add>c</add>onque; vous
-               <lb/>ne serez peutetre pas faché si je vous fais icy <del>d’</del>un <del>de mes</del>
+               <lb/>trouveroit sur le champ d<del/><add>es</add> limites incomparablement plus approchan<pc type="hyphenation">-</pc><lb break="no"/>tes, car comme je l’ay dit <choice><sic>elle</sic><corr>elles</corr></choice> sont fort convergentes.</p>
+  <p><lb/>Mais en <choice><orig>voila</orig><reg>voilà</reg></choice> assez, pour ce qui est de mon theoreme gene<del/><add>r</add>al pour re<pc type="hyphenation">-</pc><lb break="no"/>duire toute courbe do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée <choice><orig>a</orig><reg>à</reg></choice> un arc de cercle aussy pres qu’on voudra
+    <lb/>je le reserve à une autre occasion, <choice><orig>ou</orig><reg>où</reg></choice> je me propose de communiquer
+               <lb/>tout ce que j’ay <choice><orig>trouve</orig><reg>trouvé</reg></choice> au sujet d<del/><add>u</add> mouvement reptoir, ce qui
+               <lb/>vous fera co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre avec combien d’injustice <abbr>Mr.</abbr> <del/><rs key="pers_DE-588-124465641" type="person">Craige</rs> en a parlé
+               <lb/>si indignement dans sa pretendue <rs type="biblio">Transformation des lignes courbes</rs>
+               <lb/>publié dans les Trans<del/><add>act</add>ion<add>s</add> d<del/><add>es</add> mois de Mars et d’Avril 1708
+               <lb/>mais je vous parleray de cette transformation<supplied>-</supplied>cy ap<del/><add>r</add>ez plus
+    <lb/>amplement. Cett<supplied>'</supplied>espece de regle que vous avez formée <choice><orig>a</orig><reg>à</reg></choice> l’occa<pc type="hyphenation">-</pc><lb break="no"/>sion des limites pour en trouver une <choice><sic>regulairté</sic><corr>regularité</corr></choice> seroit ingenieu<pc type="hyphenation">-</pc><lb break="no"/>se si vous la <del/><add>pouviez</add> mettre en sa perfection, j<supplied>’</supplied>ay eu autre<pc type="hyphenation">-</pc><lb break="no"/>fois de <choice><sic>semblable</sic><corr>semblables</corr></choice> speculation<add>s</add> et particulierement pour trouver
+               <lb/>les sommes des nombres entiers mis en progression quel<del></del><add>c</add>onque<choice><orig>,</orig><reg>;</reg></choice> vous
+               <lb/>ne serez peutetre pas <choice><orig>fache</orig><reg>faché</reg></choice><del/> si<del/> je vous fai<add>s</add> icy <del/>un<del/>
 <pb facs="1080253" n="6"/>
 <lb/>extrait d’un de mes ecrits que j’ay fait il y a bien une
-               <lb/>douzaine d’annee, d’autant plus qu’il contient justement les
-               <lb/>me<del>s</del>mes exemples des puissances des nombres qui vont en pro<pc type="hyphenation">-</pc><lb break="no"/>gression <del>quel </del>arithmetique, vous verrez avec combien de
-               <lb/>facilité je trouve leur sommes et d’une maniere bien
-               <lb/>differente de la votre:</p>
-<p><lb/>"Modus exhibendi summos progressionum finitarum per
-               <lb/>numerorum naturalium quamcunque potentia data procedentium,
-               <lb/>imo cujus vis alterius progressiones finit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> constantis terminis, ut<pc type="hyphenation">-</pc><lb break="no"/>cunque complicatis, modo contineant quantitates rationales et integras.
-               <lb/>Sit ex. gr. progressio quadratorum, <formula>1+4+9+16...+mm[q?]</formula>, cujus su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>a
-               <lb/>quaeritur; qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ponatur esse, <formula>am^{3}+bmm+cm</formula> (per <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, intel<pc type="hyphenation">-</pc><lb break="no"/>ligo coefficientes incognitos ipsarum <formula>m^{3}</formula>, <formula>m^{2}</formula>, <formula>m</formula>); aucto nunc nume<pc type="hyphenation">-</pc><lb break="no"/>ro terminorum unitate, habebitur ponendo ubique <formula>m+1</formula> loco <formula>m</formula> in
-               <lb/>assumta quantitate, <formula>am^{3}+bmm+cm</formula> h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c altera <formula>am^{3}+3am^{2}+</formula>
-<lb/><formula>3am+a</formula>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per consequens <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis esse debet <del/><formula>+b</formula>
-<lb/><add><formula>+2b+b</formula><formula>+c+c</formula></add> exposit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> progressioni una cum termino post <formula>mm</formula> sequenti qui
-               <lb/>est <formula>mm+2m+1</formula>, ideoque erit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quation instituenda inter quantita<pc type="hyphenation">-</pc><lb break="no"/>tem hanc ex assumta generatam et inter ipsam assumtam
-               <lb/>auctam termino post <formula>mm</formula> sequenti, <formula>mm+2m+1</formula>; hinc si <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><pc type="hyphenation">-</pc><lb break="no"/>quatio ad <formula>0</formula> redigatur observata terminoram homogenitate
-               <lb/>habebitur <formula>+3amm+3am+a=0</formula><add><formula>-1+2b+b</formula></add><add><formula>-2+c</formula></add><add><formula>-c</formula></add>, singulos ergo terminos
-               <lb/><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quando <formula>0</formula>, reperitur <formula>a=\frac{1}{3}</formula>, <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{1}{6}</formula>, et per consequent <formula>am^{3}+</formula>
-<lb/><formula>bmm+cm</formula>, id est <formula>1+4+9+...mm</formula> est <formula>=\frac{2m^{3}+3mm+m}{6}=\frac{2m^{3}+3mm+m}{1\cdot2\cdot3}</formula>.</p>
-<p><lb/>Sit nunc generaliter potentia numerorum naturalium <formula>n</formula>, &amp;c.
-               <lb/>Reliqua suppleantur ex adversariis meis</p>
+               <lb/>douzaine d’<choice><sic>annee</sic><corr>années</corr></choice>, d’autant plus qu’il contient justement les
+               <lb/>me<del/>mes exemples des puissances des nombres qui vont en pro<pc type="hyphenation">-</pc><lb break="no"/>gression <del/>arithmetique, vous verrez avec combien de
+               <lb/>facilité je trouve <choice><orig>leur</orig><reg>leurs</reg></choice> sommes et d’une maniere bien
+               <lb/>differente de la votre:</p><!-- ToDo: Lateinisches Zitat mit Fritz kollationieren. -->
+<p><lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><cit type="long"><quote><foreign xml:lang="lat">Modus exhibendi summas progression<del/><add>u</add>m finitar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> per
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>numeror<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> naturalium quamcun<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> potenti<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice><!-- In der Transkription stand hier und auch danach ein schluss-a --> dat<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> procedenti<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>,
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>imo cujusvis alterius progressionis finit<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> constantis terminis, ut<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>cun<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> complicatis, modo contineant quantitates rationales et integras.
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Sit <abbr>ex. gr.</abbr> progressio quadrator<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, <choice><orig><formula>1+4+9+16\ldots+mm</formula></orig><reg><formula>1+4+9+16+\ldots+mm</formula></reg></choice><del/>, cujus su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>a
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur; qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ponatur esse, <formula>am^{3}+bmm+cm</formula> (per <formula>a</formula>, <formula>b</formula>, <formula>c</formula>, intel<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ligo cöefficientes incognitos ipsar<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <formula>m^{3}</formula>, <formula>m^{2}</formula>, <formula>m</formula>); aucto nunc nume<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><del/><add>ro</add> terminor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> unitate, habebi<choice><orig><g ref="#tur">&#xf199;</g></orig><reg>tur</reg></choice> ponendo ubi<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <formula>m+1</formula> loco <formula>m</formula> in
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>assumta quantitate, <formula>am^{3}+bmm+cm</formula> h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c altera <formula>\begin{array}{llll} am^{3} &amp; +3am^{2} &amp; +\\ &amp; +b \\
+          \end{array}</formula><!-- ToDo: Formel ist korrekt wird aber nicht korrekt angezeigt.  -->
+        
+        <lb/><choice><orig><formula>\begin{array}{llll}
+        \phantom{+}3am &amp; + a\\
+        + 2b &amp; + b\\
+        +c    &amp; + c
+        \end{array} </formula></orig><reg><formula>am^{3}+(3a+b)m^2+(3a+2b+c)m+a+b+c</formula><note>Die neuen Koeffizienten von m^3, m^2 und m sowie die Konstanten stehen jeweils untereinander.</note>, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> per consequens <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>qualis esse debet
+        
+        </reg></choice>
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>expos<del/><add>it<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add> progressioni una cum termino post <formula>mm</formula><choice><orig>,</orig><reg type="deleted"/></choice> sequenti qui
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>est <formula>mm+2m+1</formula>, ideo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> erit <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quatio instituenda inter quantita<pc type="hyphenation">-</pc><lb break="no"/>tem hanc e<del/><add>x</add> assumta generatam et inter ipsam assumt<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice>
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>auctam termino post <formula>mm</formula> sequenti, <formula>mm+2m+1</formula>; hinc si <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>quatio ad <formula>0</formula> re<del/><add>d</add>igatur observata <choice><sic>terminor<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice></sic><corr>terminorum</corr></choice> homogeneitate
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>habebitur <formula>
+          \begin{array}{rlrlrlr}
+          + &amp; 3amm &amp; + &amp; 3am &amp; + &amp; a &amp; =0 \\
+          - &amp; 1    &amp; + &amp; 2b  &amp; + &amp; b &amp;    \\
+          &amp;      &amp; - &amp; 2   &amp; + &amp; c &amp;    \\
+          &amp;      &amp;   &amp;     &amp; - &amp; c &amp;   
+          \end{array}<!-- todo: formel nochmals kontrollieren. -->
+        </formula>, singulos ergo terminos
+        <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quando <formula>0</formula>,<note type="editorial">Der folgende Abschnitt bis zum Seitenende stammt von der Hand Johann I Bernoullis.</note> reperitur <formula>a=\frac{1}{3}</formula>, <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{1}{6}</formula></foreign></quote></cit>, et per consequent <formula>am^{3}+</formula>
+<lb/><formula>+ bmm+cm</formula>, id est <formula>1+4+9+\ldots mm</formula> est <formula>=\frac{2m^{3}+3mm+m}{6}=\frac{2m^{3}+3mm+m}{1\cdot2\cdot3}</formula>.</p>
+<p><lb/>Sit nunc generaliter potentia numerorum naturalium <formula>n</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr>
+               <lb/>Reliqua suppleantur ex adversariis meis<supplied>.</supplied></p><!-- Kontrollieren ob die von Johann I eingefügte Passage zum Zitat gehört, oder ob es ein nachträglicher Kommentar ist. -->
 <pb facs="1080254" n="7"/>
-<p><lb/><hi rend="u">Exempl</hi>. Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur summa omnium numerorum integrorum ad deci<pc type="hyphenation">-</pc><lb break="no"/>mam potestatem elevtorum, quorum radices in millenario continen<pc type="hyphenation">-</pc><lb break="no"/>tur; i.e. quaeritur summa hujus, progressionis <formula>1^{10}+2^{10}3^{10}4^{10}+5^{10}...</formula>
-<lb/><formula>...+1000^{10}</formula>: hoc incasu cum sit <formula>m=1000</formula> et <formula>n=10</formula> erunt
-               <lb/><formula>a=\frac{1}{11}</formula>, <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{5}{6}</formula>, <formula>d=0</formula>, <formula>e=1</formula>, <formula>f=0</formula>, <formula>g=1</formula>, <formula>h=0</formula>, <formula>i=-\frac{1}{2}</formula>,
-               <lb/><formula>k=0</formula>, et <formula>m=\frac{5}{66}</formula>; adeoque formula pro decima potestate nume<pc type="hyphenation">-</pc><lb break="no"/>rorum naturalium cujus numerus terminorum indefinitus est <formula>m</formula>, erit
-               <lb/>h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c <formula>\frac{1}{11}m^{11}+\frac{1}{2}m^{10}+\frac{5}{6}m^{9}-m^{7}+m^{5}-\frac{1}{2}m^{3}+\frac{5}{66}m</formula> id quod
-               <lb/>in hoc casu quo <formula>m=1000</formula> dabit pro summa totius progressionis hunc
-               <lb/>numerum <del/><add>91409924241424243424241924242500.</add>.</p>
+  <gap/><note type="editorial"></note>
+  <p><lb/><hi rend="u"><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Exempl</hi>. Qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur summa omnium numeror<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> integror<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> ad deci<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>m<choice><orig><g ref="#am">ā</g></orig><reg>am</reg></choice> potestatem elevator<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice>, quor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> radices in millenario continen<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>tur; <abbr>i.e.</abbr> qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ritur su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>a hujus progressionis <formula>1^{10}+2^{10}+3^{10}+4^{10}+5^{10}\ldots</formula>
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><formula>\ldots+1000^{10}</formula>: hoc in casu cum <del/>sit <formula>m=1000</formula> et <formula>n=10</formula> erunt
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><formula>a=\frac{1}{11}</formula>, <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{5}{6}</formula>, <formula>d=0</formula>, <formula>e=-1</formula>, <formula>f=0</formula>, <formula>g=1</formula>, <formula>h=0</formula>, <formula>i=-\frac{1}{2}</formula><supplied>,</supplied>
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><formula>k=0</formula>, et <formula>l=\frac{5}{66}</formula>;<note type="editorial">Handschriftliche Korrektur im letzten Bruch.</note> adeo<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> formula pro decima potest<del/><add>a</add>te nu<del/><add>me</add><pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>ror<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> naturali<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> cujus numerus terminor<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> indefinitus est <formula>m</formula>, erit
+    <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c <formula>\frac{1}{11}m^{11}+\frac{1}{2}m^{10}+\frac{5}{6}m^{9}\,*\,-m^{7}\,*\,+m^{5}\,*\,-\frac{1}{2}m^{3}\,*\,+\frac{5}{66}m</formula><note type="editorial">Handschriftliche Korrekturen in der Formel. Das Zeichen <formula>*</formula> markiert in der Handschrift  die Stelle der vier wegen des Koeffizienten 0 wegfallenden Terme.</note><!-- ToDo: evtl. in der normalisierten Fassung die * durch die entsprechenden Terme ersetzen. --> id quod
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>in hoc casu quo <formula>m=1000</formula> dabit pro summa totius progressionis hunc
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>numer<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> <del/><add>91409924241424243424241924242500</add>.</p>
 <p>
-<lb/><hi rend="u">Coroll.</hi> Si n est numerus negativus vel fractus, summa acquiret termi<pc type="hyphenation">-</pc><lb break="no"/>nos infinitos; hinc licet irrationales plures ex. gr. .. <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}+\sqrt{5}</formula>
-<lb/><formula>\dots+\sqrt{100}</formula> perunicam seriem constantem, terminis mere ratio<pc type="hyphenation">-</pc>
-<pb facs="1080255" n="8"/><lb break="no"/>nalibus exprimere, cum alioquin unusquisque numerus irrationalis
-               <lb/>peculiarem poscat seriem &amp;c."</p>
-<p><lb/>Je vous <del>fr </del>laisse le reste à deduire par vous meme, et à exa<pc type="hyphenation">-</pc><lb break="no"/>miner jusqu’ou elle s’accorde avec votre methode, pour la progres<pc type="hyphenation">-</pc><lb break="no"/>sion des cubes, il n’y a qu’a mettre 3 à la place de <formula>n</formula>, ce qui<del/> don<pc type="hyphenation">-</pc><lb break="no"/>ne immediatement, <formula>a=\frac{1}{4}</formula>, <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{3}{3.4}=\frac{1}{4}</formula>, et <formula>d=0</formula>, et ainsi
-               <lb/>la formule pour les cubes sera <formula>\frac{1}{4}m^{4}+\frac{1}{2}m^{3}+\frac{1}{4}mm+0m</formula>,
-               <lb/>tout co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous avez trouvé; Mais quant à l’expression genera<pc type="hyphenation">-</pc><lb break="no"/>le de la tangente d’un arc de cercle qui soit a un autre donnée
-               <lb/>dans la raison de <formula>n</formula> à <formula>l</formula>; <del>i </del>outre ce que j’ay donné autrefois sur la
-               <lb/>multisection des angles dans les <rs type="biblio">actes de Leipsic</rs>, j’ay une autre
-               <lb/>maniere <del/>de trouver votre formule, qui semble <del>d’</del>avoir quel<pc type="hyphenation">-</pc><lb break="no"/>que chose de bien singulier, ma recherche se fondant sur les
-               <lb/>logarithmes imaginaires, dont j’ay <del>traitté </del>traité dans les memoires de l’<rs type="organisation">acca<pc type="hyphenation">-</pc><lb break="no"/>demie de Paris</rs>, et dans les <rs type="biblio">actes de Leipsic</rs>, je vous en fer<del>a</del><add>o</add>is part icy,
-               <lb/>n’etoit que je fus<del/><add>se</add> pressé pour vous entretenir sur d’autres choses,
-               <lb/><del>f </del>ce sera donc pour un autre fois si vous le souhaitez, maintenant je
-               <lb/>passe aux autres points de votre lettre.</p>
-<p><lb/>Mr. <rs type="person">de Magneville</rs> m’a envoyé en son temps vos solutions
-               <lb/>de certaines <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>quations qui ont la forme de cell<del>e</del> qui resultent
-               <lb/>de la triplication, quintuplication &amp;c. des arcs circulaires, mais je ne
-               <lb/>sçavois pas de quel principe vous vous etiez servi dans cette recher<pc type="hyphenation">-</pc><lb break="no"/>che, je suis bien aise de le sçavoir <del>astheur </del>a cetheur. Je ne sçay
-               <lb/>si je comprens bien le probleme de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, de decrire une
-               <lb/>courbe (sans doute geometrique) <del>qu’il </del>qui passe par tant de points
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><hi rend="u"><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>Coroll.</hi> Si <formula>n</formula> est numerus negativus vel fractus, summa a<del/><add>cq</add>uiret termi<pc type="hyphenation">-</pc><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>nos infinitos; hinc licet irrationales plures <abbr>ex. gr.</abbr> <formula>\sqrt{1}+\sqrt{2}+\sqrt{3}+\sqrt{4}+\sqrt{5}</formula>
+  <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice><choice><orig><formula>.... + \sqrt{100}</formula></orig><reg><formula>\ldots + \sqrt{100}</formula></reg></choice>; per unicam seriem constantem terminis mere ratio<pc type="hyphenation">-</pc>
+<pb facs="1080255" n="8"/><lb break="no"/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>nalibus exprimere, cum alioquin unusqui<del/><add>s</add><choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> numerus <add>ir</add>rationalis
+               <lb/><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice>peculiar<choice><orig><g ref="#em">ē</g></orig><reg>em</reg></choice> poscat seriem. <abbr><choice><orig><g ref="#Etlig">&amp;</g></orig><reg>Et</reg></choice>c.</abbr><choice><orig><g ref="#quote">„</g></orig><reg></reg></choice></p><!-- Bis hier mit Fritz kollationiert.  -->
+  <p><lb/>Je vous <del/>laisse le reste <choice><orig>a</orig><reg>à</reg></choice> deduire par vous meme, et <choice><orig>a</orig><reg>à</reg></choice> exa<pc type="hyphenation">-</pc><lb break="no"/>miner jusqu’<choice><orig>ou</orig><reg>où</reg></choice> elle s’accorde avec votre methode, pour la progres<pc type="hyphenation">-</pc><lb break="no"/>sion des cubes, il n<supplied>’</supplied>y a qu’<choice><orig>a</orig><reg>à</reg></choice> mettre 3 à la place de <formula>n</formula>, ce qui<del/> don<pc type="hyphenation">-</pc><lb break="no"/>ne immediatement, <formula>a=\frac{1}{4}</formula>, <formula>b=\frac{1}{2}</formula>, <formula>c=\frac{3}{3\cdot 4}=\frac{1}{4}</formula>, et <formula>d=0</formula>, et ainsi
+               <lb/>la formule pour les cubes fera <formula>\frac{1}{4}m^{4}+\frac{1}{2}m^{3}+\frac{1}{4}mm+0m</formula><note type="editorial">Korrektur in der Formel. <!-- Mit Fritz kontrollieren, ob das 0 stimmt. --></note>,
+               <lb/>tout co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e vous avez trouvé. Mais quant à l’expression genera<pc type="hyphenation">-</pc><lb break="no"/>le de la tangente d’un arc de cercle qui soit <choice><orig>a</orig><reg>à</reg></choice> un autre donnée
+    <lb/>dans la raison de <formula>n</formula> <choice><orig>a</orig><reg>à</reg></choice> <formula>1</formula>; <del/>outre ce que j’ay donné autrefois sur la
+               <lb/>multisection des angles dans les <rs type="biblio">actes de Lei<del/><add>p</add>sic</rs>, j<supplied>’</supplied>ay une autre
+               <lb/>maniere <del/>de trouver votre formule, qui semble<choice><orig>,</orig><reg type="deleted"/></choice> <del/>avoir quel<pc type="hyphenation">-</pc><lb break="no"/>que chose de bien singulier, ma recherche se fondant sur les
+               <lb/>logarithmes imaginaires, dont j<supplied>’</supplied>ay <del/>traité dans les <choice><orig>memoires</orig><reg>Memoires</reg></choice> de l’<rs type="organisation">acca<pc type="hyphenation">-</pc><lb break="no"/>demie de <del/><add>P</add>aris</rs>, et dans les <rs type="biblio"><choice><orig>actes</orig><reg>Actes</reg></choice> de Leipsic</rs>, je vous en fer<del/><add>o</add>is part icy,
+               <lb/>n’etoit que je fus<del/><add>se</add> pressé pour vous entretenir su<del/><add>r</add> d’autres choses,
+               <lb/><del/>ce sera donc pour <choice><orig>un</orig><reg>une</reg></choice> autre fois si vous le souhaitez, maintenant je
+               <lb/>passe aux autres points de votre <rs type="letter">lettre</rs></p>
+<p><lb/><abbr>Mr.</abbr> de <rs type="person">Magneville</rs> m’a envoyé en son temps Vos solutions
+               <lb/>de ce<del/><add>r</add>t<del/><add>ain</add>es equations qui ont la forme de celle<add>s</add> qui resultent
+               <lb/>de la triplication, quintuplication <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> des arcs circulaires, mais je ne
+               <lb/>sçavois pas de quel principe vous vous etie<del/><add>z</add> servi dans cette recher<pc type="hyphenation">-</pc><lb break="no"/>che<supplied>,</supplied> je suis bien aise de le sçavoir <del/><choice><orig>a</orig><reg>à</reg></choice> cet<supplied>'</supplied>heur. Je ne sçay
+               <lb/>si je comprens bien le probleme de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Neuton</rs>, de decrire une
+               <lb/>courbe (sans doute geometrique<choice><orig>,</orig><reg type="deleted"/></choice>) <del/>qui passe par t<del/><add>a</add>nt de <choice><sic>poins</sic><corr>points</corr></choice>
                <lb/>qu’on voudra, de la maniere que je l’entens il me paroit fort facile,
                <lb/>mais je le trouve indeterminé, ainsi je ne vois pas ce que vous voulez
-               <lb/>dire par les aires que vous donnés qu’elle seront <del>toujours </del>toujours 
+               <lb/>dire par les aires que vous donnés qu’<choice><sic>elle</sic><corr>elles</corr></choice> seront <del/>touj<del/><add>o</add>urs 
                <lb/>quarrables.</p>
-<p><lb/>Je suis extremement ravy, <del>de voir </del>que ma methode de reduire les courbes aux arcs
-               <lb/>de cercles tirée de la consideration du mouvement reptoir ait
-               <lb/>eu le bonheur de plaire a vos plus grands Mathematiciens Mssrs.
+<p><lb/>Je suis extremement ravy, <del/>que ma methode de reduire les courbes aux arcs
+               <lb/>de cercles <choice><orig>t<del/><add>i</add>ree</orig><reg>tirée</reg></choice> de la consideration du mouvement reptoir ait
+  <lb/>eu le <choice><sic>bonheu</sic><corr>bonheur</corr></choice> de plaire <choice><orig>a</orig><reg>à</reg></choice> vos plus grands Mathematiciens <abbr>Mssrs.</abbr><!-- Weiser -->
             <pb facs="1080256" n="9"/>
-<lb/><rs key="pers_DE-588-118587544" type="person">Newton</rs> <rs key="pers_DE-588-118720066" type="person">Halley</rs> et aux autres que vous m’avez nommés, j’espere
+<lb/><rs key="pers_DE-588-118587544" type="person">Neuton</rs><supplied>,</supplied> <rs key="pers_DE-588-118720066" type="person">Halley</rs> et aux autres que vous m’avez nommés, j’espere
                <lb/>qu’ils l’estimeront encore d’avantage, quand ils verront le theore<pc type="hyphenation">-</pc><lb break="no"/>me que je vous ay co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué cy dessus pour les ellipses, par le moyen
-               <lb/>du quel on construit si promptement un cercle <del>ega </del><add>dont</add> la peripherie egale cel<pc type="hyphenation">-</pc><lb break="no"/>le de l’Ellipse; <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs> verra encore que son probleme, qui
-               <lb/>est de trouver l’axe conjugué d’une Ellipse dont la circumference soit
-               <lb/>au grand axe co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 3 à l, qu’il avoit toujours regardé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e extraor<pc type="hyphenation">-</pc><lb break="no"/>dinairement difficile a ce que vous dites, il verra dis-je presentement,
-               <lb/>qu’il se resoud bien plus facilement que vous n’avez cru d’abord, car dans 
-               <lb/><del>la figu </del><add>la figure cy dessus, il n’y a qu’a chercher le point <formula>C</formula> dans la</add> ligne <formula>AB</formula> en sorte que la moyenne arithmetique des lignes impai<pc type="hyphenation">-</pc><lb break="no"/>res, que j’ay no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>é <formula>M</formula> soit à <formula>CB</formula> comme 3 à 1; cela fait, <formula>AC</formula> et <formula>CB</formula>
-<lb/>seront deux axes conjugués d’une Ellipse semblable a celle que l’on cherche
-               <lb/>et partant si on fait co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>BC</formula> est a <formula>AC</formula>, ainsi le grand axe do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e au
-               <lb/>quatrieme que sera le petit axe conjugué que l’on demande. Les deux
-               <lb/>probleme astronomiques que <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs> vous proposa sont curieux. J’ay
-               <lb/>examniné votre solution du premier, je l’ay trouvée bonne. Je l’ay aus<pc type="hyphenation">-</pc><lb break="no"/>sy resolu sans faire aucun calcul on me promenant; etant de retour chez
-               <lb/>moy je pris votre lettre pour voir sa la proportion que je trouvay s’ac<pc type="hyphenation">-</pc>
-<lb/><lb break="no"/>corderait avec la <del>mienne </del><add>votre</add>, effectivement c’etoit la meme, je remarquay <del/>
-<lb/>aussy que la declinaison donnée etoit une condition superflue, puis<pc type="hyphenation">-</pc><lb break="no"/>qu’elle n’entroit pas dans la solution. L’autre probleme se reduit aussy
-               <lb/>aisement a la geometrie ordinaire, mais on tombe dans une ega<pc type="hyphenation">-</pc><lb break="no"/>lité algebraique assez composeé, car je trouve qu’il s’agit de deter<pc type="hyphenation">-</pc><lb break="no"/>miner la <del/>position des deux points <formula>R</formula> et <formula>r</formula> dans le parallele du
+               <lb/>du quel on construit si promptement un cercle <del/><add>dont</add> la peripherie egale<choice><orig>,</orig><reg type="deleted"/></choice> cel<pc type="hyphenation">-</pc><lb break="no"/>le de l’Ellipse; <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs> verra encore que son probleme, qui
+               <lb/>est de trouver l’axe<del/> <choice><sic>conjugé</sic><corr>conjugué</corr></choice> d’une Ellipse dont la circumference soit
+               <lb/>au grand axe co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 3 <choice><orig>a</orig><reg>à</reg></choice> 1, qu’il avoit toujours regardé co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e extraor<pc type="hyphenation">-</pc><lb break="no"/>dinairement difficile <choice><orig>a</orig><reg>à</reg></choice> ce que vous dites, il verra dis-je presentement,
+               <lb/>qu’il se resoud bien plus facilement que vous n’avez cru d’abord; car dans 
+  <lb/><del/><add>la figure cy dessus, il n’y a qu’<choice><orig>a</orig><reg>à</reg></choice> chercher le point <formula>C</formula> dans la</add> ligne <formula>AB</formula>, en sorte que la moyenne arithmetique des lignes impai<pc type="hyphenation">-</pc><lb break="no"/>res, que j’ay <choice><orig>no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e</orig><reg>nommé</reg></choice> <formula>M</formula> soit <choice><orig>a</orig><reg>à</reg></choice> <formula>CB</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e 3 <choice><orig>a</orig><reg>à</reg></choice> 1; cela fait, <formula>AC</formula> et <formula>CB</formula>
+  <lb/>seront deux axes <choice><orig>conjugues</orig><reg>conjugués</reg></choice> d’une Ellipse semblable <choice><orig>a</orig><reg>à</reg></choice> celle que l’on cherche
+  <lb/>et partant si on fait co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>BC</formula> est <choice><orig>a</orig><reg>à</reg></choice> <formula>AC</formula>, ainsi le grand axe do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e au
+               <lb/>quatrieme qu<del/><add>e</add> sera le petit axe conjugué que l’on <choice><sic>demende</sic><corr>demande</corr></choice>. Les deux
+               <lb/><choice><sic>Probleme</sic><corr>Problemes</corr></choice> astronomiques que <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Halley</rs> Vous proposa, sont curieux<choice><orig>,</orig><reg>;</reg></choice> j’ay
+               <lb/>examniné Votre <rs type="biblio">solution</rs> du premier, je l’ay trouvée bonne; Je l’ay aus<pc type="hyphenation">-</pc><lb break="no"/>sy resolu san<del/><add>s</add> faire aucun calcul en me promenant; etant de retour chez
+               <lb/>moy je pris votre <rs type="letter">lettre</rs> pour voir si la proportion que je trouvay s’ac<pc type="hyphenation">-</pc>
+<lb/><lb break="no"/>corder<del/><add>a</add>it avec la <del/><add>votre</add>; effectivement c’etoit la meme, je remarquay<del/>
+<lb/>aussy que la declinaison donnée etoit une condition superflue, puis<pc type="hyphenation"></pc><lb break="no"/>qu’elle n’entroit pas dans la solution: L’autre probleme se reduit aussy
+  <lb/>aisement <choice><orig>a</orig><reg>à</reg></choice> la Geometrie ordinaire, <del/>mais on tombe dans une ega<pc type="hyphenation">-</pc><lb break="no"/>lité algebraique assez composée, car je trouve qu’il s’agit de deter<pc type="hyphenation">-</pc><lb break="no"/>miner la <del/>position des deux <choice><sic>point</sic><corr>points</corr></choice> <formula>R</formula> et <formula>r</formula> dans le parallele du
                <lb/>soleil (voyez votre figure seconde) qui ayent cette qualité, que
-               <lb/>les sinus des deux arcs verticaux <formula>ZR</formula> <del><formula>PR</formula></del> et <formula>zr</formula> soient en
-               <lb/>meme raison que les sinus des complemens des angles <formula>ZRP</formula> et <formula>ZrP</formula>
+               <lb/>les sinus des deux arcs verticaux <formula>ZR</formula> <del/>et <formula>zr</formula> soient en
+               <lb/>meme raison que les sinus des compl<del/><add>e</add>mens des angles <formula>ZRP</formula> et <formula>zrP</formula><note type="editorial">Das <formula>z</formula> ist nicht eindeutig klein geschrieben.</note>
 <lb/>compris entre les verticaux et les horaires <formula>ZR</formula>, <formula>PR</formula> et <formula>zr</formula>, <formula>Pr</formula>; il n’y a
-               <lb/>donc plus autre difficulté que celle <del>qu’il </del><add>qui</add> regarde l’operation sur l’al<pc type="hyphenation">-</pc><lb break="no"/>gebre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>une, le probleme y etant reduit peutetre que le calcul
+               <lb/>donc plus autre difficulté, que celle <del/><add>qui</add> regarde l’operation sur l’al<pc type="hyphenation">-</pc><lb break="no"/>gebre co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>une, le probleme <del/><add>y</add> etant reduit peutetre que le calcul
                <lb/>en sera long et emb<add>a</add>rassé, mais il<del/> ne me semble pas qu’on doive
             <pb facs="1080257" n="10"/>
-<lb/>s’arreter a des calculs penibles plutot <del/>que difficiles, c’est
-               <lb/>a ceux qui ne sçavent que de l’algebre qu’il faut laisser ces sortes d’ex<pc type="hyphenation">-</pc><lb break="no"/>ercices, c’est assez pour nous autres de leur avoir taillé<del>r</del> de la
+  <lb/>s’arreter <choice><orig>a</orig><reg>à</reg></choice> des calcul<add>s</add> penibles plu<del/>tot <del/>que difficiles, c’est
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> ceux qui ne sçavent que de l’algebre qu’il faut laisser ces sortes d’ex<pc type="hyphenation">-</pc><lb break="no"/>ercic<add>e</add>s, c’est assez pour nous autre<add>s</add> de leur avoir <choice><orig>taille</orig><reg>taillé</reg></choice><del/> de la
                <lb/>besoigne, nous pourrons vous et moy employer mieux notre temps
-               <lb/><del>qui </del>a des recherches qui demandent plus qu’une co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissance de
+  <lb/><del/><choice><orig>a</orig><reg>à</reg></choice> des recherches qui demandent plus qu’une co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oissance de
                <lb/>la geometrie ordinaire.</p>
-<p><lb/>Je viens maintenant a l’endroit de votre lettre <del>qu’il</del>
-<lb/>Monsieur, qui me regarde de plus pres, c’est le procedé<del>s</del>
+  <p><lb/>Je viens maintenant <choice><orig>a</orig><reg>à</reg></choice> l’endroit de votre <rs type="letter">lettre</rs><del/><supplied>,</supplied>
+    <lb/>Monsieur, qui me regarde de plus pre<del/><add>s</add>, c’est le procedé<del/>
 <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs> touchant la transformation des courbes; je vous
-               <lb/>suis fort obligé de la peine que vous avez prise, de m’en<pc type="hyphenation">-</pc><lb break="no"/>voyer une copie de sa piece, inserée dans les trans<del>forme</del><pc type="hyphenation">-</pc><lb break="no"/>actions; il est plaisant qu’il ait co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>is le meme paralogiseme que
-               <lb/>vous et <abbr>Mr.</abbr> Herman, et dans le quel j’aurois aussy do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é
-               <lb/>il y a fort longtemps <add>si je ne m’en eusse pas d’abord aperçu de la cause de l’erreur; mais il est etonnant que <abbr>Mr.</abbr> Craige soit demeuré si longtemps</add><note type="editorial">von Bernoullis eingesetzt, unten an der Seite</note> dans son erreur, de la quelle il ne <add>le</add> seroit
-               <lb/>peutetre jamais tiré sans mon secours, car un an ou d’avantage
-               <lb/>aprez la publication de sa piece, il a eu la temerité, de m’en<pc type="hyphenation">-</pc><lb break="no"/>voyer la feuille imprimée des transactions ou elle etoit contenue co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e une
-               <lb/>espece de defi, marque certaine qu’il etoit encor dans la <del>formation </del><add>pleine</add>
-<lb/><add>persuasion d’avoir fort bien resolu le probleme de la transformation</add>
-<lb/>des courbes et <hi rend="u">se rem acu tetigisse</hi>; Voycy par quelle occasion il me l’en<pc type="hyphenation">-</pc><lb break="no"/>voya, c’est qu’il sçavoit que <abbr>Mr.</abbr> <rs type="person">Burnet</rs> fils de <abbr>Mr.</abbr> <rs type="person">l’Eveque
-                  <lb/>de <rs key="GeoNamesID" type="place">Salisbury</rs></rs>, etant pour <del>l’or </del>lors a <rs key="place_GEO-2660646" type="place">Geneve</rs> avoit fait connoissan<pc type="hyphenation">-</pc><lb break="no"/>ce avec moy en passant par icy, c’est donc par son moyen que
+               <lb/>suis fort obligé de la peine que vous avez prise, de m’en<pc type="hyphenation">-</pc><lb break="no"/>voyer une copie de sa <rs type="biblio">piece</rs>, inseré<del/><add>e</add> dans les <choice><orig>trans</orig><reg>Trans</reg></choice><del/><pc type="hyphenation">-</pc><lb break="no"/><add>ac</add>tions; il est plaisant qu’il ait co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>is le meme paralogisme que
+               <lb/>vous et <abbr>Mr.</abbr> <rs type="person">Herman</rs>, et dans le quel j’aurois aussy do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é
+               <lb/>il y a fort longtemps <metamark/><add>si je ne m’en eusse pas d’abord aperçû de la cause de l’erreur; mais il est etonnant que <abbr>Mr.</abbr> <rs type="person">Craige</rs> soit demeuré si longtemps</add><note type="editorial">von Bernoullis eingesetzt, unten an der Seite</note> dans son erreur, de la quelle il ne <add>le</add> seroit
+               <lb/>peutetre jamais tiré sans mon secours, car un an <del/><add>ou</add> d’avantage
+               <lb/>aprez la publication de sa <rs type="biblio">piece</rs>, il a eu la temerité, de m’en<pc type="hyphenation">-</pc><lb break="no"/>voyer la feuille imprimée des <choice><orig>transactions</orig><reg>Transactions</reg></choice> <choice><orig>ou</orig><reg>où</reg></choice> elle etoit contenue co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e une
+    <lb/>espece de defi, marque certaine qu’il etoit encor dans la <del/><add>ferme
+<lb/>persuasion d’avoir fort bien resolu le probleme de la transformation</add>
+<lb/>des courbes et <hi rend="u"><foreign xml:lang="lat">se rem acu tetigisse</foreign></hi>; Voycy par quelle occasion il me l’en<pc type="hyphenation">-</pc><lb break="no"/>voya, c’est qu’il sçavoit que <abbr>Mr.</abbr> <rs type="person">B<del/><del>u</del>rnet</rs><supplied>,</supplied> Fils de <abbr>Mr.</abbr> <rs type="person">l’Eveque
+  <lb/>de <rs key="GeoNamesID" type="place">Salisbury</rs></rs>, etant pour <del/>lors <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2660646" type="place">Geneve</rs> avoit fait connoissan<pc type="hyphenation">-</pc><lb break="no"/>ce<choice><orig>,</orig><reg type="deleted"/></choice> avec moy en passant par icy, c’est donc par son moyen que
                <lb/>je l’ay reçu dans le temps que je l’entretenois par lettre sur
-               <lb/>la mechante solution de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, je luy ecrivis meme
-               <lb/>une lettre dont je vous feray icy un<del>e</del> extrait, deux
-               <lb/>jours avant <del>que</del> d’avoir reçu la feuille imprimée de <abbr>Mr.</abbr> <lb/><rs key="pers_DE-588-124465641" type="person">Craige</rs>, ce jeune <abbr>Mr.</abbr> <rs type="person">Burnet</rs> <del>c’</del>est un fort honete ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e,
-               <lb/>et assez bien versé pour son age dans notre geometrie;
+               <lb/>la me<del/><add>c</add>hante <rs type="biblio">solution</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, je luy ecriv<del/><add>is</add> meme
+    <lb/>une <rs type="letter">lettre</rs> dont je vous fera<del/><add>y</add> icy un<del/> extrait, deux
+    <lb/>jours avant <del/>d’avoir reçu la feuille imprimée de <abbr>Mr.</abbr>
+    <lb/><rs key="pers_DE-588-124465641" type="person">Craige</rs>, ce jeune <abbr>Mr.</abbr> <rs type="person">Burnet</rs> <del/>est un fort honete ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e,
+               <lb/>et assez bien versé pour son age dans notre Geometrie;
                <lb/>il m’a fait <del/>l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de revenir icy de <rs key="place_GEO-2660646" type="place">Geneve</rs>, et
                <lb/>de loger chez moy pendant trois semaines, il m’a dit qu’il
-               <lb/>est cous<del>e</del>in de <abbr>Mr.</abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, et qu’il étoit disciple de
+    <lb/>est cous<del/>in de <abbr>Mr.</abbr> <rs key="pers_DE-588-117659606" type="person">Ch<del/><add>ey</add>nes</rs>, et qu’il étoit disciple de
             <pb facs="1080258" n="11"/>
-<lb/>Mr. <rs key="pers_DE-588-124465641" type="person">Craige</rs>, chez le quel il a demeuré<del>z</del> quelque ans, je luy
-               <lb/>ai<del>t</del> conté l’histoire, de la maniere d’agir de l’un et de l’autre, et
-               <lb/>du tort qu’ils m’ont fait, ce qu’il a improuvé hautement, me
+    <lb/><abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, <choice><orig>Chez</orig><reg>chez</reg></choice> le quel il a demeuré<del/> quelque ans, je luy
+    <lb/>ai<del/> conté l’histoire, de la maniere d’agir de l’un et de l’autre, et
+               <lb/>du tort qu’<choice><sic>il</sic><corr>ils</corr></choice> m’on<add>t</add> fait, ce qu’il a improuvé hautement, me
                <lb/>prometant de me faire rendre justice par <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, il luy
-               <lb/>envoya pour cela ma lettre pour en avoir une reponse, et avec
-               <lb/><add>cela</add> une satisfaction publique aprez le depart de <abbr>Mr.</abbr> <rs type="person">Burnet</rs>,
-               <lb/>je reçus une reponse de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs> adressée a <abbr>Mr.</abbr> <rs type="person">Burnet</rs>, <del>que</del>
-<lb/>que j’ouvrois par la permission qu’il m’en avoit laissé, mais e<pc type="hyphenation">-</pc><lb break="no"/>tant ecrite en <choice><sic>Aglois</sic><corr>Anglois</corr></choice>, je la fis traduire en françois; ou j’ay vu
-               <lb/>qu’il reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oit effectivement<del>. son erreur</del> d’avoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>is une erreur,
-               <lb/>mais qu’il tache de <del>l’</del>excuser le mieux qu’il peut, en rejettant
+               <lb/>envoya pour cela ma <rs type="letter">lettre</rs> pour en avoir une reponse, et avec
+               <lb/><add>cela</add> une satisfaction publique: aprez le depart de <abbr>Mr.</abbr> <rs type="person">Burnet</rs>,
+    <lb/>je reçu<add>s</add> une <rs type="letter">reponse</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs> adressée <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr.</abbr> <rs type="person">Burnet</rs>,<del/>
+<lb/>que j’ouvrois par la permission qu’il m’en avoit laissé, mais e<pc type="hyphenation">-</pc><lb break="no"/>tant ecrite en <choice><sic>Aglois</sic><corr>Anglois</corr></choice>, je la fis traduire en françois; <choice><orig>ou</orig><reg>où</reg></choice> j’ay vu
+    <lb/>qu’il reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oit effectivement<del/> d’avoir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>is une erreur,
+    <lb/>mais qu’il tache de <del/>excuser le mieux qu’il peut, en rejettant
                <lb/>la faute sur ce qu’il avoit omis d’examiner la coincidence des
-               <lb/>courbes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e s’il suffisoit de dire cela, voulant faire a croire
-               <lb/>aux ignorants, que ce n’est tout au plus qu’une simple inadver<pc type="hyphenation">-</pc><lb break="no"/>tance, mais il ne faut pas nous <add>laisser</add> jetter de la poussiere aux yeux,
+    <lb/>courbes, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e s’il suffisoit de dire cela, voulant faire <choice><orig>a</orig><reg>à</reg></choice> croire
+               <lb/>aux ignoran<del/><add>ts</add>, que ce n’est tout au plus qu’une simple inadver<pc type="hyphenation">-</pc><lb break="no"/>t<del/><add>e</add>nce, mais il ne faut pas nous <add>laisser</add> jetter de la poussiere aux yeux<choice><orig>,</orig><reg>;</reg></choice>
                <lb/>il faut qu’il reconnoisse de plus, qu’il n’a donc pas resolu
-               <lb/>le probleme de la transformation des courbes, c’est la le point ca<pc type="hyphenation">-</pc><lb break="no"/>pital de la controverse, et que toutes ses methodes sont in<pc type="hyphenation">-</pc><lb break="no"/>suffisantes, jusqu’a present pour resoudre ce probleme, il faut
-               <lb/>aussy qu’il en laisse la gloire a ma methode prise du mouv<del/><pc type="hyphenation">-</pc><lb break="no"/>ement reptoir, qui l’a <del/>resolu pleinement et fort geometriquement
-               <lb/><del>qui </del><add>quoi</add> qu’il en puisse dire; il e<add>s</add>t bien ridicule de s’opiniatrer a dire
-               <lb/>que cette methode est mechanique, et que les courbes qui se decrivent
-               <lb/>par les mouvements reptoirs le sont aussy, aprez que <add>j’ay</add> montré<del>z</del> tout
-               <lb/>le contraire dans les <rs type="biblio">actes de Leipsic</rs>, qu’il dit n’avoir pas lu avec
-               <lb/>assez d’attention<del>;</del> pourquoy donc soutenir publiquement une chose
-               <lb/>qu’il avoue de n’avoir pas bien examiné<del>r</del>? mais je crois qu’il
-               <lb/>parleroit plus avantageusement de mes <hi rend="u">reptoires</hi>, s’il sçavoit
-               <lb/>les decouvert<del>e</del>s importantes qu’elles m’ont occasioné de faire pour
-               <lb/>la reduction des courbes aux arcs des cercles; c’est a vous Monsieur
-               <lb/>de juger si ce n’est pas une temerité indigne a un geometre de trai<pc type="hyphenation">-</pc><lb break="no"/>ter une telle Methode de Mechanique: mais enfin je <del>vou-</del>
+    <lb/>le probleme de la transformation des courbes, c’est <choice><orig>la</orig><reg>là</reg></choice> le point ca<pc type="hyphenation">-</pc><lb break="no"/>pital de la controverse, et que toutes ses methodes sont in<pc type="hyphenation">-</pc><lb break="no"/>suffisantes, jusqu’<choice><orig>a</orig><reg>à</reg></choice> pres<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice>t pour resoudre ce probleme<choice><orig>,</orig><reg>;</reg></choice> il faut
+    <lb/>aussy qu’il en laisse la gloire <choice><orig>a</orig><reg>à</reg></choice> ma methode prise du mouve<del/><pc type="hyphenation">-</pc><lb break="no"/>ment reptoir, qui l’a <del/>resolu pleinement et fort geometriquement
+    <lb/><del/><add>quoi</add> qu’il en puisse dire; il e<add>s</add>t bien ridicule de s’opiniatrer <choice><orig>a</orig><reg>à</reg></choice> dire
+               <lb/>que cette methode est mechanique, et que les courbes qui se de<del/><add>c</add>rivent
+               <lb/>par les mouvements reptoirs le sont aussy, aprez que <add>j’ay</add> montré<del/> tout
+               <lb/>le contraire dans les <rs type="biblio"><choice><orig>actes</orig><reg>Actes</reg></choice> de Leipsic</rs>, qu’il dit n’avoir pas lu avec
+               <lb/>assez d’attention<del/><add>;</add> pourquoy donc soutenir publiquement une chose
+               <lb/>qu’il avoue de n’avoir pas bien examiné<del/>? mais je crois qu’il
+               <lb/>parler<del/><add>o</add>it plus avantageusement de mes <hi rend="u">reptoires</hi><supplied>,</supplied> s’il sçavoit
+               <lb/>les decouvert<del/><add>e</add>s importantes qu’elles m’on<add>t</add> occasioné de faire pour
+    <lb/>la reduction des courbes aux arcs des cercles; C’est <choice><orig>a</orig><reg>à</reg></choice> vous<supplied>,</supplied> Monsieur<supplied>,</supplied>
+    <lb/>de juger si ce n’est pas une <choice><orig>temerite</orig><reg>temerité</reg></choice> indigne <choice><orig>a</orig><reg>à</reg></choice> un Geometre de trai<pc type="hyphenation">-</pc><lb break="no"/>ter une telle Methode de Mechanique: Mais enfin je<del/>
 <pb facs="1080259" n="12"/>
-<lb/>voudrois sçavoir si Mr <rs key="pers_DE-588-124465641" type="person">Craige</rs> <add>a</add> avoué publiquement son erreur, com<pc type="hyphenation">-</pc><lb break="no"/>me il a promis de le faire, cependant je coute <del/><add>qu’il l’</add><note type="editorial">"qu’il" von Bernoullis Hand</note>ait fait, et
+<lb/>voudrois sçavoir si Mr. <rs key="pers_DE-588-124465641" type="person">Craige</rs> <add>a</add> avoué publiquement son erreur, com<pc type="hyphenation">-</pc><lb break="no"/>me il a promis de le faire, cependant je doute <del/><add>qu’il l’</add>ait fait, et
                <lb/>plus encor qu’il m’ait donné une satisfaction convenable, il est
-               <lb/>vray, que j’ay aussy informé <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> de cet affaire, qui m’a
-               <lb/>promis d’inserer ma reponse dans les co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>entaires de la <rs type="organisation">societé de Ber<pc type="hyphenation">-</pc><lb break="no"/>lain</rs>, qu’on imprime a ce qu’il m’ecrit, mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je crains
-               <lb/><choice><sic/><corr>que</corr></choice> ce livre ne pourra paroitre que fort tard, c’est pourquoy j’ay
-               <lb/>jugé<del>r</del> qu’il seroit plus a propos de se servir des transactions memes
-               <lb/>ou a paru la piece de Mr <rs key="pers_DE-588-124465641" type="person">Craige</rs>, pour y faire paroitre a<add>u</add>ssy
-               <lb/>ma reponse, pour cette fin je vous envoye ces ceux extraits l’un
+               <lb/>vray, que j’ay aussy info<add>r</add>mé <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> de cet affaire, qui m’a
+    <lb/>promis d’inserer ma <rs type="biblio">reponse</rs> dans les <choice><orig>com̄entaires</orig><reg>Commentaires</reg></choice> de la <rs type="organisation">societé de Ber<pc type="hyphenation">-</pc><lb break="no"/>lain</rs>, qu’on imprime <choice><orig>a</orig><reg>à</reg></choice> ce qu’il m’ecrit, mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je crains
+               <lb/>ce <rs type="biblio">livre</rs> ne pourra paroitre que fort tard, c’est pourq<del/><add>uoy</add> j’ay
+    <lb/>jugé<del/> qu’il seroit plus <choice><orig>a</orig><reg>à</reg></choice> propos de se servir des <choice><orig>transa<del/><add>c</add>tions</orig><reg>Transactions</reg></choice> memes
+    <lb/><choice><orig>ou</orig><reg>où</reg></choice> a paru la piece de <abbr>Mr<supplied>.</supplied></abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, pour y faire paroitre a<add>u</add>ssy
+               <lb/>ma <rs type="biblio">reponse</rs>, pour cette fin je vous envoye ces deux extraits<supplied>,</supplied> l’un
                <lb/>de <abbr>Mr.</abbr> <rs type="person">Burnet</rs>, et l’autre de celle de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs> au meme, afin
                <lb/>que si vous vouliez prendre la peine, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e je vous en prie vous
-               <lb/>en puissiez former joint a ce que je <del>vous </del>viens <del>icy </del>de dire <add>icy</add> une reponse
-               <lb/>qui contiendroit 1<hi rend="sup">o</hi>. une refutation du paralogisme de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>
+    <lb/>en puissiez former joint <choice><orig>a</orig><reg>à</reg></choice> ce que je <del/>vien<del/><add>s</add> de dire <add>icy</add> une <rs type="biblio">reponse</rs>
+               <lb/>qui contiendroit 1.<hi rend="sup">o</hi> une refutation d<del/><add>u</add> paralogisme de <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>
 <lb/>et 2<hi rend="sup">o</hi> une espece d’apologie pour mon mouvement reptoir mais
                <lb/>en termes modestes et sans aigreur, car je n’aurois pas de plaisir
-               <lb/>de me brouiller plus avec personne, je vus prie de menager
-               <lb/>sur tout <abbr>Mr.</abbr> <rs type="person">Burnet</rs>, et de ne point faire mention de luy, bien
-               <lb/>loin de le co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>etre avec <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, car c’est un jeune Seigneur
-               <lb/>que j’estime beaucoup pour ses bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es qualites; Il vaudra mieux de pu<pc type="hyphenation">-</pc><lb break="no"/>blier la reponse sous un nom exprunté, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <del>s’il </del>si elle partoit
-               <lb/>d’une perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e qui a pris mon parti<del>e</del> ou plutot le parti de la
-               <lb/>verité et de la justice; Enfin vous y agirez selon votre
+               <lb/>de me brouill<del/><add>er</add> plus avec personne<choice><orig>,</orig><reg>;</reg></choice> je vous prie de menager
+               <lb/>sur tout <abbr>Mr.</abbr> <rs type="person">Burnet</rs>, et de ne point faire mention de luy, bi<choice><orig><g ref="#en">ē</g></orig><reg>en</reg></choice>
+               <lb/>lo<del/><add>in</add> de <add>le</add> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>etre avec <abbr>Mr.</abbr> <rs key="pers_DE-588-124465641" type="person">Craige</rs>, car c’est un jeune Seigneur
+               <lb/>que j’estime beaucoup pour ses bo<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>es <choice><orig>qualites</orig><reg>qualités</reg></choice>; <del/><add>I</add>l vaudra mieux de pu<pc type="hyphenation">-</pc><lb break="no"/>blier la <rs type="biblio">reponse</rs> sous un nom exprunté,<note type="comment"></note> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <del/>si elle partoit
+               <lb/>d’une perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e qui a pris mon parti<del/> ou plutot l<del/><add>e</add> parti de la
+               <lb/>verité et de la justice; Enfin vous <del/><add>y</add> agirez selon votre
                <lb/>prudence.</p>
-<p><lb/>Vous ne ferez pas mal suivant le conseil de <abbr>Mr.</abbr> <rs type="person">de Magnevil<pc type="hyphenation">-</pc><lb break="no"/>le</rs>, de faire imprimer aussy quelqu’une de vos decouvertes dans
-               <lb/>les <rs type="biblio">actes de Leipsic</rs> ou dans d’autres journ<add>e</add>aux d’en deça de la mer
-               <lb/>afin que votre Nom <del>eta </del>tant co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>u en <rs key="place_VER-englan" type="place">Angleterre</rs> le devie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
+<p><lb/>Vous ne fer<del/><add>ez</add> pas mal suivant le conseil de <abbr>Mr.</abbr> <rs type="person">de Magnevil<pc type="hyphenation">-</pc><lb break="no"/>le</rs>, de faire imprimer aussy quelqu’<del/><add>u</add>ne de vos decouvertes dans
+               <lb/>les <rs type="biblio"><choice><orig>actes</orig><reg>Actes</reg></choice> de Leipsic</rs> ou dans d’<choice><orig>autre</orig><reg>autres</reg></choice> journ<add>e</add>aux d’en de<del/><add>j</add>a de la mer
+               <lb/>afin que votre Nom <del/>tant co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>u en <rs key="place_VER-englan" type="place">Angleterre</rs> le devie<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e
                <lb/>d’avantage dans nos pays, je crois que cela ne serviroit pas
-               <lb/>peu à votre avancement;, soit en <rs key="place_KON-deutsch" type="place">Allemagne</rs> ou en <rs key="place_VER-hollan" type="place">Hol<pc type="hyphenation">-</pc><lb break="no"/>lande</rs>: Outre le probleme de la plus vite descente du 
+               <lb/>peu<del/> à votre avancement, soit en <rs key="place_KON-deutsch" type="place">Allemagne</rs> ou en <rs key="place_VER-hollan" type="place">Hol<pc type="hyphenation">-</pc><lb break="no"/>lande</rs>: Outre le probleme d<del/><add>e</add> la plus vite descente du<!-- Weiser Soleil -->
             <pb facs="1080260" n="13"/>
-<lb/>Soleil dans un temps do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é, vous avez encor bien d’autre ma<pc type="hyphenation">-</pc><lb break="no"/>tiere d’une plus profonde penetration, qui ne manquera
-               <lb/>pas de vous rendre celebre chez les nations le plus eloig<pc type="hyphenation">-</pc><lb break="no"/>nées: ce petit Recueil de problemes que vous avez encore de
+<lb/>Soleil dans un temps do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>é, Vous a<del/><add>v</add>ez encor bien d’autre ma<pc type="hyphenation">-</pc><lb break="no"/>tiere d’une plus profonde penetration, qui ne <choice><sic>menquera</sic><corr>manquera</corr></choice>
+               <lb/>pas de vous rendre celebre chez les nations le plus eloig<pc type="hyphenation">-</pc><lb break="no"/>nées: le petit <rs type="biblio">Recueil</rs> de problemes que vou<add>s</add> avez envie de
                <lb/>faire ou que vous avez peutetre deja fait n’y contribuera
-               <lb/>pas peu, je ne doute pas que vous n’y trouviez assez l’oc<pc type="hyphenation">-</pc><lb break="no"/>casion pour y inserer vos remarques sur le dernier<del>e</del> livre
-               <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>; j’ay egaré les miennes autrement je vous
-               <lb/>les aurois co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué<del>s</del>.</p>
-<p><lb/>Je vous prie d’assurer <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> de la tres haute estime
-               <lb/>que je continue d’avoir pour <del>f </del>son grand merite, je seray
-               <lb/>curieux de sçavoir son sentiment sur ma regle de la
+               <lb/>pas peu, je ne doute pas que vous n’y trouviez assez l’oc<pc type="hyphenation">-</pc><lb break="no"/>casion pour y inserer Vos remarques sur l<del/><add>e</add> dernier<del/> <rs type="biblio">livre</rs>
+               <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>; j’ay egaré les miennes<supplied>,</supplied> autrement je vous
+  <lb/>les auroi<del/><add>s</add> <choice><orig>com̄unique<del/></orig><reg>communiqué</reg></choice>.</p>
+<p><lb/>Je vous prie d’assurer <abbr><del/><add>M</add>r.</abbr> <rs key="pers_DE-588-118587544" type="person">Neuton</rs> de la tres haute estime
+               <lb/>que je continue d’avoir pour <del/>son grand merite, je seray
+               <lb/>curieux de sçavoir son sentiment sur ma regle d<del/><add>e</add> la
                <lb/>continuation des limites, pour la reduction des ellipses aux
-               <lb/>arcs de cercle, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussy sur mon theoreme qui sert a
-               <lb/>la meme fin sçavoir a effectuer la chose geometrique<pc type="hyphenation">-</pc><lb break="no"/>ment, d’une maniere courte et aisée et d’un<add>e</add> telle pre<pc type="hyphenation">-</pc><lb break="no"/>cision qu’en <del>moins </del>moins de rien on reduit l’ellipse a une
+  <lb/>arc<del/><add>s</add> de cercle, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussy sur mon theoreme qui sert <choice><orig>a</orig><reg>à</reg></choice>
+  <lb/>la meme fin sçavoir <choice><orig>a</orig><reg>à</reg></choice> effectuer la chose geometrique<pc type="hyphenation">-</pc><lb break="no"/>ment, d’une maniere courte et aisée et d’un<add>e</add> telle pre<pc type="hyphenation">-</pc><lb break="no"/><choice><sic>sision</sic><corr>cision</corr></choice> qu’<del/><add>e</add>n <del/>moins de rien on reduit l’ellipse <choice><orig>a</orig><reg>à</reg></choice> une
                <lb/>circumference de cercle dont l’erreur ne monte pas
-               <lb/>a une 6000000<hi rend="sup">me</hi> partie.</p>
-<p><lb/>J’aurois beacoup d’obligation a <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> s’il me veut
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> <choice><sic>un</sic><corr>une</corr></choice> 6000000<hi rend="sup">me</hi> partie.</p>
+  <p><lb/>J’aur<del/><add>ay</add> beacoup d’obligation <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr<supplied>.</supplied></abbr> <rs key="pers_DE-588-118587544" type="person">Neuton</rs> s’il me veut
                <lb/>envoyer les figures qui me manquent qui regardent
                <lb/>la quadrature de courbes, et les courbes du second genre,
-               <lb/>et qui ont eté oubliées dans l’envoy qu’il a eu la bonté
-               <lb/>de me faire. Je croy qu’à present la seconde edition de
-               <lb/>son Excellent ouvrage <hi rend="u">Philosophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> naturalis</hi> sera a<pc type="hyphenation">-</pc><lb break="no"/>chevé d’imprimer, je do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission a <abbr>Mr.</abbr> <rs type="person">Scheuchzer</rs>
+               <lb/>et qui ont <choice><orig>eté</orig><reg>été</reg></choice> oubliées dans l’<rs type="letter">envoy</rs> qu’il a eu la bonté
+               <lb/>de me faire<del/><add>.</add> Je croy qu’à present la seconde edition de
+               <lb/>son Excellent ouvrage <hi rend="u"><rs type="biblio">Philosophi<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> naturalis</rs></hi> sera a<pc type="hyphenation">-</pc><lb break="no"/>chevé d’imprimer, je do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ission <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr<supplied>.</supplied></abbr> <rs type="person">Scheuchzer</rs>
 <lb/>de m’en acheter un exemplaire; il me tarde extremement
-               <lb/>de voir ce beau livre, je me repais deja par avance des nou<pc type="hyphenation">-</pc>
+               <lb/>de voir ce beau <rs type="biblio">livre</rs>, je me rep<del/><add>ai</add>s deja par avance des nou<pc type="hyphenation">-</pc>
 <pb facs="1080261" n="14"/>
-<pb facs="1080262" n="15"/><lb break="no"/>veautés que j’espere d’y trouver. L’<rs key="pers_DE-588-11864548X" type="person">Appolonius</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Hal<pc type="hyphenation">-</pc><lb break="no"/>ley</rs> est encor un livre que je desire beaucoup, je vous
-               <lb/>prie de faire en sorte que <abbr>Mr.</abbr> le Dr. <rs type="person">Scheuchzer</rs> <del/><add>le</add> puisse
-               <lb/>aussy avoir <del>un </del>pour moy, et s’il y a encor quelque chose
-               <lb/>de curieux soit en Mathematique ou en phisique que <del>l’on</del>
-<lb/>l’on peut acheter, vous m’obligeres beaucoup de le luy indiquer
+<pb facs="1080262" n="15"/><lb break="no"/>veautés que j’espere d’y trouver. L’<rs type="biblio"><del/>Appolonius</rs> de <abbr>Mr<supplied>.</supplied></abbr> <rs key="pers_DE-588-118720066" type="person">Hal<pc type="hyphenation">-</pc><lb break="no"/>ley</rs> est encor un livre que je desire beaucoup, je vous
+               <lb/>prie de faire ensorte que <abbr>Mr.</abbr> le <abbr>Dr.</abbr> <rs type="person">Scheuchzer</rs> <del/><add>le</add> puisse
+               <lb/>aussy avoir <del/>pour moy, et s’il y a encor quelque chose
+               <lb/>de curieux soit en Mathematique ou en phisique que<del/>
+<lb/>l’on peut acheter, vous m’oblige<del/><add>rés</add> beaucoup de le l<del/><add>u</add>y indiquer
                <lb/>il aura la bonté de me l’aporter en retournant chez nous.</p>
-<p><lb/>Je vous supplie de faire bien mes compliments a <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Hal<pc type="hyphenation">-</pc><lb break="no"/>ley</rs> quand vous en aurez l’occasion, et de luy demender, s’il
-               <lb/>a reçu ma lettre avec l’extrait du catalogue des Manuscripts
-               <lb/>de la <rs type="organisation">Bibliotheque du Roy de France</rs> ecrit en Arabe<del>s</del> et autres
-               <lb/>lang<add>u</add>es orientales, sur des matiere de mathematiques que
-               <lb/>Mr. L’<rs type="person">Abbé Bignon</rs> m’a<del>ve</del> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué<del>s</del> pour luy. N’avez
-               <lb/>vous point de <choice><sic>novelle</sic><corr>nouvelle</corr></choice> de notre bon ami <abbr>Mr.</abbr> <rs type="person">de Magne<pc type="hyphenation">-</pc><lb break="no"/>ville</rs>? Je ne <del/>sçay<del/> si je luy dois une reponse ou s’il
-               <lb/>m’en doit une, en tout cas vous auriez la bonté de luy faire mes
+  <p><lb/>Je vous supplie de faire bie<del/><add>n</add> mes complimen<del/><add>ts</add> <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr.</abbr> <rs key="pers_DE-588-118720066" type="person">Hal<pc type="hyphenation">-</pc><lb break="no"/>ley</rs> quand vous en aurez l’occasion, et de luy <choice><sic>demender</sic><corr>demander</corr></choice>, s’il
+               <lb/>a reçu ma <rs type="letter">lettre</rs> avec l’extrait du <rs type="biblio">catalogue des <choice><abbr>Msspts</abbr><expan>Manuscripts</expan></choice></rs>
+               <lb/>de la <rs type="organisation"><choice><orig>Bibliothec</orig><corr>Bibliotheque</corr></choice> du Roy de France</rs> ecrit en Arabe<del/> et autres
+               <lb/>lang<add>u</add>es orientales<choice><orig>;</orig><reg>,</reg></choice> sur des <choice><sic>matiere</sic><corr>matieres</corr></choice> de mathematiques que
+               <lb/><abbr>Mr.</abbr> L’<del/><add>A</add>bbé <rs type="person">Bigno<add>n</add></rs> m’a<del/> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué<del/> pour luy. N’avez<supplied>-</supplied><lb break="no"/>vous point de <choice><sic>novelle</sic><corr>nouvelles</corr></choice> de notre bon ami <abbr>Mr.</abbr> de <rs type="person">Magne<pc type="hyphenation">-</pc><lb break="no"/>ville</rs>? Je ne <del/>sçay<del/> si je luy doi<del/><add>s</add> une reponse<supplied>,</supplied> ou s’il
+               <lb/>m’en doit une, en tout cas vous aur<del/><add>ez</add> la bonté de luy faire mes
                <lb/>baisemains quand vous luy ecrirez. Finalement je repete icy
-               <lb/>la reco<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endation que je vous ay faite au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement de cette
-               <lb/>lettre du present porteur <abbr>Mr.</abbr> le Dr. <rs type="person">Scheuchzer</rs>, <choice><orig>qu’il</orig><reg>qui</reg></choice> vou<pc type="hyphenation">-</pc><lb break="no"/>lant faire une re<del>comed</del><add>verence</add> a <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> se pourra servir
-               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>odement de votre compagnie pour etre introduit par vous
-               <lb/>chez luy ce <choice><sic/><corr>qui</corr></choice> qu’il fera du plaisir a Mr <rs type="person">Scheuchzer</rs>, aussy bien
-               <lb/>qu’a moymeme qui suis avec une passion singuliere</p>
+               <lb/>la reco<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>endation que je vous ay fait<del/><add>e</add> au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encement de cette
+               <lb/>lettre du present porteur <abbr>Mr<supplied>.</supplied></abbr> le <abbr>Dr.</abbr> <rs type="person">Scheuchzer</rs>, qu<del/>i<del/> vou<pc type="hyphenation">-</pc><lb break="no"/>lant faire une re<del/><add>verence</add> <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Neuton</rs> se pourra servir
+               <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>odement de votre compagnie pour etre <del/><add>in</add>troduit par vous
+    <lb/>chez luy ce <choice><sic>qu’il</sic><corr>qui</corr></choice> fera du plaisir <choice><orig>a</orig><reg>à</reg></choice> <abbr>Mr<supplied>.</supplied></abbr> <rs type="person">Scheuchzer</rs>, aussy bien
+    <lb/>qu’<choice><orig>a</orig><reg>à</reg></choice> moymeme qui suis ave<del/><add>c</add> <choice><sic>un</sic><corr>une</corr></choice> passion singuliere<supplied>.</supplied></p>
 <closer><lb/>Monsieur
-               <lb/>Votre tres humble et tres
-               <lb/>obeissant serviteur 
-               <lb/><signed><rs key="pers_DE-588-118509969" type="person">J. Bernoulli</rs></signed></closer>
+               <lb/><del/><add>V</add>otre tres humble et tres
+               <lb/>obeissant Serviteur<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
+  <lb/><signed><rs key="pers_DE-588-118509969" type="person">J<supplied>.</supplied> Bernoulli.</rs></signed></closer>
 <postscript>
-<p><lb/>P. S. Je souhaiterois de sçavoir
-               <lb/>une adresse plus seure pour vous envoyer
-               <lb/>a l’avenir mes lettres, car celle que vous
-               <lb/>m’avez marqué de <abbr>Mr.</abbr> <rs type="person">Josue Hyam</rs> ne
+<p><lb/><abbr>P. S.</abbr> Je souhaiterois de <del/><add>sça</add>voir
+               <lb/>une adr<del/><add>esse</add> plus seure pou<del/><add>r</add> vous envoyer
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> l’avenir mes lettres, car celle que vous
+               <lb/>m’avez marquée de <abbr>Mr.</abbr> <rs type="person">Josue Hyam</rs> ne
                <lb/>me paroit pas assez seure ni durable, vu que
-               <lb/>c’est aparament une perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e etrangere a <rs key="place_GEO-2759794" type="place">Amsterdam</rs> et
-            <pb facs="1080263" n="16"/>
+  <lb/>c’est aparament une perso<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e etrangere <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2759794" type="place">Amsterdam</rs> et<del/><!-- Weiser -->
+            <pb facs="1080263" n="16"/> <!-- bis hier kollationiert. -->
 <lb/>qui n’y demeurera pas pour toujours.</p>
 <p><lb/>Extrait de ma <rs type="letter">lettre à <abbr>Mr.</abbr> <rs type="person">Burnet</rs> du 9. Jan.1709</rs>.</p>
 <p><lb/>Il y a une chose dont je puis me plaindre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.

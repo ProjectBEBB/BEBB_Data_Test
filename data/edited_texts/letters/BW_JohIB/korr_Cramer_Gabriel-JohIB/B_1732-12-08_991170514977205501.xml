@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514977205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -145,8 +145,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-07-25" who="MK">Code zusammen mit Manuskript durchgeschaut, kontrolliert, korrigiert, recherchiert</change>
+      <change when="2025-05-16" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-05-14" who="MK RG">kollationiert Teil 1</change>
+      <change when="2025-05-12" who="MK">Code ergänzt, korr., überprüft und recherchiert</change>
       <change when="2025-05-09" who="MK">Code ergänzt, korr., überprüft bis Schluss</change>
       <change when="2025-05-09" who="MK">Code ergänzt, korr., überprüft</change>
       <change when="2025-01-31" who="RG">In <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> umgewandelt</change>
@@ -162,15 +166,15 @@
 <div type="letter">
 <pb facs="1073912" n="1"/>
 <opener><salute>Monsieur,</salute></opener>
-<p><lb/>Je ne saurois laisser partir Monsieur le Docteur <rs type="person">Kraut</rs>, qui doit passer
-               <lb/>par votre ville, sans le prier de vouloir se charger d’une lettre pour vous.
-               <lb/>Quoique je n’aie rien pour le présent à vous ecrire de nouveau, je vous
+<p><lb/>Je ne saurois laisser partir Monsieur le Docteur <rs type="person">Kraut</rs> qui doit passer
+               <lb/>par votre <rs type="place">Ville</rs>, sans le prier de vouloir se charger d’une <rs type="letter">Lettre</rs> pour vous.
+               <lb/>Quoique je n’aie rien pour le present à vous écrire de nouveau, je vous
                <lb/>prierai néantmoins de reçevoir avec bonté les assurances que je vous y
                <lb/>donne de mon attachement inviolable à vôtre Service, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de ma parfaite
                <lb/>reconnoissance pour les Obligations que je vous ai. Je ne saurois y refléchir
-               <lb/>sans étre penetré des plus vifs Sentimens de gratitude, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> chaque occasion
-               <lb/>les réveille chés moi. La nouvelle année qui s’aproche m’engage à faire
-               <lb/>mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille veux pour votre conservation <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> votre santé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour la
+               <lb/><choice><orig>Sans</orig><reg>sans</reg></choice> étre penetré des plus vifs Sentimens de gratitude, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> chaque occasion
+               <lb/>les reveille chés moi. La nouvelle année qui s’aproche m’engage <choice><orig>a</orig><reg>à</reg></choice> faire
+  <lb/>mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille veux<note type="editorial">Frühneuzeitliche Variante von "vœux".</note>, pour votre conservation <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> votre Santé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> pour la
                <lb/>prosperité de vôtre chére famille.</p>
 <p><lb/>Je vous dois bien des graces pour les remarques que vous avés daigné
                <lb/>faire sur mon <rs type="biblio">Discours</rs>. Je reconnois fort bien qu’il ne mérite point les Eloges
@@ -179,74 +183,74 @@
                <lb/>indigne.
             <pb facs="1073913" n="2"/>
 <lb/>Je n’ai jamais été fort satisfait non plus que vous, de la comparaison que
-               <lb/>je fais dans le paragraphe 19 et suivans, <del/>entre la force de Pesanteur
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la force centrifuge. J’avois fort bien compris, avant que d’ecrire cela, ce que
-               <lb/>vous démontrès <rs type="biblio"><abbr>Act. Erud.</abbr></rs> 1713<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qu’il n’y a proprement de force centrifuge
+               <lb/>je fais dans le Paragraphe 19 et suivans, <del/>entre la force de Pesanteur
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la <rs type="keyword">force centrifuge</rs>. J’avois fort bien compris, avant que d’ecrire cela, ce que
+               <lb/>vous démontrès <rs type="biblio"><abbr>Act. Erud.</abbr></rs> <date when="1713">1713</date><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> qu’il n’y a proprement de <rs type="keyword">force centrifuge</rs>
                <lb/>que celle qui agit selon la direction du rayon du Cercle Osculateur.
-               <lb/>Pourquoi donc, me dirés vous, tous ces raisonemens. Je vous repondrai qu’ils
-               <lb/>étoient <foreign xml:lang="lat"><hi rend="u">ad hominem</hi></foreign> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> adapté au gout des Juges. Je m’etois aperçu
-               <lb/>pendant mon séjour à <rs key="place_GEO-2988507" type="place">Paris</rs>, que ce qui rendoi<del>en</del>t plusieurs de <abbr>.</abbr> les
-               <lb/>Académiciens plus difficiles sur le Systeme de M.<hi rend="sup">r</hi> <rs key="pers_DE-588-118587544" type="person">Newton</rs> (Systeme
-               <lb/>que je crois vray <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> demontré, en qualité de Systeme Mathématique, quoi<pc type="hyphenation">-</pc><lb break="no"/>qu’il y manque encore bien des choses, pour en faire un Systeme Physique)
-               <lb/>c’estoit ces mêmes difficultés que je tache de lever dans ces Articles, en
+               <lb/>Pourquoi<del>,</del> donc, me dirès-vous tous ces raisonemens. Je vous repondrai qu’ils
+               <lb/>étoient <foreign xml:lang="lat"><hi rend="u">ad hominem</hi></foreign> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> adaptés au gout des Juges. Je m’etois aperçu
+               <lb/>pendant mon séjour à <rs key="place_GEO-2988507" type="place">Paris</rs>, que ce qui rendoi<del>en</del>t plusieurs de <abbr>M.<hi rend="sup">rs</hi></abbr> les
+               <lb/>Académiciens plus difficiles sur le Systeme de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> (Systeme
+               <lb/>que je crois vray <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> demontré, en qualité de Systéme Mathématique, quoi<pc type="hyphenation">-</pc><lb break="no"/>qu’il y manque encore bien des choses, pour en faire un Systeme Physique)
+               <lb/>c’estoit ces mêmes difficultés que je tache de lever dans ces <rs type="biblio">Articles</rs>, en
                <lb/>entrant du mieux qui m’a été possible dans leurs idées et en employant
                <lb/>même leurs Expressions. Je pense d’ailleurs que tout cela peut recevoir
-               <lb/>un bon sens, en y donnant les explications convenables. La force centrifuge
-               <lb/>n’est proprement que derivée du mouvement <add>du</add> projectile qu’on peut décomposer
-               <lb/>à discretion, en circulaire, par exemple autour du Centre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> direct du Centre à la
-               <lb/>Circonférence ou de la Circonférence au Centre. Mais encore un coup il vaut
-               <lb/>mieux eviter toutes ces explications, en considerant simplement la force
-               <lb/>centrifuge co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e perpendiculaire à la Courbe.</p>
+               <lb/>un bon sens, en y donnant les explications convenables. La <rs type="keyword">force centrifuge</rs>
+               <lb/>n’est proprement que derivée du mouvement <add>du</add><note type="editorial">Ergänzung mit Bleistift, wahrscheinlich nicht vom Briefautor.</note> projectile qu’on peut décomposer
+               <lb/>à discretion, en circulaire, <abbr>p. ex.</abbr> autour du Centre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> direct du Centre à la
+               <lb/>Circonference ou de la Circonference au Centre. Mais encore un coup il vaut
+               <lb/>mieux eviter toutes ces explications, en considerant simplement la <rs type="keyword">force
+               <lb/>centrifuge</rs> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e perpendiculaire à la Courbe.</p>
 <pb facs="1073914" n="3"/>
-<p><lb/>Voyés ce qu’a produit le trait de railleries que vous me décochés sur
-               <lb/>l’article du Problème de la Ligne la plus courte entre deux points <del/>
-<lb/>tracée sur une surface courbe donnée. J’y ai beaucoup travaillé <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
-               <lb/>n’ai point du tout réussi. Il m’est venu une équation differentielle
+<p><lb/>Voyés ce qu’<choice><orig>à</orig><reg>a</reg></choice> produit le trait de raillerie que vous me décochés sur
+               <lb/>l’<rs type="biblio">Article</rs> du Probléme de la Ligne la plus courte entre deux points <del/>
+<lb/>tracée sur une Surface courbe donnée. J’y ai beaucoup travaillé <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+               <lb/>n’ai point du tout réussi. Il <subst><del/><add>m</add></subst>’est venu une équation differentielle
                <lb/>mais si compliquée que je desespère de la reduire. Je m’y suis tellement
-               <lb/>fatigué que je n’ose plus entreprendre de revoir ce problème. Cependant
-               <lb/>il est un des plus beau<supplied>x</supplied> qu’on puisse proposer sur les Questions des <foreign xml:lang="lat"><hi rend="u">Maximis
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Minimis</hi></foreign> de l’Espèce la plus difficile. (J’entends de ceux où l’on ne cherche
+               <lb/>fatigué que je n’ose plus entreprendre de revoir ce Probléme. Cependant
+  <lb/>il est un des plus beau<supplied>x</supplied> qu’on puisse proposer sur les Questions <hi rend="u"><foreign xml:lang="lat">de Maximis
+                 <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Minimis</foreign></hi> de l’Espéce <subst><del>de</del><add>la</add></subst>plus difficile. (J’entends de ceux où l’on ne cherche
                <lb/>pas une grandeur simplement mais une Courbe). Ainsi faites-moi la
                <lb/>grace de me communiquer vôtre Solution. Elle <del/>est plus belle qu’on
-               <lb/>ne pouvoit l’esperer, puisque, selon que vous me marqués, vous avés demelé
-               <lb/>les indeterminées pour toutte sorte de surface possible.</p>
+               <lb/>ne pouroit <subst><del/><add>l</add></subst>’esperer, puisque, selon que vous me marqués, vous avés demelé
+               <lb/>les indeterminées pour toutte sorte de Surface possible.</p>
 <p><lb/>Je n’ose vous presser de publier vôtre Systeme sur la Pesanteur. Cependant
-               <lb/>le Public est fort avide de toutes vos productions. Une matière aussi importante
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> aussi difficile demande à étre traittée par un aussi habile homme. Et je pense
-               <lb/>que les efforts inutiles de tant de savans qui ont <del/><add>tenté</add> la même chose avant vous
+               <lb/>le Public est fort avide de toutes vos productions. Une matiére aussi importante
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> aussi difficile demande <subst><del>d'</del><add><choice><orig>a</orig><reg>à</reg></choice></add></subst> étre traittée par un aussi habile homme. Et je pense
+               <lb/>que les efforts inutiles de tant de savans qui ont <del>traitté</del><add>tenté</add> la même chose avant vous
                <lb/>doivent plutot vous aiguilloner que vous décourager. Si votre Systeme explique
                <lb/>la Pesanteur universelle de tous les Corps les uns sur les autres, je ne vois plus
                <lb/>rien à désirer sur la Physique Celeste.</p>
 <p><lb/>Il faut que je me sois mal expliqué dans ce que je vous marquois précedemment
-               <lb/>sur la manière de calculer la Vitesse du son. Je n’entends pas par l’onde aérienne
+               <lb/>sur la <subst><del/><add>maniére</add></subst> de calculer la Vitesse du son. Je n’entends pas par l’onde aérienne
                <lb/>la ligne circulaire de l’air agité, mais plutot la perpendiculaire qui mesure
-            <pb facs="1073915" n="4"/><!-- bis hier code kontrolliert ergänzt MK 9.5.2025 -->
-<lb/>l’epaisseur de la sphère creuse tremoussante. Soit <formula>A</formula> le point où commençe
+            <pb facs="1073915" n="4"/>
+<lb/>l’epaisseur de la Sphère creuse tremoussante.<figure facs="1073915_01.png"></figure> Soit <formula>A</formula> le point où commençe
                <lb/>le tremoussement de l’air. D’abord l’air renfermé dans la Sphère dont
-               <lb/>le Rayon est <formula>AB</formula> fait ses vibrations; Ensuite cet air communique
+               <lb/>le Rayon est <formula>AB</formula> fait ses Vibrations; Ensuite cet Air communique
                <lb/>son mouvement à l’air renfermé entre les deux surfaces Sphériques
-               <lb/>concentriques <formula>Cc</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>Bb</formula>. Puis à celui qui est compris entre les deux surfaces <formula>Dd</formula> et <formula>Ee</formula><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice>
-               <lb/>et ainsi de suite. J’apelle la longueur de l’onde la ligne <formula>AB</formula> <add>droitte</add>, ou <formula>BC</formula>, ou <formula>CD</formula> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Et je la
-               <lb/>conçois cette ligne droitte, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un ressort qui étant serré <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lâché subitement s’étend
+               <lb/>concentriques <formula>Cc</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>Bb</formula>. Puis à celui qu<unclear>'</unclear>est compris entre les deux surfaces <formula>Dd</formula> et <formula>Cc</formula>.
+               <lb/>Et ainsi de suite. J’apelle la longueur de l’onde la ligne <formula>AB</formula> <add>droitte</add>, ou <formula>BC</formula>, ou <formula>CD</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Et je la
+               <lb/>conçois cette ligne droitte, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e un ressort qui étant serré <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> lâché subitement s’etend
                <lb/>au delà de sa longueur naturelle, puis se resserre, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> fait ainsi quelques vibrations
-               <lb/>que je prétens étre analogues à celles d’une Chorde de Musique. J’espere que vous
+               <lb/>que je prétens étre analogues à celles d’une <choice><orig>Chorde</orig><reg>Corde</reg></choice> de Musique. J’espere que vous
                <lb/>trouverés présentement la comparaison moins imparfaite, qu’elle ne vous a paru
-               <lb/>d’abord, faute de m’étre exprimé clairement. Elle revient à peu près à ce que
-               <lb/>vous me marqués dans la suite de vôtre lettre. Mais je n’ai jamais pu trouver
-               <lb/>par aucun calcul, que la force qui pousse chaque globule de l’air tremoussant
-               <lb/>soit proportionelle à son excursion, ni que la courbe <formula>A</formula><formula>\beta\gamma\epsilon\epsilon\varphi G</formula> (dans votre figure)
-               <lb/>fut la Compagne de la Cicloide. Je vous supplie de m’en accorder la Demonstration.
-               <lb/>Je trouve que cette force est <formula>\frac{ddy}{\overline{dx-dy}^{2}}</formula> ou plus exactement <formula>\frac{ddy}{\overline{dx-dy}\cdot\overline{dx-dy+ddy}}</formula> (<formula>y</formula> etant
+               <lb/>d’abord, faute de m’étre exprimé Clairement. Elle revient à peu près à ce que
+               <lb/>vous me marquès dans la suite de vôtre <rs type="letter">Lettre</rs>. Mais je n’ai jamais pu trouver
+               <lb/>par aucun calcul, <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> la force qui pousse chaque globule de l’air tremoussant
+               <lb/>soit proportionelle à son excursion, ni que la Courbe <formula>A</formula><formula>\beta\gamma\delta\epsilon\varphi G</formula> (dans votre figure)
+               <lb/>fut la Compagne de la Cicloide. Je vous supplie de m’en acorder la Demonstration.
+  <lb/>Je trouve que cette force est <choice rend="regFormula"><orig><formula>\frac{ddy}{\overline{dx-dy}^{2}}</formula></orig><reg><formula>\frac{ddy}{(dx-dy)^{2}}</formula></reg></choice> ou plus exactement <choice rend="regFormula"><orig><formula>\frac{ddy}{\overline{dx-dy}\cdot\overline{dx-dy+ddy}}</formula></orig><reg><formula>\frac{ddy}{(dx-dy)\cdot (dx-dy+ddy)}</formula></reg></choice> (<formula>y</formula> etant
                <lb/>l’excursion <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>dx</formula> la distance naturelle des Globules.) Mais comment cette expression
-               <lb/>se reduit elle <choice><orig>à</orig><reg>a</reg></choice> <formula>y</formula>, sans quelque supposition, c’est ce que je n’ai pû comprendre. Je pense
-               <lb/>aussi comme vous, que <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> s’est accroché à une vaine defaite, quand il attribue
-               <lb/>la difference de vitesse deduite de son calcul, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de l’Expérience, à la grosseur des
-               <lb/>globules aériens. Et je suis persuadé qu’on sauveroit la difficulté en considérant
-               <lb/>la fibre aerienne comme un cone infiniment aigu.</p> <closer><salute>J’ai l’honneur d’étre avec
+               <lb/>se reduit<unclear>-</unclear>elle à <formula>y</formula>, sans quelque supposition, c’est ce que je n’ai pû comprendre. Je pense
+               <lb/>aussi comme vous, que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> s’est accroché à une vaine defaite, quand il attribue
+               <lb/>la difference de vitesse deduite de son Calcul, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de l’Expérience, à la grosseur des
+               <lb/>globules aériens. Et je suis persuadé qu’on sauveroit la difficulté en considerant
+               <lb/>la fibre aerienne comme un Cone infiniment aigu.</p> <closer><salute>J’ai l’honneur d’etre avec
                   <lb/>un profond respect <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> un entier dévouement
                   <lb/>Monsieur,
-                  <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant Serviteur</salute>
-<signed><lb/><abbr>G.</abbr> Cramer</signed>.
+                  <lb/>Votre tres humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> obeissant Serviteur</salute>
+                 <signed><lb/><abbr>G</abbr><supplied>.</supplied> Cramer</signed>
                   <dateline><lb/>Geneve ce <date when="1732-12-08">8.<hi rend="sup">e</hi> X.<hi rend="sup">bre</hi> 1732</date>.</dateline></closer>
 </div>
 </body>

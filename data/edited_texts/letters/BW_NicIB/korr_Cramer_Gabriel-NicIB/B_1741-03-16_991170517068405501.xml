@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517068405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -143,6 +143,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-21" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-21" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-11" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-11" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -155,31 +157,44 @@
 <body>
 <div type="letter">
 <pb facs="1063401" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>Messieurs <rs type="person">Philibert</rs> &amp; <rs type="person">Cramer</rs>, allant a <rs type="person">Francfort</rs>, n’ont
-                           <lb/>pas voulu passer a <rs key="place_GEO-2661604" type="place">Bâle</rs>, sans avoir l’honneur de vous faire
-                           <lb/>la reverence, &amp; de vous presenter ce qu’ils ont dejà éxécuté des
-                              <lb/>Oeuvres de feu Monsieur vôtre <rs type="person">Oncle</rs>. Ils m’ont demandé
-                           <lb/>une Lettre d’introduction auprès de vous, Monsieur. J’aurois
-                           <lb/>pû leur réprésenter qu’ils ont en quelque sorte contracté une
-                           <lb/>relation avec vous, qui les introduisoit d’elle même. Mais j’ai été
-                           <lb/>charmé d’avoir encore cette occasion de vous marquer, Monsieur,</p>
-<closer><salute><lb/>les sentimens sincères d’estime, de considération &amp; d’attachement
-                           <lb/>avec lesquels j’ai l’honneur d’etre Votre très humble
-                           <lb/>&amp; très obeissant Serviteur</salute> <signed>G. Cramer</signed>
-<dateline><lb/>Genève ce <date when="1741-03-16">16 Mars 1741</date>.</dateline></closer>
-<pb facs="1063402" n="2"/>
-<pb facs="1063403" n="3"/>
+<opener>
+  <salute><!-- Noch ein Datum mit Bleistift im nachhinein notiert, RG 21.07.2025 -->
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Messieurs <rs type="person">Philibert</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs type="person">Cramer</rs>, allant <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2925533" type="place">Francfort</rs>, n’ont
+  <lb/>pas voulu passer <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Bâle</rs>, sans avoir l’honneur de vous faire
+  <lb/>la reverence, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous presenter ce qu’ils ont dejà éxécuté des
+  <lb/>Oeuvres de feu Monsieur vôtre <rs type="person">Oncle</rs>. Ils m’ont demandé
+  <lb/>une Lettre d’introduction auprès de vous, Monsieur<choice><orig>,</orig><reg>.</reg></choice><!-- möglich mit dem Punkt? RG 21.07.2025 --> J’aurois
+  <lb/>pû leur réprésenter qu’ils ont en quelque sorte contracté une
+  <lb/>relation avec vous, qui les introduisoit d’elle même. Mais j’ai été
+  <lb/>charmé d’avoir encore cette occasion de vous marquer, Monsieur,
+</p>
+<closer>
+  <salute>
+    <lb/>les sentimens sincères d’estime, de considération, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> d’attachement
+    <lb/>avec lesquels j’ai l’honneur d’etre Votre tres humble
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant Serviteur
+  </salute>
+  <signed><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline>
+    <lb/>Genève ce <date when="1741-03-16">16. Mars 1741</date>
+  </dateline>
+</closer>
+<pb facs="1063402" n="2" type="empty"/>
+<pb facs="1063403" n="3" type="empty"/>
 <pb facs="1063404" n="4"/>
 <closer>
-<address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit,</addrLine>
-<addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</addrLine>
-<addrLine>a <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
-</address>
-</closer>
+  <address>
+    <addrLine>Monsieur</addrLine>
+    <addrLine>Monsieur Nicolas Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
+    <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit,</addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>,</addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
+  </address>
+</closer><!-- Bis hier den Code angesehen, RG 21.07.2025 -->
 </div>
 </body>
 </text></TEI>

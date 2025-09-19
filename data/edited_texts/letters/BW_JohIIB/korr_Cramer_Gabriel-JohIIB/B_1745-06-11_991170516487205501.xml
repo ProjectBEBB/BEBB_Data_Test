@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -171,8 +171,12 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-01" who="SG">Textkonstitution überprüft: deThun, du du Chatelet, <del/><add>N</add>ous statt Nous, <choice><sic>obligé</sic><corr>obligés</corr></choice>, reçevoir, <del/> statt <unclear>l<subst><del>e</del><add>a</add></subst></unclear></change>
+      <change when="2025-08-29" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert</change>
+      <change when="2025-08-29" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-08-29" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-07-07" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-07-07" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -185,40 +189,60 @@
 <body>
 <div type="letter">
 <pb facs="3694281" n="1"/>
-<p><lb/>11 Juin 1745</p>
-<p><lb/>Monsieur,</p>
-<p><lb/>Monsieur <rs type="person">le Baron de Thun</rs>, ami particulier de
-                           <lb/>M. <rs key="pers_DE-588-118731998" type="person">de Maupertuis</rs>, cherche partout la derniére Edition
-                           <lb/>de <rs key="place_GEO-2643743" type="place">Londres</rs> des Principes de <rs key="pers_DE-588-118587544" type="person">Newton</rs>. C’est pour Madame
-                           <lb/><rs key="pers_DE-588-118681028" type="person">la Marquise du Chatelet</rs>, qui en a affaire. Nous ne le
-                           <lb/>trouvons point ici. J’en avois une Edition, <del>que j’ai </del><add>mais je l’ai</add> fournie
-  <lb/>a <rs type="person" key="pers_DE-588-1037536630">Barillot</rs>, pour l’impression qu’il a faite de cet Ouvrage
-                           <lb/>avec le Commentaire des PP. Leseur &amp; Jaquier. J’ai pensé,
-                           <lb/>mon cher Monsieur, qu’il ne seroit pas impossible d’en
-                           <lb/>trouver un Exemplaire chés vous. Et si je ne me trompe fort
-                           <lb/>Monsieur votre Pére en doit en avoir un. Nous lui serions trés
-                           <lb/>obligé s’il pouvoit se résoudre à s’en dé faire. Je puis aisement
-                           <lb/>lui en faire venir un <add>autre</add> de <rs key="place_GEO-2643743" type="place">Londres</rs>, à moins qu’il n’aime mieux
-                           <lb/>qu’on lui en paie la valeur, ou qu’il ne voulut reçevoir en échange
-                        <pb facs="3694282" n="1"/>
-<lb/>un Exemplaire de l’Edition de <rs key="place_GEO-2660646" type="place">Genève</rs> avec le Commentaire.
-                           <lb/>Si Monsieur votre <rs key="pers_DE-588-118509969" type="person">Pére</rs>, ou quelque autre Possesseur de
-                           <lb/>cette Edition, vouloit bien avoir cette complaisance; vous
-                           <lb/>auriez celle de prendre soin de le faire transmettre a <rs key="place_GEO-2988507" type="place">Paris</rs>
-<lb/>a Madame <rs key="pers_DE-588-118681028" type="person">la M. du Chatelet</rs>, par la voie la plus
-                           <lb/>convenable &amp; la plus courte. Il me semble que vous
-                           <lb/>pourriez la[?] emploier celle de la Poste, sous le Couvert de
-                           <lb/>Mons. <rs key="pers_DE-588-117679879" type="person">le Comte d’Onzembray</rs>, qui est si obligeant &amp; si
-                           <lb/>genereux. J’espère que votre santé est toujours bonne.</p>
-<closer><salute><lb/>C’est avec un véritable attachement &amp; une parfaite
-                           <lb/>consideration que je suis
-                           <lb/>Monsieur
-                           <lb/>Votre très humble
-                           <lb/>&amp; très obéissant serviteur</salute>
-<lb/><signed>G. Cramer</signed>
-<dateline><lb/>ce <date>11 Juin 1745</date></dateline></closer>
-<postscript><p><lb/>Je vous prie, quoiqu’il en soit, de 
-                         <lb/>m’honorer d’un mot de re ponse</p></postscript>
+<opener>
+  <dateline>
+    <lb/><date when="1745-06-11">11 Juin 1745</date>
+  </dateline>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Monsieur le Baron <!-- Statt "deThun" "de Thun". -->de<rs type="person">Thun</rs>, ami particulier de
+  <lb/><abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>, cherche partout la derniére <subst><del>e</del><add>E</add></subst>dition
+  <lb/>de <rs key="place_GEO-2643743" type="place">Londres</rs> des <rs key="biblio_73DJ8AIG" type="biblio">Principes</rs> de <rs key="pers_DE-588-118587544" type="person">Newton</rs>. C’est pour Madame
+  <lb/>la Marquise du<!-- SG: Überflüssiges "du", wurde fälschlicherweise hinzugefügt. --><rs key="pers_DE-588-118681028" type="person">du Chatelet</rs>, qui en a affaire. Nous ne le
+  <lb/>trouvons point ici. J’en avois une <rs key="biblio_73DJ8AIG" type="biblio">Edition</rs>, <del>que j’ai </del><add>mais je l’ai</add> fournie
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> <rs type="person" key="pers_DE-588-1037536630">Barillot</rs>, pour l’impression qu’il a faite de cet <rs key="biblio_73DJ8AIG" type="biblio">Ouvrage</rs>
+  <lb/>avec le Commentaire des <abbr>PP.</abbr> <rs key="pers_DE-588-100185258" type="person">Leseur</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-117050164" type="person">Jaquier</rs>. J’ai pensé,
+  <lb/>mon cher Monsieur, qu’il ne seroit pas impossible d’en
+  <lb/>trouver un <rs type="biblio">Exemplaire</rs> chés vous. Et si je ne me trompe fort
+  <lb/>Monsieur votre <rs key="pers_DE-588-118509969" type="person">Pére</rs> en doit en avoir <rs type="biblio">un</rs>. <!-- Korrektur im Text (<del/><add>N</add>ous) -->Nous lui serions trés
+  <lb/>obligé<!-- <choice><sic>obligé</sic><corr>obligés</corr></choice> --> s’il pouvoit se résoudre à s’en dèfaire<!-- Warum nicht défaire? -->. Je puis aisement
+  <lb/>lui en faire venir un <add>autre</add> de <rs key="place_GEO-2643743" type="place">Londres</rs>; à moins qu’il n’aime mieux
+  <lb/>qu’on lui en paie la valeur, ou qu’il ne voulut reçevoir<!-- evtl. normalisieren zu "recevoir" --> en échange
+<pb facs="3694282" n="2"/>
+  <lb/>un Exemplaire de l’<rs type="biblio">Edition</rs><note resp="MK" type="editorial">Es handelt sich hier um folgende Edition: <rs type="biblio">Philosophiae naturalis principia mathematica … perpetuis commentariis illustrata a Thoma Le Seur et Francisco Jacquier</rs>, Genf: Jean-Louis Barrillot, 1739-1742.</note> de <rs key="place_GEO-2660646" type="place">Genève</rs> avec le Commentaire.
+  <lb/>Si Monsieur votre <rs key="pers_DE-588-118509969" type="person">Pére</rs>, ou quelque autre Possesseur de
+  <lb/>cette <rs type="biblio">Edition</rs>, vouloit bien avoir cette complaisance; vous
+  <lb/>auriez celle de prendre soin de le faire transmettre <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2988507" type="place">Paris</rs>
+  <lb/><choice><orig>a</orig><reg>à</reg></choice> Madame la <abbr>M.</abbr> <rs key="pers_DE-588-118681028" type="person">du Chatelet</rs>, par la voie la plus
+  <lb/>convenable <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> la plus courte. Il me semble que vous
+  <lb/>pourriez <unclear>l<subst><del>e</del><add>a</add></subst></unclear><!-- Ich sehe hier kein „unclear“, sondern ein „del“. Ein Pronomen ist hier wegen der Satzkonstruktion überflüssig.  --> emploier celle de l<subst><del>e</del><add>a</add></subst> Poste, sous le Couvert de
+  <lb/><abbr>Mons.</abbr> le Comte d'<rs key="pers_DE-588-117679879" type="person">Onzembray</rs>, qui est si obligeant <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> si
+  <lb/>genereux. J’espère que votre santé est toujours bonne.
+</p>
+<closer>
+  <salute>
+    <lb/>C’est avec un véritable attachement <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> une parfaite
+    <lb/>consideration que je suis
+    <lb/>Monsieur
+    <lb/>Votre très humble
+    <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>ce <date when="1745-06-11">11 Juin 1745</date>.
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/>Je vous prie, quoiqu’il en soit, de
+    <lb/>m’honorer d’un mot de reponse
+  </p>
+</postscript>
 </div>
 </body>
 </text></TEI>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430341605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -145,18 +145,66 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-08-21" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert</change>
+      <change when="2025-08-18" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-08-18" who="RG">Personen noch referenziert</change>
+      <change when="2023-08-18" who="RG">Zeilabstände eingefügt</change>
+      <change when="2025-08-18" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F17&vx=1108.09&vy=-1071.58&vr=0&vz=5.78446 RG 18.08.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> Je m’acquitee avec bien du plaisir, Monsieur, de la commis sion que mon <rs key="pers_DE-588-118509969" type="person">Père</rs> me donne de répondre pour lui à la lettre que vous lui avés fait l’honneur de lui écrire du 5. de ce mois. Il dit, qu’il se feroit un plaisir de vous envoyer son portrait, que vous lui demandés, s’il en avoit un qui lui ressomblat, mais tous les peintres qui l’ont tiré ont été si malheureux que de 7 ou 8 portraits qu’on a faits de lui, il n’y en a pas un qui soit seulement passable; ce mauvais succès lui a ôté l’en vie de se faire tirer d’avantage; il croiroit depenser mal à propos son argent; si cependant il y avoit quelqu’un qui eut envie de le faire tirer de nouveau il ne refuseroit pas sa patience au Peintre. Il m’a chargé au reste de vous assurer de son parfait attachement agréés que je vous assure aussi de celui avec lequel j’ai l’honneur d’être Monsieur Votre très humble et très obéissant serviteur Bâle J. Bernoulli fils ce 9. Juill. 1741. [Anschrift] Monsieur Monsieur Cramer Professeur en Mathematiques <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. à Genève </p>
+ <pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 18.08.2025 -->
+  <p>
+    <lb/>Je m’acquitte avec bien du plaisir, Monsieur, de la
+    <lb/>commission que mon <rs key="pers_DE-588-118509969" type="person">Père</rs> me donne de répondre pour
+    <lb/>lui à la <rs type="letter">lettre</rs><!-- Brief noch referenzieren, RG 18.08.2025 --> que vous lui avés fait l’honneur de 
+    <lb/>lui ècrire du <date when="1741-07-05">5. de ce mois</date>. Il dit, qu’il se feroit un
+    <lb/>plaisir de vous envoyer son portrait, que vous lui demandés,
+    <lb/>s’il en avoit un qui lui ressemblât, mais tous les peintres
+    <lb/>qui l’ont tiré ont èté si malheureux que de 7 ou 8
+    <lb/>portraits qu’on a faits de lui, il n’y en a pas un qui
+    <lb/>soit seulement passable; ce mauvais succès lui a ôté
+    <lb/>l’envie de se faire tirer d’avantage; il croiroit depenser
+    <lb/>mal à propos son argent; si cependant il y avoit quelqu’un
+    <lb/>qui eut envie de le faire tirer de nouveau il ne
+    <lb/>refuseroit pas sa patience au Peintre. Il m’a chargé
+    <lb/>au reste de vous assûrer de son parfait attachement<supplied>,</supplied>
+    <lb/>agréés que je vous assûre aussi de celui avec lequel
+  </p>
+  <closer>
+    <salute>
+      <lb/>j’ai l’honneur d’ètre Monsieur
+      <lb/>Votre très humble et
+      <lb/>trés obéissant serviteur
+    </salute>
+    <signed>
+      <lb/><rs key="pers_DE-588-117589136" type="person"><abbr>J<supplied>.</supplied></abbr> Bernoulli fils</rs>
+    </signed> 
+    <dateline>
+      <lb/><rs key="place_GEO-2661604" type="place">Bâle</rs>
+      <lb/>ce <date when="1741-07-09">9. <abbr>Juill.</abbr> 174<unclear>1</unclear></date>
+    </dateline> 
+  </closer> 
+  <pb facs="-" n="2" type="empty"/>
+  <pb facs="-" n="3" type="empty"/>
+  <pb facs="-" n="4"/>
+  <closer>
+    <address>
+      <addrLine>A Monsieur</addrLine>
+      <addrLine>Monsieur <rs key="pers_DE-588-11670912X" type="person">Cramer</rs>,</addrLine>
+      <addrLine>Professeur en Mathematiques <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></addrLine>
+      <addrLine>à</addrLine>
+      <addrLine><rs key="place_GEO-2660646" type="place">Genève</rs></addrLine>
+    </address>
+  </closer>
 </div>
 </body>
 </text></TEI>

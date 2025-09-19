@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517057205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -179,8 +179,10 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-16" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-14" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-09-27" who="RG">Personen und Orte ausgezeichnet</change>
-      <change when="2023-08-31" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
+      <change when="2023-08-31" who="RG">Zeilabstände eingefügt, und <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ergänzt</change>
       <change when="2023-08-31" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
@@ -191,75 +193,96 @@
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1063353" n="1"/>
-<opener><lb/>Monsieur,</opener>
-<p><lb/>Il est bien vray que le Probléme en question vient originairement
-                           <lb/>de Monsieur vôtre Cousin, a qui je vous prie d’en faire mon compliment
-                           <lb/>&amp; mes excuses, puisque, sans qu’il y ait cependant de ma faute, on me pare
-                           <lb/>d’un bien qui lui apartient. J’ai bien reçue &amp; ponctuellement envoiée
-                              <lb/>vôtre belle <rs type="letter">Lettre du 1. Avril 1733</rs> à Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, mais dès lors,
-                           <lb/>je n’ai point eu de ses nouvelles. C’est une des raisons qui m’a malheureu<pc type="hyphenation">-</pc><lb break="no"/>sement privé si longtems de vôtre Chére &amp; précieuse correspondance.
-                           <lb/>J’attendois de jour à jour la réponse de Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, &amp; cette reponse est
-                           <lb/>encore à venir.</p>
-<p>Mr. <rs key="pers_DE-588-1069604690" type="person">Thourneyser</rs> vôtre disciple n’a pu
-                           <lb/>que faire de grands progrès aiant jetté de si bons fondemens sous un Maitre
-                           <lb/>si habile. D’ailleurs, il s’est extrémement appliqué aux Mathématiques
-                           <lb/>depuis 3 ou 4 années. Je ne sçaurois lui faire vos Complimens, car il y a
-                           <lb/>quelques mois qu’il est parti pour <rs key="place_GEO-2988507" type="place">Paris</rs>, se proposant de passer delà en
-                           <lb/><rs key="place_VER-englan" type="place">Angleterre</rs>. Véritablement j’ai cru que la Maniére d’élever le Binome
-                           <lb/>&amp; l’infinitinome à une puissance indeterminée étoit nouvelle. Et je la
-                           <lb/>préferai à une autre Maniére que nous avions aussi trouvée, &amp; qui n’emploie
-                        <pb facs="1063354" n="2"/>
-<lb/>ni les Differences, ni les Logarithmes, mais qui me paroit un peu trop longue.
-                           <lb/>Et cela me fait bien de la peine de voir mon peu de Mémoire. Car je
-                           <lb/>devois me souvenir de l’avoir luë dans M. <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, dont j’ai un Exem<pc type="hyphenation">-</pc><lb break="no"/>plaire, mais où assurément je n’avois aucune idée d’avoir vû cette Methode,
-                           <lb/>qui est pourtant mot à mot la même que j’emploie. <sic>Quand</sic> à Mr. <rs key="pers_DE-588-117586765" type="person">de
-                           <lb/>Moivre</rs>, je ne crois pas de l’avoir lû, ce qu’il donne dans les Transactions
-                           <lb/>Philosophiques n’est qu’un Théoreme sans investigation. Pour ce qui
-                           <lb/>est des Oeuvres Posthumes de feu Mr. vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, je me souviens fort
-                           <lb/>bien que vous eutes la bonté de me les communiquer, mais je ne me
-                           <lb/>rapelle pas ce qu’elles contiennent. Cela me fait prendre la liberté de
-                           <lb/>vous prier d’une chose. C’est de me permettre de tirer une Copie.
-                           <lb/>Je suis assuré qu’en les confiant à la Messagerie elles ne courent aucun
-                           <lb/>risque. Et je m’oblige à vous les renvoier par la même voie dans un mois ou
-                           <lb/>deux. Si vous vouliés y joindre une Copie de vos Lettres à Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs>,
-                           <lb/>que vous m’aviés fait esperer, l’obligation seroit bien plus grande, &amp;
-                           <lb/>tout cela joint à tant d’autres bienfaits dont vous m’avés comblé, porteroit
-                              <lb/>ma reconnoissance à l’excès. Je vous par vôtre dernière <rs type="letter">Lettre</rs> à
-                           <lb/>Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs> que vous avés une Méthode <add>pour la résolution des Equations</add> qui vous donne des Suites bien
-                           <lb/>plus generales que celles que fournit le Parallellogramme de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
-                        <pb facs="1063355" n="3"/>
-<lb/>En suivant vos traces j’ai aussi trouvé quelque chose en ce genre,
-                           <lb/>que je crois assés conforme à vos idées. Ensorte qu’une Equation etant
-                           <lb/>proposée: je crois que je puis trouver les mêmes suites que vous.
-                           <lb/>Mais je n’ai pû reussir à mettre cela bien au clair, &amp; à y donner un
-                           <lb/>certain ordre Méthodique qui contribue infiniment à abreger
-                           <lb/>ces Calculs, longs par eux-mêmes &amp; ennuieux. C’est ce qui me donne la
-                           <lb/>plus forte envie de voir ce que vous avés communiqué sur cette Matiére
-                           <lb/>à Mr. <rs key="pers_DE-588-118731998" type="person">de Maupertuis</rs>. Voilà, Monsieur, bien des demandes impor<pc type="hyphenation">-</pc><lb break="no"/>tunes. Il faudroit que vous eussiés beaucoup d’obligation à quelcun
-                           <lb/>pour qu’il fut en droit d’exiger de vous autant de complaisance. Combien
-                           <lb/>donc ne vous paroitrai-je pas témeraire, moi qui bien loin de vous avoir
-                           <lb/>prévenu par aucun service, n’ai fait que reçevoir de vous mille &amp; mille
-                           <lb/>honnêtetés, sans avoir été assés heureux pour me voir en état de vous en
-                           <lb/>rendre la moindre partie. Ce sentiment me rend si confus, qu’il m’oblige
-                           <lb/>à terminer cette lettre par les excuses les plus soumises, &amp; par les assurances
-                           <lb/>les plus fortes de la parfaite estime &amp; de l’attachement inviolable
-                           <lb/>avec lequel j’ai l’honneur d’étre
-                           <lb/>Monsieur</p>
-<closer><salute><lb/>Votre très humble &amp; très obeissant
-                              <lb/>Serviteur</salute>
-<signed><lb/>G. Cramer</signed>
-<dateline><lb/>Genéve ce <date when="1736-08-28">28. Aoust 1736</date></dateline></closer>
-<postscript><p>P. S. Je vous supplie d’assurer Mr. vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>
-<lb/>de mes respects les plus humbles.</p></postscript>
+  <pb facs="1063353" n="1"/>
+<opener>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Il est bien vray que le Probléme en question vient originairement
+  <lb/>de Monsieur vôtre <rs key="pers_DE-588-118656503" type="person"><subst><del>c</del><add>C</add></subst>ousin</rs>, <choice><orig>a</orig><reg>à</reg></choice> qui je vous prie d’en faire mon compliment
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mes excuses, puisque, sans qu’il y ait cependant de ma faute, on me pare
+  <lb/>d’un bien qui lui apartient. J’ai bien reçue <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ponctuellement envoiée
+  <lb/>vôtre belle <rs type="letter">Lettre</rs><!-- lettre? L Gross- oder Kleingeschriben oder überschrieben, RG 15.07.2025 --><!-- Brief noch referenzieren, RG 15.07.2025 --> du 1. Avril 1733 à Monsieur <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, mais dès lors,
+  <lb/>je n’ai point eu de ses nouvelles. C’est une des raisons qui m’a malheureu<pc type="hyphenation">-</pc><lb break="no"/>sement privé si longtems de vôtre Chère <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> prècieuse correspondance.
+  <lb/>J’attendois de jour à jour la réponse de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> cette reponse est
+  <lb/>encore à venir.
+</p>
+<p>Monsieur <rs key="pers_DE-588-1069604690" type="person">Thourneyser</rs> vôtre disciple n’a pu
+  <lb/>que faire de grands progrès aiant jetté de si bons fondemens sous un Maitre
+  <lb/>si habile. D’ailleurs, il s’est extrémement appliqué aux Mathématiques
+  <lb/>depuis 3 ou 4 années. Je ne sçaurois lui faire vos Complimens, car il y a
+  <lb/>quelques mois qu’il est parti pour <rs key="place_GEO-2988507" type="place">Paris</rs>, se proposant de passer delà en
+  <lb/><rs key="place_VER-englan" type="place">Angleterre</rs>. Véritablement j’ai cru que la maniére d’élever le Binome
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’infinitinome à une puissance indeterminée étoit nouvelle. Et je la
+  <lb/>préferai à une autre Maniére que nous avions aussi trouvée, <subst><del/><add><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice></add></subst> qui n’emploie
+  <pb facs="1063354" n="2"/>
+  <lb/>ni les Differences, ni les Logarithmes, mais qui me paroit<!-- ?, RG 15.07.2025--> un peu trop longue.
+  <lb/>Et cela me fait bien de la peine de voir mon peu de mémoire. Car je
+  <lb/>devois me souvenir de l’avoir luë dans <abbr>M.</abbr> <rs key="pers_DE-588-117659606" type="person">Cheynes</rs>, dont j’ai un Exem<pc type="hyphenation">-</pc><lb break="no"/>plaire, mais où assurément je n’avois aucune idée d’avoir vû cette Methode,
+  <lb/>qui est pourtant mot à mot la même que j’emploie. <choice><sic>Quand</sic><corr>Quant</corr></choice> à <abbr>M.<hi rend="sup">r</hi></abbr> de
+  <lb/><rs key="pers_DE-588-117586765" type="person"><subst><del/><add>M</add></subst>oivre</rs>, je ne crois pas de l’avoir lû, ce qu’il donne dans les <rs type="biblio">Transactions
+  <lb/>Philosophiques</rs> n’est qu’un Théoreme sans investigation. Pour ce qui
+  <lb/>est des <rs type="biblio">Oeuvres</rs> Posthumes de feu <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, je me souviens fort
+  <lb/>bien que vous eutes la bonté de me les communiquer, mais je ne me
+  <lb/>rapelle pas ce qu’elles contiennent. Cela me fait prendre la liberté de
+  <lb/>vous prier d’une chose. C’est de me permettre de tirer une Copie.
+  <lb/>Je suis assuré qu’en les confiant à la Messagerie elles ne courent aucun
+  <lb/>risque. Et je m’oblige à vous les renvoier par la même voie dans un mois ou
+  <lb/>deux. Si vous vouliés y joindre <subst><del/><add>une</add></subst> Copie de vos <rs type="letter">lettres</rs><!-- Corpus der Briefe referenzieren? RG 15.07.2025 --> à <abbr>M.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs>,
+  <lb/>que vous m’aviés fait esperer, l’obligation seroit bien plus grande, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <lb/>tout cela joint à tant d’autres bienfaits dont vous m’avés comblé, porteroit
+  <lb/>ma reconnoissance à l’e<subst><del/><add>x</add></subst>cès. Je vois<!-- "vous" durch "vois" ersetzt, macht mehr Sinn? RG 15.07.2025 --> par vôtre dernière <rs type="letter">Lettre</rs> à
+  <lb/><abbr>M.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> que vous avés une Méthode <add>pour la résolution des Equations</add> qui vous donne des Suites bien
+  <lb/>plus generales que celles que fournit le Parallellogramme<!-- korrigieren? RG 15.07.2025 --> de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>.
+  <pb facs="1063355" n="3"/>
+  <lb/>En suivant vos traces j’ai aussi trouvé quelque chose en ce genre,
+  <lb/>que je crois assés conforme à vos idées. Ensorte qu’une Equation <subst><del/><add>ètant</add></subst>
+  <lb/>proposée: je crois que je puis trouver les mêmes suites que vous.
+  <lb/>Mais je n’ai pû reussir à mettre cela bien au clair, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à y donner un
+  <lb/>certain ordre méthodique<!-- vlt. auch grossgeschrieben, RG 15.07.2025 --> qui contribue infiniment à abreger
+  <lb/>ces Calculs, longs par eux-mêmes <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ennuieux. C’est ce qui me donne la
+  <lb/>plus forte envie de voir ce que vous avés communiqué sur cette Matiére
+  <lb/>à <abbr>M.</abbr> de <rs key="pers_DE-588-118731998" type="person">Maupertuis</rs>. Voila, Monsieur, bien des demandes impor<pc type="hyphenation">-</pc><lb break="no"/>tunes. Il faudroit que vous eussiés beaucoup d’obligation à quelcun
+  <lb/>pour qu’il fut en droit d’éxiger de vous autant de complaisance. Combien
+  <lb/>donc ne vous paroitrai-je pas témeraire, moi qui bien loin de vous avoir
+  <lb/>prévenu par aucun service, n’ai fait que reçevoir de vous mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille
+  <lb/>honnêtetés, sans avoir été assés heureux pour me voir en état de vous en
+  <lb/>rendre la moindre partie. Ce sentiment me rend si confus, qu’il m’oblige
+  <lb/>à terminer cette lettre par les excuses les plus soumises, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par les assurances
+  <lb/>les plus fortes de la <del/>parfaite estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de l’attachement inviolable
+  <lb/>avec lequel j’ai l’honneur d’étre
+  <lb/>Monsieur
+</p>
+<closer>
+  <salute>
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
+    <lb/>Serviteur
+  </salute>
+  <signed>
+    <lb/><rs type="person" key="pers_DE-588-11670912X"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+  <dateline>
+    <lb/>Genéve ce <date when="1736-08-28">28. <subst><del/><add>Aoust</add></subst> 1736</date>
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/><abbr>P<supplied>.</supplied> S.</abbr> Je vous supplie d’assurer <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>
+    <lb/>de mes respects les plus humbles<supplied>.</supplied>
+  </p>
+</postscript>
 <pb facs="1063356" n="4"/>
-<closer><address>
-<addrLine>A Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoullj</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit</addrLine>
-<addrLine>&amp;c &amp;c</addrLine>
-<addrLine>a Basle</addrLine>
-</address></closer>
+<closer>
+  <address>
+    <addrLine>A<!-- ?, RG 16.07.2025 --> Monsieur</addrLine>
+    <addrLine>Monsieur Nicolas Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
+    <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit,</addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430340605501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -147,22 +147,90 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-09-01" who="MK">Transkription und Code durchgeschaut, ergänzt, korr., kollationiert</change>
+      <change when="2025-08-29" who="MK">Transkription und Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-08-29" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-08-29" who="RG">Zeilenabstände eingefügt, sowie Anpassungen</change>
+      <change when="2025-08-29" who="RG">Personen referenziert</change>
+      <change when="2025-08-29" who="RG">Seitenzahlen, Briefstruktur</change><!-- "facs" müssen noch ergänzt werden. RG 29.08.2025 -->
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- MK 1.9.2025: iiif-Manifest wohl diese Form: https://archives.bge-geneve.ch/iiif/ark:/17786/vtaa186541f325fd105/manifest.json
+    Original in Genf, hier der Link: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F57&vx=973.912&vy=-1093.53&vr=0&vz=4.91324 RG 29.08.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> Trève de Complimens, mon cher Monsieur; je crois volontiers, que vous êtes bien aise de me savoir placé dans ma patrie et que vous me souhaités à cette occasion et en général, toute sorte de bien; je vous en suis sensiblement obligé, mais je vous aurois tenu quitte de tout ce que vous avés ajouté, à ma confusion plutot qu’à ma louange. </p>
-<p> Notre ami Jallabert m’a donné effectivement de ses nouvelles, qui m’ont fait un plaisir infini: faites lui, je vous prie, mes Complimens les plus sincères et recommandés lui de continuer à se bien porter, autant que cela dépend de lui. </p>
-<p> M. Bousquet ne m’a pas encore communiqué les arrangemens, que vous lui avés proposés par rapport à l’impression du Commerce Epistolaire, mais je juge par là même, que ces arrangemens lui conyiennent, car ce n’est pas trop sa coutume de se taire, tant qu’il a quelque chose sur le coeur. </p>
-<p> Il faut donc que ce soit lui qui ait encore les autres livres que mon Père lui a prétés, puisque vous n’avés plus que le vo lume de dissertations; je serois faché que ces autres livres fussent égarés; par malheur je n’en ai point gardé de notte. </p>
-<p> Mon Père m’a chargé de vous bien faire ses Compl[imens]. quant à moi je suis toujours avec un attachement inviolable, Monsieur, votre tres humble et tres obeissant serviteur ce 12. Juin 1743. Bernoulli [Anschrift] Monsieur Monsieur Cramer Professeur en Philosophie et Mathematiques à Genève. </p>
+<pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 29.08.2025 -->
+<p>
+  <lb/>Trève de Complimens, mon cher Monsieur;
+  <lb/>je crois volontiers, que vous ètes bien aise
+  <lb/>de me savoir placé dans ma <rs type="place">patrie</rs> et
+  <lb/>que vous me souhaités à cette occasion et
+  <lb/>en gènéral, toute sorte de bien<unclear>;</unclear> je
+  <lb/>vous en suis sensiblement obligé, mais
+  <lb/>je vous aurois tenu quitte de tout ce
+  <lb/>que vous avés ajouté, à ma confusion
+  <lb/>plutôt qu’à ma louange.
+</p>
+<p>
+  <lb/>Notre Ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs> m’a donné
+  <lb/>effectivement de ses nouvelles, qui m’ont
+  <lb/>fait un plaisir infini; faites<supplied>-</supplied>lui, je
+  <lb/>vous prie, mes Complimens les plus
+  <lb/>sincères et recommandé<subst><del>r</del><add>s</add></subst><supplied>-</supplied>lui de
+  <lb/>continuer à se bien porter, autant que
+  <lb/>cela dépend de lui.
+</p>
+<pb facs="-" n="2"/>  
+<p>
+  <lb/><abbr>M.</abbr> <rs key="pers_DE-588-136952968" type="person">Bousquet</rs> ne m’a pas encore <del/>
+  <lb/>communiqué les arrangemens, que vous
+  <lb/>lui avés proposés par rapport à l’<pc type="hyphenation"></pc><lb break="no"/>impression du <rs type="biblio">Commerce Epistolaire</rs>, mais 
+  <lb/>je juge par là même, que ces arrangemen<subst><del>t</del><add>s</add></subst>
+  <lb/>lui conviennent, car ce n’est pas trop sa
+  <lb/>coutume de se taire, tant qu’il a quelque
+  <lb/>chose sur le coeur.
+</p>
+<p>
+  <lb/>Il faut donc que ce soit lui qui ait
+  <lb/>encore les autres <rs type="biblio">livres</rs> que mon <rs key="pers_DE-588-118509969" type="person">Père</rs> lui
+  <lb/>a prètés, puisque vous n’avès plus que le
+  <lb/><rs type="biblio">volume de Dissertations</rs>; je serois faché
+  <lb/>que ces autres <rs type="biblio">livres</rs> fussent égarés; par
+  <lb/>malheur je n’en ai point gardé de
+  <lb/>notte.
+</p>
+<closer>
+  <salute>
+    <lb/>Mon <rs key="pers_DE-588-118509969" type="person">Père</rs> m’a chargé de vous bien faire
+    <lb/>ses <choice><abbr>Compl.</abbr><expan>Complimens</expan><reg>Compliments</reg></choice><supplied>,</supplied> quant à moi je suis toujours avec
+    <lb/>un attachement inviolable<supplied>,</supplied> Monsieur<supplied>,</supplied> votre
+    <lb/>très humble et très obeissant serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-117589136" type="person">Bernoulli</rs>
+  </signed>
+  <dateline>
+    <lb/>ce <date when="1743-06-12">1<subst><del/><add>2</add></subst>. Juin 1743</date>
+  </dateline>
+</closer>
+<pb facs="-" n="3" type="empty"/>
+<pb facs="-" n="4"/>  
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur <rs key="pers_DE-588-11670912X" type="person">Cramer</rs></addrLine>
+    <addrLine>Professeur en Philosophie</addrLine>
+    <addrLine>et en mathématiques <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></addrLine>
+    <addrLine>à</addrLine> 
+    <addrLine><rs key="place_GEO-2660646" type="place">Genève</rs></addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

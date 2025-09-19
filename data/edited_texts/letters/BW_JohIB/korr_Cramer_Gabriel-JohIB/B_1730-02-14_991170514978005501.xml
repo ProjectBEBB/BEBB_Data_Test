@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514978005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -169,8 +169,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2025-07-24" who="MK">Code anhang Manuskript kontrolliert, korrigiert, recherchiert</change>
       <change when="2025-04-22" who="RG">Mathematikformel angepasst</change>
       <change when="2025-04-14" who="MK RG">kollationiert</change>
       <change when="2025-04-14" who="RG">Textstellen auscodiert und z. T. korrigiert (bis Seite 3)</change>
@@ -186,13 +187,13 @@
 <body>
 <div type="letter">
 <pb facs="1073821" n="1"/>
-<opener><salute>Monsieur,</salute></opener>
+<opener><salute>Monsieur<supplied>,</supplied></salute></opener>
 <p><lb/>Ce n’est qu’avec quelque honte que j’ose prendre la Liberté de vous écrire
   <lb/>après avoir tardé si longtems <choice><orig>a</orig><reg>à</reg></choice> répondre <choice><orig>a</orig><reg>à</reg></choice> vôtre chére <rs key="B_991170514978105501" type="letter">Lettre</rs>. Mille petites
                <lb/>affaires qui m’ont extrémement occupé depuis mon retour, jointes aux fonctions
-               <lb/>de ma charge dont les commencemens sont toujours pénibles <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> demandent bien du tems
-               <lb/>sont la vraye raison de ce retard qui m’a prive du bonheur de reçevoir peutetre
-               <lb/>quelques unes de vos Cheres Lettres<supplied>.</supplied></p>
+               <lb/>de ma charge dont les commencemens sont toujours pénibles <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> demandent bien du tems.
+               <lb/>Sont la vraye raison de ce retard qui m’a <choice><orig>prive</orig><reg>privé</reg></choice> du bonheur de reçevoir peutetre
+               <lb/>quelques unes de vos Cheres <rs type="letter">Lettres</rs><supplied>.</supplied></p>
 <p><lb/>Une autre raison de mon delay, c’est les essays, mais inutiles que j’ai fait pour
                <lb/>separer les indeterminées dans l’Equation de la Courbe dont je vous parlois dans
                <lb/>ma dernière <rs type="letter">Lettre</rs>. Il est vray que sa proprieté est telle que les angles decrits
@@ -204,11 +205,11 @@
                <lb/>de cette proprieté des angles autour d’un foyer proportionels aux aires autour de l’autre,
                <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il le faille même pour avoir l’equation de la Courbe <formula>y^{3}dx-xyydy+ayydy+xxydx-x^{3}dy</formula>
 <lb/><formula>+axxdy-ppydx+ppxdy=0</formula>, ou (supposant <formula>(x=yz)</formula> <formula>y^{4}dz+ayydy+y^{4}z^{2}dz+ay^{2}z^{2}dy-ppy^{2}dz=0</formula>
-<lb/><formula>y^{2}dz+ady+y^{2}z^{2}dz+az^{2}dy-p^{2}dz=0</formula>
+<lb/><hi rend="right"><formula>y^{2}dz+ady+y^{2}z^{2}dz+az^{2}dy-p^{2}dz=0</formula></hi>
 <pb facs="1073822" n="2"/>
 <lb/>il ne paroit pas que rien puisse mener de cette premiére proprieté à celle
                <lb/>que vous avés decouverte, si ce n’est vôtre grande Sagacité <choice><orig>a</orig><reg>à</reg></choice> qui rien n’echappe.</p>
-<p><lb/>Je ne puis non plus venir about de construire generalement le Probleme<!-- facs einfügen MK -->
+<p><lb/>Je ne puis non plus venir about de construire generalement le Probleme <figure facs="1073822.png"></figure>
   <lb/><formula>AD:BE=AC^{P}:nBC^{P}</formula>. La Separation des indeterminées est ce qu’il y a
                <lb/>de plus difficile dans l’Analyse, j’y suis peu versé, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ne sais <choice><orig>ou</orig><reg>où</reg></choice> trouver
                <lb/>les regles pour cette Separation. Comme on vous les doit presque touttes,
@@ -219,7 +220,7 @@
 <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je vous suplie de <del/>l’assurer de mes respects. Il en sera donc le
                <lb/>Patron à <rs key="place_GEO-2988507" type="place">Paris</rs>; car je le tiens aussi capable que personne de tenir tête
                <lb/>aux adversaires de ce Systeme. Peut-étre avès vous deja vû le <del/>Discours
-  <lb/>de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-11931035X" type="person">Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>ran</rs>. Nous ne reçevons l’<rs type="biblio">histoire de l’Academie</rs> dans ce <rs key="place_GEO-2660646" type="place">Pays</rs> que
+  <lb/>de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-11931035X" type="person">Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>ran</rs>. Nous ne reçevons l’<rs type="biblio">histoire de l’<rs type="organisation">Academie</rs></rs> dans ce <rs key="place_GEO-2660646" type="place">Pays</rs> que
                <lb/>fort tard.</p>
   <p><lb/><abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118939297" type="person">’sGravesande</rs> <choice><orig>à</orig><reg>a</reg></choice> achevé de repondre dans le <rs type="biblio">Journal Litteraire</rs>
                <lb/>aux Objections contre la Théorie des <rs type="keyword">forces vives</rs>. Tout son <rs type="biblio">Discours</rs> se reduit
@@ -237,21 +238,21 @@
                <lb/>de l’histoire du Systeme des <rs type="keyword">forces vives</rs>. Comme vous en étes le principal defenseur,
                <lb/>aprenès moi, de grace, en quel tems vous étes tombé sur vos Demonstrations, surtout
                <lb/>celle qu’on lit dans la <rs type="biblio">Mechanique</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118634771" type="person">Wolf</rs>, tirée de la décomposition du mouvement.
-               <lb/>Je vois que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> ecrivoit en 1698. <rs type="biblio"><abbr>Act.</abbr> <abbr>Erud.</abbr></rs> <abbr>pag.</abbr> 429. <foreign xml:lang="lat"><hi rend="u">Eaque de re</hi> (de potentia actricis aesti<pc type="hyphenation">-</pc><lb break="no"/>matione) <hi rend="u">cum duo Mathematici ingenio facile inter primos mecum partim per literas, partim
+               <lb/>Je vois que <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118571249" type="person">Leibnits</rs> ecrivoit en <date when="1698">1698</date><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <rs type="biblio"><abbr>Act.</abbr> <abbr>Erud.</abbr></rs> <abbr>pag.</abbr> 429. <note resp="MK" type="editorial">Unterstreichungen könnten auch vom Empfänger des Briefes, Johann I Bernoulli, stammen.</note> <cit><quote><foreign xml:lang="lat"><hi rend="u">Eaque de re</hi> (de potentia actricis aesti<pc type="hyphenation">-</pc><lb break="no"/>matione) <hi rend="u">cum duo Mathematici ingenio facile inter primos mecum partim per literas, partim
                <lb/>publice contulissent, alter penitus in castra mea transiit, alter eo devenit, ut objectiones suas
                <lb/>omnes post multam <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> accuratam ventilationem desereret, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ad meam quandam demonstrationem
-               <lb/>nondum sibi responsionem suppetere candide fateretur</hi></foreign>. Ne seriés-vous point un de ces 2
-               <lb/>habiles <rs type="person">mathematiciens</rs>? Je le croirois assurement sans l’expression, <foreign xml:lang="lat"><hi rend="u">partim publice</hi></foreign>, ne sach<unclear>ant</unclear><!-- unsicher wie Blattabbriss angegeben wird, RG 14.04.2025 -->
+               <lb/>nondum sibi responsionem suppetere candide fateretur</hi></foreign>.</quote></cit> Ne seriés-vous point un de ces 2
+               <lb/>habiles <rs type="person">mathematiciens</rs>? Je le croirois assurement sans l’expression, <foreign xml:lang="lat"><hi rend="u">partim publice</hi></foreign>, ne sach<supplied>ant</supplied><note resp="MK" type="editorial">Wegen Blattabriss nach "sach" wurden die drei Buchstaben "ant" vom Editor ergänzt, um das Wort aus dem Zusammenhang heraus zu vervollständigen.</note>
                <lb/>pas qu’en ce tems là, vous eussiés rien encore publié sur cette matiére.</p>
 <p><lb/>Au reste j’espere que vous n’oublières pas vôtre promesse de me communiquer la
                <lb/>lécture des <rs type="biblio">remarques</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs type="person">fils</rs>, sur le  <rs type="biblio">Livre</rs> de <abbr>M.<hi rend="sup">r</hi></abbr> de <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs>, en cas que
                <lb/>vous les puissiés retrouver.</p>
 <closer><salute>J’ai l’honneur d’etre avec beaucoup de respect <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de
                <lb/>consideration, 
-               <lb/>Monsieur
+               <lb/>Monsieur<supplied>,</supplied>
                <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très
                <lb/>obeissant Serviteur</salute>
-<lb/><signed><abbr>G<supplied>.</supplied></abbr> <rs key="pers_DE-588-11670912X" type="person">Cramer</rs></signed>
+  <lb/><signed><abbr>G</abbr><supplied>.</supplied> <rs key="pers_DE-588-11670912X" type="person">Cramer</rs></signed>
                <dateline><lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1730-02-14">14.<hi rend="sup">e</hi> Fevrier 1730</date>.</dateline>
 <pb facs="1073824" n="4"/>
 <note type="editorial">mit Siegel</note>
@@ -260,7 +261,7 @@
 <addrLine>Monsieur Jean Bernoulli Docteur en</addrLine>
 <addrLine>Medecine, Professeur en Mathematiques,</addrLine>
 <addrLine>Membre des Societés Royales de Paris, de Londres,</addrLine>
-  <addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de Berlin, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.<hi rend="sup">c</hi></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>.<hi rend="sup">c</hi></abbr> </addrLine>
+  <addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de Berlin, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> </addrLine>
 <addrLine><choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Basle</rs></addrLine>
 </address>
 </closer>

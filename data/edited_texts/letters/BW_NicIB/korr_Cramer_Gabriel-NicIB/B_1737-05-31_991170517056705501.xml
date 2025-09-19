@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517056705501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -171,6 +171,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-18" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-18" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-27" who="RG">Personen und Orte ausgezeichnet</change>
       <change when="2023-09-08" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-08" who="RG">Seitenzahlen, Briefstruktur</change>
@@ -184,41 +186,55 @@
 <body>
 <div type="letter">
 <pb facs="1063377" n="1"/>
-<opener>Monsieur,</opener>
-<p><lb/>Quoique j’aie reçu dans son tems votre dernière chère <rs type="letter">Lettre</rs>, j’ai néantmoins
-                           <lb/>été obligé de differer à vous écrire jusqu’à aujourd’huj, parce que les Circonstances ont
-                           <lb/>changé pendant ces entrefaites: Monsr. <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>, dont il s’agissoit, aiant obtenu
-                           <lb/>ces jours passés, de notre Conseil, le Titre honoraire de Professeur en Physique Expéri<pc type="hyphenation">-</pc><lb break="no"/>mentale. Comme ce titre le met dans la nécessité de faire des Etudes convenables &amp;
-                           <lb/>une espèce d’apprentissage dans ce metier-là, il se propose de l’aller apprendre
-                           <lb/>en <rs key="place_VER-hollan" type="place">Hollande</rs>, sous Mr. <rs key="pers_DE-588-118939297" type="person">’s Gravesande</rs>, ou en <rs key="place_VER-englan" type="place">Angleterre</rs>, sous Mr. <rs key="pers_DE-588-117632686" type="person">Désaguilliers</rs>
-<lb/>&amp; vraisemblablement il ne verra vôtre Université qu’en passant. Assurement
-                           <lb/>cela le prive d’un grand avantage &amp; de bien des plaisirs (du moins, si j’en juge par
-                           <lb/>le sentiment qui m’en reste): mais vous comprenés qu’il doit suivre sa vocation.
-                           <lb/>J’aprens que vous avés perdu, depuis peu, vôtre Antistes, &amp; Mr. <del/>
-<lb/>le Professeur <rs key="pers_DE-588-117205508" type="person">Iselin</rs>. Nous avons aussi perdu Mr. <rs key="pers_DE-588-119356023" type="person">J. Alph. Turrettin</rs>, qui jouissoit
-                              <lb/>parmi nous, d’une grande réputation &amp; à juste titre. L’Eglise de <rs key="place_GEO-2657896" type="place">Zurich</rs>
-<lb/>a été aussi privée de son Antistes. Voila de grandes Bréches dans la Théologie.
-                        <pb facs="1063378" n="2"/>
-<lb/>Je prie Dieu qu’il nous conserve vous, Monsieur votre Oncle, &amp; Messrs. vos Cousins
-                           <lb/>en parfaite santé. Je suis fort affligé de ce que vous me marqués de vos
-                           <lb/>indispositions. Il me semble, que quand j’eus l’honneur de vous voir à <rs key="place_GEO-2661604" type="place">Bâle</rs>
-<lb/>votre santé étoit très bonne &amp; très ferme. C’est peut-etre de trop fortes études
-                           <lb/>qui l’ont alterée. En ce cas le repos est absolument nécessaire &amp; je vous y exhorte
-                           <lb/>très fortement. Je n’aprens rien de nouveau en fait de Mathematiques.
-                           <lb/>Il y a quelque tems que Mr. votre <rs key="pers_DE-588-118656503" type="person">Cousin</rs> avoit promis quelque chose sur
-                           <lb/>le mouvement des liquides. Où en est cet ouvrage? Vous me trouvez trop
-                           <lb/>difficile, sur la preuve par Induction. Je vous assure, Monsieur, que ce n’est pas
-                           <lb/>pour moi que je suis si difficile. Je pense même que cette trop grande éxactitude
-                           <lb/>qui ne peut souffrir que des Demonstrations parfaites, <hi>more veterum</hi>, est un
-                           <lb/>obstacle à l’Invention. Mais il y a ici des gens qui ne peuvent gouter que
-                           <lb/>les Démonstrations rigides, &amp; qui n’emploient qu’en hezitant, les Méthodes des
-                           <lb/>infiniment petits, quoi qu’on leur ait prouvé &amp; reprouvé, que ces Méthodes ne sont
-                           <lb/>qu’un deguizement heureux &amp; abregé de celles des Anciens. Il faut donc tacher
-                           <lb/>de satisfaire ces gens-là, d’autant mieux qu’il n’en coûte guéres, &amp; que chemin
-                           <lb/>faisant, on en recueille toujours ceci, C’est de se confirmer dans ce qu’on scait.
-                           <lb/>Je suis, Monsieur, avec l’estime la plus parfaite &amp; le devouement le plus sincére</p>
-<closer><salute><lb/>Votre très humble &amp; très obeissant
-                              <lb/>Serviteur</salute> <signed>G. Cramer</signed>. <dateline><lb/>ce <date when="1737-05-31">31 Maj 1737</date>.</dateline></closer>
+<opener>
+  <salute>
+    <lb/>Monsieur
+  </salute>
+</opener>
+<p>
+  <lb/>Quoique j’aie reçu dans son tems votre dernière chère <rs key="B_991170517056805501" type="letter">Lettre</rs>, j’ai néantmoins
+  <lb/>été obligé de differer à vous écrire jusqu’à aujourd’hu<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>, parce que les Circonstances ont
+  <lb/>changé pendant <subst><del/><add>ces</add></subst> entrefait<subst><del/><add>es</add></subst>: <abbr>Mons.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>, dont il s’agissoit, aiant obtenu
+  <lb/>ces jours passés, de notre Conseil, le Titre honoraire de Professeur en Physique Expéri<pc type="hyphenation">-</pc><lb break="no"/>mentale. Comme ce titre le met dans la nécessité de faire des Études convenables <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>
+  <lb/>une espèce d’apprentissage dans ce metier-là, il se propose de l’aller apprendre
+  <lb/>en <rs key="place_VER-hollan" type="place">Hollande</rs>, sous <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118939297" type="person">’sGravesande</rs>, ou en <rs key="place_VER-englan" type="place">Angleterre</rs>, sous <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-117632686" type="person">Désaguilliers</rs>
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> vraisemblablement il ne verra vôtre Université qu’en passant. Assurement
+  <lb/>cela le prive d<subst><del>e</del><add>’un</add></subst> grand<!-- etwas überschrieben? RG 18.07.2025 --> avantage, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de bien des plaisirs: (du moins, si j’en juge par
+  <lb/>le sentiment qui m’en reste): mais vous comprenés<!-- "è"? RG 18.07.2025 --> qu’il doit suivre sa vocation.
+  <lb/>J’aprens que vous avés perdu, depuis peu, vôtre antistes, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <abbr>M.<hi rend="sup">r</hi></abbr> <del/>
+  <lb/>le Professeur <rs key="pers_DE-588-117205508" type="person">Iselin</rs>. Nous avons aussi perdu, <abbr>M.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-119356023" type="person"><abbr>J.</abbr> <abbr>Alph.</abbr> Turrettin</rs>, qui jouissoit
+  <lb/>parmi nous, d’une grande réputation <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> à juste titre. L’Eglise de <rs key="place_GEO-2657896" type="place">Zurich</rs>
+  <lb/>a été aussi privée de son Antistes. Voila de grandes Bréches dans la Théologie.
+  <pb facs="1063378" n="2"/>
+  <lb/>Je prie Dieu qu’il <subst><del/><add>nous</add></subst> conserve vous<add>,</add> Monsieur votre <rs key="pers_DE-588-118509969" type="person">Oncle</rs>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <abbr>Messrs<supplied>.</supplied></abbr> vos <rs key="pers_DE-588-118656503 pers_DE-588-117589136" type="person">Cousins</rs><!-- Nicolaus II Bernoulli (1695-1726) ist zum Zeitpunkt des Verfassen dieses Briefes bereits verstorben, RG 18.07.2025 -->
+  <lb/>en parfaite santé. J<subst><del>'ai</del><add>e</add></subst> suis fort affligé de ce que vous me marqués de vos
+  <lb/>indisposition<subst><del/><add>s</add></subst>. Il me semble, que quand j’eus l’honneur de vous voir <choice><orig>a</orig><reg>à</reg></choice> <rs key="place_GEO-2661604" type="place">Bâle</rs>
+  <lb/>votre santé étoit très bonne <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très ferme. C’est peut-etre, de trop fortes études
+  <lb/>qui l’ont alterée. En ce cas le repos est absolument nécessaire <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> je vous y exhorte
+  <lb/>très fortement. Je n’aprens rien de nouveau en fait de Mathematiques.
+  <lb/>Il y a quelque tems que <abbr>M.<hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118656503" type="person"><subst><del>c</del><add>C</add></subst>ousin</rs> avoit promis quelque chose sur
+  <lb/>le mouvement des liquides. Où en est cet ouvrage? Vous me trouvez trop
+  <lb/>difficile, sur la<!-- etwas überschrieben? RG 18.07.2025 --> preuve par Induction. Je vous assure, Monsieur, que ce n’est pas
+  <lb/>pour moi que je suis si difficile. Je pense même que cette trop grande éxactitude
+  <lb/>qui ne peut souffrir que des Demonstrations parfaites, <foreign xml:lang="lat"><hi rend="u">more veterum</hi></foreign>, est un
+  <lb/>obstacle à l’Invention. Mais il y a ici des gens qui ne peuvent gouter que
+  <lb/>les Démonstrations rigides, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui n’emploient qu’en hezitant, les Méthodes des
+  <lb/>infiniment pe<subst><del/><add>tits</add></subst>, quoi qu’on leur ait prouvé <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> reprouvé, que ces Mèthodes<!-- "é"? RG 18.07.2025 --> ne sont
+  <lb/>qu’un deguizement heureux <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> abregé <subst><del>l</del><add>d</add></subst>e celles des Anciens. Il faut donc tacher
+  <lb/>de satisfaire ces gens-là, d’autant mieux qu’il n’en coûte guéres, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que chemin
+  <lb/>faisant, on en recueille toujours ceci, C’est de se confirmer dans ce qu’on scait.
+</p>
+<closer>
+  <salute>
+    <lb/>Je suis, Monsieur, avec l’estime la plus parfaite, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> le devouement le plus sincére
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
+    <lb/>Serviteur
+  </salute>
+  <signed><rs type="person" key="pers_DE-588-11670912X"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline>
+    <lb/>ce <date when="1737-05-31">31 Ma<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice><choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> 1737</date>.
+  </dateline>
+</closer><!-- Bis hier den Code angesehen, RG 18.07.2025 -->
 </div>
 </body>
 </text></TEI>

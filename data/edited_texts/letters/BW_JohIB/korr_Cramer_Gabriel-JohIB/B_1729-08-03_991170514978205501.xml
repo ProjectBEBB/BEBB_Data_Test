@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170514978205501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -200,6 +200,9 @@
   <revisionDesc status="kollationiert">
   <listChange>
     <!-- Die Abschrift wurde verwendet, Original British Library (London) -->
+    <change when="2025-08-13" who="SG">Textkonstitution der ersten drei Seiten überprüft.</change>
+    <change when="2025-07-23" who="MK">Code und Manuskript durchgeschaut, kontrolliert, korrigiert</change>
+    <change when="2025-07-21" who="MK">Code und Manuskript durchgeschaut, kontrolliert, korrigiert</change>
     <change when="2025-04-22" who="RG">Mathematikformel angepasst</change>
     <change when="2025-04-11" who="MK RG">kollationiert</change>
     <change when="2025-04-04" who="RG">Textstellen auscodiert und z. T. korrigiert</change>
@@ -209,42 +212,37 @@
   </listChange>
   </revisionDesc>
 </teiHeader>
-<!--_____________-->
-<!--Comments that were before TEI element-->
-<!--_____________-->
-<!--Comments that were in TEI element but not further down in the xml tree-->
-<!--_____________-->
-<!--Comments that were in the teiHeader element-->
-<!-- Die Abschrift wurde verwendet, Original British Library (London) -->
-<!--_____________-->
+
+<!-- Die Abschrift wurde verwendet, Original British Library (London) --><!-- Worauf bezieht sich diese Bemerkung? SG--><!-- Die Bemerkung war bereits vor dem Kollationieren vorhanden - und bezieht sich wohl darauf, dass hier das Original (vom Briefautor verfasster und eigenhändiger Brief) nicht vorliegt. Mail deswegen an British Library, 13.08.2025, MK -->
 
 <facsimile>
 <graphic url="https://www.e-manuscripta.ch/i3f/v20/1073798/manifest"/>
 </facsimile><text>
 <body>
 <div type="letter">
+  
 <pb facs="1073799" n="1"/>
 <opener>
-  <lb/>à <abbr>Mr.</abbr> le <abbr>Prof.</abbr> Cramer
+  <lb/><note hand="pers_DE-588-118509969">à <abbr>Mr.</abbr> le <abbr>Prof.</abbr> Cramer</note>
   <dateline><lb/><rs key="place_GEO-2661604" type="place">Bale</rs> ce <date when="1729-08-03">3<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> Aoust 
-    <lb/>1729</date>.</dateline>
+    <lb/>1729</date>.</dateline><!-- Datum von der Hand Joh. I B.s --><!-- nicht vom Briefautor stammende Zeichen/Worte werden nicht berücksichtigt, ausser eben durch Bemerkungen. MK -->
   <salute><lb/>Monsieur</salute></opener>
-  <p><lb/>J’ai été ravi d’apprendre <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> heureux retour dans <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> <rs key="place_GEO-2660646" type="place">Patrie</rs>,
-    <lb/>Vous avés sans doute co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encé les fonctions de <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> Charge
+  <p><lb/>J’ai été ravi d’apprendre <choice><abbr>V.<hi rend="sup">e</hi></abbr><expan>Votre</expan></choice> heureux retour dans <choice><abbr>V.<hi rend="sup">e</hi></abbr><expan>Votre</expan></choice> <rs key="place_GEO-2660646" type="place">Patrie</rs>.
+    <lb/>Vous avés sans doute co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>encé les fonctions de <choice><abbr>V.<hi rend="sup">e</hi></abbr><expan>Votre</expan></choice> Charge
                <lb/>de Professeur, je prie Dieu qu’il y repande sa Benediction
-               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que vous en ayés toute la satisfaction desirable; Je vous
+               <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que vous en ayés toute la satisfaction desirable; Je Vous
                <lb/><add>suis</add> sensiblement obligé de la bonne volonté que vous temoignés
                <lb/>avoir <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> mon <rs type="person">fils</rs>, je vous en demande de la Continuation, afin qu’il
-               <lb/>puisse recourir à vos sages Conseils en Cas de besoin J’avois
+               <lb/>puisse recourir à vos sages Conseils en Cas de besoin<supplied>.</supplied> J’avois
                <lb/>oublié lorsqu’il partit d’ici de Lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er ordre qu’il vous demandât
                <lb/>le prix du <rs type="biblio">Livre</rs> de <abbr>Mr.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, que vous avés eu la bonté
     <lb/>de m’envoyer; ainsi je vous prie de le lui indiquer afin
-               <lb/>qu’il puisse vous le restituer sur mon ordre, que je ne man<pc type="hyphenation">-</pc><lb break="no"/>querai pas de lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er dès que je lui écrirai<supplied>.</supplied></p>
+               <lb/>qu’il puisse vous<!-- Grossschreibung eventuell anpassen.SG --><!-- intermediär, muss also nicht angepasst werden.MK --> le restituer sur mon ordre, que je ne man<pc type="hyphenation">-</pc><lb break="no"/>querai pas de lui do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er dès que je lui écrirai<supplied>.</supplied></p>
   <p><lb/>J’aurois eu bien du plaisir si vous aviés pris <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> retour
                <lb/><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> notre <rs key="place_GEO-2661604" type="place">ville</rs> ou que vous eussiéz trouvé l’occasion de
                <lb/>me venir voir pendant ces feries. Je me console de cette perte
                <lb/><choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> l’esperance que vous me do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>és de me rendre la visite
-               <lb/>l’a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée prochaine, pour<subst><del/><add>v</add></subst>û que je sois alors encor en vie
+               <lb/>l’<date when="1730">a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée prochaine</date>, pour<subst><del/><add>v</add></subst>û que je sois alors encor en vie
                <lb/>car je suis dans un àge qui ne me permet pas de conter
                <lb/>sur un long à venir.</p>
 <p><lb/><abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> ne me paroit rien moins qu’étre penetré
@@ -253,51 +251,51 @@
             <pb facs="1073800" n="2"/>
 <lb/>pouvoir la voir, après que je la lui ai présentée dans un
   <lb/>jour si clair, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> cela en mille façons <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de touts Côtés <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> un
-               <lb/>grand nombre de lettres <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je lui ai écrites pendant plusieurs
+               <lb/>grand nombre de <rs type="letter">Lettres</rs> <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je lui ai écrites pendant plusieurs
   <lb/>a<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ées, où je n’ai rien oublié <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> lui faire reco<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>oitre au
   <lb/>plus vif cette verité pour laquelle il fait semblant
                <lb/>de n’avoir d’autre soin <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> de la chercher. Mais croyés
-  <lb/>moi <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> l’uni<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> raison, <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>quoi il ne veut pas la reconnoitre, c’est la
+  <lb/>moi <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> l’uni<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> raison, <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>quoi il ne veut pas la reconnoit<del/><add>re</add>, c’est la
   <lb/>vilaine honte de se retracter de son erreur <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> laquelle
-               <lb/>il s’est declaré avec <abbr>Mr<supplied>.</supplied></abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> dans le même beau récit
-               <lb/>que vous cités de l’<rs type="biblio"><abbr>Hist.</abbr> de l’<abbr>Acad.</abbr></rs> de 1721, ou <abbr>Mr.</abbr> de
+               <lb/>il s’est declaré avec <abbr>Mr<supplied>.</supplied></abbr> de <rs key="pers_DE-588-117683280" type="person">Louville</rs> dans le même beau <rs type="biblio">récit</rs>
+  <lb/>que vous<!-- evtl. gross --> cités de l’<rs type="biblio"><abbr>Hist.</abbr> de l’<abbr>Acad.</abbr></rs> de <date when="1721">1721</date>, <choice><orig>ou</orig><reg>où</reg></choice> <abbr>Mr.</abbr> de
                <lb/><rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> traite avec tant de hauteur la pretendue
                <lb/>erreur de <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs>. Ainsi je ne suis pas étonné que
                <lb/><abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> se pique <add>d’étre</add> le Chef des defenseurs de
                <lb/>l’ancien Système. Cependant quoiqu’il vante de son
                <lb/><rs type="biblio">Discours</rs> lù à l’<rs type="organisation"><abbr>Acad.</abbr></rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’il pretende d’avoir mis
                <lb/>cette matiére dans un jour nouveau <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de l’avoir presenté
-               <lb/>sous un point de vuë lumineux, ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <abbr>Mr<supplied>.</supplied></abbr> de <rs type="person">Fontenelle</rs>
-<lb/>m’a aussi écrit je suis pourtant assûré <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ce discours
+               <lb/>sous un point de vuë lumineux, ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <abbr>Mr.</abbr><!-- ich sehe schwach einen Punkt, ansonsten müsste man ihn auszeichnen,  --><!--  --> de <rs type="person"><choice><orig>fontenelle</orig><reg>Fontenelle</reg></choice></rs>
+<lb/>m’a aussi écrit<supplied>,</supplied> je suis pourtant assûré <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ce <rs type="biblio">discours</rs>
                <lb/>ne contiendra <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> des pauvretés dont il est apare<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent
-  <lb/>convaincû lui mème; Car <choice><abbr>autremt<supplied>.</supplied></abbr><expan>autrement</expan></choice> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>quoi vous
+  <lb/>convaincû lui mème; Car <choice><abbr>autremt<supplied>.</supplied></abbr><expan>autrement</expan></choice><!-- wir haben den Abkürzungspunkt bei dieser Form vor dem Schluss-t ergänzt --> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>quoi Vous
                <lb/>refuser la Lecture d’un <rs type="biblio">écrit</rs> qui devoit Vous
             <pb facs="1073801" n="3"/>
-<lb/>avoir rangé de son Côté, s’il a crû en effet <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ses preuves
-  <lb/>étoient sans exception<add>s</add>? Ce qu’il vous a soutenû contre
+<lb/>avoir rangé de Son Côté, s’il a crû en effet <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ses preuves
+  <lb/>étoient sans exception<add>s</add>? Ce qu’il Vous a soutenû contre
                <lb/>la Proposition 6<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> du <abbr>Chap.</abbr> VI de mon <rs type="biblio">Discours</rs>, <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> 12 ressorts
-               <lb/>autant bandés <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> 3, ne produiront dans des Corps egaux pas
-  <lb/>plus de<del/> vitesse <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ces 3, ceci, dis-je, est un bel echantillon
+  <lb/>autant bandés <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> 3, ne produiront dans des Corps egaux<!-- ich lese das Schluss-x als eingefügt --> pas<!-- ich lese das Schluss-s als eingefügt -->
+  <lb/>plus<!-- ich sehe hier eine Einfügung --> de<del/> vitesse <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ces 3,<!-- ich würde hier zu einem Semikolon normalisieren --> ceci, dis-je, est un bel echantillon
   <lb/>de la <del/>solidité du reste de ses raisonnements; mais
                <lb/>jugés de son opiniatreté <choice><orig><g ref="#par">&#42833;</g></orig><reg>par</reg></choice> ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je vai vous dire. <abbr>Mr.</abbr> de
   <lb/><rs key="pers_DE-588-117683280" type="person">Louville</rs> m’avoit deja fait la méme Objection dans une longue
                <lb/><rs type="biblio">pièce</rs> <del/>luë à l’<rs type="organisation">Acad.</rs> dont <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> m’a
-  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué la Copie, il y a plus de 2 ans, mais <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>
-               <lb/>faire comprendre à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> toute cette piéce étoit
-               <lb/>miserable, je crùs qu’il étoit suffisant de choisir ce seul
-               <lb/>Exemple d’absurdité, qui me paroissoit sauter aux yeux
-  <lb/>à qui con<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> auroit un peu de bon sens, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> manifester
+  <lb/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué la <rs type="biblio">Copie</rs>, <date notAfter="1727" when="1727"><!-- Datumformat kontrollieren -->il y a plus de 2 ans</date>, mais <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice>
+               <lb/>faire comprendre à <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> toute cette <rs type="biblio">piéce</rs> étoit
+               <lb/>miserable, je crùs<!-- auch wenn es nicht so klar erscheint, würde ich hier crûs lesen. --> qu’il étoit suffisant de choisir ce seul
+               <lb/>Exemple d’absurdité, qui me paroissoit sauter aux yeux<!-- Grossschreibung evtl. kontrollieren. -->
+  <lb/>à qui con<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice><!-- Ich würde quiconque hier zusammenschreiben, da der Abstand minim ist. --> auroit un peu de bon sens, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> manifester
                <lb/>d’avantage cette absurdité, je provoquai à l’experience, en
-               <lb/>Lui demandant s’il ne conv<del>eut</del><add>enoit</add> pas qu’une grande
+               <lb/>Lui demandant s’il ne conv<del><gap/></del><add>enoit</add> pas qu’une grande
                <lb/>Charge de poudre portera plus loin la bale de mousquet,
                <lb/>qu’une plus petite Charge de la méme poud<subst><del/><add>re</add></subst>, vù que la
-               <lb/>poudre dès qu’elle est allumée n’est autre Chose, q’une suite
+               <lb/>poudre dès qu’elle est allumée n’est autre Chose, qu’une suite
   <lb/>de petits ressorts <choice><abbr>egalemt.</abbr><expan>egalement</expan></choice> bandés qui se debandent subitement,
   <lb/>ajoutant qu’on n’auroit qu’<choice><orig>a</orig><reg>à</reg></choice> faire l’epreuve <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qu’on verroit
                <lb/>la foiblesse de l’Objection de <abbr>Mr.</abbr> <add>de</add> <rs key="pers_DE-588-117683280" type="person">Louville</rs>; Mais <abbr>Mr.</abbr> de
-               <lb/><rs key="pers_DE-588-11931035X" type="person">Mairan</rs> ne me repondit rien la dessus, voyés donc avec
+               <lb/><rs key="pers_DE-588-11931035X" type="person">Mairan</rs> ne me repondit rien <choice><orig>la</orig><reg>là</reg></choice> dessus,<!-- ich lese hier ein Semikolon. --> voyés donc avec
                <lb/>quelle sincerité il a osé vous demander d’en voir l’experi<pc type="hyphenation">-</pc><lb break="no"/>ence, qu’il pourroit voir tous les jours, jugés aussi
-            <pb facs="1073802" n="4"/>
+            <pb facs="1073802" n="4"/><!-- SG: Bis hier Textkonstitution überprüft.  -->
 <lb/>de son opiniatreté, lorsqu’il ne veut pas se rendre à la
                <lb/>Demonstration geometri<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je donne au <rs type="biblio"><abbr>Chap.</abbr> VII<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice></rs> sans
                <lb/>qu’il sache la moindre chose à y <del>repondre </del>redire, peut
@@ -307,21 +305,21 @@
                <lb/><rs type="keyword">forces vives</rs>, n’ont rien moins en vue que la recherche
                <lb/>de la verité, mais <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> leur but est de persuader aux
                <lb/>ignorans, qu’on ne m’a pas fait tort en rejettant ma
-  <lb/><rs type="biblio">pièce</rs> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er le prix à de miserables rhabsodies d’<pc type="hyphenation"></pc><lb break="no"/>Ecolier; c’est la honte injuste qui les fait agir de
+  <lb/><rs type="biblio">pièce</rs> <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>er le prix à de miserables <rs type="biblio">rhabsodies d’<pc type="hyphenation"></pc><lb break="no"/>Ecolier</rs>; c’est la honte injuste qui les fait agir de
                <lb/>la sorte. Au reste <abbr>Mr.</abbr> de <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> vous dites
                <lb/>avoir avoué, que n’ayant jamais<del/> rien compris à la
                <lb/>matière des <rs type="keyword">forces vives</rs> avant la Lecture du dernier
                <lb/><rs type="biblio">Discours</rs> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs>, il voyoit maintenant clair
                <lb/>comme le jour, m’a ecrit ces jours passés sur le mème ton,
-               <lb/><hi rend="u">Quant aux <rs type="keyword">forces vives</rs></hi>, me dit-il, <hi rend="u">il est vrai que
+               <lb/><cit><quote><hi rend="u">Quant aux <rs type="keyword">forces vives</rs></hi>, <said>me dit-il</said>, <hi rend="u">il est vrai que
                <lb/>quand <abbr>Mr<supplied>.</supplied></abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> lût son ècrit à l’<rs type="organisation"><abbr>Acad.</abbr></rs> il me
                <lb/>parut mettre bien l’affaire au net du moins <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> moi qui
-               <lb/>n’y avois rien entendu jusque là</hi>. La reflexion <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> vous faites
-  <lb/>ladessus est trés judicieuse, quand vous dites <hi rend="u">Si <abbr>Mr.</abbr> de <abbr><rs key="pers_DE-588-118639056" type="person">Fonten.</rs></abbr>
+                 <lb/>n’y avois rien entendu jusque là</hi>.</quote></cit> La reflexion <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> vous faites
+  <lb/>ladessus est trés judicieuse, quand vous dites<supplied>,</supplied> <cit><quote><hi rend="u">Si <abbr>Mr.</abbr> de <abbr><rs key="pers_DE-588-118639056" type="person">Fonten.</rs></abbr>
 <lb/><del/>avant la Lecture du <rs type="biblio">Discours</rs> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-11931035X" type="person">Mairan</rs> ne compre<pc type="hyphenation">-</pc><lb break="no"/>noit rien à ce sujet, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent pouvoit-il en 1721</hi> (<rs type="biblio"><abbr>Hist.</abbr> de l’<abbr>Acad<supplied>.</supplied></abbr></rs>)
-               <lb/><hi rend="u">traiter <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> avec tant de hauteur</hi>.
+               <lb/><hi rend="u">traiter <abbr>Mr.</abbr> <rs key="pers_DE-588-118571249" type="person">Leibnitz</rs> avec tant de hauteur</hi>.</quote></cit>
             <pb facs="1073803" n="5"/>
-  <lb/>Voilà des maniéres de ces Messieurs, capables de mettre
+  <lb/>Voilà des maniéres de ces <rs type="person">Messieurs</rs>, capables de mettre
                <lb/>à bout la patience la plus ferme; encor faut il <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je
   <lb/>sois <choice><abbr>èternellemt.</abbr><expan>èternellement</expan></choice> exposé à leurs chicanes après le tort
                <lb/>qu’on m’a fait.</p>
@@ -348,7 +346,7 @@
 <lb/>cette maniére pourquoi les Corps pesants en tombant
                <lb/>demeurent toujours dans le meme plan d’un méme meridien
                <lb/>de la Terre.</p>
-<p><lb/>Je ne dis plus rien sur le Chapitre de <abbr>Mr</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs>, je<!-- bis hier kollationiert -->
+<p><lb/>Je ne dis plus rien sur le Chapitre de <abbr>Mr</abbr> <rs key="pers_DE-588-117619515" type="person">Saurin</rs>, je
                <lb/>l’ai toujours regardé comme un ho<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e capable<del> de</del>
                <lb/>de trahir sa Conscience, qui aura pu étre convaincu
                <lb/>de la Justice de ma Cause <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> opiner en méme tems contre
@@ -359,8 +357,8 @@
                <lb/>ne sai quelles difficultés, <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je ne comprenois pas; Du depuis
                <lb/>je n’ai plus réçû de <rs type="letter">Lettre</rs> de Lui; si c’est parce<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> ma <rs type="letter">Reponse</rs>
                <lb/>ne l’a pas satisfait, ou qu’il veut differer encore la
-  <lb/>repli<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>, c’est ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> le tems apprendra<supplied>.</supplied></p><!-- bis hier kollationiert -->
-<p><lb/>Quel mal ai je fait au <abbr>D.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118669478" type="person">Clarke</rs>, qui à ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Vous dites
+  <lb/>repli<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>, c’est ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> le tems apprendra<supplied>.</supplied></p>
+<p><lb/>Quel mal ai<supplied>-</supplied>je fait au <abbr>D.<hi rend="sup">r</hi></abbr> <rs key="pers_DE-588-118669478" type="person">Clarke</rs>, qui à ce <choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> Vous dites
                <lb/>a manquè de Civilité envers moi, puis<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> je n’ai jamais parlé
   <lb/>de Lui en public ni bien ni mal? Mais <abbr>Mr.</abbr> <rs key="pers_DE-588-118939297" type="person">s’Grave<pc type="hyphenation">-</pc><lb break="no"/>sande</rs>, qu’il a traité co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e moi sur le méme pied, saura
   <lb/>en prendre la revanche, s’il le trouve à propos, <choice><abbr>p.<hi rend="sup">r</hi></abbr><expan>pour</expan></choice> moi
@@ -368,13 +366,13 @@
                <lb/>passioné contre les Etrangers, à l’exemple de plusieurs
                <lb/>Anglois. Cependant vous dites qu’il est mort, voila
   <lb/>donc le cinquiéme de mes Adversaires qui sont morts
-  <lb/>peu de tems aprés qu’ils m’<del>ont</del><add>avoient</add> attaqué sans que je leur
+  <lb/>peu de tems aprés qu’ils m’<del>ont</del><add>avoient</add> attaqué sans que je leur<note type="editorial">Das üblicherweise auf die nächste Seite (hier die Seite 7) verweisende Wort, um den korrekten Anschluss zu gewährleisten, ist hier auf die gleiche Zeile gesetzt und nicht unterhalb in der Ecke des Blattes, weshalb der Eindruck einer Wortwiederholung entsteht.</note>
             <pb facs="1073805" n="7"/>
-<lb/><sic>leur</sic><!-- Wort wurde doppelt geschrieben, RG 04.04.2025 --> aye donné le moindre Sujet, savoir <abbr>Mrs.</abbr> <rs key="pers_DE-588-117593508" type="person">Rolle</rs>, <rs key="pers_DE-588-105511131X" type="person">Pa<pc type="hyphenation">-</pc><lb break="no"/>rent</rs>, <rs key="pers_DE-588-124275087" type="person">Keil</rs>, <rs key="pers_DE-588-124799361" type="person">Hartsoëcker</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-118669478" type="person">Clarke</rs>, garre donc le sixième
+<lb/>leur aye donné le moindre Sujet, savoir <abbr>Mrs.</abbr> <rs key="pers_DE-588-117593508" type="person">Rolle</rs>, <rs key="pers_DE-588-105511131X" type="person">Pa<pc type="hyphenation">-</pc><lb break="no"/>rent</rs>, <rs key="pers_DE-588-124275087" type="person">Keil</rs>, <rs key="pers_DE-588-124799361" type="person">Hartsoëcker</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-118669478" type="person">Clarke</rs>, garre donc le sixième
                <lb/>s’il ne veut <del>pas </del>subir le méme sort.</p>
   <p><lb/><choice><abbr>V.<hi rend="sup">e</hi></abbr><expan>Votre</expan></choice> Courbe <formula>GCF</formula>, dont vous cherchez la Construction
                <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont vous exprimés la proprieté en ces termes:
-               <lb/><formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> sont 2 points fixes donnés d’o<del>n</del><add>ù</add> l’on abaisse
+               <lb/><formula>A</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>B</formula> sont 2 points fixes donnés d’o<subst><del>n</del><add>ù</add></subst> l’on abaisse
                <lb/>des perpendiculaires <formula>AD</formula>, <formula>BE</formula> sur la touchante en <formula>C</formula>, on a par<pc type="hyphenation">-</pc><lb break="no"/>tout <choice rend="regFormula"><orig><formula>AD.BE::AC^{2}.aa</formula></orig><reg><formula>AD:BE=AC^{2}:aa</formula></reg></choice>, <choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> Courbe dis-je a cette autre pro<pc type="hyphenation">-</pc><lb break="no"/>prièté, que l’angle <formula>CAF</formula> est partout proportionel à l’aire
                <lb/><formula>BCF</formula>, ce qui est facile à prouver, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> il semble qu’il a quel<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
     <lb/>affinité avec le problème de <rs key="pers_DE-588-118561448" type="person">Kepler</rs>. En cherchant la Solution
@@ -391,7 +389,7 @@
 <closer><salute><lb/>Je suis du profond de mon Coeur.
                <lb/><abbr>Mons.<hi rend="sup">r</hi></abbr>
                <lb/><choice><abbr>v.<hi rend="sup">e</hi></abbr><expan>votre</expan></choice> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></salute>
-<lb/><signed>J<supplied>.</supplied> Bernoulli</signed></closer>
+<lb/><signed><abbr>J<supplied>.</supplied></abbr> Bernoulli</signed></closer>
 <pb facs="1073806" n="8" type="empty"/>
 </div>
 </body>

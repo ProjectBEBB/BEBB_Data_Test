@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516487405501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -157,6 +157,9 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-01" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-01" who="RG">Mathematische Formeln (etc.) angepasst.</change>
+      <change when="2025-09-01" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-07-06" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-07-06" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
@@ -170,36 +173,49 @@
 <div type="letter">
 <pb facs="3694356" n="1"/>
 <p>
-<lb/>J’avois corrigé, mon cher Monsieur, dans l’hydraulique,
-          <lb/>les fautes de copie que vous me faites remarquer, avec quelques
-          <lb/>autres bagatelles, que le copiste avoit mal copié. Mais voici
-          <lb/>quelque chose de plus important, dont je m’aperçois dans ce
-          <lb/>moment, &amp; dont je crois devoir vous avertir, sans etre assés sur,
-          <lb/>faute de tems pour y reflechir, si ma remarque est fondée.
-          <lb/>C’est dans la Piece intitulée Probleme Neutonianm
-          <lb/>generaliter conceptum &amp; solutum. Au premier exemple
-          <lb/>où il s’agit du mouvement dans un demi cercle; Voici ce que
-          <lb/>je trouve. Poterat etiam tempus determinari: quia nempe
-          <lb/><formula>dt=\frac{ds}{v}=\frac{HI}{\sqrt{CH}}=\frac{AQ}{\sqrt{CH}}</formula>; hinc <formula>t=\int\frac{HI}{\sqrt{CH}}=\int\frac{AQ}{\sqrt{CH}}=\int\frac{a\,dy}{aa-yy}=\mbox{\&amp;c}</formula>
-<lb/>. . . . . . . <formula>\frac{1}{2}\frac{a+y}{a-y}</formula>, &amp;c. Or je ne vois pas que <formula>\frac{ds}{v}=\frac{HI}{VCH}</formula> se puisse
-          <lb/>changer en <formula>\frac{Aq}{\sqrt{CH}}</formula>. Cela même est absurde, puisque <formula>HI</formula> est un infinimt. petit
-          <lb/>&amp; <formula>AQ</formula>, le raion du cercle, est fini. Il y a donc quelque lapsus pennae.
-          <lb/>Mais quand M. <rs type="person">Bernoulli</rs> vient à dire <formula>\frac{ds}{v}=\frac{a\,dy}{aa-yy}</formula>, je crains
-          <lb/>un lapsus calculi. Car dans le cercle <formula>ds=\frac{a\,dy}{\sqrt{(aa-yy)}}</formula> &amp; <formula>v=\sqrt[4]{(aa-yy)}</formula>.
-          <lb/>Donc <formula>\frac{ds}{v}</formula> devroit etre <formula>\frac{a\,dy}{(aa-yy)^{\frac{3}{4}}}</formula> dont l’integrale n’est plus <formula>\frac{1}{2}\mathrm{L}\frac{a+y}{a-y}</formula>.
-          <lb/>Faites moi le plaisir de me donner sur cela quelque mot d’éclair<pc type="hyphenation">-</pc><lb break="no"/>cissement le plutôt qu’il se pourra faire. Car notre homme
-          <lb/>avance, &amp; souhaite voit la fin de son impression dans un couple
-        <pb facs="3694357" n="2"/>
-<lb/>de mois au plus. La santé de notre ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
-<lb/>semble se raffermir. Je lui ferai demain vos complimens.
-          <lb/>Assurez, je vous prie, M. votre <rs key="pers_DE-588-118509969" type="person">Pére</rs>, de mes respects, sans
-          <lb/>oublier M. votre <rs key="pers_DE-588-118656503" type="person">frére</rs> &amp; M. votre <rs key="pers_DE-588-119166895" type="person">Cousin</rs>, a qui je suis
-          <lb/>tout honteux de devoir une réponse depuis si longtems.
-          <lb/>Et ne doutez point que mon amitié ne soit aussi vive
-          <lb/>&amp; aussi sincére que vous pourriez le souhaiter. Je vous
-          <lb/>demande quelque retour,</p><closer><salute>&amp; suis Tout à Vous</salute> <signed>G. Cramer</signed>
-<dateline><lb/>Geneve ce <date>21 Dec. 1742</date></dateline>
-<lb/>Excusés la hate.</closer>
+  <lb/>J’avois corrigé, mon cher Monsieur, dans l’hydraulique,
+  <lb/>les fautes de copie que vous me faites remarquer, avec quelques
+  <lb/>autres bagatelles, que le copiste avoit mal copié. Mais voici
+  <lb/>quelque chose de plus important, dont je m’aperçois dans ce
+  <lb/>moment, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> dont je crois devoir vous avertir, sans etre assés sur,
+  <lb/>faute de tems pour y reflechir, si ma remarque est fondée.
+  <lb/>C’est dans la Piece intitulée <foreign xml:lang="lat">Probleme Neutonianm
+  <lb/>generaliter conceptum <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> solutum</foreign>. Au premier exemple
+  <lb/>où il s’agit du mouvement dans un demi Cercle; Voici ce que
+  <lb/>je trouve. <foreign xml:lang="lat">Poterat etiam tempus determinari: quia nempe
+  <lb/><formula>dt=\frac{ds}{v}=\frac{HI}{\sqrt{CH}}=\frac{AQ}{\sqrt{CH}}</formula>; hinc <choice rend="regFormula"><reg><formula>t=\int\frac{HI}{\sqrt{CH}}=\int\frac{AQ}{\sqrt{CH}}=\int\frac{a\,dy}{aa-yy}=\mbox{\&amp;c}</formula></reg><orig><formula>t=\int\frac{HI}{\sqrt{CH}}=\int\frac{AQ}{\sqrt{CH}}=\int\frac{a\,dy}{aa-yy}=\mbox{etc.}</formula></orig></choice>
+  <lb/>. . . <formula>\frac{1}{2}\mathrm{l}\frac{a+y}{a-y}</formula></foreign>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Or je ne vois pas que <formula>\frac{ds}{v}=\frac{HI}{\sqrt{CH}}</formula> se puisse
+  <lb/>changer en <formula>\frac{Aq}{\sqrt{CH}}</formula>. Cela même est absurde, puisque <formula>HI</formula> est un <abbr>infinim.<hi rend="sup">t</hi></abbr> petit
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>AQ</formula>, le raion du Cercle, est fini. Il y a donc quelque lapsus penn<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice><!-- ? RG 01.09.2025 -->.
+  <lb/>Mais quand <abbr>M.<hi rend="sup">r</hi></abbr> <rs type="person">Bernoulli</rs><!-- referenzieren, RG 01.09.2025 --> vient <choice><orig>a</orig><reg>à</reg></choice> dire <formula>\frac{ds}{v}=\frac{a\,dy}{aa-yy}</formula>, je crains
+  <lb/>un lapsus calculi. Car dans le Cercle <formula>ds=\frac{a\,dy}{\sqrt{(aa-yy)}}</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>v=\sqrt[4]{(aa-yy)}</formula><supplied>.</supplied>
+  <lb/>Donc <formula>\frac{ds}{v}</formula> devroit etre <formula>\frac{a\,dy}{(aa-yy)^{\frac{3}{4}}}</formula> dont l’integrale n’est plus <formula>\frac{1}{2}\mathrm{l}\frac{a+y}{a-y}</formula><supplied>.</supplied>
+  <lb/>Faites moi le plaisir de me donner sur cela quelque mot d’éclair<pc type="hyphenation">-</pc><lb break="no"/>cissement le plutôt qu’il se pourra faire. Car notre homme
+  <lb/>avance, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> souhaite voit la fin de son impression dans un couple
+<pb facs="3694357" n="2"/>
+  <lb/>de mois au plus. La Santé<!-- Klein- oder Grossgeschrieben? RG 01.09.2025 --> de notre ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>
+  <lb/>semble se raffermir. Je lui ferai demain vos complimens<supplied>.</supplied>
+  <lb/>Assurez, je vous prie, <abbr>M.<hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118509969" type="person">Pére</rs>, de mes respects, sans
+  <lb/>oublier <abbr>M<supplied>.</supplied><hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-118656503" type="person">frére</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <abbr>M.<hi rend="sup">r</hi></abbr> votre <rs key="pers_DE-588-119166895" type="person">Cousin</rs>, <choice><orig>a</orig><reg>à</reg></choice> qui je suis
+  <lb/>tout honteux de devoir une réponse<!-- als Brief referenzieren?, RG 01.09.2025 --> depuis si longtems.
+  <lb/>Et ne doutez point que mon amitié ne soit aussi vive
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> aussi sincére que vous pourriez le souhaiter. Je vous
+  <lb/>demande quelque retour,
+</p>
+<closer>
+  <salute><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> suis 
+    <lb/>Tout <choice><orig>a</orig><reg>à</reg></choice> Vous
+  </salute>
+  <signed><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2660646" type="place">Geneve</rs> ce <date when="1742-12-21">21 <abbr>Dec.</abbr> 1742</date>
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/>Excusés la hate<supplied>.</supplied>
+  </p>
+</postscript>
 </div>
 </body>
 </text></TEI>

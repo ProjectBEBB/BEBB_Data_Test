@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517067805501" xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]><TEI xml:id="B_991170517067805501" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
@@ -115,8 +115,8 @@
 <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
 <listPerson>
 <person>
-<persName key="pers_DE-588-116082356">Battier, Johann Jakob</persName>
-<note type="lebensdaten">(1664-1720)</note>
+<persName key="pers_DE-588-141546573">Battier, Christoph</persName>
+<note type="lebensdaten"></note>
 </person>
 <person>
 <persName key="pers_no_GND_id">Blechnagel, Johannes</persName>
@@ -131,7 +131,7 @@
 <note type="lebensdaten">(1688-1744)</note>
 </person>
 <person>
-<persName key="pers_no_GND_id">Grundler, Georg Friedrich</persName>
+    <persName key="pers_DE-588-122123158">Grundler, Georg Friedrich</persName>
 <note type="lebensdaten">(no lifespan info)</note>
 </person>
 <person>
@@ -164,10 +164,16 @@
 </person>
 </listPerson>
 </abstract>
+<!-- 
+Im BIBB noch aufnehmen oder korrigieren: 
+Battier: es handelt sich um Christoph: pers_DE-588-141546573
+-->
 <textClass/>
 </profileDesc>
-<revisionDesc status="transkribiert">
+<revisionDesc status="kollationiert">
 <listChange>
+<change when="2025-06-06" who="CG SG">Kollationieren abgeschlossen</change>
+<change when="2025-05-23" who="SG">Tagging</change>
 <change notAfter="1966-02-14">transkribiert</change>
 </listChange>
 </revisionDesc>
@@ -176,13 +182,94 @@
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1039659" n="1"/> <pb facs="1039660" n="2"/> <pb facs="1039661" n="3"/> <pb facs="1039662" n="4"/>
-<opener><salute>Nicolao Bernoullio, J. U. L. amico suo pl. colendo S. P. D. Franciscus Christ.</salute></opener>
-<p>Vix unquam vicissitudines gaudii et tristiti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> uno eodemque tempore magis expertus fui, quam literis tuis suavissimis et nil nisi amorem spriantibus acceptis et perlectis; Statim enim ac eas <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> fratre tuo accepi, maximo perfusus sum gaudio, te mei adhuc memorem tam cito mihi rescribere, sed cum postea causam commiss<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> prius in scribendo mor<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex illarum tenore percepissem non potui non vicem tuam dolere et meritis prosequi planctibus; videns autem porro te mox patrias esse revisurum terras, obstupui plane, incertus utrum gaudio an tristitia mentem perfunderem: ipse quidem reditus non nisi gratissimus mihi contingere posset, de causis vero nihil boni licebat ominari, quas quidem, ut spem injecisti, lubens coram <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> te audiam, interim ne me credas tam obes<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> esse naris, [Anmerkung d. Empfängers: emunct<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>] qui <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nigma tuum solvere queam, Davus enim plane sum non Oedipus. Te tamen tristiti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> tantum concedere, ut nullo prorsus tempore gaudia mente percipias minime placet, sed potius putem constantia muniendum esse pectus contra omnia mala fortiter eundum, cum non ignores bonis omnia etiam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vulgo maxima <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stimantur mala in bonum credere et Deum O. M. quandoque ad explorandam piorum patientiam malis in eos potestatem permittere; pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terea ex hoc tuo statu elicias et consideres velim, te non ad id natum esse, ut vitam tuam in tenebris Hindelbanckianis teras omnique remotus ab orbe vivas, ita enim statuo semperque statui ad majora tibi esse annitendum, inferiora h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c profecto te non patiuntur, et certe si omnia ex voto tibi successissent, putare potuisses, te jam in hoc mundo scopum tuum obtinuisse et officio tuo satisfecisse, sed cum jam contrarium contigerit, ipse vides te quasi ad sublimiora vocari; gradatim quidem ad sidera est ascendendum, sed quamvis nobis in radice montis constitutis ob durum et difficilem ascensum pedes figere et consiscere non liceat, animum tamen nequaquam despondemus, sed potius pectus constantia et fortitudine obfirmamus majorique nisu gressus nostros propellimus, ita quoque tunc cede malis sed contra audentior ito. </p>
-<p> Fortasse videbis me tantos mihi sumere spiritus, qui te consolari sustineam, te quidem consolatione mea non indigere nullus dubito, mea saltem cogitata, quibus ipse dolorem meum ex literis tuis perceptum aliquo modo lenii, exinde perspicere potes. Jer. Raillardus proximo die Lun<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> circa meridiem (nisi tempestas impediat) est profecturus, ad quem finem sibi proprium comparavit equum, una cum eo iter facient P. Fattet mercator, qui filiam quoque suam Genevam perducturus est et filius natu junior Henrici Ryhineri <choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> regione circiter Thurnisiorum (<choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> quibus salutem) degentis; iter igitur, ut vides, diriget P. Fattet, quem cum Raillardus interrogasset an etiam Bernam sint perventuri, responsum tulit, animum non esse illac transire, nisi interim aliud quid consilium mutare faciat; ipse quidem maxima cupiditate te ibi videndi tenetur, sed cum voluntatem alterius sequi necesse habeat, maxime dolet se spe hac ante concepta frustrari. Salutem tuam <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> me ipsi intimatam reciproca salute resarcivit. Grundleri Dissertatio prelum Typographi nondum exercet, causam ignoro, cum jam ante octiduum eam ad umbilicum perductam mihi monstraverit. Cum Cl. P. P. Battierio salutem <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> te heri dixissem, me de statu et valere tuo interrogare coepit, cui quid responderem nescivi, dixi tamen te forte mox cum discipulo tuo rediturum, miranti vere et causam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>renti me ignorare reddidi, te interim plurimum valere jussit. Dñum Ryhinerum D. D. Werenfelsii affinem diem suum Langenthalii obiisse et J. C. Freyium Conlicentiatum tuum in locum ejus esse suffectum forte jam accepisti, similiter Dñum Consiliarium Blechnagel heri decessisse <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> tuis fortasse audies. In Academia nostra hac septimana motus quidam extiterunt, cum enim lis illa, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> inter H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>redes D. Tonjol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et Rh<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tos quosdam jam diu viguit, sententiâ Consistorialium esset decisa, Rh<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ti sententiâ non contenti ad Magistratum Politicum appellationem instituerunt, qui etiam pecuniam hoc in casu pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>st [Lücke] solitam ab eis acceperunt; nostri autem Magnates mag[nâ] audaciâ se contra hoc propositum opposuerunt et fortiter protestati sunt; se privilegio de non appellando munitos plan<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> non concessuros ut tale quid fiat; interim res h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ret et quemnam effectum sit habitura nescio, ab utraque parte exempla pro et contra proferuntur. Vale interea amicorum optime, pelle curas et tristitiam, ne animo simul et corpori tuo noceas, et quod maximum est in amore erga me persevera; ego semper beneficiorum tuorum erga me memor et vivam et moriar.</p>
-<closer><salute>Iterum Vale.</salute> <dateline>Basile<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> d. <date when="1710-03-15">15. Martii, A. S. 1710</date></dateline>
+<pb facs="1039659" n="1"/> 
+    <opener><salute><rs type="person" key="pers_DE-588-119166895">Nicolao Bernoullio</rs>, <abbr>J. U. L.</abbr><!-- expan -->
+<lb/>amico suo <abbr>pl.</abbr> colendo <abbr>S. P. D.</abbr>
+            <lb/><rs type="person" key="pers_DE-588-140736662">Franciscus Christ</rs>.</salute></opener>
+<p><lb/>Vix unquam vicissitudines gaudii et tristiti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> uno eodem<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+<lb/>tempore magis expertus fui, quam <rs type="letter">literis</rs> tuis suavissimis et
+<lb/>nil nisi amorem spriantibus acceptis et perlectis; statim enim
+<lb/>ac eas <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> <rs type="person">fratre</rs><!-- ToDo: Nic. I B. Bruder --> tuo accepi, maximo perfusus sum gaudio, te
+<lb/>mei adhuc memorem tam cit<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> mihi rescribere, sed c<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>m postea
+<lb/>causam co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>iss<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> pri<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>s in scribendo mor<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> ex illarum tenore
+<lb/>percepissem non potui non vicem tuam dolere et meritis
+<lb/>prosequi planctibus; videns <choice><abbr>a.</abbr><expan>autem</expan></choice> porr<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> te mox <rs type="place">patrias</rs> esse
+<lb/>revisurum terras, obstupui plan<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>, incertus utr<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>m gaudio
+<lb/>an tristiti<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> mentem perfunderem; ipse quidem reditus
+<lb/>non nisi gratissimus mihi contingere posset, de causis ver<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice>
+<lb/>nihil boni licebat ominari, quas quidem, ut spem injecisti,
+<lb/>lubens coram <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> te audiam, interim ne me credas tam <del>obes<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></del><add>emunct<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></add><note type="editorial">Das Wort "emunctae" wurde über "obesae" geschrieben. Offenbar handelt es sich hier um eine Korrektur, auch wenn das darunterliegende Wort nicht gestrichen wurde.</note>
+<lb/>esse naris, qui <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>nigma tuum solvere queam, Davus enim
+    <lb/>plan<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> sum non Oedipus.<note type="comment">„Ich bin freilich Davus, nicht Ödipus.“
+        („Ich bin kein Rätsellöser wie Ödipus.“), </note> Te tamen tristiti<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> tantum concedere,
+<lb/>ut nullo prorsus tempore gaudia mente percipias minim<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice>
+<lb/>placet, sed poti<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>s putem constanti<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> muniendum esse pectus
+<lb/>contra<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> omnia mala fortiter eundum, cum non ignores
+<lb/>bonis omnia etiam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> vulgo maxima <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>stimantur mala
+<lb/>in bonum credere et Deum <abbr>O. M.</abbr> quandoque ad explorandam
+<lb/>piorum patientiam malis in eos potestatem permittere;
+<lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terea ex hoc tuo statu elicias et consideres velim, te
+<lb/>non ad id natum esse, ut vitam tuam in tenebris
+<lb/><rs type="place">Hindelbanckianis</rs> teras omni<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> remotus ab orbe vivas,
+<lb/>ita enim statuo semper<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> statui ad majora tibi esse 
+<pb facs="1039660" n="2"/> 
+<lb/>annitendum, inferiora h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>c profect<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> te non patiuntur, et
+<lb/>cert<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> si omnia ex voto tibi successissent, putare potuisses,
+<lb/>te jam in hoc mundo scopum tuum obtinuisse et officio
+<lb/>tuo satisfecisse, sed cum jam contrari<choice><orig><g ref="#um">ū</g></orig><reg>um</reg></choice> contigerit, ipse vides
+<lb/>te quasi ad sublimiora vocar<del/><add>i</add>; gradatim quidem ad sidera
+<lb/>est ascendendum, sed quamvis nobis in radice montis consti<pc type="hyphenation">=</pc><lb break="no"/>tutis ob durum et difficilem ascensum pedes figere et consisce<pc type="hyphenation">=</pc><lb break="no"/>re non liceat, animum tamen nequaquam despondemus,
+<lb/>sed potius pectus constantia et fortitudine obfirmamus
+<lb/>majori<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice> nisu gressus nostros propellimus, ita quoque
+<lb/>tunc cede malis sed contra audentior ito.</p>
+<p><lb/>Fortasse ridebis me tantos mihi sumere spiritus, qui te
+<lb/>consolari sustineam, te quidem consolatione mea non in<pc type="hyphenation">=</pc><lb break="no"/>digere nullus dubito, mea saltem cogitata, quibus ipse
+<lb/>dolorem meum ex <rs type="letter">literis</rs> tuis perceptum aliquo modo lenii,
+    <lb/>exinde perspicere potes. <rs type="person" key="pers_DE-588-1132220874">Jer. Raillardus</rs> <date>proximo die
+<lb/>Lun<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></date> circa meridiem (nisi tempestas impediat) est profecturus,
+<lb/>ad quem finem sibi proprium comparavit equum, un<choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> cum
+    <lb/>eo iter facient <abbr>D.</abbr> <rs type="person" key="pers_DE-588-1186200782">Fattet</rs> mercator, qui <rs type="person" key="pers_DE-588-1374546887">filiam</rs> quoque
+    <lb/>suam <rs type="place">Genevam</rs> perducturus est et <rs type="person" key="1374549959">filius</rs> natu junior
+    <lb/><rs type="person" key="1213861845">Henrici Ryhineri</rs><!-- Gemäss Stroux gibt es zwei Heinrich Ryhiner, die infrage kommen: 1) Ryhiner Heinrich (1659-1727), dessen jüngster Sohn Emanuel Ryhiner (1689-1757) später Ratsherr wurde. Stroux, http://www.stroux.org/patriz_f/stQV_f/RhU_f.pdf, Ryhiner, Die Familie Ryhiner. 500 Jahre im Basler Bürgerrecht, Basel, 2018, p. 128 und 129 2) Ryhiner Johann Heinrich	(1681-1746) Kaufmann/Kleinrat, dessen jüngster Sohn Emanuel Ryhiner (1796-1778) zu diesem Zeitpunkt jedoch erst sechs Jahre alt ist. --> <choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> regione circiter <rs type="person" key="pers_DE-588-1117051846">Thurnisiorum</rs> (<choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice>
+<lb/>quibus salutem) degentis; iter igitur, ut vides, diriget
+    <lb/><abbr>D.</abbr> <rs type="person" key="pers_DE-588-1186200782">Fattet</rs>, quem c<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>m <rs type="person" key="pers_DE-588-1132220874">Raillardus</rs> interrogasset an etiam
+<lb/><rs type="place">Bernam</rs> sint perventuri, responsum tulit, animum non
+<lb/>esse illac transire, nisi interim aliud quid consilium mutare
+<lb/>faciat; ipse quidem maxima cupiditate te ibi videndi
+<lb/>tenetur, sed cum voluntatem alterius sequi necesse habeat,
+<lb/>maxim<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> dolet se spe hac ante concepta frustrari; salutem
+<lb/>tuam <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> me ipsi intimatam reciproca salute resarcivit.
+<pb facs="1039661" n="3"/>
+    <rs type="person" key="pers_DE-588-122123158">Grundleri</rs> <rs type="biblio">Dissertatio</rs> prelum <rs type="person">Typographi</rs> nondum exercet, causam
+<lb/>ignoro, c<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>m jam ante octiduum eam ad umbilicum perductam
+<lb/>mihi monstraverit. C<choice><orig><g ref="#ugrav">ù</g></orig><reg>u</reg></choice>m <abbr>Cl.</abbr> <abbr>D.</abbr> <abbr>D.</abbr> <rs type="person" key="pers_DE-588-141546573">Battierio</rs> salutem <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> te heri
+<lb/>dixissem, me de statu et valere tuo interrogare c<choice><orig><g ref="#oe">œ</g></orig><reg>oe</reg></choice>pit, cui
+<lb/>quid responderem nescivi, dixi tamen te forte mox cum
+<lb/>discipulo tuo rediturum, miranti ver<choice><orig><g ref="#ograv">ò</g></orig><reg>o</reg></choice> et causam qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>renti
+<lb/>me ignorare reddidi, te interim plurimum valere jussit. <choice><abbr>Dnum</abbr><expan>Dominum</expan></choice> <rs type="person">Ryhinerum</rs> <abbr>D. D.</abbr> <rs type="person">Werenfelsii</rs> affinem diem suum <rs type="place">Langen<pc type="hyphenation">=</pc><lb break="no"/>thalii</rs> obiisse et <rs type="person">J. C. Freyium</rs> Con<unclear>l</unclear>icentiatum tuum in locum
+<lb/>ejus esse suffectum forte jam accepisti, similiter <choice><abbr>Dnum</abbr><expan>Dominum</expan></choice> Consilia<pc type="hyphenation">=</pc><lb break="no"/>rium <rs type="person" key="pers_DE-588-1366069315">Blechnagel</rs> <date>heri</date> decessisse <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice> tuis fortasse audies. In <rs type="organisation">Aca<pc type="hyphenation">=</pc><lb break="no"/>demia nostra</rs> hac septimana motus quidam extiterunt, cum
+<lb/>enim lis illa, qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> inter <rs type="person">H<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>redes</rs> <abbr>D.</abbr> <rs type="person">Tonjol<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> et <rs type="person">Rh<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tos</rs> quosdam
+<lb/>jam diu viguit, sententi<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> Consistorialium esset decisa, <rs type="person">Rh<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ti</rs>
+<lb/>sententi<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> non contenti ad Magistratum Politicum appellatio<pc type="hyphenation">=</pc><lb break="no"/>nem instituerunt, qui etiam pecuniam hoc in casu pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>st<unclear reason="lost"><gap/></unclear>
+<lb/>solitam ab eis acceperunt; nostri autem <rs type="person">Magnates</rs> mag<unclear reason="lost">na</unclear>
+<lb/>audaci<choice><orig><g ref="#ahat">â</g></orig><reg>a</reg></choice> se contra hoc propositum opposuerunt et fortiter
+<lb/>protestati sunt; se privilegio de non appellando munitos
+<lb/>plan<choice><orig><g ref="#egrav">è</g></orig><reg>e</reg></choice> non concessuros ut tale quid fiat; interim res
+<lb/>h<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>ret et quemnam effectum sit habitura nescio, ab utra<choice><orig><g ref="#que">&#xe8bf;</g></orig><reg>que</reg></choice>
+<lb/>parte exempla pro et contra proferuntur; Vale interea
+<lb/>amicorum optime, pelle curas et tristitiam, ne animo simul
+<lb/>et corpori tuo noceas, et quod maximum est in amore
+<lb/>erga me persevera; ego semper beneficiorum tuorum
+<lb/>erga me memor et vivam et moriar.</p> <closer><salute>Iterum Vale.</salute>
+<lb/><dateline><rs type="place">Basile<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice></rs> <abbr>d.</abbr> <date when="1710-03-15">15. Martii, <abbr>A. S.</abbr> 1710</date>.</dateline>
+<pb facs="1039662" n="4"/> 
 <address>
-<addrLine>Adresse (mit Siegel): Monsieur Monsieur Nicolas Bernoulli Licentié en Droit chez Made. Lombach Dame de Hindelbanck a Berne</addrLine>
+<addrLine>A Monsieur</addrLine>
+<addrLine>Monsieur <rs type="person">Nicolas Bernoulli</rs></addrLine>
+<addrLine>Licentié en Droit chez <abbr>Mad.<hi rend="sup">e</hi></abbr></addrLine> 
+<addrLine><rs type="person">Lombach</rs> Dame de <rs type="place">Hindelbanck</rs></addrLine>
+<addrLine><choice><orig>a</orig><reg>à</reg></choice></addrLine>
+<addrLine><rs type="place">Berne</rs></addrLine>
 </address></closer>
 </div>
 </body>

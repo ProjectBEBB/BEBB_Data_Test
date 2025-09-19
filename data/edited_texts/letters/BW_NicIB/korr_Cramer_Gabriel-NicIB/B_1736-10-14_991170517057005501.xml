@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517057005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -155,8 +155,11 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-18" who="RG">Mathematische Formeln angepasst</change>
+      <change when="2025-07-18" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-16" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt, ausser in den Formeln</change>
       <change when="2023-09-27" who="RG">Personen und Orte ausgezeichnet</change>
-      <change when="2023-09-08" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
+      <change when="2023-09-08" who="RG">Zeilabstände eingefügt, und <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ergänzt</change>
       <change when="2023-09-08" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
@@ -168,89 +171,104 @@
 <body>
 <div type="letter">
 <pb facs="1063361" n="1"/>
-<p><lb/>Je prends, Monsieur, la Liberté de vous écrire ces deux mots
-                              <lb/>uniquement pour vous accuser la reception de vôtre chere <rs type="letter">Lettre</rs>
-<lb/>&amp; du précieux Manuscrit que vous avés eu la bonté d’y joindre.
-                           <lb/>J’espére d’en avoir tiré copie dans peu de jours &amp; de vous renvoier au
-                           <lb/>plûtôt l’original, avec mille &amp; mille remercimens de vôtre politesse.
-                           <lb/>Il m’a été rendu hier à la Campagne où je suis depuis quelque tems,
-                           <lb/>ce qui causera peut-étre quelque retard à cette Lettre, les Postes n’etant
-                           <lb/>pas aussi bien réglées dès ici, que dès <rs key="place_GEO-2660646" type="place">Geneve</rs>. La Compagnie, qui est assés
-                           <lb/>grosse ne me permet pas de vous repondre au long, &amp; de vous remercier
-                           <lb/>comme je le devrois, le l’obligeante communication que vous me faites
-                           <lb/>de vôtre Méthode pour les Suittes infinies. Elle a beaucoup de raport4
-                           <lb/>avec celle que j’emploiois, si ce n’est qu’au lieu de supposer <formula>y=Ax^{\alpha}+Bx^{\beta}+\mbox{\&amp;c.}</formula>
-<lb/>je supposois <formula>y=Ax^{\alpha}+p</formula>. Ensuite après avoir determiné <formula>A</formula> (s’il se peut) &amp;c. &amp;c.
-                           <lb/>(a peu près comme vous) j’avois une Equation en <formula>x</formula>, <formula>p</formula>, &amp; <formula>dp</formula>; et alors je supposois
-                           <lb/><formula>p=Bx^{\beta}+q</formula> &amp; par cette nouvelle <del>Equation </del>supposition, je determinois
-                           <lb/>B &amp; 6 &amp; ainsi de suite: ce qui est, je crois, plus long que vôtre Methode,
-                           <lb/>mais aussi ce qui peut avoir certaines commodités, en certains cas. Quoi<pc type="hyphenation">-</pc><lb break="no"/>qu’il en soit, (car je ne crois pas pouvoir comparer ces deux Methodes qu’à
-                           <lb/>mon retour en Ville) je ne scais, si l’une &amp; l’autre ont toute la generalité
-                           <lb/>qu’elles pourroient peut-étre &amp; devroient avoir. Ne trouvés-vous pas
-                           <lb/>par Ex. qu’il y a quelque chose d’etrange, en ce qu’une Equation telle que
-                        <pb facs="1063362" n="2"/>
-<lb/><formula>r^{2}\,ddy+y=0</formula> n’ait aucune Racine qui se puisse definir par une Suite
-                           <lb/>descendente. Quelle peut étre la Raison d’une pareille bisarerie?
-                           <lb/>Faut-il la chercher dans la nature même de l’Equation, ou dans la
-                           <lb/>Methode, qui n’a peut étre pas encore toutte l’universalité qu’on
-                           <lb/>pourroit desirer, quoiqu’elle soit beaucoup plus generale que le
-                           <lb/>Parallellogramme de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs>, même après toutes les améliorations
-                           <lb/>de Mrs. <rs key="pers_DE-588-117260266" type="person">Stirling</rs> &amp; <rs key="pers_DE-588-118801481" type="person">Taylor</rs>.</p>
-<p><lb/>J’ai trouvé un Moment pour jetter un Coup d’oeil sur la Maniére
-                           <lb/>qu’employe Monsieur vôtre <rs key="pers_DE-588-118509950" type="person">Oncle</rs> pour trouver la suite qui ex<pc type="hyphenation">-</pc><lb break="no"/>prime l’infinitonome elevé à une puissance indeterminée. Je suis
-                           <lb/>charmé de son universalité. Mais, Monsieur, j’ai cependant quelque
-                           <lb/>Objection à faire contre l’une &amp; l’autre de ses deux Methodes. La
-                           <lb/>premiére ne s’etend qu’au cas des puissances parfaites, c’est à dire
-                           <lb/>à celles dont l’Indice est un Nombre entier. Je sçais bien qu’on peut
-                           <lb/>par un detour, venir de ces Puissances à celles qui sont imparfaites.
-                           <lb/>Mais ce detour est long. Et si ce detour ne vous deplait pas, on peut
-                           <lb/>aisement démontrer la formule pour le binome ou l’infinitonome
-                           <lb/>dans le cas des puissances parfaites, en faisant voir que si la formule
-                           <lb/>a lieu pour une puissance quelconque, elle a lieu pour celle qui suit
-                           <lb/>c’est à dire pour celle dont l’indice est d’une unité plus grand. Et ainsi
-                           <lb/>pour toutes les puissances à l’infini. Or il est clair que la formule
-                           <lb/>a lieu pour la premiére puissance. Donc elle a lieu pour toutes les
-                           <lb/>puissances parfaites. Après quoi on passera aux imparfaites, En faisant
-                        <pb facs="1063363" n="3"/>
-<lb/>voir que le produit de deux puissances est égale à la puissance dont
-                           <lb/>l’indice est égale à la somme des deux, &amp; que par consequent aussi le quotient
-                           <lb/>d’une puissance divisée par une autre est égal à la puissance qui a pour
-                           <lb/>indice la difference des deux. <del/>D’où l’on deduira sans beaucoup
-                           <lb/>de peine que la Formule de Mr. <rs key="pers_DE-588-118587544" type="person">Newton</rs> (puisqu’il a été assés heureux pour
-                           <lb/>lui donner son Nom) a lieu pour les puissances imparfaites comme pour les
-                           <lb/>parfaites. Mais, comme vous le voiés, cette Methode à l’inconvenient
-                           <lb/>d’une longueur infinie.</p>
-<p><lb/>L’autre Methode de Mr. vôtre <rs key="pers_DE-588-118509950" type="person">Oncle</rs> n’a pas ces deux defauts.
-                           <lb/>Mais je crains que la trop grande universalité qu’il a voulu lui conserver
-                           <lb/>&amp; qui certainement a bien son mérite, ne lui cause d’un autre coté quelque
-                           <lb/>préjudice. Car je vous avouë que les integrations qu’elle laisse à faire
-                           <lb/>me paroissent diminuer beaucoup de son élegance: puisqu’au bout, emploier
-                           <lb/>ici les differentielles, c’est en quelque sorte μεταθάδις δίς άλλό ρίνος<!-- Griechischer Teil noch unklar, RG 08.09.2023 -->, qu’on
-                           <lb/>peut bien, si vous voulés, supporter dans la Démonstration, mais qui ne
-                           <lb/>doit plus paroitre dans la Conclusion, quand on peut mieux faire. Je n’ai
-                           <lb/>pas le loisir de l’examiner, mais à vuë de pais, il me semble que si M.
-                           <lb/>vôtre <rs key="pers_DE-588-118509950" type="person">Oncle</rs>, au lieu de <formula>(a+b+c+d+e+f+\mbox{\&amp;c.})^{m}</formula> avoit supposé <formula>(Ax^{\alpha}+Bx^{\beta}+Cx^{\gamma}+\mbox{\&amp;c.})^{\frac{m}{n}}</formula>
-<lb/>il auroit evité dans sa Conclusion ces sommations à faire, &amp; n’auroit, je crois,
-                           <lb/>rien perdu quant à la généralité.</p>
-<p><lb/>Je finis, Monsieur, comme j’ai commencé, par mille remercimens de
-                           <lb/>vôtre honnêteté, &amp; par des excuses du desordre de cette Lettre. J’ai cru ne pas
-                           <lb/>devoir la differer, afin de vous mettre l’esprit en repos sur le sort de vôtre MS.
-                           <lb/>&amp; les visites qui nous acablent (vous sçavés ce que c’est que des visites de Campagne)
-                           <lb/>ne me permettent pas de faire mieux. Rien ne m’empechera pourtant de
-                           <lb/>vous temoigner en toutte occasion, la consideration parfaite &amp; l’attachement
-                        <pb facs="1063364" n="4"/>
-<lb/>infini avec lequel j’ai l’honneur d’étre
-                           <lb/>Monsieur</p>
-<closer><lb/><salute>Vôtre très humble &amp; très obeissant
-                        <lb/>serviteur</salute> <signed>G. Cramer</signed>
-<dateline><lb/><rs key="place_GEO-2659599" type="place">Mont sur Rolle</rs>, ce <date when="1736-10-14">14 Octob. 1736</date></dateline>
+<p>
+  <lb/>Je prends, Monsieur, la Liberté de vous écrire ces deux mots
+  <lb/>uniquement pour vous accuser la reception de vôtre chere <rs type="letter">Lettre</rs><!-- Brief noch referenzieren, RG 16.07.2025 -->
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> du précieux Manuscrit que vous avés eu la <subst><del/><add>bonté</add></subst> d’y joindre.
+  <lb/>J’espére d’en avoir tiré copie dans peu de jours <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous renvoier au
+  <lb/>plûtôt l’original, avec mille <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> mille remercimens de vôtre politesse.
+  <lb/>Il m’a été rendu hier à la Campagne<!-- referenzieren? RG 16.07.2025 --> où je suis depuis quelque tems,
+  <lb/>ce qui causera peut-étre quelque retard à cette <rs type="letter">Lettre</rs>, les Postes n’etant
+  <lb/>pas aussi bien réglées dès ici, que dès <rs key="place_GEO-2660646" type="place">Geneve</rs>. La Compagnie, qui est assés
+  <lb/>grosse ne me permet pas de vous repondre au long, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> de vous remercier
+  <lb/>comme je le devrois, le l’obligeante communication que vous me faites
+  <lb/>de vôtre Méthode pour les Suittes infinies. Elle a beaucoup de raport
+  <lb/>avec celle que j’emploiois, si ce n’est qu’au lieu de supposer <choice><reg><formula rend="regFormula">y=Ax^{\alpha}+Bx^{\beta}+\mbox{\&amp;c}</formula></reg><orig><formula>y=Ax^{\alpha}+Bx^{\beta}+\mbox{etc.}</formula></orig></choice>
+  <lb/>je supposois <formula>y=Ax^{\alpha}+p</formula>. Ensuite après avoir determiné <formula>A</formula> (s’il se peut) <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr>
+  <lb/>(a peu près comme vous) j’avois une Equation en <formula>x</formula>, <formula>p</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>dp</formula>; <subst><del/><add>e</add></subst>t alors je supposois
+  <lb/><formula>p=Bx^{\beta}+q</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par cette nouvelle <del>Equation </del>supposition, je determinois
+  <lb/><formula>B</formula>, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <formula>\beta</formula> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ainsi de suite: ce qui est, je crois, plus long que vôtre Methode,
+  <lb/>mais aussi ce qui peut avoir certaines commodités, en certains cas. Quoi<pc type="hyphenation">-</pc><lb break="no"/>qu’il en soit, (car je ne crois pas pouvoir comparer ces <subst><del/><add>deux</add></subst> Methodes qu’à
+  <lb/>mon retour en Ville) je ne scais, si l’une <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre ont toute la generalité
+  <lb/>qu’elles pourroient peut<supplied>-</supplied>étre <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> devroient avoir. Ne trouvès-vous pas
+  <lb/>par <abbr>Ex.</abbr> qu’il y a quelque chose d’etrange, en ce qu’une Equation telle que
+  <pb facs="1063362" n="2"/>
+  <lb/><formula>r^{2}ddy+y=0</formula> n’ait aucune Racine qui se puisse definir par une Suite
+  <lb/>descendente. Quelle peut-étre la Raison d’une pareille bisarerie?
+  <lb/>Faut-il la chercher dans la nature même de l’Equation, ou dans l<subst><del>e</del><add>a</add></subst>
+  <lb/>Methode, qui n’a peut-étre pas encore toutte l’universalité qu’on
+  <lb/>pourroit desirer, quoiqu’elle soit beaucoup plus generale que le
+  <lb/>Parallellogramme de <abbr>M<supplied>.</supplied></abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs>, même après toutes les améliorations
+  <lb/>de <abbr>M.<hi rend="sup">rs</hi></abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> <rs key="pers_DE-588-118801481" type="person">Taylor</rs>.
+</p>
+<p>
+  <lb/>J’ai trouvé un Moment pour jetter un Coup d’oeil sur la Maniére
+  <lb/>qu’employe Monsieur vôtre <rs key="pers_DE-588-118509950" type="person">Oncle</rs> pour trouver la suite qui ex<pc type="hyphenation">-</pc><lb break="no"/>prime l’infinitonome elevé à une puissance indeterminée<!-- ? -->. Je suis
+  <lb/>charmé de son universalité. Mais, Monsieur, j’ai cependant quelque
+  <lb/>Objection à faire contre l’une <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’autre de ses deux Methodes. La
+  <lb/>premiére ne s’etend<!-- beim "etend" etwas überschrieben? RG 18.07.2025 --> qu’au cas des Puissances parfaites, c’est à dire<!-- ohne Bindestrich auch möglich? Gibt Beispiele ohne Bindestriche im 18. Jh. RG 18.07.2025 -->
+  <lb/>à celles dont l’Indice est un Nombre entier. Je sçais bien qu’on peut
+  <lb/>par un detour, venir de ces Puissances à celles qui sont imparfaites.
+  <lb/>Mais ce detour est long. Et si <subst><del/><add>c</add></subst>e detour ne vous deplait pas, on peut
+  <lb/>aisement démontrer la formule pour le binome ou l’infinitonome
+  <lb/>dans le cas des puissances parfaites, en faisant voir que si la <subst><del/><add>f</add></subst>ormule
+  <lb/>a lieu pour une puissance quelconque, elle a lieu pour <subst><del/><add>ce</add></subst>lle qui suit
+  <lb/>c’est <choice><orig>a</orig><reg>à</reg></choice> dire pour celle dont l’indice est d’une unité plus grand. Et ainsi
+  <lb/>pour toutes les puissances à l’infini. Or il est clair que<!-- ? --> la formule
+  <lb/>a lieu pour la premiére<!-- ? --> puissance. Donc elle a lieu pour toutes les
+  <lb/>puissances parfaites. Après quoi on passera aux imparfaites, En faisant
+  <pb facs="1063363" n="3"/>
+  <lb/>voir que le produit de deux puissances est égale à la puissance dont
+  <lb/>l’indice est égale à la somme des deux, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> que par consequent aussi le quotient
+  <lb/>d’une puissance divisée par une autre est égal à la puissance qui a pour
+  <lb/>indice la difference des deux. <del/>D’où l’on deduira sans beaucoup
+  <lb/>de <subst><del/><add>p</add></subst>eine que la formule de <abbr>M.</abbr> <rs key="pers_DE-588-118587544" type="person">Newton</rs> (puisqu’il a èté<!-- ? -->  assés heureux pour
+  <lb/>lui donner son Nom) a lieu pour les puissances imparfaites comme pour les
+  <lb/>parfaites. Mais, comme vous le voiés, cette Methode à l’inconvenient
+  <lb/>d’une longueur infinie.
+</p>
+<p>
+  <lb/>L’autre Méthode de <abbr>M.<hi rend="sup">r</hi></abbr> vôtre <rs key="pers_DE-588-118509950" type="person">Oncle</rs> n’a pas ces deux defauts.
+  <lb/>Mais je crains que la trop grande universalité qu’il a voulu lui conserver
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> qui certainement a bien son mérite, ne lui cause d’un autre coté quelque
+  <lb/>préjudice. Car je vous avouë que les integrations qu’elle laisse à faire
+  <lb/>me paroissent diminuer beaucoup de son élegance: puisqu’au bout, emploier
+  <lb/>ici les differentielles, c’est en quelque sorte <foreign xml:lang="grc">μεταϐάδις δίς άλλό γένος</foreign><!-- Übersetzung noch mühe, vlt. letztes Wort von "ρίνος" zu "γένος" geändert. Grob übersetzt "Zweifacher Übergang in eine andere Gattung/Denkmethode". RG 18.07.2025 -->, qu’on
+  <lb/>peut bien, si vous<!-- vielleicht etwas überschrieben? RG 18.07.2025 --> voulés, supporter dans la Démonstration, mais qui ne
+  <lb/>doit plus paroitre dans la Conclusion, quand on peut mieux faire. Je n’ai
+  <lb/>pas le loisir de l’éxaminer, mais <choice><orig>a</orig><reg>à</reg></choice> vuë de pais, il me semble que si <abbr>M.</abbr>
+  <lb/>vôtre <rs key="pers_DE-588-118509950" type="person"><subst><del>o</del><add>O</add></subst>ncle</rs>, au lieu de <choice rend="regFormula"><orig><formula>\overline{a+b+c+d+e+f+\mbox{\&amp;c}}^{m}</formula></orig><reg><formula>a+b+c+d+e+f+\mbox{etc.})^{m}</formula></reg></choice>, avoit supposé <choice rend="regFormula"><orig><formula>\overline{Ax^{\alpha}+Bx^{\beta}+Cx^{\gamma}+\mbox{\&amp;c}}^{\frac{m}{n}}</formula></orig><reg><formula>(Ax^{\alpha}+Bx^{\beta}+Cx^{\gamma}+\mbox{etc.})^{\frac{m}{n}}</formula></reg></choice>
+  <lb/>il auroit evité dans sa Conclusion ces sommations à faire, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> n’auroit<add>,</add> je crois,
+  <lb/>rien perdu quant à la généralité.
+</p>
+<p>
+  <lb/>Je finis, Monsieur, comme j’ai commencé, par mille remercimens <subst><del>l</del><add>d</add></subst>e
+  <lb/>vôtre honnêteté, <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> par des excuses du desordre de cette Lettre. J’ai cru ne pas
+  <lb/>devoir la differer, afin de vous mettre l’esprit en repos sur le sort de vôtre <abbr>MS.</abbr>
+  <lb/><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> les visites qui nous acablent (vous sçavés ce que c’est que des visites de Campagne)
+  <lb/>ne me permettent pas de faire mieux. Rien ne m’empêchera pourtant de
+  <lb/>vous temoigner en toutte occasion, la consideration parfaite <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> l’attachement
+  <pb facs="1063364" n="4"/>
+  <lb/>infini avec lequel j’ai l’honneur d’étre
+  <lb/>Monsieur
+</p>
+<closer>
+  <salute>
+    <lb/>Vôtre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obeissant
+    <lb/>serviteur 
+  </salute>
+  <signed><rs type="person" key="pers_DE-588-11670912X"><abbr>G<supplied>.</supplied></abbr> Cramer</rs></signed>
+<dateline>
+  <lb/><rs key="place_GEO-2659599" type="place">Mont sur Rolle</rs>, ce <date when="1736-10-14">14. <abbr>Octob.</abbr> 1736</date>
+</dateline>
 <address>
 <addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit</addrLine>
-<addrLine>&amp;c &amp;c</addrLine>
-<addrLine>a Basle</addrLine>
-</address></closer>
+<addrLine>Monsieur Nicolas Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></addrLine>
+<addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur e<subst><del>t</del><add>n</add></subst> Droit</addrLine>
+<addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></addrLine>
+<addrLine><choice><orig>a</orig><corr>à</corr></choice> Basle</addrLine>
+</address><!-- Bis hier den Code angesehen, RG 18.07.2025 -->
+</closer>
 </div>
 </body>
 </text></TEI>

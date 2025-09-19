@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170430341005501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -151,21 +151,113 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-15" who="MK">Code durchgeschaut, ergänzt, korr., kollationiert Teil 1</change>
+      <change when="2025-09-01" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-01" who="RG">Zeilenabstände eingefügt, sowie Anpassungen</change>
+      <change when="2025-09-01" who="RG">Personen, Orte referenziert</change><!-- Biblio noch offen, RG 29.08.2025 -->
+      <change when="2025-09-01" who="RG">Seitenzahlen, Briefstruktur</change><!-- "facs" müssen noch ergänzt werden. RG 29.08.2025 -->
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
 </teiHeader>
 <facsimile>
-<graphic url="http://fakeURL.com"/>
+  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vtaa186541f325fd105/dao/0/1?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvtaa186541f325fd105%2Fcanvas%2F0%2F37 RG 29.08.2025 Link überprüft: MK 15.9.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<p> C’est fort à la hâte, mon cher Monsieur, que je repond à l’honneur de votre lettre étant bien pressé et ne voulant pas cependant laisser passer cet ordinaire sans vous donner les eclaircissements que vous me demandés. </p>
-<p> Je suis bien aise, que vous ayés apperçu vous même les fautes que je voulois vous faire remarquer, cela me fait voir que vous lisés les Manuscrits avec toute l’attention dont ils ont besoin. J’ai cherché parmi les originaux, qui ne sont plus on ordre, la feuille volante, que vous cités Probl. Newtonia <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c., et je l’ai trouvée: voici comment la premiere faute que vous me marqués, s’est glissée dans la copie: </p>
-<p> Il y a dans l’original <formula>\frac{HJ}{\sqrt{CH}}=\frac{AC\cdot MJ}{AC\cdot\sqrt{CH}}</formula>; vous voyés, Monsieur, que ce dernier terme doit être entièrement effacé, mais comme le trait qui l’efface paroit avoir été tiré avec soin par le MJ et le AC, le copiste aura cru qu’il falloit mettre <formula>\frac{AQ}{\sqrt{CH}}</formula>; d’autant plus que le signe d’egalité n’est pas effacé et que le meme terme revient encore une fois et qu’il est encore rayé de la meme maniere; cela est si vraisemblable, que je crois y avoir été trompé moi même en collationnant la copie car n’ayant pas la figure à coté de moi je ne pouvois pas savoir le rapport de HJ à AQ. Conclusion. il faut effacer le <formula>=\frac{AQ}{\sqrt{CH}}</formula> et le <formula>=\int\frac{AQ}{\sqrt{CH}}</formula>. </p>
-<p> Quant à l’autre article, je suis bien de votre avis qu’il y a une petite erreur de calcul, qui provient sans doute de ce que par inadvertance mon Père aura confondu la <formula>\sqrt{CH}</formula> avec la <formula>\sqrt{(aa-yy)}</formula> ne pensant pas que CH elle même est <formula>=\sqrt{(aa-yy)}</formula>, Comme il tient le lit depuis plusieurs semaines ayant une forte toux avec beau coup d’oppression il n’est pas en état de relire ce problème bien loin d’y pouvoir rien retoucher; il ne sait plus même de quoi il y est question et il me seroit impossible de le lui faire comprendre dans l’état où il est; je me suis donc contenté de lui dire, que vous m’aviés marqué une erreur de calcul qui se trouvoit dans une de ses pièces; il m’a repondu que cela se pouvoit fort bien et qu’il vous laissoit le soin de changer ou d’omettre le passage où cette faute se rencontroit ou même de supprimer toute la pièce. Il vous fait du reste bien des compli ments, de même que mon Cousin et mon frère. J’avois deja appris que l’air de Montpelier faisoit beaucoup de bien à notre ami Jallabert; vous me faites un plaisir bien sensible de me le con firmer. Je souhaite, mon cher Monsieur, que vous n’ayés jamais besoin de l’air de Montpelier; si cependant votre Medecin vous conseille tot ou tard de changer d’air venés à Bâle, où vous en trouverés un bien sain et avec cela des amis qui tacheront de vous faire oublier que vous n’etes pas à Genève; permettés que je prenne la première place parmi eux comme celui qui est avec l’attachement le plus sincère Tout à vous Bernoulli. Bâle ce 26 Xbre 1742. [P. S.] Où en sont les ouvrages de mon Oncle? [Anschrift] Monsieur Monsieur Cramer, Professeur en Philosophie et Mathemat. à Genève. </p>
+<pb facs="-" n="1"/><!-- "facs" noch ergänzen, RG 29.08.2025 -->
+<p>
+  <lb/>C’est fort à la hâte, mon cher Monsieur, que je
+  <lb/>repond à l’honneur de vôtre <rs key="B_991170516487405501" type="letter">lettre</rs> étant bien pressé
+  <lb/>et ne voulant pas cependant laisser passer cet
+  <lb/>ordinaire sans vous donner les eclaircissements
+  <lb/>que vous me demandés.
+</p>
+<p>
+  <lb/>Je suis bien aise, que vous ayés apperçu vous même
+  <lb/>les fautes que je voulois vous faire remarquer, cela
+  <lb/>me fait voir, que vous lisés les <rs type="biblio">Manuscrits</rs> avec
+  <lb/>toute l’attention dont ils ont bésoin. J’ai cherché
+  <lb/>parmi les <rs type="biblio">originaux</rs>, qui ne sont <subst><del/><add>plus</add></subst> on ordre,
+  <lb/>la <rs type="biblio">feuille volante</rs>, que vous cités <hi rend="u"><rs type="biblio"><abbr>Probl.</abbr> Newtonia <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c<supplied>.</supplied></abbr></rs></hi>,
+  <lb/>et je l’ai trouvée; voici comment la premiére faute
+  <lb/>que vous me marqués, s’est glissée dans la copie;
+</p>
+<p>
+  <lb/>Il y a dans l’<rs type="biblio">original</rs> <formula>\frac{HJ}{\sqrt{CH}}=\frac{AQ\cdot MJ}{AC\cdot\sqrt{CH}}</formula>;<note type="editorial">Der rechte Term wurde durchgestrichen. Er kommt in den nächsten Zeilen auf diese Streichung zurück.</note> vous
+  <lb/>voyés, Monsieur, que ce dernier terme doit être
+  <lb/>entièrement effacé, mais comme le trait qui l’<pc type="hyphenation"></pc><lb break="no"/>efface paroit avoir été tiré avec soin par le
+  <lb/><formula>MJ</formula> et le <formula>AC</formula>, le <rs type="person">copiste</rs> aura crû qu’il falloit
+  <lb/>mettre <formula>\frac{AQ}{\sqrt{CH}}</formula>; d’autant plus que le signe d’<pc type="hyphenation"></pc><lb break="no"/>egalité n’est pas effacé et que le meme terme revient
+  <lb/>encore une fois et qu’il est encore rayé de la
+  <lb/>même manière; cela est si vraisemblable, que
+<pb facs="-" n="2"/>
+  <lb/>je crois y avoir èté trompé moi même en collatio<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ant
+  <lb/>la copie, car n’ayant pas la figure à coté de moi
+  <lb/>je ne pouvois pas savoir le rapport de <formula>HJ</formula> à <formula>AQ</formula>.
+  <lb/>Conclusion: il faut effacer le <formula>=\frac{AQ}{\sqrt{CH}}</formula> et le <formula>=\int\frac{AQ}{\sqrt{CH}}</formula>.
+</p>
+<p>
+  <lb/>Quant à l’autre <rs type="biblio">article</rs>, je suis bien de votre
+  <lb/>avis qu’il y a une petite erreur de calcul, qui
+  <lb/>provient sans doute de ce que par inadvertance
+  <lb/>mon <rs key="pers_DE-588-118509969" type="person">Père</rs> aura confondu la <formula>\sqrt{CH}</formula> avec la <formula>\sqrt{(aa-yy)}</formula>,
+  <lb/>ne pensant pas que <formula>CH</formula> elle même est <formula>=\sqrt{(aa-yy)}</formula>;
+  <lb/>Comme il tient le lit depuis plusieurs semaines
+  <lb/>ayant une forte toux avec beaucoup d’oppression;
+  <lb/>il n’est pas en étât de relire ce problème, bien
+  <lb/>loin d’y pouvoir rien retoucher; il ne sait plus
+  <lb/>même de quoi il y est question et il me seroit
+  <lb/>impossible de le lui faire comprendre dans l’<pc type="hyphenation"></pc><lb break="no"/>étât où il est; je me suis donc contenté de
+  <lb/>lui dire, que vous m’aviés marqué une erreur
+  <lb/>de calcul qui se trouvoit dans une de ses
+  <lb/><rs type="biblio">pièces</rs>; il m’a répondu que cela se pouvoit <subst><del/><add>fort</add></subst>
+  <lb/>bien et qu’il vous laissoit le soin de changer
+  <lb/>ou d’omettre le passage où cette faute se
+  <lb/>rencontroit ou même de supprimer toute la
+  <lb/><rs type="biblio">pièce</rs>. Il vous fait au reste bien des
+<pb facs="-" n="3"/>
+  <lb/>compliments, de même que mon <rs key="pers_DE-588-119166895" type="person">Cousin</rs> et mon
+  <lb/><rs key="pers_DE-588-118656503" type="person">frère</rs>. J’avois déjâ appris que l’air de
+  <lb/><rs key="place_GEO-2992166" type="place">Montpelier</rs> faisoit beaucoup de bien à nôtre
+  <lb/>ami <rs key="pers_DE-588-100289665" type="person">Jallabert</rs>; vous me faites un plaisir
+  <lb/>bien sensible de me le confirmer. Je souhaite<supplied>,</supplied>
+  <lb/>mon cher Monsieur, que vous n’ayès jamais
+  <lb/>besoin de l’air de <rs key="place_GEO-2992166" type="place">Montpelier</rs>; si cependant
+  <lb/>votre <rs type="person">Medecin</rs> vous conseille tot ou tard de
+  <lb/>changer d’air venés à <rs key="place_GEO-2661604" type="place">Bâle</rs>, où vous en
+  <lb/>trouverés un bien sain et avec cela des
+  <lb/>amis qui tacheront de vous faire
+  <lb/>oublier que vous n’ètes pas à <rs key="place_GEO-2660646" type="place">Genève</rs>;
+  <lb/>permettés que je prenne la premiére
+  <lb/>place parmi eux comme celui qui
+  <lb/>est avec l’attachement le plus sincére
+</p>
+<closer>
+  <salute><lb/>Tout à Vous</salute> <signed><rs key="pers_DE-588-117589136" type="person">Bernoulli</rs></signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2661604" type="place">Bâle</rs>
+    <lb/>ce <date when="1742-12-26">26. X<hi rend="sup">bre</hi> 1742</date>
+  </dateline>
+</closer>
+<postscript>
+  <p>
+    <lb/>Où en sont les <rs type="biblio">ouvrages</rs> de
+    <lb/>mon <rs key="pers_DE-588-118509950" type="person">Oncle</rs><!-- Jakob Bernoulli (1655–1705)? RG 29.08.2025 Jacob I (1654-1705) ist gemeint. MK 15.9.2025-->?
+  </p>
+</postscript>
+<pb facs="-" n="4"/>
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur Cramer, Professeur</addrLine>
+    <addrLine>en Philosophie et <abbr>Mathemat.</abbr></addrLine>
+    <addrLine>à</addrLine>
+    <addrLine>Genève</addrLine>
+  </address>
+</closer> 
 </div>
 </body>
 </text></TEI>

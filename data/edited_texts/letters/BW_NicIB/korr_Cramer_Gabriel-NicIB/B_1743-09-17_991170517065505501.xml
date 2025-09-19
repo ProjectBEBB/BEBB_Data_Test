@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170517065505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
   <fileDesc>
     <titleStmt>
@@ -143,6 +143,8 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-07-23" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-07-23" who="RG">&amp; mit <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> ersetzt</change>
       <change when="2023-09-21" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
       <change when="2023-09-21" who="RG">Seitenzahlen, Briefstruktur</change>
       <change when="2023-09-21" who="RG">"prev" und "next" in correspContext eingefügt</change>
@@ -156,38 +158,52 @@
 <body>
 <div type="letter">
 <pb facs="1063458" n="1"/>
-<opener>Geneve ce 17 Sept. 1743</opener>
-<opener>Monsieur,</opener>
-<p><lb/>Vous rapellerez vous mon nom? Il y a si longtems que je ne vous en
-                           <lb/>ai pas rafraichi la mémoire, que j’aurois lieu de craindre que vous ne
-                           <lb/>l’eussiez oublié tout à fait, si je ne savois parfaitement que votre bon coeur
-                           <lb/>ne vous permet pas d’oublier jamais ceux que vous aimez. Nous voici presque
-                           <lb/>au bout de l’édition des Oeuvres de feu Monsr. votre <rs type="person">Oncle</rs>, qui a trainé long<pc type="hyphenation">-</pc><lb break="no"/>tems, un peu par ma faute, un peu par celle de l’imprimeur, beaucoup par
-                           <lb/>la lenteur des graveurs. Je croirois manquer à mon devoir, Monsieur, si
-                           <lb/>j’oubliois de vous temoigner publiquement les obligations que nous vous avons.
-                           <lb/>Vous aurez donc la bonté de permettre que j’aie l’honneur de le faire dans
-                           <lb/>la petite Dedicace, dont la copie est ici jointe. Les raisons qui y sont contenues,
-                           <lb/>me paroissent si fortes, que comme je ne pourrois m’adresser ailleurs sans
-                           <lb/>ingratitude, vous ne pouvez, ce me semble, refuser de l’accepter sans quelque
-                           <lb/>injustice. Je n’oserois cependant passer outre sans votre permission que je
-                           <lb/>vous demande instamment, vous priant, si la piéce vous agrée, de me
-                           <lb/>renvoier cette copie après y avoir marqué vos titres, que j’ai laissez
-                           <lb/>en blanc. Soiez, je vous prie, bien persuadé de la parfaite estime &amp; du
-                           <lb/>respectueux devouement avec lequel je me fais gloire d’etre</p>
-<closer><salute><lb/>Votre très humble &amp; très obeissant Serviteur</salute>
-<signed><lb/>G. Cramer</signed></closer>
-<pb facs="1063459" n="2"/>
-<pb facs="1063460" n="3"/>
+<opener>
+  <dateline>
+    <lb/>Geneve ce <date when="1743-09-17">17 <abbr>Sept.</abbr> 1743</date>
+  </dateline>
+  <salute>
+    <lb/>Monsieur,
+  </salute>
+</opener>
+<p>
+  <lb/>Vous rapellerez vous mon nom<choice><sic>:</sic><corr>?</corr></choice><!-- Korrektur oder Normalisierung? RG 24.07.2025 --> Il y a si longtems que je ne vous en
+  <lb/>ai pas rafraichi la mémoire, que j’aurois lieu de craindre<!-- überschrieben? RG 24.07.2025 --> que vous ne
+  <lb/>l’eussiez oublié tout à fait, si je ne savois parfaitement que votre bon coeur
+  <lb/>ne vous permet pas d’oublier jamais ceux que vous aimez. Nous voici presque
+  <lb/>au bout de l’<rs type="biblio">édition</rs> des Oeuvres de feu <abbr>Mons.<hi rend="sup">r</hi></abbr> votre <rs type="person">Oncle</rs><!-- Jakob Bernoulli? RG 24.07.2025 -->, qui a trainé long<pc type="hyphenation">-</pc><lb break="no"/>tems, un peu par ma faute, un peu par celle de l’imprimeur, beaucoup par
+  <lb/>la lenteur des graveurs. Je croirois manquer à mon devoir, Monsieur, si
+  <lb/>j’oubliois de vous temoigner publiquement les obligations que nous vous avons.
+  <lb/>Vous aurez donc la bonté de permettre que j’aie l’honneur de le faire dans
+  <lb/>la petite Dedicace, dont la copie est ici jointe. Les raisons qui y sont contenues,
+  <lb/>me paroissent si fortes, que comme je ne pourrois m’adresser ailleurs sans
+  <lb/>ingratitude, vous ne pouvez, ce me semble, refuser de l’accepter sans quelque
+  <lb/>injustice. Je n’oserois cependant passer outre sans votre permission que je
+  <lb/>vous demande instamment, vous priant, si la piéce<!-- "è"? RG 24.07.2025 --> vous agrée, de me
+  <lb/>renvoier cette copie après y avoir marqué vos titres, que j’ai laissez
+  <lb/>en blanc. Soiez, je vous prie, bien persuadé de la parfaite estime <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> du
+  <lb/>respectueux devouement avec lequel je me fais gloire d’etre
+</p>
+<closer>
+  <salute>
+    <lb/>Votre très humble <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> très obéissant Serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-11670912X" type="person"><abbr>G<supplied>.</supplied></abbr> Cramer</rs>
+  </signed>
+</closer>
+<pb facs="1063459" n="2" type="empty"/>
+<pb facs="1063460" n="3" type="empty"/>
 <pb facs="1063461" n="4"/>
 <closer>
-<address>
-<addrLine>Monsieur</addrLine>
-<addrLine>Monsieur Nicolas Bernoulli,</addrLine>
-<addrLine>Docteur &amp; Professeur en Droit,</addrLine>
-<addrLine><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c. <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</addrLine>
-<addrLine>a Basle</addrLine>
-</address>
-</closer>
+  <address>
+    <addrLine>Monsieur</addrLine>
+    <addrLine>Monsieur Nicolas Bernoulli,</addrLine>
+    <addrLine>Docteur <choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice> Professeur en Droit,</addrLine>
+    <addrLine><abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></addrLine>
+    <addrLine><choice><orig>a</orig><reg>à</reg></choice> Basle</addrLine>
+  </address>
+</closer><!-- Bis hier den Code angesehen, RG 24.07.2025 -->
 </div>
 </body>
 </text></TEI>
