@@ -11,8 +11,17 @@
                         Edition der Bernoulli-Briefwechsel</title></title>
             </titleStmt>
             <editionStmt>
-                <edition>manualPlaceholderContent</edition>
-                <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+                <edition>Basler Edition der Bernoulli-Briefwechsel</edition>
+                <editor>
+  <persName key="pers_DE-588-117433391X">
+    <surname>Nagel</surname>
+    <forename>Fritz</forename>
+  </persName>
+  <persName key="pers_DE-588-128594551">
+    <surname>Gehr</surname>
+    <forename>Sulamith</forename>
+  </persName>
+</editor>
                 <respStmt>
                     <persName key="pers_DE-588-"><surname/><forename/></persName>
                     <resp><note type="remarkResponsibility"/></resp>
@@ -128,8 +137,7 @@
                 <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
                 <listPerson>
                     <person>
-                        <persName key="pers_DE-588-1069608270">Treytorrens, François-Frédéric
-                            de</persName>
+                        <persName key="pers_DE-588-1069608270">Treytorrens, François-Frédéric de</persName>
                         <note type="lebensdaten">(1687-1737)</note>
                     </person>
                 </listPerson>
@@ -138,6 +146,9 @@
         </profileDesc>
         <revisionDesc status="teiKodiert">
             <listChange>
+                <change when="2025-10-09" who="RG">Personen und Orte ausgezeichnet</change>
+                <change when="2025-10-09" who="RG">Zeilabstände eingefügt</change>
+                <change when="2025-10-09" who="RG">Seitenzahlen, Briefstruktur</change>
                 <change notAfter="1966-02-14">transkribiert</change>
             </listChange>
         </revisionDesc>
@@ -148,41 +159,58 @@
     <text>
         <body>
             <div type="letter">
-                <pb facs="1063273" n="1"/>
-                <pb facs="1063274" n="2"/>
-                <pb facs="1063275" n="3"/>
-                <pb facs="1063276" n="4"/>
-                <pb facs="1063277" n="5"/>
-                <pb facs="1063278" n="6"/>
-                <pb facs="1063279" n="7"/>
-                <pb facs="1063280" n="8"/>
-                <opener><dateline>A Lausanne ce <date when="1716-03-03">3e. Mars
-                        1716</date></dateline>
-                    <lb/>Monsieur<salute/></opener>
-                <p> Voici le modele de deux Tables par le moien des quelles on peut trouver tout
-                    d’un coup le produit d’autant de nombres entiers qu’on voudra; Le quotient d’un
-                    nombre entier quelconque, divisé par un autre nombre. La Racine quar rée,
-                    cubique, etc. d’un nombre entier pris à volonté. On pouroit encor par leur moien
-                    reduire tout d’un coup deux ou plusieurs nombres entiers à leurs moindres
-                    termes, une racine sourde à sa plus simple expression; ajouter ensemble deux ou
-                    plusieurs racines sourdes commensurables etc. Ces deux Tables sont très aisées à
-                    calculer, et on pourcit disposer les nombres ensorte qu’étant poussés jusques à
-                    un milion, elles occuperoient un Volume moindre que celui des Tables des
-                    Logarythmes, et elles seroient exactes dans toute la rigueur geometrique. Celui
-                    qui les a inventées est un de mes amys qui s’appelle de Treytorrens; c’est un
-                    jeune homme d’un grand merite; il s’est poussé dans les mathematiques aussi loin
-                    qu’aucun autre de son âge; et les connoissances qu’il en a sont très solides,
-                    selon le jugement des personnes habiles dans cett’Etude. Il est resolu d’aller à
-                    Paris dans une couple de mois, où il restera pendant quéque tems. Il m’a chargé
-                    de vous faire ses honneurs, quoiqu’il n’ait pas l’avantage d’etre connu de vous;
-                    cependant il m’a dit qu’il vous connoissoit par quéques pieces de vôtre facon
-                    qu’il a vues. Si vous voulez luy accorder vôtre amitié, vous ne l’accorderez
-                    pas à une personne qui en sera indigne; c’est de quoi je vous puis garantir.
-                    Souffrez donc Monsieur que je vous la demande pour lui; et daignez me reçevoir
-                    au nombre de vos Disciples; c’est la grace que desire celui qui est avec une
-                    parfaite estime</p>
-                <closer>Monsieur Vôtre tres humble et très obeissant Serviteur <signed>J. H. Corner
-                        chez Mr. le Banderet Seigneur</signed></closer>
+                <pb facs="1063273" n="1"/>             
+                <opener>
+                    <dateline>
+                        <lb/>A <rs key="place_GEO-2659994" type="place">Lausanne</rs> ce <date when="1716-03-03">3.<hi rend="sup">e</hi> Mars 1716</date>
+                    </dateline>
+                    <salute>
+                        <lb/>Monsieur
+                    </salute>
+                </opener>
+                <p>
+                    <lb/>Voici le modele de deux Tables par le moien des quelles on peut trouver
+                    <lb/>tout d’un coup le produit d’autant de nombres entiers qu’on voudra; Le
+                    <lb/>quotient d’un nombre entier quelconque, divisé par un autre nombre.
+                    <lb/>La Racine quarrée, cubique, <abbr>etc.</abbr> d’un nombre entier pris à volonté.
+                    <lb/>On pouroit encor par leur moien reduire tout d’un coup deux ou plu<pc type="hyphenation">-</pc><lb break="no"/>sieurs nombres entiers à leurs moindres termes, une racine sourde
+                    <lb/>à sa plus simple expression; ajouter ensemble deux ou plusieurs
+                    <lb/>racines sourdes commensurables <abbr>etc</abbr>.
+                </p>
+                <p>Ces deux Tables sont très aisées
+                    <lb/>à calculer, et on pouroit disposer les nombres ensorte qu’étant
+                    <lb/>poussé<subst><del>e</del><add>s</add></subst> jusques à un milion, elles occuperoient un Volume moin<pc type="hyphenation">-</pc><lb break="no"/>dre que celui des Tables des Logarythmes, et elles seroient exactes
+                    <lb/>dans toute la rigueur geometrique. Celui qui les a inventées
+                  <pb facs="1063274" n="2" type="empty"/>
+                  <pb facs="1063275" n="3"/>                   
+                    <lb/>est un de mes amys qui s’appelle de <rs key="pers_DE-588-1069608270" type="person">Treytorrens</rs>; c’est un jeune homme
+                    <lb/>d’un grand merite; il s’est poussé dans les mathematiques aussi loin qu’aucun
+                    <lb/>autre <add>de son âge</add>; et les connoissances qu’il en a sont très solides, selon le jugement des
+                    <lb/>personnes habiles dans cett’Etude. Il est resolu d’aller à <rs key="place_GEO-2988507" type="place">Paris</rs> dans une couple
+                    <lb/>de mois, où il restera pendant quéque tems. Il m’a chargé de vous faire
+                    <lb/>ses honneurs, quoiqu’il n’ait pas l’avantage d’étre<!-- hier wurde etwas überschrieben, RG 09.10.2025 --> connu de<!-- hier wurde etwas überschrieben, RG 09.10.2025 --> <add>vous</add>; cependant
+                    <lb/>il m’a dit qu’il vous connoissoit par quéques pieces de vôtre facon qu’il a vues<!-- irgend ein Sonderzeichen, RG 09.10.2025 -->.
+                    <lb/>Si vous voulez luy accorder vôtre amitié, vous ne l’accorderez pas à une
+                    <lb/>personne qui en sera indigne; c’est de quoi je vous puis garantir. Souffrez
+                    <lb/>donc Monsieur que je vous la demande pour lui; et daignez me reçevoir
+                    <lb/>au nombre de vos Disciples; c’est la grace que desire celui qui est avec
+                    <lb/>une parfaite estime
+                </p>
+                <closer>
+                    <salute>
+                        <lb/>Monsieur
+                        <lb/>Vôtre tres humble et très
+                        <lb/>obeissant Serviteur
+                    </salute>
+                    <signed>
+                        <lb/><rs type="person"><abbr>J<supplied>.</supplied></abbr> <abbr>H<supplied>.</supplied></abbr> Corner</rs>
+                        <lb/>chez <abbr>M.<hi rend="sup">r</hi></abbr> le <rs type="person">Banderet Seigneur</rs></signed>
+                </closer>
+                <pb facs="1063276" n="4" type="empty"/>
+                <pb facs="1063277" n="5" type="empty"/>
+                <pb facs="1063278" n="6"/><!-- Hier noch eine Tabelle, RG 09.10.2025 -->
+                <pb facs="1063279" n="7"/><!-- Hier noch eine Tabelle, RG 09.10.2025 -->
+                <pb facs="1063280" n="8" type="empty"/>
             </div>
         </body>
     </text>

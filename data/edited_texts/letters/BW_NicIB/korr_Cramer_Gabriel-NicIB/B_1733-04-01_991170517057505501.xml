@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_991170517057505501" xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<TEI xml:id="B_991170517057505501" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
   <fileDesc>
     <titleStmt>
       <title type="full">
@@ -11,13 +13,17 @@
       </title>
     </titleStmt>
     <editionStmt>
-      <edition>manualPlaceholderContent</edition>
+      <edition>Basler Edition der Bernoulli-Briefwechsel</edition>
       <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
+  <persName key="pers_DE-588-117433391X">
+    <surname>Nagel</surname>
+    <forename>Fritz</forename>
+  </persName>
+  <persName key="pers_DE-588-128594551">
+    <surname>Gehr</surname>
+    <forename>Sulamith</forename>
+  </persName>
+</editor>
       <respStmt>
         <persName key="pers_DE-588-">
           <surname/>
@@ -159,9 +165,11 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-24" who="RG">Matheformeln angepasst</change>
+      <change when="2025-09-24" who="RG">Code durchgeschaut, ergänzt, korr.</change>
+      <change when="2025-09-24" who="RG">Seitenzahlen, Briefstruktur nach dem Brief (Bibliothek in Genf)</change><!-- Seiten "facs" noch referenzieren. Grafiken noch einfügen. RG 24.09.2025 -->
       <change when="2023-09-26" who="RG">Personen und Orte ausgezeichnet</change>
       <change when="2023-08-30" who="RG">Zeilabstände eingefügt, und &amp; ergänzt</change>
-      <!-- Die Abschrift wurde verwendet, Original BPU Genf -->
       <change when="2023-08-30" who="RG">Seitenzahlen, Briefstruktur</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
@@ -177,163 +185,214 @@
 <!--_____________-->
 
 <facsimile>
-  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/dao/0/1/idsearch:RECH_42f48254910cb73aa9849d06574b2089?id=https%3A%2F%2Farchives.bge-geneve.ch%2Fark%3A%2F17786%2Fvta4c6c492f3d363e5f%2Fcanvas%2F0%2F25 RG 05.09.2025-->
+  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/dao/0/25 RG 05.09.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="-" n="1"/>
+  <pb facs="-" n="1"/><!-- Seiten "facs" noch referenzieren, RG 19.09.2025 -->
 <opener>
   <salute>
     <lb/>Monsieur,
   </salute>
 </opener>
-<p><lb/>Quoique je n’aye pas eu le dessein de vous rendre la pareille, il m’est
-                           <lb/>pourtant arrivé le malheur, que mon silence a même sur passé le vôtre;
-                           <lb/>j’en suis tres faché. Des occupations occasion nées par <del/>le nouvel emploi,
-                           <lb/>dont le sort m’a favorisé presque malgré moi, des frequentes indispositions,
-                           <lb/>un peu de paresse, et beaucoup d’autres distractions m’ont detourné de
-                           <lb/>mon devoir. Je vous avoue, que j’aurois dû au moins vous accuser la
-                              <lb/>reception de vôtre <rs type="letter">lettre</rs> et du livre de Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, et vous remercier en
-                           <lb/>même temps de vos complimens de felicitation à l’occasion de mon avan<pc type="hyphenation">-</pc><lb break="no"/>cement à la chaire de droit, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi de vos belles theses de gravitate
-                        <pb facs="-" n="2"/>
-<lb/>dont vous m’avés envoyé un exemplaire par mon <rs type="person">Cousin</rs>. Mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il
-                           <lb/>vaut mieux tard que jamais, j’espere que vous voudrés bien me pardon<pc type="hyphenation">-</pc><lb break="no"/>ner ma negligence, <add>accepter les remerciments que je vous fais presentement,</add> et prendre en bonne part le peu que j’ai l’honneur
-                           <lb/>de vous écrire. N’étant pas en état de vous co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniquer de nouveautés
-                           <lb/>qui vous pourroient faire plaisir, et n’ayant plus tourné la tête du
-                           <lb/>coté des Mathematiques, je me bornerai à toucher seulement quelques
-                           <lb/>articles de votre lettre.</p>
-<p>Je suis moi même de votre sentiment, que dans
-                           <lb/>ma methode pour trouver les Numerateurs des fractions dans lesquelles se
-                           <lb/>decompose la fraction <formula>\frac{1}{1\pm qz^{n}+z^{2n}}</formula> il y a cela à redire, que les valeurs
-                           <lb/>de <formula>e</formula> et de <formula>f</formula> ne sont trouvées que par induction, quoique cette induction
-                           <lb/>soit assés sensible et manifeste. C’est pour cette raison que quant à l’ele<pc type="hyphenation">-</pc><lb break="no"/>gance ma methode doit entierement ceder à celle de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, la<pc type="hyphenation">-</pc><lb break="no"/>quelle <del/>me paroit tres elegante, quoiqu’elle contienne quelque
-                           <lb/>chose qui pourroit faire de la peine à quelqu’un qui n’examineroit
-                           <lb/>pas la chose avec toute l’attention possible: Je conte que vous aurés reçu
-                           <lb/>le livre de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs> et vû les demonstrations de sa methode. Il demon<pc type="hyphenation">-</pc><lb break="no"/>tre par le moyen de l’hiperbole que deux arcs A et B étant co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e n à 1, le
-                           <lb/><add>sinus total = 1,</add> le cosinus de l’arc <formula>A=L</formula>, le cosinus de l’arc B=x, il y aura <formula>x=\frac{(L+\sqrt{LL-1})^{\frac{1}{n}}}{2}+</formula>
-<lb/><formula>\frac{\frac{1}{2}}{(L+\sqrt{LL-1})^{\frac{1}{n}}}</formula> (ce que je tire aisement de mes formules trouvées par la methode
-                           <lb/>des suites recurrentes) puis il fait <formula>(L+\sqrt{LL-1})^{\frac{1}{n}}=z</formula>, ce qui donne ces deux équa<pc type="hyphenation">-</pc><lb break="no"/>tions <formula>z^{2n}-2Lz^{n}+1=0</formula>, et <formula>zz-2xz+1=0</formula>, d’où il conclud que <formula>z^{2n}-2Lz^{n}+1</formula> se
-                           <lb/>laisse diviser par <formula>zz-2xz+1</formula>. Or je connois quelqu’un, qui a objecté que <formula>L</formula> étant
-                           <lb/>plus petit que <formula>1</formula>, la quantité <formula>z</formula> doit necessairement etre imaginaire, et le
-                           <lb/>dominateur de la fraction à décomposer <formula>z^{2n}-2Lz^{n}+1=0</formula>, ce qui paroit
-                           <lb/>etre absurde, puisque le <add>dit</add> denominateur est supposé etre quelque chose, et
-                           <lb/>pusique <formula>z</formula> est une quantité variable <add>et reelle,</add> et non point égale à la quantité
-                           <lb/>constante <add>et imaginaire</add> <formula>(L+\sqrt{LL-1})^{\frac{1}{n}}</formula>. C’est pourquoi l’on a soubçonné <add>que dans</add> cette methode il y a
-                           <lb/>un paralogisme; cependant <add>en</add> consider<del>er</del><add>ant</add> la chose de plus pres, et en
-                        <pb facs="-" n="3"/>
-<lb/>suppléant au defaut du stile concis et obscur de Mr. <rs key="pers_DE-588-117586765" type="person">de Moivre</rs>, on trouve<pc type="hyphenation">-</pc><lb break="no"/>ra qu’il n’y a point de paralogisme. Voici co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent j’ai considéré la chose:
-                           <lb/>Soit <formula>zz-2xz+1</formula> le diviseur cherché de la quantité proposée z<hi rend="sup">2n</hi> - 2Lz<hi rend="sup">n</hi> + 1,
-                           <lb/>où <formula>z</formula> signifie une quantité variable, <formula>L</formula> une quantité constante donnée, <formula>x</formula> une
-                           <lb/>quantité constante cherchée et qu’on doit determiner par les valeurs de <formula>L</formula> et
-                           <lb/>de <formula>n</formula>. Puisque donc <formula>zz-2xz+1</formula> est le diviseur general de la quantité z<hi rend="sup">2n</hi>
-<lb/>- 2Lz<hi rend="sup">n</hi> + 1, <add>quelque valeur que l’on donne à z,</add> il le sera aussi dans le cas de <formula>zz-2xz+1=0</formula>, ou de <formula>z=x+\sqrt{xx-1}</formula>,
-                           <lb/>et alors la quantité proposée z<hi rend="sup">2n</hi> - 2Lz<hi rend="sup">n</hi> + 1, étant le produit <del/>
-<lb/><del/>du facteur <formula>zz-2xz+1=0</formula> par <del/>un autre facteur <formula>z^{2n-2}+az^{2n-1}+\mbox{\&amp;c.}</formula>
-<lb/>doit aussi etre egale à zero, d’où l’on tirera <formula>z=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula>; ces deux
-                           <lb/>valeurs de <formula>z=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula> et <formula>=x+\sqrt{xx-1}</formula> étant égalées ensemble<del/> donnent
-                           <lb/><formula>2x=(L+\sqrt{LL-1})^{\frac{1}{n}}+\frac{1}{(L+\sqrt{LL-1})^{\frac{1}{n}}}</formula>; d’où il faut conclure que 2x étant une
-                           <lb/>quantité constante, quelque valeur que l’on donne à <formula>z</formula>, il sera non seule<pc type="hyphenation">-</pc><lb break="no"/>ment dans le cas de <formula>zz-2xz+1=0</formula>, ou de <formula>z=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula>, mais generale<pc type="hyphenation">-</pc><lb break="no"/>ment dans tous les autres <add>cas</add> <formula>2x=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula>. Et voila ce qui
-                           <lb/>est à mon avis la plus courte et la plus simple methode de trouver les
-                           <lb/>diviseurs de la quantité z<hi rend="sup">2n</hi> - 2Lz<hi rend="sup">n</hi> + 1. Mais voici aussi une maniere
-                           <lb/>demonstrative de trouver la valeur de <formula>e</formula> et de <formula>f</formula> dans le numerateur<del>s</del> de la
-                           <lb/>fraction <formula>\frac{e-fx}{1-xz+zz}</formula>, laquelle vous pouvés substituer à celle de l’induction
-                           <lb/>dont je me suis servi dans ma lettre precedente. Soit supposé <formula>\frac{1}{1-2Lz^{n}+z^{2n}}=</formula>
-<lb/><formula>\frac{e-fz}{1-xz+zz}+\frac{\alpha+\beta z+\gamma zz+\delta z^{3}+\ldots\mu z^{n-2}+Mz^{n-1}+\ldots Cz^{2n-5}+Bz^{2n-4}+Az^{2n-3}}{1+az+bzz+cz^{3}+\ldots rz^{n-3}+sz^{n-2}+tz^{n-1}+sz^{n}+\ldots az^{2n-3}+z^{2n-2}}</formula>
-<lb/>en reduisant ces deux dernieres fractions au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un denominateur <formula>1-2Lz^{n}+z^{2n}</formula>
-<lb/>en multipliant par croix, et en faisant <formula>\alpha+e=1</formula>, et les coefficients de
-                           <lb/>chaque puissance de <formula>z=0</formula>, on aura les équations suivantes. <formula>\begin{array}{ll} \alpha+e=1 &amp; A-f=0\\ \beta-\alpha x+ae-f=0 &amp; B-Ax+e-af=0\\ \gamma-\beta x+\alpha+be-af=0 &amp; C-Bx+A+ae-bf=0\\ \delta-\gamma x+\beta+ce-bf=0 &amp; D-CX+B-be-cf=0\\ \epsilon-\delta x+\gamma+de-cf=0 &amp; E-Dx+C+ce-df=0 \end{array}</formula> &amp;c. &amp;c. </p>
-<p>lesquelles après avoir substitué pour x, ax, bx, cx, &amp;c. res pectivement <formula>a,1+b,a+c,b+d,\mbox{\&amp;c.}</formula> selon la nature de la suite recurrente <formula>1, a, b, c, d, &amp;c.</formula>
+<p>
+  <lb/>Quoique je n’aye pas eu le dessein de vous rendre la pareille, il m’est
+  <lb/>j’en suis trés faché. Des occupations occasio<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ées par le nouvel emploi, dont le 
+  <lb/>sort m’a favorisé presque malgré moi, des frequentes indispositions, un peu de
+  <lb/>paresse, et beaucoup d’autres distractions m’ont detourné de mon devoir. Je
+  <lb/>vous avoue, que j’aurois dû au moins vous accuser la reception de vôtre 
+  <lb/><rs key="B_991170517057605501" type="letter">Lettre</rs><!-- Nicht ganz sicher, ob es wirklich dieser Brief ist oder nicht, RG 19.09.2025--> et du <rs type="biblio">Livre</rs><!-- noch referenzieren, 19.09.2025 --> de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, et vous remercier en même temps de Vos
+  <lb/>complimens de felicitation à l’occasion de mon avancement à la chaire de
+  <lb/>droit, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e aussi de vos belles theses de gravitate dont vous m’avés envoyé
+  <lb/>un exemplaire par mon <rs key="pers_DE-588-118656503" type="person">Cousin</rs>. Mais co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e il vaut mieux tard que jamais,
+  <lb/>j’espere que vous voudrés bien me pardonner ma negligence, accepter les 
+  <lb/>remerciments que je vous fais presentement, et prendre en bonne part le 
+  <lb/>peu que j’ai l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de vous écrire. N’étant pas en état de vous co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>u<pc type="hyphenation">-</pc><lb break="no"/>niquer de nouveautés qui vous pourroient faire plaisir, et n’ayant plus
+  <lb/>tourné la tête du coté des Mathematiques, je me bornerai à toucher seu<pc type="hyphenation">-</pc><lb break="no"/>lement quelques articles de vôtre <rs key="B_991170517057605501" type="letter">Lettre</rs>.
+</p>
+<p>
+  <lb/>Je suis moi même de votre sentiment, que dans ma methode pour trouver
+  <lb/>les Numerateurs des fractions dans lesquelles se decompose la fraction <formula>\frac{1}{1\pm qz^{n}+z^{2n}}</formula>
+  <lb/>il y a cela à redire, que les valeurs de <hi rend="u"><formula>e</formula></hi> et de <hi rend="u"><formula>f</formula></hi> ne sont trouvées que par
+  <lb/>induction, quoique cette induction soit assés sensible et manifeste. C’est
+  <lb/>pour cette raison que quant à l’élégance ma methode doit entierement
+  <lb/>ceder à celle de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, laquelle <del/>me paroit trés élégante, quoi<pc type="hyphenation">-</pc><lb break="no"/>qu’elle contienne quelque chose qui pourroit faire de la peine à quelqu’<pc type="hyphenation"></pc><lb break="no"/>un qui n’examineroit pas la chose avec toute l’attention possible: Je
+  <lb/>conte que vous aurés reçû le <rs type="biblio">Livre</rs> de <abbr>Mr.</abbr> de <rs key="pers_DE-588-117586765" type="person">Moivre</rs> et vû les demonstra<pc type="hyphenation">-</pc><lb break="no"/>tions de sa methode. Il demontre par le moyen de l’hiperbole que deux arcs
+  <lb/><formula>A</formula> et <formula>B</formula> étant co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e <formula>n</formula> à <formula>1</formula>, le sinus total <formula>=1</formula>, le <add>co</add>sinus de l’arc <formula>A=L</formula>, le cosinus
+  <lb/>de l’arc <formula>B=x</formula>, il y aura <choice rend="regFormula"><orig><formula>x=\frac{\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}}{2}+\frac{\frac{1}{2}}{\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}}</formula></orig><reg><formula>x=\frac{(L+\sqrt{LL-1})^{\frac{1}{n}}}{2}+\frac{\frac{1}{2}}{(L+\sqrt{LL-1})^{\frac{1}{n}}}</formula></reg></choice> <subst><del>:</del><add><choice><orig><g ref="#klammerauf">|:</g></orig><reg>(</reg></choice></add></subst>ce que je tire aisément 
+<pb facs="-" n="2"/>
+  <lb/>de mes formules trouvées par la methode des suites recurrentes<choice><orig><g ref="#klammerzu">:|</g></orig><reg>)</reg></choice> puis il
+  <lb/>fait <choice><orig><formula>\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}=z</formula></orig><reg><formula>(L+\sqrt{LL-1})^{\frac{1}{n}}=z</formula></reg></choice>, ce qui donne ces deux équations <formula>z^{2n}-2Lz^{n}+1=0</formula>, et
+  <lb/><formula>zz-2xz+1=0</formula>, d’où il conclud que <formula>z^{2n}-2Lz^{n}+1</formula> se laisse diviser par <formula>zz-2xz+1</formula>.
+  <lb/>Or je co<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ois quelqu’un, qui a objecté que <hi rend="u"><formula>L</formula></hi> étant plus petit que <formula>1</formula>, la quan<pc type="hyphenation">-</pc><lb break="no"/>tité <formula>z</formula> doit necessairement étre imaginaire, et le denominateur de la
+  <lb/>fraction à décomposer <formula>z^{2n}-2Lz^{n}+1=0</formula>, ce qui paroit étre absurde, puisque
+  <lb/>le dit denominateur est supposé étre quelque chose, et pusique <formula>z</formula> est une
+  <lb/>quantité variable et reelle, et non point égale à la quantité constan<pc type="hyphenation">-</pc><lb break="no"/>te et imaginaire <choice><orig><formula>\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}</formula></orig><reg><formula>(L+\sqrt{LL-1})^{\frac{1}{n}}</formula></reg></choice>. C’est pourquoi l’on a soubçonné que dans
+  <lb/>cette methode il y a un paralogisme; cependant en considerant la chose
+  <lb/>de plus prés, et en suppléant au defaut du stile concis et obscur de <abbr>Mr.</abbr> 
+  <lb/>de <rs key="pers_DE-588-117586765" type="person">Moivre</rs>, on trouvera qu’il n’y a point de paralogisme. Voici co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent
+  <lb/>j’ai considéré la chose: Soit <formula>zz-2xz+1</formula> le diviseur cherché de la quantité
+  <lb/>proposée <formula>z^{2n}-2Lz^{n}+1</formula>, où <formula>z</formula> signifie une quantité variable, <hi rend="u"><formula>L</formula></hi> une quantité
+  <lb/>constante donnée, <formula>x</formula> une quantité constante cherchée et qu’on doit determiner
+  <lb/>par les valeurs de <hi rend="u"><formula>L</formula></hi> et de <hi rend="u"><formula>n</formula></hi>. Puisque donc <formula>zz-2xz+1</formula> est le diviseur general de
+  <lb/>la quantité <formula>z^{2n}-2Lz^{n}+1</formula>, quelque valeur que l’on donne à <formula>z</formula>, il le sera aussi
+  <lb/>dans le cas de <formula>zz-2xz+1=0</formula>, ou de <formula>z=x+\sqrt{xx-1}</formula>, et alors la quantité propo<pc type="hyphenation">-</pc><lb break="no"/>sée <formula>z^{2n}-2Lz^{n}+1</formula>, étant le produit du facteur <formula>zz-2xz+1=0</formula> par un autre facteur
+  <lb/><choice rend="regFormula"><orig><formula>z^{2n-2}+az^{2n-1}+\mbox{\&amp;c.}</formula></orig><reg><formula>z^{2n-2}+az^{2n-1}+\mbox{etc.}</formula></reg></choice> doit aussi étre égale à zero, d’où l’on tirera <choice rend="regFormula"><orig><formula>z=\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}</formula></orig><reg><formula>z=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula></reg></choice>;
+  <lb/>ces deux valeurs de <choice rend="regFormula"><orig><formula>z=\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}</formula></orig><reg><formula>z=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula></reg></choice> et <formula>=x+\sqrt{xx-1}</formula> étant égalées ensemble donnent
+  <lb/><choice rend="regFormula"><orig><formula>2x=\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}+\frac{1}{\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}}</formula></orig><reg><formula>2x=(L+\sqrt{LL-1})^{\frac{1}{n}}+\frac{1}{(L+\sqrt{LL-1})^{\frac{1}{n}}}</formula></reg></choice>; d’où il faut conclure que <formula>2x</formula> étant une quantité
+  <lb/>constante, quelque valeur que l’on donne à <formula>z</formula>, il sera non seulement dans le
+  <lb/>cas de <formula>zz-2xz+1=0</formula>, ou de <choice><orig><formula>z=\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}</formula></orig><reg><formula>z=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula></reg></choice>, mais generalement dans tous les au<pc type="hyphenation">-</pc><lb break="no"/>tres cas <choice><orig><formula>2x=\overline{L+\sqrt{LL-1}}^{\frac{1}{n}}</formula></orig><reg><formula>2x=(L+\sqrt{LL-1})^{\frac{1}{n}}</formula></reg></choice>. Et voilà ce qui est à mon avis la plus
+  <lb/>courte et la plus simple methode de trouver les diviseurs de la quantité
+  <lb/><formula>z^{2n}-2Lz^{n}+1</formula>. Mais voici aussi une maniere demonstrative de trouver la
+  <lb/>valeur de <hi rend="u"><formula>e</formula></hi> et de <hi rend="u"><formula>f</formula></hi> dans le numerateur de la fraction <formula>\frac{e-fx}{1-xz+zz}</formula>, laquelle
+<pb facs="-" n="3"/>
+  <lb/>Vous pouvés substituer à celle de l’induction dont je me suis servi dans ma
+  <lb/><rs key="B_991170517057905501" type="letter">lettre</rs> precedente. Soit supposé <formula>\frac{1}{1-2Lz^{n}+z^{2n}}=\frac{e-fz}{1-xz+zz}+</formula>
+  <lb/><formula>\frac{\alpha+\beta z+\gamma zz+\delta z^{3}+\ldots\mu z^{n-2}+Mz^{n-1}+\ldots Cz^{2n-5}+Bz^{2n-4}+Az^{2n-3}}{1+az+bzz+cz^{3}+\ldots rz^{n-3}+sz^{n-2}+tz^{n-1}+sz^{n}+\ldots az^{2n-3}+z^{2n-2}}</formula>, en reduisant ces
+  <lb/>deux dernieres fractions au co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>un denominateur <formula>1-2Lz^{n}+z^{2n}</formula> en multipliant
+  <lb/>par croix, et en faisant <formula>\alpha+e=1</formula>, et les coefficients de chaque puissance de <formula>z</formula>
+  <lb/><formula>=0</formula>, on aura les équations suivantes, lesquelles aprés avoir substitué pour
+  <lb/><formula>x</formula>, <formula>ax</formula>, <formula>bx</formula>, <formula>cx</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> respectivement
+  <lb/><formula>a</formula>, <formula>1+b</formula>, <formula>a+c</formula>, <formula>b+d</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> selon la na<pc type="hyphenation">-</pc><lb break="no"/>ture de la suite recurrente <formula>1</formula>, <formula>a</formula>,
+  <lb/><formula>b</formula>, <formula>c</formula>, <formula>d</formula>, <abbr>&amp;c.</abbr> se changeront en
+  <lb/>celles ci:  
+  <lb/><choice rend="regFormula"><reg><formula>
+    \begin{array}{ll} \alpha+e=1 &amp; A-f=0\\
+    \beta-\alpha x+ae-f=0 &amp; B-Ax+e-af=0\\
+    \gamma-\beta x+\alpha+be-af=0 &amp; C-Bx+A+ae-bf=0\\
+    \delta-\gamma x+\beta+ce-bf=0 &amp; D-CX+B-be-cf=0\\
+    \epsilon-\delta x+\gamma+de-cf=0 &amp; E-Dx+C+ce-df=0\\
+    \mbox{\&amp;c.} &amp; \mbox{\&amp;c.}\\
+    \alpha=1-e &amp; A=f\\
+    \beta=a-2ae+f &amp; B=2af-e\\
+    \gamma=b-3be+2af-e &amp; C=3bf-2ae+f\\
+    \delta=c-4ce+3bf-2ae+f &amp; D=4cf-3be-2af-e\\
+    \epsilon=d-5de+4cf-3be+2af-e &amp; E=5df-4ce+3bf-2ae+f\\
+    \vdots &amp; \vdots\end{array}</formula></reg>
+    <orig><formula>
+    \begin{array}{ll} \alpha+e=1 &amp; A-f=0\\
+    \beta-\alpha x+ae-f=0 &amp; B-Ax+e-af=0\\
+    \gamma-\beta x+\alpha+be-af=0 &amp; C-Bx+A+ae-bf=0\\
+    \delta-\gamma x+\beta+ce-bf=0 &amp; D-CX+B-be-cf=0\\
+    \epsilon-\delta x+\gamma+de-cf=0 &amp; E-Dx+C+ce-df=0\\
+    \mbox{etc.} &amp; \mbox{etc.}\\
+    \alpha=1-e &amp; A=f\\
+    \beta=a-2ae+f &amp; B=2af-e\\
+    \gamma=b-3be+2af-e &amp; C=3bf-2ae+f\\
+    \delta=c-4ce+3bf-2ae+f &amp; D=4cf-3be-2af-e\\
+    \epsilon=d-5de+4cf-3be+2af-e &amp; E=5df-4ce+3bf-2ae+f\\
+    \vdots &amp; \vdots\end{array}</formula></orig></choice>
+  <lb/><choice rend="regFormula"><orig><formula>\mu=s-\overline{n-1}\cdot se+\overline{n-2}\cdot rf-\overline{n-3}\cdot qe+\mbox{\&amp;c.}\cdot M=\overline{n-1}\cdot sf-\overline{n-2}\cdot re+\overline{n-3}\cdot qf-\mbox{\&amp;c.}</formula></orig><reg><formula>\mu=s-(n-1)\cdot se+(n-2)\cdot rf-(n-3)\cdot qe+\mbox{etc.}\cdot M=(n-1)\cdot sf-(n-2)\cdot re+(n-3)\cdot qf-\mbox{etc.}</formula></reg></choice>
+  <lb/><choice rend="regFormula"><orig><formula>M=t-nte+\overline{n-1}\cdot sf-\overline{n-2}\cdot re+\mbox{\&amp;c.}\cdot \mu=ntf-\overline{n-1}\cdot se+\overline{n-2}\cdot rf-\mbox{\&amp;c.}</formula></orig><reg><formula>M=t-nte+(n-1)\cdot sf-(n-2)\cdot re+\mbox{etc.}\cdot \mu=ntf-(n-1)\cdot se+(n-2)\cdot rf-\mbox{etc.}</formula></reg></choice>
+</p>
+<p>
+  <lb/>Les deux valeurs de <formula>M</formula> égalées ensemble donnent <formula>t-nte=0</formula>, ou <formula>e=\frac{1}{n}</formula>, et les
+  <lb/>deux valeurs de <formula>\mu</formula> donnent <formula>s=ntf</formula> ou <formula>f=\frac{s}{nt}</formula>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’ai trouvé par induction
+  <lb/>dans la solution de mon Probleme 5.
+</p>
+<p>
+  <lb/>L’approbation que vous donnés à ma methode de demontrer l’interpolation
+  <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> pour ces suites <choice rend="regFormula"><orig><formula>\frac{r\cdot r+1\cdot r+2\cdots r+z-1}{p\cdot p+1\cdot p+2\cdots p+z-1}</formula></orig><reg><formula>\frac{r\cdot(r+1)\cdot(r+2)\cdots(r+z-1)}{p\cdot(p+1)\cdot(p+2)\cdots(p+z-1)}</formula></reg></choice> ou plus generalement
+  <lb/><choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdot r+2b\cdots r+zb-b}{p\cdot p+b\cdot p+2b\cdots p+zb-b}</formula></orig><reg><formula>\frac{r\cdot(r+b)\cdot(r+2b)\cdots(r+zb-b)}{p\cdot(p+b)\cdot(p+2b)\cdots(p+zb-b)}</formula></reg></choice> me console de la raillerie piquante de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, qui
+  <lb/>sur ce que j’avois dit, que j’avois deduit la dite interpolation d’un theoreme com<pc type="hyphenation">-</pc><lb break="no"/>muniqué à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> il y a 15<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans, repond dans sa <rs type="letter">lettre</rs>, qu’on peut de<pc type="hyphenation">-</pc><lb break="no"/>duire de la même interpolation aussi aisement d’un theoreme plus simple publié
+  <lb/>par <rs key="pers_DE-588-118771167" type="person">Wallis</rs> il y a 75<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans, savoir que <formula>\frac{1}{n}x^{n}</formula> est l’aire d’une Courbe dont l’ordonnée
+  <lb/>est <formula>x^{n-1}</formula>. Puisqu’il est question des interpolations par les aires des Courbes,
 <pb facs="-" n="4"/>
-<lb/>se changeront en celles ci: <formula>\begin{array}{ll} \alpha=1-e &amp; A=f\\ \beta=a-2ae+f &amp; B=2af-e\\ \gamma=b-3be+2af-e &amp; C=3bf-2ae+f\\ \delta=c-4ce+3bf-2ae+f &amp; D=4cf-3be-2af-e\\ \epsilon=d-5de+4cf-3be+2af-e &amp; E=5df-4ce+3bf-2ae+f\\ \vdots &amp; \vdots \end{array}</formula>
-<formula>\mu=s-(n-1)se+(n-2)rf-(n-3)qe+\mbox{\&amp;c.}M=(n-1)sf-(n-2)re+(n-3)qf-\mbox{\&amp;c.}M=t-nte+(n-1)af-(n-2)re+\mbox{\&amp;c.}\mu=ntf-(n-1)se+(n-2)rf-\mbox{\&amp;c.}</formula>
-<lb/>Les deux valeurs de M égalées ensemble donnent <formula>t-nte=0</formula>, ou <formula>e=\frac{1}{n}</formula>, 
-                           <lb/>et les deux valeurs de <formula>\mu</formula> donnent <formula>s=ntf</formula> ou <formula>f=\frac{s}{nt}</formula>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’ai trouvé par
-                           <lb/>induction dans la solution de mon Probleme 5.</p>
-<p><lb/>L’approbation que vous donnés à ma methode de demontrer l’interpolation
-                           <lb/>de Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs> pour ces suites <formula>\frac{r\cdot(r+1)\cdot(r+2)\cdots(r+z-1)}{p\cdot(p+1)\cdot(p+2)\cdots(p+z-1)}</formula> ou plus generalement
-                              <lb/><formula>\frac{r\cdot(r+b)\cdot(r+2b)\cdots(r+zb-b)}{p\cdot(p+b)\cdot(p+2b)\cdots(p+zb-b)}</formula> me console de la raillerie piquante de Mr. <rs key="pers_DE-588-117260266" type="person">Stir<pc type="hyphenation">-</pc><lb break="no"/>ling</rs>, qui sur ce que j’avois dit, que j’avois deduit la dite interpolation d’un
-                           <lb/>theoreme <del/>co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>uniqué à Mr. <rs key="pers_DE-588-117601020" type="person">de Montmort</rs> il y a 15. ans, repond dans
-                           <lb/>sa lettre, qu’on peut deduire de la meme interpolation aussi aisement
-                           <lb/>d’un <del/>theoreme plus simple publié par <del/><rs key="pers_DE-588-118771167" type="person">Wallis</rs> il y a 75. ans,
-                           <lb/>savoir que est l’aire d’une Courbe dont l’ordonnée est <formula>x^{n-1}</formula>. Puisqu’
-                           <lb/>il est question des interpolations par les <del/><add>aires</add> des Courbes, il faut sans
-                           <lb/>doute savoir la maniere de trouver ces aires, et j’ai <del>cette </del>su cette ma<pc type="hyphenation">-</pc><lb break="no"/>niere par le moyen du calcul integral avant que d’avoir lu <hi>l’Arithme<pc type="hyphenation">-</pc><lb break="no"/>tica Infinitorum</hi> de <del/><rs key="pers_DE-588-118771167" type="person">Wallis</rs>. Mais il y a une grande difference
-                           <lb/>entre le secours que do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>e ce theoreme de <del/><rs key="pers_DE-588-118771167" type="person">Wallis</rs> et celui que donne
-                           <lb/>mon theoreme. J’ai vu avec plaisir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent vous avés rendu mon dit
-                           <lb/>theoreme plus general, mais je n’ai pas pris la peine de chercher la
-                           <lb/>demonstration de votre <del/><add>decouverte</add>.
-                        <pb facs="-" n="5"/>
-<lb/>Quant à la seconde maniere d’interpoler un terme de la suite <formula>\frac{r}{p}\cdot\frac{r+b}{p+b}\cdot\frac{r+2b}{p+2b}\cdot\mbox{\&amp;c.}</formula>
-<lb/>en faisant <formula>\frac{r\cdot(r+b)\cdots(r+2b-b)}{p\cdot(p+b)\cdots(p+2b-b)}=\frac{r(r+b)\cdots(p-b)}{(r+2b)(r+zb-b)\cdots(2b+p-b)}</formula> ou = <formula>=\frac{(p+zb)(p+zb-b)\cdots(zb+r-b)}{p(p+b)\cdots(r-b)}</formula>
-<lb/>j’avoue qu’elle ne reussit pas quand <formula>\frac{r-p}{b}</formula> n’est pas un nombre entier, et qu’en
-                           <lb/>vous la propo sant j’avois seulement en vue la suite particuliere <formula>\frac{r}{p}\cdot\frac{r+1}{p+1}\cdot\frac{r+2}{p+2}\cdot\mbox{\&amp;c.}</formula>
-<lb/>dont vous <add>m’</add>aviés <del/>parlé, et où j’avois cru <del/>que <formula>r</formula> et
-                           <lb/><formula>p</formula> signifiaient des nombres entiers. J’ai encore avoué moi même dans ma
-                           <lb/>lettre précedente à Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs> que cette derniere maniere n’est pas
-                           <lb/>d’un grand usage, lorsque la difference entre <formula>p</formula> et <formula>r</formula> est un fort grand nombre.
-                           <lb/>En un mot je <del/> n’entendois autre chose par cette seconde maniere
-                           <lb/>d’interpoler que ce que Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs> lui même a proposé dans la Prop.
-                           <lb/>XVIII. de son Livre.</p>
-<p><lb/>Le dernier article de votre lettre regarde les Courbes sur lesquelles un mobi<pc type="hyphenation">-</pc><lb break="no"/>le fait des oscillations isochrones. <del/>Vous me priés de vous marquer la
-                           <lb/>voye qui conduit à trouver une in finité de telles Courbes isochrones autres
-                           <lb/>que la Cicloide; la voici: Dans la Cicloide non seulement les oscillations
-                           <lb/>entieres sont isochrones, mais aussi leurs moitiés, c’est à dire, les temps, que
-                           <lb/>le pendule employe à descendre par des arcs quelconques jusque au plus bas
-                           <lb/>point de la même Cicloide, sont toujours égaux, de même que les temps qu’il
-                           <lb/>employe à monter par d’autres arcs égaux pour achever une vibration
-                           <lb/>entiere, au lieu que dans d’autres Courbes les deux temps,<!-- Nächsten beiden "LB/" sind eigentlich Einschübe, RG 29.08.2023 -->
-<lb/>que le pendule employe à parcourir en descendant et ensuite
-                           <lb/>en montant deux arcs differents en longueur,
-                           <lb/>peuvent etre
-                           <lb/>inegaux, et nean moins les vibrations entieres etre isochrones.
-                           <lb/>En effet pour peu que l’on fasse attention l’on verra, que pour chaque
-                           <lb/>courbe donnée <formula>BCA</formula> on peut trouver une autre <formula>Acb</formula> telle, que les vibra<pc type="hyphenation">-</pc><lb break="no"/>tions entieres par des arcs quelconques <formula>BAb</formula>, <formula>CAc</formula>, soient isochrones sans que
-                           <lb/>les mouvements par les arcs <formula>BA</formula>, <formula>CA</formula>, et ceux par les arcs <formula>Ab</formula>, <formula>Ac</formula> soient iso<pc type="hyphenation">-</pc><lb break="no"/>chrones. Pour cette fin on n’a qu’à construire la courbe <formula>Acb</formula> de telle
-                        <pb facs="-" n="6"/>
-<lb/>maniere, que les arcs <formula>BAb</formula>, <formula>CAc</formula>, <formula>GAg</formula>, <formula>HAh</formula>, &amp;c. soient respectivement égaux
-                           <lb/>aux arcs d’une Cicloide <formula>EAe</formula>, <formula>FAf</formula>, <formula>MAm</formula>, <formula>NAn</formula>, <add>&amp;c.</add> terminés par les mêmes
-                           <lb/>lignes droites horizontales <formula>Be</formula>, <formula>Cf</formula>, <formula>Gm</formula>, <formula>Hn</formula>, &amp;c. Car supposant deux oscillations par
-                           <lb/>les Courbes <formula>BA</formula>, <formula>Ab</formula>, et par la Cicloide <formula>EAe</formula>, les vitesses par les petits arcs
-                           <lb/><formula>GH</formula>, <formula>hg</formula>, <formula>MN</formula>, <formula>nm</formula>, <add>étant égales</add>, les temps employés à parcourir ces arcs seront co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les arcs mê<pc type="hyphenation">-</pc><lb break="no"/>mes, et <formula>GH+hg</formula> étant <add>(par constr.)</add> = <formula>MN+nm</formula>, les mouvements par ces deux espaces pris ensemble
-                           <lb/>seront isochrones, ce qui ayant lieu dans tous les petits arcs compris entre deux
-                           <lb/>mêmes lignes horizontales, le temps par les Courbes <formula>BAb</formula> sera égal au temps par
-                           <lb/>la Cicloide <formula>EAe</formula>. De même si l’on suppose deux oscillations par les arcs <formula>CAc</formula>
-<lb/>et <formula>FAf</formula>, ces oscillations seront aussi isochrones. Par consequent les oscillations
-                           <lb/>par les arcs de la Cicloide <formula>EAe</formula>, <formula>FAf</formula> étant isochrones <add>par la nature de la Cicloide,</add> celles par les arcs <formula>BAb</formula>,
-                           <lb/><formula>CAc</formula>, <del>le </del>s’acheveront aussi dans le même temps. Pour trouver maintenant
-                           <lb/>l’équation generale de ces sortes de Courbes, soit nommé <formula>AO=x</formula>, <formula>OH</formula> ou <formula>oh=y</formula>,
-                           <lb/>le diametre du cercle generateur de la Cicloide <formula>EAe=a</formula>, l’arc de la Cicloide
-                           <lb/><formula>AN</formula> ou <formula>An=2\sqrt{ax},AH=2\sqrt{ax+z},Ah=2\sqrt{ax-2},GH=\frac{dx\sqrt{a}}{\sqrt{x}}+dz,gh=\frac{dx\sqrt{a}}{\sqrt{x}}-dz</formula>
-<lb/>et l’on trouvera <add>pour la Courbe <formula>AHB</formula></add> l’équation <formula>dy^{2}=\frac{a\,dx^{2}}{x}-dx^{2}+dz^{2}+\frac{2\,dx\,dz\sqrt{a}}{\sqrt{x}}</formula>. Dans ces équations
-                           <lb/>la valeur de <formula>dz</formula> est arbitraire, si aucune de ces <add>deux</add> courbes <formula>AH</formula>, <formula>Ah</formula>, n’est do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée, de sorte
-                           <lb/>que ces courbes peuvent être algebraiques ou mechaniques, et <del/><add>avoir une</add> même
-                           <lb/>équation integrale ou non, selon la differente valeur de <formula>z</formula> ou de <formula>dz</formula>. Si l’on fait
-                           <lb/><formula>z=x</formula>, et <formula>dz=dx</formula>, non seulement les courbes seront algebraiques, mais l’une
-                        <pb facs="-" n="7"/>
-<lb/>sera la continuation de l’autre, et toutes les deux seront exprimées par
-                           <lb/>une même équation integrale; car on aura <formula>dy^{2}=\frac{a\,dx^{2}}{x}\pm\frac{2\,dx^{2}\sqrt{a}}{\sqrt{x}}</formula> ou
-                           <lb/><del/><formula>dy=dx\sqrt{\frac{a}{x}\pm\frac{2\sqrt{a}}{\sqrt{x}}}</formula>, et pour la courbe Ahb cette équation <formula>dy^{2}=\frac{a\,dx^{2}}{x}-dx^{2}+dz^{2}-\frac{2\,dx\,dz\sqrt{a}}{\sqrt{x}}</formula> dont l’integrale est <formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}</formula>,
-                           <lb/>ou plutôt <formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}-\frac{2}{3}a</formula>, puisque dans le cas de <formula>x=0</formula>, y doit
-                           <lb/>aussi être = 0; apres avoir ôté les signes radicaux on aura <del/>
-<lb/>pour chacune de ces deux courbes <formula>AHB</formula> et <formula>Ahb</formula> cette équation du 4.<hi rend="sup">e</hi> degré
-                           <lb/><del/>
-<lb/><del/>
-<lb/><formula>y^{4}+\frac{8}{3}ay^{3}+\frac{16}{9}aayy-\frac{32}{3}axyy-\frac{128}{9}aaxy+\frac{256}{27}aaxx-\frac{1024}{81}ax^{3}-\frac{64}{9}a^{3}x=0</formula>,
-                           <lb/>laquelle répond à une courbe semblable à cette figure <formula>CBAbABC</formula>, dont
-                           <lb/>les branches <formula>BC</formula>,
-                           <lb/><formula>BC</formula>, qui s’étendent
-                           <lb/>à l’infini ne peuvent
-                           <lb/>pas servir à l’isochronisme,
-                           <lb/>le point de rebroussement <formula>b</formula> terminant la hauteur <formula>bD=\frac{1}{4}a</formula> à laquelle
-                           <lb/>les oscillations peuvent faire monter le pendule. NB, <formula>AD=\frac{2}{3}a,Bb=</formula>
-<lb/><formula>\frac{4a2}{3}</formula>.</p>
-<p><lb/>Vous aurés la bonté, s’il vous plait, de faire tenir l’incluse à
-                           <lb/>Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, j’ai cru vous faire plaisir en vous l’envoyant ouverte.
-                           <lb/>Je finis en vous priant de me conserver l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de votre amitié
-                           <lb/>et de persuader que je me fais une gloire d’etre avec une tres
-                           <lb/>parfaite estime Monsieur Votre tres humble et tres obeissant Serviteur N. Bernoulli. Bâle ce 1. Avril 1733 
-                              
-                              [Anschrift] Monsieur Monsieur Cramer tres celebre Professeur en Mathematiques à Geneve. </p><!-- Dieser Teil fehlt bei den Scans? RG 30.08.2023 -->
+  <lb/>il faut sans doute savoir la maniere de trouver ces aires, et j’ai sû cette ma<pc type="hyphenation">-</pc><lb break="no"/>niere par le moyen du calcul integral avant que d’avoir lû <hi>l’Arithmetica
+  <lb/>Infinitorum</hi> de <rs key="pers_DE-588-118771167" type="person">Wallis</rs>. Mais il y a une grande difference entre le secours
+  <lb/>que donne ce theoreme de <rs key="pers_DE-588-118771167" type="person">Wallis</rs> et celui que donne mon theoreme. J’ai vû
+  <lb/>avec plaisir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent vous avés rendu mon dit theoreme plus general, mais
+  <lb/>je n’ai pas pris la peine de chercher la demonstration de vôtre decouverte.
+  <lb/>Quant à la seconde maniere d’interpoler un terme de la suite <choice rend="regFormula"><orig><formula>\frac{r}{p}\times\frac{r+b}{p+b}\times\frac{r+2b}{p+2b}\times\mbox{\&amp;c.}</formula></orig><reg><formula>\frac{r}{p}\times\frac{r+b}{p+b}\times\frac{r+2b}{p+2b}\times\mbox{etc.}</formula></reg></choice>
+  <lb/>en faisant <choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdots r+2b-b}{p\cdot p+b\cdots p+2b-b}=\frac{r\cdot r+b\cdots p-b}{r+2b\cdot r+zb-b\cdots 2b+p-b}</formula></orig><reg><formula>\frac{r\cdot(r+b)\cdots(r+2b-b)}{p\cdot(p+b)\cdots(p+2b-b)}=\frac{r\cdot(r+b)\cdots(p-b)}{(r+2b)\cdot(r+zb-b)\cdots(2b+p-b)}</formula></reg></choice> ou  <choice rend="regFormula"><orig><formula>=\frac{p+zb\cdot p+zb+b\cdots zb+r-b}{p\cdot p+b\cdots r-b}</formula></orig><reg><formula>=\frac{(p+zb)\cdot(p+zb-b)\cdots(zb+r-b)}{p\cdot(p+b)\cdots(r-b)}</formula></reg></choice>
+  <lb/>j’avoue qu’elle ne reussit pas quand <formula>\frac{r-p}{b}</formula> n’est pas un nombre entier, et qu’en
+  <lb/>vous la proposant j’avois seulement en vuë la suite particuliere <choice rend="regFormula"><orig><formula>\frac{r}{p}\times\frac{r+1}{p+1}\times\frac{r+2}{p+2}\times\mbox{\&amp;c.}</formula></orig><reg><formula>\frac{r}{p}\times\frac{r+1}{p+1}\times\frac{r+2}{p+2}\times\mbox{etc.}</formula></reg></choice>
+  <lb/>dont vous m’aviés parlé, et où j’avois crû que <formula>r</formula> et <formula>p</formula> signifiaient des nombres
+  <lb/>entiers. J’ai encore avoué moi même dans ma <rs key="B_991170517057905501" type="letter">lettre</rs> précedente à <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>,
+  <lb/>que cette derniere maniere n’est pas d’un grand usage, lorsque la difference
+  <lb/>entre <formula>p</formula> et <formula>r</formula> est un fort grand nombre. En un mot je n’entendois autre chose
+  <lb/>par cette seconde maniere d’interpoler que ce que <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> lui même
+  <lb/><subst><del>à</del><add>a</add></subst> proposé dans la <abbr>Prop.</abbr> XVIII. de son <rs type="biblio">Livre</rs>.
+</p> 
+<p>
+  <lb/>Le dernier article de votre <rs type="letter">lettre</rs> regarde les Courbes sur lesquelles un
+  <lb/>mobile fait des oscillations isochrones. Vous me priés de vous marquer la
+  <lb/>voye qui conduit à trouver une infinité de telles Courbes isochrones autres
+  <lb/>que la Cicloide; la voici: Dans la Cicloide non seulement les oscillations
+  <lb/>entieres sont isochrones, mais aussi leurs moitiés, c’est à dire, les temps, que
+  <lb/>le pendule employe à descendre par des arcs quelconques jusque au plus bas
+  <lb/>point de la même Cicloide, sont toujours égaux, de même que les temps qu’il
+  <lb/>employe à monter par d’autres arcs égaux pour achever une vibration en<pc type="hyphenation">-</pc><lb break="no"/>tiere, au lieu que dans d’autres Courbes les deux temps, que le pendule em<pc type="hyphenation">-</pc><lb break="no"/>ploye à parcourir en descendant et ensuite en montant deux arcs differents
+  <lb/>en longueur, peuvent étre inégaux, et neanmoins les vibrations entieres
+  <lb/>étre isochrones. En effet pour peu que l’on fasse attention l’on verra, que
+  <lb/>pour chaque Courbe donnée <formula>BCA</formula> on peut trouver une autre <formula>Acb</formula> telle, que
+<pb facs="-" n="5"/>
+  <lb/><sic>que</sic> les vibrations entieres par des arcs quelconques <formula>BAb</formula>, <formula>CAc</formula>, soient isochrones
+  <lb/>sans que les mouvements par les arcs <formula>BA</formula>, <formula>CA</formula>, et ceux par les arcs <formula>Ab</formula>, <formula>Ac</formula> soient
+  <lb/>isochrones.<!-- Hier noch die Grafik einfügen, RG 24.09.2025 --> Pour cette fin
+  <lb/>on n’a qu’à construire la
+  <lb/>courbe <formula>Acb</formula> de telle manie<pc type="hyphenation">-</pc><lb break="no"/>re, que les arcs <formula>BAb</formula>, <formula>CAc</formula>,
+  <lb/><formula>GAg</formula>, <formula>HAh</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> soient respective<pc type="hyphenation">-</pc><lb break="no"/>ment égaux aux arcs d’une Cicloi<pc type="hyphenation">-</pc><lb break="no"/>de <formula>EAe</formula>, <formula>FAf</formula>, <formula>MAm</formula>, <formula>NAn</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> terminés
+  <lb/>par les mêmes lignes droites horizontales <formula>Be</formula>, <formula>Cf</formula>,
+  <lb/><formula>Gm</formula>, <formula>Hn</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Car supposant deux oscillations par les Courbes <formula>BA</formula>, <formula>Ab</formula>, et par la 
+  <lb/>Cicloide <formula>EAe</formula>, les vitesses par les petits arcs <formula>GH</formula>, <formula>hg</formula>, <formula>MN</formula>, <formula>nm</formula>, étant égales, les
+  <lb/>temps employés à parcourir ces arcs seront co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les arcs mêmes, et <formula>GH+hg</formula>
+  <lb/>étant (par constr.) <formula>=MN+nm</formula>, les mouvements par ces deux espaces pris ensemble
+  <lb/>seront isochrones, ce qui ayant lieu dans tous les petits arcs compris entre deux
+  <lb/>mêmes lignes horizontales, le temps par les Courbes <formula>BAb</formula> sera égal au temps par
+  <lb/>la Cicloide <formula>EAe</formula>. De même si l’on suppose deux oscillations par les arcs <formula>CAc</formula> et
+  <lb/><formula>FAf</formula>, ces oscillations seront aussi isochrones. Par consequent les oscillations par les
+  <lb/>arcs de la Cicloide <formula>EAe</formula>, <formula>FAf</formula> étant isochrones par la nature de la Cicloide, celles
+  <lb/>par les arcs <formula>BAb</formula>, <formula>CAc</formula>, s’acheveront aussi dans le même temps. Pour trouver main<pc type="hyphenation">-</pc><lb break="no"/>tenant l’équation generale de ces sortes de Courbes, soit no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>é <formula>AO=x</formula>, <formula>OH</formula> ou <formula>oh</formula>
+  <lb/><formula>=y</formula>, le diametre du cercle generateur de la Cicloide <formula>EAE=a</formula>, l’arc de la Cicloide
+  <lb/><formula>AN</formula> ou <formula>An=2\sqrt{ax}</formula>, <formula>AH=2\sqrt{ax+z}</formula>, <formula>Ah=2\sqrt{ax-2}</formula>, <formula>GH=\frac{dx\sqrt{a}}{\sqrt{x}}+dz</formula>, <formula>gh=\frac{dx\sqrt{a}}{\sqrt{x}}-dz</formula>,
+  <lb/>et l’on trouvera pour la Courbe <formula>AHB</formula> l’équation <formula>dy^{2}=\frac{a\,dx^{2}}{x}-dx^{2}+dz^{2}+\frac{2\,dx\,dz\sqrt{a}}{\sqrt{x}}</formula>. Dans ces
+  <lb/>équations la valeur de <formula>dz</formula> est arbitraire, si aucune de ces deux Courbes <formula>AH</formula>, <formula>Ah</formula>, 
+  <lb/>n’est do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée, de sorte que ces courbes peuvent étre algebraiques ou mechani<pc type="hyphenation">-</pc><lb break="no"/>ques, et avoir une même équation integrale ou non, selon la differente
+  <lb/>valeur de <formula>z</formula> ou de <formula>dz</formula>. Si l’on fait <formula>z=x</formula>, et <formula>dz=dx</formula>, non seulement les courbes
+  <lb/>seront algebraiques, mais l’une sera la continuation de l’autre, et toutes
+  <lb/>les deux seront exprimées par une même équation integrale; car on aura 
+<pb facs="-" n="6"/>
+  <lb/><formula>dy^{2}=\frac{a\,dx^{2}}{x}\pm\frac{2\,dx^{2}\sqrt{a}}{\sqrt{x}}</formula> ou <formula>dy=dx\sqrt{\frac{a}{x}\pm\frac{2\sqrt{a}}{\sqrt{x}}}</formula>, dont l’integrale est <choice rend="regFormula"><orig><formula>y=\frac{2}{3}a\cdot\overline{1\pm\frac{2\sqrt{x}}{\sqrt{a}}}^{\frac{3}{2}}</formula></orig><reg><formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}</formula></reg></choice>,
+  <lb/>ou plûtôt <choice rend="regFormula"><orig><formula>y=\frac{2}{3}a\cdot\overline{1\pm\frac{2\sqrt{x}}{\sqrt{a}}}^{\frac{3}{2}}-\frac{2}{3}a</formula></orig><reg><formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}-\frac{2}{3}a</formula></reg></choice>, puisque dans le cas de <formula>x=0</formula>, y doit aussi étre
+  <lb/><formula>=0</formula>; aprés avoir ôté les signes radicaux on aura pour chacune de ces deux cour<pc type="hyphenation">-</pc><lb break="no"/>bes <formula>AHB</formula> et <formula>Ahb</formula> cette équation du 4.<hi rend="sup">e</hi> degré <formula>y^{4}+\frac{8}{3}ay^{3}+\frac{16}{9}aayy-\frac{32}{3}axyy-\frac{128}{9}aaxy</formula>
+  <lb/><formula>+\frac{256}{27}aaxx-\frac{1024}{81}ax^{3}-\frac{64}{9}a^{3}x=0</formula>, laquelle répond à une courbe semblable à
+  <lb/>cette figure <formula>CBAbABC</formula>, dont les branches <formula>BC</formula>, <formula>BC</formula>, qui s’étendent à l’infini ne<!-- Hier noch die Grafik einfügen, RG 24.09.2025 -->
+  <lb/>peuvent pas servir à l’isochronisme, le point de rebroussement <formula>b</formula> terminant
+  <lb/>la hauteur <formula>bD=\frac{1}{4}a</formula> à laquelle les oscillations peuvent faire monter le pen<pc type="hyphenation">-</pc><lb break="no"/>dule. <abbr>NB.</abbr> <formula>AD=\frac{2}{3}a</formula>, <formula>Bb=\frac{4a\sqrt{2}}{3}</formula>.
+</p>
+<p>
+  <lb/>Vous aurés la bonté, s’il vous plait, de faire tenir l’incluse à <abbr>Mr.</abbr>
+  <lb/><rs key="pers_DE-588-117260266" type="person">Stirling</rs>, j’ai crû vous faire plaisir en vous l’envoyant ouverte.
+  <lb/>Je finis en vous priant de me conserver l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de vôtre amitié,
+  <lb/>et de persuader que je me fais une gloire d’étre avec une
+  <lb/>trés parfaite estime
+  <lb/>Monsieur
+</p>
+<closer>
+  <salute>
+    <lb/>Vôtre trés humble et trés
+    <lb/>obeissant Serviteur
+  </salute>
+  <signed>
+    <lb/><rs key="pers_DE-588-119166895" type="person"><abbr>N.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.
+  </signed>
+  <dateline>
+    <lb/><rs key="place_GEO-2661604" type="place">Bâle</rs> ce <date when="1733-04-01">1. Avril
+    <lb/>1733</date>.
+  </dateline>
+</closer> 
+<pb facs="-" n="7" type="empty"/>
+<pb facs="-" n="8"/>
+<closer>
+  <address>
+    <addrLine>A Monsieur</addrLine>
+    <addrLine>Monsieur Cramer trés celebre</addrLine>
+    <addrLine>Professeur en Mathematiques</addrLine>
+    <addrLine>à</addrLine>
+    <addrLine>Geneve.</addrLine>
+  </address>
+</closer>
 </div>
 </body>
 </text></TEI>

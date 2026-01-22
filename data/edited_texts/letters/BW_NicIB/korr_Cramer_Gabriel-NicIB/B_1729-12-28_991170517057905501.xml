@@ -11,13 +11,17 @@
       </title>
     </titleStmt>
     <editionStmt>
-      <edition>manualPlaceholderContent</edition>
+      <edition>Basler Edition der Bernoulli-Briefwechsel</edition>
       <editor>
-        <persName key="pers_DE-588-">
-          <surname/>
-          <forename/>
-        </persName>
-      </editor>
+  <persName key="pers_DE-588-117433391X">
+    <surname>Nagel</surname>
+    <forename>Fritz</forename>
+  </persName>
+  <persName key="pers_DE-588-128594551">
+    <surname>Gehr</surname>
+    <forename>Sulamith</forename>
+  </persName>
+</editor>
       <respStmt>
         <persName key="pers_DE-588-">
           <surname/>
@@ -185,6 +189,10 @@
   </profileDesc>
   <revisionDesc status="teiKodiert">
     <listChange>
+      <change when="2025-09-19" who="RG">Matheformeln normalisiert</change>
+      <change when="2025-09-19" who="RG">Code durchgeschaut, ergänzt, korr.</change><!-- z. T. "foreign" noch ergänzen sowie als Zitat angeben, RG 19.09.2025 -->
+      <change when="2025-09-19" who="RG">Seitenzahlen, Briefstruktur nach dem Brief (Bibliothek in Genf)</change><!-- Seiten "facs" noch referenzieren. In einer Stelle fehlt noch eine Einfügung, noch entziffern. RG 19.09.2025 -->
+      <change when="2025-09-19" who="RG">Personen und Orte ausgezeichnet</change><!-- Einzelne Auszeichnungen in Biblio fehlen noch, RG 19.09.2025 -->
       <change notAfter="1966-02-14">transkribiert</change>
       <!-- Die Abschrift wurde verwendet, Original BPU Genf -->
     </listChange>
@@ -490,9 +498,44 @@
   <lb/><formula>\alpha-1</formula> co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e Vous l’avés pris par megarde) est fort grand, mais parceque
   <lb/>sans un si grand detour on peut trés facilement changer la fraction
   <lb/><choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdot r+2b\cdots r+zb-b}{p\cdot p+b\cdot p+2b\cdots p+zb-b}</formula></orig><reg><formula>\frac{r\cdot(r+b)\cdot(r+2b)\cdots(r+zb-b)}{p\cdot(p+b)\cdot(p+2b)\cdots(p+zb-b)}</formula></reg></choice> dans laquelle le nombre des facteurs <formula>z</formula> est indeterminé,
-  <lb/>en une autre fraction où le<del>s</del> nombre des facteurs soit determiné ou con<pc type="hyphenation">-</pc><!-- Bis hier gemacht, RG 19.09.2025 --><lb break="no"/>stant. On voit par la seule multiplication que <formula>\frac{r(r+b)(r+2b)\cdots(r+zb-b)}{p(p+b)(p+2b)\cdots(p+zb-b)}</formula> quand <formula>p</formula> est plus grand que r, mais qu’elle est = <formula>\frac{(p+zb)(p+zb+b)(p+zb+2b)\cdots(zb+r-b)}{p(p+b)(p+2b)\cdots r-b}</formula> quand p est plue petit quer; dans ces 
+  <lb/>en une autre fraction où le<del>s</del> nombre des facteurs soit determiné ou con<pc type="hyphenation">-</pc><lb break="no"/>stant. On voit par la seule multiplication que <choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdot r+2b\cdots r+zb-b}{p\cdot p+b\cdot p+2b\cdots p+zb-b}</formula></orig><reg><formula>\frac{r\cdot(r+b)\cdot(r+2b)\cdots(r+zb-b)}{p\cdot(p+b)\cdot(p+2b)\cdots(p+zb-b)}</formula></reg></choice>
+  <lb/><choice rend="regFormula"><orig><formula>=\frac{r\cdot r+b\cdot r+2b\cdots p-b}{r+zb\cdot r+zb+b\cdots zb+p-b}</formula></orig><reg><formula>=\frac{r\cdot(r+b)\cdot(r+2b)\cdots(p-b)}{(r+zb)\cdot(r+zb+b)\cdots(zb+p-b)}</formula></reg></choice> quand <formula>p</formula> est plus grand que <formula>r</formula>, mais qu’elle est <formula>=</formula>
+  <lb/><choice rend="regFormula"><orig><formula>\frac{ p+zb\cdot p+zb+b\cdot p+zb+2b\cdots zb+r-b}{p\cdot p+b\cdot p+2b\cdots r-b}</formula></orig><reg><formula>\frac{(p+zb)\cdot(p+zb+b)\cdot(p+zb+2b)\cdots(zb+r-b)}{p\cdot(p+b)\cdot(p+2b)\cdots(r-b)}</formula></reg></choice> quand <formula>p</formula> est plue petit que <formula>r</formula>; dans ces
 <pb facs="-" n="10"/>
-  deux dernieres fractions le nombre des facteurs ne depend pas du nombre variable z, mais de la difference con stante entre p et r, ce qui suffit pour faire les interpola tions quand z est un nombre rompu. Mais si l’on veut admettre les quadratures des Courbes on peut donner encore une autre solution du Probleme de Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, savoir ut Area Curvae cujus ordinata est <formula>x^{r-1}\cdot(1-x^{b})^{z-1}</formula> ad Aream Curvae cujus ordi nata est <formula>x^{p-1}\cdot(1-x^{b})^{z-1}</formula>, ita primus terminus seriei ad quae situm, ce qui se demontre par la fraction <formula>\frac{a(a+b)(a+2b)\cdots(a+nb)}{\alpha(\alpha+b)(\alpha+2b)\cdots(\alpha+nb)}</formula>, que j’ai deduite cidessus de mon theoreme, en faisant <formula>a=r</formula>, <formula>\alpha=p,n=z-1</formula>. Cette methode des interpolations par les qua dratures n’est pas nouvelle, <rs key="pers_DE-588-118771167" type="person">Wallis</rs> en a donné l’ouverture dans son Arithm. Infinit. Mon Oncle m’a dit, que Mrs. Goldbach, Euler et Mon Cousin, qui sont à Petersbourg, se sont exercés dans cette matiere depuis quelque tems, particulierement sur la suite 1, 2, 6, 24, 120, &amp;c. mais je ne sai pas le resultat de leur decouvertes. Mr. Euler a mandé à mon Oncle qu’il avoit trouvé plusieurs Courbes sur lesquelles un mobile fait des os cillations isochrones comme sur la Cicloide. La dessus nous nous sommes appliqués à chercher ces Courbes, et nous en avons trouvé avec facilité une infinité, et entre autres une algebra ique dont l’équation monte à 4 dimensions. Quand vous envoyés l’incluse à Mr. <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, ayés la bonté de lui faire part de ma methode de resoudre la fraction <formula>\frac{1}{1\pm qz^{n}+z^{2n}}</formula>, Vous etes aussi prié d’excuser le long retard de cette lettre, qui a été causé par plusieurs empechemens particulierement par la repetition des calculs ennuyants dont peut etre j’aurois du me passer, Je fi nis en vous souhaitant la nouvelle année heureuse et en vous assurant que je suis avec un attachement inviolable, Monsieur V. T. H. E. T. O. S. N. Bernoulli. P. S. Mr. le Pr[ofesseur] Stehelin m’a chargé de vous assurer de ses services.</p>
+  <lb/>deux dernieres fractions le nombre des facteurs ne depend pas du nombre
+  <lb/>variable <formula>z</formula>, mais de la difference constante entre <formula>p</formula> et <formula>r</formula>, ce qui suffit pour
+  <lb/>faire les interpolations quand <formula>z</formula> est un nombre rompu. Mais si l’on
+  <lb/>veut admettre les quadratures des Courbes on peut donner encore une
+  <lb/>autre solution du Probleme de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, savoir, <foreign xml:lang="lat">ut Area Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>
+  <lb/>cujus ordinata est <choice rend="regFormula"><orig><formula>x^{r-1}\times\overline{1-x^{b}}^{z-1}</formula></orig><reg><formula>x^{r-1}\times(1-x^{b})^{z-1}</formula></reg></choice> ad Aream Curv<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> cujus ordinata est
+  <lb/><choice rend="regFormula"><orig><formula>x^{p-1}\times\overline{1-x^{b}}^{z-1}</formula></orig><reg><formula>x^{p-1}\times(1-x^{b})^{z-1}</formula></reg></choice>, ita primus terminus seriei ad qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> situm</foreign>, ce qui se demon<pc type="hyphenation">-</pc><lb break="no"/>tre par la fraction <choice><orig><formula>\frac{a\cdot a+b\cdot a+2b\cdots a+nb}{\alpha\cdot \alpha+b\cdot \alpha+2b\cdots \alpha+nb}</formula></orig><reg><formula>\frac{a\cdot(a+b)\cdot(a+2b)\cdots(a+nb)}{\alpha\cdot(\alpha+b)\cdot(\alpha+2b)\cdots(\alpha+nb)}</formula></reg></choice>, que j’ai deduite ci<supplied>-</supplied>dessus
+  <lb/>de mon theoreme, en faisant <formula>a=r</formula>, <formula>\alpha=p</formula>, <formula>n=z-1</formula>. Cette methode des in<pc type="hyphenation">-</pc><lb break="no"/>terpolations par les quadratures n’est pas nouvelle, <rs key="pers_DE-588-118771167" type="person">Wallis</rs> en a
+  <lb/>donné l’ouverture dans son <rs key="biblio_FPRM3JPS" type="biblio"><abbr>Arithm.</abbr> <abbr>Infinit</abbr></rs>. Mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> m’a dit,
+  <lb/>que <abbr>Mrs.</abbr> <rs key="pers_DE-588-118696149" type="person">Goldbach</rs>, <rs key="pers_DE-588-118531379" type="person">Euler</rs> et mon <rs key="pers_DE-588-118656503" type="person">Cousin</rs>, qui sont à <rs key="place_GEO-498817" type="place">Petersbourg</rs>,
+  <lb/>se sont exercés dans cette matiere depuis quelque tems, particulie<pc type="hyphenation">-</pc><lb break="no"/>rement sur la suite 1, 2, 6, 24, 120, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> mais je ne sai pas le resul<pc type="hyphenation">-</pc><lb break="no"/>tat de leur decouvertes. <abbr>Mr.</abbr> <rs key="pers_DE-588-118531379" type="person">Euler</rs> <choice><orig><g ref="#agrav">à</g></orig><reg>a</reg></choice><!-- ? RG 19.09.2025--> mandé à mon <rs key="pers_DE-588-118509969" type="person">Oncle</rs> qu’<pc type="hyphenation"></pc><lb break="no"/>il avoit trouvé plusieurs Courbes sur lesquelles un mobile fait
+  <lb/>des oscillations isochrones co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e sur la Cicloide. La dessus nous
+  <lb/>nous so<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>es appliqués à chercher ces Courbes, et nous en avons
+  <lb/>trouvé avec facilité une infinité, et entre autres une algebrai<pc type="hyphenation">-</pc><lb break="no"/>que dont l’équation monte à 4 dimensions. Quand vous envoyés
+  <lb/>l’incluse à <abbr>Mr<unclear>.</unclear></abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, ayés la bonté de lui faire part de
+  <lb/>ma methode de resoudre la fraction <formula>\frac{1}{1\pm qz^{n}+z^{2n}}</formula>. Vous étes aussi
+  <lb/>prié d’excuser le long retard de cette lettre, qui a été causé
+  <lb/>par plusieurs empechemens <choice><abbr>particulierem.<hi rend="sup">t</hi></abbr><expan>particulierement</expan></choice> par la repetition
+  <lb/>des calculs ennuyants dont peut étre j’aurois dû me passer.
+</p>
+<closer>
+  <salute>Je finis
+    <lb/>en vous souhaitant la nouvelle année heureuse et en Vous assurant
+    <lb/>que je suis avec un attachement inviolable,
+    <lb/>Monsieur
+    <lb/><abbr>V. T. H. E. T. O. S. N.</abbr>
+  </salute>
+  <signed><rs key="pers_DE-588-119166895" type="person"><abbr>N<supplied>.</supplied></abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs></signed>.
+</closer>
+<postscript>
+  <p><!-- Postscript steht am Rand, RG 19.09.2025 -->
+    <lb/><abbr>P. S.</abbr> <abbr>Mr.</abbr> le <choice><orig>Pr.</orig><reg>Professeur</reg></choice> <rs key="pers_DE-588-117652245" type="person"><subst><del/><add>Ste</add></subst>helin</rs> m’a chargé de vous assurer de ses services.
+  </p>
+</postscript>
 </div>
 </body>
 </text></TEI>
