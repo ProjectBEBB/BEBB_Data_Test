@@ -3,15 +3,24 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="full"><title type="main">Johann Bernoulli an Johannes Gessner. Basel, 03.
+        <title type="full"><title type="main">Johann I Bernoulli an Johannes Gessner. Basel, 03.
             November 1736</title><title type="alt">get_date!: () an ()</title><title type="alt"
             >000055890</title><title type="alt"
             >1736-11-03_Bernoulli_Johann_I-Gessner_Johannes</title><title level="s">Basler Edition
             der Bernoulli-Briefwechsel</title></title>
       </titleStmt>
       <editionStmt>
-        <edition>manualPlaceholderContent</edition>
-        <editor><persName key="pers_DE-588-"><surname/><forename/></persName></editor>
+        <edition>Basler Edition der Bernoulli-Briefwechsel</edition>
+        <editor>
+  <persName key="pers_DE-588-117433391X">
+    <surname>Nagel</surname>
+    <forename>Fritz</forename>
+  </persName>
+  <persName key="pers_DE-588-128594551">
+    <surname>Gehr</surname>
+    <forename>Sulamith</forename>
+  </persName>
+</editor>
         <respStmt>
           <persName key="pers_DE-588-"><surname/><forename/></persName>
           <resp><note type="remarkResponsibility"/></resp>
@@ -99,16 +108,13 @@
     <profileDesc>
       <correspDesc>
         <correspAction type="sent">
-
           <persName key="pers_DE-588-118509969">Bernoulli, Johann</persName>
-          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5"
-            >Basel</placeName>
+          <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4004617-5">Basel</placeName>
           <date when="1736-11-03">pythonPlaceholderContent</date>
         </correspAction>
         <correspAction type="received">
           <persName key="pers_DE-588-119331136">Gessner, Johannes</persName>
-          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually"
-            >manualPlaceholderContent</placeName>
+          <placeName key="placeID_manualPlaceholderContent" ref="gnd_link_toBeReplacedManually">manualPlaceholderContent</placeName>
         </correspAction>
         <correspContext>
           <ptr target="B_991170514858305501" type="prev"/>
@@ -151,20 +157,14 @@
       <textClass/>
     </profileDesc>
     <revisionDesc status="kollationiert">
-  <listChange>
-      <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title
-          ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der
-          Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit
-          mit der Universitätsbibliothek Basel</title> at <ptr
-          target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1736-11-03_Bernoulli_Johann_I-Gessner_Johannes"
-        />
-      </change>
-      <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at
-          <ptr
-          target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"
-        />
-      </change>
-  </listChange>
+      <listChange>
+        <change when="2025-12-11" who="RG">Briefstruktur (pb, lb, etc.) ergänzt, sowie weitere Anpassungen</change>
+        <change when="2025-12-11" who="RG">Schwierige Entitäten automatisch durch Chatbot und ListPerson/Register ergänzt (Personen, Orte)</change>
+        <change when="2025-12-11" who="RG">Entitäten automatisch durch ListPerson/Register ergänzt (Personen, Orte)</change>
+        <change when="2025-12-11" who="RG">Entitäten automatisch durch ChatBot ergänzt</change>
+        <change notAfter="2024-08" ana="bernoulliWiki">Created in the MediaWiki <title ref="https://ub-mediawiki.ub.unibas.ch/bernoulli">Basler Edition der Bernoulli-Briefwechsel, herausgegeben von Fritz Nagel und Sulamith Gehr, in Zusammenarbeit mit der Universitätsbibliothek Basel</title> at <ptr target="https://ub-mediawiki.ub.unibas.ch/bernoulli/index.php/1736-11-03_Bernoulli_Johann_I-Gessner_Johannes"/></change>
+        <change when="2024-10">Automatic transformation from the MediaWiki to XML/TEI, documented at <ptr target="https://github.com/ProjectBEBB/BEBB_Data_Prod/tree/main/Documentation/Technical_documentation/Documentation/wikiToTEI.md"/></change>
+      </listChange>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -174,100 +174,83 @@
     <front>
       <div type="editorialNote">
         <head>Editorische Vorbemerkung</head>
-        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann
-          unter dem folgenden Link placeholderContent eingesehen werden. Die der Textkonstitution
-          zugrundeliegenden Editionsrichtlinien können <ref
-            target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf"
-            >hier</ref> eingesehen werden.</p>
+        <p>Dieser Brief wurde ursprünglich für eine frühere Version der BEBB erarbeitet. Diese kann unter dem folgenden <ref target="https://bernoulli.ub.unibas.ch/index.php/1736-11-03_Bernoulli_Johann_I-Gessner_Johannes">Link</ref> eingesehen werden. Die der Textkonstitution zugrundeliegenden Editionsrichtlinien können <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf">hier</ref> eingesehen werden.</p>
       </div>
     </front>
     <body>
       <div type="letter">
+        <pb facs="3346438" n="1"/>
+        <opener>
+          <salute>
+            <lb/>Viro Clarissimo atque Doctissimo
+            <lb/><rs key="pers_DE-588-119331136" type="person">Johanni Gesnero</rs>
+            <lb/><abbr>S. P. D.</abbr>
+            <lb/><rs key="pers_DE-588-118509969" type="person"><abbr>Joh.</abbr> Bernoulli</rs>
+          </salute>
+        </opener> 
         <p>
-          <pb facs="3346438" n="1"/> Viro Clarissimo atque Doctissimo</p>
-        <p>Johanni Gesnero </p>
-        <p>S. P. D. </p>
-        <p>Joh. Bernoulli </p>
-        <p>Tua mei recordatione, ex nuperis Tuis litteris humanissimis<note type="editorial">Dieser
-            Brief von Johannes Gessner an Johann Bernoulli ist anscheinend nicht erhalten.</note>
-          intellecta, mirifice fui exhilaratus; pergas quaeso ea erga me propensione porro flagrare,
-          quod mearum est partium eam omni studio demereri conabor. </p>
-        <p>Praeterita aestate Clariss. Hallerum, Tuum quondam in Lectionibus meis audiendis
-            Commilitonem,<note type="editorial">Albrecht von Haller hatte sich am 5. April 1728 in
-            Basel immatrikuliert und studierte Mathematik bei Johann Bernoulli sowie Anatomie bei
-            Johann Rudolf Mieg (Matrikel Basel V, Nr. 78). Johannes Gessner war 1728 als cand. med.
-            ebenfalls in Basel immatrikuliert und wirkte als Stellvertreter des kränkelnden Mieg,
-            der in diesem Jahr als Dekan der medizinischen Fakultät amtierte (Matrikel Basel V,
-            Nr.7). </note> vidi equidem in aedibus meis me convenientem, sed cum mensibus aliquot
-          elapsis altera vice hac transiret,<note type="editorial">Haller hatte vom 7. Juli bis zum
-            9. August 1728 zusammen mit Johannes Gessner eine Schweizerreise unternommen und kehrte
-            zum Wintersemester wieder nach Basel zurück. Ab 22. November 1728 bis zum 25. Februar
-            vertrat er Johann Rudolf Mieg als Prosektor. </note> petiturus Gottingam ad auspicandam
-          ibi Professionem sibi oblatam, me denuo invisere neglexit, eo forsan fine ut aliis Amicis
-          sibi charioribus tanto diutius frui posset, etenim per plures dies in Urbe nostra
-          commoratus antequam iter Gottinganum aggrederetur.<note type="editorial">Am 6. Mai 1736
-            wurde Albrecht von Haller nach Göttingen berufen. Er reiste am 7. September 1736 von
-            Bern ab und traf am 30. September 1739 in Göttingen ein.</note> Non falsum est, quod
-          intellexisti haud dubie ex ipsius Halleri relatione, cui quod res erat exposueram,
-          scilicet ex mea penu promanasse inventum illud de perficiendis horologiis portabilibus,
-          ope duplicis tympani totidemque catenulis cochleae circumvolvendis, eamque ad oppositas
-          partes trahentibus ad minuendam attritionem vel omnino tollendam. Hoc quicquid est inventi
-          monstraveram ante aliquot jam annos Rittero Bernensi et quidem in praesentia Doctissimi
-            Koenigii<note type="editorial">Samuel König.</note> itidem Bernensis, qui de rei
-          veritate testari potest, Ritterus tum nondum erat meus Discipulus,<note type="editorial"
-            >Johann Jacob Ritter war seit März 1733 in Basel als stud. iur., dann stud. phil. und
-            stud med. immatrikuliert (Matrikel Basel V, Nr. 252).</note> cui adeo nullum prorsus jus
-          competit gloriandi de invento tanquam sibi debito: Mirabar itaque et ridebam cum viderem
-          in Tempe Helvetica expositionem inventi (satis incongruam) a Rittero ita prolatam, quasi
-          ipse esset Inventor, sine ulla mei mentione facta,<note type="editorial">Ritter, Jacob,
-              <hi rend="u">Matheseos Cultoris de Corrigendis Horologiis Portatilibus Meditatio</hi>,
-            in: Tempe Helvetica, t. I, Tiguri (Zürich) 1737, pp. 343-351.</note> sic solent alienis
-          superbire pennis, quibus ex suo curta est supellex. Nuper ad me scripsit Lausanna,<note
-            type="editorial">Dieser Brief ist nicht erhalten.</note> ubi nunc degit, alia ex me
-          expiscaturus sed altum de hac re silentium servans; respondi per filium meum,<note
-            type="editorial">Wohl Johann II Bernoulli. Doch ist kein Brief von diesem an Ritter
-            erhalten.</note> qui arrepta occasione plagium modeste exprobravit, Ritterus secundas
-          protinus rescripsit litteras<note type="editorial">Auch dieser Brief ist nicht
-            erhalten.</note> ad culpae deprecationem et confessionem, nihil excusationis loco
-          addens, nisi quod addiderit quasdam demonstrationes ex mechanicis (meo quidem judicio
-          admodum jejunas) quasi inventum quod sua luce clarum est indigeret demonstratione. </p>
-        <p>Tuae hac de re animadversiones sunt judiciosae summaque attentione dignae; ratiocinia tua
-          sunt plane conformia menti meae et scopo quem habui in elaborandis huiusmodi horologiis.
-          Habemus hic quosdam Artifices satis peritos, quorum uni et alteri persuadere volui, ut
-          tentamen facerent in conficiendo saltem uno exemplari, probarunt quidem et laudarunt meum
-          intentum, sed vadum tentare non audent, timentes sinistrum successum et emergentem inde
-          tam temporis quam sumtuum jacturam, ita <pb facs="3346439" n="2"/> enim animati sunt
-          nostrates Artifices ut more Mercenariorum nihil audeant suscipere quod novum est, nihil
-          quod a consueta et trita via deflectit: Quidquid in arte sua faciunt, id ab ipsis fit fere
-          machinaliter, prouti a Magistris suis didicerunt, nesciunt quid sit meditari, parum curae
-          habentes aliquid ad artis perfectionem contribuere. Sed summa cum voluptate ex Tuis
-          Litteris nunc audio existere apud vos Artificem peritum Ludovicum Steinerum<note
-            type="editorial">Ludwig Steiner (1711-1779), Uhrmacher in Zürich, ab 1731 in London,
-            dann offenbar wieder in Zürich, ab 1744 in Neuwied, danach wieder in Zürich. (Siehe HLS
-              <ref target="http://www.hls-dhs-dss.ch/textes/d/D26179.php">Steiner,
-            Ludwig</ref>).</note> qui non tantum opus aggredi ausus sit sed et idem felici cum
-          successu executioni dederit, fecerit ac perfecerit: Si quod offert Artifex ad me
-          transmittere volet machinam, ut eam oculis contueri atque examinare queam, erit utique
-          mihi gratissimum, neque detrectabo, prout deprehendero, judicium meum sincera mente
-          perhibere; fortassis non inconsulto faceret Vir peritissimum, si vellet ipse in Urbem
-          nostram se conferre ut fusius ea de re cum Illo agere possem, habeo enim alia adhuc
-          artificia a me excogitata quae plurimum perfectionis afferrent horologiis portabilibus,
-          praesertim pro motu libraminis ad isochronismum perducendo, quod hactenus per filamentum
-          illud spirale elasticum omnino obtineri non potuit; leges mechanicae quas attente
-          consideravi aliud adhuc mihi dictarunt, libramini adjungendum, quod infallibile est neque
-          effectu difficile; cum ingenio polleat artifex et manum habeat peritam, praetereaque ipse
-          sit discendi cupidus, capiet sane explicationes meas atque approbabit, sed necesse est ut
-          cum Illo coram converser; Quod si consilium me adeundi ceperit, eum expectabo spe fretus
-          fore ut ipsum consilii non poeniteat, et pro modicis sumtibus in iter impendendis,
-          aliquando uberrima emolumenta sint ipsi speranda. Sed ejus arbitrio relinquo quod e re
-          esse existimaverit. Vale et fave. </p>
-        <p>Dabam Basileae a. d. III. Non. Novemb. MDCCXXXVI. </p>
-        <p><pb facs="3346440" n="3"/> A Monsieur </p>
-        <p>Monsieur Jean Guesner Docteur </p>
-        <p>en Medecine et Professeur des Ma-</p>
-        <p>thematiques etc. </p>
-        <p>à </p>
-        <p>Zuric. </p>
+          <lb/>Tua mei recordatione, ex nuperis Tuis litteris humanissimis<note type="editorial">Dieser Brief von <rs key="pers_DE-588-119331136" type="person">Johannes Gessner</rs> an <rs key="pers_DE-588-118509969" type="person">Johann Bernoulli</rs> ist anscheinend nicht erhalten.</note> intellecta, miri<pc type="hyphenation">-</pc><lb break="no"/>fice fui exhilaratus; pergas qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>so ea erga me propensione porro flagrare, quod
+          <lb/>mearum est partium eam omni studio demereri conabor.
+        </p>
+        <p>Pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>terita <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>state
+          <lb/><abbr>Clariss.</abbr> <rs key="pers_DE-588-118545140" type="person">Hallerum</rs>, Tuum quondam in Lectionibus meis audiendis Co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ilitonem,<note type="editorial"><rs key="pers_DE-588-118545140" type="person">Albrecht von Haller</rs> hatte sich am 5. April 1728 in <rs key="place_GEO-2661604" type="place">Basel</rs> immatrikuliert und studierte Mathematik bei <rs key="pers_DE-588-118509969" type="person">Johann Bernoulli</rs> sowie Anatomie bei <rs key="pers_DE-588-104138556" type="person">Johann Rudolf Mieg</rs> (Matrikel <rs key="place_GEO-2661604" type="place">Basel</rs> V, Nr. 78). <rs key="pers_DE-588-119331136" type="person">Johannes Gessner</rs> war 1728 als cand. med. ebenfalls in <rs key="place_GEO-2661604" type="place">Basel</rs> immatrikuliert und wirkte als Stellvertreter des kränkelnden <rs key="pers_DE-588-104138556" type="person">Mieg</rs>, der in diesem Jahr als Dekan der medizinischen Fakultät amtierte (Matrikel <rs key="place_GEO-2661604" type="place">Basel</rs> V, Nr.7).</note>
+          <lb/>vidi equidem in <choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>dibus meis me convenientem, sed cum mensibus aliquot elapsis
+          <lb/>altera vice hac transiret,<note type="editorial"><rs key="pers_DE-588-118545140" type="person">Haller</rs> hatte vom 7. Juli bis zum 9. August 1728 zusammen mit <rs key="pers_DE-588-119331136" type="person">Johannes Gessner</rs> eine Schweizerreise unternommen und kehrte zum Wintersemester wieder nach <rs key="place_GEO-2661604" type="place">Basel</rs> zurück. Ab 22. November 1728 bis zum 25. Februar vertrat er <rs key="pers_DE-588-104138556" type="person">Johann Rudolf Mieg</rs> als Prosektor.</note> petiturus <rs key="place_GEO-2918632" type="place">Gottingam</rs> ad auspicandam ibi Professionem
+          <lb/>sibi oblatam, me denuo invisere neglexit, eo forsan fine ut aliis Amicis sibi
+          <lb/>charioribus tanto diutius frui posset, etenim per plures dies in Urbe nostra com<pc type="hyphenation">-</pc><lb break="no"/>moratus antequam iter <rs key="place_GEO-2918632" type="place">Gottinganum</rs> aggrederetur.<note type="editorial">Am 6. Mai 1736 wurde <rs key="pers_DE-588-118545140" type="person">Albrecht von Haller</rs> nach <rs key="place_GEO-2918632" type="place">Göttingen</rs> berufen. Er reiste am 7. September 1736 von <rs key="place_GEO-2661552" type="place">Bern</rs> ab und traf am 30. September 1739 in <rs key="place_GEO-2918632" type="place">Göttingen</rs> ein.</note> Non falsum est, quod intellexisti
+          <lb/>haud dubie ex ipsius <rs key="pers_DE-588-118545140" type="person">Halleri</rs> relatione, cui quod res erat exposueram, scilicet ex mea
+          <lb/>penu promanasse inventum illud de perficiendis horologiis portabilibus, ope duplicis
+          <lb/>tympani totidemq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> catenulis cochle<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> circumvolvendis, eamq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> ad oppositas partes
+          <lb/>trahentibus ad minuendam attritionem vel omnino tollendam. Hoc quicquid est
+          <lb/>inventi monstraveram ante aliquot jam annos <rs key="pers_DE-588-12984103X" type="person">Rittero Bernensi</rs> et quidem in
+          <lb/>pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sentia Doctissimi <rs key="pers_DE-588-117528854" type="person">Koenigii</rs><note type="editorial"><rs key="pers_DE-588-117528854" type="person">Samuel König</rs>.</note> itidem Bernensis, qui de rei veritate testari potest, <rs key="pers_DE-588-12984103X" type="person">Ritte<pc type="hyphenation">-</pc><lb break="no"/>rus</rs> tum nondum erat meus Discipulus,<note type="editorial"><rs key="pers_DE-588-12984103X" type="person">Johann Jacob Ritter</rs> war seit März 1733 in <rs key="place_GEO-2661604" type="place">Basel</rs> als stud. iur., dann stud. phil. und stud med. immatrikuliert (Matrikel <rs key="place_GEO-2661604" type="place">Basel</rs> V, Nr. 252).</note> cui adeo nullum prorsus jus competit glori<pc type="hyphenation">-</pc><lb break="no"/>andi de invento tanquam sibi debito: Mirabar itaq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> et ridebam cum viderem in
+          <lb/>Tempe Helvetica expositionem inventi (satis incongruam) a <rs key="pers_DE-588-12984103X" type="person">Rittero</rs> ita prolatam,
+          <lb/>quasi ipse esset Inventor, sine ulla mei mentione facta,<note type="editorial"><rs key="pers_DE-588-12984103X" type="person">Ritter, Jacob</rs>, <hi rend="u">Matheseos Cultoris de Corrigendis Horologiis Portatilibus Meditatio</hi>, in: Tempe Helvetica, t. I, <rs key="place_GEO-2657896" type="place">Tiguri</rs> (<rs key="place_GEO-2657896" type="place">Zürich</rs>) 1737, pp. 343-351.</note> sic solent alienis superbire 
+          <lb/>pennis, quibus ex suo curta est supellex. Nuper ad me scripsit <rs key="place_GEO-2659994" type="place">Lausanna</rs>,<note type="editorial">Dieser Brief ist nicht erhalten.</note> ubi nunc
+          <lb/>degit, alia ex me expiscaturus sed altum de hac re silentium servans; respondi per
+          <lb/>filium meum,<note type="editorial">Wohl <rs key="pers_DE-588-117589136" type="person">Johann II Bernoulli</rs>. Doch ist kein Brief von diesem an Ritter erhalten.</note> qui arrepta occasione plagium modeste exprobravit, <rs key="pers_DE-588-12984103X" type="person">Ritterus</rs> secundas
+          <lb/>protinus rescripsit litteras<note type="editorial">Auch dieser Brief ist nicht erhalten.</note> ad culp<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> deprecationem et confessionem, nihil excusationis
+          <lb/>loco addens, nisi quod addiderit quasdam demonstrationes ex mechanicis (meo quidem judi<pc type="hyphenation">-</pc><lb break="no"/>cio admodum jejunas) quasi inventum quod sua luce clarum est indigeret demonstratione.
+        </p>
+        <p>
+          <lb/>Tu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> hac de re animadversiones sunt judicios<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>aq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> attentione dign<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>; ratiocinia
+          <lb/>tua sunt plane conformia menti me<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> et scopo quem habui in elaborandis huiusmodi
+          <lb/>horologiis. Habemus hic quosdam Artifices satis peritos, quorum uni et alteri 
+          <lb/>persuadere volui, ut tentamen facerent in conficiendo saltem uno exemplari, proba<pc type="hyphenation">-</pc><lb break="no"/>runt quidem et laudarunt meum intentum, sed vadum tentare non audent, timentes
+          <lb/>sinistrum successum et emergentem inde tam temporis quam sumtuum jacturam, ita
+         <pb facs="3346439" n="2"/>
+          <lb/>enim animati sunt nostrates Artifices ut more Mercenariorum nihil audeant susci<pc type="hyphenation">-</pc><lb break="no"/>pere quod novum est, nihil quod a consueta et trita via deflectit: Quidquid in arte
+          <lb/>sua faciunt, id ab ipsis fit fere machinaliter, prouti a Magistris suis didicerunt,
+          <lb/>nesciunt quid sit meditari, parum cur<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> habentes aliquid ad artis perfectionem con<pc type="hyphenation">-</pc><lb break="no"/>tribuere. Sed su<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>a cum voluptate ex Tuis Litteris nunc audio existere apud vos
+          <lb/>Artificem peritum <rs key="pers_DE-588-140259619" type="person">Ludovicum Steinerum</rs><note type="editorial"><rs key="pers_DE-588-140259619" type="person">Ludwig Steiner</rs> (1711-1779), Uhrmacher in <rs key="place_GEO-2657896" type="place">Zürich</rs>, ab 1731 in <rs key="place_GEO-2643743" type="place">London</rs>, dann offenbar wieder in <rs key="place_GEO-2657896" type="place">Zürich</rs>, ab 1744 in <rs type="place">Neuwied</rs>, danach wieder in <rs key="place_GEO-2657896" type="place">Zürich</rs>. (Siehe HLS <ref target="http://www.hls-dhs-dss.ch/textes/d/D26179.php">Steiner, Ludwig</ref>).</note> qui non tantum opus aggredi ausus sit
+          <lb/>sed et idem felici cum successu executioni dederit, fecerit ac perfecerit: Si quod
+          <lb/>offert Artifex ad me transmittere volet machinam, ut eam oculis contueri atq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> exami<pc type="hyphenation">-</pc><lb break="no"/>nare queam, erit utiq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> mihi gratissimum, neq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> detrectabo, prout deprehendero, judi<pc type="hyphenation">-</pc><lb break="no"/>cium meum sincera mente perhibere; fortassis non inconsulto faceret Vir peritissi<pc type="hyphenation">-</pc><lb break="no"/>mum, si vellet ipse in Urbem nostram se conferre ut fusius ea de re cum Illo agere
+          <lb/>possem, habeo enim alia adhuc artificia a me excogitata qu<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> plurimum perfectionis
+          <lb/>afferrent horologiis portabilibus, pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>sertim pro motu libraminis ad isochronismum
+          <lb/>perducendo, quod hactenus per filamentum illud spirale elasticum omnino obtineri non
+          <lb/>potuit; leges mechanic<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice> quas attente consideravi aliud adhuc mihi dictarunt, libramini
+          <lb/>adjungendum, quod infallibile est neq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> effectu difficile; cum ingenio polleat artifex et
+          <lb/>manum habeat peritam, pr<choice><orig><g ref="#ae">æ</g></orig><reg>ae</reg></choice>tereaq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> ipse sit discendi cupidus, capiet sane explica<pc type="hyphenation">-</pc><lb break="no"/>tiones meas atq<choice><orig><g ref="#ue">uͤ</g></orig><reg>ü</reg></choice> approbabit, sed necesse est ut cum Illo coram converser; Quod si con<pc type="hyphenation">-</pc><lb break="no"/>silium me adeundi ceperit, eum expectabo spe fretus fore ut ipsum consilii non
+          <lb/>poeniteat, et pro modicis sumtibus in iter impendendis, aliquando uberrima emolu<pc type="hyphenation">-</pc><lb break="no"/>menta sint ipsi speranda. Sed ejus arbitrio relinquo quod e re esse existimaverit.
+        </p>
+         <closer>
+           <salute>
+             <lb/>Vale et fave.
+           </salute>
+           <dateline>Dabam <rs key="place_GEO-2661604" type="place">Basileae</rs> <abbr>a. d.</abbr> <date when="1736-11-03">III. <abbr>Non.</abbr> <abbr>Novemb.</abbr> MDCCXXXVI</date>.</dateline>
+         </closer>
+        <pb facs="3346440" n="3" type="empty"/> 
+        <pb facs="3346441" n="4"/> 
+        <closer>
+          <address>
+            <addrLine>A Monsieur</addrLine>
+            <addrLine>Monsieur Jean <rs key="pers_DE-588-119331136" type="person">Guesner</rs> Docteur</addrLine>
+            <addrLine>en Medecine et Professeur des Ma-</addrLine>
+            <addrLine>thematiques <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr></addrLine>
+            <addrLine>à</addrLine>
+            <addrLine><rs key="place_GEO-2657896" type="place">Zuric</rs>.</addrLine>
+          </address>
+        </closer>
       </div>
     </body>
   </text>
