@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
-<TEI xml:id="B_991170516782705501" xmlns="http://www.tei-c.org/ns/1.0"><!-- Das (erschlossene) Datum lautet [1764.02.08]. Es ist identisch mit dem des Briefes, mit dem er als Beilage mitgesandt wurde, nämlich Syst.Nr. 000058908. Wenn das Datum in title eingetragen wird, generiert dies eine Fehlermeldung, da ein identischer Titel mit dem Brief 000058908 im System bereits vorhanden ist. -->
+<TEI xml:id="B_991170516782705501" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
   <fileDesc>
     <titleStmt>
@@ -155,7 +155,7 @@
     </abstract>
   </profileDesc>
   <revisionDesc status="kommentiert">
-    <!-- neu Liste der Werte: kollationiert, grundkommentiert, kommentiert</item>-->
+    
     <listChange>
       <change when="2024-03-04" who="SG">Fussnotentexte von FN ersetzt, bzw. neu eingefügt.</change>
       <change when="2023-03-20" who="MS">biblio getagt</change>
@@ -171,18 +171,7 @@
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
-  <!-- 
-         Bibiena -> Galli de Bibiena, Jean (1709-1779) pers_DE-588-100797067
-         
-         Vesian -> Vésian, Antoinette-Louise Soleri de Vésian (ca. 1737-1804) pers_DE-588-1204849072
-         
-         Tochter von Bibiena -> bis jetzt nicht identifiziert
-         
-         M. seigneurs du Magistrat -> 
-         
-         vierjähriges Mädchen -> Anne-Marguerite Roberdeau (1760-?) pers_DE-588-1204863954
-         In Archivquellen aus dem Jahr 1763 ist sie erst 3 Jahre alt.
-         -->
+  
 </teiHeader>
 <facsimile><graphic url="https://www.e-manuscripta.ch/i3f/v20/1383409/manifest"/></facsimile><text><body><div type="letter">
 <p><pb facs="1383410" n="24r"/><lb/><note hand="GND-Nummer"><rs key="pers_DE-588-100648940" type="person">de <abbr>T.</abbr></rs> <abbr>m.</abbr> <rs key="pers_DE-588-117589136" type="person"><abbr>J.</abbr> <abbr>B.</abbr></rs></note><note hand="GND-Nummer"><abbr>s. d.</abbr> 1764</note>
@@ -233,7 +222,7 @@
          <lb/>pis, Eh bien, il faut donc vous dire
          <lb/>que cette <rs key="pers_DE-588-1204849072" type="person">diablesse d’italiene</rs> a acusé ce
          <lb/>pauvre <rs key="pers_DE-588-100797067" type="person">homme</rs> d’avoir violé une <rs key="pers_DE-588-1204863954" type="person">fille</rs>
-<lb/>de 4 ans, ce qui n’est ny vray ny vraysemblable<supplied>.</supplied><note cert="high" resp="FN" type="comment">1763 war Jean Galli de Bibiena (1709-1779) in Paris der Vergewaltigung eines dreijährigen Mädchens (1760-????) angeklagt und, da er entflohen war, in Abwesenheit zum Tod verurteilt worden. Siehe Archives nationales de France Y10251. Es heisst dort: "’1763, 25 octobre: Arrêt du Châtelet qui condamne Jean Galli de Bibiena à mort avec l’accusation de viol sur une fillette de trois ans, Anne Marguerite Roberdeau, fille de ses propriétaires.’ La peine prévoit, après un public repentir, ’en demand[ant] pardon à Dieu, au Roi et à [la] justice’, qu’il soit ’conduit en la place de Grève où il sera pendu et étranglé.’ Il s’enfuit pour échapper à la mort.".<!-- MS: fast wörtliches Zitat von https://dx.doi.org/10.15122/isbn.978-2-8124-2989-7.p.0095. Weshalb geben wir hier nicht diese Publikation als Quelle an? --></note></p></postscript>
+<lb/>de 4 ans, ce qui n’est ny vray ny vraysemblable<supplied>.</supplied><note cert="high" resp="FN" type="comment">1763 war Jean Galli de Bibiena (1709-1779) in Paris der Vergewaltigung eines dreijährigen Mädchens (1760-????) angeklagt und, da er entflohen war, in Abwesenheit zum Tod verurteilt worden. Siehe Archives nationales de France Y10251. Es heisst dort: "’1763, 25 octobre: Arrêt du Châtelet qui condamne Jean Galli de Bibiena à mort avec l’accusation de viol sur une fillette de trois ans, Anne Marguerite Roberdeau, fille de ses propriétaires.’ La peine prévoit, après un public repentir, ’en demand[ant] pardon à Dieu, au Roi et à [la] justice’, qu’il soit ’conduit en la place de Grève où il sera pendu et étranglé.’ Il s’enfuit pour échapper à la mort.".</note></p></postscript>
 <pb facs="1383414" n="25v"/><closer><address><addrLine><choice><orig>a</orig><reg>à</reg></choice> Monsieur</addrLine>
 <addrLine><rs key="pers_DE-588-117589136" type="person"><choice><orig>jean</orig><reg>Jean</reg></choice> Bernoully</rs></addrLine>
 <addrLine>Tout seul<note cert="high" resp="FN" type="comment">Dieser Vermerk "Tout seul" macht auf die Vertraulichkeit der Mitteilungen im vorliegenden Billet aufmerksam.</note></addrLine></address></closer>
