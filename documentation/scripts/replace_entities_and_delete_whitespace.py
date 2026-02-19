@@ -45,6 +45,10 @@ def process_file(file_path):
     # NEU: Entfernt Leerzeichen direkt vor <lb break="no"/> auch ohne <pc>
     pattern2 = r'(\S)\s+<lb break="no"/>'
     modified_content = re.sub(pattern2, r'\1<lb break="no"/>', modified_content)
+    
+    # NEU: Entfernt XML-Kommentare <!-- ... --> (auch mehrzeilig)
+    comment_pattern = r'<!--.*?-->'
+    modified_content = re.sub(comment_pattern, '', modified_content, flags=re.DOTALL)
 
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(modified_content)
