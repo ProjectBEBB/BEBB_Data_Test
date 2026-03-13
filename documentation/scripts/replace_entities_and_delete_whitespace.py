@@ -50,6 +50,9 @@ def process_file(file_path):
     comment_pattern = r'<!--.*?-->'
     modified_content = re.sub(comment_pattern, '', modified_content, flags=re.DOTALL)
 
+    # NEU: Ersetzt </del> durch <del><gap/></del>
+    modified_content = re.sub(r'</del>', r'<del><gap/></del>', modified_content)
+
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(modified_content)
 
