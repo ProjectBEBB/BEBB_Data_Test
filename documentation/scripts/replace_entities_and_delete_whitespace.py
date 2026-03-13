@@ -33,25 +33,20 @@ for line in lines:
 doctype_str_old = '<!DOCTYPE TEI [<!ENTITY % entities SYSTEM "../../entities.txt"> %entities; ]>'
 doctype_str_new = ''
 
+# Neue Funktion: <del/> durch <del><gap/></del> ersetzen
+def replace_del_tag(content):
+    return content.replace('<del/>', '<del><gap/></del>')
+
 # Funktion zum Bearbeiten einer Datei
 def process_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # Entfernt Whitespace zwischen <pc>-Trennstrich und <lb break="no"/>
     pattern = r'<pc type="hyphenation">-</pc>\s+<lb break="no"/>'
     modified_content = re.sub(pattern, r'<pc type="hyphenation">-</pc><lb break="no"/>', content)
 
-    # NEU: Entfernt Leerzeichen direkt vor <lb break="no"/> auch ohne <pc>
-    pattern2 = r'(\S)\s+<lb break="no"/>'
-    modified_content = re.sub(pattern2, r'\1<lb break="no"/>', modified_content)
-    
-    # NEU: Entfernt XML-Kommentare <!-- ... --> (auch mehrzeilig)
-    comment_pattern = r'<!--.*?-->'
-    modified_content = re.sub(comment_pattern, '', modified_content, flags=re.DOTALL)
-
-    # NEU: Ersetzt </del> durch <del><gap/></del>
-    modified_content = re.sub(r'</del>', r'<del><gap/></del>', modified_content)
+    # Neue Ersetzung anwenden
+    modified_content = replace_del_tag(modified_content)
 
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(modified_content)

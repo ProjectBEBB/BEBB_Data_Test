@@ -48,7 +48,7 @@
 </title>
     </seriesStmt>
     <notesStmt>
-      
+      <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
       <note type="generalRemark">
         <p>Unter dem Datum von Nic.I B. eigenhändig "Empfg. den 19ten". Beigelegt war ein Flugblatt von Carlo Baldi</p>
       </note>
@@ -56,7 +56,7 @@
       <note type="erschliessbarkeit">Erhalten</note>
       <note type="dataGroup">Tei XML</note>
       <relatedItem type="otherForm">
-        
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
         <msDesc>
           <msIdentifier>
             <repository>PlaceholderContent</repository>
@@ -66,7 +66,7 @@
     </notesStmt>
     <sourceDesc>
       <msDesc facs="http://dx.doi.org/10.7891/e-manuscripta-24342" rend="pythonPlaceholderContent">
-        
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
         <msIdentifier source="BIBB">
           <repository>Universitätsbibliothek Basel, Handschriften</repository>
           <idno type="callNumber">UBH L Ia 22:1 Nr.101</idno>
@@ -112,7 +112,7 @@
   <profileDesc>
     <correspDesc>
       <correspAction type="sent">
-        
+        <!--Contents in this element will be overwritten with information from the BIBB by the Python script.-->
         <persName key="pers_DE-588-1037587715">Hertz, Jean Gabriel</persName>
         <placeName key="placeID_toBeReplacedManually" ref="https://d-nb.info/gnd/4062501-1">Venedig</placeName>
         <date when="1718-11-18">pythonPlaceholderContent</date>
@@ -132,9 +132,9 @@
       <language ident="fre">Französisch</language>
     </langUsage>
     <abstract>
-      
+      <!--Contents in this element will be initialised with information from the BIBB by the Python script. Any further changes will be manual.-->
       <p>initialPythonPlaceholderContent</p>
-      
+      <!--Contents in listPerson element will be overwritten with information from the BIBB by the Python script.-->
       <listPerson>
         <person>
           <persName key="pers_DE-588-118937669">Grandi, Guido</persName>
@@ -144,8 +144,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change notAfter="2026-03-09" who="SW SG">transkribiert</change>
       <change notAfter="1966-02-14">transkribiert</change>
     </listChange>
   </revisionDesc>
@@ -155,11 +156,27 @@
 </facsimile><text>
 <body>
 <div type="letter">
-<pb facs="1063688" n="1"/> <pb facs="1063689" n="2"/>
-<opener><dateline>a Venise la <date when="1718-11-18">18me. 9bre 1718</date></dateline> [Anm. d. Empf.: Empf. d. 19ten]
+<pb facs="1063688" n="1"/>
+  <opener><dateline>à Venise le <date when="1718-11-18"><abbr>18.<hi rend="sup">me</hi></abbr> <abbr>9<hi rend="sup">bre</hi></abbr> <add>1718.</add></date></dateline><note hand="pers_DE-588-119166895"><abbr>Empf.</abbr> den <date when="1718-11-19">19.<hi rend="sup">ten</hi></date></note>
   <lb/>Monsieur<salute/></opener>
-  <p>Permettez moy que j’aie l’honneur de vous saluer, et de vous rendre mes respects et de vous faire part d’une pieçe volante que j’ay reçeu hier de la Poste de Rome je vous la remets telle qu’on me l’a envoyée dans le papier cy enclos, vous verrez si vous en êtes l’objet de la susdite pieçe. pour ce qui regarde les oeuvres du Pere <rs type="person" key="pers_DE-588-118937669">Grandi</rs> je n’ai pas sçeu ob tenir jusques à present ny livres ni rêponce à mes lettres, il faut qu’il soit absent de la Toscane, cependant je suis bien sincerement</p>
-  <closer>Monsieur Vôtre tres humble et tres obeissant servit. <signed><rs type="person" key="pers_DE-588-1037587715">Jean Gabriel Hertz</rs></signed></closer>
+  <p>
+    <lb/>Permettez<supplied>-</supplied>moy que j’aie l’honneur de
+    <lb/>vous saluer, et de vous rendre mes respects
+    <lb/>et de vous faire part <del><gap/></del><add>d’</add>u<del><gap/></del><add>ne</add> <rs type="biblio"><choice><orig>pieçe</orig><reg>piece</reg></choice> volante</rs>
+    <lb/>que j’ay reçeu <date when="1718-11-17">hier</date> de la Poste de <rs type="place">Rome</rs><supplied>,</supplied>
+    <lb/>je vous la remets telle qu<del><gap/></del><add>’on</add> me l’a envoyée
+    <lb/>dans le papier<supplied>-</supplied>cy enc<del><gap/></del><add>l</add>os, vous verrez si
+    <lb/><del><gap/></del><add>v</add>ous en êtes l’objet de la susdite <rs type="biblio"><choice><orig>pieçe</orig><reg>piece</reg></choice></rs>.
+    <lb/><choice><orig>pour</orig><reg>Pour</reg></choice> ce qui regarde les <rs type="biblio">Oeuvres</rs> du Pere <rs type="person" key="pers_DE-588-118937669">Grandi</rs>
+    <lb/>je n’ai pas <choice><orig>sçeu</orig><reg>sceu</reg></choice> obtenir jusques à present
+    <lb/>ny livres ni rêponce à mes <rs type="letter">lettres</rs>, il faut
+    <lb/>qu’il soit absent de <del><gap/></del><add>l</add>a <rs type="place">Toscane</rs>, cependant
+    <lb/>je suis bien sincerement<choice><orig>.</orig><reg>,</reg></choice></p>
+  <closer><lb/>Monsieur<supplied>,</supplied>
+    <lb/>Vôtre tres humble, et<del><gap/></del>
+    <lb/>tres obbeissant <abbr>servit.</abbr>
+    <lb/><signed><rs type="person" key="pers_DE-588-1037587715">Jean Gabriel Hertz</rs></signed></closer>
+ <pb facs="1063689" n="2" type="empty"/>
 </div>
 </body>
 </text></TEI>
