@@ -46,7 +46,10 @@ jobs:
       
         #Get schema 
       - name: Get last version of schema
-        run: wget -P resources/odd/  https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng
+        uses: wei/wget@v1
+        with:
+          args: -P resources/odd/  https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng
+      
       - name: Validate Data files
         run: |
           xmllint --noout --nowarning \
