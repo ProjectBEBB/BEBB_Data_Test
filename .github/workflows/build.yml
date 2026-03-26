@@ -43,17 +43,20 @@ jobs:
       # TODO(DP): commit this file back?
       - name: generate combined indices
         run: python documentation/scripts/create-combined-index-list.py
-
+      
+        #Get schema 
+      - name: Get last version of schema
+        run: wget -P resources/odd/  https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng
       - name: Validate Data files
         run: |
           xmllint --noout --nowarning \
-          --relaxng resources/odd/tei_all.rng \
+          --relaxng resources/odd/BEBB_schema.rng \
           data/edited_texts/**/*.xml
 
       - name: Validate Register files
         run: |
           xmllint --noout --nowarning \
-          --xinclude --relaxng resources/odd/tei_all.rng \
+          --xinclude --relaxng resources/odd/BEBB_schema.rng \
           data/register/combined-indices.xml
 
       # Build 
