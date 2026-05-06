@@ -152,8 +152,13 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="transkribiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2026-05-04" who="RG">Kontrolle Tags Personen und Orte</change>
+      <change when="2026-05-04" who="RG">NER Ergänzung 2.0</change>
+      <change when="2026-05-04" who="RG">NER Ergänzung 1.0</change>
+      <change when="2026-05-04" who="RG">NER Erkennung</change>
+      <change when="2026-03-23" who="SG SW">Kollationieren abgeschlossen</change>
       <change when="2023-10">generiert</change>
     </listChange>
   </revisionDesc>
@@ -165,15 +170,51 @@
 <text>
 <body>
 <div type="letter">
-  <opener>Monsieur</opener> 
+  <!-- ToDo: im BIBB erfassen: Archivarische Notes -->
+  <!-- ToDo: Auf Seite Verlinken (Jinntec) -->
+  <opener><lb/>Monsieur</opener> 
   
-  <p>Il y a environ 4 ou 5 semaines que je vous envoyai une procuration de recevoir de ma part les 2000 L. pour le prix: Selon ce que Mr. de Fontenelle a marqué à mon Pere vous devez avoir touché cette somme; c’est pourquoy j’ai pris la liberté suivant le conseil de Mr. de Fontenelle de tirer une lettre de change sur vous de 1995 L. à l’ordre de Messrs. les Fils de feu Mr. Melchior Muller, que j’espere que vous honorerez; les 5 livres qui reste serviront pour le payement de l’almanac Royal, que vous avez eu la bonté d’envoyer à mon Pere. </p>
+  <p><lb/>Il y a environ 4 ou 5 semaines que je Vous
+    <lb/>envoyai une procuration de recevoir de ma
+    <lb/>part les 2000 <abbr>L.</abbr> pour le prix: Selon ce que
+    <lb/><abbr>Mr.</abbr> de <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> a marqué à mon <rs key="pers_DE-588-118509969" type="person">Pere</rs>
+    <lb/>Vous devez avoir touché cette somme; c’est
+    <lb/>pourquoy j’ai pris la liberté suivant le
+    <lb/>Conseil de <abbr>Mr.</abbr> de <rs key="pers_DE-588-118639056" type="person">Fontenelle</rs> de tirer une
+    <lb/>lettre de change sur Vous de 1995<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> <abbr>L.</abbr>
+    <lb/>à l’ordre de <abbr>Mess.<hi rend="sup">rs</hi></abbr> <rs type="person">les Fils</rs> de feu <abbr>Mr.</abbr>
+    <lb/><rs key="pers_no_GND_id" type="person">Melchior Muller</rs>, que j’espere que Vous
+    <lb/>honorerez; les 5<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> livres qui reste servi<pc type="hyphenation">-</pc><lb break="no"/>ront pour le payement de l’<rs type="biblio"><choice><orig>almanac</orig><reg>Almanac</reg></choice>
+      <lb/>Royal</rs>, que Vous avez eu la bonté
+    <lb/>d’envoyer à mon <rs key="pers_DE-588-118509969" type="person">Pere</rs>.</p>
   
-  <p>Un officier françois qui va avec son Regiment de Flandre en Auvergne, s’est chargé de vous envoyer, quand il sera proche de Paris, l’addition de mon Pere à sa piece in magnis voluisse sat est; ainsi j’espere, que vous le recevrez bientot et vous y trou verez peutetre un petit paquet cacheté pour mon Pere, que vous aurez la bonté Monsieur, d’envoyer incessament à mon Pere, qui vous fait ses tres humbles complimens. Quant à moi je suis avec un profond respect et une estime sans egale</p> <closer>Monsieur
-    Votre tres humble et tres obeissant serviteur Daniel Bernoulli 
-    Bâle ce 14e. juin 1725
-    A Monsieur 
-    Monsieur De Mairan de l’Academie R. des Sciences au vieux Louvre à Paris] </closer>
+  <p><lb/>Un <rs type="person">Officier françois</rs> qui va avec son
+    <lb/>Regiment de <rs key="place_KON-flandern" type="place">Flandre</rs> en <rs key="place_VER-auvergne" type="place">Auvergne</rs>, s’est
+    <!-- ToDo: Auf Seite Verlinken (Jinntec) -->
+    <lb/>chargé de Vous envoyer, quand il sera proche
+    <lb/>de <rs key="place_GEO-2988507" type="place">Paris</rs>, l’<rs type="biblio">addition</rs> de mon <rs key="pers_DE-588-118509969" type="person">Pere</rs> à sa <rs type="biblio">piece</rs>
+    <lb/><hi rend="u"><foreign xml:lang="lat">in magnis voluisse sat est</foreign></hi>; ainsi j’espere,
+    <lb/>que Vous le recevrez bientot et Vous y trou<pc type="hyphenation">-</pc><lb break="no"/>verez peutetre un petit paquet cacheté
+    <lb/>pour mon <rs key="pers_DE-588-118509969" type="person">Pere</rs>, que Vous aurez la bonté,
+    <lb/>Monsieur, d’envoyer incessa<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent à mon <rs key="pers_DE-588-118509969" type="person">Pere</rs>,
+    <lb/>qui Vous fait ses tres humbles complimens.
+    <lb/>Quant à moi je suis avec un profond
+    <lb/>respect et une estime sans egale<supplied>,</supplied></p>
+  <closer>
+    <lb/>Monsieur<supplied>,</supplied>
+    <lb/>Votre tres humble et
+    <lb/>tres obeïssant Serviteur
+    <lb/>Daniel Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice>.
+    <lb/><dateline><rs key="place_GEO-2661604" type="place">Bâle</rs> ce <date when="1725-06-14">14.<hi rend="sup">e</hi>
+        <lb/>juin 1725.</date></dateline>
+    <pb/><!-- ToDo: Auf Seite Verlinken (Jinntec) -->
+    <address><addrLine>A Monsieur</addrLine>
+      <addrLine>Monsieur <rs key="pers_DE-588-11931035X" type="person">De Mairan</rs></addrLine>
+      <addrLine>de l’<rs type="organisation">Academie <abbr>R.</abbr> des Sciences</rs></addrLine>
+      <addrLine>au <rs key="place_WEI-altlou" type="place">vieux Louvre</rs></addrLine>
+      <addrLine>à</addrLine>
+      <addrLine><rs key="place_GEO-2988507" type="place">Paris</rs>.</addrLine>
+    </address></closer>
 </div>
 </body>
 </text>
