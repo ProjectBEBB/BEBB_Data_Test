@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?> <?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
+<?xml version="1.0" encoding="utf-8"?> 
+
+<?xml-model href="https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/main/Documentation/Technical_documentation/ODD_XMLschemas/BEBB_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><!DOCTYPE TEI [<!ENTITY % entities SYSTEM "https://raw.githubusercontent.com/ProjectBEBB/BEBB_Data_Prod/refs/heads/main/Documentation/Technical_documentation/ODD_XMLschemas/entities.txt"> %entities; ]>
 <TEI xml:id="B_991170516531105501" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
   <fileDesc>
@@ -141,6 +143,7 @@
   </profileDesc>
   <revisionDesc status="katalogisiert">
     <listChange>
+      <change when="2026-05-08" who="NG">transkribiert</change>
       <change when="2023-10">generiert</change>
     </listChange>
   </revisionDesc>
@@ -153,25 +156,28 @@
 <body>
 <div type="letter">
 <pb facs="1587180" n="1"/>
-  <opener><dateline>A Fontainebleau <date when="1752-10-05">le 5. 8.bre 1752</date></dateline></opener>
+  <opener><dateline>A <rs type="place">Fontainebleau</rs> <date when="1752-10-05">le 5. <abbr>8.bre</abbr> 1752</date></dateline></opener>
   <p>
-    <lb/> J’ai reçu, Monsieur, la lettre que vous avez pris  
-    <lb/> la peine de m’écrire le 7 du mois, avec le  
-    <lb/> paquet qui y étoit joint, et que vous me priez de  
-    <lb/> faire passer à M. Cottin, banquier à Paris.  
-    <lb/> Je prendrai toutes les précautions que vous pouvez  
+    <lb/> J’ai reçu, Monsieur, la <rs type="letter">lettre</rs> que vous avés pris  
+    <lb/> la peine de m’écrire le <date>7 d<del><gap/></del><add>u</add> mois</date><add>der</add>, avec le  
+    <lb/> paquet qui y étoit joint, et que vous me priés de  
+    <lb/> faire passer à <abbr>M.</abbr> <rs type="person">Cottin</rs>, banquier à <rs type="place">Paris</rs>.  
+    <lb/> Je prendrai toutes les précautions que vous pouvés  
     <lb/> désirer pour que votre commission soit bien faite,  
-    <lb/> et je fais prévenir M. Cottin qu’il peut me faire  
-    <lb/> remettre ce qu’il aura à vous envoyer. Je suis  
+    <lb/> et je fais prévenir <abbr>M.</abbr> <rs type="person">Cottin</rs> qu’il peut me faire  
+    <lb/> remettre ce qu’il aura à vous envoier. Je suis  
     <lb/> fort aise de trouver cette occasion de vous donner  
     <lb/> des assurances de la satisfaction que j’aurai de  
-    <lb/> vous obliger dans des choses plus essentielles.  
+    <lb/> vous obliger dans des choses plus essentielles.</p>
+    <closer>
+      <salute>
+        Je suis très parfaitement, Monsieur, votre  
+   très humble et très obéissant serviteur.
+    </salute>
+    </closer>  
     
-    <lb/> Je suis très parfaitement, Monsieur, votre  
-    <lb/> très humble et très obéissant serviteur.  
-    
-    <lb/> d’Argenson
-  </p>
+    <signed><abbr>M</abbr> d’Argenson</signed>
+  
   <pb facs="1587181" n="2" type="empty"/>
 </div>
 </body>

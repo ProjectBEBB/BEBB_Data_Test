@@ -163,8 +163,9 @@
     </abstract>
     <textClass/>
   </profileDesc>
-  <revisionDesc status="teiKodiert">
+  <revisionDesc status="kollationiert">
     <listChange>
+      <change when="2026-05-07" who="FN SG">Kollationieren abgeschlossen mit Ausnahme einer Formel</change>
       <change when="2026-05-05" who="SG FN">Kollationieren begonnen</change>
       <change when="2026-04-24" who="RG">Kontrolle Tags Personen und Orte</change>
       <change when="2025-09-24" who="RG">Matheformeln angepasst</change>
@@ -181,7 +182,7 @@
 
 
 <facsimile>
-  <graphic url="http://fakeURL.com"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/dao/0/25 RG 05.09.2025-->
+  <graphic url="https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/manifest"/><!-- Original in Genf hier der Link: https://archives.bge-geneve.ch/ark:/17786/vta4c6c492f3d363e5f/dao/0/25 RG 05.09.2025-->
 </facsimile><text>
 <body>
 <div type="letter">
@@ -281,7 +282,7 @@
             n="3"/>
           <lb/>Vous pouvés substituer à celle de l’induction dont je me suis servi dans ma <lb/><rs
             key="B_991170517057905501" type="letter">lettre</rs>
-          precedente.<!-- Bis hier kollationiert --> Soit supposé
+          precedente.<!-- Bis hier kollationiert (formel wurde übersprungen) --> Soit supposé
             <formula>\frac{1}{1-2Lz^{n}+z^{2n}}=\frac{e-fz}{1-xz+zz}+</formula>
           <lb/><formula>\frac{\alpha+\beta z+\gamma zz+\delta z^{3}+\ldots\mu
             z^{n-2}+Mz^{n-1}+\ldots Cz^{2n-5}+Bz^{2n-4}+Az^{2n-3}}{1+az+bzz+cz^{3}+\ldots
@@ -311,154 +312,154 @@
           <lb/>
   <lb/><choice>
     <orig>
-      <formula>
-        
-        \begin{alignedat}{2}
-        &amp;\begin{alignedat}{5}
-        \alpha   &amp;{}={}&amp; 1 &amp;{}-{}&amp; e\\
-        \beta    &amp;{}={}&amp; a &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        \gamma   &amp;{}={}&amp; b &amp;{}-{}&amp; 3be &amp;{}+{}&amp; 2af &amp;{}-{}&amp; e\\
-        \delta   &amp;{}={}&amp; c &amp;{}-{}&amp; 4ce &amp;{}+{}&amp; 3bf &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        \epsilon &amp;{}={}&amp; d &amp;{}-{}&amp; 5de &amp;{}+{}&amp; 4cf &amp;{}-{}&amp; 3be &amp;{}+{}&amp; 2af &amp;{}-{}&amp; e\\
-        &amp;\mathrel{\vdots}&amp;\\
-        \mu      &amp;{}={}&amp; s &amp;{}-{}&amp; \overline{n-1}\cdot se &amp;{}+{}&amp; \overline{n-2}\cdot rf &amp;{}-{}&amp; \overline{n-3}\cdot qe &amp;{}+{}&amp; \mathrm{\&amp;c.}\\
-        M        &amp;{}={}&amp; t &amp;{}-{}&amp; nte &amp;{}+{}&amp; \overline{n-1}\cdot sf &amp;{}-{}&amp; \overline{n-2}\cdot re &amp;{}+{}&amp; \mathrm{\&amp;c.}
-        \end{alignedat}
+      <formula rend="display">
+        \begin{array}{rcl}
+        \alpha   &amp;=&amp; 1-e\\
+        \beta    &amp;=&amp; a-2ae+f\\
+        \gamma   &amp;=&amp; b-3be+2af-e\\
+        \delta   &amp;=&amp; c-4ce+3bf-2ae+f\\
+        \epsilon &amp;=&amp; d-5de+4cf-3be+2af-e\\
+        &amp;\vdots&amp;\\
+        \mu      &amp;=&amp; s-\overline{n-1}\cdot se+\overline{n-2}\cdot rf-\overline{n-3}\cdot qe+\mathrm{etc.}\\
+        M        &amp;=&amp; t-nte+\overline{n-1}\cdot sf-\overline{n-2}\cdot re+\mathrm{etc.}
+        \end{array}
         \qquad
-        &amp;\begin{alignedat}{5}
-        A &amp;{}={}&amp; f\\
-        B &amp;{}={}&amp; 2af &amp;{}-{}&amp; e\\
-        C &amp;{}={}&amp; 3bf &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        D &amp;{}={}&amp; 4cf &amp;{}-{}&amp; 3be &amp;{}-{}&amp; 2af &amp;{}-{}&amp; e\\
-        E &amp;{}={}&amp; 5df &amp;{}-{}&amp; 4ce &amp;{}+{}&amp; 3bf &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        &amp;\mathrel{\vdots}&amp;\\
-        M &amp;{}={}&amp; \overline{n-1}\cdot sf &amp;{}-{}&amp; \overline{n-2}\cdot re &amp;{}+{}&amp; \overline{n-3}\cdot qf &amp;{}-{}&amp; \mathrm{\&amp;c.}\\
-        \mu &amp;{}={}&amp; ntf &amp;{}-{}&amp; \overline{n-1}\cdot se &amp;{}+{}&amp; \overline{n-2}\cdot rf &amp;{}-{}&amp; \mathrm{\&amp;c.}
-        \end{alignedat}
-        \end{alignedat}
-        
+        \begin{array}{rcl}
+        A   &amp;=&amp; f\\
+        B   &amp;=&amp; 2af-e\\
+        C   &amp;=&amp; 3bf-2ae+f\\
+        D   &amp;=&amp; 4cf-3be-2af-e\\
+        E   &amp;=&amp; 5df-4ce+3bf-2ae+f\\
+        &amp;\vdots&amp;\\
+        M   &amp;=&amp; \overline{n-1}\cdot sf-\overline{n-2}\cdot re+\overline{n-3}\cdot qf-\mathrm{etc.}\\
+        \mu &amp;=&amp; ntf-\overline{n-1}\cdot se+\overline{n-2}\cdot rf-\mathrm{etc.}
+        \end{array}
       </formula>
     </orig>
     <reg>
-      <formula>
+      <formula rend="display">
+        \begin{array}{c@{\qquad}c}
         
-        \begin{alignedat}{2}
-        &amp;\begin{alignedat}{5}
-        \alpha   &amp;{}={}&amp; 1 &amp;{}-{}&amp; e\\
-        \beta    &amp;{}={}&amp; a &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        \gamma   &amp;{}={}&amp; b &amp;{}-{}&amp; 3be &amp;{}+{}&amp; 2af &amp;{}-{}&amp; e\\
-        \delta   &amp;{}={}&amp; c &amp;{}-{}&amp; 4ce &amp;{}+{}&amp; 3bf &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        \epsilon &amp;{}={}&amp; d &amp;{}-{}&amp; 5de &amp;{}+{}&amp; 4cf &amp;{}-{}&amp; 3be &amp;{}+{}&amp; 2af &amp;{}-{}&amp; e\\
-        &amp;\mathrel{\vdots}&amp;\\
-        \mu      &amp;{}={}&amp; s &amp;{}-{}&amp; (n-1)\cdot se &amp;{}+{}&amp; (n-2)\cdot rf &amp;{}-{}&amp; (n-3)\cdot qe &amp;{}+{}&amp; \mathrm{etc.}\\
-        M        &amp;{}={}&amp; t &amp;{}-{}&amp; nte &amp;{}+{}&amp; (n-1)\cdot sf &amp;{}-{}&amp; (n-2)\cdot re &amp;{}+{}&amp; \mathrm{etc.}
-        \end{alignedat}
-        \qquad
-        &amp;\begin{alignedat}{5}
-        A &amp;{}={}&amp; f\\
-        B &amp;{}={}&amp; 2af &amp;{}-{}&amp; e\\
-        C &amp;{}={}&amp; 3bf &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        D &amp;{}={}&amp; 4cf &amp;{}-{}&amp; 3be &amp;{}-{}&amp; 2af &amp;{}-{}&amp; e\\
-        E &amp;{}={}&amp; 5df &amp;{}-{}&amp; 4ce &amp;{}+{}&amp; 3bf &amp;{}-{}&amp; 2ae &amp;{}+{}&amp; f\\
-        &amp;\mathrel{\vdots}&amp;\\
-        M &amp;{}={}&amp; (n-1)\cdot sf &amp;{}-{}&amp; (n-2)\cdot re &amp;{}+{}&amp; (n-3)\cdot qf &amp;{}-{}&amp; \mathrm{etc.}\\
-        \mu &amp;{}={}&amp; ntf &amp;{}-{}&amp; (n-1)\cdot se &amp;{}+{}&amp; (n-2)\cdot rf &amp;{}-{}&amp; \mathrm{etc.}
-        \end{alignedat}
-        \end{alignedat}
+        \begin{array}{rcl}
+        \alpha   &amp;=&amp; 1-e\\
+        \beta    &amp;=&amp; a-2ae+f\\
+        \gamma   &amp;=&amp; b-3be+2af-e\\
+        \delta   &amp;=&amp; c-4ce+3bf-2ae+f\\
+        \epsilon &amp;=&amp; d-5de+4cf-3be+2af-e\\
+        &amp;\vdots&amp;\\
+        \mu      &amp;=&amp; s-\left(n-1\right)\cdot se+\left(n-2\right)\cdot rf-\left(n-3\right)\cdot qe+\mathrm{etc.}\\
+        M        &amp;=&amp; t-nte+\left(n-1\right)\cdot sf-\left(n-2\right)\cdot re+\mathrm{etc.}
+        \end{array}
         
+        &amp;
+        
+        \begin{array}{rcl}
+        A   &amp;=&amp; f\\
+        B   &amp;=&amp; 2af-e\\
+        C   &amp;=&amp; 3bf-2ae+f\\
+        D   &amp;=&amp; 4cf-3be-2af-e\\
+        E   &amp;=&amp; 5df-4ce+3bf-2ae+f\\
+        &amp;\vdots&amp;\\
+        M   &amp;=&amp; \left(n-1\right)\cdot sf-\left(n-2\right)\cdot re+\left(n-3\right)\cdot qf-\mathrm{etc.}\\
+        \mu &amp;=&amp; ntf-\left(n-1\right)\cdot se+\left(n-2\right)\cdot rf-\mathrm{etc.}
+        \end{array}
+        
+        \end{array}
       </formula>
     </reg>
   </choice>
           <lb/>
         </p>
-<p>
-  <lb/>Les deux valeurs de <formula>M</formula> égalées ensemble donnent <formula>t-nte=0</formula>, ou <formula>e=\frac{1}{n}</formula>, et les
+<p><!-- ab hier weiter kollationiert --> <!-- Noch klären, ob der folgende Text eine Fortsetzung ist oder es sich um einen neuen Satz handelt  -->
+  <lb/>les deux valeurs de <formula>M</formula> égalées ensemble donnent <formula>t-nte=0</formula>, ou <formula>e=\frac{1}{n}</formula>, et les
   <lb/>deux valeurs de <formula>\mu</formula> donnent <formula>s=ntf</formula> ou <formula>f=\frac{s}{nt}</formula>, co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e j’ai trouvé par induction
   <lb/>dans la solution de mon Probleme 5.
 </p>
 <p>
   <lb/>L’approbation que Vous donnés à ma methode de demontrer l’interpolation
-  <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> pour ces suites <choice rend="regFormula"><orig><formula>\frac{r\cdot r+1\cdot r+2\cdots r+z-1}{p\cdot p+1\cdot p+2\cdots p+z-1}</formula></orig><reg><formula>\frac{r(r+1)(r+2)\cdots(r+z-1)}{p(p+1)(p+2)\cdots(p+z-1)}</formula></reg></choice> ou plus generalement
+  <lb/>de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> pour ces suites <choice rend="regFormula"><orig><formula>\frac{r\cdot r+1\cdot r+2\cdots r+z-1}{p\cdot p+1\cdot p+2\mathinner{\cdotp\cdotp} p+z-1}</formula></orig><reg><formula>\frac{r(r+1)(r+2)\cdots(r+z-1)}{p(p+1)(p+2)\cdots(p+z-1)}</formula></reg></choice> ou plus generalement
   <lb/><choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdot r+2b\cdots r+zb-b}{p\cdot p+b\cdot p+2b\cdots p+zb-b}</formula></orig><reg><formula>\frac{r(r+b)(r+2b)\cdots(r+zb-b)}{p(p+b)(p+2b)\cdots(p+zb-b)}</formula></reg></choice> me console de la raillerie piquante de <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>, qui
-  <lb/>sur ce que j’avois dit, que j’avois deduit la dite interpolation d’un theoreme com<pc type="hyphenation">-</pc><lb break="no"/>muniqué à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> il y a 15<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans, repond dans sa <rs type="letter">lettre</rs>, qu’on peut de<pc type="hyphenation">-</pc><lb break="no"/>duire de la même interpolation aussi aisement d’un theoreme plus simple publié
+  <lb/>sur ce que j’avois dit, que j’avois deduit la dite interpolation d’un theoreme com<pc type="hyphenation">-</pc><lb break="no"/>muniqué à <abbr>Mr.</abbr> de <rs key="pers_DE-588-117601020" type="person">Montmort</rs> il y a 15<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans, repond dans sa <rs type="letter">lettre</rs>, qu’on peut de<pc type="hyphenation">-</pc><lb break="no"/>duire la même interpolation aussi aisement d’un theoreme plus simple publié
   <lb/>par <rs key="pers_DE-588-118771167" type="person">Wallis</rs> il y a 75<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> ans, savoir que <formula>\frac{1}{n}x^{n}</formula> est l’aire d’une Courbe dont l’ordonnée
   <lb/>est <formula>x^{n-1}</formula>. Puisqu’il est question des interpolations par les aires des Courbes,
 <pb facs="-" n="4"/>
-  <lb/>il faut sans doute savoir la maniere de trouver ces aires, et j’ai sû cette ma<pc type="hyphenation">-</pc><lb break="no"/>niere par le moyen du calcul integral avant que d’avoir lû <hi>l’Arithmetica
-  <lb/>Infinitorum</hi> de <rs key="pers_DE-588-118771167" type="person">Wallis</rs>. Mais il y a une grande difference entre le secours
+  <lb/>il faut sans doute savoir la maniere de trouver ces aires, et j’ai sû cette ma<pc type="hyphenation">-</pc><lb break="no"/>niere par le moyen du calcul integral avant que d’avoir lû l’<rs type="biblio"><hi rend="u">Arithmetica
+  <lb/>Infinitorum</hi> de Wallis</rs>. Mais il y a une grande difference entre le secours
   <lb/>que donne ce theoreme de <rs key="pers_DE-588-118771167" type="person">Wallis</rs> et celui que donne mon theoreme. J’ai vû
   <lb/>avec plaisir co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>ent Vous avés rendu mon dit theoreme plus general, mais
-  <lb/>je n’ai pas pris la peine de chercher la demonstration de vôtre decouverte.
-  <lb/>Quant à la seconde maniere d’interpoler un terme de la suite <choice rend="regFormula"><orig><formula>\frac{r}{p}\times\frac{r+b}{p+b}\times\frac{r+2b}{p+2b}\times\mathrm{\&amp;c.}</formula></orig><reg><formula>\frac{r}{p}\times\frac{r+b}{p+b}\times\frac{r+2b}{p+2b}\times\mathrm{etc.}</formula></reg></choice>
-  <lb/>en faisant <choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdots r+2b-b}{p\cdot p+b\cdots p+2b-b}=\frac{r\cdot r+b\cdots p-b}{r+2b\cdot r+zb-b\cdots 2b+p-b}</formula></orig><reg><formula>\frac{r\cdot(r+b)\cdots(r+2b-b)}{p\cdot(p+b)\cdots(p+2b-b)}=\frac{r\cdot(r+b)\cdots(p-b)}{(r+2b)\cdot(r+zb-b)\cdots(2b+p-b)}</formula></reg></choice> ou  <choice rend="regFormula"><orig><formula>=\frac{p+zb\cdot p+zb+b\cdots zb+r-b}{p\cdot p+b\cdots r-b}</formula></orig><reg><formula>=\frac{(p+zb)\cdot(p+zb-b)\cdots(zb+r-b)}{p\cdot(p+b)\cdots(r-b)}</formula></reg></choice>
+  <lb/>je n’ai pas pris la peine de chercher la demonstration de Vôtre decouverte.
+  <lb/>Quant à la seconde maniere d’interpoler un terme de la suite <choice rend="regFormula"><orig><formula>\frac{r}{p}\times\frac{r+b}{p+b}\times\frac{r+2b}{p+2b}\times\mathrm{\&amp;c.}</formula></orig><reg><formula>\frac{r}{p}\cdot\frac{r+b}{p+b}\cdot\frac{r+2b}{p+2b}\cdot\mathrm{etc.}</formula></reg></choice>
+  <lb/>en faisant <choice rend="regFormula"><orig><formula>\frac{r\cdot r+b\cdots r+zb-b}{p\cdot p+b\mathinner{ \cdotp\cdotp} p+zb-b}=\frac{r\cdot r+b\cdots p-b}{r+zb\cdot r+zb+b\cdots zb+p-b}</formula></orig><reg><formula>\frac{r\cdot (r+b)\cdots (r+zb-b)}{p\cdot (p+b)\cdots (p+zb-b)}=\frac{r\cdot (r+b)\cdots (p-b)}{(r+zb)\cdot (r+zb+b)\cdots (zb+p-b)}</formula></reg></choice> ou  <choice rend="regFormula"><orig><formula>=\frac{p+zb\cdot p+zb+b\cdots zb+r-b}{p\cdot p+b\cdots r-b}</formula></orig><reg><formula>=\frac{(p+zb)\cdot(p+zb-b)\cdots(zb+r-b)}{p\cdot(p+b)\cdots(r-b)}</formula></reg></choice><supplied>,</supplied>
   <lb/>j’avoue qu’elle ne reussit pas quand <formula>\frac{r-p}{b}</formula> n’est pas un nombre entier, et qu’en
-  <lb/>Vous la proposant j’avois seulement en vuë la suite particuliere <choice rend="regFormula"><orig><formula>\frac{r}{p}\times\frac{r+1}{p+1}\times\frac{r+2}{p+2}\times\mathrm{\&amp;c.}</formula></orig><reg><formula>\frac{r}{p}\times\frac{r+1}{p+1}\times\frac{r+2}{p+2}\times\mathrm{etc.}</formula></reg></choice>
-  <lb/>dont Vous m’aviés parlé, et où j’avois crû que <formula>r</formula> et <formula>p</formula> signifiaient des nombres
+  <lb/>Vous la proposant j’avois seulement en vuë la suite particuliere <choice rend="regFormula"><orig><formula>\frac{r}{p}\times\frac{r+1}{p+1}\times\frac{r+2}{p+2}\times\mathrm{\&amp;c.}</formula></orig><reg><formula>\frac{r}{p}\cdot\frac{r+1}{p+1}\cdot\frac{r+2}{p+2}\cdot\mathrm{ etc.}</formula></reg></choice>
+  <lb/>dont Vous m’aviés parlé, et où j’avois crû que <formula>r</formula> et <formula>p</formula> signifioient des nombres
   <lb/>entiers. J’ai encore avoué moi même dans ma <rs key="B_991170517057905501" type="letter">lettre</rs> précedente à <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs>,
   <lb/>que cette derniere maniere n’est pas d’un grand usage, lorsque la difference
   <lb/>entre <formula>p</formula> et <formula>r</formula> est un fort grand nombre. En un mot je n’entendois autre chose
   <lb/>par cette seconde maniere d’interpoler que ce que <abbr>Mr.</abbr> <rs key="pers_DE-588-117260266" type="person">Stirling</rs> lui même
-  <lb/><subst><del>à</del><add>a</add></subst> proposé dans la <abbr>Prop.</abbr> XVIII. de son <rs type="biblio">Livre</rs>.
+  <lb/><del><gap/></del><add>a</add> proposé dans la <abbr>Prop.</abbr> XVIII<choice><orig><g ref="#ndot">.</g></orig><reg></reg></choice> de son <rs type="biblio">Livre</rs><!-- Methodus differentialis Londini 1730 (über Interpolation) -->.
 </p> 
 <p>
-  <lb/>Le dernier article de votre <rs type="letter">lettre</rs> regarde les Courbes sur lesquelles un
+  <lb/>Le dernier article de Vôtre <rs type="letter">Lettre</rs> regarde les Courbes sur lesquelles un
   <lb/>mobile fait des oscillations isochrones. Vous me priés de Vous marquer la
-  <lb/>voye qui conduit à trouver une infinité de telles Courbes isochrones autres
+  <lb/>voye qui conduit à trouver une infinité de telles Courbes Isochrones autres
   <lb/>que la Cicloide; la voici: Dans la Cicloide non seulement les oscillations
   <lb/>entieres sont isochrones, mais aussi leurs moitiés, c’est à dire, les temps, que
-  <lb/>le pendule employe à descendre par des arcs quelconques jusque au plus bas
+  <lb/>le pendule employe à descendre par des arcs quelconques jusques au plus bas
   <lb/>point de la même Cicloide, sont toujours égaux, de même que les temps qu’il
   <lb/>employe à monter par d’autres arcs égaux pour achever une vibration en<pc type="hyphenation">-</pc><lb break="no"/>tiere, au lieu que dans d’autres Courbes les deux temps, que le pendule em<pc type="hyphenation">-</pc><lb break="no"/>ploye à parcourir en descendant et ensuite en montant deux arcs differents
   <lb/>en longueur, peuvent étre inégaux, et neanmoins les vibrations entieres
   <lb/>étre isochrones. En effet pour peu que l’on fasse attention l’on verra, que
-  <lb/>pour chaque Courbe donnée <formula>BCA</formula> on peut trouver une autre <formula>Acb</formula> telle, que
-<pb facs="-" n="5"/>
-  <lb/><sic>que</sic> les vibrations entieres par des arcs quelconques <formula>BAb</formula>, <formula>CAc</formula>, soient isochrones
+  <lb/>pour chaque Courbe donnée <formula>BCA</formula> on peut trouver une autre <formula>Acb</formula> telle,<!-- Weiser que --> 
+<pb facs="-" n="5"/> 
+  <lb/>que les vibrations entieres par des arcs quelconques <formula>BAb</formula>, <formula>CAc</formula>, soient isochrones
   <lb/>sans que les mouvements par les arcs <formula>BA</formula>, <formula>CA</formula>, et ceux par les arcs <formula>Ab</formula>, <formula>Ac</formula> soient
-  <lb/>isochrones.<!-- Hier noch die Grafik einfügen, RG 24.09.2025 --> Pour cette fin
+  
+  <lb/> <figure/><!-- ToDo: Figur erstellen --> isochrones. Pour cette fin
   <lb/>on n’a qu’à construire la
-  <lb/>courbe <formula>Acb</formula> de telle manie<pc type="hyphenation">-</pc><lb break="no"/>re, que les arcs <formula>BAb</formula>, <formula>CAc</formula>,
+  <lb/>Courbe <formula>Acb</formula> de telle manie<pc type="hyphenation">-</pc><lb break="no"/>re, que les arcs <formula>BAb</formula>, <formula>CAc</formula>,
   <lb/><formula>GAg</formula>, <formula>HAh</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> soient respective<pc type="hyphenation">-</pc><lb break="no"/>ment égaux aux arcs d’une Cicloi<pc type="hyphenation">-</pc><lb break="no"/>de <formula>EAe</formula>, <formula>FAf</formula>, <formula>MAm</formula>, <formula>NAn</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> terminés
   <lb/>par les mêmes lignes droites horizontales <formula>Be</formula>, <formula>Cf</formula>,
-  <lb/><formula>Gm</formula>, <formula>Hn</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c</abbr>. Car supposant deux oscillations par les Courbes <formula>BA</formula>, <formula>Ab</formula>, et par la 
+  <lb/><formula>Gm</formula>, <formula>Hn</formula>, <abbr><choice><orig><g ref="#etlig">&amp;</g></orig><reg>et</reg></choice>c.</abbr> Car supposant deux oscillations par les Courbes <formula>BA</formula>, <formula>Ab</formula>, et par la
   <lb/>Cicloide <formula>EAe</formula>, les vitesses par les petits arcs <formula>GH</formula>, <formula>hg</formula>, <formula>MN</formula>, <formula>nm</formula>, étant égales, les
   <lb/>temps employés à parcourir ces arcs seront co<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>e les arcs mêmes, et <formula>GH+hg</formula>
-  <lb/>étant (par constr.) <formula>=MN+nm</formula>, les mouvements par ces deux espaces pris ensemble
+  <lb/>étant (par <abbr>constr.</abbr>) <formula>=MN+nm</formula>, les mouvements par ces deux espaces pris ensemble
   <lb/>seront isochrones, ce qui ayant lieu dans tous les petits arcs compris entre deux
   <lb/>mêmes lignes horizontales, le temps par les Courbes <formula>BAb</formula> sera égal au temps par
   <lb/>la Cicloide <formula>EAe</formula>. De même si l’on suppose deux oscillations par les arcs <formula>CAc</formula> et
   <lb/><formula>FAf</formula>, ces oscillations seront aussi isochrones. Par consequent les oscillations par les
   <lb/>arcs de la Cicloide <formula>EAe</formula>, <formula>FAf</formula> étant isochrones par la nature de la Cicloide, celles
-  <lb/>par les arcs <formula>BAb</formula>, <formula>CAc</formula>, s’acheveront aussi dans le même temps. Pour trouver main<pc type="hyphenation">-</pc><lb break="no"/>tenant l’équation generale de ces sortes de Courbes, soit no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>é <formula>AO=x</formula>, <formula>OH</formula> ou <formula>oh</formula>
+  <lb/>par les arcs <formula>BAb</formula>, <formula>CAc</formula>, s’acheveront aussi dans le même temps. Pour trouver main<pc type="hyphenation">-</pc><lb break="no"/>tenant l’équation generale de ces sortes de Courbes, soit no<choice><orig><g ref="#mm">m̄</g></orig><reg>mm</reg></choice>é <formula>AO=x</formula>, <formula>OH</formula> ou <formula>Oh</formula>
   <lb/><formula>=y</formula>, le diametre du cercle generateur de la Cicloide <formula>EAE=a</formula>, l’arc de la Cicloide
-  <lb/><formula>AN</formula> ou <formula>An=2\sqrt{ax}</formula>, <formula>AH=2\sqrt{ax+z}</formula>, <formula>Ah=2\sqrt{ax-2}</formula>, <formula>GH=\frac{dx\sqrt{a}}{\sqrt{x}}+dz</formula>, <formula>gh=\frac{dx\sqrt{a}}{\sqrt{x}}-dz</formula>,
-  <lb/>et l’on trouvera pour la Courbe <formula>AHB</formula> l’équation <formula>dy^{2}=\frac{a\,dx^{2}}{x}-dx^{2}+dz^{2}+\frac{2\,dx\,dz\sqrt{a}}{\sqrt{x}}</formula>. Dans ces
-  <lb/>équations la valeur de <formula>dz</formula> est arbitraire, si aucune de ces deux Courbes <formula>AH</formula>, <formula>Ah</formula>, 
-  <lb/>n’est do<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>ée, de sorte que ces courbes peuvent étre algebraiques ou mechani<pc type="hyphenation">-</pc><lb break="no"/>ques, et avoir une même équation integrale ou non, selon la differente
+  <lb/><formula>AN</formula> ou <choice><orig><formula>An=2\sqrt{}ax</formula></orig><reg><formula>An=2\sqrt{ax}</formula></reg></choice>, <formula>AH=2\sqrt{ax+z}</formula>,<!-- ToDo Normalisierung --> <formula>Ah=2\sqrt{ax-2}</formula>, <formula>GH=\frac{dx\sqrt{a}}{\sqrt{x}}+dz</formula>, <formula>gh=\frac{dx\sqrt{a}}{\sqrt{x}}-dz</formula>,
+  <lb/>et l’on trouvera pour la Courbe <formula>AHB</formula> l’équation <choice><orig><formula>dy^{2}=\frac{adx^{2}}{x}-dx^{2}+dz^{2}+\frac{2dxdz\sqrt{a}}{\sqrt{x}}</formula></orig><reg><formula>dy^{2}=\frac{a\,dx^{2}}{x}-dx^{2}+dz^{2}+\frac{2\,dx\,dz\sqrt{a}}{\sqrt{x}}</formula></reg></choice>,
+  <lb/>et pour la Courbe <formula>Ahb</formula> cette équation <choice><orig><formula>dy^{2}=\frac{adx^{2}}{x}-dx^{2}+dz^{2}-\frac{2dxdz\sqrt{a}}{\sqrt{x}}</formula></orig><reg><formula>dy^{2}=\frac{a\,dx^{2}}{x}-dx^{2}+dz^{2}-\frac{2\,dx\,dz\sqrt{a}}{\sqrt{x}}</formula></reg></choice>. Dans ces
+  <lb/>équations la valeur de <formula>dz</formula> est arbitraire, si aucune de ces deux Courbes <formula>AH</formula>, <formula>Ah</formula>,
+  <lb/>n’est donnée, de sorte que ces courbes peuvent étre algebraiques ou mechani<pc type="hyphenation">-</pc><lb break="no"/>ques, et avoir une même équation integrale ou non, selon la differente
   <lb/>valeur de <formula>z</formula> ou de <formula>dz</formula>. Si l’on fait <formula>z=x</formula>, et <formula>dz=dx</formula>, non seulement les courbes
   <lb/>seront algebraiques, mais l’une sera la continuation de l’autre, et toutes
   <lb/>les deux seront exprimées par une même équation integrale; car on aura 
 <pb facs="-" n="6"/>
-  <lb/><formula>dy^{2}=\frac{a\,dx^{2}}{x}\pm\frac{2\,dx^{2}\sqrt{a}}{\sqrt{x}}</formula> ou <formula>dy=dx\sqrt{\frac{a}{x}\pm\frac{2\sqrt{a}}{\sqrt{x}}}</formula>, dont l’integrale est <choice rend="regFormula"><orig><formula>y=\frac{2}{3}a\cdot\overline{1\pm\frac{2\sqrt{x}}{\sqrt{a}}}^{\frac{3}{2}}</formula></orig><reg><formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}</formula></reg></choice>,
-  <lb/>ou plûtôt <choice rend="regFormula"><orig><formula>y=\frac{2}{3}a\cdot\overline{1\pm\frac{2\sqrt{x}}{\sqrt{a}}}^{\frac{3}{2}}-\frac{2}{3}a</formula></orig><reg><formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}-\frac{2}{3}a</formula></reg></choice>, puisque dans le cas de <formula>x=0</formula>, y doit aussi étre
+  <lb/><choice><orig><formula>dy^{2}=\frac{adx^{2}}{x}\pm\frac{2dx^{2}\sqrt{}a}{\sqrt{}x}</formula></orig><reg><formula>dy^{2}=\frac{a\,dx^{2}}{x}\pm\frac{2\,dx^{2}\sqrt{a}}{\sqrt{x}}</formula></reg></choice> ou <choice><orig><formula>dy=dx\sqrt{}\,\overline{\frac{a}{x}\pm\frac{2\sqrt{}a}{\sqrt{}x}}</formula></orig><reg><formula>dy=dx\sqrt{\frac{a}{x}\pm\frac{2\sqrt{a}}{\sqrt{x}}}</formula></reg></choice>, dont l’integrale est <choice rend="regFormula"><orig><formula>y=\frac{2}{3}a\cdot\overline{1\pm\frac{2\sqrt{}x}{\sqrt{}a}}^{\frac{3}{2}}</formula></orig><reg><formula>y=\frac{2}{3}a\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}</formula></reg></choice>,
+  <lb/>ou plûtôt <choice rend="regFormula"><orig><formula>y=\frac{2}{3}a\cdot\overline{1\pm\frac{2\sqrt{}x}{\sqrt{}a}}^{\frac{3}{2}}-\frac{2}{3}a</formula></orig><reg><formula>y=\frac{2}{3}a\cdot\left(1\pm\frac{2\sqrt{x}}{\sqrt{a}}\right)^{\frac{3}{2}}-\frac{2}{3}a</formula></reg></choice>, puisque dans le cas de <formula>x=0</formula>, <formula>y</formula> doit aussi étre
   <lb/><formula>=0</formula>; aprés avoir ôté les signes radicaux on aura pour chacune de ces deux cour<pc type="hyphenation">-</pc><lb break="no"/>bes <formula>AHB</formula> et <formula>Ahb</formula> cette équation du 4.<hi rend="sup">e</hi> degré <formula>y^{4}+\frac{8}{3}ay^{3}+\frac{16}{9}aayy-\frac{32}{3}axyy-\frac{128}{9}aaxy</formula>
-  <lb/><formula>+\frac{256}{27}aaxx-\frac{1024}{81}ax^{3}-\frac{64}{9}a^{3}x=0</formula>, laquelle répond à une courbe semblable à
-  <lb/>cette figure <formula>CBAbABC</formula>, dont les branches <formula>BC</formula>, <formula>BC</formula>, qui s’étendent à l’infini ne<!-- Hier noch die Grafik einfügen, RG 24.09.2025 -->
+  <lb break="no"/><formula>+\frac{256}{27}aaxx-\frac{1024}{81}ax^{3}-\frac{64}{9}a^{3}x=0</formula>, laquelle répond à une courbe semblable à
+  <lb/>cette figure <formula>CBAbABC</formula>, dont les branches <formula>BC</formula>, <formula>BC</formula>, qui s’étendent à l’infini ne <figure/><!-- ToDo: Hier noch die Grafik einfügen, RG 24.09.2025 -->
   <lb/>peuvent pas servir à l’isochronisme, le point de rebroussement <formula>b</formula> terminant
-  <lb/>la hauteur <formula>bD=\frac{1}{4}a</formula> à laquelle les oscillations peuvent faire monter le pen<pc type="hyphenation">-</pc><lb break="no"/>dule. <abbr>NB.</abbr> <formula>AD=\frac{2}{3}a</formula>, <formula>Bb=\frac{4a\sqrt{2}}{3}</formula>.
+  <lb/>la hauteur <formula>bD=\frac{1}{4}a</formula> à laquelle les oscillations peuvent faire monter le pen<pc type="hyphenation">-</pc><lb break="no"/>dule. <abbr>NB.</abbr> <formula>AD=\frac{2}{3}a</formula>, <choice><orig><formula>Bb=\frac{4a\sqrt{}2}{3}</formula></orig><reg><formula>Bb=\frac{4a\sqrt{2}}{3}</formula></reg></choice>.
 </p>
 <p>
-  <lb/>Vous aurés la bonté, s’il Vous plait, de faire tenir l’incluse à <abbr>Mr.</abbr>
+  <lb/>Vous aurés la bonté, s’il Vous plait, de faire tenir l’<rs type="letter">incluse</rs> à <abbr>Mr.</abbr>
   <lb/><rs key="pers_DE-588-117260266" type="person">Stirling</rs>, j’ai crû Vous faire plaisir en Vous l’envoyant ouverte.
-  <lb/>Je finis en Vous priant de me conserver l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de vôtre amitié,
-  <lb/>et de persuader que je me fais une gloire d’étre avec une
-  <lb/>trés parfaite estime
-  <lb/>Monsieur
+  <lb/>Je finis en Vous priant de me conserver l’ho<choice><orig><g ref="#nn">n̄</g></orig><reg>nn</reg></choice>eur de Vôtre amitié,
+  <lb/>et de Vous persuader que je me fais une gloire d’étre avec une
+  <lb/>trés parfaite estime<supplied>,</supplied>
+  <lb/>Monsieur<supplied>,</supplied>
 </p>
 <closer>
   <salute>
-    <lb/>Vôtre trés humble et trés
-    <lb/>obeissant Serviteur
+    <lb/>Vôtre trés humble et trés-
+    <lb break="no"/>obeissant Serviteur
   </salute>
   <signed>
     <lb/><rs key="pers_DE-588-119166895" type="person"><abbr>N.</abbr> Bernoull<choice><orig><g ref="#j">j</g></orig><reg>i</reg></choice></rs>.
@@ -472,7 +473,7 @@
 <pb facs="-" n="8"/>
 <closer>
   <address>
-    <addrLine>A Monsieur</addrLine>
+    <addrLine>À Monsieur</addrLine>
     <addrLine>Monsieur Cramer trés celebre</addrLine>
     <addrLine>Professeur en Mathematiques</addrLine>
     <addrLine>à</addrLine>
