@@ -22,33 +22,34 @@
     <text>
         <front/>
         <body>
-            
+        <div>
+            <div xml:id="vorbemerkung">
 
 
                     <head>Vorbemerkung</head>
                   
                     <p>Die vorliegenden Editionsrichtlinien wurden 2020 für die Fortsetzung der BEBB im TEI-XML-Format festgelegt. Im Vergleich zu früheren Editionsphasen wurde das Konzept an die Möglichkeiten der digitalen Textauszeichnung (TEI XML) sowie die damit verbundenen Darstellungsmöglichkeiten (textnah, Lesefassung) angepasst. Ältere Richtlinien sind in den jeweiligen Editionen, z.B. <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf">hier</ref>, einsehbar. Bei Texten, die aus Legacy Data stammen, sind die abweichenden Richtlinien in den editorischen Vorbemerkungen zum edierten Text über einen Link abrufbar. Siehe dazu auch den Abschnitt "Legacy Data" in der <ref target="Editionskonzept.xml" type="internal">Beschreibung des Datenmodells</ref>.</p>
-                   
-                    <div>
+            </div>
+                    <div xml:id="einfuehrung">
                         <head>Einführung</head>
                         <p>Die Editionsrichtlinien der BEBB bieten einen Überblick über die Regeln und die Kodierung folgender Aspekte: Textstrukturen und -bearbeitungen der überlieferten Quelle, Dokumentation editorischer Eingriffe, Auszeichnung von Entitäten (Personen, Orte, Werke, erwähnte Briefe und Institutionen) sowie den Aufbau des TEI XML-Headers mit Metadaten.</p>
                         
                    
-                        <div>
+                        <div xml:id="textbasis">
                             <head>Textbasis</head>
                             <p>Die BEBB ist eine wissenschaftlich-kritische Edition, die in der Regel auf einem einzelnen Textzeugen basiert. Bei mehreren Varianten eines Briefes wird die Ausfertigung (die für den Adressaten bestimmte Fassung) als Leithandschrift verwendet. Ist diese nicht erhalten, dient die ihr am nächsten kommende Version als Basis (Entwurf, Abschrift, Druck etc. in hierarchischer Reihenfolge). In Ausnahmefällen, etwa bei Textverlust, wird zusätzlich eine weitere Fassung herangezogen. Der als Leithandschrift verwendete Textzeuge wird  in den Metadaten als Hauptfassung geführt.</p>
                         </div>
-                        <div>
+                        <div xml:id="textkonstitution">
                             <head>Textkonstitution</head>
                             <p>Die Edition zielt auf wissenschaftlich verlässliche und zitierfähige Texte ab. Transkriptionen werden sorgfältig nach dem Vier-Augen-Prinzip überprüft und alle editorischen Eingriffe vollständig in TEI XML oder Fussnoten dokumentiert. Dabei wird die ursprüngliche Schreibweise möglichst textnah bewahrt. Die BEBB umfasst Texte in verschiedenen Bearbeitungsstufen, einschliesslich unverifizierter Rohtranskriptionen. Der Bearbeitungsstand jedes Textes ist im Header dokumentiert und auf der Webseite ersichtlich (siehe "Versionierung und Status"). </p>
                         </div>
-                    <div>
+                    <div xml:id="editionskonzept">
                         <head>Editionskonzept</head>
                         <p>Die BEBB ist eine Edition historischer Texte zur Wissenschaftsgeschichte, die sowohl der Forschung als auch einem breiteren Publikum zugänglich gemacht werden soll. Der Fokus liegt auf der inhaltlichen Erschliessung der Texte, wie der Markierung erwähnter Entitäten, sowie auf einer leserfreundlichen Darstellung, wobei editorische Eingriffe genau dokumentiert werden. Die Durchsuchbarkeit der Daten wird durch die Integration der im Online-Katalog der Universitätsbibliothek Basel erfassten Metadaten ermöglicht. Zudem werden digitale Bilder der Briefmanuskripte eingebunden. Die Trennung von Inhaltsebene (Textauszeichnung) und Darstellungsebene (Frontend) erfolgt über TEI ODD, wobei aus den TEI-XML-Daten verschiedene Textansichten (diplomatisch, leserfreundlich) generiert werden. Informationen zum Datenmodell der Edition finden sich hier (<ref type="internal" target="Editionskonzept.xml"></ref>).</p>
                     </div> </div>
                 
                 
-            <div>
+            <div xml:id="namespace">
                 <head>Namespace und XML-Deklaration</head>
                 <p>Das Rootelement <gi>TEI</gi> enthält die TEI-Namespace-Deklaration
                         (<tag>xmlns:tei="http://www.tei-c.org/ns/1.0"</tag>).</p>
@@ -73,12 +74,12 @@
                 </p>
             </div>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-            <div>
+            <div xml:id="text">
                 <head>Text</head>
-                <div>
+                <div xml:id="textstrukturen">
                     <head>Textstrukturen</head>
 
-                    <div>
+                    <div xml:base="zeilenumbruch">
                         <head>Zeilenumbruch</head>
 
                         <p>Der Zeilenumbruch wird mit <gi>lb</gi>
@@ -175,7 +176,7 @@
                             Ort, 26. Oktober 1715, p. 139r (<ref type="internal" target="B_1715-10-26_991170517051505501">B_1715-10-26_991170517051505501</ref>) </bibl>
 
                     </div>
-                    <div>
+                    <div xml:id="absatz">
                         <head>Absatz</head>
                         <p>Ein Absatz wird in der Regel mit dem Element <gi>p</gi>
                              ausgezeichnet. Falls der Absatz im Original
@@ -3233,7 +3234,7 @@
                     <gi>width</gi>
                 </p>
 
-            </div></div>
+            </div></div></div>
         </body>
     </text>
 </TEI>
