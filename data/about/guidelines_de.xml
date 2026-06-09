@@ -526,11 +526,9 @@
                             sehr von der heutigen abweicht, können Formeln normalisiert werden.
                             Dabei kommt das Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-choice.html">
                                 <gi>choice</gi>
-                            </ref> zum Einsatz, hier jedoch ergänzt durch
-                            das Attribut <att>rend</att> mit dem Wert <val>regFormula</val>, damit
-                            die Darstellung der Normalisierung von Formeln im Browser von derjenigen
-                            anderer Normalisierungen unterschieden werden kann.</p>
-                        <p>Das Element <gi>choice</gi> wird nur optional für Normalisierungen (<gi>orig</gi> und <gi>reg</gi>) verwendet, auf Rechenfehler oder andere inhaltliche Fehler im Original wird in einer editorischen Fussnote hingewiesen. Die Fussnote kann optional auch eine korrigierte Fassung der Formel enthalten.</p>
+                            </ref> zum Einsatz.</p>
+                        <p>Das Element <gi>choice</gi> wird nur optional für Normalisierungen (<gi>orig</gi> und <gi>reg</gi>) verwendet.</p>
+                            
                        
                         <p>
                             <hi rend="exampleHeading">Beispiel einer Formel mit Normalisierung</hi>
@@ -539,7 +537,7 @@
                             </figure>
                             
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                <choice rend="regFormula">
+                                <choice>
                                     <orig>
                                         <formula>\overline{BH^{2} - BG^{2}}\cdot bg=\overline{BP^{2}-BH^{2}}\cdot ci</formula>
                                     </orig>
@@ -549,13 +547,33 @@
                                 </choice>
                             </egXML>
                             
-                            <bibl type="example">Nicolaus I Bernoulli an Pietro Antonio Michelotti. Basel, 24. Juli 1726, p. 174 (<ref type="internal" target="B_1726-07-24_991170517024705501">B_1726-07-24_991170517024705501</ref>).</bibl>
+                            <bibl type="example">Nicolaus I Bernoulli an Pietro Antonio Michelotti. Basel, 24. Juli 1726, p. 174 (<ref type="internal" target="B_991170517024705501">B_991170517024705501</ref>).</bibl>
                         </p>
                         </div>
                         <div>
                             <head>Korrekturen in Formeln</head>
                             <p>Korrekturen von Fehlern in Formeln werden in einer editorischen Anmerkung kommentiert. In der Fussnote kann die Formel in der korrigierten Form wiedergegeben werden.</p>
                         </div>
+                        
+                        <div><head>Korrektur durch den Autor in einer Formel</head>
+                            <p>Da in Formeln kein TEI XML-Code verwendet werden kann, werden Formeln mit solchen Bearbeitungen mittels eines Attributs @ana (und dem Wert "corr" gekennzeichnet). Falls sich die Formel in einem <gi>choice</gi>-Element befindet, wird die Formel im Element <gi>orig</gi> mit dem Attribut versehen.</p>
+                            <p>Falls die Korrekturen eine relevante Information enthalten, wird in einem Fussnotenkommentar darauf verwiesen.</p>
+                            
+                            
+                            <p>
+                                <hi rend="exampleHeading">Beispiel einer Formel mit Korrektur durch den Schreiber</hi>
+                                <figure>
+                                    <graphic width="20em" url="../images/examples/1038887_01.png"/>
+                                </figure>
+                                
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <formula ana="corr">pdz + zdp = dy</formula>
+                                </egXML>
+                                
+                                <bibl type="example">Nicolaus I Bernoulli an Pierre Rémond de Montmort. Padua, 11. Juni 1718, p. 254 (<ref type="internal" target="B_991170517019505501">B_991170517019505501</ref>).</bibl>
+                            </p>
+                        </div>
+                        
                     <div>
 
                         <head>Beispiele für die häufigsten historischen Schreibweisen mathematischer
@@ -734,6 +752,9 @@
                                 type="long"</tag> versehen. Die Anführungszeichen am Zeilenbeginn
                             werden dabei normalisierend entfernt.
                             <!-- Interne Info: Sie werden mit der Entity &quot; ausgezeichnet, die zu einem choice-Element entsprechend umgewandelt wird -->
+                        </p>
+                        <p>
+                            Zitate, die im Manuskript nicht durch Anführungszeichen, Unterstreichung oder andere Hervorhebung gekennzeichnet sind, werden im Element <gi>cit</gi> mit dem Attribut type="unmarked" versehen.
                         </p>
                         <p>Text, der sich als Einschub im Zitat befindet, jedoch nicht dazu gehöret,
                             wird in der Regel mit dem Element <gi>said</gi> ausgezeichnet. Falls es
@@ -1028,7 +1049,7 @@
                     <div>
                         <head>Wortumstellung im Manuskript</head>
                         
-                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung oder anderer Zeichen wird nicht mittels Markup ausgezeichnet. Der Text wird stillschweigend in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben. In einer textkritischen Fussnote wird auf die Wortumstellung hingewiesen.
+                        <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung oder anderer Zeichen wird mit dem Element <gi>seg</gi> versehen mit type="transposition" ausgezeichnet, der so ausgezeichnete Text wird in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben.
                         </p>
                         
                         <p>
@@ -1037,7 +1058,7 @@
                                 <graphic width="50em" url="../images/examples/1038330_01.png"/>
                             </figure>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                <lb/> [...] Patruus meus cap. 15. Manuariae suae Nauticae <note type="editorial">Wortumstellung.</note> [...]
+                                <lb/> [...] Patruus meus cap. 15. <seg type="transposition">Manuariae suae Nauticae</seg> [...]
                             </egXML>
                             <bibl type="example">Jacob Hermann an Johann Bernoulli. Padua, 15. Februar 1710, p. 1
                                 (<ref type="internal" target="B_1715-10-26_991170517051505501">B_1715-10-26_991170517051505501</ref>)
@@ -1667,8 +1688,8 @@
                         Grussformel <gi>salute</gi>, Unterschrift <gi>signed</gi>, Datumszeile
                             <gi>dateline</gi> mit Datum (<gi>date</gi>) enthalten.</p>
                     <p>Eine Unterschrift, sei sie autograf oder in Entwürfen von anderer Hand gesetzt, wird mit <gi>signed</gi> ausgezeichnet, wobei der Personenname zusätzlich mit dem Element <gi>rs</gi> markiert wird.</p>
-                    <p> Oft ist am Briefende der Briefschluss nicht klar vom eigentlichen Brieftext
-                        abgegrenzt, weder inhaltlich noch optisch. Da das Element <gi>closer</gi> auf der Darstellungsebene einen Zeilenumbruch impliziert, kann es nicht immer an der inhaltlich korrekten Stelle eingefügt werden.</p>
+                    <p>  Oft ist am Briefende der Briefschluss nicht klar vom eigentlichen Brieftext
+                        abgegrenzt, weder inhaltlich noch optisch. In diesen Fällen fügt <gi>closer</gi> auf der Darstellungsebene einen Zeilenumbruch ein, der im Brief nicht vorkommt. Trotzdem sollte der <gi>closer</gi> an der inhaltlich korrekten Stelle (also dort wo die Grussformel beginnt) eingefügt werden, mit <gi>lb/</gi> falls tatsächlich ein Zeilenumbruch vorhanden ist, ohne <gi>lb/</gi> falls kein Zeilenumbruch vorhanden ist. Zukünftig wäre das Ziel, dass <gi>closer</gi> nicht automatisch als neuer Abschnitt / neue Zeile dargestellt wird.</p>
                     <p>Im folgenden Beispiel beginnt die Grussformel mit "j'ay l'honeur d'estre",
                         der closer wird trotzdem erst ab "Monsieur" ausgezeichnet, damit der Text an
                         dieser Stelle nicht umbricht: </p>
@@ -1944,6 +1965,12 @@
                                     deux de vos lettres</rs>
                             </egXML>
                         </p>
+                        <p>Besteht Unsicherheit bei der Identifizierung (z. B. wenn mehrere Personen,
+                            Orte oder Titel in Frage kommen), wird die 
+                            Entität im laufenden Text nur mit rs type ausgezeichnet.
+                            In der Fussnote werden die möglichen Zuordnungen aufgelistet und dort
+                            jeweils mit rs type und key ausgezeichnet; das Attribut key verlinkt
+                            auf den entsprechenden Indexeintrag. </p>
                         <p> Die Vorkommnisse werden im Brieftext durchgehend ausgezeichnet,
                             unabhängig davon, wo sie sich befinden (Briefanfang, Brieftext und
                             Briefschluss). In den Fussnoten werden die Vorkommnisse nur ergänzend
@@ -2132,6 +2159,16 @@
                                     </egXML>
                                 </p>
 
+                            </div>
+                            <div>
+                                <head>Personeneinträge ohne GND-Nummer</head>
+                                <p> Wenn eine Person keine GND-Nummer hat oder keine GND erstellt werden kann und
+                                    ein interner Eintrag benötig wird: 
+                                    
+                                    Der Dateiname wird nach dem Schema pers_resource_000001.xml erstellt. Falls kein
+                                    Name bekannt ist, wird die Beschreibung der Rolle in <gi>roleName</gi>, 
+                                    z.B. "Gentilhomme Anglois" erfasst. In note type="bio" können noch weitere 
+                                    Angaben gemacht werden, falls Informationen vorliegen.</p>
                             </div>
 
                         </div>
