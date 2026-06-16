@@ -25,30 +25,32 @@
             
 
 
-                    <head>Vorbemerkung</head>
+                    <div xml:id="vorbemerkung"><head>Vorbemerkung</head>
                   
                     <p>Die vorliegenden Editionsrichtlinien wurden 2020 für die Fortsetzung der BEBB im TEI-XML-Format festgelegt. Im Vergleich zu früheren Editionsphasen wurde das Konzept an die Möglichkeiten der digitalen Textauszeichnung (TEI XML) sowie die damit verbundenen Darstellungsmöglichkeiten (textnah, Lesefassung) angepasst. Ältere Richtlinien sind in den jeweiligen Editionen, z.B. <ref target="https://ub-mediawiki.ub.unibas.ch/bernoulli/images/e/e0/Richtlinien_2011.pdf">hier</ref>, einsehbar. Bei Texten, die aus Legacy Data stammen, sind die abweichenden Richtlinien in den editorischen Vorbemerkungen zum edierten Text über einen Link abrufbar. Siehe dazu auch den Abschnitt "Legacy Data" in der <ref target="Editionskonzept.xml" type="internal">Beschreibung des Datenmodells</ref>.</p>
                    
-                    <div>
+                    </div>
+                   
+                    <div xml:id="einfuehrung">
                         <head>Einführung</head>
                         <p>Die Editionsrichtlinien der BEBB bieten einen Überblick über die Regeln und die Kodierung folgender Aspekte: Textstrukturen und -bearbeitungen der überlieferten Quelle, Dokumentation editorischer Eingriffe, Auszeichnung von Entitäten (Personen, Orte, Werke, erwähnte Briefe und Institutionen) sowie den Aufbau des TEI XML-Headers mit Metadaten.</p>
                         
                    
-                        <div>
+                        <div xml:id="textbasis">
                             <head>Textbasis</head>
                             <p>Die BEBB ist eine wissenschaftlich-kritische Edition, die in der Regel auf einem einzelnen Textzeugen basiert. Bei mehreren Varianten eines Briefes wird die Ausfertigung (die für den Adressaten bestimmte Fassung) als Leithandschrift verwendet. Ist diese nicht erhalten, dient die ihr am nächsten kommende Version als Basis (Entwurf, Abschrift, Druck etc. in hierarchischer Reihenfolge). In Ausnahmefällen, etwa bei Textverlust, wird zusätzlich eine weitere Fassung herangezogen. Der als Leithandschrift verwendete Textzeuge wird  in den Metadaten als Hauptfassung geführt.</p>
                         </div>
-                        <div>
+                        <div xml:id="textkonstitution">
                             <head>Textkonstitution</head>
                             <p>Die Edition zielt auf wissenschaftlich verlässliche und zitierfähige Texte ab. Transkriptionen werden sorgfältig nach dem Vier-Augen-Prinzip überprüft und alle editorischen Eingriffe vollständig in TEI XML oder Fussnoten dokumentiert. Dabei wird die ursprüngliche Schreibweise möglichst textnah bewahrt. Die BEBB umfasst Texte in verschiedenen Bearbeitungsstufen, einschliesslich unverifizierter Rohtranskriptionen. Der Bearbeitungsstand jedes Textes ist im Header dokumentiert und auf der Webseite ersichtlich (siehe "Versionierung und Status"). </p>
                         </div>
-                    <div>
+                    <div xml:id="editionskonzept">
                         <head>Editionskonzept</head>
-                        <p>Die BEBB ist eine Edition historischer Texte zur Wissenschaftsgeschichte, die sowohl der Forschung als auch einem breiteren Publikum zugänglich gemacht werden soll. Der Fokus liegt auf der inhaltlichen Erschliessung der Texte, wie der Markierung erwähnter Entitäten, sowie auf einer leserfreundlichen Darstellung, wobei editorische Eingriffe genau dokumentiert werden. Die Durchsuchbarkeit der Daten wird durch die Integration der im Online-Katalog der Universitätsbibliothek Basel erfassten Metadaten ermöglicht. Zudem werden digitale Bilder der Briefmanuskripte eingebunden. Die Trennung von Inhaltsebene (Textauszeichnung) und Darstellungsebene (Frontend) erfolgt über TEI ODD, wobei aus den TEI-XML-Daten verschiedene Textansichten (diplomatisch, leserfreundlich) generiert werden. Informationen zum Datenmodell der Edition finden sich hier (<ref type="internal" target="Editionskonzept.xml"></ref>).</p>
+                        <p>Die BEBB ist eine Edition historischer Texte zur Wissenschaftsgeschichte, die sowohl der Forschung als auch einem breiteren Publikum zugänglich gemacht werden soll. Der Fokus liegt auf der inhaltlichen Erschliessung der Texte, wie der Markierung erwähnter Entitäten, sowie auf einer leserfreundlichen Darstellung, wobei editorische Eingriffe genau dokumentiert werden. Die Durchsuchbarkeit der Daten wird durch die Integration der im Online-Katalog der Universitätsbibliothek Basel erfassten Metadaten ermöglicht. Zudem werden digitale Bilder der Briefmanuskripte eingebunden. Die Trennung von Inhaltsebene (Textauszeichnung) und Darstellungsebene (Frontend) erfolgt über TEI ODD, wobei aus den TEI-XML-Daten verschiedene Textansichten (diplomatisch, leserfreundlich) generiert werden. Informationen zum Datenmodell der Edition finden sich hier (<ref type="internal" target="Editionskonzept.xml"/>).</p>
                     </div> </div>
                 
                 
-            <div>
+            <div xml:id="namespace_und_xml_deklaration">
                 <head>Namespace und XML-Deklaration</head>
                 <p>Das Rootelement <gi>TEI</gi> enthält die TEI-Namespace-Deklaration
                         (<tag>xmlns:tei="http://www.tei-c.org/ns/1.0"</tag>).</p>
@@ -73,12 +75,12 @@
                 </p>
             </div>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-            <div>
+            <div xml:id="text">
                 <head>Text</head>
-                <div>
+                <div xml:id="textstrukturen">
                     <head>Textstrukturen</head>
 
-                    <div>
+                    <div xml:id="zeilenumbruch">
                         <head>Zeilenumbruch</head>
 
                         <p>Der Zeilenumbruch wird mit <gi>lb</gi>
@@ -175,7 +177,7 @@
                             Ort, 26. Oktober 1715, p. 139r (<ref type="internal" target="B_1715-10-26_991170517051505501">B_1715-10-26_991170517051505501</ref>) </bibl>
 
                     </div>
-                    <div>
+                    <div xml:id="absatz">
                         <head>Absatz</head>
                         <p>Ein Absatz wird in der Regel mit dem Element <gi>p</gi>
                              ausgezeichnet. Falls der Absatz im Original
@@ -199,7 +201,7 @@
 
 
                     </div>
-                    <div>
+                    <div xml:id="seitenbeginn">
                       
                         <head>Seitenbeginn</head>
                         
@@ -226,7 +228,7 @@
                             Venedig, 02. Dezember 1713, pp. 1-2 (<ref target="B_1713-12-02_991170517055605501">B_1713-12-02_991170517055605501</ref>) </bibl>
                     </div>
 
-                    <div>
+                    <div xml:id="gedicht">
                         <head>Gedicht</head>
 
                         <p>Die Verszeile wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-l.html">
@@ -263,7 +265,7 @@
                     </div>
 
                    
-                    <div>
+                    <div xml:id="anmerkung_im_manuskript">
                         <head>Anmerkung im Manuskript</head>
 
                         <p>Nachträgliche zeitgenössische Anmerkungen im Original werden mit <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-note.html">
@@ -305,7 +307,7 @@
 
                     </div>
 
-                    <div>
+                    <div xml:id="figuren_und_abbildungen">
                         <head>Figuren und Abbildungen</head>
                         <p>Figuren im Manuskript werden mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-figure.html">
                                 <gi>figure</gi>
@@ -360,7 +362,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div xml:id="listen">
                         <head>Listen</head>
                         <p>Eine Liste wird mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-list.html">
                                 <gi>list</gi>
@@ -449,7 +451,7 @@
                         <bibl type="example">Jean Jacques de Mairan an Johann I Bernoulli. Paris,
                             30. Mai 1727, p. 3 (<ref type="internal" target="B_1727-05-30_991170514897905501">B_1727-05-30_991170514897905501</ref>). </bibl>
                     </div>
-                    <div>
+                    <div xml:id="tabellen">
                         <head>Tabellen</head>
                         <p> Tabellen werden mit dem Element <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-table.html">
                                 <gi>table</gi>
@@ -488,7 +490,7 @@
                         <bibl type="example">Johann Scheuchzer an Johann Bernoulli. Turin, 01. Februar 1715, p. 4 (<ref type="internal" target="B_1715-02-01_991170515084905501">B_1715-02-01_991170515084905501</ref>). </bibl>
                     </div>
 
-                    <div>
+                    <div xml:id="mathematische_formeln">
                         <head>Mathematische Formeln</head>
                         
                         
@@ -498,7 +500,7 @@
                             kodiert. Da LaTeX und TEI XML nicht kompatible Notationen sind, ist es innerhalb des Elementes <gi>formula</gi>
                             nicht möglich, weitere TEI XML-Elemente zu verwenden. Nachträglich Hinzufügungen können somit beispielsweise nicht wie üblich mit <gi>add</gi> ausgezeichnet werden sondern müssen in einer editorischen Fussnote kommentiert werden.</p>
                         
-                        <div><head>Formellayout</head>
+                        <div xml:id="formellayout"><head>Formellayout</head>
                             
                             <p>Erscheint die mathematische Formel im Brieftext nicht im Fliesstext
                                 sondern vom restlichen Text abgesetzt, wird das Element <gi>formula</gi>
@@ -519,7 +521,7 @@
                                 der Logarithmus mit einer Minuskel bezeichnet ist, wird diese als
                                 "<formula>\ell</formula>" wiedergegeben. </p>
                         </div>
-                        <div><head>Normaliserung veralteter Schreibweisen und Korrekturen von Fehlern</head>
+                        <div xml:id="normaliserung_veralteter_schreibweisen_und_korrekturen_von_fehlern"><head>Normaliserung veralteter Schreibweisen und Korrekturen von Fehlern</head>
                         <p>Mathematische Formeln werden möglichst getreu der Vorlage transkribiert, d.h.
                             Formeln werden unter Beachtung der historischen Symbole und
                             Schreibweise wiedergegeben. Falls die historische Schreibweise
@@ -550,12 +552,12 @@
                             <bibl type="example">Nicolaus I Bernoulli an Pietro Antonio Michelotti. Basel, 24. Juli 1726, p. 174 (<ref type="internal" target="B_991170517024705501">B_991170517024705501</ref>).</bibl>
                         </p>
                         </div>
-                        <div>
+                        <div xml:id="korrekturen_in_formeln">
                             <head>Korrekturen in Formeln</head>
                             <p>Korrekturen von Fehlern in Formeln werden in einer editorischen Anmerkung kommentiert. In der Fussnote kann die Formel in der korrigierten Form wiedergegeben werden.</p>
                         </div>
                         
-                        <div><head>Korrektur durch den Autor in einer Formel</head>
+                        <div xml:id="korrektur_durch_den_autor_in_einer_formel"><head>Korrektur durch den Autor in einer Formel</head>
                             <p>Da in Formeln kein TEI XML-Code verwendet werden kann, werden Formeln mit solchen Bearbeitungen mittels eines Attributs @ana (und dem Wert "corr" gekennzeichnet). Falls sich die Formel in einem <gi>choice</gi>-Element befindet, wird die Formel im Element <gi>orig</gi> mit dem Attribut versehen.</p>
                             <p>Falls die Korrekturen eine relevante Information enthalten, wird in einem Fussnotenkommentar darauf verwiesen.</p>
                             
@@ -574,7 +576,7 @@
                             </p>
                         </div>
                         
-                    <div>
+                    <div xml:id="beispiele_fuer_die_haeufigsten_historischen_schreibweisen_mathematischer_formeln_und_deren_kodierung">
 
                         <head>Beispiele für die häufigsten historischen Schreibweisen mathematischer
                             Formeln und deren Kodierung:</head>
@@ -715,7 +717,7 @@
                        
                         
                     </div>
-                    <div>
+                    <div xml:id="zitate">
                         <head>Zitate</head>
                         <p> Zitate werden kodiert, wenn sie als solche erkennbar sind, sei es
                             aufgrund einer Hervorhebung des Textes in der Handschrift, sei es aus
@@ -898,7 +900,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div xml:id="anfuehrungszeichen">
                         <head>Anführungszeichen</head>
                         <p>Bisher wurden die Anführungszeichen nicht gemäss der Schreibweise im Original sondern einheitlich gemäss den gebräuchlichen Schreibweisen in der Sprache der Edition gehandhabt.</p>
                         <p>Eine Kodierungsliste der im deutschen Raum gebräuchlichen
@@ -906,9 +908,9 @@
                             (https://www.deutschestextarchiv.de/doku/basisformat/trAnfZeichen.html)</p>
                     </div>
                 </div>
-                <div>
+                <div xml:id="textbearbeitungen_der_schreiber">
                     <head>Textbearbeitungen der Schreiber</head>
-                    <div>
+                    <div xml:id="anmerkung_im_manuskript_2">
                         <head>Anmerkung im Manuskript</head>
                         
                         <p> Anmerkungen im Original werden mit <gi>note</gi> ausgezeichnet. Zur Unterscheidung von Fussnoten und anderen Anmerkungstypen und zur Identifikation der Schreiberhand wird das Attribut <att>hand</att> verwendet mit Angabe der xml:id aus dem Personenregister, beispielsweise  <tag>hand="pers_DE-588-118509969"</tag>. Falls die Schreiberhand nicht bekannt ist, lautet der Wert <val>unknown</val>.</p>
@@ -936,7 +938,7 @@
                         
                     </div>
 
-                    <div>
+                    <div xml:id="ergaenzungen_und_streichungen_durch_den_autor">
                         <head>Ergänzungen und Streichungen durch den Autor</head>
                         <p>Die Ergänzungen, die der Autor selbst im Manuskript vorgenommen hat,
                             werden mit dem Element <gi>add</gi> ausgezeichnet.</p>
@@ -1004,7 +1006,7 @@
                         </list>
                     </div>
 
-                    <div>
+                    <div xml:id="hervorhebungen_durch_den_autor">
                         <head>Hervorhebungen durch den Autor</head>
                         <p>Die vom Autor stammenden Hervorhebungen werden mit dem Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-hi.html">
                                 <gi>hi</gi>
@@ -1046,7 +1048,7 @@
 
                     </div>
                     
-                    <div>
+                    <div xml:id="wortumstellung_im_manuskript">
                         <head>Wortumstellung im Manuskript</head>
                         
                         <p>Eine vom Autor durchgeführte korrigierende Umstellung von Wörtern mittels Nummerierung oder anderer Zeichen wird mit dem Element <gi>seg</gi> versehen mit type="transposition" ausgezeichnet, der so ausgezeichnete Text wird in der durch die Nummerierung angezeigten Reihenfolge wiedergegeben.
@@ -1069,7 +1071,7 @@
                     
                 </div>
  
-                    <div>
+                    <div xml:id="textkritische_auszeichnung">
                         <head>Textkritische Auszeichnung</head>
                         <p>Textkritische Eingriffe werden in der Regel durch Textauszeichnung
                             mittels XML-Code durchgeführt. Wo die unten stehenden Regeln für die
@@ -1084,12 +1086,12 @@
                         </p>
                     </div>
 
-                        <div>
+                        <div xml:id="korrekturen_durch_den_herausgeber">
                             <head>Korrekturen durch den Herausgeber</head>
                             <p> Korrekturen werden durchgeführt, wenn im Text offensichtliche
                                 Schreibfehler vorliegen oder Wörter ergänzt oder
                                 getilgt werden müssen, um die Leserlichkeit des Textes zu gewährleisten. Korrekturen unterscheiden sich von den Normalisierungen, die weiter unten behandelt werden.</p>
-                            <div>
+                            <div xml:id="korrekturen_von_schreibfehlern">
                                 <head>Korrekturen von Schreibfehlern</head>
 <!-- <<<<<<< Updated upstream -->
                                 <p>Die Kodierung erfolgt mit den Elementen <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-sic.html">
@@ -1128,7 +1130,7 @@
                                     
                                 </p>
                             </div>
-                            <div>
+                            <div xml:id="streichung_durch_den_herausgeber">
                                 <head>Streichung durch den Herausgeber</head>
                                 <p>Eine Korrektur durch Tilgung eines ganzen Wortes wird ebenfalls mit dem Element <gi>corr</gi> ausgezeichnet und speziell durch das Attribut <tag>type="deleted"</tag> gekennzeichnet (<egXML xmlns="http://www.tei-c.org/ns/Examples"><choice><sic></sic><corr type="deleted"/></choice></egXML>). Diese Form der Korrektur betrifft
                                     meist Wortverdoppelungen.
@@ -1147,7 +1149,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div>
+                        <div xml:id="ergaenzung">
                             <head>Ergänzung</head>
                             <p>Die Korrektur durch Ergänzung eines ganzen Wortes oder eines Satzzeichens erfolgt mit dem Element <gi>supplied</gi>.
                             </p>
@@ -1168,7 +1170,7 @@
                             </p>
                             
                         </div>
-                        <div>
+                        <div xml:id="normalisierung">
                             <head>Normalisierung</head>
                             <p>Die Normalisierung ist ein textkritischer Eingriff, bei dem der Text nicht wesentlich verändert wird, sondern der besseren Lesbarkeit halber an die heutige Orthographie angepasst wird. Normalisierungen werden in der BEBB nur punktuell durchgeführt, in der Regel wird die historische Schreibweise beibehalten.</p>
                             <p> Normalisierungen unterscheiden sich von Korrekturen hauptsächlich dadurch, dass
@@ -1189,9 +1191,9 @@
                                 Abbreviaturzeichen und diakritische Zeichen, die mit dem Element
                                     <gi>g</gi> ausgezeichnet werden (siehe dazu den entsprechenden
                                 Abschnitt weiter unten). </p>
-                            <div>
+                            <div xml:id="sprachunabhaengige_normalisierungen">
                                 <head>Sprachunabhängige Normalisierungen</head>
-                                <div>
+                                <div xml:id="gross_und_kleinschreibung">
                                     <head>Gross- und Kleinschreibung</head>
                                     <list>
                                         <item>Bei intermediären Buchstabenformen wird die Gross- und
@@ -1257,7 +1259,7 @@
                                     -->
                             </p>
                                   
-                                <div>
+                                <div xml:id="gross_und_kleinschreibung_2">
                                     <head>Gross- und Kleinschreibung</head>
                                     <list>
                                     
@@ -1314,9 +1316,9 @@
                                         </item>
                                     </list>
                                 </div>
-                            <div>
+                            <div xml:id="sprachabhaengige_normalisierungen">
                                 <head>Sprachabhängige Normalisierungen</head>
-                                <div>
+                                <div xml:id="lateinische_texte">
                                     <head>Lateinische Texte</head>
                                     <p>
                                         <list>
@@ -1379,7 +1381,7 @@
                                     </p>
                                 </div>
 
-                                <div>
+                                <div xml:id="franzoesische_texte">
                                     <head> Französische Texte </head>
                                     <list>
                                         <item> In französischen Wörtern werden die Akzente
@@ -1394,7 +1396,7 @@
                                             wiedergegeben. </item>
                                     </list>
                                 </div>
-                                <div>
+                                <div xml:id="deutsche_texte">
                                     <head>Deutsche Texte</head>
                                     <p>
                                         <list>
@@ -1430,13 +1432,13 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div xml:id="nicht_lesbare_zeichen">
                             <head>Nicht lesbare Zeichen</head>
                             <!-- ToDo: Frage: sollen Stellen, bei denen der Textverlust komplett ist (also nicht bloss unleserliche Stellen) speziell kodiert werden, Humboldt benutzt hier das attribut reason="lost" Siehe dazu: https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/nicht_lesbar.html#topic_gfh_yfv_ty-->
                             
                             <p>Nicht lesbare Zeichen, deren Bedeutung nicht erschlossen werden kann, werden mit dem leeren Element <gi>gap</gi> ausgezeichnet. Umfang und Ursachen des Textverlusts werden nicht ausgezeichnet, sondern (wo sinnvoll) kommentierend in einer Fussnote erläutert. Das Element <gi>gap</gi> wird auch für die Auszeichnung von Text verwendet, der aus editorischen Überlegungen nicht transkribiert wird (siehe weiter unten den Abschnitt „Auslassungen“).</p>
                         </div>
-                        <div>
+                        <div xml:id="unsichere_lesarten_konjekturen">
                             <head>Unsichere Lesarten (Konjekturen)</head>
                             <p>Die Auszeichnung von schwer leserlichen Stellen (sei es wegen
                                 Beschädigungen oder unsleserlicher Schrift) erfolgt mit dem Element
@@ -1460,7 +1462,7 @@
                             <p>Die Ursache für die Unleserlichkeit oder Rekonstruktion wird (wo
                                 sinnvoll) kommentierend in einer Fussnote erläutert.</p>
                         </div>
-                        <div>
+                        <div xml:id="auslassungen">
                             <head>Auslassungen</head>
 
                             <p>Falls aus editorischen Gründen Textbereiche nicht transkribiert
@@ -1475,7 +1477,7 @@
 
                         </div>
 
-                        <div>
+                        <div xml:id="abkuerzungen">
                             <head>Abkürzungen</head>
                             <p>Abkürzungen werden mit dem Element 
                                     <gi>abbr</gi>
@@ -1523,7 +1525,7 @@
 
                         </div>
 
-                        <div>
+                        <div xml:id="sprachwechsel">
                             <head>Sprachwechsel</head>
                             <p> Die Sprache des edierten Textes wird im Header im Element <gi>language</gi> festgehalten. Wenn innerhalb des Textes zu einer anderen Sprache gewechselt wird, wird die Textpassage mit dem Element <gi>foreign</gi>
                                  und dem Attribut <att>xml:lang</att>
@@ -1577,7 +1579,7 @@
                            
                         </div>
 
-                        <div>
+                        <div xml:id="datumsangaben">
                             <head>Datumsangaben</head>
                             <p>Das Datum wird mit <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-date.html">
                                     <gi>date</gi>
@@ -1595,12 +1597,12 @@
 
 
                         </div>
-                        <div>
+                        <div xml:id="transkription_von_sonderzeichen">
                             <head>Transkription von Sonderzeichen</head>
                             <p> Für Abbreviaturzeichen siehe den Abschnitt "Normalisierung von
                                 Abbreviaturzeichen und diakritischen Zeichen". </p>
 
-                            <div>
+                            <div xml:id="symbole">
                                 <head>Symbole</head>
                                 <p> Symbole für Planeten, chemische Elemente, Masseinheiten oder
                                     Währungen werden analog zu Abkürzungen behandelt. Im Element
@@ -1614,7 +1616,7 @@
                                     Bilddatei eingebettet oder mittels editorischer Fussnote auf das
                                     Manuskript verwiesen werden. </p>
                             </div>
-                            <div>
+                            <div xml:id="zahlen">
                                 <head>Zahlen</head>
                                 <p> Arabische und römische Zahlen werden originalgetreu
                                     transkribiert, d.h. römische Zahlen werden nicht in arabische
@@ -1627,12 +1629,12 @@
                 </div>
             </div>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-            <div>
+            <div xml:id="briefstruktur">
                 <head>Briefstruktur</head>
 
                 <p> Die briefspezifischen Textstrukturen, die speziell ausgezeichnet werden, sind: Briefanfang (Brieferöffnung), Briefschluss, Postskriptum, Beilage und Adresse.</p>
 
-                <div>
+                <div xml:id="briefanfang">
                     <head>Briefanfang</head>
 
 
@@ -1670,7 +1672,7 @@
                     
 
                 </div>
-                <div>
+                <div xml:id="briefschluss">
                     <head>Briefschluss</head>
                     <p> Kodierung: <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html">
                             <gi>closer</gi>
@@ -1689,7 +1691,7 @@
                             <gi>dateline</gi> mit Datum (<gi>date</gi>) enthalten.</p>
                     <p>Eine Unterschrift, sei sie autograf oder in Entwürfen von anderer Hand gesetzt, wird mit <gi>signed</gi> ausgezeichnet, wobei der Personenname zusätzlich mit dem Element <gi>rs</gi> markiert wird.</p>
                     <p>  Oft ist am Briefende der Briefschluss nicht klar vom eigentlichen Brieftext
-                        abgegrenzt, weder inhaltlich noch optisch. In diesen Fällen fügt <gi>closer</gi> auf der Darstellungsebene einen Zeilenumbruch ein, der im Brief nicht vorkommt. Trotzdem sollte der <gi>closer</gi> an der inhaltlich korrekten Stelle (also dort wo die Grussformel beginnt) eingefügt werden, mit <gi>lb/</gi> falls tatsächlich ein Zeilenumbruch vorhanden ist, ohne <gi>lb/</gi> falls kein Zeilenumbruch vorhanden ist. Zukünftig wäre das Ziel, dass <gi>closer</gi> nicht automatisch als neuer Abschnitt / neue Zeile dargestellt wird.</p>
+                        abgegrenzt, weder inhaltlich noch optisch. In diesen Fällen fügt <gi>closer</gi> bei der Lesefassung einen Zeilenumbruch ein, der im Brief nicht vorkommt. Der <gi>closer</gi> sollte an der inhaltlich korrekten Stelle (also dort wo die Grussformel beginnt) eingefügt werden, mit <gi>lb</gi> falls tatsächlich ein Zeilenumbruch vorhanden ist, ohne <gi>lb</gi> falls kein Zeilenumbruch vorhanden ist. Dies, damit die diplomatische (textnahe) Fassung das ursprüngliche Format korrekt übernimmt.</p>
                     <p>Im folgenden Beispiel beginnt die Grussformel mit "j'ay l'honeur d'estre",
                         der closer wird trotzdem erst ab "Monsieur" ausgezeichnet, damit der Text an
                         dieser Stelle nicht umbricht: </p>
@@ -1755,7 +1757,7 @@
                                 MDCCXVIII</date>.</dateline>
                     </closer>
                 </div>
-                <div>
+                <div xml:id="empfangs_und_antwortvermerke">
                     <head>Empfangs- und Antwortvermerke</head>
                     <p>Empfangs- und Antwortvermerke werden als Anmerkung im Manuskript behandelt (siehe den
                         entsprechenden Abschnitt). <!-- Diskussion: Sollen Empfangsvermerke durch <tag>type="received"</tag> und Antwortvermerke mit <tag>type="sent"</tag> zusätzlich gekennzeichnet werden? --></p>
@@ -1779,7 +1781,7 @@
                         </bibl>
                     </p>
                 </div>
-                <div>
+                <div xml:id="postskriptum">
                     <head>Postskriptum</head>
                     <p>Ein oder mehrere P.S. werden mit dem Element <gi>postscript</gi>
                         ausgezeichnet. Dabei erhält jedes Postskriptum ein eigenes <gi>postscript</gi>-Element.<note type="internal">Für die entsprechende Seite auf DTA: https://www.deutschestextarchiv.de/doku/basisformat/brPostscriptum.html</note></p>
@@ -1802,7 +1804,7 @@
                         <!--  -->
                     
                 </div>
-                <div>
+                <div xml:id="beilage">
                     <head>Beilage</head>
                     <p>Beilagen werden im Header-Element <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-accMat.html">
                             <gi>accMat</gi>
@@ -1889,7 +1891,7 @@
                         </item>
                     </list>
                 </div>
-                <div>
+                <div xml:id="adresse">
                     <head>Adresse</head>
                     <p> Die Adresse wird innerhalb des <gi>opener</gi>- oder
                         <gi>closer</gi>-Elements mit dem Element 
@@ -1927,9 +1929,9 @@
 
             </div>
 
-            <div>
+            <div xml:id="sachauszeichnung_und_kommentierung">
                 <head>Sachauszeichnung und Kommentierung</head>
-                <div>
+                <div xml:id="sachauszeichnung_und_register">
                     <head>Sachauszeichnung und Register</head>
                     <p/>
                     <div>
@@ -1984,22 +1986,22 @@
                             Observationes Dominorum Bernoulliorum") nicht
                             ausgezeichnet.</p>
                     </div>
-                    <div>
+                    <div xml:id="register">
                         <head>Register</head>
-                        <div>
+                        <div xml:id="personenregister">
                             <head>Personenregister</head>
                             <p> Im Personenregister sind die Korrespondenten (Autor, Adressat) und
                                 die in den Brieftexten erwähnten Personen erfasst.</p>
                             <p>Kodierung: <gi>person</gi>
                             </p>
-                            <div>
+                            <div xml:id="id">
                                 <head>ID</head>
                                 <p> Die Personen sind durch eine xml:id 
                                     identifiziert, die identisch mit dem Dateinamen der Registerdatei ist. Falls zu dieser Person eine GND-Nummer vorliegt, ist diese Bestandteil der xml:id (Kodierungsbeispiel:
                                         <tag>person xml:id="pers_DE-588-12209025X"&gt;</tag>). Die
                                     GND-Nummer wird auch im Element <gi>idno</gi> erfasst. </p>
                             </div>
-                            <div>
+                            <div xml:id="name">
                                 <head>Name</head>
                                 <p>Der Name wird in der Regel in der Form Nachname, Vorname erfasst.
                                     Das Attribut <att>type</att> enthält die Werte <val>main</val>
@@ -2073,7 +2075,7 @@
                                 </p>
                             </div>
 
-                            <div>
+                            <div xml:id="generationsnamen">
                                 <head>Generationsnamen</head>
                                 <p>Das Element <gi>genName</gi> enthält Angaben zur Unterscheidung
                                     gleicher Namen aufgrund ihres Alters oder Generation (z.B. d.J,
@@ -2096,7 +2098,7 @@
                                 </p>
                             </div>
 
-                            <div>
+                            <div xml:id="adelspraedikate">
                                 <head>Adelsprädikate</head>
                                 <p>Bei Adelsprädikaten, die Bestandteil des Namens sind, wird nur
                                     der für die alphabetische Sortierung relevante Teil in
@@ -2114,21 +2116,21 @@
                                     einem Element <gi>roleName</gi> erfasst</p>
                                 <p> Beispiel, Duc </p>
                             </div>
-                            <div>
+                            <div xml:id="geschlecht">
                                 <head>Geschlecht</head>
                                 <p>
                                     Das Geschlecht wird im Element <gi>gender</gi> angegeben, männlich mit <tag>value="M"</tag>, weiblich mit <tag>value="F"</tag>.
                                     
                                 </p>
                             </div>
-                            <div>
+                            <div xml:id="lebensdaten">
                                 <head>Lebensdaten</head>
                                 <p> Die Lebensdaten sind in den Elemente <gi>birth</gi> und
                                         <gi>death</gi> im Attribut <att>when</att> erfasst. Im Element
                                     <gi>placeName</gi> ist der Geburtort und Todesort angegeben, siehe
                                     Kodierungsbeispiel unten. </p>
                             </div>
-                            <div>
+                            <div xml:id="kurzbiographie">
                                 <head>Kurzbiographie</head>
                                 <p>Das Element <gi>note</gi> umfasst die biographische Notiz. Das
                                     Attribut <att>resp</att> enthält Angaben zur Autorschaft der
@@ -2160,7 +2162,7 @@
                                 </p>
 
                             </div>
-                            <div>
+                            <div xml:id="personeneintraege_ohne_gnd_nummer">
                                 <head>Personeneinträge ohne GND-Nummer</head>
                                 <p> Wenn eine Person keine GND-Nummer hat oder keine GND erstellt werden kann und
                                     ein interner Eintrag benötig wird: 
@@ -2172,12 +2174,12 @@
                             </div>
 
                         </div>
-                        <div>
+                        <div xml:id="institutionenregister">
                             <head>Institutionenregister</head>
                             <p>Im Institutionenregister sind Institutionen, wie Universitäten, Akademien oder Bibliotheken, erfasst. Diese Einträge beinhalten grundlegende Informationen zur Identifikation dieser Institutionen.</p>
                             <p>Kodierung: <gi>org</gi></p>
                             
-                            <div>
+                            <div xml:id="id_und_verweise_auf_externe_quellen">
                                 <head>ID und Verweise auf externe Quellen</head>
                                 <p>Jede Institution wird durch eine eindeutige <att>xml:id</att> identifiziert, die in der Regel die GND-Nummer im Format org_DE-588-[GND-ID] enthält. Die GND-Nummer wird auch im Element <gi>idno</gi> erfasst. Zusätzlich können Verweise auf externe Datenquellen wie die GND-Website im <gi>ptr</gi>-Element eingefügt werden.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2189,7 +2191,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="institutionenname">
                                 <head>Institutionenname</head>
                                 <p>Der Name der Institution wird im Element <gi>orgName</gi> erfasst. Das Attribut <tag>type="reg"</tag> kennzeichnet die Hauptansetzung des Namens. Bei Bedarf können auch alternative Namen im <gi>orgName</gi>-Element eingefügt werden.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2200,7 +2202,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="institutionstyp">
                                 <head>Institutionstyp</head>
                                 <p>Der Typ der Institution wird im Element <gi>orgType</gi> angegeben. Typische Werte können "Universität", "Akademie", "Bibliothek" oder andere relevante Kategorien sein.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2209,7 +2211,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="gruendungsdatum_und_ort">
                                 <head>Gründungsdatum und -ort</head>
                                 <p>Das Gründungsdatum wird im <gi>birth</gi>-Element erfasst, mit dem Attribut <att>when</att> für das Datum. Der Gründungsort wird im Element <gi>placeName</gi> angegeben.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2221,7 +2223,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="historische_notizen">
                                 <head>Historische Notizen</head>
                                 <p>Historische Notizen über die Institution werden im Element <gi>note</gi> erfasst. Das Attribut <tag>type="comment"</tag> kennzeichnet diese Notizen. Die Autorschaft der Notiz wird im Attribut <att>resp</att>, z.B. <tag>resp="SG"</tag> angegeben. Weitere Notizen können im <gi>note</gi>-Element erfasst werden, wobei für spezifische Arten von Notizen entsprechende <att>type</att>-Werte verwendet werden können.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2237,11 +2239,11 @@
                             
                             
                         </div>
-                            <div>
+                            <div xml:id="ortsregister">
                                 <head>Ortsregister</head>
                                 <p>Im Ortsregister sind geografische Orte erfasst, die in den Brieftexten oder anderen Dokumenten erwähnt werden. Diese Orte können Städte, Länder oder Regionen sein.</p>
                                 <p>Kodierung: <gi>place</gi></p>
-                                <div>
+                                <div xml:id="id_2">
                                     <head>ID</head>
                                     <p>Jeder Ort wird durch eine eindeutige <att>xml:id</att> identifiziert. Diese ID folgt einem festgelegten Schema, das die Geonames-Nummer oder eine intern festgelegte Bezeichnung enthält. Beispiel: <tag>place xml:id="place_GEO-498817"</tag>. Zur Identifikation wird die externe Datenbank GeoNames genutzt, auf die im Element <gi>ptr</gi> referenziert wird.</p>
                                     <p>Kodierungsbeispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2251,7 +2253,7 @@
                                         </egXML>
                                     </p>
                                 </div>
-                                <div>
+                                <div xml:id="ortsnamen">
                                     <head>Ortsnamen</head>
                                     <p>Der Ortsname wird im Element <gi>placeName</gi> erfasst. Es können mehrere Varianten desselben Ortsnamens in verschiedenen Sprachen oder Epochen vorhanden sein. Das Attribut <att>xml:lang</att> gibt die Sprache des Ortsnamens an. Das Attribut <att>type</att> spezifiziert die Art des Ortes (z.B. <val>Stadt</val>, <val>Gemeinde</val>, <val>Land</val>).</p>
                                     <p>Kodierungsbeispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2262,7 +2264,7 @@
                                         </egXML>
                                     </p>
                                 </div>
-                                <div>
+                                <div xml:id="geografische_koordinaten">
                                     <head>Geografische Koordinaten</head>
                                     <p>Die geografische Position des Orts wird im Element <gi>location</gi> erfasst. Innerhalb dieses Elements werden die Längen- und Breitengrade in separaten <gi>geo</gi>-Elementen mit dem Attribut <att>decls</att> für das Koordinatensystem angegeben (z.B. <val>lon_wgs84_dd</val> und <val>lat_wgs84_dd</val> für das WGS84-System).</p>
                                     <p>Kodierungsbeispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2273,7 +2275,7 @@
                                         </egXML>
                                     </p>
                                 </div>
-                                <div>
+                                <div xml:id="alternative_ortsnamen">
                                     <head>Alternative Ortsnamen</head>
                                     <p>Alternative Namen für denselben Ort werden ebenfalls in <gi>placeName</gi>-Elementen erfasst. Diese Namen können aus verschiedenen Sprachen oder historischen Kontexten stammen. Es können mehrere Varianten angegeben werden, wobei das Attribut <att>xml:lang</att> die jeweilige Sprache des Ortsnamens kennzeichnet.</p>
                                     <p>Kodierungsbeispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2282,7 +2284,7 @@
                                         </egXML>
                                     </p>
                                 </div>
-                                <div>
+                                <div xml:id="verweise_auf_externe_datenquellen">
                                     <head>Verweise auf externe Datenquellen</head>
                                     <p>Das Element <gi>ptr</gi> wird verwendet, um auf externe Informationsquellen oder Datenbanken zu verweisen, die weiterführende Informationen zum Ort bereitstellen. Diese Verweise können z.B. auf Wikipedia oder GeoNames zeigen und werden im Attribut <att>target</att> mit der jeweiligen URL versehen. Das Attribut <att>type</att> gibt die Art der Quelle an.</p>
                                     <p>Kodierungsbeispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2291,7 +2293,7 @@
                                         </egXML>
                                     </p>
                                 </div>
-                                <div>
+                                <div xml:id="notizen">
                                     <head>Notizen</head>
                                     <p>Das Element <gi>note</gi> wird verwendet, um interne oder externe Notizen über den Ort festzuhalten. Das Attribut <att>hand</att> enthält Informationen darüber, wer die Notiz hinzugefügt hat. Die Bezeichnung <tag>type="internal"</tag> kennzeichnet eine interne, nur für das Bearbeiterteam sichtbare, Notiz.</p>
                                     <p>Kodierungsbeispiel: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2302,12 +2304,12 @@
                             </div>
 
 
-                        <div>
+                        <div xml:id="bibliographische_eintraege">
                             <head>Bibliographische Einträge</head>
                             <p>Bibliographische Einträge umfassen alle zitierten Werke, die in den edierten Texten vorkommen. Sie können verschiedene Typen wie Bücher, Zeitschriftenartikel, Buchteile oder Handschriften sein.</p>
                             <p>Kodierung: <gi>biblStruct</gi></p>
                             
-                            <div>
+                            <div xml:id="id_und_verweise_auf_externe_quellen_2">
                                 <head>ID und Verweise auf externe Quellen</head>
                                 <p>Jeder bibliographische Eintrag wird durch eine eindeutige <att>xml:id</att> identifiziert. Zusätzlich ist der Verweis auf die externe Datenbank Zotero im Attribut <att>corresp</att> erfasst, welches auf den jeweiligen Eintrag verweist.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2316,7 +2318,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="titel_und_herausgeber">
                                 <head>Titel und Herausgeber</head>
                                 <p>Der Titel des Buches wird im Element <gi>title</gi> mit dem Attribut <tag>level="m"</tag> (für Monographie) erfasst. Der Autor wird dabei im <gi>author</gi>-Element erfasst, Herausgeber im <gi>editor</gi>-Element erfasst. Das <gi>forename</gi>- und <gi>surname</gi>-Element enthalten die Vor- und Nachnamen.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2335,7 +2337,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="erscheinungsort_verlag_und_datum">
                                 <head>Erscheinungsort, Verlag und Datum</head>
                                 <p>Im Element <gi>imprint</gi> werden der Erscheinungsort (<gi>pubPlace</gi>), der Verlag (<gi>publisher</gi>) und das Erscheinungsdatum (<gi>date</gi>) erfasst.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2348,7 +2350,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="band_und_serie">
                                 <head>Band und Serie</head>
                                 <p>Falls das Buch Teil einer Serie oder eines mehrbändigen Werks ist, wird der Band im Element <gi>biblScope</gi> mit dem Attribut <tag>unit="volume"</tag> erfasst. Der Serientitel wird im <gi>series</gi>-Element kodiert, wobei <gi>title</gi> mit dem Attribut <tag>level="s"</tag> (für Serie) versehen wird.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2360,7 +2362,7 @@
                                 </egXML>
                             </div>
                             
-                            <div>
+                            <div xml:id="anmerkungen_und_tags">
                                 <head>Anmerkungen und Tags</head>
                                 <p>Anmerkungen oder zusätzliche Informationen werden im <gi>note</gi>-Element erfasst. Für bestimmte Informationen wie Tags kann das Attribut <tag>type="tag"</tag> verwendet werden, um die Art der Anmerkung zu kennzeichnen.</p>
                                 <p>Kodierungsbeispiel:</p>
@@ -2373,10 +2375,10 @@
                             </div>
                         </div>
                         
-                        <div>
+                        <div xml:id="verzeichnis_der_erwaehnten_briefe">
                             <head>Verzeichnis der erwähnten Briefe</head>
                         </div>
-                        <div>
+                        <div xml:id="sachregister">
                             <head>Sachregister</head>
                             <p>Es liegt noch kein Sachregister vor, es sollen jedoch Begriffe
                                 vorläufig ausgezeichnet werden, ohne dass eine Verlinkung mit dem
@@ -2389,9 +2391,9 @@
 
                 </div>
 
-                <div>
+                <div xml:id="kommentierung">
                     <head>Kommentierung</head>
-                    <div>
+                    <div xml:id="inhaltliche_kommentierung">
                         <head> Inhaltliche Kommentierung </head>
                         <p>Die inhaltliche Kommentierung kann in unterschiedlichen Bereichen der
                             Edition erfolgen: <list>
@@ -2429,12 +2431,12 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div xml:id="verweise">
                     <head>Verweise</head>
                     <p>Verweise ins Internet werden mit dem Element <gi>ref</gi> umgesetzt, z.B. <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <ref target="www.bebb.unibas.ch">Verweis auf die Startseite der BEBB.</ref>
                     </egXML></p>
-                    <div>
+                    <div xml:id="interne_verweise">
                     
                     <head>Interne Verweise</head>
                         <p>Interne Verweise werden durch das Attribut <tag>type="internal"</tag> gekennzeichnet. Das Attribut dient zur automatischen Ergänzung der URL für den projektinternen Link. Der Verweis enthält den Dateinamen des Dokuments, auf das verwiesen wird, z.B. <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2443,7 +2445,7 @@
                         
                         </p>
                     </div>
-                    <div>
+                    <div xml:id="fussnotenverweise">
                     <head>Fussnotenverweise</head>
                     <p>Fussnotenverweise werden analog umgesetzt. Die ID, die in <att>target</att> angegeben wird, besteht aus dem Dokumentnamen und der fussnotenspezifischen ID, z.B.
                         (Dokument 1) <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2460,7 +2462,7 @@
             </div>
             <!-- 
              %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-            <div>
+            <div xml:id="metadaten">
                 <head>Metadaten</head>
 
 
@@ -2476,14 +2478,14 @@
                         </teiheader>
                     </egXML>
                 </p>
-                <div>
+                <div xml:id="dateibeschreibung_filedesc">
                     <head>Dateibeschreibung (<gi>fileDesc</gi>)</head>
                     <p> Die Dateibeschreibung, also die vollständige bibliografische Beschreibung
                         der der Edition zugrunde liegenden elektronischen Datei ist im Element
                             <gi>fileDesc</gi> kodiert. </p>
 
 
-                    <div>
+                    <div xml:id="titel_titlestmt">
                         <head>Titel (<gi>titleStmt</gi>)</head>
 
                         <p>Die Titel der Edition und des einzelnen Briefes werden mit dem Element
@@ -2522,7 +2524,7 @@
                                 046 			|a s  |c 1715.02.22 (hier würde man das Datum idealerweise in das Format tt. Monat jjjj umwandeln, falls das zu viel Aufwand ist, belässt man es so.) -->
                     </div>
 
-                    <div>
+                    <div xml:id="angaben_zu_edition_editorinnen_und_mitarbeitenden_editionstmt">
                         <head>Angaben zu Edition, EditorInnen und Mitarbeitenden
                                 (<gi>editionStmt</gi>)</head>
                         <p>Das <ref target="https://tei-c.org/release/doc/tei-p5-doc/de/html/ref-editionStmt.html">
@@ -2568,7 +2570,7 @@
                             </egXML>
                         </p>
                     </div>
-                    <div>
+                    <div xml:id="impressum_copyright_und_links_zu_den_verfuegbaren_dateien_der_edition_publicationstmt">
                         <head>Impressum, Copyright und Links zu den verfügbaren Dateien der Edition
                                 (<gi>publicationStmt</gi>)</head>
 
@@ -2621,7 +2623,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div xml:id="allgemeine_informationen_zur_textvorlage_bibliographische_angaben_zu_weiteren_editionen_des_briefes_und_zu_weiteren_brieffassungen">
                         <head>Allgemeine Informationen zur Textvorlage, bibliographische Angaben zu
                             weiteren Editionen des Briefes und zu weiteren Brieffassungen</head>
                         <p>Im Element <gi>notesStmt</gi> sind in den Kindelementen <gi>note</gi>
@@ -2668,7 +2670,7 @@
                             </egXML><!-- Inhalt aus BIBB-Feld 544 	1 |n  (rend="concept" falls in der Notiz "Entwurf:" steht. Hingegen copy, falls es sich um eine Abschrift handelt.  -->
                         </p>
                     </div>
-                    <div>
+                    <div xml:id="beschreibung_der_quelle_sourcedesc_darin_als_kindelement_msdesc">
                         <head>Beschreibung der Quelle (<gi>sourceDesc</gi>, darin als Kindelement
                                 <gi>msDesc</gi>)</head>
                         <p>Die Beschreibung der für die Textkonstitution verwendeten Quelle ist im
@@ -2699,7 +2701,7 @@
                             </egXML>
                         </p>
 
-                        <div>
+                        <div xml:id="identifizierung_des_manuskripts_systemnummer_und_signatur">
                             <head>Identifizierung des Manuskripts (Systemnummer und Signatur)</head>
                             <!-- Diese Informationen stehen in ALMA in den folgenden Feldern: 
                             Neue Systemnummer: Feld 001, 
@@ -2755,7 +2757,7 @@
                                 </egXML>
                             </p>
                         </div>
-                        <div>
+                        <div xml:id="physische_beschreibung_des_manuskripts">
                             <head>Physische Beschreibung des Manuskripts</head>
 
                             <p>Die physische Beschreibung ist im Element <gi>physDesc</gi>
@@ -2793,7 +2795,7 @@
                             </p>
                         </div>
 
-                        <div>
+                        <div xml:id="originaldatum_und_ort">
                             <head>Originaldatum und Ort</head>
                             <p>Das Originaldatum des Briefes ist im Element <gi>date</gi> erfasst
                                 (teiHeader/fileDesc/sourceDesc/msDesc/history/origin/date). Im
@@ -2829,13 +2831,13 @@
                     </div>
 
                 </div>
-                <div>
+                <div xml:id="angaben_zur_textsorte">
                     <head>Angaben zur Textsorte</head>
                     <p>Die Angaben zur Textsorte (in der BEBB ist es vorläufig nur die Textsorte
                         Brief) ist im Element <gi>catDesc</gi>
                         (teiHeader/encodingDesc/classDecl/taxonomy/category/catDesc)</p>
                 </div>
-                <div>
+                <div xml:id="angaben_zur_korrespondenz_correspdesc">
                     <head>Angaben zur Korrespondenz (<gi>correspDesc</gi>)</head>
                     <p>Angaben zum Absender, Empfänger, Absendeort und Versanddatum des Briefes
                         (Empfangsort und Empfangsdatum sind fakultativ) sind organisiert im Element
@@ -2952,7 +2954,7 @@
                             </item>
                         </list>
                     </p>
-                    <div>
+                    <div xml:id="sprache_des_brieftextes">
                         <head>Sprache des Brieftextes</head>
                         <p>Die Sprache des Brieftextes wird sowohl im Element <gi>langUsage</gi>
                             (teiHeader/profileDesc/langUsage) ausgeschrieben als auch als Sprachcode
@@ -2966,13 +2968,13 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div xml:id="regest_zusammenfassung_des_briefinhalts">
                         <head>Regest / Zusammenfassung des Briefinhalts</head>
                         <p>Eine Zusammenfassung des Briefinhalts kann im Element <gi>abstract</gi>
                             (teiHeader/profileDesc/abstract/p) stehen. Die Daten stammen auch hier
                             aus dem BIBB.</p>
                     </div>
-                    <div>
+                    <div xml:id="liste_der_im_brieftext_erwaehnten_personen">
                         <head>Liste der im Brieftext erwähnten Personen</head>
                         <p> Das Element <gi>abstract</gi> enthält zusätzlich die automatisch aus dem
                             BIBB importierten Informationen zu den im Brief erwähnten Personen:
@@ -2994,7 +2996,7 @@
                     </div>
 
                 </div>
-                <div>
+                <div xml:id="versionierung_und_status">
                     <head>Versionierung und Status</head>
                     <p>Die Bearbeitungsgeschichte des Briefes ist im Element <gi>revisionDesc</gi>
                         dokumentiert. Das Kindelement <tag>change</tag> (der neueste Eintrag
@@ -3042,7 +3044,7 @@
                     </egXML>
                 </div>
 
-                <div>
+                <div xml:id="zitieranweisung">
                     <head>Zitieranweisung</head>
                     <!-- ToDo: Muss noch umgesetzt werden. Anleitung Helena als Issue mitteilen. -->
                     <p>Die Zitieranweisung erscheint nur auf der Nutzeroberfläche und setzt sich aus dem Inhalt unterschiedlicher Header-Elemente zusammen und besteht aus:</p>
@@ -3091,7 +3093,7 @@
 
             </div>
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-            <div>
+            <div xml:id="facsimile">
                 <head>Facsimile</head>
                 <p>Die digitalen Bilder der Handschrift werden folgendermassen eingebunden: Im
                     Element <gi>facsimile</gi> findet sich das Kindelement <gi>graphic</gi>, das im
@@ -3107,7 +3109,7 @@
                 <p>Der Bildnachweis und die Nutzungsbedingungen werden aus dem Bildmanifest via
                     Bildviewer automatisch enxtrahiert. Zusätzlich führt ein Link direkt zum
                     Digitalisat auf e-manuscripta oder einer analogen iiif-Plattform.</p>
-                <div>
+                <div xml:id="manifesterstellung">
                     <head>Manifesterstellung</head>
                     <p>iiif-Manifeste für Bilder, die auf dem internen iiif-Server abgelegt sind, werden aus einer intern gepflegten Excel-Tabelle generiert <!-- ToDo: Helena nach der Dokumentation zur Generierung von iiif-Manifesten fragen. --></p>
                     
@@ -3117,14 +3119,14 @@
             <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
             
                     
-                    <div>
+                    <div xml:id="schema">
                         <head>Schema</head>
                         <p>Die Verarbeitungsanweisung, die für der Verknüpfung des XML-Dokumentes mit
                             dem Schema dient ist <?xml-model?>. Es können mehrere Schemata gleichzeitig
                             verknüpft werden.</p>
                         <p>Das Schema </p>
                     
-            <div>
+            <div xml:id="verwendete_elemente">
                 <head>Verwendete Elemente</head>
                 <p>
                     <gi>TEI</gi>
