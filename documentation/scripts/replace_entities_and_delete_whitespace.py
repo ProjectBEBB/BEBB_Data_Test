@@ -44,7 +44,11 @@ def process_file(file_path):
 
     modified_content = content
 
-    # 1. Trennzeichen am Zeilenende:
+    # Whitespaces zwischen hyphenation-pc und lb break="no" bereinigen
+    #
+    # Behandelte Fälle:
+    #
+    # 1. Normales Trennzeichen am Zeilenende:
     #
     # d’admi<pc type="hyphenation">-</pc>
     #   <lb break="no"/>ration
@@ -52,10 +56,9 @@ def process_file(file_path):
     # wird zu:
     #
     # d’admi<pc type="hyphenation">-</pc><lb break="no"/>ration
-    pattern_1 = r'(<pc type="hyphenation">-</pc>)\s+(<lb break="no"/>)'
-    modified_content = re.sub(pattern_1, r'\1\2', modified_content)
-
-    # 1b. Leeres pc-Element am Zeilenende:
+    #
+    #
+    # 2. Leeres pc-Element am Zeilenende:
     #
     # d’admi<pc type="hyphenation"></pc>
     #   <lb break="no"/>ration
@@ -64,12 +67,18 @@ def process_file(file_path):
     #
     # d’admi<pc type="hyphenation"></pc><lb break="no"/>ration
     #
-    # Dieser Fall wird nur vor <lb break="no"/> behandelt,
-    # nicht nach <lb break="no"/>.
-    pattern_1b = r'(<pc type="hyphenation"></pc>)\s+(<lb break="no"/>)'
-    modified_content = re.sub(pattern_1b, r'\1\2', modified_content)
-
-    # 2. Trennzeichen am Zeilenbeginn:
+    #
+    # 3. Gleichheitszeichen als Trennzeichen:
+    #
+    # d’admi<pc type="hyphenation">=</pc>
+    #   <lb break="no"/>ration
+    #
+    # wird zu:
+    #
+    # d’admi<pc type="hyphenation">=</pc><lb break="no"/>ration
+    #
+    #
+    # 4. Trennzeichen am Zeilenbeginn:
     #
     # d’admi<lb break="no"/>
     #   <pc type="hyphenation">-</pc>ration
@@ -77,20 +86,33 @@ def process_file(file_path):
     # wird zu:
     #
     # d’admi<lb break="no"/><pc type="hyphenation">-</pc>ration
-    pattern_2 = r'(<lb break="no"/>)\s+(<pc type="hyphenation">-</pc>)'
-    modified_content = re.sub(pattern_2, r'\1\2', modified_content)
-
-    # 3. Fall mit Trennzeichen am Zeilenende und am Zeilenbeginn:
+    #
+    #
+    # 5. Kombination:
     #
     # d’admi<pc type="hyphenation">-</pc>
-    #   <lb break="no"/>
-    #   <pc type="hyphenation">-</pc>ration
+    #   <lb break="no"/><pc type="hyphenation">-</pc>ration
     #
-    # wird durch pattern_1 und pattern_2 automatisch zu:
+    # wird zu:
     #
     # d’admi<pc type="hyphenation">-</pc><lb break="no"/><pc type="hyphenation">-</pc>ration
-    #
-    # Deshalb ist kein drittes separates Pattern nötig.
+
+    pattern_hyphen_pc = r'(<pc\s+type="hyphenation">\s*[-=]?\s*</pc>)'
+    pattern_lb_no_break = r'(<lb\s+break="no"\s*/>)'
+
+    # Fall: <pc type="hyphenation">...</pc> + Whitespace + <lb break="no"/>
+    modified_content = re.sub(
+        pattern_hyphen_pc + r'\s+' + pattern_lb_no_break,
+        r'\1\2',
+        modified_content
+    )
+
+    # Fall: <lb break="no"/> + Whitespace + <pc type="hyphenation">...</pc>
+    modified_content = re.sub(
+        pattern_lb_no_break + r'\s+' + pattern_hyphen_pc,
+        r'\1\2',
+        modified_content
+    )
 
     # <del/> ersetzen
     modified_content = replace_del_tag(modified_content)
@@ -104,7 +126,7 @@ def process_files_in_folder(folder):
     for filename in os.listdir(folder):
         file_path = os.path.join(folder, filename)
 
-        if os.path.isfile(file_path) and filename.endswith(".xml"):
+        if os.path.isfile(file_path) and filename.lower().endswith(".xml"):
             process_file(file_path)
             print(f"Datei '{filename}' wurde erfolgreich bearbeitet.")
 
@@ -150,6 +172,7 @@ def main():
 
     # Zweiter Teil des Skripts:
     # Whitespaces zwischen hyphenation-pc und lb break="no" bereinigen
+    # sowie <del/> durch <del><gap/></del> ersetzen
     process_files_in_folder(folder_path)
 
 
