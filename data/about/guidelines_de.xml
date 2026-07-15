@@ -1294,24 +1294,29 @@
                                             </ref> normalisiert. Dabei wird nicht das gesamte Wort, sondern nur das betreffende Zeichen normalisiert. Der Grund für diese Sonderbehandlung liegt darin, dass diese Zeichen
                                             in einem ersten Schritt mit intern festgelegten Entities ausgezeichnet
                                             werden, die in einem zweiten Schritt in ein
-                                                <gi>choice</gi>-Element umgewandelt werden. Die
-                                            folgenden Zeichen gehören dazu: <list>
-                                                <item> ƚ =&gt; ll (&amp;ll;)</item>
-<item> m̄ =&gt; mm (&amp;mm;)</item>
-<item> NB (Ligatur) =&gt; NB (&amp;NB;)</item>
-<item> : (Zahlendoppelpunkt) =&gt; [Das Zeichen fällt weg] (&amp;nddot;)</item>
-<item> . (Zahlenpunkt) =&gt; [Das Zeichen fällt weg] (&amp;ndot;)</item>
-<item> n̄ =&gt; nn (&amp;nn;)</item>
-<item> ī =&gt; im (&amp;im;)</item>
-<item> ī =&gt; in (&amp;in;)</item>
-<item> j =&gt; i (&amp;j;)</item>
-<item> |: =&gt; ( (&amp;klammerauf;)</item>
-<item> :| =&gt; ) (&amp;klammerzu;)</item>
-<item> ō =&gt; on (&amp;on;)</item>
-<item> „ =&gt; [Das Zeichen fällt weg] (&amp;quot;)</item>
-<item> ū =&gt; um (&amp;um;)</item>
-<item> ū =&gt; un (&amp;un;)</item>
-
+                                                <gi>choice</gi>-Element umgewandelt werden.
+                                            <note type="internal">Die Entities sind ein internes Arbeitsmittel der BEBB. In der publizierten TEI-Fassung sollen sie nicht sichtbar bleiben, sondern als <gi>choice</gi>-Strukturen mit <gi>orig</gi>, <gi>g</gi> und <gi>reg</gi> vorliegen. Die maßgebliche Liste befindet sich in der Datei entities.txt.</note>
+                                            Die folgenden Zeichen und Zeichenfolgen gehören derzeit dazu:
+                                            <list>
+                                                <item>ƚ =&gt; ll (&amp;ll;)</item>
+                                                <item>m̄ =&gt; mm (&amp;mm;)</item>
+                                                <item>m̄ =&gt; mn (&amp;mn;)</item>
+                                                <item>NB (Ligatur) =&gt; NB (&amp;NB;)</item>
+                                                <item>: (Zahlendoppelpunkt) =&gt; [Das Zeichen fällt weg] (&amp;nddot;)</item>
+                                                <item>. (Zahlenpunkt) =&gt; [Das Zeichen fällt weg] (&amp;ndot;)</item>
+                                                <item>. (Abbreviaturzeichen) =&gt; er (&amp;er;)</item>
+                                                <item>n̄ =&gt; nn (&amp;nn;)</item>
+                                                <item>ī =&gt; im (&amp;im;)</item>
+                                                <item>ī =&gt; in (&amp;in;)</item>
+                                                <item>j =&gt; i (&amp;j;)</item>
+                                                <item>|: =&gt; ( (&amp;klammerauf;)</item>
+                                                <item>:| =&gt; ) (&amp;klammerzu;)</item>
+                                                <item>ō =&gt; omm (&amp;omm;)</item>
+                                                <item>ō =&gt; on (&amp;on;)</item>
+                                                <item>„ =&gt; [Das Zeichen fällt weg] (&amp;quote;)</item>
+                                                <item>ū =&gt; um (&amp;um;)</item>
+                                                <item>ū =&gt; un (&amp;un;)</item>
+                                                <item>ÿ =&gt; y (&amp;ydots;)</item>
                                             </list>
                                         </item>
                                     </list>
@@ -1323,50 +1328,54 @@
                                     <p>
                                         <list>
                                             <item>Diakritische Zeichen werden in lateinischen Texten
-                                                in der Regel normalisierend entfernt. Die folgenden
-                                                Zeichen in textnaher, normalisierter und als Entity kodierter Form gehören dazu: <list>
-                                                 <item> á =&gt; a (&amp;aacut;)</item>
-<item> Á =&gt; A (&amp;Aacut;)</item>
-<item> æ =&gt; ae (&amp;ae;)</item>
-<item> Æ =&gt; Ae (&amp;AE;)</item>
-<item> à =&gt; a (&amp;agrav;)</item>
-<item> À =&gt; A (&amp;Agrav;)</item>
-<item> Â =&gt; A (&amp;Ahat;)</item>
-<item> â =&gt; a (&amp;ahat;)</item>
-<item> ā =&gt; am (&amp;am;)</item>
-<item> ā =&gt; an (&amp;an;)</item>
-<item> ꝯ =&gt; con (&amp;con;)</item>
-<item> đ =&gt; die (&amp;die;)</item>
-<item> é =&gt; e (&amp;eacut;)</item>
-<item> É =&gt; E (&amp;Eacut;)</item>
-<item> è =&gt; e (&amp;egrav;)</item>
-<item> È =&gt; E (&amp;Egrav;)</item>
-<item> ê =&gt; e (&amp;ehat;)</item>
-<item> ē =&gt; em (&amp;em;)</item>
-<item> ē =&gt; en (&amp;en;)</item>
-<item> [sse] =&gt; sse (&amp;sse;)</item>
-<item> [est] =&gt; est (&amp;est;)</item>
-<item> &amp; =&gt; et (&amp;et;)</item>
-<item> ì =&gt; i (&amp;igrav;)</item>
-<item> î =&gt; i (&amp;ihat;)</item>
-<item> ó =&gt; o (&amp;oacut;)</item>
-<item> ò =&gt; o (&amp;ograv;)</item>
-<item> ô =&gt; o (&amp;ohat;)</item>
-<item> œ =&gt; oe (&amp;oe;)</item>
-<item> Œ =&gt; Oe (&amp;OE;)</item>
-<item> õ =&gt; omn (&amp;omn;)</item>
-<item> ꝑ =&gt; par (&amp;par;)</item>
-<item> ꝑ =&gt; per (&amp;per;)</item>
-<item> pp. =&gt; etc. (&amp;etc;)</item>
-<item> q̄ =&gt; qua (&amp;qua;)</item>
-<item>  =&gt; que (&amp;que;)</item>
-<item>  =&gt; qui (&amp;qui;)</item>
-<item>  =&gt; tur (&amp;tur;)</item>
-<item> ú =&gt; u (&amp;uacut;)</item>
-<item> ù =&gt; u (&amp;ugrav;)</item>
-<item> û =&gt; u (&amp;uhat;)</item>
-<item> [us] =&gt; us (&amp;us;)</item>
-
+                                                in der Regel normalisierend entfernt oder als Abbreviaturen aufgelöst. Die folgenden
+                                                Zeichen in textnaher, normalisierter und als Entity kodierter Form gehören dazu:
+                                                <list>
+                                                    <item>á =&gt; a (&amp;aacut;)</item>
+                                                    <item>Á =&gt; A (&amp;Aacut;)</item>
+                                                    <item>æ =&gt; ae (&amp;ae;)</item>
+                                                    <item>Æ =&gt; Ae (&amp;AE;)</item>
+                                                    <item>à =&gt; a (&amp;agrav;)</item>
+                                                    <item>À =&gt; A (&amp;Agrav;)</item>
+                                                    <item>Â =&gt; A (&amp;Ahat;)</item>
+                                                    <item>â =&gt; a (&amp;ahat;)</item>
+                                                    <item>ā =&gt; am (&amp;am;)</item>
+                                                    <item>ā =&gt; an (&amp;an;)</item>
+                                                    <item>&amp; =&gt; and (&amp;and;)</item>
+                                                    <item>ꝯ =&gt; con (&amp;con;)</item>
+                                                    <item>đ =&gt; die (&amp;die;)</item>
+                                                    <item>é =&gt; e (&amp;eacut;)</item>
+                                                    <item>É =&gt; E (&amp;Eacut;)</item>
+                                                    <item>è =&gt; e (&amp;egrav;)</item>
+                                                    <item>È =&gt; E (&amp;Egrav;)</item>
+                                                    <item>ê =&gt; e (&amp;ehat;)</item>
+                                                    <item>ē =&gt; em (&amp;em;)</item>
+                                                    <item>ē =&gt; en (&amp;en;)</item>
+                                                    <item>[sse] =&gt; sse (&amp;sse;)</item>
+                                                    <item>[est] =&gt; est (&amp;est;)</item>
+                                                    <item>&amp; =&gt; et (&amp;etlig;)</item>
+                                                    <item>&amp; =&gt; Et (&amp;Etlig;)</item>
+                                                    <item>ì =&gt; i (&amp;igrav;)</item>
+                                                    <item>î =&gt; i (&amp;ihat;)</item>
+                                                    <item>ó =&gt; o (&amp;oacut;)</item>
+                                                    <item>ò =&gt; o (&amp;ograv;)</item>
+                                                    <item>ô =&gt; o (&amp;ohat;)</item>
+                                                    <item>œ =&gt; oe (&amp;oe;)</item>
+                                                    <item>Œ =&gt; Oe (&amp;OE;)</item>
+                                                    <item>õ =&gt; omn (&amp;omn;)</item>
+                                                    <item>ꝑ =&gt; par (&amp;par;)</item>
+                                                    <item>ꝑ =&gt; per (&amp;per;)</item>
+                                                    <item>pp. =&gt; etc. (&amp;pp;)</item>
+                                                    <item>p̄ =&gt; prae (&amp;prae;)</item>
+                                                    <item>p̄ =&gt; pro (&amp;pro;)</item>
+                                                    <item>q̄ =&gt; qua (&amp;qua;)</item>
+                                                    <item> =&gt; que (&amp;que;)</item>
+                                                    <item>ꝗ =&gt; qui (&amp;qui;)</item>
+                                                    <item> =&gt; tur (&amp;tur;)</item>
+                                                    <item>ú =&gt; u (&amp;uacut;)</item>
+                                                    <item>ù =&gt; u (&amp;ugrav;)</item>
+                                                    <item>û =&gt; u (&amp;uhat;)</item>
+                                                    <item>[us] =&gt; us (&amp;us;)</item>
                                                 </list>
                                             </item>
                                             <item>Das Trema wird beibehalten, bzw. normalisierend
@@ -1419,11 +1428,17 @@
                                                         <reg>Universität</reg>
                                                     </choice>
                                                 </egXML> Oft ist die Buchstabenform intermediär, dann wird stillschweigend angepasst.</item>
-                                            <item> Die folgenden Zeichen werden entsprechend
-                                                normalisiert: <list>
-                                                  <item> [und] =&gt; und</item>
-                                                  <item> &amp; =&gt; und</item>
-                                                  <item> uͤ =&gt; ü</item>
+                                            <item> Die folgenden Zeichen und Zeichenfolgen werden entsprechend
+                                                normalisiert:
+                                                <list>
+                                                    <item>[und] =&gt; und (&amp;und;)</item>
+                                                    <item>&amp; =&gt; und (&amp;undlig;)</item>
+                                                    <item>uͤ =&gt; ü (&amp;ue;)</item>
+                                                    <item>uͤ =&gt; ü (&amp;Eu;)</item>
+                                                    <item>v =&gt; u (&amp;u;)</item>
+                                                    <item>V =&gt; U (&amp;U;)</item>
+                                                    <item>v =&gt; ver (&amp;ver;)</item>
+                                                    <item>dß =&gt; daß (&amp;daß;)</item>
                                                 </list>
                                             </item>
                                         </list>
