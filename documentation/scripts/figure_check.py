@@ -8,6 +8,7 @@ LETTERS_DIR = Path("/Users/l-gehsul00/Documents/BEBB-Github/BEBB_Data_Test/data/
 FIGURES_DIR = Path("/Users/l-gehsul00/Documents/BEBB-Github/BEBB_Data_Test/data/images/figures")
 
 OUTPUT_FILE = Path("missing_facs.txt")
+EXCLUDED_LETTER_DIRS = {"BW__Dubletten"}
 
 def collect_image_filenames(figures_dir: Path) -> set[str]:
     """Sammelt alle Dateinamen (ohne Pfad) im figures-Verzeichnis (rekursiv)."""
@@ -27,6 +28,9 @@ def find_missing_facs_references(letters_dir: Path, image_filenames: set[str]) -
     missing = []
 
     for xml_path in letters_dir.rglob("*.xml"):
+        if any(part in EXCLUDED_LETTER_DIRS for part in xml_path.relative_to(letters_dir).parts):
+            continue
+
         try:
             tree = ET.parse(xml_path)
             root = tree.getroot()
