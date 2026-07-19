@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="xar-daniel-ii" name="bebb-data-test-xars" basedir="..">
+    <xmlproperty file="expath-pkg.xml"/>
+    <property name="project.version" value="${package(version)}"/>
+    <property name="project.app" value="bebb-data"/>
+    <property name="test.build.dir" value="build_codex/out"/>
+
+    <target name="prepare">
+        <mkdir dir="${test.build.dir}"/>
+    </target>
+
+    <target name="xar-daniel-ii" depends="prepare">
+        <zip destfile="${test.build.dir}/${project.app}-${project.version}-daniel-ii.xar">
+            <zipfileset dir="." includes="collection.xconf,expath-pkg.xml,index.xql,post-install.xql,pre-install.xql,repo.xml"/>
+            <zipfileset dir="." includes="data/LICENSE"/>
+            <zipfileset dir="." includes="data/edited_texts/letters/BW_DanIIB/**"/>
+        </zip>
+    </target>
+
+    <target name="xar-letters" depends="prepare">
+        <zip destfile="${test.build.dir}/${project.app}-${project.version}-letters.xar">
+            <zipfileset dir="." includes="collection.xconf,expath-pkg.xml,index.xql,post-install.xql,pre-install.xql,repo.xml"/>
+            <zipfileset dir="." includes="data/LICENSE"/>
+            <zipfileset dir="." includes="data/edited_texts/letters/**" excludes="data/edited_texts/letters/BW__Dubletten/**"/>
+            <zipfileset dir="." includes="data/ancillary_files/**"/>
+        </zip>
+    </target>
+
+    <target name="xar-register" depends="prepare">
+        <zip destfile="${test.build.dir}/${project.app}-${project.version}-register.xar">
+            <zipfileset dir="." includes="collection.xconf,expath-pkg.xml,index.xql,post-install.xql,pre-install.xql,repo.xml"/>
+            <zipfileset dir="." includes="data/LICENSE"/>
+            <zipfileset dir="." includes="data/register/**"/>
+        </zip>
+    </target>
+
+    <target name="xar-letters-register" depends="prepare">
+        <zip destfile="${test.build.dir}/${project.app}-${project.version}-letters-register.xar">
+            <zipfileset dir="." includes="collection.xconf,expath-pkg.xml,index.xql,post-install.xql,pre-install.xql,repo.xml"/>
+            <zipfileset dir="." includes="data/LICENSE"/>
+            <zipfileset dir="." includes="data/edited_texts/letters/**" excludes="data/edited_texts/letters/BW__Dubletten/**"/>
+            <zipfileset dir="." includes="data/ancillary_files/**"/>
+            <zipfileset dir="." includes="data/register/**"/>
+        </zip>
+    </target>
+
+</project>

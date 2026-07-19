@@ -71,6 +71,12 @@
                 <ignore qname="tei:div"/>
                 <facet dimension="genre" expression="nav:get-metadata(ancestor::tei:TEI, 'genre')" hierarchical="yes"/>
                 <facet dimension="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
+                <facet dimension="sender" expression="nav:get-metadata(ancestor::tei:TEI, 'sender')"/>
+                <facet dimension="addressee" expression="nav:get-metadata(ancestor::tei:TEI, 'addressee')"/>
+                <facet dimension="place-sent" expression="nav:get-metadata(ancestor::tei:TEI, 'place-sent')"/>
+                <facet dimension="date-sent" expression="tokenize(nav:get-metadata(ancestor::tei:TEI, 'date-sent'), '-')" hierarchical="yes"/>
+                <facet dimension="briefwechsel" expression="nav:get-metadata(ancestor::tei:TEI, 'briefwechsel')" hierarchical="yes"/>
+                <facet dimension="status" expression="nav:get-metadata(ancestor::tei:TEI, 'status')"/>
             </text>
             <text qname="tei:TEI">
                 <field name="briefwechsel-key" if="@type eq 'Korrespondenz'" expression="nav:get-metadata(., 'briefwechsel-key')"/>
